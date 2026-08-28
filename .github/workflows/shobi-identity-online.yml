@@ -57,12 +57,15 @@ jobs:
           if [[ -z "$LIMIT" ]]; then LIMIT="5"; fi
 
           CMD="run"
-          if [[ "${RETRY_ERRORS:-false}" == "true" ]]; then
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            CMD="retry-errors"
+            LIMIT="4"
+          elif [[ "${RETRY_ERRORS:-false}" == "true" ]]; then
             CMD="retry-errors"
           fi
 
           python tools/shobi_identity_resolver.py "$CMD" \
-            --resolver-cmd "python tools/shobi_online_resolver.py" \
+            --resolver-cmd "python tools/shobi_fragrantica_direct_resolver.py" \
             --limit "$LIMIT" \
             --timeout 90 \
             --retries 2 \
