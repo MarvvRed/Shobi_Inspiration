@@ -56,7 +56,7 @@ The first priority is to identify **which original perfume each Shobi Master rec
 
 Official identification flow:
 
-**Shobi record → candidate original perfume → cross-verification → Fragrantica perfume ID**
+**Shobi record → candidate original perfume → cross-verification → identity status → Fragrantica availability/linkage**
 
 A Fragrantica ID must **not** be assigned merely because a perfume name looks similar or because it is the first search result.
 
@@ -65,20 +65,39 @@ Evidence used for identification should include, where available:
 1. `inspired_by` — the perfume name declared by Shobi.
 2. Shobi code/prefix — often provides a strong clue to the original brand (for example `NISH`, `LEL`, `LUS`, etc.).
 3. `official_description` — provides an independent olfactory/profile check against the candidate.
-4. Candidate Fragrantica page — perfume name, brand and relevant characteristics must be compatible with the Shobi evidence.
+4. Candidate Fragrantica page, when one exists — perfume name, brand and relevant characteristics must be compatible with the Shobi evidence.
+5. Other authoritative/reliable evidence may be used to establish identity when Fragrantica does not contain the perfume.
 
-### Identification status rule
+### Identity status and Fragrantica status are separate
 
-- `CONFIRMED` — evidence is sufficiently concordant to identify the original perfume unambiguously; the Fragrantica ID may be assigned.
-- `AMBIGUOUS` — multiple candidates remain plausible or evidence is insufficient; **no Fragrantica ID is assigned** until the ambiguity is resolved.
+Perfume identity is **independent of whether Fragrantica has a page for that perfume**. Fragrantica is a resource linked to an identified perfume; it does not define whether that perfume exists or whether its identity can be confirmed.
+
+Use two separate statuses:
+
+- `identity_status = CONFIRMED` — available evidence identifies the original perfume unambiguously.
+- `identity_status = AMBIGUOUS` — multiple candidates remain plausible or evidence is insufficient.
+- `fragrantica_status = FOUND` — the correctly identified perfume has a verified Fragrantica page/ID.
+- `fragrantica_status = NOT_FOUND` — no verified Fragrantica page/ID has been found for the correctly identified perfume.
+
+Therefore this is a valid successful result:
+
+`identity_status = CONFIRMED`
+
+`fragrantica_status = NOT_FOUND`
+
+A missing Fragrantica ID must never downgrade an otherwise independently confirmed perfume identity, and an apparently plausible Fragrantica result must never be used to force an ambiguous identity into `CONFIRMED`.
+
+When `identity_status = AMBIGUOUS`, no Fragrantica ID is assigned as the official mapping until the identity ambiguity is resolved.
 
 The project explicitly prefers fewer verified matches over forcing all 2,343 records to have an ID. A wrong confident association is worse than an unresolved record.
 
-### Initial identification test
+### Identification validation tests
 
-The method was tested on the first 10 Shobi Master records (`prestashop_product_id` 5117 through 5108). All 10 could be identified without substantial ambiguity using the combined evidence available in the Master and the corresponding Fragrantica candidate.
+The method was first tested on the first 10 Shobi Master records (`prestashop_product_id` 5117 through 5108). All 10 could be identified without substantial ambiguity using the combined evidence available in the Master and the corresponding candidate.
 
-This 10/10 result is an encouraging validation sample, not proof that all 2,343 records will be automatically resolvable. Ambiguous records must remain explicitly unresolved.
+A broader second test was then performed on the first 50 consecutive Master records (`prestashop_product_id` 5117 through 5067). All 50 original perfume identities were resolvable with sufficient certainty in that test; 49 had a verified Fragrantica ID, while one confirmed perfume did not yield a verified Fragrantica page/ID. This case established the need to separate identity status from Fragrantica availability.
+
+These validation results are encouraging samples, not proof that all 2,343 records will be automatically resolvable. Ambiguous records must remain explicitly unresolved.
 
 ## Source Strategy
 
@@ -92,7 +111,7 @@ No decision has been made about storing raw vote counts or about implementation/
 
 ### Fragrantica perfume ID — central resource linkage
 
-The important discovery is broader than one Social Card filename pattern: **the Fragrantica numeric perfume ID acts as the common identifier tying together resources belonging to the same perfume.**
+The important discovery is broader than one Social Card filename pattern: **the Fragrantica numeric perfume ID acts as the common identifier tying together Fragrantica resources belonging to the same perfume.**
 
 Initial confirmed example, Kayali Vanilla | 28:
 
@@ -101,9 +120,9 @@ Initial confirmed example, Kayali Vanilla | 28:
 - Thumbnail/image resource example → `dark-m.52616.avif`
 - English Social Card → `en-p_c_52616.jpeg`
 
-Therefore, once a Shobi inspiration is correctly matched to its Fragrantica perfume and its **Fragrantica ID is known**, that ID can be retained as the stable linkage value from which related Fragrantica resources can be associated or located according to their respective naming/URL conventions.
+Therefore, when an identified perfume has a verified Fragrantica page and its **Fragrantica ID is known**, that ID can be retained as the stable Fragrantica linkage value from which related Fragrantica resources can be associated or located according to their respective naming/URL conventions.
 
-This is the architectural point to preserve: **store/know the perfume's Fragrantica ID first; individual Fragrantica resources are then linked back to that same perfume ID.**
+This is the architectural point to preserve: **perfume identity comes first; when Fragrantica contains that perfume, store/know its Fragrantica ID as the central linkage for Fragrantica resources.**
 
 ### Validation test
 
@@ -124,9 +143,9 @@ The relationship between perfume-page ID and English Social Card ID was tested o
 
 The tested English Social Card convention is:
 
-`https://fimgs.net/mdimg/perfume-social-cards/en-p_c_{FRAGRANTICA_ID}.jpeg`
+`https://fimgs.net/mdimg/perfume-social-cards/en-p_c_{FRAGRICA_ID}.jpeg`
 
-The 10/10 test validates that specific page-ID → Social-Card-ID relationship across the tested sample. The broader project principle is that the **Fragrantica perfume ID itself is the central linkage identifier**, not merely that one Social Card URL pattern exists.
+The 10/10 test validates that specific page-ID → Social-Card-ID relationship across the tested sample. The broader project principle is that the **Fragrantica perfume ID itself is the central linkage identifier within Fragrantica**, not merely that one Social Card URL pattern exists.
 
 Do not assume that every possible Fragrantica resource has the same exact filename structure. Each resource type/pattern should be verified independently, while the shared perfume ID remains the key association.
 
@@ -158,11 +177,12 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - `data/` directory created for project datasets.
 - Shobi Master placed at `data/shobi-master-v1.csv` as the authoritative Shobi catalog dataset.
 - Fragrantica Social Card examined and selected as the reference source for the perfume data contained in it.
-- Fragrantica perfume ID identified as the common linkage between a perfume and associated Fragrantica resources.
+- Fragrantica perfume ID identified as the common linkage between a perfume and associated Fragrantica resources when a Fragrantica page exists.
 - Vanilla | 28 (`52616`) confirmed across page, thumbnail/image resource and Social Card.
 - Fragrantica page-ID → English Social Card relationship validated successfully on 10/10 additional perfume examples.
 - Official Shobi → original perfume identification logic defined.
-- Initial identification method tested on the first 10 Shobi Master records with 10/10 resolvable matches.
+- Identification method tested on the first 50 consecutive Shobi Master records.
+- Identity status formally separated from Fragrantica availability status.
 
 ## Decisions Made
 
@@ -173,10 +193,15 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - `data/shobi-master-v1.csv` is the authoritative Shobi Master dataset for the current project.
 - **Perfume identity must be established before enrichment data is collected.**
 - **No Fragrantica ID may be assigned solely from name similarity or a first-result match.**
-- **Identification uses cross-verification of Shobi evidence and the Fragrantica candidate.**
-- **Unresolved or genuinely ambiguous records remain `AMBIGUOUS` with no assigned Fragrantica ID.**
-- **Fragrantica Social Card is the project's reference source for the perfume data contained in the Social Card.**
-- **The Fragrantica perfume ID is the central Fragrantica linkage identifier for a matched perfume and its associated resources.**
+- **Identification uses cross-verification of Shobi evidence and the candidate perfume.**
+- **Perfume identity and Fragrantica availability are independent statuses.**
+- **`identity_status` uses `CONFIRMED` / `AMBIGUOUS`.**
+- **`fragrantica_status` uses `FOUND` / `NOT_FOUND`.**
+- **A perfume may legitimately be `identity_status = CONFIRMED` and `fragrantica_status = NOT_FOUND`.**
+- **Fragrantica is a linked resource, not the authority that determines whether a perfume identity exists.**
+- **Unresolved or genuinely ambiguous identities remain `AMBIGUOUS`; no official Fragrantica ID is assigned until resolved.**
+- **Fragrantica Social Card is the project's reference source for the perfume data contained in the Social Card when available.**
+- **The Fragrantica perfume ID is the central Fragrantica linkage identifier for a matched perfume and its associated Fragrantica resources.**
 - The English Social Card convention `en-p_c_{FRAGRANTICA_ID}.jpeg` has been validated on a 10-perfume test with 10/10 success.
 
 ## Do Not Assume Yet
@@ -197,15 +222,21 @@ The following have **not** been decided yet:
 
 **Identify the original perfume represented by each Shobi Master record before collecting enrichment data.**
 
-The official flow is:
+The official result model is:
 
-`Shobi record → candidate original perfume → cross-verification → CONFIRMED Fragrantica ID or AMBIGUOUS`
+`Shobi record → candidate original perfume → cross-verification → identity_status → Fragrantica lookup/status`
 
-The first 10 Master records have been used as an initial validation sample. Do not force an ID when evidence is insufficient.
+Possible successful example:
+
+`identity_status = CONFIRMED`
+
+`fragrantica_status = NOT_FOUND`
+
+Do not force either perfume identity or a Fragrantica ID when evidence is insufficient.
 
 ## Next Step
 
-Continue validating the identification method and determine how to scale it across the Shobi Master while preserving the `CONFIRMED` / `AMBIGUOUS` rule.
+Continue validating/scaling the identification method across the Shobi Master while preserving the independent `identity_status` and `fragrantica_status` fields.
 
 Do not advance automatically into notes, gender, seasons, accords, Social Card extraction, database conversion, or other enrichment until perfume identity work is sufficiently established and the user explicitly decides to proceed.
 
