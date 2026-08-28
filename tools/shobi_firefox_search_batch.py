@@ -5,11 +5,13 @@ This is intentionally NOT an identity resolver:
 - reads Shobi Master rows;
 - opens Fragrantica search pages only;
 - never opens individual perfume pages;
+- uses one fresh temporary Firefox session per search;
 - collects candidate URLs/IDs in search-result order;
 - writes a separate intermediate CSV;
 - never modifies shobi-fragrantica-mapping.csv.
 
-Default test size: 10 rows not already present in the intermediate CSV.
+Default test size: 3 rows not already present in the intermediate CSV.
+If Fragrantica presents a human check, the batch stops immediately.
 """
 from __future__ import annotations
 
@@ -27,8 +29,9 @@ from urllib.parse import quote_plus
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "data" / "shobi-master-v1.csv"
 OUTPUT = ROOT / "data" / "fragrantica-search-candidates.csv"
-DEFAULT_LIMIT = 10
-DELAY_SECONDS = 7
+DEFAULT_LIMIT = 3
+BETWEEN_SEARCHES_SECONDS = 20
+PAGE_WAIT_SECONDS = 6
 MAX_CANDIDATES = 10
 
 PERFUME_RE = re.compile(r"https?://(?:www\.)?fragrantica\.com/perfume/[^/]+/[^/]+-(\d+)\.html", re.I)
@@ -70,8 +73,7 @@ def query_for(row: dict[str, str]) -> str:
     inspired = (row.get("inspired_by") or "").strip()
     if inspired and inspired.lower() not in BROKEN_INSPIRED:
         return inspired
-    name = (row.get("shobi_name") or "").strip()
-    return name
+    return (row.get("shobi_name") or "").strip()
 
 
 def existing_ids() -> set[str]:
@@ -101,7 +103,10 @@ def append_row(data: dict[str, str]) -> None:
 def challenge(driver) -> bool:
     title = (driver.title or "").lower()
     body = (driver.page_source or "")[:100000].lower()
-    markers = ("verify you are human", "checking your browser", "access denied", "ci siamo quasi", "captcha")
+    markers = (
+        "verify you are human", "checking your browser", "access denied",
+        "ci siamo quasi", "captcha",
+    )
     return any(x in title or x in body for x in markers)
 
 
@@ -121,10 +126,33 @@ def collect_links(driver) -> list[tuple[str, str]]:
     return links
 
 
+def search_one(profile: Path, query: str):
+    from selenium import webdriver
+    from selenium.webdriver.firefox.options import Options
+
+    temp_root = Path(tempfile.mkdtemp(prefix="shobi-fragrantica-"))
+    temp_profile = temp_root / "profile"
+    driver = None
+    try:
+        copy_profile(profile, temp_profile)
+        options = Options()
+        options.profile = str(temp_profile)
+        driver = webdriver.Firefox(options=options)
+        url = "https://www.fragrantica.com/search/?query=" + quote_plus(query)
+        driver.get(url)
+        time.sleep(PAGE_WAIT_SECONDS)
+        if challenge(driver):
+            return "CHALLENGE", []
+        return "OK", collect_links(driver)
+    finally:
+        if driver is not None:
+            driver.quit()
+        shutil.rmtree(temp_root, ignore_errors=True)
+
+
 def main() -> int:
     try:
-        from selenium import webdriver
-        from selenium.webdriver.firefox.options import Options
+        import selenium  # noqa: F401
     except ImportError:
         print("SELENIUM_MISSING")
         print("Run: python -m pip install selenium")
@@ -143,68 +171,55 @@ def main() -> int:
     print(f"Firefox profile found: {profile}")
     print(f"Rows to search: {len(rows)}")
     print(f"Output: {OUTPUT}")
+    print("Mode: one Firefox session per search")
 
-    temp_root = Path(tempfile.mkdtemp(prefix="shobi-fragrantica-"))
-    temp_profile = temp_root / "profile"
-    print("Copying Firefox profile to temporary directory...")
-    copy_profile(profile, temp_profile)
+    for n, row in enumerate(rows, 1):
+        pid = row.get("prestashop_product_id", "")
+        query = query_for(row)
+        print(f"\n[{n}/{len(rows)}] {pid} | {row.get('shobi_code','')} | {query}")
 
-    options = Options()
-    options.profile = str(temp_profile)
-    driver = None
-    try:
-        print("Launching Firefox...")
-        driver = webdriver.Firefox(options=options)
-        for n, row in enumerate(rows, 1):
-            pid = row.get("prestashop_product_id", "")
-            query = query_for(row)
-            print(f"\n[{n}/{len(rows)}] {pid} | {row.get('shobi_code','')} | {query}")
-            if not query:
+        if not query:
+            append_row({
+                "prestashop_product_id": pid, "shobi_code": row.get("shobi_code", ""),
+                "shobi_name": row.get("shobi_name", ""), "inspired_by": row.get("inspired_by", ""),
+                "search_query": "", "search_status": "NO_QUERY", "candidate_rank": "",
+                "fragrantica_id": "", "candidate_url": "",
+            })
+            print("NO_QUERY")
+            continue
+
+        print("Launching fresh Firefox session...")
+        status, links = search_one(profile, query)
+        print("Firefox session closed.")
+
+        if status == "CHALLENGE":
+            print("CHALLENGE_DETECTED - stopping batch")
+            return 3
+
+        print(f"Candidates found: {len(links)}")
+        if not links:
+            append_row({
+                "prestashop_product_id": pid, "shobi_code": row.get("shobi_code", ""),
+                "shobi_name": row.get("shobi_name", ""), "inspired_by": row.get("inspired_by", ""),
+                "search_query": query, "search_status": "NO_RESULTS", "candidate_rank": "",
+                "fragrantica_id": "", "candidate_url": "",
+            })
+        else:
+            for rank, (fid, href) in enumerate(links, 1):
+                print(f" {rank:2}. {fid} | {href}")
                 append_row({
                     "prestashop_product_id": pid, "shobi_code": row.get("shobi_code", ""),
                     "shobi_name": row.get("shobi_name", ""), "inspired_by": row.get("inspired_by", ""),
-                    "search_query": "", "search_status": "NO_QUERY", "candidate_rank": "",
-                    "fragrantica_id": "", "candidate_url": "",
+                    "search_query": query, "search_status": "FOUND", "candidate_rank": str(rank),
+                    "fragrantica_id": fid, "candidate_url": href,
                 })
-                print("NO_QUERY")
-                continue
 
-            url = "https://www.fragrantica.com/search/?query=" + quote_plus(query)
-            driver.get(url)
-            time.sleep(5)
-            if challenge(driver):
-                print("CHALLENGE_DETECTED - stopping batch")
-                return 3
+        if n < len(rows):
+            print(f"Waiting {BETWEEN_SEARCHES_SECONDS}s before next fresh session...")
+            time.sleep(BETWEEN_SEARCHES_SECONDS)
 
-            links = collect_links(driver)
-            print(f"Candidates found: {len(links)}")
-            if not links:
-                append_row({
-                    "prestashop_product_id": pid, "shobi_code": row.get("shobi_code", ""),
-                    "shobi_name": row.get("shobi_name", ""), "inspired_by": row.get("inspired_by", ""),
-                    "search_query": query, "search_status": "NO_RESULTS", "candidate_rank": "",
-                    "fragrantica_id": "", "candidate_url": "",
-                })
-            else:
-                for rank, (fid, href) in enumerate(links, 1):
-                    print(f" {rank:2}. {fid} | {href}")
-                    append_row({
-                        "prestashop_product_id": pid, "shobi_code": row.get("shobi_code", ""),
-                        "shobi_name": row.get("shobi_name", ""), "inspired_by": row.get("inspired_by", ""),
-                        "search_query": query, "search_status": "FOUND", "candidate_rank": str(rank),
-                        "fragrantica_id": fid, "candidate_url": href,
-                    })
-            if n < len(rows):
-                print(f"Waiting {DELAY_SECONDS}s before next search...")
-                time.sleep(DELAY_SECONDS)
-
-        print("\nRESULT: BATCH_COMPLETE")
-        return 0
-    finally:
-        if driver is not None:
-            print("Closing Firefox...")
-            driver.quit()
-        shutil.rmtree(temp_root, ignore_errors=True)
+    print("\nRESULT: BATCH_COMPLETE")
+    return 0
 
 
 if __name__ == "__main__":
