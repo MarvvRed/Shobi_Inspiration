@@ -16,10 +16,12 @@ The project should keep Shobi product data separate from perfume-reference/enric
 - Origin: cloned from `smellyCat-deep/shobi_inspiration` as an independent repository, not a GitHub fork.
 - Original-project attribution has been added to `README.md`.
 - Current application is a static frontend: HTML + CSS + JavaScript + JSON database.
+- Project datasets are stored under `data/`.
+- The authoritative Shobi Master currently lives at `data/shobi-master-v1.csv`.
 
 ## Current Repository Structure
 
-Main files currently identified: `index.html`, `script.js`, `style.css`, `database_complete.json`, `README.md`, `LICENSE`, and `PROJECT_MEMORY.md`.
+Main files currently identified: `index.html`, `script.js`, `style.css`, `database_complete.json`, `README.md`, `LICENSE`, `PROJECT_MEMORY.md`, and the `data/` directory.
 
 There is currently no backend required by the cloned application.
 
@@ -40,11 +42,43 @@ The existing records include data such as Shobi/product code, inspired-by perfum
 
 ## Shobi Master
 
-A separate **Shobi Master** dataset exists and is intended to become the authoritative source for the Shobi catalog rather than relying on the cloned repository's product list.
+The authoritative Shobi catalog dataset is stored at `data/shobi-master-v1.csv` and contains **2,343 Shobi products**.
 
-Previously established characteristics include approximately **2,343 products** and fields such as `prestashop_product_id`, `shobi_code`, `shobi_name`, `inspired_by`, `category`, `official_description`, `price_text`, `url`, and `signature_href`.
+Important fields include `prestashop_product_id`, `shobi_code`, `shobi_name`, `reference`, `reference_prefix`, `inspired_by`, `category`, `official_description`, `url`, and provenance/status fields.
 
-The Shobi Master has **not yet been substituted into this repository**.
+The records are currently ordered by `prestashop_product_id` descending. The PrestaShop product ID is treated as a product identifier, not as a perfume property or ranking.
+
+The Shobi Master has not yet replaced `database_complete.json`; catalog identity/mapping work is being completed first.
+
+## Official Perfume Identification Logic
+
+The first priority is to identify **which original perfume each Shobi Master record refers to with the highest possible certainty**. Enrichment fields such as main notes, gender, season, accords, longevity, sillage, etc. come only after identity has been established.
+
+Official identification flow:
+
+**Shobi record → candidate original perfume → cross-verification → Fragrantica perfume ID**
+
+A Fragrantica ID must **not** be assigned merely because a perfume name looks similar or because it is the first search result.
+
+Evidence used for identification should include, where available:
+
+1. `inspired_by` — the perfume name declared by Shobi.
+2. Shobi code/prefix — often provides a strong clue to the original brand (for example `NISH`, `LEL`, `LUS`, etc.).
+3. `official_description` — provides an independent olfactory/profile check against the candidate.
+4. Candidate Fragrantica page — perfume name, brand and relevant characteristics must be compatible with the Shobi evidence.
+
+### Identification status rule
+
+- `CONFIRMED` — evidence is sufficiently concordant to identify the original perfume unambiguously; the Fragrantica ID may be assigned.
+- `AMBIGUOUS` — multiple candidates remain plausible or evidence is insufficient; **no Fragrantica ID is assigned** until the ambiguity is resolved.
+
+The project explicitly prefers fewer verified matches over forcing all 2,343 records to have an ID. A wrong confident association is worse than an unresolved record.
+
+### Initial identification test
+
+The method was tested on the first 10 Shobi Master records (`prestashop_product_id` 5117 through 5108). All 10 could be identified without substantial ambiguity using the combined evidence available in the Master and the corresponding Fragrantica candidate.
+
+This 10/10 result is an encouraging validation sample, not proof that all 2,343 records will be automatically resolvable. Ambiguous records must remain explicitly unresolved.
 
 ## Source Strategy
 
@@ -121,10 +155,14 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - Existing enrichment fields identified.
 - Initial international source candidates identified.
 - Persistent project memory introduced.
+- `data/` directory created for project datasets.
+- Shobi Master placed at `data/shobi-master-v1.csv` as the authoritative Shobi catalog dataset.
 - Fragrantica Social Card examined and selected as the reference source for the perfume data contained in it.
 - Fragrantica perfume ID identified as the common linkage between a perfume and associated Fragrantica resources.
 - Vanilla | 28 (`52616`) confirmed across page, thumbnail/image resource and Social Card.
 - Fragrantica page-ID → English Social Card relationship validated successfully on 10/10 additional perfume examples.
+- Official Shobi → original perfume identification logic defined.
+- Initial identification method tested on the first 10 Shobi Master records with 10/10 resolvable matches.
 
 ## Decisions Made
 
@@ -132,6 +170,11 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - The project will be English-language and international.
 - GitHub/project files act as persistent project memory rather than relying solely on one ChatGPT conversation.
 - `PROJECT_MEMORY.md` is the current project handoff/state document.
+- `data/shobi-master-v1.csv` is the authoritative Shobi Master dataset for the current project.
+- **Perfume identity must be established before enrichment data is collected.**
+- **No Fragrantica ID may be assigned solely from name similarity or a first-result match.**
+- **Identification uses cross-verification of Shobi evidence and the Fragrantica candidate.**
+- **Unresolved or genuinely ambiguous records remain `AMBIGUOUS` with no assigned Fragrantica ID.**
 - **Fragrantica Social Card is the project's reference source for the perfume data contained in the Social Card.**
 - **The Fragrantica perfume ID is the central Fragrantica linkage identifier for a matched perfume and its associated resources.**
 - The English Social Card convention `en-p_c_{FRAGRANTICA_ID}.jpeg` has been validated on a 10-perfume test with 10/10 success.
@@ -144,23 +187,27 @@ The following have **not** been decided yet:
 - Basenotes' future role as a source.
 - Exact source priority rules outside the confirmed Social Card decision.
 - Exact replacement strategy for `database_complete.json`.
-- Exact mapping between Shobi Master and existing enriched records.
 - Which enrichment fields will ultimately be retained outside the confirmed Social Card source decision.
 - Whether existing enrichment data will be reused, replaced, or independently verified.
 - Whether raw Fragrantica vote counts will be stored.
 - How Social Card data will technically be extracted or imported.
+- What proportion of all 2,343 Shobi records can ultimately be confirmed automatically versus requiring manual review.
 
 ## Current Step
 
-**Continue evaluating and defining perfume-data sources step by step.**
+**Identify the original perfume represented by each Shobi Master record before collecting enrichment data.**
 
-Confirmed so far: Fragrantica Social Card is the reference source for the perfume data it contains; more importantly, the **Fragrantica perfume ID is the central identifier linking a matched perfume to its associated Fragrantica resources**. The page-ID → English Social Card relationship has passed a 10/10 validation test.
+The official flow is:
 
-Do not advance automatically into scraping, database conversion, workflows, or implementation until those decisions are explicitly made with the user.
+`Shobi record → candidate original perfume → cross-verification → CONFIRMED Fragrantica ID or AMBIGUOUS`
+
+The first 10 Master records have been used as an initial validation sample. Do not force an ID when evidence is insufficient.
 
 ## Next Step
 
-Continue from the user's next source/data question without assuming implementation details.
+Continue validating the identification method and determine how to scale it across the Shobi Master while preserving the `CONFIRMED` / `AMBIGUOUS` rule.
+
+Do not advance automatically into notes, gender, seasons, accords, Social Card extraction, database conversion, or other enrichment until perfume identity work is sufficiently established and the user explicitly decides to proceed.
 
 ---
 
