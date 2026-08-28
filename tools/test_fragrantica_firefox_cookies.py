@@ -1,47 +1,32 @@
 #!/usr/bin/env python3
-"""Local-only test: reuse Firefox cookies for a normal HTTP Fragrantica search.
+"""Inspect Fragrantica search HTML using the user's local Firefox cookies.
 
-Reads Fragrantica cookies from the user's local Firefox profile, performs one
-search request, then ranks perfume URLs by relevance to the query. Cookie names
-and values are never printed or written to disk.
+Goal: identify the actual search-result block/order instead of ranking every
+perfume link found anywhere in the page. Cookie names/values are never printed
+or written to disk.
 """
 from __future__ import annotations
 
+import html
 import re
 import sys
-from difflib import SequenceMatcher
-from urllib.parse import quote_plus, unquote
+from urllib.parse import quote_plus
 
 TERM = " ".join(sys.argv[1:]).strip() or "Cheirosa 39 Sol de Janeiro"
-STOP = {"de", "del", "della", "di", "da", "do", "dos", "the", "of", "for", "and", "e", "le", "la", "les"}
+TARGET_WORDS = [w.lower() for w in re.findall(r"[A-Za-z0-9]+", TERM) if len(w) > 1]
 
 
-def norm(s: str) -> str:
-    s = unquote(s).lower().replace("-", " ").replace("_", " ")
-    s = re.sub(r"[^a-z0-9à-ÿ]+", " ", s)
-    return " ".join(s.split())
-
-
-def tokens(s: str) -> list[str]:
-    return [t for t in norm(s).split() if t not in STOP and len(t) > 1]
-
-
-def label_from_url(url: str) -> str:
-    m = re.search(r"/perfume/([^/]+)/([^/]+?)-\d+\.html", url, flags=re.I)
-    if not m:
-        return ""
-    return norm(m.group(1) + " " + m.group(2))
-
-
-def score_url(url: str, query: str) -> tuple[float, int, float]:
-    label = label_from_url(url)
-    q_tokens = tokens(query)
-    l_tokens = set(tokens(label))
-    overlap = sum(1 for t in q_tokens if t in l_tokens)
-    coverage = overlap / max(1, len(q_tokens))
-    seq = SequenceMatcher(None, norm(query), label).ratio()
-    score = coverage * 100 + seq * 25
-    return score, overlap, seq
+def perfume_links(fragment: str) -> list[str]:
+    out: list[str] = []
+    for href in re.findall(r'href=["\']([^"\']+)["\']', fragment, flags=re.I):
+        href = html.unescape(href)
+        if re.search(r"/perfume/[^/]+/[^/]+-\d+\.html", href, flags=re.I):
+            if href.startswith("/"):
+                href = "https://www.fragrantica.com" + href
+            href = href.split("#", 1)[0].split("?", 1)[0]
+            if href not in out:
+                out.append(href)
+    return out
 
 
 def main() -> int:
@@ -50,7 +35,6 @@ def main() -> int:
         import requests
     except ImportError:
         print("MISSING_DEPENDENCIES")
-        print("Run: python -m pip install browser-cookie3 requests")
         return 2
 
     try:
@@ -59,12 +43,7 @@ def main() -> int:
         print(f"COOKIE_LOAD_ERROR: {type(exc).__name__}: {exc}")
         return 3
 
-    cookie_count = sum(1 for _ in jar)
-    print(f"Loaded Fragrantica cookies from Firefox: {cookie_count}")
-    if cookie_count == 0:
-        print("RESULT: NO_FRAGRANTICA_COOKIES")
-        return 4
-
+    print(f"Loaded Fragrantica cookies from Firefox: {sum(1 for _ in jar)}")
     session = requests.Session()
     session.cookies.update(jar)
     session.headers.update({
@@ -85,41 +64,73 @@ def main() -> int:
     print(f"HTTP status: {response.status_code}")
     text = response.text
     lowered = text[:50000].lower()
-
     if response.status_code in (401, 403, 429):
         print("RESULT: BLOCKED")
         return 6
-    if any(marker in lowered for marker in ("verify you are human", "checking your browser", "access denied", "ci siamo quasi", "captcha")):
+    if any(x in lowered for x in ("verify you are human", "checking your browser", "access denied", "ci siamo quasi", "captcha")):
         print("RESULT: CHALLENGE_DETECTED")
         return 7
 
-    links: list[str] = []
-    for href in re.findall(r'href=["\']([^"\']+)["\']', text, flags=re.I):
-        if re.search(r"/perfume/[^/]+/[^/]+-\d+\.html", href, flags=re.I):
-            if href.startswith("/"):
-                href = "https://www.fragrantica.com" + href
-            href = href.split("#", 1)[0].split("?", 1)[0]
-            if href not in links:
-                links.append(href)
+    all_links = perfume_links(text)
+    print(f"All perfume links in HTML: {len(all_links)}")
 
-    print(f"All perfume links in HTML: {len(links)}")
-    ranked = sorted(((score_url(link, TERM), link) for link in links), reverse=True)
+    # Locate occurrences of query-specific terms and inspect their nearest HTML
+    # containers. This lets us discover Fragrantica's actual result markup from
+    # the returned page rather than guessing from global links.
+    low = text.lower()
+    anchors: list[int] = []
+    for needle in (TERM.lower(), "cheirosa", "sol-de-janeiro", "56681"):
+        start = 0
+        while True:
+            pos = low.find(needle, start)
+            if pos < 0:
+                break
+            anchors.append(pos)
+            start = pos + len(needle)
+    anchors = sorted(set(anchors))
+    print(f"Query-related HTML occurrences: {len(anchors)}")
 
-    print("Top ranked candidates:")
-    for i, ((score, overlap, seq), link) in enumerate(ranked[:10], 1):
-        print(f"{i:2}. score={score:6.2f} overlap={overlap} seq={seq:.3f}  {link}")
+    candidates: list[tuple[int, int, list[str]]] = []
+    # Inspect windows of increasing size around each query occurrence. A real
+    # search-results block should contain Cheirosa 39 and nearby related links,
+    # while excluding the hundreds of global navigation/catalog links.
+    for pos in anchors:
+        for radius in (1500, 3000, 6000, 12000):
+            frag = text[max(0, pos-radius): min(len(text), pos+radius)]
+            links = perfume_links(frag)
+            if not links:
+                continue
+            joined = " ".join(links).lower()
+            relevance = sum(1 for w in TARGET_WORDS if w in joined)
+            if "cheirosa-39-56681.html" in joined:
+                relevance += 10
+            candidates.append((relevance, len(links), links))
 
-    if not ranked:
-        print("RESULT: PAGE_OPENED_BUT_NO_PERFUME_LINKS")
+    # Prefer a compact fragment containing the known query result, not a huge
+    # page-wide fragment. This is diagnostic only; no mapping is written.
+    candidates.sort(key=lambda x: (-x[0], x[1]))
+    seen: set[tuple[str, ...]] = set()
+    shown = 0
+    print("Candidate result fragments:")
+    for relevance, count, links in candidates:
+        key = tuple(links)
+        if key in seen:
+            continue
+        seen.add(key)
+        if not any("Cheirosa-39-56681.html" in x for x in links):
+            continue
+        shown += 1
+        print(f"\nFRAGMENT {shown}: relevance={relevance} perfume_links={count}")
+        for i, link in enumerate(links[:15], 1):
+            print(f" {i:2}. {link}")
+        if shown >= 5:
+            break
+
+    if shown == 0:
+        print("RESULT: TARGET_NOT_FOUND_IN_HTTP_HTML")
         return 8
 
-    top_score, top_link = ranked[0][0][0], ranked[0][1]
-    second_score = ranked[1][0][0] if len(ranked) > 1 else 0.0
-    gap = top_score - second_score
-    print(f"TOP_CANDIDATE: {top_link}")
-    print(f"TOP_SCORE: {top_score:.2f}")
-    print(f"GAP_TO_SECOND: {gap:.2f}")
-    print("RESULT: OK")
+    print("RESULT: STRUCTURE_CAPTURED")
     return 0
 
 
