@@ -12,6 +12,9 @@ on:
         required: false
         default: false
         type: boolean
+  push:
+    paths:
+      - ".github/shobi-run-trigger"
   schedule:
     - cron: "17 * * * *"
 
