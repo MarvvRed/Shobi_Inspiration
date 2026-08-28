@@ -1,20 +1,47 @@
 #!/usr/bin/env python3
 """Local-only test: reuse Firefox cookies for a normal HTTP Fragrantica search.
 
-Safety properties:
-- reads cookies only from the user's local Firefox profile;
-- never prints cookie names or values;
-- never writes cookies to disk or GitHub;
-- performs one GET request to a Fragrantica search URL;
-- stops if Fragrantica returns a block/challenge response.
+Reads Fragrantica cookies from the user's local Firefox profile, performs one
+search request, then ranks perfume URLs by relevance to the query. Cookie names
+and values are never printed or written to disk.
 """
 from __future__ import annotations
 
 import re
 import sys
-from urllib.parse import quote_plus
+from difflib import SequenceMatcher
+from urllib.parse import quote_plus, unquote
 
 TERM = " ".join(sys.argv[1:]).strip() or "Cheirosa 39 Sol de Janeiro"
+STOP = {"de", "del", "della", "di", "da", "do", "dos", "the", "of", "for", "and", "e", "le", "la", "les"}
+
+
+def norm(s: str) -> str:
+    s = unquote(s).lower().replace("-", " ").replace("_", " ")
+    s = re.sub(r"[^a-z0-9à-ÿ]+", " ", s)
+    return " ".join(s.split())
+
+
+def tokens(s: str) -> list[str]:
+    return [t for t in norm(s).split() if t not in STOP and len(t) > 1]
+
+
+def label_from_url(url: str) -> str:
+    m = re.search(r"/perfume/([^/]+)/([^/]+?)-\d+\.html", url, flags=re.I)
+    if not m:
+        return ""
+    return norm(m.group(1) + " " + m.group(2))
+
+
+def score_url(url: str, query: str) -> tuple[float, int, float]:
+    label = label_from_url(url)
+    q_tokens = tokens(query)
+    l_tokens = set(tokens(label))
+    overlap = sum(1 for t in q_tokens if t in l_tokens)
+    coverage = overlap / max(1, len(q_tokens))
+    seq = SequenceMatcher(None, norm(query), label).ratio()
+    score = coverage * 100 + seq * 25
+    return score, overlap, seq
 
 
 def main() -> int:
@@ -47,6 +74,7 @@ def main() -> int:
     })
 
     url = "https://www.fragrantica.com/search/?query=" + quote_plus(TERM)
+    print(f"Query: {TERM}")
     print(f"Opening: {url}")
     try:
         response = session.get(url, timeout=25, allow_redirects=True)
@@ -55,7 +83,6 @@ def main() -> int:
         return 5
 
     print(f"HTTP status: {response.status_code}")
-    print(f"Final URL: {response.url}")
     text = response.text
     lowered = text[:50000].lower()
 
@@ -66,24 +93,34 @@ def main() -> int:
         print("RESULT: CHALLENGE_DETECTED")
         return 7
 
-    links = []
+    links: list[str] = []
     for href in re.findall(r'href=["\']([^"\']+)["\']', text, flags=re.I):
         if re.search(r"/perfume/[^/]+/[^/]+-\d+\.html", href, flags=re.I):
             if href.startswith("/"):
                 href = "https://www.fragrantica.com" + href
+            href = href.split("#", 1)[0].split("?", 1)[0]
             if href not in links:
                 links.append(href)
 
-    print(f"Perfume links found: {len(links)}")
-    for link in links[:10]:
-        print(link)
+    print(f"All perfume links in HTML: {len(links)}")
+    ranked = sorted(((score_url(link, TERM), link) for link in links), reverse=True)
 
-    if links:
-        print("RESULT: OK")
-        return 0
+    print("Top ranked candidates:")
+    for i, ((score, overlap, seq), link) in enumerate(ranked[:10], 1):
+        print(f"{i:2}. score={score:6.2f} overlap={overlap} seq={seq:.3f}  {link}")
 
-    print("RESULT: PAGE_OPENED_BUT_NO_PERFUME_LINKS")
-    return 8
+    if not ranked:
+        print("RESULT: PAGE_OPENED_BUT_NO_PERFUME_LINKS")
+        return 8
+
+    top_score, top_link = ranked[0][0][0], ranked[0][1]
+    second_score = ranked[1][0][0] if len(ranked) > 1 else 0.0
+    gap = top_score - second_score
+    print(f"TOP_CANDIDATE: {top_link}")
+    print(f"TOP_SCORE: {top_score:.2f}")
+    print(f"GAP_TO_SECOND: {gap:.2f}")
+    print("RESULT: OK")
+    return 0
 
 
 if __name__ == "__main__":
