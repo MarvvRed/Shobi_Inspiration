@@ -4,6 +4,14 @@ A feature-rich, single-page web application designed to help users explore and f
 
 This application is built with vanilla JavaScript, Tailwind CSS, and several powerful libraries to provide a fast, beautiful, and user-friendly experience. It loads all its data from the external `parfumer_beriget_ai.json` file.
 
+## Credits
+
+This repository is based on the original **Shobi Inspiration** project by [smellyCat-deep](https://github.com/smellyCat-deep).
+
+Original repository: [smellyCat-deep/shobi_inspiration](https://github.com/smellyCat-deep/shobi_inspiration)
+
+This repository is an independent copy maintained and modified by **MarvvRed**.
+
 ## Features
 
 * **Dynamic Data Loading:** All perfume data is loaded asynchronously from a local JSON file, making it easy to update the collection.
