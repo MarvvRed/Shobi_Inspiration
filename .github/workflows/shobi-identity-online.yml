@@ -51,6 +51,8 @@ jobs:
         env:
           MANUAL_LIMIT: ${{ github.event.inputs.limit }}
           RETRY_ERRORS: ${{ github.event.inputs.retry_errors }}
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+          JINA_SEARCH_API_KEY: ${{ secrets.JINA_SEARCH_API_KEY }}
         run: |
           set -euo pipefail
           LIMIT="${MANUAL_LIMIT:-5}"
