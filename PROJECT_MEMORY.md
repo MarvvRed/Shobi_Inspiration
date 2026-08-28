@@ -38,35 +38,14 @@ There is currently no backend required by the cloned application.
 - **303 brands**
 - **2,091 perfumes**
 
-The existing records include data such as:
-
-- Shobi/product code
-- inspired-by perfume
-- brand
-- category
-- description
-- scent type
-- olfactory family
-- top / heart / base notes
-- main accords
-- occasions
-- seasons
-- gender affinity
-- sillage
-- longevity
-- scent rating
-- external reference link
+The existing records include data such as Shobi/product code, inspired-by perfume, brand, category, description, scent type, olfactory family, notes, main accords, occasions, seasons, gender affinity, sillage, longevity, scent rating, and external reference link.
 
 ### Known Database Issues / Questions
 
 - The provenance of many enrichment fields has **not yet been proven**.
 - Many records contain Parfumo links, suggesting Parfumo was used as a reference, but this does not prove every field originated from Parfumo.
-- All 2,091 records were found with `reviewCount = 0`, despite populated rating values. This makes the rating provenance particularly questionable and requires verification.
-- Four duplicate code values were identified during analysis:
-  - `-AL HAR`
-  - `677-GUC`
-  - `937-VAL`
-  - `1868-VER`
+- All 2,091 records were found with `reviewCount = 0`, despite populated rating values.
+- Four duplicate code values were identified: `-AL HAR`, `677-GUC`, `937-VAL`, `1868-VER`.
 - One perfume (`924-TMU`, `INNOCENT (ANGEL)`) was identified without populated `mainAccords`.
 - Some records have missing external links/category values.
 
@@ -74,17 +53,7 @@ The existing records include data such as:
 
 A separate **Shobi Master** dataset exists and is intended to become the authoritative source for the Shobi catalog rather than relying on the cloned repository's product list.
 
-Previously established characteristics of the Shobi Master include approximately **2,343 products** and fields such as:
-
-- `prestashop_product_id`
-- `shobi_code`
-- `shobi_name`
-- `inspired_by`
-- `category`
-- `official_description`
-- `price_text`
-- `url`
-- `signature_href`
+Previously established characteristics include approximately **2,343 products** and fields such as `prestashop_product_id`, `shobi_code`, `shobi_name`, `inspired_by`, `category`, `official_description`, `price_text`, `url`, and `signature_href`.
 
 The Shobi Master has **not yet been substituted into this repository**.
 
@@ -96,25 +65,41 @@ The Shobi Master has **not yet been substituted into this repository**.
 
 This is a project source decision. It does not mean that Fragrantica's community-derived information is official manufacturer data.
 
-The Social Card was examined using Kayali Vanilla | 28 as an example. Fragrantica's related perfume views show community-based perfume information and a concise visual summary suitable for quickly understanding a fragrance.
+No decision has been made about storing raw vote counts or about implementation/extraction methodology.
 
-Do not infer additional requirements from this decision. In particular, no decision has yet been made here about storing raw vote counts or about implementation/extraction methodology.
+### Fragrantica ID linkage — validated
 
-### Fragrantica ID linkage
+Fragrantica assigns a numeric perfume ID which is embedded in the perfume page URL and is also used by associated Social Card resources.
 
-A useful Fragrantica resource relationship has been identified using Kayali Vanilla | 28 as the confirmed example.
+Initial example:
 
-The perfume has Fragrantica ID **`52616`**, and that same numeric ID appears across related resources:
+- Kayali Vanilla | 28 → ID `52616`
+- Perfume page → `Vanilla-28-52616.html`
+- Thumbnail/image example → `dark-m.52616.avif`
+- Social Card → `en-p_c_52616.jpeg`
 
-- Perfume page: `Vanilla-28-52616.html`
-- Perfume thumbnail/image resource: `dark-m.52616.avif`
-- Social Card: `en-p_c_52616.jpeg`
+The **page-ID → Social-Card-ID relationship was subsequently tested on 10 different perfumes and succeeded 10/10**:
 
-This means the Fragrantica perfume ID can serve as a common linkage key between the perfume page and its associated image/Social Card resources when the same convention applies.
+| Perfume | Fragrantica ID | Social Card with same ID |
+| --- | ---: | --- |
+| Dior Sauvage | `31861` | confirmed |
+| Bleu de Chanel | `9099` | confirmed |
+| YSL Black Opium | `25324` | confirmed |
+| Baccarat Rouge 540 | `33519` | confirmed |
+| Creed Aventus | `9828` | confirmed |
+| La Vie Est Belle | `14982` | confirmed |
+| Acqua di Giò | `410` | confirmed |
+| Tom Ford Lost Cherry | `51411` | confirmed |
+| Carolina Herrera Good Girl | `39681` | confirmed |
+| Terre d'Hermès | `17` | confirmed |
 
-For the project, retaining the **Fragrantica perfume ID** alongside a matched perfume is therefore potentially very useful and can simplify association of Fragrantica resources.
+Validated Social Card pattern:
 
-The `52616` relationship is confirmed for the Vanilla | 28 example. Do not assume every Fragrantica image variant follows exactly the same filename convention without verification.
+`https://fimgs.net/mdimg/perfume-social-cards/en-p_c_{FRAGRANTICA_ID}.jpeg`
+
+This 10/10 test strongly supports treating the **Fragrantica perfume ID as the linkage key for locating the English Social Card** of a matched perfume. It does not constitute proof that every historical/current Fragrantica perfume necessarily has every possible image resource.
+
+The thumbnail filename convention should still be treated separately from the now-tested Social Card convention unless independently validated across a wider sample.
 
 ### Other sources still under consideration
 
@@ -123,7 +108,7 @@ The `52616` relationship is confirmed for the Vanilla | 28 example. Do not assum
 - Official perfume-brand websites where appropriate
 - Shobi itself for Shobi-specific product/catalog information
 
-Important requirement: the finished project is intended to be **completely in English** and aimed at an **international audience**, so source selection should not depend on Italian-only websites.
+The finished project is intended to be **completely in English** and aimed at an **international audience**.
 
 ## Important Architectural Principle
 
@@ -139,21 +124,21 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - Existing `database_complete.json` inspected and counted.
 - Basic database quality checks performed.
 - Existing enrichment fields identified.
-- Question raised about whether the enrichment data is actually sourced from Parfumo or generated/derived.
 - Initial international source candidates identified.
-- Decision made to introduce persistent project memory in the repository.
-- Fragrantica Social Card examined as a perfume-summary source.
-- Fragrantica Social Card selected as the reference source for the perfume data contained in that card.
-- Fragrantica perfume ID linkage between page, thumbnail/image resource, and Social Card identified using Vanilla | 28 (`52616`) as the confirmed example.
+- Persistent project memory introduced.
+- Fragrantica Social Card examined and selected as the reference source for the perfume data contained in it.
+- Fragrantica perfume ID linkage identified with Vanilla | 28 (`52616`).
+- **Fragrantica page-ID → English Social Card relationship validated successfully on 10/10 additional perfume examples.**
 
 ## Decisions Made
 
 - Work should proceed **step by step**, without jumping ahead into implementation before the current question/decision is settled.
 - The project will be English-language and international.
-- GitHub/project files should act as persistent project memory rather than relying solely on one ChatGPT conversation retaining every detail.
-- `PROJECT_MEMORY.md` should be maintained as the current project handoff/state document.
+- GitHub/project files act as persistent project memory rather than relying solely on one ChatGPT conversation.
+- `PROJECT_MEMORY.md` is the current project handoff/state document.
 - **Fragrantica Social Card is the project's reference source for the perfume data contained in the Social Card.**
-- The **Fragrantica perfume ID** should be treated as an important linkage identifier for matched Fragrantica resources, subject to verifying filename conventions across more perfumes.
+- The **Fragrantica perfume ID is an important linkage identifier**.
+- The English Social Card pattern `en-p_c_{FRAGRANTICA_ID}.jpeg` has been validated on a 10-perfume test with 10/10 success.
 
 ## Do Not Assume Yet
 
@@ -173,7 +158,7 @@ The following have **not** been decided yet:
 
 **Continue evaluating and defining perfume-data sources step by step.**
 
-Confirmed so far: Fragrantica Social Card is the reference source for the perfume data it contains, and Fragrantica's perfume ID provides a useful common identifier for associated resources.
+Confirmed so far: Fragrantica Social Card is the reference source for the perfume data it contains, and the Fragrantica perfume ID → English Social Card relationship has passed a 10/10 validation test.
 
 Do not advance automatically into scraping, database conversion, workflows, or implementation until those decisions are explicitly made with the user.
 
