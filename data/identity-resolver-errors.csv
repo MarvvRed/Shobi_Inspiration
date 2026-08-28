@@ -1,28 +1,21 @@
 prestashop_product_id,shobi_code,attempts,last_error,last_error_utc
-4654,2698-SOL,3,"RuntimeError: resolver exit 1: Traceback (most recent call last):
-  File ""/home/runner/work/Shobi_Inspiration/Shobi_Inspiration/tools/shobi_fragrantica_direct_resolver.py"", line 83, in <module>
+4651,2691-SOL,3,"RuntimeError: resolver exit 1: Traceback (most recent call last):
+  File ""C:\shobi_inspiration\tools\shobi_fragrantica_direct_resolver.py"", line 83, in <module>
     main()
-  File ""/home/runner/work/Shobi_Inspiration/Shobi_Inspiration/tools/shobi_fragrantica_direct_resolver.py"", line 79, in main
+    ~~~~^^
+  File ""C:\shobi_inspiration\tools\shobi_fragrantica_direct_resolver.py"", line 79, in main
     print(json.dumps(base.resolve(row), ensure_ascii=False))
-                     ^^^^^^^^^^^^^^^^^
-  File ""/home/runner/work/Shobi_Inspiration/Shobi_Inspiration/tools/shobi_online_resolver.py"", line 268, in resolve
+                     ~~~~~~~~~~~~^^^^^
+  File ""C:\shobi_inspiration\tools\shobi_online_resolver.py"", line 268, in resolve
     raise RuntimeError(""no Fragrantica candidates returned by search providers; "" + ""; "".join(errors[-5:]))
-RuntimeError: no Fragrantica candidates returned by search providers; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden",2026-08-28T21:12:47+00:00
-4653,2692-SOL,3,"RuntimeError: resolver exit 1: Traceback (most recent call last):
-  File ""/home/runner/work/Shobi_Inspiration/Shobi_Inspiration/tools/shobi_fragrantica_direct_resolver.py"", line 83, in <module>
+RuntimeError: no Fragrantica candidates returned by search providers; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden",2026-08-28T21:26:27+00:00
+4650,2700-BLG,3,"RuntimeError: resolver exit 1: Traceback (most recent call last):
+  File ""C:\shobi_inspiration\tools\shobi_fragrantica_direct_resolver.py"", line 83, in <module>
     main()
-  File ""/home/runner/work/Shobi_Inspiration/Shobi_Inspiration/tools/shobi_fragrantica_direct_resolver.py"", line 79, in main
+    ~~~~^^
+  File ""C:\shobi_inspiration\tools\shobi_fragrantica_direct_resolver.py"", line 79, in main
     print(json.dumps(base.resolve(row), ensure_ascii=False))
-                     ^^^^^^^^^^^^^^^^^
-  File ""/home/runner/work/Shobi_Inspiration/Shobi_Inspiration/tools/shobi_online_resolver.py"", line 268, in resolve
+                     ~~~~~~~~~~~~^^^^^
+  File ""C:\shobi_inspiration\tools\shobi_online_resolver.py"", line 268, in resolve
     raise RuntimeError(""no Fragrantica candidates returned by search providers; "" + ""; "".join(errors[-5:]))
-RuntimeError: no Fragrantica candidates returned by search providers; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden",2026-08-28T21:13:38+00:00
-4652,2693-SOL,3,"RuntimeError: resolver exit 1: Traceback (most recent call last):
-  File ""/home/runner/work/Shobi_Inspiration/Shobi_Inspiration/tools/shobi_fragrantica_direct_resolver.py"", line 83, in <module>
-    main()
-  File ""/home/runner/work/Shobi_Inspiration/Shobi_Inspiration/tools/shobi_fragrantica_direct_resolver.py"", line 79, in main
-    print(json.dumps(base.resolve(row), ensure_ascii=False))
-                     ^^^^^^^^^^^^^^^^^
-  File ""/home/runner/work/Shobi_Inspiration/Shobi_Inspiration/tools/shobi_online_resolver.py"", line 268, in resolve
-    raise RuntimeError(""no Fragrantica candidates returned by search providers; "" + ""; "".join(errors[-5:]))
-RuntimeError: no Fragrantica candidates returned by search providers; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden",2026-08-28T21:14:29+00:00
+RuntimeError: no Fragrantica candidates returned by search providers; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden; fragrantica-direct: HTTPError: HTTP Error 403: Forbidden",2026-08-28T21:27:19+00:00
