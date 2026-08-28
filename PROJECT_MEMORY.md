@@ -100,6 +100,22 @@ The Social Card was examined using Kayali Vanilla | 28 as an example. Fragrantic
 
 Do not infer additional requirements from this decision. In particular, no decision has yet been made here about storing raw vote counts or about implementation/extraction methodology.
 
+### Fragrantica ID linkage
+
+A useful Fragrantica resource relationship has been identified using Kayali Vanilla | 28 as the confirmed example.
+
+The perfume has Fragrantica ID **`52616`**, and that same numeric ID appears across related resources:
+
+- Perfume page: `Vanilla-28-52616.html`
+- Perfume thumbnail/image resource: `dark-m.52616.avif`
+- Social Card: `en-p_c_52616.jpeg`
+
+This means the Fragrantica perfume ID can serve as a common linkage key between the perfume page and its associated image/Social Card resources when the same convention applies.
+
+For the project, retaining the **Fragrantica perfume ID** alongside a matched perfume is therefore potentially very useful and can simplify association of Fragrantica resources.
+
+The `52616` relationship is confirmed for the Vanilla | 28 example. Do not assume every Fragrantica image variant follows exactly the same filename convention without verification.
+
 ### Other sources still under consideration
 
 - Parfumo
@@ -128,6 +144,7 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - Decision made to introduce persistent project memory in the repository.
 - Fragrantica Social Card examined as a perfume-summary source.
 - Fragrantica Social Card selected as the reference source for the perfume data contained in that card.
+- Fragrantica perfume ID linkage between page, thumbnail/image resource, and Social Card identified using Vanilla | 28 (`52616`) as the confirmed example.
 
 ## Decisions Made
 
@@ -136,6 +153,7 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - GitHub/project files should act as persistent project memory rather than relying solely on one ChatGPT conversation retaining every detail.
 - `PROJECT_MEMORY.md` should be maintained as the current project handoff/state document.
 - **Fragrantica Social Card is the project's reference source for the perfume data contained in the Social Card.**
+- The **Fragrantica perfume ID** should be treated as an important linkage identifier for matched Fragrantica resources, subject to verifying filename conventions across more perfumes.
 
 ## Do Not Assume Yet
 
@@ -155,7 +173,7 @@ The following have **not** been decided yet:
 
 **Continue evaluating and defining perfume-data sources step by step.**
 
-Confirmed so far: Fragrantica Social Card is the reference source for the perfume data it contains.
+Confirmed so far: Fragrantica Social Card is the reference source for the perfume data it contains, and Fragrantica's perfume ID provides a useful common identifier for associated resources.
 
 Do not advance automatically into scraping, database conversion, workflows, or implementation until those decisions are explicitly made with the user.
 
