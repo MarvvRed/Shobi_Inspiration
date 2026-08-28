@@ -19,24 +19,13 @@ The project should keep Shobi product data separate from perfume-reference/enric
 
 ## Current Repository Structure
 
-Main files currently identified:
-
-- `index.html`
-- `script.js`
-- `style.css`
-- `database_complete.json`
-- `README.md`
-- `LICENSE`
-- `PROJECT_MEMORY.md` — this file
+Main files currently identified: `index.html`, `script.js`, `style.css`, `database_complete.json`, `README.md`, `LICENSE`, and `PROJECT_MEMORY.md`.
 
 There is currently no backend required by the cloned application.
 
 ## Current Database
 
-`database_complete.json` currently contains:
-
-- **303 brands**
-- **2,091 perfumes**
+`database_complete.json` currently contains **303 brands** and **2,091 perfumes**.
 
 The existing records include data such as Shobi/product code, inspired-by perfume, brand, category, description, scent type, olfactory family, notes, main accords, occasions, seasons, gender affinity, sillage, longevity, scent rating, and external reference link.
 
@@ -67,18 +56,24 @@ This is a project source decision. It does not mean that Fragrantica's community
 
 No decision has been made about storing raw vote counts or about implementation/extraction methodology.
 
-### Fragrantica ID linkage — validated
+### Fragrantica perfume ID — central resource linkage
 
-Fragrantica assigns a numeric perfume ID which is embedded in the perfume page URL and is also used by associated Social Card resources.
+The important discovery is broader than one Social Card filename pattern: **the Fragrantica numeric perfume ID acts as the common identifier tying together resources belonging to the same perfume.**
 
-Initial example:
+Initial confirmed example, Kayali Vanilla | 28:
 
-- Kayali Vanilla | 28 → ID `52616`
+- Fragrantica perfume ID → `52616`
 - Perfume page → `Vanilla-28-52616.html`
-- Thumbnail/image example → `dark-m.52616.avif`
-- Social Card → `en-p_c_52616.jpeg`
+- Thumbnail/image resource example → `dark-m.52616.avif`
+- English Social Card → `en-p_c_52616.jpeg`
 
-The **page-ID → Social-Card-ID relationship was subsequently tested on 10 different perfumes and succeeded 10/10**:
+Therefore, once a Shobi inspiration is correctly matched to its Fragrantica perfume and its **Fragrantica ID is known**, that ID can be retained as the stable linkage value from which related Fragrantica resources can be associated or located according to their respective naming/URL conventions.
+
+This is the architectural point to preserve: **store/know the perfume's Fragrantica ID first; individual Fragrantica resources are then linked back to that same perfume ID.**
+
+### Validation test
+
+The relationship between perfume-page ID and English Social Card ID was tested on 10 different perfumes and succeeded **10/10**:
 
 | Perfume | Fragrantica ID | Social Card with same ID |
 | --- | ---: | --- |
@@ -93,13 +88,13 @@ The **page-ID → Social-Card-ID relationship was subsequently tested on 10 diff
 | Carolina Herrera Good Girl | `39681` | confirmed |
 | Terre d'Hermès | `17` | confirmed |
 
-Validated Social Card pattern:
+The tested English Social Card convention is:
 
 `https://fimgs.net/mdimg/perfume-social-cards/en-p_c_{FRAGRANTICA_ID}.jpeg`
 
-This 10/10 test strongly supports treating the **Fragrantica perfume ID as the linkage key for locating the English Social Card** of a matched perfume. It does not constitute proof that every historical/current Fragrantica perfume necessarily has every possible image resource.
+The 10/10 test validates that specific page-ID → Social-Card-ID relationship across the tested sample. The broader project principle is that the **Fragrantica perfume ID itself is the central linkage identifier**, not merely that one Social Card URL pattern exists.
 
-The thumbnail filename convention should still be treated separately from the now-tested Social Card convention unless independently validated across a wider sample.
+Do not assume that every possible Fragrantica resource has the same exact filename structure. Each resource type/pattern should be verified independently, while the shared perfume ID remains the key association.
 
 ### Other sources still under consideration
 
@@ -127,8 +122,9 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - Initial international source candidates identified.
 - Persistent project memory introduced.
 - Fragrantica Social Card examined and selected as the reference source for the perfume data contained in it.
-- Fragrantica perfume ID linkage identified with Vanilla | 28 (`52616`).
-- **Fragrantica page-ID → English Social Card relationship validated successfully on 10/10 additional perfume examples.**
+- Fragrantica perfume ID identified as the common linkage between a perfume and associated Fragrantica resources.
+- Vanilla | 28 (`52616`) confirmed across page, thumbnail/image resource and Social Card.
+- Fragrantica page-ID → English Social Card relationship validated successfully on 10/10 additional perfume examples.
 
 ## Decisions Made
 
@@ -137,8 +133,8 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - GitHub/project files act as persistent project memory rather than relying solely on one ChatGPT conversation.
 - `PROJECT_MEMORY.md` is the current project handoff/state document.
 - **Fragrantica Social Card is the project's reference source for the perfume data contained in the Social Card.**
-- The **Fragrantica perfume ID is an important linkage identifier**.
-- The English Social Card pattern `en-p_c_{FRAGRANTICA_ID}.jpeg` has been validated on a 10-perfume test with 10/10 success.
+- **The Fragrantica perfume ID is the central Fragrantica linkage identifier for a matched perfume and its associated resources.**
+- The English Social Card convention `en-p_c_{FRAGRANTICA_ID}.jpeg` has been validated on a 10-perfume test with 10/10 success.
 
 ## Do Not Assume Yet
 
@@ -158,7 +154,7 @@ The following have **not** been decided yet:
 
 **Continue evaluating and defining perfume-data sources step by step.**
 
-Confirmed so far: Fragrantica Social Card is the reference source for the perfume data it contains, and the Fragrantica perfume ID → English Social Card relationship has passed a 10/10 validation test.
+Confirmed so far: Fragrantica Social Card is the reference source for the perfume data it contains; more importantly, the **Fragrantica perfume ID is the central identifier linking a matched perfume to its associated Fragrantica resources**. The page-ID → English Social Card relationship has passed a 10/10 validation test.
 
 Do not advance automatically into scraping, database conversion, workflows, or implementation until those decisions are explicitly made with the user.
 
