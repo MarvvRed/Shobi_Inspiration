@@ -6,7 +6,7 @@ on:
       limit:
         description: "Maximum perfumes to process in this run"
         required: false
-        default: "25"
+        default: "5"
       retry_errors:
         description: "Retry only rows currently in the error ledger"
         required: false
@@ -15,8 +15,6 @@ on:
   push:
     paths:
       - ".github/shobi-run-trigger"
-  schedule:
-    - cron: "17 * * * *"
 
 permissions:
   contents: write
@@ -41,6 +39,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Remove failed first-run auto ambiguities
+        if: github.event_name == 'push'
+        run: python tools/cleanup_online_ambiguous.py
+
       - name: Show current resolver stats
         run: python tools/shobi_identity_resolver.py stats
 
@@ -51,8 +53,8 @@ jobs:
           RETRY_ERRORS: ${{ github.event.inputs.retry_errors }}
         run: |
           set -euo pipefail
-          LIMIT="${MANUAL_LIMIT:-25}"
-          if [[ -z "$LIMIT" ]]; then LIMIT="25"; fi
+          LIMIT="${MANUAL_LIMIT:-5}"
+          if [[ -z "$LIMIT" ]]; then LIMIT="5"; fi
 
           CMD="run"
           if [[ "${RETRY_ERRORS:-false}" == "true" ]]; then
@@ -62,9 +64,9 @@ jobs:
           python tools/shobi_identity_resolver.py "$CMD" \
             --resolver-cmd "python tools/shobi_online_resolver.py" \
             --limit "$LIMIT" \
-            --timeout 75 \
-            --retries 3 \
-            --retry-delay 3
+            --timeout 90 \
+            --retries 2 \
+            --retry-delay 4
 
       - name: Show updated resolver stats
         if: always()
