@@ -88,19 +88,24 @@ Previously established characteristics of the Shobi Master include approximately
 
 The Shobi Master has **not yet been substituted into this repository**.
 
-## Source Strategy — Current Discussion
+## Source Strategy
 
-We are currently evaluating the best international sources for perfume enrichment data.
+### Confirmed decision
 
-Candidates identified so far:
+**Fragrantica Social Card is the reference source chosen for the perfume data contained in the Social Card.**
 
-1. **Parfumo**
-2. **Fragrantica**
-3. **Basenotes**
-4. Official perfume-brand websites where appropriate
-5. Shobi itself for Shobi-specific product/catalog information
+This is a project source decision. It does not mean that Fragrantica's community-derived information is official manufacturer data.
 
-No final source architecture has been approved yet.
+The Social Card was examined using Kayali Vanilla | 28 as an example. Fragrantica's related perfume views show community-based perfume information and a concise visual summary suitable for quickly understanding a fragrance.
+
+Do not infer additional requirements from this decision. In particular, no decision has yet been made here about storing raw vote counts or about implementation/extraction methodology.
+
+### Other sources still under consideration
+
+- Parfumo
+- Basenotes
+- Official perfume-brand websites where appropriate
+- Shobi itself for Shobi-specific product/catalog information
 
 Important requirement: the finished project is intended to be **completely in English** and aimed at an **international audience**, so source selection should not depend on Italian-only websites.
 
@@ -121,6 +126,8 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - Question raised about whether the enrichment data is actually sourced from Parfumo or generated/derived.
 - Initial international source candidates identified.
 - Decision made to introduce persistent project memory in the repository.
+- Fragrantica Social Card examined as a perfume-summary source.
+- Fragrantica Social Card selected as the reference source for the perfume data contained in that card.
 
 ## Decisions Made
 
@@ -128,28 +135,33 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - The project will be English-language and international.
 - GitHub/project files should act as persistent project memory rather than relying solely on one ChatGPT conversation retaining every detail.
 - `PROJECT_MEMORY.md` should be maintained as the current project handoff/state document.
+- **Fragrantica Social Card is the project's reference source for the perfume data contained in the Social Card.**
 
 ## Do Not Assume Yet
 
 The following have **not** been decided yet:
 
-- Parfumo as the final primary enrichment source.
-- Fragrantica as the final primary/secondary source.
-- Exact source priority rules.
+- Parfumo's future role as a source.
+- Basenotes' future role as a source.
+- Exact source priority rules outside the confirmed Social Card decision.
 - Exact replacement strategy for `database_complete.json`.
 - Exact mapping between Shobi Master and existing enriched records.
-- Which enrichment fields will ultimately be retained.
+- Which enrichment fields will ultimately be retained outside the confirmed Social Card source decision.
 - Whether existing enrichment data will be reused, replaced, or independently verified.
+- Whether raw Fragrantica vote counts will be stored.
+- How Social Card data will technically be extracted or imported.
 
 ## Current Step
 
-**Evaluate and choose the best international perfume-data sources.**
+**Continue evaluating and defining perfume-data sources step by step.**
 
-The immediate discussion is about which sites are suitable sources. Do not advance automatically into scraping, database conversion, workflows, or implementation until the source decision has been worked through with the user.
+Confirmed so far: Fragrantica Social Card is the reference source for the perfume data it contains.
+
+Do not advance automatically into scraping, database conversion, workflows, or implementation until those decisions are explicitly made with the user.
 
 ## Next Step
 
-Compare the candidate international perfume sources based on the specific data they can provide (for example notes, accords, gender, seasons, longevity, sillage, ratings) and their suitability for this project.
+Continue from the user's next source/data question without assuming implementation details.
 
 ---
 
