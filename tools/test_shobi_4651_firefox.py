@@ -3,6 +3,8 @@
 
 Uses the same temporary-copy Firefox profile approach as test_fragrantica_firefox.py.
 It does not write mapping/state files and does not commit or push anything.
+If Fragrantica shows a human-verification page, the script waits while the user
+completes it manually in the visible Firefox window, then continues normally.
 """
 from __future__ import annotations
 
@@ -18,6 +20,44 @@ from test_fragrantica_firefox import find_firefox_profile
 TERM = "Cheirosa 39 Sol de Janeiro"
 EXPECTED_BRAND = "Sol-de-Janeiro"
 EXPECTED_NAME_TOKENS = {"cheirosa", "39"}
+MAX_MANUAL_WAIT_SECONDS = 180
+
+
+def looks_like_human_check(title: str, html: str) -> bool:
+    sample = (title + "\n" + html[:50000]).lower()
+    signals = (
+        "ci siamo quasi",
+        "verify you are human",
+        "verifica che sei umano",
+        "checking your browser",
+        "security check",
+        "challenge-platform",
+    )
+    return any(s in sample for s in signals)
+
+
+def wait_for_manual_verification(driver) -> bool:
+    if not looks_like_human_check(driver.title, driver.page_source):
+        return True
+
+    print("HUMAN CHECK DETECTED")
+    print("Complete the verification manually in the Firefox window.")
+    print(f"Waiting up to {MAX_MANUAL_WAIT_SECONDS} seconds...")
+
+    deadline = time.time() + MAX_MANUAL_WAIT_SECONDS
+    while time.time() < deadline:
+        time.sleep(2)
+        try:
+            title = driver.title
+            html = driver.page_source
+        except Exception:
+            continue
+        if not looks_like_human_check(title, html):
+            print("Human verification cleared; continuing.")
+            return True
+
+    print("RESULT: HUMAN_CHECK_TIMEOUT")
+    return False
 
 
 def main() -> int:
@@ -79,7 +119,12 @@ def main() -> int:
             candidate = matches[0]
             print(f"Exact candidate: {candidate}")
             driver.get(candidate)
-            time.sleep(6)
+            time.sleep(4)
+
+            if not wait_for_manual_verification(driver):
+                return 8
+
+            time.sleep(2)
             page_title = driver.title
             page_url = driver.current_url
             page_html = driver.page_source
