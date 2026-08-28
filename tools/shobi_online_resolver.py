@@ -4,6 +4,11 @@
 Reads one Master row as JSON from stdin and prints one reviewed mapping row.
 Search failures are treated as transient errors so the worker can retry them;
 weak evidence is never promoted to CONFIRMED.
+
+Preferred search providers are API-backed when keys are available:
+- Brave Search API via BRAVE_SEARCH_API_KEY
+- Jina Search via JINA_SEARCH_API_KEY
+HTML search engines remain fallback only.
 """
 from __future__ import annotations
 
@@ -29,6 +34,8 @@ UA = os.environ.get(
 HTTP_TIMEOUT = float(os.environ.get("SHOBI_HTTP_TIMEOUT", "25"))
 SEARCH_DELAY = float(os.environ.get("SHOBI_SEARCH_DELAY", "0.8"))
 MAPPING = Path("data/shobi-fragrantica-mapping.csv")
+BRAVE_KEY = os.environ.get("BRAVE_SEARCH_API_KEY", "").strip()
+JINA_KEY = os.environ.get("JINA_SEARCH_API_KEY", "").strip()
 
 BAD_INSPIRED = {
     "", "the fragrance notes", "the fragrance notes of", "fragrance notes",
@@ -52,14 +59,17 @@ def toks(s: str):
     return {t for t in norm(s).split() if len(t) >= 2 and t not in STOPWORDS}
 
 
-def fetch(url: str) -> str:
-    req = Request(url, headers={
+def fetch(url: str, headers: dict | None = None) -> str:
+    h = {
         "User-Agent": UA,
         "Accept-Language": "en-US,en;q=0.9",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    })
+        "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+    }
+    if headers:
+        h.update(headers)
+    req = Request(url, headers=h)
     with urlopen(req, timeout=HTTP_TIMEOUT) as r:
-        raw = r.read(2_500_000)
+        raw = r.read(3_000_000)
     return raw.decode("utf-8", errors="replace")
 
 
@@ -77,19 +87,15 @@ def unwrap(url: str) -> str:
     return url
 
 
-def extract_fragrantica_links(page: str):
+def extract_fragrantica_links(text: str):
     out = []
     candidates = []
 
-    for m in re.finditer(r'href=["\']([^"\']+)["\']', page, re.I):
+    for m in re.finditer(r'href=["\']([^"\']+)["\']', text, re.I):
         candidates.append(m.group(1))
-
-    # Search providers sometimes expose the destination only as an encoded URL.
-    for m in re.finditer(r'https?(?:%3A|:)(?:%2F|/){2}(?:www\.)?fragrantica\.com(?:%2F|/)[^"\'<>\s&]+', page, re.I):
+    for m in re.finditer(r'https?(?:%3A|:)(?:%2F|/){2}(?:www\.)?fragrantica\.com(?:%2F|/)[^"\'<>\s&]+', text, re.I):
         candidates.append(unquote(m.group(0)))
-
-    # And sometimes as plain text inside JSON/script blocks.
-    for m in re.finditer(r'https?://(?:www\.)?fragrantica\.com/perfume/[^"\'<>\s]+', page, re.I):
+    for m in re.finditer(r'https?://(?:www\.)?fragrantica\.com/perfume/[^"\'<>\s]+', text, re.I):
         candidates.append(m.group(0))
 
     for raw in candidates:
@@ -104,7 +110,51 @@ def extract_fragrantica_links(page: str):
     return out
 
 
-def search_web(query: str):
+def search_brave(query: str):
+    if not BRAVE_KEY:
+        return [], "brave:no-key", []
+    try:
+        url = "https://api.search.brave.com/res/v1/web/search?q=" + quote_plus(query) + "&count=20"
+        raw = fetch(url, {
+            "Accept": "application/json",
+            "X-Subscription-Token": BRAVE_KEY,
+        })
+        data = json.loads(raw)
+        links = []
+        for r in ((data.get("web") or {}).get("results") or []):
+            u = (r.get("url") or "").strip()
+            if "fragrantica.com/perfume/" in u and u not in links:
+                links.append(u)
+        return links[:15], f"brave:{len(links)}", []
+    except Exception as e:
+        return [], "brave:error", [f"brave: {type(e).__name__}: {e}"]
+
+
+def search_jina(query: str):
+    if not JINA_KEY:
+        return [], "jina:no-key", []
+    try:
+        url = "https://s.jina.ai/" + quote_plus(query)
+        raw = fetch(url, {
+            "Accept": "application/json",
+            "Authorization": "Bearer " + JINA_KEY,
+            "X-Retain-Images": "none",
+        })
+        links = extract_fragrantica_links(raw)
+        try:
+            data = json.loads(raw)
+            blob = json.dumps(data, ensure_ascii=False)
+            for u in extract_fragrantica_links(blob):
+                if u not in links:
+                    links.append(u)
+        except Exception:
+            pass
+        return links[:15], f"jina:{len(links)}", []
+    except Exception as e:
+        return [], "jina:error", [f"jina: {type(e).__name__}: {e}"]
+
+
+def search_html(query: str):
     providers = [
         ("ddg-html", "https://html.duckduckgo.com/html/?q=" + quote_plus(query)),
         ("ddg-lite", "https://lite.duckduckgo.com/lite/?q=" + quote_plus(query)),
@@ -112,9 +162,7 @@ def search_web(query: str):
         ("bing", "https://www.bing.com/search?q=" + quote_plus(query)),
         ("google", "https://www.google.com/search?num=10&q=" + quote_plus(query)),
     ]
-    errors = []
-    links = []
-    used = []
+    errors, links, used = [], [], []
     for name, url in providers:
         try:
             page = fetch(url)
@@ -129,6 +177,28 @@ def search_web(query: str):
             errors.append(f"{name}: {type(e).__name__}: {e}")
         time.sleep(SEARCH_DELAY)
     return links[:15], ",".join(used) or "none", errors
+
+
+def search_web(query: str):
+    links, used, errors = [], [], []
+
+    for fn in (search_brave, search_jina):
+        found, provider, errs = fn(query)
+        used.append(provider)
+        errors.extend(errs)
+        for u in found:
+            if u not in links:
+                links.append(u)
+        if len(links) >= 5:
+            return links[:15], ",".join(used), errors
+
+    found, provider, errs = search_html(query)
+    used.append(provider)
+    errors.extend(errs)
+    for u in found:
+        if u not in links:
+            links.append(u)
+    return links[:15], ",".join(used), errors
 
 
 def parse_fragrantica_url(url: str):
@@ -240,9 +310,7 @@ def resolve(row):
         f'site:fragrantica.com/perfume "{inspired}"',
         f'Fragrantica "{inspired}"',
     ]
-    all_links = []
-    providers = []
-    errors = []
+    all_links, providers, errors = [], [], []
     for q in queries:
         links, provider, errs = search_web(q)
         providers.append(provider)
@@ -264,8 +332,9 @@ def resolve(row):
     candidates.sort(key=lambda x: x["score"], reverse=True)
 
     if not candidates:
-        # This is an infrastructure/search failure, not a perfume identity judgement.
-        raise RuntimeError("no Fragrantica candidates returned by search providers; " + "; ".join(errors[-5:]))
+        key_state = f"brave_key={'yes' if BRAVE_KEY else 'no'},jina_key={'yes' if JINA_KEY else 'no'}"
+        detail = "; ".join(errors[-6:]) or "providers returned zero candidate URLs"
+        raise RuntimeError(f"no Fragrantica candidates; {key_state}; providers={'|'.join(providers)}; {detail}")
 
     best = candidates[0]
     second = candidates[1]["score"] if len(candidates) > 1 else 0.0
@@ -295,7 +364,7 @@ def resolve(row):
         return ambiguous(row, f"candidate search strong but direct verification insufficient; {detail}")
 
     evidence = (
-        f"Shobi inspired_by + public web Fragrantica candidate; providers={'|'.join(providers)}; "
+        f"Shobi inspired_by + online Fragrantica candidate; providers={'|'.join(providers)}; "
         f"score={best['score']:.3f}; coverage={best['coverage']:.3f}; margin={margin:.3f}"
     )
     if brand_hint:
