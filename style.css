@@ -243,16 +243,30 @@
 }
 
 /* --- V2 TEST CARD: first card in Brand sort only --- */
+.v2-test-card {
+    background:#ffffff;
+    border:1px solid #d1d5db;
+    box-shadow:0 8px 22px rgba(15,23,42,.08);
+}
+.v2-test-card [data-field="inspiredBy"] { color:#0f172a; font-weight:800; }
 .v2-test-card .brand-badge {
-    color:#4b5563;
-    background:#f8fafc;
-    border-color:#e5e7eb;
+    color:#0f172a;
+    background:#ffffff;
+    border-color:#d1d5db;
     box-shadow:none;
+    font-weight:500;
+}
+.v2-test-card .brand-badge::after {
+    content:'›';
+    margin-left:.55rem;
+    font-size:1.15rem;
+    line-height:.75rem;
+    font-weight:700;
 }
 .v2-test-card .brand-badge:hover {
-    color:#374151;
-    background:#f3f4f6;
-    border-color:#d1d5db;
+    color:#0f172a;
+    background:#f8fafc;
+    border-color:#b9c2cf;
 }
 .v2-test-card .gender-badge {
     gap:.35rem;
@@ -262,92 +276,58 @@
     font-weight:600;
     color:#2563eb;
     background:#eff6ff;
-    border-color:#dbeafe;
+    border-color:#bfdbfe;
     box-shadow:none;
 }
 .v2-test-card .gender-badge i { font-size:.9rem; }
-.v2-test-card .gender-badge:hover {
-    color:#1d4ed8;
-    background:#eaf3ff;
-    border-color:#bfdbfe;
-}
+.v2-test-card .gender-badge:hover { color:#1d4ed8; background:#e5f0ff; border-color:#93c5fd; }
 .v2-test-card > div > div.mb-4 > p {
     text-transform:none !important;
     letter-spacing:normal !important;
-    font-size:.78rem;
-    line-height:1rem;
+    font-size:.86rem;
+    line-height:1.1rem;
     font-weight:650;
-    color:#64748b;
-    margin-bottom:.5rem;
+    color:#0f172a;
+    margin-bottom:.6rem;
 }
 .v2-test-card [data-field="main-notes"] .main-note-badge {
-    padding:.22rem .55rem;
-    color:#475569;
-    background:#f5f9ff;
-    border-color:#e7eef7;
+    padding:.28rem .58rem;
+    color:#0f172a;
+    background:#ffffff;
+    border-color:#d1d5db;
     box-shadow:none;
+    font-weight:500;
 }
-.v2-test-card [data-field="main-notes"] .main-note-badge:hover {
-    color:#334155;
-    background:#eef5fc;
-    border-color:#dbe7f3;
-}
-.v2-test-card [data-field="main-notes"] .main-note-icon {
-    width:18px;
-    height:18px;
-    flex-basis:18px;
-}
+.v2-test-card [data-field="main-notes"] .main-note-badge:hover { color:#0f172a; background:#f8fafc; border-color:#b9c2cf; }
+.v2-test-card [data-field="main-notes"] .main-note-icon { width:20px; height:20px; flex-basis:20px; }
 .v2-test-card .favorite-btn,
 .v2-test-card .collection-btn {
-    min-height:32px;
-    padding:.38rem .65rem;
-    font-size:.75rem;
+    min-height:36px;
+    padding:.42rem .65rem;
+    font-size:.78rem;
+    font-weight:500;
     box-shadow:none;
-    background:transparent;
+    color:#0f172a;
+    background:#ffffff;
+    border-color:#d1d5db;
 }
-.v2-test-card .favorite-btn {
-    color:#9f6b78;
-    border-color:#eadde1;
-}
-.v2-test-card .favorite-btn:hover {
-    color:#8d5968;
-    background:#fff8fa;
-    border-color:#dfcbd1;
-}
-.v2-test-card .collection-btn {
-    color:#5f756a;
-    border-color:#dce7e1;
-}
-.v2-test-card .collection-btn:hover {
-    color:#50655a;
-    background:#f8fbf9;
-    border-color:#cfded6;
-}
+.v2-test-card .favorite-btn:hover,
+.v2-test-card .collection-btn:hover { color:#0f172a; background:#f8fafc; border-color:#b9c2cf; }
 .v2-test-card [data-field="shobiLink"] {
-    min-height:38px;
+    min-height:42px;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-weight:600;
+    gap:.65rem;
+    font-weight:650;
+    font-size:.85rem;
+    background:#2563eb;
+    border-color:#2563eb;
+    box-shadow:none;
 }
-[data-theme="dark"] .v2-test-card .brand-badge {
-    color:#d1d5db;
-    background:#303846;
-    border-color:#4b5563;
-}
-[data-theme="dark"] .v2-test-card .gender-badge {
-    color:#bfdbfe;
-    background:#26364d;
-    border-color:#38506d;
-}
-[data-theme="dark"] .v2-test-card [data-field="main-notes"] .main-note-badge {
-    color:#d7e3ef;
-    background:#303b49;
-    border-color:#435264;
-}
-[data-theme="dark"] .v2-test-card > div > div.mb-4 > p { color:#aeb8c5; }
-[data-theme="dark"] .v2-test-card .favorite-btn { color:#d7a7b4; border-color:#684753; }
-[data-theme="dark"] .v2-test-card .collection-btn { color:#b8c9c0; border-color:#506259; }
+.v2-test-card [data-field="shobiLink"]::before { content:'\f290'; font-family:'Font Awesome 6 Free'; font-weight:900; }
+.v2-test-card [data-field="shobiLink"]::after { content:'›'; margin-left:auto; font-size:1.25rem; line-height:1; font-weight:700; }
+.v2-test-card [data-field="shobiLink"]:hover { background:#1d4ed8; border-color:#1d4ed8; transform:scale(1.05); }
 
 /* Same interaction as the original Gender badge, only inside V2 test card */
 .v2-test-card .brand-badge,
@@ -363,12 +343,7 @@
 .v2-test-card .gender-badge:hover,
 .v2-test-card [data-field="main-notes"] .main-note-badge:hover,
 .v2-test-card .favorite-btn:hover,
-.v2-test-card .collection-btn:hover {
-    transform:scale(1.2);
-}
-.v2-test-card [data-field="shobiLink"]:hover {
-    transform:scale(1.05);
-}
+.v2-test-card .collection-btn:hover { transform:scale(1.2); }
 @media (prefers-reduced-motion: reduce) {
     .v2-test-card .brand-badge,
     .v2-test-card .gender-badge,
