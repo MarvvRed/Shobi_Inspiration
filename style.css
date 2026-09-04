@@ -363,3 +363,55 @@
 [data-theme="dark"] .v2-test-card > div > div.mb-4 > p { color:#aeb8c5; }
 [data-theme="dark"] .v2-test-card .favorite-btn { color:#d7a7b4; border-color:#684753; }
 [data-theme="dark"] .v2-test-card .collection-btn { color:#b8c9c0; border-color:#506259; }
+
+/* --- V2 interaction hierarchy: first Brand card only --- */
+.v2-test-card .brand-badge,
+.v2-test-card .gender-badge,
+.v2-test-card [data-field="main-notes"] .main-note-badge,
+.v2-test-card [data-field="shobiLink"],
+.v2-test-card .favorite-btn,
+.v2-test-card .collection-btn {
+    cursor:pointer;
+    transition:transform 160ms ease, background-color 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+.v2-test-card .brand-badge:hover,
+.v2-test-card .gender-badge:hover,
+.v2-test-card [data-field="main-notes"] .main-note-badge:hover {
+    transform:scale(1.05);
+}
+.v2-test-card [data-field="shobiLink"]:hover,
+.v2-test-card .favorite-btn:hover,
+.v2-test-card .collection-btn:hover {
+    transform:translateY(-1px);
+}
+.v2-test-card [data-field="shobiLink"]:hover {
+    box-shadow:0 4px 10px rgba(37,99,235,.16);
+}
+.v2-test-card .collection-btn:hover {
+    color:#50655a;
+    background:#f8fbf9;
+    border-color:#cfded6;
+}
+.v2-test-card .brand-badge:focus-visible,
+.v2-test-card .gender-badge:focus-visible,
+.v2-test-card [data-field="main-notes"] .main-note-badge:focus-visible,
+.v2-test-card [data-field="shobiLink"]:focus-visible,
+.v2-test-card .favorite-btn:focus-visible,
+.v2-test-card .collection-btn:focus-visible {
+    outline:2px solid rgba(59,130,246,.45);
+    outline-offset:2px;
+}
+@media (prefers-reduced-motion: reduce) {
+    .v2-test-card .brand-badge,
+    .v2-test-card .gender-badge,
+    .v2-test-card [data-field="main-notes"] .main-note-badge,
+    .v2-test-card [data-field="shobiLink"],
+    .v2-test-card .favorite-btn,
+    .v2-test-card .collection-btn { transition:none; }
+    .v2-test-card .brand-badge:hover,
+    .v2-test-card .gender-badge:hover,
+    .v2-test-card [data-field="main-notes"] .main-note-badge:hover,
+    .v2-test-card [data-field="shobiLink"]:hover,
+    .v2-test-card .favorite-btn:hover,
+    .v2-test-card .collection-btn:hover { transform:none; }
+}
