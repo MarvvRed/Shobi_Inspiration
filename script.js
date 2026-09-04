@@ -467,7 +467,7 @@ function getMainNotesBadges(notes) {
     return mainNotes.map(note => {
         const value = escapeHtml(note);
         const label = escapeHtml(note);
-        return `<button type="button" data-action="filter-icon" data-filter-type="note" data-filter-value="${value}" class="rounded-full bg-accent-subtle px-3 py-1 text-xs font-medium text-accent transition hover:opacity-75 focus-ring" title="Filter by ${label}">${label}</button>`;
+        return `<button type="button" data-action="filter-icon" data-filter-type="note" data-filter-value="${value}" class="main-note-badge rounded-full px-3 py-1 text-xs font-medium transition focus-ring" title="Filter by ${label}">${label}</button>`;
     }).join('');
 }
 

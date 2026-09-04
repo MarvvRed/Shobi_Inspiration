@@ -233,10 +233,31 @@
 .token-occasion { background-color: #10b981; color: white; } /* emerald-500 */
 .token-accord { background-color: #6b7280; color: white; } /* gray-500 */
 
+.main-note-badge {
+    color: #1d4ed8;
+    background-color: #dbeafe;
+    border: 1px solid #93c5fd;
+}
+.main-note-badge:hover {
+    color: #ffffff;
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
 /* Specifikke farver for dark mode tokens (om nødvendigt, for bedre kontrast) */
 [data-theme="dark"] .token-gender { background-color: #f9a8d4; color: #1f2937; } /* pink-300 */
 [data-theme="dark"] .token-brand { background-color: #a5b4fc; color: #1f2937; } /* indigo-300 */
 [data-theme="dark"] .token-season { background-color: #fbbf24; color: #1f2937; } /* amber-400 */
 [data-theme="dark"] .token-occasion { background-color: #6ee7b7; color: #1f2937; } /* emerald-300 */
 [data-theme="dark"] .token-accord { background-color: #9ca3af; color: #1f2937; } /* gray-400 */
+[data-theme="dark"] .main-note-badge {
+    color: #eff6ff;
+    background-color: #1e40af;
+    border-color: #60a5fa;
+}
+[data-theme="dark"] .main-note-badge:hover {
+    color: #111827;
+    background-color: #93c5fd;
+    border-color: #bfdbfe;
+}
 /* --- SLUT FILTER TOKENS --- */
