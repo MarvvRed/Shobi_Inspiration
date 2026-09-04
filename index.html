@@ -185,6 +185,40 @@
     </template>
 
     <script src="script.js"></script>
+    <script>
+        // Global display invariant: perfume names never contain their brand.
+        (() => {
+            const escapeRegExp = value => String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+            const removeBrandFromPerfumeName = (name, brand) => {
+                const originalName = String(name || '').trim();
+                const brandName = String(brand || '').trim();
+                if (!originalName || !brandName || brandName === 'Unknown Brand') return originalName;
+
+                const brandPattern = brandName
+                    .split(/\s+/)
+                    .map(escapeRegExp)
+                    .join('\\s+');
+
+                const withoutBrand = originalName
+                    .replace(new RegExp(brandPattern, 'gi'), ' ')
+                    .replace(/\s+/g, ' ')
+                    .replace(/^\s*[-–—|/:,;]+\s*/, '')
+                    .replace(/\s*[-–—|/:,;]+\s*$/, '')
+                    .trim();
+
+                return withoutBrand || originalName;
+            };
+
+            const originalApplyFiltersAndRender = applyFiltersAndRender;
+            applyFiltersAndRender = function(...args) {
+                allPerfumes.forEach(perfume => {
+                    perfume.inspiredBy = removeBrandFromPerfumeName(perfume.inspiredBy, perfume.brand);
+                });
+                return originalApplyFiltersAndRender.apply(this, args);
+            };
+        })();
+    </script>
 
 </body>
 </html>
