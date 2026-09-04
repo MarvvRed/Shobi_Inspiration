@@ -18,8 +18,13 @@ REPORT = ROOT / "fragrantica-scraper-archive" / "social-cards" / "id-resolution-
 UA = os.environ.get("SHOBI_USER_AGENT", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36")
 TIMEOUT = float(os.environ.get("SHOBI_HTTP_TIMEOUT", "20"))
 DELAY = float(os.environ.get("FRAGRANTICA_ID_DELAY", "0.20"))
-MAX_ROWS = int(os.environ.get("FRAGRANTICA_ID_MAX", "2500"))
+MAX_ROWS = int(os.environ.get("FRAGRANTICA_ID_MAX", "250"))
+CHECKPOINT_EVERY = max(1, int(os.environ.get("FRAGRANTICA_ID_CHECKPOINT_EVERY", "10")))
 STOP = {"for","the","and","of","by","pour","eau","de","parfum","perfume","fragrance","edp","edt","men","women","unisex"}
+REPORT_FIELDS = [
+    "prestashop_product_id","shobi_code","original_brand","original_perfume",
+    "old_fragrantica_id","new_fragrantica_id","fragrantica_url","result","providers","note"
+]
 
 
 def norm(s: str) -> str:
@@ -139,11 +144,47 @@ def resolve(brand: str, perfume: str):
     best = candidates[0]
     second = candidates[1]["score"] if len(candidates) > 1 else 0.0
     margin = best["score"] - second
-    # Identity is already confirmed upstream. Here we only accept a very strong URL match.
     ok = best["brand_cov"] >= 0.75 and best["perfume_cov"] >= 0.75 and best["score"] >= 0.78 and (second < 0.72 or margin >= 0.08)
     if not ok:
         return None, providers, f"weak best={best['score']:.3f} brand={best['brand_cov']:.3f} perfume={best['perfume_cov']:.3f} second={second:.3f}"
     return best, providers, f"accepted score={best['score']:.3f} margin={margin:.3f}"
+
+
+def row_key(row: dict) -> str:
+    product_id = (row.get("prestashop_product_id") or "").strip()
+    if product_id:
+        return f"id:{product_id}"
+    code = norm(row.get("shobi_code") or "")
+    brand = norm(row.get("original_brand") or "")
+    perfume = norm(row.get("original_perfume") or "")
+    return f"fallback:{code}|{brand}|{perfume}"
+
+
+def load_report() -> list[dict]:
+    if not REPORT.exists():
+        return []
+    try:
+        with REPORT.open("r", encoding="utf-8-sig", newline="") as f:
+            return list(csv.DictReader(f))
+    except Exception as e:
+        print(f"WARNING: could not load existing report: {type(e).__name__}: {e}")
+        return []
+
+
+def save_checkpoint(rows: list[dict], fieldnames: list[str], report: list[dict]) -> None:
+    tmp = MAPPING.with_suffix(".csv.tmp")
+    with tmp.open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(rows)
+    tmp.replace(MAPPING)
+
+    report_tmp = REPORT.with_suffix(".csv.tmp")
+    with report_tmp.open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=REPORT_FIELDS, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(report)
+    report_tmp.replace(REPORT)
 
 
 def main() -> int:
@@ -156,24 +197,37 @@ def main() -> int:
         if needed not in fieldnames:
             fieldnames.append(needed)
 
-    report_fields = ["prestashop_product_id","shobi_code","original_brand","original_perfume","old_fragrantica_id","new_fragrantica_id","fragrantica_url","result","providers","note"]
-    report = []
-    attempted = accepted = 0
+    report = load_report()
+    attempted_keys = {
+        row_key(r) for r in report
+        if (r.get("result") or "").strip().upper() in {"FOUND", "UNRESOLVED"}
+    }
 
-    for i, row in enumerate(rows, 1):
+    attempted = accepted = skipped_previous = 0
+
+    for row in rows:
         identity = (row.get("identity_status") or "").strip().upper()
         existing = (row.get("fragrantica_id") or "").strip()
         brand = (row.get("original_brand") or "").strip()
         perfume = (row.get("original_perfume") or "").strip()
+
         if identity != "CONFIRMED" or existing.isdigit() or not brand or not perfume:
             continue
+
+        key = row_key(row)
+        if key in attempted_keys:
+            skipped_previous += 1
+            continue
+
         if attempted >= MAX_ROWS:
             break
+
         attempted += 1
         try:
             best, providers, note = resolve(brand, perfume)
         except Exception as e:
             best, providers, note = None, "", f"{type(e).__name__}: {e}"
+
         if best:
             row["fragrantica_id"] = best["id"]
             row["fragrantica_url"] = best["url"]
@@ -183,9 +237,11 @@ def main() -> int:
             new_id = best["id"]
             url = best["url"]
         else:
+            row["fragrantica_status"] = "UNRESOLVED"
             result = "UNRESOLVED"
             new_id = ""
             url = ""
+
         report.append({
             "prestashop_product_id": row.get("prestashop_product_id", ""),
             "shobi_code": row.get("shobi_code", ""),
@@ -198,22 +254,30 @@ def main() -> int:
             "providers": providers,
             "note": note,
         })
-        print(f"[{attempted}] {row.get('shobi_code','')} | {brand} | {perfume} -> {result} {new_id}")
+        attempted_keys.add(key)
+        print(f"[{attempted}] {row.get('shobi_code','')} | {brand} | {perfume} -> {result} {new_id}", flush=True)
 
-    tmp = MAPPING.with_suffix(".csv.tmp")
-    with tmp.open("w", encoding="utf-8-sig", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
-        w.writeheader(); w.writerows(rows)
-    tmp.replace(MAPPING)
+        if attempted % CHECKPOINT_EVERY == 0:
+            save_checkpoint(rows, fieldnames, report)
+            print(f"CHECKPOINT attempted={attempted} accepted={accepted} report_rows={len(report)}", flush=True)
 
-    with REPORT.open("w", encoding="utf-8-sig", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=report_fields)
-        w.writeheader(); w.writerows(report)
+    save_checkpoint(rows, fieldnames, report)
+
+    remaining = 0
+    for row in rows:
+        identity = (row.get("identity_status") or "").strip().upper()
+        existing = (row.get("fragrantica_id") or "").strip()
+        brand = (row.get("original_brand") or "").strip()
+        perfume = (row.get("original_perfume") or "").strip()
+        if identity == "CONFIRMED" and not existing.isdigit() and brand and perfume and row_key(row) not in attempted_keys:
+            remaining += 1
 
     print("SUMMARY")
     print(f"attempted={attempted}")
     print(f"accepted={accepted}")
     print(f"unresolved={attempted-accepted}")
+    print(f"skipped_previous={skipped_previous}")
+    print(f"remaining_unattempted={remaining}")
     return 0
 
 
