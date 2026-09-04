@@ -262,610 +262,84 @@
 }
 /* --- SLUT FILTER TOKENS --- */
 
-/* --- V2 TEST CARD: softer hierarchy, first card in Brand sort only --- */
+/* --- V2 TEST CARD: first card in Brand sort only --- */
 .v2-test-card .brand-badge {
-    color: #4b5563;
-    background: #f8fafc;
-    border-color: #e5e7eb;
-    box-shadow: none;
+    color:#4b5563;
+    background:#f8fafc;
+    border-color:#e5e7eb;
+    box-shadow:none;
 }
 .v2-test-card .brand-badge:hover {
-    color: #374151;
-    background: #f3f4f6;
-    border-color: #d1d5db;
+    color:#374151;
+    background:#f3f4f6;
+    border-color:#d1d5db;
 }
 .v2-test-card .gender-badge {
-    gap: .35rem;
-    padding: .22rem .62rem;
-    font-size: .75rem;
-    line-height: 1rem;
-    font-weight: 600;
-    color: #2563eb;
-    background: #eff6ff;
-    border-color: #dbeafe;
-    box-shadow: none;
+    gap:.35rem;
+    padding:.22rem .62rem;
+    font-size:.75rem;
+    line-height:1rem;
+    font-weight:600;
+    color:#2563eb;
+    background:#eff6ff;
+    border-color:#dbeafe;
+    box-shadow:none;
 }
-.v2-test-card .gender-badge i {
-    font-size: .9rem;
-}
+.v2-test-card .gender-badge i { font-size:.9rem; }
 .v2-test-card .gender-badge:hover {
-    color: #1d4ed8;
-    background: #eaf3ff;
-    border-color: #bfdbfe;
+    color:#1d4ed8;
+    background:#eaf3ff;
+    border-color:#bfdbfe;
 }
-.v2-test-card [data-field="main-notes"] + * { text-transform: none; }
-.v2-test-card [data-field="main-notes"] { gap: .4rem; }
-.v2-test-card [data-field="main-notes"] ~ * { text-transform: none; }
+.v2-test-card > div > div.mb-4 > p {
+    text-transform:none !important;
+    letter-spacing:normal !important;
+    font-size:.78rem;
+    line-height:1rem;
+    font-weight:600;
+    color:#64748b;
+    margin-bottom:.5rem;
+}
 .v2-test-card [data-field="main-notes"] .main-note-badge {
-    color: #475569;
-    background: #f5f9ff;
-    border-color: #e7eef7;
-    box-shadow: none;
+    padding:.22rem .55rem;
+    color:#475569;
+    background:#f5f9ff;
+    border-color:#e7eef7;
+    box-shadow:none;
 }
 .v2-test-card [data-field="main-notes"] .main-note-badge:hover {
-    color: #334155;
-    background: #eef5fc;
-    border-color: #dbe7f3;
+    color:#334155;
+    background:#eef5fc;
+    border-color:#dbe7f3;
 }
 .v2-test-card [data-field="main-notes"] .main-note-icon {
-    width: 18px;
-    height: 18px;
-    flex-basis: 18px;
-}
-.v2-test-card [data-field="main-notes"] {
-    font-size: .75rem;
-}
-.v2-test-card [data-field="main-notes"] > div {
-    min-height: 26px;
-}
-.v2-test-card [data-field="main-notes"] ~ * {
-    text-transform: none;
-}
-.v2-test-card [data-field="main-notes"] {
-    margin-top: 0;
-}
-.v2-test-card [data-field="main-notes"]::before { content: none; }
-.v2-test-card [data-field="main-notes"] + div { text-transform: none; }
-.v2-test-card [data-field="main-notes"] {
-    --tw-space-y-reverse: 0;
-}
-.v2-test-card [data-field="main-notes"] > div > .main-note-badge {
-    padding: .22rem .55rem;
-}
-.v2-test-card [data-field="main-notes"] {
-    color: var(--color-text-secondary);
-}
-.v2-test-card [data-field="main-notes"] ~ div { text-transform: none; }
-.v2-test-card [data-field="main-notes"] { line-height: 1rem; }
-.v2-test-card [data-field="main-notes"] + * { letter-spacing: normal; }
-.v2-test-card [data-field="main-notes"] { font-weight: 500; }
-.v2-test-card [data-field="main-notes"] { text-transform: none; }
-.v2-test-card [data-field="main-notes"] { letter-spacing: normal; }
-.v2-test-card [data-field="main-notes"] { opacity: .96; }
-.v2-test-card [data-field="main-notes"] { border: 0; }
-.v2-test-card [data-field="main-notes"] { background: transparent; }
-.v2-test-card [data-field="main-notes"] { box-shadow: none; }
-.v2-test-card [data-field="main-notes"] { padding: 0; }
-.v2-test-card [data-field="main-notes"] { border-radius: 0; }
-.v2-test-card [data-field="main-notes"] { min-width: 0; }
-.v2-test-card [data-field="main-notes"] { width: auto; }
-.v2-test-card [data-field="main-notes"] { max-width: 100%; }
-.v2-test-card [data-field="main-notes"] { overflow: visible; }
-.v2-test-card [data-field="main-notes"] { white-space: normal; }
-.v2-test-card [data-field="main-notes"] { display: block; }
-.v2-test-card [data-field="main-notes"] { visibility: visible; }
-.v2-test-card [data-field="main-notes"] { position: static; }
-.v2-test-card [data-field="main-notes"] { transform: none; }
-.v2-test-card [data-field="main-notes"] { transition: none; }
-.v2-test-card [data-field="main-notes"] { cursor: default; }
-.v2-test-card [data-field="main-notes"] { pointer-events: auto; }
-.v2-test-card [data-field="main-notes"] { user-select: auto; }
-.v2-test-card [data-field="main-notes"] { text-align: left; }
-.v2-test-card [data-field="main-notes"] { vertical-align: baseline; }
-.v2-test-card [data-field="main-notes"] { text-decoration: none; }
-.v2-test-card [data-field="main-notes"] { text-indent: 0; }
-.v2-test-card [data-field="main-notes"] { word-spacing: normal; }
-.v2-test-card [data-field="main-notes"] { text-shadow: none; }
-.v2-test-card [data-field="main-notes"] { filter: none; }
-.v2-test-card [data-field="main-notes"] { mix-blend-mode: normal; }
-.v2-test-card [data-field="main-notes"] { isolation: auto; }
-.v2-test-card [data-field="main-notes"] { z-index: auto; }
-.v2-test-card [data-field="main-notes"] { float: none; }
-.v2-test-card [data-field="main-notes"] { clear: none; }
-.v2-test-card [data-field="main-notes"] { flex: initial; }
-.v2-test-card [data-field="main-notes"] { order: initial; }
-.v2-test-card [data-field="main-notes"] { align-self: auto; }
-.v2-test-card [data-field="main-notes"] { justify-self: auto; }
-.v2-test-card [data-field="main-notes"] { grid-area: auto; }
-.v2-test-card [data-field="main-notes"] { place-self: auto; }
-.v2-test-card [data-field="main-notes"] { contain: none; }
-.v2-test-card [data-field="main-notes"] { content-visibility: visible; }
-.v2-test-card [data-field="main-notes"] { appearance: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-appearance: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-font-smoothing: antialiased; }
-.v2-test-card [data-field="main-notes"] { -moz-osx-font-smoothing: grayscale; }
-.v2-test-card [data-field="main-notes"] { font-variant: normal; }
-.v2-test-card [data-field="main-notes"] { font-stretch: normal; }
-.v2-test-card [data-field="main-notes"] { font-style: normal; }
-.v2-test-card [data-field="main-notes"] { font-family: inherit; }
-.v2-test-card [data-field="main-notes"] { font-kerning: auto; }
-.v2-test-card [data-field="main-notes"] { font-feature-settings: normal; }
-.v2-test-card [data-field="main-notes"] { font-optical-sizing: auto; }
-.v2-test-card [data-field="main-notes"] { font-variation-settings: normal; }
-.v2-test-card [data-field="main-notes"] { text-rendering: auto; }
-.v2-test-card [data-field="main-notes"] { direction: ltr; }
-.v2-test-card [data-field="main-notes"] { unicode-bidi: normal; }
-.v2-test-card [data-field="main-notes"] { quotes: auto; }
-.v2-test-card [data-field="main-notes"] { tab-size: 8; }
-.v2-test-card [data-field="main-notes"] { hyphens: manual; }
-.v2-test-card [data-field="main-notes"] { overflow-wrap: normal; }
-.v2-test-card [data-field="main-notes"] { word-break: normal; }
-.v2-test-card [data-field="main-notes"] { text-overflow: clip; }
-.v2-test-card [data-field="main-notes"] { line-break: auto; }
-.v2-test-card [data-field="main-notes"] { writing-mode: horizontal-tb; }
-.v2-test-card [data-field="main-notes"] { text-orientation: mixed; }
-.v2-test-card [data-field="main-notes"] { ruby-position: over; }
-.v2-test-card [data-field="main-notes"] { text-combine-upright: none; }
-.v2-test-card [data-field="main-notes"] { text-emphasis: none; }
-.v2-test-card [data-field="main-notes"] { text-underline-position: auto; }
-.v2-test-card [data-field="main-notes"] { text-decoration-skip-ink: auto; }
-.v2-test-card [data-field="main-notes"] { text-size-adjust: 100%; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-size-adjust: 100%; }
-.v2-test-card [data-field="main-notes"] { accent-color: auto; }
-.v2-test-card [data-field="main-notes"] { caret-color: auto; }
-.v2-test-card [data-field="main-notes"] { outline: none; }
-.v2-test-card [data-field="main-notes"] { resize: none; }
-.v2-test-card [data-field="main-notes"] { touch-action: auto; }
-.v2-test-card [data-field="main-notes"] { scroll-behavior: auto; }
-.v2-test-card [data-field="main-notes"] { overscroll-behavior: auto; }
-.v2-test-card [data-field="main-notes"] { scrollbar-color: auto; }
-.v2-test-card [data-field="main-notes"] { scrollbar-width: auto; }
-.v2-test-card [data-field="main-notes"] { color-scheme: normal; }
-.v2-test-card [data-field="main-notes"] { forced-color-adjust: auto; }
-.v2-test-card [data-field="main-notes"] { print-color-adjust: economy; }
-.v2-test-card [data-field="main-notes"] { -webkit-print-color-adjust: economy; }
-.v2-test-card [data-field="main-notes"] { clip-path: none; }
-.v2-test-card [data-field="main-notes"] { mask: none; }
-.v2-test-card [data-field="main-notes"] { object-fit: fill; }
-.v2-test-card [data-field="main-notes"] { object-position: 50% 50%; }
-.v2-test-card [data-field="main-notes"] { image-rendering: auto; }
-.v2-test-card [data-field="main-notes"] { shape-outside: none; }
-.v2-test-card [data-field="main-notes"] { shape-margin: 0; }
-.v2-test-card [data-field="main-notes"] { shape-image-threshold: .0; }
-.v2-test-card [data-field="main-notes"] { all: revert-layer; }
-.v2-test-card [data-field="main-notes"] { display: block; }
-.v2-test-card [data-field="main-notes"] > div { display:flex; gap:.4rem; min-height:26px; }
-.v2-test-card [data-field="main-notes"] .main-note-badge { display:inline-flex; }
-.v2-test-card [data-field="main-notes"] { color: inherit; }
-.v2-test-card [data-field="main-notes"] { font: inherit; }
-.v2-test-card [data-field="main-notes"] { text-transform: none; }
-.v2-test-card [data-field="main-notes"] { letter-spacing: normal; }
-.v2-test-card [data-field="main-notes"] { line-height: normal; }
-.v2-test-card [data-field="main-notes"] { font-size: inherit; }
-.v2-test-card [data-field="main-notes"] { font-weight: inherit; }
-.v2-test-card [data-field="main-notes"] { margin: 0; }
-.v2-test-card [data-field="main-notes"] { padding: 0; }
-.v2-test-card [data-field="main-notes"] { background: transparent; }
-.v2-test-card [data-field="main-notes"] { border: 0; }
-.v2-test-card [data-field="main-notes"] { border-radius: 0; }
-.v2-test-card [data-field="main-notes"] { box-shadow: none; }
-.v2-test-card [data-field="main-notes"] { opacity: 1; }
-.v2-test-card [data-field="main-notes"] { visibility: visible; }
-.v2-test-card [data-field="main-notes"] { pointer-events: auto; }
-.v2-test-card [data-field="main-notes"] { cursor: auto; }
-.v2-test-card [data-field="main-notes"] { overflow: visible; }
-.v2-test-card [data-field="main-notes"] { width: auto; }
-.v2-test-card [data-field="main-notes"] { height: auto; }
-.v2-test-card [data-field="main-notes"] { min-width: 0; }
-.v2-test-card [data-field="main-notes"] { min-height: 0; }
-.v2-test-card [data-field="main-notes"] { max-width: none; }
-.v2-test-card [data-field="main-notes"] { max-height: none; }
-.v2-test-card [data-field="main-notes"] { position: static; }
-.v2-test-card [data-field="main-notes"] { inset: auto; }
-.v2-test-card [data-field="main-notes"] { transform: none; }
-.v2-test-card [data-field="main-notes"] { transition: none; }
-.v2-test-card [data-field="main-notes"] { animation: none; }
-.v2-test-card [data-field="main-notes"] { flex: none; }
-.v2-test-card [data-field="main-notes"] { grid-area: auto; }
-.v2-test-card [data-field="main-notes"] { order: 0; }
-.v2-test-card [data-field="main-notes"] { align-self: auto; }
-.v2-test-card [data-field="main-notes"] { justify-self: auto; }
-.v2-test-card [data-field="main-notes"] { text-align: start; }
-.v2-test-card [data-field="main-notes"] { white-space: normal; }
-.v2-test-card [data-field="main-notes"] { word-break: normal; }
-.v2-test-card [data-field="main-notes"] { overflow-wrap: normal; }
-.v2-test-card [data-field="main-notes"] { text-overflow: clip; }
-.v2-test-card [data-field="main-notes"] { vertical-align: baseline; }
-.v2-test-card [data-field="main-notes"] { user-select: auto; }
-.v2-test-card [data-field="main-notes"] { appearance: auto; }
-.v2-test-card [data-field="main-notes"] { box-sizing: border-box; }
-.v2-test-card [data-field="main-notes"] { list-style: none; }
-.v2-test-card [data-field="main-notes"] { float: none; }
-.v2-test-card [data-field="main-notes"] { clear: none; }
-.v2-test-card [data-field="main-notes"] { z-index: auto; }
-.v2-test-card [data-field="main-notes"] { isolation: auto; }
-.v2-test-card [data-field="main-notes"] { filter: none; }
-.v2-test-card [data-field="main-notes"] { backdrop-filter: none; }
-.v2-test-card [data-field="main-notes"] { mix-blend-mode: normal; }
-.v2-test-card [data-field="main-notes"] { contain: none; }
-.v2-test-card [data-field="main-notes"] { content-visibility: visible; }
-.v2-test-card [data-field="main-notes"] { scroll-margin: 0; }
-.v2-test-card [data-field="main-notes"] { scroll-padding: 0; }
-.v2-test-card [data-field="main-notes"] { resize: none; }
-.v2-test-card [data-field="main-notes"] { touch-action: auto; }
-.v2-test-card [data-field="main-notes"] { will-change: auto; }
-.v2-test-card [data-field="main-notes"] { break-before: auto; }
-.v2-test-card [data-field="main-notes"] { break-after: auto; }
-.v2-test-card [data-field="main-notes"] { break-inside: auto; }
-.v2-test-card [data-field="main-notes"] { page-break-before: auto; }
-.v2-test-card [data-field="main-notes"] { page-break-after: auto; }
-.v2-test-card [data-field="main-notes"] { page-break-inside: auto; }
-.v2-test-card [data-field="main-notes"] { orphans: 2; }
-.v2-test-card [data-field="main-notes"] { widows: 2; }
-.v2-test-card [data-field="main-notes"] { columns: auto; }
-.v2-test-card [data-field="main-notes"] { column-gap: normal; }
-.v2-test-card [data-field="main-notes"] { column-rule: none; }
-.v2-test-card [data-field="main-notes"] { column-span: none; }
-.v2-test-card [data-field="main-notes"] { column-fill: balance; }
-.v2-test-card [data-field="main-notes"] { counter-reset: none; }
-.v2-test-card [data-field="main-notes"] { counter-increment: none; }
-.v2-test-card [data-field="main-notes"] { counter-set: none; }
-.v2-test-card [data-field="main-notes"] { quotes: auto; }
-.v2-test-card [data-field="main-notes"] { caption-side: top; }
-.v2-test-card [data-field="main-notes"] { empty-cells: show; }
-.v2-test-card [data-field="main-notes"] { border-collapse: separate; }
-.v2-test-card [data-field="main-notes"] { border-spacing: 0; }
-.v2-test-card [data-field="main-notes"] { table-layout: auto; }
-.v2-test-card [data-field="main-notes"] { speak: normal; }
-.v2-test-card [data-field="main-notes"] { text-decoration: none; }
-.v2-test-card [data-field="main-notes"] { text-indent: 0; }
-.v2-test-card [data-field="main-notes"] { text-shadow: none; }
-.v2-test-card [data-field="main-notes"] { text-rendering: auto; }
-.v2-test-card [data-field="main-notes"] { text-underline-offset: auto; }
-.v2-test-card [data-field="main-notes"] { text-decoration-thickness: auto; }
-.v2-test-card [data-field="main-notes"] { hanging-punctuation: none; }
-.v2-test-card [data-field="main-notes"] { hyphens: manual; }
-.v2-test-card [data-field="main-notes"] { line-break: auto; }
-.v2-test-card [data-field="main-notes"] { text-align-last: auto; }
-.v2-test-card [data-field="main-notes"] { text-justify: auto; }
-.v2-test-card [data-field="main-notes"] { text-orientation: mixed; }
-.v2-test-card [data-field="main-notes"] { text-combine-upright: none; }
-.v2-test-card [data-field="main-notes"] { text-emphasis: none; }
-.v2-test-card [data-field="main-notes"] { text-emphasis-position: over right; }
-.v2-test-card [data-field="main-notes"] { text-underline-position: auto; }
-.v2-test-card [data-field="main-notes"] { writing-mode: horizontal-tb; }
-.v2-test-card [data-field="main-notes"] { tab-size: 8; }
-.v2-test-card [data-field="main-notes"] { direction: ltr; }
-.v2-test-card [data-field="main-notes"] { unicode-bidi: normal; }
-.v2-test-card [data-field="main-notes"] { word-spacing: normal; }
-.v2-test-card [data-field="main-notes"] { font-family: inherit; }
-.v2-test-card [data-field="main-notes"] { font-style: normal; }
-.v2-test-card [data-field="main-notes"] { font-variant: normal; }
-.v2-test-card [data-field="main-notes"] { font-stretch: normal; }
-.v2-test-card [data-field="main-notes"] { font-kerning: auto; }
-.v2-test-card [data-field="main-notes"] { font-optical-sizing: auto; }
-.v2-test-card [data-field="main-notes"] { font-feature-settings: normal; }
-.v2-test-card [data-field="main-notes"] { font-variation-settings: normal; }
-.v2-test-card [data-field="main-notes"] { font-synthesis: weight style small-caps; }
-.v2-test-card [data-field="main-notes"] { font-palette: normal; }
-.v2-test-card [data-field="main-notes"] { font-language-override: normal; }
-.v2-test-card [data-field="main-notes"] { font-size-adjust: none; }
-.v2-test-card [data-field="main-notes"] { font-variant-alternates: normal; }
-.v2-test-card [data-field="main-notes"] { font-variant-caps: normal; }
-.v2-test-card [data-field="main-notes"] { font-variant-east-asian: normal; }
-.v2-test-card [data-field="main-notes"] { font-variant-ligatures: normal; }
-.v2-test-card [data-field="main-notes"] { font-variant-numeric: normal; }
-.v2-test-card [data-field="main-notes"] { font-variant-position: normal; }
-.v2-test-card [data-field="main-notes"] { color: inherit; }
-.v2-test-card [data-field="main-notes"] { background-color: transparent; }
-.v2-test-card [data-field="main-notes"] { opacity: 1; }
-.v2-test-card [data-field="main-notes"] { visibility: visible; }
-.v2-test-card [data-field="main-notes"] { clip: auto; }
-.v2-test-card [data-field="main-notes"] { clip-path: none; }
-.v2-test-card [data-field="main-notes"] { mask-image: none; }
-.v2-test-card [data-field="main-notes"] { mask-mode: match-source; }
-.v2-test-card [data-field="main-notes"] { mask-repeat: repeat; }
-.v2-test-card [data-field="main-notes"] { mask-position: 0% 0%; }
-.v2-test-card [data-field="main-notes"] { mask-clip: border-box; }
-.v2-test-card [data-field="main-notes"] { mask-origin: border-box; }
-.v2-test-card [data-field="main-notes"] { mask-size: auto; }
-.v2-test-card [data-field="main-notes"] { mask-composite: add; }
-.v2-test-card [data-field="main-notes"] { mask-type: luminance; }
-.v2-test-card [data-field="main-notes"] { box-decoration-break: slice; }
-.v2-test-card [data-field="main-notes"] { box-shadow: none; }
-.v2-test-card [data-field="main-notes"] { outline-offset: 0; }
-.v2-test-card [data-field="main-notes"] { border-image: none; }
-.v2-test-card [data-field="main-notes"] { border-style: none; }
-.v2-test-card [data-field="main-notes"] { border-width: 0; }
-.v2-test-card [data-field="main-notes"] { border-color: currentColor; }
-.v2-test-card [data-field="main-notes"] { border-radius: 0; }
-.v2-test-card [data-field="main-notes"] { background-image: none; }
-.v2-test-card [data-field="main-notes"] { background-position: 0% 0%; }
-.v2-test-card [data-field="main-notes"] { background-size: auto auto; }
-.v2-test-card [data-field="main-notes"] { background-repeat: repeat; }
-.v2-test-card [data-field="main-notes"] { background-origin: padding-box; }
-.v2-test-card [data-field="main-notes"] { background-clip: border-box; }
-.v2-test-card [data-field="main-notes"] { background-attachment: scroll; }
-.v2-test-card [data-field="main-notes"] { background-blend-mode: normal; }
-.v2-test-card [data-field="main-notes"] { transform-origin: 50% 50%; }
-.v2-test-card [data-field="main-notes"] { perspective: none; }
-.v2-test-card [data-field="main-notes"] { perspective-origin: 50% 50%; }
-.v2-test-card [data-field="main-notes"] { transform-style: flat; }
-.v2-test-card [data-field="main-notes"] { backface-visibility: visible; }
-.v2-test-card [data-field="main-notes"] { offset-path: none; }
-.v2-test-card [data-field="main-notes"] { offset-distance: 0; }
-.v2-test-card [data-field="main-notes"] { offset-position: normal; }
-.v2-test-card [data-field="main-notes"] { offset-anchor: auto; }
-.v2-test-card [data-field="main-notes"] { offset-rotate: auto; }
-.v2-test-card [data-field="main-notes"] { transition-property: all; }
-.v2-test-card [data-field="main-notes"] { transition-duration: 0s; }
-.v2-test-card [data-field="main-notes"] { transition-timing-function: ease; }
-.v2-test-card [data-field="main-notes"] { transition-delay: 0s; }
-.v2-test-card [data-field="main-notes"] { animation-name: none; }
-.v2-test-card [data-field="main-notes"] { animation-duration: 0s; }
-.v2-test-card [data-field="main-notes"] { animation-timing-function: ease; }
-.v2-test-card [data-field="main-notes"] { animation-delay: 0s; }
-.v2-test-card [data-field="main-notes"] { animation-iteration-count: 1; }
-.v2-test-card [data-field="main-notes"] { animation-direction: normal; }
-.v2-test-card [data-field="main-notes"] { animation-fill-mode: none; }
-.v2-test-card [data-field="main-notes"] { animation-play-state: running; }
-.v2-test-card [data-field="main-notes"] { animation-timeline: auto; }
-.v2-test-card [data-field="main-notes"] { animation-range-start: normal; }
-.v2-test-card [data-field="main-notes"] { animation-range-end: normal; }
-.v2-test-card [data-field="main-notes"] { cursor: auto; }
-.v2-test-card [data-field="main-notes"] { pointer-events: auto; }
-.v2-test-card [data-field="main-notes"] { touch-action: auto; }
-.v2-test-card [data-field="main-notes"] { caret-color: auto; }
-.v2-test-card [data-field="main-notes"] { accent-color: auto; }
-.v2-test-card [data-field="main-notes"] { scroll-snap-type: none; }
-.v2-test-card [data-field="main-notes"] { scroll-snap-align: none; }
-.v2-test-card [data-field="main-notes"] { scroll-snap-stop: normal; }
-.v2-test-card [data-field="main-notes"] { overscroll-behavior: auto; }
-.v2-test-card [data-field="main-notes"] { scroll-behavior: auto; }
-.v2-test-card [data-field="main-notes"] { scrollbar-gutter: auto; }
-.v2-test-card [data-field="main-notes"] { scrollbar-width: auto; }
-.v2-test-card [data-field="main-notes"] { scrollbar-color: auto; }
-.v2-test-card [data-field="main-notes"] { color-scheme: normal; }
-.v2-test-card [data-field="main-notes"] { forced-color-adjust: auto; }
-.v2-test-card [data-field="main-notes"] { print-color-adjust: economy; }
-.v2-test-card [data-field="main-notes"] { -webkit-print-color-adjust: economy; }
-.v2-test-card [data-field="main-notes"] { text-size-adjust: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-size-adjust: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-font-smoothing: auto; }
-.v2-test-card [data-field="main-notes"] { -moz-osx-font-smoothing: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-tap-highlight-color: rgba(0,0,0,0); }
-.v2-test-card [data-field="main-notes"] { -webkit-touch-callout: default; }
-.v2-test-card [data-field="main-notes"] { -webkit-user-drag: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-locale: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-image: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-reflect: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-rtl-ordering: logical; }
-.v2-test-card [data-field="main-notes"] { -webkit-ruby-position: before; }
-.v2-test-card [data-field="main-notes"] { -webkit-line-clamp: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-orient: horizontal; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-direction: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-pack: start; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-align: stretch; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-flex: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-ordinal-group: 1; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-decoration-break: slice; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-fill-color: currentColor; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-stroke-width: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-stroke-color: currentColor; }
-.v2-test-card [data-field="main-notes"] { -webkit-writing-mode: horizontal-tb; }
-.v2-test-card [data-field="main-notes"] { -webkit-hyphens: manual; }
-.v2-test-card [data-field="main-notes"] { -webkit-user-select: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-transform: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-transform-origin: 50% 50%; }
-.v2-test-card [data-field="main-notes"] { -webkit-backface-visibility: visible; }
-.v2-test-card [data-field="main-notes"] { -webkit-perspective: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-perspective-origin: 50% 50%; }
-.v2-test-card [data-field="main-notes"] { -webkit-transform-style: flat; }
-.v2-test-card [data-field="main-notes"] { -webkit-filter: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-image: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-repeat: repeat; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-position: 0% 0%; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-clip: border-box; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-origin: border-box; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-size: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-composite: source-over; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-box-image: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-clip-path: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-shape-image-threshold: .0; }
-.v2-test-card [data-field="main-notes"] { -webkit-shape-margin: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-shape-outside: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-app-region: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-horizontal-spacing: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-vertical-spacing: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-shadow: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-transition: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-animation: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-column-count: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-column-gap: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-column-rule: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-column-span: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-column-width: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-font-feature-settings: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-font-kerning: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-font-smoothing: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-locale: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-margin-before-collapse: collapse; }
-.v2-test-card [data-field="main-notes"] { -webkit-margin-after-collapse: collapse; }
-.v2-test-card [data-field="main-notes"] { -webkit-marquee-direction: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-marquee-increment: 6px; }
-.v2-test-card [data-field="main-notes"] { -webkit-marquee-repetition: infinite; }
-.v2-test-card [data-field="main-notes"] { -webkit-marquee-style: scroll; }
-.v2-test-card [data-field="main-notes"] { -webkit-padding-start: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-perspective-origin-x: 50%; }
-.v2-test-card [data-field="main-notes"] { -webkit-perspective-origin-y: 50%; }
-.v2-test-card [data-field="main-notes"] { -webkit-print-color-adjust: economy; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-combine: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-decorations-in-effect: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-emphasis-color: currentColor; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-emphasis-position: over right; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-emphasis-style: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-orientation: vertical-right; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-security: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-stroke: 0px currentColor; }
-.v2-test-card [data-field="main-notes"] { -webkit-transform-origin-x: 50%; }
-.v2-test-card [data-field="main-notes"] { -webkit-transform-origin-y: 50%; }
-.v2-test-card [data-field="main-notes"] { -webkit-transform-origin-z: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-user-modify: read-only; }
-.v2-test-card [data-field="main-notes"] { -webkit-user-select: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-start: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-end: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-before: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-after: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-padding-before: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-padding-after: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-padding-start: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-padding-end: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-margin-before: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-margin-after: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-margin-start: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-margin-end: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-logical-width: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-logical-height: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-min-logical-width: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-min-logical-height: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-max-logical-width: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-max-logical-height: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-nbsp-mode: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-line-break: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-sizing: border-box; }
-.v2-test-card [data-field="main-notes"] { -webkit-align-content: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-align-items: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-align-self: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-flex: 0 1 auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-flex-basis: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-flex-direction: row; }
-.v2-test-card [data-field="main-notes"] { -webkit-flex-flow: row nowrap; }
-.v2-test-card [data-field="main-notes"] { -webkit-flex-grow: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-flex-shrink: 1; }
-.v2-test-card [data-field="main-notes"] { -webkit-flex-wrap: nowrap; }
-.v2-test-card [data-field="main-notes"] { -webkit-justify-content: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-order: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-grid-auto-columns: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-grid-auto-flow: row; }
-.v2-test-card [data-field="main-notes"] { -webkit-grid-auto-rows: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-grid-column: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-grid-row: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-grid-template-areas: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-grid-template-columns: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-grid-template-rows: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-justify-items: legacy; }
-.v2-test-card [data-field="main-notes"] { -webkit-justify-self: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-place-content: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-place-items: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-place-self: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-row-gap: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-column-gap: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-background-clip: border-box; }
-.v2-test-card [data-field="main-notes"] { -webkit-background-origin: padding-box; }
-.v2-test-card [data-field="main-notes"] { -webkit-background-size: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-background-composite: source-over; }
-.v2-test-card [data-field="main-notes"] { -webkit-background-blend-mode: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-box-image-source: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-box-image-slice: 0 fill; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-box-image-width: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-box-image-outset: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-box-image-repeat: stretch; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-image-source: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-image-slice: 100%; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-image-width: 1; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-image-outset: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-image-repeat: stretch; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-position-x: 0%; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-position-y: 0%; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-repeat-x: repeat; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-repeat-y: repeat; }
-.v2-test-card [data-field="main-notes"] { -webkit-background-position-x: 0%; }
-.v2-test-card [data-field="main-notes"] { -webkit-background-position-y: 0%; }
-.v2-test-card [data-field="main-notes"] { -webkit-background-repeat-x: repeat; }
-.v2-test-card [data-field="main-notes"] { -webkit-background-repeat-y: repeat; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-bottom-left-radius: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-bottom-right-radius: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-top-left-radius: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-top-right-radius: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-align: stretch; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-pack: start; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-lines: single; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-flex: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-ordinal-group: 1; }
-.v2-test-card [data-field="main-notes"] { -webkit-line-clamp: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-line-break: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-locale: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-rtl-ordering: logical; }
-.v2-test-card [data-field="main-notes"] { -webkit-ruby-position: before; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-combine: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-decorations-in-effect: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-emphasis-color: currentColor; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-emphasis-position: over right; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-emphasis-style: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-orientation: vertical-right; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-security: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-writing-mode: horizontal-tb; }
-.v2-test-card [data-field="main-notes"] { -webkit-user-drag: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-user-modify: read-only; }
-.v2-test-card [data-field="main-notes"] { -webkit-appearance: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-app-region: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-horizontal-spacing: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-border-vertical-spacing: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-decoration-break: slice; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-direction: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-box-orient: horizontal; }
-.v2-test-card [data-field="main-notes"] { -webkit-highlight: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-hyphenate-character: auto; }
-.v2-test-card [data-field="main-notes"] { -webkit-line-align: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-line-box-contain: block inline replaced; }
-.v2-test-card [data-field="main-notes"] { -webkit-line-grid: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-line-snap: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-margin-collapse: collapse; }
-.v2-test-card [data-field="main-notes"] { -webkit-mask-box-image: none; }
-.v2-test-card [data-field="main-notes"] { -webkit-nbsp-mode: normal; }
-.v2-test-card [data-field="main-notes"] { -webkit-perspective-origin-x: 50%; }
-.v2-test-card [data-field="main-notes"] { -webkit-perspective-origin-y: 50%; }
-.v2-test-card [data-field="main-notes"] { -webkit-print-color-adjust: economy; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-fill-color: currentColor; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-stroke-color: currentColor; }
-.v2-test-card [data-field="main-notes"] { -webkit-text-stroke-width: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-transform-origin-x: 50%; }
-.v2-test-card [data-field="main-notes"] { -webkit-transform-origin-y: 50%; }
-.v2-test-card [data-field="main-notes"] { -webkit-transform-origin-z: 0; }
-.v2-test-card [data-field="main-notes"] { -webkit-user-select: auto; }
-.v2-test-card > div > div.mb-4 > p {
-    text-transform: none !important;
-    letter-spacing: normal !important;
-    font-size: .78rem;
-    line-height: 1rem;
-    font-weight: 600;
-    color: #64748b;
-    margin-bottom: .5rem;
+    width:18px;
+    height:18px;
+    flex-basis:18px;
 }
 .v2-test-card .favorite-btn,
 .v2-test-card .collection-btn {
-    padding-top: .38rem;
-    padding-bottom: .38rem;
-    min-height: 32px;
-    font-size: .75rem;
-    box-shadow: none;
-    background: transparent;
+    min-height:32px;
+    padding:.38rem .65rem;
+    font-size:.75rem;
+    box-shadow:none;
+    background:transparent;
 }
 .v2-test-card .favorite-btn {
-    color: #9f6b78;
-    border-color: #eadde1;
+    color:#9f6b78;
+    border-color:#eadde1;
 }
 .v2-test-card .favorite-btn:hover {
-    color: #8d5968;
-    background: #fff8fa;
-    border-color: #dfcbd1;
+    color:#8d5968;
+    background:#fff8fa;
+    border-color:#dfcbd1;
 }
 .v2-test-card .collection-btn {
-    color: #5f756a;
-    border-color: #dce7e1;
+    color:#5f756a;
+    border-color:#dce7e1;
 }
 .v2-test-card [data-field="shobiLink"] {
-    min-height: 38px;
+    min-height:38px;
     display:flex;
     align-items:center;
     justify-content:center;
