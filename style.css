@@ -368,3 +368,26 @@
     .v2-test-card .favorite-btn,
     .v2-test-card .collection-btn { transition:none; }
 }
+
+/* Explicit V2 action icons: match the reference, no Font Awesome glyph ambiguity */
+.v2-test-card [data-field="shobiLink"]::before {
+    content:'';
+    width:1.15rem;
+    height:1.15rem;
+    background:#fff;
+    -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 8h12l1 13H5L6 8Z'/%3E%3Cpath d='M9 8V6a3 3 0 0 1 6 0v2'/%3E%3C/svg%3E") center/contain no-repeat;
+    mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 8h12l1 13H5L6 8Z'/%3E%3Cpath d='M9 8V6a3 3 0 0 1 6 0v2'/%3E%3C/svg%3E") center/contain no-repeat;
+    justify-self:center;
+}
+.v2-test-card .collection-btn i { display:none; }
+.v2-test-card .collection-btn::before {
+    content:'';
+    display:inline-block;
+    width:1rem;
+    height:1rem;
+    margin-right:.5rem;
+    vertical-align:-.14em;
+    background:#0f172a;
+    -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='6' width='16' height='15' rx='2'/%3E%3Cpath d='M3 3h18v4H3z'/%3E%3Cpath d='M9 11h6'/%3E%3C/svg%3E") center/contain no-repeat;
+    mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='6' width='16' height='15' rx='2'/%3E%3Cpath d='M3 3h18v4H3z'/%3E%3Cpath d='M9 11h6'/%3E%3C/svg%3E") center/contain no-repeat;
+}
