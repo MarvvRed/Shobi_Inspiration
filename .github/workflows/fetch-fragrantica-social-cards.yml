@@ -31,9 +31,11 @@ jobs:
 
       - name: Resolve missing Fragrantica IDs
         env:
-          FRAGRANTICA_ID_DELAY: "0.20"
+          SHOBI_HTTP_TIMEOUT: "7"
+          FRAGRANTICA_ID_DELAY: "0.15"
           FRAGRANTICA_ID_MAX: "250"
           FRAGRANTICA_ID_CHECKPOINT_EVERY: "10"
+          FRAGRANTICA_RETRY_UNRESOLVED: "1"
         run: python fragrantica-scraper-archive/social-cards/resolve_missing_fragrantica_ids.py
 
       - name: Fetch social cards
