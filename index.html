@@ -131,7 +131,19 @@
             <div id="active-filters-display" class="mb-4 flex flex-wrap gap-2">
                 </div>
 
-            <div id="results-count" class="text-secondary mb-4">Loading perfumes...</div>
+            <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div id="results-count" class="text-secondary">Loading perfumes...</div>
+                <label for="sort-select" class="flex items-center gap-2 text-sm font-medium text-secondary sm:ml-auto">
+                    <span>Sort by</span>
+                    <select id="sort-select"
+                            class="border-base rounded-md bg-surface px-3 py-2 text-primary focus-ring"
+                            aria-label="Sort perfumes">
+                        <option value="brand">Brand</option>
+                        <option value="name">Name</option>
+                        <option value="best-seller">Best seller</option>
+                    </select>
+                </label>
+            </div>
 
             <div id="resultsContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6">
                 </div>

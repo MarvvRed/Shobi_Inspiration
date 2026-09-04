@@ -5,6 +5,7 @@ let allPerfumes = [];
 let allBrands = new Map();
 const state = {
     searchQuery: '',
+    sortBy: 'brand',
     favorites: [],
     showingFavorites: false,
     selectedBrand: null,
@@ -178,6 +179,24 @@ function getFilteredPerfumes(overrideFilters = null) {
             String(p.brand || '').toLowerCase().includes(query) ||
             String(p.code || '').toLowerCase().includes(query)
         );
+    }
+
+    // 7. Sort visible results. "Best seller" uses the available scent score
+    // as the current ranking signal because the dataset has no sales counter.
+    if (!overrideFilters) {
+        const byName = (a, b) => String(a.inspiredBy || '').localeCompare(String(b.inspiredBy || ''), 'en', { sensitivity: 'base' });
+        const byBrand = (a, b) => String(a.brand || '').localeCompare(String(b.brand || ''), 'en', { sensitivity: 'base' }) || byName(a, b);
+        if (state.sortBy === 'name') {
+            filtered.sort(byName);
+        } else if (state.sortBy === 'best-seller') {
+            filtered.sort((a, b) => {
+                const scoreA = Number(a.userRatings?.scent) || 0;
+                const scoreB = Number(b.userRatings?.scent) || 0;
+                return scoreB - scoreA || byBrand(a, b);
+            });
+        } else {
+            filtered.sort(byBrand);
+        }
     }
 
     return filtered;
@@ -823,6 +842,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Søgefelt-listener
     document.getElementById('search-input').addEventListener('input', e => {
         state.searchQuery = e.target.value;
+        applyFiltersAndRender();
+    });
+
+    document.getElementById('sort-select').addEventListener('change', e => {
+        state.sortBy = e.target.value;
         applyFiltersAndRender();
     });
 
