@@ -28,7 +28,7 @@ There is currently no backend required by the cloned application.
 
 ## Current Database
 
-`database_complete.json` currently contains **303 brands** and **2,091 perfumes**.
+`database_complete.json` currently contains **358 brands** and **2,387 records**. Of these, **2,184** carry a verified `identityStatus = CONFIRMED`; **203** legacy records that could not be tied safely to the completed audit remain preserved and unconfirmed.
 
 The existing records include data such as Shobi/product code, inspired-by perfume, brand, category, description, scent type, olfactory family, notes, main accords, occasions, seasons, gender affinity, sillage, longevity, scent rating, and external reference link.
 
@@ -98,18 +98,16 @@ The method was first tested on the first 10 Shobi Master records (`prestashop_pr
 
 A broader test on the first 50 consecutive Master records (`prestashop_product_id` 5117 through 5067) produced 50 confirmed identities, 49 verified Fragrantica IDs, and one confirmed perfume with no verified Fragrantica page/ID.
 
-The official production mapping is stored in `data/shobi-fragrantica-mapping.csv`. It currently contains the first **150 Shobi Master records** processed in Master order.
+The official production mapping is stored in `data/shobi-fragrantica-mapping.csv`. On 4 September 2026 it was aligned with the completed 2,343-row identity audit.
 
-Current cumulative mapping status after 150 records:
+Current cumulative mapping status:
 
-- **146 `CONFIRMED` identities**
-- **4 `AMBIGUOUS` identities**
-- **145 `fragrantica_status = FOUND`**
-- **5 `fragrantica_status = NOT_FOUND`** (one confirmed perfume without a verified Fragrantica page plus four ambiguous identities with no assignable Fragrantica mapping)
+- **2,184 `CONFIRMED` identities**
+- **151 `AMBIGUOUS` identities**
+- **8 `NON_APPLICABLE` mixtures**
+- **147 previously verified `fragrantica_status = FOUND` links preserved**
 
-The four ambiguous records in the second 100-record block are Shobi entries whose `inspired_by` field is broken/missing (`LTN` records); their olfactory profiles alone are insufficient to assign a perfume identity safely.
-
-These results remain samples/progress, not proof that all 2,343 records will be automatically resolvable. Ambiguous records must remain explicitly unresolved.
+The audit source with all evidence and review columns is stored in `data/shobi-identity-review-2026-09-04.csv`. Records without a separately verified Fragrantica ID retain `fragrantica_status = NOT_FOUND`; a Parfumo URL was not converted into a Fragrantica ID. The pre-import mapping is preserved as `data/shobi-fragrantica-mapping.pre-20260904.csv`.
 
 ## Source Strategy
 
@@ -197,6 +195,9 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - `data/shobi-fragrantica-mapping.csv` created as the official perfume identity mapping dataset.
 - First 50 mappings written to the official mapping file.
 - Next 100 mappings completed and appended, bringing official mapping coverage to 150 Shobi Master records.
+- Completed identity audit imported into the official mapping: 2,184 confirmed, 151 ambiguous, and 8 non-applicable out of 2,343 records.
+- Preserved all 147 previously verified Fragrantica IDs and retained the full review evidence in `data/shobi-identity-review-2026-09-04.csv`.
+- Applied the 2,184 confirmed identities to `database_complete.json`: 1,888 existing records were updated and 296 confirmed records were added. No legacy record was deleted; 203 unmatched legacy records remain for later cleanup. The pre-import database is preserved as `database_complete.pre-identity-import-20260904.json`.
 
 ## Decisions Made
 
@@ -210,8 +211,8 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - **No Fragrantica ID may be assigned solely from name similarity or a first-result match.**
 - **Identification uses cross-verification of Shobi evidence and the candidate perfume.**
 - **Perfume identity and Fragrantica availability are independent statuses.**
-- **`identity_status` uses `CONFIRMED` / `AMBIGUOUS`.**
-- **`fragrantica_status` uses `FOUND` / `NOT_FOUND`.**
+- **`identity_status` uses `CONFIRMED` / `AMBIGUOUS` / `NON_APPLICABLE`.**
+- **`fragrantica_status` uses `FOUND` / `NOT_FOUND` / `NOT_APPLICABLE`.**
 - **A perfume may legitimately be `identity_status = CONFIRMED` and `fragrantica_status = NOT_FOUND`.**
 - **Fragrantica is a linked resource, not the authority that determines whether a perfume identity exists.**
 - **Unresolved or genuinely ambiguous identities remain `AMBIGUOUS`; no official Fragrantica ID is assigned until resolved.**
@@ -235,19 +236,17 @@ The following have **not** been decided yet:
 
 ## Current Step
 
-**Continue identifying the original perfume represented by each Shobi Master record before collecting enrichment data.**
+**Identity review is complete for all 2,343 Shobi Master records at the current evidence level.**
 
 The official result model is:
 
 `Shobi record → candidate original perfume → cross-verification → identity_status → Fragrantica lookup/status`
 
-The official mapping currently covers the first **150 Master records**. Do not force either perfume identity or a Fragrantica ID when evidence is insufficient.
+The official mapping covers all **2,343 Master records**: 2,184 confirmed, 151 ambiguous, and 8 non-applicable. Do not force either perfume identity or a Fragrantica ID when evidence is insufficient.
 
 ## Next Step
 
-Continue the production identity mapping from the next unprocessed Shobi Master record while preserving the independent `identity_status` and `fragrantica_status` fields.
-
-Do not advance automatically into notes, gender, seasons, accords, Social Card extraction, database conversion, or other enrichment until perfume identity work is sufficiently established and the user explicitly decides to proceed.
+When work resumes, investigate the 151 ambiguous identities or decide how the 2,184 confirmed identities should feed the site's `database_complete.json` enrichment records.
 
 ---
 
