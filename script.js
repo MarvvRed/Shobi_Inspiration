@@ -336,7 +336,8 @@ function getAudienceIcons(audience) {
 
 function getSeasonBadges(seasons) {
     if (!Array.isArray(seasons) || seasons.length === 0) return '';
-    const uniqueSeasons = [...new Set(seasons.map(s => String(s || '').trim().toLowerCase()).filter(Boolean))];
+    const primarySeason = String(seasons[0] || '').trim().toLowerCase();
+    if (!primarySeason) return '';
     const seasonMap = {
         spring: { emoji: '🌸', label: 'Spring' },
         summer: { emoji: '☀️', label: 'Summer' },
@@ -344,10 +345,8 @@ function getSeasonBadges(seasons) {
         fall: { emoji: '🍁', label: 'Autumn' },
         winter: { emoji: '❄️', label: 'Winter' }
     };
-    return uniqueSeasons.map(season => {
-        const data = seasonMap[season] || { emoji: '', label: season.charAt(0).toUpperCase() + season.slice(1) };
-        return `<button type="button" data-action="filter-icon" data-filter-type="season" data-filter-value="${escapeHtml(season)}" title="Filter by ${escapeHtml(data.label)}" style="display:inline-flex;align-items:center;gap:.35rem;width:fit-content;padding:.3rem .72rem;border-radius:9999px;font-size:.82rem;font-weight:600;line-height:1.05rem;border:1px solid #fde68a;color:#92400e;background:#fffbeb;box-shadow:none;white-space:nowrap;"><span aria-hidden="true">${data.emoji}</span><span>${escapeHtml(data.label)}</span></button>`;
-    }).join('');
+    const data = seasonMap[primarySeason] || { emoji: '', label: primarySeason.charAt(0).toUpperCase() + primarySeason.slice(1) };
+    return `<button type="button" data-action="filter-icon" data-filter-type="season" data-filter-value="${escapeHtml(primarySeason)}" title="Filter by ${escapeHtml(data.label)}" style="display:inline-flex;align-items:center;gap:.35rem;width:fit-content;padding:.3rem .72rem;border-radius:9999px;font-size:.82rem;font-weight:600;line-height:1.05rem;border:1px solid #fde68a;color:#92400e;background:#fffbeb;box-shadow:none;white-space:nowrap;"><span aria-hidden="true">${data.emoji}</span><span>${escapeHtml(data.label)}</span></button>`;
 }
 
 const SCENT_ICON_MAP = {
