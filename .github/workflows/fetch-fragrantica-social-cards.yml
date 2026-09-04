@@ -60,4 +60,23 @@ jobs:
           fi
 
           git commit -m "Resolve Fragrantica IDs and archive social cards"
-          git push
+
+          # main may advance while this long-running job is scraping.
+          # Rebase our archive commit onto the latest remote main before pushing.
+          # Retry a few times in case another commit lands during the rebase/push window.
+          for attempt in 1 2 3 4 5; do
+            echo "Push attempt ${attempt}/5"
+            git fetch origin main
+            git rebase origin/main
+
+            if git push origin HEAD:main; then
+              echo "Fragrantica archive pushed successfully."
+              exit 0
+            fi
+
+            echo "main advanced again; retrying..."
+            sleep 3
+          done
+
+          echo "Failed to push after 5 attempts."
+          exit 1
