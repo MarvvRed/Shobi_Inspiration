@@ -252,9 +252,9 @@
 .v2-test-card .brand-badge {
     color:#0f172a;
     background:#ffffff;
-    border-color:#d1d5db;
+    border-color:#c5ced9;
     box-shadow:none;
-    font-weight:500;
+    font-weight:600;
 }
 .v2-test-card .brand-badge::after {
     content:'›';
@@ -266,7 +266,7 @@
 .v2-test-card .brand-badge:hover {
     color:#0f172a;
     background:#f8fafc;
-    border-color:#b9c2cf;
+    border-color:#aeb9c7;
 }
 .v2-test-card .gender-badge {
     gap:.35rem;
@@ -294,39 +294,55 @@
     padding:.28rem .58rem;
     color:#0f172a;
     background:#ffffff;
-    border-color:#d1d5db;
+    border-color:#c5ced9;
     box-shadow:none;
-    font-weight:500;
+    font-weight:600;
 }
-.v2-test-card [data-field="main-notes"] .main-note-badge:hover { color:#0f172a; background:#f8fafc; border-color:#b9c2cf; }
+.v2-test-card [data-field="main-notes"] .main-note-badge:hover { color:#0f172a; background:#f8fafc; border-color:#aeb9c7; }
 .v2-test-card [data-field="main-notes"] .main-note-icon { width:20px; height:20px; flex-basis:20px; }
 .v2-test-card .favorite-btn,
 .v2-test-card .collection-btn {
     min-height:36px;
     padding:.42rem .65rem;
     font-size:.78rem;
-    font-weight:500;
+    font-weight:600;
     box-shadow:none;
     color:#0f172a;
     background:#ffffff;
-    border-color:#d1d5db;
+    border-color:#c5ced9;
 }
 .v2-test-card .favorite-btn:hover,
-.v2-test-card .collection-btn:hover { color:#0f172a; background:#f8fafc; border-color:#b9c2cf; }
+.v2-test-card .collection-btn:hover { color:#0f172a; background:#f8fafc; border-color:#aeb9c7; }
+.v2-test-card .favorite-btn i,
+.v2-test-card .collection-btn i { color:#0f172a; font-size:.95rem; }
+.v2-test-card .collection-btn i::before { content:'\f49e'; }
 .v2-test-card [data-field="shobiLink"] {
     min-height:42px;
-    display:flex;
+    display:grid;
+    grid-template-columns:1.2rem 1fr 1.2rem;
     align-items:center;
-    justify-content:center;
-    gap:.65rem;
+    gap:.55rem;
     font-weight:650;
     font-size:.85rem;
     background:#2563eb;
     border-color:#2563eb;
     box-shadow:none;
+    text-align:center;
 }
-.v2-test-card [data-field="shobiLink"]::before { content:'\f290'; font-family:'Font Awesome 6 Free'; font-weight:900; }
-.v2-test-card [data-field="shobiLink"]::after { content:'›'; margin-left:auto; font-size:1.25rem; line-height:1; font-weight:700; }
+.v2-test-card [data-field="shobiLink"]::before {
+    content:'\f290';
+    font-family:'Font Awesome 6 Free';
+    font-weight:900;
+    font-size:1rem;
+    justify-self:center;
+}
+.v2-test-card [data-field="shobiLink"]::after {
+    content:'›';
+    font-size:1.25rem;
+    line-height:1;
+    font-weight:700;
+    justify-self:center;
+}
 .v2-test-card [data-field="shobiLink"]:hover { background:#1d4ed8; border-color:#1d4ed8; transform:scale(1.05); }
 
 /* Same interaction as the original Gender badge, only inside V2 test card */
