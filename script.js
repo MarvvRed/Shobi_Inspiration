@@ -18,10 +18,6 @@ const state = {
     }
 };
 
-// KONSTANTER til Boost Guide
-const LIGHT_ACCORDS = ['fresh', 'aquatic', 'citrus', 'aromatic', 'floral'];
-const HEAVY_ACCORDS = ['gourmand', 'oriental', 'amber', 'spicy', 'leather', 'woody'];
-
 // Mapping for token farver
 const TOKEN_COLORS = {
     gender: 'token-gender',
@@ -66,7 +62,6 @@ function displayPerfumes(perfumes) {
         card.querySelector('[data-field="code"]').textContent = p.code;
         card.querySelector('[data-field="inspiredBy"]').textContent = p.inspiredBy;
         card.querySelector('[data-field="brand"]').textContent = p.brand;
-        card.querySelector('[data-field="description"]').textContent = p.description || '';
 
         const shobiLink = `https://leparfum.com.gr/en/module/iqitsearch/searchiqit?s=${p.code}`;
         card.querySelector('[data-field="shobiLink"]').href = shobiLink;
@@ -84,7 +79,6 @@ function displayPerfumes(perfumes) {
         typeIconsContainer.innerHTML = getTypeIcons(p.mainAccords);
 
         // Sæt data-attributter til klik-handlere
-        card.querySelector('[data-action="show-details"]').dataset.code = p.code;
         card.querySelector('[data-action="filter-brand"]').dataset.brand = p.brand;
 
         container.appendChild(card);
@@ -93,9 +87,6 @@ function displayPerfumes(perfumes) {
     // Gen-tilføj event listeners
     container.querySelectorAll('.favorite-btn').forEach(btn =>
         btn.addEventListener('click', toggleFavorite)
-    );
-    container.querySelectorAll('[data-action="show-details"]').forEach(el =>
-        el.addEventListener('click', (e) => showPerfumeModal(e.currentTarget.dataset.code))
     );
     container.querySelectorAll('[data-action="filter-brand"]').forEach(btn =>
         btn.addEventListener('click', (e) => handleBrandFilterClick(e.currentTarget.dataset.brand))
@@ -470,100 +461,6 @@ function loadFavorites() {
     document.getElementById('favorites-count').textContent = state.favorites.length;
 }
 
-// --- KERNELOGIK: MODAL (Uændret) ---
-
-const modal = document.getElementById('perfume-modal');
-const modalContent = document.getElementById('modal-content');
-const modalOverlay = document.getElementById('modal-overlay');
-const modalCloseBtn = document.getElementById('modal-close-btn');
-
-function getBoostGuideHtml(perfume) {
-    // ... (uændret)
-    const accords = perfume.mainAccords || [];
-    const isHeavy = accords.some(accord => HEAVY_ACCORDS.includes(accord.toLowerCase()));
-
-    let rec;
-    let title;
-
-    if (isHeavy) {
-        title = "Heavy/Gourmand Scent";
-        rec = { '30ml': '2ml', '50ml': '3-4ml', '100ml': '5ml' };
-    } else {
-        title = "Fresh/Light Scent";
-        rec = { '30ml': '1ml', '50ml': '2ml', '100ml': '3ml' };
-    }
-
-    return `
-        <div class="w-full">
-            <p class="text-sm text-secondary mb-2">Recommendation for a <strong class="text-primary">${title}</strong>:</p>
-            <div class="flex justify-around">
-                <div>
-                    <span class="text-lg font-bold text-primary">30ml</span>
-                    <p class="text-sm text-accent font-medium">+ ${rec['30ml']}</p>
-                </div>
-                <div>
-                    <span class="text-lg font-bold text-primary">50ml</span>
-                    <p class="text-sm text-accent font-medium">+ ${rec['50ml']}</p>
-                </div>
-                <div>
-                    <span class="text-lg font-bold text-primary">100ml</span>
-                    <p class="text-sm text-accent font-medium">+ ${rec['100ml']}</p>
-                </div>
-            </div>
-        </div>
-    `;
-}
-
-function showPerfumeModal(code) {
-    // ... (uændret)
-    const perfume = allPerfumes.find(p => p.code === code);
-    if (!perfume) return;
-
-    document.getElementById('modal-inspiredBy').textContent = perfume.inspiredBy;
-    document.getElementById('modal-brand').textContent = perfume.brand;
-    document.getElementById('modal-code').textContent = perfume.code;
-    document.getElementById('modal-description').textContent = perfume.description || 'No description available.';
-
-    const notesContainer = document.getElementById('modal-notes');
-    const topNotes = perfume.notes && Array.isArray(perfume.notes.top) && perfume.notes.top.length > 0
-        ? perfume.notes.top.join(', ')
-        : null;
-    const heartNotes = perfume.notes && Array.isArray(perfume.notes.heart) && perfume.notes.heart.length > 0
-        ? perfume.notes.heart.join(', ')
-        : null;
-    const baseNotes = perfume.notes && Array.isArray(perfume.notes.base) && perfume.notes.base.length > 0
-        ? perfume.notes.base.join(', ')
-        : null;
-
-    const notesHtml = `
-        ${topNotes ? `<p><strong class="text-primary">Top:</strong> ${topNotes}</p>` : ''}
-        ${heartNotes ? `<p><strong class="text-primary">Heart:</strong> ${heartNotes}</p>` : ''}
-        ${baseNotes ? `<p><strong class="text-primary">Base:</strong> ${baseNotes}</p>` : ''}
-    `;
-    notesContainer.innerHTML = (topNotes || heartNotes || baseNotes) ? notesHtml : '<p>No note details available.</p>';
-
-    const boostGuideContainer = document.getElementById('modal-boost-guide');
-    boostGuideContainer.innerHTML = getBoostGuideHtml(perfume);
-
-    document.getElementById('modal-shobiLink').href = `https://leparfum.com.gr/en/module/iqitsearch/searchiqit?s=${perfume.code}`;
-
-    modal.classList.remove('invisible');
-    setTimeout(() => {
-        modal.classList.remove('opacity-0');
-        modalContent.classList.remove('opacity-0', '-translate-y-10');
-    }, 10);
-}
-
-function hidePerfumeModal() {
-    // ... (uændret)
-    modal.classList.add('opacity-0');
-    modalContent.classList.add('opacity-0', '-translate-y-10');
-    setTimeout(() => {
-        modal.classList.add('invisible');
-    }, 300);
-}
-
-
 // --- FILTER-LOGIK (OPDATERET) ---
 
 function toggleMobileFilters() {
@@ -871,7 +768,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Modal Lyttere
-    modalCloseBtn.addEventListener('click', hidePerfumeModal);
-    modalOverlay.addEventListener('click', hidePerfumeModal);
     modalContent.addEventListener('click', (e) => e.stopPropagation());
 });

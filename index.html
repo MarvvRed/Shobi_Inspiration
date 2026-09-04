@@ -158,7 +158,7 @@
                     <i class="fa-regular fa-heart"></i>
                 </button>
 
-                <div data-action="show-details" data-code="" class="cursor-pointer">
+                <div>
                     <p class="text-xs font-mono text-tertiary mb-1" data-field="code">DRC-123</p>
                     <h3 class="text-lg font-bold text-primary mb-1" data-field="inspiredBy">Perfume Name</h3>
                 </div>
@@ -168,10 +168,6 @@
                 </button>
 
                 <div data-field="audience-icons" class="flex space-x-3 text-base mb-3"></div>
-
-                <p data-field="description" class="hidden lg:block text-sm text-secondary mb-4 truncate-3-lines">
-                    Loading description...
-                </p>
 
                 <div data-field="type-icons" class="flex space-x-3 text-base mb-4"></div>
 
@@ -184,44 +180,6 @@
             </div>
         </div>
     </template>
-
-    <div id="perfume-modal" class="fixed inset-0 z-30 flex items-center justify-center p-4 invisible opacity-0 transition-opacity duration-300">
-        <div id="modal-overlay" class="absolute inset-0 bg-black bg-opacity-75 cursor-pointer"></div>
-
-        <div id="modal-content" class="relative bg-surface rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto transition-all duration-300 transform -translate-y-10 opacity-0">
-            <div class="p-6 border-b border-light">
-                <button id="modal-close-btn" class="absolute top-4 right-4 text-tertiary text-accent-hover z-10">
-                    <i class="fas fa-times fa-2x"></i>
-                </button>
-                <h2 id="modal-inspiredBy" class="text-2xl font-bold text-primary">Perfume Name</h2>
-                <p id="modal-brand" class="text-lg text-secondary">Brand Name</p>
-                <p id="modal-code" class="text-sm font-mono text-tertiary mt-1">CODE-123</p>
-            </div>
-
-            <div class="p-6 space-y-4">
-                <div>
-                    <h4 class="font-semibold text-primary">Description</h4>
-                    <p id="modal-description" class="text-secondary">Description goes here...</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-primary">Notes</h4>
-                    <div id="modal-notes" class="text-secondary space-y-1"></div>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-primary">Essence Boost Guide</h4>
-                    <div id="modal-boost-guide" class="flex justify-around items-center text-center p-3 bg-subtle rounded-md mt-2">
-                        </div>
-                </div>
-            </div>
-
-            <div class="p-6 bg-subtle rounded-b-lg">
-                <a id="modal-shobiLink" href="#" target="_blank" rel="noopener noreferrer"
-                   class="block w-full text-center px-4 py-3 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                    Buy this at Shobi
-                </a>
-            </div>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 
