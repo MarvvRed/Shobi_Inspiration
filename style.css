@@ -281,6 +281,13 @@
 }
 .v2-test-card .gender-badge i { font-size:.9rem; }
 .v2-test-card .gender-badge:hover { color:#1d4ed8; background:#e5f0ff; border-color:#93c5fd; }
+.v2-test-card [data-field="audience-icons"] {
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+    flex-wrap:nowrap;
+}
+.v2-test-card [data-field="audience-icons"] > * { flex-shrink:0; }
 .v2-test-card > div > div.mb-4 > p {
     text-transform:none !important;
     letter-spacing:normal !important;
