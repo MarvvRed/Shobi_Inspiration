@@ -338,11 +338,11 @@ function getSeasonBadges(seasons) {
     if (!Array.isArray(seasons) || seasons.length === 0) return '';
     const uniqueSeasons = [...new Set(seasons.map(s => String(s || '').trim().toLowerCase()).filter(Boolean))];
     const seasonMap = {
-        spring: { emoji: '🌸', label: 'Primavera' },
-        summer: { emoji: '☀️', label: 'Estate' },
-        autumn: { emoji: '🍁', label: 'Autunno' },
-        fall: { emoji: '🍁', label: 'Autunno' },
-        winter: { emoji: '❄️', label: 'Inverno' }
+        spring: { emoji: '🌸', label: 'Spring' },
+        summer: { emoji: '☀️', label: 'Summer' },
+        autumn: { emoji: '🍁', label: 'Autumn' },
+        fall: { emoji: '🍁', label: 'Autumn' },
+        winter: { emoji: '❄️', label: 'Winter' }
     };
     return uniqueSeasons.map(season => {
         const data = seasonMap[season] || { emoji: '', label: season.charAt(0).toUpperCase() + season.slice(1) };
