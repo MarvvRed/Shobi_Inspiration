@@ -16,15 +16,25 @@ ROOT = Path(__file__).resolve().parents[2]
 MAPPING = ROOT / "data" / "shobi-fragrantica-mapping.csv"
 REPORT = ROOT / "fragrantica-scraper-archive" / "social-cards" / "id-resolution-report.csv"
 UA = os.environ.get("SHOBI_USER_AGENT", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36")
-TIMEOUT = float(os.environ.get("SHOBI_HTTP_TIMEOUT", "20"))
-DELAY = float(os.environ.get("FRAGRANTICA_ID_DELAY", "0.20"))
+TIMEOUT = float(os.environ.get("SHOBI_HTTP_TIMEOUT", "7"))
+DELAY = float(os.environ.get("FRAGRANTICA_ID_DELAY", "0.15"))
 MAX_ROWS = int(os.environ.get("FRAGRANTICA_ID_MAX", "250"))
 CHECKPOINT_EVERY = max(1, int(os.environ.get("FRAGRANTICA_ID_CHECKPOINT_EVERY", "10")))
-STOP = {"for","the","and","of","by","pour","eau","de","parfum","perfume","fragrance","edp","edt","men","women","unisex"}
+RETRY_UNRESOLVED = os.environ.get("FRAGRANTICA_RETRY_UNRESOLVED", "1").strip().lower() not in {"0", "false", "no"}
+STOP = {
+    "for", "the", "and", "of", "by", "pour", "eau", "de", "parfum", "perfume",
+    "perfumes", "fragrance", "fragrances", "edp", "edt", "men", "women", "unisex",
+    "type", "spray", "edition", "intense", "extract", "extrait"
+}
 REPORT_FIELDS = [
-    "prestashop_product_id","shobi_code","original_brand","original_perfume",
-    "old_fragrantica_id","new_fragrantica_id","fragrantica_url","result","providers","note"
+    "prestashop_product_id", "shobi_code", "original_brand", "original_perfume",
+    "old_fragrantica_id", "new_fragrantica_id", "fragrantica_url", "result", "providers", "note"
 ]
+
+# Search providers can become slow or rate-limited mid-run. After repeated failures we stop
+# using the sick provider instead of burning ~20 seconds on every remaining perfume.
+PROVIDER_FAILURES: dict[str, int] = {}
+DISABLED_PROVIDERS: set[str] = set()
 
 
 def norm(s: str) -> str:
@@ -35,12 +45,41 @@ def norm(s: str) -> str:
     return " ".join(s.split())
 
 
+def clean_perfume_name(perfume: str, brand: str = "") -> str:
+    """Remove catalogue noise while keeping the distinctive perfume name."""
+    s = unicodedata.normalize("NFKC", perfume or "")
+    s = re.sub(r"\([^)]*\b(?:19|20)\d{2}\b[^)]*\)", " ", s, flags=re.I)
+    s = re.sub(r"\b(?:eau\s+de\s+parfum|eau\s+de\s+toilette|eau\s+de\s+cologne|parfum|perfume|fragrance|edp|edt)\b", " ", s, flags=re.I)
+    s = re.sub(r"\b(?:for\s+(?:men|women)|pour\s+homme|pour\s+femme|type)\b", " ", s, flags=re.I)
+    s = re.sub(r"\b(?:19|20)\d{2}\b", " ", s)
+    s = re.sub(r"[-_/|]+", " ", s)
+    s = " ".join(s.split()).strip(" -–—,.;:")
+
+    # Some source names redundantly append the brand: "Khamrah Qahwa Lattafa Perfumes".
+    nb = norm(brand)
+    ns = norm(s)
+    if nb and ns:
+        brand_words = nb.split()
+        words = ns.split()
+        if len(words) > len(brand_words) and words[-len(brand_words):] == brand_words:
+            words = words[:-len(brand_words)]
+            s = " ".join(words)
+        elif len(brand_words) == 1 and len(words) > 1 and words[-1] == brand_words[0]:
+            s = " ".join(words[:-1])
+    return s.strip() or perfume.strip()
+
+
 def toks(s: str) -> set[str]:
     return {t for t in norm(s).split() if len(t) >= 2 and t not in STOP}
 
 
 def fetch_text(url: str) -> str:
-    req = Request(url, headers={"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"})
+    req = Request(url, headers={
+        "User-Agent": UA,
+        "Accept-Language": "en-US,en;q=0.9",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Cache-Control": "no-cache",
+    })
     with urlopen(req, timeout=TIMEOUT) as r:
         return r.read(2_000_000).decode("utf-8", errors="replace")
 
@@ -94,38 +133,80 @@ def parse_url(url: str):
     }
 
 
-def search_links(brand: str, perfume: str) -> tuple[list[str], str]:
-    q = f'site:fragrantica.com/perfume "{brand}" "{perfume}"'
-    providers = [
-        ("bing-rss", "https://www.bing.com/search?format=rss&q=" + quote_plus(q)),
-        ("ddg-html", "https://html.duckduckgo.com/html/?q=" + quote_plus(q)),
-        ("bing", "https://www.bing.com/search?q=" + quote_plus(q)),
+def query_variants(brand: str, perfume: str) -> list[str]:
+    clean = clean_perfume_name(perfume, brand)
+    variants = [
+        f'site:fragrantica.com/perfume "{brand}" "{clean}"',
+        f'site:fragrantica.com/perfume {brand} {clean}',
     ]
+    # If cleaning materially changed the source name, keep one original-name query too.
+    if norm(clean) != norm(perfume):
+        variants.append(f'site:fragrantica.com/perfume "{brand}" "{perfume}"')
+    # Short, distinctive token query helps with awkward punctuation/slugs.
+    core = [t for t in norm(clean).split() if t not in STOP]
+    if core:
+        variants.append(f'site:fragrantica.com/perfume {brand} ' + " ".join(core[:6]))
+    out: list[str] = []
+    for q in variants:
+        q = " ".join(q.split())
+        if q not in out:
+            out.append(q)
+    return out[:4]
+
+
+def provider_urls(query: str) -> list[tuple[str, str]]:
+    return [
+        ("bing-rss", "https://www.bing.com/search?format=rss&q=" + quote_plus(query)),
+        ("ddg-html", "https://html.duckduckgo.com/html/?q=" + quote_plus(query)),
+        ("bing", "https://www.bing.com/search?q=" + quote_plus(query)),
+    ]
+
+
+def search_links(brand: str, perfume: str) -> tuple[list[str], str]:
     links: list[str] = []
     used: list[str] = []
-    for name, url in providers:
-        try:
-            found = extract(fetch_text(url))
-            used.append(f"{name}:{len(found)}")
-            for u in found:
-                if u not in links:
-                    links.append(u)
-            if len(links) >= 4:
-                break
-        except Exception as e:
-            used.append(f"{name}:ERR:{type(e).__name__}")
-        time.sleep(DELAY)
-    return links[:12], "|".join(used)
+    queries = query_variants(brand, perfume)
+
+    for qi, q in enumerate(queries, start=1):
+        for name, url in provider_urls(q):
+            if name in DISABLED_PROVIDERS:
+                continue
+            try:
+                started = time.monotonic()
+                found = extract(fetch_text(url))
+                elapsed = time.monotonic() - started
+                used.append(f"q{qi}:{name}:{len(found)}:{elapsed:.1f}s")
+                PROVIDER_FAILURES[name] = 0
+                for u in found:
+                    if u not in links:
+                        links.append(u)
+                # Enough candidates to score; avoid needless requests.
+                if len(links) >= 6:
+                    return links[:16], "|".join(used)
+            except Exception as e:
+                PROVIDER_FAILURES[name] = PROVIDER_FAILURES.get(name, 0) + 1
+                used.append(f"q{qi}:{name}:ERR:{type(e).__name__}")
+                if PROVIDER_FAILURES[name] >= 3:
+                    DISABLED_PROVIDERS.add(name)
+                    used.append(f"{name}:DISABLED")
+            time.sleep(DELAY)
+
+        if links and qi >= 2:
+            break
+
+    return links[:16], "|".join(used)
 
 
-def score_candidate(brand: str, perfume: str, c: dict) -> tuple[float, float, float]:
-    bt, pt = toks(brand), toks(perfume)
+def score_candidate(brand: str, perfume: str, c: dict) -> tuple[float, float, float, float]:
+    clean = clean_perfume_name(perfume, brand)
+    bt, pt = toks(brand), toks(clean)
     cb, cp = toks(c["brand_slug"]), toks(c["perfume_slug"])
     brand_cov = len(bt & cb) / max(1, len(bt))
     perfume_cov = len(pt & cp) / max(1, len(pt))
-    seq = SequenceMatcher(None, norm(perfume), norm(c["perfume_slug"])).ratio()
-    score = 0.35 * brand_cov + 0.45 * perfume_cov + 0.20 * seq
-    return score, brand_cov, perfume_cov
+    seq = SequenceMatcher(None, norm(clean), norm(c["perfume_slug"])).ratio()
+    reverse_cov = len(pt & cp) / max(1, len(cp))
+    score = 0.34 * brand_cov + 0.43 * perfume_cov + 0.18 * seq + 0.05 * reverse_cov
+    return score, brand_cov, perfume_cov, seq
 
 
 def resolve(brand: str, perfume: str):
@@ -135,19 +216,32 @@ def resolve(brand: str, perfume: str):
         c = parse_url(u)
         if not c:
             continue
-        score, bc, pc = score_candidate(brand, perfume, c)
-        c.update(score=score, brand_cov=bc, perfume_cov=pc)
+        score, bc, pc, seq = score_candidate(brand, perfume, c)
+        c.update(score=score, brand_cov=bc, perfume_cov=pc, seq=seq)
         candidates.append(c)
     candidates.sort(key=lambda x: x["score"], reverse=True)
     if not candidates:
         return None, providers, "no candidates"
+
     best = candidates[0]
     second = candidates[1]["score"] if len(candidates) > 1 else 0.0
     margin = best["score"] - second
-    ok = best["brand_cov"] >= 0.75 and best["perfume_cov"] >= 0.75 and best["score"] >= 0.78 and (second < 0.72 or margin >= 0.08)
+    clean = clean_perfume_name(perfume, brand)
+    exact_name = norm(clean) == norm(best["perfume_slug"])
+
+    # Keep acceptance conservative, but tolerate catalogue suffixes and Fragrantica slug differences.
+    ok = (
+        best["brand_cov"] >= 0.66
+        and best["perfume_cov"] >= 0.60
+        and best["score"] >= 0.70
+        and (exact_name or second < 0.68 or margin >= 0.055 or best["score"] >= 0.86)
+    )
     if not ok:
-        return None, providers, f"weak best={best['score']:.3f} brand={best['brand_cov']:.3f} perfume={best['perfume_cov']:.3f} second={second:.3f}"
-    return best, providers, f"accepted score={best['score']:.3f} margin={margin:.3f}"
+        return None, providers, (
+            f"weak best={best['score']:.3f} brand={best['brand_cov']:.3f} "
+            f"perfume={best['perfume_cov']:.3f} seq={best['seq']:.3f} second={second:.3f}"
+        )
+    return best, providers, f"accepted score={best['score']:.3f} margin={margin:.3f} clean={clean!r}"
 
 
 def row_key(row: dict) -> str:
@@ -198,10 +292,17 @@ def main() -> int:
             fieldnames.append(needed)
 
     report = load_report()
-    attempted_keys = {
+    found_keys = {
         row_key(r) for r in report
-        if (r.get("result") or "").strip().upper() in {"FOUND", "UNRESOLVED"}
+        if (r.get("result") or "").strip().upper() == "FOUND"
     }
+    unresolved_keys = {
+        row_key(r) for r in report
+        if (r.get("result") or "").strip().upper() == "UNRESOLVED"
+    }
+    attempted_keys = set(found_keys)
+    if not RETRY_UNRESOLVED:
+        attempted_keys.update(unresolved_keys)
 
     attempted = accepted = skipped_previous = 0
 
@@ -255,7 +356,10 @@ def main() -> int:
             "note": note,
         })
         attempted_keys.add(key)
-        print(f"[{attempted}] {row.get('shobi_code','')} | {brand} | {perfume} -> {result} {new_id}", flush=True)
+        print(
+            f"[{attempted}] {row.get('shobi_code','')} | {brand} | {perfume} -> {result} {new_id} | {note}",
+            flush=True,
+        )
 
         if attempted % CHECKPOINT_EVERY == 0:
             save_checkpoint(rows, fieldnames, report)
@@ -278,6 +382,7 @@ def main() -> int:
     print(f"unresolved={attempted-accepted}")
     print(f"skipped_previous={skipped_previous}")
     print(f"remaining_unattempted={remaining}")
+    print(f"disabled_providers={','.join(sorted(DISABLED_PROVIDERS)) or 'none'}")
     return 0
 
 
