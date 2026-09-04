@@ -19,7 +19,6 @@ const state = {
     }
 };
 
-// Mapping for token farver
 const TOKEN_COLORS = {
     gender: 'token-gender',
     brands: 'token-brand',
@@ -29,16 +28,13 @@ const TOKEN_COLORS = {
     notes: 'token-accord'
 };
 
-// --- KERNELOGIK: DATAVISNING ---
-
 function displayPerfumes(perfumes) {
     const container = document.getElementById('resultsContainer');
     const template = document.getElementById('perfume-card-template');
     const resultsCountEl = document.getElementById('results-count');
 
-    container.innerHTML = ''; // Nulstil container
+    container.innerHTML = '';
 
-    // Opdater tæller
     let countText = `Showing ${perfumes.length}`;
     if (state.selectedBrand) {
         countText += ` result(s) for "${state.selectedBrand}"`;
@@ -54,13 +50,11 @@ function displayPerfumes(perfumes) {
         return;
     }
 
-    // Klon skabelon for hver parfume
     perfumes.forEach(perfume => {
         const p = perfume.item ? perfume.item : perfume;
         const card = template.content.cloneNode(true);
         const isFavorite = state.favorites.includes(p.code);
 
-        // Udfyld data
         card.querySelector('[data-field="code"]').textContent = p.code;
         card.querySelector('[data-field="inspiredBy"]').textContent = p.inspiredBy;
         card.querySelector('[data-field="brand"]').textContent = p.brand;
@@ -68,25 +62,20 @@ function displayPerfumes(perfumes) {
         const shobiLink = `https://leparfum.com.gr/en/module/iqitsearch/searchiqit?s=${p.code}`;
         card.querySelector('[data-field="shobiLink"]').href = shobiLink;
 
-        // Håndter favoritknap
         const favButton = card.querySelector('.favorite-btn');
         favButton.dataset.code = p.code;
         favButton.innerHTML = isFavorite ? '<i class="fa-solid fa-heart"></i>' : '<i class="fa-regular fa-heart"></i>';
         if (isFavorite) favButton.classList.add('is-favorite');
 
-        // Ikoner
         const audienceIconsContainer = card.querySelector('[data-field="audience-icons"]');
         audienceIconsContainer.innerHTML = getAudienceIcons(p.genderAffinity);
         const mainNotesContainer = card.querySelector('[data-field="main-notes"]');
         mainNotesContainer.innerHTML = getMainNotesBadges(p.notes);
 
-        // Sæt data-attributter til klik-handlere
         card.querySelector('[data-action="filter-brand"]').dataset.brand = p.brand;
-
         container.appendChild(card);
     });
 
-    // Gen-tilføj event listeners
     container.querySelectorAll('.favorite-btn').forEach(btn =>
         btn.addEventListener('click', toggleFavorite)
     );
@@ -101,70 +90,42 @@ function displayPerfumes(perfumes) {
     );
 }
 
-/**
- * Anvender HELE filterkæden OG opdaterer UI bagefter.
- */
 function applyFiltersAndRender() {
-    // Kør selve filtreringen
     const filteredPerfumes = getFilteredPerfumes();
-
-    // --- UI Opdateringer ---
-    displayBrandInfo(); // Vis/skjul brand info boks
-    displayPerfumes(filteredPerfumes); // Vis de filtrerede resultater
-    updateAvailableFilterOptions(); // NYT: Kør den nye, korrekte logik for at deaktivere/aktivere
-    displayActiveFilterTokens(); // Vis filter tokens
+    displayBrandInfo();
+    displayPerfumes(filteredPerfumes);
+    updateAvailableFilterOptions();
+    displayActiveFilterTokens();
 }
 
-/**
- * NYT: Funktion der KUN udfører filtreringen baseret på state.
- * Returnerer den filtrerede liste.
- * @param {Object} [overrideFilters=null] - Et midlertidigt filter-sæt til simulering.
- */
 function getFilteredPerfumes(overrideFilters = null) {
     let filtered = [...allPerfumes];
-    const currentFilters = overrideFilters || state.activeFilters; // Brug override hvis det gives
+    const currentFilters = overrideFilters || state.activeFilters;
 
-    // --- Filterkæde ---
-    // 1. Brand (enkelt klik ELLER tjekbokse) eller Favoritter
-     // Prioriter selectedBrand hvis det er sat
-     if (state.selectedBrand && !overrideFilters) { // Kun hvis vi ikke simulerer
-         filtered = filtered.filter(p => p.brand === state.selectedBrand);
-     } else if (currentFilters.brands.length > 0) {
-         filtered = filtered.filter(p => currentFilters.brands.includes(p.brand));
-     } else if (state.showingFavorites && !overrideFilters) { // Kun hvis vi ikke simulerer
-         filtered = filtered.filter(p => state.favorites.includes(p.code));
-     }
+    if (state.selectedBrand && !overrideFilters) {
+        filtered = filtered.filter(p => p.brand === state.selectedBrand);
+    } else if (currentFilters.brands.length > 0) {
+        filtered = filtered.filter(p => currentFilters.brands.includes(p.brand));
+    } else if (state.showingFavorites && !overrideFilters) {
+        filtered = filtered.filter(p => state.favorites.includes(p.code));
+    }
 
-
-    // 2. Gender (OR logic)
     if (currentFilters.gender.length > 0) {
-        filtered = filtered.filter(p => {
-            return currentFilters.gender.some(filterGender => p.genderAffinity.includes(filterGender));
-        });
+        filtered = filtered.filter(p => currentFilters.gender.some(filterGender => p.genderAffinity.includes(filterGender)));
     }
 
-    // 3. Season (OR logic)
     if (currentFilters.season.length > 0) {
-        filtered = filtered.filter(p => {
-            return currentFilters.season.some(filterSeason => p.seasons.includes(filterSeason));
-        });
+        filtered = filtered.filter(p => currentFilters.season.some(filterSeason => p.seasons.includes(filterSeason)));
     }
 
-    // 4. Occasion (OR logic)
     if (currentFilters.occasion.length > 0) {
-        filtered = filtered.filter(p => {
-            return currentFilters.occasion.some(filterOccasion => p.occasions.includes(filterOccasion));
-        });
+        filtered = filtered.filter(p => currentFilters.occasion.some(filterOccasion => p.occasions.includes(filterOccasion)));
     }
 
-    // 5. Accords (AND logic)
     if (currentFilters.accords.length > 0) {
-        filtered = filtered.filter(p => {
-            return currentFilters.accords.every(filterAccord => p.mainAccords.includes(filterAccord));
-        });
+        filtered = filtered.filter(p => currentFilters.accords.every(filterAccord => p.mainAccords.includes(filterAccord)));
     }
 
-    // 6. Notes (AND logic)
     if (currentFilters.notes.length > 0) {
         filtered = filtered.filter(p => {
             const perfumeNotes = getPerfumeNotes(p.notes);
@@ -172,7 +133,6 @@ function getFilteredPerfumes(overrideFilters = null) {
         });
     }
 
-    // 7. Søgning (kun hvis vi ikke simulerer)
     if (state.searchQuery && !overrideFilters) {
         const query = state.searchQuery.toLowerCase();
         filtered = filtered.filter(p =>
@@ -182,8 +142,6 @@ function getFilteredPerfumes(overrideFilters = null) {
         );
     }
 
-    // 8. Sort visible results. "Best seller" uses the available scent score
-    // as the current ranking signal because the dataset has no sales counter.
     if (!overrideFilters) {
         const byName = (a, b) => String(a.inspiredBy || '').localeCompare(String(b.inspiredBy || ''), 'en', { sensitivity: 'base' });
         const byBrand = (a, b) => String(a.brand || '').localeCompare(String(b.brand || ''), 'en', { sensitivity: 'base' }) || byName(a, b);
@@ -203,44 +161,30 @@ function getFilteredPerfumes(overrideFilters = null) {
     return filtered;
 }
 
-
-// --- NY LOGIK: DYNAMISKE FILTRE & TOKENS ---
-
-/**
- * (OMSKREVET) Opdaterer filter-checkboxes (aktiver/deaktiver) KORREKT.
- */
 function updateAvailableFilterOptions() {
-    // Gennemgå alle checkboxes
     document.querySelectorAll('#filter-sidebar input[type="checkbox"]').forEach(checkbox => {
         let filterType;
         switch(checkbox.name) {
             case 'gender': filterType = 'gender'; break;
-            case 'brand': filterType = 'brands'; break; // Matcher state key
+            case 'brand': filterType = 'brands'; break;
             case 'season': filterType = 'season'; break;
             case 'occasion': filterType = 'occasion'; break;
-            case 'accord': filterType = 'accords'; break; // Matcher state key
+            case 'accord': filterType = 'accords'; break;
             default: return;
         }
         const value = checkbox.value;
         const label = checkbox.closest('label');
 
-        // Spring over, hvis checkboxen allerede ER markeret (den skal altid være aktiv)
         if (checkbox.checked) {
             checkbox.disabled = false;
             if (label) label.classList.remove('disabled');
             return;
         }
 
-        // SIMULER: Hvad sker der, hvis vi TILFØJER dette filter?
-        // Klon nuværende aktive filtre
         const simulatedFilters = JSON.parse(JSON.stringify(state.activeFilters));
-        // Tilføj den aktuelle checkbox' værdi midlertidigt
         simulatedFilters[filterType].push(value);
-
-        // Kør en simulering med de midlertidige filtre
         const simulationResult = getFilteredPerfumes(simulatedFilters);
 
-        // Opdater checkboxens tilstand baseret på simuleringen
         if (simulationResult.length > 0) {
             checkbox.disabled = false;
             if (label) label.classList.remove('disabled');
@@ -251,23 +195,28 @@ function updateAvailableFilterOptions() {
     });
 }
 
-
-/**
- * Viser de aktive filtre som tokens over resultatlisten. (Uændret)
- */
 function displayActiveFilterTokens() {
     const container = document.getElementById('active-filters-display');
-    container.innerHTML = ''; // Nulstil
+    container.innerHTML = '';
     let hasTokens = false;
 
-    // Gennemgå alle aktive filtre i state
+    if (state.selectedBrand) {
+        hasTokens = true;
+        const token = document.createElement('span');
+        token.className = 'filter-token token-brand';
+        token.innerHTML = `
+            Brand: ${escapeHtml(state.selectedBrand)}
+            <button data-filter-type="selectedBrand" data-filter-value="${escapeHtml(state.selectedBrand)}" title="Remove brand filter">&times;</button>
+        `;
+        container.appendChild(token);
+    }
+
     for (const filterType in state.activeFilters) {
         state.activeFilters[filterType].forEach(value => {
             hasTokens = true;
             const token = document.createElement('span');
-            // Gør første bogstav stort
             const displayValue = value.charAt(0).toUpperCase() + value.slice(1);
-            token.className = `filter-token ${TOKEN_COLORS[filterType] || 'token-default'}`; // Brug farvemapping
+            token.className = `filter-token ${TOKEN_COLORS[filterType] || 'token-default'}`;
             token.innerHTML = `
                 ${displayValue}
                 <button data-filter-type="${filterType}" data-filter-value="${value}" title="Remove filter">&times;</button>
@@ -276,52 +225,43 @@ function displayActiveFilterTokens() {
         });
     }
 
-    // Skjul container, hvis der ingen tokens er
     container.style.display = hasTokens ? 'flex' : 'none';
-
-    // Tilføj event listeners til slette-knapperne
     container.querySelectorAll('button').forEach(button => {
         button.addEventListener('click', handleRemoveToken);
     });
 }
 
-/**
- * Fjerner et filter, når en token-sletteknap klikkes. (Uændret)
- */
 function handleRemoveToken(e) {
     const button = e.currentTarget;
-    const filterType = button.dataset.filterType; // f.eks. 'brands', 'season'
+    const filterType = button.dataset.filterType;
     const value = button.dataset.filterValue;
 
-    // 1. Fjern fra state
+    if (filterType === 'selectedBrand') {
+        state.selectedBrand = null;
+        applyFiltersAndRender();
+        return;
+    }
+
     const index = state.activeFilters[filterType].indexOf(value);
     if (index > -1) {
         state.activeFilters[filterType].splice(index, 1);
     }
 
-    // 2. Fjern flueben fra checkbox
     let checkboxName;
-     switch(filterType) {
-         case 'brands': checkboxName = 'brand'; break;
-         case 'accords': checkboxName = 'accord'; break;
-         default: checkboxName = filterType;
-     }
-    const checkbox = document.querySelector(`#filter-sidebar input[name="${checkboxName}"][value="${value}"]`);
-    if (checkbox) {
-        checkbox.checked = false;
+    switch(filterType) {
+        case 'brands': checkboxName = 'brand'; break;
+        case 'accords': checkboxName = 'accord'; break;
+        default: checkboxName = filterType;
     }
-
-    // 3. Gen-render alt
+    const checkbox = document.querySelector(`#filter-sidebar input[name="${checkboxName}"][value="${value}"]`);
+    if (checkbox) checkbox.checked = false;
     applyFiltersAndRender();
 }
 
-
-// --- ØVRIG KERNELOGIK (Stort set uændret) ---
-
 function displayBrandInfo() {
-    // ... (uændret)
     const container = document.getElementById('brand-info-container');
     const contentEl = document.getElementById('brand-info-content');
+    if (!container || !contentEl) return;
 
     if (!state.selectedBrand) {
         container.classList.add('hidden');
@@ -342,22 +282,15 @@ function displayBrandInfo() {
 }
 
 function handleBrandFilterClick(brandName) {
-    // ... (uændret)
     state.selectedBrand = brandName;
     state.showingFavorites = false;
-
-    // Nulstil brand-tjekbokse i state og UI
     state.activeFilters.brands = [];
     document.querySelectorAll('#brand-filters input[type="checkbox"]').forEach(cb => cb.checked = false);
-
-    document.getElementById('favorites-btn').classList.remove('bg-red-800');
-
+    document.getElementById('favorites-btn')?.classList.remove('bg-red-800');
     applyFiltersAndRender();
-    document.getElementById('brand-info-container').scrollIntoView({ behavior: 'smooth' });
 }
 
 function handleIconFilterClick(filterType, filterValue) {
-    // ... (uændret)
     const stateKey = filterType === 'accord' ? 'accords' : filterType === 'note' ? 'notes' : filterType;
 
     if (filterType === 'note') {
@@ -369,28 +302,20 @@ function handleIconFilterClick(filterType, filterValue) {
     }
 
     const filtersContent = document.getElementById('filters-content');
-    if (filtersContent.classList.contains('hidden') && window.innerWidth < 1024) { // Kun toggle på mobil
+    if (filtersContent.classList.contains('hidden') && window.innerWidth < 1024) {
         toggleMobileFilters();
     }
 
     const checkboxName = filterType === 'accord' ? 'accord' : filterType;
     const checkbox = document.querySelector(`#filter-sidebar input[name="${checkboxName}"][value="${filterValue}"]`);
-
-
     if (checkbox && !checkbox.checked) {
-        checkbox.checked = true; // Sæt fluebenet
-
-        // Udløs 'change' eventet for at bruge den centrale handler
+        checkbox.checked = true;
         checkbox.dispatchEvent(new Event('change', { bubbles: true }));
     }
 }
 
-
-// --- IKON-HJÆLPERE (Uændret) ---
-
 function getAudienceIcons(audience) {
-    // ... (uændret)
-     const a = String(audience || '').toLowerCase();
+    const a = String(audience || '').toLowerCase();
     if (!a) return '';
     let icons = [];
 
@@ -410,8 +335,7 @@ function getAudienceIcons(audience) {
 }
 
 const SCENT_ICON_MAP = {
-    // ... (uændret)
-     'citrus': { icon: '<i class="fas fa-lemon text-yellow-500" title="Citrus"></i>', value: 'citrus' },
+    'citrus': { icon: '<i class="fas fa-lemon text-yellow-500" title="Citrus"></i>', value: 'citrus' },
     'woody': { icon: '<i class="fas fa-tree text-amber-700" title="Woody"></i>', value: 'woody' },
     'floral': { icon: '<i class="fas fa-fan text-pink-400" title="Floral"></i>', value: 'floral' },
     'aromatic': { icon: '<i class="fas fa-seedling text-lime-600" title="Aromatic"></i>', value: 'aromatic' },
@@ -424,7 +348,6 @@ const SCENT_ICON_MAP = {
 };
 
 function getTypeIcons(accords) {
-    // ... (uændret)
     if (!Array.isArray(accords) || accords.length === 0) return '';
     let iconsHtml = [];
     const addedIcons = new Set();
@@ -433,9 +356,7 @@ function getTypeIcons(accords) {
     for (const key in SCENT_ICON_MAP) {
         if (!addedIcons.has(key) && lowerCaseAccords.some(accord => accord.includes(key))) {
             const iconData = SCENT_ICON_MAP[key];
-            iconsHtml.push(
-                `<span data-action="filter-icon" data-filter-type="accord" data-filter-value="${iconData.value}">${iconData.icon}</span>`
-            );
+            iconsHtml.push(`<span data-action="filter-icon" data-filter-type="accord" data-filter-value="${iconData.value}">${iconData.icon}</span>`);
             addedIcons.add(key);
         }
     }
@@ -471,12 +392,8 @@ function getMainNotesBadges(notes) {
     }).join('');
 }
 
-
-// --- KERNELOGIK: FAVORITTER (Uændret) ---
-
 function toggleFavorite(event) {
-    // ... (uændret)
-     event.stopPropagation();
+    event.stopPropagation();
     const button = event.currentTarget;
     const code = button.dataset.code;
     const index = state.favorites.indexOf(code);
@@ -494,35 +411,23 @@ function toggleFavorite(event) {
     localStorage.setItem('shobi-favorites', JSON.stringify(state.favorites));
     document.getElementById('favorites-count').textContent = state.favorites.length;
 
-    if (state.showingFavorites) {
-        applyFiltersAndRender();
-    }
+    if (state.showingFavorites) applyFiltersAndRender();
 }
 
 function loadFavorites() {
-    // ... (uændret)
     const savedFavorites = localStorage.getItem('shobi-favorites');
-    if (savedFavorites) {
-        state.favorites = JSON.parse(savedFavorites);
-    }
+    if (savedFavorites) state.favorites = JSON.parse(savedFavorites);
     document.getElementById('favorites-count').textContent = state.favorites.length;
 }
 
-// --- FILTER-LOGIK (OPDATERET) ---
-
 function toggleMobileFilters() {
-    // ... (uændret)
     const filtersContent = document.getElementById('filters-content');
     const filtersIcon = document.getElementById('filters-toggle-icon');
     filtersContent.classList.toggle('hidden');
     filtersIcon.classList.toggle('rotate-180');
 }
 
-/**
- * Nulstiller alle filtre og opdaterer UI.
- */
 function resetAllFilters() {
-    // ... (uændret)
     state.searchQuery = '';
     state.showingFavorites = false;
     state.selectedBrand = null;
@@ -535,20 +440,15 @@ function resetAllFilters() {
         notes: []
     };
     document.getElementById('search-input').value = '';
-    document.getElementById('favorites-btn').classList.remove('bg-red-800');
+    document.getElementById('favorites-btn')?.classList.remove('bg-red-800');
     document.querySelectorAll('#filter-sidebar input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = false;
-         // Sikrer at alle labels bliver aktiveret igen
-         checkbox.disabled = false;
-         checkbox.closest('label')?.classList.remove('disabled'); // Sikkerhedscheck for label
+        checkbox.disabled = false;
+        checkbox.closest('label')?.classList.remove('disabled');
     });
-    applyFiltersAndRender(); // Kald efter UI er nulstillet
+    applyFiltersAndRender();
 }
 
-
-/**
- * Bygger filter-checkboxes dynamisk baseret på data.
- */
 function populateFilters() {
     const genderContainer = document.getElementById('gender-filters');
     const brandContainer = document.getElementById('brand-filters');
@@ -556,35 +456,30 @@ function populateFilters() {
     const occasionContainer = document.getElementById('occasion-filters');
     const accordContainer = document.getElementById('accord-filters');
 
-    // Helper til at bygge checkboxes
     const buildCheckboxes = (container, name, options, loaderId) => {
-        if (!container) return; // Sikkerhedstjek
-        // Konverter options til Array for sort()
+        if (!container) return;
         const sortedOptions = Array.from(options).sort();
 
         if (sortedOptions.length === 0) {
-             container.innerHTML = `<p class="text-sm text-tertiary">No data found.</p>`;
+            container.innerHTML = `<p class="text-sm text-tertiary">No data found.</p>`;
         } else {
-             container.innerHTML = sortedOptions.map(option => {
-                 // Check om option er valid (ikke tom streng)
-                 if (!option) return '';
-                 const capitalized = option.charAt(0).toUpperCase() + option.slice(1);
-                 // Tilføj ikon for accords
-                 const iconSpan = (name === 'accord') ?
+            container.innerHTML = sortedOptions.map(option => {
+                if (!option) return '';
+                const capitalized = option.charAt(0).toUpperCase() + option.slice(1);
+                const iconSpan = (name === 'accord') ?
                     `<span class="inline-block w-5 mr-1">${SCENT_ICON_MAP[option] ? SCENT_ICON_MAP[option].icon : ''}</span>`
                     : '';
-                 return `
-                     <label>
-                         <input type="checkbox" name="${name}" value="${option}">
-                         ${iconSpan} ${capitalized}
-                     </label>
-                 `;
-             }).join('');
+                return `
+                    <label>
+                        <input type="checkbox" name="${name}" value="${option}">
+                        ${iconSpan} ${capitalized}
+                    </label>
+                `;
+            }).join('');
         }
-        document.getElementById(loaderId)?.remove(); // Sikker fjernelse
+        document.getElementById(loaderId)?.remove();
     };
 
-    // 1. Gender (Stadig hardkodet)
     const genders = [
         { label: 'Masculine', value: 'masculine' },
         { label: 'Feminine', value: 'feminine' },
@@ -597,32 +492,22 @@ function populateFilters() {
         </label>
     `).join('');
 
-    // 2. Brands (Dynamisk)
     buildCheckboxes(brandContainer, 'brand', allBrands.keys(), 'brand-loader');
 
-    // 3. Seasons (Dynamisk fra p.seasons)
     const allSeasons = new Set(allPerfumes.flatMap(p => p.seasons));
     buildCheckboxes(seasonContainer, 'season', allSeasons, 'season-loader');
 
-    // 4. Occasions (Dynamisk fra p.occasions)
     const allOccasions = new Set(allPerfumes.flatMap(p => p.occasions));
     buildCheckboxes(occasionContainer, 'occasion', allOccasions, 'occasion-loader');
 
-    // 5. Accords (Dynamisk)
     const allAccords = new Set(allPerfumes.flatMap(p => p.mainAccords));
     buildCheckboxes(accordContainer, 'accord', allAccords, 'accord-loader');
 
-
-    // 6. Tilføj Event Listeners til ALLE tjekbokse
     document.querySelectorAll('#filter-sidebar input[type="checkbox"]').forEach(checkbox => {
-        checkbox.addEventListener('change', handleCheckboxChange); // Brug central handler
+        checkbox.addEventListener('change', handleCheckboxChange);
     });
 }
 
-
-/**
- * Central handler for alle filter-checkbox ændringer.
- */
 function handleCheckboxChange(e) {
     let filterType;
     switch(e.target.name) {
@@ -631,7 +516,7 @@ function handleCheckboxChange(e) {
         case 'season': filterType = 'season'; break;
         case 'occasion': filterType = 'occasion'; break;
         case 'accord': filterType = 'accords'; break;
-        default: return; // Ukendt filter
+        default: return;
     }
 
     const value = e.target.value;
@@ -640,10 +525,7 @@ function handleCheckboxChange(e) {
         if (!state.activeFilters[filterType].includes(value)) {
             state.activeFilters[filterType].push(value);
         }
-        // Nulstil selectedBrand hvis et brand-tjekboks vælges
-        if (filterType === 'brands') {
-            state.selectedBrand = null;
-        }
+        if (filterType === 'brands') state.selectedBrand = null;
     } else {
         const index = state.activeFilters[filterType].indexOf(value);
         if (index > -1) state.activeFilters[filterType].splice(index, 1);
@@ -651,11 +533,7 @@ function handleCheckboxChange(e) {
     applyFiltersAndRender();
 }
 
-
-// --- TEMA-LOGIK (Uændret) ---
-
 function setTheme(theme) {
-    // ... (uændret)
     const htmlTag = document.getElementById('html-tag');
     if (theme === 'light') {
         htmlTag.removeAttribute('data-theme');
@@ -667,11 +545,8 @@ function setTheme(theme) {
 }
 
 function initTheme() {
-    // ... (uændret)
     const savedTheme = localStorage.getItem('shobi-theme');
-    if (savedTheme) {
-        setTheme(savedTheme);
-    }
+    if (savedTheme) setTheme(savedTheme);
     const themeMenuBtn = document.getElementById('theme-menu-btn');
     const themeMenuDropdown = document.getElementById('theme-menu-dropdown');
 
@@ -693,8 +568,6 @@ function initTheme() {
     });
 }
 
-// --- INITIALISERING (RETTET) ---
-
 async function init() {
     console.log("DEBUG: init() started.");
     try {
@@ -704,62 +577,46 @@ async function init() {
         const rawData = await response.json();
         allBrands.clear();
 
-        // Flad databasen UD FRA DEN OPRINDELIGE STRUKTUR
         if (rawData.length > 0 && Array.isArray(rawData[0].perfumes)) {
-             allPerfumes = rawData.flatMap(brandObject => {
-                 if (brandObject && Array.isArray(brandObject.perfumes)) {
-                     const brandName = brandObject.brandInfo?.name || "Unknown Brand";
-                     const brandInfo = brandObject.brandInfo || { name: brandName };
-                     if (!allBrands.has(brandName)) {
-                         allBrands.set(brandName, brandInfo);
-                     }
-                     // RETTET: Bevarer seasons og occasions arrays direkte
-                     return brandObject.perfumes.map(perfume => ({
-                         ...perfume,
-                         brand: brandName,
-                         // Sørg for at disse altid er arrays, selvom de mangler i JSON
-                         seasons: perfume.seasons || [],
-                         occasions: perfume.occasions || []
-                     }));
-                 }
-                 return [];
-             });
+            allPerfumes = rawData.flatMap(brandObject => {
+                if (brandObject && Array.isArray(brandObject.perfumes)) {
+                    const brandName = brandObject.brandInfo?.name || "Unknown Brand";
+                    const brandInfo = brandObject.brandInfo || { name: brandName };
+                    if (!allBrands.has(brandName)) allBrands.set(brandName, brandInfo);
+                    return brandObject.perfumes.map(perfume => ({
+                        ...perfume,
+                        brand: brandName,
+                        seasons: perfume.seasons || [],
+                        occasions: perfume.occasions || []
+                    }));
+                }
+                return [];
+            });
         } else {
-             // Fallback for allerede flad struktur (just in case)
-             allPerfumes = rawData.map(p => ({
-                 ...p,
-                 brand: p.brand || "Unknown Brand", // Sæt default brand hvis det mangler
-                 seasons: p.seasons || [], // Sørg for array
-                 occasions: p.occasions || [] // Sørg for array
-             }));
-             // Byg allBrands map fra flad struktur
-             allPerfumes.forEach(p => {
-                 if(p.brand && !allBrands.has(p.brand)) {
-                     // Forsøg at finde brandInfo - ellers bare brug navnet
-                     const brandInfoEntry = rawData.find(entry => entry.brandInfo?.name === p.brand);
-                     allBrands.set(p.brand, brandInfoEntry?.brandInfo || { name: p.brand });
-                 }
-             });
+            allPerfumes = rawData.map(p => ({
+                ...p,
+                brand: p.brand || "Unknown Brand",
+                seasons: p.seasons || [],
+                occasions: p.occasions || []
+            }));
+            allPerfumes.forEach(p => {
+                if(p.brand && !allBrands.has(p.brand)) {
+                    const brandInfoEntry = rawData.find(entry => entry.brandInfo?.name === p.brand);
+                    allBrands.set(p.brand, brandInfoEntry?.brandInfo || { name: p.brand });
+                }
+            });
         }
 
-
-        // RETTET: Korrekt datarensning
         allPerfumes = allPerfumes.filter(p => p && p.code && p.inspiredBy).map(p => ({
             ...p,
-            // brand er allerede sat ovenfor
-            genderAffinity: String(p.genderAffinity || '').toLowerCase(), // Konverter til lowercase string
+            genderAffinity: String(p.genderAffinity || '').toLowerCase(),
             mainAccords: (p.mainAccords || []).map(a => a.toLowerCase()),
-            // RETTET: Gør seasons/occasions til lowercase strings INDE i arrayet
-            seasons: (p.seasons || []).map(s => String(s).toLowerCase()).filter(s => s), // Fjern tomme strenge
-            occasions: (p.occasions || []).map(o => String(o).toLowerCase()).filter(o => o), // Fjern tomme strenge
+            seasons: (p.seasons || []).map(s => String(s).toLowerCase()).filter(s => s),
+            occasions: (p.occasions || []).map(o => String(o).toLowerCase()).filter(o => o),
             notes: p.notes || { top: [], heart: [], base: [] }
-            // Fjerner den forkerte bestSuitedFor logik
         }));
 
         console.log(`DEBUG: Total valid perfumes loaded: ${allPerfumes.length}`);
-        // console.log("DEBUG: Sample cleaned perfume:", allPerfumes.find(p => p.seasons.length > 0 && p.occasions.length > 0));
-
-
     } catch (error) {
         console.error("ERROR: Could not load or parse perfume data:", error);
         document.getElementById('results-count').textContent = `Error: Could not load data.`;
@@ -767,24 +624,18 @@ async function init() {
     }
 
     loadFavorites();
-    populateFilters(); // Skal nu virke korrekt
-    applyFiltersAndRender(); // Startvisning
+    populateFilters();
+    applyFiltersAndRender();
 }
 
-// --- EVENT LISTENERS (DOMContentLoade) (Uændret) ---
-
 document.addEventListener('DOMContentLoaded', () => {
-    init(); // Kører hoved-logik
-    initTheme(); // Kører tema-logik
+    init();
+    initTheme();
 
-    // Mobil filter toggle
     document.getElementById('filters-toggle-btn').addEventListener('click', toggleMobileFilters);
-
-    // Nulstil filter knapper (mobil + desktop)
     document.getElementById('reset-all-filters-btn-desktop').addEventListener('click', resetAllFilters);
     document.getElementById('reset-all-filters-btn-mobile').addEventListener('click', resetAllFilters);
 
-    // Søgefelt-listener
     document.getElementById('search-input').addEventListener('input', e => {
         state.searchQuery = e.target.value;
         applyFiltersAndRender();
@@ -795,7 +646,6 @@ document.addEventListener('DOMContentLoaded', () => {
         applyFiltersAndRender();
     });
 
-    // Favoritknap-listener
     document.getElementById('favorites-btn').addEventListener('click', () => {
         state.showingFavorites = !state.showingFavorites;
         state.selectedBrand = null;
@@ -809,12 +659,11 @@ document.addEventListener('DOMContentLoaded', () => {
         applyFiltersAndRender();
     });
 
-    // Clear Brand Filter-knap
-    document.getElementById('clear-brand-filter').addEventListener('click', () => {
-        state.selectedBrand = null;
-        applyFiltersAndRender();
-    });
-
-    // Modal Lyttere
-    modalContent.addEventListener('click', (e) => e.stopPropagation());
+    const clearBrandFilter = document.getElementById('clear-brand-filter');
+    if (clearBrandFilter) {
+        clearBrandFilter.addEventListener('click', () => {
+            state.selectedBrand = null;
+            applyFiltersAndRender();
+        });
+    }
 });
