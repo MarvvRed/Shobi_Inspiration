@@ -68,7 +68,7 @@ function displayPerfumes(perfumes) {
         if (isFavorite) favButton.classList.add('is-favorite');
 
         const audienceIconsContainer = card.querySelector('[data-field="audience-icons"]');
-        audienceIconsContainer.innerHTML = getAudienceIcons(p.genderAffinity);
+        audienceIconsContainer.innerHTML = getAudienceIcons(p.genderAffinity) + getSeasonBadges(p.seasons);
         const mainNotesContainer = card.querySelector('[data-field="main-notes"]');
         mainNotesContainer.innerHTML = getMainNotesBadges(p.notes);
 
@@ -332,6 +332,23 @@ function getAudienceIcons(audience) {
     return icons.map(icon =>
         `<span data-action="filter-icon" data-filter-type="gender" data-filter-value="${icon.value}">${icon.html}</span>`
     ).join(' ');
+}
+
+function getSeasonBadges(seasons) {
+    if (!Array.isArray(seasons) || seasons.length === 0) return '';
+    const uniqueSeasons = [...new Set(seasons.map(s => String(s || '').trim().toLowerCase()).filter(Boolean))];
+    const iconMap = {
+        spring: 'fa-seedling',
+        summer: 'fa-sun',
+        autumn: 'fa-leaf',
+        fall: 'fa-leaf',
+        winter: 'fa-snowflake'
+    };
+    return uniqueSeasons.map(season => {
+        const label = season.charAt(0).toUpperCase() + season.slice(1);
+        const icon = iconMap[season] || 'fa-calendar';
+        return `<button type="button" data-action="filter-icon" data-filter-type="season" data-filter-value="${escapeHtml(season)}" title="Filter by ${escapeHtml(label)}" style="display:inline-flex;align-items:center;gap:.35rem;width:fit-content;padding:.3rem .72rem;border-radius:9999px;font-size:.82rem;font-weight:600;line-height:1.05rem;border:1px solid #fde68a;color:#92400e;background:#fffbeb;box-shadow:none;white-space:nowrap;"><i class="fas ${icon}" aria-hidden="true"></i><span>${escapeHtml(label)}</span></button>`;
+    }).join('');
 }
 
 const SCENT_ICON_MAP = {
