@@ -14,7 +14,8 @@ const state = {
         brands: [],
         season: [],
         occasion: [],
-        accords: []
+        accords: [],
+        notes: []
     }
 };
 
@@ -24,7 +25,8 @@ const TOKEN_COLORS = {
     brands: 'token-brand',
     season: 'token-season',
     occasion: 'token-occasion',
-    accords: 'token-accord'
+    accords: 'token-accord',
+    notes: 'token-accord'
 };
 
 // --- KERNELOGIK: DATAVISNING ---
@@ -75,8 +77,8 @@ function displayPerfumes(perfumes) {
         // Ikoner
         const audienceIconsContainer = card.querySelector('[data-field="audience-icons"]');
         audienceIconsContainer.innerHTML = getAudienceIcons(p.genderAffinity);
-        const typeIconsContainer = card.querySelector('[data-field="type-icons"]');
-        typeIconsContainer.innerHTML = getTypeIcons(p.mainAccords);
+        const mainNotesContainer = card.querySelector('[data-field="main-notes"]');
+        mainNotesContainer.innerHTML = getMainNotesBadges(p.notes);
 
         // Sæt data-attributter til klik-handlere
         card.querySelector('[data-action="filter-brand"]').dataset.brand = p.brand;
@@ -162,7 +164,15 @@ function getFilteredPerfumes(overrideFilters = null) {
         });
     }
 
-    // 6. Søgning (kun hvis vi ikke simulerer)
+    // 6. Notes (AND logic)
+    if (currentFilters.notes.length > 0) {
+        filtered = filtered.filter(p => {
+            const perfumeNotes = getPerfumeNotes(p.notes);
+            return currentFilters.notes.every(filterNote => perfumeNotes.includes(filterNote));
+        });
+    }
+
+    // 7. Søgning (kun hvis vi ikke simulerer)
     if (state.searchQuery && !overrideFilters) {
         const query = state.searchQuery.toLowerCase();
         filtered = filtered.filter(p =>
@@ -172,7 +182,7 @@ function getFilteredPerfumes(overrideFilters = null) {
         );
     }
 
-    // 7. Sort visible results. "Best seller" uses the available scent score
+    // 8. Sort visible results. "Best seller" uses the available scent score
     // as the current ranking signal because the dataset has no sales counter.
     if (!overrideFilters) {
         const byName = (a, b) => String(a.inspiredBy || '').localeCompare(String(b.inspiredBy || ''), 'en', { sensitivity: 'base' });
@@ -348,7 +358,15 @@ function handleBrandFilterClick(brandName) {
 
 function handleIconFilterClick(filterType, filterValue) {
     // ... (uændret)
-    const stateKey = filterType === 'accord' ? 'accords' : filterType;
+    const stateKey = filterType === 'accord' ? 'accords' : filterType === 'note' ? 'notes' : filterType;
+
+    if (filterType === 'note') {
+        if (!state.activeFilters.notes.includes(filterValue)) {
+            state.activeFilters.notes.push(filterValue);
+        }
+        applyFiltersAndRender();
+        return;
+    }
 
     const filtersContent = document.getElementById('filters-content');
     if (filtersContent.classList.contains('hidden') && window.innerWidth < 1024) { // Kun toggle på mobil
@@ -424,6 +442,35 @@ function getTypeIcons(accords) {
     return iconsHtml.join(' ');
 }
 
+function escapeHtml(value) {
+    return String(value)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+}
+
+function getPerfumeNotes(notes) {
+    if (!notes || typeof notes !== 'object') return [];
+    return [...new Set(['top', 'heart', 'base'].flatMap(level =>
+        Array.isArray(notes[level]) ? notes[level].filter(Boolean) : []
+    ))];
+}
+
+function getMainNotesBadges(notes) {
+    const mainNotes = getPerfumeNotes(notes);
+    if (mainNotes.length === 0) {
+        return '<span class="text-sm text-tertiary">No notes available</span>';
+    }
+
+    return mainNotes.map(note => {
+        const value = escapeHtml(note);
+        const label = escapeHtml(note);
+        return `<button type="button" data-action="filter-icon" data-filter-type="note" data-filter-value="${value}" class="rounded-full bg-accent-subtle px-3 py-1 text-xs font-medium text-accent transition hover:opacity-75 focus-ring" title="Filter by ${label}">${label}</button>`;
+    }).join('');
+}
+
 
 // --- KERNELOGIK: FAVORITTER (Uændret) ---
 
@@ -484,7 +531,8 @@ function resetAllFilters() {
         brands: [],
         season: [],
         occasion: [],
-        accords: []
+        accords: [],
+        notes: []
     };
     document.getElementById('search-input').value = '';
     document.getElementById('favorites-btn').classList.remove('bg-red-800');
