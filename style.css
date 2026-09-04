@@ -131,20 +131,19 @@
 }
 /* --- SLUT TEMA --- */
 
-
 /* Layout Grid */
 .page-grid {
     display: grid;
-    grid-template-columns: 1fr; /* 1 kolonne som standard */
+    grid-template-columns: 1fr;
 }
-@media (min-width: 1024px) { /* Tailwind's 'lg' breakpoint */
+@media (min-width: 1024px) {
     .page-grid { grid-template-columns: 300px 1fr; }
 }
 
 /* Favoritknap */
 .favorite-btn .fa-solid { display: none; }
 .favorite-btn .fa-regular { display: inline-block; }
-.favorite-btn.is-favorite { color: #EF4444; } /* Fast rød farve til favorit */
+.favorite-btn.is-favorite { color: #EF4444; }
 .favorite-btn.is-favorite .fa-solid { display: inline-block; }
 .favorite-btn.is-favorite .fa-regular { display: none; }
 
@@ -159,25 +158,19 @@
     cursor: pointer;
     font-size: 0.875rem;
     color: var(--color-text-secondary);
-    transition: opacity 0.2s ease; /* Tilføjet til deaktivering */
+    transition: opacity 0.2s ease;
 }
 .filter-group input {
     margin-right: 0.5rem;
     accent-color: var(--color-bg-primary);
-    cursor: pointer; /* Tilføjet */
+    cursor: pointer;
 }
-
-/* NYT: Styling for deaktiverede filter-labels */
 .filter-group label.disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
-.filter-group label.disabled input {
-    cursor: not-allowed;
-}
+.filter-group label.disabled input { cursor: not-allowed; }
 
-
-/* Beskrivelses-afkortning */
 .truncate-3-lines {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -185,29 +178,22 @@
     overflow: hidden;
 }
 
-/* Klikbare ikoner */
 [data-action="filter-icon"] {
     cursor: pointer;
     transition: transform 0.2s ease;
 }
-[data-action="filter-icon"]:hover {
-    transform: scale(1.2);
-}
+[data-action="filter-icon"]:hover { transform: scale(1.2); }
 
-/* Mobil filter-pil */
-.rotate-180 {
-    transform: rotate(180deg);
-}
+.rotate-180 { transform: rotate(180deg); }
 
-/* --- NYT: FILTER TOKEN STYLING --- */
 .filter-token {
     display: inline-flex;
     align-items: center;
-    padding: 0.25rem 0.6rem; /* Mere kompakt padding */
-    border-radius: 9999px; /* fuldt rundet */
-    font-size: 0.75rem; /* mindre tekst */
+    padding: 0.25rem 0.6rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
     font-weight: 500;
-    line-height: 1; /* strammere linjehøjde */
+    line-height: 1;
     white-space: nowrap;
 }
 .filter-token button {
@@ -216,22 +202,18 @@
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 0.9em; /* Relativ til token tekst */
+    font-size: 0.9em;
     line-height: 1;
-    color: inherit; /* Arv farve fra token */
+    color: inherit;
     opacity: 0.7;
     transition: opacity 0.2s ease;
 }
-.filter-token button:hover {
-    opacity: 1;
-}
-
-/* Token farver (eksempler, brug Tailwind-lignende klasser) */
-.token-gender { background-color: #ec4899; color: white; } /* pink-500 */
-.token-brand { background-color: #6366f1; color: white; } /* indigo-500 */
-.token-season { background-color: #f59e0b; color: white; } /* amber-500 */
-.token-occasion { background-color: #10b981; color: white; } /* emerald-500 */
-.token-accord { background-color: #6b7280; color: white; } /* gray-500 */
+.filter-token button:hover { opacity: 1; }
+.token-gender { background-color: #ec4899; color: white; }
+.token-brand { background-color: #6366f1; color: white; }
+.token-season { background-color: #f59e0b; color: white; }
+.token-occasion { background-color: #10b981; color: white; }
+.token-accord { background-color: #6b7280; color: white; }
 
 .main-note-badge {
     color: #1d4ed8;
@@ -244,12 +226,11 @@
     border-color: #2563eb;
 }
 
-/* Specifikke farver for dark mode tokens (om nødvendigt, for bedre kontrast) */
-[data-theme="dark"] .token-gender { background-color: #f9a8d4; color: #1f2937; } /* pink-300 */
-[data-theme="dark"] .token-brand { background-color: #a5b4fc; color: #1f2937; } /* indigo-300 */
-[data-theme="dark"] .token-season { background-color: #fbbf24; color: #1f2937; } /* amber-400 */
-[data-theme="dark"] .token-occasion { background-color: #6ee7b7; color: #1f2937; } /* emerald-300 */
-[data-theme="dark"] .token-accord { background-color: #9ca3af; color: #1f2937; } /* gray-400 */
+[data-theme="dark"] .token-gender { background-color: #f9a8d4; color: #1f2937; }
+[data-theme="dark"] .token-brand { background-color: #a5b4fc; color: #1f2937; }
+[data-theme="dark"] .token-season { background-color: #fbbf24; color: #1f2937; }
+[data-theme="dark"] .token-occasion { background-color: #6ee7b7; color: #1f2937; }
+[data-theme="dark"] .token-accord { background-color: #9ca3af; color: #1f2937; }
 [data-theme="dark"] .main-note-badge {
     color: #eff6ff;
     background-color: #1e40af;
@@ -260,7 +241,6 @@
     background-color: #93c5fd;
     border-color: #bfdbfe;
 }
-/* --- SLUT FILTER TOKENS --- */
 
 /* --- V2 TEST CARD: first card in Brand sort only --- */
 .v2-test-card .brand-badge {
@@ -338,6 +318,11 @@
     color:#5f756a;
     border-color:#dce7e1;
 }
+.v2-test-card .collection-btn:hover {
+    color:#50655a;
+    background:#f8fbf9;
+    border-color:#cfded6;
+}
 .v2-test-card [data-field="shobiLink"] {
     min-height:38px;
     display:flex;
@@ -364,7 +349,7 @@
 [data-theme="dark"] .v2-test-card .favorite-btn { color:#d7a7b4; border-color:#684753; }
 [data-theme="dark"] .v2-test-card .collection-btn { color:#b8c9c0; border-color:#506259; }
 
-/* --- V2 interaction hierarchy: first Brand card only --- */
+/* Same interaction as the original Gender badge, only inside V2 test card */
 .v2-test-card .brand-badge,
 .v2-test-card .gender-badge,
 .v2-test-card [data-field="main-notes"] .main-note-badge,
@@ -372,34 +357,15 @@
 .v2-test-card .favorite-btn,
 .v2-test-card .collection-btn {
     cursor:pointer;
-    transition:transform 160ms ease, background-color 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease;
+    transition:transform .2s ease, background-color .2s ease, border-color .2s ease, color .2s ease;
 }
 .v2-test-card .brand-badge:hover,
 .v2-test-card .gender-badge:hover,
-.v2-test-card [data-field="main-notes"] .main-note-badge:hover {
-    transform:scale(1.05);
-}
+.v2-test-card [data-field="main-notes"] .main-note-badge:hover,
 .v2-test-card [data-field="shobiLink"]:hover,
 .v2-test-card .favorite-btn:hover,
 .v2-test-card .collection-btn:hover {
-    transform:translateY(-1px);
-}
-.v2-test-card [data-field="shobiLink"]:hover {
-    box-shadow:0 4px 10px rgba(37,99,235,.16);
-}
-.v2-test-card .collection-btn:hover {
-    color:#50655a;
-    background:#f8fbf9;
-    border-color:#cfded6;
-}
-.v2-test-card .brand-badge:focus-visible,
-.v2-test-card .gender-badge:focus-visible,
-.v2-test-card [data-field="main-notes"] .main-note-badge:focus-visible,
-.v2-test-card [data-field="shobiLink"]:focus-visible,
-.v2-test-card .favorite-btn:focus-visible,
-.v2-test-card .collection-btn:focus-visible {
-    outline:2px solid rgba(59,130,246,.45);
-    outline-offset:2px;
+    transform:scale(1.2);
 }
 @media (prefers-reduced-motion: reduce) {
     .v2-test-card .brand-badge,
@@ -408,10 +374,4 @@
     .v2-test-card [data-field="shobiLink"],
     .v2-test-card .favorite-btn,
     .v2-test-card .collection-btn { transition:none; }
-    .v2-test-card .brand-badge:hover,
-    .v2-test-card .gender-badge:hover,
-    .v2-test-card [data-field="main-notes"] .main-note-badge:hover,
-    .v2-test-card [data-field="shobiLink"]:hover,
-    .v2-test-card .favorite-btn:hover,
-    .v2-test-card .collection-btn:hover { transform:none; }
 }
