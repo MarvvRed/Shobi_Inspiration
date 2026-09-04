@@ -362,10 +362,12 @@
 .v2-test-card .brand-badge:hover,
 .v2-test-card .gender-badge:hover,
 .v2-test-card [data-field="main-notes"] .main-note-badge:hover,
-.v2-test-card [data-field="shobiLink"]:hover,
 .v2-test-card .favorite-btn:hover,
 .v2-test-card .collection-btn:hover {
     transform:scale(1.2);
+}
+.v2-test-card [data-field="shobiLink"]:hover {
+    transform:scale(1.05);
 }
 @media (prefers-reduced-motion: reduce) {
     .v2-test-card .brand-badge,
