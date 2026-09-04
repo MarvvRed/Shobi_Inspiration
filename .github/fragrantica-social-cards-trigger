@@ -1,5 +1,6 @@
-trigger=2026-09-04T22:00:00+02:00
+trigger=2026-09-05T00:36:00+02:00
 mode=resolve-ids-and-fetch-social-cards
-resolver=resumable-checkpoint-v2
+resolver=resumable-checkpoint-v3
 batch=250
 checkpoint_every=10
+retry_unresolved=1
