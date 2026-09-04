@@ -337,17 +337,16 @@ function getAudienceIcons(audience) {
 function getSeasonBadges(seasons) {
     if (!Array.isArray(seasons) || seasons.length === 0) return '';
     const uniqueSeasons = [...new Set(seasons.map(s => String(s || '').trim().toLowerCase()).filter(Boolean))];
-    const iconMap = {
-        spring: 'fa-seedling',
-        summer: 'fa-sun',
-        autumn: 'fa-leaf',
-        fall: 'fa-leaf',
-        winter: 'fa-snowflake'
+    const seasonMap = {
+        spring: { emoji: '🌸', label: 'Primavera' },
+        summer: { emoji: '☀️', label: 'Estate' },
+        autumn: { emoji: '🍁', label: 'Autunno' },
+        fall: { emoji: '🍁', label: 'Autunno' },
+        winter: { emoji: '❄️', label: 'Inverno' }
     };
     return uniqueSeasons.map(season => {
-        const label = season.charAt(0).toUpperCase() + season.slice(1);
-        const icon = iconMap[season] || 'fa-calendar';
-        return `<button type="button" data-action="filter-icon" data-filter-type="season" data-filter-value="${escapeHtml(season)}" title="Filter by ${escapeHtml(label)}" style="display:inline-flex;align-items:center;gap:.35rem;width:fit-content;padding:.3rem .72rem;border-radius:9999px;font-size:.82rem;font-weight:600;line-height:1.05rem;border:1px solid #fde68a;color:#92400e;background:#fffbeb;box-shadow:none;white-space:nowrap;"><i class="fas ${icon}" aria-hidden="true"></i><span>${escapeHtml(label)}</span></button>`;
+        const data = seasonMap[season] || { emoji: '', label: season.charAt(0).toUpperCase() + season.slice(1) };
+        return `<button type="button" data-action="filter-icon" data-filter-type="season" data-filter-value="${escapeHtml(season)}" title="Filter by ${escapeHtml(data.label)}" style="display:inline-flex;align-items:center;gap:.35rem;width:fit-content;padding:.3rem .72rem;border-radius:9999px;font-size:.82rem;font-weight:600;line-height:1.05rem;border:1px solid #fde68a;color:#92400e;background:#fffbeb;box-shadow:none;white-space:nowrap;"><span aria-hidden="true">${data.emoji}</span><span>${escapeHtml(data.label)}</span></button>`;
     }).join('');
 }
 
