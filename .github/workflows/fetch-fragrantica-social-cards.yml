@@ -29,12 +29,18 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Resolve missing Fragrantica IDs
+        env:
+          FRAGRANTICA_ID_DELAY: "0.20"
+          FRAGRANTICA_ID_MAX: "2500"
+        run: python fragrantica-scraper-archive/social-cards/resolve_missing_fragrantica_ids.py
+
       - name: Fetch social cards
         env:
           SOCIAL_CARD_DELAY: "0.15"
         run: python fragrantica-scraper-archive/social-cards/fetch_social_cards.py
 
-      - name: Commit social card archive
+      - name: Commit Fragrantica ID and social card archive
         if: always()
         shell: bash
         run: |
@@ -42,13 +48,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          git add data/shobi-fragrantica-mapping.csv || true
+          git add fragrantica-scraper-archive/social-cards/id-resolution-report.csv || true
           git add fragrantica-scraper-archive/social-cards/manifest.csv || true
           git add fragrantica-scraper-archive/social-cards/images || true
 
           if git diff --cached --quiet; then
-            echo "No new social cards to commit."
+            echo "No new Fragrantica IDs or social cards to commit."
             exit 0
           fi
 
-          git commit -m "Archive Fragrantica social cards"
+          git commit -m "Resolve Fragrantica IDs and archive social cards"
           git push
