@@ -1,0 +1,69 @@
+name: Match Shobi to Fragrantica URL Corpus
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "fragrantica-scraper-archive/tools/match_shobi_to_url_corpus.py"
+      - "perfume-database/catalog/shobi-master-v1.csv"
+      - "perfume-database/confirmed/shobi-fragrantica-mapping.csv"
+      - "fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-fragrantica-corpus-match
+  cancel-in-progress: false
+
+jobs:
+  match:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Match Shobi catalog against Fragrantica URL corpus
+        run: python fragrantica-scraper-archive/tools/match_shobi_to_url_corpus.py
+
+      - name: Commit corpus matching reports
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add fragrantica-scraper-archive/corpus-match/
+
+          if git diff --cached --quiet; then
+            echo "No corpus-match changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update Shobi Fragrantica corpus match report"
+
+          for attempt in 1 2 3 4 5; do
+            echo "Push attempt ${attempt}/5"
+            git fetch origin main
+            git rebase origin/main
+
+            if git push origin HEAD:main; then
+              echo "Corpus-match report pushed successfully."
+              exit 0
+            fi
+
+            echo "main advanced again; retrying..."
+            sleep 3
+          done
+
+          echo "Failed to push after 5 attempts."
+          exit 1
