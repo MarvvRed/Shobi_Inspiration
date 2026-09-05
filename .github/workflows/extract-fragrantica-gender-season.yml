@@ -1,0 +1,45 @@
+name: Extract Fragrantica Gender and Season
+
+on:
+  workflow_dispatch:
+    inputs:
+      calibrate:
+        description: 'Generate calibration crops instead of final dataset'
+        required: false
+        default: 'true'
+  push:
+    paths:
+      - '.github/fragrantica-gender-season-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image dependency
+        run: pip install pillow
+      - name: Extract season bars / calibration crops
+        run: |
+          if [ "${{ github.event.inputs.calibrate || 'true' }}" = "true" ]; then
+            python fragrantica-scraper-archive/social-cards/extract_gender_season.py --calibrate
+          else
+            python fragrantica-scraper-archive/social-cards/extract_gender_season.py
+          fi
+      - name: Commit extraction output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fragrantica-scraper-archive/social-cards/calibration-crops fragrantica-scraper-archive/social-cards/gender-season.csv 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No extraction changes"
+            exit 0
+          fi
+          git commit -m "Extract Fragrantica social card gender and season data"
+          git pull --rebase origin main
+          git push origin HEAD:main
