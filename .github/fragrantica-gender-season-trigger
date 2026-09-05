@@ -1,6 +1,7 @@
-trigger=2026-09-05T21:01:00+02:00
-mode=calibrate
-sample=24
+trigger=2026-09-05T21:23:00+02:00
+mode=full
+sample=2286
 season_rule=longest-season-bar-wins
 gender_rule=read-explicit-social-card-title-phrase
 expected_gender=male-female-unisex-only
+reason=run-full-gender-season-extraction-after-clean-24-card-calibration
