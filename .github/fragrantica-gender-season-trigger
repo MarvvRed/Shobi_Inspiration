@@ -1,7 +1,6 @@
-trigger=2026-09-05T20:14:00+02:00
-mode=validate-corrected-season-grid
+trigger=2026-09-05T21:01:00+02:00
+mode=calibrate
 sample=24
-rule=longest-season-bar-wins
-tie=do-not-guess
-control=fragrantica-11220-should-not-be-summer-dominant
-reason=validate-real-2x2-season-panel-before-full-extraction
+season_rule=longest-season-bar-wins
+gender_rule=read-explicit-social-card-title-phrase
+expected_gender=male-female-unisex-only
