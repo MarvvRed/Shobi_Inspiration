@@ -1,6 +1,7 @@
-trigger=2026-09-05T20:09:00+02:00
-mode=detect-social-card-season-bar-geometry
+trigger=2026-09-05T20:14:00+02:00
+mode=validate-corrected-season-grid
 sample=24
 rule=longest-season-bar-wins
 tie=do-not-guess
-reason=calibrate-actual-season-bar-positions-before-full-extraction
+control=fragrantica-11220-should-not-be-summer-dominant
+reason=validate-real-2x2-season-panel-before-full-extraction
