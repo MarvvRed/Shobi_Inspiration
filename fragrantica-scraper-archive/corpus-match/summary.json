@@ -1,0 +1,30 @@
+{
+  "catalog_rows": 2343,
+  "fragrantica_lines_total": 55964,
+  "fragrantica_blank_lines": 0,
+  "fragrantica_valid_url_rows": 55963,
+  "fragrantica_invalid_url_rows": 1,
+  "fragrantica_unique_urls": 55963,
+  "fragrantica_duplicate_url_rows": 0,
+  "fragrantica_unique_ids": 55556,
+  "fragrantica_extra_rows_sharing_an_id": 407,
+  "confirmed_mapping_rows": 155,
+  "unanimous_code_suffix_brand_mappings": 84,
+  "catalog_rows_with_inferred_brand": 1324,
+  "status_counts": {
+    "FOUND": 791,
+    "MAPPED_NOT_IN_CORPUS": 27,
+    "NOT_FOUND": 1463,
+    "AMBIGUOUS": 62
+  },
+  "found_total": 791,
+  "ambiguous_total": 62,
+  "not_found_total": 1463,
+  "mapped_not_in_corpus_total": 27,
+  "invalid_url_examples": [
+    {
+      "line": 5338,
+      "value": "https://www.fragrantica.com/perfume/DS-Durga/-8801.html"
+    }
+  ]
+}
