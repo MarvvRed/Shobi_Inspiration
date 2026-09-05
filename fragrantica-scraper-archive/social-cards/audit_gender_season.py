@@ -16,14 +16,15 @@ with SRC.open(encoding='utf-8-sig', newline='') as f:
 with MANIFEST.open(encoding='utf-8-sig', newline='') as f:
     manifest = list(csv.DictReader(f))
 
+base_fields = list(rows[0].keys()) if rows else []
 season_counts = Counter(r.get('main_season','') for r in rows)
 gender_counts = Counter(r.get('gender','') or 'unresolved' for r in rows)
 confidence_counts = Counter(r.get('season_confidence','') for r in rows)
 
-unresolved = [r for r in rows if not (r.get('gender') or '').strip()]
-ties = [r for r in rows if r.get('main_season') == 'TIE']
+unresolved = [dict(r) for r in rows if not (r.get('gender') or '').strip()]
+ties = [dict(r) for r in rows if r.get('main_season') == 'TIE']
 
-# For each tie, record the actual longest bar(s) and raw margin.
+# For each tie, record the actual longest bar and raw margin without mutating source rows.
 for r in ties:
     vals = {s: float(r.get(s) or 0) for s in ('winter','spring','summer','fall')}
     ordered = sorted(vals.items(), key=lambda kv: kv[1], reverse=True)
@@ -50,13 +51,13 @@ manifest_cards = [r for r in manifest if r.get('card_status') in {'EXISTS','DOWN
 manifest_unique_paths = len({r.get('local_path') for r in manifest_cards})
 
 with UNRESOLVED.open('w', encoding='utf-8-sig', newline='') as f:
-    w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+    w = csv.DictWriter(f, fieldnames=base_fields)
     w.writeheader(); w.writerows(unresolved)
 
 if ties:
-    fields = list(rows[0].keys()) + ['actual_longest','actual_longest_value','runner_up','runner_up_value','actual_margin']
+    tie_fields = base_fields + ['actual_longest','actual_longest_value','runner_up','runner_up_value','actual_margin']
     with TIES.open('w', encoding='utf-8-sig', newline='') as f:
-        w = csv.DictWriter(f, fieldnames=fields)
+        w = csv.DictWriter(f, fieldnames=tie_fields)
         w.writeheader(); w.writerows(ties)
 
 lines = [
