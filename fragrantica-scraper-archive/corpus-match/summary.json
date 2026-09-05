@@ -15,9 +15,9 @@
   "safe_code_suffix_brand_mappings": 183,
   "catalog_rows_with_inferred_brand": 2056,
   "status_counts": {
-    "FOUND": 2291,
+    "FOUND": 2297,
     "MAPPED_NOT_IN_CORPUS": 5,
-    "NOT_FOUND": 43,
+    "NOT_FOUND": 37,
     "AMBIGUOUS": 4
   },
   "match_type_counts": {
@@ -25,10 +25,10 @@
     "CONFIRMED_EXISTING_MAPPING": 28,
     "CONFIRMED_MAPPING_ONLY": 5,
     "CONFIRMED_IDENTITY_EXACT_CORPUS": 110,
-    "WEB_VERIFIED_FRAGRANTICA": 532,
+    "WEB_VERIFIED_FRAGRANTICA": 538,
     "EXACT_PERFUME_BRAND_TEXT": 469,
     "EXACT_UNIQUE_NAME": 58,
-    "NONE": 43,
+    "NONE": 37,
     "EXACT_BRAND_CLEAN_NAME": 721,
     "SAFE_TOKEN_SAME_BRAND": 189,
     "CONFIRMED_IDENTITY_CONCENTRATION_CORPUS": 3,
@@ -38,9 +38,9 @@
     "EXACT_NAME_MULTIPLE_CANDIDATES": 4,
     "CONFIRMED_IDENTITY_TOKEN_CORPUS": 4
   },
-  "found_total": 2291,
+  "found_total": 2297,
   "ambiguous_total": 4,
-  "not_found_total": 43,
+  "not_found_total": 37,
   "mapped_not_in_corpus_total": 5,
   "invalid_url_examples": [
     {
@@ -129,13 +129,14 @@
     "web-confirmed-batch63.csv",
     "web-confirmed-batch64.csv",
     "web-confirmed-batch65.csv",
+    "web-confirmed-batch66.csv",
     "web-confirmed.csv"
   ],
-  "web_confirmed_rows": 529,
-  "web_confirmed_newly_merged": 531,
+  "web_confirmed_rows": 535,
+  "web_confirmed_newly_merged": 537,
   "web_confirmed_previous_statuses": {
     "MAPPED_NOT_IN_CORPUS": 1,
-    "NOT_FOUND": 396,
+    "NOT_FOUND": 402,
     "AMBIGUOUS": 134
   }
 }
