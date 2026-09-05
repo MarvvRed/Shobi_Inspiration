@@ -20,7 +20,7 @@ Nel precedente ambiente Windows era stato usato un clone/tool separato in `C:\fr
 - raccolta già caricata di circa **21.158 URL Fragrantica**
 - scansione pagine designer con limite operativo fino a circa 22.000 profumi.
 
-I due file originali sopra non sono presenti nel repository corrente, quindi non vengono ricreati artificialmente. Se vengono recuperati dal vecchio PC/backup, la destinazione prevista è `legacy/original-local-scraper/`.
+Il 5 settembre 2026 è stato recuperato e salvato senza modifiche l'archivio URL originale: [perfume_urls.txt](legacy/original-local-scraper/perfume_urls.txt), con **55.964 righe**. Provenienza e checksum sono nel [README dell'archivio](legacy/original-local-scraper/README.md). Lo script originale non è ancora stato importato.
 
 ## Regola
 

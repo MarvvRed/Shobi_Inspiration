@@ -20,7 +20,7 @@ Historical reconstruction of the old local scraper environment used before the c
 
 ## Important
 
-The original `fragrantica_url_scraper.py` and `perfume_urls.txt` bytes are not currently present in this GitHub repository. They should be copied here unchanged if recovered from the old machine or backup:
+On 2026-09-05, the original `perfume_urls.txt` was recovered from `C:\fragrance_scraper` and copied unchanged into the repository, with 55,964 lines. See [snapshot details](original-local-scraper/README.md). The original `fragrantica_url_scraper.py` has not been imported. The recovery destination is:
 
 `fragrantica-scraper-archive/legacy/original-local-scraper/`
 

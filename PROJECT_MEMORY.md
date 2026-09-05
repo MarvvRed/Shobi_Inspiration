@@ -1,5 +1,13 @@
 # Shobi Inspiration — Project Memory
 
+## URL archive recovered — 2026-09-05
+
+The original local `C:\fragrance_scraper\perfume_urls.txt` is now preserved
+unchanged at `fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt`.
+It contains 55,964 nonempty lines, exceeding the historical 21,158-URL run.
+The adjacent README records provenance and SHA-256. This import only archives
+existing URLs; local catalog matching and its report remain pending.
+
 > Persistent project context for continuing work across different ChatGPT conversations.
 >
 > **Rule:** update this file whenever an important project decision, completed step, structural change, failed approach, or next step changes.
