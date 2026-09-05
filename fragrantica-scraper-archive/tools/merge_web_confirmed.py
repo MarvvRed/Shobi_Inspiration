@@ -19,31 +19,39 @@ def write(p,rows,fields):
         w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');w.writeheader();w.writerows(rows)
 
 # Merge the historical curated file plus every explicit curated batch.
-# Later files win for the same Shobi code, which lets us correct a prior mapping safely.
-web={}
+# Later files win for the same Shobi code or PrestaShop product id. Product-id fallback
+# lets us resolve legacy catalog rows whose Shobi code is blank without collisions.
+web_by_code={}
+web_by_pid={}
 web_files=[]
 for p in sorted(OUT.glob('web-confirmed*.csv')):
     web_files.append(p.name)
     for r in read(p):
         code=(r.get('shobi_code') or '').strip()
-        if code:web[code]=r
+        pid=(r.get('prestashop_product_id') or '').strip()
+        if code:web_by_code[code]=r
+        if pid:web_by_pid[pid]=r
 
 rows=read(REPORT); fields=list(rows[0].keys()) if rows else []
 merged=0; previous=Counter()
 for row in rows:
-    code=(row.get('shobi_code') or '').strip(); m=web.get(code)
+    code=(row.get('shobi_code') or '').strip()
+    pid=(row.get('prestashop_product_id') or '').strip()
+    m=web_by_code.get(code) if code else None
+    if not m and pid:m=web_by_pid.get(pid)
     if not m:continue
     if row.get('status')!='FOUND':
         previous[row.get('status') or 'EMPTY']+=1;merged+=1
     row['status']='FOUND';row['match_type']='WEB_VERIFIED_FRAGRANTICA';row['score']='1.0000';row['candidate_count']='1'
     row['fragrantica_brand']=m.get('fragrantica_brand','');row['fragrantica_perfume']=m.get('fragrantica_perfume','')
     row['fragrantica_id']=m.get('fragrantica_id','');row['fragrantica_url']=m.get('fragrantica_url','')
-    row['note']=m.get('verification_note','')
+    row['note']=m.get('verification_note') or m.get('note','')
 
 write(REPORT,rows,fields);write(AMBIG,[r for r in rows if r.get('status')=='AMBIGUOUS'],fields);write(UNMATCH,[r for r in rows if r.get('status') in {'NOT_FOUND','MAPPED_NOT_IN_CORPUS'}],fields)
 summary=json.loads(SUMMARY_JSON.read_text(encoding='utf-8'));sc=Counter(r.get('status') or '' for r in rows);tc=Counter(r.get('match_type') or 'NONE' for r in rows)
-summary['web_confirmed_files']=web_files;summary['web_confirmed_rows']=len(web);summary['web_confirmed_newly_merged']=merged;summary['web_confirmed_previous_statuses']=dict(previous)
+web_rows=len(web_by_code)+len([pid for pid,r in web_by_pid.items() if not (r.get('shobi_code') or '').strip()])
+summary['web_confirmed_files']=web_files;summary['web_confirmed_rows']=web_rows;summary['web_confirmed_newly_merged']=merged;summary['web_confirmed_previous_statuses']=dict(previous)
 summary['status_counts']=dict(sc);summary['match_type_counts']=dict(tc);summary['found_total']=sc.get('FOUND',0);summary['ambiguous_total']=sc.get('AMBIGUOUS',0);summary['not_found_total']=sc.get('NOT_FOUND',0);summary['mapped_not_in_corpus_total']=sc.get('MAPPED_NOT_IN_CORPUS',0)
 SUMMARY_JSON.write_text(json.dumps(summary,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-SUMMARY.write_text(f"# Shobi ↔ Fragrantica resolution\n\nFOUND: **{summary['found_total']}**\n\nAMBIGUOUS: **{summary['ambiguous_total']}**\n\nNOT_FOUND: **{summary['not_found_total']}**\n\nMAPPED_NOT_IN_CORPUS: **{summary['mapped_not_in_corpus_total']}**\n\nWeb verified: **{len(web)}**\n",encoding='utf-8')
-print(json.dumps({'web_files':web_files,'web_rows':len(web),'newly_merged':merged,'found_total':summary['found_total'],'ambiguous':summary['ambiguous_total'],'not_found':summary['not_found_total'],'mapped_not_in_corpus':summary['mapped_not_in_corpus_total']},indent=2))
+SUMMARY.write_text(f"# Shobi ↔ Fragrantica resolution\n\nFOUND: **{summary['found_total']}**\n\nAMBIGUOUS: **{summary['ambiguous_total']}**\n\nNOT_FOUND: **{summary['not_found_total']}**\n\nMAPPED_NOT_IN_CORPUS: **{summary['mapped_not_in_corpus_total']}**\n\nWeb verified: **{web_rows}**\n",encoding='utf-8')
+print(json.dumps({'web_files':web_files,'web_rows':web_rows,'newly_merged':merged,'found_total':summary['found_total'],'ambiguous':summary['ambiguous_total'],'not_found':summary['not_found_total'],'mapped_not_in_corpus':summary['mapped_not_in_corpus_total']},indent=2))
