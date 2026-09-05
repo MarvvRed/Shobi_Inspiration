@@ -1,6 +1,6 @@
-trigger=2026-09-05T20:03:00+02:00
-mode=calibrate-social-card-season-bars-v2
+trigger=2026-09-05T20:09:00+02:00
+mode=detect-social-card-season-bar-geometry
 sample=24
 rule=longest-season-bar-wins
 tie=do-not-guess
-reason=produce-inspectable-crops-and-sample-csv
+reason=calibrate-actual-season-bar-positions-before-full-extraction
