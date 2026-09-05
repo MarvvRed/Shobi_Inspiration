@@ -29,7 +29,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Resolve missing Fragrantica IDs
+      - name: Sync verified corpus matches into mapping
+        run: python fragrantica-scraper-archive/social-cards/sync_corpus_matches_to_mapping.py
+
+      - name: Resolve only IDs still missing after corpus sync
         env:
           SHOBI_HTTP_TIMEOUT: "7"
           FRAGRANTICA_ID_DELAY: "0.15"
