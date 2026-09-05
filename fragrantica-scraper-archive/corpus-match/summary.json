@@ -15,37 +15,37 @@
   "safe_code_suffix_brand_mappings": 183,
   "catalog_rows_with_inferred_brand": 2056,
   "status_counts": {
-    "FOUND": 2153,
+    "FOUND": 2216,
     "MAPPED_NOT_IN_CORPUS": 5,
-    "NOT_FOUND": 133,
-    "AMBIGUOUS": 52
+    "NOT_FOUND": 99,
+    "AMBIGUOUS": 23
   },
   "match_type_counts": {
     "CONFIRMED_ID_IN_CORPUS": 128,
     "CONFIRMED_EXISTING_MAPPING": 28,
     "CONFIRMED_MAPPING_ONLY": 5,
     "CONFIRMED_IDENTITY_EXACT_CORPUS": 110,
-    "WEB_VERIFIED_FRAGRANTICA": 394,
+    "WEB_VERIFIED_FRAGRANTICA": 457,
     "EXACT_PERFUME_BRAND_TEXT": 469,
     "EXACT_UNIQUE_NAME": 58,
-    "NONE": 133,
+    "NONE": 99,
     "EXACT_BRAND_CLEAN_NAME": 721,
     "SAFE_TOKEN_SAME_BRAND": 189,
     "CONFIRMED_IDENTITY_CONCENTRATION_CORPUS": 3,
     "SAFE_FUZZY_SAME_BRAND": 31,
     "SAFE_CONCENTRATION_EQUIVALENT": 15,
-    "TOKEN_MULTIPLE_CANDIDATES": 13,
+    "TOKEN_MULTIPLE_CANDIDATES": 6,
     "CONFIRMED_IDENTITY_SAFE_FUZZY_CORPUS": 3,
-    "EXACT_NAME_MULTIPLE_CANDIDATES": 24,
-    "EXACT_BRAND_NAME_MULTIPLE_IDS": 4,
+    "EXACT_NAME_MULTIPLE_CANDIDATES": 9,
+    "EXACT_BRAND_NAME_MULTIPLE_IDS": 3,
     "CONFIRMED_IDENTITY_TOKEN_CORPUS": 4,
     "FUZZY_MULTIPLE_CANDIDATES": 1,
-    "EXACT_COMBINED_MULTIPLE_IDS": 7,
-    "CONCENTRATION_MULTIPLE_IDS": 3
+    "CONCENTRATION_MULTIPLE_IDS": 3,
+    "EXACT_COMBINED_MULTIPLE_IDS": 1
   },
-  "found_total": 2153,
-  "ambiguous_total": 52,
-  "not_found_total": 133,
+  "found_total": 2216,
+  "ambiguous_total": 23,
+  "not_found_total": 99,
   "mapped_not_in_corpus_total": 5,
   "invalid_url_examples": [
     {
@@ -102,13 +102,20 @@
     "web-confirmed-batch31.csv",
     "web-confirmed-batch32.csv",
     "web-confirmed-batch33.csv",
+    "web-confirmed-batch34.csv",
+    "web-confirmed-batch35.csv",
+    "web-confirmed-batch36.csv",
+    "web-confirmed-batch37.csv",
+    "web-confirmed-batch38.csv",
+    "web-confirmed-batch39.csv",
+    "web-confirmed-batch40.csv",
     "web-confirmed.csv"
   ],
-  "web_confirmed_rows": 391,
-  "web_confirmed_newly_merged": 393,
+  "web_confirmed_rows": 454,
+  "web_confirmed_newly_merged": 456,
   "web_confirmed_previous_statuses": {
     "MAPPED_NOT_IN_CORPUS": 1,
-    "NOT_FOUND": 306,
-    "AMBIGUOUS": 86
+    "NOT_FOUND": 340,
+    "AMBIGUOUS": 115
   }
 }
