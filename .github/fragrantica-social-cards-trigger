@@ -1,7 +1,6 @@
-trigger=2026-09-05T15:00:00+02:00
-mode=resolve-ids-and-fetch-social-cards
-resolver=resumable-checkpoint-v3
-batch=250
-checkpoint_every=10
-retry_unresolved=1
-reason=refresh-social-cards-after-2307-verified-fragrantica-matches
+trigger=2026-09-05T15:35:00+02:00
+mode=sync-corpus-and-fetch-social-cards
+source=fragrantica-scraper-archive/corpus-match/shobi-fragrantica-corpus-match.csv
+expected_found=2307
+resolver=fallback-only
+reason=fetch-social-cards-from-verified-corpus-matches
