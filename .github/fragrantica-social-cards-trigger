@@ -1,6 +1,6 @@
-trigger=2026-09-05T15:35:00+02:00
+trigger=2026-09-05T18:36:00+02:00
 mode=sync-corpus-and-fetch-social-cards
 source=fragrantica-scraper-archive/corpus-match/shobi-fragrantica-corpus-match.csv
 expected_found=2307
 resolver=fallback-only
-reason=fetch-social-cards-from-verified-corpus-matches
+reason=retry-after-fixing-csv-fieldnames-sync-bug
