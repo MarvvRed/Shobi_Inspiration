@@ -15,37 +15,37 @@
   "safe_code_suffix_brand_mappings": 183,
   "catalog_rows_with_inferred_brand": 2056,
   "status_counts": {
-    "FOUND": 1847,
+    "FOUND": 1887,
     "MAPPED_NOT_IN_CORPUS": 5,
-    "NOT_FOUND": 366,
-    "AMBIGUOUS": 125
+    "NOT_FOUND": 332,
+    "AMBIGUOUS": 119
   },
   "match_type_counts": {
     "CONFIRMED_ID_IN_CORPUS": 128,
     "CONFIRMED_EXISTING_MAPPING": 28,
     "CONFIRMED_MAPPING_ONLY": 5,
     "CONFIRMED_IDENTITY_EXACT_CORPUS": 110,
-    "WEB_VERIFIED_FRAGRANTICA": 87,
+    "WEB_VERIFIED_FRAGRANTICA": 127,
     "EXACT_PERFUME_BRAND_TEXT": 470,
     "EXACT_UNIQUE_NAME": 58,
-    "NONE": 366,
+    "NONE": 332,
     "EXACT_BRAND_CLEAN_NAME": 721,
     "SAFE_TOKEN_SAME_BRAND": 189,
     "CONFIRMED_IDENTITY_CONCENTRATION_CORPUS": 3,
     "SAFE_FUZZY_SAME_BRAND": 31,
     "SAFE_CONCENTRATION_EQUIVALENT": 15,
-    "FUZZY_MULTIPLE_CANDIDATES": 6,
-    "EXACT_COMBINED_MULTIPLE_IDS": 19,
-    "TOKEN_MULTIPLE_CANDIDATES": 33,
+    "FUZZY_MULTIPLE_CANDIDATES": 5,
+    "EXACT_COMBINED_MULTIPLE_IDS": 18,
+    "TOKEN_MULTIPLE_CANDIDATES": 31,
     "EXACT_BRAND_NAME_MULTIPLE_IDS": 11,
-    "EXACT_NAME_MULTIPLE_CANDIDATES": 52,
+    "EXACT_NAME_MULTIPLE_CANDIDATES": 50,
     "CONFIRMED_IDENTITY_SAFE_FUZZY_CORPUS": 3,
     "CONFIRMED_IDENTITY_TOKEN_CORPUS": 4,
     "CONCENTRATION_MULTIPLE_IDS": 4
   },
-  "found_total": 1847,
-  "ambiguous_total": 125,
-  "not_found_total": 366,
+  "found_total": 1887,
+  "ambiguous_total": 119,
+  "not_found_total": 332,
   "mapped_not_in_corpus_total": 5,
   "invalid_url_examples": [
     {
@@ -70,11 +70,11 @@
     "CONFIRMED_IDENTITY_TOKEN_CORPUS": 4
   },
   "resolved_mapping_brand_aliases": 180,
-  "web_confirmed_rows": 87,
-  "web_confirmed_newly_merged": 87,
+  "web_confirmed_rows": 127,
+  "web_confirmed_newly_merged": 127,
   "web_confirmed_previous_statuses": {
     "MAPPED_NOT_IN_CORPUS": 1,
-    "NOT_FOUND": 73,
-    "AMBIGUOUS": 13
+    "NOT_FOUND": 107,
+    "AMBIGUOUS": 19
   }
 }

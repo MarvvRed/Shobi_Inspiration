@@ -1,22 +1,22 @@
 {
-  "unresolved_total": 496,
+  "unresolved_total": 456,
   "identity_status_counts": {
-    "CONFIRMED": 425,
+    "CONFIRMED": 385,
     "AMBIGUOUS": 60,
     "EMPTY": 11
   },
   "fragrantica_status_counts": {
     "UNRESOLVED": 6,
-    "NOT_FOUND": 479,
+    "NOT_FOUND": 439,
     "EMPTY": 11
   },
   "identity_fragrantica_combinations": {
     "CONFIRMED|UNRESOLVED": 6,
     "AMBIGUOUS|NOT_FOUND": 60,
-    "CONFIRMED|NOT_FOUND": 419,
+    "CONFIRMED|NOT_FOUND": 379,
     "EMPTY|EMPTY": 11
   },
   "unresolved_with_fragrantica_id": 0,
   "unresolved_with_fragrantica_url": 0,
-  "unresolved_with_evidence_note": 485
+  "unresolved_with_evidence_note": 445
 }
