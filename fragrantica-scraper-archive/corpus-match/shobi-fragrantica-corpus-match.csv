@@ -1998,14 +1998,14 @@
 608,513-CHL,LOVE - CHLOE,CHL,Chloe,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Chloe,Love,9370,https://www.fragrantica.com/perfume/Chloe/Love-9370.html,
 607,512-CHL,L'EAU DE CHLOE,CHL,Chloe,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Chloe,L Eau de Chloe,14000,https://www.fragrantica.com/perfume/Chloe/L-Eau-de-Chloe-14000.html,
 606,511-CHL,FLEUR DE PARFUM - CHLOE,CHL,Chloe,FOUND,SAFE_TOKEN_SAME_BRAND,0.9860,2,Chloe,Chloe Fleur de Parfum,39632,https://www.fragrantica.com/perfume/Chloe/Chloe-Fleur-de-Parfum-39632.html,
-605,510-CHL,Chloé,CHL,Chloe,AMBIGUOUS,CONCENTRATION_MULTIPLE_IDS,,2,,,,,
+605,510-CHL,Chloé,CHL,Chloe,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,1733,https://www.fragrantica.com/perfume/Chloe/Chloe-Eau-de-Parfum-1733.html,
 604,509-CHA,GABRIELLE,CHA,Chanel,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Chanel,Gabrielle,43718,https://www.fragrantica.com/perfume/Chanel/Gabrielle-43718.html,
 603,508-CHA,Coco Black,CHA,Chanel,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Chanel,Coco Noir,15963,https://www.fragrantica.com/p/15963,Verified Fragrantica page
 602,507-CHA,COCON MADEM INTENSE,CHA,Chanel,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Chanel,Coco Mademoiselle Intense,48310,https://www.fragrantica.com/p/48310,Verified Fragrantica page
 601,506-CHA,COCON MADEM,CHA,Chanel,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Chanel,Coco Mademoiselle,611,https://www.fragrantica.com/p/611,Verified Fragrantica page
 600,505-CHA,COCO EAUDEPARFUM,CHA,Chanel,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Chanel,Coco Eau de Parfum,609,https://www.fragrantica.com/p/609,Verified Fragrantica page
 599,504-CHA,Five L'EAU,CHA,Chanel,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Chanel,Chanel No 5 L'Eau,38543,https://www.fragrantica.com/p/38543,Verified Fragrantica page
-598,503-CHA,No 5 EAU PREMIER,CHA,Chanel,NOT_FOUND,,,0,,,,,
+598,503-CHA,No 5 EAU PREMIER,CHA,Chanel,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,1360,https://www.fragrantica.com/perfume/Chanel/Chanel-N05-Eau-Premiere-1360.html,
 597,502-CHA,No 5,CHA,Chanel,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,2,,,,,
 596,501-CHA,No 19 POUDRE,CHA,Chanel,FOUND,SAFE_TOKEN_SAME_BRAND,0.9760,1,Chanel,Chanel No 19 Poudre,12424,https://www.fragrantica.com/perfume/Chanel/Chanel-No-19-Poudre-12424.html,
 595,500-CHA,No 19,CHA,Chanel,FOUND,SAFE_TOKEN_SAME_BRAND,0.9560,1,Chanel,Chanel No 19 Poudre,12424,https://www.fragrantica.com/perfume/Chanel/Chanel-No-19-Poudre-12424.html,
@@ -2061,15 +2061,15 @@
 541,435-BLG,435 blg wp,BLG,Bvlgari,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Bvlgari,Aqva Divina,29442,https://www.fragrantica.com/perfume/Bvlgari/Aqva-Divina-29442.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 540,434-BRB,MY BURBERRY BLUSH,BRB,Burberry,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Burberry,My Burberry Blush,45820,https://www.fragrantica.com/perfume/Burberry/My-Burberry-Blush-45820.html,
 539,433-BRB,MY BURBERRY BLACK,BRB,Burberry,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Burberry,My Burberry Black,32566,https://www.fragrantica.com/perfume/Burberry/My-Burberry-Black-32566.html,
-538,1496-BRB,BURBERRY WEEKEND,BRB,Burberry,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,2,,,,,
-537,431-BRB,BURBERRY TOUCH,BRB,Burberry,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,4,,,,,
+538,1496-BRB,BURBERRY WEEKEND,BRB,Burberry,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,1000,https://www.fragrantica.com/perfume/Burberry/Weekend-for-Women-1000.html,
+537,431-BRB,BURBERRY TOUCH,BRB,Burberry,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,814,https://www.fragrantica.com/p/814,
 536,430-BRB,The Beat EDT,BRB,Burberry,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Burberry,The Beat EDT,5946,https://www.fragrantica.com/perfume/Burberry/The-Beat-EDT-5946.html,
 535,429-BRB,BURBERRY SUMMER WOMEN,BRB,Burberry,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Burberry,Burberry Summer,930,https://www.fragrantica.com/perfume/Burberry/Burberry-Summer-930.html,
-534,428-BRB,BURBERRY SPORT,BRB,Burberry,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,9,,,,,
+534,428-BRB,BURBERRY SPORT,BRB,Burberry,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,7613,https://www.fragrantica.com/perfume/Burberry/Burberry-Sport-for-Women-7613.html,
 533,427-BRB,MY BURBERRY,BRB,Burberry,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Burberry,My Burberry,25836,https://www.fragrantica.com/perfume/Burberry/My-Burberry-25836.html,
 532,426-BRB,BURBERRY LONDON,BRB,Burberry,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Burberry,London,813,https://www.fragrantica.com/perfume/Burberry/London-813.html,
 531,425-BRB,Burberry Her,BRB,Burberry,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Burberry,Burberry Her,51694,https://www.fragrantica.com/perfume/Burberry/Burberry-Her-51694.html,
-530,424-BRB,BURBERRY CLASSIC,BRB,Burberry,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,10,,,,,
+530,424-BRB,BURBERRY CLASSIC,BRB,Burberry,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,818,https://www.fragrantica.com/perfume/Burberry/Burberry-Women-818.html,
 529,423-BRB,BURBERRY BRIT,BRB,Burberry,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Burberry,Burberry Brit,819,https://www.fragrantica.com/perfume/Burberry/Burberry-Brit-819.html,
 528,422-BRB,BURBERRY BODY TENDER,BRB,Burberry,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Burberry,Body Tender,17320,https://www.fragrantica.com/perfume/Burberry/Body-Tender-17320.html,
 527,421-BRB,BURBERRY BODY,BRB,Burberry,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Burberry,Body,13014,https://www.fragrantica.com/perfume/Burberry/Body-13014.html,
@@ -2085,13 +2085,13 @@
 516,407-BAT,PINK AMBER & MOROCCO ORCHID - BATH & BODY WORKS,BAT,Bath Body Works,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Bath Body Works,Morocco Orchid Pink Amber,25388,https://www.fragrantica.com/perfume/Bath-Body-Works/Morocco-Orchid-Pink-Amber-25388.html,
 515,406-BAL,ROSABOTANICA,BAL,Balenciaga,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Balenciaga,Rosabotanica,21987,https://www.fragrantica.com/perfume/Balenciaga/Rosabotanica-21987.html,
 514,405-BAL,FLORABOTANICA,BAL,Balenciaga,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Balenciaga,Florabotanica,15512,https://www.fragrantica.com/perfume/Balenciaga/Florabotanica-15512.html,
-513,404-BAL,BALE PARIS,BAL,Balenciaga,NOT_FOUND,,,0,,,,,
+513,404-BAL,BALE PARIS,BAL,Balenciaga,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,7247,https://www.fragrantica.com/perfume/Balenciaga/Balenciaga-Paris-7247.html,
 512,403-BAL,CRISTOBAL,BAL,Balenciaga,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Balenciaga,Cristobal,397,https://www.fragrantica.com/perfume/Balenciaga/Cristobal-397.html,
 511,400-ARIA,Ari Ariana Grande,ARIA,Ariana Grande,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Ariana Grande,Ari,31661,https://www.fragrantica.com/perfume/Ariana-Grande/Ari-31661.html,
 510,399-ARA,TUSCANY PER DONNA,ARA,Aramis,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Aramis,Tuscany Per Donna,122,https://www.fragrantica.com/perfume/Aramis/Tuscany-Per-Donna-122.html,
 509,398-AQU,PINK SUGAR - AQUOLINA,AQU,Aquolina,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Aquolina,Pink Sugar,975,https://www.fragrantica.com/perfume/Aquolina/Pink-Sugar-975.html,
 508,397-ANT,QUEEN OF SEDUCTION,ANT,Art of Seduction,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Antonio Banderas,Queen of Seduction,37470,https://www.fragrantica.com/perfume/Antonio-Banderas/Queen-of-Seduction-37470.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
-507,396-ANT,BLUE SEDUCTION,ANT,Art of Seduction,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,11,,,,,
+507,396-ANT,BLUE SEDUCTION,ANT,Art of Seduction,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,3751,https://www.fragrantica.com/perfume/Antonio-Banderas/Blue-Seduction-3751.html,
 506,395-AGE,FATALE PINK - AGENT PROVOCATEUR,AGE,Agent Provocateur,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Agent Provocateur,Fatale Pink,25352,https://www.fragrantica.com/perfume/Agent-Provocateur/Fatale-Pink-25352.html,
 505,394-AGE,APHRODISIAQUE - AGENT PROVOCATEUR,AGE,Agent Provocateur,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Agent Provocateur,Aphrodisiaque,45363,https://www.fragrantica.com/perfume/Agent-Provocateur/Aphrodisiaque-45363.html,
 504,393-AER,LILAC PATH,AER,Aerin,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Aerin,Lilac Path,19057,https://www.fragrantica.com/perfume/Aerin/Lilac-Path-19057.html,
@@ -2112,8 +2112,8 @@
 353,1277-YZLO,BODY KOUROS,YZLO,Yves Saint Laurent,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Yves Saint Laurent,Body Kouros,736,https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Body-Kouros-736.html,
 352,1276-VIC,SPICEBOMB,VIC,Viktor Rolf,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Viktor Rolf,Spicebomb,13857,https://www.fragrantica.com/perfume/Viktor-Rolf/Spicebomb-13857.html,
 351,1275-VER,Eros,VER,Versace,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Versace,Eros,16657,https://www.fragrantica.com/perfume/Versace/Eros-16657.html,
-350,1274-VER,DYLAN BLUE,VER,Versace,AMBIGUOUS,TOKEN_MULTIPLE_CANDIDATES,0.9560,2,,,,,
-349,1273-VER,DREAMER,VER,Versace,NOT_FOUND,,,0,,,,,
+350,1274-VER,DYLAN BLUE,VER,Versace,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Versace,Versace Pour Homme Dylan Blue,40031,https://www.fragrantica.com/perfume/Versace/Versace-Pour-Homme-Dylan-Blue-40031.html,Verified Fragrantica exact male Dylan Blue
+349,1273-VER,DREAMER,VER,Versace,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Versace,The Dreamer,59417,https://www.fragrantica.com/perfume/Versace/Versace-The-Dreamer-59417.html,Verified current Fragrantica page
 348,1272-VER,BLUE JEANS,VER,Versace,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Versace,Blue Jeans,637,https://www.fragrantica.com/perfume/Versace/Blue-Jeans-637.html,
 347,1271-VAN,tsar van cleef arpels,VAN,Van Cleef Arpels,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Van Cleef Arpels,Tsar,1098,https://www.fragrantica.com/perfume/Van-Cleef-Arpels/Tsar-1098.html,
 346,1270-VAN,bois dore van cleef arpels arwma,VAN,Van Cleef Arpels,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Van Cleef Arpels,Bois Dore,44864,https://www.fragrantica.com/perfume/Van-Cleef-Arpels/Bois-Dore-44864.html,
@@ -2127,27 +2127,27 @@
 338,1262-TMU,ANGEL,TMU,Mugler,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Mugler,Angel,704,https://www.fragrantica.com/perfume/Mugler/Angel-704.html,
 337,1260-TMU,A*MEN,TMU,Mugler,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Mugler,A Men,705,https://www.fragrantica.com/perfume/Mugler/A-Men-705.html,
 336,1259-SHU,old spice shulton company,SHU,,NOT_FOUND,,,0,,,,,
-335,1258-SFER,tuscan scent white mimosa salvatore ferragamo,SFER,,NOT_FOUND,,,0,,,,,
+335,1258-SFER,tuscan scent white mimosa salvatore ferragamo,SFER,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Salvatore Ferragamo,White Mimosa,26777,https://www.fragrantica.com/perfume/Salvatore-Ferragamo/White-Mimosa-26777.html,Web verified exact Tuscan Scent White Mimosa identity.
 334,1257-SFER,ferragamo pour homme,SFER,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Salvatore Ferragamo,Salvatore Ferragamo Pour Homme,659,https://www.fragrantica.com/p/659,Verified Fragrantica page
-333,1256-ROC,ROCHAS MAN,ROC,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Rochas,Rochas Man,1426,https://www.fragrantica.com/p/1426,Verified Fragrantica page
-331,1254-RCAV,JUST HIM - ROBERTO CAVALLI,RCAV,,NOT_FOUND,,,0,,,,,
-330,1253-RCAV,JUST CAVALLI GOLD FOR HIM - ROBERTO CAVALLI,RCAV,,NOT_FOUND,,,0,,,,,
-329,1252-RCAV,BLACK - ROBERTO CAVALLI,RCAV,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Roberto Cavalli,Roberto Cavalli Black,838,https://www.fragrantica.com/p/838,Verified Fragrantica page
+333,1256-ROC,ROCHAS MAN,ROC,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Rochas,Rochas Man,1426,https://www.fragrantica.com/perfume/Rochas/Rochas-Man-1426.html,Verified Fragrantica exact intended title
+331,1254-RCAV,JUST HIM - ROBERTO CAVALLI,RCAV,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Roberto Cavalli,Just Cavalli Him,848,https://www.fragrantica.com/perfume/Roberto-Cavalli/Just-Cavalli-Him-848.html,Verified Fragrantica exact title 2004
+330,1253-RCAV,JUST CAVALLI GOLD FOR HIM - ROBERTO CAVALLI,RCAV,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Roberto Cavalli,Just Cavalli Gold for Him,26217,https://www.fragrantica.com/perfume/Roberto-Cavalli/Just-Cavalli-Gold-for-Him-26217.html,Web verified exact brand/title.
+329,1252-RCAV,BLACK - ROBERTO CAVALLI,RCAV,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Roberto Cavalli,Roberto Cavalli Black,838,https://www.fragrantica.com/perfume/Roberto-Cavalli/Roberto-Cavalli-Black-838.html,Verified Fragrantica exact male Black
 328,1251-ROM,,ROM,,NOT_FOUND,,,0,,,,,
 327,1250-RAL,SAFARI,RAL,,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Ralph Lauren,Safari,897,https://www.fragrantica.com/perfume/Ralph-Lauren/Safari-897.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 326,1249-RAL,POLO SPORT,RAL,,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Ralph Lauren,Polo Sport,894,https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Sport-894.html,
 325,1248-RAL,POLO RED INTENSE,RAL,Colour Intense,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Ralph Lauren,Polo Red Intense,29738,https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Red-Intense-29738.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 324,1247-RAL,POLO RED,RAL,,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Ralph Lauren,Polo Red,18598,https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Red-18598.html,
 323,1246-RAL,POLO BLUE,RAL,,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Ralph Lauren,Polo Blue,1198,https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Blue-1198.html,
-322,1245-PRA,PRADA AMBER,PRA,Prada,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,18,,,,,
+322,1245-PRA,PRADA AMBER,PRA,Prada,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,1045,https://www.fragrantica.com/perfume/Prada/Prada-Amber-1045.html,
 320,1243-PRA,LUNA ROSSA SPORT PRADA,PRA,Prada,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Prada,Luna Rossa Sport,31116,https://www.fragrantica.com/perfume/Prada/Luna-Rossa-Sport-31116.html,
 319,1242-PRA,LUNA ROSSA EXTREME PRADA,PRA,Prada,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Prada,Luna Rossa Extreme,18882,https://www.fragrantica.com/perfume/Prada/Luna-Rossa-Extreme-18882.html,
 318,1241-PRA,LUNA ROSSA CARBON - PRADA,PRA,Prada,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Prada,Luna Rossa Carbon,43402,https://www.fragrantica.com/perfume/Prada/Luna-Rossa-Carbon-43402.html,
 317,1240-PRA,LUNA ROSSA - PRADA,PRA,Prada,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Prada,Luna Rossa,15754,https://www.fragrantica.com/perfume/Prada/Luna-Rossa-15754.html,
 316,880-PRA,INFUSION D'OEILLET,PRA,Prada,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Prada,Infusion d Oeillet,31045,https://www.fragrantica.com/perfume/Prada/Infusion-d-Oeillet-31045.html,
 315,1238-PRA,INFUSION D'HOMME - PRADA,PRA,Prada,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Prada,Infusion d Homme,3794,https://www.fragrantica.com/perfume/Prada/Infusion-d-Homme-3794.html,
-314,1237-PIN,pino silvester,PIN,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Pino Silvestre,Pino Silvestre Original,1522,https://www.fragrantica.com/p/1522,Verified Fragrantica page
-313,1235-PAC,ULTRAVIOLET for men,PAC,Rabanne,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Rabanne,Ultraviolet Man,521,https://www.fragrantica.com/p/521,Verified Fragrantica page
+314,1237-PIN,pino silvester,PIN,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Pino Silvestre,Pino Silvestre Original,1522,https://www.fragrantica.com/perfume/Pino-Silvestre/Pino-Silvestre-Original-1522.html,Verified Fragrantica exact title
+313,1235-PAC,ULTRAVIOLET for men,PAC,Rabanne,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Rabanne,Ultraviolet Man,521,https://www.fragrantica.com/perfume/Paco-Rabanne/Ultraviolet-521.html,Verified Fragrantica men 2001
 312,1233-PAC,PURE XS EDT,PAC,Rabanne,FOUND,SAFE_CONCENTRATION_EQUIVALENT,0.9950,1,Rabanne,Pure XS,46038,https://www.fragrantica.com/perfume/Rabanne/Pure-XS-46038.html,
 311,1232-PAC,,PAC,Rabanne,FOUND,CONFIRMED_IDENTITY_TOKEN_CORPUS,0.9900,1,Rabanne,Paco Rabanne Pour Homme,526,https://www.fragrantica.com/perfume/Rabanne/Paco-Rabanne-Pour-Homme-526.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 310,1231-PAC,ONE MILLION PRIVE,PAC,Rabanne,FOUND,SAFE_FUZZY_SAME_BRAND,0.8750,1,Rabanne,1 Million Prive,37698,https://www.fragrantica.com/perfume/Rabanne/1-Million-Prive-37698.html,
@@ -2156,17 +2156,17 @@
 307,1226-PAC,INVICTUS,PAC,Rabanne,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Rabanne,Invictus,18471,https://www.fragrantica.com/perfume/Rabanne/Invictus-18471.html,
 306,1225-PAC,BLACK XS for men,PAC,Rabanne,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Rabanne,Black XS,514,https://www.fragrantica.com/perfume/Rabanne/Black-XS-514.html,
 305,1224-APO,SCULPTURE - NIKOS APOSTOLOPOULOS,APO,,NOT_FOUND,,,0,,,,,
-304,1223-NRO,NARCISO POUR HOMME - RODRIGUEZ,NRO,Narciso Rodriguez,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Narciso Rodriguez,Narciso Rodriguez for Him,1063,https://www.fragrantica.com/p/1063,Verified Fragrantica page
+304,1223-NRO,NARCISO POUR HOMME - RODRIGUEZ,NRO,Narciso Rodriguez,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Narciso Rodriguez,Narciso Rodriguez for Him,1063,https://www.fragrantica.com/perfume/Narciso-Rodriguez/Narciso-Rodriguez-for-Him-1063.html,Verified Fragrantica exact intended male fragrance
 303,1222-NRO,BLEU NOIR,NRO,Narciso Rodriguez,FOUND,SAFE_TOKEN_SAME_BRAND,0.9560,1,Narciso Rodriguez,Narciso Rodriguez for Him Bleu Noir,31247,https://www.fragrantica.com/perfume/Narciso-Rodriguez/Narciso-Rodriguez-for-Him-Bleu-Noir-31247.html,
 302,1221-MOS,UOMO? - MOSCHINO,MOS,Moschino,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Moschino,Uomo,730,https://www.fragrantica.com/perfume/Moschino/Uomo-730.html,
 300,1219-MOS,POUR HOMME - MOSCHINO,MOS,Moschino,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Moschino,Moschino Pour Homme,5951,https://www.fragrantica.com/perfume/Moschino/Moschino-Pour-Homme-5951.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
-299,1218-MOS,FOREVER - MOSCHINO,MOS,Moschino,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Moschino,Moschino Forever,11613,https://www.fragrantica.com/p/11613,Verified Fragrantica page
+299,1218-MOS,FOREVER - MOSCHINO,MOS,Moschino,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Moschino,Moschino Forever,11613,https://www.fragrantica.com/perfume/Moschino/Moschino-Forever-11613.html,Verified Fragrantica exact title
 298,1216-MNTB,Starwalker,MNTB,,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Montblanc,Starwalker,4023,https://www.fragrantica.com/perfume/Montblanc/Starwalker-4023.html,
 297,1215-MNTB,PRESENCE - MONT BLANC,MNTB,Cousu de Fil Blanc,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Montblanc,Presence,832,https://www.fragrantica.com/perfume/Montblanc/Presence-832.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 296,1214-MNTB,LEGEND SPIRIT - MONT BLANC,MNTB,Cousu de Fil Blanc,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Montblanc,Legend Spirit,33443,https://www.fragrantica.com/perfume/Montblanc/Legend-Spirit-33443.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 295,1213-MNTB,LEGEND NIGHT - MONT BLANC,MNTB,Cousu de Fil Blanc,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Montblanc,Legend Night,45692,https://www.fragrantica.com/perfume/Montblanc/Legend-Night-45692.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 294,1212-MNTB,LEGEND INTENSE - MONT BLANC,MNTB,Cousu de Fil Blanc,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Montblanc,Legend Intense,18861,https://www.fragrantica.com/perfume/Montblanc/Legend-Intense-18861.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
-293,1211-MNTB,LEGEND FOR MEN - MONT BLANC,MNTB,Cousu de Fil Blanc,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Montblanc,Legend,11784,https://www.fragrantica.com/p/11784,Verified Fragrantica page
+293,1211-MNTB,LEGEND FOR MEN - MONT BLANC,MNTB,Cousu de Fil Blanc,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Montblanc,Legend,11784,https://www.fragrantica.com/perfume/Montblanc/Legend-11784.html,Verified Fragrantica men 2011
 292,1210-MNTB,INDIVIDUEL - MONT BLANC,MNTB,Cousu de Fil Blanc,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Montblanc,Individuel,4193,https://www.fragrantica.com/perfume/Montblanc/Individuel-4193.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 291,1208-MNTB,EMBLEM - MONT BLANC,MNTB,Cousu de Fil Blanc,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Montblanc,Emblem,23711,https://www.fragrantica.com/perfume/Montblanc/Emblem-23711.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 290,1207-MIC,KORS FOR MEN,MIC,Michael Kors,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Michael Kors,Michael Kors for Men,26264,https://www.fragrantica.com/p/26264,Verified Fragrantica page
@@ -2176,14 +2176,14 @@
 285,1200-LAN,HYPNOSE HOMME,LAN,Lancome,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Lancome,Hypnose Homme,992,https://www.fragrantica.com/perfume/Lancome/Hypnose-Homme-992.html,
 284,777-LAL,sculpteur d epices lalique,LAL,Lalique,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Lalique,Sculpteur d Epices,28250,https://www.fragrantica.com/perfume/Lalique/Sculpteur-d-Epices-28250.html,
 283,1198-LAL,encre noir lalique,LAL,Lalique,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Lalique,Encre Noire,1834,https://www.fragrantica.com/p/1834,Verified Fragrantica page
-282,1197-LAC,LACOSTE HOMME,LAC,,NOT_FOUND,,,0,,,,,
+282,1197-LAC,LACOSTE HOMME,LAC,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,670,https://www.fragrantica.com/perfume/Lacoste-Fragrances/Lacoste-Pour-Homme-670.html,
 280,769-LART,PREMIER FIGUIER,LART,L Artisan Parfumeur,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,L Artisan Parfumeur,Premier Figuier,1261,https://www.fragrantica.com/perfume/L-Artisan-Parfumeur/Premier-Figuier-1261.html,
 278,1193-KEN,TOTEM ORANGE - KENZO,KEN,Kenzo,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Kenzo,Totem Orange,31206,https://www.fragrantica.com/perfume/Kenzo/Totem-Orange-31206.html,
 277,1192-KEN,TOKYO,KEN,Kenzo,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Kenzo,Tokyo by Kenzo,1673,https://www.fragrantica.com/p/1673,Verified Fragrantica page
 276,1191-KEN,L' EAU PAR ELECTRIC WAVE -KENZO,KEN,Kenzo,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Kenzo,L'Eau par Kenzo Electric Wave pour Homme,35459,https://www.fragrantica.com/p/35459,Verified Fragrantica page
 275,1190-KEN,KENZO - KENZO,KEN,Kenzo,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Kenzo,Kenzo,3403,https://www.fragrantica.com/perfume/Kenzo/Kenzo-3403.html,
 274,1189-KEN,HOMME SPORT EXTREME - KENZO,KEN,Kenzo,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Bellerive,Homme Sport Extreme,110164,https://www.fragrantica.com/perfume/Bellerive/Homme-Sport-Extreme-110164.html,
-273,1186-JOO,wow joop,JOO,,NOT_FOUND,,,0,,,,,
+273,1186-JOO,wow joop,JOO,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,42887,https://www.fragrantica.com/perfume/Joop-/Wow--42887.html,
 272,1185-JOO,nightflight joop arwmata,JOO,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Joop!,Nightflight,1721,https://www.fragrantica.com/p/1721,Verified Fragrantica page
 271,1184-JOO,αρωματα τυπου joop,JOO,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Joop!,Joop! Homme,1251,https://www.fragrantica.com/p/1251,Verified Fragrantica page
 270,1183-VAR,john varvatos,VAR,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,John Varvatos,John Varvatos,2355,https://www.fragrantica.com/p/2355,Verified original 2004 Fragrantica page
@@ -2192,7 +2192,7 @@
 267,1180-GUL,LE MALE TERRIBLE,GUL,Jean Paul Gaultier,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Jean Paul Gaultier,Le Male Terrible,9502,https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Le-Male-Terrible-9502.html,
 266,1179-GUL,LE MALE,GUL,Jean Paul Gaultier,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Jean Paul Gaultier,Le Male,430,https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Le-Male-430.html,
 265,1177-GUL,KOKORICO,GUL,Jean Paul Gaultier,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Jean Paul Gaultier,Kokorico,12711,https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Kokorico-12711.html,
-264,1176-GUL,GAULT 2,GUL,Jean Paul Gaultier,NOT_FOUND,,,0,,,,,
+264,1176-GUL,GAULT 2,GUL,Jean Paul Gaultier,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Jean Paul Gaultier,Gaultier 2,433,https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Gaultier-2-433.html,Web verified: original Gaultier 2 launched 2005; not 2022 Gaultier².
 263,1175-JAC,paradox for men jacomo,JAC,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Jacomo,Paradox for Men,1454,https://www.fragrantica.com/p/1454,Verified Fragrantica page
 261,1174-JAC,jacomo de jacomo dupe,JAC,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Jacomo,Jacomo de Jacomo,3804,https://www.fragrantica.com/p/3804,Verified Fragrantica page
 260,1173-ISS,Nuit d'Issey Bleu Astral - ISSEY MIYAKE,ISS,Issey Miyake,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Issey Miyake,Nuit d Issey Bleu Astral,43311,https://www.fragrantica.com/perfume/Issey-Miyake/Nuit-d-Issey-Bleu-Astral-43311.html,
@@ -2218,7 +2218,7 @@
 239,1149-GUR,L' HOMME IDEAL - GUERLAIN,GUR,Guerlain,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Guerlain,L Homme Ideal,25780,https://www.fragrantica.com/perfume/Guerlain/L-Homme-Ideal-25780.html,
 238,1148-GUC,OUD,GUC,Gucci,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Gucci,Gucci Oud,25946,https://www.fragrantica.com/p/25946,Verified Fragrantica page
 237,1147-GUC,Guilty pour Homme,GUC,Gucci,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Gucci,Guilty Pour Homme,11037,https://www.fragrantica.com/perfume/Gucci/Guilty-Pour-Homme-11037.html,
-236,1146-GUC,Guilty Intense,GUC,Gucci,AMBIGUOUS,TOKEN_MULTIPLE_CANDIDATES,0.9560,2,,,,,
+236,1146-GUC,Guilty Intense,GUC,Gucci,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,13075,https://www.fragrantica.com/perfume/Gucci/Gucci-Guilty-Intense-Pour-Homme-13075.html,
 234,1144-GUC,G. by G. pour Homme,GUC,Gucci,FOUND,CONFIRMED_IDENTITY_CONCENTRATION_CORPUS,0.9950,1,Gucci,Gucci by Gucci Pour Homme,3792,https://www.fragrantica.com/perfume/Gucci/Gucci-by-Gucci-Pour-Homme-3792.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 233,1143-GUC,Envy for Men,GUC,Gucci,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Gucci,Envy for Men,688,https://www.fragrantica.com/perfume/Gucci/Envy-for-Men-688.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 232,1142-GIV,PLAY,GIV,Givenchy,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Lattafa Perfumes,Play,98247,https://www.fragrantica.com/perfume/Lattafa-Perfumes/Play-98247.html,
@@ -2237,19 +2237,19 @@
 218,1125-ARM,ACQUA DI GIO ESSENZA,ARM,Giorgio Armani,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Giorgio Armani,Acqua di Gio Essenza,14825,https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Essenza-14825.html,
 217,1124-ARM,ACQUA DI GIO ABSOLU,ARM,Giorgio Armani,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Giorgio Armani,Acqua di Gio Absolu,48138,https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Absolu-48138.html,
 216,1123-ARM,ACQUA DI GIO,ARM,Giorgio Armani,AMBIGUOUS,EXACT_BRAND_NAME_MULTIPLE_IDS,,2,,,,,
-215,1122-GFE,in the mood for love gianfranco ferre,GFE,,NOT_FOUND,,,0,,,,,
-213,1120-FER,cedar essence ferrari,FER,,NOT_FOUND,,,0,,,,,
-212,1119-FEN,acqua fan di fendi,FEN,,NOT_FOUND,,,0,,,,,
+215,1122-GFE,in the mood for love gianfranco ferre,GFE,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,6530,https://www.fragrantica.com/p/6530,
+213,1120-FER,cedar essence ferrari,FER,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Ferrari,Cedar Essence,24450,https://www.fragrantica.com/perfume/-24450.html,Web verified exact Ferrari Cedar Essence page/ID; current Fragrantica canonical URL has minimal slug.
+212,1119-FEN,acqua fan di fendi,FEN,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Fendi,Fan di Fendi pour Homme Acqua,18154,https://www.fragrantica.com/perfume/Fendi/Fan-di-Fendi-pour-Homme-Acqua-18154.html,Web verified: Shobi ACQUA FAN DI FENDI maps to men's Fan di Fendi pour Homme Acqua.
 211,1118-FAB,brut 1964 faberge,FAB,,NOT_FOUND,,,0,,,,,
 210,1117-EST,INTUITION - ESTEE LAUDER,EST,Estee Lauder,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Estée Lauder,Intuition for Men,533,https://www.fragrantica.com/p/533,Verified Fragrantica page
-209,1116-ZEG,uomo absolut zegna,ZEG,Ermenegildo Zegna,NOT_FOUND,,,0,,,,,
+209,1116-ZEG,uomo absolut zegna,ZEG,Ermenegildo Zegna,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Ermenegildo Zegna,Uomo Absolute,28142,https://www.fragrantica.com/perfume/Ermenegildo-Zegna/Uomo-Absolute-28142.html,Web verified exact Uomo Absolute identity.
 208,1115-ZEG,bourbon vanilla zegna,ZEG,Ermenegildo Zegna,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Cremo,Bourbon Vanilla,95947,https://www.fragrantica.com/perfume/Cremo/Bourbon-Vanilla-95947.html,
 207,1137-ARM,WHITE,ARM,Giorgio Armani,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,7,,,,,
 206,1135-ARM,LUI/IL/HE/EL,ARM,Giorgio Armani,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Giorgio Armani,Emporio Armani Lui,416,https://www.fragrantica.com/p/416,Verified Fragrantica page; Shobi aliases LUI/IL/HE/EL refer to Emporio Armani Lui
 205,1114-DUN,icon elite dunhill,DUN,Alfred Dunhill,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Alfred Dunhill,Icon Elite,38982,https://www.fragrantica.com/perfume/Alfred-Dunhill/Icon-Elite-38982.html,
 204,1113-DSQ,wild dsquared dupe,DSQ,,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,DSQUARED2,Wild,27438,https://www.fragrantica.com/perfume/DSQUARED2/Wild-27438.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
-203,1112-DSQ,he wood rocky mountain dsquared,DSQ,,NOT_FOUND,,,0,,,,,
-202,1111-DSQ,he wood dsquared,DSQ,,NOT_FOUND,,,0,,,,,
+203,1112-DSQ,he wood rocky mountain dsquared,DSQ,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,DSQUARED2,He Wood Rocky Mountain Wood,5862,https://www.fragrantica.com/perfume/DSQUARED2/He-Wood-Rocky-Mountain-Wood-5862.html,Verified Fragrantica exact product
+202,1111-DSQ,he wood dsquared,DSQ,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,DSQUARED2,He Wood,1936,https://www.fragrantica.com/perfume/DSQUARED2/He-Wood-1936.html,Verified Fragrantica exact product
 201,1110-DSQ,black potion dsquared,DSQ,,NOT_FOUND,,,0,,,,,
 200,1109-DIE,,DIE,Diesel,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Diesel,Only The Brave Wild,26131,https://www.fragrantica.com/perfume/Diesel/Only-The-Brave-Wild-26131.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 199,1108-DIE,ONLY THE BRAVE - DIESEL,DIE,Diesel,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Diesel,Only The Brave,5532,https://www.fragrantica.com/perfume/Diesel/Only-The-Brave-5532.html,
@@ -2264,27 +2264,27 @@
 190,1098-DOL,Pour Homme 1994,DOL,Dolce&Gabbana,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Dolce Gabbana,Dolce Gabbana pour Homme 1994,483,https://www.fragrantica.com/perfume/Dolce-Gabbana/Dolce-Gabbana-pour-Homme-1994-483.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 188,1096-DOL,LIGHT BLUE EAU INTENSE,DOL,Dolce&Gabbana,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Dolce Gabbana,Light Blue Eau Intense,44034,https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-Eau-Intense-44034.html,
 187,1095-DOL,LIGHT BLUE MAN,DOL,Dolce&Gabbana,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Dolce Gabbana,Light Blue,485,https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-485.html,
-186,1093-DOL,INTENSO,DOL,Dolce&Gabbana,NOT_FOUND,,,0,,,,,
-185,1092-DOL,BY,DOL,Dolce&Gabbana,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,2,,,,,
+186,1093-DOL,INTENSO,DOL,Dolce&Gabbana,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Dolce&Gabbana,Dolce&Gabbana Pour Homme Intenso,28935,https://www.fragrantica.com/perfume/Dolce-Gabbana/Dolce-Gabbana-Pour-Homme-Intenso-28935.html,Verified Fragrantica exact product
+185,1092-DOL,BY,DOL,Dolce&Gabbana,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,490,https://www.fragrantica.com/perfume/Dolce-Gabbana/By-490.html,
 184,1089-COM,wonderwood comme des garcons,COM,Comme des Garcons,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Comme des Garcons,Wonderwood,8991,https://www.fragrantica.com/perfume/Comme-des-Garcons/Wonderwood-8991.html,
 183,1087-COM,comme des garcons,COM,Comme des Garcons,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Comme des Garcons,Comme des Garcons,389,https://www.fragrantica.com/perfume/Comme-des-Garcons/Comme-des-Garcons-389.html,
 182,1086-CLI,HAPPY - CLINIQUE,CLI,Clinique,FOUND,EXACT_UNIQUE_NAME,1.0000,1,The Dua Brand,Happy,66133,https://www.fragrantica.com/perfume/The-Dua-Brand/Happy-66133.html,
 181,1085-DRC,SAUVAGE,DRC,Dior,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Dior,Sauvage,31861,https://www.fragrantica.com/perfume/Dior/Sauvage-31861.html,
 179,1083-DRC,INTENSE HOMME,DRC,Dior,FOUND,EXACT_UNIQUE_NAME,1.0000,1,The Dua Brand,Intense Homme,86301,https://www.fragrantica.com/perfume/The-Dua-Brand/Intense-Homme-86301.html,
-178,1082-DRC,HOMME SPORT,DRC,Dior,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,2,,,,,
-176,1080-DRC,HOMME,DRC,Dior,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,10,,,,,
+178,1082-DRC,HOMME SPORT,DRC,Dior,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,4033,https://www.fragrantica.com/perfume/Dior/Dior-Homme-Sport-4033.html,
+176,1080-DRC,HOMME,DRC,Dior,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,230,https://www.fragrantica.com/perfume/Dior/Dior-Homme-230.html,
 175,1079-DRC,HIGHER ENERGY,DRC,Dior,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Dior,Higher Energy,234,https://www.fragrantica.com/perfume/Dior/Higher-Energy-234.html,
 174,1078-DRC,HIGHER,DRC,Dior,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Dior,Higher,233,https://www.fragrantica.com/perfume/Dior/Higher-233.html,
 173,1077-DRC,FAHRENEIT 32,DRC,Dior,FOUND,SAFE_FUZZY_SAME_BRAND,0.9600,1,Dior,Fahrenheit 32,987,https://www.fragrantica.com/perfume/Dior/Fahrenheit-32-987.html,
 172,,Fahrenheit,,Al Haramain Perfumes,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Dior,Fahrenheit,228,https://www.fragrantica.com/perfume/Dior/Fahrenheit-228.html,
 171,1075-DRC,EAU SAUVAGE,DRC,Dior,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Dior,Eau Sauvage,231,https://www.fragrantica.com/perfume/Dior/Eau-Sauvage-231.html,
 170,1074-DRC,DUNE,DRC,Dior,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Dior,Dune,221,https://www.fragrantica.com/perfume/Dior/Dune-221.html,
-169,1073-DRC,HOMME PARFUM,DRC,Dior,AMBIGUOUS,TOKEN_MULTIPLE_CANDIDATES,0.9560,2,,,,,
-168,1071-DRC,AMBRE NUIT,DRC,Dior,AMBIGUOUS,EXACT_BRAND_NAME_MULTIPLE_IDS,,2,,,,,
+169,1073-DRC,HOMME PARFUM,DRC,Dior,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Dior,Dior Homme Parfum,27417,https://www.fragrantica.com/perfume/Dior/Dior-Homme-Parfum-27417.html,Verified Fragrantica 2014 Parfum
+168,1071-DRC,AMBRE NUIT,DRC,Dior,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Dior,Ambre Nuit,7092,https://www.fragrantica.com/perfume/Dior/Ambre-Nuit-7092.html,Verified Fragrantica original 2009
 167,1070-CHA,EGOISTE PLATINUM,CHA,Chanel,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Chanel,Egoiste Platinum,614,https://www.fragrantica.com/perfume/Chanel/Egoiste-Platinum-614.html,
 166,1069-CHA,Egoiste,CHA,Chanel,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Chanel,Egoiste,613,https://www.fragrantica.com/perfume/Chanel/Egoiste-613.html,
 165,1068-CHA,Boy,CHA,Chanel,FOUND,SAFE_CONCENTRATION_EQUIVALENT,0.9950,1,Chanel,Boy Eau de Parfum,37473,https://www.fragrantica.com/perfume/Chanel/Boy-Eau-de-Parfum-37473.html,
-164,1067-CHA,BLEU,CHA,Chanel,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,3,,,,,
+164,1067-CHA,BLEU,CHA,Chanel,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Chanel,Bleu de Chanel,9099,https://www.fragrantica.com/perfume/Chanel/Bleu-de-Chanel-9099.html,Verified Fragrantica original 2010
 163,1066-CHA,Antaeus,CHA,Chanel,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Chanel,Antaeus,616,https://www.fragrantica.com/perfume/Chanel/Antaeus-616.html,
 162,1065-CHA,ALLURE HOMME SPORT,CHA,Chanel,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Chanel,Allure Homme Sport,607,https://www.fragrantica.com/perfume/Chanel/Allure-Homme-Sport-607.html,
 161,1064-CHA,ALLURE FOR MEN,CHA,Chanel,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Chanel,Allure,502,https://www.fragrantica.com/perfume/Chanel/Allure-502.html,
@@ -2305,40 +2305,40 @@
 146,1047-CAL,EUPHORIA MEN - CALVIN KLEIN,CAL,Calvin Klein,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Calvin Klein,Euphoria Men,799,https://www.fragrantica.com/perfume/Calvin-Klein/Euphoria-Men-799.html,
 145,1045-CAL,ETERNITY NOW - CALVIN KLEIN,CAL,Calvin Klein,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Calvin Klein,Eternity,257,https://www.fragrantica.com/perfume/Calvin-Klein/Eternity-257.html,
 143,1043-CAL,BE - CALVIN KLEIN,CAL,Calvin Klein,FOUND,SAFE_TOKEN_SAME_BRAND,0.9560,1,Calvin Klein,Calvin Klein,14606,https://www.fragrantica.com/perfume/Calvin-Klein/Calvin-Klein-14606.html,
-142,1042-CAC,POUR HOMME,CAC,Cacharel,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,2,,,,,
-141,1041-BLG,POUR HOMME BLG,BLG,Bvlgari,NOT_FOUND,,,0,,,,,
+142,1042-CAC,POUR HOMME,CAC,Cacharel,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,2036,https://www.fragrantica.com/perfume/Cacharel/Cacharel-Pour-L-Homme-2036.html,
+141,1041-BLG,POUR HOMME BLG,BLG,Bvlgari,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,148,https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html,
 140,1040-BLG,NOTTE POUR HOMME,BLG,Bvlgari,FOUND,SAFE_TOKEN_SAME_BRAND,0.9760,1,Bvlgari,BLV Notte Pour Homme,150,https://www.fragrantica.com/perfume/Bvlgari/BLV-Notte-Pour-Homme-150.html,
 139,1039-BLG,MAN IN BLACK - BVLGARI,BLG,Bvlgari,FOUND,SAFE_TOKEN_SAME_BRAND,0.9860,1,Bvlgari,Bvlgari Man In Black,26358,https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-In-Black-26358.html,
 138,1038-BLG,MAN EXTREME - BVLGARI,BLG,Bvlgari,FOUND,SAFE_TOKEN_SAME_BRAND,0.9860,3,Bvlgari,Bvlgari Man Extreme,17373,https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-Extreme-17373.html,
 137,1036-BLG,BLV Pour Homme,BLG,Bvlgari,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Bvlgari,BLV Pour Homme,148,https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html,
 136,1035-BLG,BLACK - BVLGARI,BLG,Bvlgari,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Bvlgari,Black,154,https://www.fragrantica.com/perfume/Bvlgari/Black-154.html,
-135,1034-BLG,AQUA - BVLGARI,BLG,Bvlgari,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,8,,,,,
+135,1034-BLG,AQUA - BVLGARI,BLG,Bvlgari,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Bvlgari,Aqva Pour Homme,153,https://www.fragrantica.com/perfume/Bvlgari/Aqva-Pour-Homme-153.html,Verified Fragrantica original 2005
 134,1033-BRB,Touch for Men,BRB,Burberry,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Burberry,Touch for Men,815,https://www.fragrantica.com/perfume/Burberry/Touch-for-Men-815.html,
 133,1032-BRB,The Beat for Men,BRB,Burberry,FOUND,CONFIRMED_IDENTITY_EXACT_CORPUS,1.0000,1,Burberry,The Beat for Men,4509,https://www.fragrantica.com/perfume/Burberry/The-Beat-for-Men-4509.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 132,1031-BRB,RHYTHM BRIT - BURBERRY,BRB,Burberry,FOUND,SAFE_TOKEN_SAME_BRAND,0.9860,3,Burberry,Burberry Brit Rhythm,18903,https://www.fragrantica.com/perfume/Burberry/Burberry-Brit-Rhythm-18903.html,
 131,1030-BRB,MR. BURBERRY INDIGO,BRB,Burberry,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Burberry,Mr Burberry Indigo,49095,https://www.fragrantica.com/perfume/Burberry/Mr-Burberry-Indigo-49095.html,
 130,1029-BRB,MR BURBERRY - BURBERRY,BRB,Burberry,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Burberry,Mr Burberry,32565,https://www.fragrantica.com/perfume/Burberry/Mr-Burberry-32565.html,
-129,1028-BRB,Sport for Men,BRB,Burberry,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,9,,,,,
+129,1028-BRB,Sport for Men,BRB,Burberry,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,7614,https://www.fragrantica.com/perfume/Burberry/Burberry-Sport-for-Men-7614.html,
 128,1027-BRB,LONDON,BRB,Burberry,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Burberry,London,813,https://www.fragrantica.com/perfume/Burberry/London-813.html,
-127,1026-BRB,Brit,BRB,Burberry,NOT_FOUND,,,0,,,,,
+127,1026-BRB,Brit,BRB,Burberry,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,819,https://www.fragrantica.com/perfume/Burberry/Burberry-Brit-819.html,
 126,1025-BRB,Brit Rhythm Intense,BRB,Burberry,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Burberry,Brit Rhythm for Him Intense,29561,https://www.fragrantica.com/perfume/Burberry/Brit-Rhythm-for-Him-Intense-29561.html,
 125,1024-BOU,VANILLE DE ZANZIBAR (u),BOU,Boucheron,FOUND,SAFE_TOKEN_SAME_BRAND,0.9760,1,Boucheron,Vanille de Zanzibar,44720,https://www.fragrantica.com/perfume/Boucheron/Vanille-de-Zanzibar-44720.html,
 124,1023-BOT,pour homme extreme bottega veneta,BOT,Bottega Veneta,FOUND,SAFE_TOKEN_SAME_BRAND,0.9860,1,Bottega Veneta,Bottega Veneta Pour Homme Extreme,29351,https://www.fragrantica.com/perfume/Bottega-Veneta/Bottega-Veneta-Pour-Homme-Extreme-29351.html,
 123,1022-BOT,essence aromatique bottega veneta,BOT,Bottega Veneta,FOUND,SAFE_TOKEN_SAME_BRAND,0.9860,2,Bottega Veneta,Bottega Veneta Essence Aromatique,23524,https://www.fragrantica.com/perfume/Bottega-Veneta/Bottega-Veneta-Essence-Aromatique-23524.html,
-122,1021-BOG,one man show bogart jacques,BOG,,NOT_FOUND,,,0,,,,,
+122,1021-BOG,one man show bogart jacques,BOG,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,7795,https://www.fragrantica.com/perfume/Jacques-Bogart/One-Man-Show-7795.html,
 121,1020-AZZ,WANTED,AZZ,Azzaro,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Azzaro,Wanted,38686,https://www.fragrantica.com/perfume/Azzaro/Wanted-38686.html,
 120,1019-AZZ,CHROME PURE,AZZ,Azzaro,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Azzaro,Chrome Pure,43131,https://www.fragrantica.com/perfume/Azzaro/Chrome-Pure-43131.html,
 119,1018-AZZ,CHROME LEGEND,AZZ,Azzaro,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Azzaro,Chrome Legend,2959,https://www.fragrantica.com/perfume/Azzaro/Chrome-Legend-2959.html,
-118,1016-AZZ,VISIT AZZARO,AZZ,Azzaro,NOT_FOUND,,,0,,,,,
+118,1016-AZZ,VISIT AZZARO,AZZ,Azzaro,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,598,https://www.fragrantica.com/perfume/Azzaro/Visit-For-Men-598.html,
 117,1015-AZZ,Night Time,AZZ,Azzaro,FOUND,SAFE_TOKEN_SAME_BRAND,0.9560,1,Azzaro,Azzaro Pour Homme Night Time,13965,https://www.fragrantica.com/perfume/Azzaro/Azzaro-Pour-Homme-Night-Time-13965.html,
-116,1014-AZZ,CLASSIC,AZZ,Azzaro,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,10,,,,,
+116,1014-AZZ,CLASSIC,AZZ,Azzaro,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,829,https://www.fragrantica.com/perfume/Azzaro/Azzaro-pour-Homme-829.html,
 115,1013-ARA,VOYAGER,ARA,Aramis,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Aramis,Voyager,39608,https://www.fragrantica.com/perfume/Aramis/Voyager-39608.html,
 114,1012-ARA,HAVANA,ARA,Aramis,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Aramis,Havana,599,https://www.fragrantica.com/perfume/Aramis/Havana-599.html,
 113,1011-ARA,ADVENTURER,ARA,Aramis,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Aramis,Adventurer,27572,https://www.fragrantica.com/perfume/Aramis/Adventurer-27572.html,
 112,1010-ACQ,Essenza di Colonia,ACQ,Acqua di Parma,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Acqua di Parma,Essenza di Colonia,9829,https://www.fragrantica.com/perfume/Acqua-di-Parma/Essenza-di-Colonia-9829.html,
 111,1009-ACQ,COLONIA QUERCIA,ACQ,Acqua di Parma,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Acqua di Parma,Colonia Quercia,38674,https://www.fragrantica.com/perfume/Acqua-di-Parma/Colonia-Quercia-38674.html,
-110,1008-ACQ,COLONIA PURA (U),ACQ,Acqua di Parma,NOT_FOUND,,,0,,,,,
-109,1007-ACQ,COLONIA LEATHER,ACQ,Acqua di Parma,NOT_FOUND,,,0,,,,,
+110,1008-ACQ,COLONIA PURA (U),ACQ,Acqua di Parma,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Acqua di Parma,Acqua di Parma Colonia Pura,45876,https://www.fragrantica.com/perfume/Acqua-di-Parma/Acqua-di-Parma-Colonia-Pura-45876.html,Verified Fragrantica exact product
+109,1007-ACQ,COLONIA LEATHER,ACQ,Acqua di Parma,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Acqua di Parma,Colonia Leather Eau de Cologne Concentree,25349,https://www.fragrantica.com/perfume/Acqua-di-Parma/Colonia-Leather-Eau-de-Cologne-Concentree-25349.html,Verified Fragrantica exact product
 108,1005-ACQ,COLONIA INTENSA,ACQ,Acqua di Parma,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Acqua di Parma,Colonia Intensa,1684,https://www.fragrantica.com/perfume/Acqua-di-Parma/Colonia-Intensa-1684.html,
 107,1004-ACQ,COLONIA EBANO,ACQ,Acqua di Parma,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Acqua di Parma,Colonia Ebano,43409,https://www.fragrantica.com/perfume/Acqua-di-Parma/Colonia-Ebano-43409.html,
 106,390-ACQ,BLU MEDITERRANEO MANDORLO DI SICILIA,ACQ,Acqua di Parma,FOUND,SAFE_TOKEN_SAME_BRAND,0.9760,1,Acqua di Parma,Acqua di Parma Blu Mediterraneo Mandorlo di Sicilia,1688,https://www.fragrantica.com/perfume/Acqua-di-Parma/Acqua-di-Parma-Blu-Mediterraneo-Mandorlo-di-Sicilia-1688.html,
