@@ -551,7 +551,7 @@
 3918,2268-AMG,Interlude Black Iris,AMG,Amouage,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Amouage,Interlude Black Iris,60929,https://www.fragrantica.com/perfume/Amouage/Interlude-Black-Iris-60929.html,
 3917,2284-HIS,1889 moulin rouge histoires de parfums,HIS,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,7816,https://www.fragrantica.com/perfume/Histoires-de-Parfums/1889-Moulin-Rouge-7816.html,Exact Fragrantica page
 3916,2283-XER,Gran Ballo,XER,Xerjoff,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Xerjoff,Gran Ballo,26708,https://www.fragrantica.com/perfume/Xerjoff/Gran-Ballo-26708.html,
-3915,,IVIERA,,Al Haramain Perfumes,NOT_FOUND,,,0,,,,,
+3915,,IVIERA,,Al Haramain Perfumes,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,,,81847,https://www.fragrantica.com/perfume/Dior/Dioriviera-81847.html,"Recovered from shobi-master-v1.csv: product 3915 is labeled 2282-DRC EL in shobi_name/description while the structured shobi_code field is blank; inspired_by is corrupted to IVIERA. Its five accords green, fruity, sweet, woody, rose exactly match Fragrantica Dioriviera ID 81847; Dior official page confirms fig/green/rose. Product-id fallback is used deliberately to avoid inventing a structured code."
 3914,2281-GUR,TOBACCO HONEY - GUERLAIN,GUR,Guerlain,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Guerlain,Tobacco Honey,84518,https://www.fragrantica.com/perfume/Guerlain/Tobacco-Honey-84518.html,
 3913,2279-LEL,MYRRHE 55 - LE LABO,LEL,Le Labo,FOUND,SAFE_TOKEN_SAME_BRAND,0.9560,1,Le Labo,Myrrhe 55 Shanghai,83918,https://www.fragrantica.com/perfume/Le-Labo/Myrrhe-55-Shanghai-83918.html,
 3912,2280-XER,JTC 400,XER,Xerjoff,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Xerjoff,JTC 400,52181,https://www.fragrantica.com/perfume/Xerjoff/JTC-400-52181.html,

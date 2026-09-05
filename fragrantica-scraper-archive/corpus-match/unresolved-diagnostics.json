@@ -1,18 +1,18 @@
 {
-  "unresolved_total": 39,
+  "unresolved_total": 38,
   "identity_status_counts": {
     "CONFIRMED": 27,
-    "EMPTY": 6,
+    "EMPTY": 5,
     "AMBIGUOUS": 6
   },
   "fragrantica_status_counts": {
     "UNRESOLVED": 3,
-    "EMPTY": 6,
+    "EMPTY": 5,
     "NOT_FOUND": 30
   },
   "identity_fragrantica_combinations": {
     "CONFIRMED|UNRESOLVED": 3,
-    "EMPTY|EMPTY": 6,
+    "EMPTY|EMPTY": 5,
     "CONFIRMED|NOT_FOUND": 24,
     "AMBIGUOUS|NOT_FOUND": 6
   },
