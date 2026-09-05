@@ -15,37 +15,37 @@
   "safe_code_suffix_brand_mappings": 183,
   "catalog_rows_with_inferred_brand": 2056,
   "status_counts": {
-    "FOUND": 1901,
+    "FOUND": 1947,
     "MAPPED_NOT_IN_CORPUS": 5,
-    "NOT_FOUND": 319,
-    "AMBIGUOUS": 118
+    "NOT_FOUND": 280,
+    "AMBIGUOUS": 111
   },
   "match_type_counts": {
     "CONFIRMED_ID_IN_CORPUS": 128,
     "CONFIRMED_EXISTING_MAPPING": 28,
     "CONFIRMED_MAPPING_ONLY": 5,
     "CONFIRMED_IDENTITY_EXACT_CORPUS": 110,
-    "WEB_VERIFIED_FRAGRANTICA": 141,
+    "WEB_VERIFIED_FRAGRANTICA": 187,
     "EXACT_PERFUME_BRAND_TEXT": 470,
     "EXACT_UNIQUE_NAME": 58,
-    "NONE": 319,
+    "NONE": 280,
     "EXACT_BRAND_CLEAN_NAME": 721,
     "SAFE_TOKEN_SAME_BRAND": 189,
     "CONFIRMED_IDENTITY_CONCENTRATION_CORPUS": 3,
     "SAFE_FUZZY_SAME_BRAND": 31,
     "SAFE_CONCENTRATION_EQUIVALENT": 15,
-    "FUZZY_MULTIPLE_CANDIDATES": 5,
-    "EXACT_COMBINED_MULTIPLE_IDS": 18,
-    "TOKEN_MULTIPLE_CANDIDATES": 30,
+    "FUZZY_MULTIPLE_CANDIDATES": 4,
+    "EXACT_COMBINED_MULTIPLE_IDS": 17,
+    "TOKEN_MULTIPLE_CANDIDATES": 27,
     "EXACT_BRAND_NAME_MULTIPLE_IDS": 11,
-    "EXACT_NAME_MULTIPLE_CANDIDATES": 50,
+    "EXACT_NAME_MULTIPLE_CANDIDATES": 48,
     "CONFIRMED_IDENTITY_SAFE_FUZZY_CORPUS": 3,
     "CONFIRMED_IDENTITY_TOKEN_CORPUS": 4,
     "CONCENTRATION_MULTIPLE_IDS": 4
   },
-  "found_total": 1901,
-  "ambiguous_total": 118,
-  "not_found_total": 319,
+  "found_total": 1947,
+  "ambiguous_total": 111,
+  "not_found_total": 280,
   "mapped_not_in_corpus_total": 5,
   "invalid_url_examples": [
     {
@@ -73,13 +73,15 @@
   "web_confirmed_files": [
     "web-confirmed-batch03.csv",
     "web-confirmed-batch04.csv",
+    "web-confirmed-batch05.csv",
+    "web-confirmed-batch06.csv",
     "web-confirmed.csv"
   ],
-  "web_confirmed_rows": 141,
-  "web_confirmed_newly_merged": 141,
+  "web_confirmed_rows": 187,
+  "web_confirmed_newly_merged": 187,
   "web_confirmed_previous_statuses": {
     "MAPPED_NOT_IN_CORPUS": 1,
-    "NOT_FOUND": 120,
-    "AMBIGUOUS": 20
+    "NOT_FOUND": 159,
+    "AMBIGUOUS": 27
   }
 }
