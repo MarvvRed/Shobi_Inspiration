@@ -25,21 +25,20 @@ QUALIFIERS = {
     "intense", "intensely", "intensivo", "intenso", "noir", "parfum", "perfume",
     "rouge", "sport", "edp", "edt", "edc", "limited", "edition", "collector",
 }
+GENERIC_BRAND_WORDS = {
+    "by", "parfum", "parfums", "perfume", "perfumes", "fragrance", "fragrances",
+    "parfumeur", "parfumerie", "parfumer", "createur", "privé", "prive", "prives",
+}
 
 
 def norm(text: str) -> str:
     text = unquote((text or "").strip())
-    text = text.replace("&", " and ").replace("’", "'")
+    text = text.replace("&", " and ").replace("’", "'").replace("®", "")
     text = unicodedata.normalize("NFKD", text)
     text = "".join(ch for ch in text if not unicodedata.combining(ch))
-    text = text.lower()
-    text = text.replace("'", " ")
+    text = text.lower().replace("'", " ")
     text = re.sub(r"[^a-z0-9]+", " ", text)
     return " ".join(text.split())
-
-
-def qualifier_tokens(text: str) -> frozenset[str]:
-    return frozenset(tok for tok in norm(text).split() if tok in QUALIFIERS)
 
 
 def code_suffix(code: str) -> str:
@@ -47,21 +46,30 @@ def code_suffix(code: str) -> str:
     return code.rsplit("-", 1)[-1] if "-" in code else ""
 
 
-def parse_fragrantica_url(url: str):
-    url = url.strip()
-    m = re.match(r"^https?://(?:www\.)?fragrantica\.com/perfume/([^/]+)/(.+)-(\d+)\.html$", url, re.I)
+def brand_core(text: str) -> str:
+    toks = [t for t in norm(text).split() if t not in GENERIC_BRAND_WORDS]
+    return " ".join(toks)
+
+
+def qualifier_tokens(text: str) -> frozenset[str]:
+    return frozenset(t for t in norm(text).split() if t in QUALIFIERS)
+
+
+def parse_url(url: str):
+    m = re.match(r"^https?://(?:www\.)?fragrantica\.com/perfume/([^/]+)/(.+)-(\d+)\.html$", url.strip(), re.I)
     if not m:
         return None
-    brand_slug, perfume_slug, fid = m.groups()
-    brand = unquote(brand_slug).replace("-", " ").strip()
-    perfume = unquote(perfume_slug).replace("-", " ").strip()
+    bslug, pslug, fid = m.groups()
+    brand = unquote(bslug).replace("-", " ").strip()
+    perfume = unquote(pslug).replace("-", " ").strip()
     return {
         "brand": brand,
         "perfume": perfume,
         "brand_norm": norm(brand),
+        "brand_core": brand_core(brand),
         "perfume_norm": norm(perfume),
         "id": fid,
-        "url": url,
+        "url": url.strip(),
     }
 
 
@@ -73,29 +81,49 @@ def read_csv(path: Path):
 def write_csv(path: Path, rows: list[dict], fields: list[str]):
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8-sig", newline="") as fh:
-        writer = csv.DictWriter(fh, fieldnames=fields, extrasaction="ignore")
-        writer.writeheader()
-        writer.writerows(rows)
+        w = csv.DictWriter(fh, fieldnames=fields, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(rows)
 
 
-def choose_unique(records: list[dict]):
-    unique = {}
-    for r in records:
-        unique[(r["brand_norm"], r["perfume_norm"], r["id"])] = r
+def unique_record(records: list[dict]):
+    unique = {(r["brand_norm"], r["perfume_norm"], r["id"]): r for r in records}
     vals = list(unique.values())
-    if len(vals) == 1:
-        return vals[0]
-    return None
+    return vals[0] if len(vals) == 1 else None
+
+
+def name_variants(name: str, brand: str = "") -> list[str]:
+    """Safe normalized perfume-name variants. Brand text may be appended by Shobi."""
+    n = norm(name)
+    vals = {n} if n else set()
+    if not n or not brand:
+        return sorted(vals, key=len)
+
+    b = norm(brand)
+    bc = brand_core(brand)
+    brand_forms = {x for x in (b, bc) if x}
+    # Also accept removing generic words from the Shobi tail, e.g. "Kilian" vs "By Kilian".
+    for form in list(brand_forms):
+        toks = form.split()
+        if len(toks) > 1:
+            brand_forms.add(" ".join(t for t in toks if t not in GENERIC_BRAND_WORDS))
+
+    for form in sorted(brand_forms, key=len, reverse=True):
+        if n == form:
+            continue
+        if n.endswith(" " + form):
+            vals.add(n[: -(len(form) + 1)].strip())
+        if n.startswith(form + " "):
+            vals.add(n[len(form) + 1 :].strip())
+    return sorted((x for x in vals if x), key=len)
 
 
 def main():
     catalog = read_csv(CATALOG)
     confirmed_rows = read_csv(CONFIRMED) if CONFIRMED.exists() else []
 
-    parsed = []
-    invalid_lines = []
-    total_lines = 0
-    blank_lines = 0
+    parsed, invalid_lines = [], []
+    total_lines = blank_lines = 0
     with URLS.open("r", encoding="utf-8-sig", errors="replace") as fh:
         for lineno, raw in enumerate(fh, 1):
             total_lines += 1
@@ -103,29 +131,39 @@ def main():
             if not url:
                 blank_lines += 1
                 continue
-            item = parse_fragrantica_url(url)
-            if item:
-                item["line"] = lineno
-                parsed.append(item)
+            rec = parse_url(url)
+            if rec:
+                rec["line"] = lineno
+                parsed.append(rec)
             else:
                 invalid_lines.append((lineno, url))
 
     by_id = defaultdict(list)
     by_name = defaultdict(list)
-    by_brand_name = defaultdict(list)
     by_brand = defaultdict(list)
+    by_brand_name = defaultdict(list)
+    by_combined = defaultdict(list)
     for r in parsed:
         by_id[r["id"]].append(r)
         by_name[r["perfume_norm"]].append(r)
-        by_brand_name[(r["brand_norm"], r["perfume_norm"])].append(r)
         by_brand[r["brand_norm"]].append(r)
+        by_brand_name[(r["brand_norm"], r["perfume_norm"])].append(r)
+        combos = {
+            norm(r["perfume"] + " " + r["brand"]),
+            norm(r["brand"] + " " + r["perfume"]),
+        }
+        if r["brand_core"]:
+            combos |= {
+                norm(r["perfume"] + " " + r["brand_core"]),
+                norm(r["brand_core"] + " " + r["perfume"]),
+            }
+        for c in combos:
+            if c:
+                by_combined[c].append(r)
 
-    # Existing confirmed mapping is authoritative for identity and also teaches us
-    # the Shobi code-suffix -> original brand relationship. Only unanimous suffixes
-    # are used for brand inference.
     confirmed_by_code = {}
-    suffix_brands = defaultdict(set)
-    suffix_brand_display = defaultdict(Counter)
+    suffix_votes = defaultdict(Counter)
+    brand_display = defaultdict(Counter)
     for row in confirmed_rows:
         code = (row.get("shobi_code") or "").strip()
         if code:
@@ -134,140 +172,159 @@ def main():
         brand = (row.get("original_brand") or "").strip()
         if suffix and brand:
             nb = norm(brand)
-            suffix_brands[suffix].add(nb)
-            suffix_brand_display[(suffix, nb)][brand] += 1
+            suffix_votes[suffix][nb] += 1000  # confirmed evidence dominates learned evidence
+            brand_display[nb][brand] += 1
 
+    # Learn additional suffix -> brand mappings from exact "perfume + brand" strings.
+    # This catches rows such as "Outlands Amouage" and "Velvet Tonka BDK Parfums".
+    learned_exact_rows = 0
+    for row in catalog:
+        code = (row.get("shobi_code") or "").strip()
+        inspired = (row.get("inspired_by") or "").strip()
+        choices = by_combined.get(norm(inspired), [])
+        selected = unique_record(choices)
+        if selected:
+            suffix = code_suffix(code)
+            if suffix:
+                suffix_votes[suffix][selected["brand_norm"]] += 1
+                brand_display[selected["brand_norm"]][selected["brand"]]] += 1
+                learned_exact_rows += 1
+
+    # Resolve suffixes only when evidence is unambiguous. Confirmed mappings win;
+    # learned mappings must have a unique top brand and no competing votes.
     suffix_to_brand = {}
-    suffix_to_brand_display = {}
-    for suffix, brands in suffix_brands.items():
-        if len(brands) == 1:
-            nb = next(iter(brands))
-            suffix_to_brand[suffix] = nb
-            suffix_to_brand_display[suffix] = suffix_brand_display[(suffix, nb)].most_common(1)[0][0]
+    suffix_to_display = {}
+    for suffix, votes in suffix_votes.items():
+        if not votes:
+            continue
+        ranked = votes.most_common()
+        top_brand, top_score = ranked[0]
+        second = ranked[1][1] if len(ranked) > 1 else 0
+        if top_score >= 1000 or second == 0:
+            suffix_to_brand[suffix] = top_brand
+            disp = brand_display[top_brand]
+            suffix_to_display[suffix] = disp.most_common(1)[0][0] if disp else top_brand
 
     results = []
     status_counts = Counter()
+    match_type_counts = Counter()
 
     for row in catalog:
         code = (row.get("shobi_code") or "").strip()
         inspired = (row.get("inspired_by") or "").strip()
-        nname = norm(inspired)
+        nraw = norm(inspired)
         suffix = code_suffix(code)
-        inferred_brand_norm = suffix_to_brand.get(suffix, "")
-        inferred_brand = suffix_to_brand_display.get(suffix, "")
+        ib = suffix_to_brand.get(suffix, "")
+        ib_display = suffix_to_display.get(suffix, "")
 
-        status = "NOT_FOUND"
-        match_type = ""
-        score = ""
+        status, match_type, score, note = "NOT_FOUND", "", "", ""
         candidate_count = 0
         matched = None
-        note = ""
 
         existing = confirmed_by_code.get(code)
         if existing:
-            existing_id = (existing.get("fragrantica_id") or "").strip()
-            existing_brand = (existing.get("original_brand") or "").strip()
-            existing_perfume = (existing.get("original_perfume") or inspired).strip()
-            if existing_id and existing_id in by_id:
-                choices = by_id[existing_id]
-                candidate_count = len(choices)
+            eid = (existing.get("fragrantica_id") or "").strip()
+            ebrand = (existing.get("original_brand") or "").strip()
+            ename = (existing.get("original_perfume") or inspired).strip()
+            if eid and eid in by_id:
+                choices = by_id[eid]
                 matched = choices[0]
-                status = "FOUND"
-                match_type = "CONFIRMED_ID_IN_CORPUS"
-                score = "1.0000"
-                note = "Existing confirmed Fragrantica ID occurs in URL corpus"
+                candidate_count = len(choices)
+                status, match_type, score = "FOUND", "CONFIRMED_ID_IN_CORPUS", "1.0000"
+                note = "Existing confirmed Fragrantica ID occurs in corpus"
             else:
-                key = (norm(existing_brand), norm(existing_perfume))
-                choices = by_brand_name.get(key, [])
+                choices = by_brand_name.get((norm(ebrand), norm(ename)), [])
+                selected = unique_record(choices)
                 candidate_count = len(choices)
-                selected = choose_unique(choices)
                 if selected:
                     matched = selected
-                    status = "FOUND"
-                    match_type = "CONFIRMED_NAME_IN_CORPUS"
-                    score = "1.0000"
-                    note = "Existing confirmed brand+perfume found in URL corpus"
+                    status, match_type, score = "FOUND", "CONFIRMED_NAME_IN_CORPUS", "1.0000"
+                    note = "Existing confirmed brand+perfume occurs in corpus"
                 elif choices:
-                    status = "AMBIGUOUS"
-                    match_type = "CONFIRMED_NAME_MULTIPLE_IDS"
-                    note = "Confirmed identity maps to multiple Fragrantica IDs in corpus"
+                    status, match_type = "AMBIGUOUS", "CONFIRMED_NAME_MULTIPLE_IDS"
+                    note = "Confirmed identity maps to multiple corpus IDs"
                 else:
-                    status = "MAPPED_NOT_IN_CORPUS"
-                    match_type = "CONFIRMED_MAPPING_ONLY"
-                    note = "Existing confirmed mapping exists but its ID/name was not found in this URL corpus"
+                    status, match_type = "MAPPED_NOT_IN_CORPUS", "CONFIRMED_MAPPING_ONLY"
+                    note = "Confirmed mapping exists but is absent from this URL corpus"
         else:
-            # First choice: exact name inside a safely inferred brand.
-            if inferred_brand_norm and nname:
-                choices = by_brand_name.get((inferred_brand_norm, nname), [])
-                candidate_count = len(choices)
-                selected = choose_unique(choices)
-                if selected:
-                    matched = selected
-                    status = "FOUND"
-                    match_type = "EXACT_BRAND_NAME"
-                    score = "1.0000"
-                    note = "Brand inferred from an unanimous Shobi code suffix"
-                elif choices:
-                    status = "AMBIGUOUS"
-                    match_type = "EXACT_BRAND_NAME_MULTIPLE_IDS"
-                    note = "Exact brand+name exists with multiple Fragrantica IDs"
+            # 1) Exact full Shobi text = perfume+brand (or brand+perfume).
+            choices = by_combined.get(nraw, []) if nraw else []
+            selected = unique_record(choices)
+            candidate_count = len(choices)
+            if selected:
+                matched = selected
+                status, match_type, score = "FOUND", "EXACT_PERFUME_BRAND_TEXT", "1.0000"
+                note = "Shobi inspired_by exactly contains Fragrantica perfume and brand"
+            elif choices:
+                status, match_type = "AMBIGUOUS", "EXACT_COMBINED_MULTIPLE_IDS"
+                note = "Exact perfume+brand text maps to multiple IDs"
 
-            # Second choice: exact normalized perfume name globally, only if it points
-            # to one single brand/name/id record. This avoids guessing common names.
-            if status == "NOT_FOUND" and nname:
-                choices = by_name.get(nname, [])
-                candidate_count = len(choices)
-                selected = choose_unique(choices)
+            # 2) Exact name after safely removing the inferred brand from Shobi text.
+            variants = name_variants(inspired, ib_display) if ib else ([nraw] if nraw else [])
+            if status == "NOT_FOUND" and ib:
+                all_choices = []
+                for v in variants:
+                    all_choices.extend(by_brand_name.get((ib, v), []))
+                selected = unique_record(all_choices)
+                candidate_count = len(all_choices)
                 if selected:
                     matched = selected
-                    status = "FOUND"
-                    match_type = "EXACT_UNIQUE_NAME"
-                    score = "1.0000"
-                    note = "Perfume name is unique across the entire URL corpus"
-                elif choices:
-                    distinct = {(x["brand_norm"], x["id"]) for x in choices}
+                    status, match_type, score = "FOUND", "EXACT_BRAND_CLEAN_NAME", "1.0000"
+                    note = "Exact name inside inferred brand after removing appended brand text"
+                elif all_choices:
+                    status, match_type = "AMBIGUOUS", "EXACT_BRAND_NAME_MULTIPLE_IDS"
+                    note = "Exact brand+cleaned name maps to multiple IDs"
+
+            # 3) Exact globally unique perfume name (raw or cleaned variants).
+            if status == "NOT_FOUND":
+                all_choices = []
+                for v in variants:
+                    all_choices.extend(by_name.get(v, []))
+                selected = unique_record(all_choices)
+                candidate_count = len(all_choices)
+                if selected:
+                    matched = selected
+                    status, match_type, score = "FOUND", "EXACT_UNIQUE_NAME", "1.0000"
+                    note = "Perfume name is unique across corpus"
+                elif all_choices:
+                    distinct = {(x["brand_norm"], x["id"]) for x in all_choices}
                     if len(distinct) > 1:
-                        status = "AMBIGUOUS"
-                        match_type = "EXACT_NAME_MULTIPLE_CANDIDATES"
-                        note = "Same perfume name exists under multiple candidates"
+                        status, match_type = "AMBIGUOUS", "EXACT_NAME_MULTIPLE_CANDIDATES"
+                        note = "Same perfume name has multiple candidates"
 
-            # Conservative fuzzy matching is allowed only inside a safely inferred
-            # brand and only when meaningful qualifier tokens agree exactly.
-            if status == "NOT_FOUND" and inferred_brand_norm and nname:
-                pool = by_brand.get(inferred_brand_norm, [])
+            # 4) Conservative fuzzy match only inside an inferred brand.
+            if status == "NOT_FOUND" and ib and variants:
+                pool = by_brand.get(ib, [])
                 scored = []
-                q = qualifier_tokens(inspired)
-                for candidate in pool:
-                    if qualifier_tokens(candidate["perfume"]) != q:
-                        continue
-                    ratio = SequenceMatcher(None, nname, candidate["perfume_norm"]).ratio()
-                    if ratio >= 0.96:
-                        scored.append((ratio, candidate))
+                for cand in pool:
+                    best = 0.0
+                    for v in variants:
+                        # Compare qualifier words on the cleaned perfume name, not on appended brand text.
+                        if qualifier_tokens(v) != qualifier_tokens(cand["perfume_norm"]):
+                            continue
+                        best = max(best, SequenceMatcher(None, v, cand["perfume_norm"]).ratio())
+                    if best >= 0.92:
+                        scored.append((best, cand))
                 scored.sort(key=lambda x: x[0], reverse=True)
                 if scored:
                     best_score, best = scored[0]
                     runner = scored[1][0] if len(scored) > 1 else 0.0
-                    near_best = [x for x in scored if best_score - x[0] < 0.03]
-                    if best_score >= 0.96 and best_score - runner >= 0.03 and len(near_best) == 1:
+                    near = [x for x in scored if best_score - x[0] < 0.025]
+                    candidate_count = len(scored)
+                    if best_score >= 0.92 and best_score - runner >= 0.025 and len(near) == 1:
                         matched = best
-                        status = "FOUND"
-                        match_type = "SAFE_FUZZY_SAME_BRAND"
-                        score = f"{best_score:.4f}"
-                        candidate_count = len(scored)
-                        note = "High-similarity name within inferred brand; qualifier tokens preserved"
+                        status, match_type, score = "FOUND", "SAFE_FUZZY_SAME_BRAND", f"{best_score:.4f}"
+                        note = "High-similarity cleaned name within inferred brand; qualifier words preserved"
                     else:
-                        status = "AMBIGUOUS"
-                        match_type = "FUZZY_MULTIPLE_CANDIDATES"
-                        score = f"{best_score:.4f}"
-                        candidate_count = len(scored)
-                        note = "Fuzzy candidates too close to choose safely"
+                        status, match_type, score = "AMBIGUOUS", "FUZZY_MULTIPLE_CANDIDATES", f"{best_score:.4f}"
+                        note = "Fuzzy candidates are too close to choose safely"
 
         out = {
             "prestashop_product_id": row.get("prestashop_product_id", ""),
             "shobi_code": code,
             "inspired_by": inspired,
             "code_suffix": suffix,
-            "inferred_brand": inferred_brand,
+            "inferred_brand": ib_display,
             "status": status,
             "match_type": match_type,
             "score": score,
@@ -280,12 +337,12 @@ def main():
         }
         results.append(out)
         status_counts[status] += 1
+        match_type_counts[match_type or "NONE"] += 1
 
     fields = [
-        "prestashop_product_id", "shobi_code", "inspired_by", "code_suffix",
-        "inferred_brand", "status", "match_type", "score", "candidate_count",
-        "fragrantica_brand", "fragrantica_perfume", "fragrantica_id",
-        "fragrantica_url", "note",
+        "prestashop_product_id", "shobi_code", "inspired_by", "code_suffix", "inferred_brand",
+        "status", "match_type", "score", "candidate_count", "fragrantica_brand",
+        "fragrantica_perfume", "fragrantica_id", "fragrantica_url", "note",
     ]
     write_csv(REPORT, results, fields)
     write_csv(AMBIGUOUS, [r for r in results if r["status"] == "AMBIGUOUS"], fields)
@@ -293,11 +350,6 @@ def main():
 
     unique_urls = len({r["url"] for r in parsed})
     unique_ids = len(by_id)
-    duplicate_url_count = len(parsed) - unique_urls
-    duplicate_id_extra = len(parsed) - unique_ids
-    inferred_suffix_count = len(suffix_to_brand)
-    catalog_with_inferred_brand = sum(1 for r in catalog if code_suffix(r.get("shobi_code", "")) in suffix_to_brand)
-
     summary = {
         "catalog_rows": len(catalog),
         "fragrantica_lines_total": total_lines,
@@ -305,62 +357,38 @@ def main():
         "fragrantica_valid_url_rows": len(parsed),
         "fragrantica_invalid_url_rows": len(invalid_lines),
         "fragrantica_unique_urls": unique_urls,
-        "fragrantica_duplicate_url_rows": duplicate_url_count,
+        "fragrantica_duplicate_url_rows": len(parsed) - unique_urls,
         "fragrantica_unique_ids": unique_ids,
-        "fragrantica_extra_rows_sharing_an_id": duplicate_id_extra,
+        "fragrantica_extra_rows_sharing_an_id": len(parsed) - unique_ids,
         "confirmed_mapping_rows": len(confirmed_rows),
-        "unanimous_code_suffix_brand_mappings": inferred_suffix_count,
-        "catalog_rows_with_inferred_brand": catalog_with_inferred_brand,
+        "learned_exact_combined_rows": learned_exact_rows,
+        "safe_code_suffix_brand_mappings": len(suffix_to_brand),
+        "catalog_rows_with_inferred_brand": sum(1 for r in catalog if code_suffix(r.get("shobi_code", "")) in suffix_to_brand),
         "status_counts": dict(status_counts),
+        "match_type_counts": dict(match_type_counts),
         "found_total": status_counts.get("FOUND", 0),
         "ambiguous_total": status_counts.get("AMBIGUOUS", 0),
         "not_found_total": status_counts.get("NOT_FOUND", 0),
         "mapped_not_in_corpus_total": status_counts.get("MAPPED_NOT_IN_CORPUS", 0),
-        "invalid_url_examples": [
-            {"line": line, "value": value} for line, value in invalid_lines[:20]
-        ],
+        "invalid_url_examples": [{"line": n, "value": v} for n, v in invalid_lines[:20]],
     }
-
     OUTDIR.mkdir(parents=True, exist_ok=True)
     SUMMARY_JSON.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
     lines = [
-        "# Shobi ↔ Fragrantica URL corpus match",
-        "",
-        "This report compares the Shobi master catalog with the archived Fragrantica URL corpus.",
-        "It favors precision: exact matches first; fuzzy matching is restricted to an inferred brand and preserves qualifier words such as Intense/Extrait/Parfum.",
-        "",
-        "## Corpus",
-        f"- Shobi catalog rows: **{len(catalog)}**",
-        f"- Fragrantica file lines: **{total_lines}**",
-        f"- Valid Fragrantica URL rows: **{len(parsed)}**",
-        f"- Invalid URL rows: **{len(invalid_lines)}**",
-        f"- Unique Fragrantica URLs: **{unique_urls}**",
-        f"- Unique Fragrantica IDs: **{unique_ids}**",
-        "",
+        "# Shobi ↔ Fragrantica URL corpus match", "",
+        "High-precision local matching. Exact perfume+brand strings are used to learn additional Shobi suffix→brand mappings; meaningful variant terms are preserved.", "",
         "## Matching result",
+        f"- Shobi rows: **{len(catalog)}**",
         f"- FOUND: **{status_counts.get('FOUND', 0)}**",
         f"- AMBIGUOUS: **{status_counts.get('AMBIGUOUS', 0)}**",
         f"- NOT_FOUND: **{status_counts.get('NOT_FOUND', 0)}**",
-        f"- MAPPED_NOT_IN_CORPUS: **{status_counts.get('MAPPED_NOT_IN_CORPUS', 0)}**",
-        "",
+        f"- MAPPED_NOT_IN_CORPUS: **{status_counts.get('MAPPED_NOT_IN_CORPUS', 0)}**", "",
         "## Brand inference",
-        f"- Existing confirmed mappings: **{len(confirmed_rows)}**",
-        f"- Unanimous code-suffix → brand mappings learned: **{inferred_suffix_count}**",
-        f"- Shobi catalog rows covered by those brand mappings: **{catalog_with_inferred_brand}**",
-        "",
-        "## Outputs",
-        "- `shobi-fragrantica-corpus-match.csv`: all Shobi rows",
-        "- `ambiguous.csv`: rows needing review",
-        "- `unmatched.csv`: rows not found in the corpus",
-        "- `summary.json`: machine-readable totals",
+        f"- Exact combined rows learned: **{learned_exact_rows}**",
+        f"- Safe suffix→brand mappings: **{len(suffix_to_brand)}**", "",
+        "See `summary.json` for machine-readable totals and `shobi-fragrantica-corpus-match.csv` for every row.",
     ]
-    if invalid_lines:
-        lines += ["", "## Invalid URL examples"]
-        for line, value in invalid_lines[:10]:
-            lines.append(f"- line {line}: `{value}`")
     SUMMARY.write_text("\n".join(lines) + "\n", encoding="utf-8")
-
     print(json.dumps(summary, indent=2, ensure_ascii=False))
 
 
