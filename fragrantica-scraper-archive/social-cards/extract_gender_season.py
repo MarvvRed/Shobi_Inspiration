@@ -1,18 +1,9 @@
 #!/usr/bin/env python3
-"""Extract gender and dominant season from archived Fragrantica social cards.
-
-The extractor deliberately avoids OCR. Gender is read from the stable subtitle area
-using simple image-template classification once templates are calibrated; season is
-measured from the four colored vote bars in the lower-right season panel. The longest
-filled season bar wins. Exact/near ties are kept as TIE instead of guessed.
-
-Run with --calibrate first to generate crops for a small sample. After crop geometry is
-verified, run normally to produce gender-season.csv.
-"""
+"""Extract gender and dominant season from archived Fragrantica social cards."""
 from __future__ import annotations
 import argparse, csv
 from pathlib import Path
-from PIL import Image, ImageStat
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 SOCIAL = ROOT / "fragrantica-scraper-archive" / "social-cards"
@@ -21,13 +12,15 @@ OUT = SOCIAL / "gender-season.csv"
 CROPS = SOCIAL / "calibration-crops"
 SEASONS = ("winter", "spring", "summer", "fall")
 
-# Fragrantica social cards are square; coordinates are fractions of width/height.
-# Season bars occupy the bottom-right panel in a 2x2 grid.
+# Geometry derived from the archived 1200x1200 Fragrantica p_c social cards.
+# The seasons panel is a 2x2 grid near the bottom:
+# winter | spring
+# summer | fall/autumn
 SEASON_ROIS = {
-    "winter": (0.505, 0.790, 0.745, 0.850),
-    "spring": (0.755, 0.790, 0.985, 0.850),
-    "summer": (0.505, 0.855, 0.745, 0.920),
-    "fall":   (0.755, 0.855, 0.985, 0.920),
+    "winter": (0.416, 0.835, 0.650, 0.885),
+    "spring": (0.680, 0.835, 0.915, 0.885),
+    "summer": (0.416, 0.900, 0.650, 0.950),
+    "fall":   (0.680, 0.900, 0.915, 0.950),
 }
 
 
@@ -43,27 +36,39 @@ def saturation(rgb):
 
 
 def filled_fraction(im, season):
-    """Estimate colored fill length. Gray remainder has low saturation; fill is colored."""
+    """Estimate colored fill length inside one season vote bar.
+
+    The unfilled remainder is gray/low-saturation. The colored vote fill is contiguous
+    from the left edge. We score each x-column by the fraction of interior pixels with
+    visible saturation, which is robust to the icon/text drawn on top of the bar.
+    """
     roi = crop_frac(im.convert("RGB"), SEASON_ROIS[season])
     w, h = roi.size
-    # Ignore label/icon area at left and borders; score columns by median saturation.
-    start = max(1, int(w * 0.12))
-    ys = range(max(1, int(h * .20)), max(2, int(h * .80)))
+    if w < 4 or h < 4:
+        return 0.0
+    x0 = max(1, int(w * 0.02))
+    x1 = max(x0 + 1, int(w * 0.98))
+    ys = range(max(1, int(h * 0.18)), max(2, int(h * 0.82)))
     active = []
-    for x in range(start, w):
-        sats = sorted(saturation(roi.getpixel((x, y))) for y in ys)
-        med = sats[len(sats)//2] if sats else 0
-        active.append(med > 0.12)
-    # Filled area is contiguous from left. Permit tiny antialiasing gaps.
-    last = -1; gap = 0
-    for i, on in enumerate(active):
-        if on:
-            last = i; gap = 0
-        elif last >= 0:
+    for x in range(x0, x1):
+        vals = [saturation(roi.getpixel((x, y))) > 0.10 for y in ys]
+        active.append((sum(vals) / max(1, len(vals))) >= 0.22)
+
+    # Find colored fill contiguous from the beginning; tolerate small text/AA gaps.
+    first = next((i for i, on in enumerate(active[:max(8, len(active)//4)]) if on), None)
+    if first is None:
+        return 0.0
+    last = first
+    gap = 0
+    for i in range(first, len(active)):
+        if active[i]:
+            last = i
+            gap = 0
+        else:
             gap += 1
-            if gap > 3:
+            if gap > 8:
                 break
-    return 0.0 if last < 0 else (last + 1) / max(1, len(active))
+    return min(1.0, (last + 1) / max(1, len(active)))
 
 
 def season_result(im):
@@ -71,16 +76,12 @@ def season_result(im):
     ordered = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)
     best, second = ordered[0], ordered[1]
     margin = best[1] - second[1]
-    # <=2 percentage points is treated as a visual tie, never guessed.
-    main = "TIE" if margin <= .02 else best[0]
-    confidence = "HIGH" if margin >= .10 else ("MEDIUM" if margin > .02 else "TIE")
+    main = "TIE" if margin <= 0.02 else best[0]
+    confidence = "HIGH" if margin >= 0.10 else ("MEDIUM" if margin > 0.02 else "TIE")
     return scores, main, confidence, margin
 
 
 def gender_from_mapping(row):
-    # The card title itself contains e.g. "for women", "for men", "for women and men".
-    # Until a robust image-text classifier is calibrated, preserve any already-known
-    # site gender and mark missing values for a separate pass rather than hallucinating.
     for key in ("gender", "sex"):
         v = (row.get(key) or "").strip().lower()
         if v:
@@ -98,41 +99,59 @@ def main():
     with MANIFEST.open(encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f))
     rows = [r for r in rows if r.get("card_status") in {"EXISTS", "DOWNLOADED"} and r.get("local_path")]
-    if args.limit: rows = rows[:args.limit]
+    if args.limit:
+        rows = rows[:args.limit]
     if args.calibrate:
         CROPS.mkdir(exist_ok=True)
         for r in rows[:24]:
             p = ROOT / r["local_path"]
-            if not p.exists(): continue
+            if not p.exists():
+                continue
             with Image.open(p) as im:
-                crop_frac(im, (0.47, 0.73, 0.995, 0.94)).save(CROPS / f'{r["fragrantica_id"]}_seasons.png')
+                crop_frac(im, (0.39, 0.80, 0.94, 0.97)).save(CROPS / f'{r["fragrantica_id"]}_seasons.png')
                 crop_frac(im, (0.02, 0.02, 0.48, 0.15)).save(CROPS / f'{r["fragrantica_id"]}_title.png')
         print(f"calibration_crops={CROPS}")
         return
-    out=[]; ties=0
-    for i,r in enumerate(rows,1):
-        p=ROOT/r["local_path"]
-        if not p.exists(): continue
+
+    out = []
+    ties = 0
+    for i, r in enumerate(rows, 1):
+        p = ROOT / r["local_path"]
+        if not p.exists():
+            continue
         try:
             with Image.open(p) as im:
                 scores, main_season, conf, margin = season_result(im)
-            gender,gsource=gender_from_mapping(r)
-            if main_season=="TIE": ties+=1
+            gender, gsource = gender_from_mapping(r)
+            if main_season == "TIE":
+                ties += 1
             out.append({
-                "prestashop_product_id":r.get("prestashop_product_id",""),
-                "shobi_code":r.get("shobi_code",""),
-                "fragrantica_id":r.get("fragrantica_id",""),
-                "gender":gender,"gender_source":gsource,
-                "winter":f'{scores["winter"]:.4f}',"spring":f'{scores["spring"]:.4f}',
-                "summer":f'{scores["summer"]:.4f}',"fall":f'{scores["fall"]:.4f}',
-                "main_season":main_season,"season_confidence":conf,"season_margin":f"{margin:.4f}",
-                "local_path":r.get("local_path","")})
+                "prestashop_product_id": r.get("prestashop_product_id", ""),
+                "shobi_code": r.get("shobi_code", ""),
+                "fragrantica_id": r.get("fragrantica_id", ""),
+                "gender": gender,
+                "gender_source": gsource,
+                "winter": f'{scores["winter"]:.4f}',
+                "spring": f'{scores["spring"]:.4f}',
+                "summer": f'{scores["summer"]:.4f}',
+                "fall": f'{scores["fall"]:.4f}',
+                "main_season": main_season,
+                "season_confidence": conf,
+                "season_margin": f"{margin:.4f}",
+                "local_path": r.get("local_path", ""),
+            })
         except Exception as e:
             print(f"ERROR {p}: {e}")
-        if i%250==0: print(f"processed={i}/{len(rows)}")
-    fields=list(out[0]) if out else []
-    with OUT.open("w",encoding="utf-8-sig",newline="") as f:
-        w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(out)
+        if i % 250 == 0:
+            print(f"processed={i}/{len(rows)}")
+
+    fields = list(out[0]) if out else []
+    with OUT.open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=fields)
+        w.writeheader()
+        w.writerows(out)
     print(f"cards={len(rows)} extracted={len(out)} ties={ties} output={OUT}")
 
-if __name__=="__main__": main()
+
+if __name__ == "__main__":
+    main()
