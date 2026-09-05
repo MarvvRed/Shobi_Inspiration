@@ -1,0 +1,35 @@
+name: Audit Fragrantica Gender and Season
+
+on:
+  push:
+    paths:
+      - '.github/fragrantica-gender-season-audit-trigger'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit extraction output
+        run: python fragrantica-scraper-archive/social-cards/audit_gender_season.py
+      - name: Commit audit output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fragrantica-scraper-archive/social-cards/gender-season-audit.md
+          git add fragrantica-scraper-archive/social-cards/gender-unresolved.csv
+          git add fragrantica-scraper-archive/social-cards/season-ties.csv
+          if git diff --cached --quiet; then
+            echo "No audit changes"
+            exit 0
+          fi
+          git commit -m "Audit Fragrantica gender and season extraction"
+          git pull --rebase origin main
+          git push origin HEAD:main
