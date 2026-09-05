@@ -15,36 +15,45 @@
   "safe_code_suffix_brand_mappings": 183,
   "catalog_rows_with_inferred_brand": 2056,
   "status_counts": {
-    "FOUND": 1612,
-    "MAPPED_NOT_IN_CORPUS": 27,
-    "NOT_FOUND": 524,
-    "AMBIGUOUS": 180
+    "FOUND": 1640,
+    "MAPPED_NOT_IN_CORPUS": 7,
+    "NOT_FOUND": 518,
+    "AMBIGUOUS": 178
   },
   "match_type_counts": {
     "CONFIRMED_ID_IN_CORPUS": 128,
-    "CONFIRMED_MAPPING_ONLY": 27,
+    "CONFIRMED_EXISTING_MAPPING": 28,
+    "CONFIRMED_MAPPING_ONLY": 7,
     "EXACT_PERFUME_BRAND_TEXT": 470,
-    "NONE": 524,
-    "EXACT_NAME_MULTIPLE_CANDIDATES": 88,
+    "NONE": 518,
+    "EXACT_NAME_MULTIPLE_CANDIDATES": 87,
     "EXACT_UNIQUE_NAME": 58,
     "EXACT_BRAND_CLEAN_NAME": 721,
     "SAFE_TOKEN_SAME_BRAND": 189,
-    "EXACT_COMBINED_MULTIPLE_IDS": 21,
     "TOKEN_MULTIPLE_CANDIDATES": 43,
     "SAFE_FUZZY_SAME_BRAND": 31,
     "SAFE_CONCENTRATION_EQUIVALENT": 15,
     "FUZZY_MULTIPLE_CANDIDATES": 6,
+    "EXACT_COMBINED_MULTIPLE_IDS": 20,
     "EXACT_BRAND_NAME_MULTIPLE_IDS": 18,
     "CONCENTRATION_MULTIPLE_IDS": 4
   },
-  "found_total": 1612,
-  "ambiguous_total": 180,
-  "not_found_total": 524,
-  "mapped_not_in_corpus_total": 27,
+  "found_total": 1640,
+  "ambiguous_total": 178,
+  "not_found_total": 518,
+  "mapped_not_in_corpus_total": 7,
   "invalid_url_examples": [
     {
       "line": 5338,
       "value": "https://www.fragrantica.com/perfume/DS-Durga/-8801.html"
     }
-  ]
+  ],
+  "legacy_mapping_rows": 2343,
+  "legacy_verified_found_rows": 176,
+  "rescued_by_existing_verified_mapping": 28,
+  "rescued_previous_statuses": {
+    "MAPPED_NOT_IN_CORPUS": 20,
+    "NOT_FOUND": 6,
+    "AMBIGUOUS": 2
+  }
 }

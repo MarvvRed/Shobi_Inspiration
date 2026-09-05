@@ -1,29 +1,29 @@
 ﻿prestashop_product_id,shobi_code,inspired_by,code_suffix,inferred_brand,status,match_type,score,candidate_count,fragrantica_brand,fragrantica_perfume,fragrantica_id,fragrantica_url,note
 5117,2849-STE,HARRODS RUBY NAGA,STE,Stéphane Humbert Lucas 777,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Stephane Humbert Lucas 777,Harrods Ruby Naga,74594,https://www.fragrantica.com/perfume/Stephane-Humbert-Lucas-777/Harrods-Ruby-Naga-74594.html,
-5116,2848-PRFRO,VANITAS,PRFRO,Profumum Roma,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+5116,2848-PRFRO,VANITAS,PRFRO,Profumum Roma,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Profumum Roma,Vanitas,11220,https://www.fragrantica.com/p/11220,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 5115,2847-NISH,HUNDRED SILENT WAYS X,NISH,Nishane,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Nishane,Hundred Silent Ways X,80463,https://www.fragrantica.com/perfume/Nishane/Hundred-Silent-Ways-X-80463.html,
 5114,2846-MIN,COUNTER PLAY,MIN,Mind Games,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Mind Games,Counterplay,114442,https://www.fragrantica.com/perfume/Mind-Games/Counterplay-114442.html,
 5113,2845-LUS,WE BELIEVE IN GLINDA,LUS,Lush,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Lush,We Believe in Glinda,117589,https://www.fragrantica.com/perfume/Lush/We-Believe-in-Glinda-117589.html,
 5112,2844-LUS,BLACK PEARL,LUS,Lush,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Lush,Black Pearl,10802,https://www.fragrantica.com/perfume/Lush/Black-Pearl-10802.html,
 5111,2843-LEL,LABDANUM 18,LEL,Le Labo,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Le Labo,Labdanum 18,7848,https://www.fragrantica.com/perfume/Le-Labo/Labdanum-18-7848.html,
-5110,2842-KYLJ,VANILLA DEW,KYLJ,Kylie Cosmetics,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
-5109,2841-KYLJ,SWEET ECLAIRE,KYLJ,Kylie Cosmetics,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
-5108,2840-KYLJ,CARAMEL CLOUD,KYLJ,Kylie Cosmetics,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+5110,2842-KYLJ,VANILLA DEW,KYLJ,Kylie Cosmetics,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,kylie-cosmetics,Vanilla-dew,117345,https://www.fragrantica.com/p/117345,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
+5109,2841-KYLJ,SWEET ECLAIRE,KYLJ,Kylie Cosmetics,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Kylie Jenner,SWEET ECLAIRE,117347,https://www.fragrantica.com/p/117347,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
+5108,2840-KYLJ,CARAMEL CLOUD,KYLJ,Kylie Cosmetics,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,kylie-cosmetics,Caramel-cloud,117346,https://www.fragrantica.com/p/117346,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 5107,2839-JUL,POWDER LOVE,JUL,Juliette Has A Gun,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Juliette Has A Gun,Powder Love,113627,https://www.fragrantica.com/perfume/Juliette-Has-A-Gun/Powder-Love-113627.html,
 5106,2838-JIM,I WANT CHOO WITH LOVE,JIM,Jimmy Choo,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Jimmy Choo,I Want Choo With Love,113626,https://www.fragrantica.com/perfume/Jimmy-Choo/I-Want-Choo-With-Love-113626.html,
 5105,2837-GUL,SCANDAL POUR HOMME ELIXIR,GUL,Jean Paul Gaultier,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Jean Paul Gaultier,Scandal Pour Homme Elixir,121453,https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Scandal-Pour-Homme-Elixir-121453.html,
-5104,2836-FRA,MADNESS,FRA,Franck Boclet,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+5104,2836-FRA,MADNESS,FRA,Franck Boclet,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Franck Boclet,Madness,90972,https://www.fragrantica.com/p/90972,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 5103,2835-BORN,PURPLE STAIN,BORN,BORNTOSTANDOUT,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,BORNTOSTANDOUT,Purple Stain,102810,https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Purple-Stain-102810.html,
 5102,2834-AMG,SINDBAD,AMG,Amouage,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Amouage,Sindbad,116626,https://www.fragrantica.com/perfume/Amouage/Sindbad-116626.html,
 5101,2833-AMG,MEANDER,AMG,Amouage,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Amouage,Meander,62859,https://www.fragrantica.com/perfume/Amouage/Meander-62859.html,
-5099,2832-ZAD,Zadig Eau de Parfum,ZAD,Zadig & Voltaire,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
-5098,2831-GISS,Martinique Osmanthus Gissah 2025,GISS,Gissah,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+5099,2832-ZAD,Zadig Eau de Parfum,ZAD,Zadig & Voltaire,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Zadig & Voltaire,Zadig Eau de Parfum,103492,https://www.fragrantica.com/p/103492,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
+5098,2831-GISS,Martinique Osmanthus Gissah 2025,GISS,Gissah,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,gissah,Martinique-osmanthus-eau-de-parfum-,126288,https://www.fragrantica.com/p/126288,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 5097,2830-VAL,Sogno In Rosso,VAL,Valentino,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Valentino,Sogno In Rosso,95537,https://www.fragrantica.com/perfume/Valentino/Sogno-In-Rosso-95537.html,
 5096,2829-PARF,Athénaïs,PARF,Parfums de Marly,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Parfums de Marly,Athenais,123716,https://www.fragrantica.com/perfume/Parfums-de-Marly/Athenais-123716.html,
 5095,2828-ATEL,Vanille Carbone Atelier Materi,ATEL,Atelier Materi,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Atelier Materi,Vanille Carbone,104586,https://www.fragrantica.com/perfume/Atelier-Materi/Vanille-Carbone-104586.html,
 5094,2827-BYR,Bal d'Afrique Absolu,BYR,Byredo,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Byredo,Bal d Afrique Absolu,108421,https://www.fragrantica.com/perfume/Byredo/Bal-d-Afrique-Absolu-108421.html,
 5093,2826-SOL,Cheirosa 91 Sol de Janeiro,SOL,Sol de Janeiro,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Sol de Janeiro,Cheirosa 91,119651,https://www.fragrantica.com/perfume/Sol-de-Janeiro/Cheirosa-91-119651.html,
-5092,2825-RARB,Rare Beauty,RARB,Rare Beauty,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+5092,2825-RARB,Rare Beauty,RARB,Rare Beauty,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Rare Beauty,Rare,112206,https://www.fragrantica.com/p/112206,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 5091,2824-NRO,Pure Musc Blanc For Her,NRO,Narciso Rodriguez,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Narciso Rodriguez,Pure Musc Blanc For Her,122211,https://www.fragrantica.com/perfume/Narciso-Rodriguez/Pure-Musc-Blanc-For-Her-122211.html,
 5090,2823-KAY,Eden Plush Pear | 23 Kayali,KAY,Kayali Fragrances,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Kayali Fragrances,Eden Plush Pear 23 Eau de Parfum,127453,https://www.fragrantica.com/perfume/Kayali-Fragrances/Eden-Plush-Pear-23-Eau-de-Parfum-127453.html,
 5089,2822-DRC,Addict Purple Glow Eau De Parfum,DRC,Dior,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Dior,Addict Purple Glow Eau De Parfum,121565,https://www.fragrantica.com/perfume/Dior/Addict-Purple-Glow-Eau-De-Parfum-121565.html,
@@ -35,13 +35,13 @@
 5083,2816-MOOD,Blonde Maracuja Mood London,MOOD,Mood London,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
 5082,2815-DOL,By for women,DOL,Dolce&Gabbana,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Dolce Gabbana,By,489,https://www.fragrantica.com/perfume/Dolce-Gabbana/By-489.html,
 5081,2814-TMFO,Figue Erotique Tom Ford,TMFO,Tom Ford,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Tom Ford,Figue Erotique,119402,https://www.fragrantica.com/perfume/Tom-Ford/Figue-Erotique-119402.html,
-5080,2813-OMA,Caden Omanluxury,OMA,Omanluxury,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+5080,2813-OMA,Caden Omanluxury,OMA,Omanluxury,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Omanluxury,Caden,105465,https://www.fragrantica.com/p/105465,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 5079,2812-ARM,Stronger With You Powerfully,ARM,Giorgio Armani,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Giorgio Armani,Emporio Armani Stronger With You Powerfully,123070,https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Powerfully-123070.html,
 5078,2811-DRC,Sauvage Rare Blend,DRC,Dior,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Dior,Sauvage Rare Blend,118815,https://www.fragrantica.com/perfume/Dior/Sauvage-Rare-Blend-118815.html,
 5077,2810-MIN,Prodigy Mind Games,MIN,Mind Games,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Mind Games,Prodigy,101192,https://www.fragrantica.com/perfume/Mind-Games/Prodigy-101192.html,
 5076,2809-AZZ,Forever Wanted Elixir Azzaro,AZZ,Azzaro,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Azzaro,Forever Wanted Elixir,102882,https://www.fragrantica.com/perfume/Azzaro/Forever-Wanted-Elixir-102882.html,
 5075,2808-LES,Roasted Tangerine Les Liquides Imaginaires,LES,Les Liquides Imaginaires,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Les Liquides Imaginaires,Roasted Tangerine,103914,https://www.fragrantica.com/perfume/Les-Liquides-Imaginaires/Roasted-Tangerine-103914.html,
-5074,2807-VIRT,Buttercream Haze The 7 Virtues,VIRT,The 7 Virtues,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+5074,2807-VIRT,Buttercream Haze The 7 Virtues,VIRT,The 7 Virtues,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,The 7 Virtues,Buttercream-haze,116996,https://www.fragrantica.com/p/116996,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 5073,2806-PHL,Afterglow Phlur,PHL,Phlur,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Phlur,Afterglow,119441,https://www.fragrantica.com/perfume/Phlur/Afterglow-119441.html,
 5072,2805-MARG,Never-ending Summer Margiela,MARG,Maison Martin Margiela,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Maison Martin Margiela,Never ending Summer,103564,https://www.fragrantica.com/perfume/Maison-Martin-Margiela/Never-ending-Summer-103564.html,
 5071,2804-BOYS,Coco Cream Boy Smells,BOYS,Boy Smells,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Boy Smells,Coco Cream,105919,https://www.fragrantica.com/perfume/Boy-Smells/Coco-Cream-105919.html,
@@ -49,11 +49,11 @@
 5069,2802-HER,Terre Intense for men,HER,Hermes,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Hermes,Terre d Hermes Intense,102772,https://www.fragrantica.com/perfume/Hermes/Terre-d-Hermes-Intense-102772.html,
 5068,2801-DON,Cashmere & Vanilla Essence,DON,Donna Karan,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Donna Karan,Cashmere Vanilla Essence,103064,https://www.fragrantica.com/perfume/Donna-Karan/Cashmere-Vanilla-Essence-103064.html,
 5067,2800-ACQ,Buongiorno,ACQ,Acqua di Parma,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Acqua di Parma,Buongiorno,103426,https://www.fragrantica.com/perfume/Acqua-di-Parma/Buongiorno-103426.html,
-5066,2799-OBVI,Milk & Matcha Obvious,OBVI,Obvious,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
-5065,2798-NICO,Macaron Bourbon Nicolai Parfumeur Createur,NICO,Nicolai Parfumeur Createur,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+5066,2799-OBVI,Milk & Matcha Obvious,OBVI,Obvious,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,obvious,Milk-matcha-un-ete,103407,https://www.fragrantica.com/p/103407,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
+5065,2798-NICO,Macaron Bourbon Nicolai Parfumeur Createur,NICO,Nicolai Parfumeur Createur,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Nicolaï Parfumeur-Créateur,Macaron Bourbon,91006,https://www.fragrantica.com/p/91006,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 5064,2795-AMG,Jubilation 40 Man Amouage for men,AMG,Amouage,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Amouage,Jubilation 40 Man,87958,https://www.fragrantica.com/perfume/Amouage/Jubilation-40-Man-87958.html,
 5063,2794-PAC,Lady Million Lucky,PAC,Rabanne,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Rabanne,Lady Million Lucky,48904,https://www.fragrantica.com/perfume/Rabanne/Lady-Million-Lucky-48904.html,
-5062,2793-FRAG,Oud Noir Intense Fragrance Du Bois,FRAG,Fragrance Du Bois,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+5062,2793-FRAG,Oud Noir Intense Fragrance Du Bois,FRAG,Fragrance Du Bois,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Fragrance Du Bois,Oud-noir-intense,24483,https://www.fragrantica.com/p/24483,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 5061,2792-AJMA,Musk Silk Ajmal,AJMA,Ajmal,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Ajmal,Musk Silk,58837,https://www.fragrantica.com/perfume/Ajmal/Musk-Silk-58837.html,
 5060,2791-LTN,notes of,LTN,,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
 5059,2790-KIL,Old Fashioned By Kilian,KIL,By Kilian,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,By Kilian,Old Fashioned,96096,https://www.fragrantica.com/perfume/By-Kilian/Old-Fashioned-96096.html,
@@ -73,7 +73,7 @@
 5018,2777-GUR,Herbes Troublantes,GUR,Guerlain,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Guerlain,Herbes Troublantes,69275,https://www.fragrantica.com/perfume/Guerlain/Herbes-Troublantes-69275.html,
 5017,2776-CELI,Nightclubbing Celine,CELI,Celine,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Celine,Nightclubbing,57926,https://www.fragrantica.com/perfume/Celine/Nightclubbing-57926.html,
 5016,2775-BOT,Illusione for Him for men,BOT,Bottega Veneta,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Bottega Veneta,Illusione for Him,55301,https://www.fragrantica.com/perfume/Bottega-Veneta/Illusione-for-Him-55301.html,
-5015,2774-MIL,La Fumee Miller Harris,MIL,Miller Harris,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+5015,2774-MIL,La Fumee Miller Harris,MIL,Miller Harris,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Miller Harris,La Fumee,13410,https://www.fragrantica.com/p/13410,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 5014,2773-RIT,The Rituals of Mehr,RIT,Rituals,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
 5013,2771-GUR,Santal Royal,GUR,Guerlain,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Guerlain,Santal Royal,96470,https://www.fragrantica.com/perfume/Guerlain/Santal-Royal-96470.html,
 5012,2770-DOL,Pineapple,DOL,Dolce&Gabbana,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Dolce Gabbana,Pineapple,59231,https://www.fragrantica.com/perfume/Dolce-Gabbana/Pineapple-59231.html,
@@ -94,7 +94,7 @@
 4967,2761-LAT,Asad Elixir Lattafa Perfumes,LAT,Lattafa Perfumes,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Lattafa Perfumes,Asad Elixir,117616,https://www.fragrantica.com/perfume/Lattafa-Perfumes/Asad-Elixir-117616.html,
 4966,2760-LAT,Yara Elixir Lattafa Perfumes,LAT,Lattafa Perfumes,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Lattafa Perfumes,Yara Elixir,117615,https://www.fragrantica.com/perfume/Lattafa-Perfumes/Yara-Elixir-117615.html,
 4965,2757-LAT,Vanilla Freak Lattafa Perfumes,LAT,Lattafa Perfumes,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Lattafa Perfumes,Vanilla Freak,114400,https://www.fragrantica.com/perfume/Lattafa-Perfumes/Vanilla-Freak-114400.html,
-4964,2755-ZEG,Essenza di Zegna,ZEG,Ermenegildo Zegna,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+4964,2755-ZEG,Essenza di Zegna,ZEG,Ermenegildo Zegna,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Ermenegildo Zegna,Essenza Di Zegna,949,https://www.fragrantica.com/p/949,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4963,2754-CHL,Rose Naturelle Intense Chloe,CHL,Chloe,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Chloe,Chloe Rose Naturelle Intense,76287,https://www.fragrantica.com/perfume/Chloe/Chloe-Rose-Naturelle-Intense-76287.html,
 4962,2753-YZLO,Libre Vanille Couture,YZLO,Yves Saint Laurent,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Yves Saint Laurent,Libre Vanille Couture,113623,https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-Vanille-Couture-113623.html,
 4961,2752-SAB,Sweet Tooth Caramel Dream Sabrina Carpenter,SAB,Sabrina Carpenter,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Sabrina Carpenter,Sweet Tooth Caramel Dream,84095,https://www.fragrantica.com/perfume/Sabrina-Carpenter/Sweet-Tooth-Caramel-Dream-84095.html,
@@ -111,7 +111,7 @@
 4838,2739-BORN,Sugar Addict BORNTOSTANDOUT,BORN,BORNTOSTANDOUT,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,BORNTOSTANDOUT,Sugar Addict,85084,https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Sugar-Addict-85084.html,
 4837,2738-LUS,Super Milk Lush,LUS,Lush,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Lush,Super Milk,112787,https://www.fragrantica.com/perfume/Lush/Super-Milk-112787.html,
 4836,2737-BORN,Drunk Lovers BORNTOSTANDOUT,BORN,BORNTOSTANDOUT,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,BORNTOSTANDOUT,Drunk Lovers,81882,https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Drunk-Lovers-81882.html,
-4835,2736-NAV,Lost in a Dream Navitus Parfums,NAV,Navitus Parfums,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+4835,2736-NAV,Lost in a Dream Navitus Parfums,NAV,Navitus Parfums,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Navitus Parfums,Lost In A Dream,88834,https://www.fragrantica.com/p/88834,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4833,2734-ELIZ,Green Tea Summer Elizabeth Arden,ELIZ,Elizabeth Arden,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Elizabeth Arden,Green Tea Summer,3090,https://www.fragrantica.com/perfume/Elizabeth-Arden/Green-Tea-Summer-3090.html,
 4832,2733-LES,Blanche Bete Les Liquides Imaginaires,LES,Les Liquides Imaginaires,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Les Liquides Imaginaires,Blanche Bete,70189,https://www.fragrantica.com/perfume/Les-Liquides-Imaginaires/Blanche-Bete-70189.html,
 4823,199-CARO,Pour Un Homme de Caron,CARO,Caron,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Caron,Pour Un Homme de Caron,3166,https://www.fragrantica.com/perfume/Caron/Pour-Un-Homme-de-Caron-3166.html,
@@ -122,11 +122,11 @@
 4789,2728-PEN,The Uncompromising Sohan,PEN,Penhaligon s,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Penhaligon s,The Uncompromising Sohan,46503,https://www.fragrantica.com/perfume/Penhaligon-s/The-Uncompromising-Sohan-46503.html,
 4787,2725-CELI,Reptile Celine,CELI,Celine,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Celine,Reptile,57924,https://www.fragrantica.com/perfume/Celine/Reptile-57924.html,
 4786,2724-GUR,Shalimar Souffle de Parfum 2014,GUR,Guerlain,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Guerlain,Shalimar Souffle de Parfum,26132,https://www.fragrantica.com/perfume/Guerlain/Shalimar-Souffle-de-Parfum-26132.html,
-4785,2723-LTN,notes,LTN,,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+4785,2723-LTN,notes,LTN,,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Louis Vuitton,Rhapsody,68359,https://www.fragrantica.com/perfume/Louis-Vuitton/Rhapsody-68359.html,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4784,2722-CRIVEL,Hibiscus Mahajad Maison Crivelli,CRIVEL,Maison Crivelli,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Maison Crivelli,Hibiscus Mahajad,69069,https://www.fragrantica.com/perfume/Maison-Crivelli/Hibiscus-Mahajad-69069.html,
 4783,2721-STE,Sand Dance Stephane Humbert,STE,Stéphane Humbert Lucas 777,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Stephane Humbert Lucas 777,Sand Dance,72384,https://www.fragrantica.com/perfume/Stephane-Humbert-Lucas-777/Sand-Dance-72384.html,
 4782,2720-ROJ,United Arab Emirates Spirit Of The Union Roja Dove,ROJ,Roja Dove,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Roja Dove,United Arab Emirates Spirit Of The Union,29977,https://www.fragrantica.com/perfume/Roja-Dove/United-Arab-Emirates-Spirit-Of-The-Union-29977.html,
-4781,2719-FRAG,New York 5th Avenue Fragrance Du Bois,FRAG,Fragrance Du Bois,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+4781,2719-FRAG,New York 5th Avenue Fragrance Du Bois,FRAG,Fragrance Du Bois,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Fragrance Du Bois,New-york-5th-avenue,61946,https://www.fragrantica.com/p/61946,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4780,2718-GUR,Shalimar Millesime Tonka,GUR,Guerlain,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Guerlain,Shalimar Millesime Tonka,76063,https://www.fragrantica.com/perfume/Guerlain/Shalimar-Millesime-Tonka-76063.html,
 4779,2717-EXN,Brompton Immortals Ex Nihilo,EXN,Ex Nihilo,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Ex Nihilo,Brompton Immortals,52591,https://www.fragrantica.com/perfume/Ex-Nihilo/Brompton-Immortals-52591.html,
 4778,2716-ORT,Bergamask Orto Parisi,ORT,Orto Parisi,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Orto Parisi,Bergamask,24191,https://www.fragrantica.com/perfume/Orto-Parisi/Bergamask-24191.html,
@@ -136,7 +136,7 @@
 4774,2711-CLIV,Matsukita Clive Christian,CLIV,Clive Christian,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Clive Christian,Matsukita,65983,https://www.fragrantica.com/perfume/Clive-Christian/Matsukita-65983.html,
 4773,2709-STE,Le 8 Stéphane Humbert,STE,Stéphane Humbert Lucas 777,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Stephane Humbert Lucas 777,Le 8,110493,https://www.fragrantica.com/perfume/Stephane-Humbert-Lucas-777/Le-8-110493.html,
 4772,2708-BORN,Black Mango BORNTOSTANDOUT,BORN,BORNTOSTANDOUT,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,BORNTOSTANDOUT,Black Mango,102808,https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Black-Mango-102808.html,
-4771,2707-ROOM,Wavechild Room 1015,ROOM,Room 1015,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+4771,2707-ROOM,Wavechild Room 1015,ROOM,Room 1015,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Room 1015,Wavechild,91364,https://www.fragrantica.com/p/91364,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4770,2706-LUS,Let The Good Times Roll Lush,LUS,Lush,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Lush,Let The Good Times Roll,60072,https://www.fragrantica.com/perfume/Lush/Let-The-Good-Times-Roll-60072.html,
 4755,2704-GUR,Cherry Oud Guerl,GUR,Guerlain,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Guerlain,Cherry Oud,76302,https://www.fragrantica.com/perfume/Guerlain/Cherry-Oud-76302.html,
 4754,2703-VER,Eros Najim,VER,Versace,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Versace,Eros Najim,99116,https://www.fragrantica.com/perfume/Versace/Eros-Najim-99116.html,
@@ -144,7 +144,7 @@
 4752,2668-LEL,Neroli 36 Le Labo,LEL,Le Labo,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Le Labo,Neroli 36,6330,https://www.fragrantica.com/perfume/Le-Labo/Neroli-36-6330.html,
 4751,2667-CHAB,Lait Concentre,CHAB,Chabaud Maison de Parfum,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Chabaud Maison de Parfum,Lait Concentre,30551,https://www.fragrantica.com/perfume/Chabaud-Maison-de-Parfum/Lait-Concentre-30551.html,
 4750,2666-CELI,Black Tie Celine,CELI,Celine,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Celine,Black Tie,57925,https://www.fragrantica.com/perfume/Celine/Black-Tie-57925.html,
-4749,2665-KAJ,Ruby Kajal,KAJ,Kajal,MAPPED_NOT_IN_CORPUS,CONFIRMED_MAPPING_ONLY,,0,,,,,
+4749,2665-KAJ,Ruby Kajal,KAJ,Kajal,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Kajal,Ruby,102994,https://www.fragrantica.com/p/102994,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4748,2664-CHA,Chance Eau Splendide,CHA,Chanel,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Chanel,Chance Eau Splendide,104610,https://www.fragrantica.com/perfume/Chanel/Chance-Eau-Splendide-104610.html,
 4746,2663-ARM,Stronger With You Parfum,ARM,Giorgio Armani,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Giorgio Armani,Emporio Armani Stronger With You Parfum,100895,https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Parfum-100895.html,
 4745,2662-LAT,Asad Bourbon Lattafa Perfumes for men,LAT,Lattafa Perfumes,FOUND,CONFIRMED_ID_IN_CORPUS,1.0000,1,Lattafa Perfumes,Asad Bourbon,101124,https://www.fragrantica.com/perfume/Lattafa-Perfumes/Asad-Bourbon-101124.html,
@@ -187,9 +187,9 @@
 4518,2654-KUR,Kurky,KUR,Maison Francis Kurkdjian,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Maison Francis Kurkdjian,Kurky,103517,https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Kurky-103517.html,
 4517,2653-YZLO,Black Opium Glitter,YZLO,Yves Saint Laurent,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Yves Saint Laurent,Black Opium Glitter,100628,https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Black-Opium-Glitter-100628.html,
 4492,1145-GUC,pour Homme (2003),GUC,Gucci,FOUND,SAFE_TOKEN_SAME_BRAND,0.9760,1,Gucci,Gucci pour Homme 2003,691,https://www.fragrantica.com/perfume/Gucci/Gucci-pour-Homme-2003-691.html,
-4491,2637-HARM,Sacred Water,HARM,,NOT_FOUND,,,0,,,,,
+4491,2637-HARM,Sacred Water,HARM,,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,The Harmonist,Sacred Water,36737,https://www.fragrantica.com/perfume/The-Harmonist/Sacred-Water-36737.html,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4490,2646-PEN,The Dandy,PEN,Penhaligon s,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Penhaligon s,The Dandy,95396,https://www.fragrantica.com/perfume/Penhaligon-s/The-Dandy-95396.html,
-4489,2645-LTN,notes,LTN,,NOT_FOUND,,,0,,,,,
+4489,2645-LTN,notes,LTN,,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Louis Vuitton,eLVes,104087,https://www.fragrantica.com/perfume/Louis-Vuitton/eLVes-104087.html,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4488,2644-PAZZ,Summer Hammer Lorenzo Pazzaglia,PAZZ,Lorenzo Pazzaglia,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Lorenzo Pazzaglia,Summer Hammer,81476,https://www.fragrantica.com/perfume/Lorenzo-Pazzaglia/Summer-Hammer-81476.html,
 4487,2643-LEL,Iris 39 Le Labo,LEL,Le Labo,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Le Labo,Iris 39,6336,https://www.fragrantica.com/perfume/Le-Labo/Iris-39-6336.html,
 4486,2458-LTN,notes,LTN,,NOT_FOUND,,,0,,,,,
@@ -199,11 +199,11 @@
 4482,2616-TMU,Alien Extraintense,TMU,Mugler,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Mugler,Alien Extraintense,101560,https://www.fragrantica.com/perfume/Mugler/Alien-Extraintense-101560.html,
 4481,2619-DRC,Homme Parfum 2025,DRC,Dior,FOUND,SAFE_TOKEN_SAME_BRAND,0.9760,1,Dior,Dior Homme Parfum 2025,101016,https://www.fragrantica.com/perfume/Dior/Dior-Homme-Parfum-2025-101016.html,
 4480,2617-DOL,Devotion Pour Homme,DOL,Dolce&Gabbana,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Dolce Gabbana,Devotion Pour Homme,101353,https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-Pour-Homme-101353.html,
-4479,2622-PHL,Vanilla Skin Phlur,PHL,Phlur,AMBIGUOUS,EXACT_COMBINED_MULTIPLE_IDS,,2,,,,,
+4479,2622-PHL,Vanilla Skin Phlur,PHL,Phlur,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Phlur,Vanilla-skin-eau-de-,87258,https://www.fragrantica.com/perfume/Phlur/Vanilla-Skin-87258.html,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4478,2621-CHAR,More Sex,CHAR,Charlotte Tilbury,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Charlotte Tilbury,More Sex,92086,https://www.fragrantica.com/perfume/Charlotte-Tilbury/More-Sex-92086.html,
 4444,2649-BORN,Naked Laundry BORNTOSTANDOUT®,BORN,BORNTOSTANDOUT,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,BORNTOSTANDOUT,Naked Laundry,97132,https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Naked-Laundry-97132.html,
 4443,2620-CHAR,Cosmic Power,CHAR,Charlotte Tilbury,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Charlotte Tilbury,Cosmic Power,92088,https://www.fragrantica.com/perfume/Charlotte-Tilbury/Cosmic-Power-92088.html,
-4438,2647-LTN,notes,LTN,,NOT_FOUND,,,0,,,,,
+4438,2647-LTN,notes,LTN,,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Louis Vuitton,Symphony,68357,https://www.fragrantica.com/perfume/Louis-Vuitton/Symphony-68357.html,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4436,2623-NES,Santa Barbara Strawberry - Nest,NES,Nest,NOT_FOUND,,,0,,,,,
 4435,2614-AMG,Guidance 46 Amouagee,AMG,Amouage,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Amouage,Guidance 46,94033,https://www.fragrantica.com/perfume/Amouage/Guidance-46-94033.html,
 4434,2624-BLG,Rock N Rome,BLG,Bvlgari,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Bvlgari,Rock N Rome,64736,https://www.fragrantica.com/perfume/Bvlgari/Rock-N-Rome-64736.html,
@@ -214,7 +214,7 @@
 4429,2613-SOS,Vibrato Sospiro Perfume,SOS,Sospiro Perfumes,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Sospiro Perfumes,Vibrato,75930,https://www.fragrantica.com/perfume/Sospiro-Perfumes/Vibrato-75930.html,
 4428,2612-LUS,Sticky Dates Lush,LUS,Lush,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Lush,Sticky Dates,88995,https://www.fragrantica.com/perfume/Lush/Sticky-Dates-88995.html,
 4426,2599-ACQ,Sandalo Eau de Parfum,ACQ,Acqua di Parma,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Acqua di Parma,Sandalo Eau de Parfum,56002,https://www.fragrantica.com/perfume/Acqua-di-Parma/Sandalo-Eau-de-Parfum-56002.html,
-4425,2598-GLO,You Glossier,GLO,Glossier,AMBIGUOUS,EXACT_NAME_MULTIPLE_CANDIDATES,,5,,,,,
+4425,2598-GLO,You Glossier,GLO,Glossier,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Glossier,You,46885,https://www.fragrantica.com/perfume/Glossier/You-46885.html,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4424,2641-LAT,Eclaire Lattafa Perfumes,LAT,Lattafa Perfumes,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Lattafa Perfumes,Eclaire,93628,https://www.fragrantica.com/perfume/Lattafa-Perfumes/Eclaire-93628.html,
 4423,2630-SOS,Erba Pura Magica Sospiro,SOS,Sospiro Perfumes,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Sospiro Perfumes,Erba Pura Magica,75942,https://www.fragrantica.com/perfume/Sospiro-Perfumes/Erba-Pura-Magica-75942.html,
 4422,2627-LTN,notes,LTN,,NOT_FOUND,,,0,,,,,
@@ -355,12 +355,12 @@
 4224,2515-LAN,LA VIE EST BELLE L'ELIXIR,LAN,Lancome,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Lancome,La Vie est Belle L Elixir,95856,https://www.fragrantica.com/perfume/Lancome/La-Vie-est-Belle-L-Elixir-95856.html,
 4223,2501-LOE,AGUA MIAMI LOEWE,LOE,Loewe,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Loewe,Agua Miami,50228,https://www.fragrantica.com/perfume/Loewe/Agua-Miami-50228.html,
 4222,2500-BRB,Baby Touch Burberry,BRB,Burberry,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Burberry,Baby Touch,2550,https://www.fragrantica.com/perfume/Burberry/Baby-Touch-2550.html,
-4221,2475-DIP,TEMPO DIP,DIP,Diptyque,NOT_FOUND,,,0,,,,,
+4221,2475-DIP,TEMPO DIP,DIP,Diptyque,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Diptyque,Tempo,48680,https://www.fragrantica.com/perfume/Diptyque/Tempo-Eau-de-Parfum-48680.html,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4220,2484-ETLR,THE AFTERNOON OF A FAUN by ETAT LIBRE D'ORANGE,ETLR,Etat Libre d Orange,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Etat Libre d Orange,The Afternoon of a Faun,15948,https://www.fragrantica.com/perfume/Etat-Libre-d-Orange/The-Afternoon-of-a-Faun-15948.html,
 4219,2495-ETLR,I AM TRASH - LES FLEURS DU DECHET by ETAT LIBRE D'ORANGE,ETLR,Etat Libre d Orange,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Etat Libre d Orange,I am Trash Les Fleurs du Dechet,50009,https://www.fragrantica.com/perfume/Etat-Libre-d-Orange/I-am-Trash-Les-Fleurs-du-Dechet-50009.html,
 4218,2496-SERG,LA RELIGIEUSE by SERGE LUTENS,SERG,Serge Lutens,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Serge Lutens,La Religieuse,29636,https://www.fragrantica.com/perfume/Serge-Lutens/La-Religieuse-29636.html,
 4217,2507-SERG,FIVE O CLOCK AU GINGEMBRE by SERGE LUTENS,SERG,Serge Lutens,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Serge Lutens,Five O Clock Au Gingembre,2764,https://www.fragrantica.com/perfume/Serge-Lutens/Five-O-Clock-Au-Gingembre-2764.html,
-4216,2518-MATAH,ESCAPADE GOURMANDE MAISON MATAHA,MATAH,Maison Mataha,NOT_FOUND,,,0,,,,,
+4216,2518-MATAH,ESCAPADE GOURMANDE MAISON MATAHA,MATAH,Maison Mataha,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,maison-mataha,Escapade-gourmande,72607,https://www.fragrantica.com/perfume/Maison-Mataha/Escapade-Gourmande-72607.html,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4215,,Sauvage Eau Forte,,Al Haramain Perfumes,FOUND,EXACT_UNIQUE_NAME,1.0000,1,Dior,Sauvage Eau Forte,95863,https://www.fragrantica.com/perfume/Dior/Sauvage-Eau-Forte-95863.html,
 4214,2513-PAC,MILLION GOLD MAN,PAC,Rabanne,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Rabanne,Million Gold,95641,https://www.fragrantica.com/perfume/Rabanne/Million-Gold-95641.html,
 4213,2509-CRIVEL,OUD MARACUJA - CRIVELLI,CRIVEL,Maison Crivelli,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Maison Crivelli,Oud Maracuja,83842,https://www.fragrantica.com/perfume/Maison-Crivelli/Oud-Maracuja-83842.html,
@@ -413,7 +413,7 @@
 4159,2415-ESC,SEXY GRAFFITY - ESCADA,ESC,b fresh,NOT_FOUND,,,0,,,,,
 4158,2416-HER,UN JARDIN APRES LA MOUSSON - HERMES,HER,Hermes,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Hermes,Un Jardin Apres la Mousson,2736,https://www.fragrantica.com/perfume/Hermes/Un-Jardin-Apres-la-Mousson-2736.html,
 4157,2429-JUL,2429 jul wp,JUL,Juliette Has A Gun,NOT_FOUND,,,0,,,,,
-4156,2430-CELI,2430 celi ν,CELI,Celine,NOT_FOUND,,,0,,,,,
+4156,2430-CELI,2430 celi ν,CELI,Celine,FOUND,CONFIRMED_EXISTING_MAPPING,1.0000,1,Celine,Parade,57918,https://www.fragrantica.com/perfume/Celine/Parade-57918.html,Existing CONFIRMED+FOUND mapping from data/shobi-fragrantica-mapping.csv
 4155,2414-DIP,Ilio,DIP,Diptyque,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Diptyque,Ilio,67808,https://www.fragrantica.com/perfume/Diptyque/Ilio-67808.html,
 4154,2417-ACQ,ARANCIA DI CAPRI,ACQ,Acqua di Parma,AMBIGUOUS,TOKEN_MULTIPLE_CANDIDATES,0.9760,2,,,,,
 4153,2423-ACQ,GINEPRO DI SARDEGNA,ACQ,Acqua di Parma,FOUND,SAFE_TOKEN_SAME_BRAND,0.9760,1,Acqua di Parma,Acqua di Parma Blu Mediterraneo Ginepro di Sardegna,23851,https://www.fragrantica.com/perfume/Acqua-di-Parma/Acqua-di-Parma-Blu-Mediterraneo-Ginepro-di-Sardegna-23851.html,
