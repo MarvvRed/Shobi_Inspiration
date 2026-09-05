@@ -1,0 +1,5 @@
+trigger=2026-09-05T15:30:00+02:00
+mode=calibrate-social-card-season-bars
+sample=24
+rule=longest-season-bar-wins
+tie=do-not-guess
