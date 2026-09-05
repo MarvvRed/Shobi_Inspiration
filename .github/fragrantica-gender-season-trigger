@@ -1,7 +1,7 @@
-trigger=2026-09-05T21:23:00+02:00
+trigger=2026-09-06T00:56:00+02:00
 mode=full
-sample=2286
-season_rule=longest-season-bar-wins
-gender_rule=read-explicit-social-card-title-phrase
+sample=2287
+season_rule=always-longest-season-bar-wins-no-ties
+gender_rule=multi-pass-social-card-title-ocr
 expected_gender=male-female-unisex-only
-reason=run-full-gender-season-extraction-after-clean-24-card-calibration
+reason=assign-all-seasons-and-recover-gender-unresolved
