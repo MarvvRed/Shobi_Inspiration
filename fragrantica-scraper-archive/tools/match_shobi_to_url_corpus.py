@@ -1,6 +1,7 @@
 from pathlib import Path
 import runpy
 
+# Web batch 2 applied 2026-09-05.
 here = Path(__file__).resolve().parent
 runpy.run_path(str(here / "match_shobi_to_url_corpus_v7.py"), run_name="__main__")
 runpy.run_path(str(here / "merge_web_confirmed.py"), run_name="__main__")
