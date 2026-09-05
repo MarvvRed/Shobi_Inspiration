@@ -29,6 +29,7 @@ jobs:
           if [ "${{ github.event.inputs.calibrate || 'true' }}" = "true" ]; then
             python fragrantica-scraper-archive/social-cards/extract_gender_season.py --calibrate
             python fragrantica-scraper-archive/social-cards/extract_gender_season.py --limit 24
+            python fragrantica-scraper-archive/social-cards/detect_season_bar_geometry.py
           else
             python fragrantica-scraper-archive/social-cards/extract_gender_season.py
           fi
@@ -38,6 +39,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f fragrantica-scraper-archive/social-cards/calibration-crops 2>/dev/null || true
           git add fragrantica-scraper-archive/social-cards/gender-season.csv 2>/dev/null || true
+          git add fragrantica-scraper-archive/social-cards/season-bar-diagnostics.csv 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No extraction changes"
             exit 0
