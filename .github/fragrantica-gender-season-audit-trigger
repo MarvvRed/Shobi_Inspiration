@@ -1,3 +1,4 @@
-trigger=2026-09-05T21:06:00+02:00
+trigger=2026-09-05T21:08:00+02:00
 mode=audit-full-extraction
 checks=gender-counts,season-counts,ties,duplicates,manifest-card-count
+reason=retry-after-csv-field-fix
