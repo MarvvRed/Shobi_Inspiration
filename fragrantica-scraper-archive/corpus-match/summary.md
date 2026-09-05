@@ -1,9 +1,9 @@
 # Shobi ↔ Fragrantica URL corpus match
 
-FOUND: **1603**
+FOUND: **1612**
 
-AMBIGUOUS: **168**
+AMBIGUOUS: **180**
 
-NOT_FOUND: **545**
+NOT_FOUND: **524**
 
 MAPPED_NOT_IN_CORPUS: **27**
