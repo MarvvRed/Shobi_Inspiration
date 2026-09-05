@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       calibrate:
-        description: 'Generate calibration crops instead of final dataset'
+        description: 'Generate calibration crops and a 24-card calibration dataset'
         required: false
         default: 'true'
   push:
@@ -24,10 +24,11 @@ jobs:
           python-version: '3.12'
       - name: Install image dependency
         run: pip install pillow
-      - name: Extract season bars / calibration crops
+      - name: Extract season bars / calibration sample
         run: |
           if [ "${{ github.event.inputs.calibrate || 'true' }}" = "true" ]; then
             python fragrantica-scraper-archive/social-cards/extract_gender_season.py --calibrate
+            python fragrantica-scraper-archive/social-cards/extract_gender_season.py --limit 24
           else
             python fragrantica-scraper-archive/social-cards/extract_gender_season.py
           fi
@@ -35,7 +36,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fragrantica-scraper-archive/social-cards/calibration-crops fragrantica-scraper-archive/social-cards/gender-season.csv 2>/dev/null || true
+          git add -f fragrantica-scraper-archive/social-cards/calibration-crops 2>/dev/null || true
+          git add fragrantica-scraper-archive/social-cards/gender-season.csv 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No extraction changes"
             exit 0
