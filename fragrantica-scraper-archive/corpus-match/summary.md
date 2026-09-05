@@ -1,11 +1,11 @@
 # Shobi ↔ Fragrantica resolution
 
-FOUND: **2143**
+FOUND: **2153**
 
-AMBIGUOUS: **58**
+AMBIGUOUS: **52**
 
-NOT_FOUND: **137**
+NOT_FOUND: **133**
 
 MAPPED_NOT_IN_CORPUS: **5**
 
-Web verified: **381**
+Web verified: **391**
