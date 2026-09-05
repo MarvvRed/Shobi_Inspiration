@@ -15,8 +15,9 @@ def clean(value: str | None) -> str:
 
 def main() -> int:
     with MAPPING.open("r", encoding="utf-8-sig", newline="") as f:
-        mapping = list(csv.DictReader(f))
-        fields = list(f.fieldnames or [])
+        reader = csv.DictReader(f)
+        fields = list(reader.fieldnames or [])
+        mapping = list(reader)
 
     with CORPUS_MATCH.open("r", encoding="utf-8-sig", newline="") as f:
         corpus = list(csv.DictReader(f))
