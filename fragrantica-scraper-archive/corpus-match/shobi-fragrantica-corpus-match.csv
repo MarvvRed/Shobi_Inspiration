@@ -1437,13 +1437,13 @@
 1765,936-VAL,DONNA - VALENTINO,VAL,Valentino,FOUND,CONFIRMED_IDENTITY_TOKEN_CORPUS,0.9900,1,Valentino,Valentino Donna,31411,https://www.fragrantica.com/perfume/Valentino/Valentino-Donna-31411.html,Confirmed Shobi original identity matched against archived Fragrantica URL corpus
 1764,345-TMFO,FOUGERE D ARGENT,TMFO,Tom Ford,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Tom Ford,Fougere d Argent,50458,https://www.fragrantica.com/perfume/Tom-Ford/Fougere-d-Argent-50458.html,
 1763,391-ACQ,peonia nobile,ACQ,Acqua di Parma,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Acqua di Parma,Peonia Nobile,40154,https://www.fragrantica.com/perfume/Acqua-di-Parma/Peonia-Nobile-40154.html,
-1762,1188-KAR,bois de vetiver karl lagerfeld,KAR,,NOT_FOUND,,,0,,,,,
+1762,1188-KAR,bois de vetiver karl lagerfeld,KAR,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Karl Lagerfeld,Bois de Vetiver,45857,https://www.fragrantica.com/perfume/Karl-Lagerfeld/Bois-de-Vetiver-45857.html,Current Fragrantica page
 1419,,huboob yas arabic,,Al Haramain Perfumes,NOT_FOUND,,,0,,,,,
 1418,182-XER,Comandante,XER,Xerjoff,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Xerjoff,Comandante,16448,https://www.fragrantica.com/perfume/Xerjoff/Comandante-16448.html,
 1417,183-XER,Don,XER,Xerjoff,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Xerjoff,Don,26709,https://www.fragrantica.com/perfume/Xerjoff/Don-26709.html,
-1416,175-SHA,opulent shaik classic no 33 shaik,SHA,By Shaik,NOT_FOUND,,,0,,,,,
-1415,168-RAS,daarej for women rasasi,RAS,Rasasi,NOT_FOUND,,,0,,,,,
-1414,167-RAS,,RAS,Rasasi,NOT_FOUND,,,0,,,,,
+1416,175-SHA,opulent shaik classic no 33 shaik,SHA,By Shaik,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Shaik,Opulent Shaik Classic No 33,2776,https://www.fragrantica.com/perfume/Shaik/Opulent-Shaik-Classic-No-33-2776.html,Current Fragrantica page
+1415,168-RAS,daarej for women rasasi,RAS,Rasasi,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Rasasi,Daarej pour Femme,19687,https://www.fragrantica.com/perfume/Rasasi/Dareej-19687.html,Current Fragrantica page
+1414,167-RAS,,RAS,Rasasi,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Rasasi,Daarej pour Homme,19688,https://www.fragrantica.com/perfume/Rasasi/Daarej-19688.html,Original established Daarej pour Homme page; not the separate 2026 release
 1413,156-PARF,OAJAN (U) - Parfums de Marly,PARF,Parfums de Marly,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Parfums de Marly,Oajan,21548,https://www.fragrantica.com/perfume/Parfums-de-Marly/Oajan-21548.html,
 1412,149-PARF,CARLISLE (U) - PARFUMS DE MARLY,PARF,Parfums de Marly,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Parfums de Marly,Carlisle,33514,https://www.fragrantica.com/perfume/Parfums-de-Marly/Carlisle-33514.html,
 1411,148-PARF,ATHALIA (W) - PARFUMS DE MARLY,PARF,Parfums de Marly,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Parfums de Marly,Athalia,36539,https://www.fragrantica.com/perfume/Parfums-de-Marly/Athalia-36539.html,
@@ -1475,7 +1475,7 @@
 1251,365-TMFO,PATCHOULI ABSOLU,TMFO,Tom Ford,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Tom Ford,Patchouli Absolu,28009,https://www.fragrantica.com/perfume/Tom-Ford/Patchouli-Absolu-28009.html,
 1250,364-TMFO,OUD WOOD,TMFO,Tom Ford,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Tom Ford,Oud Wood,1826,https://www.fragrantica.com/perfume/Tom-Ford/Oud-Wood-1826.html,
 1249,363-TMFO,OUD MINERALΕ,TMFO,Tom Ford,FOUND,SAFE_FUZZY_SAME_BRAND,0.9565,1,Tom Ford,Oud Minerale,45192,https://www.fragrantica.com/perfume/Tom-Ford/Oud-Minerale-45192.html,
-1247,361-TMFO,OMBRE LEATHER,TMFO,Tom Ford,AMBIGUOUS,TOKEN_MULTIPLE_CANDIDATES,0.9560,4,,,,,
+1247,361-TMFO,OMBRE LEATHER,TMFO,Tom Ford,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Tom Ford,Ombré Leather (2018),50239,https://www.fragrantica.com/perfume/Tom-Ford/Ombre-Leather-2018-50239.html,Current Fragrantica page for Eau de Parfum
 1246,360-TMFO,NOIR POUR FEMME,TMFO,Tom Ford,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Tom Ford,Noir Pour Femme,30957,https://www.fragrantica.com/perfume/Tom-Ford/Noir-Pour-Femme-30957.html,
 1245,359-TMFO,NOIR EXTREME,TMFO,Tom Ford,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Tom Ford,Noir Extreme,29675,https://www.fragrantica.com/perfume/Tom-Ford/Noir-Extreme-29675.html,
 1244,358-TMFO,NOIR DE NOIR,TMFO,Tom Ford,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Tom Ford,Noir de Noir,1822,https://www.fragrantica.com/perfume/Tom-Ford/Noir-de-Noir-1822.html,
@@ -1484,7 +1484,7 @@
 1241,351-TMFO,MANDARINO DI AMALFI,TMFO,Tom Ford,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Tom Ford,Mandarino di Amalfi,25481,https://www.fragrantica.com/perfume/Tom-Ford/Mandarino-di-Amalfi-25481.html,
 1240,349-TMFO,JAPON NOIR,TMFO,Tom Ford,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Tom Ford,Japon Noir,1851,https://www.fragrantica.com/perfume/Tom-Ford/Japon-Noir-1851.html,
 1239,348-TMFO,ITALIAN CYPRESS,TMFO,Tom Ford,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Tom Ford,Italian Cypress,4329,https://www.fragrantica.com/perfume/Tom-Ford/Italian-Cypress-4329.html,
-1238,346-TMFO,FUCKING FABULOUS,TMFO,Tom Ford,NOT_FOUND,,,0,,,,,
+1238,346-TMFO,FUCKING FABULOUS,TMFO,Tom Ford,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Tom Ford,Fucking Fabulous,46513,https://www.fragrantica.com/perfume/Tom-Ford/Fucking-Fabulous-46513.html,2017 Fragrantica page matching Shobi year
 1237,344-TMFO,COSTA AZZURA,TMFO,Tom Ford,AMBIGUOUS,FUZZY_MULTIPLE_CANDIDATES,0.9600,2,,,,,
 1236,343-TMFO,CAFÉ ROSE,TMFO,Tom Ford,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Tom Ford,Cafe Rose,15913,https://www.fragrantica.com/perfume/Tom-Ford/Cafe-Rose-15913.html,
 1235,342-TMFO,BLACK VIOLET,TMFO,Tom Ford,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Tom Ford,Black Violet,1823,https://www.fragrantica.com/perfume/Tom-Ford/Black-Violet-1823.html,
@@ -1493,7 +1493,7 @@
 1232,336-THCO,NARCISSUS NOIR - THE WHITE COMPANY,THCO,,NOT_FOUND,,,0,,,,,
 1231,335-THCO,CASHMERE BLANC - THE WHITE COMPANY,THCO,,NOT_FOUND,,,0,,,,,
 1230,334-SHI,shirley may fragrance dupe,SHI,,NOT_FOUND,,,0,,,,,
-1226,332-RAM,dry wood ramon monegal,RAM,Ramon Monegal,NOT_FOUND,,,0,,,,,
+1226,332-RAM,dry wood ramon monegal,RAM,Ramon Monegal,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Ramon Monegal,Dry Wood,15503,https://www.fragrantica.com/perfume/Ramon-Monegal/Dry-Wood-15503.html,Current Fragrantica page
 1225,331-PG,crystal water water lily pg,PG,,NOT_FOUND,,,0,,,,,
 1224,330-PG,oriental blossom pg,PG,,NOT_FOUND,,,0,,,,,
 1222,327-PECK,mistraal pecksniff eaudeparfum,PECK,All Your Personal Aroma,NOT_FOUND,,,0,,,,,
@@ -1502,7 +1502,7 @@
 1219,324-PARFD,BOIS DE PARADIS - PARFUMS DELRAE,PARFD,Parfums DelRae,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Parfums DelRae,Bois de Paradis,2662,https://www.fragrantica.com/perfume/Parfums-DelRae/Bois-de-Paradis-2662.html,
 1216,321-NAS,black afgano nasomatto,NAS,Nasomatto,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Nasomatto,Black Afgano,6472,https://www.fragrantica.com/perfume/Nasomatto/Black-Afgano-6472.html,
 1214,319-MNT,THE NEW ROSE - MONTALE,MNT,Montale,FOUND,EXACT_PERFUME_BRAND_TEXT,1.0000,1,Montale,The New Rose,40906,https://www.fragrantica.com/perfume/Montale/The-New-Rose-40906.html,
-1213,316-MNT,316 mnt el,MNT,Montale,NOT_FOUND,,,0,,,,,
+1213,316-MNT,316 mnt el,MNT,Montale,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Montale,Aoud Velvet,3786,https://www.fragrantica.com/perfume/Montale/Aoud-Velvet-3786.html,Current Fragrantica page
 1212,315-MNT,AOUD ORANGE - MONTALE,MNT,Montale,FOUND,SAFE_TOKEN_SAME_BRAND,0.9860,1,Montale,Orange Aoud,23365,https://www.fragrantica.com/perfume/Montale/Orange-Aoud-23365.html,
 1210,313-MOL,thai vert molton brown,MOL,,NOT_FOUND,,,0,,,,,
 1209,312-MOL,black pepper molton brown,MOL,,NOT_FOUND,,,0,,,,,
@@ -1513,12 +1513,12 @@
 1203,304-KIE,ORIGINAL MUSK - KIEHL'S,KIE,,NOT_FOUND,,,0,,,,,
 1202,303-JOM,Wood Sage & Sea Salt Jo Malone,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Jo Malone London,Wood Sage Sea Salt,25529,https://www.fragrantica.com/perfume/Jo-Malone-London/Wood-Sage-Sea-Salt-25529.html,
 1201,302-JOM,WISTERIA VIOLET - JO MALONE Clone,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9560,1,Jo Malone London,London Rain Wisteria Violet,22503,https://www.fragrantica.com/perfume/Jo-Malone-London/London-Rain-Wisteria-Violet-22503.html,
-1200,301-JOM,"Wild Fig & Cassis Jo Malone Fragrance green, woody, fresh, fruity",JOM,Jo Malone London,NOT_FOUND,,,0,,,,,
+1200,301-JOM,"Wild Fig & Cassis Jo Malone Fragrance green, woody, fresh, fruity",JOM,Jo Malone London,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Jo Malone London,Wild Fig & Cassis,4579,https://www.fragrantica.com/perfume/Jo-Malone-London/Wild-Fig-Cassis-4579.html,Current Fragrantica page
 1199,300-JOM,WILD BLUEBELL - JO MALONE Type,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9560,1,Jo Malone London,Wild Bluebell,12310,https://www.fragrantica.com/perfume/Jo-Malone-London/Wild-Bluebell-12310.html,
 1198,299-JOM,WHITE LILAC & RHUBARB - JO MALONE Clone,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Jo Malone London,White Lilac Rhubarb,14134,https://www.fragrantica.com/perfume/Jo-Malone-London/White-Lilac-Rhubarb-14134.html,
 1197,298-JOM,WHITE JASMINE & MINT - JO MALONE,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Jo Malone London,White Jasmine Mint,2278,https://www.fragrantica.com/perfume/Jo-Malone-London/White-Jasmine-Mint-2278.html,
 1196,297-JOM,VINTAGE GARDENIA - JO MALONE type is a Floral fragrance for women,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9560,1,Jo Malone London,Vintage Gardenia,2289,https://www.fragrantica.com/perfume/Jo-Malone-London/Vintage-Gardenia-2289.html,
-1195,295-JOM,VETYVER - JO MALONE is a Woody Aromatic,JOM,Jo Malone London,NOT_FOUND,,,0,,,,,
+1195,295-JOM,VETYVER - JO MALONE is a Woody Aromatic,JOM,Jo Malone London,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Jo Malone London,Vetyver,2291,https://www.fragrantica.com/perfume/Jo-Malone-London/Vetyver-2291.html,Current Fragrantica page
 1194,294-JOM,VERBENAS OF PROVENCE - JO MALONE is a Citrus Aromatic fragrance for women,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9760,1,Jo Malone London,Verbenas of Provence,8922,https://www.fragrantica.com/perfume/Jo-Malone-London/Verbenas-of-Provence-8922.html,
 1193,293-JOM,VELVET ROSE OUD - JO MALONE Type is a Oriental Floral,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9760,1,Jo Malone London,Velvet Rose Oud,15286,https://www.fragrantica.com/perfume/Jo-Malone-London/Velvet-Rose-Oud-15286.html,
 1192,292-JOM,VANILLA & ANISE - JO MALONE,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Jo Malone London,Vanilla Anise,6459,https://www.fragrantica.com/perfume/Jo-Malone-London/Vanilla-Anise-6459.html,
@@ -1541,7 +1541,7 @@
 1175,272-JOM,NUTMEG & GINGER - JO MALONE,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Jo Malone London,Nutmeg Ginger,2290,https://www.fragrantica.com/perfume/Jo-Malone-London/Nutmeg-Ginger-2290.html,
 1174,270-JOM,NASTURTIUM & CLOVER - JO MALONE,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Jo Malone London,Nasturtium Clover,35880,https://www.fragrantica.com/perfume/Jo-Malone-London/Nasturtium-Clover-35880.html,
 1173,268-JOM,MYRRH & TONKA - JO MALONE,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Jo Malone London,Myrrh Tonka,42027,https://www.fragrantica.com/perfume/Jo-Malone-London/Myrrh-Tonka-42027.html,
-1172,267-JOM,MIMOSA & CARDAMON - JO MALONE,JOM,Jo Malone London,NOT_FOUND,,,0,,,,,
+1172,267-JOM,MIMOSA & CARDAMON - JO MALONE,JOM,Jo Malone London,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Jo Malone London,Mimosa & Cardamom,31825,https://www.fragrantica.com/perfume/Jo-Malone-London/Mimosa-Cardamom-31825.html,Current Fragrantica page
 1171,266-JOM,MIDNIGHT BLACK TEA - JO MALONE,JOM,Jo Malone London,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Jo Malone London,Midnight Black Tea,36750,https://www.fragrantica.com/perfume/Jo-Malone-London/Midnight-Black-Tea-36750.html,
 1170,264-JOM,LIME BASIL & MANDARIN - JO MALONE,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Jo Malone London,Lime Basil Mandarin,5585,https://www.fragrantica.com/perfume/Jo-Malone-London/Lime-Basil-Mandarin-5585.html,
 1169,263-JOM,JADE LEAF TEA - JO MALONE,JOM,Jo Malone London,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Jo Malone London,Jade Leaf Tea,36751,https://www.fragrantica.com/perfume/Jo-Malone-London/Jade-Leaf-Tea-36751.html,
@@ -1562,7 +1562,7 @@
 1154,247-JOM,Carrot blossom & Fennel - Jo Malone,JOM,Jo Malone London,AMBIGUOUS,TOKEN_MULTIPLE_CANDIDATES,0.9560,2,,,,,
 1153,245-JOM,Blue Agava & Cacao - Jo Malone,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Jo Malone London,Blue Agava Cacao,2280,https://www.fragrantica.com/perfume/Jo-Malone-London/Blue-Agava-Cacao-2280.html,
 1152,244-JOM,Black Vetyver Cafe - Jo Malone,JOM,Jo Malone London,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Jo Malone London,Black Vetyver Cafe,8278,https://www.fragrantica.com/perfume/Jo-Malone-London/Black-Vetyver-Cafe-8278.html,
-1151,243-JOM,Black Cedarwood & Juniper - Jo Malone,JOM,Jo Malone London,NOT_FOUND,,,0,,,,,
+1151,243-JOM,Black Cedarwood & Juniper - Jo Malone,JOM,Jo Malone London,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Jo Malone London,London Rain Black Cedarwood & Juniper,22504,https://www.fragrantica.com/perfume/Jo-Malone/Black-Cedarwood-Juniper-22504.html,Current Fragrantica page
 1150,242-JOM,Blackberry & Bay - Jo Malone,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Jo Malone London,Blackberry Bay,15134,https://www.fragrantica.com/perfume/Jo-Malone-London/Blackberry-Bay-15134.html,
 1149,241-JOM,Basil & Neroli Jo Malone,JOM,Jo Malone London,FOUND,SAFE_TOKEN_SAME_BRAND,0.9440,1,Jo Malone London,Basil Neroli,40419,https://www.fragrantica.com/perfume/Jo-Malone-London/Basil-Neroli-40419.html,
 1148,240-JOM,Amber & Patchouli - Jo Malone,JOM,Jo Malone London,AMBIGUOUS,TOKEN_MULTIPLE_CANDIDATES,0.9440,2,,,,,
@@ -1577,8 +1577,8 @@
 1138,187-ARM,BOIS D'ENCENS,ARM,Giorgio Armani,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Giorgio Armani,Bois d Encens,406,https://www.fragrantica.com/perfume/Giorgio-Armani/Bois-d-Encens-406.html,
 1137,192-ARM,ROUGE MALACHITE,ARM,Giorgio Armani,FOUND,SAFE_TOKEN_SAME_BRAND,0.9560,1,Giorgio Armani,Armani Prive Rouge Malachite,34589,https://www.fragrantica.com/perfume/Giorgio-Armani/Armani-Prive-Rouge-Malachite-34589.html,
 1136,186-ARM,AMBRE SOIE,ARM,Giorgio Armani,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Giorgio Armani,Ambre Soie,405,https://www.fragrantica.com/perfume/Giorgio-Armani/Ambre-Soie-405.html,
-1135,234-ESCE,ESCENTRIC 04,ESCE,,NOT_FOUND,,,0,,,,,
-1134,232-ESCE,ESCENTRIC 01 - ESCENTRIC MOLECULES,ESCE,,NOT_FOUND,,,0,,,,,
+1135,234-ESCE,ESCENTRIC 04,ESCE,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Escentric Molecules,Escentric 04,42995,https://www.fragrantica.com/perfume/Escentric-Molecules/Escentric-04-42995.html,Current Fragrantica page
+1134,232-ESCE,ESCENTRIC 01 - ESCENTRIC MOLECULES,ESCE,,FOUND,WEB_VERIFIED_FRAGRANTICA,1.0000,1,Escentric Molecules,Escentric 01,846,https://www.fragrantica.com/perfume/Escentric-Molecules/Escentric-01-846.html,Current Fragrantica page
 1133,230-DIP,OPOPANAX,DIP,Diptyque,NOT_FOUND,,,0,,,,,
 1132,229-DIP,Philosykos Eau de Parfum,DIP,Diptyque,FOUND,EXACT_BRAND_CLEAN_NAME,1.0000,1,Diptyque,Philosykos Eau de Parfum,3865,https://www.fragrantica.com/perfume/Diptyque/Philosykos-Eau-de-Parfum-3865.html,
 1131,228-DIP,FEUILLE DE LAVANDE,DIP,Diptyque,NOT_FOUND,,,0,,,,,
