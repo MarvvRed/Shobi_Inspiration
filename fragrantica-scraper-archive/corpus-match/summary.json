@@ -15,33 +15,37 @@
   "safe_code_suffix_brand_mappings": 183,
   "catalog_rows_with_inferred_brand": 2056,
   "status_counts": {
-    "FOUND": 1640,
-    "MAPPED_NOT_IN_CORPUS": 7,
-    "NOT_FOUND": 518,
-    "AMBIGUOUS": 178
+    "FOUND": 1760,
+    "MAPPED_NOT_IN_CORPUS": 6,
+    "NOT_FOUND": 439,
+    "AMBIGUOUS": 138
   },
   "match_type_counts": {
     "CONFIRMED_ID_IN_CORPUS": 128,
     "CONFIRMED_EXISTING_MAPPING": 28,
-    "CONFIRMED_MAPPING_ONLY": 7,
+    "CONFIRMED_MAPPING_ONLY": 6,
+    "CONFIRMED_IDENTITY_EXACT_CORPUS": 110,
     "EXACT_PERFUME_BRAND_TEXT": 470,
-    "NONE": 518,
-    "EXACT_NAME_MULTIPLE_CANDIDATES": 87,
+    "NONE": 439,
+    "EXACT_NAME_MULTIPLE_CANDIDATES": 60,
     "EXACT_UNIQUE_NAME": 58,
     "EXACT_BRAND_CLEAN_NAME": 721,
     "SAFE_TOKEN_SAME_BRAND": 189,
-    "TOKEN_MULTIPLE_CANDIDATES": 43,
+    "TOKEN_MULTIPLE_CANDIDATES": 36,
+    "CONFIRMED_IDENTITY_CONCENTRATION_CORPUS": 3,
     "SAFE_FUZZY_SAME_BRAND": 31,
     "SAFE_CONCENTRATION_EQUIVALENT": 15,
     "FUZZY_MULTIPLE_CANDIDATES": 6,
     "EXACT_COMBINED_MULTIPLE_IDS": 20,
-    "EXACT_BRAND_NAME_MULTIPLE_IDS": 18,
+    "EXACT_BRAND_NAME_MULTIPLE_IDS": 12,
+    "CONFIRMED_IDENTITY_SAFE_FUZZY_CORPUS": 3,
+    "CONFIRMED_IDENTITY_TOKEN_CORPUS": 4,
     "CONCENTRATION_MULTIPLE_IDS": 4
   },
-  "found_total": 1640,
-  "ambiguous_total": 178,
-  "not_found_total": 518,
-  "mapped_not_in_corpus_total": 7,
+  "found_total": 1760,
+  "ambiguous_total": 138,
+  "not_found_total": 439,
+  "mapped_not_in_corpus_total": 6,
   "invalid_url_examples": [
     {
       "line": 5338,
@@ -55,5 +59,14 @@
     "MAPPED_NOT_IN_CORPUS": 20,
     "NOT_FOUND": 6,
     "AMBIGUOUS": 2
-  }
+  },
+  "confirmed_identity_unresolved_before_v7": 632,
+  "rescued_confirmed_identities_from_corpus_v7": 120,
+  "v7_rescue_methods": {
+    "CONFIRMED_IDENTITY_EXACT_CORPUS": 110,
+    "CONFIRMED_IDENTITY_CONCENTRATION_CORPUS": 3,
+    "CONFIRMED_IDENTITY_SAFE_FUZZY_CORPUS": 3,
+    "CONFIRMED_IDENTITY_TOKEN_CORPUS": 4
+  },
+  "resolved_mapping_brand_aliases": 180
 }
