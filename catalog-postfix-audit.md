@@ -1,13 +1,13 @@
 # Post-fix catalog audit
 
-- Rows: **2369**
+- Rows: **2364**
 - Unique non-empty codes: **2362**
 - Duplicate code groups: **0**
 - Duplicate Prestashop ID groups: **0**
 - Duplicate Shobi URL groups: **0**
 - Duplicate Fragrantica ID groups: **0**
 - Same normalized brand+name groups: **10**
-- Empty-code rows: **7**
+- Empty-code rows: **2**
 - Code-vs-URL conflicts: **0**
 
 ## Key codes
@@ -26,11 +26,6 @@
 
 ## Empty-code rows
 - Ajmal — Danat Al Duniya Eau de Parfum | pid=2688 | https://leparfum.com.gr/en/arabian-perfumes/danat-al-duniya-ajmal-perfume-type
-- Marc-Antoine Barrois — B683 Eau de Parfum | pid=3485 | https://leparfum.com.gr/en/niche-perfumes/2106-marc-ν
-- Anfasic Dokhoon — Sukar Eau de Parfum | pid=3645 | https://leparfum.com.gr/en/arabian-perfumes/sukar-anfasic-dokhoon-arabic-perfrume
-- Al Haramain — Sultan Concentrated Perfume Oil | pid=2911 | https://leparfum.com.gr/en/niche-perfumes/sultan-al-haramain
-- Al Haramain — Wardia / Twin Flower | pid=2334 | https://leparfum.com.gr/en/niche-perfumes/wardia-al-haramain-fragrance
-- Al Haramain — Mukhallath Al Emirates Perfume Oil | pid=2271 | https://leparfum.com.gr/en/niche-perfumes/mukhallat-al-emirates-al-haramain-original-perfume
 - Al Haramain — Red African Perfume Oil | pid=2111 | https://leparfum.com.gr/en/niche-perfumes/red-african-al-haramain-perfumes-original
 
 ## Code-vs-URL conflicts
