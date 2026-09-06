@@ -1,0 +1,108 @@
+# Mega local residual evidence
+
+- Residual rows: **263**
+- Local evidence files scanned: **6**
+- Candidate ID records: **1580**
+- Candidates supported by >=2 independent local files: **99**
+
+## Multi-source candidates
+
+- `1034-BLG` — AQUA - BVLGARI -> ID 2094 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1041-BLG` — POUR HOMME BLG -> ID 143 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1042-CAC` — POUR HOMME -> ID 2036 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1063-CER` — pour Homme Eau de Toilette (Eau de Toilette) -> ID 1441 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1080-DRC` — HOMME -> ID 230 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1121-GFE` — FERRE MAN -> ID 52617 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1133-ARM` — BLACK CODE -> ID 412 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1172-ISS` — EAU D'ISSEY HOMME - ISSEY MIYAKE -> ID 720 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1205-LOL` — Au Masculin -> ID 110032 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1224-APO` — SCULPTURE -> ID 53636 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1245-PRA` — PRADA AMBER -> ID 1044 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1251-ROM` — ROYAL BLUE -> ID 41901 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `130-LEL` — SANTAL 26 - LE LABO -> ID 12201 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `133-MICA` — YLANG IN GOLD - M -> ID 46469 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1629-AL HAR` — MUSK MALIKI -> ID 48224 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1641-KHAL` — Aloha Parfum -> ID 39996 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `166-AZ` — Sequoia Wood Eau de Parfum -> ID 66174 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1701-TOSC` — TOSCA -> ID 32191 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1763-JILS` — SUN -> ID 17620 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1874-LTN` — CALIFORNIA Citrus fragrance for women and men -> ID 60388 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1929-BLG` — Le-gemme-tygar-eau-de- -> ID 120377 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1929-BLG` — Le-gemme-tygar-eau-de- -> ID 41222 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1955-LAP` — CELLULAR ENERGIZING -> ID 1386 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1977-SHIS` — Ginza (2021) -> ID 97784 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `1998-LTN` — Citrus fragrance for women and men -> ID 53947 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `2016-PARELM` — Elixir d'Amour -> ID 35222 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `2028-ZARK` — Youth -> ID 92098 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `2036-GIS` — Ambassador Men Eau de Parfum -> ID 86758 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `2185-DRC` — Eau Sauvage Extrme Intense -> ID 72771 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `225-DIP` — EL EAU DES SENS -> ID 35678 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `228-DIP` — FEUILLE DE LAVANDE -> ID 24917 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `2311-YVRO` — PLAIN SOLEIL - YVES ROCHER -> ID 57698 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `233-ESCE` — Molecule 02 -> ID 75616 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `235-HOLL` — SOCAL -> ID 70794 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `236-IND` — ZUM FRANKINCENSE & MYRRH -> ID 72255 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `2418-ACQ` — VANIGLIA SIGNATURE -> ID 56003 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `254-JOM` — GARDENIA - JO MALONE -> ID 2289 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `257-JOM` — GREEN ORANGE & CORIANDER - JO MALONE -> ID 59428 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `2584-GIV` — Eau de -> ID 1966 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `2609-TMFO` — Opaline Hyacinth -> ID 15916 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `261-JOM` — INCENSE & EMBERS - JO MALONE -> ID 29737 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `2692-SOL` — Cheirosa-87-rio-radiance-tan-lines -> ID 76319 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `283-JOM` — English Fields  Poppy  Barley -> ID 48316 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `286-JOM` — SHARDS OF CEDAR & RED THYME - JO MALONE -> ID 53541 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `289-JOM` — SWEET ALMON & MACARRON - JO MALONE -> ID 11490 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `312-MOL` — black pepper-molΞυλώδες Πικάντικο -> ID 114140 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `331-PG` — CRYSTAL WATER & WATER LILY -> ID 16577 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `334-SHI` — SHIRLEY MAY -> ID 126882 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `336-THCO` — NARCISSUS NOIR - THE WHITE COMPANY -> ID 125900 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `344-TMFO` — COSTA AZZURA -> ID 25482 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `379-YAN` — CLEAN COTTON - YANKEE CANDLES -> ID 3024 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `380-YAN` — FALL FESTIVAL - YANKEE CANDLES -> ID 74094 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `381-YAN` — FRESH CUT ROSES - YANKEE CANDLES -> ID 95806 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `383-YAN` — WEDDING DAY - YANKEE -> ID 5056 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `410-BOD` — BLACK MUSK -> ID 102041 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `411-BOD` — WHITE MUSK -> ID 3770 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `424-BRB` — BURBERRY CLASSIC -> ID 818 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `503-CHA` — No 5 EAU PREMIER -> ID 1360 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `504-CHA` — Five L'EAU -> ID 38543 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `506-CHA` — COCON MADEM -> ID 611 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `523-DRC` — ISSIMO -> ID 224 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `527-DRC` — La Collection Privee Grand Bal -> ID 14984 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `577-DON` — CASHMERE MIST - DKNY -> ID 496 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `621-EST` — BRONZE GODDESS EAU DE PARFUM (SUMMER LIMITED EDITION) -> ID 43639 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `695-GUE` — Dare -> ID 7202 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `696-GLA` — FIDJI -> ID 26877 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `717-ISS` — CLASSIC - ISSEY MIYAKE -> ID 720 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `736-JUI` — Couture Couture -> ID 55325 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `737-JUI` — Malibu -> ID 134829 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `738-JUI` — VIVA LA JUICY -> ID 42507 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `743-JUS` — Girlfriend -> ID 132631 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `744-JUS` — The Key -> ID 28654 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `771-LAP` — Silver Rain -> ID 126381 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `772-LAD` — Fame -> ID 83498 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `800-LANV` — Me -> ID 112304 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `801-LANV` — Marry Me -> ID 96098 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `805-LOL` — L DE LOLITA LEMPICKA -> ID 94766 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `807-LOL` — LOLITA - LOLITA LEMPICKA -> ID 94766 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `808-LOL` — Sweet -> ID 16570 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `816-MAX` — MAX MARA -> ID 55558 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `818-MIC` — Michael Kors Coral -> ID 68626 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `829-MNTB` — FEMME - MONT BLANC -> ID 833 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `843-NRO` — FOR HER PINK EAU DE TOILETTE - RODRIGUEZ -> ID 72604 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `857-ONE` — You  I -> ID 52386 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `871-PIER` — IVOIRE - PIERRE BALMAIN -> ID 15557 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `871-PIER` — IVOIRE - PIERRE BALMAIN -> ID 3815 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `894-RCAV` — Paradiso -> ID 74932 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `895-RCAV` — SERPENTINE - CAVALLI -> ID 95364 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `900-ROG` — FLEUR DE FIGUIER -> ID 23550 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `905-SFER` — AMO - S.FERRAGAMO -> ID 33356 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `908-SFER` — SIGNORINA MISTERIOSA - FERRAGAMO -> ID 33910 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `910-SARJ` — LOVELY -> ID 26572 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `912-SHIS` — ZEN -> ID 31476 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `913-SIS` — Eau du Soir -> ID 103596 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `914-SIS` — Eau Tropicale -> ID 77574 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `916-SOF` — Love -> ID 40317 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `923-TMU` — notes AURA -> ID 45639 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `927-TOUZ` — Rosa -> ID 83676 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
+- `942-VERW` — Princess -> ID 97503 — sources 2 — fragrantica-v2-local-id-reconciliation.csv | fragrantica-v2-local-url-match.csv
