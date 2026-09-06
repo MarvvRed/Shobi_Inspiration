@@ -1,13 +1,13 @@
 # Post-fix catalog audit
 
-- Rows: **2370**
+- Rows: **2369**
 - Unique non-empty codes: **2368**
 - Duplicate code groups: **0**
 - Duplicate Prestashop ID groups: **0**
 - Duplicate Shobi URL groups: **0**
 - Duplicate Fragrantica ID groups: **0**
 - Same normalized brand+name groups: **11**
-- Empty-code rows: **2**
+- Empty-code rows: **1**
 - Code-vs-URL conflicts: **0**
 
 ## Key codes
@@ -26,7 +26,6 @@
 
 ## Empty-code rows
 - Ajmal — Danat Al Duniya Eau de Parfum | pid=2688 | https://leparfum.com.gr/en/arabian-perfumes/danat-al-duniya-ajmal-perfume-type
-- Al Haramain — Red African Perfume Oil | pid=2111 | https://leparfum.com.gr/en/niche-perfumes/red-african-al-haramain-perfumes-original
 
 ## Code-vs-URL conflicts
 
