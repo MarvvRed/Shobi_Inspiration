@@ -36,6 +36,8 @@ def brand_sim(h,c):
     if h==b:return 1
     if min(len(h),len(b))>=4 and (h in b or b in h):return .92
     return sim(h,b)*.75
+def status_of(p): return str(p.get('fragranticaStatus') or p.get('fragrantica_status') or p.get('verification_status') or p.get('status') or '')
+def fid_of(p): return str(p.get('fragranticaId') or p.get('fragrantica_id') or '').strip()
 
 def name_metrics(q,c):
     qn=norm(q); cn=c['nn']; qt=set(toks(q)); ct=c['nt']
@@ -107,14 +109,14 @@ def infer_tail_brand(tail):
 perf=list(walk(json.loads(DB.read_text(encoding='utf-8-sig'))))
 priors=defaultdict(Counter)
 for p in perf:
-    if not str(p.get('fragranticaStatus') or '').startswith('VERIFIED_'):continue
-    c=byid.get(str(p.get('fragranticaId') or '').strip()); s=suffix(p.get('code'))
+    if not status_of(p).startswith('VERIFIED_'):continue
+    c=byid.get(fid_of(p)); s=suffix(p.get('code'))
     if c and s:priors[s][c['brand']]+=1
 brand_by_suffix={s:c.most_common(1)[0][0] for s,c in priors.items() if c.most_common(1)[0][1]/sum(c.values())>=.6}
 
 rows=[]
 for p in perf:
-    if str(p.get('fragranticaStatus') or '').startswith('VERIFIED_'):continue
+    if status_of(p).startswith('VERIFIED_'):continue
     code=str(p.get('code') or '').strip() or '[no-code]'; raw_name=str(p.get('inspiredBy') or p.get('perfume') or '').strip(); qname,tail=split_name(raw_name)
     explicit=str(p.get('brand') or '').strip(); prior=brand_by_suffix.get(suffix(code),''); code_hint=infer_code_brand(code) if not explicit and not prior else ''; tail_hint=infer_tail_brand(tail) if not explicit and not prior and not code_hint else ''
     hint=explicit or prior or code_hint or tail_hint
