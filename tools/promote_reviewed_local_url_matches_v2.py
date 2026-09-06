@@ -26,6 +26,20 @@ APPROVED={
     '2018-ARM':('75126','Giorgio Armani','Armani Code Parfum','verified Armani suffix; Shobi CODE PARFUM maps directly to the same-brand local Armani Code Parfum candidate'),
     '1081-DRC':('22860','Dior','Dior Homme Eau for Men','same-brand local candidate; Shobi HOMME EAU directly distinguishes Dior Homme Eau from Parfum, Cologne and base Homme variants'),
     '1110-DSQ':('18592','DSQUARED2','Potion Royal Black','verified DSQUARED2 suffix; Shobi BLACK POTION preserves the two distinctive identity words of the same-brand Potion Royal Black candidate'),
+    '503-CHA':('1360','Chanel','Chanel N05 Eau Premiere','3 local sources; same Chanel brand; No 5 EAU PREMIER is a clear spelling/truncation of Eau Premiere'),
+    '506-CHA':('611','Chanel','Coco Mademoiselle','3 local sources; same Chanel brand; COCON MADEM is an unambiguous truncated/typo label'),
+    '2418-ACQ':('56003','Acqua di Parma','Vaniglia Eau de Parfum','3 local sources; same brand; distinctive VANIGLIA identity, Signature is collection wording'),
+    '283-JOM':('48316','Jo Malone London','Poppy Barley','3 local sources; same brand; Shobi explicitly contains Poppy Barley with collection wording'),
+    '424-BRB':('818','Burberry','Burberry Women','3 local sources; same brand; BURBERRY CLASSIC is the historical/common label for the women fragrance'),
+    '1041-BLG':('143','Bvlgari','Bvlgari Pour Homme','3 local sources; same brand; POUR HOMME BLG is a direct abbreviated Bvlgari Pour Homme label'),
+    '527-DRC':('14984','Dior','Dior Grand Bal','3 local sources; same brand; distinctive Grand Bal identity preserved'),
+    '1133-ARM':('412','Giorgio Armani','Armani Code','3 local sources; same brand; BLACK CODE is the former/original Armani Code naming'),
+    '2584-GIV':('1966','Givenchy','Eau de Givenchy','3 local sources; same brand; Shobi Eau de directly maps to Eau de Givenchy'),
+    '504-CHA':('38543','Chanel','Chanel No 5 L Eau','3 local sources; same brand; Five L EAU is a normalized/truncated No 5 L Eau label'),
+    '1929-BLG':('41222','Bvlgari','Tygar','3 local sources; same brand; Le Gemme Tygar target maps to base Tygar, not Extrait'),
+    '1063-CER':('1441','Cerruti','Cerruti Pour Homme','3 local sources; same brand; Shobi pour Homme EDT maps directly to Cerruti Pour Homme'),
+    '829-MNTB':('833','Montblanc','Femme de Montblanc','3 local sources; same brand; FEMME - MONT BLANC is direct reordered naming'),
+    '523-DRC':('224','Dior','Diorissimo','3 local sources; same Dior brand; ISSIMO is a clear truncation of Diorissimo'),
 }
 
 # Name-keyed approval is used only for a genuinely code-less catalog row.
