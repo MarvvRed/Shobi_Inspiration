@@ -25,23 +25,20 @@ for e in mega:
  m=match[c]; fid=e.get('candidate_id','').strip(); brand_hint=norm(e.get('brand_hint') or m.get('inferred_brand') or m.get('shobi_brand'))
  found=None
  for i in range(1,6):
-  if (m.get(f'cand{i}_id') or '').strip()==fid:
-   found=i;break
+  if (m.get(f'cand{i}_id') or '').strip()==fid:found=i;break
  if not found:continue
  cb=norm(m.get(f'cand{found}_brand')); cn=norm(m.get(f'cand{found}_name'))
  try:ns=float(m.get(f'cand{found}_name_score') or 0);bs=float(m.get(f'cand{found}_brand_score') or 0);rc=float(m.get(f'cand{found}_recall') or 0);pr=float(m.get(f'cand{found}_precision') or 0)
  except:continue
  brand_ok=bool(brand_hint and (brand_hint==cb or brand_hint in cb or cb in brand_hint))
- # Strict multi-source rule: 3+ source agreement, learned/explicit brand agrees, and name identity is strong.
  safe=brand_ok and ns>=0.78 and rc>=0.66 and pr>=0.50
- # Exact-name records can pass with slightly lower token recall if sequence/name score is essentially exact.
  if brand_ok and ns>=0.94:safe=True
- # Avoid generic one-token names unless essentially exact and brand score is perfect.
  qtokens=norm(m.get('match_name') or m.get('shobi_name')).split()
  if len(qtokens)<=1 and not (ns>=0.97 and bs>=0.90):safe=False
  if safe:
-  url=m.get(f'cand{found}_url','').strip(); selected[c]={'id':fid,'url':url,'brand':m.get(f'cand{found}_brand',''),'name':m.get(f'cand{found}_name',''),'sources':src,'name_score':ns,'brand_score':bs,'rank':found}
- else:blocked.append((c,fid,src,brand_ok,ns,rc,pr))
+  selected[c]={'id':fid,'url':m.get(f'cand{found}_url','').strip(),'brand':m.get(f'cand{found}_brand',''),'name':m.get(f'cand{found}_name',''),'sources':src,'name_score':ns,'brand_score':bs,'rank':found}
+ else:
+  blocked.append({'code':c,'shobi':m.get('shobi_name',''),'id':fid,'sources':src,'brand_hint':brand_hint,'candidate_brand':m.get(f'cand{found}_brand',''),'candidate_name':m.get(f'cand{found}_name',''),'brand_ok':brand_ok,'name_score':ns,'recall':rc,'precision':pr,'rank':found})
 changed={}
 for p in DBS:
  items,wrap=shape(p);n=0
@@ -52,4 +49,6 @@ for p in DBS:
  p.write_text(json.dumps(wrap(items),ensure_ascii=False,indent=2)+'\n',encoding='utf-8');changed[p.name]=n
 lines=['# Multi-source local residual promotion','',f'- Residual queue: **{len(match)}**',f'- Safe multi-source mappings: **{len(selected)}**',f'- Blocked multi-source candidates: **{len(blocked)}**']+[f'- {k}: **{v}** promoted' for k,v in changed.items()]+['','## Promoted mappings','']
 for c,s in sorted(selected.items()):lines.append(f"- `{c}` -> {s['brand']} / {s['name']} — ID {s['id']} — sources {s['sources']} — matcher rank {s['rank']} — name {s['name_score']:.4f} — brand {s['brand_score']:.4f}")
+lines+=['','## Blocked candidates','']
+for b in sorted(blocked,key=lambda x:(-x['sources'],-x['name_score'],x['code'])):lines.append(f"- `{b['code']}` — {b['shobi']} -> {b['candidate_brand']} / {b['candidate_name']} — ID {b['id']} — src {b['sources']} — rank {b['rank']} — brand_ok {b['brand_ok']} — name {b['name_score']:.4f} — recall {b['recall']:.4f} — precision {b['precision']:.4f}")
 OUT.write_text('\n'.join(lines)+'\n',encoding='utf-8');print('residual',len(match),'safe',len(selected),'blocked',len(blocked),'changed',changed)
