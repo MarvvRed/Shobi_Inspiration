@@ -1,0 +1,220 @@
+# Perfume-only catalog audit
+
+- Rows: **2370**
+- Explicit non-perfume keyword candidates: **10**
+- Explicit non-perfume Shobi URL-category rows: **0**
+- Recognized perfume-category URL rows: **2173**
+- Other/legacy/no-category URL rows requiring source-based interpretation: **197**
+
+## Explicit non-perfume URL-category rows
+
+## Keyword candidates (manual review; product pages may offer home/body variants of a perfume)
+- 2184-KIL | Kilian |  | hits=[('home', 'incense')] | https://leparfum.com.gr/en/niche-perfumes/2184-kil-ν
+- 1510-KIL | Kilian |  | hits=[('home', 'bamboo')] | https://leparfum.com.gr/en/elegants-fragrances/1510-kil-wp
+- 261-JOM | Jo Malone |  | hits=[('home', 'incense')] | https://leparfum.com.gr/en/elegants-fragrances/261-jom-el
+- 260-JOM | Jo Malone |  | hits=[('home', 'incense')] | https://leparfum.com.gr/en/elegants-fragrances/260-jom-el
+- 674-GUC | Gucci |  | hits=[('home', 'bamboo')] | 
+- 382-YAN | Yankee Candle |  | hits=[('home', 'candle')] | https://leparfum.com.gr/en/elegants-fragrances/pomegranate-cider-yankee-candles-clones
+- 381-YAN | Yankee Candle |  | hits=[('home', 'candle')] | https://leparfum.com.gr/en/elegants-fragrances/fresh-cut-roses-yankee-candles-dupe
+- 380-YAN | Yankee Candle |  | hits=[('home', 'candle')] | https://leparfum.com.gr/en/elegants-fragrances/fall-festival-yankee-candles-smells
+- 379-YAN | Yankee Candle |  | hits=[('home', 'candle')] | https://leparfum.com.gr/en/elegants-fragrances/clean-cotton-yankee-candles-fragrance
+- 236-IND | Indigo Wild |  | hits=[('home', 'incense')] | 
+
+## Unknown/legacy URL forms
+- 2438-KYLJE | Kylie Jenner |  | 
+- 1182-JIM | Jimmy Choo |  | 
+- 720-GUL | Jean Paul Gaultier |  | 
+- 153-PARF | Parfums de Marly |  | 
+- 1950-SWISA | Swiss Arabian |  | 
+- 2172-SWISA | Swiss Arabian |  | 
+- 1094-DOL | Dolce & Gabbana |  | https://leparfum.com.gr/en/summer-fragrances/1094-dol-mp
+- 2331-DOL | Dolce & Gabbana |  | 
+- 1869-DOL | Dolce & Gabbana |  | 
+- 553-DOL | Dolce & Gabbana |  | 
+- 362-TMFO | Tom Ford |  | 
+- 1020-AZZ | Azzaro |  | 
+- 1156-HER | Hermes |  | 
+- 1682-HER | Hermes |  | 
+- 703-HER | Hermes |  | 
+- 709-HER | Hermes |  | 
+- 1636-KIL | Kilian |  | 
+- 1149-GUR | Guerlain |  | 
+- 686-GUR | Guerlain |  | 
+- 687-GUR | Guerlain |  | 
+- 688-GUR | Guerlain |  | 
+- 692-GUR | Guerlain |  | 
+- 310-MIL | Miller Harris |  | 
+- 674-GUC | Gucci |  | 
+- 1649-GIV | Givenchy |  | 
+- 2256-GIV | Givenchy |  | 
+- 1141-GIV | Givenchy |  | 
+- 666-GIV | Givenchy |  | 
+- 667-GIV | Givenchy |  | 
+- 668-GIV | Givenchy |  | 
+- 670-GIV | Givenchy |  | 
+- 671-GIV | Givenchy |  | 
+- 1684-GIV | Givenchy |  | 
+- 399-ARA | Aramis |  | 
+- 2439-ZEG | Ermenegildo Zegna |  | 
+- 1244-PRA | Prada |  | 
+- 876-PRA | Prada |  | 
+- 879-PRA | Prada |  | 
+- 877-PRA | Prada |  | 
+- 2190-ROJ | Roja Parfums |  | 
+- 1808-LTN | Louis Vuitton |  | 
+- 2193-LTN | Louis Vuitton |  | 
+- 1767-LTN | Louis Vuitton |  | 
+- 202-CLIV | Clive Christian |  | 
+- 1275-VER | Versace |  | 
+- 943-VER | Versace |  | 
+- 944-VER | Versace |  | 
+- 945-VER | Versace |  | 
+- 2104-CHA | Chanel |  | 
+- 1065-CHA | Chanel |  | 
+- 494-CHA | Chanel |  | 
+- 495-CHA | Chanel |  | 
+- 497-CHA | Chanel |  | 
+- 441-BLG | Bvlgari |  | 
+- 2301-DIP | Diptyque |  | 
+- 1702-KUR | Maison Francis Kurkdjian |  | https://leparfum.com.gr/el/niche-%CE%B1%CF%81%CF%8E%CE%BC%CE%B1%CF%84%CE%B1/1702-kur-oud
+- 139-KUR | Maison Francis Kurkdjian |  | 
+- 140-KUR | Maison Francis Kurkdjian |  | 
+- 1486-TRU | Trussardi |  | 
+- 751-KEN | Kenzo |  | 
+- 756-KEN | Kenzo |  | 
+- 1246-RAL | Ralph Lauren |  | 
+- 1247-RAL | Ralph Lauren |  | 
+- 1160-HUG | Hugo Boss |  | 
+- 1161-HUG | Hugo Boss |  | 
+- -HUG | Hugo Boss |  | 
+- 420-BRB | Burberry |  | 
+- 421-BRB | Burberry |  | 
+- 425-BRB | Burberry |  | 
+- 1029-BRB | Burberry |  | 
+- 1494-BOD | The Body Shop |  | 
+- 410-BOD | The Body Shop |  | 
+- 411-BOD | The Body Shop |  | 
+- 2106-MARC | Marc-Antoine Barrois |  | 
+- 1220-MOS | Moschino |  | 
+- 828-MIY | Miu Miu |  | 
+- 2173-ANFAD | Anfasic Dokhoon |  | 
+- 621-EST | Estee Lauder |  | 
+- 624-EST | Estee Lauder |  | 
+- 912-SHIS | Shiseido |  | 
+- 1885-WID | Widian |  | 
+- 456-CAC | Cacharel |  | 
+- 462-CAC | Cacharel |  | 
+- 1108-DIE | Diesel |  | 
+- 1783-AL HAR | Al Haramain |  | 
+- 2220-AL HAR | Al Haramain |  | 
+- 1526-AL HAR | Al Haramain |  | 
+- 185-AL HAR | Al Haramain |  | 
+- 1628-AL HAR | Al Haramain |  | 
+- 1629-AL HAR | Al Haramain |  | 
+- 1196-LAC | Lacoste |  | 
+- 1781-LAC | Lacoste |  | 
+- 719-ISS | Issey Miyake |  | 
+- 466-CAL | Calvin Klein |  | 
+- 1044-CAL | Calvin Klein |  | 
+- 469-CAL | Calvin Klein |  | 
+- 1046-CAL | Calvin Klein |  | 
+- 1491-CAL | Calvin Klein |  | 
+- 921-TMU | Mugler |  | 
+- 867-PAL | Paloma Picasso |  | 
+- 776-LAL | Lalique |  | 
+- 738-JUI | Juicy Couture |  | 
+- 850-NIN | Nina Ricci |  | 
+- 778-LAN | Lancôme |  | 
+- 787-LAN | Lancôme |  | 
+- 1955-LAP | La Prairie |  | 
+- 1483-DSQ | Dsquared² |  | 
+- 520-CHO | Chopard |  | 
+- 487-CRT | Cartier |  | 
+- 1059-CRT | Cartier |  | 
+- 489-CRT | Cartier |  | 
+- 1060-CRT | Cartier |  | 
+- 490-CRT | Cartier |  | 
+- 491-CRT | Cartier |  | 
+- 1061-CRT | Cartier |  | 
+- 1829-BOB | Bobbi Brown |  | 
+- 1001-ANT | Antonio Banderas |  | 
+- 696-GLA | Guy Laroche |  | 
+- 571-DAV | Davidoff |  | 
+- 1102-DAV | Davidoff |  | 
+- 1489-DAV | Davidoff |  | 
+- 493-CER | Cerruti |  | 
+- 1000-ADO | Adolfo Dominguez |  | 
+- 1523-AFN | Afnan Perfumes |  | 
+- 2250-ARBAS | Armand Basi |  | 
+- 1123-ARM | Armani |  | 
+- 1126-ARM | Armani |  | 
+- 1136-ARM | Armani |  | 
+- 2189-ARM | Armani |  | 
+- 653-ARM | Armani |  | 
+- 408-BAT | Bath & Body Works |  | 
+- 514-CHL | Chloé |  | 
+- 515-CHL | Chloé |  | 
+- 521-DRC | Christian Dior |  | 
+- 524-DRC | Christian Dior |  | 
+- 525-DRC | Christian Dior |  | 
+- 1075-DRC | Christian Dior |  | 
+- 1076-DRC | Christian Dior |  | 
+- 528-DRC | Christian Dior |  | 
+- 1081-DRC | Christian Dior |  | 
+- 533-DRC | Christian Dior |  | 
+- 541-DRC | Christian Dior |  | 
+- 1085-DRC | Christian Dior |  | 
+- 1644-DRC | Christian Dior |  | 
+- 544-DRC | Christian Dior |  | 
+- 2313-DRC | Christian Dior |  | 
+- 1659-CHRA | Christina Aguilera |  | 
+- 200-CIR | Cire Trudon |  | 
+- 2483-CLEA | Clean |  | 
+- 2427-CLEA | Clean |  | 
+- 2482-CLEA | Clean |  | 
+- 1090-COS | CoSTUME NATIONAL |  | 
+- 1091-COS | CoSTUME NATIONAL |  | 
+- 1836-COT | Coty |  | 
+- 1118-FAB | Faberge |  | 
+- 1121-GFE | Gianfranco Ferre |  | 
+- 673-GRS | Gres |  | 
+- 235-HOLL | Hollister |  | 
+- 236-IND | Indigo Wild |  | 
+- 728-JES | Jesus Del Pozo |  | 
+- 1763-JILS | Jil Sander |  | 
+- 304-KIE | Kiehls |  | 
+- 2044-LORV | Lorenzo Villoresi |  | 
+- 2351-LOU | Louboutin |  | 
+- 1224-APO | Nikos |  | 
+- 331-PG | P&G |  | 
+- 330-PG | P&G |  | 
+- 1226-PAC | Paco Rabanne |  | 
+- 858-PAC | Paco Rabanne |  | 
+- 860-PAC | Paco Rabanne |  | 
+- 863-PAC | Paco Rabanne |  | 
+- 900-ROG | Roger & Gallet |  | 
+- 901-ROG | Roger & Gallet |  | 
+- 1251-ROM | Romane |  | 
+- 387- | Rémy Latour |  | 
+- 910-SARJ | Sarah Jessica Parker |  | 
+- 334-SHI | Shirley May |  | 
+- 1259-SHU | Shulton Company |  | 
+- 2552-SOR | Siordia |  | 
+- 1986-SOO | SoOud |  | 
+- 1534-SWI | Swiss Army |  | 
+- 1753-TEDL | Ted Lapidus |  | 
+- 926-TOM | Tommy Hilfiger |  | 
+- 1701-TOSC | Tosca |  | 
+- 1989-VERT | Vertus |  | 
+- -VICT | Victoria'S Secret |  | 
+- 184-YAS | Yas |  | 
+- 1284-YZLO | Ysl |  | 
+- 1286-YZLO | Ysl |  | 
+- 977-YZLO | Ysl |  | 
+- 979-YZLO | Ysl |  | 
+- 985-YZLO | Ysl |  | 
+- 987-YZLO | Ysl |  | 
+- 988-YZLO | Ysl |  | 
+- 989-YZLO | Ysl |  | 
+- 2160-ZAR | Zara |  | 
+- 995-ZAR | Zara |  | 
