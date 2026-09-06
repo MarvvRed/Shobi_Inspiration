@@ -5,9 +5,16 @@ from collections import defaultdict
 DB = Path('database_complete.json')
 REPORT = Path('catalog-dedupe-report.md')
 
-# Codes whose duplicate rows represent the same perfume/card and are safe to collapse.
-# Keep the richer record (notes/accords/etc.) while preserving missing useful fields from the other row.
+# Exact same perfume identity: collapse to the richest row.
 SAFE_CODES = {'1068-CHA', '1270-VAN', '390-ACQ', '777-LAL'}
+
+# Verified cases where the same Shobi code was attached to two differently named rows.
+# The value identifies the record that must survive.
+KEEP_NAME_FOR_CODE = {
+    '1868-VER': 'versace pour homme',
+    '677-GUC': 'g by g',
+    '937-VAL': 'valentino donna born in roma',
+}
 
 
 def perfumes(data):
@@ -26,6 +33,10 @@ def richness(p):
     return score
 
 
+def norm_name(value):
+    return ' '.join(str(value or '').lower().replace('-', ' ').replace("'", '').split())
+
+
 def merge_missing(dst, src):
     for k, v in src.items():
         if dst.get(k) in (None, '', [], {}) and v not in (None, '', [], {}):
@@ -40,12 +51,13 @@ for brand, p in perfumes(data):
         by_code[code].append((brand, p))
 
 removed = []
+
+# Collapse verified identical-name duplicate cards.
 for code in SAFE_CODES:
     rows = by_code.get(code, [])
     if len(rows) < 2:
         continue
-    # Same normalized perfume identity is required before deletion.
-    names = {str(p.get('inspiredBy') or '').lower().replace('-', ' ').replace("'", '').strip() for _, p in rows}
+    names = {norm_name(p.get('inspiredBy')) for _, p in rows}
     brands = {str(b.get('brandInfo', {}).get('name') or '').lower().strip() for b, _ in rows}
     if len(names) != 1 or len(brands) != 1:
         continue
@@ -57,6 +69,21 @@ for code in SAFE_CODES:
         brand['perfumes'].remove(p)
         removed.append((code, str(keep.get('inspiredBy') or ''), str(p.get('inspiredBy') or '')))
 
+# Resolve verified same-code/different-name collisions. Do not merge fields from the wrong perfume.
+for code, wanted in KEEP_NAME_FOR_CODE.items():
+    rows = [(b, p) for b, p in perfumes(data) if str(p.get('code') or '').strip() == code]
+    if len(rows) < 2:
+        continue
+    candidates = [(b, p) for b, p in rows if norm_name(p.get('inspiredBy')) == wanted]
+    if len(candidates) != 1:
+        raise RuntimeError(f'{code}: expected exactly one verified keeper, found {len(candidates)}')
+    keep_brand, keep = candidates[0]
+    for brand, p in rows:
+        if p is keep:
+            continue
+        brand['perfumes'].remove(p)
+        removed.append((code, str(keep.get('inspiredBy') or ''), str(p.get('inspiredBy') or '')))
+
 DB.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 remaining = defaultdict(int)
@@ -65,7 +92,7 @@ for _, p in perfumes(data):
     if c: remaining[c] += 1
 remaining_dupes = {c:n for c,n in remaining.items() if n > 1}
 
-lines = ['# Safe duplicate cleanup', '', f'- Removed duplicate rows: **{len(removed)}**', f'- Remaining repeated-code groups requiring review: **{len(remaining_dupes)}**', '', '## Removed']
+lines = ['# Safe duplicate cleanup', '', f'- Removed duplicate rows this run: **{len(removed)}**', f'- Remaining repeated-code groups requiring review: **{len(remaining_dupes)}**', '', '## Removed this run']
 for code, kept, dropped in sorted(removed):
     lines.append(f'- `{code}` — kept `{kept}`; removed duplicate `{dropped}`')
 lines += ['', '## Still requiring review']
