@@ -1,6 +1,6 @@
 # Multi-source local residual promotion
 
-- Residual queue: **229**
+- Residual queue: **221**
 - Safe multi-source mappings: **0**
 - Blocked multi-source candidates: **4**
 - database_v2_clean.json: **0** promoted
