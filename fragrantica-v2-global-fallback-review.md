@@ -1,7 +1,7 @@
 # Global local-corpus fallback review
 
-- Input residual candidates inspected: **186**
-- GLOBAL_STRONG: **8**
+- Input residual candidates inspected: **185**
+- GLOBAL_STRONG: **7**
 - GLOBAL_GOOD: **6**
 - GLOBAL_ALTERNATIVE: **6**
 - GLOBAL_WEAK: **166**
@@ -21,7 +21,6 @@ This pass ignores inferred brand restrictions and searches only the repository-l
 - `821-MIC` — SEXY SUNSET - KORS -> Alex Simone / Le Sunset — ID 103591 — **GLOBAL_ALTERNATIVE** — old hint `Michael Kors` (verified_suffix)
 - `853-NIN` — NINA -> Ascania / Nina Nina — ID 84711 — **GLOBAL_STRONG** — old hint `Nina Ricci` (code_signature)
 - `896-RCAV` — Splendid-vanilla -> Alexandria Fragrances / Splendid Vanille — ID 47949 — **GLOBAL_GOOD** — old hint `` ()
-- `1110-DSQ` — BLACK POTION - DSQUARED -> Aurora Scents / Black Potion — ID 93469 — **GLOBAL_STRONG** — old hint `DSQUARED2` (verified_suffix)
 - `1122-GFE` — In the Mood for Love -> Stephane Humbert Lucas 777 / In The Wood For Love — ID 49396 — **GLOBAL_STRONG** — old hint `` ()
 - `1259-SHU` — OLD SPICE -> Acqua di Parma / Oud Spice — ID 68516 — **GLOBAL_GOOD** — old hint `Stephane Humbert Lucas 777` (code_signature)
 - `1494-BOD` — RED MUSK OUD -> The Dua Brand / Regal Musk Oud — ID 86502 — **GLOBAL_GOOD** — old hint `` ()
