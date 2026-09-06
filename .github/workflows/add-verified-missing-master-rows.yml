@@ -1,0 +1,23 @@
+name: Add Verified Missing Shobi Rows
+on:
+  push:
+    paths: ['.github/add-verified-missing-master-rows-trigger']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python tools/add_verified_missing_master_rows.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database_complete.json
+          git diff --cached --quiet || git commit -m "Add verified missing Shobi rows"
+          git pull --rebase origin main
+          git push origin main
