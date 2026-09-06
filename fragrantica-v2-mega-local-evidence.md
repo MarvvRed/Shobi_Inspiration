@@ -1,20 +1,17 @@
 # Mega local residual evidence
 
-- Residual rows: **245**
+- Residual rows: **242**
 - Local evidence files scanned: **7 / 7**
-- Candidate ID records: **1298**
-- Candidates supported by >=2 independent local files: **268**
+- Candidate ID records: **1281**
+- Candidates supported by >=2 independent local files: **265**
 
 ## Multi-source candidates
 
-- `1042-CAC` — POUR HOMME -> ID 2036 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `1080-DRC` — HOMME -> ID 230 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
-- `1874-LTN` — CALIFORNIA Citrus fragrance for women and men -> ID 60388 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `1998-LTN` — Citrus fragrance for women and men -> ID 53947 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `2185-DRC` — Eau Sauvage Extrme Intense -> ID 72771 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `2609-TMFO` — Opaline Hyacinth -> ID 15916 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `717-ISS` — CLASSIC - ISSEY MIYAKE -> ID 720 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
-- `923-TMU` — notes AURA -> ID 45639 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `1014-AZZ` — CLASSIC -> ID 829 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `1021-BOG` — One Man Show Eau de Toilette -> ID 7795 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `1034-BLG` — AQUA - BVLGARI -> ID 153 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv

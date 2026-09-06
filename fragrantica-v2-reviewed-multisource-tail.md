@@ -1,10 +1,10 @@
 # Reviewed multi-source tail promotion
 
 - Approved: **3**
-- Promoted this run: **3**
-- Already verified: **0**
-- database_v2_clean.json: **3** changed
-- database_complete.json: **3** changed
+- Promoted this run: **0**
+- Already verified: **3**
+- database_v2_clean.json: **0** changed
+- database_complete.json: **0** changed
 
 ## Mappings
 
