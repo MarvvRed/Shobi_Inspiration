@@ -1,0 +1,29 @@
+name: Fix Truncated LTN Identities
+on:
+  push:
+    paths:
+      - '.github/fix-truncated-ltn-trigger'
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fix verified identities
+        run: python tools/fix_truncated_ltn_identities.py
+      - name: Commit result
+        run: |
+          if git diff --quiet -- database_complete.json; then echo 'No database change'; exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database_complete.json
+          git commit -m 'Resolve truncated Louis Vuitton perfume identities'
+          git pull --rebase origin main
+          git push origin main
