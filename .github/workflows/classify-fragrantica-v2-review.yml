@@ -1,0 +1,23 @@
+name: Classify Fragrantica v2 Review Queue
+on:
+  push:
+    paths: ['.github/classify-fragrantica-v2-review-trigger']
+  workflow_dispatch:
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python tools/classify_fragrantica_v2_review_queue.py
+      - name: Commit reports
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add fragrantica-v2-review-classification.csv fragrantica-v2-review-classification.md
+          git diff --cached --quiet || git commit -m 'Classify Fragrantica v2 review queue'
+          git pull --rebase origin main
+          git push
