@@ -1,6 +1,6 @@
 # Local code-brand disambiguation
 
-- Residual no-brand rows inspected: **138**
+- Residual no-brand rows inspected: **169**
 - Resolved with code signature + perfume name: **0**
 - Ambiguous but useful: **1**
 

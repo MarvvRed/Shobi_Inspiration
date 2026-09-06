@@ -1,15 +1,12 @@
 # Brand-locked abbreviation review
 
-- Surfaced candidates: **16**
+- Surfaced candidates: **13**
 - WEAK_REVIEW: **12**
-- NO_CANDIDATE: **4**
+- NO_CANDIDATE: **1**
 
 ## Top candidates
 
 - `502-CHA` [WEAK_REVIEW] — No 5 -> Chanel / Chanel No 5 L Eau — ID 38543 — rank 1 — score 0.9520 — margin 0.0120
-- `1885-WID` [NO_CANDIDATE] — LONDON -> Black Widow / Black Widow — ID 65856 — rank 1 — score 0.8800 — margin 0.8800
-- `383-YAN` [NO_CANDIDATE] — WEDDING DAY - YANKEE -> Daddy Yankee / Daddy Yankee — ID 5056 — rank 1 — score 0.8800 — margin 0.8800
-- `1781-LAC` [NO_CANDIDATE] — TOUCH OF SUN -> Christian Lacroix / Christian Lacroix — ID 360 — rank 5 — score 0.8800 — margin 0.4954
 - `1748-BYR` [NO_CANDIDATE] — Marijuana -> Byredo / M Mink — ID 10758 — rank 3 — score 0.8286 — margin 0.4075
 - `2185-DRC` [WEAK_REVIEW] — Eau Sauvage Extrme Intense -> Dior / Eau Sauvage Extreme — ID 232 — rank 1 — score 0.8000 — margin 0.0727
 - `228-DIP` [WEAK_REVIEW] — FEUILLE DE LAVANDE -> Diptyque / Eau de Lavande — ID 24917 — rank 1 — score 0.7857 — margin 0.2257

@@ -1,10 +1,10 @@
 # Global local-corpus fallback review
 
-- Input residual candidates inspected: **160**
-- GLOBAL_STRONG: **7**
+- Input residual candidates inspected: **158**
+- GLOBAL_STRONG: **6**
 - GLOBAL_GOOD: **5**
-- GLOBAL_ALTERNATIVE: **5**
-- GLOBAL_WEAK: **143**
+- GLOBAL_ALTERNATIVE: **3**
+- GLOBAL_WEAK: **144**
 
 This pass ignores inferred brand restrictions and searches only the repository-local `perfume_urls.txt`. It is review-only and promotes nothing.
 
@@ -13,17 +13,14 @@ This pass ignores inferred brand restrictions and searches only the repository-l
 - `230-DIP` — OPOPANAX -> Prada / No8 Opopanax — ID 3222 — **GLOBAL_ALTERNATIVE** — old hint `Diptyque` (verified_suffix)
 - `258-JOM` — GREEN TOMATO LEAF - JO MALONE -> Demeter Fragrance / Green Tomato — ID 14919 — **GLOBAL_ALTERNATIVE** — old hint `Jo Malone London` (verified_suffix)
 - `382-YAN` — POMEGRANATE CIDER - YANKEE CANDLES -> Jo Malone London / Pomegranate Noir — ID 5581 — **GLOBAL_GOOD** — old hint `` ()
-- `383-YAN` — WEDDING DAY - YANKEE -> Body Fantasies / Wedding Day Fantasy — ID 132743 — **GLOBAL_ALTERNATIVE** — old hint `Daddy Yankee` (name_tail)
-- `605-ESC` — Miami Blossom -> Avon / Imari Blossom — ID 20398 — **GLOBAL_GOOD** — old hint `Damien Escobar` (code_signature)
-- `728-JES` — IN BLACK -> Byblos / In Black — ID 11574 — **GLOBAL_STRONG** — old hint `Aqua di Jesolo` (code_signature)
+- `605-ESC` — Miami Blossom -> Avon / Imari Blossom — ID 20398 — **GLOBAL_GOOD** — old hint `` ()
 - `737-JUI` — Malibu -> Celui / Eau de Malibu — ID 134829 — **GLOBAL_STRONG** — old hint `` ()
 - `821-MIC` — SEXY SUNSET - KORS -> Alex Simone / Le Sunset — ID 103591 — **GLOBAL_ALTERNATIVE** — old hint `Michael Kors` (verified_suffix)
-- `853-NIN` — NINA -> Ascania / Nina Nina — ID 84711 — **GLOBAL_STRONG** — old hint `Nina Ricci` (code_signature)
+- `853-NIN` — NINA -> Ascania / Nina Nina — ID 84711 — **GLOBAL_STRONG** — old hint `` ()
 - `896-RCAV` — Splendid-vanilla -> Alexandria Fragrances / Splendid Vanille — ID 47949 — **GLOBAL_GOOD** — old hint `` ()
 - `1122-GFE` — In the Mood for Love -> Stephane Humbert Lucas 777 / In The Wood For Love — ID 49396 — **GLOBAL_STRONG** — old hint `` ()
-- `1259-SHU` — OLD SPICE -> Acqua di Parma / Oud Spice — ID 68516 — **GLOBAL_GOOD** — old hint `Stephane Humbert Lucas 777` (code_signature)
+- `1259-SHU` — OLD SPICE -> Acqua di Parma / Oud Spice — ID 68516 — **GLOBAL_GOOD** — old hint `` ()
 - `1494-BOD` — RED MUSK OUD -> The Dua Brand / Regal Musk Oud — ID 86502 — **GLOBAL_GOOD** — old hint `` ()
 - `1641-KHAL` — Aloha Parfum -> Alfaroma / Aloha — ID 39996 — **GLOBAL_STRONG** — old hint `` ()
-- `1781-LAC` — TOUCH OF SUN -> ARO FAC Aroma Factory / Touch of Oud — ID 130342 — **GLOBAL_ALTERNATIVE** — old hint `Christian Lacroix` (code_signature)
 - `1977-SHIS` — Ginza (2021) -> Hermes / Eau de Ginza — ID 97784 — **GLOBAL_STRONG** — old hint `` ()
 - `2439-ZEG` — INDONESIAN OUD -> PARIS CORNER / Oud Indonesian — ID 74591 — **GLOBAL_STRONG** — old hint `Cremo` (verified_suffix)

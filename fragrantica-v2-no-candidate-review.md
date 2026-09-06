@@ -1,8 +1,8 @@
 # NO_CANDIDATE residual review
 
-- Total NO_CANDIDATE: **82**
-- With local brand hint: **64**
-- Without brand hint: **18**
+- Total NO_CANDIDATE: **54**
+- With local brand hint: **35**
+- Without brand hint: **19**
 
 ## Brand-hinted residuals
 
@@ -15,17 +15,9 @@
 - `307-LOC` — PEONY - L' OCCITANE — brand `L Occitane en Provence` (name_tail) — #1 L Occitane en Provence / Noble Epine [ID 87134; score 0.4150; name 0.2500]
 - `308-LOC` — CITRUS VERBENA - L' OCCITANE — brand `L Occitane en Provence` (name_tail) — no local candidates
 - `309-LOC` — MAGNOLIA & MURE - L' OCCITANE — brand `L Occitane en Provence` (name_tail) — #1 L Occitane en Provence / Noble Epine [ID 87134; score 0.5450; name 0.4167]
-- `383-YAN` — WEDDING DAY - YANKEE — brand `Daddy Yankee` (name_tail) — #1 Daddy Yankee / Daddy Yankee [ID 5056; score 0.4235; name 0.2609]
 - `564-DOL` — SEXY CHOCLATE — brand `Dolce Gabbana` (verified_suffix) — #1 Dolce Gabbana / Rose The One [ID 6461; score 0.5944; name 0.4800] | #2 Dolce Gabbana / Velvet Patchouli [ID 13744; score 0.5428; name 0.4138] | #3 Dolce Gabbana / Velvet Exotic Leather [ID 31355; score 0.5412; name 0.4118] | #4 Dolce Gabbana / Dolce Violet [ID 80038; score 0.5320; name 0.4000] | #5 Dolce Gabbana / The One [ID 698; score 0.5320; name 0.4000]
 - `570-DOL` — (RED CUP) — brand `Dolce Gabbana` (verified_suffix) — no local candidates
-- `598-ESC` — CELEBRATE NOW - ESCADA — brand `Damien Escobar` (code_signature) — #1 Damien Escobar / H2H Love Notes [ID 122599; score 0.5089; name 0.3704]
-- `601-ESC` — Flor-del-sol — brand `Damien Escobar` (code_signature) — #1 Damien Escobar / H2H Love Notes [ID 122599; score 0.5200; name 0.3846]
-- `605-ESC` — Miami Blossom — brand `Damien Escobar` (code_signature) — #1 Damien Escobar / H2H Love Notes [ID 122599; score 0.4511; name 0.2963]
-- `606-ESC` — MARGARETHA LEY (CLASSIC) - ESCADA — brand `Damien Escobar` (code_signature) — #1 Damien Escobar / H2H Love Notes [ID 122599; score 0.4429; name 0.2857]
-- `608-ESC` — Moon Sparkle — brand `Damien Escobar` (code_signature) — #1 Damien Escobar / H2H Love Notes [ID 122599; score 0.4000; name 0.2308]
-- `612-ESC` — TURQUOISE - ESCADA — brand `Damien Escobar` (code_signature) — no local candidates
 - `717-ISS` — CLASSIC - ISSEY MIYAKE — brand `Issey Miyake` (verified_suffix) — #1 Issey Miyake / L eau d Issey [ID 720; score 0.5320; name 0.4000] | #2 Issey Miyake / L Eau d Issey Pivoine [ID 79232; score 0.4986; name 0.3571] | #3 Issey Miyake / L Eau d Issey Pure [ID 37741; score 0.4696; name 0.3200] | #4 Issey Miyake / L Eau Bleue d Issey Eau Fraiche [ID 2330; score 0.4663; name 0.3158] | #5 Issey Miyake / Lune d Issey [ID 16973; score 0.4663; name 0.3158]
-- `728-JES` — IN BLACK — brand `Aqua di Jesolo` (code_signature) — #1 Aqua di Jesolo / Lungomare [ID 56143; score 0.4035; name 0.2353] | #2 Aqua di Jesolo / Voglio Vivere Cosi [ID 56142; score 0.4000; name 0.2308]
 - `817-MIC` — Gold Collection  24k Brilliant Gold — brand `Michael Kors` (verified_suffix) — no local candidates
 - `818-MIC` — Michael Kors Coral — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.4637; name 0.3125]
 - `819-MIC` — SEXY AMBER - KORS — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.4150; name 0.2500]
@@ -35,35 +27,14 @@
 - `823-MIC` — Sporty Citrus — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.5667; name 0.4444]
 - `824-MIC` — Gold Collection  White Luminous Gold — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.4110; name 0.2449]
 - `825-MIC` — Wonderlust — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.4800; name 0.3333]
-- `850-NIN` — L'AIR DU TEMPS — brand `Nina Ricci` (code_signature) — #1 Nina Ricci / Nina Le Parfum [ID 83150; score 0.5543; name 0.4286]
-- `851-NIN` — L Extase — brand `Nina Ricci` (code_signature) — #1 Nina Ricci / Nina Le Parfum [ID 83150; score 0.4327; name 0.2727]
-- `852-NIN` — Luna — brand `Nina Ricci` (code_signature) — no local candidates
-- `854-NIN` — the fragrance otes of NINA ROUGE — brand `Nina Ricci` (code_signature) — #1 Nina Ricci / Nina Le Parfum [ID 83150; score 0.4574; name 0.3043]
-- `898-ROC` — AQUA WOMAN - ROCHAS — brand `Camille Rochelle` (code_signature) — #1 Camille Rochelle / Obscura Romance Elixir [ID 136718; score 0.5613; name 0.4375] | #2 Camille Rochelle / Pour Homme [ID 87309; score 0.5320; name 0.4000] | #3 Camille Rochelle / Coast Pour Homme [ID 89398; score 0.5200; name 0.3846] | #4 Camille Rochelle / Platinum Pour Homme [ID 87306; score 0.4890; name 0.3448] | #5 Camille Rochelle / Noir Pour Homme [ID 87307; score 0.4696; name 0.3200]
-- `899-ROC` — MADEMOISSELE - ROCHAS — brand `Camille Rochelle` (code_signature) — #1 Camille Rochelle / Amber Noir [ID 89698; score 0.5036; name 0.3636] | #2 Camille Rochelle / Love Mist Elixir [ID 136717; score 0.4986; name 0.3571] | #3 Camille Rochelle / Echo Reserve Elixir [ID 136715; score 0.4716; name 0.3226] | #4 Camille Rochelle / Cobalt Intense [ID 124764; score 0.4600; name 0.3077] | #5 Camille Rochelle / Moon Pour Femme [ID 88889; score 0.4511; name 0.2963]
-- `911-SEPH` — Fleur de Coton / Cotton Flower — brand `Disney Jasmine Collection by Sephora` (code_signature) — #1 Disney Jasmine Collection by Sephora / Ariel Collection Kiss The Girl [ID 20523; score 0.5159; name 0.3793] | #2 Disney Jasmine Collection by Sephora / So This Is Love [ID 18416; score 0.4377; name 0.2791]
-- `926-TOM` — Tommy Girl — brand `Tom Ford` (code_signature) — #1 Tom Ford / Oud Minerale [ID 45192; score 0.5745; name 0.4545] | #2 Tom Ford / Noir [ID 15727; score 0.5543; name 0.4286] | #3 Tom Ford / Taormina Orange [ID 125742; score 0.5320; name 0.4000] | #4 Tom Ford / Tobacco Vanille [ID 1825; score 0.5320; name 0.4000] | #5 Tom Ford / Japon Noir [ID 1851; score 0.5320; name 0.4000]
 - `992-ZAD` — Girls Can Do Anything — brand `Zadig Voltaire` (verified_suffix) — no local candidates
 - `993-ZAD` — JUST ROCK FOR HER - ZADIG & VOLTAIRE — brand `Zadig Voltaire` (verified_suffix) — #1 Zadig Voltaire / This is Him [ID 39359; score 0.4429; name 0.2857]
 - `1014-AZZ` — CLASSIC — brand `Azzaro` (verified_suffix) — #1 Azzaro / Solarissimo Levanzo [ID 37912; score 0.5200; name 0.3846] | #2 Azzaro / Solarissimo Favignana [ID 49636; score 0.4986; name 0.3571] | #3 Azzaro / Solarissimo Marettimo [ID 43760; score 0.4986; name 0.3571] | #4 Azzaro / Aqua Cedre Blanc [ID 17861; score 0.4913; name 0.3478] | #5 Azzaro / Shine [ID 54972; score 0.4800; name 0.3333]
 - `1116-ZEG` — UOMO ABSOLUT - ERMENEGILDO ZEGNA — brand `Cremo` (verified_suffix) — #1 Cremo / Sandalwood and Suede [ID 135779; score 0.5125; name 0.3750] | #2 Cremo / Bourbon Vanilla [ID 95947; score 0.5089; name 0.3704] | #3 Cremo / Palo Santo [ID 70463; score 0.5036; name 0.3636] | #4 Cremo / Bourbon Oak [ID 49037; score 0.4913; name 0.3478] | #5 Cremo / Bergamot Musk [ID 49041; score 0.4696; name 0.3200]
-- `1118-FAB` — BRUT 1964 — brand `Fabbrica Della Musa` (code_signature) — no local candidates
-- `1187-JOV` — White Musk for Women — brand `Jovoy Paris` (code_signature) — no local candidates
-- `1196-LAC` — L.12.12 MAGNETIC — brand `Christian Lacroix` (code_signature) — #1 Christian Lacroix / Bazar pour Femme Summer Fragrance [ID 357; score 0.4747; name 0.3265] | #2 Christian Lacroix / Tumulte pour Homme [ID 363; score 0.4494; name 0.2941] | #3 Christian Lacroix / Bazar Summer Fragrance New [ID 358; score 0.4429; name 0.2857] | #4 Christian Lacroix / C est La Fete [ID 888; score 0.4352; name 0.2759] | #5 Christian Lacroix / C est la Fete Patchouli [ID 4697; score 0.4200; name 0.2564]
-- `1259-SHU` — OLD SPICE — brand `Stephane Humbert Lucas 777` (code_signature) — #1 Stephane Humbert Lucas 777 / God of Fire [ID 72381; score 0.6100; name 0.5000] | #2 Stephane Humbert Lucas 777 / Mortal Skin [ID 31518; score 0.6100; name 0.5000] | #3 Stephane Humbert Lucas 777 / Rose de Petra [ID 18309; score 0.5745; name 0.4545] | #4 Stephane Humbert Lucas 777 / Sand Dance [ID 72384; score 0.5484; name 0.4211] | #5 Stephane Humbert Lucas 777 / Khol de Bahrein [ID 18311; score 0.5450; name 0.4167]
-- `1550-YAN` — HOME SWEET HOME - YANKEE — brand `Daddy Yankee` (name_tail) — no local candidates
 - `1748-BYR` — Marijuana — brand `Byredo` (verified_suffix) — #1 Byredo / Animalique [ID 85157; score 0.5484; name 0.4211] | #2 Byredo / Tobacco Mandarin [ID 63031; score 0.5320; name 0.4000] | #3 Byredo / M Mink [ID 10758; score 0.5320; name 0.4000] | #4 Byredo / Mumbai Noise [ID 69858; score 0.5171; name 0.3810] | #5 Byredo / Bal d Afrique [ID 6458; score 0.5036; name 0.3636]
-- `1781-LAC` — TOUCH OF SUN — brand `Christian Lacroix` (code_signature) — #1 Christian Lacroix / Bazar pour Femme Summer Fragrance [ID 357; score 0.4973; name 0.3556] | #2 Christian Lacroix / Tumulte pour Homme [ID 363; score 0.4800; name 0.3333] | #3 Christian Lacroix / Tumulte [ID 362; score 0.4663; name 0.3158] | #4 Christian Lacroix / Bazar pour Homme [ID 359; score 0.4429; name 0.2857] | #5 Christian Lacroix / Christian Lacroix [ID 360; score 0.4352; name 0.2759]
-- `1784-ESC` — Summer-festival-eau-de-toilette — brand `Damien Escobar` (code_signature) — no local candidates
-- `1885-WID` — LONDON — brand `Black Widow` (code_signature) — #1 Black Widow / Black Widow [ID 65856; score 0.4953; name 0.3529]
-- `1896-ESC` — Cherry-in-japan — brand `Damien Escobar` (code_signature) — #1 Damien Escobar / H2H Love Notes [ID 122599; score 0.4352; name 0.2759]
-- `1921-VIV` — Boudoir- — brand `Amazonia Viva` (code_signature) — #1 Amazonia Viva / Madeiras [ID 24612; score 0.5320; name 0.4000] | #2 Amazonia Viva / Floresta [ID 24614; score 0.4280; name 0.2667]
-- `1985-WID` — GOLD II SAHARA - WIDIAN — brand `Black Widow` (code_signature) — no local candidates
 - `1998-LTN` — Citrus fragrance for women and men — brand `Louis Vuitton` (verified_suffix) — #1 Louis Vuitton / Attrape Reves [ID 51016; score 0.4855; name 0.3404] | #2 Louis Vuitton / Cactus Garden [ID 53946; score 0.4855; name 0.3404] | #3 Louis Vuitton / Afternoon Swim [ID 53947; score 0.4800; name 0.3333] | #4 Louis Vuitton / Le Jour se Leve [ID 48305; score 0.4747; name 0.3265] | #5 Louis Vuitton / Nuit de Feu [ID 60031; score 0.4627; name 0.3111]
 - `2085-CLIV` — X NEROLI LIMITED EDITION - CLIVE CHRISTIAN — brand `Clive Christian` (verified_suffix) — #1 Clive Christian / X Twist Mate Tea [ID 59178; score 0.5710; name 0.4500] | #2 Clive Christian / VIII Rococo Immortelle [ID 45206; score 0.5252; name 0.3913] | #3 Clive Christian / L Red Tea Vetiver [ID 101977; score 0.5244; name 0.3902] | #4 Clive Christian / X Twist Liquorice [ID 67267; score 0.5244; name 0.3902] | #5 Clive Christian / Amber Absolute Oil [ID 52416; score 0.5171; name 0.3810]
 - `2098-MIC` — Twilight Shimmer — brand `Michael Kors` (verified_suffix) — no local candidates
-- `2284-HIS` — 1889 - Moulin Rouge — brand `Chronicles scents of history` (code_signature) — no local candidates
-- `2415-ESC` — SEXY GRAFFITY - ESCADA — brand `Damien Escobar` (code_signature) — no local candidates
 - `2439-ZEG` — INDONESIAN OUD — brand `Cremo` (verified_suffix) — #1 Cremo / Leather Oud [ID 49042; score 0.6100; name 0.5000] | #2 Cremo / Sandalwood and Suede [ID 135779; score 0.5871; name 0.4706] | #3 Cremo / Palo Santo [ID 70463; score 0.5450; name 0.4167] | #4 Cremo / Bourbon Oak [ID 49037; score 0.4696; name 0.3200] | #5 Cremo / Iced Citron and Driftwood [ID 110783; score 0.4600; name 0.3077]
 - `2586-DIP` — Biscuit DIP — brand `Diptyque` (verified_suffix) — #1 Diptyque / Ilio Limited Edition [ID 82763; score 0.5219; name 0.3871] | #2 Diptyque / Bois Corse [ID 96742; score 0.5171; name 0.3810] | #3 Diptyque / Philosykos Limited Edition [ID 55615; score 0.5151; name 0.3784] | #4 Diptyque / Do Son Limited Edition [ID 90244; score 0.5036; name 0.3636] | #5 Diptyque / Eau d Elide [ID 3830; score 0.5036; name 0.3636]
 - `2697-RIT` — Karma Rituals — brand `Avgerinos` (verified_suffix) — #1 Avgerinos / Baby Talc [ID 63376; score 0.5745; name 0.4545] | #2 Avgerinos / Fairy Dust [ID 63381; score 0.4913; name 0.3478] | #3 Avgerinos / Stars [ID 63390; score 0.4800; name 0.3333] | #4 Avgerinos / Hammam [ID 63387; score 0.4663; name 0.3158] | #5 Avgerinos / Mystique [ID 63383; score 0.4429; name 0.2857]
@@ -79,6 +50,7 @@
 - `739-JUI` — Viva La Juicy Gold Couture — #1 CIEL Parfum / Lady Vogue Couture [ID 33963; score 0.5909] | #2 Yves Saint Laurent / Libre Vanille Couture [ID 113623; score 0.5532] | #3 Cher / Eau de Couture [ID 55325; score 0.5500]
 - `740-JUI` — VIVA LA JUICY LUXE PARFUM - JUICY COUTURE — #1 Lancome / La Nuit Tresor Le Parfum [ID 89120; score 0.6122] | #2 Jean Paul Gaultier / La Belle Le Parfum [ID 65175; score 0.6047] | #3 Chanel / La Pausa Eau de Parfum [ID 41781; score 0.5957]
 - `743-JUS` — Girlfriend — #1 Sorce / Your Girlfriend is a Badass [ID 132631; score 0.5405]
+- `854-NIN` — the fragrance otes of NINA ROUGE — #1 Sorce / The Ancient Waters of Venus [ID 132624; score 0.6102] | #2 Caswell Massey / Mammoth Fragrance Tonic [ID 54656; score 0.5818] | #3 Caswell Massey / Lake Fragrance Tonic [ID 54653; score 0.5769]
 - `867-PAL` — PALOMA PICASSO — no local candidates
 - `904-SALV` — SALVADOR DALI fragrances — #1 Badr Harqan / Salvador [ID 102201; score 0.5000] | #2 Contes de Parfums / Salvador da Bahia Alexandra Carlin [ID 117565; score 0.4828] | #3 Lancome / Peut Etre La Collection Fragrances [ID 3613; score 0.4828]
 - `909-SFER` — TUSCAN SCENT WHITE MIMOSA - FERRAGAMO — #1 Estee Lauder / Jasmine White Moss [ID 33618; score 0.6047] | #2 Cliven / Tibetan White Moss [ID 32900; score 0.6047] | #3 Bath Body Works / Sunshine Mimosa [ID 66750; score 0.6000]
