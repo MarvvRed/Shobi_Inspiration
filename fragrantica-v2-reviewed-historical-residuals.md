@@ -1,10 +1,10 @@
 # Reviewed historical residual promotion
 
-- Approved: **14**
-- Promoted this run: **0**
+- Approved: **18**
+- Promoted this run: **4**
 - Already verified: **14**
-- database_v2_clean.json: **0** changed
-- database_complete.json: **0** changed
+- database_v2_clean.json: **4** changed
+- database_complete.json: **4** changed
 
 ## Mappings
 
@@ -22,3 +22,7 @@
 - `508-CHA` -> Chanel / Coco Noir — ID 15963 — same-brand historical local ID; Shobi Coco Black is a direct Black/Noir label variant
 - `651-ARM` -> Giorgio Armani / Emporio Armani Lei — ID 417 — same-brand historical local ID; LEI/ELLE/SHE/ELLA are multilingual female labels matching Lei
 - `677-GUC` -> Gucci / Gucci by Gucci Eau de Parfum — ID 1150 — same-brand historical local ID; G by G is an explicit abbreviation of Gucci by Gucci
+- `2185-DRC` -> Dior / Eau Sauvage Extreme — ID 232 — same-brand local corpus exact core identity; Shobi Extrme Intense is a noisy label for Eau Sauvage Extreme
+- `2609-TMFO` -> Tom Ford / Ombre de Hyacinth — ID 15916 — same-brand historical and local candidate agree on distinctive Hyacinth identity
+- `621-EST` -> Estee Lauder / Bronze Goddess Eau de Parfum — ID 43639 — same-brand exact product identity in local corpus; concentration explicitly matches Eau de Parfum
+- `1769-LTN` -> Louis Vuitton / Rose des Vents — ID 40495 — same-brand historical local ID; Shobi label is notes-style Roses rather than a competing product title
