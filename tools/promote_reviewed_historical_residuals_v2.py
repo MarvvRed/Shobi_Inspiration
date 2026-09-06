@@ -18,6 +18,10 @@ APPROVED={
  '508-CHA':('15963','Chanel','Coco Noir','same-brand historical local ID; Shobi Coco Black is a direct Black/Noir label variant'),
  '651-ARM':('417','Giorgio Armani','Emporio Armani Lei','same-brand historical local ID; LEI/ELLE/SHE/ELLA are multilingual female labels matching Lei'),
  '677-GUC':('1150','Gucci','Gucci by Gucci Eau de Parfum','same-brand historical local ID; G by G is an explicit abbreviation of Gucci by Gucci'),
+ '2185-DRC':('232','Dior','Eau Sauvage Extreme','same-brand local corpus exact core identity; Shobi Extrme Intense is a noisy label for Eau Sauvage Extreme'),
+ '2609-TMFO':('15916','Tom Ford','Ombre de Hyacinth','same-brand historical and local candidate agree on distinctive Hyacinth identity'),
+ '621-EST':('43639','Estee Lauder','Bronze Goddess Eau de Parfum','same-brand exact product identity in local corpus; concentration explicitly matches Eau de Parfum'),
+ '1769-LTN':('40495','Louis Vuitton','Rose des Vents','same-brand historical local ID; Shobi label is notes-style Roses rather than a competing product title'),
 }
 def walk(o):
  if isinstance(o,list):
