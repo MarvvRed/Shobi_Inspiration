@@ -79,14 +79,10 @@ for line in URLS.read_text(encoding='utf-8',errors='ignore').splitlines():
     byid[c['id']]=c; idx=len(urls); urls.append(c); brand_idx[c['bn']].add(idx); exact_name_idx[c['nn']].add(idx)
     for t in c['nt']:inv[t].add(idx)
 
-# Kept only for diagnostics/backward compatibility. Generated code signatures are NOT
-# trusted as brand evidence because short codes such as ESC/ROC/TOM can map to unrelated brands.
 sig_brands=defaultdict(set)
 for bn in brand_idx:
     for sig in brand_signatures(bn):sig_brands[sig].add(bn)
-
-def infer_code_brand(code):
-    return ''
+def infer_code_brand(code): return ''
 
 brand_names=list(brand_idx)
 def infer_tail_brand(tail):
@@ -94,9 +90,6 @@ def infer_tail_brand(tail):
     if len(tn)<4:return ''
     hits=[]
     for bn in brand_names:
-        # Accept only an exact brand label or a left-anchored long form.
-        # This keeps "L OCCITANE" -> "L Occitane en Provence" but blocks
-        # "YANKEE" -> "Daddy Yankee" and other token-overlap accidents.
         if tn==bn or bn.startswith(tn+' ') or tn.startswith(bn+' '):hits.append(bn)
     if len(hits)!=1:return ''
     bn=hits[0]; return urls[next(iter(brand_idx[bn]))]['brand']
@@ -113,9 +106,10 @@ rows=[]
 for p in perf:
     if status_of(p).startswith('VERIFIED_'):continue
     code=str(p.get('code') or '').strip() or '[no-code]'; raw_name=str(p.get('inspiredBy') or p.get('perfume') or '').strip(); qname,tail=split_name(raw_name)
-    explicit=str(p.get('brand') or '').strip(); prior=brand_by_suffix.get(suffix(code),''); code_hint=''; tail_hint=infer_tail_brand(tail) if not explicit and not prior else ''
-    hint=explicit or prior or tail_hint
-    hint_source='field' if explicit else ('verified_suffix' if prior else ('name_tail' if tail_hint else ''))
+    explicit=str(p.get('brand') or '').strip(); prior=brand_by_suffix.get(suffix(code),''); tail_hint=infer_tail_brand(tail) if not explicit else ''
+    # A literal/left-anchored brand written in the Shobi label is stronger than a learned suffix prior.
+    hint=explicit or tail_hint or prior
+    hint_source='field' if explicit else ('name_tail' if tail_hint else ('verified_suffix' if prior else ''))
     brand_pool=set(brand_idx.get(norm(hint),set())) if hint else set(); ids=set()
     for t in toks(qname):ids.update(inv.get(t,set()))
     pool=brand_pool if brand_pool else (ids if ids else range(len(urls))); ranked=[]
@@ -150,7 +144,7 @@ with OUT.open('w',encoding='utf-8-sig',newline='') as f:
 cnt=Counter(r['classification'] for r in rows); inferred=sum(bool(r['inferred_brand']) for r in rows)
 lines=['# Fragrantica v2 match against local perfume_urls.txt','',f'- URLs parsed: **{len(urls)}**',f'- Residual rows scanned: **{len(rows)}**',f'- Residuals with local brand hint: **{inferred}**',f'- Suffix brand priors learned: **{len(brand_by_suffix)}**']
 for k in ['STRONG_EXACT_BRAND','STRONG_UNIQUE','GOOD_REVIEW','EXACT_NAME_NO_BRAND','WEAK_REVIEW','NO_CANDIDATE']:lines.append(f'- {k}: **{cnt[k]}**')
-lines += ['','No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Brand hints come only from explicit metadata, VERIFIED suffix priors, or an exact/left-anchored brand name in the Shobi label tail. Generated code signatures are diagnostic-only and never trusted for brand selection. No mapping is promoted automatically.','','## Strong candidates','']
+lines += ['','No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Brand hints come only from explicit metadata, an exact/left-anchored brand in the Shobi label tail, or VERIFIED suffix priors, in that priority order. Generated code signatures are diagnostic-only and never trusted for brand selection. No mapping is promoted automatically.','','## Strong candidates','']
 for r in rows:
     if r['classification'] in {'STRONG_EXACT_BRAND','STRONG_UNIQUE'}:lines.append(f"- `{r['shobi_code']}` — {r['shobi_name']} -> {r.get('cand1_brand','')} / {r.get('cand1_name','')} — ID {r.get('cand1_id','')} — {r['classification']} — brand-source {r['brand_source']}")
 lines += ['','## Good review candidates','']
