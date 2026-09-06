@@ -6,7 +6,7 @@
 - Duplicate Prestashop ID groups: **0**
 - Duplicate Shobi URL groups: **0**
 - Duplicate Fragrantica ID groups: **0**
-- Same normalized brand+name groups: **11**
+- Same normalized brand+name groups: **10**
 - Empty-code rows: **1**
 - Code-vs-URL conflicts: **0**
 
@@ -19,9 +19,9 @@
 - `1702-KUR`: 1 row(s) — Maison Francis Kurkdjian — Oud — pid=4387
 - `2604-JILS`: 1 row(s) — Jil Sander — Sun Men Jil Sander — pid=4394
 - `2773-RIT`: 1 row(s) — Rituals — The Rituals of Mehr — pid=5014
-- `2783-LTN`: 1 row(s) — Shobi — the fragrance notes — pid=5051
-- `2786-LTN`: 1 row(s) — Shobi — the fragrance notes — pid=5054
-- `2791-LTN`: 1 row(s) — Shobi — the fragrance notes of — pid=5060
+- `2783-LTN`: 1 row(s) — Shobi — Ink Mark Louis Vuitton — pid=5051
+- `2786-LTN`: 1 row(s) — Shobi — Rain Tea Louis Vuitton — pid=5054
+- `2791-LTN`: 1 row(s) — Shobi — Moon Tale Louis Vuitton — pid=5060
 - `846-NRO`: 1 row(s) — Narciso Rodriguez — NARCISO ROUGE - RODRIGUEZ — pid=889
 
 ## Empty-code rows
@@ -39,5 +39,4 @@
 - mugler — angel: 920-TMU, 1262-TMU
 - rabanne — million gold: 2513-PAC, 2456-PAC
 - ralph lauren — safari: 2533-RAL, 1250-RAL
-- shobi — the fragrance notes: 2783-LTN, 2786-LTN
 - xerjoff — erba pura: 1887-XER, 174-SOS
