@@ -24,7 +24,7 @@ def brand_sim(h,c):
     if not h:return 0
     h=norm(h); b=c['bn']
     if h==b:return 1
-    if len(h)>3 and (h in b or b in h):return .92
+    if min(len(h),len(b))>=4 and (h in b or b in h):return .92
     return sim(h,b)*.75
 
 def walk(o):
@@ -61,16 +61,17 @@ for p in perf:
     pool=ids or range(len(urls)); ranked=[]; qt=set(toks(name)); qn=norm(name)
     for idx in pool:
         c=urls[idx]; inter=len(qt&c['nt']); cov=inter/len(qt) if qt else 0
-        ns=max(sim(qn,c['nn']),1 if qn==c['nn'] else (.96 if len(qn)>=5 and (qn in c['nn'] or c['nn'] in qn) else 0),cov)
+        contain=.96 if min(len(qn),len(c['nn']))>=4 and (qn in c['nn'] or c['nn'] in qn) else 0
+        ns=max(sim(qn,c['nn']),1 if qn==c['nn'] else contain,cov)
         bs=brand_sim(hint,c); total=.74*ns+.26*bs if hint else ns
         if hint and bs<.35:total*=.72
         if total>=.4 or ns>=.62:ranked.append((total,ns,bs,cov,c))
     ranked.sort(key=lambda x:(x[0],x[1],x[2]),reverse=True); top=ranked[:5]
     if not top:cls='NO_CANDIDATE'
     else:
-        margin=top[0][0]-(top[1][0] if len(top)>1 else 0); ok=(not hint) or top[0][2]>=.78
-        if top[0][1]>=.94 and ok and margin>=.035:cls='STRONG_UNIQUE'
-        elif top[0][0]>=.78 and top[0][1]>=.8 and ok and margin>=.015:cls='GOOD_REVIEW'
+        margin=top[0][0]-(top[1][0] if len(top)>1 else 0); brand_ok=bool(hint) and top[0][2]>=.78
+        if top[0][1]>=.94 and brand_ok and margin>=.035:cls='STRONG_UNIQUE'
+        elif top[0][0]>=.78 and top[0][1]>=.8 and brand_ok and margin>=.015:cls='GOOD_REVIEW'
         elif top[0][0]>=.62 or top[0][1]>=.72:cls='WEAK_REVIEW'
         else:cls='NO_CANDIDATE'
     r={'shobi_code':code,'shobi_name':name,'shobi_brand':explicit,'inferred_brand':hint,'classification':cls,'candidate_count':len(ranked)}
@@ -84,8 +85,8 @@ with OUT.open('w',encoding='utf-8-sig',newline='') as f:
 cnt=Counter(r['classification'] for r in rows); inferred=sum(bool(r['inferred_brand']) for r in rows)
 lines=['# Fragrantica v2 match against local perfume_urls.txt','',f'- URLs parsed: **{len(urls)}**',f'- Residual rows scanned: **{len(rows)}**',f'- Residuals with local brand hint: **{inferred}**',f'- Suffix brand priors learned: **{len(brand_by_suffix)}**']
 for k in ['STRONG_UNIQUE','GOOD_REVIEW','WEAK_REVIEW','NO_CANDIDATE']:lines.append(f'- {k}: **{cnt[k]}**')
-lines += ['','No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus already-verified rows for brand priors. No mapping is promoted automatically.','','## Strong unique candidates','']
+lines += ['','No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus already-verified rows for brand priors. `STRONG_UNIQUE` requires coherent local brand evidence. No mapping is promoted automatically.','','## Strong unique candidates','']
 for r in rows:
-    if r['classification']=='STRONG_UNIQUE':lines.append(f"- `{r['shobi_code']}` — {r['shobi_name']} -> {r.get('cand1_brand','')} / {r.get('cand1_name','')} — ID {r.get('cand1_id','')} — score {r.get('cand1_score','')}")
+    if r['classification']=='STRONG_UNIQUE':lines.append(f"- `{r['shobi_code']}` — {r['shobi_name']} -> {r.get('cand1_brand','')} / {r.get('cand1_name','')} — ID {r.get('cand1_id','')} — score {r.get('cand1_score','')} — brand {r['inferred_brand']}")
 REPORT.write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print('urls',len(urls),'residuals',len(rows),'priors',len(brand_by_suffix),dict(cnt))
