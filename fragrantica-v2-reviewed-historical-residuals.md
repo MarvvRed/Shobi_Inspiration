@@ -1,10 +1,10 @@
 # Reviewed historical residual promotion
 
 - Approved: **6**
-- Promoted this run: **6**
-- Already verified: **0**
-- database_v2_clean.json: **6** changed
-- database_complete.json: **6** changed
+- Promoted this run: **0**
+- Already verified: **6**
+- database_v2_clean.json: **0** changed
+- database_complete.json: **0** changed
 
 ## Mappings
 

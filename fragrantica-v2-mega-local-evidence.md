@@ -1,22 +1,18 @@
 # Mega local residual evidence
 
-- Residual rows: **235**
+- Residual rows: **229**
 - Local evidence files scanned: **7 / 7**
-- Candidate ID records: **1244**
-- Candidates supported by >=2 independent local files: **258**
+- Candidate ID records: **1208**
+- Candidates supported by >=2 independent local files: **250**
 
 ## Multi-source candidates
 
-- `1080-DRC` — HOMME -> ID 230 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `1998-LTN` — Citrus fragrance for women and men -> ID 53947 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `2185-DRC` — Eau Sauvage Extrme Intense -> ID 72771 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `2609-TMFO` — Opaline Hyacinth -> ID 15916 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `717-ISS` — CLASSIC - ISSEY MIYAKE -> ID 720 — sources 3 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `1014-AZZ` — CLASSIC -> ID 829 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `1021-BOG` — One Man Show Eau de Toilette -> ID 7795 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
-- `1034-BLG` — AQUA - BVLGARI -> ID 153 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
-- `1034-BLG` — AQUA - BVLGARI -> ID 2094 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
-- `1092-DOL` — By Man Eau de Toilette -> ID 490 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `1094-DOL` — K KING (2019) -> ID 56358 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `1116-ZEG` — UOMO ABSOLUT - ERMENEGILDO ZEGNA -> ID 28142 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `1118-FAB` — BRUT 1964 -> ID 38206 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
@@ -109,7 +105,6 @@
 - `2552-SOR` — NIGHT HORSE -> ID 75119 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `257-JOM` — GREEN ORANGE & CORIANDER - JO MALONE -> ID 13827 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `257-JOM` — GREEN ORANGE & CORIANDER - JO MALONE -> ID 59428 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
-- `2600-TMU` — Angel Lily -> ID 714 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `2604-JILS` — Sun Men Jil Sander -> ID 619 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `261-JOM` — INCENSE & EMBERS - JO MALONE -> ID 29737 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `2697-RIT` — Karma Rituals -> ID 46391 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
@@ -163,7 +158,6 @@
 - `696-GLA` — FIDJI -> ID 2068 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `696-GLA` — FIDJI -> ID 26877 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `727-JEN` — JLuxe -> ID 29758 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
-- `734-JIM` — Eau de Parfum (Eau de Parfum) -> ID 10573 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `736-JUI` — Couture Couture -> ID 55325 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `736-JUI` — Couture Couture -> ID 6496 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `737-JUI` — Malibu -> ID 134829 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
@@ -212,8 +206,6 @@
 - `825-MIC` — Wonderlust -> ID 39459 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `827-MISN` — Missoni -> ID 1069 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `840-NAO` — Naomi Campbell -> ID 905 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
-- `843-NRO` — FOR HER PINK EAU DE TOILETTE - RODRIGUEZ -> ID 209 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
-- `843-NRO` — FOR HER PINK EAU DE TOILETTE - RODRIGUEZ -> ID 72604 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-url-match.csv
 - `850-NIN` — L'AIR DU TEMPS -> ID 1014 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `851-NIN` — L Extase -> ID 29668 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
 - `852-NIN` — Luna -> ID 39376 — sources 2 — /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/data/shobi-fragrantica-mapping.csv | /home/runner/work/Shobi_Inspiration/Shobi_Inspiration/fragrantica-v2-local-id-reconciliation.csv
