@@ -1,0 +1,5 @@
+trigger=2026-09-06T07:18:00+02:00
+source=fragrantica-social-cards
+fields=gender,season
+season_rule=longest-bar-wins
+mode=merge-into-site-catalog
