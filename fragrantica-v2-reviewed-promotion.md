@@ -1,10 +1,10 @@
 # Reviewed v2 local-corpus promotion
 
 - Approved mappings: **13**
-- Promoted: **7**
-- Already verified / untouched: **6**
-- `database_v2_clean.json`: matched **13**, changed **7**
-- `database_complete.json`: matched **13**, changed **7**
+- Promoted: **0**
+- Already verified / untouched: **13**
+- `database_v2_clean.json`: matched **13**, changed **0**
+- `database_complete.json`: matched **13**, changed **0**
 
 No web verification. Every ID must exist in repository-local `perfume_urls.txt`.
 

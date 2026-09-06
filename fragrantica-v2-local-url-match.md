@@ -1,14 +1,14 @@
 # Fragrantica v2 match against local perfume_urls.txt
 
 - URLs parsed: **55556**
-- Residual rows scanned: **277**
-- Residuals with local brand hint: **138**
+- Residual rows scanned: **270**
+- Residuals with local brand hint: **131**
 - Suffix brand priors learned: **170**
 - STRONG_EXACT_BRAND: **1**
 - STRONG_UNIQUE: **1**
-- GOOD_REVIEW: **2**
+- GOOD_REVIEW: **1**
 - EXACT_NAME_NO_BRAND: **5**
-- WEAK_REVIEW: **178**
+- WEAK_REVIEW: **172**
 - NO_CANDIDATE: **90**
 
 No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Code abbreviations are accepted as brand hints only when their generated signature maps to exactly one corpus brand. No mapping is promoted automatically.
@@ -21,7 +21,6 @@ No Fragrantica web access is used. Matching uses only repository-local `perfume_
 ## Good review candidates
 
 - `1929-BLG` — Le-gemme-tygar-eau-de- -> Bvlgari / Le Gemme Tygar Extrait — ID 120377 — score 0.8886
-- `1978-ARM` — STRONGER WITH YOU INTENSENLY -> Giorgio Armani / Stronger With You Limited Edition — ID 79166 — score 0.8886
 
 ## Exact local name but no brand agreement
 
