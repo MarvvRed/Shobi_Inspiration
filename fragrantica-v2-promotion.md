@@ -4,7 +4,7 @@
 - Direct web-verified residual mappings promoted: **24**
 - Total verified code mappings available: **1926**
 
-- `database_complete.json`: matched **1926**, changed **11**
-- `database_v2_clean.json`: matched **1926**, changed **11**
+- `database_complete.json`: matched **1926**, changed **0**
+- `database_v2_clean.json`: matched **1926**, changed **0**
 
 No gender, season, notes or image data is copied by this promotion. Only verified Fragrantica IDs/status/evidence are written.
