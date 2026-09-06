@@ -1,7 +1,7 @@
 # Brand-locked abbreviation review
 
-- Surfaced candidates: **13**
-- WEAK_REVIEW: **12**
+- Surfaced candidates: **12**
+- WEAK_REVIEW: **11**
 - NO_CANDIDATE: **1**
 
 ## Top candidates
@@ -10,7 +10,6 @@
 - `1748-BYR` [NO_CANDIDATE] — Marijuana -> Byredo / M Mink — ID 10758 — rank 3 — score 0.8286 — margin 0.4075
 - `2185-DRC` [WEAK_REVIEW] — Eau Sauvage Extrme Intense -> Dior / Eau Sauvage Extreme — ID 232 — rank 1 — score 0.8000 — margin 0.0727
 - `228-DIP` [WEAK_REVIEW] — FEUILLE DE LAVANDE -> Diptyque / Eau de Lavande — ID 24917 — rank 1 — score 0.7857 — margin 0.2257
-- `994-ZAD` [WEAK_REVIEW] — This Is Her -> Zadig Voltaire / This is Him — ID 39359 — rank 1 — score 0.7778 — margin 0.7778
 - `130-LEL` [WEAK_REVIEW] — SANTAL 26 - LE LABO -> Le Labo / Santal 33 — ID 12201 — rank 1 — score 0.7500 — margin 0.2237
 - `261-JOM` [WEAK_REVIEW] — INCENSE & EMBERS - JO MALONE -> Jo Malone London / Incense Cedrat — ID 29737 — rank 1 — score 0.6923 — margin 0.1923
 - `1526-AL HAR` [WEAK_REVIEW] — MUKHALLAT AL EMIRATES -> Al Haramain Perfumes / Mukhallath Asala — ID 37437 — rank 2 — score 0.6875 — margin 0.0423

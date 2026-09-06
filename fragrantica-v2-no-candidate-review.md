@@ -1,8 +1,8 @@
 # NO_CANDIDATE residual review
 
-- Total NO_CANDIDATE: **54**
-- With local brand hint: **35**
-- Without brand hint: **19**
+- Total NO_CANDIDATE: **41**
+- With local brand hint: **19**
+- Without brand hint: **22**
 
 ## Brand-hinted residuals
 
@@ -18,29 +18,13 @@
 - `564-DOL` — SEXY CHOCLATE — brand `Dolce Gabbana` (verified_suffix) — #1 Dolce Gabbana / Rose The One [ID 6461; score 0.5944; name 0.4800] | #2 Dolce Gabbana / Velvet Patchouli [ID 13744; score 0.5428; name 0.4138] | #3 Dolce Gabbana / Velvet Exotic Leather [ID 31355; score 0.5412; name 0.4118] | #4 Dolce Gabbana / Dolce Violet [ID 80038; score 0.5320; name 0.4000] | #5 Dolce Gabbana / The One [ID 698; score 0.5320; name 0.4000]
 - `570-DOL` — (RED CUP) — brand `Dolce Gabbana` (verified_suffix) — no local candidates
 - `717-ISS` — CLASSIC - ISSEY MIYAKE — brand `Issey Miyake` (name_tail) — #1 Issey Miyake / L eau d Issey [ID 720; score 0.5320; name 0.4000] | #2 Issey Miyake / L Eau d Issey Pivoine [ID 79232; score 0.4986; name 0.3571] | #3 Issey Miyake / L Eau d Issey Pure [ID 37741; score 0.4696; name 0.3200] | #4 Issey Miyake / L Eau Bleue d Issey Eau Fraiche [ID 2330; score 0.4663; name 0.3158] | #5 Issey Miyake / Lune d Issey [ID 16973; score 0.4663; name 0.3158]
-- `817-MIC` — Gold Collection  24k Brilliant Gold — brand `Michael Kors` (verified_suffix) — no local candidates
-- `818-MIC` — Michael Kors Coral — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.4637; name 0.3125]
-- `819-MIC` — SEXY AMBER - KORS — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.4150; name 0.2500]
-- `820-MIC` — SEXY RIO DE JANEIRO KORS — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.4663; name 0.3158]
-- `821-MIC` — SEXY SUNSET - KORS — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.4072; name 0.2400]
-- `822-MIC` — Sexy-ruby-glam-ruby — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.5509; name 0.4242]
-- `823-MIC` — Sporty Citrus — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.5667; name 0.4444]
-- `824-MIC` — Gold Collection  White Luminous Gold — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.4110; name 0.2449]
-- `825-MIC` — Wonderlust — brand `Michael Kors` (verified_suffix) — #1 Michael Kors / Super Gorgeous [ID 68626; score 0.4800; name 0.3333]
-- `992-ZAD` — Girls Can Do Anything — brand `Zadig Voltaire` (verified_suffix) — no local candidates
 - `993-ZAD` — JUST ROCK FOR HER - ZADIG & VOLTAIRE — brand `Zadig Voltaire` (name_tail) — #1 Zadig Voltaire / This is Him [ID 39359; score 0.4429; name 0.2857]
 - `1014-AZZ` — CLASSIC — brand `Azzaro` (verified_suffix) — #1 Azzaro / Solarissimo Levanzo [ID 37912; score 0.5200; name 0.3846] | #2 Azzaro / Solarissimo Favignana [ID 49636; score 0.4986; name 0.3571] | #3 Azzaro / Solarissimo Marettimo [ID 43760; score 0.4986; name 0.3571] | #4 Azzaro / Aqua Cedre Blanc [ID 17861; score 0.4913; name 0.3478] | #5 Azzaro / Shine [ID 54972; score 0.4800; name 0.3333]
-- `1116-ZEG` — UOMO ABSOLUT - ERMENEGILDO ZEGNA — brand `Cremo` (verified_suffix) — #1 Cremo / Sandalwood and Suede [ID 135779; score 0.5125; name 0.3750] | #2 Cremo / Bourbon Vanilla [ID 95947; score 0.5089; name 0.3704] | #3 Cremo / Palo Santo [ID 70463; score 0.5036; name 0.3636] | #4 Cremo / Bourbon Oak [ID 49037; score 0.4913; name 0.3478] | #5 Cremo / Bergamot Musk [ID 49041; score 0.4696; name 0.3200]
 - `1748-BYR` — Marijuana — brand `Byredo` (verified_suffix) — #1 Byredo / Animalique [ID 85157; score 0.5484; name 0.4211] | #2 Byredo / Tobacco Mandarin [ID 63031; score 0.5320; name 0.4000] | #3 Byredo / M Mink [ID 10758; score 0.5320; name 0.4000] | #4 Byredo / Mumbai Noise [ID 69858; score 0.5171; name 0.3810] | #5 Byredo / Bal d Afrique [ID 6458; score 0.5036; name 0.3636]
 - `1998-LTN` — Citrus fragrance for women and men — brand `Louis Vuitton` (verified_suffix) — #1 Louis Vuitton / Attrape Reves [ID 51016; score 0.4855; name 0.3404] | #2 Louis Vuitton / Cactus Garden [ID 53946; score 0.4855; name 0.3404] | #3 Louis Vuitton / Afternoon Swim [ID 53947; score 0.4800; name 0.3333] | #4 Louis Vuitton / Le Jour se Leve [ID 48305; score 0.4747; name 0.3265] | #5 Louis Vuitton / Nuit de Feu [ID 60031; score 0.4627; name 0.3111]
 - `2085-CLIV` — X NEROLI LIMITED EDITION - CLIVE CHRISTIAN — brand `Clive Christian` (name_tail) — #1 Clive Christian / X Twist Mate Tea [ID 59178; score 0.5710; name 0.4500] | #2 Clive Christian / VIII Rococo Immortelle [ID 45206; score 0.5252; name 0.3913] | #3 Clive Christian / L Red Tea Vetiver [ID 101977; score 0.5244; name 0.3902] | #4 Clive Christian / X Twist Liquorice [ID 67267; score 0.5244; name 0.3902] | #5 Clive Christian / Amber Absolute Oil [ID 52416; score 0.5171; name 0.3810]
-- `2098-MIC` — Twilight Shimmer — brand `Michael Kors` (verified_suffix) — no local candidates
-- `2439-ZEG` — INDONESIAN OUD — brand `Cremo` (verified_suffix) — #1 Cremo / Leather Oud [ID 49042; score 0.6100; name 0.5000] | #2 Cremo / Sandalwood and Suede [ID 135779; score 0.5871; name 0.4706] | #3 Cremo / Palo Santo [ID 70463; score 0.5450; name 0.4167] | #4 Cremo / Bourbon Oak [ID 49037; score 0.4696; name 0.3200] | #5 Cremo / Iced Citron and Driftwood [ID 110783; score 0.4600; name 0.3077]
 - `2586-DIP` — Biscuit DIP — brand `Diptyque` (verified_suffix) — #1 Diptyque / Ilio Limited Edition [ID 82763; score 0.5219; name 0.3871] | #2 Diptyque / Bois Corse [ID 96742; score 0.5171; name 0.3810] | #3 Diptyque / Philosykos Limited Edition [ID 55615; score 0.5151; name 0.3784] | #4 Diptyque / Do Son Limited Edition [ID 90244; score 0.5036; name 0.3636] | #5 Diptyque / Eau d Elide [ID 3830; score 0.5036; name 0.3636]
-- `2697-RIT` — Karma Rituals — brand `Avgerinos` (verified_suffix) — #1 Avgerinos / Baby Talc [ID 63376; score 0.5745; name 0.4545] | #2 Avgerinos / Fairy Dust [ID 63381; score 0.4913; name 0.3478] | #3 Avgerinos / Stars [ID 63390; score 0.4800; name 0.3333] | #4 Avgerinos / Hammam [ID 63387; score 0.4663; name 0.3158] | #5 Avgerinos / Mystique [ID 63383; score 0.4429; name 0.2857]
-- `2699-RIT` — Ayurveda Rituals — brand `Avgerinos` (verified_suffix) — #1 Avgerinos / Baby Talc [ID 63376; score 0.5944; name 0.4800] | #2 Avgerinos / Fairy Dust [ID 63381; score 0.4600; name 0.3077] | #3 Avgerinos / Dash [ID 63378; score 0.4540; name 0.3000] | #4 Avgerinos / Stars [ID 63390; score 0.4429; name 0.2857] | #5 Avgerinos / Velvet [ID 63386; score 0.4327; name 0.2727]
 - `2701-DIP` — Cafe Verlet — brand `Diptyque` (verified_suffix) — #1 Diptyque / L Eau de Neroli [ID 3835; score 0.5800; name 0.4615] | #2 Diptyque / Vinaigre de Toilette [ID 8777; score 0.5723; name 0.4516] | #3 Diptyque / L Autre Eau de Toilette [ID 3832; score 0.5412; name 0.4118] | #4 Diptyque / Eau de Lierre Eau de Toilette [ID 6500; score 0.5320; name 0.4000] | #5 Diptyque / Eau de Lavande [ID 24917; score 0.5320; name 0.4000]
-- `2773-RIT` — The Rituals of Mehr — brand `Avgerinos` (verified_suffix) — #1 Avgerinos / Perla [ID 63389; score 0.4150; name 0.2500] | #2 Avgerinos / Stars [ID 63390; score 0.4150; name 0.2500] | #3 Avgerinos / Taboo [ID 63385; score 0.4150; name 0.2500] | #4 Avgerinos / Hammam [ID 63387; score 0.4072; name 0.2400]
 
 ## No brand hint
 
@@ -50,6 +34,8 @@
 - `739-JUI` — Viva La Juicy Gold Couture — #1 CIEL Parfum / Lady Vogue Couture [ID 33963; score 0.5909] | #2 Yves Saint Laurent / Libre Vanille Couture [ID 113623; score 0.5532] | #3 Cher / Eau de Couture [ID 55325; score 0.5500]
 - `740-JUI` — VIVA LA JUICY LUXE PARFUM - JUICY COUTURE — #1 Lancome / La Nuit Tresor Le Parfum [ID 89120; score 0.6122] | #2 Jean Paul Gaultier / La Belle Le Parfum [ID 65175; score 0.6047] | #3 Chanel / La Pausa Eau de Parfum [ID 41781; score 0.5957]
 - `743-JUS` — Girlfriend — #1 Sorce / Your Girlfriend is a Badass [ID 132631; score 0.5405]
+- `820-MIC` — SEXY RIO DE JANEIRO KORS — #1 Sol de Janeiro / Sol de Janeiro X ANITTA [ID 69177; score 0.5957] | #2 Zara / Zara Av Das Americas 4666 Rio De Janeiro [ID 31151; score 0.5312] | #3 City Parfum / Sexy Jeans [ID 47371; score 0.5294]
+- `822-MIC` — Sexy-ruby-glam-ruby — #1 City Parfum / City Sexy Glamour [ID 23383; score 0.5556] | #2 Christine Lavoisier Parfums / Sexy Lace Flirt [ID 26928; score 0.5294] | #3 Beverly Hills Polo Club / Sexy for Her [ID 118678; score 0.5161]
 - `854-NIN` — the fragrance otes of NINA ROUGE — #1 Sorce / The Ancient Waters of Venus [ID 132624; score 0.6102] | #2 Caswell Massey / Mammoth Fragrance Tonic [ID 54656; score 0.5818] | #3 Caswell Massey / Lake Fragrance Tonic [ID 54653; score 0.5769]
 - `867-PAL` — PALOMA PICASSO — no local candidates
 - `904-SALV` — SALVADOR DALI fragrances — #1 Badr Harqan / Salvador [ID 102201; score 0.5000] | #2 Contes de Parfums / Salvador da Bahia Alexandra Carlin [ID 117565; score 0.4828] | #3 Lancome / Peut Etre La Collection Fragrances [ID 3613; score 0.4828]
@@ -62,4 +48,5 @@
 - `1986-SOO` — NUR — #1 The Dua Brand / Nur Jahan s Elixir [ID 86424; score 0.5000]
 - `2036-GIS` — Ambassador Men Eau de Parfum — #1 The Dua Brand / Dua s Intense Ambassador [ID 86758; score 0.5000] | #2 Abdul Samad Al Qurashi / Ambassador Collection Al Qurashi Blend [ID 21308; score 0.4242]
 - `2604-JILS` — Sun Men Jil Sander — #1 Bodevoke / Sun Island Shimmer [ID 30104; score 0.6111] | #2 Bath Body Works / Sun Blooms Suede [ID 78922; score 0.5294] | #3 Bath Body Works / Sun Ripened Raspberry [ID 87255; score 0.5128]
+- `2699-RIT` — Ayurveda Rituals — #1 Bioselect / Glowing Rituals [ID 54636; score 0.5161]
 - `2816-MOOD` — Blonde Maracuja Mood London — #1 Natura / Frescor de Maracuja Roxo [ID 36496; score 0.5882] | #2 The Dua Brand / Blonde Tabacum [ID 85846; score 0.5854] | #3 The Dua Brand / Once Upon a Time in London [ID 86435; score 0.5660]

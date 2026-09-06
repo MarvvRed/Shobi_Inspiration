@@ -2,16 +2,16 @@
 
 - URLs parsed: **55556**
 - Residual rows scanned: **221**
-- Residuals with local brand hint: **52**
-- Suffix brand priors learned: **172**
+- Residuals with local brand hint: **35**
+- Suffix brand priors learned: **132**
 - STRONG_EXACT_BRAND: **1**
 - STRONG_UNIQUE: **1**
 - GOOD_REVIEW: **0**
 - EXACT_NAME_NO_BRAND: **7**
-- WEAK_REVIEW: **158**
-- NO_CANDIDATE: **54**
+- WEAK_REVIEW: **171**
+- NO_CANDIDATE: **41**
 
-No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Brand hints come only from explicit metadata, an exact/left-anchored brand in the Shobi label tail, or VERIFIED suffix priors, in that priority order. Generated code signatures are diagnostic-only and never trusted for brand selection. No mapping is promoted automatically.
+No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Brand hints come only from explicit metadata, an exact/left-anchored brand in the Shobi label tail, or VERIFIED suffix priors with at least two supporting verified rows, in that priority order. Generated code signatures and singleton VERIFIED suffixes are never trusted for brand selection. No mapping is promoted automatically.
 
 ## Strong candidates
 
