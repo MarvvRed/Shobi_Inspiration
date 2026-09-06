@@ -1,0 +1,29 @@
+name: Build Clean Site Database v2
+on:
+  push:
+    paths:
+      - '.github/build-site-database-v2-clean-trigger'
+      - 'tools/build_site_database_v2_clean.py'
+      - 'perfume-database/catalog/shobi-master-v2-2369.csv'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build clean database
+        run: python tools/build_site_database_v2_clean.py
+      - name: Commit clean baseline
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add database_v2_clean.json database-v2-migration-status.md
+          git diff --cached --quiet && exit 0
+          git commit -m "Build clean 2369-row site database v2"
+          git pull --rebase origin main
+          git push
