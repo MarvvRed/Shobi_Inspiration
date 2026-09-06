@@ -1,13 +1,15 @@
 # Safe duplicate cleanup
 
-- Removed duplicate rows this run: **3**
-- Remaining repeated-code groups requiring review: **2**
+- Removed duplicate rows this run: **1**
+- Corrected malformed codes this run: **2**
+- Remaining repeated-code groups requiring review: **0**
 
 ## Removed this run
-- `1868-VER` — kept `Versace Pour Homme`; removed duplicate `VERSACE MAN`
-- `677-GUC` — kept `G by G`; removed duplicate `GUCCI BY GUCCI EAU DE PARFUM`
-- `937-VAL` — kept `Valentino Donna Born In Roma`; removed duplicate `DONNA BORN IN ROMA INTENSE`
+- `777-LAL` — kept `Noir Premier  Sculpteur D Epices`; removed duplicate `SCULPTEUR D' EPICES - LALIQUE`
+
+## Corrected codes
+- `AMBER OUD GOLD EDITION` → `Amber Oud Gold Edition` — official Shobi reference `ALH078`
+- `DHAHB` → `Dhahab` — official Shobi reference `ALH004`
 
 ## Still requiring review
-- `-AL HAR` — 2 rows
-- `777-LAL` — 2 rows
+- None
