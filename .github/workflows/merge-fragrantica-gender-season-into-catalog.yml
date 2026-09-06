@@ -1,0 +1,34 @@
+name: Merge Fragrantica Gender and Season into Catalog
+
+on:
+  push:
+    paths:
+      - '.github/fragrantica-catalog-merge-trigger'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Merge Gender and Season into catalog
+        run: python tools/merge_gender_season_into_catalog.py
+      - name: Commit merged catalog and report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database_complete.json
+          git add fragrantica-scraper-archive/social-cards/catalog-merge-report.md
+          if git diff --cached --quiet; then
+            echo "No catalog merge changes"
+            exit 0
+          fi
+          git commit -m "Merge Fragrantica Gender and Season into site catalog"
+          git pull --rebase origin main
+          git push origin HEAD:main
