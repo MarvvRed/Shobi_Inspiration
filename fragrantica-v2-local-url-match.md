@@ -1,13 +1,13 @@
 # Fragrantica v2 match against local perfume_urls.txt
 
 - URLs parsed: **55556**
-- Residual rows scanned: **305**
-- Residuals with local brand hint: **164**
-- Suffix brand priors learned: **168**
-- STRONG_EXACT_BRAND: **13**
-- STRONG_UNIQUE: **12**
+- Residual rows scanned: **283**
+- Residuals with local brand hint: **144**
+- Suffix brand priors learned: **170**
+- STRONG_EXACT_BRAND: **1**
+- STRONG_UNIQUE: **4**
 - GOOD_REVIEW: **5**
-- EXACT_NAME_NO_BRAND: **7**
+- EXACT_NAME_NO_BRAND: **5**
 - WEAK_REVIEW: **178**
 - NO_CANDIDATE: **90**
 
@@ -15,31 +15,11 @@ No Fragrantica web access is used. Matching uses only repository-local `perfume_
 
 ## Strong candidates
 
-- `153-PARF` — HEROD -> Parfums de Marly / Herod — ID 16939 — STRONG_EXACT_BRAND — brand-source verified_suffix
-- `185-AL HAR` — Red African -> Al Haramain Perfumes / Red African — ID 61372 — STRONG_EXACT_BRAND — brand-source code_signature
-- `553-DOL` — DOLCE -> Dolce Gabbana / Dolce — ID 22955 — STRONG_UNIQUE — brand-source verified_suffix
 - `621-EST` — BRONZE GODDESS EAU DE PARFUM (SUMMER LIMITED EDITION) -> Estee Lauder / Bronze Goddess Eau de Parfum — ID 43639 — STRONG_EXACT_BRAND — brand-source verified_suffix
-- `869-PIER` — EXTATIC - PIERRE BALMAIN -> Balmain Beauty / Extatic — ID 22817 — STRONG_EXACT_BRAND — brand-source verified_suffix
-- `877-PRA` — INFUSION DE FLEUR D'ORANGER -> Prada / Infusion de Fleur d Oranger — ID 5533 — STRONG_EXACT_BRAND — brand-source verified_suffix
-- `1044-CAL` — ETERNITY -> Calvin Klein / Eternity — ID 257 — STRONG_EXACT_BRAND — brand-source verified_suffix
-- `1076-DRC` — FAHRENEIT -> Dior / Fahrenheit — ID 228 — STRONG_UNIQUE — brand-source verified_suffix
-- `1198-LAL` — ENCRE NOIR - LALIQUE -> Lalique / Encre Noire — ID 1834 — STRONG_UNIQUE — brand-source verified_suffix
 - `1245-PRA` — PRADA AMBER -> Prada / Prada Amber Pour Homme Prada Man — ID 1044 — STRONG_UNIQUE — brand-source verified_suffix
-- `1486-TRU` — TRUSSARDI UOMO -> Trussardi / Trussardi Uomo — ID 1039 — STRONG_EXACT_BRAND — brand-source verified_suffix
-- `1523-AFN` — DEHN AL OUDH ABIYAD -> Afnan / Dehn al Oudh Abiyad — ID 27357 — STRONG_EXACT_BRAND — brand-source code_signature
-- `1628-AL HAR` — WARDIA -> Al Haramain Perfumes / Wardia — ID 19945 — STRONG_EXACT_BRAND — brand-source code_signature
 - `1649-GIV` — L INTERDIT INTENSE -> Givenchy / L Interdit Eau de Parfum Intense — ID 62491 — STRONG_UNIQUE — brand-source verified_suffix
-- `1783-AL HAR` — SULTAN -> Al Haramain Perfumes / Sultan — ID 19846 — STRONG_UNIQUE — brand-source code_signature
-- `1860-NAS` — ABSINT - NASOMATTO -> Nasomatto / Absinth — ID 4293 — STRONG_UNIQUE — brand-source verified_suffix
-- `1886-PARF` — DELINA LA ROSE - PDM -> Parfums de Marly / Delina La Rosee — ID 64667 — STRONG_UNIQUE — brand-source verified_suffix
-- `1950-SWISA` — AL AMAKEN -> Swiss Arabian / Al Amaken — ID 22928 — STRONG_EXACT_BRAND — brand-source verified_suffix
 - `1996-LTN` — Heures d’Absence (2020) -> Louis Vuitton / Heures d Absence — ID 59485 — STRONG_UNIQUE — brand-source verified_suffix
-- `2172-SWISA` — KASHKHA -> Swiss Arabian / Kashkha — ID 19456 — STRONG_UNIQUE — brand-source verified_suffix
-- `2220-AL HAR` — HAYATI -> Al Haramain Perfumes / Hayati — ID 19607 — STRONG_UNIQUE — brand-source code_signature
-- `2256-GIV` — VERY IRRESISTIBLE -> Givenchy / Very Irresistible — ID 33 — STRONG_EXACT_BRAND — brand-source verified_suffix
 - `2278-BLG` — Eau Parfumée au Thé Blanc Eau de Cologne -> Bvlgari / Eau Parfumee au The Blanc — ID 145 — STRONG_UNIQUE — brand-source verified_suffix
-- `-HUG` — HUGO MAN -> Hugo Boss / Hugo Man — ID 64606 — STRONG_EXACT_BRAND — brand-source verified_suffix
-- `-VICT` — ANGELS ONLY -> Victoria s Secret / Angels Only — ID 24876 — STRONG_EXACT_BRAND — brand-source verified_suffix
 
 ## Good review candidates
 
@@ -56,5 +36,3 @@ No Fragrantica web access is used. Matching uses only repository-local `perfume_
 - `900-ROG` — FLEUR DE FIGUIER -> Chabaud Maison de Parfum / Fleur de Figuier — ID 23550 — NOT promoted
 - `1205-LOL` — Au Masculin -> Adopt Parfums / Au Masculin — ID 110032 — NOT promoted
 - `2438-KYLJE` — COSMIC -> Agent Provocateur / Cosmic — ID 55451 — NOT promoted
-- `ALH004` — Dhahab -> Al Haramain Perfumes / Dhahab — ID 53174 — NOT promoted
-- `ALH078` — Amber Oud Gold Edition -> Al Haramain Perfumes / Amber Oud Gold Edition — ID 51816 — NOT promoted

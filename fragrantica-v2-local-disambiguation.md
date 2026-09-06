@@ -1,15 +1,13 @@
 # Local code-brand disambiguation
 
-- Residual no-brand rows inspected: **141**
-- Resolved with code signature + perfume name: **2**
+- Residual no-brand rows inspected: **139**
+- Resolved with code signature + perfume name: **0**
 - Ambiguous but useful: **1**
 
 No web access. Evidence comes only from repository-local `perfume_urls.txt` and Shobi codes/names.
 
 ## Resolved
 
-- `ALH004` — Dhahab -> Al Haramain Perfumes / Dhahab — ID 53174 — score 1.0000, margin 0.4286, code-brand candidates 6
-- `ALH078` — Amber Oud Gold Edition -> Al Haramain Perfumes / Amber Oud Gold Edition — ID 51816 — score 1.0000, margin 0.4359, code-brand candidates 6
 
 ## Ambiguous
 
