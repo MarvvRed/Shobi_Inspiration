@@ -18,6 +18,7 @@ on:
       - 'tools/promote_reviewed_brand_abbreviations_v2.py'
       - 'tools/promote_reviewed_historical_residuals_v2.py'
       - 'tools/review_remaining_historical_residuals_v2.py'
+      - 'tools/review_no_candidate_residuals_v2.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -45,6 +46,8 @@ jobs:
         run: python tools/review_brand_locked_abbreviations_v2.py
       - name: Review remaining historical residuals
         run: python tools/review_remaining_historical_residuals_v2.py
+      - name: Review NO_CANDIDATE residuals
+        run: python tools/review_no_candidate_residuals_v2.py
       - name: Promote conservative local matches
         run: python tools/promote_safe_local_url_matches_v2.py
       - name: Promote manually reviewed local matches
@@ -63,6 +66,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md fragrantica-v2-local-disambiguation.md fragrantica-v2-global-fallback-review.csv fragrantica-v2-global-fallback-review.md fragrantica-v2-brand-override-review.csv fragrantica-v2-brand-override-review.md fragrantica-v2-lower-same-brand-review.csv fragrantica-v2-lower-same-brand-review.md fragrantica-v2-mega-local-evidence.csv fragrantica-v2-mega-local-evidence.md fragrantica-v2-brand-abbreviation-review.csv fragrantica-v2-brand-abbreviation-review.md fragrantica-v2-remaining-historical-residuals.md fragrantica-v2-safe-promotion.md fragrantica-v2-reviewed-promotion.md fragrantica-v2-historical-local-bulk-promotion.md fragrantica-v2-multisource-promotion.md fragrantica-v2-reviewed-multisource-tail.md fragrantica-v2-reviewed-brand-abbreviations.md fragrantica-v2-reviewed-historical-residuals.md database_v2_clean.json database_complete.json
+          git add fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md fragrantica-v2-local-disambiguation.md fragrantica-v2-global-fallback-review.csv fragrantica-v2-global-fallback-review.md fragrantica-v2-brand-override-review.csv fragrantica-v2-brand-override-review.md fragrantica-v2-lower-same-brand-review.csv fragrantica-v2-lower-same-brand-review.md fragrantica-v2-mega-local-evidence.csv fragrantica-v2-mega-local-evidence.md fragrantica-v2-brand-abbreviation-review.csv fragrantica-v2-brand-abbreviation-review.md fragrantica-v2-remaining-historical-residuals.md fragrantica-v2-no-candidate-review.md fragrantica-v2-safe-promotion.md fragrantica-v2-reviewed-promotion.md fragrantica-v2-historical-local-bulk-promotion.md fragrantica-v2-multisource-promotion.md fragrantica-v2-reviewed-multisource-tail.md fragrantica-v2-reviewed-brand-abbreviations.md fragrantica-v2-reviewed-historical-residuals.md database_v2_clean.json database_complete.json
           git diff --cached --quiet || git commit -m 'Bulk promote high-confidence local residual mappings'
           git push
