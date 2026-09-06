@@ -1,0 +1,26 @@
+name: Revalidate Prior Web Mappings Locally
+on:
+  push:
+    paths:
+      - '.github/revalidate-web-mappings-local-trigger'
+      - 'tools/revalidate_web_mappings_against_local_urls.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  revalidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Revalidate against local URL corpus
+        run: python tools/revalidate_web_mappings_against_local_urls.py
+      - name: Commit revalidation
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database_complete.json database_v2_clean.json fragrantica-v2-web-to-local-revalidation.md
+          git diff --cached --quiet || git commit -m 'Revalidate prior Fragrantica mappings against local corpus'
+          git push
