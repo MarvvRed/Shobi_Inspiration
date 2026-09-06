@@ -1,10 +1,10 @@
 # Reviewed brand-locked abbreviation promotion
 
 - Approved: **7**
-- Promoted this run: **7**
-- Already verified: **0**
-- database_v2_clean.json: **7** changed
-- database_complete.json: **7** changed
+- Promoted this run: **0**
+- Already verified: **7**
+- database_v2_clean.json: **0** changed
+- database_complete.json: **0** changed
 
 ## Mappings
 
