@@ -21,6 +21,9 @@ APPROVED={
     '2122-GUR':('79472','Guerlain','Rosa Rossa Harvest','same brand; Shobi explicitly contains HARVEST ROSA ROSSA; correct local candidate is Rosa Rossa Harvest, not base/Forte variants'),
     '2344-LEL':('46295','Le Labo','Mousse de Chene 30 Amsterdam','same brand; exact distinctive Mousse de Chene 30 identity with corpus city qualifier'),
     '2173-ANFAD':('23000','Anfasic','Sukar','corrected suffix-brand review: exact SUKAR under Anfasic; previous code-signature brand hint was false'),
+    '828-MIY':('724','Issey Miyake','L Eau Bleue d Issey Pour Homme','same-brand local candidate; Shobi L EAU BLEUE uniquely preserves the distinctive Eau Bleue identity'),
+    '841-NRO':('42580','Narciso Rodriguez','Narciso Rodriguez Fleur Musc for Her','same-brand local candidate; exact distinctive Fleur Musc for Her words despite lower generic-token matcher ranking'),
+    '2018-ARM':('75126','Giorgio Armani','Armani Code Parfum','verified Armani suffix; Shobi CODE PARFUM maps directly to the same-brand local Armani Code Parfum candidate'),
 }
 
 # Name-keyed approval is used only for a genuinely code-less catalog row.
