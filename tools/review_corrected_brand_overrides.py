@@ -84,3 +84,4 @@ for r in out:
  if r['override_classification'] in {'OVERRIDE_STRONG','OVERRIDE_GOOD'}:lines.append(f"- `{r['shobi_code']}` — {r['shobi_name']} -> {r.get('cand1_brand','')} / {r.get('cand1_name','')} — ID {r.get('cand1_id','')} — **{r['override_classification']}** (old hint `{r['old_brand_hint']}`)")
 REPORT.write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print('rows',len(out),dict(cnt))
+# Triggered as an explicit local-only corrected-brand review stage.
