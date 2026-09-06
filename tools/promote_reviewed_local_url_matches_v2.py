@@ -24,6 +24,8 @@ APPROVED={
     '828-MIY':('724','Issey Miyake','L Eau Bleue d Issey Pour Homme','same-brand local candidate; Shobi L EAU BLEUE uniquely preserves the distinctive Eau Bleue identity'),
     '841-NRO':('42580','Narciso Rodriguez','Narciso Rodriguez Fleur Musc for Her','same-brand local candidate; exact distinctive Fleur Musc for Her words despite lower generic-token matcher ranking'),
     '2018-ARM':('75126','Giorgio Armani','Armani Code Parfum','verified Armani suffix; Shobi CODE PARFUM maps directly to the same-brand local Armani Code Parfum candidate'),
+    '1081-DRC':('22860','Dior','Dior Homme Eau for Men','same-brand local candidate; Shobi HOMME EAU directly distinguishes Dior Homme Eau from Parfum, Cologne and base Homme variants'),
+    '1110-DSQ':('18592','DSQUARED2','Potion Royal Black','verified DSQUARED2 suffix; Shobi BLACK POTION preserves the two distinctive identity words of the same-brand Potion Royal Black candidate'),
 }
 
 # Name-keyed approval is used only for a genuinely code-less catalog row.
