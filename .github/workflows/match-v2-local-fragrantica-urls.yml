@@ -12,6 +12,7 @@ on:
       - 'tools/review_lower_same_brand_candidates.py'
       - 'tools/mega_local_residual_evidence.py'
       - 'tools/promote_high_confidence_historical_local_v2.py'
+      - 'tools/promote_multisource_local_evidence_v2.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -41,10 +42,12 @@ jobs:
         run: python tools/promote_reviewed_local_url_matches_v2.py
       - name: Bulk promote high-confidence historical IDs confirmed by local corpus
         run: python tools/promote_high_confidence_historical_local_v2.py
+      - name: Promote 3-source brand/name aligned residuals
+        run: python tools/promote_multisource_local_evidence_v2.py
       - name: Commit reports and databases
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md fragrantica-v2-local-disambiguation.md fragrantica-v2-global-fallback-review.csv fragrantica-v2-global-fallback-review.md fragrantica-v2-brand-override-review.csv fragrantica-v2-brand-override-review.md fragrantica-v2-lower-same-brand-review.csv fragrantica-v2-lower-same-brand-review.md fragrantica-v2-mega-local-evidence.csv fragrantica-v2-mega-local-evidence.md fragrantica-v2-safe-promotion.md fragrantica-v2-reviewed-promotion.md fragrantica-v2-historical-local-bulk-promotion.md database_v2_clean.json database_complete.json
+          git add fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md fragrantica-v2-local-disambiguation.md fragrantica-v2-global-fallback-review.csv fragrantica-v2-global-fallback-review.md fragrantica-v2-brand-override-review.csv fragrantica-v2-brand-override-review.md fragrantica-v2-lower-same-brand-review.csv fragrantica-v2-lower-same-brand-review.md fragrantica-v2-mega-local-evidence.csv fragrantica-v2-mega-local-evidence.md fragrantica-v2-safe-promotion.md fragrantica-v2-reviewed-promotion.md fragrantica-v2-historical-local-bulk-promotion.md fragrantica-v2-multisource-promotion.md database_v2_clean.json database_complete.json
           git diff --cached --quiet || git commit -m 'Bulk promote high-confidence local residual mappings'
           git push
