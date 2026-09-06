@@ -1,12 +1,12 @@
 # Fragrantica v2 match against local perfume_urls.txt
 
 - URLs parsed: **55556**
-- Residual rows scanned: **283**
-- Residuals with local brand hint: **144**
+- Residual rows scanned: **277**
+- Residuals with local brand hint: **138**
 - Suffix brand priors learned: **170**
 - STRONG_EXACT_BRAND: **1**
-- STRONG_UNIQUE: **4**
-- GOOD_REVIEW: **5**
+- STRONG_UNIQUE: **1**
+- GOOD_REVIEW: **2**
 - EXACT_NAME_NO_BRAND: **5**
 - WEAK_REVIEW: **178**
 - NO_CANDIDATE: **90**
@@ -17,17 +17,11 @@ No Fragrantica web access is used. Matching uses only repository-local `perfume_
 
 - `621-EST` — BRONZE GODDESS EAU DE PARFUM (SUMMER LIMITED EDITION) -> Estee Lauder / Bronze Goddess Eau de Parfum — ID 43639 — STRONG_EXACT_BRAND — brand-source verified_suffix
 - `1245-PRA` — PRADA AMBER -> Prada / Prada Amber Pour Homme Prada Man — ID 1044 — STRONG_UNIQUE — brand-source verified_suffix
-- `1649-GIV` — L INTERDIT INTENSE -> Givenchy / L Interdit Eau de Parfum Intense — ID 62491 — STRONG_UNIQUE — brand-source verified_suffix
-- `1996-LTN` — Heures d’Absence (2020) -> Louis Vuitton / Heures d Absence — ID 59485 — STRONG_UNIQUE — brand-source verified_suffix
-- `2278-BLG` — Eau Parfumée au Thé Blanc Eau de Cologne -> Bvlgari / Eau Parfumee au The Blanc — ID 145 — STRONG_UNIQUE — brand-source verified_suffix
 
 ## Good review candidates
 
-- `204-CRD` — Avent -> Creed / Aventus — ID 9828 — score 0.8700
 - `1929-BLG` — Le-gemme-tygar-eau-de- -> Bvlgari / Le Gemme Tygar Extrait — ID 120377 — score 0.8886
 - `1978-ARM` — STRONGER WITH YOU INTENSENLY -> Giorgio Armani / Stronger With You Limited Edition — ID 79166 — score 0.8886
-- `2142-PARF` — PEGASUS EXCLUSIVE - PARFUMS DE MARLY -> Parfums de Marly / Pegasus Exclusif — ID 63100 — score 0.9291
-- `2313-DRC` — SAUVAGE PARFUM 2019 -> Dior / Sauvage Parfum — ID 56324 — score 0.9688
 
 ## Exact local name but no brand agreement
 
