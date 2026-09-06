@@ -14,6 +14,13 @@ def norm(s):
     return ' '.join(re.sub(r'[^a-z0-9]+',' ',s).split())
 def toks(s): return [x for x in norm(s).split() if x not in STOP and len(x)>1]
 def suffix(code): return norm(str(code or '').rsplit('-',1)[-1]).replace(' ','') if '-' in str(code or '') else ''
+def core_name(s):
+    s=str(s or '').strip()
+    # Shobi frequently appends a brand/source after a spaced dash. Keep the perfume part.
+    s=re.split(r'\s+-\s+',s,maxsplit=1)[0].strip()
+    # Parentheticals are usually edition/marketing qualifiers, not needed for first-pass identity.
+    s=re.sub(r'\s*\([^)]*\)\s*',' ',s).strip()
+    return ' '.join(s.split())
 def parse(u):
     m=re.search(r'/perfume/([^/]+)/([^/]+?)-(\d+)\.html',u.strip(),re.I)
     if not m:return None
@@ -27,6 +34,18 @@ def brand_sim(h,c):
     if min(len(h),len(b))>=4 and (h in b or b in h):return .92
     return sim(h,b)*.75
 
+def name_metrics(q,c):
+    qn=norm(q); cn=c['nn']; qt=set(toks(q)); ct=c['nt']
+    if not qn or not cn:return 0,0,0,0
+    inter=len(qt&ct); recall=inter/len(qt) if qt else 0; precision=inter/len(ct) if ct else 0
+    f1=(2*precision*recall/(precision+recall)) if precision+recall else 0
+    sr=sim(qn,cn)
+    short,longer=(qn,cn) if len(qn)<=len(cn) else (cn,qn)
+    length_ratio=len(short)/len(longer) if longer else 0
+    contain=.96 if min(len(qn),len(cn))>=4 and length_ratio>=.72 and short in longer else 0
+    exact=1.0 if qn==cn else 0
+    return max(sr,contain,exact,f1),recall,precision,sr
+
 def walk(o):
     if isinstance(o,list):
         for x in o: yield from walk(x)
@@ -36,11 +55,11 @@ def walk(o):
                 if isinstance(p,dict): yield p
         elif 'code' in o or 'inspiredBy' in o: yield o
 
-urls=[]; byid={}; inv=defaultdict(set)
+urls=[]; byid={}; inv=defaultdict(set); brand_idx=defaultdict(set)
 for line in URLS.read_text(encoding='utf-8',errors='ignore').splitlines():
     c=parse(line)
     if not c or c['id'] in byid:continue
-    byid[c['id']]=c; idx=len(urls); urls.append(c)
+    byid[c['id']]=c; idx=len(urls); urls.append(c); brand_idx[c['bn']].add(idx)
     for t in c['nt']:inv[t].add(idx)
 
 perf=list(walk(json.loads(DB.read_text(encoding='utf-8-sig'))))
@@ -54,39 +73,49 @@ brand_by_suffix={s:c.most_common(1)[0][0] for s,c in priors.items() if c.most_co
 rows=[]
 for p in perf:
     if str(p.get('fragranticaStatus') or '').startswith('VERIFIED_'):continue
-    code=str(p.get('code') or '').strip() or '[no-code]'; name=str(p.get('inspiredBy') or p.get('perfume') or '').strip()
+    code=str(p.get('code') or '').strip() or '[no-code]'; raw_name=str(p.get('inspiredBy') or p.get('perfume') or '').strip(); qname=core_name(raw_name)
     explicit=str(p.get('brand') or '').strip(); hint=explicit or brand_by_suffix.get(suffix(code),'')
+    brand_pool=set(brand_idx.get(norm(hint),set())) if hint else set()
     ids=set()
-    for t in toks(name):ids.update(inv.get(t,set()))
-    pool=ids or range(len(urls)); ranked=[]; qt=set(toks(name)); qn=norm(name)
+    for t in toks(qname):ids.update(inv.get(t,set()))
+    if brand_pool:
+        pool=brand_pool
+    elif ids:
+        pool=ids
+    else:
+        pool=range(len(urls))
+    ranked=[]
     for idx in pool:
-        c=urls[idx]; inter=len(qt&c['nt']); cov=inter/len(qt) if qt else 0
-        contain=.96 if min(len(qn),len(c['nn']))>=4 and (qn in c['nn'] or c['nn'] in qn) else 0
-        ns=max(sim(qn,c['nn']),1 if qn==c['nn'] else contain,cov)
-        bs=brand_sim(hint,c); total=.74*ns+.26*bs if hint else ns
-        if hint and bs<.35:total*=.72
-        if total>=.4 or ns>=.62:ranked.append((total,ns,bs,cov,c))
-    ranked.sort(key=lambda x:(x[0],x[1],x[2]),reverse=True); top=ranked[:5]
+        c=urls[idx]; ns,recall,precision,sr=name_metrics(qname,c); bs=brand_sim(hint,c)
+        total=.78*ns+.22*bs if hint else ns
+        if hint and bs<.35:total*=.70
+        if total>=.40 or ns>=.60:ranked.append((total,ns,bs,recall,precision,sr,c))
+    ranked.sort(key=lambda x:(x[0],x[1],x[3],x[4],x[5]),reverse=True); top=ranked[:5]
     if not top:cls='NO_CANDIDATE'
     else:
         margin=top[0][0]-(top[1][0] if len(top)>1 else 0); brand_ok=bool(hint) and top[0][2]>=.78
-        if top[0][1]>=.94 and brand_ok and margin>=.035:cls='STRONG_UNIQUE'
-        elif top[0][0]>=.78 and top[0][1]>=.8 and brand_ok and margin>=.015:cls='GOOD_REVIEW'
-        elif top[0][0]>=.62 or top[0][1]>=.72:cls='WEAK_REVIEW'
+        # Strong requires local brand evidence plus a near-exact name or excellent token/sequence identity.
+        strong_name=top[0][1]>=.94 and (top[0][5]>=.86 or (top[0][3]>=.90 and top[0][4]>=.70))
+        if strong_name and brand_ok and margin>=.025:cls='STRONG_UNIQUE'
+        elif top[0][0]>=.80 and top[0][1]>=.82 and brand_ok and margin>=.012:cls='GOOD_REVIEW'
+        elif top[0][0]>=.62 or top[0][1]>=.70:cls='WEAK_REVIEW'
         else:cls='NO_CANDIDATE'
-    r={'shobi_code':code,'shobi_name':name,'shobi_brand':explicit,'inferred_brand':hint,'classification':cls,'candidate_count':len(ranked)}
-    for i,(sc,ns,bs,cov,c) in enumerate(top,1):
-        r.update({f'cand{i}_id':c['id'],f'cand{i}_brand':c['brand'],f'cand{i}_name':c['name'],f'cand{i}_url':c['url'],f'cand{i}_score':f'{sc:.4f}',f'cand{i}_name_score':f'{ns:.4f}',f'cand{i}_brand_score':f'{bs:.4f}',f'cand{i}_coverage':f'{cov:.4f}'})
+    r={'shobi_code':code,'shobi_name':raw_name,'match_name':qname,'shobi_brand':explicit,'inferred_brand':hint,'classification':cls,'candidate_count':len(ranked)}
+    for i,(sc,ns,bs,rc,pr,sr,c) in enumerate(top,1):
+        r.update({f'cand{i}_id':c['id'],f'cand{i}_brand':c['brand'],f'cand{i}_name':c['name'],f'cand{i}_url':c['url'],f'cand{i}_score':f'{sc:.4f}',f'cand{i}_name_score':f'{ns:.4f}',f'cand{i}_brand_score':f'{bs:.4f}',f'cand{i}_recall':f'{rc:.4f}',f'cand{i}_precision':f'{pr:.4f}',f'cand{i}_seq':f'{sr:.4f}'})
     rows.append(r)
-fields=['shobi_code','shobi_name','shobi_brand','inferred_brand','classification','candidate_count']
-for i in range(1,6):fields += [f'cand{i}_id',f'cand{i}_brand',f'cand{i}_name',f'cand{i}_url',f'cand{i}_score',f'cand{i}_name_score',f'cand{i}_brand_score',f'cand{i}_coverage']
+fields=['shobi_code','shobi_name','match_name','shobi_brand','inferred_brand','classification','candidate_count']
+for i in range(1,6):fields += [f'cand{i}_id',f'cand{i}_brand',f'cand{i}_name',f'cand{i}_url',f'cand{i}_score',f'cand{i}_name_score',f'cand{i}_brand_score',f'cand{i}_recall',f'cand{i}_precision',f'cand{i}_seq']
 with OUT.open('w',encoding='utf-8-sig',newline='') as f:
     w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(rows)
 cnt=Counter(r['classification'] for r in rows); inferred=sum(bool(r['inferred_brand']) for r in rows)
 lines=['# Fragrantica v2 match against local perfume_urls.txt','',f'- URLs parsed: **{len(urls)}**',f'- Residual rows scanned: **{len(rows)}**',f'- Residuals with local brand hint: **{inferred}**',f'- Suffix brand priors learned: **{len(brand_by_suffix)}**']
 for k in ['STRONG_UNIQUE','GOOD_REVIEW','WEAK_REVIEW','NO_CANDIDATE']:lines.append(f'- {k}: **{cnt[k]}**')
-lines += ['','No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus already-verified rows for brand priors. `STRONG_UNIQUE` requires coherent local brand evidence. No mapping is promoted automatically.','','## Strong unique candidates','']
+lines += ['','No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus already-verified rows for brand priors. Brand-known rows are searched inside that brand only. Spaced-dash brand suffixes are removed from the query before name scoring. `STRONG_UNIQUE` requires coherent local brand evidence. No mapping is promoted automatically.','','## Strong unique candidates','']
 for r in rows:
     if r['classification']=='STRONG_UNIQUE':lines.append(f"- `{r['shobi_code']}` — {r['shobi_name']} -> {r.get('cand1_brand','')} / {r.get('cand1_name','')} — ID {r.get('cand1_id','')} — score {r.get('cand1_score','')} — brand {r['inferred_brand']}")
+lines += ['','## Good review candidates','']
+for r in rows:
+    if r['classification']=='GOOD_REVIEW':lines.append(f"- `{r['shobi_code']}` — {r['shobi_name']} -> {r.get('cand1_brand','')} / {r.get('cand1_name','')} — ID {r.get('cand1_id','')} — score {r.get('cand1_score','')} — brand {r['inferred_brand']}")
 REPORT.write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print('urls',len(urls),'residuals',len(rows),'priors',len(brand_by_suffix),dict(cnt))
