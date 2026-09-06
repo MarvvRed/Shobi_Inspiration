@@ -1,10 +1,10 @@
 # Global local-corpus fallback review
 
-- Input residual candidates inspected: **189**
+- Input residual candidates inspected: **186**
 - GLOBAL_STRONG: **8**
-- GLOBAL_GOOD: **7**
+- GLOBAL_GOOD: **6**
 - GLOBAL_ALTERNATIVE: **6**
-- GLOBAL_WEAK: **168**
+- GLOBAL_WEAK: **166**
 
 This pass ignores inferred brand restrictions and searches only the repository-local `perfume_urls.txt`. It is review-only and promotes nothing.
 
@@ -19,7 +19,6 @@ This pass ignores inferred brand restrictions and searches only the repository-l
 - `728-JES` — IN BLACK -> Byblos / In Black — ID 11574 — **GLOBAL_STRONG** — old hint `Aqua di Jesolo` (code_signature)
 - `737-JUI` — Malibu -> Celui / Eau de Malibu — ID 134829 — **GLOBAL_STRONG** — old hint `` ()
 - `821-MIC` — SEXY SUNSET - KORS -> Alex Simone / Le Sunset — ID 103591 — **GLOBAL_ALTERNATIVE** — old hint `Michael Kors` (verified_suffix)
-- `841-NRO` — FLEUR MUSK FOR HER - RODRIGUEZ -> The Dua Brand / Floral Musk for Her — ID 108542 — **GLOBAL_GOOD** — old hint `Narciso Rodriguez` (verified_suffix)
 - `853-NIN` — NINA -> Ascania / Nina Nina — ID 84711 — **GLOBAL_STRONG** — old hint `Nina Ricci` (code_signature)
 - `896-RCAV` — Splendid-vanilla -> Alexandria Fragrances / Splendid Vanille — ID 47949 — **GLOBAL_GOOD** — old hint `` ()
 - `1110-DSQ` — BLACK POTION - DSQUARED -> Aurora Scents / Black Potion — ID 93469 — **GLOBAL_STRONG** — old hint `DSQUARED2` (verified_suffix)

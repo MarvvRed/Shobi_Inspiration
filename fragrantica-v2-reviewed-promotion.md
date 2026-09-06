@@ -1,11 +1,11 @@
 # Reviewed v2 local-corpus promotion
 
-- Approved code mappings: **17**
+- Approved code mappings: **19**
 - Approved code-less name mappings: **1**
-- Promoted this run: **3**
-- Already verified / untouched: **15**
-- `database_v2_clean.json`: matched **18**, changed **3**
-- `database_complete.json`: matched **17**, changed **3**
+- Promoted this run: **2**
+- Already verified / untouched: **18**
+- `database_v2_clean.json`: matched **20**, changed **2**
+- `database_complete.json`: matched **19**, changed **2**
 
 No web verification. Every ID must exist in repository-local `perfume_urls.txt`.
 
@@ -28,6 +28,8 @@ No web verification. Every ID must exist in repository-local `perfume_urls.txt`.
 - `828-MIY` -> Issey Miyake / L Eau Bleue d Issey Pour Homme — ID 724 — same-brand local candidate; Shobi L EAU BLEUE uniquely preserves the distinctive Eau Bleue identity
 - `841-NRO` -> Narciso Rodriguez / Narciso Rodriguez Fleur Musc for Her — ID 42580 — same-brand local candidate; exact distinctive Fleur Musc for Her words despite lower generic-token matcher ranking
 - `2018-ARM` -> Giorgio Armani / Armani Code Parfum — ID 75126 — verified Armani suffix; Shobi CODE PARFUM maps directly to the same-brand local Armani Code Parfum candidate
+- `1081-DRC` -> Dior / Dior Homme Eau for Men — ID 22860 — same-brand local candidate; Shobi HOMME EAU directly distinguishes Dior Homme Eau from Parfum, Cologne and base Homme variants
+- `1110-DSQ` -> DSQUARED2 / Potion Royal Black — ID 18592 — verified DSQUARED2 suffix; Shobi BLACK POTION preserves the two distinctive identity words of the same-brand Potion Royal Black candidate
 
 ## Approved code-less row
 

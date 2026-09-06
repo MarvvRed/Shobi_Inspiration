@@ -1,14 +1,14 @@
 # Fragrantica v2 match against local perfume_urls.txt
 
 - URLs parsed: **55556**
-- Residual rows scanned: **268**
-- Residuals with local brand hint: **130**
-- Suffix brand priors learned: **171**
+- Residual rows scanned: **265**
+- Residuals with local brand hint: **127**
+- Suffix brand priors learned: **172**
 - STRONG_EXACT_BRAND: **1**
 - STRONG_UNIQUE: **1**
 - GOOD_REVIEW: **1**
 - EXACT_NAME_NO_BRAND: **5**
-- WEAK_REVIEW: **171**
+- WEAK_REVIEW: **168**
 - NO_CANDIDATE: **89**
 
 No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Code abbreviations are accepted as brand hints only when their generated signature maps to exactly one corpus brand. No mapping is promoted automatically.
