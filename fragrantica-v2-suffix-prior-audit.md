@@ -1,0 +1,207 @@
+# Suffix brand-prior audit
+
+- Learned suffixes: **172**
+- Flagged suffixes: **46**
+
+## Flagged
+
+- `vic` — top `Viktor Rolf` 8/9 (88.9%) — suspicious-name=True — distribution: {'Armaf': 1, 'Viktor Rolf': 8}
+  - `948-VIC` — Flowerbomb — ID 1460
+  - `949-VIC` — FLOWER BOMB BLOOM — ID 42905
+  - `1276-VIC` — Spicebomb — ID 13857
+  - `1482-VIC` — Antidote — ID 1461
+- `nro` — top `Narciso Rodriguez` 19/20 (95.0%) — suspicious-name=True — distribution: {'Narciso Rodriguez': 19, 'Asia Perfumes': 1}
+  - `841-NRO` — FLEUR MUSK FOR HER - RODRIGUEZ — ID 42580
+  - `842-NRO` — FOR HER BLACK EDP - NARCISO RODRIGUEZ — ID 14319
+  - `843-NRO` — FOR HER PINK EAU DE TOILETTE - RODRIGUEZ — ID 72604
+  - `844-NRO` — For Her L Absolu — ID 31509
+- `gul` — top `Jean Paul Gaultier` 23/24 (95.8%) — suspicious-name=True — distribution: {'Jean Paul Gaultier': 23, 'Cortina 1224': 1}
+  - `720-GUL` — CLASSIQUE — ID 427
+  - `721-GUL` — Classique Essence De Parfum — ID 39582
+  - `722-GUL` — La Belle — ID 55786
+  - `723-GUL` — X CLASSIQUE — ID 7800
+- `drc` — top `Dior` 62/64 (96.9%) — suspicious-name=True — distribution: {'Dior': 62, 'Create Scent': 1, 'The Dua Brand': 1}
+  - `113-DRC` — Oud-ispahan-eau-de- — ID 15231
+  - `522-DRC` — Dior Addict — ID 25159
+  - `523-DRC` — ISSIMO — ID 224
+  - `524-DRC` — DOLCE VITA — ID 222
+- `ltn` — top `Louis Vuitton` 32/33 (97.0%) — suspicious-name=True — distribution: {'Louis Vuitton': 32, 'Boy Smells': 1}
+  - `132-LTN` — Ombre Nomade — ID 49755
+  - `809-LTN` — Apogée — ID 40498
+  - `810-LTN` — Matière Noire — ID 40496
+  - `1612-LTN` — Turbulences — ID 40499
+- `pac` — top `Rabanne` 34/35 (97.1%) — suspicious-name=True — distribution: {'Rabanne': 34, 'Be Style Perfumes': 1}
+  - `858-PAC` — BLACK XS FOR HER — ID 1138
+  - `859-PAC` — Black Xs L Aphrodisiaque For Women — ID 18898
+  - `860-PAC` — LADY MILLION — ID 9045
+  - `861-PAC` — Lady Million Empire — ID 55787
+- `yzlo` — top `Yves Saint Laurent` 51/52 (98.1%) — suspicious-name=True — distribution: {'Yves Saint Laurent': 51, 'Alan Bray': 1}
+  - `975-YZLO` — Atlas-garden — ID 58274
+  - `976-YZLO` — Belle D Opium — ID 9394
+  - `977-YZLO` — BLACK OPIUM — ID 25324
+  - `978-YZLO` — the notes of the fragrance BLACK OPIUM NUIT BLANCHE — ID 34503
+- `tmfo` — top `Tom Ford` 76/76 (100.0%) — suspicious-name=True — distribution: {'Tom Ford': 76}
+  - `338-TMFO` — Arabian Wood — ID 6363
+  - `339-TMFO` — Beau-de-jour-eau-de- — ID 52790
+  - `340-TMFO` — Black Orchid Eau de Parfum — ID 1018
+  - `341-TMFO` — BLACK ORCHID OUD — ID 42432
+- `crd` — top `Creed` 35/35 (100.0%) — suspicious-name=True — distribution: {'Creed': 35}
+  - `114-CRD` — Erolfa — ID 4248
+  - `204-CRD` — Avent — ID 9828
+  - `205-CRD` — aven for her — ID 38497
+  - `206-CRD` — Bois du Portu — ID 3805
+- `blg` — top `Bvlgari` 33/33 (100.0%) — suspicious-name=True — distribution: {'Bvlgari': 33}
+  - `435-BLG` — Aqva Divina — ID 29442
+  - `436-BLG` — BLV for Women — ID 156
+  - `437-BLG` — BVL Pour Femme — ID 142
+  - `438-BLG` — CORAL OMNIA — ID 14297
+- `gur` — top `Guerlain` 32/32 (100.0%) — suspicious-name=True — distribution: {'Guerlain': 32}
+  - `682-GUR` — Aqua Allegoria Flora Rosa — ID 18061
+  - `683-GUR` — Aqua Allegoria Passiflora — ID 48678
+  - `684-GUR` — Baiser De Russie — ID 48679
+  - `685-GUR` — Champs Elysees — ID 25330
+- `amg` — top `Amouage` 31/31 (100.0%) — suspicious-name=True — distribution: {'Amouage': 31}
+  - `100-AMG` — JUBILATION XXV MAN — ID 2366
+  - `102-AMG` — Interlude Man — ID 15294
+  - `1524-AMG` — Interlude Woman Eau de Parfum — ID 15295
+  - `1525-AMG` — Reflection Woman — ID 919
+- `brb` — top `Burberry` 30/30 (100.0%) — suspicious-name=True — distribution: {'Burberry': 30}
+  - `420-BRB` — BRIT RHYTHM FOR HER FLORAL — ID 29562
+  - `421-BRB` — BODY — ID 13014
+  - `422-BRB` — Body Tender — ID 17320
+  - `423-BRB` — BURBERRY BRIT — ID 819
+- `mnt` — top `Montale` 29/29 (100.0%) — suspicious-name=True — distribution: {'Montale': 29}
+  - `315-MNT` — Aoud Orange — ID 23365
+  - `316-MNT` — AOUD VELVET Fragrance — ID 3786
+  - `317-MNT` — Black Aoud — ID 1142
+  - `318-MNT` — Chocolate Greedy — ID 2186
+- `tmu` — top `Mugler` 23/23 (100.0%) — suspicious-name=True — distribution: {'Mugler': 23}
+  - `918-TMU` — Alien — ID 6616
+  - `919-TMU` — Alien Essence Absolue — ID 15452
+  - `920-TMU` — Angel — ID 704
+  - `921-TMU` — ANGEL MUSE — ID 36416
+- `mntb` — top `Montblanc` 15/15 (100.0%) — suspicious-name=True — distribution: {'Montblanc': 15}
+  - `829-MNTB` — FEMME - MONT BLANC — ID 833
+  - `830-MNTB` — Legend Pour Femme — ID 16059
+  - `1208-MNTB` — Emblem — ID 23711
+  - `1209-MNTB` — Explorer — ID 52002
+- `arb` — top `Arabian Oud` 9/9 (100.0%) — suspicious-name=True — distribution: {'Arabian Oud': 9}
+  - `103-ARB` — Kalemat — ID 21623
+  - `104-ARB` — Kashmir — ID 63057
+  - `105-ARB` — PRESTIGE CLASSIC - ARABIAN OUD — ID 21602
+  - `106-ARB` — SULTAN - ARABIAN OUD — ID 21560
+- `crt` — top `Cartier` 9/9 (100.0%) — suspicious-name=True — distribution: {'Cartier': 9}
+  - `487-CRT` — BAISER VOLE — ID 12878
+  - `488-CRT` — Carat-eau-de- — ID 50748
+  - `489-CRT` — LA PANTHERE — ID 23295
+  - `490-CRT` — MUST DE CARTIER — ID 312
+- `etlr` — top `Etat Libre d Orange` 6/6 (100.0%) — suspicious-name=True — distribution: {'Etat Libre d Orange': 6}
+  - `1762-ETLR` — Putain Des Palaces — ID 4521
+  - `1973-ETLR` — Archives 69 — ID 11411
+  - `2484-ETLR` — THE AFTERNOON OF A FAUN by ETAT LIBRE D'ORANGE — ID 15948
+  - `2485-ETLR` — The-ghost-in-the-shell-1 — ID 69412
+- `bdik` — top `BDK Parfums` 5/5 (100.0%) — suspicious-name=True — distribution: {'BDK Parfums': 5}
+  - `1529-BDIK` — Rouge Smoking Eau de Parfum — ID 51468
+  - `2053-BDIK` — Gris-charnel- — ID 73645
+  - `2108-BDIK` — Creme-de-cuir-eau-de- — ID 51469
+  - `2632-BDIK` — Velvet Tonka Eau de Parfum — ID 68119
+- `swisa` — top `Swiss Arabian` 5/5 (100.0%) — suspicious-name=True — distribution: {'Swiss Arabian': 5}
+  - `1950-SWISA` — AL AMAKEN — ID 22928
+  - `2007-SWISA` — Habeitak — ID 10845
+  - `2172-SWISA` — KASHKHA — ID 19456
+  - `2327-SWISA` — Noora — ID 19470
+- `pier` — top `Balmain Beauty` 4/4 (100.0%) — suspicious-name=True — distribution: {'Balmain Beauty': 4}
+  - `869-PIER` — EXTATIC - PIERRE BALMAIN — ID 22817
+  - `870-PIER` — EXTATIC INTENSE GOLD - PIERRE BALMAIN — ID 28047
+  - `871-PIER` — IVOIRE - PIERRE BALMAIN — ID 15557
+  - `2582-PIER` — Carbone Pierre Balmain type — ID 96728
+- `byrp` — top `Byron Parfums` 4/4 (100.0%) — suspicious-name=True — distribution: {'Byron Parfums': 4}
+  - `1965-BYRP` — The Chronic — ID 53452
+  - `2589-BYRP` — Mula-mula-double-caramel — ID 88568
+  - `2590-BYRP` — Mula-mula-rouge-extreme — ID 62827
+  - `2731-BYRP` — Mula-mula — ID 50711
+- `bac` — top `Maison Francis Kurkdjian` 1/1 (100.0%) — suspicious-name=True — distribution: {'Maison Francis Kurkdjian': 1}
+  - `111-BAC` — Rouge 540 — ID 33519
+- `parfd` — top `Parfums DelRae` 1/1 (100.0%) — suspicious-name=True — distribution: {'Parfums DelRae': 1}
+  - `324-PARFD` — Bois De Paradis — ID 2662
+- `zeg` — top `Cremo` 1/1 (100.0%) — suspicious-name=True — distribution: {'Cremo': 1}
+  - `1115-ZEG` — Bourbon Vanilla — ID 95947
+- `chra` — top `Christina Aguilera` 1/1 (100.0%) — suspicious-name=True — distribution: {'Christina Aguilera': 1}
+  - `1659-CHRA` — BY NIGHT — ID 6714
+- `fra` — top `d grayi` 1/1 (100.0%) — suspicious-name=True — distribution: {'d grayi': 1}
+  - `2065-FRA` — Sugar Franck Boclet — ID 87109
+- `anfad` — top `Anfasic` 1/1 (100.0%) — suspicious-name=True — distribution: {'Anfasic': 1}
+  - `2173-ANFAD` — SUKAR — ID 23000
+- `arbas` — top `Armand Basi` 1/1 (100.0%) — suspicious-name=True — distribution: {'Armand Basi': 1}
+  - `2250-ARBAS` — IN RED — ID 128
+- `franb` — top `Francesca Bianchi` 1/1 (100.0%) — suspicious-name=True — distribution: {'Francesca Bianchi': 1}
+  - `2404-FRANB` — Angel S Dust — ID 40882
+- `espar` — top `Essential Parfums` 1/1 (100.0%) — suspicious-name=True — distribution: {'Essential Parfums': 1}
+  - `2468-ESPAR` — Bois Impérial — ID 64338
+- `rit` — top `Avgerinos` 1/1 (100.0%) — suspicious-name=True — distribution: {'Avgerinos': 1}
+  - `2548-RIT` — Hammam Rituals — ID 63387
+- `cli` — top `Clinique` 5/7 (71.4%) — suspicious-name=False — distribution: {'Clinique': 5, 'The Dua Brand': 2}
+  - `545-CLI` — Aromatics Elixir Eau de Parfum — ID 371
+  - `546-CLI` — Aromatics In White — ID 28532
+  - `547-CLI` — Beyond Rose — ID 25726
+  - `549-CLI` — Simply — ID 379
+- `xer` — top `Xerjoff` 37/45 (82.2%) — suspicious-name=False — distribution: {'Xerjoff': 37, 'Fragrance World': 1, 'Casamorati 1888': 7}
+  - `179-XER` — 1861 NAXOS — ID 30529
+  - `181-XER` — Alexandria II — ID 17786
+  - `182-XER` — Comandante — ID 16448
+  - `183-XER` — Don — ID 26709
+- `iss` — top `Issey Miyake` 5/6 (83.3%) — suspicious-name=False — distribution: {'Accessorize': 1, 'Issey Miyake': 5}
+  - `718-ISS` — L Eau D Issey — ID 720
+  - `719-ISS` — PLEATS PLEASE — ID 15464
+  - `1172-ISS` — EAU D'ISSEY HOMME - ISSEY MIYAKE — ID 721
+  - `1173-ISS` — Nuit D Issey Bleu Astral — ID 43311
+- `ken` — top `Kenzo` 15/17 (88.2%) — suspicious-name=False — distribution: {'Kenzo': 15, 'Ciclo Cosmeticos': 1, 'Bellerive': 1}
+  - `747-KEN` — Kenzo Amour Le Parfum — ID 4696
+  - `748-KEN` — Couleur Kenzo Violet — ID 23315
+  - `750-KEN` — Flower By Kenzo L Elixir — ID 31539
+  - `751-KEN` — JEU D'AMOUR — ID 25866
+- `hug` — top `Hugo Boss` 23/25 (92.0%) — suspicious-name=False — distribution: {'Hugo Boss': 23, 'Baldessarini': 1, 'Avon': 1}
+  - `710-HUG` — BOSS JOUR - HUGO BOSS — ID 18385
+  - `711-HUG` — BOSS ORANGE FEMME - HUGO BOSS — ID 5979
+  - `712-HUG` — Boss Woman — ID 381
+  - `713-HUG` — MA VIE - HUGO BOSS — ID 25298
+- `tru` — top `Trussardi` 15/16 (93.8%) — suspicious-name=False — distribution: {'Aurora Scents': 1, 'Trussardi': 15}
+  - `929-TRU` — Donna — ID 13066
+  - `930-TRU` — Essenza-del-tempo — ID 3667
+  - `931-TRU` — INSIDE — ID 883
+  - `932-TRU` — Inside Delight — ID 3058
+- `dip` — top `Diptyque` 17/18 (94.4%) — suspicious-name=False — distribution: {'Diptyque': 17, 'Dana': 1}
+  - `221-DIP` — 34 BOULEVARD SAINT GERMAIN 2011 — ID 12208
+  - `224-DIP` — Do Son — ID 6501
+  - `225-DIP` — EL EAU DES SENS — ID 35678
+  - `226-DIP` — Eau Lente — ID 3829
+- `lel` — top `Le Labo` 23/24 (95.8%) — suspicious-name=False — distribution: {'Le Labo': 23, 'Abercrombie Fitch': 1}
+  - `128-LEL` — Bergamote 22 — ID 6327
+  - `129-LEL` — Rose 31 — ID 3678
+  - `131-LEL` — Santal 33 — ID 12201
+  - `1697-LEL` — The Noir 29 — ID 31872
+- `cal` — top `Calvin Klein` 24/25 (96.0%) — suspicious-name=False — distribution: {'Calvin Klein': 24, 'We Pink': 1}
+  - `465-CAL` — Beauty — ID 8840
+  - `466-CAL` — CALVIN KLEIN WOMEN — ID 50662
+  - `467-CAL` — Contradiction for Women Eau de Parfum — ID 255
+  - `468-CAL` — DOWN TOWN - CALVIN KLEIN — ID 14606
+- `giv` — top `Givenchy` 25/26 (96.2%) — suspicious-name=False — distribution: {'Givenchy': 25, 'Lattafa Perfumes': 1}
+  - `662-GIV` — Amarige — ID 3
+  - `663-GIV` — the fragrance Amarige Mariage — ID 757
+  - `664-GIV` — Ange Ou Demon — ID 701
+  - `665-GIV` — Bloom — ID 17610
+- `guc` — top `Gucci` 25/26 (96.2%) — suspicious-name=False — distribution: {'Gucci': 25, 'Anthropologie': 1}
+  - `674-GUC` — BAMBOO — ID 30815
+  - `675-GUC` — Bloom — ID 44894
+  - `677-GUC` — G by G — ID 1150
+  - `678-GUC` — Guilty — ID 9677
+- `est` — top `Estee Lauder` 26/27 (96.3%) — suspicious-name=False — distribution: {'Estee Lauder': 26, 'Aerin': 1}
+  - `614-EST` — Beautiful Eau de Parfum — ID 528
+  - `615-EST` — Beautiful Belle — ID 50793
+  - `616-EST` — Beyond Paradise — ID 530
+  - `617-EST` — Brasil Dream — ID 4942
+- `arm` — top `Giorgio Armani` 72/73 (98.6%) — suspicious-name=False — distribution: {'Giorgio Armani': 72, 'Aqua Arabia': 1}
+  - `108-ARM` — BLEU LAZULI — ID 48059
+  - `109-ARM` — MUSC SHAMAL — ID 55282
+  - `110-ARM` — ROSE D'ARABIE — ID 10886
+  - `186-ARM` — AMBRE SOIE — ID 405

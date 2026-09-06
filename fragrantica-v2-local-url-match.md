@@ -11,7 +11,7 @@
 - WEAK_REVIEW: **158**
 - NO_CANDIDATE: **54**
 
-No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Brand hints come only from explicit metadata, VERIFIED suffix priors, or an exact/left-anchored brand name in the Shobi label tail. Generated code signatures are diagnostic-only and never trusted for brand selection. No mapping is promoted automatically.
+No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Brand hints come only from explicit metadata, an exact/left-anchored brand in the Shobi label tail, or VERIFIED suffix priors, in that priority order. Generated code signatures are diagnostic-only and never trusted for brand selection. No mapping is promoted automatically.
 
 ## Strong candidates
 

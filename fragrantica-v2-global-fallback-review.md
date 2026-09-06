@@ -11,7 +11,7 @@ This pass ignores inferred brand restrictions and searches only the repository-l
 ## Strong / good / changed alternatives
 
 - `230-DIP` — OPOPANAX -> Prada / No8 Opopanax — ID 3222 — **GLOBAL_ALTERNATIVE** — old hint `Diptyque` (verified_suffix)
-- `258-JOM` — GREEN TOMATO LEAF - JO MALONE -> Demeter Fragrance / Green Tomato — ID 14919 — **GLOBAL_ALTERNATIVE** — old hint `Jo Malone London` (verified_suffix)
+- `258-JOM` — GREEN TOMATO LEAF - JO MALONE -> Demeter Fragrance / Green Tomato — ID 14919 — **GLOBAL_ALTERNATIVE** — old hint `Jo Malone London` (name_tail)
 - `382-YAN` — POMEGRANATE CIDER - YANKEE CANDLES -> Jo Malone London / Pomegranate Noir — ID 5581 — **GLOBAL_GOOD** — old hint `` ()
 - `605-ESC` — Miami Blossom -> Avon / Imari Blossom — ID 20398 — **GLOBAL_GOOD** — old hint `` ()
 - `737-JUI` — Malibu -> Celui / Eau de Malibu — ID 134829 — **GLOBAL_STRONG** — old hint `` ()
