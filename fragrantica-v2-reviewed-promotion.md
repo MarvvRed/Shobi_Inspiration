@@ -1,14 +1,15 @@
 # Reviewed v2 local-corpus promotion
 
-- Approved mappings: **13**
-- Promoted: **0**
+- Approved code mappings: **14**
+- Approved code-less name mappings: **1**
+- Promoted this run: **2**
 - Already verified / untouched: **13**
-- `database_v2_clean.json`: matched **13**, changed **0**
-- `database_complete.json`: matched **13**, changed **0**
+- `database_v2_clean.json`: matched **15**, changed **2**
+- `database_complete.json`: matched **14**, changed **1**
 
 No web verification. Every ID must exist in repository-local `perfume_urls.txt`.
 
-## Approved
+## Approved by code
 
 - `1649-GIV` -> Givenchy / L Interdit Eau de Parfum Intense — ID 62491 — same brand; full meaningful-name coverage
 - `1996-LTN` -> Louis Vuitton / Heures d Absence — ID 59485 — 2020 row; local candidate clearly beats 1927 variant
@@ -23,3 +24,8 @@ No web verification. Every ID must exist in repository-local `perfume_urls.txt`.
 - `1978-ARM` -> Giorgio Armani / Emporio Armani Stronger With You Intensely — ID 52802 — same brand; exact distinctive STRONGER WITH YOU INTENSENLY target; correct local candidate is cand3, not Limited Edition
 - `2122-GUR` -> Guerlain / Rosa Rossa Harvest — ID 79472 — same brand; Shobi explicitly contains HARVEST ROSA ROSSA; correct local candidate is Rosa Rossa Harvest, not base/Forte variants
 - `2344-LEL` -> Le Labo / Mousse de Chene 30 Amsterdam — ID 46295 — same brand; exact distinctive Mousse de Chene 30 identity with corpus city qualifier
+- `2173-ANFAD` -> Anfasic / Sukar — ID 23000 — corrected suffix-brand review: exact SUKAR under Anfasic; previous code-signature brand hint was false
+
+## Approved code-less row
+
+- `danat al duniya eau de parfum` -> Ajmal / Danat Al Duniya — ID 45398 — code-less row; exact normalized local name, score 1.0000, clear margin over Daanat spelling variant

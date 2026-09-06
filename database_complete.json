@@ -41401,8 +41401,8 @@
     "shobiUrl": "",
     "brand": "Unknown Brand",
     "inspiredBy": "SUKAR",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "23000",
+    "fragranticaStatus": "VERIFIED_LOCAL_CORPUS_V2",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -41414,7 +41414,9 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt",
+    "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Anfasic/Sukar-23000.html"
   },
   {
     "id": "2174-ZIE",

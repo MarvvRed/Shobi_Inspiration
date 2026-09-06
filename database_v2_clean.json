@@ -39673,8 +39673,8 @@
     "shobiUrl": "",
     "brand": "",
     "inspiredBy": "SUKAR",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "23000",
+    "fragranticaStatus": "VERIFIED_LOCAL_CORPUS_V2",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -39685,7 +39685,9 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt",
+    "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Anfasic/Sukar-23000.html"
   },
   {
     "id": "2174-ZIE",
@@ -54305,8 +54307,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/arabian-perfumes/danat-al-duniya-ajmal-perfume-type",
     "brand": "",
     "inspiredBy": "Danat Al Duniya Eau de Parfum",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "45398",
+    "fragranticaStatus": "VERIFIED_LOCAL_CORPUS_V2",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -54317,7 +54319,9 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt",
+    "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Ajmal/Danat-Al-Duniya-45398.html"
   },
   {
     "id": "-HUG",
