@@ -1,4 +1,4 @@
-# Brand-aware historical/local residual promotion
+# Same-brand historical/local residual promotion
 
 - Current residual queue: **262**
 - Safe eligible mappings: **0**
