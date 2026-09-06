@@ -2,6 +2,20 @@
 
 Date: 2026-09-06
 
+## Official project master
+
+The canonical Shobi perfume universe for this project is now:
+
+- `perfume-database/catalog/shobi-master-v2-2369.csv`
+- Rows: **2369**
+- Unique non-empty Shobi codes: **2368**
+- Legitimate empty-code rows: **1**
+- Source: verified operational `database_complete.json`
+
+The previous `perfume-database/catalog/shobi-master-v1.csv` is retained unchanged as historical/source evidence. It is no longer the canonical current master. The backup branch `temporanea` remains untouched.
+
+Future additions, removals, code changes or identity changes to the canonical master require explicit Shobi evidence: an official Shobi page/catalog, a Prestashop/Shobi identifier, or a documented historical Shobi source. Non-perfume merchandise such as physical candles, home diffusers, room sprays, accessories and body-care items must not be added.
+
 ## Operational database
 
 - Rows: 2369
@@ -24,13 +38,11 @@ The operational catalog has been audited specifically to exclude non-perfume Sho
 
 ## Previously truncated Louis Vuitton identities — resolved
 
-The three LTN records had truncated live Shobi inspiration text, but their accord/note fingerprints and external fragrance evidence identify them conclusively:
+- `2783-LTN` — pid 5051 — AR578 — **Ink Mark — Louis Vuitton**
+- `2786-LTN` — pid 5054 — AR580 — **Rain Tea — Louis Vuitton**
+- `2791-LTN` — pid 5060 — AR585 — **Moon Tale — Louis Vuitton**
 
-- `2783-LTN` — pid 5051 — AR578 — **Ink Mark — Louis Vuitton**. Shobi profile: woody, powdery, warm spicy, aromatic, balsamic; Ink Mark is sandalwood/incense/amber with the same accord profile.
-- `2786-LTN` — pid 5054 — AR580 — **Rain Tea — Louis Vuitton**. Shobi explicitly lists lemongrass, tea, magnolia, rose and woody notes; these are Rain Tea's notes.
-- `2791-LTN` — pid 5060 — AR585 — **Moon Tale — Louis Vuitton**. Shobi profile is floral, fruity, white floral, fresh, sweet, rose; Moon Tale has the matching raspberry/peony/magnolia/jasmine sambac/rose-geranium profile.
-
-The canonical `inspiredBy` fields in `database_complete.json` were corrected. The former false same-name group `2783-LTN` / `2786-LTN` disappeared from the structural audit.
+The canonical `inspiredBy` fields in `database_complete.json` were corrected and the former false same-name group `2783-LTN` / `2786-LTN` disappeared from the structural audit.
 
 ## Legitimate same-name groups
 
@@ -67,4 +79,4 @@ Latest post-fix audit:
 - 0 code-vs-URL conflicts
 - 10 same normalized brand+name groups, all verified legitimate
 
-The previously documented Red African identity conflict and all three truncated LTN identity gaps are now resolved. Under the evidence and audit rules used for this project, there is currently no known unresolved structural duplicate, code/URL conflict, or known non-perfume merchandise row in the operational database.
+The previously documented Red African identity conflict and all three truncated LTN identity gaps are resolved. Under the evidence and audit rules used for this project, there is currently no known unresolved structural duplicate, code/URL conflict, or known non-perfume merchandise row in the operational database.
