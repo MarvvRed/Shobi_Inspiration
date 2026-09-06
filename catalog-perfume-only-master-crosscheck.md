@@ -1,0 +1,62 @@
+# Perfume-only master/source crosscheck
+
+- DB rows: **2370**
+- Rows with direct master/Shobi evidence: **2315**
+- Residual rows without direct evidence by these fields: **55**
+
+## Residual rows
+- 2438-KYLJE | Kylie Jenner | COSMIC | pid= | 
+- 720-GUL | Jean Paul Gaultier | CLASSIQUE | pid= | 
+- 1950-SWISA | Swiss Arabian | AL AMAKEN | pid= | 
+- 2172-SWISA | Swiss Arabian | KASHKHA | pid= | 
+- 2331-DOL | Dolce & Gabbana | THE ONE MYSTERIOUS NIGHT | pid= | 
+- 1869-DOL | Dolce & Gabbana | BY | pid= | 
+- 553-DOL | Dolce & Gabbana | DOLCE | pid= | 
+- 362-TMFO | Tom Ford | ORCHID SOLEIL | pid= | 
+- 1636-KIL | Kilian | PEARL OUD | pid= | 
+- 310-MIL | Miller Harris | FEUILLES DE TABAC | pid= | 
+- 1649-GIV | Givenchy | L INTERDIT INTENSE | pid= | 
+- 2256-GIV | Givenchy | VERY IRRESISTIBLE | pid= | 
+- 1244-PRA | Prada | PRADA AMBER POUR HOMME | pid= | 
+- 876-PRA | Prada | INFUSION D'AMANDE | pid= | 
+- 877-PRA | Prada | INFUSION DE FLEUR D'ORANGER | pid= | 
+- 1808-LTN | Louis Vuitton | MILLE FEUX | pid= | 
+- 1767-LTN | Louis Vuitton | ATTRAPE REVES | pid= | 
+- 202-CLIV | Clive Christian | No. 1 FOR WOMEN | pid= | 
+- 1486-TRU | Trussardi | TRUSSARDI UOMO | pid= | 
+- -HUG | Hugo Boss | HUGO MAN | pid= | 
+- 420-BRB | Burberry | BRIT RHYTHM FOR HER FLORAL | pid= | 
+- 1494-BOD | The Body Shop | RED MUSK OUD | pid= | 
+- 2106-MARC | Marc-Antoine Barrois | B683 | pid= | 
+- 1220-MOS | Moschino | Toy | pid= | 
+- 2173-ANFAD | Anfasic Dokhoon | SUKAR | pid= | 
+- 456-CAC | Cacharel | AMOR AMOR FORBIDDEN KISS | pid= | 
+- 1783-AL HAR | Al Haramain | SULTAN | pid= | 
+- 2220-AL HAR | Al Haramain | HAYATI | pid= | 
+- 1526-AL HAR | Al Haramain | MUKHALLAT AL EMIRATES | pid= | 
+- 185-AL HAR | Al Haramain | AMBER OUD ROUGE | pid= | 
+- 1628-AL HAR | Al Haramain | WARDIA | pid= | 
+- 1629-AL HAR | Al Haramain | MUSK MALIKI | pid= | 
+- 1196-LAC | Lacoste | L.12.12 MAGNETIC | pid= | 
+- 1781-LAC | Lacoste | TOUCH OF SUN | pid= | 
+- 1044-CAL | Calvin Klein | ETERNITY | pid= | 
+- 1491-CAL | Calvin Klein | OBSESSED FOR MEN | pid= | 
+- 1955-LAP | La Prairie | CELLULAR ENERGIZING | pid= | 
+- 491-CRT | Cartier | MUST DE CARTIER GOLD | pid= | 
+- 1001-ANT | Antonio Banderas | KING OF SEDUCTION | pid= | 
+- 1489-DAV | Davidoff | HORIZON | pid= | 
+- 1000-ADO | Adolfo Dominguez | AGUA FRESCA | pid= | 
+- 1523-AFN | Afnan Perfumes | DEHN AL OUDH ABIYAD | pid= | 
+- 2189-ARM | Armani | STRONGER WITH YOU OUD | pid= | 
+- 1076-DRC | Christian Dior | FAHRENEIT | pid= | 
+- 1081-DRC | Christian Dior | HOMME EAU | pid= | 
+- 1644-DRC | Christian Dior | SAUVAGE ELIXIR | pid= | 
+- 2313-DRC | Christian Dior | SAUVAGE PARFUM 2019 | pid= | 
+- 1121-GFE | Gianfranco Ferre | FERRE MAN | pid= | 
+- 728-JES | Jesus Del Pozo | IN BLACK | pid= | 
+- 900-ROG | Roger & Gallet | FLEUR DE FIGUIER | pid= | 
+- 387- | Rémy Latour | CIGAR | pid= | 
+- 1534-SWI | Swiss Army | SWISS ARMY VICTORINOX | pid= | 
+- -VICT | Victoria'S Secret | ANGELS ONLY | pid= | 
+- 184-YAS | Yas | HUBOOB | pid= | 
+- 995-ZAR | Zara | POUR FEMME | pid= | 
