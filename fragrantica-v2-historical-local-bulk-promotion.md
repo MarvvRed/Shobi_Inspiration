@@ -1,8 +1,8 @@
 # Bulk high-confidence historical/local promotion
 
 - Eligible mappings: **73**
-- database_v2_clean.json: **73** changed
-- database_complete.json: **73** changed
+- database_v2_clean.json: **0** changed
+- database_complete.json: **0** changed
 
 ## Eligible mappings
 
