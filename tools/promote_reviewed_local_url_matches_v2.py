@@ -20,6 +20,12 @@ APPROVED={
     '1978-ARM':('52802','Giorgio Armani','Emporio Armani Stronger With You Intensely','same brand; exact distinctive STRONGER WITH YOU INTENSENLY target; correct local candidate is cand3, not Limited Edition'),
     '2122-GUR':('79472','Guerlain','Rosa Rossa Harvest','same brand; Shobi explicitly contains HARVEST ROSA ROSSA; correct local candidate is Rosa Rossa Harvest, not base/Forte variants'),
     '2344-LEL':('46295','Le Labo','Mousse de Chene 30 Amsterdam','same brand; exact distinctive Mousse de Chene 30 identity with corpus city qualifier'),
+    '2173-ANFAD':('23000','Anfasic','Sukar','corrected suffix-brand review: exact SUKAR under Anfasic; previous code-signature brand hint was false'),
+}
+
+# Name-keyed approval is used only for a genuinely code-less catalog row.
+APPROVED_BY_NAME={
+    'danat al duniya eau de parfum':('45398','Ajmal','Danat Al Duniya','code-less row; exact normalized local name, score 1.0000, clear margin over Daanat spelling variant'),
 }
 
 def walk(o):
@@ -31,33 +37,49 @@ def walk(o):
                 if isinstance(p,dict): yield p
         elif 'code' in o or 'inspiredBy' in o: yield o
 
-need={v[0] for v in APPROVED.values()}; url_by_id={}
+def norm_name(v):
+    return ' '.join(re.sub(r'[^a-z0-9]+',' ',str(v or '').lower()).split())
+
+need={v[0] for v in APPROVED.values()} | {v[0] for v in APPROVED_BY_NAME.values()}
+url_by_id={}
 for line in URLS.read_text(encoding='utf-8',errors='ignore').splitlines():
     m=re.search(r'-(\d+)\.html(?:\?.*)?$',line.strip())
     if m and m.group(1) in need:url_by_id[m.group(1)]=line.strip()
 
-stats=[]; promoted=set(); skipped=set()
+stats=[]; promoted=set(); skipped=set(); unmatched_name_approvals=set(APPROVED_BY_NAME)
 for path in TARGETS:
     data=json.loads(path.read_text(encoding='utf-8-sig')); matched=changed=0
     for p in walk(data):
-        code=str(p.get('code') or '').strip() or '[no-code]'
-        if code not in APPROVED:continue
+        code=str(p.get('code') or '').strip()
+        key=code if code in APPROVED else ''
+        approval=None; label=''
+        if key:
+            approval=APPROVED[key]; label=key
+        elif not code:
+            perfume_name=norm_name(p.get('inspiredBy') or p.get('perfume') or p.get('name'))
+            if perfume_name in APPROVED_BY_NAME:
+                approval=APPROVED_BY_NAME[perfume_name]; label=f'[no-code:{perfume_name}]'; unmatched_name_approvals.discard(perfume_name)
+        if not approval: continue
         matched+=1
         if str(p.get('fragranticaStatus') or '').startswith('VERIFIED_'):
-            skipped.add(code); continue
-        fid,brand,name,reason=APPROVED[code]
-        if fid not in url_by_id:continue
+            skipped.add(label); continue
+        fid,brand,name,reason=approval
+        if fid not in url_by_id: continue
         p['fragranticaId']=fid
         p['fragranticaStatus']='VERIFIED_LOCAL_CORPUS_V2'
         p['fragranticaVerificationSource']='fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
         p['fragranticaLocalUrl']=url_by_id[fid]
-        changed+=1; promoted.add(code)
+        changed+=1; promoted.add(label)
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     stats.append((str(path),matched,changed))
 
-lines=['# Reviewed v2 local-corpus promotion','',f'- Approved mappings: **{len(APPROVED)}**',f'- Promoted: **{len(promoted)}**',f'- Already verified / untouched: **{len(skipped)}**']
+lines=['# Reviewed v2 local-corpus promotion','',f'- Approved code mappings: **{len(APPROVED)}**',f'- Approved code-less name mappings: **{len(APPROVED_BY_NAME)}**',f'- Promoted this run: **{len(promoted)}**',f'- Already verified / untouched: **{len(skipped)}**']
 for p,m,c in stats:lines.append(f'- `{p}`: matched **{m}**, changed **{c}**')
-lines += ['','No web verification. Every ID must exist in repository-local `perfume_urls.txt`.','','## Approved','']
+lines += ['','No web verification. Every ID must exist in repository-local `perfume_urls.txt`.','','## Approved by code','']
 for code,(fid,brand,name,reason) in APPROVED.items():lines.append(f'- `{code}` -> {brand} / {name} — ID {fid} — {reason}')
+lines += ['','## Approved code-less row','']
+for name_key,(fid,brand,name,reason) in APPROVED_BY_NAME.items():lines.append(f'- `{name_key}` -> {brand} / {name} — ID {fid} — {reason}')
+if unmatched_name_approvals:
+    lines += ['','## Warning','',f"- Unmatched code-less approvals: {', '.join(sorted(unmatched_name_approvals))}"]
 REPORT.write_text('\n'.join(lines)+'\n',encoding='utf-8')
-print('approved',len(APPROVED),'promoted',len(promoted),'skipped',len(skipped),'stats',stats)
+print('approved_codes',len(APPROVED),'approved_names',len(APPROVED_BY_NAME),'promoted',len(promoted),'skipped',len(skipped),'stats',stats,'unmatched_names',sorted(unmatched_name_approvals))
