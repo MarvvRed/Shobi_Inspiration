@@ -1,0 +1,26 @@
+name: Promote Local Corpus Confirmed v2
+on:
+  push:
+    paths:
+      - '.github/promote-local-corpus-confirmed-v2-trigger'
+      - 'tools/promote_local_corpus_confirmed_v2.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Promote locally confirmed mappings
+        run: python tools/promote_local_corpus_confirmed_v2.py
+      - name: Commit promotion
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database_complete.json database_v2_clean.json fragrantica-v2-local-promotion.md
+          git diff --cached --quiet || git commit -m 'Promote Fragrantica mappings confirmed by local URL corpus'
+          git push
