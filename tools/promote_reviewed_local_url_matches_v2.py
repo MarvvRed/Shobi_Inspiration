@@ -13,6 +13,13 @@ APPROVED={
     '204-CRD':('9828','Creed','Aventus','same brand; clear truncated spelling Avent -> Aventus'),
     '2142-PARF':('63100','Parfums de Marly','Pegasus Exclusif','same brand; Exclusive -> Exclusif spelling variant'),
     '2313-DRC':('56324','Dior','Sauvage Parfum','same brand; Shobi explicitly says Sauvage Parfum 2019'),
+    '404-BAL':('7247','Balenciaga','Balenciaga Paris','same brand; Shobi BALE PARIS is a clear truncated Balenciaga Paris label'),
+    '1037-BLG':('9403','Bvlgari','Bvlgari Man','same brand; BVL MAN is an unambiguous abbreviated label for Bvlgari Man'),
+    '1141-GIV':('39','Givenchy','Pi','same brand; Shobi P is a one-character truncation and local alternatives are Pi variants'),
+    '1502-CHA':('62194','Chanel','Coco Mademoiselle L Eau Privee','same brand; noisy Shobi prefix plus COCON MADEM typo preserves the full distinctive L EAU PRIVEE identity'),
+    '1978-ARM':('52802','Giorgio Armani','Emporio Armani Stronger With You Intensely','same brand; exact distinctive STRONGER WITH YOU INTENSENLY target; correct local candidate is cand3, not Limited Edition'),
+    '2122-GUR':('79472','Guerlain','Rosa Rossa Harvest','same brand; Shobi explicitly contains HARVEST ROSA ROSSA; correct local candidate is Rosa Rossa Harvest, not base/Forte variants'),
+    '2344-LEL':('46295','Le Labo','Mousse de Chene 30 Amsterdam','same brand; exact distinctive Mousse de Chene 30 identity with corpus city qualifier'),
 }
 
 def walk(o):
