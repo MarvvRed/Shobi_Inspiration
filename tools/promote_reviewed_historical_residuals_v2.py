@@ -10,6 +10,14 @@ APPROVED={
  '1034-BLG':('153','Bvlgari','Aqva Pour Homme','historical local base Aqva ID; Shobi says generic AQUA, not Edition Limitee'),
  '1080-DRC':('230','Dior','Dior Homme 2005','historical local ID for generic HOMME row; same Dior brand and base Homme identity'),
  '1092-DOL':('490','Dolce Gabbana','By','historical local ID; By Man Eau de Toilette maps to original By entry rather than The One'),
+ '1094-DOL':('56358','Dolce Gabbana','K by Dolce Gabbana','same-brand historical local ID; K KING 2019 preserves K identity and launch year'),
+ '1135-ARM':('416','Giorgio Armani','Emporio Armani Lui','same-brand historical local ID; LUI/IL/HE/EL are multilingual male labels matching Lui'),
+ '1654-ACQ':('1681','Acqua di Parma','Acqua di Parma Colonia','same-brand historical local ID; Colonia 1916 identifies original Colonia and its launch year'),
+ '2012-DOL':('78873','Dolce Gabbana','Q by Dolce Gabbana','same-brand historical local ID; Q QUEEN directly preserves Q identity'),
+ '2017-DIE':('74965','Diesel','D by Diesel','same-brand historical local ID; one-letter D is the exact product identity'),
+ '508-CHA':('15963','Chanel','Coco Noir','same-brand historical local ID; Shobi Coco Black is a direct Black/Noir label variant'),
+ '651-ARM':('417','Giorgio Armani','Emporio Armani Lei','same-brand historical local ID; LEI/ELLE/SHE/ELLA are multilingual female labels matching Lei'),
+ '677-GUC':('1150','Gucci','Gucci by Gucci Eau de Parfum','same-brand historical local ID; G by G is an explicit abbreviation of Gucci by Gucci'),
 }
 def walk(o):
  if isinstance(o,list):
