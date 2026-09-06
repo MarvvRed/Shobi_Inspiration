@@ -1,11 +1,11 @@
 # Reviewed v2 local-corpus promotion
 
-- Approved code mappings: **19**
+- Approved code mappings: **33**
 - Approved code-less name mappings: **1**
-- Promoted this run: **0**
+- Promoted this run: **14**
 - Already verified / untouched: **20**
-- `database_v2_clean.json`: matched **20**, changed **0**
-- `database_complete.json`: matched **19**, changed **0**
+- `database_v2_clean.json`: matched **34**, changed **14**
+- `database_complete.json`: matched **33**, changed **14**
 
 No web verification. Every ID must exist in repository-local `perfume_urls.txt`.
 
@@ -30,6 +30,20 @@ No web verification. Every ID must exist in repository-local `perfume_urls.txt`.
 - `2018-ARM` -> Giorgio Armani / Armani Code Parfum — ID 75126 — verified Armani suffix; Shobi CODE PARFUM maps directly to the same-brand local Armani Code Parfum candidate
 - `1081-DRC` -> Dior / Dior Homme Eau for Men — ID 22860 — same-brand local candidate; Shobi HOMME EAU directly distinguishes Dior Homme Eau from Parfum, Cologne and base Homme variants
 - `1110-DSQ` -> DSQUARED2 / Potion Royal Black — ID 18592 — verified DSQUARED2 suffix; Shobi BLACK POTION preserves the two distinctive identity words of the same-brand Potion Royal Black candidate
+- `503-CHA` -> Chanel / Chanel N05 Eau Premiere — ID 1360 — 3 local sources; same Chanel brand; No 5 EAU PREMIER is a clear spelling/truncation of Eau Premiere
+- `506-CHA` -> Chanel / Coco Mademoiselle — ID 611 — 3 local sources; same Chanel brand; COCON MADEM is an unambiguous truncated/typo label
+- `2418-ACQ` -> Acqua di Parma / Vaniglia Eau de Parfum — ID 56003 — 3 local sources; same brand; distinctive VANIGLIA identity, Signature is collection wording
+- `283-JOM` -> Jo Malone London / Poppy Barley — ID 48316 — 3 local sources; same brand; Shobi explicitly contains Poppy Barley with collection wording
+- `424-BRB` -> Burberry / Burberry Women — ID 818 — 3 local sources; same brand; BURBERRY CLASSIC is the historical/common label for the women fragrance
+- `1041-BLG` -> Bvlgari / Bvlgari Pour Homme — ID 143 — 3 local sources; same brand; POUR HOMME BLG is a direct abbreviated Bvlgari Pour Homme label
+- `527-DRC` -> Dior / Dior Grand Bal — ID 14984 — 3 local sources; same brand; distinctive Grand Bal identity preserved
+- `1133-ARM` -> Giorgio Armani / Armani Code — ID 412 — 3 local sources; same brand; BLACK CODE is the former/original Armani Code naming
+- `2584-GIV` -> Givenchy / Eau de Givenchy — ID 1966 — 3 local sources; same brand; Shobi Eau de directly maps to Eau de Givenchy
+- `504-CHA` -> Chanel / Chanel No 5 L Eau — ID 38543 — 3 local sources; same brand; Five L EAU is a normalized/truncated No 5 L Eau label
+- `1929-BLG` -> Bvlgari / Tygar — ID 41222 — 3 local sources; same brand; Le Gemme Tygar target maps to base Tygar, not Extrait
+- `1063-CER` -> Cerruti / Cerruti Pour Homme — ID 1441 — 3 local sources; same brand; Shobi pour Homme EDT maps directly to Cerruti Pour Homme
+- `829-MNTB` -> Montblanc / Femme de Montblanc — ID 833 — 3 local sources; same brand; FEMME - MONT BLANC is direct reordered naming
+- `523-DRC` -> Dior / Diorissimo — ID 224 — 3 local sources; same Dior brand; ISSIMO is a clear truncation of Diorissimo
 
 ## Approved code-less row
 
