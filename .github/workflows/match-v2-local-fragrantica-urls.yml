@@ -8,6 +8,7 @@ on:
       - 'tools/promote_safe_local_url_matches_v2.py'
       - 'tools/promote_reviewed_local_url_matches_v2.py'
       - 'tools/global_fallback_local_url_review.py'
+      - 'tools/review_corrected_brand_overrides.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -25,6 +26,8 @@ jobs:
         run: python tools/disambiguate_local_exact_matches.py
       - name: Run global local-corpus fallback review
         run: python tools/global_fallback_local_url_review.py
+      - name: Review corrected brand overrides locally
+        run: python tools/review_corrected_brand_overrides.py
       - name: Promote conservative local matches
         run: python tools/promote_safe_local_url_matches_v2.py
       - name: Promote manually reviewed local matches
@@ -33,6 +36,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md fragrantica-v2-local-disambiguation.md fragrantica-v2-global-fallback-review.csv fragrantica-v2-global-fallback-review.md fragrantica-v2-safe-promotion.md fragrantica-v2-reviewed-promotion.md database_v2_clean.json database_complete.json
+          git add fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md fragrantica-v2-local-disambiguation.md fragrantica-v2-global-fallback-review.csv fragrantica-v2-global-fallback-review.md fragrantica-v2-brand-override-review.csv fragrantica-v2-brand-override-review.md fragrantica-v2-safe-promotion.md fragrantica-v2-reviewed-promotion.md database_v2_clean.json database_complete.json
           git diff --cached --quiet || git commit -m 'Promote reviewed v2 matches from local Fragrantica URL corpus'
           git push
