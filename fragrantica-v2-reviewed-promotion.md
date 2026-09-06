@@ -2,10 +2,10 @@
 
 - Approved code mappings: **33**
 - Approved code-less name mappings: **1**
-- Promoted this run: **14**
-- Already verified / untouched: **20**
-- `database_v2_clean.json`: matched **34**, changed **14**
-- `database_complete.json`: matched **33**, changed **14**
+- Promoted this run: **0**
+- Already verified / untouched: **34**
+- `database_v2_clean.json`: matched **34**, changed **0**
+- `database_complete.json`: matched **33**, changed **0**
 
 No web verification. Every ID must exist in repository-local `perfume_urls.txt`.
 
