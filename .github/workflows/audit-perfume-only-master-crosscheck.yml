@@ -1,0 +1,25 @@
+name: Audit Perfume Only Master Crosscheck
+on:
+  push:
+    paths:
+      - '.github/perfume-only-master-crosscheck-trigger'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/audit_perfume_only_master_crosscheck.py
+      - name: Commit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog-perfume-only-master-crosscheck.md
+          git diff --cached --quiet || git commit -m "Crosscheck perfume-only catalog against Shobi master"
+          git pull --rebase origin main
+          git push origin main
