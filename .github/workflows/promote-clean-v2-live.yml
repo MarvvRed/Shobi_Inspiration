@@ -1,0 +1,29 @@
+name: Promote Clean v2 Live
+on:
+  push:
+    paths:
+      - '.github/promote-clean-v2-live-trigger'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Promote clean v2 to live database
+        run: python tools/promote_clean_v2_to_live.py
+      - name: Commit live database switch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database_complete.json perfume-database/archive/database_complete_pre_v2.json
+          git diff --cached --quiet || git commit -m 'Switch live site to clean Shobi database v2'
+          git pull --rebase origin main
+          git push origin main
