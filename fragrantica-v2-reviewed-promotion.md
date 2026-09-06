@@ -1,11 +1,11 @@
 # Reviewed v2 local-corpus promotion
 
-- Approved code mappings: **14**
+- Approved code mappings: **17**
 - Approved code-less name mappings: **1**
-- Promoted this run: **2**
-- Already verified / untouched: **13**
-- `database_v2_clean.json`: matched **15**, changed **2**
-- `database_complete.json`: matched **14**, changed **1**
+- Promoted this run: **3**
+- Already verified / untouched: **15**
+- `database_v2_clean.json`: matched **18**, changed **3**
+- `database_complete.json`: matched **17**, changed **3**
 
 No web verification. Every ID must exist in repository-local `perfume_urls.txt`.
 
@@ -25,6 +25,9 @@ No web verification. Every ID must exist in repository-local `perfume_urls.txt`.
 - `2122-GUR` -> Guerlain / Rosa Rossa Harvest — ID 79472 — same brand; Shobi explicitly contains HARVEST ROSA ROSSA; correct local candidate is Rosa Rossa Harvest, not base/Forte variants
 - `2344-LEL` -> Le Labo / Mousse de Chene 30 Amsterdam — ID 46295 — same brand; exact distinctive Mousse de Chene 30 identity with corpus city qualifier
 - `2173-ANFAD` -> Anfasic / Sukar — ID 23000 — corrected suffix-brand review: exact SUKAR under Anfasic; previous code-signature brand hint was false
+- `828-MIY` -> Issey Miyake / L Eau Bleue d Issey Pour Homme — ID 724 — same-brand local candidate; Shobi L EAU BLEUE uniquely preserves the distinctive Eau Bleue identity
+- `841-NRO` -> Narciso Rodriguez / Narciso Rodriguez Fleur Musc for Her — ID 42580 — same-brand local candidate; exact distinctive Fleur Musc for Her words despite lower generic-token matcher ranking
+- `2018-ARM` -> Giorgio Armani / Armani Code Parfum — ID 75126 — verified Armani suffix; Shobi CODE PARFUM maps directly to the same-brand local Armani Code Parfum candidate
 
 ## Approved code-less row
 

@@ -1,7 +1,7 @@
 # Corrected local brand-override review
 
-- Rows inspected: **23**
-- OVERRIDE_STRONG: **1**
+- Rows inspected: **22**
+- OVERRIDE_STRONG: **0**
 - OVERRIDE_GOOD: **0**
 - OVERRIDE_REVIEW: **0**
 - OVERRIDE_WEAK: **0**
@@ -11,4 +11,3 @@ Only repository-local `perfume_urls.txt` is searched. Overrides correct known fa
 
 ## Strong / good
 
-- `2173-ANFAD` — SUKAR -> Anfasic / Sukar — ID 23000 — **OVERRIDE_STRONG** (old hint `Antica Farmacia dei Monaci Camaldolesi`)

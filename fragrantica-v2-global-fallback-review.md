@@ -1,7 +1,7 @@
 # Global local-corpus fallback review
 
-- Input residual candidates inspected: **191**
-- GLOBAL_STRONG: **10**
+- Input residual candidates inspected: **189**
+- GLOBAL_STRONG: **8**
 - GLOBAL_GOOD: **7**
 - GLOBAL_ALTERNATIVE: **6**
 - GLOBAL_WEAK: **168**
@@ -30,6 +30,4 @@ This pass ignores inferred brand restrictions and searches only the repository-l
 - `1781-LAC` — TOUCH OF SUN -> ARO FAC Aroma Factory / Touch of Oud — ID 130342 — **GLOBAL_ALTERNATIVE** — old hint `Christian Lacroix` (code_signature)
 - `1929-BLG` — Le-gemme-tygar-eau-de- -> Bvlgari / Le Gemme Tygar Extrait — ID 120377 — **GLOBAL_GOOD** — old hint `Bvlgari` (verified_suffix)
 - `1977-SHIS` — Ginza (2021) -> Hermes / Eau de Ginza — ID 97784 — **GLOBAL_STRONG** — old hint `` ()
-- `2173-ANFAD` — SUKAR -> Anfasic / Sukar — ID 23000 — **GLOBAL_STRONG** — old hint `Antica Farmacia dei Monaci Camaldolesi` (code_signature)
 - `2439-ZEG` — INDONESIAN OUD -> PARIS CORNER / Oud Indonesian — ID 74591 — **GLOBAL_STRONG** — old hint `Cremo` (verified_suffix)
-- `[no-code]` — Danat Al Duniya Eau de Parfum -> Ajmal / Danat Al Duniya — ID 45398 — **GLOBAL_STRONG** — old hint `` ()
