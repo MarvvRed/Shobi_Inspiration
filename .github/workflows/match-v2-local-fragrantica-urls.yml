@@ -4,6 +4,7 @@ on:
     paths:
       - '.github/match-v2-local-fragrantica-urls-trigger'
       - 'tools/match_v2_against_perfume_urls.py'
+      - 'tools/simple_brand_first_exhaustive_v2.py'
       - 'tools/disambiguate_local_exact_matches.py'
       - 'tools/promote_safe_local_url_matches_v2.py'
       - 'tools/promote_reviewed_local_url_matches_v2.py'
@@ -33,6 +34,8 @@ jobs:
           python-version: '3.12'
       - name: Match against local perfume URL corpus
         run: python tools/match_v2_against_perfume_urls.py
+      - name: Run simple exhaustive brand-first matcher
+        run: python tools/simple_brand_first_exhaustive_v2.py
       - name: Audit learned suffix brand priors
         run: python tools/audit_suffix_brand_priors_v2.py
       - name: Disambiguate exact-name cases locally
@@ -69,6 +72,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md fragrantica-v2-suffix-prior-audit.md fragrantica-v2-local-disambiguation.md fragrantica-v2-global-fallback-review.csv fragrantica-v2-global-fallback-review.md fragrantica-v2-brand-override-review.csv fragrantica-v2-brand-override-review.md fragrantica-v2-lower-same-brand-review.csv fragrantica-v2-lower-same-brand-review.md fragrantica-v2-mega-local-evidence.csv fragrantica-v2-mega-local-evidence.md fragrantica-v2-brand-abbreviation-review.csv fragrantica-v2-brand-abbreviation-review.md fragrantica-v2-remaining-historical-residuals.md fragrantica-v2-no-candidate-review.md fragrantica-v2-safe-promotion.md fragrantica-v2-reviewed-promotion.md fragrantica-v2-historical-local-bulk-promotion.md fragrantica-v2-multisource-promotion.md fragrantica-v2-reviewed-multisource-tail.md fragrantica-v2-reviewed-brand-abbreviations.md fragrantica-v2-reviewed-historical-residuals.md database_v2_clean.json database_complete.json
+          git add fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md fragrantica-v2-simple-brand-first.csv fragrantica-v2-simple-brand-first.md fragrantica-v2-suffix-prior-audit.md fragrantica-v2-local-disambiguation.md fragrantica-v2-global-fallback-review.csv fragrantica-v2-global-fallback-review.md fragrantica-v2-brand-override-review.csv fragrantica-v2-brand-override-review.md fragrantica-v2-lower-same-brand-review.csv fragrantica-v2-lower-same-brand-review.md fragrantica-v2-mega-local-evidence.csv fragrantica-v2-mega-local-evidence.md fragrantica-v2-brand-abbreviation-review.csv fragrantica-v2-brand-abbreviation-review.md fragrantica-v2-remaining-historical-residuals.md fragrantica-v2-no-candidate-review.md fragrantica-v2-safe-promotion.md fragrantica-v2-reviewed-promotion.md fragrantica-v2-historical-local-bulk-promotion.md fragrantica-v2-multisource-promotion.md fragrantica-v2-reviewed-multisource-tail.md fragrantica-v2-reviewed-brand-abbreviations.md fragrantica-v2-reviewed-historical-residuals.md database_v2_clean.json database_complete.json
           git diff --cached --quiet || git commit -m 'Bulk promote high-confidence local residual mappings'
           git push
