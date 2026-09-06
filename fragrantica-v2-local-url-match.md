@@ -1,44 +1,56 @@
 # Fragrantica v2 match against local perfume_urls.txt
 
 - URLs parsed: **55556**
-- Residual rows scanned: **439**
-- STRONG_UNIQUE: **31**
-- GOOD_REVIEW: **143**
-- WEAK_REVIEW: **211**
-- NO_CANDIDATE: **54**
+- Residual rows scanned: **305**
+- Residuals with local brand hint: **121**
+- Suffix brand priors learned: **168**
+- STRONG_UNIQUE: **41**
+- GOOD_REVIEW: **8**
+- WEAK_REVIEW: **237**
+- NO_CANDIDATE: **19**
 
-No web access is used by this matcher. No mapping is promoted automatically.
+No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus already-verified rows for brand priors. No mapping is promoted automatically.
 
 ## Strong unique candidates
 
-- `105-ARB` — PRESTIGE CLASSIC - ARABIAN OUD -> Arabian Oud / Arabian Prestige Classic — ID 21602 — score 1.0000
-- `106-ARB` — SULTAN - ARABIAN OUD -> Arabian Oud / Sultan Blend — ID 21560 — score 0.8750
-- `246-JOM` — Bronze Wood & Leather by Jo Malone London -> Jo Malone London / Bronze Wood Leather — ID 52803 — score 1.0000
-- `276-JOM` — Oud & Bergamot by Jo Malone London -> Jo Malone London / Oud Bergamot — ID 12928 — score 1.0000
-- `299-JOM` — WHITE LILAC & RHUBARB - JO MALONE -> Jo Malone London / White Lilac Rhubarb — ID 14134 — score 0.9167
-- `407-BAT` — PINK AMBER  & MOROCCO ORCHID  - BATH & BODY WORKS -> Bath Body Works / Morocco Orchid Pink Amber — ID 25388 — score 1.0000
-- `539-DRC` — MISS ROSE & ROSES -> Dior / Miss Dior Rose N Roses — ID 58562 — score 0.8750
-- `581-DON` — MY NY - Donna Karan -> Donna Karan / DKNY My NY — ID 25948 — score 0.9000
-- `710-HUG` — BOSS JOUR - HUGO BOSS -> Hugo Boss / Boss Jour Pour Femme — ID 18385 — score 1.0000
-- `755-KEN` — SUMMER - KENZO -> Kenzo / Summer by Kenzo — ID 76 — score 1.0000
-- `834-MOS` — Cheap  Chic  So Real -> Moschino / So Real Cheap Chic — ID 46867 — score 0.9000
-- `843-NRO` — FOR HER PINK EAU DE TOILETTE - RODRIGUEZ -> Narciso Rodriguez / Narciso Rodriguez For Her Pink Edition — ID 72604 — score 0.8750
-- `917-SWA` — Aura -> Aura Perfume / A E O M — ID 64099 — score 1.0000
-- `960-VICT` — LOVE ME - VICTORIA'S SECRET -> Victoria s Secret / Love Me — ID 29526 — score 1.0000
-- `1164-HUG` — ELEMENTS - HUGO BOSS -> Hugo Boss / Boss Elements — ID 571 — score 1.0000
-- `1245-PRA` — PRADA AMBER -> Prada / Prada Amber Pour Homme Prada Man — ID 1044 — score 1.0000
-- `1495-BRB` — Her-london-dream-eau-de- -> Burberry / Burberry Her London Dream — ID 60795 — score 0.8750
-- `1523-AFN` — DEHN AL OUDH ABIYAD -> Afnan / Dehn al Oudh Abiyad — ID 27357 — score 0.9000
-- `1542-JOM` — English Oak & Redcurrant by Jo Malone London -> Jo Malone London / English Oak Redcurrant — ID 46186 — score 1.0000
-- `1627-CLIV` — VANILLA ORCHID XXI ART DECO - CLIVE CHRISTIAN -> Clive Christian / XXI Art Deco Vanilla Orchid — ID 50752 — score 1.0000
-- `1655-JOM` — Oat & Cornflower by Jo Malone London -> Jo Malone London / Oat Cornflower — ID 48318 — score 1.0000
-- `1754-HER` — VANILLE GALANTE HERMESSENCE - HERMES -> Hermes / Hermessence Vanille Galante — ID 5213 — score 1.0000
-- `1802-JOM` — Midnight Musk & Amber by Jo Malone London -> Jo Malone London / Midnight Musk Amber — ID 63920 — score 1.0000
-- `1826-JOM` — Iris & White Musk by Jo Malone London -> Jo Malone London / Iris White Musk — ID 12926 — score 1.0000
-- `1827-JOM` — Tropical Cherimoya by Jo Malone London -> Jo Malone London / Tropical Cherimoya Cologne — ID 49602 — score 0.9167
-- `2137-ROJ` — GREAT BRITAIN - ROJA DOVE -> Roja Dove / Great Britain — ID 32537 — score 1.0000
-- `2783-LTN` — Ink Mark Louis Vuitton -> Louis Vuitton / Ink Mark — ID 115407 — score 1.0000
-- `2785-VAL` — Valentino-donna-born-in-roma-extradose -> Valentino / Born in Roma Extradose Donna — ID 101384 — score 1.0000
-- `2786-LTN` — Rain Tea Louis Vuitton -> Louis Vuitton / Rain Tea — ID 115406 — score 1.0000
-- `2791-LTN` — Moon Tale Louis Vuitton -> Louis Vuitton / Moon Tale — ID 115408 — score 1.0000
-- `[no-code]` — Danat Al Duniya Eau de Parfum -> Ajmal / Danat Al Duniya — ID 45398 — score 0.8750
+- `153-PARF` — HEROD -> Parfums de Marly / Herod — ID 16939 — score 1.0000
+- `185-AL HAR` — Red African -> Al Haramain Perfumes / Red African — ID 61372 — score 1.0000
+- `233-ESCE` — Molecule 02 -> BLAK / Molecule Ziemia B 02 — ID 75616 — score 1.0000
+- `235-HOLL` — SOCAL -> Abercrombie Fitch / SoCal Sunset — ID 70794 — score 1.0000
+- `379-YAN` — CLEAN COTTON - YANKEE CANDLES -> Careso / Clean — ID 138167 — score 0.9600
+- `503-CHA` — No 5 EAU PREMIER -> Chanel / Chanel No 5 Eau Premiere 2015 — ID 31172 — score 0.9704
+- `608-ESC` — Moon Sparkle -> Castanez Parfums / Moon — ID 123486 — score 0.9600
+- `621-EST` — BRONZE GODDESS EAU DE PARFUM (SUMMER LIMITED EDITION) -> Estee Lauder / Bronze Goddess Eau de Parfum — ID 43639 — score 0.9704
+- `696-GLA` — FIDJI -> Ajmal / 011 Royal Fidji — ID 26877 — score 1.0000
+- `743-JUS` — Girlfriend -> Sorce / Your Girlfriend is a Badass — ID 132631 — score 1.0000
+- `771-LAP` — Silver Rain -> Beard Monkey / Silver Rain — ID 126381 — score 1.0000
+- `799-LANV` — Eclat-d-arpege-eau-de- -> Ascania / Eclat — ID 84715 — score 0.9600
+- `816-MAX` — MAX MARA -> Dzintars / Mara — ID 85350 — score 0.9600
+- `843-NRO` — FOR HER PINK EAU DE TOILETTE - RODRIGUEZ -> Narciso Rodriguez / Narciso Rodriguez For Her Pink Edition — ID 72604 — score 1.0000
+- `851-NIN` — L Extase -> Giorgio Armani / Onde Extase — ID 4671 — score 1.0000
+- `869-PIER` — EXTATIC - PIERRE BALMAIN -> Balmain Beauty / Extatic — ID 22817 — score 0.9704
+- `900-ROG` — FLEUR DE FIGUIER -> Chabaud Maison de Parfum / Fleur de Figuier — ID 23550 — score 1.0000
+- `904-SALV` — SALVADOR DALI fragrances -> Badr Harqan / Salvador — ID 102201 — score 0.9600
+- `926-TOM` — Tommy Girl -> Clayeux / Girl — ID 32611 — score 0.9600
+- `995-ZAR` — POUR FEMME -> Zara / Femme — ID 16586 — score 0.9704
+- `1076-DRC` — FAHRENEIT -> Dior / Fahrenheit — ID 228 — score 0.9611
+- `1081-DRC` — HOMME EAU -> Dior / Dior Homme Eau for Men — ID 22860 — score 0.9704
+- `1110-DSQ` — BLACK POTION - DSQUARED -> DSQUARED2 / Potion — ID 12937 — score 0.9704
+- `1118-FAB` — BRUT 1964 -> Brut Parfums Prestige / Brut — ID 15303 — score 0.9600
+- `1121-GFE` — FERRE MAN -> Al Ambra / Irish Ferre — ID 52617 — score 1.0000
+- `1198-LAL` — ENCRE NOIR - LALIQUE -> Lalique / Lalique — ID 2540 — score 0.9704
+- `1205-LOL` — Au Masculin -> Adopt Parfums / Au Masculin — ID 110032 — score 1.0000
+- `1224-APO` — SCULPTURE -> Al Haramain Perfumes / Portfolio Floral Sculpture — ID 53636 — score 1.0000
+- `1523-AFN` — DEHN AL OUDH ABIYAD -> Afnan / Dehn al Oudh Abiyad — ID 27357 — score 1.0000
+- `1628-AL HAR` — WARDIA -> Al Haramain Perfumes / Wardia — ID 19945 — score 1.0000
+- `1701-TOSC` — TOSCA -> Xerjoff / La Tosca — ID 32191 — score 1.0000
+- `1886-PARF` — DELINA LA ROSE - PDM -> Parfums de Marly / Delina — ID 43871 — score 0.9704
+- `1921-VIV` — Boudoir- -> Bi es / Pink Boudoir — ID 30417 — score 1.0000
+- `1950-SWISA` — AL AMAKEN -> Swiss Arabian / Al Amaken — ID 22928 — score 1.0000
+- `1986-SOO` — NUR -> The Dua Brand / Nur Jahan s Elixir — ID 86424 — score 1.0000
+- `1989-VERT` — NARCOS'IS -> Bargello / Narcos — ID 132958 — score 0.9600
+- `2142-PARF` — PEGASUS EXCLUSIVE - PARFUMS DE MARLY -> Parfums de Marly / Pegasus — ID 16938 — score 0.9704
+- `2278-BLG` — Eau Parfumée au Thé Blanc Eau de Cologne -> Bvlgari / Eau Parfumee au The Blanc — ID 145 — score 1.0000
+- `2600-TMU` — Angel Lily -> Mugler / Angel — ID 704 — score 0.9704
+- `[no-code]` — Danat Al Duniya Eau de Parfum -> Ajmal / Danat Al Duniya — ID 45398 — score 1.0000
+- `-VICT` — ANGELS ONLY -> Victoria s Secret / Angels Only — ID 24876 — score 1.0000
