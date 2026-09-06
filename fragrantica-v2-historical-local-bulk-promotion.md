@@ -1,81 +1,9 @@
 # Bulk high-confidence historical/local promotion
 
-- Eligible mappings: **73**
-- database_v2_clean.json: **0** changed
-- database_complete.json: **0** changed
+- Current residual queue: **263**
+- Eligible residual mappings: **0**
+- database_v2_clean.json: **0** promoted; **292** redundant snake fields removed
+- database_complete.json: **0** promoted; **292** redundant snake fields removed
 
 ## Eligible mappings
 
-- `1006-ACQ` -> Acqua di Parma / Colonia Intensa Oud Eau de Cologne Concentree — ID 15519 — score 0.6875
-- `1008-ACQ` -> Acqua di Parma / Acqua di Parma Colonia Pura — ID 45876 — score 0.7000
-- `1016-AZZ` -> Azzaro / Visit For Men — ID 598 — score 1.0000
-- `1031-BRB` -> Burberry / Burberry Brit Rhythm — ID 18903 — score 1.0000
-- `105-ARB` -> Arabian Oud / Arabian Prestige Classic — ID 21602 — score 1.0000
-- `106-ARB` -> Arabian Oud / Sultan Blend — ID 21560 — score 0.8750
-- `1060-CRT` -> Cartier / L Envol de Cartier Eau de Parfum — ID 39885 — score 1.0000
-- `1090-COS` -> CoSTUME NATIONAL / Costume National Homme — ID 7047 — score 1.0000
-- `110-ARM` -> Giorgio Armani / Armani Prive Rose d Arabie — ID 10886 — score 0.7000
-- `1102-DAV` -> Davidoff / Cool Water — ID 507 — score 0.8333
-- `1123-ARM` -> Giorgio Armani / Acqua di Gio — ID 410 — score 0.8000
-- `1136-ARM` -> Giorgio Armani / Emporio Armani Stronger With You — ID 45258 — score 0.8333
-- `1164-HUG` -> Hugo Boss / Boss Elements — ID 571 — score 1.0000
-- `1204-LOE` -> Loewe / Solo Loewe Cedro — ID 30321 — score 0.8333
-- `1495-BRB` -> Burberry / Burberry Her London Dream — ID 60795 — score 0.8750
-- `1542-JOM` -> Jo Malone London / English Oak Redcurrant — ID 46186 — score 1.0000
-- `1627-CLIV` -> Clive Christian / XXI Art Deco Vanilla Orchid — ID 50752 — score 1.0000
-- `1655-JOM` -> Jo Malone London / Oat Cornflower — ID 48318 — score 1.0000
-- `170-ROJ` -> Roja Dove / Enigma — ID 20558 — score 1.0000
-- `1754-HER` -> Hermes / Hermessence Vanille Galante — ID 5213 — score 1.0000
-- `1802-JOM` -> Jo Malone London / Midnight Musk Amber — ID 63920 — score 1.0000
-- `1826-JOM` -> Jo Malone London / Iris White Musk — ID 12926 — score 1.0000
-- `1827-JOM` -> Jo Malone London / Tropical Cherimoya Cologne — ID 49602 — score 0.9167
-- `1919-PRA` -> Prada / Prada Paradoxe — ID 75668 — score 0.7500
-- `1942-LAN` -> Lancome / Idole Nectar — ID 74137 — score 0.8333
-- `1958-DRC` -> Dior / Bois d Argent — ID 1377 — score 0.8333
-- `1968-DOL` -> Dolce Gabbana / Light Blue Italian Love — ID 72621 — score 0.8333
-- `2021-ROJ` -> Roja Dove / Apex — ID 72723 — score 1.0000
-- `2137-ROJ` -> Roja Dove / Great Britain — ID 32537 — score 1.0000
-- `2148-BAT` -> Bath Body Works / Pure Wonder — ID 70500 — score 0.7000
-- `2190-ROJ` -> Roja Dove / Diaghilev — ID 10109 — score 0.6667
-- `2193-LTN` -> Louis Vuitton / Nouveau Monde — ID 49753 — score 0.7500
-- `2310-CAR` -> Carolina Herrera / CH Men Under The Sea — ID 65697 — score 0.7000
-- `240-JOM` -> Jo Malone London / Amber Patchouli — ID 12927 — score 0.9000
-- `243-JOM` -> Jo Malone London / London Rain Black Cedarwood Juniper — ID 22504 — score 0.7143
-- `246-JOM` -> Jo Malone London / Bronze Wood Leather — ID 52803 — score 1.0000
-- `249-JOM` -> Jo Malone London / Earl Grey Cucumber — ID 11488 — score 0.7500
-- `2543-HUG` -> Hugo Boss / Boss The Scent For Him Magnetic — ID 78424 — score 0.8000
-- `2627-LTN` -> Louis Vuitton / Meteore — ID 62251 — score 0.6667
-- `269-JOM` -> Jo Malone London / Nashi Blossom — ID 37551 — score 0.7000
-- `276-JOM` -> Jo Malone London / Oud Bergamot — ID 12928 — score 1.0000
-- `2783-LTN` -> Louis Vuitton / Ink Mark — ID 115407 — score 1.0000
-- `2785-VAL` -> Valentino / Born in Roma Extradose Donna — ID 101384 — score 1.0000
-- `2786-LTN` -> Louis Vuitton / Rain Tea — ID 115406 — score 1.0000
-- `2791-LTN` -> Louis Vuitton / Moon Tale — ID 115408 — score 1.0000
-- `2802-HER` -> Hermes / Terre d Hermes Intense — ID 102772 — score 0.8333
-- `2829-PARF` -> Parfums de Marly / Athenais — ID 123716 — score 0.6667
-- `287-JOM` -> Jo Malone London / Silk Blossom — ID 24717 — score 0.7000
-- `299-JOM` -> Jo Malone London / White Lilac Rhubarb — ID 14134 — score 0.9167
-- `302-JOM` -> Jo Malone London / London Rain Wisteria Violet — ID 22503 — score 0.8333
-- `315-MNT` -> Montale / Orange Aoud — ID 23365 — score 0.8333
-- `407-BAT` -> Bath Body Works / Morocco Orchid Pink Amber — ID 25388 — score 1.0000
-- `417-BOUR` -> Bourjois / Soir de Paris Evening in Paris — ID 3604 — score 0.8000
-- `438-BLG` -> Bvlgari / Omnia Coral — ID 14297 — score 0.8333
-- `493-CER` -> Cerruti / 1881 — ID 327 — score 1.0000
-- `510-CHL` -> Chloe / Chloe Eau de Parfum — ID 1733 — score 1.0000
-- `539-DRC` -> Dior / Miss Dior Rose N Roses — ID 58562 — score 0.8750
-- `581-DON` -> Donna Karan / DKNY My NY — ID 25948 — score 0.9000
-- `616-EST` -> Estee Lauder / Beyond Paradise — ID 530 — score 0.7500
-- `622-EST` -> Estee Lauder / Cinnabar — ID 546 — score 0.6667
-- `623-EST` -> Estee Lauder / Estee — ID 544 — score 1.0000
-- `632-EST` -> Estee Lauder / Private Collection Jasmin White Moss — ID 6066 — score 0.8571
-- `678-GUC` -> Gucci / Gucci Guilty — ID 9677 — score 0.7500
-- `710-HUG` -> Hugo Boss / Boss Jour Pour Femme — ID 18385 — score 1.0000
-- `714-HUG` -> Hugo Boss / Boss The Scent For Her — ID 38998 — score 0.8750
-- `755-KEN` -> Kenzo / Summer by Kenzo — ID 76 — score 1.0000
-- `831-MOS` -> Moschino / Cheap Chic — ID 727 — score 0.8333
-- `834-MOS` -> Moschino / So Real Cheap Chic — ID 46867 — score 0.9000
-- `872-PRA` -> Prada / Prada Candy — ID 12426 — score 0.7500
-- `950-VICT` -> Victoria s Secret / Amber Romance — ID 7990 — score 0.7500
-- `960-VICT` -> Victoria s Secret / Love Me — ID 29526 — score 1.0000
-- `964-VICT` -> Victoria s Secret / Scandalous — ID 28256 — score 0.6667
-- `965-VICT` -> Victoria s Secret / Sexy Little Things Noir Tease Temptation — ID 13261 — score 1.0000
