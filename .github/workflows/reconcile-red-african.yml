@@ -1,0 +1,33 @@
+name: Reconcile Red African
+on:
+  push:
+    paths:
+      - '.github/reconcile-red-african-trigger'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reconcile verified Red African identity
+        run: python tools/reconcile_red_african.py
+      - name: Commit result
+        run: |
+          if git diff --quiet -- database_complete.json; then
+            echo 'No database change'
+            exit 0
+          fi
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add database_complete.json
+          git commit -m 'Reconcile Red African Shobi identity'
+          git pull --rebase origin main
+          git push origin main
