@@ -22,6 +22,10 @@ APPROVED={
  '2609-TMFO':('15916','Tom Ford','Ombre de Hyacinth','same-brand historical and local candidate agree on distinctive Hyacinth identity'),
  '621-EST':('43639','Estee Lauder','Bronze Goddess Eau de Parfum','same-brand exact product identity in local corpus; concentration explicitly matches Eau de Parfum'),
  '1769-LTN':('40495','Louis Vuitton','Rose des Vents','same-brand historical local ID; Shobi label is notes-style Roses rather than a competing product title'),
+ '717-ISS':('720','Issey Miyake','L eau d Issey','same-brand historical ID and current local top candidate agree; CLASSIC identifies the original L Eau d Issey'),
+ '1014-AZZ':('829','Azzaro','Azzaro pour Homme','same-brand historical local ID; CLASSIC is the generic original Azzaro masculine fragrance'),
+ '1998-LTN':('53947','Louis Vuitton','Afternoon Swim','same-brand historical local ID; Shobi description is the citrus unisex description associated with Afternoon Swim'),
+ '502-CHA':('608','Chanel','Chanel N05 Vintage','same-brand historical local base No 5 identity; generic No 5 should not be forced to L Eau flanker'),
 }
 def walk(o):
  if isinstance(o,list):
