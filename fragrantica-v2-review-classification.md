@@ -1,0 +1,97 @@
+# Fragrantica v2 review queue classification
+
+- Review rows: **375**
+- ID_ONLY_NEEDS_LOOKUP: **288**
+- NAME_PRESENT_LOW_SCORE: **87**
+
+- Historical mapping rows inspected: **2343**
+
+## Name-present low-score cases
+
+- `105-ARB` — PRESTIGE CLASSIC - ARABIAN OUD ↔ Arabian Prestige Classic — ID 21602 — score 0.6827
+- `243-JOM` — Black Cedarwood  Juniper ↔ London Rain Black Cedarwood & Juniper — ID 22504 — score 0.7419
+- `246-JOM` — Bronze Wood & Leather by Jo Malone London ↔ Bronze Wood Leather — ID 52803 — score 0.6129
+- `268-JOM` — MYRRH & TONKA - JO MALONE ↔ Myrrh Tonka — ID 42027 — score 0.6111
+- `276-JOM` — Oud & Bergamot by Jo Malone London ↔ Oud Bergamot — ID 12928 — score 0.5000
+- `283-JOM` — English Fields  Poppy  Barley ↔ Poppy & Barley — ID 48316 — score 0.5581
+- `299-JOM` — WHITE LILAC & RHUBARB - JO MALONE ↔ White Lilac Rhubarb — ID 14134 — score 0.7308
+- `302-JOM` — WISTERIA VIOLET - JO MALONE ↔ London Rain Wisteria Violet — ID 22503 — score 0.5769
+- `315-MNT` — Aoud Orange ↔ Orange Aoud — ID 23365 — score 0.7727
+- `407-BAT` — PINK AMBER  & MOROCCO ORCHID  - BATH & BODY WORKS ↔ Morocco Orchid Pink Amber — ID 25388 — score 0.5135
+- `417-BOUR` — SOIR DE PARIS - BOURJOIS ↔ Soir de Paris Evening in Paris — ID 3604 — score 0.6538
+- `438-BLG` — CORAL OMNIA ↔ Omnia Coral — ID 14297 — score 0.7273
+- `504-CHA` — Five L'EAU ↔ Chanel No 5 L'Eau — ID 38543 — score 0.5185
+- `506-CHA` — COCON MADEM ↔ Coco Mademoiselle — ID 611 — score 0.7143
+- `508-CHA` — the fragrance Coco Black ↔ Coco Noir — ID 15963 — score 0.3030
+- `527-DRC` — La Collection Privee Grand Bal ↔ Dior Grand Bal — ID 14984 — score 0.5909
+- `537-DRC` — Fragrance MISS CHERIE ↔ Miss Dior Cherie — ID 213 — score 0.5946
+- `580-DON` — Golden-delicious-eau-de- ↔ DKNY Golden Delicious — ID 10914 — score 0.7273
+- `581-DON` — MY NY - Donna Karan ↔ DKNY My NY — ID 25948 — score 0.3852
+- `598-ESC` — CELEBRATE NOW - ESCADA ↔ Celebrate N.O.W. — ID 46180 — score 0.7429
+- `606-ESC` — MARGARETHA LEY (CLASSIC) - ESCADA ↔ Escada Margaretha Ley — ID 1365 — score 0.6550
+- `632-EST` — JASMIN WHITE MOSS - ESTEE LAUDER ↔ Private Collection Jasmin White Moss — ID 6066 — score 0.5152
+- `640-FEN` — L'ACQUA ROSSA - FENDI ↔ L'Acquarossa — ID 18706 — score 0.7742
+- `651-ARM` — LEI/ELLE/SHE/ELLA ↔ Emporio Armani Lei — ID 417 — score 0.1714
+- `732-JIM` — JIMMY CHOO ↔ Flash — ID 17223 — score 0.1333
+- `734-JIM` — Eau de Parfum (Eau de Parfum) ↔ Jimmy Choo — ID 10573 — score 0.0000
+- `735-JIM` — Stars ↔ Jimmy Choo — ID 10573 — score 0.0000
+- `834-MOS` — Cheap  Chic  So Real ↔ So Real Cheap Chic — ID 46867 — score 0.7778
+- `842-NRO` — FOR HER BLACK EDP - NARCISO RODRIGUEZ ↔ Narciso Rodriguez for Her Eau de Parfum — ID 14319 — score 0.7036
+- `848-NRO` — PURE MUSK FOR HER - NARCISO RODRIGUEZ ↔ Narciso Rodriguez For Her — ID 209 — score 0.6167
+- `892-RCAV` — JUST HER - ROBERTO CAVALLI ↔ Just Cavalli Her — ID 847 — score 0.6750
+- `893-RCAV` — NERO ASSOLUTO - CAVALLI ↔ Roberto Cavalli Nero Assoluto — ID 18833 — score 0.6350
+- `966-VICT` — TEASE - VICTORIA'S SECRET ↔ Sexy Little Things Noir Tease — ID 9730 — score 0.1923
+- `1008-ACQ` — COLONIA PURA (U) ↔ Acqua di Parma Colonia Pura — ID 45876 — score 0.5854
+- `1023-BOT` — pour Homme Extrême ↔ Bottega Veneta Pour Homme Extreme — ID 29351 — score 0.4138
+- `1031-BRB` — RHYTHM BRIT - BURBERRY ↔ Burberry Brit Rhythm — ID 18903 — score 0.7000
+- `1034-BLG` — AQUA - BVLGARI ↔ Aqva Pour Homme — ID 153 — score 0.3750
+- `1043-CAL` — Ck Be ↔ Calvin Klein — ID 14606 — score 0.3529
+- `1063-CER` — pour Homme Eau de Toilette (Eau de Toilette) ↔ Cerruti Pour Homme — ID 1441 — score 0.0000
+- `1116-ZEG` — UOMO ABSOLUT - ERMENEGILDO ZEGNA ↔ Uomo Absolute — ID 28142 — score 0.6047
+- `1133-ARM` — BLACK CODE ↔ Armani Code — ID 412 — score 0.5714
+- `1135-ARM` — LUI/IL/HE/EL ↔ Emporio Armani Lui — ID 416 — score 0.2000
+- `1151-HAL` — Halston Z-14 Cologne ↔ Halston Z14 — ID 3697 — score 0.7097
+- `1164-HUG` — ELEMENTS - HUGO BOSS ↔ Boss Elements — ID 571 — score 0.5914
+- `1172-ISS` — EAU D'ISSEY HOMME - ISSEY MIYAKE ↔ L'Eau d'Issey Pour Homme — ID 79 — score 0.5116
+- `1184-JOO` — JOOP - JOOP ↔ Joop! Homme — ID 1251 — score 0.6316
+- `1198-LAL` — ENCRE NOIR - LALIQUE ↔ Encre Noire — ID 1834 — score 0.7586
+- `1204-LOE` — Solo Cedro ↔ Solo Loewe Cedro — ID 30321 — score 0.7692
+- `1254-RCAV` — JUST HIM - ROBERTO CAVALLI ↔ Just Cavalli Him — ID 848 — score 0.6750
+- `1495-BRB` — Her-london-dream-eau-de- ↔ Burberry Her London Dream — ID 60795 — score 0.6667
+- `1502-CHA` — the fragrance COCON MADEM L'EAU PRIVEE ↔ Coco Mademoiselle L'Eau Privee — ID 62194 — score 0.6765
+- `1542-JOM` — English Oak & Redcurrant by Jo Malone London ↔ English Oak Redcurrant — ID 46186 — score 0.6471
+- `1654-ACQ` — Colonia 1916 ↔ Acqua di Parma Colonia — ID 1681 — score 0.4118
+- `1655-JOM` — Oat & Cornflower by Jo Malone London ↔ Oat Cornflower — ID 48318 — score 0.5385
+- `1731-VICT` — TEASE CREAM CLOUD - VICTORIA'S SECRET ↔ Tease Creme Cloud — ID 68550 — score 0.6154
+- `1754-HER` — VANILLE GALANTE HERMESSENCE - HERMES ↔ Hermessence Vanille Galante — ID 5213 — score 0.6209
+- `1784-ESC` — Summer-festival-eau-de-toilette ↔ Escada Summer Festival — ID 64643 — score 0.5660
+- `1802-JOM` — Midnight Musk & Amber by Jo Malone London ↔ Midnight Musk Amber — ID 63920 — score 0.6129
+- `1826-JOM` — Iris & White Musk by Jo Malone London ↔ Iris White Musk — ID 12926 — score 0.5556
+- `1827-JOM` — Tropical Cherimoya by Jo Malone London ↔ Tropical Cherimoya Cologne — ID 49602 — score 0.7500
+- `1860-NAS` — ABSINT - NASOMATTO ↔ Absinth — ID 4293 — score 0.5217
+- `1919-PRA` — Paradoxe-eau-de- ↔ Prada Paradoxe — ID 75668 — score 0.5517
+- `1942-LAN` — Idole-l-eau-de-parfum-nectar ↔ Idole Nectar — ID 74137 — score 0.7273
+- `1978-ARM` — STRONGER WITH YOU INTENSENLY ↔ Emporio Armani Stronger With You Intensely — ID 52802 — score 0.7714
+- `2095-VICT` — Strawberries-champagne-eau-de-toilette ↔ Strawberries and Champagne — ID 8000 — score 0.6875
+- `2122-GUR` — Aqua-allegoria-harvest-rosa-rossa ↔ Rosa Rossa Harvest — ID 79472 — score 0.4961
+- `2142-PARF` — PEGASUS EXCLUSIVE - PARFUMS DE MARLY ↔ Pegasus Exclusif — ID 63100 — score 0.6400
+- `2178-MON` — pour Homme ↔ Moncler pour Homme — ID 69818 — score 0.0000
+- `2185-DRC` — Eau Sauvage Extrme Intense ↔ Eau Sauvage Extreme 2010 — ID 72771 — score 0.7600
+- `2194-ORT` — Cuoium ↔ ORTO — ID 119473 — score 0.2000
+- `2234-MON` — pour Femme ↔ Moncler pour Femme — ID 69819 — score 0.0000
+- `2278-BLG` — Eau Parfumée au Thé Blanc Eau de Cologne ↔ Eau Parfumee au The Blanc — ID 145 — score 0.7188
+- `2311-YVRO` — PLAIN SOLEIL - YVES ROCHER ↔ Plein Soleil — ID 56457 — score 0.6111
+- `2344-LEL` — Mousse De Chne 30 ↔ Mousse de Chene 30 Amsterdam — ID 46295 — score 0.7556
+- `2374-MICA` — GN TONIC - MICALLEF ↔ GNTONIC — ID 80353 — score 0.5833
+- `2516-GUL` — Scandal-pour-homme-absolu ↔ Scandal Pour Homme Absolu — ID 91053 — score 0.7179
+- `2543-HUG` — The-scent-magnetic-for-him ↔ Boss The Scent For Him Magnetic — ID 78424 — score 0.7325
+- `2600-TMU` — Angel Lily ↔ Angel Garden Of Stars - Le Lys — ID 714 — score 0.4737
+- `2609-TMFO` — Opaline Hyacinth ↔ Ombre de Hyacinth — ID 15916 — score 0.6667
+- `2627-LTN` — Météore ↔ Meteore — ID 62251 — score 0.7143
+- `2692-SOL` — Cheirosa-87-rio-radiance-tan-lines ↔ Rio Radiance / Cheirosa 87 — ID 82595 — score 0.5920
+- `2697-RIT` — Karma Rituals ↔ The Ritual of Karma Body Mist — ID 46391 — score 0.3810
+- `2699-RIT` — Ayurveda Rituals ↔ The Ritual of Ayurveda — ID 52638 — score 0.4211
+- `2785-VAL` — Valentino-donna-born-in-roma-extradose ↔ Born in Roma Extradose Donna — ID 101384 — score 0.7500
+- `2802-HER` — Terre Intense for men ↔ Terre d Hermes Intense — ID 102772 — score 0.7429
+- `2829-PARF` — Athénaïs ↔ Athenais — ID 123716 — score 0.7500
+- `2837-GUL` — Scandal-pour-homme-elixir ↔ Scandal Pour Homme Elixir — ID 121453 — score 0.7179
