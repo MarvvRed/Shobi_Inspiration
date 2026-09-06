@@ -1,12 +1,12 @@
 # Post-fix catalog audit
 
-- Rows: **2364**
-- Unique non-empty codes: **2362**
+- Rows: **2370**
+- Unique non-empty codes: **2368**
 - Duplicate code groups: **0**
 - Duplicate Prestashop ID groups: **0**
 - Duplicate Shobi URL groups: **0**
 - Duplicate Fragrantica ID groups: **0**
-- Same normalized brand+name groups: **10**
+- Same normalized brand+name groups: **11**
 - Empty-code rows: **2**
 - Code-vs-URL conflicts: **0**
 
@@ -17,12 +17,12 @@
 - `2313-DRC`: 1 row(s) — Christian Dior — SAUVAGE PARFUM 2019 — pid=
 - `1644-DRC`: 1 row(s) — Christian Dior — SAUVAGE ELIXIR — pid=
 - `1702-KUR`: 1 row(s) — Maison Francis Kurkdjian — Oud — pid=4387
-- `2604-JILS`: 0 row(s)
-- `2773-RIT`: 0 row(s)
-- `2783-LTN`: 0 row(s)
-- `2786-LTN`: 0 row(s)
-- `2791-LTN`: 0 row(s)
-- `846-NRO`: 0 row(s)
+- `2604-JILS`: 1 row(s) — Jil Sander — Sun Men Jil Sander — pid=4394
+- `2773-RIT`: 1 row(s) — Rituals — The Rituals of Mehr — pid=5014
+- `2783-LTN`: 1 row(s) — Shobi — the fragrance notes — pid=5051
+- `2786-LTN`: 1 row(s) — Shobi — the fragrance notes — pid=5054
+- `2791-LTN`: 1 row(s) — Shobi — the fragrance notes of — pid=5060
+- `846-NRO`: 1 row(s) — Narciso Rodriguez — NARCISO ROUGE - RODRIGUEZ — pid=889
 
 ## Empty-code rows
 - Ajmal — Danat Al Duniya Eau de Parfum | pid=2688 | https://leparfum.com.gr/en/arabian-perfumes/danat-al-duniya-ajmal-perfume-type
@@ -40,4 +40,5 @@
 - mugler — angel: 920-TMU, 1262-TMU
 - rabanne — million gold: 2513-PAC, 2456-PAC
 - ralph lauren — safari: 2533-RAL, 1250-RAL
+- shobi — the fragrance notes: 2783-LTN, 2786-LTN
 - xerjoff — erba pura: 1887-XER, 174-SOS
