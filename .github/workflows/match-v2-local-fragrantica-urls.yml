@@ -6,6 +6,7 @@ on:
       - 'tools/match_v2_against_perfume_urls.py'
       - 'tools/disambiguate_local_exact_matches.py'
       - 'tools/promote_safe_local_url_matches_v2.py'
+      - 'tools/promote_reviewed_local_url_matches_v2.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -23,10 +24,12 @@ jobs:
         run: python tools/disambiguate_local_exact_matches.py
       - name: Promote conservative local matches
         run: python tools/promote_safe_local_url_matches_v2.py
+      - name: Promote manually reviewed local matches
+        run: python tools/promote_reviewed_local_url_matches_v2.py
       - name: Commit reports and databases
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md fragrantica-v2-local-disambiguation.md fragrantica-v2-safe-promotion.md database_v2_clean.json database_complete.json
-          git diff --cached --quiet || git commit -m 'Promote conservative v2 matches from local Fragrantica URL corpus'
+          git add fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md fragrantica-v2-local-disambiguation.md fragrantica-v2-safe-promotion.md fragrantica-v2-reviewed-promotion.md database_v2_clean.json database_complete.json
+          git diff --cached --quiet || git commit -m 'Promote reviewed v2 matches from local Fragrantica URL corpus'
           git push
