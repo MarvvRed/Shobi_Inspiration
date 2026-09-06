@@ -1,10 +1,10 @@
 # Reviewed historical residual promotion
 
-- Approved: **6**
-- Promoted this run: **0**
+- Approved: **14**
+- Promoted this run: **8**
 - Already verified: **6**
-- database_v2_clean.json: **0** changed
-- database_complete.json: **0** changed
+- database_v2_clean.json: **8** changed
+- database_complete.json: **8** changed
 
 ## Mappings
 
@@ -14,3 +14,11 @@
 - `1034-BLG` -> Bvlgari / Aqva Pour Homme — ID 153 — historical local base Aqva ID; Shobi says generic AQUA, not Edition Limitee
 - `1080-DRC` -> Dior / Dior Homme 2005 — ID 230 — historical local ID for generic HOMME row; same Dior brand and base Homme identity
 - `1092-DOL` -> Dolce Gabbana / By — ID 490 — historical local ID; By Man Eau de Toilette maps to original By entry rather than The One
+- `1094-DOL` -> Dolce Gabbana / K by Dolce Gabbana — ID 56358 — same-brand historical local ID; K KING 2019 preserves K identity and launch year
+- `1135-ARM` -> Giorgio Armani / Emporio Armani Lui — ID 416 — same-brand historical local ID; LUI/IL/HE/EL are multilingual male labels matching Lui
+- `1654-ACQ` -> Acqua di Parma / Acqua di Parma Colonia — ID 1681 — same-brand historical local ID; Colonia 1916 identifies original Colonia and its launch year
+- `2012-DOL` -> Dolce Gabbana / Q by Dolce Gabbana — ID 78873 — same-brand historical local ID; Q QUEEN directly preserves Q identity
+- `2017-DIE` -> Diesel / D by Diesel — ID 74965 — same-brand historical local ID; one-letter D is the exact product identity
+- `508-CHA` -> Chanel / Coco Noir — ID 15963 — same-brand historical local ID; Shobi Coco Black is a direct Black/Noir label variant
+- `651-ARM` -> Giorgio Armani / Emporio Armani Lei — ID 417 — same-brand historical local ID; LEI/ELLE/SHE/ELLA are multilingual female labels matching Lei
+- `677-GUC` -> Gucci / Gucci by Gucci Eau de Parfum — ID 1150 — same-brand historical local ID; G by G is an explicit abbreviation of Gucci by Gucci
