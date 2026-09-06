@@ -20,12 +20,12 @@
   - `721-GUL` — Classique Essence De Parfum — ID 39582
   - `722-GUL` — La Belle — ID 55786
   - `723-GUL` — X CLASSIQUE — ID 7800
-- `drc` — top `Dior` 62/64 (96.9%) — suspicious-name=True — distribution: {'Dior': 62, 'Create Scent': 1, 'The Dua Brand': 1}
+- `drc` — top `Dior` 63/65 (96.9%) — suspicious-name=True — distribution: {'Dior': 63, 'Create Scent': 1, 'The Dua Brand': 1}
   - `113-DRC` — Oud-ispahan-eau-de- — ID 15231
   - `522-DRC` — Dior Addict — ID 25159
   - `523-DRC` — ISSIMO — ID 224
   - `524-DRC` — DOLCE VITA — ID 222
-- `ltn` — top `Louis Vuitton` 32/33 (97.0%) — suspicious-name=True — distribution: {'Louis Vuitton': 32, 'Boy Smells': 1}
+- `ltn` — top `Louis Vuitton` 33/34 (97.1%) — suspicious-name=True — distribution: {'Louis Vuitton': 33, 'Boy Smells': 1}
   - `132-LTN` — Ombre Nomade — ID 49755
   - `809-LTN` — Apogée — ID 40498
   - `810-LTN` — Matière Noire — ID 40496
@@ -40,7 +40,7 @@
   - `976-YZLO` — Belle D Opium — ID 9394
   - `977-YZLO` — BLACK OPIUM — ID 25324
   - `978-YZLO` — the notes of the fragrance BLACK OPIUM NUIT BLANCHE — ID 34503
-- `tmfo` — top `Tom Ford` 76/76 (100.0%) — suspicious-name=True — distribution: {'Tom Ford': 76}
+- `tmfo` — top `Tom Ford` 77/77 (100.0%) — suspicious-name=True — distribution: {'Tom Ford': 77}
   - `338-TMFO` — Arabian Wood — ID 6363
   - `339-TMFO` — Beau-de-jour-eau-de- — ID 52790
   - `340-TMFO` — Black Orchid Eau de Parfum — ID 1018
@@ -195,7 +195,7 @@
   - `675-GUC` — Bloom — ID 44894
   - `677-GUC` — G by G — ID 1150
   - `678-GUC` — Guilty — ID 9677
-- `est` — top `Estee Lauder` 26/27 (96.3%) — suspicious-name=False — distribution: {'Estee Lauder': 26, 'Aerin': 1}
+- `est` — top `Estee Lauder` 27/28 (96.4%) — suspicious-name=False — distribution: {'Estee Lauder': 27, 'Aerin': 1}
   - `614-EST` — Beautiful Eau de Parfum — ID 528
   - `615-EST` — Beautiful Belle — ID 50793
   - `616-EST` — Beyond Paradise — ID 530

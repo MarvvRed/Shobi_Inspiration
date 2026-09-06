@@ -1,21 +1,20 @@
 # Fragrantica v2 match against local perfume_urls.txt
 
 - URLs parsed: **55556**
-- Residual rows scanned: **221**
-- Residuals with local brand hint: **35**
+- Residual rows scanned: **217**
+- Residuals with local brand hint: **31**
 - Suffix brand priors learned: **132**
-- STRONG_EXACT_BRAND: **1**
+- STRONG_EXACT_BRAND: **0**
 - STRONG_UNIQUE: **1**
 - GOOD_REVIEW: **0**
 - EXACT_NAME_NO_BRAND: **7**
-- WEAK_REVIEW: **171**
+- WEAK_REVIEW: **168**
 - NO_CANDIDATE: **41**
 
 No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Brand hints come only from explicit metadata, an exact/left-anchored brand in the Shobi label tail, or VERIFIED suffix priors with at least two supporting verified rows, in that priority order. Generated code signatures and singleton VERIFIED suffixes are never trusted for brand selection. No mapping is promoted automatically.
 
 ## Strong candidates
 
-- `621-EST` — BRONZE GODDESS EAU DE PARFUM (SUMMER LIMITED EDITION) -> Estee Lauder / Bronze Goddess Eau de Parfum — ID 43639 — STRONG_EXACT_BRAND — brand-source verified_suffix
 - `1245-PRA` — PRADA AMBER -> Prada / Prada Amber Pour Homme Prada Man — ID 1044 — STRONG_UNIQUE — brand-source verified_suffix
 
 ## Good review candidates

@@ -1,8 +1,8 @@
 # Reviewed historical residual promotion
 
-- Approved: **18**
+- Approved: **22**
 - Promoted this run: **4**
-- Already verified: **14**
+- Already verified: **18**
 - database_v2_clean.json: **4** changed
 - database_complete.json: **4** changed
 
@@ -26,3 +26,7 @@
 - `2609-TMFO` -> Tom Ford / Ombre de Hyacinth — ID 15916 — same-brand historical and local candidate agree on distinctive Hyacinth identity
 - `621-EST` -> Estee Lauder / Bronze Goddess Eau de Parfum — ID 43639 — same-brand exact product identity in local corpus; concentration explicitly matches Eau de Parfum
 - `1769-LTN` -> Louis Vuitton / Rose des Vents — ID 40495 — same-brand historical local ID; Shobi label is notes-style Roses rather than a competing product title
+- `717-ISS` -> Issey Miyake / L eau d Issey — ID 720 — same-brand historical ID and current local top candidate agree; CLASSIC identifies the original L Eau d Issey
+- `1014-AZZ` -> Azzaro / Azzaro pour Homme — ID 829 — same-brand historical local ID; CLASSIC is the generic original Azzaro masculine fragrance
+- `1998-LTN` -> Louis Vuitton / Afternoon Swim — ID 53947 — same-brand historical local ID; Shobi description is the citrus unisex description associated with Afternoon Swim
+- `502-CHA` -> Chanel / Chanel N05 Vintage — ID 608 — same-brand historical local base No 5 identity; generic No 5 should not be forced to L Eau flanker

@@ -1,10 +1,10 @@
 # Simple exhaustive brand-first matcher
 
-- Residuals: **221**
+- Residuals: **217**
 - Local URLs: **55556**
-- With brand hint: **35**
-- WEAK: **137**
-- REVIEW: **83**
+- With brand hint: **31**
+- WEAK: **134**
+- REVIEW: **82**
 - STRONG_REVIEW: **1**
 
 ## Strong results

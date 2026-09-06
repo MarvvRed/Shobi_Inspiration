@@ -1,10 +1,10 @@
 # Global local-corpus fallback review
 
-- Input residual candidates inspected: **158**
+- Input residual candidates inspected: **155**
 - GLOBAL_STRONG: **6**
 - GLOBAL_GOOD: **5**
 - GLOBAL_ALTERNATIVE: **2**
-- GLOBAL_WEAK: **145**
+- GLOBAL_WEAK: **142**
 
 This pass ignores inferred brand restrictions and searches only the repository-local `perfume_urls.txt`. It is review-only and promotes nothing.
 
