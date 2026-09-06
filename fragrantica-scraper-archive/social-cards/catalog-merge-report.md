@@ -1,0 +1,129 @@
+# Gender + Season catalog merge report
+
+- extraction_rows: **2287**
+- extraction_unique_codes: **2258**
+- extraction_resolved_codes: **2258**
+- extraction_conflicting_codes: **0**
+- catalog_perfume_rows: **2387**
+- catalog_unique_codes: **2364**
+- matched_catalog_codes: **2252**
+- matched_catalog_rows: **2259**
+- catalog_rows_changed: **1832**
+- catalog_rows_already_equal: **427**
+- catalog_codes_without_social_card_merge: **112**
+- extraction_codes_not_present_in_catalog: **6**
+
+## Rules
+- Gender: male → masculine, female → feminine, unisex → unisex.
+- Season: the single dominant Fragrantica bar is stored as one season; fall is normalized to autumn for the existing site UI.
+- Existing catalog values are preserved for catalog codes without a resolved social-card match.
+
+## Catalog codes without social-card merge (first 100)
+- -AL HAR
+- -HUG
+- -VICT
+- 1000-ADO
+- 1001-ANT
+- 1044-CAL
+- 107-ARB
+- 1076-DRC
+- 1081-DRC
+- 1086-CLI
+- 1121-GFE
+- 1165-HUG
+- 118-HAM
+- 1189-KEN
+- 1196-LAC
+- 1220-MOS
+- 1244-PRA
+- 1251-ROM
+- 1281-YZLO
+- 130-LEL
+- 1486-TRU
+- 1489-DAV
+- 1491-CAL
+- 1494-BOD
+- 1523-AFN
+- 1526-AL HAR
+- 1534-SWI
+- 1550-YAN
+- 1628-AL HAR
+- 1629-AL HAR
+- 1636-KIL
+- 1644-DRC
+- 1649-GIV
+- 1748-BYR
+- 1751-GUL
+- 1767-LTN
+- 1781-LAC
+- 1783-AL HAR
+- 1796-SER
+- 1808-LTN
+- 184-YAS
+- 185-AL HAR
+- 1869-DOL
+- 1890-LEL
+- 1950-SWISA
+- 1955-LAP
+- 200-CIR
+- 202-CLIV
+- 2085-CLIV
+- 2106-MARC
+- 2106-MIS
+- 2172-SWISA
+- 2173-ANFAD
+- 2189-ARM
+- 2194-ORT
+- 222-DIP
+- 2220-AL HAR
+- 223-DIP
+- 2256-GIV
+- 2265-KAY
+- 227-DIP
+- 228-DIP
+- 230-DIP
+- 2313-DRC
+- 2331-DOL
+- 235-HOLL
+- 2438-KYLJE
+- 2514-DRC
+- 258-JOM
+- 2586-DIP
+- 261-JOM
+- 2701-DIP
+- 2816-MOOD
+- 289-JOM
+- 310-MIL
+- 311-MOL
+- 313-MOL
+- 314-MOL
+- 325-PECK
+- 326-PECK
+- 330-PG
+- 331-PG
+- 334-SHI
+- 335-THCO
+- 336-THCO
+- 362-TMFO
+- 379-YAN
+- 380-YAN
+- 381-YAN
+- 382-YAN
+- 383-YAN
+- 387-
+- 420-BRB
+- 456-CAC
+- 491-CRT
+- 521-DRC
+- 548-CLI
+- 553-DOL
+- 564-DOL
+- 646-ARM
+
+## Extraction codes not in catalog (first 100)
+- 2604-JILS
+- 2773-RIT
+- 2783-LTN
+- 2786-LTN
+- 2791-LTN
+- 846-NRO
