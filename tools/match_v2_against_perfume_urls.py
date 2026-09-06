@@ -100,14 +100,16 @@ for p in perf:
     if not status_of(p).startswith('VERIFIED_'):continue
     c=byid.get(fid_of(p)); s=suffix(p.get('code'))
     if c and s:priors[s][c['brand']]+=1
-brand_by_suffix={s:c.most_common(1)[0][0] for s,c in priors.items() if c.most_common(1)[0][1]/sum(c.values())>=.6}
+brand_by_suffix={}
+for s,c in priors.items():
+    top,n=c.most_common(1)[0]; total=sum(c.values())
+    if n>=2 and n/total>=.6:brand_by_suffix[s]=top
 
 rows=[]
 for p in perf:
     if status_of(p).startswith('VERIFIED_'):continue
     code=str(p.get('code') or '').strip() or '[no-code]'; raw_name=str(p.get('inspiredBy') or p.get('perfume') or '').strip(); qname,tail=split_name(raw_name)
     explicit=str(p.get('brand') or '').strip(); prior=brand_by_suffix.get(suffix(code),''); tail_hint=infer_tail_brand(tail) if not explicit else ''
-    # A literal/left-anchored brand written in the Shobi label is stronger than a learned suffix prior.
     hint=explicit or tail_hint or prior
     hint_source='field' if explicit else ('name_tail' if tail_hint else ('verified_suffix' if prior else ''))
     brand_pool=set(brand_idx.get(norm(hint),set())) if hint else set(); ids=set()
@@ -144,7 +146,7 @@ with OUT.open('w',encoding='utf-8-sig',newline='') as f:
 cnt=Counter(r['classification'] for r in rows); inferred=sum(bool(r['inferred_brand']) for r in rows)
 lines=['# Fragrantica v2 match against local perfume_urls.txt','',f'- URLs parsed: **{len(urls)}**',f'- Residual rows scanned: **{len(rows)}**',f'- Residuals with local brand hint: **{inferred}**',f'- Suffix brand priors learned: **{len(brand_by_suffix)}**']
 for k in ['STRONG_EXACT_BRAND','STRONG_UNIQUE','GOOD_REVIEW','EXACT_NAME_NO_BRAND','WEAK_REVIEW','NO_CANDIDATE']:lines.append(f'- {k}: **{cnt[k]}**')
-lines += ['','No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Brand hints come only from explicit metadata, an exact/left-anchored brand in the Shobi label tail, or VERIFIED suffix priors, in that priority order. Generated code signatures are diagnostic-only and never trusted for brand selection. No mapping is promoted automatically.','','## Strong candidates','']
+lines += ['','No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Brand hints come only from explicit metadata, an exact/left-anchored brand in the Shobi label tail, or VERIFIED suffix priors with at least two supporting verified rows, in that priority order. Generated code signatures and singleton VERIFIED suffixes are never trusted for brand selection. No mapping is promoted automatically.','','## Strong candidates','']
 for r in rows:
     if r['classification'] in {'STRONG_EXACT_BRAND','STRONG_UNIQUE'}:lines.append(f"- `{r['shobi_code']}` — {r['shobi_name']} -> {r.get('cand1_brand','')} / {r.get('cand1_name','')} — ID {r.get('cand1_id','')} — {r['classification']} — brand-source {r['brand_source']}")
 lines += ['','## Good review candidates','']
