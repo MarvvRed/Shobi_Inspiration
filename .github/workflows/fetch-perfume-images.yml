@@ -1,0 +1,71 @@
+name: Fetch Fragrantica Perfume Images
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/perfume-images-trigger"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fragrantica-perfume-images
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch Fragrantica perfume AVIF images
+        env:
+          PERFUME_IMAGE_DELAY: "0.08"
+          PERFUME_IMAGE_TIMEOUT: "20"
+          PERFUME_IMAGE_RETRIES: "3"
+        run: python tools/fetch_perfume_images.py
+
+      - name: Commit perfume image archive
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add perfume-images || true
+
+          if git diff --cached --quiet; then
+            echo "No new perfume images to commit."
+            exit 0
+          fi
+
+          git commit -m "Archive Fragrantica perfume images"
+
+          for attempt in 1 2 3 4 5; do
+            echo "Push attempt ${attempt}/5"
+            git fetch origin main
+            git rebase origin/main
+
+            if git push origin HEAD:main; then
+              echo "Perfume image archive pushed successfully."
+              exit 0
+            fi
+
+            echo "main advanced again; retrying..."
+            sleep 3
+          done
+
+          echo "Failed to push after 5 attempts."
+          exit 1
