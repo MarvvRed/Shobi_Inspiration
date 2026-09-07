@@ -3,24 +3,8 @@ on:
   push:
     paths:
       - '.github/match-v2-local-fragrantica-urls-trigger'
-      - 'tools/match_v2_against_perfume_urls.py'
-      - 'tools/simple_brand_first_exhaustive_v2.py'
-      - 'tools/disambiguate_local_exact_matches.py'
-      - 'tools/promote_safe_local_url_matches_v2.py'
-      - 'tools/promote_reviewed_local_url_matches_v2.py'
-      - 'tools/global_fallback_local_url_review.py'
-      - 'tools/review_corrected_brand_overrides.py'
-      - 'tools/review_lower_same_brand_candidates.py'
-      - 'tools/mega_local_residual_evidence.py'
-      - 'tools/promote_high_confidence_historical_local_v2.py'
-      - 'tools/promote_multisource_local_evidence_v2.py'
-      - 'tools/promote_reviewed_multisource_tail_v2.py'
-      - 'tools/review_brand_locked_abbreviations_v2.py'
-      - 'tools/promote_reviewed_brand_abbreviations_v2.py'
       - 'tools/promote_reviewed_historical_residuals_v2.py'
-      - 'tools/review_remaining_historical_residuals_v2.py'
-      - 'tools/review_no_candidate_residuals_v2.py'
-      - 'tools/audit_suffix_brand_priors_v2.py'
+      - '.github/workflows/match-v2-local-fragrantica-urls.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -29,49 +13,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Match against local perfume URL corpus
-        run: python tools/match_v2_against_perfume_urls.py
-      - name: Run simple exhaustive brand-first matcher
-        run: python tools/simple_brand_first_exhaustive_v2.py
-      - name: Audit learned suffix brand priors
-        run: python tools/audit_suffix_brand_priors_v2.py
-      - name: Disambiguate exact-name cases locally
-        run: python tools/disambiguate_local_exact_matches.py
-      - name: Run global local-corpus fallback review
-        run: python tools/global_fallback_local_url_review.py
-      - name: Review corrected brand overrides locally
-        run: python tools/review_corrected_brand_overrides.py
-      - name: Review lower same-brand candidates
-        run: python tools/review_lower_same_brand_candidates.py
-      - name: Build mega multi-source local evidence table
-        run: python tools/mega_local_residual_evidence.py
-      - name: Review brand-locked abbreviation candidates
-        run: python tools/review_brand_locked_abbreviations_v2.py
-      - name: Review remaining historical residuals
-        run: python tools/review_remaining_historical_residuals_v2.py
-      - name: Review NO_CANDIDATE residuals
-        run: python tools/review_no_candidate_residuals_v2.py
-      - name: Promote conservative local matches
-        run: python tools/promote_safe_local_url_matches_v2.py
-      - name: Promote manually reviewed local matches
-        run: python tools/promote_reviewed_local_url_matches_v2.py
-      - name: Bulk promote high-confidence historical IDs confirmed by local corpus
-        run: python tools/promote_high_confidence_historical_local_v2.py
-      - name: Promote 3-source brand/name aligned residuals
-        run: python tools/promote_multisource_local_evidence_v2.py
-      - name: Promote final reviewed multi-source tail
-        run: python tools/promote_reviewed_multisource_tail_v2.py
-      - name: Promote reviewed brand abbreviations
-        run: python tools/promote_reviewed_brand_abbreviations_v2.py
-      - name: Promote reviewed historical residuals
+      - name: Promote Shobi-first reviewed mappings against local corpus
         run: python tools/promote_reviewed_historical_residuals_v2.py
-      - name: Commit reports and databases
+      - name: Recount remaining residuals against local corpus
+        run: python tools/match_v2_against_perfume_urls.py
+      - name: Commit Shobi-first promotion and recount
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md fragrantica-v2-simple-brand-first.csv fragrantica-v2-simple-brand-first.md fragrantica-v2-suffix-prior-audit.md fragrantica-v2-local-disambiguation.md fragrantica-v2-global-fallback-review.csv fragrantica-v2-global-fallback-review.md fragrantica-v2-brand-override-review.csv fragrantica-v2-brand-override-review.md fragrantica-v2-lower-same-brand-review.csv fragrantica-v2-lower-same-brand-review.md fragrantica-v2-mega-local-evidence.csv fragrantica-v2-mega-local-evidence.md fragrantica-v2-brand-abbreviation-review.csv fragrantica-v2-brand-abbreviation-review.md fragrantica-v2-remaining-historical-residuals.md fragrantica-v2-no-candidate-review.md fragrantica-v2-safe-promotion.md fragrantica-v2-reviewed-promotion.md fragrantica-v2-historical-local-bulk-promotion.md fragrantica-v2-multisource-promotion.md fragrantica-v2-reviewed-multisource-tail.md fragrantica-v2-reviewed-brand-abbreviations.md fragrantica-v2-reviewed-historical-residuals.md database_v2_clean.json database_complete.json
-          git diff --cached --quiet || git commit -m 'Bulk promote high-confidence local residual mappings'
-          git push
+          git add database_v2_clean.json database_complete.json fragrantica-v2-reviewed-historical-residuals.md fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md
+          git diff --cached --quiet && exit 0
+          git commit -m 'Promote Shobi-first reviewed residual mappings'
+          git pull --rebase origin main
+          git push origin HEAD:main
