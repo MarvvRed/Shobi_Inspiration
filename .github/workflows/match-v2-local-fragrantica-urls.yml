@@ -22,6 +22,39 @@ jobs:
           python-version: '3.12'
       - name: Promote Shobi-first reviewed mappings against local corpus
         run: python tools/run_shobi_first_promotion_v2.py
+      - name: Sync verified aliases before recount
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          def walk(o):
+              if isinstance(o, list):
+                  for x in o:
+                      yield from walk(x)
+              elif isinstance(o, dict):
+                  yield o
+                  for v in o.values():
+                      if isinstance(v, (list, dict)):
+                          yield from walk(v)
+
+          for name in ('database_v2_clean.json', 'database_complete.json'):
+              p = Path(name)
+              data = json.loads(p.read_text(encoding='utf-8'))
+              changed = 0
+              for row in walk(data):
+                  status = str(row.get('fragrantica_status') or '')
+                  if status.startswith('VERIFIED_'):
+                      if row.get('fragranticaStatus') != status:
+                          row['fragranticaStatus'] = status
+                          changed += 1
+                      if row.get('fragrantica_id') not in (None, '') and row.get('fragranticaId') != row.get('fragrantica_id'):
+                          row['fragranticaId'] = row.get('fragrantica_id')
+                          changed += 1
+              if changed:
+                  p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+              print(name, 'alias_updates', changed)
+          PY
       - name: Recount remaining residuals against local corpus
         run: python tools/match_v2_against_perfume_urls.py
       - name: Commit Shobi-first promotion and recount
