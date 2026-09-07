@@ -142,7 +142,7 @@
 - `2604-JILS` -> Jil Sander / Sun Men — ID 619 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Sun Men Jil Sander with no EDP/Parfum qualifier; exact original 2002 EDT
 - `2697-RIT` -> Rituals / Ritual of Karma — ID 46391 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Karma Rituals; exact Rituals body mist fragrance entry with lotus and bergamot
 - `2699-RIT` -> Rituals / Rituals of Ayurveda — ID 52638 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Ayurveda Rituals; exact Rituals fragrance entry with rose and honey
-- `916-SOF` -> Sofia Vergara / Love — ID 31662 — MISSING_FROM_CORPUS — Shobi code 916-SOF identifies LOVE - SOFIA VERGARA; exact 2015 Fragrantica entry
+- `916-SOF` -> Sofia Vergara / Love — ID 31662 — MISSING_FROM_CORPUS — Shobi residual identifies LOVE - SOFIA VERGARA; exact 2015 Fragrantica entry
 - `926-TOM` -> Tommy Hilfiger / Tommy Girl — ID 3016 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Tommy Girl; exact original 1996 entry
 - `927-TOUZ` -> Tous / Rosa — ID 17827 — MISSING_FROM_CORPUS — Shobi code 927-TOUZ identifies Rosa by Tous; exact 2013 entry
 - `942-VERW` -> Vera Wang / Princess — ID 1596 — MISSING_FROM_CORPUS — Shobi code 942-VERW identifies Princess by Vera Wang; exact original 2006 entry
@@ -168,10 +168,10 @@
 - `1753-TEDL` -> Ted Lapidus / Ted — ID 5942 — MISSING_FROM_CORPUS — Shobi residual TED under Ted Lapidus code; exact 1999 fragrance entry
 - `1236-PAL` -> Paloma Picasso / Minotaure — ID 1695 — MISSING_FROM_CORPUS — Current residual code 1236-PAL identifies Minotaure; exact Paloma Picasso 1992 entry
 - `1494-BOD` -> The Body Shop / Red Musk Oud — ID 31568 — MISSING_FROM_CORPUS — Shobi residual RED MUSK OUD under Body Shop code; exact 2015 entry
-- `917-SWA` -> Swarovski / Aura Intense — ID 26119 — MISSING_FROM_CORPUS — Shobi code 917-SWA identifies AURA INTENSE - SWAROVSKI; exact 2012 Fragrantica entry
-- `918-TMU` -> Mugler / Alien Eau de Toilette — ID 6616 — ALREADY_VERIFIED_SAME_ID — Shobi code 918-TMU explicitly identifies ALIEN Eau de Toilette; exact 2009 EDT entry
-- `920-TMU` -> Mugler / Angel — ID 704 — ALREADY_VERIFIED_SAME_ID — Shobi code 920-TMU identifies ANGEL without flanker qualifier; maps to original 1992 Angel
-- `921-TMU` -> Mugler / Angel Muse — ID 36416 — ALREADY_VERIFIED_SAME_ID — Shobi code 921-TMU identifies ANGEL MUSE; exact original 2016 entry
+- `917-SWA` -> Swarovski / Aura Intense — ID 26119 — MISSING_FROM_CORPUS — Shobi residual identifies AURA INTENSE - SWAROVSKI; exact 2012 Fragrantica entry
+- `918-TMU` -> Mugler / Alien Eau de Toilette — ID 6616 — ALREADY_VERIFIED_SAME_ID — Shobi residual explicitly identifies ALIEN Eau de Toilette - Thierry Mugler; exact 2009 EDT entry
+- `920-TMU` -> Mugler / Angel — ID 704 — ALREADY_VERIFIED_SAME_ID — Shobi residual identifies ANGEL - Thierry Mugler without flanker qualifier; exact classic 1992 entry
+- `921-TMU` -> Mugler / Angel Muse — ID 36416 — ALREADY_VERIFIED_SAME_ID — Shobi residual identifies ANGEL MUSE - Thierry Mugler; exact 2016 EDP entry
 - `923-TMU` -> Mugler / Aura Mugler — ID 45639 — ALREADY_VERIFIED_SAME_ID — Shobi code 923-TMU identifies AURA; exact original 2017 Mugler Aura entry
 - `2036-GIS` -> Gisada / Ambassador Men — ID 58226 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Ambassador Men Eau de Parfum; exact Gisada 2019 entry
 - `2044-LORV` -> Lorenzo Villoresi / Teint de Neige — ID 5079 — MISSING_FROM_CORPUS — Shobi residual TEINT DE NEIGE under Lorenzo Villoresi code; exact original 2000 entry
