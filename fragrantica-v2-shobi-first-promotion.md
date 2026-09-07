@@ -4,13 +4,13 @@
 - Reviewed exact identities with Fragrantica target: **179**
 - Target IDs present in local corpus: **21**
 - Target IDs missing from local corpus: **158**
-- Promoted this run: **1**
-- Already verified with same ID: **7**
+- Promoted this run: **0**
+- Already verified with same ID: **8**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
 - Identified but deliberately not forced: **7**
 - Probe IDs: **{'200': False, '204': False, '456': False, '520': False, '719': False, '905': False, '925': False, '970': False, '993': False, '1014': False, '1061': False, '1365': False, '1499': False, '2068': False, '12201': True}**
-- database_v2_clean.json: **1** rows changed
-- database_complete.json: **1** rows changed
+- database_v2_clean.json: **0** rows changed
+- database_complete.json: **0** rows changed
 
 ## Exact targets
 
@@ -112,7 +112,7 @@
 - `913-SIS` -> Sisley / Eau du Soir — ID 1002 — MISSING_FROM_CORPUS — Shobi code 913-SIS identifies EAU DU SOIR; classic Sisley entry
 - `914-SIS` -> Sisley / Eau Tropicale — ID 23324 — MISSING_FROM_CORPUS — Shobi code 914-SIS identifies EAU TROPICALE; exact Sisley 2014 entry
 - `915-SIS` -> Sisley / Izia — ID 42935 — MISSING_FROM_CORPUS — Shobi code 915-SIS identifies IZIA; exact Sisley 2017 entry
-- `1186-JOO` -> Joop! / WOW! — ID 43425 — MISSING_FROM_CORPUS — Previously reviewed exact same-brand target retained; Shobi residual identity is WOW by Joop
+- `1186-JOO` -> Joop! / Wow! — ID 42887 — MISSING_FROM_CORPUS — Shobi code 1186-JOO explicitly identifies WOW - JOOP; exact 2017 men entry
 - `1188-JPG` -> Jean Paul Gaultier / Le Male Essence de Parfum — ID 39583 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1195-LAC` -> Lacoste / Eau de Lacoste L.12.12 Rouge — ID 16456 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1197-LAC` -> Lacoste Fragrances / Lacoste Pour Homme — ID 670 — MISSING_FROM_CORPUS — Shobi residual LACOSTE HOMME under Lacoste code identifies the 2002 Lacoste Pour Homme entry
@@ -146,11 +146,11 @@
 - `926-TOM` -> Tommy Hilfiger / Tommy Girl — ID 3016 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Tommy Girl; exact original 1996 entry
 - `927-TOUZ` -> Tous / Rosa — ID 17827 — MISSING_FROM_CORPUS — Shobi code 927-TOUZ identifies Rosa by Tous; exact 2013 entry
 - `942-VERW` -> Vera Wang / Princess — ID 1596 — MISSING_FROM_CORPUS — Shobi code 942-VERW identifies Princess by Vera Wang; exact original 2006 entry
-- `992-ZAD` -> Zadig & Voltaire / Girls Can Do Anything — ID 51198 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Girls Can Do Anything; exact 2018 entry
-- `993-ZAD` -> Zadig & Voltaire / Just Rock! for Her — ID 45862 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies JUST ROCK FOR HER; exact 2017 entry
-- `994-ZAD` -> Zadig & Voltaire / This is Her — ID 39358 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies This Is Her; exact original 2016 entry
-- `1021-BOG` -> Jacques Bogart / One Man Show — ID 7795 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies One Man Show Eau de Toilette; exact original 1980 entry
-- `1116-ZEG` -> Ermenegildo Zegna / Uomo Absolute — ID 28142 — MISSING_FROM_CORPUS — Shobi residual UOMO ABSOLUT under ZEG identifies Uomo Absolute; exact 2014 entry
+- `992-ZAD` -> Zadig & Voltaire / Girls Can Do Anything — ID 51198 — MISSING_FROM_CORPUS — Shobi code 992-ZAD explicitly identifies GIRLS CAN DO ANYTHING - ZADIG & VOLTAIRE; exact 2018 Fragrantica entry
+- `993-ZAD` -> Zadig & Voltaire / Just Rock! for Her — ID 45862 — MISSING_FROM_CORPUS — Shobi code 993-ZAD explicitly identifies JUST ROCK FOR HER - ZADIG & VOLTAIRE; exact 2017 entry
+- `994-ZAD` -> Zadig & Voltaire / This is Her — ID 39358 — MISSING_FROM_CORPUS — Shobi code 994-ZAD explicitly identifies THIS IS HER - ZADIG & VOLTAIRE; exact 2016 entry
+- `1021-BOG` -> Jacques Bogart / One Man Show — ID 7795 — MISSING_FROM_CORPUS — Residual explicitly identifies One Man Show Eau de Toilette; exact classic 1980 Jacques Bogart entry
+- `1116-ZEG` -> Ermenegildo Zegna / Uomo Absolute — ID 28142 — MISSING_FROM_CORPUS — Shobi code 1116-ZEG identifies UOMO ABSOLUT - ERMENEGILDO ZEGNA; exact 2014 entry
 - `2439-ZEG` -> Ermenegildo Zegna / Indonesian Oud Eau de Toilette — ID 16188 — MISSING_FROM_CORPUS — Shobi residual INDONESIAN OUD under ZEG; generic/original identity maps to the 2012 EDT, not the later 2019 EDP
 - `1756-LBI` -> Laura Biagiotti / Roma — ID 628 — MISSING_FROM_CORPUS — Shobi residual ROMA - LAURA BIAGIOTTI; exact original 1988 women fragrance
 - `1763-JILS` -> Jil Sander / Sun — ID 618 — MISSING_FROM_CORPUS — Shobi residual SUN under Jil Sander code; exact original 1989 women fragrance
@@ -189,7 +189,7 @@
 - `737-JUI` -> Juicy Couture / Juicy Couture Malibu — ID 22956 — MISSING_FROM_CORPUS — Shobi residual MALIBU under Juicy Couture code; exact 2013 Juicy Couture Malibu entry
 - `738-JUI` -> Juicy Couture / Viva la Juicy — ID 4410 — MISSING_FROM_CORPUS — Shobi residual VIVA LA JUICY under Juicy Couture code; exact original 2008 entry
 - `309-LOC` -> L'Occitane en Provence / Magnolia & Mure — ID 17836 — MISSING_FROM_CORPUS — Shobi residual MAGNOLIA & MURE under L'Occitane code; exact 2013 La Collection de Grasse entry
-- `1118-FAB` -> Brut Parfums Prestige / Brut — ID 15303 — PROMOTED — Shobi residual BRUT 1964 identifies original Brut launched in 1964; exact Fragrantica entry
+- `1118-FAB` -> Brut Parfums Prestige / Brut — ID 15303 — ALREADY_VERIFIED_SAME_ID — Shobi residual BRUT 1964 identifies original Brut launched in 1964; exact Fragrantica entry
 - `1121-GFE` -> Gianfranco Ferre / Ferre for Men — ID 803 — MISSING_FROM_CORPUS — Shobi residual FERRE MAN under Gianfranco Ferre code identifies Ferre for Men 2006; exact entry
 - `1122-GFE` -> Gianfranco Ferre / In The Mood For Love — ID 6530 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies In the Mood for Love; exact original 2009 women entry, not Pure/Tender/Man flankers
 - `1151-HAL` -> Halston / Halston Z14 — ID 3697 — MISSING_FROM_CORPUS — Shobi residual Halston Z-14 Cologne; exact original 1974 entry
