@@ -1,9 +1,9 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **123**
+- Reviewed exact identities with Fragrantica target: **125**
 - Target IDs present in local corpus: **15**
-- Target IDs missing from local corpus: **108**
+- Target IDs missing from local corpus: **110**
 - Promoted this run: **0**
 - Already verified with same ID: **2**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
@@ -97,6 +97,7 @@
 - `875-PRSC` -> Salvatore Ferragamo / Incanto Shine — ID 1055 — MISSING_FROM_CORPUS — Shobi residual identifies Incanto Shine by Salvatore Ferragamo; exact 2007 entry
 - `880-PRSC` -> Salvatore Ferragamo / Signorina Eleganza — ID 21977 — MISSING_FROM_CORPUS — Shobi residual identifies Signorina Eleganza; exact 2014 entry
 - `884-RAL` -> Ralph Lauren / Big Pony 2 for Women — ID 14446 — VERIFIED_CONFLICT_NOT_OVERWRITTEN — Shobi residual is Big Pony 2 in women catalog; exact 2012 women entry, not 2010 men version
+- `885-REP` -> Repetto / Repetto Eau Florale — ID 30159 — MISSING_FROM_CORPUS — Shobi residual identifies Repetto L Eau Florale; exact 2015 Repetto Eau Florale entry
 - `888-RCAV` -> Roberto Cavalli / Divine Oud — ID 41717 — MISSING_FROM_CORPUS — Shobi residual identifies Divine Oud by Roberto Cavalli; exact 2016 entry
 - `890-RCAV` -> Roberto Cavalli / Roberto Cavalli Exotica — ID 22902 — MISSING_FROM_CORPUS — Current Shobi code 890-RCAV explicitly identifies EXOTICA - CAVALLI; corrects prior mistaken Acqua mapping
 - `891-RCAV` -> Roberto Cavalli / Just Cavalli Gold for Her — ID 26216 — MISSING_FROM_CORPUS — Current Shobi code 891-RCAV explicitly identifies JUST GOLD FOR HER - ROBERTO CAVALLI; corrects prior mistaken Nero Assoluto mapping
@@ -134,6 +135,7 @@
 - `2028-ZARK` -> ZARKOPERFUME / Cloud Collection No. 3 — ID 54529 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
 - `2284-HIS` -> Histoires de Parfums / 1889 Moulin Rouge — ID 7816 — MISSING_FROM_CORPUS — Shobi residual explicitly says 1889 - Moulin Rouge; exact Histoires de Parfums 2010 entry
 - `2311-YVRO` -> Yves Rocher / Plein Soleil — ID 56457 — MISSING_FROM_CORPUS — Shobi residual has typo PLAIN SOLEIL - YVES ROCHER; exact Plein Soleil 2019 entry
+- `2374-MICA` -> M. Micallef / GNTONIC — ID 80353 — MISSING_FROM_CORPUS — Shobi residual GN TONIC - MICALLEF identifies GNTONIC; exact original 2023 M. Micallef entry
 - `2415-ESC` -> Escada / Sexy Graffiti — ID 1352 — MISSING_FROM_CORPUS — Shobi residual identifies SEXY GRAFFITY - ESCADA without 2011 qualifier; maps to original 2002 Sexy Graffiti
 - `2438-KYLJE` -> Kylie Cosmetics / Cosmic Kylie Jenner — ID 90957 — MISSING_FROM_CORPUS — Shobi code KYLJE plus COSMIC identifies original 2024 Cosmic Kylie Jenner; not 2.0 or Intense
 - `2604-JILS` -> Jil Sander / Sun Men — ID 619 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Sun Men Jil Sander with no EDP/Parfum qualifier; exact original 2002 EDT
