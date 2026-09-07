@@ -9,7 +9,7 @@ def load(path):
     if not p.exists(): return None
     with p.open(encoding='utf-8') as f: return json.load(f)
 
-def find_rows(obj):
+def find_rows(obj,target):
     out=[]
     if isinstance(obj,list):
         rows=obj
@@ -25,7 +25,7 @@ def find_rows(obj):
         fid=r.get('fragranticaId', r.get('fragrantica_id'))
         try: fid=int(fid)
         except: continue
-        if fid in TARGETS: out.append(r)
+        if fid==target: out.append(r)
     return out
 
 raw=load('social-card-main-notes.json')
@@ -47,12 +47,12 @@ for fid in sorted(TARGETS):
     for pat in patterns: files += glob.glob(pat)
     files=sorted(set(files))
     report['targets'][str(fid)]={
-      'raw':find_rows(raw) if raw is not None else [],
-      'validated':find_rows(val) if val is not None else [],
-      'database':find_rows(db) if db is not None else [],
+      'raw':find_rows(raw,fid) if raw is not None else [],
+      'validated':find_rows(val,fid) if val is not None else [],
+      'database':find_rows(db,fid) if db is not None else [],
       'archiveFiles':files,
       'archiveBasenames':[os.path.basename(x) for x in files],
-      'exactSuffixOk':all(os.path.basename(x).rsplit('_',1)[-1].split('.')[0]==str(fid) for x in files),
+      'exactSuffixOk':bool(files) and all(os.path.basename(x).rsplit('_',1)[-1].split('.')[0]==str(fid) for x in files),
     }
 
 Path('social-card-identity-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
