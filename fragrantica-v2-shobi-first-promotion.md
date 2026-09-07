@@ -1,16 +1,16 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **179**
+- Reviewed exact identities with Fragrantica target: **180**
 - Target IDs present in local corpus: **21**
-- Target IDs missing from local corpus: **158**
-- Promoted this run: **0**
-- Already verified with same ID: **8**
-- Conflicting pre-existing VERIFIED mappings left untouched: **2**
+- Target IDs missing from local corpus: **159**
+- Promoted this run: **20**
+- Already verified with same ID: **0**
+- Conflicting pre-existing VERIFIED mappings left untouched: **0**
 - Identified but deliberately not forced: **7**
-- Probe IDs: **{'200': False, '204': False, '456': False, '520': False, '719': False, '905': False, '925': False, '970': False, '993': False, '1014': False, '1061': False, '1365': False, '1499': False, '2068': False, '12201': True}**
-- database_v2_clean.json: **0** rows changed
-- database_complete.json: **0** rows changed
+- Probe IDs: **{200: False, 204: False, 456: False, 520: False, 719: False, 905: False, 925: False, 970: False, 993: False, 1014: False, 1061: False, 1365: False, 1499: False, 2068: False, 12201: True}**
+- database_v2_clean.json: **10** rows changed
+- database_complete.json: **10** rows changed
 
 ## Exact targets
 
@@ -93,10 +93,10 @@
 - `867-PAL` -> Paloma Picasso / Paloma Picasso — ID 1009 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies PALOMA PICASSO under the Paloma Picasso code; exact self-titled 1984 fragrance
 - `868-PARH` -> Paris Hilton / Heiress Limited Edition — ID 32365 — MISSING_FROM_CORPUS — Shobi code 868-PARH explicitly identifies HEIRESS LIMITED EDITION - PARIS HILTON; exact limited edition entry
 - `868-PEN` -> Penhaligon's / Luna — ID 38351 — IN_CORPUS — Shobi residual identifies Luna by Penhaligons; exact 2016 perfume, not 2026 body mist
-- `869-PIER` -> Balmain Beauty / Extatic — ID 22817 — ALREADY_VERIFIED_SAME_ID — Shobi residual identifies Extatic / Pierre Balmain; base 2014 EDP, not EDT flanker
+- `869-PIER` -> Balmain Beauty / Extatic — ID 22817 — IN_CORPUS — Shobi residual identifies Extatic / Pierre Balmain; base 2014 EDP, not EDT flanker
 - `875-PRSC` -> Salvatore Ferragamo / Incanto Shine — ID 1055 — MISSING_FROM_CORPUS — Shobi residual identifies Incanto Shine by Salvatore Ferragamo; exact 2007 entry
 - `880-PRSC` -> Salvatore Ferragamo / Signorina Eleganza — ID 21977 — MISSING_FROM_CORPUS — Shobi residual identifies Signorina Eleganza; exact 2014 entry
-- `884-RAL` -> Ralph Lauren / Big Pony 2 for Women — ID 14446 — VERIFIED_CONFLICT_NOT_OVERWRITTEN — Shobi residual is Big Pony 2 in women catalog; exact 2012 women entry, not 2010 men version
+- `884-RAL` -> Ralph Lauren / Big Pony 2 for Women — ID 14446 — IN_CORPUS — Shobi residual is Big Pony 2 in women catalog; exact 2012 women entry, not 2010 men version
 - `885-REP` -> Repetto / Repetto Eau Florale — ID 30159 — MISSING_FROM_CORPUS — Shobi residual identifies Repetto L Eau Florale; exact 2015 Repetto Eau Florale entry
 - `888-RCAV` -> Roberto Cavalli / Divine Oud — ID 41717 — MISSING_FROM_CORPUS — Shobi residual identifies Divine Oud by Roberto Cavalli; exact 2016 entry
 - `890-RCAV` -> Roberto Cavalli / Roberto Cavalli Exotica — ID 22902 — MISSING_FROM_CORPUS — Current Shobi code 890-RCAV explicitly identifies EXOTICA - CAVALLI; corrects prior mistaken Acqua mapping
@@ -119,11 +119,11 @@
 - `1201-LBI` -> Laura Biagiotti / Venezia Uomo — ID 3002 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Venezia Uomo; exact Laura Biagiotti 1995 entry
 - `1214-MON` -> Montblanc / Legend Night — ID 45692 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1217-MON` -> Montblanc / Starwalker Extreme — ID 30991 — IN_CORPUS — Previously reviewed exact Shobi identity retained
-- `1220-MOS` -> Moschino / Toy Boy — ID 55858 — VERIFIED_CONFLICT_NOT_OVERWRITTEN — Previously reviewed exact Shobi identity retained
+- `1220-MOS` -> Moschino / Toy Boy — ID 55858 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1232-PR` -> Paco Rabanne / Paco Rabanne Pour Homme — ID 526 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1235-PR` -> Paco Rabanne / XS — ID 515 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1238-PAL` -> Paloma Picasso / Minotaure — ID 764 — IN_CORPUS — Previously reviewed exact Shobi identity retained
-- `1245-PRA` -> Prada / Prada Amber Pour Homme — ID 1044 — ALREADY_VERIFIED_SAME_ID — Shobi residual PRADA AMBER under Prada code matches Prada Amber Pour Homme / Prada Man 2006
+- `1245-PRA` -> Prada / Prada Amber Pour Homme — ID 1044 — IN_CORPUS — Shobi residual PRADA AMBER under Prada code matches Prada Amber Pour Homme / Prada Man 2006
 - `1246-PRA` -> Prada / Luna Rossa Black — ID 48682 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1248-RAL` -> Ralph Lauren / Polo Ultra Blue — ID 48482 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
 - `1254-RCAV` -> Roberto Cavalli / Just Cavalli Him — ID 848 — MISSING_FROM_CORPUS — Shobi residual explicitly says JUST HIM - ROBERTO CAVALLI; maps to original 2004 Just Cavalli Him, matching paired 2004 Her entry
@@ -133,7 +133,7 @@
 - `1262-PR` -> Paco Rabanne / Invictus Aqua 2018 — ID 48704 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `2016-PARELM` -> Parfums d'Elmar / Elixir d'Amour — ID 79218 — MISSING_FROM_CORPUS — Shobi page identifies ELIXIR D AMOUR - PARFUMS D ELMAR with 2022 release identity; maps to 2022 Fragrantica entry
 - `2028-ZARK` -> ZARKOPERFUME / Cloud Collection No. 3 — ID 54529 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
-- `2234-MON` -> Montblanc / Femme de Montblanc — ID 833 — ALREADY_VERIFIED_SAME_ID — Shobi residual pour Femme under MON code identifies the original Montblanc feminine fragrance; exact 2006 Femme de Montblanc entry
+- `2234-MON` -> Montblanc / Femme de Montblanc — ID 833 — IN_CORPUS — Shobi residual pour Femme under MON code identifies the original Montblanc feminine fragrance; exact 2006 Femme de Montblanc entry
 - `2284-HIS` -> Histoires de Parfums / 1889 Moulin Rouge — ID 7816 — MISSING_FROM_CORPUS — Shobi residual explicitly says 1889 - Moulin Rouge; exact Histoires de Parfums 2010 entry
 - `2311-YVRO` -> Yves Rocher / Plein Soleil — ID 56457 — MISSING_FROM_CORPUS — Shobi residual has typo PLAIN SOLEIL - YVES ROCHER; exact Plein Soleil 2019 entry
 - `2374-MICA` -> M. Micallef / GNTONIC — ID 80353 — MISSING_FROM_CORPUS — Shobi residual GN TONIC - MICALLEF identifies GNTONIC; exact original 2023 M. Micallef entry
@@ -169,10 +169,10 @@
 - `1236-PAL` -> Paloma Picasso / Minotaure — ID 1695 — MISSING_FROM_CORPUS — Current residual code 1236-PAL identifies Minotaure; exact Paloma Picasso 1992 entry
 - `1494-BOD` -> The Body Shop / Red Musk Oud — ID 31568 — MISSING_FROM_CORPUS — Shobi residual RED MUSK OUD under Body Shop code; exact 2015 entry
 - `917-SWA` -> Swarovski / Aura Intense — ID 26119 — MISSING_FROM_CORPUS — Shobi residual identifies AURA INTENSE - SWAROVSKI; exact 2012 Fragrantica entry
-- `918-TMU` -> Mugler / Alien Eau de Toilette — ID 6616 — ALREADY_VERIFIED_SAME_ID — Shobi residual explicitly identifies ALIEN Eau de Toilette - Thierry Mugler; exact 2009 EDT entry
-- `920-TMU` -> Mugler / Angel — ID 704 — ALREADY_VERIFIED_SAME_ID — Shobi residual identifies ANGEL - Thierry Mugler without flanker qualifier; exact classic 1992 entry
-- `921-TMU` -> Mugler / Angel Muse — ID 36416 — ALREADY_VERIFIED_SAME_ID — Shobi residual identifies ANGEL MUSE - Thierry Mugler; exact 2016 EDP entry
-- `923-TMU` -> Mugler / Aura Mugler — ID 45639 — ALREADY_VERIFIED_SAME_ID — Shobi code 923-TMU identifies AURA; exact original 2017 Mugler Aura entry
+- `918-TMU` -> Mugler / Alien Eau de Toilette — ID 6616 — IN_CORPUS — Shobi residual explicitly identifies ALIEN Eau de Toilette - Thierry Mugler; exact 2009 EDT entry
+- `920-TMU` -> Mugler / Angel — ID 704 — IN_CORPUS — Shobi residual identifies ANGEL - Thierry Mugler without flanker qualifier; exact classic 1992 entry
+- `921-TMU` -> Mugler / Angel Muse — ID 36416 — IN_CORPUS — Shobi residual identifies ANGEL MUSE - Thierry Mugler; exact 2016 EDP entry
+- `923-TMU` -> Mugler / Aura Mugler — ID 45639 — IN_CORPUS — Shobi code 923-TMU identifies AURA; exact original 2017 Mugler Aura entry
 - `2036-GIS` -> Gisada / Ambassador Men — ID 58226 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Ambassador Men Eau de Parfum; exact Gisada 2019 entry
 - `2044-LORV` -> Lorenzo Villoresi / Teint de Neige — ID 5079 — MISSING_FROM_CORPUS — Shobi residual TEINT DE NEIGE under Lorenzo Villoresi code; exact original 2000 entry
 - `2051-PRFRO` -> Profumum Roma / Acqua di Sale — ID 3886 — MISSING_FROM_CORPUS — Shobi residual Acqua Di Sale under Profumum Roma code; exact original fragrance, not 2021 limited edition or 2024 Acquerello
@@ -189,17 +189,18 @@
 - `737-JUI` -> Juicy Couture / Juicy Couture Malibu — ID 22956 — MISSING_FROM_CORPUS — Shobi residual MALIBU under Juicy Couture code; exact 2013 Juicy Couture Malibu entry
 - `738-JUI` -> Juicy Couture / Viva la Juicy — ID 4410 — MISSING_FROM_CORPUS — Shobi residual VIVA LA JUICY under Juicy Couture code; exact original 2008 entry
 - `309-LOC` -> L'Occitane en Provence / Magnolia & Mure — ID 17836 — MISSING_FROM_CORPUS — Shobi residual MAGNOLIA & MURE under L'Occitane code; exact 2013 La Collection de Grasse entry
-- `1118-FAB` -> Brut Parfums Prestige / Brut — ID 15303 — ALREADY_VERIFIED_SAME_ID — Shobi residual BRUT 1964 identifies original Brut launched in 1964; exact Fragrantica entry
-- `1121-GFE` -> Gianfranco Ferre / Ferre for Men — ID 803 — MISSING_FROM_CORPUS — Shobi residual FERRE MAN under Gianfranco Ferre code identifies Ferre for Men 2006; exact entry
-- `1122-GFE` -> Gianfranco Ferre / In The Mood For Love — ID 6530 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies In the Mood for Love; exact original 2009 women entry, not Pure/Tender/Man flankers
-- `1151-HAL` -> Halston / Halston Z14 — ID 3697 — MISSING_FROM_CORPUS — Shobi residual Halston Z-14 Cologne; exact original 1974 entry
+- `1118-FAB` -> Brut Parfums Prestige / Brut — ID 15303 — IN_CORPUS — Shobi identifies BRUT 1964 - FABERGE; exact classic Brut Fragrantica entry
+- `1121-GFE` -> Gianfranco Ferre / Ferre for Men — ID 803 — MISSING_FROM_CORPUS — Shobi residual FERRE MAN under Gianfranco Ferre code; exact Ferre for Men entry
+- `1122-GFE` -> Gianfranco Ferre / In The Mood For Love — ID 6530 — MISSING_FROM_CORPUS — Shobi explicitly identifies IN THE MOOD FOR LOVE - GIANFRANCO FERRE; exact 2009 women entry
+- `1151-HAL` -> Halston / Z-14 — ID 3697 — MISSING_FROM_CORPUS — Shobi residual Halston Z-14 Cologne; exact Halston Z-14 fragrance
+- `171-DUP` -> S.T. Dupont / Dupont Oud Oriental — ID 21459 — MISSING_FROM_CORPUS — Shobi identifies SOUVENIRS DE MALLES OUD ORIENTAL - S.T.DUPONT; Fragrantica exact S.T. Dupont Oud Oriental 2012 entry
 
-## Identified but not forced
+## No-force identities
 
-- `130-LEL` -> Le Labo / Santal 26 — NO_FORCE — home fragrance/home oil identity; do not substitute Santal 33
-- `200-CIR` -> Cire Trudon / Ernesto / Che Guevara — NO_FORCE — home scent/candle identity; do not substitute a different perfume
-- `222-DIP` -> Diptyque / Ambre — NO_FORCE — home fragrance identity; do not substitute a Diptyque perfume
-- `223-DIP` -> Diptyque / Baies — NO_FORCE — candle/home fragrance identity; do not substitute a perfume
-- `227-DIP` -> Diptyque / Feu de Bois / Wood Fire — NO_FORCE — candle/home fragrance identity; do not substitute a perfume
-- `612-ESC` -> Escada / Turquoise — NO_FORCE — Shobi distinguishes Turquoise from separate Turquoise Summer; no safe exact perfume target yet
-- `1251-ROM` -> Romane / Royal Blue — NO_FORCE — Shobi identity is Royal Blue - Romane; no safe same-brand Fragrantica target found
+- `130-LEL` — ('Le Labo', 'Santal 26', 'home fragrance/home oil identity; do not substitute Santal 33')
+- `200-CIR` — ('Cire Trudon', 'Ernesto / Che Guevara', 'home scent/candle identity; do not substitute a different perfume')
+- `222-DIP` — ('Diptyque', 'Ambre', 'home fragrance identity; do not substitute a Diptyque perfume')
+- `223-DIP` — ('Diptyque', 'Baies', 'candle/home fragrance identity; do not substitute a perfume')
+- `227-DIP` — ('Diptyque', 'Feu de Bois / Wood Fire', 'candle/home fragrance identity; do not substitute a perfume')
+- `612-ESC` — ('Escada', 'Turquoise', 'Shobi distinguishes Turquoise from separate Turquoise Summer; no safe exact perfume target yet')
+- `1251-ROM` — ('Romane', 'Royal Blue', 'Shobi identity is Royal Blue - Romane; no safe same-brand Fragrantica target found')

@@ -18197,7 +18197,12 @@
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt",
-    "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Balmain-Beauty/Extatic-22817.html"
+    "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Balmain-Beauty/Extatic-22817.html",
+    "fragrantica_id": 22817,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Balmain-Beauty/Extatic-22817.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
+    "fragrantica_match_reason": "Shobi residual identifies Extatic / Pierre Balmain; base 2014 EDP, not EDT flanker"
   },
   {
     "id": "870-PIER",
@@ -18538,7 +18543,12 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
+    "fragrantica_id": 14446,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-for-Women-14446.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
+    "fragrantica_match_reason": "Shobi residual is Big Pony 2 in women catalog; exact 2012 women entry, not 2010 men version"
   },
   {
     "id": "885-REP",
@@ -19329,7 +19339,12 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
+    "fragrantica_id": 6616,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Mugler/Alien-Eau-de-Toilette-6616.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
+    "fragrantica_match_reason": "Shobi residual explicitly identifies ALIEN Eau de Toilette - Thierry Mugler; exact 2009 EDT entry"
   },
   {
     "id": "919-TMU",
@@ -19377,7 +19392,12 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
+    "fragrantica_id": 704,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Mugler/Angel-704.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
+    "fragrantica_match_reason": "Shobi residual identifies ANGEL - Thierry Mugler without flanker qualifier; exact classic 1992 entry"
   },
   {
     "id": "921-TMU",
@@ -19401,7 +19421,12 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
+    "fragrantica_id": 36416,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Mugler/Angel-Muse-36416.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
+    "fragrantica_match_reason": "Shobi residual identifies ANGEL MUSE - Thierry Mugler; exact 2016 EDP entry"
   },
   {
     "id": "922-TMU",
@@ -19450,7 +19475,12 @@
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Mugler/Aura-Mugler-45639.html",
-    "fragranticaVerificationSource": "3-source local evidence + manual brand/name review"
+    "fragranticaVerificationSource": "3-source local evidence + manual brand/name review",
+    "fragrantica_id": 45639,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Mugler/Aura-Mugler-45639.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
+    "fragrantica_match_reason": "Shobi code 923-TMU identifies AURA; exact original 2017 Mugler Aura entry"
   },
   {
     "id": "924-TMU",
@@ -23998,7 +24028,12 @@
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Brut-Parfums-Prestige/Brut-15303.html",
-    "fragranticaVerificationSource": "Shobi-first reviewed identity + local Fragrantica corpus"
+    "fragranticaVerificationSource": "Shobi-first reviewed identity + local Fragrantica corpus",
+    "fragrantica_id": 15303,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Brut-Parfums-Prestige/Brut-15303.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
+    "fragrantica_match_reason": "Shobi identifies BRUT 1964 - FABERGE; exact classic Brut Fragrantica entry"
   },
   {
     "id": "1119-FEN",
@@ -26401,7 +26436,12 @@
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt",
-    "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Moschino/Toy-28805.html"
+    "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Moschino/Toy-28805.html",
+    "fragrantica_id": 55858,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Moschino/Toy-Boy-55858.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
+    "fragrantica_match_reason": "Previously reviewed exact Shobi identity retained"
   },
   {
     "id": "1221-MOS",
@@ -27001,7 +27041,12 @@
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-Pour-Homme-Prada-Man-1044.html",
-    "fragranticaVerificationSource": "Shobi-first reviewed identity + local Fragrantica corpus"
+    "fragranticaVerificationSource": "Shobi-first reviewed identity + local Fragrantica corpus",
+    "fragrantica_id": 1044,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-Pour-Homme-1044.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
+    "fragrantica_match_reason": "Shobi residual PRADA AMBER under Prada code matches Prada Amber Pour Homme / Prada Man 2006"
   },
   {
     "id": "1246-RAL",
@@ -42964,7 +43009,12 @@
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Montblanc/Femme-de-Montblanc-833.html",
-    "fragranticaVerificationSource": "Shobi-first reviewed identity + local Fragrantica corpus"
+    "fragranticaVerificationSource": "Shobi-first reviewed identity + local Fragrantica corpus",
+    "fragrantica_id": 833,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Montblanc/Femme-de-Montblanc-833.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
+    "fragrantica_match_reason": "Shobi residual pour Femme under MON code identifies the original Montblanc feminine fragrance; exact 2006 Femme de Montblanc entry"
   },
   {
     "id": "2235-PRA",
