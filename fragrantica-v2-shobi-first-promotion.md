@@ -1,9 +1,9 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **106**
+- Reviewed exact identities with Fragrantica target: **110**
 - Target IDs present in local corpus: **14**
-- Target IDs missing from local corpus: **92**
+- Target IDs missing from local corpus: **96**
 - Promoted this run: **0**
 - Already verified with same ID: **1**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
@@ -73,6 +73,9 @@
 - `770-LAP` -> La Prairie / Midnight Rain — ID 824 — MISSING_FROM_CORPUS — Shobi explicitly identifies MIDNIGHT RAIN - LA PRAIRIE; base 2006 entry
 - `771-LAP` -> La Prairie / Silver Rain — ID 823 — MISSING_FROM_CORPUS — Shobi explicitly identifies SILVER RAIN - LA PRAIRIE and gives original 2004 notes; not Sheer/Shimmer flankers
 - `772-LAD` -> Lady Gaga / Fame — ID 15338 — MISSING_FROM_CORPUS — Shobi residual Fame plus orchid/jasmine/honey/apricot notes identifies Lady Gaga Fame 2012
+- `799-LANV` -> Lanvin / Eclat d'Arpege — ID 988 — MISSING_FROM_CORPUS — Shobi code 799-LANV explicitly identifies ECLAT D ARPEGE; exact original 2002 Lanvin entry
+- `800-LANV` -> Lanvin / Lanvin Me — ID 17701 — MISSING_FROM_CORPUS — Shobi code 800-LANV explicitly identifies LANVIN ME and its blueberry, mandarin, licorice, tuberose, rose and sandalwood profile; exact 2013 entry
+- `801-LANV` -> Lanvin / Marry Me — ID 9405 — MISSING_FROM_CORPUS — Shobi code 801-LANV explicitly identifies MARRY ME - LANVIN with matching bitter orange, peach, freesia, jasmine, magnolia, rose, musk, cedar and amber notes; exact 2010 entry
 - `825-MIC` -> Michael Kors / Wonderlust — ID 39459 — MISSING_FROM_CORPUS — Shobi explicitly identifies WONDERLUST - MICHAEL KORS; base 2016 entry
 - `827-MISN` -> Missoni / Missoni (2015) — ID 33017 — MISSING_FROM_CORPUS — Shobi describes the modern fruity-floral Missoni; identity fits the 2015 Quentin Bisch release, not the 1981/2006 versions
 - `840-NAO` -> Naomi Campbell / Naomi Campbell — ID 905 — MISSING_FROM_CORPUS — Shobi residual is self-titled Naomi Campbell; exact 1999 debut entry
@@ -87,7 +90,8 @@
 - `860-ORT` -> Olfactive Studio / Lumiere Blanche — ID 14909 — MISSING_FROM_CORPUS — Shobi residual identifies Lumiere Blanche by Olfactive Studio; exact 2012 entry
 - `861-OSC` -> Oscar de la Renta / Rose — ID 43028 — MISSING_FROM_CORPUS — Shobi residual identifies Rose by Oscar de la Renta; exact 2016 entry
 - `862-PAL` -> Paloma Picasso / Mon Parfum — ID 6044 — MISSING_FROM_CORPUS — Shobi residual identifies Mon Parfum by Paloma Picasso; exact 1985 entry
-- `868-PARH` -> Paris Hilton / Heiress Limited Edition — ID 32365 — MISSING_FROM_CORPUS — Shobi code 868-PARH explicitly identifies HEIRESS LIMITED EDITION - PARIS HILTON; exact 2016 entry
+- `867-PAL` -> Paloma Picasso / Paloma Picasso — ID 1009 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies PALOMA PICASSO under the Paloma Picasso code; exact self-titled 1984 fragrance
+- `868-PARH` -> Paris Hilton / Heiress Limited Edition — ID 32365 — MISSING_FROM_CORPUS — Shobi code 868-PARH explicitly identifies HEIRESS LIMITED EDITION - PARIS HILTON; exact limited edition entry
 - `868-PEN` -> Penhaligon's / Luna — ID 38351 — IN_CORPUS — Shobi residual identifies Luna by Penhaligons; exact 2016 perfume, not 2026 body mist
 - `869-PIER` -> Balmain Beauty / Extatic — ID 22817 — ALREADY_VERIFIED_SAME_ID — Shobi residual identifies Extatic / Pierre Balmain; base 2014 EDP, not EDT flanker
 - `875-PRSC` -> Salvatore Ferragamo / Incanto Shine — ID 1055 — MISSING_FROM_CORPUS — Shobi residual identifies Incanto Shine by Salvatore Ferragamo; exact 2007 entry
