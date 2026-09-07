@@ -4652,8 +4652,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/289-jom-el",
     "brand": "Unknown Brand",
     "inspiredBy": "SWEET ALMON & MACARRON - JO MALONE",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -4665,7 +4665,11 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Jo Malone London', 'Sweet Almond & Macaroon', 'official Jo Malone product is a scented candle/home fragrance, not a perfume target')",
+    "fragrantica_id": ""
   },
   {
     "id": "290-JOM",
@@ -5228,8 +5232,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/black-pepper-molton-brown-type",
     "brand": "Unknown Brand",
     "inspiredBy": "black pepper-molΞυλώδες Πικάντικο",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 951,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5241,7 +5245,12 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_id": 951,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Molton-Brown/Black-Pepper-951.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi residual is BLACK PEPPER under Molton Brown code; Fragrantica exact Molton Brown Black Pepper 2007 entry"
   },
   {
     "id": "313-MOL",
@@ -5251,8 +5260,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/thai-vert-molton-brown-type",
     "brand": "Unknown Brand",
     "inspiredBy": "thai vert-mol",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5264,7 +5273,11 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Molton Brown', 'Thai Vert', 'Molton Brown trade name exists across class-3/home-related goods but no safe exact Fragrantica perfume page was found; do not guess')",
+    "fragrantica_id": ""
   },
   {
     "id": "314-MOL",
@@ -5274,8 +5287,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/ziao-jao-molton-brown-type",
     "brand": "Unknown Brand",
     "inspiredBy": "ZIAO JAO - MOLTON BROWN",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5287,7 +5300,11 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Molton Brown', 'Ziao Jao', 'Shobi identifies ZIAO JAO - MOLTON BROWN; no safe exact Fragrantica perfume target found')",
+    "fragrantica_id": ""
   },
   {
     "id": "315-MNT",
@@ -5538,8 +5555,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/black-oak-cedar-pecksniff-s-aroma",
     "brand": "Unknown Brand",
     "inspiredBy": "BLACK OAK & CEDAR - PECKSNIFF'S",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 31590,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5551,7 +5568,12 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_id": 31590,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Pecksniff's/Black-Oak-&-Cedar-31590.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi identifies BLACK OAK & CEDAR - PECKSNIFF'S; Fragrantica exact Pecksniff's Black Oak & Cedar entry"
   },
   {
     "id": "326-PECK",
@@ -5561,8 +5583,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/calm-pecksniff-s-clones-fragrances",
     "brand": "Unknown Brand",
     "inspiredBy": "CALM - PECKSNIFF'S",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5574,7 +5596,11 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "(\"Pecksniff's\", 'Calm', 'Pecksniff Mood Therapy Calm is documented as a body/guest collection scent; no safe exact Fragrantica perfume target found')",
+    "fragrantica_id": ""
   },
   {
     "id": "327-PECK",
@@ -5584,8 +5610,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/mistraal-pecksniff-eaudeparfum",
     "brand": "Unknown Brand",
     "inspiredBy": "MISTRAAL - PECKSNIFF'S Perfumes",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 31584,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5597,7 +5623,12 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_id": 31584,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Pecksniff's/Mistraal-31584.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi identifies MISTRAAL - PECKSNIFF'S; Fragrantica exact Pecksniff's Mistraal entry"
   },
   {
     "id": "328-PEN",
@@ -5655,8 +5686,8 @@
     "shobiUrl": "",
     "brand": "Unknown Brand",
     "inspiredBy": "ORIENTAL BLOSSOM",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5668,7 +5699,11 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('P&G', 'Oriental Blossom', 'Shobi labels P&G Oriental Blossom, while web evidence points to household/laundry fragrance naming rather than a safe perfume identity; do not cross-brand or guess')",
+    "fragrantica_id": ""
   },
   {
     "id": "331-PG",
@@ -5678,8 +5713,8 @@
     "shobiUrl": "",
     "brand": "Unknown Brand",
     "inspiredBy": "CRYSTAL WATER & WATER LILY",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5691,7 +5726,11 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('P&G', 'Crystal Water & Water Lily', 'Shobi labels P&G Crystal Water & Water Lily; no safe Fragrantica perfume identity found and this appears to be a consumer-product scent rather than a standalone perfume')",
+    "fragrantica_id": ""
   },
   {
     "id": "332-RAM",
@@ -11924,8 +11963,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/595-emil-wp",
     "brand": "Unknown Brand",
     "inspiredBy": "EMILIO PUCCI",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 21762,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -11937,7 +11976,12 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_id": 21762,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Emilio-Pucci/Pucci-21762.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi residual EMILIO PUCCI maps to the 1981 self-titled Pucci fragrance; Fragrantica exact Pucci by Emilio Pucci entry"
   },
   {
     "id": "596-ESC",
@@ -12071,8 +12115,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/flor-del-sol-escada-arwma-typou",
     "brand": "Unknown Brand",
     "inspiredBy": "Flor-del-sol",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 58398,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -12084,7 +12128,12 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_id": 58398,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Escada/Flor-del-Sol-58398.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi identifies FLOR DEL SOL - ESCADA; Fragrantica exact 2020 Escada Flor del Sol entry"
   },
   {
     "id": "602-ESC",

@@ -1,18 +1,18 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **190**
+- Reviewed exact identities with Fragrantica target: **195**
 - Target IDs present in local corpus: **20**
-- Target IDs missing from local corpus: **170**
+- Target IDs missing from local corpus: **175**
 - Promotion policy: **all reviewed exact identities are eligible; local corpus presence is informational only**
-- Promoted this run: **0**
+- Promoted this run: **10**
 - Already verified with same ID: **348**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
-- Identified but deliberately not forced: **25**
-- NO_FORCE rows marked this run: **50**
+- Identified but deliberately not forced: **31**
+- NO_FORCE rows marked this run: **62**
 - Probe IDs: **{200: False, 204: False, 456: False, 520: False, 719: False, 905: False, 925: False, 970: False, 993: False, 1014: False, 1061: False, 1365: False, 1499: False, 2068: False, 12201: True}**
-- database_v2_clean.json: **25** rows changed
-- database_complete.json: **25** rows changed
+- database_v2_clean.json: **36** rows changed
+- database_complete.json: **36** rows changed
 
 ## Exact targets
 
@@ -206,6 +206,11 @@
 - `286-JOM` -> Jo Loves / Shards of Cedar & Red Thyme — ID 37578 — MISSING_FROM_CORPUS — Shobi labels SHARDS OF CEDAR & RED THYME - JO MALONE; exact Jo Loves fragrance by Jo Malone, Fragrantica ID 37578
 - `337-TIFF` -> Tiffany / Tiffany & Co Sheer — ID 53062 — MISSING_FROM_CORPUS — Shobi residual explicitly says Tiffany & Co Sheer; exact 2019 Tiffany fragrance, Fragrantica ID 53062
 - `387-` -> Remy Latour / Cigar — ID 9351 — MISSING_FROM_CORPUS — Shobi residual is CIGAR; Fragrantica exact Remy Latour Cigar 1996 entry ID 9351
+- `312-MOL` -> Molton Brown / Black Pepper — ID 951 — MISSING_FROM_CORPUS — Shobi residual is BLACK PEPPER under Molton Brown code; Fragrantica exact Molton Brown Black Pepper 2007 entry
+- `325-PECK` -> Pecksniff's / Black Oak & Cedar — ID 31590 — MISSING_FROM_CORPUS — Shobi identifies BLACK OAK & CEDAR - PECKSNIFF'S; Fragrantica exact Pecksniff's Black Oak & Cedar entry
+- `327-PECK` -> Pecksniff's / Mistraal — ID 31584 — MISSING_FROM_CORPUS — Shobi identifies MISTRAAL - PECKSNIFF'S; Fragrantica exact Pecksniff's Mistraal entry
+- `595-EMIL` -> Emilio Pucci / Pucci — ID 21762 — MISSING_FROM_CORPUS — Shobi residual EMILIO PUCCI maps to the 1981 self-titled Pucci fragrance; Fragrantica exact Pucci by Emilio Pucci entry
+- `601-ESC` -> Escada / Flor del Sol — ID 58398 — MISSING_FROM_CORPUS — Shobi identifies FLOR DEL SOL - ESCADA; Fragrantica exact 2020 Escada Flor del Sol entry
 
 ## No-force identities
 
@@ -220,7 +225,13 @@
 - `230-DIP` — ('Diptyque', 'Opopanax', 'room spray/home fragrance identity; do not substitute a Diptyque perfume')
 - `258-JOM` — ('Jo Malone London', 'Green Tomato Leaf', 'current Jo Malone identity is hand wash/home scent, not a perfume target')
 - `261-JOM` — ('Jo Malone London', 'Incense & Embers', 'home candle/home fragrance identity; do not substitute Incense & Cedrat')
+- `289-JOM` — ('Jo Malone London', 'Sweet Almond & Macaroon', 'official Jo Malone product is a scented candle/home fragrance, not a perfume target')
 - `311-MOL` — ('Molton Brown', 'Amber Cocoon', 'body/home product identity; no safe exact Fragrantica perfume target')
+- `313-MOL` — ('Molton Brown', 'Thai Vert', 'Molton Brown trade name exists across class-3/home-related goods but no safe exact Fragrantica perfume page was found; do not guess')
+- `314-MOL` — ('Molton Brown', 'Ziao Jao', 'Shobi identifies ZIAO JAO - MOLTON BROWN; no safe exact Fragrantica perfume target found')
+- `326-PECK` — ("Pecksniff's", 'Calm', 'Pecksniff Mood Therapy Calm is documented as a body/guest collection scent; no safe exact Fragrantica perfume target found')
+- `330-PG` — ('P&G', 'Oriental Blossom', 'Shobi labels P&G Oriental Blossom, while web evidence points to household/laundry fragrance naming rather than a safe perfume identity; do not cross-brand or guess')
+- `331-PG` — ('P&G', 'Crystal Water & Water Lily', 'Shobi labels P&G Crystal Water & Water Lily; no safe Fragrantica perfume identity found and this appears to be a consumer-product scent rather than a standalone perfume')
 - `334-SHI` — ('Shirley May', 'Shirley May', 'Shobi explicitly names SHIRLEY MAY - SHIRLEY MAY, but Fragrantica lists the Shirley May brand catalog without a safe exact self-titled target; do not guess another Shirley May fragrance')
 - `335-THCO` — ('The White Company', 'Cashmere Blanc', 'Shobi identifies CASHMERE BLANC - THE WHITE COMPANY; no safe exact Fragrantica perfume target found, and The White Company fragrance range is primarily home scent/body products')
 - `336-THCO` — ('The White Company', 'Narcissus Noir', 'Shobi identifies NARCISSUS NOIR - THE WHITE COMPANY; no safe exact Fragrantica perfume target found, and The White Company fragrance range is primarily home scent/body products')
