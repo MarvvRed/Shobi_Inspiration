@@ -1,16 +1,16 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **180**
-- Target IDs present in local corpus: **21**
+- Reviewed exact identities with Fragrantica target: **179**
+- Target IDs present in local corpus: **20**
 - Target IDs missing from local corpus: **159**
-- Promoted this run: **20**
-- Already verified with same ID: **0**
+- Promoted this run: **0**
+- Already verified with same ID: **20**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
 - Identified but deliberately not forced: **7**
 - Probe IDs: **{200: False, 204: False, 456: False, 520: False, 719: False, 905: False, 925: False, 970: False, 993: False, 1014: False, 1061: False, 1365: False, 1499: False, 2068: False, 12201: True}**
-- database_v2_clean.json: **10** rows changed
-- database_complete.json: **10** rows changed
+- database_v2_clean.json: **0** rows changed
+- database_complete.json: **0** rows changed
 
 ## Exact targets
 
@@ -122,7 +122,6 @@
 - `1220-MOS` -> Moschino / Toy Boy — ID 55858 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1232-PR` -> Paco Rabanne / Paco Rabanne Pour Homme — ID 526 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1235-PR` -> Paco Rabanne / XS — ID 515 — IN_CORPUS — Previously reviewed exact Shobi identity retained
-- `1238-PAL` -> Paloma Picasso / Minotaure — ID 764 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1245-PRA` -> Prada / Prada Amber Pour Homme — ID 1044 — IN_CORPUS — Shobi residual PRADA AMBER under Prada code matches Prada Amber Pour Homme / Prada Man 2006
 - `1246-PRA` -> Prada / Luna Rossa Black — ID 48682 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1248-RAL` -> Ralph Lauren / Polo Ultra Blue — ID 48482 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
@@ -132,7 +131,7 @@
 - `1258-SFER` -> Salvatore Ferragamo / White Mimosa — ID 26777 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
 - `1262-PR` -> Paco Rabanne / Invictus Aqua 2018 — ID 48704 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `2016-PARELM` -> Parfums d'Elmar / Elixir d'Amour — ID 79218 — MISSING_FROM_CORPUS — Shobi page identifies ELIXIR D AMOUR - PARFUMS D ELMAR with 2022 release identity; maps to 2022 Fragrantica entry
-- `2028-ZARK` -> ZARKOPERFUME / Cloud Collection No. 3 — ID 54529 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
+- `2028-ZARK` -> ZARKOPERFUME / Youth — ID 75594 — MISSING_FROM_CORPUS — Shobi residual is Youth under ZARK code; web/Fragrantica exact Youth ZARKOPERFUME 2022 entry; corrects stale Cloud Collection No.3 mapping
 - `2234-MON` -> Montblanc / Femme de Montblanc — ID 833 — IN_CORPUS — Shobi residual pour Femme under MON code identifies the original Montblanc feminine fragrance; exact 2006 Femme de Montblanc entry
 - `2284-HIS` -> Histoires de Parfums / 1889 Moulin Rouge — ID 7816 — MISSING_FROM_CORPUS — Shobi residual explicitly says 1889 - Moulin Rouge; exact Histoires de Parfums 2010 entry
 - `2311-YVRO` -> Yves Rocher / Plein Soleil — ID 56457 — MISSING_FROM_CORPUS — Shobi residual has typo PLAIN SOLEIL - YVES ROCHER; exact Plein Soleil 2019 entry
