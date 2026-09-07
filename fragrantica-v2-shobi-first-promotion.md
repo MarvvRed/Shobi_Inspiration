@@ -5,14 +5,14 @@
 - Target IDs present in local corpus: **20**
 - Target IDs missing from local corpus: **170**
 - Promotion policy: **all reviewed exact identities are eligible; local corpus presence is informational only**
-- Promoted this run: **2**
-- Already verified with same ID: **346**
+- Promoted this run: **0**
+- Already verified with same ID: **348**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
 - Identified but deliberately not forced: **25**
 - NO_FORCE rows marked this run: **50**
 - Probe IDs: **{200: False, 204: False, 456: False, 520: False, 719: False, 905: False, 925: False, 970: False, 993: False, 1014: False, 1061: False, 1365: False, 1499: False, 2068: False, 12201: True}**
-- database_v2_clean.json: **26** rows changed
-- database_complete.json: **26** rows changed
+- database_v2_clean.json: **25** rows changed
+- database_complete.json: **25** rows changed
 
 ## Exact targets
 
