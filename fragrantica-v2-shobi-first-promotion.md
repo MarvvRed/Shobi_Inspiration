@@ -1,16 +1,16 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **127**
-- Target IDs present in local corpus: **15**
-- Target IDs missing from local corpus: **112**
-- Promoted this run: **0**
+- Reviewed exact identities with Fragrantica target: **138**
+- Target IDs present in local corpus: **16**
+- Target IDs missing from local corpus: **122**
+- Promoted this run: **1**
 - Already verified with same ID: **2**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
 - Identified but deliberately not forced: **7**
 - Probe IDs: **{'200': False, '204': False, '456': False, '520': False, '719': False, '905': False, '925': False, '970': False, '993': False, '1014': False, '1061': False, '1365': False, '1499': False, '2068': False, '12201': True}**
-- database_v2_clean.json: **0** rows changed
-- database_complete.json: **0** rows changed
+- database_v2_clean.json: **1** rows changed
+- database_complete.json: **1** rows changed
 
 ## Exact targets
 
@@ -133,6 +133,7 @@
 - `1262-PR` -> Paco Rabanne / Invictus Aqua 2018 — ID 48704 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `2016-PARELM` -> Parfums d'Elmar / Elixir d'Amour — ID 79218 — MISSING_FROM_CORPUS — Shobi page identifies ELIXIR D AMOUR - PARFUMS D ELMAR with 2022 release identity; maps to 2022 Fragrantica entry
 - `2028-ZARK` -> ZARKOPERFUME / Cloud Collection No. 3 — ID 54529 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
+- `2234-MON` -> Montblanc / Femme de Montblanc — ID 833 — PROMOTED — Shobi residual pour Femme under MON code identifies the original Montblanc feminine fragrance; exact 2006 Femme de Montblanc entry
 - `2284-HIS` -> Histoires de Parfums / 1889 Moulin Rouge — ID 7816 — MISSING_FROM_CORPUS — Shobi residual explicitly says 1889 - Moulin Rouge; exact Histoires de Parfums 2010 entry
 - `2311-YVRO` -> Yves Rocher / Plein Soleil — ID 56457 — MISSING_FROM_CORPUS — Shobi residual has typo PLAIN SOLEIL - YVES ROCHER; exact Plein Soleil 2019 entry
 - `2374-MICA` -> M. Micallef / GNTONIC — ID 80353 — MISSING_FROM_CORPUS — Shobi residual GN TONIC - MICALLEF identifies GNTONIC; exact original 2023 M. Micallef entry
@@ -141,6 +142,16 @@
 - `2604-JILS` -> Jil Sander / Sun Men — ID 619 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Sun Men Jil Sander with no EDP/Parfum qualifier; exact original 2002 EDT
 - `2697-RIT` -> Rituals / Ritual of Karma — ID 46391 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Karma Rituals; exact Rituals body mist fragrance entry with lotus and bergamot
 - `2699-RIT` -> Rituals / Rituals of Ayurveda — ID 52638 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Ayurveda Rituals; exact Rituals fragrance entry with rose and honey
+- `916-SOF` -> Sofia Vergara / Love — ID 31662 — MISSING_FROM_CORPUS — Shobi code 916-SOF identifies LOVE - SOFIA VERGARA; exact 2015 Fragrantica entry
+- `926-TOM` -> Tommy Hilfiger / Tommy Girl — ID 3016 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Tommy Girl; exact original 1996 entry
+- `927-TOUZ` -> Tous / Rosa — ID 17827 — MISSING_FROM_CORPUS — Shobi code 927-TOUZ identifies Rosa by Tous; exact 2013 entry
+- `942-VERW` -> Vera Wang / Princess — ID 1596 — MISSING_FROM_CORPUS — Shobi code 942-VERW identifies Princess by Vera Wang; exact original 2006 entry
+- `992-ZAD` -> Zadig & Voltaire / Girls Can Do Anything — ID 51198 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Girls Can Do Anything; exact 2018 entry
+- `993-ZAD` -> Zadig & Voltaire / Just Rock! for Her — ID 45862 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies JUST ROCK FOR HER; exact 2017 entry
+- `994-ZAD` -> Zadig & Voltaire / This is Her — ID 39358 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies This Is Her; exact original 2016 entry
+- `1021-BOG` -> Jacques Bogart / One Man Show — ID 7795 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies One Man Show Eau de Toilette; exact original 1980 entry
+- `1116-ZEG` -> Ermenegildo Zegna / Uomo Absolute — ID 28142 — MISSING_FROM_CORPUS — Shobi residual UOMO ABSOLUT under ZEG identifies Uomo Absolute; exact 2014 entry
+- `2439-ZEG` -> Ermenegildo Zegna / Indonesian Oud Eau de Toilette — ID 16188 — MISSING_FROM_CORPUS — Shobi residual INDONESIAN OUD under ZEG; generic/original identity maps to the 2012 EDT, not the later 2019 EDP
 
 ## Identified but not forced
 
