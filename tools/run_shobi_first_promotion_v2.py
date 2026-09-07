@@ -8,20 +8,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SPEC = ROOT / 'tools/promote_shobi_first_residuals_v2.py'
 ADD_SPEC = ROOT / 'tools/shobi_first_additional_v2.py'
 BATCH_SPECS = [
-    (ROOT / 'tools/shobi_first_batch_large_01_v2.py', 'APPROVED_BATCH_LARGE_01'),
-    (ROOT / 'tools/shobi_first_batch_large_02_v2.py', 'APPROVED_BATCH_LARGE_02'),
-    (ROOT / 'tools/shobi_first_batch_large_03_v2.py', 'APPROVED_BATCH_LARGE_03'),
-    (ROOT / 'tools/shobi_first_batch_large_04_v2.py', 'APPROVED_BATCH_LARGE_04'),
-    (ROOT / 'tools/shobi_first_batch_large_05_v2.py', 'APPROVED_BATCH_LARGE_05'),
-    (ROOT / 'tools/shobi_first_batch_large_06_v2.py', 'APPROVED_BATCH_LARGE_06'),
-    (ROOT / 'tools/shobi_first_batch_large_07_v2.py', 'APPROVED_BATCH_LARGE_07'),
-    (ROOT / 'tools/shobi_first_batch_large_08_v2.py', 'APPROVED_BATCH_LARGE_08'),
-    (ROOT / 'tools/shobi_first_batch_large_09_v2.py', 'APPROVED_BATCH_LARGE_09'),
-    (ROOT / 'tools/shobi_first_batch_large_10_v2.py', 'APPROVED_BATCH_LARGE_10'),
-    (ROOT / 'tools/shobi_first_batch_large_11_v2.py', 'APPROVED_BATCH_LARGE_11'),
-    (ROOT / 'tools/shobi_first_batch_large_12_v2.py', 'APPROVED_BATCH_LARGE_12'),
-    (ROOT / 'tools/shobi_first_batch_large_13_v2.py', 'APPROVED_BATCH_LARGE_13'),
-    (ROOT / 'tools/shobi_first_batch_large_14_v2.py', 'APPROVED_BATCH_LARGE_14'),
+    (ROOT / f'tools/shobi_first_batch_large_{i:02d}_v2.py', f'APPROVED_BATCH_LARGE_{i:02d}')
+    for i in range(1, 16)
 ]
 DBS = [ROOT / 'database_v2_clean.json', ROOT / 'database_complete.json']
 URLS = ROOT / 'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
