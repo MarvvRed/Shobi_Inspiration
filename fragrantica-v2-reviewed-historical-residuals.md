@@ -1,6 +1,6 @@
 # Reviewed historical residual promotion
 
-- Approved: **32**
+- Approved: **41**
 - Promoted this run: **0**
 - Already verified: **22**
 - database_v2_clean.json: **0** changed
@@ -40,3 +40,12 @@
 - `1201-LBI` -> Laura Biagiotti / Venezia Uomo — ID 3002 — two local historical sources agree; exact distinctive Venezia Uomo identity
 - `1236-PAL` -> Paloma Picasso / Minotaure — ID 1695 — two local historical sources agree; exact distinctive Minotaure identity
 - `1254-RCAV` -> Roberto Cavalli / Just Cavalli Him — ID 848 — two local historical sources agree; JUST HIM plus explicit ROBERTO CAVALLI label
+- `118-HAM` -> Hamidi Oud / Rehan — ID 27808 — two local historical sources agree; explicit REHAN - HAMIDI OUD identity
+- `171-DUP` -> Dupont / Souvenirs de Malles Oud Oriental — ID 21459 — two local historical sources agree; exact distinctive Oud Oriental product title
+- `172-SHALM` -> Shalimar / Moroccan Musk — ID 47982 — two local historical sources agree; exact distinctive Moroccan Musk title
+- `1743-LBI` -> Laura Biagiotti / Sotto Voce — ID 1185 — two local historical sources agree; exact distinctive Sotto Voce identity
+- `1756-LBI` -> Laura Biagiotti / Roma — ID 628 — two local historical sources agree; explicit ROMA - LAURA BIAGIOTTI identity
+- `1784-ESC` -> Escada / Summer Festival — ID 64643 — two local historical sources agree; exact Summer Festival Eau de Toilette identity
+- `1896-ESC` -> Escada / Cherry in Japan — ID 70279 — two local historical sources agree; exact distinctive Cherry in Japan identity
+- `1899-ZARK` -> Zarkoperfume / The Muse — ID 60665 — two local historical sources agree; exact distinctive The Muse identity
+- `1926-KOS` -> Kerosene / Unknown Pleasures No 4 Apres l Amour — ID 53742 — two local historical sources agree on distinctive No. 4 Apres l Amour identity
