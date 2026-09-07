@@ -6,21 +6,24 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SPEC = ROOT / 'tools/promote_shobi_first_residuals_v2.py'
+ADD_SPEC = ROOT / 'tools/shobi_first_additional_v2.py'
 DBS = [ROOT / 'database_v2_clean.json', ROOT / 'database_complete.json']
 URLS = ROOT / 'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
 OUT = ROOT / 'fragrantica-v2-shobi-first-promotion.md'
 
-def load_literal(name):
-    tree = ast.parse(SPEC.read_text(encoding='utf-8'))
+def load_literal(path, name):
+    tree = ast.parse(path.read_text(encoding='utf-8'))
     for node in tree.body:
         if isinstance(node, ast.Assign):
             for target in node.targets:
                 if isinstance(target, ast.Name) and target.id == name:
                     return ast.literal_eval(node.value)
-    raise RuntimeError(f'{name} not found in {SPEC}')
+    raise RuntimeError(f'{name} not found in {path}')
 
-APPROVED = load_literal('APPROVED')
-NO_FORCE = load_literal('NO_FORCE')
+APPROVED = load_literal(SPEC, 'APPROVED')
+if ADD_SPEC.exists():
+    APPROVED.update(load_literal(ADD_SPEC, 'APPROVED_ADDITIONAL'))
+NO_FORCE = load_literal(SPEC, 'NO_FORCE')
 
 def walk(obj):
     if isinstance(obj, list):
@@ -34,8 +37,6 @@ def walk(obj):
         elif 'code' in obj or 'inspiredBy' in obj:
             yield obj
 
-# Target IDs are strings. Detect the terminal Fragrantica numeric ID independently
-# of hostname/path formatting so embedded URLs and legacy line formats are accepted.
 need = {str(value[0]) for value in APPROVED.values()}
 urls = {}
 parsed_ids = set()
