@@ -1,9 +1,9 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **152**
+- Reviewed exact identities with Fragrantica target: **154**
 - Target IDs present in local corpus: **16**
-- Target IDs missing from local corpus: **136**
+- Target IDs missing from local corpus: **138**
 - Promoted this run: **0**
 - Already verified with same ID: **3**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
@@ -47,11 +47,11 @@
 - `910-SARJ` -> Sarah Jessica Parker / Lovely — ID 993 — MISSING_FROM_CORPUS — Shobi identifies LOVELY - SARA JESSICA PARKER; original 2005 entry
 - `911-SEPH` -> Sephora / Fleur de Coton (Cotton Flower) — ID 37955 — MISSING_FROM_CORPUS — Shobi identifies FLEUR DE COTON / COTTON FLOWER - SEPHORA
 - `912-SHIS` -> Shiseido / Zen — ID 1499 — MISSING_FROM_CORPUS — Shobi identifies ZEN - SHISEIDO; 2007 Zen entry
-- `1187-JOV` -> Jovan / White Musk — ID 7524 — MISSING_FROM_CORPUS — Shobi identifies WHITE MUSK - JOVAN; women 1990 entry
-- `1196-LAC` -> Lacoste / Eau de Lacoste L.12.12 Magnetic Pour Lui — ID 41265 — MISSING_FROM_CORPUS — Shobi residual identity is L.12.12 MAGNETIC under Lacoste code; men Magnetic entry
-- `1205-LOL` -> Lolita Lempicka / Au Masculin — ID 458 — MISSING_FROM_CORPUS — Shobi residual identity is Au Masculin under Lolita Lempicka code; original 2000 entry
-- `1224-APO` -> Nikos / Sculpture Homme — ID 925 — MISSING_FROM_CORPUS — Shobi identifies SCULPTURE - NIKOS APOSTOLOPOULOS; original 1995 entry
-- `1259-SHU` -> Shulton Company / Old Spice Original — ID 14746 — MISSING_FROM_CORPUS — Shobi identifies OLD SPICE - SHULTON COMPANY and original 1938 identity
+- `1187-JOV` -> Jovan / White Musk — ID 7524 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies White Musk for Women; exact Jovan 1990 fragrance
+- `1196-LAC` -> Lacoste Fragrances / Eau de Lacoste Pour Homme L.12.12. Magnetic — ID 41265 — MISSING_FROM_CORPUS — Shobi residual L.12.12 MAGNETIC under Lacoste code; exact 2016 Pour Homme Magnetic entry
+- `1205-LOL` -> Lolita Lempicka / Lolita Lempicka Au Masculin — ID 458 — MISSING_FROM_CORPUS — Shobi residual Au Masculin; exact original 2000 Lolita Lempicka men fragrance
+- `1224-APO` -> Nikos / Sculpture Homme — ID 925 — MISSING_FROM_CORPUS — Shobi residual SCULPTURE; exact Nikos Sculpture Homme 1995 entry
+- `1259-SHU` -> Shulton Company / Old Spice Original — ID 14746 — MISSING_FROM_CORPUS — Shobi residual OLD SPICE; exact original Shulton Company 1938 entry
 - `1926-KOS` -> Thomas Kosmala / No. 4 Apres l Amour Eau de Parfum — ID 53742 — MISSING_FROM_CORPUS — Shobi-first correction: APRES L AMOUR - THOMAS KOSMALA; corrects old Kerosene metadata
 - `1975-ZARK` -> ZARKOPERFUME / Pink Molecule 090.09 — ID 25474 — MISSING_FROM_CORPUS — Shobi identifies PINK MOLECULE 090.09 - ZARKOPERFUME; 2014 entry
 - `1977-SHIS` -> Shiseido / Ginza — ID 65234 — MISSING_FROM_CORPUS — Shobi residual explicitly says Ginza (2021) under Shiseido code; exact 2021 entry
@@ -161,11 +161,13 @@
 - `1896-ESC` -> Escada / Cherry In Japan — ID 70279 — MISSING_FROM_CORPUS — Shobi residual Cherry in Japan; exact 2021 Escada entry
 - `1899-ZARK` -> ZARKOPERFUME / The Muse — ID 60665 — MISSING_FROM_CORPUS — Shobi residual The Muse under ZARK code; exact 2020 entry
 - `1921-VIV` -> Vivienne Westwood / Boudoir — ID 1532 — MISSING_FROM_CORPUS — Shobi residual Boudoir under Vivienne Westwood code; exact original 1998 entry
-- `1534-SWI` -> Victorinox Swiss Army / Swiss Army — ID 6672 — MISSING_FROM_CORPUS — Shobi residual SWISS ARMY VICTORINOX; exact original 1997 Victorinox Swiss Army entry
+- `1534-SWI` -> Victorinox Swiss Army / Swiss Army — ID 6672 — MISSING_FROM_CORPUS — Shobi residual SWISS ARMY VICTORINOX; exact original 1997 Swiss Army men fragrance
 - `1641-KHAL` -> Khaltat / Aloha — ID 22911 — MISSING_FROM_CORPUS — Shobi residual Aloha Parfum under Khaltat code; exact same-brand Aloha entry
 - `1701-TOSC` -> Tosca / Tosca — ID 5796 — MISSING_FROM_CORPUS — Shobi residual TOSCA under Tosca code; exact classic 1921 fragrance entry
-- `1743-LBI` -> Laura Biagiotti / Sotto Voce — ID 1185 — MISSING_FROM_CORPUS — Shobi residual Sotto Voce under Laura Biagiotti code; exact 1996 entry
+- `1743-LBI` -> Laura Biagiotti / Sotto Voce — ID 1185 — MISSING_FROM_CORPUS — Shobi residual Sotto Voce; exact Laura Biagiotti 1996 entry
 - `1753-TEDL` -> Ted Lapidus / Ted — ID 5942 — MISSING_FROM_CORPUS — Shobi residual TED under Ted Lapidus code; exact 1999 fragrance entry
+- `1236-PAL` -> Paloma Picasso / Minotaure — ID 1695 — MISSING_FROM_CORPUS — Current residual code 1236-PAL identifies Minotaure; exact Paloma Picasso 1992 entry
+- `1494-BOD` -> The Body Shop / Red Musk Oud — ID 31568 — MISSING_FROM_CORPUS — Shobi residual RED MUSK OUD under Body Shop code; exact 2015 entry
 
 ## Identified but not forced
 
