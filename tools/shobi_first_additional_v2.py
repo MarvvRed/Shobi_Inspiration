@@ -72,6 +72,7 @@ APPROVED_ADDITIONAL = {
     '1262-PR': ('48704', 'Paco Rabanne', 'Invictus Aqua 2018', 'Previously reviewed exact Shobi identity retained'),
     '2016-PARELM': ('79218', "Parfums d'Elmar", "Elixir d'Amour", 'Shobi page identifies ELIXIR D AMOUR - PARFUMS D ELMAR with 2022 release identity; maps to 2022 Fragrantica entry'),
     '2028-ZARK': ('54529', 'ZARKOPERFUME', 'Cloud Collection No. 3', 'Previously reviewed exact Shobi identity retained'),
+    '2234-MON': ('833', 'Montblanc', 'Femme de Montblanc', 'Shobi residual pour Femme under MON code identifies the original Montblanc feminine fragrance; exact 2006 Femme de Montblanc entry'),
     '2284-HIS': ('7816', 'Histoires de Parfums', '1889 Moulin Rouge', 'Shobi residual explicitly says 1889 - Moulin Rouge; exact Histoires de Parfums 2010 entry'),
     '2311-YVRO': ('56457', 'Yves Rocher', 'Plein Soleil', 'Shobi residual has typo PLAIN SOLEIL - YVES ROCHER; exact Plein Soleil 2019 entry'),
     '2374-MICA': ('80353', 'M. Micallef', 'GNTONIC', 'Shobi residual GN TONIC - MICALLEF identifies GNTONIC; exact original 2023 M. Micallef entry'),
