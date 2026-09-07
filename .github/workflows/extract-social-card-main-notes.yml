@@ -18,14 +18,26 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run preflight
-        run: python tools/extract_social_card_main_notes.py
-      - name: Commit preflight
+      - name: Install image/OCR tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install pillow
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+      - name: Prepare all social-card notes panels
+        run: python tools/extract_social_card_main_notes.py prepare
+      - name: OCR all panels in one Tesseract invocation
+        run: |
+          mkdir -p .social-card-notes-work
+          tesseract .social-card-notes-work/social-note-panels.tiff stdout --psm 6 -l eng tsv > .social-card-notes-work/ocr.tsv
+      - name: Parse ordered notes from social-card panel only
+        run: python tools/extract_social_card_main_notes.py parse
+      - name: Commit extraction results
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add social-card-main-notes-preflight.json
+          git add social-card-main-notes.json social-card-main-notes-report.json
           if ! git diff --cached --quiet; then
-            git commit -m "Audit social card main notes source"
+            git commit -m "Extract ordered main notes from Fragrantica social cards"
             git push
           fi
