@@ -1,16 +1,16 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **114**
-- Target IDs present in local corpus: **14**
-- Target IDs missing from local corpus: **100**
-- Promoted this run: **0**
+- Reviewed exact identities with Fragrantica target: **118**
+- Target IDs present in local corpus: **15**
+- Target IDs missing from local corpus: **103**
+- Promoted this run: **1**
 - Already verified with same ID: **1**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
 - Identified but deliberately not forced: **7**
 - Probe IDs: **{'200': False, '204': False, '456': False, '520': False, '719': False, '905': False, '925': False, '970': False, '993': False, '1014': False, '1061': False, '1365': False, '1499': False, '2068': False, '12201': True}**
-- database_v2_clean.json: **0** rows changed
-- database_complete.json: **0** rows changed
+- database_v2_clean.json: **1** rows changed
+- database_complete.json: **1** rows changed
 
 ## Exact targets
 
@@ -108,25 +108,29 @@
 - `897-RCAV` -> Roberto Cavalli / Tiger Oud — ID 22194 — MISSING_FROM_CORPUS — Duplicate Shobi code variant for the same Tiger Oud identity; same exact Fragrantica target
 - `900-ROG` -> Roger & Gallet / Fleur de Figuier — ID 17583 — MISSING_FROM_CORPUS — Shobi residual says Fleur de Figuier without Eau de Parfum qualifier; maps to original 2013 EDT, not 2015 EDP
 - `901-ROG` -> Roger & Gallet / Rose — ID 3482 — MISSING_FROM_CORPUS — Shobi residual identifies Rose by Roger & Gallet; exact 2007 EDT entry
-- `913-SIS` -> Sisley / Eau du Soir — ID 1002 — MISSING_FROM_CORPUS — Shobi code 913-SIS explicitly identifies EAU DU SOIR - SISLEY with no limited-edition year qualifier; exact base 1990 entry
-- `914-SIS` -> Sisley / Eau Tropicale — ID 23324 — MISSING_FROM_CORPUS — Shobi code 914-SIS explicitly identifies EAU TROPICALE - SISLEY; exact 2014 entry
-- `915-SIS` -> Sisley / Izia — ID 42935 — MISSING_FROM_CORPUS — Shobi code 915-SIS explicitly identifies IZIA - SISLEY; exact base 2017 entry
+- `913-SIS` -> Sisley / Eau du Soir — ID 1002 — MISSING_FROM_CORPUS — Shobi code 913-SIS identifies EAU DU SOIR; classic Sisley entry
+- `914-SIS` -> Sisley / Eau Tropicale — ID 23324 — MISSING_FROM_CORPUS — Shobi code 914-SIS identifies EAU TROPICALE; exact Sisley 2014 entry
+- `915-SIS` -> Sisley / Izia — ID 42935 — MISSING_FROM_CORPUS — Shobi code 915-SIS identifies IZIA; exact Sisley 2017 entry
 - `1186-JOO` -> Joop! / WOW! — ID 43425 — MISSING_FROM_CORPUS — Previously reviewed exact same-brand target retained; Shobi residual identity is WOW by Joop
 - `1188-JPG` -> Jean Paul Gaultier / Le Male Essence de Parfum — ID 39583 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1195-LAC` -> Lacoste / Eau de Lacoste L.12.12 Rouge — ID 16456 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `1197-LAC` -> Lacoste Fragrances / Lacoste Pour Homme — ID 670 — MISSING_FROM_CORPUS — Shobi residual LACOSTE HOMME under Lacoste code identifies the 2002 Lacoste Pour Homme entry
+- `1201-LBI` -> Laura Biagiotti / Venezia Uomo — ID 3002 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Venezia Uomo; exact Laura Biagiotti 1995 entry
 - `1214-MON` -> Montblanc / Legend Night — ID 45692 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1217-MON` -> Montblanc / Starwalker Extreme — ID 30991 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1220-MOS` -> Moschino / Toy Boy — ID 55858 — VERIFIED_CONFLICT_NOT_OVERWRITTEN — Previously reviewed exact Shobi identity retained
 - `1232-PR` -> Paco Rabanne / Paco Rabanne Pour Homme — ID 526 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1235-PR` -> Paco Rabanne / XS — ID 515 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1238-PAL` -> Paloma Picasso / Minotaure — ID 764 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `1245-PRA` -> Prada / Prada Amber Pour Homme — ID 1044 — PROMOTED — Shobi residual PRADA AMBER under Prada code matches Prada Amber Pour Homme / Prada Man 2006
 - `1246-PRA` -> Prada / Luna Rossa Black — ID 48682 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1248-RAL` -> Ralph Lauren / Polo Ultra Blue — ID 48482 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
+- `1254-RCAV` -> Roberto Cavalli / Just Cavalli Him — ID 848 — MISSING_FROM_CORPUS — Shobi residual explicitly says JUST HIM - ROBERTO CAVALLI; maps to original 2004 Just Cavalli Him, matching paired 2004 Her entry
 - `1255-FER` -> Ferrari / Scuderia Ferrari Black — ID 1546 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
 - `1257-SER` -> Serge Lutens / Five O'Clock Au Gingembre — ID 2764 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1258-SFER` -> Salvatore Ferragamo / White Mimosa — ID 26777 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
 - `1262-PR` -> Paco Rabanne / Invictus Aqua 2018 — ID 48704 — IN_CORPUS — Previously reviewed exact Shobi identity retained
-- `2016-PARELM` -> Parfums d'Elmar / Elixir d'Amour — ID 79218 — MISSING_FROM_CORPUS — Shobi code 2016-PARELM explicitly describes the 2022 Elixir d Amour formula and notes; exact Fragrantica 2022 entry, not discontinued 2018 version
+- `2016-PARELM` -> Parfums d'Elmar / Elixir d'Amour — ID 79218 — MISSING_FROM_CORPUS — Shobi page identifies ELIXIR D AMOUR - PARFUMS D ELMAR with 2022 release identity; maps to 2022 Fragrantica entry
 - `2028-ZARK` -> ZARKOPERFUME / Cloud Collection No. 3 — ID 54529 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
 
 ## Identified but not forced

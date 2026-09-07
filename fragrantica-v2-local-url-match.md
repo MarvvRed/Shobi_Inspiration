@@ -1,11 +1,11 @@
 # Fragrantica v2 match against local perfume_urls.txt
 
 - URLs parsed: **55556**
-- Residual rows scanned: **213**
-- Residuals with local brand hint: **27**
+- Residual rows scanned: **212**
+- Residuals with local brand hint: **26**
 - Suffix brand priors learned: **132**
 - STRONG_EXACT_BRAND: **0**
-- STRONG_UNIQUE: **1**
+- STRONG_UNIQUE: **0**
 - GOOD_REVIEW: **0**
 - EXACT_NAME_NO_BRAND: **7**
 - WEAK_REVIEW: **167**
@@ -15,7 +15,6 @@ No Fragrantica web access is used. Matching uses only repository-local `perfume_
 
 ## Strong candidates
 
-- `1245-PRA` — PRADA AMBER -> Prada / Prada Amber Pour Homme Prada Man — ID 1044 — STRONG_UNIQUE — brand-source verified_suffix
 
 ## Good review candidates
 
