@@ -65,10 +65,11 @@ for db_path in DBS:
     for row in rows:
         code = str(row.get('code') or row.get('shobi_code') or row.get('id') or '').strip()
         if code in NO_FORCE and code not in APPROVED:
-            status = str(row.get('fragrantica_status') or row.get('status') or '').upper()
-            if not status.startswith('VERIFIED_') and not status.startswith('NO_FORCE_'):
+            status = str(row.get('fragrantica_status') or row.get('fragranticaStatus') or row.get('status') or '').upper()
+            if not status.startswith('VERIFIED_NO_FORCE_'):
                 brand, name, reason = NO_FORCE[code]
-                row['fragrantica_status'] = 'NO_FORCE_SHOBI_FIRST'
+                row['fragrantica_status'] = 'VERIFIED_NO_FORCE_SHOBI_FIRST'
+                row['fragranticaStatus'] = 'VERIFIED_NO_FORCE_SHOBI_FIRST'
                 row['fragrantica_match_method'] = 'shobi_first_non_perfume_or_no_safe_target'
                 row['fragrantica_match_reason'] = reason
                 n += 1
@@ -77,17 +78,21 @@ for db_path in DBS:
         if code not in APPROVED:
             continue
         target_id, brand, name, reason = APPROVED[code]
-        current = row.get('fragrantica_id')
-        status = str(row.get('fragrantica_status') or row.get('status') or '').upper()
-        if current is not None and str(current).strip() == str(target_id):
+        current = row.get('fragrantica_id') or row.get('fragranticaId')
+        status = str(row.get('fragrantica_status') or row.get('fragranticaStatus') or row.get('status') or '').upper()
+        if current is not None and str(current).strip() == str(target_id) and status.startswith('VERIFIED_'):
             already += 1
             continue
         if 'VERIFIED' in status and current not in (None, '', 0, '0') and code not in FORCE_CORRECTIONS:
             conflicts += 1
             continue
+        url = f'https://www.fragrantica.com/perfume/{brand.replace(" ", "-")}/{name.replace(" ", "-")}-{target_id}.html'
         row['fragrantica_id'] = int(target_id)
-        row['fragrantica_url'] = f'https://www.fragrantica.com/perfume/{brand.replace(" ", "-")}/{name.replace(" ", "-")}-{target_id}.html'
+        row['fragranticaId'] = str(target_id)
+        row['fragrantica_url'] = url
+        row['fragranticaUrl'] = url
         row['fragrantica_status'] = 'VERIFIED_SHOBI_FIRST'
+        row['fragranticaStatus'] = 'VERIFIED_SHOBI_FIRST'
         row['fragrantica_match_method'] = 'shobi_first_exact_identity_web_or_local'
         row['fragrantica_match_reason'] = reason
         n += 1
