@@ -5,11 +5,12 @@
 - Target IDs missing from local corpus: **48**
 - Promoted this run: **0**
 - Already verified with same ID: **0**
+- Conflicting pre-existing VERIFIED mappings left untouched: **0**
 - Identified but deliberately not forced: **7**
 - database_v2_clean.json: **0** rows changed
 - database_complete.json: **0** rows changed
 
-## Promoted / exact targets
+## Exact targets
 
 - `133-MICA` -> M. Micallef / Ylang in Gold — ID 14409 — MISSING_FROM_CORPUS — Shobi identifies YLANG IN GOLD - M.MICALLEF; base entry, not Nectar flanker
 - `166-AZ` -> The Perfumer's Story by Azzi / Sequoia Wood — ID 40007 — MISSING_FROM_CORPUS — Shobi identifies Sequoia Wood by The Perfumer Story by Azzi
