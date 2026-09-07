@@ -589,7 +589,14 @@ async function init() {
         const response = await fetch('database_complete.json');
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
-        const rawData = await response.json();
+        const rawDataAll = await response.json();
+        const isOfficialPerfume = (p) => {
+            const status = String((p && (p.fragrantica_status || p.fragranticaStatus)) || '').toUpperCase();
+            return !status.startsWith('RESOLVED_NO_FORCE');
+        };
+        const rawData = (Array.isArray(rawDataAll) && rawDataAll.length > 0 && Array.isArray(rawDataAll[0]?.perfumes))
+            ? rawDataAll.map(brandObject => ({ ...brandObject, perfumes: (brandObject.perfumes || []).filter(isOfficialPerfume) }))
+            : (Array.isArray(rawDataAll) ? rawDataAll.filter(isOfficialPerfume) : rawDataAll);
         allBrands.clear();
 
         if (rawData.length > 0 && Array.isArray(rawData[0].perfumes)) {
