@@ -58,6 +58,17 @@ APPROVED={
  '696-GLA':('2068','Guy Laroche','Fidji Eau de Toilette','Shobi-first: official Shobi page explicitly identifies FIDJI EAU DE TOILETTE - GUY LAROCHE; exact EDT entry'),
  '727-JEN':('29758','Jennifer Lopez','JLuxe','Shobi-first: official Shobi page identifies JLUXE - JENNIFER LOPEZ; exact Fragrantica entry'),
  '728-JES':('719','Jesus Del Pozo','In Black','Shobi-first: Shobi code/identity resolves to Jesus Del Pozo In Black; exact Fragrantica entry, rejecting wrong-brand Byblos exact-name candidate'),
+ '807-LOL':('456','Lolita Lempicka','Lolita Lempicka','Shobi-first: official Shobi page identifies LOLITA - LOLITA LEMPICKA; exact original 1997 signature entry, not EDT/later reformulations'),
+ '808-LOL':('28177','Lolita Lempicka','Sweet','Shobi-first: Shobi code page notes candied cherry, cocoa, angelica, iris, musk and cashmere wood exactly identify Sweet 2014'),
+ '816-MAX':('204','Max Mara','Max Mara','Shobi-first: official Shobi listing identifies MAX MARA; exact 2004 signature perfume'),
+ '817-MIC':('31341','Michael Kors','24K Brilliant Gold','Shobi-first: official Shobi page identifies 24K BRILLIANT GOLD - KORS; exact 2015 Gold Collection entry'),
+ '818-MIC':('32739','Michael Kors','Coral','Shobi-first: official Shobi listing identifies CORAL - KORS; exact 2015 Michael Kors Coral entry'),
+ '819-MIC':('18161','Michael Kors','Sexy Amber','Shobi-first: official Shobi page identifies SEXY AMBER - KORS; exact 2013 entry'),
+ '820-MIC':('27497','Michael Kors','Sexy Rio de Janeiro','Shobi-first: official Shobi page identifies SEXY RIO DE JANEIRO KORS and 2014 release; exact Fragrantica entry'),
+ '821-MIC':('34276','Michael Kors','Sexy Sunset','Shobi-first: official Shobi page identifies SEXY SUNSET - KORS and 2015 release; exact Fragrantica entry'),
+ '822-MIC':('46182','Michael Kors','Sexy Ruby','Shobi-first: official Shobi listing identifies SEXY RUBY - KORS; exact 2017 entry despite noisy residual label'),
+ '823-MIC':('18160','Michael Kors','Sporty Citrus','Shobi-first: official Shobi page identifies SPORTY CITRUS - MICHAEL KORS and Honorine Blanc; exact 2013 entry'),
+ '824-MIC':('31343','Michael Kors','White Luminous Gold','Shobi-first: official Shobi page identifies WHITE LUMINOUS GOLD - MICHAEL KORS, Gold Collection 2015; exact entry'),
 }
 def walk(o):
  if isinstance(o,list):
