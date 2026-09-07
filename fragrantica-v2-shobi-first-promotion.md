@@ -1,12 +1,12 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **69**
-- Target IDs present in local corpus: **0**
-- Target IDs missing from local corpus: **69**
+- Reviewed exact identities with Fragrantica target: **101**
+- Target IDs present in local corpus: **14**
+- Target IDs missing from local corpus: **87**
 - Promoted this run: **0**
-- Already verified with same ID: **0**
-- Conflicting pre-existing VERIFIED mappings left untouched: **0**
+- Already verified with same ID: **1**
+- Conflicting pre-existing VERIFIED mappings left untouched: **2**
 - Identified but deliberately not forced: **7**
 - Probe IDs: **{'200': False, '204': False, '456': False, '520': False, '719': False, '905': False, '925': False, '970': False, '993': False, '1014': False, '1061': False, '1365': False, '1499': False, '2068': False, '12201': True}**
 - database_v2_clean.json: **0** rows changed
@@ -83,6 +83,38 @@
 - `854-NIN` -> Nina Ricci / Nina Rouge — ID 56162 — MISSING_FROM_CORPUS — Shobi code 854-NIN explicitly identifies NINA ROUGE and matching raspberry/citron/gardenia/ginger/caramel/vanilla notes
 - `855-NIN` -> Nina Ricci / Premier Jour — ID 520 — MISSING_FROM_CORPUS — Shobi explicitly identifies PREMIER JOUR; base 2001 entry
 - `856-NIN` -> Nina Ricci / Ricci Ricci — ID 6382 — MISSING_FROM_CORPUS — Shobi explicitly identifies RICCI RICCI; base 2009 entry
+- `860-ORT` -> Olfactive Studio / Lumiere Blanche — ID 14909 — MISSING_FROM_CORPUS — Shobi residual identifies Lumiere Blanche by Olfactive Studio; exact 2012 entry
+- `861-OSC` -> Oscar de la Renta / Rose — ID 43028 — MISSING_FROM_CORPUS — Shobi residual identifies Rose by Oscar de la Renta; exact 2016 entry
+- `862-PAL` -> Paloma Picasso / Mon Parfum — ID 6044 — MISSING_FROM_CORPUS — Shobi residual identifies Mon Parfum by Paloma Picasso; exact 1985 entry
+- `868-PEN` -> Penhaligon's / Luna — ID 38351 — IN_CORPUS — Shobi residual identifies Luna by Penhaligons; exact 2016 perfume, not 2026 body mist
+- `869-PIER` -> Balmain Beauty / Extatic — ID 22817 — ALREADY_VERIFIED_SAME_ID — Shobi residual identifies Extatic / Pierre Balmain; base 2014 EDP, not EDT flanker
+- `875-PRSC` -> Salvatore Ferragamo / Incanto Shine — ID 1055 — MISSING_FROM_CORPUS — Shobi residual identifies Incanto Shine by Salvatore Ferragamo; exact 2007 entry
+- `880-PRSC` -> Salvatore Ferragamo / Signorina Eleganza — ID 21977 — MISSING_FROM_CORPUS — Shobi residual identifies Signorina Eleganza; exact 2014 entry
+- `884-RAL` -> Ralph Lauren / Big Pony 2 for Women — ID 14446 — VERIFIED_CONFLICT_NOT_OVERWRITTEN — Shobi residual is Big Pony 2 in women catalog; exact 2012 women entry, not 2010 men version
+- `888-RCAV` -> Roberto Cavalli / Divine Oud — ID 41717 — MISSING_FROM_CORPUS — Shobi residual identifies Divine Oud by Roberto Cavalli; exact 2016 entry
+- `890-RCAV` -> Roberto Cavalli / Roberto Cavalli Acqua — ID 17310 — MISSING_FROM_CORPUS — Shobi residual identifies Roberto Cavalli Acqua; exact 2013 women EDT
+- `891-RCAV` -> Roberto Cavalli / Roberto Cavalli Nero Assoluto — ID 18833 — MISSING_FROM_CORPUS — Shobi residual identifies Nero Assoluto; base 2013 entry, not Exclusive Edition
+- `895-RCAV` -> Roberto Cavalli / Serpentine — ID 837 — MISSING_FROM_CORPUS — Shobi residual identifies Serpentine; original 2005 entry
+- `896-RCAV` -> Roberto Cavalli / Tiger Oud — ID 22194 — MISSING_FROM_CORPUS — Shobi residual identifies Tiger Oud; exact Roberto Cavalli 2013 entry
+- `897-RCAV` -> Roberto Cavalli / Tiger Oud — ID 22194 — MISSING_FROM_CORPUS — Duplicate Shobi code variant for the same Tiger Oud identity; same exact Fragrantica target
+- `900-ROG` -> Roger & Gallet / Fleur de Figuier — ID 17583 — MISSING_FROM_CORPUS — Shobi residual says Fleur de Figuier without Eau de Parfum qualifier; maps to original 2013 EDT, not 2015 EDP
+- `901-ROG` -> Roger & Gallet / Rose — ID 3482 — MISSING_FROM_CORPUS — Shobi residual identifies Rose by Roger & Gallet; exact 2007 EDT entry
+- `1186-JOO` -> Joop! / WOW! — ID 43425 — MISSING_FROM_CORPUS — Previously reviewed exact same-brand target retained; Shobi residual identity is WOW by Joop
+- `1188-JPG` -> Jean Paul Gaultier / Le Male Essence de Parfum — ID 39583 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `1195-LAC` -> Lacoste / Eau de Lacoste L.12.12 Rouge — ID 16456 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `1214-MON` -> Montblanc / Legend Night — ID 45692 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `1217-MON` -> Montblanc / Starwalker Extreme — ID 30991 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `1220-MOS` -> Moschino / Toy Boy — ID 55858 — VERIFIED_CONFLICT_NOT_OVERWRITTEN — Previously reviewed exact Shobi identity retained
+- `1232-PR` -> Paco Rabanne / Paco Rabanne Pour Homme — ID 526 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `1235-PR` -> Paco Rabanne / XS — ID 515 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `1238-PAL` -> Paloma Picasso / Minotaure — ID 764 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `1246-PRA` -> Prada / Luna Rossa Black — ID 48682 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `1248-RAL` -> Ralph Lauren / Polo Ultra Blue — ID 48482 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
+- `1255-FER` -> Ferrari / Scuderia Ferrari Black — ID 1546 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
+- `1257-SER` -> Serge Lutens / Five O'Clock Au Gingembre — ID 2764 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `1258-SFER` -> Salvatore Ferragamo / White Mimosa — ID 26777 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
+- `1262-PR` -> Paco Rabanne / Invictus Aqua 2018 — ID 48704 — IN_CORPUS — Previously reviewed exact Shobi identity retained
+- `2028-ZARK` -> ZARKOPERFUME / Cloud Collection No. 3 — ID 54529 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
 
 ## Identified but not forced
 
