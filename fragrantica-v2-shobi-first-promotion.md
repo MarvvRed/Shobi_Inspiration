@@ -17,13 +17,13 @@
 - `133-MICA` -> M. Micallef / Ylang in Gold — ID 14409 — MISSING_FROM_CORPUS — Shobi identifies YLANG IN GOLD - M.MICALLEF; base entry, not Nectar flanker
 - `166-AZ` -> The Perfumer's Story by Azzi / Sequoia Wood — ID 40007 — MISSING_FROM_CORPUS — Shobi identifies Sequoia Wood by The Perfumer Story by Azzi
 - `184-YAS` -> Yas Perfumes / Huboob Yas — ID 28237 — MISSING_FROM_CORPUS — Shobi identifies HUBOOB with YAS/Yas Perfumes identity
-- `605-ESC` -> Escada / Miami Blossom — ID 53054 — MISSING_FROM_CORPUS — Shobi identifies MIAMI BLOSSOM - ESCADA; rejects wrong-brand Blossom candidates
+- `605-ESC` -> Escada / Miami Blossom — ID 53054 — MISSING_FROM_CORPUS — Shobi identifies MIAMI BLOSSOM - ESCADA; exact 2019 entry
 - `606-ESC` -> Escada / Escada Margaretha Ley — ID 1365 — MISSING_FROM_CORPUS — Shobi identifies MARGARETHA LEY (CLASSIC) - ESCADA
-- `608-ESC` -> Escada / Escada Moon Sparkle — ID 1887 — MISSING_FROM_CORPUS — Shobi identifies women Moon Sparkle; not Moon Sparkle pour Homme
+- `608-ESC` -> Escada / Escada Moon Sparkle — ID 1887 — MISSING_FROM_CORPUS — Shobi identifies Moon Sparkle by Escada; exact original 2007 women entry
 - `639-FEN` -> Fendi / Fendi — ID 200 — MISSING_FROM_CORPUS — Shobi identifies FENDI Woman; original 1985 women entry
-- `640-FEN` -> Fendi / L'Acquarossa — ID 18706 — MISSING_FROM_CORPUS — Shobi identifies L ACQUA ROSSA without EDT/Elixir qualifier; base EDP
+- `640-FEN` -> Fendi / L'Acquarossa — ID 18706 — MISSING_FROM_CORPUS — Shobi identifies L ACQUAROSSA - FENDI; exact base 2013 EDP
 - `673-GRS` -> Gres / Cabotine — ID 1061 — MISSING_FROM_CORPUS — Shobi identifies CABOTIN - GRES; original Cabotine, not flanker
-- `695-GUE` -> Guess / Guess Dare — ID 26415 — MISSING_FROM_CORPUS — Shobi identifies DARE - GUESS; base 2014, not Limited Edition
+- `695-GUE` -> Guess / Guess Dare — ID 26415 — MISSING_FROM_CORPUS — Shobi identifies DARE - GUESS in women catalog; exact 2014 women entry
 - `696-GLA` -> Guy Laroche / Fidji Eau de Toilette — ID 2068 — MISSING_FROM_CORPUS — Shobi explicitly identifies FIDJI EAU DE TOILETTE - GUY LAROCHE
 - `727-JEN` -> Jennifer Lopez / JLuxe — ID 29758 — MISSING_FROM_CORPUS — Shobi identifies JLUXE - JENNIFER LOPEZ
 - `728-JES` -> Jesus Del Pozo / In Black — ID 719 — MISSING_FROM_CORPUS — Shobi identity fixes Jesus Del Pozo; rejects wrong-brand Byblos exact-name candidate
