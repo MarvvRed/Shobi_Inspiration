@@ -78,4 +78,6 @@ APPROVED_ADDITIONAL = {
     '2415-ESC': ('1352', 'Escada', 'Sexy Graffiti', 'Shobi residual identifies SEXY GRAFFITY - ESCADA without 2011 qualifier; maps to original 2002 Sexy Graffiti'),
     '2438-KYLJE': ('90957', 'Kylie Cosmetics', 'Cosmic Kylie Jenner', 'Shobi code KYLJE plus COSMIC identifies original 2024 Cosmic Kylie Jenner; not 2.0 or Intense'),
     '2604-JILS': ('619', 'Jil Sander', 'Sun Men', 'Shobi residual explicitly identifies Sun Men Jil Sander with no EDP/Parfum qualifier; exact original 2002 EDT'),
+    '2697-RIT': ('46391', 'Rituals', 'Ritual of Karma', 'Shobi residual explicitly identifies Karma Rituals; exact Rituals body mist fragrance entry with lotus and bergamot'),
+    '2699-RIT': ('52638', 'Rituals', 'Rituals of Ayurveda', 'Shobi residual explicitly identifies Ayurveda Rituals; exact Rituals fragrance entry with rose and honey'),
 }
