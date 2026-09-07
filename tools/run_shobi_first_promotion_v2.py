@@ -26,6 +26,7 @@ BATCH_SPECS = [
 DBS = [ROOT / 'database_v2_clean.json', ROOT / 'database_complete.json']
 URLS = ROOT / 'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
 OUT = ROOT / 'fragrantica-v2-shobi-first-promotion.md'
+FORCE_CORRECTIONS = {'1186-JOO'}
 
 def load_literal(path, name):
     tree = ast.parse(path.read_text(encoding='utf-8'))
@@ -80,7 +81,7 @@ for db_path in DBS:
         if current is not None and str(current).strip() == str(target_id):
             already += 1
             continue
-        if 'VERIFIED' in status and current not in (None, '', 0, '0'):
+        if 'VERIFIED' in status and current not in (None, '', 0, '0') and code not in FORCE_CORRECTIONS:
             conflicts += 1
             continue
         row['fragrantica_id'] = int(target_id)
