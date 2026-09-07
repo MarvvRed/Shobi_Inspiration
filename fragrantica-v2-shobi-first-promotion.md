@@ -1,9 +1,9 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **163**
+- Reviewed exact identities with Fragrantica target: **167**
 - Target IDs present in local corpus: **20**
-- Target IDs missing from local corpus: **143**
+- Target IDs missing from local corpus: **147**
 - Promoted this run: **0**
 - Already verified with same ID: **7**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
@@ -177,6 +177,10 @@
 - `2044-LORV` -> Lorenzo Villoresi / Teint de Neige — ID 5079 — MISSING_FROM_CORPUS — Shobi residual TEINT DE NEIGE under Lorenzo Villoresi code; exact original 2000 entry
 - `2051-PRFRO` -> Profumum Roma / Acqua di Sale — ID 3886 — MISSING_FROM_CORPUS — Shobi residual Acqua Di Sale under Profumum Roma code; exact original fragrance, not 2021 limited edition or 2024 Acquerello
 - `2094-SHIS` -> Shiseido / Ever Bloom — ID 31202 — MISSING_FROM_CORPUS — Shobi residual Ever Bloom with no EDT or Extrait qualifier; exact original 2015 Eau de Parfum entry
+- `410-BOD` -> The Body Shop / Black Musk — ID 32247 — MISSING_FROM_CORPUS — Shobi residual BLACK MUSK under Body Shop code; exact original 2015 fragrance
+- `411-BOD` -> The Body Shop / White Musk — ID 2432 — MISSING_FROM_CORPUS — Shobi residual WHITE MUSK under Body Shop code; exact classic 1981 fragrance
+- `589-ELI` -> Elie Saab / Girl of Now — ID 45686 — MISSING_FROM_CORPUS — Shobi residual Girl of Now under Elie Saab code; exact original 2017 entry
+- `598-ESC` -> Escada / Celebrate N.O.W. — ID 46180 — MISSING_FROM_CORPUS — Shobi residual CELEBRATE NOW - ESCADA; exact 2017 Celebrate N.O.W. entry
 
 ## Identified but not forced
 
