@@ -1,16 +1,16 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **138**
+- Reviewed exact identities with Fragrantica target: **152**
 - Target IDs present in local corpus: **16**
-- Target IDs missing from local corpus: **122**
-- Promoted this run: **1**
-- Already verified with same ID: **2**
+- Target IDs missing from local corpus: **136**
+- Promoted this run: **0**
+- Already verified with same ID: **3**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
 - Identified but deliberately not forced: **7**
 - Probe IDs: **{'200': False, '204': False, '456': False, '520': False, '719': False, '905': False, '925': False, '970': False, '993': False, '1014': False, '1061': False, '1365': False, '1499': False, '2068': False, '12201': True}**
-- database_v2_clean.json: **1** rows changed
-- database_complete.json: **1** rows changed
+- database_v2_clean.json: **0** rows changed
+- database_complete.json: **0** rows changed
 
 ## Exact targets
 
@@ -133,7 +133,7 @@
 - `1262-PR` -> Paco Rabanne / Invictus Aqua 2018 — ID 48704 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `2016-PARELM` -> Parfums d'Elmar / Elixir d'Amour — ID 79218 — MISSING_FROM_CORPUS — Shobi page identifies ELIXIR D AMOUR - PARFUMS D ELMAR with 2022 release identity; maps to 2022 Fragrantica entry
 - `2028-ZARK` -> ZARKOPERFUME / Cloud Collection No. 3 — ID 54529 — MISSING_FROM_CORPUS — Previously reviewed exact Shobi identity retained
-- `2234-MON` -> Montblanc / Femme de Montblanc — ID 833 — PROMOTED — Shobi residual pour Femme under MON code identifies the original Montblanc feminine fragrance; exact 2006 Femme de Montblanc entry
+- `2234-MON` -> Montblanc / Femme de Montblanc — ID 833 — ALREADY_VERIFIED_SAME_ID — Shobi residual pour Femme under MON code identifies the original Montblanc feminine fragrance; exact 2006 Femme de Montblanc entry
 - `2284-HIS` -> Histoires de Parfums / 1889 Moulin Rouge — ID 7816 — MISSING_FROM_CORPUS — Shobi residual explicitly says 1889 - Moulin Rouge; exact Histoires de Parfums 2010 entry
 - `2311-YVRO` -> Yves Rocher / Plein Soleil — ID 56457 — MISSING_FROM_CORPUS — Shobi residual has typo PLAIN SOLEIL - YVES ROCHER; exact Plein Soleil 2019 entry
 - `2374-MICA` -> M. Micallef / GNTONIC — ID 80353 — MISSING_FROM_CORPUS — Shobi residual GN TONIC - MICALLEF identifies GNTONIC; exact original 2023 M. Micallef entry
@@ -152,6 +152,20 @@
 - `1021-BOG` -> Jacques Bogart / One Man Show — ID 7795 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies One Man Show Eau de Toilette; exact original 1980 entry
 - `1116-ZEG` -> Ermenegildo Zegna / Uomo Absolute — ID 28142 — MISSING_FROM_CORPUS — Shobi residual UOMO ABSOLUT under ZEG identifies Uomo Absolute; exact 2014 entry
 - `2439-ZEG` -> Ermenegildo Zegna / Indonesian Oud Eau de Toilette — ID 16188 — MISSING_FROM_CORPUS — Shobi residual INDONESIAN OUD under ZEG; generic/original identity maps to the 2012 EDT, not the later 2019 EDP
+- `1756-LBI` -> Laura Biagiotti / Roma — ID 628 — MISSING_FROM_CORPUS — Shobi residual ROMA - LAURA BIAGIOTTI; exact original 1988 women fragrance
+- `1763-JILS` -> Jil Sander / Sun — ID 618 — MISSING_FROM_CORPUS — Shobi residual SUN under Jil Sander code; exact original 1989 women fragrance
+- `1781-LAC` -> Lacoste Fragrances / Touch of Sun — ID 672 — MISSING_FROM_CORPUS — Shobi residual TOUCH OF SUN under Lacoste code; exact 2006 summer edition
+- `1784-ESC` -> Escada / Escada Summer Festival — ID 64643 — MISSING_FROM_CORPUS — Shobi residual Summer Festival Eau de Toilette; exact 2021 limited edition
+- `1885-WID` -> WIDIAN / London — ID 47781 — MISSING_FROM_CORPUS — Shobi residual LONDON under WID code; exact WIDIAN Sapphire Collection 2018 entry
+- `1888-MOR` -> Moresque / Contessa — ID 35669 — MISSING_FROM_CORPUS — Shobi code 1888-MOR explicitly identifies CONTESSA - MORESQUE; exact 2016 entry
+- `1896-ESC` -> Escada / Cherry In Japan — ID 70279 — MISSING_FROM_CORPUS — Shobi residual Cherry in Japan; exact 2021 Escada entry
+- `1899-ZARK` -> ZARKOPERFUME / The Muse — ID 60665 — MISSING_FROM_CORPUS — Shobi residual The Muse under ZARK code; exact 2020 entry
+- `1921-VIV` -> Vivienne Westwood / Boudoir — ID 1532 — MISSING_FROM_CORPUS — Shobi residual Boudoir under Vivienne Westwood code; exact original 1998 entry
+- `1534-SWI` -> Victorinox Swiss Army / Swiss Army — ID 6672 — MISSING_FROM_CORPUS — Shobi residual SWISS ARMY VICTORINOX; exact original 1997 Victorinox Swiss Army entry
+- `1641-KHAL` -> Khaltat / Aloha — ID 22911 — MISSING_FROM_CORPUS — Shobi residual Aloha Parfum under Khaltat code; exact same-brand Aloha entry
+- `1701-TOSC` -> Tosca / Tosca — ID 5796 — MISSING_FROM_CORPUS — Shobi residual TOSCA under Tosca code; exact classic 1921 fragrance entry
+- `1743-LBI` -> Laura Biagiotti / Sotto Voce — ID 1185 — MISSING_FROM_CORPUS — Shobi residual Sotto Voce under Laura Biagiotti code; exact 1996 entry
+- `1753-TEDL` -> Ted Lapidus / Ted — ID 5942 — MISSING_FROM_CORPUS — Shobi residual TED under Ted Lapidus code; exact 1999 fragrance entry
 
 ## Identified but not forced
 
