@@ -1,9 +1,9 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **48**
+- Reviewed exact identities with Fragrantica target: **60**
 - Target IDs present in local corpus: **0**
-- Target IDs missing from local corpus: **48**
+- Target IDs missing from local corpus: **60**
 - Promoted this run: **0**
 - Already verified with same ID: **0**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
@@ -61,6 +61,18 @@
 - `1987-SON` -> Sonia Rykiel / Le Parfum — ID 4655 — MISSING_FROM_CORPUS — Shobi identifies LE PARFUM - SONIA RYKIEL with no Extrait qualifier; base 1993 entry
 - `1988-THEVE` -> The Merchant of Venice / Arabesque — ID 32670 — MISSING_FROM_CORPUS — Shobi identifies ARABESQUE - THE MERCHANT OF VENICE; 2015 entry
 - `1989-VERT` -> Vertus / Narcos'is — ID 47923 — MISSING_FROM_CORPUS — Shobi residual NARCOS'IS under Vertus code; exact Vertus entry
+- `118-HAM` -> Hamidi Oud & Perfumes / Rehan — ID 27808 — MISSING_FROM_CORPUS — Shobi identifies REHAN - HAMIDI OUD; exact same-brand Fragrantica entry
+- `172-SHALM` -> Scent Salim / Moroccan Musk — ID 47982 — MISSING_FROM_CORPUS — Shobi identifies MOROCCAN MUSK - SCENT SALIM; exact same-brand Fragrantica entry
+- `825-MIC` -> Michael Kors / Wonderlust — ID 39459 — MISSING_FROM_CORPUS — Shobi explicitly identifies WONDERLUST - MICHAEL KORS; base 2016 entry
+- `827-MISN` -> Missoni / Missoni (2015) — ID 33017 — MISSING_FROM_CORPUS — Shobi describes the modern fruity-floral Missoni; identity fits the 2015 Quentin Bisch release, not the 1981/2006 versions
+- `840-NAO` -> Naomi Campbell / Naomi Campbell — ID 905 — MISSING_FROM_CORPUS — Shobi residual is self-titled Naomi Campbell; exact 1999 debut entry
+- `850-NIN` -> Nina Ricci / L'Air du Temps — ID 1014 — MISSING_FROM_CORPUS — Shobi explicitly identifies L AIR DU TEMPS; classic 1948 entry
+- `851-NIN` -> Nina Ricci / L'Extase — ID 29668 — MISSING_FROM_CORPUS — Shobi explicitly identifies L EXTASE; base 2015 entry
+- `852-NIN` -> Nina Ricci / Luna — ID 39376 — MISSING_FROM_CORPUS — Shobi explicitly identifies LUNA; base 2016 entry
+- `853-NIN` -> Nina Ricci / Nina — ID 147 — MISSING_FROM_CORPUS — Current Shobi code 853-NIN explicitly identifies NINA; base 2006 apple fragrance
+- `854-NIN` -> Nina Ricci / Nina Rouge — ID 56162 — MISSING_FROM_CORPUS — Shobi code 854-NIN explicitly identifies NINA ROUGE and matching raspberry/citron/gardenia/ginger/caramel/vanilla notes
+- `855-NIN` -> Nina Ricci / Premier Jour — ID 520 — MISSING_FROM_CORPUS — Shobi explicitly identifies PREMIER JOUR; base 2001 entry
+- `856-NIN` -> Nina Ricci / Ricci Ricci — ID 6382 — MISSING_FROM_CORPUS — Shobi explicitly identifies RICCI RICCI; base 2009 entry
 
 ## Identified but not forced
 
