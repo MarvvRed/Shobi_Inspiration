@@ -1,7 +1,7 @@
 import csv, json, re
 from collections import defaultdict, Counter
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
 
 DB=Path('database_complete.json')
 AUDIT=Path('fragrantica-v2-identity-audit.csv')
@@ -12,8 +12,13 @@ rows=json.loads(DB.read_text(encoding='utf-8'))
 def designer_slug(url):
     if not url: return ''
     parts=[p for p in urlparse(url).path.split('/') if p]
-    if len(parts)>=3 and parts[0] in {'perfume','parfem'}: return parts[1]
+    if len(parts)>=3 and parts[0] in {'perfume','parfem'}: return unquote(parts[1])
     return ''
+
+def display_slug(slug):
+    # Used only when an exact Fragrantica URL identifies the designer but the audit has no display spelling.
+    s=unquote(slug).replace('-', ' ').strip()
+    return ' '.join(w if (w.isupper() and len(w)<=4) else w.capitalize() for w in s.split())
 
 def perfume_id(url):
     m=re.search(r'-(\d+)\.html(?:$|[?#])', str(url or ''))
@@ -36,7 +41,6 @@ with AUDIT.open(encoding='utf-8-sig', newline='') as f:
 
 slug_brand={sl:c.most_common(1)[0][0] for sl,c in slug_names.items() if len(c)==1}
 
-# Exact local corpus lookup by Fragrantica numeric ID.
 id_urls=defaultdict(list)
 for line in CORPUS.read_text(encoding='utf-8',errors='ignore').splitlines():
     u=line.strip()
@@ -50,17 +54,24 @@ for p in rows:
     b,url=by_code.get(code,('',''))
     if b:
         source[code]=b; method[code]='audit_brand'; continue
-    urls=[url, str(p.get('fragrantica_url') or ''), str(p.get('fragranticaLocalUrl') or '')]
     fid=str(p.get('fragranticaId') or p.get('fragrantica_id') or '').strip()
-    urls += id_urls.get(fid,[])
-    for u in urls:
+    candidates=[('verified_url',url),('verified_url',str(p.get('fragrantica_url') or '')),('local_url',str(p.get('fragranticaLocalUrl') or ''))]
+    candidates += [('exact_corpus_id',u) for u in id_urls.get(fid,[])]
+    slugs=[]
+    for kind,u in candidates:
         sl=designer_slug(u)
-        if sl and sl in slug_brand:
-            source[code]=slug_brand[sl]
-            method[code]='exact_corpus_id' if u in id_urls.get(fid,[]) else 'verified_url_slug'
-            break
+        if sl: slugs.append((kind,sl))
+    # Exact identity sources must agree on designer slug if more than one is present.
+    unique={sl for _,sl in slugs}
+    if len(unique)==1:
+        kind,sl=slugs[0]
+        source[code]=slug_brand.get(sl) or display_slug(sl)
+        method[code]='exact_designer_path' if sl not in slug_brand else ('exact_corpus_id' if any(k=='exact_corpus_id' for k,_ in slugs) else 'verified_url_slug')
 
-# Build code-suffix mapping only from source-derived identities and only when unanimous.
+# One already web-verified record has no retained numeric ID/URL in the complete DB.
+source.setdefault('pid:2688','Ajmal')
+method.setdefault('pid:2688','prior_verified_identity')
+
 suffix_brands=defaultdict(set)
 for p in rows:
     code=str(p.get('code') or '')
