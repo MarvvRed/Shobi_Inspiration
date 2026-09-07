@@ -6,6 +6,7 @@ on:
       - 'tools/promote_shobi_first_residuals_v2.py'
       - 'tools/shobi_first_additional_v2.py'
       - 'tools/run_shobi_first_promotion_v2.py'
+      - 'tools/match_v2_against_perfume_urls.py'
       - '.github/workflows/match-v2-local-fragrantica-urls.yml'
   workflow_dispatch:
 permissions:
@@ -44,7 +45,7 @@ jobs:
               changed = 0
               for row in walk(data):
                   status = str(row.get('fragrantica_status') or '')
-                  if status.startswith('VERIFIED_'):
+                  if status.startswith('VERIFIED_') or status.startswith('RESOLVED_NO_FORCE'):
                       if row.get('fragranticaStatus') != status:
                           row['fragranticaStatus'] = status
                           changed += 1
