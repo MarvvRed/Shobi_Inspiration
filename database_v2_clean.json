@@ -10893,8 +10893,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/570-dol-wp",
     "brand": "",
     "inspiredBy": "(RED CUP)",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -10905,7 +10905,11 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Dolce & Gabbana', 'Red Cup', 'residual label is only RED CUP under Dolce & Gabbana suffix with no recoverable exact perfume identity; do not guess')",
+    "fragrantica_id": ""
   },
   {
     "id": "571-DAV",
@@ -18815,8 +18819,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/dali-parfum-salvador-dali-similar-fragrance",
     "brand": "",
     "inspiredBy": "SALVADOR DALI fragrances",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -18827,7 +18831,11 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Salvador Dali', 'Salvador Dali fragrances', 'generic brand/catalog label rather than a unique perfume identity; no exact target can be selected safely')",
+    "fragrantica_id": ""
   },
   {
     "id": "905-SFER",
@@ -28873,8 +28881,8 @@
     "shobiUrl": "",
     "brand": "",
     "inspiredBy": "MUKHALLAT AL EMIRATES",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -28885,7 +28893,11 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Al Haramain Perfumes', 'Mukhallat Al Emirates', 'real Al Haramain attar is referenced on Fragrantica community pages, but no safe exact encyclopedia page/ID was found; do not substitute another Mukhallath')",
+    "fragrantica_id": ""
   },
   {
     "id": "1528-KUR",
@@ -39122,8 +39134,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/2098-mic-w",
     "brand": "",
     "inspiredBy": "Twilight Shimmer",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 50396,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -39134,7 +39146,12 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_id": 50396,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Michael-Kors/Twilight-Shimmer-50396.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi residual is Twilight Shimmer under Michael Kors code; exact Fragrantica entry is Twilight Shimmer 2018"
   },
   {
     "id": "2099-MARG",
@@ -40900,8 +40917,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/pour-homme-moncler-inspired-perfume",
     "brand": "",
     "inspiredBy": "pour Homme",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -40912,7 +40929,11 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Unknown MON brand', 'Pour Homme', 'label is generic and MON suffix is ambiguous across existing catalog brands; no safe exact identity without stronger Shobi metadata')",
+    "fragrantica_id": ""
   },
   {
     "id": "2179-PEN",
@@ -49023,8 +49044,8 @@
     "shobiUrl": "",
     "brand": "",
     "inspiredBy": "NIGHT HORSE",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -49035,7 +49056,11 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Unknown SOR brand', 'Night Horse', 'Fragrantica has a Night Horse by Siordia Parfums, but Shobi brand identity is not established strongly enough to cross-brand; do not force')",
+    "fragrantica_id": ""
   },
   {
     "id": "2553-BON",
@@ -49805,8 +49830,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/biscuit-perfume",
     "brand": "",
     "inspiredBy": "Biscuit DIP",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -49817,7 +49842,11 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Diptyque', 'Biscuit', 'Diptyque Biscuit is a home/candle identity rather than a safe standalone perfume target')",
+    "fragrantica_id": ""
   },
   {
     "id": "2587-MAR",
@@ -52281,8 +52310,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/cafe_scent",
     "brand": "",
     "inspiredBy": "Cafe Verlet",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -52293,7 +52322,11 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Diptyque', 'Cafe Verlet', 'Diptyque Cafe/Café Verlet is a candle/home fragrance identity; no safe perfume target')",
+    "fragrantica_id": ""
   },
   {
     "id": "2702-DIP",
@@ -53775,8 +53808,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/mehr_parfum",
     "brand": "",
     "inspiredBy": "The Rituals of Mehr",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 83081,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -53787,7 +53820,12 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_id": 83081,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Rituals/The-Rituals-of-Mehr-Body-Mist-83081.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi residual is The Rituals of Mehr; exact Fragrantica entry is The Rituals of Mehr Body Mist 2023"
   },
   {
     "id": "2774-MIL",
@@ -54699,8 +54737,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/2816-mood",
     "brand": "",
     "inspiredBy": "Blonde Maracuja Mood London",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -54711,7 +54749,11 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Mood London', 'Blonde Maracuja', 'no safe exact Fragrantica encyclopedia target found for the Shobi identity; do not substitute Oud Maracuja or a different brand')",
+    "fragrantica_id": ""
   },
   {
     "id": "2817-INI",

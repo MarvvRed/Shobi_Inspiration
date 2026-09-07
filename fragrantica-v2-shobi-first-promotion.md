@@ -1,18 +1,18 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **203**
+- Reviewed exact identities with Fragrantica target: **205**
 - Target IDs present in local corpus: **20**
-- Target IDs missing from local corpus: **183**
+- Target IDs missing from local corpus: **185**
 - Promotion policy: **all reviewed exact identities are eligible; local corpus presence is informational only**
-- Promoted this run: **16**
-- Already verified with same ID: **358**
+- Promoted this run: **4**
+- Already verified with same ID: **374**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
-- Identified but deliberately not forced: **31**
-- NO_FORCE rows marked this run: **62**
+- Identified but deliberately not forced: **39**
+- NO_FORCE rows marked this run: **78**
 - Probe IDs: **{200: False, 204: False, 456: False, 520: False, 719: False, 905: False, 925: False, 970: False, 993: False, 1014: False, 1061: False, 1365: False, 1499: False, 2068: False, 12201: True}**
-- database_v2_clean.json: **39** rows changed
-- database_complete.json: **39** rows changed
+- database_v2_clean.json: **41** rows changed
+- database_complete.json: **41** rows changed
 
 ## Exact targets
 
@@ -219,6 +219,8 @@
 - `898-ROC` -> Rochas / Aquawoman — ID 1427 — MISSING_FROM_CORPUS — Shobi Aqua Woman spelling corresponds to exact Rochas Aquawoman identity; web-verified on Fragrantica
 - `899-ROC` -> Rochas / Mademoiselle Rochas — ID 43205 — MISSING_FROM_CORPUS — Shobi unqualified Mademoiselle Rochas corresponds to original 2017 EDP, not later EDT; web-verified on Fragrantica
 - `1184-JOO` -> Joop! / Joop! Femme — ID 3100 — MISSING_FROM_CORPUS — Shobi JOOP - JOOP corresponds to the original women fragrance Joop! Femme; web-verified on Fragrantica
+- `2098-MIC` -> Michael Kors / Twilight Shimmer — ID 50396 — MISSING_FROM_CORPUS — Shobi residual is Twilight Shimmer under Michael Kors code; exact Fragrantica entry is Twilight Shimmer 2018
+- `2773-RIT` -> Rituals / The Rituals of Mehr Body Mist — ID 83081 — MISSING_FROM_CORPUS — Shobi residual is The Rituals of Mehr; exact Fragrantica entry is The Rituals of Mehr Body Mist 2023
 
 ## No-force identities
 
@@ -249,7 +251,15 @@
 - `382-YAN` — ('Yankee Candle', 'Pomegranate Cider', 'candle/home fragrance identity')
 - `383-YAN` — ('Yankee Candle', 'Wedding Day', 'candle/home fragrance identity')
 - `564-DOL` — ('Dolce & Gabbana', 'Sexy Chocolate', 'no authentic Dolce & Gabbana fragrance by this name; do not force a false target')
+- `570-DOL` — ('Dolce & Gabbana', 'Red Cup', 'residual label is only RED CUP under Dolce & Gabbana suffix with no recoverable exact perfume identity; do not guess')
+- `904-SALV` — ('Salvador Dali', 'Salvador Dali fragrances', 'generic brand/catalog label rather than a unique perfume identity; no exact target can be selected safely')
+- `1526-AL HAR` — ('Al Haramain Perfumes', 'Mukhallat Al Emirates', 'real Al Haramain attar is referenced on Fragrantica community pages, but no safe exact encyclopedia page/ID was found; do not substitute another Mukhallath')
 - `1550-YAN` — ('Yankee Candle', 'Home Sweet Home', 'candle/home fragrance identity')
 - `1748-BYR` — ('Byredo', 'Marijuana', 'no safe authentic Byredo perfume target')
 - `1955-LAP` — ('La Prairie', 'Cellular Energizing', 'body spray/body product rather than standard perfume identity')
 - `2085-CLIV` — ('Clive Christian', 'X Neroli Limited Edition', 'real product identity but no safe Fragrantica page target found')
+- `2178-MON` — ('Unknown MON brand', 'Pour Homme', 'label is generic and MON suffix is ambiguous across existing catalog brands; no safe exact identity without stronger Shobi metadata')
+- `2552-SOR` — ('Unknown SOR brand', 'Night Horse', 'Fragrantica has a Night Horse by Siordia Parfums, but Shobi brand identity is not established strongly enough to cross-brand; do not force')
+- `2586-DIP` — ('Diptyque', 'Biscuit', 'Diptyque Biscuit is a home/candle identity rather than a safe standalone perfume target')
+- `2701-DIP` — ('Diptyque', 'Cafe Verlet', 'Diptyque Cafe/Café Verlet is a candle/home fragrance identity; no safe perfume target')
+- `2816-MOOD` — ('Mood London', 'Blonde Maracuja', 'no safe exact Fragrantica encyclopedia target found for the Shobi identity; do not substitute Oud Maracuja or a different brand')
