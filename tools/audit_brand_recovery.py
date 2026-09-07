@@ -5,6 +5,7 @@ from urllib.parse import urlparse
 
 DB=Path('database_complete.json')
 AUDIT=Path('fragrantica-v2-identity-audit.csv')
+CORPUS=Path('fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt')
 OUT=Path('brand-recovery-audit.md')
 rows=json.loads(DB.read_text(encoding='utf-8'))
 
@@ -13,6 +14,10 @@ def designer_slug(url):
     parts=[p for p in urlparse(url).path.split('/') if p]
     if len(parts)>=3 and parts[0] in {'perfume','parfem'}: return parts[1]
     return ''
+
+def perfume_id(url):
+    m=re.search(r'-(\d+)\.html(?:$|[?#])', str(url or ''))
+    return m.group(1) if m else ''
 
 def suffix(code):
     m=re.search(r'-([A-Za-z0-9]+)$', str(code or ''))
@@ -31,7 +36,13 @@ with AUDIT.open(encoding='utf-8-sig', newline='') as f:
 
 slug_brand={sl:c.most_common(1)[0][0] for sl,c in slug_names.items() if len(c)==1}
 
-# First-pass exact source brands: explicit audit brand, or URL designer resolved through explicit audit slug dictionary.
+# Exact local corpus lookup by Fragrantica numeric ID.
+id_urls=defaultdict(list)
+for line in CORPUS.read_text(encoding='utf-8',errors='ignore').splitlines():
+    u=line.strip()
+    fid=perfume_id(u)
+    if fid: id_urls[fid].append(u)
+
 source={}
 method={}
 for p in rows:
@@ -40,12 +51,16 @@ for p in rows:
     if b:
         source[code]=b; method[code]='audit_brand'; continue
     urls=[url, str(p.get('fragrantica_url') or ''), str(p.get('fragranticaLocalUrl') or '')]
+    fid=str(p.get('fragranticaId') or p.get('fragrantica_id') or '').strip()
+    urls += id_urls.get(fid,[])
     for u in urls:
         sl=designer_slug(u)
         if sl and sl in slug_brand:
-            source[code]=slug_brand[sl]; method[code]='verified_url_slug'; break
+            source[code]=slug_brand[sl]
+            method[code]='exact_corpus_id' if u in id_urls.get(fid,[]) else 'verified_url_slug'
+            break
 
-# Build code-suffix -> brand only from exact source-derived rows and only when unanimous.
+# Build code-suffix mapping only from source-derived identities and only when unanimous.
 suffix_brands=defaultdict(set)
 for p in rows:
     code=str(p.get('code') or '')
@@ -63,7 +78,7 @@ for p in rows:
         resolved[code]=(source[code],method[code]); continue
     s=suffix(code)
     if s in unanimous:
-        resolved[code]=(unanimous[s],'code_suffix_unanimous'); continue
+        resolved[code]=(unanimous[s],'code_suffix_unanimous')
 
 def status(p): return str(p.get('fragrantica_status') or p.get('fragranticaStatus') or '').upper()
 official=[p for p in rows if not status(p).startswith('RESOLVED_NO_FORCE')]
