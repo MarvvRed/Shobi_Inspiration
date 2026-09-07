@@ -6,6 +6,7 @@ on:
       - 'tools/audit_site_brands.py'
       - 'tools/audit_brand_sources.py'
       - 'tools/audit_brand_recovery.py'
+      - 'tools/audit_brand_residuals_local.py'
       - '.github/workflows/audit-site-brands.yml'
   workflow_dispatch:
 
@@ -23,10 +24,11 @@ jobs:
       - run: python tools/audit_site_brands.py
       - run: python tools/audit_brand_sources.py
       - run: python tools/audit_brand_recovery.py
+      - run: python tools/audit_brand_residuals_local.py
       - name: Commit audit reports
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add site-brand-audit.md brand-source-audit.md brand-recovery-audit.md
-          git diff --cached --quiet || git commit -m "Report deterministic brand recovery"
+          git add site-brand-audit.md brand-source-audit.md brand-recovery-audit.md brand-residual-local-audit.md
+          git diff --cached --quiet || git commit -m "Report residual local brand lookup"
           git push
