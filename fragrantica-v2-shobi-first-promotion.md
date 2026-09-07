@@ -1,16 +1,16 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **174**
-- Target IDs present in local corpus: **20**
-- Target IDs missing from local corpus: **154**
-- Promoted this run: **0**
+- Reviewed exact identities with Fragrantica target: **179**
+- Target IDs present in local corpus: **21**
+- Target IDs missing from local corpus: **158**
+- Promoted this run: **1**
 - Already verified with same ID: **7**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
 - Identified but deliberately not forced: **7**
 - Probe IDs: **{'200': False, '204': False, '456': False, '520': False, '719': False, '905': False, '925': False, '970': False, '993': False, '1014': False, '1061': False, '1365': False, '1499': False, '2068': False, '12201': True}**
-- database_v2_clean.json: **0** rows changed
-- database_complete.json: **0** rows changed
+- database_v2_clean.json: **1** rows changed
+- database_complete.json: **1** rows changed
 
 ## Exact targets
 
@@ -188,6 +188,11 @@
 - `736-JUI` -> Juicy Couture / Couture Couture — ID 6496 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Couture Couture; exact 2009 Juicy Couture entry
 - `737-JUI` -> Juicy Couture / Juicy Couture Malibu — ID 22956 — MISSING_FROM_CORPUS — Shobi residual MALIBU under Juicy Couture code; exact 2013 Juicy Couture Malibu entry
 - `738-JUI` -> Juicy Couture / Viva la Juicy — ID 4410 — MISSING_FROM_CORPUS — Shobi residual VIVA LA JUICY under Juicy Couture code; exact original 2008 entry
+- `309-LOC` -> L'Occitane en Provence / Magnolia & Mure — ID 17836 — MISSING_FROM_CORPUS — Shobi residual MAGNOLIA & MURE under L'Occitane code; exact 2013 La Collection de Grasse entry
+- `1118-FAB` -> Brut Parfums Prestige / Brut — ID 15303 — PROMOTED — Shobi residual BRUT 1964 identifies original Brut launched in 1964; exact Fragrantica entry
+- `1121-GFE` -> Gianfranco Ferre / Ferre for Men — ID 803 — MISSING_FROM_CORPUS — Shobi residual FERRE MAN under Gianfranco Ferre code identifies Ferre for Men 2006; exact entry
+- `1122-GFE` -> Gianfranco Ferre / In The Mood For Love — ID 6530 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies In the Mood for Love; exact original 2009 women entry, not Pure/Tender/Man flankers
+- `1151-HAL` -> Halston / Halston Z14 — ID 3697 — MISSING_FROM_CORPUS — Shobi residual Halston Z-14 Cologne; exact original 1974 entry
 
 ## Identified but not forced
 
