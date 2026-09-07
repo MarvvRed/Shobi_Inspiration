@@ -1,9 +1,9 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **167**
+- Reviewed exact identities with Fragrantica target: **174**
 - Target IDs present in local corpus: **20**
-- Target IDs missing from local corpus: **147**
+- Target IDs missing from local corpus: **154**
 - Promoted this run: **0**
 - Already verified with same ID: **7**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
@@ -181,6 +181,13 @@
 - `411-BOD` -> The Body Shop / White Musk — ID 2432 — MISSING_FROM_CORPUS — Shobi residual WHITE MUSK under Body Shop code; exact classic 1981 fragrance
 - `589-ELI` -> Elie Saab / Girl of Now — ID 45686 — MISSING_FROM_CORPUS — Shobi residual Girl of Now under Elie Saab code; exact original 2017 entry
 - `598-ESC` -> Escada / Celebrate N.O.W. — ID 46180 — MISSING_FROM_CORPUS — Shobi residual CELEBRATE NOW - ESCADA; exact 2017 Celebrate N.O.W. entry
+- `304-KIE` -> Kiehl's / Original Musk — ID 6188 — MISSING_FROM_CORPUS — Shobi residual ORIGINAL MUSK under KIE code identifies Kiehl’s Original Musk; exact 2004 Fragrantica entry
+- `307-LOC` -> L'Occitane en Provence / Peony — ID 8458 — MISSING_FROM_CORPUS — Shobi residual PEONY under L'Occitane code; exact 2010 Peony EDT entry
+- `308-LOC` -> L'Occitane en Provence / Citrus Verbena Summer — ID 2224 — MISSING_FROM_CORPUS — Shobi residual CITRUS VERBENA under L'Occitane code; exact classic Citrus Verbena Summer entry
+- `310-MIL` -> Miller Harris / Feuilles de Tabac — ID 4804 — MISSING_FROM_CORPUS — Shobi residual FEUILLES DE TABAC under Miller Harris code; exact 2000 entry
+- `736-JUI` -> Juicy Couture / Couture Couture — ID 6496 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Couture Couture; exact 2009 Juicy Couture entry
+- `737-JUI` -> Juicy Couture / Juicy Couture Malibu — ID 22956 — MISSING_FROM_CORPUS — Shobi residual MALIBU under Juicy Couture code; exact 2013 Juicy Couture Malibu entry
+- `738-JUI` -> Juicy Couture / Viva la Juicy — ID 4410 — MISSING_FROM_CORPUS — Shobi residual VIVA LA JUICY under Juicy Couture code; exact original 2008 entry
 
 ## Identified but not forced
 
