@@ -36,6 +36,15 @@ APPROVED={
  '1201-LBI':('3002','Laura Biagiotti','Venezia Uomo','two local historical sources agree; exact distinctive Venezia Uomo identity'),
  '1236-PAL':('1695','Paloma Picasso','Minotaure','two local historical sources agree; exact distinctive Minotaure identity'),
  '1254-RCAV':('848','Roberto Cavalli','Just Cavalli Him','two local historical sources agree; JUST HIM plus explicit ROBERTO CAVALLI label'),
+ '118-HAM':('27808','Hamidi Oud','Rehan','two local historical sources agree; explicit REHAN - HAMIDI OUD identity'),
+ '171-DUP':('21459','Dupont','Souvenirs de Malles Oud Oriental','two local historical sources agree; exact distinctive Oud Oriental product title'),
+ '172-SHALM':('47982','Shalimar','Moroccan Musk','two local historical sources agree; exact distinctive Moroccan Musk title'),
+ '1743-LBI':('1185','Laura Biagiotti','Sotto Voce','two local historical sources agree; exact distinctive Sotto Voce identity'),
+ '1756-LBI':('628','Laura Biagiotti','Roma','two local historical sources agree; explicit ROMA - LAURA BIAGIOTTI identity'),
+ '1784-ESC':('64643','Escada','Summer Festival','two local historical sources agree; exact Summer Festival Eau de Toilette identity'),
+ '1896-ESC':('70279','Escada','Cherry in Japan','two local historical sources agree; exact distinctive Cherry in Japan identity'),
+ '1899-ZARK':('60665','Zarkoperfume','The Muse','two local historical sources agree; exact distinctive The Muse identity'),
+ '1926-KOS':('53742','Kerosene','Unknown Pleasures No 4 Apres l Amour','two local historical sources agree on distinctive No. 4 Apres l Amour identity'),
 }
 def walk(o):
  if isinstance(o,list):
