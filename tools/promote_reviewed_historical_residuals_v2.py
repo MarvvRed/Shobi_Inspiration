@@ -45,6 +45,19 @@ APPROVED={
  '1896-ESC':('70279','Escada','Cherry in Japan','two local historical sources agree; exact distinctive Cherry in Japan identity'),
  '1899-ZARK':('60665','Zarkoperfume','The Muse','two local historical sources agree; exact distinctive The Muse identity'),
  '1926-KOS':('53742','Kerosene','Unknown Pleasures No 4 Apres l Amour','two local historical sources agree on distinctive No. 4 Apres l Amour identity'),
+ '133-MICA':('14409','M. Micallef','Ylang in Gold','Shobi-first: official Shobi code page identifies YLANG IN GOLD - M.MICALLEF; exact Fragrantica base entry, not Nectar flanker'),
+ '166-AZ':('40007',"The Perfumer's Story by Azzi",'Sequoia Wood','Shobi-first: Shobi code and description identify Sequoia Wood by The Perfumer Story by Azzi; exact Fragrantica entry'),
+ '184-YAS':('28237','Yas Perfumes','Huboob Yas','Shobi-first: HUBOOB with YAS code identifies Yas Perfumes Huboob; exact Fragrantica Yas entry, not Junaid Huboob'),
+ '605-ESC':('53054','Escada','Miami Blossom','Shobi-first: official Shobi page identifies MIAMI BLOSSOM - ESCADA; exact Fragrantica 2019 EDT entry'),
+ '606-ESC':('1365','Escada','Escada Margaretha Ley','Shobi-first: official Shobi page identifies MARGARETHA LEY (CLASSIC) - ESCADA; exact 1990 Fragrantica entry'),
+ '608-ESC':('1887','Escada','Escada Moon Sparkle','Shobi-first: official Shobi code page and notes identify women Moon Sparkle; exact 2007 women entry, not pour Homme'),
+ '639-FEN':('200','Fendi','Fendi','Shobi-first: official Shobi page identifies FENDI Woman; exact original 1985 women Fendi entry'),
+ '640-FEN':('18706','Fendi',"L'Acquarossa",'Shobi-first: Shobi label is L ACQUA ROSSA without EDT/Elixir qualifier; exact base 2013 EDP entry'),
+ '673-GRS':('1061','Gres','Cabotine','Shobi-first: official Shobi page identifies CABOTIN - GRES; exact original 1990 Cabotine entry, not later flankers'),
+ '695-GUE':('26415','Guess','Guess Dare','Shobi-first: official Shobi page identifies DARE - GUESS; exact 2014 base Dare, not 2015 Limited Edition'),
+ '696-GLA':('2068','Guy Laroche','Fidji Eau de Toilette','Shobi-first: official Shobi page explicitly identifies FIDJI EAU DE TOILETTE - GUY LAROCHE; exact EDT entry'),
+ '727-JEN':('29758','Jennifer Lopez','JLuxe','Shobi-first: official Shobi page identifies JLUXE - JENNIFER LOPEZ; exact Fragrantica entry'),
+ '728-JES':('719','Jesus Del Pozo','In Black','Shobi-first: Shobi code/identity resolves to Jesus Del Pozo In Black; exact Fragrantica entry, rejecting wrong-brand Byblos exact-name candidate'),
 }
 def walk(o):
  if isinstance(o,list):
