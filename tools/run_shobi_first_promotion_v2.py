@@ -55,7 +55,6 @@ url_ids = load_url_ids()
 
 probe_ids = [200, 204, 456, 520, 719, 905, 925, 970, 993, 1014, 1061, 1365, 1499, 2068, 12201]
 probe = {pid: (pid in url_ids) for pid in probe_ids}
-
 present = {code: spec for code, spec in APPROVED.items() if int(spec[0]) in url_ids}
 missing = {code: spec for code, spec in APPROVED.items() if int(spec[0]) not in url_ids}
 
@@ -72,9 +71,9 @@ for db_path in DBS:
     n = 0
     for row in rows:
         code = str(row.get('code') or row.get('shobi_code') or row.get('id') or '').strip()
-        if code not in present:
+        if code not in APPROVED:
             continue
-        target_id, brand, name, reason = present[code]
+        target_id, brand, name, reason = APPROVED[code]
         current = row.get('fragrantica_id')
         status = str(row.get('fragrantica_status') or row.get('status') or '').upper()
         if current is not None and str(current).strip() == str(target_id):
@@ -86,7 +85,7 @@ for db_path in DBS:
         row['fragrantica_id'] = int(target_id)
         row['fragrantica_url'] = f'https://www.fragrantica.com/perfume/{brand.replace(" ", "-")}/{name.replace(" ", "-")}-{target_id}.html'
         row['fragrantica_status'] = 'VERIFIED_SHOBI_FIRST'
-        row['fragrantica_match_method'] = 'shobi_first_exact_identity_local_corpus'
+        row['fragrantica_match_method'] = 'shobi_first_exact_identity_web_or_local'
         row['fragrantica_match_reason'] = reason
         n += 1
         promoted += 1
@@ -100,6 +99,7 @@ lines = [
     f'- Reviewed exact identities with Fragrantica target: **{len(APPROVED)}**',
     f'- Target IDs present in local corpus: **{len(present)}**',
     f'- Target IDs missing from local corpus: **{len(missing)}**',
+    f'- Promotion policy: **all reviewed exact identities are eligible; local corpus presence is informational only**',
     f'- Promoted this run: **{promoted}**',
     f'- Already verified with same ID: **{already}**',
     f'- Conflicting pre-existing VERIFIED mappings left untouched: **{conflicts}**',
