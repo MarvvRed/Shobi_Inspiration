@@ -1,0 +1,1451 @@
+{
+  "rule": "Identity audit only; no database writes. Social-card filename must end in exact Fragrantica ID.",
+  "targets": {
+    "4": {
+      "raw": [
+        {
+          "page": 2,
+          "fragranticaId": 4,
+          "code": "670-GIV",
+          "card": "fragrantica-scraper-archive/social-cards/images/746_670-GIV_4.jpeg",
+          "mainNotes": [
+            "Nutmeg 4",
+            "ain Vanilla ij",
+            "an Tuberose",
+            "Gardenia",
+            "YE ic Jasmine",
+            "Amber"
+          ],
+          "slots": [
+            {
+              "slot": 1,
+              "name": "Nutmeg 4",
+              "ocrConfidence": 93.7
+            },
+            {
+              "slot": 2,
+              "name": "ain Vanilla ij",
+              "ocrConfidence": 52.0
+            },
+            {
+              "slot": 3,
+              "name": "an Tuberose",
+              "ocrConfidence": 82.9
+            },
+            {
+              "slot": 4,
+              "name": "Gardenia",
+              "ocrConfidence": 96.8
+            },
+            {
+              "slot": 5,
+              "name": "YE ic Jasmine",
+              "ocrConfidence": 49.2
+            },
+            {
+              "slot": 6,
+              "name": "Amber",
+              "ocrConfidence": 96.0
+            }
+          ],
+          "ocrConfidence": 78.4
+        },
+        {
+          "page": 3,
+          "fragranticaId": 9,
+          "code": "698-HER",
+          "card": "fragrantica-scraper-archive/social-cards/images/767_698-HER_9.jpeg",
+          "mainNotes": [
+            "Orange Pa",
+            "EF Fir",
+            "Amber",
+            "Cedar",
+            "EF Pepper",
+            "Elemi"
+          ],
+          "slots": [
+            {
+              "slot": 1,
+              "name": "Orange Pa",
+              "ocrConfidence": 55.8
+            },
+            {
+              "slot": 2,
+              "name": "EF Fir",
+              "ocrConfidence": 83.8
+            },
+            {
+              "slot": 3,
+              "name": "Amber",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 4,
+              "name": "Cedar",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 5,
+              "name": "EF Pepper",
+              "ocrConfidence": 59.2
+            },
+            {
+              "slot": 6,
+              "name": "Elemi",
+              "ocrConfidence": 80.9
+            }
+          ],
+          "ocrConfidence": 78.8
+        },
+        {
+          "page": 1989,
+          "fragranticaId": 84094,
+          "code": "2211-YZLO",
+          "card": "fragrantica-scraper-archive/social-cards/images/3794_2211-YZLO_84094.jpeg",
+          "mainNotes": [
+            "Orange Blossom nad",
+            "Bergamot",
+            "Ambroftix™",
+            "Patchoull"
+          ],
+          "slots": [
+            {
+              "slot": 1,
+              "name": "Orange Blossom nad",
+              "ocrConfidence": 75.8
+            },
+            {
+              "slot": 2,
+              "name": "Bergamot",
+              "ocrConfidence": 96.3
+            },
+            {
+              "slot": 3,
+              "name": "Ambroftix™",
+              "ocrConfidence": 25.8
+            },
+            {
+              "slot": 4,
+              "name": "Patchoull",
+              "ocrConfidence": 67.6
+            }
+          ],
+          "ocrConfidence": 66.4
+        }
+      ],
+      "validated": [
+        {
+          "code": "670-GIV",
+          "fragranticaId": 4,
+          "card": "fragrantica-scraper-archive/social-cards/images/746_670-GIV_4.jpeg",
+          "validated": true,
+          "mainNotes": [
+            "Nutmeg",
+            "Vanilla",
+            "Tuberose",
+            "Gardenia",
+            "Jasmine",
+            "Amber"
+          ],
+          "rawSlots": [
+            {
+              "slot": 1,
+              "name": "Nutmeg 4",
+              "ocrConfidence": 93.7
+            },
+            {
+              "slot": 2,
+              "name": "ain Vanilla ij",
+              "ocrConfidence": 52.0
+            },
+            {
+              "slot": 3,
+              "name": "an Tuberose",
+              "ocrConfidence": 82.9
+            },
+            {
+              "slot": 4,
+              "name": "Gardenia",
+              "ocrConfidence": 96.8
+            },
+            {
+              "slot": 5,
+              "name": "YE ic Jasmine",
+              "ocrConfidence": 49.2
+            },
+            {
+              "slot": 6,
+              "name": "Amber",
+              "ocrConfidence": 96.0
+            }
+          ],
+          "validatedSlots": [
+            {
+              "slot": 1,
+              "name": "Nutmeg",
+              "raw": "Nutmeg 4",
+              "matchScore": 0.97,
+              "margin": 0.437,
+              "ocrConfidence": 93.7
+            },
+            {
+              "slot": 2,
+              "name": "Vanilla",
+              "raw": "ain Vanilla ij",
+              "matchScore": 0.93,
+              "margin": 0.171,
+              "ocrConfidence": 52.0
+            },
+            {
+              "slot": 3,
+              "name": "Tuberose",
+              "raw": "an Tuberose",
+              "matchScore": 0.97,
+              "margin": 0.04,
+              "ocrConfidence": 82.9
+            },
+            {
+              "slot": 4,
+              "name": "Gardenia",
+              "raw": "Gardenia",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.8
+            },
+            {
+              "slot": 5,
+              "name": "Jasmine",
+              "raw": "YE ic Jasmine",
+              "matchScore": 0.97,
+              "margin": 0.22,
+              "ocrConfidence": 49.2
+            },
+            {
+              "slot": 6,
+              "name": "Amber",
+              "raw": "Amber",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.0
+            }
+          ],
+          "failures": [],
+          "reasons": []
+        },
+        {
+          "code": "698-HER",
+          "fragranticaId": 9,
+          "card": "fragrantica-scraper-archive/social-cards/images/767_698-HER_9.jpeg",
+          "validated": true,
+          "mainNotes": [
+            "Orange",
+            "Fir",
+            "Amber",
+            "Cedar",
+            "Pepper",
+            "Elemi"
+          ],
+          "rawSlots": [
+            {
+              "slot": 1,
+              "name": "Orange Pa",
+              "ocrConfidence": 55.8
+            },
+            {
+              "slot": 2,
+              "name": "EF Fir",
+              "ocrConfidence": 83.8
+            },
+            {
+              "slot": 3,
+              "name": "Amber",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 4,
+              "name": "Cedar",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 5,
+              "name": "EF Pepper",
+              "ocrConfidence": 59.2
+            },
+            {
+              "slot": 6,
+              "name": "Elemi",
+              "ocrConfidence": 80.9
+            }
+          ],
+          "validatedSlots": [
+            {
+              "slot": 1,
+              "name": "Orange",
+              "raw": "Orange Pa",
+              "matchScore": 0.97,
+              "margin": 0.17,
+              "ocrConfidence": 55.8
+            },
+            {
+              "slot": 2,
+              "name": "Fir",
+              "raw": "EF Fir",
+              "matchScore": 0.97,
+              "margin": 0.243,
+              "ocrConfidence": 83.8
+            },
+            {
+              "slot": 3,
+              "name": "Amber",
+              "raw": "Amber",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 4,
+              "name": "Cedar",
+              "raw": "Cedar",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 5,
+              "name": "Pepper",
+              "raw": "EF Pepper",
+              "matchScore": 0.97,
+              "margin": 0.208,
+              "ocrConfidence": 59.2
+            },
+            {
+              "slot": 6,
+              "name": "Elemi",
+              "raw": "Elemi",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 80.9
+            }
+          ],
+          "failures": [],
+          "reasons": []
+        },
+        {
+          "code": "2211-YZLO",
+          "fragranticaId": 84094,
+          "card": "fragrantica-scraper-archive/social-cards/images/3794_2211-YZLO_84094.jpeg",
+          "validated": true,
+          "mainNotes": [
+            "Orange Blossom",
+            "Bergamot",
+            "Ambrofix™",
+            "Patchouli"
+          ],
+          "rawSlots": [
+            {
+              "slot": 1,
+              "name": "Orange Blossom nad",
+              "ocrConfidence": 75.8
+            },
+            {
+              "slot": 2,
+              "name": "Bergamot",
+              "ocrConfidence": 96.3
+            },
+            {
+              "slot": 3,
+              "name": "Ambroftix™",
+              "ocrConfidence": 25.8
+            },
+            {
+              "slot": 4,
+              "name": "Patchoull",
+              "ocrConfidence": 67.6
+            }
+          ],
+          "validatedSlots": [
+            {
+              "slot": 1,
+              "name": "Orange Blossom",
+              "raw": "Orange Blossom nad",
+              "matchScore": 0.97,
+              "margin": 0.0,
+              "ocrConfidence": 75.8
+            },
+            {
+              "slot": 2,
+              "name": "Bergamot",
+              "raw": "Bergamot",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.3
+            },
+            {
+              "slot": 3,
+              "name": "Ambrofix™",
+              "raw": "Ambroftix™",
+              "matchScore": 0.941,
+              "margin": 0.235,
+              "ocrConfidence": 25.8
+            },
+            {
+              "slot": 4,
+              "name": "Patchouli",
+              "raw": "Patchoull",
+              "matchScore": 0.889,
+              "margin": 0.193,
+              "ocrConfidence": 67.6
+            }
+          ],
+          "failures": [],
+          "reasons": []
+        }
+      ],
+      "database": [
+        {
+          "id": "670-GIV",
+          "code": "670-GIV",
+          "prestashopProductId": "",
+          "reference": "",
+          "shobiUrl": "",
+          "brand": "Givenchy",
+          "inspiredBy": "ORGANZA",
+          "fragranticaId": "4",
+          "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
+          "image": null,
+          "genderAffinity": "",
+          "seasons": [],
+          "mainAccords": [],
+          "notes": {
+            "top": [],
+            "heart": [],
+            "base": []
+          },
+          "enrichmentStatus": "PENDING",
+          "masterVersion": "shobi-master-v2-2369",
+          "occasions": [],
+          "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+        },
+        {
+          "id": "698-HER",
+          "code": "698-HER",
+          "prestashopProductId": "767",
+          "reference": "",
+          "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/698-her-w",
+          "brand": "Hermes",
+          "inspiredBy": "Eau-des-merveilles-eau-de-toilette",
+          "fragranticaId": "9",
+          "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
+          "image": null,
+          "genderAffinity": "",
+          "seasons": [],
+          "mainAccords": [],
+          "notes": {
+            "top": [],
+            "heart": [],
+            "base": []
+          },
+          "enrichmentStatus": "PENDING",
+          "masterVersion": "shobi-master-v2-2369",
+          "occasions": [],
+          "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+        },
+        {
+          "id": "2211-YZLO",
+          "code": "2211-YZLO",
+          "prestashopProductId": "3794",
+          "reference": "",
+          "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/2211-yzlo-m",
+          "brand": "Yves Saint Laurent",
+          "inspiredBy": "Myslf-eau-de-",
+          "fragranticaId": "84094",
+          "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
+          "image": null,
+          "genderAffinity": "",
+          "seasons": [],
+          "mainAccords": [],
+          "notes": {
+            "top": [],
+            "heart": [],
+            "base": []
+          },
+          "enrichmentStatus": "PENDING",
+          "masterVersion": "shobi-master-v2-2369",
+          "occasions": [],
+          "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+        }
+      ],
+      "archiveFiles": [
+        "fragrantica-scraper-archive/social-cards/images/746_670-GIV_4.jpeg"
+      ],
+      "archiveBasenames": [
+        "746_670-GIV_4.jpeg"
+      ],
+      "exactSuffixOk": true
+    },
+    "9": {
+      "raw": [
+        {
+          "page": 2,
+          "fragranticaId": 4,
+          "code": "670-GIV",
+          "card": "fragrantica-scraper-archive/social-cards/images/746_670-GIV_4.jpeg",
+          "mainNotes": [
+            "Nutmeg 4",
+            "ain Vanilla ij",
+            "an Tuberose",
+            "Gardenia",
+            "YE ic Jasmine",
+            "Amber"
+          ],
+          "slots": [
+            {
+              "slot": 1,
+              "name": "Nutmeg 4",
+              "ocrConfidence": 93.7
+            },
+            {
+              "slot": 2,
+              "name": "ain Vanilla ij",
+              "ocrConfidence": 52.0
+            },
+            {
+              "slot": 3,
+              "name": "an Tuberose",
+              "ocrConfidence": 82.9
+            },
+            {
+              "slot": 4,
+              "name": "Gardenia",
+              "ocrConfidence": 96.8
+            },
+            {
+              "slot": 5,
+              "name": "YE ic Jasmine",
+              "ocrConfidence": 49.2
+            },
+            {
+              "slot": 6,
+              "name": "Amber",
+              "ocrConfidence": 96.0
+            }
+          ],
+          "ocrConfidence": 78.4
+        },
+        {
+          "page": 3,
+          "fragranticaId": 9,
+          "code": "698-HER",
+          "card": "fragrantica-scraper-archive/social-cards/images/767_698-HER_9.jpeg",
+          "mainNotes": [
+            "Orange Pa",
+            "EF Fir",
+            "Amber",
+            "Cedar",
+            "EF Pepper",
+            "Elemi"
+          ],
+          "slots": [
+            {
+              "slot": 1,
+              "name": "Orange Pa",
+              "ocrConfidence": 55.8
+            },
+            {
+              "slot": 2,
+              "name": "EF Fir",
+              "ocrConfidence": 83.8
+            },
+            {
+              "slot": 3,
+              "name": "Amber",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 4,
+              "name": "Cedar",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 5,
+              "name": "EF Pepper",
+              "ocrConfidence": 59.2
+            },
+            {
+              "slot": 6,
+              "name": "Elemi",
+              "ocrConfidence": 80.9
+            }
+          ],
+          "ocrConfidence": 78.8
+        },
+        {
+          "page": 1989,
+          "fragranticaId": 84094,
+          "code": "2211-YZLO",
+          "card": "fragrantica-scraper-archive/social-cards/images/3794_2211-YZLO_84094.jpeg",
+          "mainNotes": [
+            "Orange Blossom nad",
+            "Bergamot",
+            "Ambroftix™",
+            "Patchoull"
+          ],
+          "slots": [
+            {
+              "slot": 1,
+              "name": "Orange Blossom nad",
+              "ocrConfidence": 75.8
+            },
+            {
+              "slot": 2,
+              "name": "Bergamot",
+              "ocrConfidence": 96.3
+            },
+            {
+              "slot": 3,
+              "name": "Ambroftix™",
+              "ocrConfidence": 25.8
+            },
+            {
+              "slot": 4,
+              "name": "Patchoull",
+              "ocrConfidence": 67.6
+            }
+          ],
+          "ocrConfidence": 66.4
+        }
+      ],
+      "validated": [
+        {
+          "code": "670-GIV",
+          "fragranticaId": 4,
+          "card": "fragrantica-scraper-archive/social-cards/images/746_670-GIV_4.jpeg",
+          "validated": true,
+          "mainNotes": [
+            "Nutmeg",
+            "Vanilla",
+            "Tuberose",
+            "Gardenia",
+            "Jasmine",
+            "Amber"
+          ],
+          "rawSlots": [
+            {
+              "slot": 1,
+              "name": "Nutmeg 4",
+              "ocrConfidence": 93.7
+            },
+            {
+              "slot": 2,
+              "name": "ain Vanilla ij",
+              "ocrConfidence": 52.0
+            },
+            {
+              "slot": 3,
+              "name": "an Tuberose",
+              "ocrConfidence": 82.9
+            },
+            {
+              "slot": 4,
+              "name": "Gardenia",
+              "ocrConfidence": 96.8
+            },
+            {
+              "slot": 5,
+              "name": "YE ic Jasmine",
+              "ocrConfidence": 49.2
+            },
+            {
+              "slot": 6,
+              "name": "Amber",
+              "ocrConfidence": 96.0
+            }
+          ],
+          "validatedSlots": [
+            {
+              "slot": 1,
+              "name": "Nutmeg",
+              "raw": "Nutmeg 4",
+              "matchScore": 0.97,
+              "margin": 0.437,
+              "ocrConfidence": 93.7
+            },
+            {
+              "slot": 2,
+              "name": "Vanilla",
+              "raw": "ain Vanilla ij",
+              "matchScore": 0.93,
+              "margin": 0.171,
+              "ocrConfidence": 52.0
+            },
+            {
+              "slot": 3,
+              "name": "Tuberose",
+              "raw": "an Tuberose",
+              "matchScore": 0.97,
+              "margin": 0.04,
+              "ocrConfidence": 82.9
+            },
+            {
+              "slot": 4,
+              "name": "Gardenia",
+              "raw": "Gardenia",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.8
+            },
+            {
+              "slot": 5,
+              "name": "Jasmine",
+              "raw": "YE ic Jasmine",
+              "matchScore": 0.97,
+              "margin": 0.22,
+              "ocrConfidence": 49.2
+            },
+            {
+              "slot": 6,
+              "name": "Amber",
+              "raw": "Amber",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.0
+            }
+          ],
+          "failures": [],
+          "reasons": []
+        },
+        {
+          "code": "698-HER",
+          "fragranticaId": 9,
+          "card": "fragrantica-scraper-archive/social-cards/images/767_698-HER_9.jpeg",
+          "validated": true,
+          "mainNotes": [
+            "Orange",
+            "Fir",
+            "Amber",
+            "Cedar",
+            "Pepper",
+            "Elemi"
+          ],
+          "rawSlots": [
+            {
+              "slot": 1,
+              "name": "Orange Pa",
+              "ocrConfidence": 55.8
+            },
+            {
+              "slot": 2,
+              "name": "EF Fir",
+              "ocrConfidence": 83.8
+            },
+            {
+              "slot": 3,
+              "name": "Amber",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 4,
+              "name": "Cedar",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 5,
+              "name": "EF Pepper",
+              "ocrConfidence": 59.2
+            },
+            {
+              "slot": 6,
+              "name": "Elemi",
+              "ocrConfidence": 80.9
+            }
+          ],
+          "validatedSlots": [
+            {
+              "slot": 1,
+              "name": "Orange",
+              "raw": "Orange Pa",
+              "matchScore": 0.97,
+              "margin": 0.17,
+              "ocrConfidence": 55.8
+            },
+            {
+              "slot": 2,
+              "name": "Fir",
+              "raw": "EF Fir",
+              "matchScore": 0.97,
+              "margin": 0.243,
+              "ocrConfidence": 83.8
+            },
+            {
+              "slot": 3,
+              "name": "Amber",
+              "raw": "Amber",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 4,
+              "name": "Cedar",
+              "raw": "Cedar",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 5,
+              "name": "Pepper",
+              "raw": "EF Pepper",
+              "matchScore": 0.97,
+              "margin": 0.208,
+              "ocrConfidence": 59.2
+            },
+            {
+              "slot": 6,
+              "name": "Elemi",
+              "raw": "Elemi",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 80.9
+            }
+          ],
+          "failures": [],
+          "reasons": []
+        },
+        {
+          "code": "2211-YZLO",
+          "fragranticaId": 84094,
+          "card": "fragrantica-scraper-archive/social-cards/images/3794_2211-YZLO_84094.jpeg",
+          "validated": true,
+          "mainNotes": [
+            "Orange Blossom",
+            "Bergamot",
+            "Ambrofix™",
+            "Patchouli"
+          ],
+          "rawSlots": [
+            {
+              "slot": 1,
+              "name": "Orange Blossom nad",
+              "ocrConfidence": 75.8
+            },
+            {
+              "slot": 2,
+              "name": "Bergamot",
+              "ocrConfidence": 96.3
+            },
+            {
+              "slot": 3,
+              "name": "Ambroftix™",
+              "ocrConfidence": 25.8
+            },
+            {
+              "slot": 4,
+              "name": "Patchoull",
+              "ocrConfidence": 67.6
+            }
+          ],
+          "validatedSlots": [
+            {
+              "slot": 1,
+              "name": "Orange Blossom",
+              "raw": "Orange Blossom nad",
+              "matchScore": 0.97,
+              "margin": 0.0,
+              "ocrConfidence": 75.8
+            },
+            {
+              "slot": 2,
+              "name": "Bergamot",
+              "raw": "Bergamot",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.3
+            },
+            {
+              "slot": 3,
+              "name": "Ambrofix™",
+              "raw": "Ambroftix™",
+              "matchScore": 0.941,
+              "margin": 0.235,
+              "ocrConfidence": 25.8
+            },
+            {
+              "slot": 4,
+              "name": "Patchouli",
+              "raw": "Patchoull",
+              "matchScore": 0.889,
+              "margin": 0.193,
+              "ocrConfidence": 67.6
+            }
+          ],
+          "failures": [],
+          "reasons": []
+        }
+      ],
+      "database": [
+        {
+          "id": "670-GIV",
+          "code": "670-GIV",
+          "prestashopProductId": "",
+          "reference": "",
+          "shobiUrl": "",
+          "brand": "Givenchy",
+          "inspiredBy": "ORGANZA",
+          "fragranticaId": "4",
+          "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
+          "image": null,
+          "genderAffinity": "",
+          "seasons": [],
+          "mainAccords": [],
+          "notes": {
+            "top": [],
+            "heart": [],
+            "base": []
+          },
+          "enrichmentStatus": "PENDING",
+          "masterVersion": "shobi-master-v2-2369",
+          "occasions": [],
+          "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+        },
+        {
+          "id": "698-HER",
+          "code": "698-HER",
+          "prestashopProductId": "767",
+          "reference": "",
+          "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/698-her-w",
+          "brand": "Hermes",
+          "inspiredBy": "Eau-des-merveilles-eau-de-toilette",
+          "fragranticaId": "9",
+          "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
+          "image": null,
+          "genderAffinity": "",
+          "seasons": [],
+          "mainAccords": [],
+          "notes": {
+            "top": [],
+            "heart": [],
+            "base": []
+          },
+          "enrichmentStatus": "PENDING",
+          "masterVersion": "shobi-master-v2-2369",
+          "occasions": [],
+          "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+        },
+        {
+          "id": "2211-YZLO",
+          "code": "2211-YZLO",
+          "prestashopProductId": "3794",
+          "reference": "",
+          "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/2211-yzlo-m",
+          "brand": "Yves Saint Laurent",
+          "inspiredBy": "Myslf-eau-de-",
+          "fragranticaId": "84094",
+          "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
+          "image": null,
+          "genderAffinity": "",
+          "seasons": [],
+          "mainAccords": [],
+          "notes": {
+            "top": [],
+            "heart": [],
+            "base": []
+          },
+          "enrichmentStatus": "PENDING",
+          "masterVersion": "shobi-master-v2-2369",
+          "occasions": [],
+          "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+        }
+      ],
+      "archiveFiles": [
+        "fragrantica-scraper-archive/social-cards/images/767_698-HER_9.jpeg"
+      ],
+      "archiveBasenames": [
+        "767_698-HER_9.jpeg"
+      ],
+      "exactSuffixOk": true
+    },
+    "84094": {
+      "raw": [
+        {
+          "page": 2,
+          "fragranticaId": 4,
+          "code": "670-GIV",
+          "card": "fragrantica-scraper-archive/social-cards/images/746_670-GIV_4.jpeg",
+          "mainNotes": [
+            "Nutmeg 4",
+            "ain Vanilla ij",
+            "an Tuberose",
+            "Gardenia",
+            "YE ic Jasmine",
+            "Amber"
+          ],
+          "slots": [
+            {
+              "slot": 1,
+              "name": "Nutmeg 4",
+              "ocrConfidence": 93.7
+            },
+            {
+              "slot": 2,
+              "name": "ain Vanilla ij",
+              "ocrConfidence": 52.0
+            },
+            {
+              "slot": 3,
+              "name": "an Tuberose",
+              "ocrConfidence": 82.9
+            },
+            {
+              "slot": 4,
+              "name": "Gardenia",
+              "ocrConfidence": 96.8
+            },
+            {
+              "slot": 5,
+              "name": "YE ic Jasmine",
+              "ocrConfidence": 49.2
+            },
+            {
+              "slot": 6,
+              "name": "Amber",
+              "ocrConfidence": 96.0
+            }
+          ],
+          "ocrConfidence": 78.4
+        },
+        {
+          "page": 3,
+          "fragranticaId": 9,
+          "code": "698-HER",
+          "card": "fragrantica-scraper-archive/social-cards/images/767_698-HER_9.jpeg",
+          "mainNotes": [
+            "Orange Pa",
+            "EF Fir",
+            "Amber",
+            "Cedar",
+            "EF Pepper",
+            "Elemi"
+          ],
+          "slots": [
+            {
+              "slot": 1,
+              "name": "Orange Pa",
+              "ocrConfidence": 55.8
+            },
+            {
+              "slot": 2,
+              "name": "EF Fir",
+              "ocrConfidence": 83.8
+            },
+            {
+              "slot": 3,
+              "name": "Amber",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 4,
+              "name": "Cedar",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 5,
+              "name": "EF Pepper",
+              "ocrConfidence": 59.2
+            },
+            {
+              "slot": 6,
+              "name": "Elemi",
+              "ocrConfidence": 80.9
+            }
+          ],
+          "ocrConfidence": 78.8
+        },
+        {
+          "page": 1989,
+          "fragranticaId": 84094,
+          "code": "2211-YZLO",
+          "card": "fragrantica-scraper-archive/social-cards/images/3794_2211-YZLO_84094.jpeg",
+          "mainNotes": [
+            "Orange Blossom nad",
+            "Bergamot",
+            "Ambroftix™",
+            "Patchoull"
+          ],
+          "slots": [
+            {
+              "slot": 1,
+              "name": "Orange Blossom nad",
+              "ocrConfidence": 75.8
+            },
+            {
+              "slot": 2,
+              "name": "Bergamot",
+              "ocrConfidence": 96.3
+            },
+            {
+              "slot": 3,
+              "name": "Ambroftix™",
+              "ocrConfidence": 25.8
+            },
+            {
+              "slot": 4,
+              "name": "Patchoull",
+              "ocrConfidence": 67.6
+            }
+          ],
+          "ocrConfidence": 66.4
+        }
+      ],
+      "validated": [
+        {
+          "code": "670-GIV",
+          "fragranticaId": 4,
+          "card": "fragrantica-scraper-archive/social-cards/images/746_670-GIV_4.jpeg",
+          "validated": true,
+          "mainNotes": [
+            "Nutmeg",
+            "Vanilla",
+            "Tuberose",
+            "Gardenia",
+            "Jasmine",
+            "Amber"
+          ],
+          "rawSlots": [
+            {
+              "slot": 1,
+              "name": "Nutmeg 4",
+              "ocrConfidence": 93.7
+            },
+            {
+              "slot": 2,
+              "name": "ain Vanilla ij",
+              "ocrConfidence": 52.0
+            },
+            {
+              "slot": 3,
+              "name": "an Tuberose",
+              "ocrConfidence": 82.9
+            },
+            {
+              "slot": 4,
+              "name": "Gardenia",
+              "ocrConfidence": 96.8
+            },
+            {
+              "slot": 5,
+              "name": "YE ic Jasmine",
+              "ocrConfidence": 49.2
+            },
+            {
+              "slot": 6,
+              "name": "Amber",
+              "ocrConfidence": 96.0
+            }
+          ],
+          "validatedSlots": [
+            {
+              "slot": 1,
+              "name": "Nutmeg",
+              "raw": "Nutmeg 4",
+              "matchScore": 0.97,
+              "margin": 0.437,
+              "ocrConfidence": 93.7
+            },
+            {
+              "slot": 2,
+              "name": "Vanilla",
+              "raw": "ain Vanilla ij",
+              "matchScore": 0.93,
+              "margin": 0.171,
+              "ocrConfidence": 52.0
+            },
+            {
+              "slot": 3,
+              "name": "Tuberose",
+              "raw": "an Tuberose",
+              "matchScore": 0.97,
+              "margin": 0.04,
+              "ocrConfidence": 82.9
+            },
+            {
+              "slot": 4,
+              "name": "Gardenia",
+              "raw": "Gardenia",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.8
+            },
+            {
+              "slot": 5,
+              "name": "Jasmine",
+              "raw": "YE ic Jasmine",
+              "matchScore": 0.97,
+              "margin": 0.22,
+              "ocrConfidence": 49.2
+            },
+            {
+              "slot": 6,
+              "name": "Amber",
+              "raw": "Amber",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.0
+            }
+          ],
+          "failures": [],
+          "reasons": []
+        },
+        {
+          "code": "698-HER",
+          "fragranticaId": 9,
+          "card": "fragrantica-scraper-archive/social-cards/images/767_698-HER_9.jpeg",
+          "validated": true,
+          "mainNotes": [
+            "Orange",
+            "Fir",
+            "Amber",
+            "Cedar",
+            "Pepper",
+            "Elemi"
+          ],
+          "rawSlots": [
+            {
+              "slot": 1,
+              "name": "Orange Pa",
+              "ocrConfidence": 55.8
+            },
+            {
+              "slot": 2,
+              "name": "EF Fir",
+              "ocrConfidence": 83.8
+            },
+            {
+              "slot": 3,
+              "name": "Amber",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 4,
+              "name": "Cedar",
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 5,
+              "name": "EF Pepper",
+              "ocrConfidence": 59.2
+            },
+            {
+              "slot": 6,
+              "name": "Elemi",
+              "ocrConfidence": 80.9
+            }
+          ],
+          "validatedSlots": [
+            {
+              "slot": 1,
+              "name": "Orange",
+              "raw": "Orange Pa",
+              "matchScore": 0.97,
+              "margin": 0.17,
+              "ocrConfidence": 55.8
+            },
+            {
+              "slot": 2,
+              "name": "Fir",
+              "raw": "EF Fir",
+              "matchScore": 0.97,
+              "margin": 0.243,
+              "ocrConfidence": 83.8
+            },
+            {
+              "slot": 3,
+              "name": "Amber",
+              "raw": "Amber",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 4,
+              "name": "Cedar",
+              "raw": "Cedar",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.4
+            },
+            {
+              "slot": 5,
+              "name": "Pepper",
+              "raw": "EF Pepper",
+              "matchScore": 0.97,
+              "margin": 0.208,
+              "ocrConfidence": 59.2
+            },
+            {
+              "slot": 6,
+              "name": "Elemi",
+              "raw": "Elemi",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 80.9
+            }
+          ],
+          "failures": [],
+          "reasons": []
+        },
+        {
+          "code": "2211-YZLO",
+          "fragranticaId": 84094,
+          "card": "fragrantica-scraper-archive/social-cards/images/3794_2211-YZLO_84094.jpeg",
+          "validated": true,
+          "mainNotes": [
+            "Orange Blossom",
+            "Bergamot",
+            "Ambrofix™",
+            "Patchouli"
+          ],
+          "rawSlots": [
+            {
+              "slot": 1,
+              "name": "Orange Blossom nad",
+              "ocrConfidence": 75.8
+            },
+            {
+              "slot": 2,
+              "name": "Bergamot",
+              "ocrConfidence": 96.3
+            },
+            {
+              "slot": 3,
+              "name": "Ambroftix™",
+              "ocrConfidence": 25.8
+            },
+            {
+              "slot": 4,
+              "name": "Patchoull",
+              "ocrConfidence": 67.6
+            }
+          ],
+          "validatedSlots": [
+            {
+              "slot": 1,
+              "name": "Orange Blossom",
+              "raw": "Orange Blossom nad",
+              "matchScore": 0.97,
+              "margin": 0.0,
+              "ocrConfidence": 75.8
+            },
+            {
+              "slot": 2,
+              "name": "Bergamot",
+              "raw": "Bergamot",
+              "matchScore": 1,
+              "margin": 1,
+              "ocrConfidence": 96.3
+            },
+            {
+              "slot": 3,
+              "name": "Ambrofix™",
+              "raw": "Ambroftix™",
+              "matchScore": 0.941,
+              "margin": 0.235,
+              "ocrConfidence": 25.8
+            },
+            {
+              "slot": 4,
+              "name": "Patchouli",
+              "raw": "Patchoull",
+              "matchScore": 0.889,
+              "margin": 0.193,
+              "ocrConfidence": 67.6
+            }
+          ],
+          "failures": [],
+          "reasons": []
+        }
+      ],
+      "database": [
+        {
+          "id": "670-GIV",
+          "code": "670-GIV",
+          "prestashopProductId": "",
+          "reference": "",
+          "shobiUrl": "",
+          "brand": "Givenchy",
+          "inspiredBy": "ORGANZA",
+          "fragranticaId": "4",
+          "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
+          "image": null,
+          "genderAffinity": "",
+          "seasons": [],
+          "mainAccords": [],
+          "notes": {
+            "top": [],
+            "heart": [],
+            "base": []
+          },
+          "enrichmentStatus": "PENDING",
+          "masterVersion": "shobi-master-v2-2369",
+          "occasions": [],
+          "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+        },
+        {
+          "id": "698-HER",
+          "code": "698-HER",
+          "prestashopProductId": "767",
+          "reference": "",
+          "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/698-her-w",
+          "brand": "Hermes",
+          "inspiredBy": "Eau-des-merveilles-eau-de-toilette",
+          "fragranticaId": "9",
+          "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
+          "image": null,
+          "genderAffinity": "",
+          "seasons": [],
+          "mainAccords": [],
+          "notes": {
+            "top": [],
+            "heart": [],
+            "base": []
+          },
+          "enrichmentStatus": "PENDING",
+          "masterVersion": "shobi-master-v2-2369",
+          "occasions": [],
+          "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+        },
+        {
+          "id": "2211-YZLO",
+          "code": "2211-YZLO",
+          "prestashopProductId": "3794",
+          "reference": "",
+          "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/2211-yzlo-m",
+          "brand": "Yves Saint Laurent",
+          "inspiredBy": "Myslf-eau-de-",
+          "fragranticaId": "84094",
+          "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
+          "image": null,
+          "genderAffinity": "",
+          "seasons": [],
+          "mainAccords": [],
+          "notes": {
+            "top": [],
+            "heart": [],
+            "base": []
+          },
+          "enrichmentStatus": "PENDING",
+          "masterVersion": "shobi-master-v2-2369",
+          "occasions": [],
+          "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv"
+        }
+      ],
+      "archiveFiles": [
+        "fragrantica-scraper-archive/social-cards/images/3794_2211-YZLO_84094.jpeg"
+      ],
+      "archiveBasenames": [
+        "3794_2211-YZLO_84094.jpeg"
+      ],
+      "exactSuffixOk": true
+    }
+  }
+}
