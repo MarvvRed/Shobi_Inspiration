@@ -735,8 +735,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/130-lel-n",
     "brand": "Unknown Brand",
     "inspiredBy": "SANTAL 26 - LE LABO",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -749,9 +749,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "home fragrance/home oil identity; do not substitute Santal 33"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Le Labo', 'Santal 26', 'home fragrance/home oil identity; do not substitute Santal 33')",
+    "fragrantica_id": ""
   },
   {
     "id": "131-LEL",
@@ -2441,8 +2442,8 @@
     "shobiUrl": "",
     "brand": "Unknown Brand",
     "inspiredBy": "ERNESTO CHE GUEVARA",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -2455,9 +2456,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "home scent/candle identity; do not substitute a different perfume"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Cire Trudon', 'Ernesto / Che Guevara', 'home scent/candle identity; do not substitute a different perfume')",
+    "fragrantica_id": ""
   },
   {
     "id": "201-CLIV",
@@ -2973,8 +2975,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/222-dip-el",
     "brand": "Unknown Brand",
     "inspiredBy": "AMBRE",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -2987,9 +2989,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "home fragrance identity; do not substitute a Diptyque perfume"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Diptyque', 'Ambre', 'home fragrance identity; do not substitute a Diptyque perfume')",
+    "fragrantica_id": ""
   },
   {
     "id": "223-DIP",
@@ -2999,8 +3002,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/223-dip-el",
     "brand": "Unknown Brand",
     "inspiredBy": "BAIES",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -3013,9 +3016,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "candle/home fragrance identity; do not substitute a perfume"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Diptyque', 'Baies', 'candle/home fragrance identity; do not substitute a perfume')",
+    "fragrantica_id": ""
   },
   {
     "id": "224-DIP",
@@ -3098,8 +3102,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/227-dip-el",
     "brand": "Unknown Brand",
     "inspiredBy": "FEU DE BOIS / WOOD FIRE",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -3112,9 +3116,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "candle/home fragrance identity; do not substitute a perfume"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Diptyque', 'Feu de Bois / Wood Fire', 'candle/home fragrance identity; do not substitute a perfume')",
+    "fragrantica_id": ""
   },
   {
     "id": "228-DIP",
@@ -3124,8 +3129,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/228-dip-el",
     "brand": "Unknown Brand",
     "inspiredBy": "FEUILLE DE LAVANDE",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -3138,9 +3143,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "candle/home scent identity; do not substitute Eau de Lavande perfume"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Diptyque', 'Feuille de Lavande', 'candle/home scent identity; do not substitute Eau de Lavande perfume')",
+    "fragrantica_id": ""
   },
   {
     "id": "229-DIP",
@@ -3174,8 +3180,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/230-dip-el",
     "brand": "Unknown Brand",
     "inspiredBy": "OPOPANAX",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -3188,9 +3194,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "room spray/home fragrance identity; do not substitute a Diptyque perfume"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Diptyque', 'Opopanax', 'room spray/home fragrance identity; do not substitute a Diptyque perfume')",
+    "fragrantica_id": ""
   },
   {
     "id": "231-DIP",
@@ -3878,8 +3885,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/258-jom-el",
     "brand": "Unknown Brand",
     "inspiredBy": "GREEN TOMATO LEAF - JO MALONE",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -3892,9 +3899,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "current Jo Malone identity is hand wash/home scent, not a perfume target"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Jo Malone London', 'Green Tomato Leaf', 'current Jo Malone identity is hand wash/home scent, not a perfume target')",
+    "fragrantica_id": ""
   },
   {
     "id": "259-JOM",
@@ -3952,8 +3960,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/261-jom-el",
     "brand": "Unknown Brand",
     "inspiredBy": "INCENSE & EMBERS - JO MALONE",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -3966,9 +3974,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "home candle/home fragrance identity; do not substitute Incense & Cedrat"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Jo Malone London', 'Incense & Embers', 'home candle/home fragrance identity; do not substitute Incense & Cedrat')",
+    "fragrantica_id": ""
   },
   {
     "id": "262-JOM",
@@ -5192,8 +5201,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/amber-cocoon-molton-brown-type",
     "brand": "Unknown Brand",
     "inspiredBy": "amber cocoon-mol",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5206,9 +5215,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "body/home product identity; no safe exact Fragrantica perfume target"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Molton Brown', 'Amber Cocoon', 'body/home product identity; no safe exact Fragrantica perfume target')",
+    "fragrantica_id": ""
   },
   {
     "id": "312-MOL",
@@ -5739,8 +5749,8 @@
     "shobiUrl": "",
     "brand": "Unknown Brand",
     "inspiredBy": "SHIRLEY MAY",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5752,7 +5762,11 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Shirley May', 'Shirley May', 'Shobi explicitly names SHIRLEY MAY - SHIRLEY MAY, but Fragrantica lists the Shirley May brand catalog without a safe exact self-titled target; do not guess another Shirley May fragrance')",
+    "fragrantica_id": ""
   },
   {
     "id": "335-THCO",
@@ -5762,8 +5776,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/335-thco-el",
     "brand": "Unknown Brand",
     "inspiredBy": "CASHMERE BLANC - THE WHITE COMPANY",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5775,7 +5789,11 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('The White Company', 'Cashmere Blanc', 'Shobi identifies CASHMERE BLANC - THE WHITE COMPANY; no safe exact Fragrantica perfume target found, and The White Company fragrance range is primarily home scent/body products')",
+    "fragrantica_id": ""
   },
   {
     "id": "336-THCO",
@@ -5785,8 +5803,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/336-thco-el",
     "brand": "Unknown Brand",
     "inspiredBy": "NARCISSUS NOIR - THE WHITE COMPANY",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5798,7 +5816,11 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('The White Company', 'Narcissus Noir', 'Shobi identifies NARCISSUS NOIR - THE WHITE COMPANY; no safe exact Fragrantica perfume target found, and The White Company fragrance range is primarily home scent/body products')",
+    "fragrantica_id": ""
   },
   {
     "id": "337-TIFF",
@@ -6822,8 +6844,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/clean-cotton-yankee-candles-fragrance",
     "brand": "Unknown Brand",
     "inspiredBy": "CLEAN COTTON - YANKEE CANDLES",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -6836,9 +6858,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "candle/home fragrance identity"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Yankee Candle', 'Clean Cotton', 'candle/home fragrance identity')",
+    "fragrantica_id": ""
   },
   {
     "id": "380-YAN",
@@ -6848,8 +6871,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/fall-festival-yankee-candles-smells",
     "brand": "Unknown Brand",
     "inspiredBy": "FALL FESTIVAL - YANKEE CANDLES",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -6862,9 +6885,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "candle/home fragrance identity"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Yankee Candle', 'Fall Festival', 'candle/home fragrance identity')",
+    "fragrantica_id": ""
   },
   {
     "id": "381-YAN",
@@ -6874,8 +6898,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/fresh-cut-roses-yankee-candles-dupe",
     "brand": "Unknown Brand",
     "inspiredBy": "FRESH CUT ROSES - YANKEE CANDLES",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -6888,9 +6912,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "candle/home fragrance identity"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Yankee Candle', 'Fresh Cut Roses', 'candle/home fragrance identity')",
+    "fragrantica_id": ""
   },
   {
     "id": "382-YAN",
@@ -6900,8 +6925,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/pomegranate-cider-yankee-candles-clones",
     "brand": "Unknown Brand",
     "inspiredBy": "POMEGRANATE CIDER - YANKEE CANDLES",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -6914,9 +6939,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "candle/home fragrance identity"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Yankee Candle', 'Pomegranate Cider', 'candle/home fragrance identity')",
+    "fragrantica_id": ""
   },
   {
     "id": "383-YAN",
@@ -6926,8 +6952,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/wedding-day-yankee-perfume-type",
     "brand": "Unknown Brand",
     "inspiredBy": "WEDDING DAY - YANKEE",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -6940,9 +6966,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "candle/home fragrance identity"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Yankee Candle', 'Wedding Day', 'candle/home fragrance identity')",
+    "fragrantica_id": ""
   },
   {
     "id": "384-YAR",
@@ -7000,8 +7027,8 @@
     "shobiUrl": "",
     "brand": "Unknown Brand",
     "inspiredBy": "CIGAR",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 9351,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -7013,7 +7040,12 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_id": 9351,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Remy-Latour/Cigar-9351.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi residual is CIGAR; Fragrantica exact Remy Latour Cigar 1996 entry ID 9351"
   },
   {
     "id": "390-ACQ",
@@ -11138,8 +11170,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/564-dol-wp",
     "brand": "Unknown Brand",
     "inspiredBy": "SEXY CHOCLATE",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -11152,9 +11184,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "no authentic Dolce & Gabbana fragrance by this name; do not force a false target"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Dolce & Gabbana', 'Sexy Chocolate', 'no authentic Dolce & Gabbana fragrance by this name; do not force a false target')",
+    "fragrantica_id": ""
   },
   {
     "id": "565-DOL",
@@ -12313,8 +12346,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/turquoise-escada-type",
     "brand": "Unknown Brand",
     "inspiredBy": "TURQUOISE - ESCADA",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -12327,9 +12360,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "Shobi distinguishes Turquoise from separate Turquoise Summer; no safe exact perfume target yet"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Escada', 'Turquoise', 'Shobi distinguishes Turquoise from separate Turquoise Summer; no safe exact perfume target yet')",
+    "fragrantica_id": ""
   },
   {
     "id": "613-ESC",
@@ -27827,8 +27861,8 @@
     "shobiUrl": "",
     "brand": "Unknown Brand",
     "inspiredBy": "ROYAL BLUE",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -27841,9 +27875,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "Shobi identity is Royal Blue - Romane; no safe same-brand Fragrantica target found"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Romane', 'Royal Blue', 'Shobi identity is Royal Blue - Romane; no safe same-brand Fragrantica target found')",
+    "fragrantica_id": ""
   },
   {
     "id": "1252-RCAV",
@@ -30427,8 +30462,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/home-sweet-home-yankee-arwmata_xvrou",
     "brand": "Unknown Brand",
     "inspiredBy": "HOME SWEET HOME - YANKEE",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -30441,9 +30476,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "candle/home fragrance identity"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Yankee Candle', 'Home Sweet Home', 'candle/home fragrance identity')",
+    "fragrantica_id": ""
   },
   {
     "id": "1551-VICT",
@@ -33093,8 +33129,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/1748-byr-n",
     "brand": "Unknown Brand",
     "inspiredBy": "Marijuana",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -33107,9 +33143,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "no safe authentic Byredo perfume target"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Byredo', 'Marijuana', 'no safe authentic Byredo perfume target')",
+    "fragrantica_id": ""
   },
   {
     "id": "1749-BLG",
@@ -37718,8 +37755,8 @@
     "shobiUrl": "",
     "brand": "Unknown Brand",
     "inspiredBy": "CELLULAR ENERGIZING",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -37732,9 +37769,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "body spray/body product rather than standard perfume identity"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('La Prairie', 'Cellular Energizing', 'body spray/body product rather than standard perfume identity')",
+    "fragrantica_id": ""
   },
   {
     "id": "1956-JOM",
@@ -40379,8 +40417,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/2085-cliv-ν",
     "brand": "Unknown Brand",
     "inspiredBy": "X NEROLI LIMITED EDITION - CLIVE CHRISTIAN",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_NO_FORCE_SHOBI_FIRST",
+    "fragranticaId": "",
+    "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -40393,9 +40431,10 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_status": "VERIFIED_NO_FORCE_SHOBI_FIRST",
-    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
-    "fragrantica_match_reason": "real product identity but no safe Fragrantica page target found"
+    "fragrantica_status": "RESOLVED_NO_FORCE",
+    "fragrantica_match_method": "shobi_first_no_force",
+    "fragrantica_match_reason": "('Clive Christian', 'X Neroli Limited Edition', 'real product identity but no safe Fragrantica page target found')",
+    "fragrantica_id": ""
   },
   {
     "id": "2086-VICT",

@@ -1,18 +1,18 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **189**
+- Reviewed exact identities with Fragrantica target: **190**
 - Target IDs present in local corpus: **20**
-- Target IDs missing from local corpus: **169**
+- Target IDs missing from local corpus: **170**
 - Promotion policy: **all reviewed exact identities are eligible; local corpus presence is informational only**
-- Promoted this run: **0**
-- No-force rows marked this run: **44**
+- Promoted this run: **2**
 - Already verified with same ID: **346**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
-- Identified but deliberately not forced: **22**
+- Identified but deliberately not forced: **25**
+- NO_FORCE rows marked this run: **50**
 - Probe IDs: **{200: False, 204: False, 456: False, 520: False, 719: False, 905: False, 925: False, 970: False, 993: False, 1014: False, 1061: False, 1365: False, 1499: False, 2068: False, 12201: True}**
-- database_v2_clean.json: **22** rows changed
-- database_complete.json: **22** rows changed
+- database_v2_clean.json: **26** rows changed
+- database_complete.json: **26** rows changed
 
 ## Exact targets
 
@@ -205,6 +205,7 @@
 - `282-JOM` -> Jo Loves / Pomelo — ID 13826 — MISSING_FROM_CORPUS — Shobi labels POMELO - JO MALONE; exact Jo Loves fragrance by Jo Malone, Fragrantica ID 13826
 - `286-JOM` -> Jo Loves / Shards of Cedar & Red Thyme — ID 37578 — MISSING_FROM_CORPUS — Shobi labels SHARDS OF CEDAR & RED THYME - JO MALONE; exact Jo Loves fragrance by Jo Malone, Fragrantica ID 37578
 - `337-TIFF` -> Tiffany / Tiffany & Co Sheer — ID 53062 — MISSING_FROM_CORPUS — Shobi residual explicitly says Tiffany & Co Sheer; exact 2019 Tiffany fragrance, Fragrantica ID 53062
+- `387-` -> Remy Latour / Cigar — ID 9351 — MISSING_FROM_CORPUS — Shobi residual is CIGAR; Fragrantica exact Remy Latour Cigar 1996 entry ID 9351
 
 ## No-force identities
 
@@ -220,6 +221,9 @@
 - `258-JOM` — ('Jo Malone London', 'Green Tomato Leaf', 'current Jo Malone identity is hand wash/home scent, not a perfume target')
 - `261-JOM` — ('Jo Malone London', 'Incense & Embers', 'home candle/home fragrance identity; do not substitute Incense & Cedrat')
 - `311-MOL` — ('Molton Brown', 'Amber Cocoon', 'body/home product identity; no safe exact Fragrantica perfume target')
+- `334-SHI` — ('Shirley May', 'Shirley May', 'Shobi explicitly names SHIRLEY MAY - SHIRLEY MAY, but Fragrantica lists the Shirley May brand catalog without a safe exact self-titled target; do not guess another Shirley May fragrance')
+- `335-THCO` — ('The White Company', 'Cashmere Blanc', 'Shobi identifies CASHMERE BLANC - THE WHITE COMPANY; no safe exact Fragrantica perfume target found, and The White Company fragrance range is primarily home scent/body products')
+- `336-THCO` — ('The White Company', 'Narcissus Noir', 'Shobi identifies NARCISSUS NOIR - THE WHITE COMPANY; no safe exact Fragrantica perfume target found, and The White Company fragrance range is primarily home scent/body products')
 - `379-YAN` — ('Yankee Candle', 'Clean Cotton', 'candle/home fragrance identity')
 - `380-YAN` — ('Yankee Candle', 'Fall Festival', 'candle/home fragrance identity')
 - `381-YAN` — ('Yankee Candle', 'Fresh Cut Roses', 'candle/home fragrance identity')
