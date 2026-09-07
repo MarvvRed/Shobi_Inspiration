@@ -47,6 +47,9 @@ APPROVED_ADDITIONAL = {
     '897-RCAV': ('22194', 'Roberto Cavalli', 'Tiger Oud', 'Duplicate Shobi code variant for the same Tiger Oud identity; same exact Fragrantica target'),
     '900-ROG': ('17583', 'Roger & Gallet', 'Fleur de Figuier', 'Shobi residual says Fleur de Figuier without Eau de Parfum qualifier; maps to original 2013 EDT, not 2015 EDP'),
     '901-ROG': ('3482', 'Roger & Gallet', 'Rose', 'Shobi residual identifies Rose by Roger & Gallet; exact 2007 EDT entry'),
+    '913-SIS': ('1002', 'Sisley', 'Eau du Soir', 'Shobi code 913-SIS explicitly identifies EAU DU SOIR - SISLEY with no limited-edition year qualifier; exact base 1990 entry'),
+    '914-SIS': ('23324', 'Sisley', 'Eau Tropicale', 'Shobi code 914-SIS explicitly identifies EAU TROPICALE - SISLEY; exact 2014 entry'),
+    '915-SIS': ('42935', 'Sisley', 'Izia', 'Shobi code 915-SIS explicitly identifies IZIA - SISLEY; exact base 2017 entry'),
     '1186-JOO': ('43425', 'Joop!', 'WOW!', 'Previously reviewed exact same-brand target retained; Shobi residual identity is WOW by Joop'),
     '1188-JPG': ('39583', 'Jean Paul Gaultier', 'Le Male Essence de Parfum', 'Previously reviewed exact Shobi identity retained'),
     '1195-LAC': ('16456', 'Lacoste', 'Eau de Lacoste L.12.12 Rouge', 'Previously reviewed exact Shobi identity retained'),
@@ -62,5 +65,6 @@ APPROVED_ADDITIONAL = {
     '1257-SER': ('2764', 'Serge Lutens', "Five O'Clock Au Gingembre", 'Previously reviewed exact Shobi identity retained'),
     '1258-SFER': ('26777', 'Salvatore Ferragamo', 'White Mimosa', 'Previously reviewed exact Shobi identity retained'),
     '1262-PR': ('48704', 'Paco Rabanne', 'Invictus Aqua 2018', 'Previously reviewed exact Shobi identity retained'),
+    '2016-PARELM': ('79218', "Parfums d'Elmar", "Elixir d'Amour", 'Shobi code 2016-PARELM explicitly describes the 2022 Elixir d Amour formula and notes; exact Fragrantica 2022 entry, not discontinued 2018 version'),
     '2028-ZARK': ('54529', 'ZARKOPERFUME', 'Cloud Collection No. 3', 'Previously reviewed exact Shobi identity retained'),
 }
