@@ -46,6 +46,7 @@ for raw in URLS.read_text(encoding='utf-8', errors='ignore').splitlines():
     if not matches:
         continue
     for fid in matches:
+        fid = str(fid).strip()
         parsed_ids.add(fid)
         if fid in need and fid not in urls:
             url_match = re.search(r'https?://\S*-' + re.escape(fid) + r'\.html(?:\?\S*)?', line, re.I)
@@ -64,11 +65,11 @@ for path in DBS:
         if code not in APPROVED:
             continue
         fid, brand, name, rationale = APPROVED[code]
-        fid = str(fid)
+        fid = str(fid).strip()
         if fid not in urls:
             continue
         current_status = str(perfume.get('fragranticaStatus') or '')
-        current_id = str(perfume.get('fragranticaId') or '')
+        current_id = str(perfume.get('fragranticaId') or '').strip()
         if current_status.startswith('VERIFIED_') and current_id == fid:
             already_verified.add(code)
             continue
@@ -84,8 +85,10 @@ for path in DBS:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     changed[path.name] = count
 
-in_corpus = {code for code, value in APPROVED.items() if str(value[0]) in urls}
+in_corpus = {code for code, value in APPROVED.items() if str(value[0]).strip() in urls}
 missing = set(APPROVED) - in_corpus
+probe_ids = ['200','204','456','520','719','905','925','970','993','1014','1061','1365','1499','2068','12201']
+probe = {fid: (fid in parsed_ids) for fid in probe_ids}
 lines = [
     '# Shobi-first residual promotion', '',
     f'- Local corpus numeric IDs parsed: **{len(parsed_ids)}**',
@@ -96,6 +99,7 @@ lines = [
     f'- Already verified with same ID: **{len(already_verified)}**',
     f'- Conflicting pre-existing VERIFIED mappings left untouched: **{len(conflicts)}**',
     f'- Identified but deliberately not forced: **{len(NO_FORCE)}**',
+    f'- Probe IDs: **{probe}**',
 ]
 for name, count in changed.items():
     lines.append(f'- {name}: **{count}** rows changed')
@@ -115,6 +119,8 @@ for code, (brand, name, reason) in NO_FORCE.items():
 OUT.write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
 print('parsed_ids', len(parsed_ids))
+print('probe', probe)
+print('sample_min', sorted(parsed_ids, key=lambda x: int(x))[:20])
 print('reviewed', len(APPROVED))
 print('in_corpus', len(in_corpus))
 print('missing_from_corpus', len(missing))
