@@ -1,13 +1,12 @@
 {
-  "rule": "Validation uses ONLY social-card pixels/OCR plus the official Fragrantica global notes lexicon; perfume pyramid is never consulted.",
+  "rule": "Main notes are read ONLY from ordered OCR slots of the archived Fragrantica social-card notes panel. The perfume pyramid is never consulted and slot order is never changed.",
   "official_fragrantica_lexicon_notes": 1906,
   "raw_cards": 2222,
-  "validated_cards": 450,
-  "unresolved_cards": 1772,
+  "validated_cards": 1020,
+  "unresolved_cards": 1202,
+  "partially_read_but_not_accepted": 841,
   "reason_counts": {
-    "LEXICON_UNCERTAIN": 1126,
-    "LOW_OCR_TOKEN_CONFIDENCE": 748,
-    "VISUAL_OCCUPANCY_MISMATCH": 1243,
+    "LEXICON_UNCERTAIN": 893,
     "NO_OCR_SLOTS": 309
   },
   "validated_sample": [
@@ -29,14 +28,6 @@
         "Gardenia",
         "Jasmine",
         "Amber"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -57,14 +48,24 @@
         "Cedar",
         "Pepper",
         "Elemi"
+      ]
+    },
+    {
+      "code": "1156-HER",
+      "fragranticaId": 17,
+      "mainNotes": [
+        "Orange",
+        "Vetiver",
+        "Pepper",
+        "Grapefruit",
+        "Cedar"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "Orange",
+        "Vetiver",
+        "Pepper",
+        "Grapefruit",
+        "Cedar"
       ]
     },
     {
@@ -85,14 +86,42 @@
         "Lotus",
         "Bulrush",
         "Carrot"
+      ]
+    },
+    {
+      "code": "1152-HER",
+      "fragranticaId": 25,
+      "mainNotes": [
+        "Leather",
+        "Oakmoss",
+        "Styrax",
+        "Vetiver",
+        "Carnation",
+        "Sage"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "wa Leather",
+        "Oakmoss Seen",
+        "Styrax wh",
+        "Vetiver",
+        "Carnation",
+        "Sage"
+      ]
+    },
+    {
+      "code": "1682-HER",
+      "fragranticaId": 27,
+      "mainNotes": [
+        "Orange Blossom",
+        "Amber",
+        "Jasmine",
+        "Ylang-Ylang"
+      ],
+      "raw": [
+        "Urange Blossom",
+        "Amber",
+        "Jasmine",
+        "Ylang- Ylang"
       ]
     },
     {
@@ -113,14 +142,6 @@
         "Cedar",
         "Grapefruit",
         "Sesame"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -141,14 +162,6 @@
         "Sandalwood",
         "Magnolia",
         "Amber"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -169,14 +182,6 @@
         "Honey",
         "Tuberose",
         "Jasmine"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -197,14 +202,44 @@
         "Caraway",
         "Licorice",
         "Cumin"
+      ]
+    },
+    {
+      "code": "755-KEN",
+      "fragranticaId": 76,
+      "mainNotes": [
+        "Mimosa",
+        "Almond",
+        "Lily-of-the-Valley",
+        "Musk",
+        "Violet"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "Mimosa",
+        "Almond",
+        "Lily-of- the-Valley",
+        "EE Musk",
+        "Violet"
+      ]
+    },
+    {
+      "code": "754-KEN",
+      "fragranticaId": 78,
+      "mainNotes": [
+        "Water Lily",
+        "Reed",
+        "Mint",
+        "Lilac",
+        "Pepper",
+        "Cedar"
+      ],
+      "raw": [
+        "Water Lily",
+        "Reed te",
+        "Mint WE",
+        "Lilac",
+        "Pepper",
+        "Cedar"
       ]
     },
     {
@@ -225,14 +260,6 @@
         "Magnolia",
         "Jasmine",
         "Tuberose"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -253,14 +280,6 @@
         "Amber",
         "Benzoin",
         "Jasmine"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -281,14 +300,6 @@
         "Cinnamon",
         "Myrrh",
         "Sandalwood"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -309,14 +320,6 @@
         "Hyacinth",
         "Iris",
         "Geranium"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -337,14 +340,46 @@
         "Orange",
         "Apple",
         "Freesia"
+      ]
+    },
+    {
+      "code": "1289-YZLO",
+      "fragranticaId": 100,
+      "mainNotes": [
+        "Aldehydes",
+        "Oakmoss",
+        "Green Notes",
+        "Hyacinth",
+        "Orris Root",
+        "Galbanum"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "Aldehydes",
+        "Oakmoss",
+        "Green Notes",
+        "Hyacinth",
+        "Orris Root",
+        "eee Galbanum"
+      ]
+    },
+    {
+      "code": "991-YZLO",
+      "fragranticaId": 101,
+      "mainNotes": [
+        "Peach",
+        "Nectarine",
+        "Apricot",
+        "Oakmoss",
+        "Cinnamon",
+        "Litchi"
+      ],
+      "raw": [
+        "EE Peach",
+        "Nectarine",
+        "Apricot ei",
+        "Oakmoss",
+        "Cinnamon",
+        "Litchi"
       ]
     },
     {
@@ -365,14 +400,22 @@
         "Bergamot",
         "Vetiver",
         "Cedar"
+      ]
+    },
+    {
+      "code": "853-NIN",
+      "fragranticaId": 147,
+      "mainNotes": [
+        "Apple",
+        "Praline",
+        "Lemon",
+        "Trees"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "Apple",
+        "Praline",
+        "Lemon",
+        "Tree"
       ]
     },
     {
@@ -393,14 +436,24 @@
         "Cardamom",
         "Cedar",
         "Galanga"
+      ]
+    },
+    {
+      "code": "1034-BLG",
+      "fragranticaId": 153,
+      "mainNotes": [
+        "Seaweed",
+        "Mandarin Orange",
+        "Orange",
+        "Cedar",
+        "Lavender"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "Seaweed",
+        "Mandarin Orange",
+        "Orange",
+        "Cedar",
+        "Lavender"
       ]
     },
     {
@@ -421,14 +474,80 @@
         "PF Sunflower",
         "Iris",
         "Peach"
+      ]
+    },
+    {
+      "code": "436-BLG",
+      "fragranticaId": 156,
+      "mainNotes": [
+        "Ginger",
+        "Wisteria",
+        "Musk",
+        "Bergamot",
+        "Sandalwood",
+        "Flax"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "Ginger",
+        "Wisteria",
+        "Ez Musk",
+        "Bergamot",
+        "Sandalwood",
+        "Flax"
+      ]
+    },
+    {
+      "code": "779-LAN",
+      "fragranticaId": 170,
+      "mainNotes": [
+        "Vanilla",
+        "Passion Flower",
+        "Jasmine",
+        "Vetiver"
+      ],
+      "raw": [
+        "Vanilla",
+        "Passion Flower",
+        "Jasmine",
+        "Vetiver"
+      ]
+    },
+    {
+      "code": "797-LAN",
+      "fragranticaId": 172,
+      "mainNotes": [
+        "Peach",
+        "Rose",
+        "Sandalwood",
+        "Vanilla",
+        "Amber"
+      ],
+      "raw": [
+        "Peach",
+        "Rose",
+        "Sandalwood",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "code": "778-LAN",
+      "fragranticaId": 180,
+      "mainNotes": [
+        "Aldehydes",
+        "Lily",
+        "Narcissus",
+        "Civet",
+        "Violet",
+        "Bergamot"
+      ],
+      "raw": [
+        "Aldehydes",
+        "Lily-of-",
+        "Narcissus",
+        "Civet",
+        "Violet",
+        "Bergamot"
       ]
     },
     {
@@ -449,14 +568,6 @@
         "Leather",
         "Carnation",
         "Cardamom"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -477,14 +588,6 @@
         "Magnolia",
         "Lily",
         "Musk"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -505,14 +608,26 @@
         "Melon",
         "Magnolia",
         "Tuberose"
+      ]
+    },
+    {
+      "code": "537-DRC",
+      "fragranticaId": 213,
+      "mainNotes": [
+        "Popcorn",
+        "Caramel",
+        "Cherry",
+        "Strawberry",
+        "Pineapple",
+        "Patchouli"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "Popcorn",
+        "Caramel",
+        "Cherry",
+        "Strawberry",
+        "Pineapple",
+        "Patchouli"
       ]
     },
     {
@@ -533,14 +648,6 @@
         "Sandalwood",
         "Orange",
         "Bergamot"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -561,14 +668,24 @@
         "Sandalwood",
         "Musk",
         "Plum"
+      ]
+    },
+    {
+      "code": "544-DRC",
+      "fragranticaId": 220,
+      "mainNotes": [
+        "Tuberose",
+        "Honey",
+        "Orange Blossom",
+        "Asafoetida",
+        "Bergamot"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "Tuberose",
+        "Honey",
+        "Orange Blossom",
+        "Asafoetida",
+        "Bergamot"
       ]
     },
     {
@@ -589,14 +706,6 @@
         "Aldehydes",
         "Benzoin",
         "Oakmoss"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -617,14 +726,66 @@
         "Apricot",
         "Sandalwood",
         "Cardamom"
+      ]
+    },
+    {
+      "code": "534-DRC",
+      "fragranticaId": 223,
+      "mainNotes": [
+        "Oakmoss",
+        "Aldehydes",
+        "Galbanum",
+        "Narcissus",
+        "Leather",
+        "Vetiver"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "Oakmoss",
+        "Aldehydes",
+        "Galobanum",
+        "Narcissus",
+        "Leather",
+        "Vetiver"
+      ]
+    },
+    {
+      "code": "1076-DRC",
+      "fragranticaId": 228,
+      "mainNotes": [
+        "Leather",
+        "Violet Leaf",
+        "Nutmeg",
+        "Vetiver",
+        "Lavender",
+        "Cedar"
+      ],
+      "raw": [
+        "wa Leather",
+        "vv Violet Leaf wz",
+        "Nutmeg",
+        "Vetiver",
+        "Lavender",
+        "Cedar"
+      ]
+    },
+    {
+      "code": "1075-DRC",
+      "fragranticaId": 231,
+      "mainNotes": [
+        "Lemon",
+        "Bergamot",
+        "Basil",
+        "Oakmoss",
+        "Rosemary",
+        "Vetiver"
+      ],
+      "raw": [
+        "Lemon mK",
+        "Bergamot Lm wie",
+        "aS Basil",
+        "Oakmoss",
+        "Rosemary",
+        "Vetiver"
       ]
     },
     {
@@ -645,14 +806,6 @@
         "Melon",
         "Mint",
         "Pepper"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -673,14 +826,42 @@
         "Jasmine",
         "Carnation",
         "Honeysuckle"
+      ]
+    },
+    {
+      "code": "460-CAC",
+      "fragranticaId": 244,
+      "mainNotes": [
+        "Water Lily",
+        "Mimosa",
+        "Tuberose",
+        "Melon",
+        "Lotus"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "aE Water Lily",
+        "Mimosa",
+        "Tuberose",
+        "Melon",
+        "Lotus"
+      ]
+    },
+    {
+      "code": "1048-CAL",
+      "fragranticaId": 248,
+      "mainNotes": [
+        "Spicy Notes",
+        "Amber",
+        "Incense",
+        "Vanilla",
+        "Sandalwood"
+      ],
+      "raw": [
+        "Spicy Notes",
+        "Amber",
+        "Incense",
+        "Vanilla",
+        "Sandalwood"
       ]
     },
     {
@@ -701,14 +882,6 @@
         "Amber",
         "Violet",
         "Lotus"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
@@ -729,14 +902,24 @@
         "Marigold",
         "Peach",
         "Apricot"
+      ]
+    },
+    {
+      "code": "479-CAR",
+      "fragranticaId": 296,
+      "mainNotes": [
+        "Musk",
+        "Lily",
+        "Orange Blossom",
+        "Gardenia",
+        "Cactus"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+      "raw": [
+        "Musk",
+        "Lily",
+        "Orange Blossom aa",
+        "Gardenia",
+        "Cactus"
       ]
     },
     {
@@ -757,372 +940,38 @@
         "Ginger",
         "Bergamot",
         "Lavender"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     {
-      "code": "518-CHO",
-      "fragranticaId": 348,
+      "code": "480-CAR",
+      "fragranticaId": 306,
       "mainNotes": [
+        "Pepper",
+        "Musk",
+        "Gardenia",
+        "Floral Notes"
+      ],
+      "raw": [
+        "Pepper",
+        "Musk",
+        "Gardenia",
+        "Floral Notes"
+      ]
+    },
+    {
+      "code": "490-CRT",
+      "fragranticaId": 312,
+      "mainNotes": [
+        "Rose",
         "Vanilla",
-        "Peach",
-        "Amber",
         "Sandalwood",
-        "Coconut",
-        "Mango"
+        "Tonka Bean"
       ],
       "raw": [
+        "Rosewood ae",
         "Vanilla",
-        "Peach",
-        "Amber",
         "Sandalwood",
-        "Coconut",
-        "Mango"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "code": "712-HUG",
-      "fragranticaId": 381,
-      "mainNotes": [
-        "Freesia",
-        "Mango",
-        "Mandarin Orange",
-        "Violet",
-        "Cedar",
-        "Sandalwood"
-      ],
-      "raw": [
-        "Freesia",
-        "Mango",
-        "Mandarin Orange",
-        "Violet",
-        "Cedar",
-        "Sandalwood"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "code": "1160-HUG",
-      "fragranticaId": 383,
-      "mainNotes": [
-        "Apple",
-        "Vanilla",
-        "Cinnamon",
-        "Sandalwood",
-        "Plum",
-        "Bergamot"
-      ],
-      "raw": [
-        "Apple",
-        "Vanilla ar",
-        "Ey Cinnamon",
-        "Sandalwood",
-        "Plum",
-        "Bergamot"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "code": "1159-HUG",
-      "fragranticaId": 385,
-      "mainNotes": [
-        "Tangerine",
-        "Bitter Orange",
-        "Musk",
-        "Tobacco",
-        "Chamomile",
-        "Cloves"
-      ],
-      "raw": [
-        "Tangerine",
-        "Bitter Orange",
-        "Musk",
-        "Tobacco",
-        "Chamomile",
-        "Cloves"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "code": "1087-COM",
-      "fragranticaId": 389,
-      "mainNotes": [
-        "Cloves",
-        "Cinnamon",
-        "Honey",
-        "Cardamom",
-        "Nutmeg",
-        "Incense"
-      ],
-      "raw": [
-        "Cloves",
-        "are Cinnamon",
-        "Honey OR",
-        "Cardamom",
-        "Nutmeg",
-        "Incense"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "code": "1088-COM",
-      "fragranticaId": 395,
-      "mainNotes": [
-        "Metallic Notes",
-        "Clay",
-        "Pebbles",
-        "Sand"
-      ],
-      "raw": [
-        "Metallic Notes",
-        "Clay",
-        "Pebbles",
-        "Sand"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "code": "2638-KEN",
-      "fragranticaId": 435,
-      "mainNotes": [
-        "Cinnamon",
-        "Kumquat",
-        "Amber",
-        "Tangerine",
-        "Osmanthus",
-        "Orange"
-      ],
-      "raw": [
-        "Sey Cinnamon",
-        "Kumquat",
-        "Amber",
-        "Tangerine",
-        "Osmanthus",
-        "Orange"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "code": "807-LOL",
-      "fragranticaId": 456,
-      "mainNotes": [
-        "Licorice",
-        "Star Anise",
-        "Violet",
-        "Vanilla",
-        "Cherry",
-        "Praline"
-      ],
-      "raw": [
-        "Licorice",
-        "Star Anise",
-        "Violet",
-        "Vanilla",
-        "Cherry",
-        "Praline"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "code": "207-CRD",
-      "fragranticaId": 465,
-      "mainNotes": [
-        "Musk",
-        "Sandalwood",
-        "Bergamot",
-        "Ambergris",
-        "Grapefruit",
-        "Lemon"
-      ],
-      "raw": [
-        "Musk",
-        "Se Sandalwood",
-        "Bergamot att",
-        "Ambergris",
-        "Grapefruit",
-        "Lemon"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "code": "2227-CRD",
-      "fragranticaId": 470,
-      "mainNotes": [
-        "Ginger",
-        "Tobacco",
-        "Tangerine",
-        "Sandalwood",
-        "Ambergris",
-        "Bergamot"
-      ],
-      "raw": [
-        "Ginger",
-        "Tobacco",
-        "Tangerine",
-        "Sandalwood",
-        "Ambergris",
-        "Bergamot"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "code": "216-CRD",
-      "fragranticaId": 471,
-      "mainNotes": [
-        "Apple",
-        "Jasmine",
-        "Melon",
-        "Peach",
-        "Musk",
-        "Rose"
-      ],
-      "raw": [
-        "Apple",
-        "Jasmine",
-        "Melon",
-        "Peach",
-        "Musk",
-        "Rose"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "code": "214-CRD",
-      "fragranticaId": 473,
-      "mainNotes": [
-        "Sandalwood",
-        "Lavender",
-        "Bagas de Zimbro",
-        "Tonka Bean",
-        "Coriander",
-        "Ginger"
-      ],
-      "raw": [
-        "Sandalwood",
-        "Lavender",
-        "Bagas de Zimbro MI",
-        "EE Tonka Bean",
-        "Coriander",
-        "Ginger"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "code": "1095-DOL",
-      "fragranticaId": 485,
-      "mainNotes": [
-        "Lemon",
-        "Apple",
-        "Cedar",
-        "Bamboo",
-        "Musk",
-        "Jasmine"
-      ],
-      "raw": [
-        "Lemon",
-        "Apple",
-        "Cedar",
-        "Bamboo",
-        "Musk",
-        "Jasmine"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        "Tonka Bean"
       ]
     }
   ],
@@ -1139,62 +988,32 @@
         "INS",
         "Blossom"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 4,
           "raw": "'Y Ylang",
           "bestScore": 0.8,
-          "margin": 0.022
+          "margin": 0.022,
+          "ocrConfidence": 71.6
         },
         {
           "slot": 5,
           "raw": "INS",
           "bestScore": 0.667,
-          "margin": 0.0
+          "margin": 0.0,
+          "ocrConfidence": 42.8
         },
         {
           "slot": 6,
           "raw": "Blossom",
-          "bestScore": 0.9,
-          "margin": 0.0
+          "bestScore": 0.778,
+          "margin": 0.041,
+          "ocrConfidence": 96.5
         }
       ]
-    },
-    {
-      "code": "1156-HER",
-      "fragranticaId": 17,
-      "mainNotes": [],
-      "raw": [
-        "Orange",
-        "Vetiver",
-        "Pepper",
-        "Grapefruit",
-        "Cedar"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH"
-      ],
-      "failures": []
     },
     {
       "code": "1154-HER",
@@ -1207,81 +1026,25 @@
         "yo",
         "Blossom"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 4,
           "raw": "yo",
           "bestScore": 0.5,
-          "margin": 0.0
+          "margin": 0.0,
+          "ocrConfidence": 51.5
         },
         {
           "slot": 6,
           "raw": "Blossom",
-          "bestScore": 0.9,
-          "margin": 0.0
+          "bestScore": 0.778,
+          "margin": 0.041,
+          "ocrConfidence": 96.1
         }
       ]
-    },
-    {
-      "code": "1152-HER",
-      "fragranticaId": 25,
-      "mainNotes": [],
-      "raw": [
-        "wa Leather",
-        "Oakmoss Seen",
-        "Styrax wh",
-        "Vetiver",
-        "Carnation",
-        "Sage"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "LOW_OCR_TOKEN_CONFIDENCE"
-      ],
-      "failures": []
-    },
-    {
-      "code": "1682-HER",
-      "fragranticaId": 27,
-      "mainNotes": [],
-      "raw": [
-        "Urange Blossom",
-        "Amber",
-        "Jasmine",
-        "Ylang- Ylang"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH"
-      ],
-      "failures": []
     },
     {
       "code": "1141-GIV",
@@ -1294,31 +1057,23 @@
         "Mandarin Orange",
         "Anise"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 2,
           "raw": "AY",
           "bestScore": 0.8,
-          "margin": 0.133
+          "margin": 0.133,
+          "ocrConfidence": 42.1
         },
         {
           "slot": 3,
           "raw": "Bean",
           "bestScore": 0.75,
-          "margin": 0.023
+          "margin": 0.023,
+          "ocrConfidence": 96.8
         }
       ]
     },
@@ -1334,30 +1089,30 @@
         "Wu",
         "Ylang"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 4,
           "raw": "Vv",
           "bestScore": 0.5,
-          "margin": 0.056
+          "margin": 0.056,
+          "ocrConfidence": 56.6
         },
         {
           "slot": 5,
           "raw": "Wu",
           "bestScore": 0.5,
-          "margin": 0.056
+          "margin": 0.056,
+          "ocrConfidence": 61.0
+        },
+        {
+          "slot": 6,
+          "raw": "Ylang",
+          "bestScore": 0.769,
+          "margin": 0.103,
+          "ocrConfidence": 95.4
         }
       ]
     },
@@ -1373,14 +1128,6 @@
         "Jasmine",
         "Amber"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
         "LEXICON_UNCERTAIN"
       ],
@@ -1389,77 +1136,8 @@
           "slot": 4,
           "raw": "lris",
           "bestScore": 0.75,
-          "margin": 0.15
-        }
-      ]
-    },
-    {
-      "code": "755-KEN",
-      "fragranticaId": 76,
-      "mainNotes": [],
-      "raw": [
-        "Mimosa",
-        "Almond",
-        "Lily-of- the-Valley",
-        "EE Musk",
-        "Violet"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN"
-      ],
-      "failures": [
-        {
-          "slot": 4,
-          "raw": "EE Musk",
-          "bestScore": 0.727,
-          "margin": 0.102
-        }
-      ]
-    },
-    {
-      "code": "754-KEN",
-      "fragranticaId": 78,
-      "mainNotes": [],
-      "raw": [
-        "Water Lily",
-        "Reed te",
-        "Mint WE",
-        "Lilac",
-        "Pepper",
-        "Cedar"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "LEXICON_UNCERTAIN"
-      ],
-      "failures": [
-        {
-          "slot": 2,
-          "raw": "Reed te",
-          "bestScore": 0.727,
-          "margin": 0.027
-        },
-        {
-          "slot": 3,
-          "raw": "Mint WE",
-          "bestScore": 0.8,
-          "margin": 0.073
+          "margin": 0.15,
+          "ocrConfidence": 88.6
         }
       ]
     },
@@ -1474,31 +1152,23 @@
         "PUNY",
         "Ylang"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
-        {
-          "slot": 3,
-          "raw": "Rose zi",
-          "bestScore": 0.8,
-          "margin": 0.05
-        },
         {
           "slot": 4,
           "raw": "PUNY",
           "bestScore": 0.667,
-          "margin": 0.0
+          "margin": 0.0,
+          "ocrConfidence": 52.4
+        },
+        {
+          "slot": 5,
+          "raw": "Ylang",
+          "bestScore": 0.769,
+          "margin": 0.103,
+          "ocrConfidence": 94.8
         }
       ]
     },
@@ -1513,83 +1183,25 @@
         "Notes",
         "Hiv"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 4,
           "raw": "Notes",
-          "bestScore": 0.9,
-          "margin": 0.0
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 96.8
         },
         {
           "slot": 5,
           "raw": "Hiv",
           "bestScore": 0.75,
-          "margin": 0.083
+          "margin": 0.083,
+          "ocrConfidence": 51.6
         }
       ]
-    },
-    {
-      "code": "1289-YZLO",
-      "fragranticaId": 100,
-      "mainNotes": [],
-      "raw": [
-        "Aldehydes",
-        "Oakmoss",
-        "Green Notes",
-        "Hyacinth",
-        "Orris Root",
-        "eee Galbanum"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "LOW_OCR_TOKEN_CONFIDENCE"
-      ],
-      "failures": []
-    },
-    {
-      "code": "991-YZLO",
-      "fragranticaId": 101,
-      "mainNotes": [],
-      "raw": [
-        "EE Peach",
-        "Nectarine",
-        "Apricot ei",
-        "Oakmoss",
-        "Cinnamon",
-        "Litchi"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "LOW_OCR_TOKEN_CONFIDENCE"
-      ],
-      "failures": []
     },
     {
       "code": "399-ARA",
@@ -1602,31 +1214,23 @@
         "1 IY Ylang",
         "Vey"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 5,
           "raw": "1 IY Ylang",
           "bestScore": 0.667,
-          "margin": 0.0
+          "margin": 0.0,
+          "ocrConfidence": 65.8
         },
         {
           "slot": 6,
           "raw": "Vey",
           "bestScore": 0.667,
-          "margin": 0.067
+          "margin": 0.067,
+          "ocrConfidence": 63.8
         }
       ]
     },
@@ -1641,25 +1245,16 @@
         "Cardamom",
         "Lily"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 1,
           "raw": "bel",
           "bestScore": 0.667,
-          "margin": 0.0
+          "margin": 0.0,
+          "ocrConfidence": 63.2
         }
       ]
     },
@@ -1675,24 +1270,16 @@
         "Orris Root",
         "Musk"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 2,
           "raw": "ET PSs",
           "bestScore": 0.588,
-          "margin": 0.0
+          "margin": 0.0,
+          "ocrConfidence": 41.1
         }
       ]
     },
@@ -1706,67 +1293,16 @@
         "Pepper 3",
         "Notes"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
         "LEXICON_UNCERTAIN"
       ],
       "failures": [
-        {
-          "slot": 1,
-          "raw": "Tea lin",
-          "bestScore": 0.824,
-          "margin": 0.024
-        },
-        {
-          "slot": 2,
-          "raw": "Musk it",
-          "bestScore": 0.727,
-          "margin": 0.013
-        },
         {
           "slot": 6,
           "raw": "Notes",
-          "bestScore": 0.9,
-          "margin": 0.0
-        }
-      ]
-    },
-    {
-      "code": "853-NIN",
-      "fragranticaId": 147,
-      "mainNotes": [],
-      "raw": [
-        "Apple",
-        "Praline",
-        "Lemon",
-        "Tree"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN"
-      ],
-      "failures": [
-        {
-          "slot": 4,
-          "raw": "Tree",
-          "bestScore": 0.889,
-          "margin": 0.139
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 96.7
         }
       ]
     },
@@ -1781,31 +1317,23 @@
         "Juniper",
         "Green Notes"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 2,
           "raw": "Udl",
           "bestScore": 0.667,
-          "margin": 0.095
+          "margin": 0.095,
+          "ocrConfidence": 62.9
         },
         {
           "slot": 3,
           "raw": "Blossom",
-          "bestScore": 0.9,
-          "margin": 0.0
+          "bestScore": 0.778,
+          "margin": 0.041,
+          "ocrConfidence": 96.3
         }
       ]
     },
@@ -1820,16 +1348,7 @@
         "Ginger",
         "EE Musk"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
         "LEXICON_UNCERTAIN"
       ],
       "failures": [
@@ -1837,13 +1356,8 @@
           "slot": 3,
           "raw": "lris",
           "bestScore": 0.75,
-          "margin": 0.15
-        },
-        {
-          "slot": 6,
-          "raw": "EE Musk",
-          "bestScore": 0.727,
-          "margin": 0.102
+          "margin": 0.15,
+          "ocrConfidence": 87.0
         }
       ]
     },
@@ -1859,36 +1373,30 @@
         "Sandalwood",
         "Nutmeg"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 1,
           "raw": "Chai",
           "bestScore": 0.727,
-          "margin": 0.061
+          "margin": 0.061,
+          "ocrConfidence": 89.6
         },
         {
           "slot": 2,
           "raw": "UINngel",
           "bestScore": 0.615,
-          "margin": 0.0
+          "margin": 0.0,
+          "ocrConfidence": 47.7
         },
         {
           "slot": 3,
           "raw": "Ud",
           "bestScore": 0.8,
-          "margin": 0.229
+          "margin": 0.229,
+          "ocrConfidence": 37.5
         }
       ]
     },
@@ -1902,56 +1410,18 @@
         "Tea ZN",
         "Wood"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
         "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
-          "slot": 3,
-          "raw": "Tea ZN",
-          "bestScore": 0.667,
-          "margin": 0.042
-        },
-        {
           "slot": 6,
           "raw": "Wood",
           "bestScore": 0.75,
-          "margin": 0.023
+          "margin": 0.023,
+          "ocrConfidence": 96.1
         }
       ]
-    },
-    {
-      "code": "1034-BLG",
-      "fragranticaId": 153,
-      "mainNotes": [],
-      "raw": [
-        "Seaweed",
-        "Mandarin Orange",
-        "Orange",
-        "Cedar",
-        "Lavender"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH"
-      ],
-      "failures": []
     },
     {
       "code": "1035-BLG",
@@ -1965,80 +1435,18 @@
         "Musk",
         "Sandalwood"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
-      ],
-      "failures": [
-        {
-          "slot": 3,
-          "raw": "atl",
-          "bestScore": 0.667,
-          "margin": 0.0
-        }
-      ]
-    },
-    {
-      "code": "436-BLG",
-      "fragranticaId": 156,
-      "mainNotes": [],
-      "raw": [
-        "Ginger",
-        "Wisteria",
-        "Ez Musk",
-        "Bergamot",
-        "Sandalwood",
-        "Flax"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
         "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 3,
-          "raw": "Ez Musk",
-          "bestScore": 0.727,
-          "margin": 0.102
+          "raw": "atl",
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 38.7
         }
       ]
-    },
-    {
-      "code": "779-LAN",
-      "fragranticaId": 170,
-      "mainNotes": [],
-      "raw": [
-        "Vanilla",
-        "Passion Flower",
-        "Jasmine",
-        "Vetiver"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH"
-      ],
-      "failures": []
     },
     {
       "code": "796-LAN",
@@ -2051,51 +1459,25 @@
         "PUNY",
         "Ylang"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 4,
           "raw": "PUNY",
           "bestScore": 0.667,
-          "margin": 0.0
+          "margin": 0.0,
+          "ocrConfidence": 42.2
+        },
+        {
+          "slot": 5,
+          "raw": "Ylang",
+          "bestScore": 0.769,
+          "margin": 0.103,
+          "ocrConfidence": 94.9
         }
       ]
-    },
-    {
-      "code": "797-LAN",
-      "fragranticaId": 172,
-      "mainNotes": [],
-      "raw": [
-        "Peach",
-        "Rose",
-        "Sandalwood",
-        "Vanilla",
-        "Amber"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH"
-      ],
-      "failures": []
     },
     {
       "code": "787-LAN",
@@ -2108,63 +1490,16 @@
         "Notes",
         "and Leaf"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
-      ],
-      "failures": [
-        {
-          "slot": 4,
-          "raw": "Notes",
-          "bestScore": 0.9,
-          "margin": 0.0
-        },
-        {
-          "slot": 6,
-          "raw": "and Leaf",
-          "bestScore": 0.842,
-          "margin": 0.092
-        }
-      ]
-    },
-    {
-      "code": "778-LAN",
-      "fragranticaId": 180,
-      "mainNotes": [],
-      "raw": [
-        "Aldehydes",
-        "Lily-of-",
-        "Narcissus",
-        "Civet",
-        "Violet",
-        "Bergamot"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
         "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
-          "slot": 2,
-          "raw": "Lily-of-",
-          "bestScore": 0.9,
-          "margin": 0.0
+          "slot": 4,
+          "raw": "Notes",
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 96.9
         }
       ]
     },
@@ -2179,25 +1514,16 @@
         "Vil",
         "1 Orange"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 5,
           "raw": "Vil",
           "bestScore": 0.75,
-          "margin": 0.083
+          "margin": 0.083,
+          "ocrConfidence": 51.4
         }
       ]
     },
@@ -2213,57 +1539,25 @@
         "Apple",
         "Lily-of- the-Valley"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
           "slot": 2,
           "raw": "VVdlel LIIY",
           "bestScore": 0.571,
-          "margin": 0.016
+          "margin": 0.016,
+          "ocrConfidence": 61.7
         },
         {
           "slot": 3,
           "raw": "VOQKd",
           "bestScore": 0.6,
-          "margin": 0.1
+          "margin": 0.1,
+          "ocrConfidence": 51.7
         }
       ]
-    },
-    {
-      "code": "537-DRC",
-      "fragranticaId": 213,
-      "mainNotes": [],
-      "raw": [
-        "Popcorn",
-        "Caramel",
-        "Cherry",
-        "Strawberry",
-        "Pineapple",
-        "Patchouli"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "LOW_OCR_TOKEN_CONFIDENCE"
-      ],
-      "failures": []
     },
     {
       "code": "540-DRC",
@@ -2276,88 +1570,25 @@
         "Pint In",
         "Fruits"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
+        "LEXICON_UNCERTAIN"
       ],
       "failures": [
-        {
-          "slot": 1,
-          "raw": "Plum oll",
-          "bestScore": 0.75,
-          "margin": 0.083
-        },
         {
           "slot": 4,
           "raw": "Pint In",
           "bestScore": 0.706,
-          "margin": 0.074
+          "margin": 0.074,
+          "ocrConfidence": 54.8
         },
         {
           "slot": 5,
           "raw": "Fruits",
-          "bestScore": 0.9,
-          "margin": 0.0
+          "bestScore": 0.75,
+          "margin": 0.044,
+          "ocrConfidence": 96.6
         }
       ]
-    },
-    {
-      "code": "544-DRC",
-      "fragranticaId": 220,
-      "mainNotes": [],
-      "raw": [
-        "Tuberose",
-        "Honey",
-        "Orange Blossom",
-        "Asafoetida",
-        "Bergamot"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH"
-      ],
-      "failures": []
-    },
-    {
-      "code": "534-DRC",
-      "fragranticaId": 223,
-      "mainNotes": [],
-      "raw": [
-        "Oakmoss",
-        "Aldehydes",
-        "Galobanum",
-        "Narcissus",
-        "Leather",
-        "Vetiver"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "LOW_OCR_TOKEN_CONFIDENCE"
-      ],
-      "failures": []
     },
     {
       "code": "523-DRC",
@@ -2370,57 +1601,23 @@
         "Lily",
         "Ylang- Ylang"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
-        "VISUAL_OCCUPANCY_MISMATCH",
         "LEXICON_UNCERTAIN"
       ],
       "failures": [
         {
+          "slot": 1,
+          "raw": "the-Valley",
+          "bestScore": 0.714,
+          "margin": 0.114,
+          "ocrConfidence": 91.3
+        },
+        {
           "slot": 3,
           "raw": "Olee};nl Notes",
           "bestScore": 0.75,
-          "margin": 0.0
-        }
-      ]
-    },
-    {
-      "code": "1076-DRC",
-      "fragranticaId": 228,
-      "mainNotes": [],
-      "raw": [
-        "wa Leather",
-        "vv Violet Leaf wz",
-        "Nutmeg",
-        "Vetiver",
-        "Lavender",
-        "Cedar"
-      ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "reasons": [
-        "LEXICON_UNCERTAIN",
-        "LOW_OCR_TOKEN_CONFIDENCE"
-      ],
-      "failures": [
-        {
-          "slot": 2,
-          "raw": "vv Violet Leaf wz",
-          "bestScore": 0.786,
-          "margin": 0.193
+          "margin": 0.0,
+          "ocrConfidence": 67.8
         }
       ]
     },
@@ -2436,14 +1633,6 @@
         "Amber",
         "Vetiver"
       ],
-      "occ": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
       "reasons": [
         "LEXICON_UNCERTAIN"
       ],
@@ -2452,7 +1641,751 @@
           "slot": 1,
           "raw": "lris",
           "bestScore": 0.75,
-          "margin": 0.15
+          "margin": 0.15,
+          "ocrConfidence": 89.5
+        }
+      ]
+    },
+    {
+      "code": "1078-DRC",
+      "fragranticaId": 233,
+      "mainNotes": [],
+      "raw": [
+        "Pear a_i",
+        "Basil",
+        "SSE Gyoress",
+        "Lemon",
+        "Peach",
+        "Rosemary"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 3,
+          "raw": "SSE Gyoress",
+          "bestScore": 0.667,
+          "margin": 0.03,
+          "ocrConfidence": 58.6
+        }
+      ]
+    },
+    {
+      "code": "457-CAC",
+      "fragranticaId": 238,
+      "mainNotes": [],
+      "raw": [
+        "Currant",
+        "Valillild",
+        "Urange AY",
+        "Rose",
+        "Apricot",
+        "Mandarin Orange"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 1,
+          "raw": "Currant",
+          "bestScore": 0.778,
+          "margin": 0.078,
+          "ocrConfidence": 96.2
+        },
+        {
+          "slot": 2,
+          "raw": "Valillild",
+          "bestScore": 0.706,
+          "margin": 0.081,
+          "ocrConfidence": 38.3
+        },
+        {
+          "slot": 3,
+          "raw": "Urange AY",
+          "bestScore": 0.7,
+          "margin": 0.033,
+          "ocrConfidence": 64.7
+        }
+      ]
+    },
+    {
+      "code": "463-CAC",
+      "fragranticaId": 242,
+      "mainNotes": [],
+      "raw": [
+        "Musk",
+        "Peony",
+        "Lily",
+        "ey Vi the-Valley"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 6,
+          "raw": "ey Vi the-Valley",
+          "bestScore": 0.765,
+          "margin": 0.131,
+          "ocrConfidence": 66.6
+        }
+      ]
+    },
+    {
+      "code": "461-CAC",
+      "fragranticaId": 246,
+      "mainNotes": [],
+      "raw": [
+        "Amaretto a Bd",
+        "Cherry",
+        "Almond",
+        "Bean"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 5,
+          "raw": "Bean",
+          "bestScore": 0.75,
+          "margin": 0.023,
+          "ocrConfidence": 96.7
+        }
+      ]
+    },
+    {
+      "code": "467-CAL",
+      "fragranticaId": 255,
+      "mainNotes": [],
+      "raw": [
+        "Lily ite",
+        "ba",
+        "Lilac",
+        "Peony",
+        "Musk"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 3,
+          "raw": "ba",
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 75.1
+        }
+      ]
+    },
+    {
+      "code": "1045-CAL",
+      "fragranticaId": 257,
+      "mainNotes": [],
+      "raw": [
+        "Udi MdtlOn",
+        "Notes",
+        "Luly",
+        "Freesia",
+        "Lily-of- the-Valley",
+        "Narcissus"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 1,
+          "raw": "Udi MdtlOn",
+          "bestScore": 0.588,
+          "margin": 0.043,
+          "ocrConfidence": 38.0
+        },
+        {
+          "slot": 2,
+          "raw": "Notes",
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 96.9
+        },
+        {
+          "slot": 3,
+          "raw": "Luly",
+          "bestScore": 0.75,
+          "margin": 0.083,
+          "ocrConfidence": 62.6
+        }
+      ]
+    },
+    {
+      "code": "1049-CAL",
+      "fragranticaId": 276,
+      "mainNotes": [],
+      "raw": [
+        "Notes",
+        "bel Ya",
+        "Musk",
+        "Lily-of- the-Valley",
+        "Mandarin Orange"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 2,
+          "raw": "Notes",
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 96.9
+        },
+        {
+          "slot": 3,
+          "raw": "bel Ya",
+          "bestScore": 0.667,
+          "margin": 0.042,
+          "ocrConfidence": 62.8
+        }
+      ]
+    },
+    {
+      "code": "1059-CRT",
+      "fragranticaId": 307,
+      "mainNotes": [],
+      "raw": [
+        "Cardamom lea",
+        "Bitter Orange ame",
+        "Caraway a2",
+        "Bren",
+        "Pepper"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 4,
+          "raw": "Bren",
+          "bestScore": 0.75,
+          "margin": 0.023,
+          "ocrConfidence": 43.1
+        }
+      ]
+    },
+    {
+      "code": "493-CER",
+      "fragranticaId": 327,
+      "mainNotes": [],
+      "raw": [
+        "Chamomile 3",
+        "Mimosa",
+        "lris",
+        "Musk",
+        "Rose",
+        "Freesia"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 3,
+          "raw": "lris",
+          "bestScore": 0.75,
+          "margin": 0.15,
+          "ocrConfidence": 82.4
+        }
+      ]
+    },
+    {
+      "code": "545-CLI",
+      "fragranticaId": 371,
+      "mainNotes": [],
+      "raw": [
+        "Oakmoss",
+        "Chamomile RE",
+        "Ss Patchoull",
+        "Aldehydes",
+        "Incense",
+        "Vetiver"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 3,
+          "raw": "Ss Patchoull",
+          "bestScore": 0.762,
+          "margin": 0.07,
+          "ocrConfidence": 64.9
+        }
+      ]
+    },
+    {
+      "code": "549-CLI",
+      "fragranticaId": 379,
+      "mainNotes": [],
+      "raw": [
+        "Melon",
+        "Vanilla ms",
+        "P¥IMAVIN",
+        "WVvilitw Flowers",
+        "Notes"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 4,
+          "raw": "P¥IMAVIN",
+          "bestScore": 0.632,
+          "margin": 0.043,
+          "ocrConfidence": 46.4
+        },
+        {
+          "slot": 5,
+          "raw": "WVvilitw Flowers",
+          "bestScore": 0.759,
+          "margin": 0.018,
+          "ocrConfidence": 67.8
+        },
+        {
+          "slot": 6,
+          "raw": "Notes",
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 96.9
+        }
+      ]
+    },
+    {
+      "code": "188-ARM",
+      "fragranticaId": 408,
+      "mainNotes": [],
+      "raw": [
+        "Violet",
+        "Birch",
+        "Lara",
+        "Benzoin",
+        "Labdanum",
+        "Coriander"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 3,
+          "raw": "Lara",
+          "bestScore": 0.75,
+          "margin": 0.083,
+          "ocrConfidence": 41.2
+        }
+      ]
+    },
+    {
+      "code": "1133-ARM",
+      "fragranticaId": 412,
+      "mainNotes": [],
+      "raw": [
+        "Bean",
+        "Tobacco",
+        "Lemon",
+        "Olive flower"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 3,
+          "raw": "Bean",
+          "bestScore": 0.75,
+          "margin": 0.023,
+          "ocrConfidence": 96.5
+        }
+      ]
+    },
+    {
+      "code": "1135-ARM",
+      "fragranticaId": 416,
+      "mainNotes": [],
+      "raw": [
+        "Sandalwood",
+        "Sage",
+        "Oakmoss",
+        "Bean"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 6,
+          "raw": "Bean",
+          "bestScore": 0.75,
+          "margin": 0.023,
+          "ocrConfidence": 96.5
+        }
+      ]
+    },
+    {
+      "code": "651-ARM",
+      "fragranticaId": 417,
+      "mainNotes": [],
+      "raw": [
+        "Sandalwood",
+        "Vanilla A",
+        "Heliotrope min",
+        "IMA",
+        "Bean"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 5,
+          "raw": "IMA",
+          "bestScore": 0.667,
+          "margin": 0.067,
+          "ocrConfidence": 59.0
+        },
+        {
+          "slot": 6,
+          "raw": "Bean",
+          "bestScore": 0.75,
+          "margin": 0.023,
+          "ocrConfidence": 96.3
+        }
+      ]
+    },
+    {
+      "code": "1131-ARM",
+      "fragranticaId": 423,
+      "mainNotes": [],
+      "raw": [
+        "Saffron",
+        "Nutmeg ry",
+        "Cloves",
+        "Wood"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 6,
+          "raw": "Wood",
+          "bestScore": 0.75,
+          "margin": 0.023,
+          "ocrConfidence": 96.2
+        }
+      ]
+    },
+    {
+      "code": "1179-GUL",
+      "fragranticaId": 430,
+      "mainNotes": [],
+      "raw": [
+        "Vanilla S&S",
+        "Lavender",
+        "Mint ala",
+        "Vv",
+        "Vv Bean",
+        "ww"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 4,
+          "raw": "Vv",
+          "bestScore": 0.5,
+          "margin": 0.056,
+          "ocrConfidence": 64.1
+        },
+        {
+          "slot": 5,
+          "raw": "Vv Bean",
+          "bestScore": 0.625,
+          "margin": 0.0,
+          "ocrConfidence": 75.0
+        },
+        {
+          "slot": 6,
+          "raw": "ww",
+          "bestScore": 0.4,
+          "margin": 0.0,
+          "ocrConfidence": 66.5
+        }
+      ]
+    },
+    {
+      "code": "1176-GUL",
+      "fragranticaId": 433,
+      "mainNotes": [],
+      "raw": [],
+      "reasons": [
+        "NO_OCR_SLOTS"
+      ],
+      "failures": []
+    },
+    {
+      "code": "1205-LOL",
+      "fragranticaId": 458,
+      "mainNotes": [],
+      "raw": [
+        "Anise",
+        "Licorice",
+        "Vanilla",
+        "Bean"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 6,
+          "raw": "Bean",
+          "bestScore": 0.75,
+          "margin": 0.023,
+          "ocrConfidence": 96.3
+        }
+      ]
+    },
+    {
+      "code": "215-CRD",
+      "fragranticaId": 472,
+      "mainNotes": [],
+      "raw": [
+        "IMIUSK AY",
+        "Currant",
+        "Bergamot",
+        "Mandarin Orange",
+        "Petitgrain"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 2,
+          "raw": "IMIUSK AY",
+          "bestScore": 0.632,
+          "margin": 0.007,
+          "ocrConfidence": 58.1
+        },
+        {
+          "slot": 3,
+          "raw": "Currant",
+          "bestScore": 0.778,
+          "margin": 0.078,
+          "ocrConfidence": 96.2
+        }
+      ]
+    },
+    {
+      "code": "2177-SERG",
+      "fragranticaId": 478,
+      "mainNotes": [],
+      "raw": [
+        "Vanilla",
+        "Coconut",
+        "Beeswax",
+        "Bean"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 6,
+          "raw": "Bean",
+          "bestScore": 0.75,
+          "margin": 0.023,
+          "ocrConfidence": 96.3
+        }
+      ]
+    },
+    {
+      "code": "1504-DON",
+      "fragranticaId": 498,
+      "mainNotes": [],
+      "raw": [
+        "Apple",
+        "Cucumber",
+        "Grapefruit",
+        "ny Vi the-Valley",
+        "Notes"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 4,
+          "raw": "ny Vi the-Valley",
+          "bestScore": 0.765,
+          "margin": 0.131,
+          "ocrConfidence": 65.2
+        },
+        {
+          "slot": 6,
+          "raw": "Notes",
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 96.9
+        }
+      ]
+    },
+    {
+      "code": "578-DON",
+      "fragranticaId": 504,
+      "mainNotes": [],
+      "raw": [
+        "Leaf",
+        "Urange",
+        "Orange",
+        "Currant and Leaf",
+        "Water Lily",
+        "Birch"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 1,
+          "raw": "Leaf",
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 61.6
+        }
+      ]
+    },
+    {
+      "code": "1102-DAV",
+      "fragranticaId": 507,
+      "mainNotes": [],
+      "raw": [
+        "Sea Water",
+        "Lavender",
+        "Mint PO Ne",
+        "Notes",
+        "LEICA",
+        "IS"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 4,
+          "raw": "Notes",
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 96.8
+        },
+        {
+          "slot": 5,
+          "raw": "LEICA",
+          "bestScore": 0.615,
+          "margin": 0.0,
+          "ocrConfidence": 45.0
+        },
+        {
+          "slot": 6,
+          "raw": "IS",
+          "bestScore": 0.667,
+          "margin": 0.0,
+          "ocrConfidence": 54.4
+        }
+      ]
+    },
+    {
+      "code": "1225-PAC",
+      "fragranticaId": 514,
+      "mainNotes": [],
+      "raw": [
+        "Praline ia",
+        "Lemon",
+        "Cinnamon",
+        "Rosewood",
+        "Balsam"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 6,
+          "raw": "Balsam",
+          "bestScore": 0.706,
+          "margin": 0.0,
+          "ocrConfidence": 95.8
+        }
+      ]
+    },
+    {
+      "code": "1235-PAC",
+      "fragranticaId": 521,
+      "mainNotes": [],
+      "raw": [
+        "mn",
+        "Amber",
+        "Oakmoss ie",
+        "Vanilla",
+        "Vetiver",
+        "Pepper"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 1,
+          "raw": "mn",
+          "bestScore": 0.667,
+          "margin": 0.095,
+          "ocrConfidence": 47.4
+        }
+      ]
+    },
+    {
+      "code": "1232-PAC",
+      "fragranticaId": 526,
+      "mainNotes": [],
+      "raw": [
+        "Oakmoss",
+        "Lavender 'y",
+        "Rosemary",
+        "Pinel In",
+        "P¥IMAVIN",
+        "Sage"
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ],
+      "failures": [
+        {
+          "slot": 4,
+          "raw": "Pinel In",
+          "bestScore": 0.706,
+          "margin": 0.039,
+          "ocrConfidence": 54.5
+        },
+        {
+          "slot": 5,
+          "raw": "P¥IMAVIN",
+          "bestScore": 0.632,
+          "margin": 0.043,
+          "ocrConfidence": 54.1
         }
       ]
     }
