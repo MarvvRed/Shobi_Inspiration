@@ -1,9 +1,9 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **60**
+- Reviewed exact identities with Fragrantica target: **69**
 - Target IDs present in local corpus: **0**
-- Target IDs missing from local corpus: **60**
+- Target IDs missing from local corpus: **69**
 - Promoted this run: **0**
 - Already verified with same ID: **0**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
@@ -63,6 +63,15 @@
 - `1989-VERT` -> Vertus / Narcos'is — ID 47923 — MISSING_FROM_CORPUS — Shobi residual NARCOS'IS under Vertus code; exact Vertus entry
 - `118-HAM` -> Hamidi Oud & Perfumes / Rehan — ID 27808 — MISSING_FROM_CORPUS — Shobi identifies REHAN - HAMIDI OUD; exact same-brand Fragrantica entry
 - `172-SHALM` -> Scent Salim / Moroccan Musk — ID 47982 — MISSING_FROM_CORPUS — Shobi identifies MOROCCAN MUSK - SCENT SALIM; exact same-brand Fragrantica entry
+- `741-JUI` -> Juicy Couture / Viva La Juicy Rose — ID 33567 — MISSING_FROM_CORPUS — Shobi residual is Viva La Juicy Rose; exact Juicy Couture 2015 entry
+- `742-JUI` -> Juicy Couture / Viva La Juicy Sucre — ID 42053 — MISSING_FROM_CORPUS — Shobi residual explicitly says VIVA LA JUICY SUCRE - COUTURE; exact 2016 entry
+- `743-JUS` -> Justin Bieber / Girlfriend — ID 15287 — MISSING_FROM_CORPUS — Shobi explicitly identifies GIRLFRIEND - JUSTIN BIEBER; exact 2012 entry
+- `744-JUS` -> Justin Bieber / The Key — ID 18665 — MISSING_FROM_CORPUS — Shobi explicitly identifies THE KEY - JUSTIN BIEBER; exact 2013 entry
+- `745-KAR` -> Karl Lagerfeld / Karl Lagerfeld for Her — ID 24068 — MISSING_FROM_CORPUS — Shobi residual explicitly specifies Karl Lagerfeld for Her Eau de Parfum; exact 2014 women EDP
+- `746-KAR` -> Karl Lagerfeld / Ocean View for Women — ID 35570 — MISSING_FROM_CORPUS — Shobi explicitly identifies OCEAN VIEW - KARL LAGERFELD in women category; exact 2016 women entry
+- `770-LAP` -> La Prairie / Midnight Rain — ID 824 — MISSING_FROM_CORPUS — Shobi explicitly identifies MIDNIGHT RAIN - LA PRAIRIE; base 2006 entry
+- `771-LAP` -> La Prairie / Silver Rain — ID 823 — MISSING_FROM_CORPUS — Shobi explicitly identifies SILVER RAIN - LA PRAIRIE and gives original 2004 notes; not Sheer/Shimmer flankers
+- `772-LAD` -> Lady Gaga / Fame — ID 15338 — MISSING_FROM_CORPUS — Shobi residual Fame plus orchid/jasmine/honey/apricot notes identifies Lady Gaga Fame 2012
 - `825-MIC` -> Michael Kors / Wonderlust — ID 39459 — MISSING_FROM_CORPUS — Shobi explicitly identifies WONDERLUST - MICHAEL KORS; base 2016 entry
 - `827-MISN` -> Missoni / Missoni (2015) — ID 33017 — MISSING_FROM_CORPUS — Shobi describes the modern fruity-floral Missoni; identity fits the 2015 Quentin Bisch release, not the 1981/2006 versions
 - `840-NAO` -> Naomi Campbell / Naomi Campbell — ID 905 — MISSING_FROM_CORPUS — Shobi residual is self-titled Naomi Campbell; exact 1999 debut entry
