@@ -1,0 +1,52 @@
+name: Fetch Fragrantica note lexicon
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/fetch-fragrantica-note-lexicon.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  lexicon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch official Fragrantica notes index
+        run: |
+          python - <<'PY'
+          from urllib.request import Request,urlopen
+          from pathlib import Path
+          import re, html
+          url='https://www.fragrantica.com/notes/'
+          req=Request(url,headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36','Accept':'text/html,application/xhtml+xml'})
+          try:
+              with urlopen(req,timeout=45) as r:
+                  body=r.read(5_000_000).decode('utf-8','replace')
+              links=re.findall(r'href=["\']/notes/[^"\']+-\d+\.html["\'][^>]*>(.*?)</a>',body,re.I|re.S)
+              names=[]
+              for x in links:
+                  x=re.sub(r'<[^>]+>','',x)
+                  x=html.unescape(x).strip()
+                  if x and x not in names: names.append(x)
+              Path('fragrantica-note-lexicon.txt').write_text('\n'.join(names)+'\n',encoding='utf-8')
+              Path('fragrantica-note-lexicon-report.txt').write_text(f'HTTP_OK\nhtml_chars={len(body)}\nnotes={len(names)}\n',encoding='utf-8')
+              print('html_chars',len(body),'notes',len(names))
+          except Exception as e:
+              Path('fragrantica-note-lexicon-report.txt').write_text('FAILED\n'+repr(e)+'\n',encoding='utf-8')
+              print('FAILED',repr(e))
+          PY
+      - name: Commit result
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add fragrantica-note-lexicon*.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "Fetch Fragrantica note lexicon"
+            git push
+          fi
