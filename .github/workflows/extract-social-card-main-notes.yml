@@ -24,12 +24,12 @@ jobs:
           pip install pillow
           sudo apt-get update
           sudo apt-get install -y tesseract-ocr
-      - name: Prepare all social-card notes panels
+      - name: Prepare all social-card note labels
         run: python tools/extract_social_card_main_notes.py prepare
-      - name: OCR all panels in one Tesseract invocation
+      - name: OCR all label-only panels in one Tesseract invocation
         run: |
           mkdir -p .social-card-notes-work
-          tesseract .social-card-notes-work/social-note-panels.tiff stdout --psm 6 -l eng tsv > .social-card-notes-work/ocr.tsv
+          tesseract .social-card-notes-work/social-note-panels.tiff stdout --psm 11 -l eng tsv > .social-card-notes-work/ocr.tsv
       - name: Parse ordered notes from social-card panel only
         run: python tools/extract_social_card_main_notes.py parse
       - name: Commit extraction results
@@ -38,6 +38,6 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add social-card-main-notes.json social-card-main-notes-report.json
           if ! git diff --cached --quiet; then
-            git commit -m "Extract ordered main notes from Fragrantica social cards"
+            git commit -m "Refine ordered main notes from Fragrantica social cards"
             git push
           fi
