@@ -1,0 +1,35 @@
+name: Validate social card main notes
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/validate_social_card_main_notes.py'
+      - '.github/workflows/validate-social-card-main-notes.yml'
+      - 'fragrantica-note-lexicon.txt'
+      - 'social-card-main-notes.json'
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow
+        run: pip install pillow
+      - name: Validate exact ordered social-card notes
+        run: python tools/validate_social_card_main_notes.py
+      - name: Commit validation results
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add social-card-main-notes-validated.json social-card-main-notes-validation-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Validate ordered main notes from Fragrantica social cards"
+            git push
+          fi
