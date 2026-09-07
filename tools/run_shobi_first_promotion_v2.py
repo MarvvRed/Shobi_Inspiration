@@ -10,6 +10,7 @@ ADD_SPEC = ROOT / 'tools/shobi_first_additional_v2.py'
 BATCH_SPECS = [
     (ROOT / 'tools/shobi_first_batch_large_01_v2.py', 'APPROVED_BATCH_LARGE_01'),
     (ROOT / 'tools/shobi_first_batch_large_02_v2.py', 'APPROVED_BATCH_LARGE_02'),
+    (ROOT / 'tools/shobi_first_batch_large_03_v2.py', 'APPROVED_BATCH_LARGE_03'),
 ]
 DBS = [ROOT / 'database_v2_clean.json', ROOT / 'database_complete.json']
 URLS = ROOT / 'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
