@@ -1,0 +1,71 @@
+# Shobi-first residual promotion
+
+- Reviewed exact identities with Fragrantica target: **48**
+- Target IDs present in local corpus: **0**
+- Target IDs missing from local corpus: **48**
+- Promoted this run: **0**
+- Already verified with same ID: **0**
+- Identified but deliberately not forced: **7**
+- database_v2_clean.json: **0** rows changed
+- database_complete.json: **0** rows changed
+
+## Promoted / exact targets
+
+- `133-MICA` -> M. Micallef / Ylang in Gold — ID 14409 — MISSING_FROM_CORPUS — Shobi identifies YLANG IN GOLD - M.MICALLEF; base entry, not Nectar flanker
+- `166-AZ` -> The Perfumer's Story by Azzi / Sequoia Wood — ID 40007 — MISSING_FROM_CORPUS — Shobi identifies Sequoia Wood by The Perfumer Story by Azzi
+- `184-YAS` -> Yas Perfumes / Huboob Yas — ID 28237 — MISSING_FROM_CORPUS — Shobi identifies HUBOOB with YAS/Yas Perfumes identity
+- `605-ESC` -> Escada / Miami Blossom — ID 53054 — MISSING_FROM_CORPUS — Shobi identifies MIAMI BLOSSOM - ESCADA; rejects wrong-brand Blossom candidates
+- `606-ESC` -> Escada / Escada Margaretha Ley — ID 1365 — MISSING_FROM_CORPUS — Shobi identifies MARGARETHA LEY (CLASSIC) - ESCADA
+- `608-ESC` -> Escada / Escada Moon Sparkle — ID 1887 — MISSING_FROM_CORPUS — Shobi identifies women Moon Sparkle; not Moon Sparkle pour Homme
+- `639-FEN` -> Fendi / Fendi — ID 200 — MISSING_FROM_CORPUS — Shobi identifies FENDI Woman; original 1985 women entry
+- `640-FEN` -> Fendi / L'Acquarossa — ID 18706 — MISSING_FROM_CORPUS — Shobi identifies L ACQUA ROSSA without EDT/Elixir qualifier; base EDP
+- `673-GRS` -> Gres / Cabotine — ID 1061 — MISSING_FROM_CORPUS — Shobi identifies CABOTIN - GRES; original Cabotine, not flanker
+- `695-GUE` -> Guess / Guess Dare — ID 26415 — MISSING_FROM_CORPUS — Shobi identifies DARE - GUESS; base 2014, not Limited Edition
+- `696-GLA` -> Guy Laroche / Fidji Eau de Toilette — ID 2068 — MISSING_FROM_CORPUS — Shobi explicitly identifies FIDJI EAU DE TOILETTE - GUY LAROCHE
+- `727-JEN` -> Jennifer Lopez / JLuxe — ID 29758 — MISSING_FROM_CORPUS — Shobi identifies JLUXE - JENNIFER LOPEZ
+- `728-JES` -> Jesus Del Pozo / In Black — ID 719 — MISSING_FROM_CORPUS — Shobi identity fixes Jesus Del Pozo; rejects wrong-brand Byblos exact-name candidate
+- `807-LOL` -> Lolita Lempicka / Lolita Lempicka — ID 456 — MISSING_FROM_CORPUS — Shobi identifies LOLITA - LOLITA LEMPICKA; original signature entry
+- `808-LOL` -> Lolita Lempicka / Sweet — ID 28177 — MISSING_FROM_CORPUS — Shobi Sweet notes identify Lolita Lempicka Sweet 2014
+- `816-MAX` -> Max Mara / Max Mara — ID 204 — MISSING_FROM_CORPUS — Shobi identifies MAX MARA; signature perfume
+- `817-MIC` -> Michael Kors / 24K Brilliant Gold — ID 31341 — MISSING_FROM_CORPUS — Shobi identifies 24K BRILLIANT GOLD - KORS
+- `818-MIC` -> Michael Kors / Coral — ID 32739 — MISSING_FROM_CORPUS — Shobi identifies CORAL - KORS
+- `819-MIC` -> Michael Kors / Sexy Amber — ID 18161 — MISSING_FROM_CORPUS — Shobi identifies SEXY AMBER - KORS
+- `820-MIC` -> Michael Kors / Sexy Rio de Janeiro — ID 27497 — MISSING_FROM_CORPUS — Shobi identifies SEXY RIO DE JANEIRO KORS; 2014 release
+- `821-MIC` -> Michael Kors / Sexy Sunset — ID 34276 — MISSING_FROM_CORPUS — Shobi identifies SEXY SUNSET - KORS; 2015 release
+- `822-MIC` -> Michael Kors / Sexy Ruby — ID 46182 — MISSING_FROM_CORPUS — Shobi identifies SEXY RUBY - KORS despite noisy residual label
+- `823-MIC` -> Michael Kors / Sporty Citrus — ID 18160 — MISSING_FROM_CORPUS — Shobi identifies SPORTY CITRUS - MICHAEL KORS
+- `824-MIC` -> Michael Kors / White Luminous Gold — ID 31343 — MISSING_FROM_CORPUS — Shobi identifies WHITE LUMINOUS GOLD - MICHAEL KORS
+- `902-SALV` -> Salvador Dali / Dalissime — ID 970 — MISSING_FROM_CORPUS — Shobi identifies DALISSIME - SALVADOR DALI; original 1994 entry
+- `905-SFER` -> Salvatore Ferragamo / Amo Ferragamo — ID 46832 — MISSING_FROM_CORPUS — Shobi identifies AMO - S.FERRAGAMO; base 2018, not Limited Edition/Flowerful
+- `906-SFER` -> Salvatore Ferragamo / Emozione — ID 28117 — MISSING_FROM_CORPUS — Shobi identifies EMOZIONE - S.FERRAGAMO; base 2015 entry
+- `907-SFER` -> Salvatore Ferragamo / Signorina — ID 13639 — MISSING_FROM_CORPUS — Shobi identifies SIGNORINA - FERRAGAMO; base 2011 entry
+- `908-SFER` -> Salvatore Ferragamo / Signorina Misteriosa — ID 32646 — MISSING_FROM_CORPUS — Shobi identifies SIGNORINA MISTERIOSA - FERRAGAMO; 2016 flanker
+- `909-SFER` -> Salvatore Ferragamo / White Mimosa — ID 26777 — MISSING_FROM_CORPUS — Shobi identifies TUSCAN SCENT WHITE MIMOSA - FERRAGAMO
+- `910-SARJ` -> Sarah Jessica Parker / Lovely — ID 993 — MISSING_FROM_CORPUS — Shobi identifies LOVELY - SARA JESSICA PARKER; original 2005 entry
+- `911-SEPH` -> Sephora / Fleur de Coton (Cotton Flower) — ID 37955 — MISSING_FROM_CORPUS — Shobi identifies FLEUR DE COTON / COTTON FLOWER - SEPHORA
+- `912-SHIS` -> Shiseido / Zen — ID 1499 — MISSING_FROM_CORPUS — Shobi identifies ZEN - SHISEIDO; 2007 Zen entry
+- `1187-JOV` -> Jovan / White Musk — ID 7524 — MISSING_FROM_CORPUS — Shobi identifies WHITE MUSK - JOVAN; women 1990 entry
+- `1196-LAC` -> Lacoste / Eau de Lacoste L.12.12 Magnetic Pour Lui — ID 41265 — MISSING_FROM_CORPUS — Shobi residual identity is L.12.12 MAGNETIC under Lacoste code; men Magnetic entry
+- `1205-LOL` -> Lolita Lempicka / Au Masculin — ID 458 — MISSING_FROM_CORPUS — Shobi residual identity is Au Masculin under Lolita Lempicka code; original 2000 entry
+- `1224-APO` -> Nikos / Sculpture Homme — ID 925 — MISSING_FROM_CORPUS — Shobi identifies SCULPTURE - NIKOS APOSTOLOPOULOS; original 1995 entry
+- `1259-SHU` -> Shulton Company / Old Spice Original — ID 14746 — MISSING_FROM_CORPUS — Shobi identifies OLD SPICE - SHULTON COMPANY and original 1938 identity
+- `1926-KOS` -> Thomas Kosmala / No. 4 Apres l Amour Eau de Parfum — ID 53742 — MISSING_FROM_CORPUS — Shobi-first correction: APRES L AMOUR - THOMAS KOSMALA; corrects old Kerosene metadata
+- `1975-ZARK` -> ZARKOPERFUME / Pink Molecule 090.09 — ID 25474 — MISSING_FROM_CORPUS — Shobi identifies PINK MOLECULE 090.09 - ZARKOPERFUME; 2014 entry
+- `1977-SHIS` -> Shiseido / Ginza — ID 65234 — MISSING_FROM_CORPUS — Shobi residual explicitly says Ginza (2021) under Shiseido code; exact 2021 entry
+- `1980-HIND` -> Hind Al Oud / Emarati Musk — ID 87692 — MISSING_FROM_CORPUS — Shobi identifies EMARATI MUSK PARFUM - HIND AL OUD
+- `1981-KHAL` -> Khaltat / Gra — ID 22907 — MISSING_FROM_CORPUS — Shobi identifies GRA - KHALTAT
+- `1985-WID` -> WIDIAN / Gold II Sahara — ID 54883 — MISSING_FROM_CORPUS — Shobi identifies GOLD II SAHARA - WIDIAN; 2019 entry
+- `1986-SOO` -> SoOud / Nur — ID 10016 — MISSING_FROM_CORPUS — Shobi identifies NUR - SoOUD
+- `1987-SON` -> Sonia Rykiel / Le Parfum — ID 4655 — MISSING_FROM_CORPUS — Shobi identifies LE PARFUM - SONIA RYKIEL with no Extrait qualifier; base 1993 entry
+- `1988-THEVE` -> The Merchant of Venice / Arabesque — ID 32670 — MISSING_FROM_CORPUS — Shobi identifies ARABESQUE - THE MERCHANT OF VENICE; 2015 entry
+- `1989-VERT` -> Vertus / Narcos'is — ID 47923 — MISSING_FROM_CORPUS — Shobi residual NARCOS'IS under Vertus code; exact Vertus entry
+
+## Identified but not forced
+
+- `130-LEL` -> Le Labo / Santal 26 — NO_FORCE — home fragrance/home oil identity; do not substitute Santal 33
+- `200-CIR` -> Cire Trudon / Ernesto / Che Guevara — NO_FORCE — home scent/candle identity; do not substitute a different perfume
+- `222-DIP` -> Diptyque / Ambre — NO_FORCE — home fragrance identity; do not substitute a Diptyque perfume
+- `223-DIP` -> Diptyque / Baies — NO_FORCE — candle/home fragrance identity; do not substitute a perfume
+- `227-DIP` -> Diptyque / Feu de Bois / Wood Fire — NO_FORCE — candle/home fragrance identity; do not substitute a perfume
+- `612-ESC` -> Escada / Turquoise — NO_FORCE — Shobi distinguishes Turquoise from separate Turquoise Summer; no safe exact perfume target yet
+- `1251-ROM` -> Romane / Royal Blue — NO_FORCE — Shobi identity is Royal Blue - Romane; no safe same-brand Fragrantica target found
