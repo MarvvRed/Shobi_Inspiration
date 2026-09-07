@@ -8,6 +8,7 @@
 - Already verified with same ID: **0**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
 - Identified but deliberately not forced: **7**
+- Probe IDs: **{'200': False, '204': False, '456': False, '520': False, '719': False, '905': False, '925': False, '970': False, '993': False, '1014': False, '1061': False, '1365': False, '1499': False, '2068': False, '12201': True}**
 - database_v2_clean.json: **0** rows changed
 - database_complete.json: **0** rows changed
 
