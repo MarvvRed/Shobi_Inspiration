@@ -10,7 +10,8 @@
 | Method | Records |
 |---|---:|
 | audit_brand | 1989 |
-| verified_url_slug | 184 |
+| exact_corpus_id | 129 |
+| verified_url_slug | 55 |
 | code_suffix_unanimous | 37 |
 | existing | 3 |
 
