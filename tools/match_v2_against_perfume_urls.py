@@ -36,8 +36,11 @@ def brand_sim(h,c):
     if h==b:return 1
     if min(len(h),len(b))>=4 and (h in b or b in h):return .92
     return sim(h,b)*.75
-def status_of(p): return str(p.get('fragranticaStatus') or p.get('fragrantica_status') or p.get('verification_status') or p.get('status') or '')
-def fid_of(p): return str(p.get('fragranticaId') or p.get('fragrantica_id') or '').strip()
+def status_of(p): return str(p.get('fragrantica_status') or p.get('fragranticaStatus') or p.get('verification_status') or p.get('status') or '')
+def fid_of(p): return str(p.get('fragrantica_id') or p.get('fragranticaId') or '').strip()
+def closed_status(p):
+    s=status_of(p).upper()
+    return s.startswith('VERIFIED_') or s.startswith('RESOLVED_NO_FORCE')
 
 def name_metrics(q,c):
     qn=norm(q); cn=c['nn']; qt=set(toks(q)); ct=c['nt']
@@ -97,7 +100,7 @@ def infer_tail_brand(tail):
 perf=list(walk(json.loads(DB.read_text(encoding='utf-8-sig'))))
 priors=defaultdict(Counter)
 for p in perf:
-    if not status_of(p).startswith('VERIFIED_'):continue
+    if not status_of(p).upper().startswith('VERIFIED_'):continue
     c=byid.get(fid_of(p)); s=suffix(p.get('code'))
     if c and s:priors[s][c['brand']]+=1
 brand_by_suffix={}
@@ -107,7 +110,7 @@ for s,c in priors.items():
 
 rows=[]
 for p in perf:
-    if status_of(p).startswith('VERIFIED_'):continue
+    if closed_status(p):continue
     code=str(p.get('code') or '').strip() or '[no-code]'; raw_name=str(p.get('inspiredBy') or p.get('perfume') or '').strip(); qname,tail=split_name(raw_name)
     explicit=str(p.get('brand') or '').strip(); prior=brand_by_suffix.get(suffix(code),''); tail_hint=infer_tail_brand(tail) if not explicit else ''
     hint=explicit or tail_hint or prior
@@ -137,7 +140,7 @@ for p in perf:
         elif top[0][0]>=.62 or top[0][1]>=.70:cls='WEAK_REVIEW'
         else:cls='NO_CANDIDATE'
     r={'shobi_code':code,'shobi_name':raw_name,'match_name':qname,'shobi_brand':explicit,'inferred_brand':hint,'brand_source':hint_source,'classification':cls,'candidate_count':len(ranked)}
-    for i,(sc,ns,bs,rc,pr,sr,c) in enumerate(top,1):r.update({f'cand{i}_id':c['id'],f'cand{i}_brand':c['brand'],f'cand{i}_name':c['name'],f'cand{i}_url':c['url'],f'cand{i}_score':f'{sc:.4f}',f'cand{i}_name_score':f'{ns:.4f}',f'cand{i}_brand_score':f'{bs:.4f}',f'cand{i}_recall':f'{rc:.4f}',f'cand{i}_precision':f'{pr:.4f}',f'cand{i}_seq':f'{sr:.4f}'})
+    for i,(sc,ns,bs,rc,pr,sr,c) in enumerate(top,1):r.update({f'cand{i}_id':c['id'],f'cand{i}_brand':c['brand'],f'cand{i_name':c['name'],f'cand{i}_url':c['url'],f'cand{i}_score':f'{sc:.4f}',f'cand{i}_name_score':f'{ns:.4f}',f'cand{i}_brand_score':f'{bs:.4f}',f'cand{i}_recall':f'{rc:.4f}',f'cand{i}_precision':f'{pr:.4f}',f'cand{i}_seq':f'{sr:.4f}'})
     rows.append(r)
 fields=['shobi_code','shobi_name','match_name','shobi_brand','inferred_brand','brand_source','classification','candidate_count']
 for i in range(1,6):fields += [f'cand{i}_id',f'cand{i}_brand',f'cand{i}_name',f'cand{i}_url',f'cand{i}_score',f'cand{i}_name_score',f'cand{i}_brand_score',f'cand{i}_recall',f'cand{i}_precision',f'cand{i}_seq']
@@ -146,7 +149,7 @@ with OUT.open('w',encoding='utf-8-sig',newline='') as f:
 cnt=Counter(r['classification'] for r in rows); inferred=sum(bool(r['inferred_brand']) for r in rows)
 lines=['# Fragrantica v2 match against local perfume_urls.txt','',f'- URLs parsed: **{len(urls)}**',f'- Residual rows scanned: **{len(rows)}**',f'- Residuals with local brand hint: **{inferred}**',f'- Suffix brand priors learned: **{len(brand_by_suffix)}**']
 for k in ['STRONG_EXACT_BRAND','STRONG_UNIQUE','GOOD_REVIEW','EXACT_NAME_NO_BRAND','WEAK_REVIEW','NO_CANDIDATE']:lines.append(f'- {k}: **{cnt[k]}**')
-lines += ['','No Fragrantica web access is used. Matching uses only repository-local `perfume_urls.txt` plus local Shobi code/verified metadata. Exact-name matches without brand agreement are NOT classified strong. Brand hints come only from explicit metadata, an exact/left-anchored brand in the Shobi label tail, or VERIFIED suffix priors with at least two supporting verified rows, in that priority order. Generated code signatures and singleton VERIFIED suffixes are never trusted for brand selection. No mapping is promoted automatically.','','## Strong candidates','']
+lines += ['','Residual rows exclude both VERIFIED_* mappings and RESOLVED_NO_FORCE identities. No Fragrantica web access is used by this local matcher; web-reviewed identities are handled by the Shobi-first promotion runner.','','## Strong candidates','']
 for r in rows:
     if r['classification'] in {'STRONG_EXACT_BRAND','STRONG_UNIQUE'}:lines.append(f"- `{r['shobi_code']}` — {r['shobi_name']} -> {r.get('cand1_brand','')} / {r.get('cand1_name','')} — ID {r.get('cand1_id','')} — {r['classification']} — brand-source {r['brand_source']}")
 lines += ['','## Good review candidates','']
