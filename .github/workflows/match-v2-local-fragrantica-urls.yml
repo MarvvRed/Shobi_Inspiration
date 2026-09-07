@@ -4,6 +4,7 @@ on:
     paths:
       - '.github/match-v2-local-fragrantica-urls-trigger'
       - 'tools/promote_shobi_first_residuals_v2.py'
+      - 'tools/run_shobi_first_promotion_v2.py'
       - '.github/workflows/match-v2-local-fragrantica-urls.yml'
   workflow_dispatch:
 permissions:
@@ -19,7 +20,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Promote Shobi-first reviewed mappings against local corpus
-        run: python tools/promote_shobi_first_residuals_v2.py
+        run: python tools/run_shobi_first_promotion_v2.py
       - name: Recount remaining residuals against local corpus
         run: python tools/match_v2_against_perfume_urls.py
       - name: Commit Shobi-first promotion and recount
