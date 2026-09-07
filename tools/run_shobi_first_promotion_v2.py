@@ -18,6 +18,7 @@ BATCH_SPECS = [
     (ROOT / 'tools/shobi_first_batch_large_08_v2.py', 'APPROVED_BATCH_LARGE_08'),
     (ROOT / 'tools/shobi_first_batch_large_09_v2.py', 'APPROVED_BATCH_LARGE_09'),
     (ROOT / 'tools/shobi_first_batch_large_10_v2.py', 'APPROVED_BATCH_LARGE_10'),
+    (ROOT / 'tools/shobi_first_batch_large_11_v2.py', 'APPROVED_BATCH_LARGE_11'),
 ]
 DBS = [ROOT / 'database_v2_clean.json', ROOT / 'database_complete.json']
 URLS = ROOT / 'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
