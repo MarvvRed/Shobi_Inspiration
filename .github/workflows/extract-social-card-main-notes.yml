@@ -1,0 +1,31 @@
+name: Extract social card main notes
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/extract_social_card_main_notes.py'
+      - '.github/workflows/extract-social-card-main-notes.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run preflight
+        run: python tools/extract_social_card_main_notes.py
+      - name: Commit preflight
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add social-card-main-notes-preflight.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Audit social card main notes source"
+            git push
+          fi
