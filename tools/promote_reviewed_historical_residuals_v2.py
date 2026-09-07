@@ -26,6 +26,16 @@ APPROVED={
  '1014-AZZ':('829','Azzaro','Azzaro pour Homme','same-brand historical local ID; CLASSIC is the generic original Azzaro masculine fragrance'),
  '1998-LTN':('53947','Louis Vuitton','Afternoon Swim','same-brand historical local ID; Shobi description is the citrus unisex description associated with Afternoon Swim'),
  '502-CHA':('608','Chanel','Chanel N05 Vintage','same-brand historical local base No 5 identity; generic No 5 should not be forced to L Eau flanker'),
+ '1021-BOG':('7795','Jacques Bogart','One Man Show','two local historical sources agree; Shobi explicitly says One Man Show Eau de Toilette'),
+ '1116-ZEG':('28142','Ermenegildo Zegna','Uomo Absolute','two local historical sources agree; UOMO ABSOLUT and explicit Zegna label preserve identity'),
+ '1118-FAB':('38206','Faberge','Brut 1964','two local historical sources agree; distinctive BRUT 1964 identity'),
+ '1151-HAL':('3697','Halston','Z-14','two local historical sources agree; Shobi explicitly says Halston Z-14 Cologne'),
+ '1184-JOO':('1251','Joop!','Joop! Homme','two local historical sources agree; JOOP - JOOP is the original Joop identity'),
+ '1186-JOO':('42887','Joop!','Wow!','two local historical sources agree; explicit WOW - JOOP identity'),
+ '1197-LAC':('670','Lacoste','Lacoste pour Homme','two local historical sources agree; LACOSTE HOMME directly identifies the masculine original'),
+ '1201-LBI':('3002','Laura Biagiotti','Venezia Uomo','two local historical sources agree; exact distinctive Venezia Uomo identity'),
+ '1236-PAL':('1695','Paloma Picasso','Minotaure','two local historical sources agree; exact distinctive Minotaure identity'),
+ '1254-RCAV':('848','Roberto Cavalli','Just Cavalli Him','two local historical sources agree; JUST HIM plus explicit ROBERTO CAVALLI label'),
 }
 def walk(o):
  if isinstance(o,list):
