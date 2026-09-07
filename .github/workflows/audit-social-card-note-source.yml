@@ -1,0 +1,28 @@
+name: Audit social card note source
+
+on:
+  push:
+    paths:
+      - 'tools/audit_social_card_note_source.py'
+      - '.github/workflows/audit-social-card-note-source.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/audit_social_card_note_source.py
+      - name: Commit report
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add social-card-note-source-audit.md
+          git diff --cached --quiet || git commit -m "Report social card note source"
+          git push
