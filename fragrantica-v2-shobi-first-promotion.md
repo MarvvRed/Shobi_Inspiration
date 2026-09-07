@@ -1,5 +1,6 @@
 # Shobi-first residual promotion
 
+- Local corpus numeric IDs parsed: **55557**
 - Reviewed exact identities with Fragrantica target: **48**
 - Target IDs present in local corpus: **0**
 - Target IDs missing from local corpus: **48**
