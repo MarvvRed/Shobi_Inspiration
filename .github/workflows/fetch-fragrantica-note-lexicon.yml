@@ -28,7 +28,7 @@ jobs:
           try:
               with urlopen(req,timeout=45) as r:
                   body=r.read(5_000_000).decode('utf-8','replace')
-              links=re.findall(r'href=["\']/notes/[^"\']+-\d+\.html["\'][^>]*>(.*?)</a>',body,re.I|re.S)
+              links=re.findall(r'href=["\'][^"\']*/notes/[^"\']+-\d+\.html["\'][^>]*>(.*?)</a>',body,re.I|re.S)
               names=[]
               for x in links:
                   x=re.sub(r'<[^>]+>','',x)
