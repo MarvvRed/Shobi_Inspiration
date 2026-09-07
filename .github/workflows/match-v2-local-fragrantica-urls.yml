@@ -4,6 +4,7 @@ on:
     paths:
       - '.github/match-v2-local-fragrantica-urls-trigger'
       - 'tools/promote_shobi_first_residuals_v2.py'
+      - 'tools/shobi_first_additional_v2.py'
       - 'tools/run_shobi_first_promotion_v2.py'
       - '.github/workflows/match-v2-local-fragrantica-urls.yml'
   workflow_dispatch:
