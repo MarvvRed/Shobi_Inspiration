@@ -1,17 +1,17 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **179**
+- Reviewed exact identities with Fragrantica target: **182**
 - Target IDs present in local corpus: **20**
-- Target IDs missing from local corpus: **159**
+- Target IDs missing from local corpus: **162**
 - Promotion policy: **all reviewed exact identities are eligible; local corpus presence is informational only**
-- Promoted this run: **0**
+- Promoted this run: **6**
 - Already verified with same ID: **326**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
 - Identified but deliberately not forced: **7**
 - Probe IDs: **{200: False, 204: False, 456: False, 520: False, 719: False, 905: False, 925: False, 970: False, 993: False, 1014: False, 1061: False, 1365: False, 1499: False, 2068: False, 12201: True}**
-- database_v2_clean.json: **0** rows changed
-- database_complete.json: **0** rows changed
+- database_v2_clean.json: **3** rows changed
+- database_complete.json: **3** rows changed
 
 ## Exact targets
 
@@ -113,7 +113,7 @@
 - `913-SIS` -> Sisley / Eau du Soir — ID 1002 — MISSING_FROM_CORPUS — Shobi code 913-SIS identifies EAU DU SOIR; classic Sisley entry
 - `914-SIS` -> Sisley / Eau Tropicale — ID 23324 — MISSING_FROM_CORPUS — Shobi code 914-SIS identifies EAU TROPICALE; exact Sisley 2014 entry
 - `915-SIS` -> Sisley / Izia — ID 42935 — MISSING_FROM_CORPUS — Shobi code 915-SIS identifies IZIA; exact Sisley 2017 entry
-- `1186-JOO` -> Joop! / Wow! — ID 42887 — MISSING_FROM_CORPUS — Shobi code 1186-JOO explicitly identifies WOW - JOOP; exact 2017 men entry
+- `1186-JOO` -> Joop! / Wow! — ID 42887 — MISSING_FROM_CORPUS — Corrected prior stale ID 43425; Fragrantica exact Joop! Wow! entry is ID 42887
 - `1188-JPG` -> Jean Paul Gaultier / Le Male Essence de Parfum — ID 39583 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1195-LAC` -> Lacoste / Eau de Lacoste L.12.12 Rouge — ID 16456 — IN_CORPUS — Previously reviewed exact Shobi identity retained
 - `1197-LAC` -> Lacoste Fragrances / Lacoste Pour Homme — ID 670 — MISSING_FROM_CORPUS — Shobi residual LACOSTE HOMME under Lacoste code identifies the 2002 Lacoste Pour Homme entry
@@ -194,6 +194,9 @@
 - `1122-GFE` -> Gianfranco Ferre / In The Mood For Love — ID 6530 — MISSING_FROM_CORPUS — Shobi explicitly identifies IN THE MOOD FOR LOVE - GIANFRANCO FERRE; exact 2009 women entry
 - `1151-HAL` -> Halston / Z-14 — ID 3697 — MISSING_FROM_CORPUS — Shobi residual Halston Z-14 Cologne; exact Halston Z-14 fragrance
 - `171-DUP` -> S.T. Dupont / Dupont Oud Oriental — ID 21459 — MISSING_FROM_CORPUS — Shobi identifies SOUVENIRS DE MALLES OUD ORIENTAL - S.T.DUPONT; Fragrantica exact S.T. Dupont Oud Oriental 2012 entry
+- `233-ESCE` -> Escentric Molecules / Molecule 02 — ID 3606 — MISSING_FROM_CORPUS — Residual identity is Molecule 02; Fragrantica exact Escentric Molecules 2008 entry ID 3606
+- `236-IND` -> Indigo Wild / Zum Mist Frankincense & Myrrh — ID 42046 — MISSING_FROM_CORPUS — Residual says ZUM FRANKINCENSE & MYRRH; Fragrantica exact Indigo Wild Zum Mist Frankincense & Myrrh entry ID 42046
+- `237-JOM` -> Jo Loves / Mango Thai Lime — ID 16436 — MISSING_FROM_CORPUS — Shobi label A Shot Of Thai Over Mango / Jo Malone refers to Jo Malone-created Jo Loves Mango collection; Fragrantica current exact entry Mango Thai Lime ID 16436
 
 ## No-force identities
 
