@@ -1,17 +1,17 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **182**
+- Reviewed exact identities with Fragrantica target: **183**
 - Target IDs present in local corpus: **20**
-- Target IDs missing from local corpus: **162**
+- Target IDs missing from local corpus: **163**
 - Promotion policy: **all reviewed exact identities are eligible; local corpus presence is informational only**
-- Promoted this run: **0**
+- Promoted this run: **2**
 - Already verified with same ID: **332**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
 - Identified but deliberately not forced: **7**
 - Probe IDs: **{200: False, 204: False, 456: False, 520: False, 719: False, 905: False, 925: False, 970: False, 993: False, 1014: False, 1061: False, 1365: False, 1499: False, 2068: False, 12201: True}**
-- database_v2_clean.json: **0** rows changed
-- database_complete.json: **0** rows changed
+- database_v2_clean.json: **1** rows changed
+- database_complete.json: **1** rows changed
 
 ## Exact targets
 
@@ -197,6 +197,7 @@
 - `233-ESCE` -> Escentric Molecules / Molecule 02 — ID 3606 — MISSING_FROM_CORPUS — Residual identity is Molecule 02; Fragrantica exact Escentric Molecules 2008 entry ID 3606
 - `236-IND` -> Indigo Wild / Zum Mist Frankincense & Myrrh — ID 42046 — MISSING_FROM_CORPUS — Residual says ZUM FRANKINCENSE & MYRRH; Fragrantica exact Indigo Wild Zum Mist Frankincense & Myrrh entry ID 42046
 - `237-JOM` -> Jo Loves / Mango Thai Lime — ID 16436 — MISSING_FROM_CORPUS — Shobi label A Shot Of Thai Over Mango / Jo Malone refers to Jo Malone-created Jo Loves Mango collection; Fragrantica current exact entry Mango Thai Lime ID 16436
+- `235-HOLL` -> Hollister / Socal — ID 4307 — MISSING_FROM_CORPUS — Shobi residual SOCAL with Hollister code; Fragrantica exact Hollister Socal women entry ID 4307
 
 ## No-force identities
 

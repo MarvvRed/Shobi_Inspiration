@@ -3279,8 +3279,8 @@
     "shobiUrl": "",
     "brand": "Unknown Brand",
     "inspiredBy": "SOCAL",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 4307,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -3292,7 +3292,12 @@
     },
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
-    "occasions": []
+    "occasions": [],
+    "fragrantica_id": 4307,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Hollister/Socal-4307.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi residual SOCAL with Hollister code; Fragrantica exact Hollister Socal women entry ID 4307"
   },
   {
     "id": "236-IND",
