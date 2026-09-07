@@ -1,10 +1,10 @@
 # Reviewed historical residual promotion
 
-- Approved: **22**
-- Promoted this run: **4**
-- Already verified: **18**
-- database_v2_clean.json: **4** changed
-- database_complete.json: **4** changed
+- Approved: **32**
+- Promoted this run: **0**
+- Already verified: **22**
+- database_v2_clean.json: **0** changed
+- database_complete.json: **0** changed
 
 ## Mappings
 
@@ -30,3 +30,13 @@
 - `1014-AZZ` -> Azzaro / Azzaro pour Homme — ID 829 — same-brand historical local ID; CLASSIC is the generic original Azzaro masculine fragrance
 - `1998-LTN` -> Louis Vuitton / Afternoon Swim — ID 53947 — same-brand historical local ID; Shobi description is the citrus unisex description associated with Afternoon Swim
 - `502-CHA` -> Chanel / Chanel N05 Vintage — ID 608 — same-brand historical local base No 5 identity; generic No 5 should not be forced to L Eau flanker
+- `1021-BOG` -> Jacques Bogart / One Man Show — ID 7795 — two local historical sources agree; Shobi explicitly says One Man Show Eau de Toilette
+- `1116-ZEG` -> Ermenegildo Zegna / Uomo Absolute — ID 28142 — two local historical sources agree; UOMO ABSOLUT and explicit Zegna label preserve identity
+- `1118-FAB` -> Faberge / Brut 1964 — ID 38206 — two local historical sources agree; distinctive BRUT 1964 identity
+- `1151-HAL` -> Halston / Z-14 — ID 3697 — two local historical sources agree; Shobi explicitly says Halston Z-14 Cologne
+- `1184-JOO` -> Joop! / Joop! Homme — ID 1251 — two local historical sources agree; JOOP - JOOP is the original Joop identity
+- `1186-JOO` -> Joop! / Wow! — ID 42887 — two local historical sources agree; explicit WOW - JOOP identity
+- `1197-LAC` -> Lacoste / Lacoste pour Homme — ID 670 — two local historical sources agree; LACOSTE HOMME directly identifies the masculine original
+- `1201-LBI` -> Laura Biagiotti / Venezia Uomo — ID 3002 — two local historical sources agree; exact distinctive Venezia Uomo identity
+- `1236-PAL` -> Paloma Picasso / Minotaure — ID 1695 — two local historical sources agree; exact distinctive Minotaure identity
+- `1254-RCAV` -> Roberto Cavalli / Just Cavalli Him — ID 848 — two local historical sources agree; JUST HIM plus explicit ROBERTO CAVALLI label

@@ -25,7 +25,7 @@
   - `522-DRC` — Dior Addict — ID 25159
   - `523-DRC` — ISSIMO — ID 224
   - `524-DRC` — DOLCE VITA — ID 222
-- `ltn` — top `Louis Vuitton` 33/34 (97.1%) — suspicious-name=True — distribution: {'Louis Vuitton': 33, 'Boy Smells': 1}
+- `ltn` — top `Louis Vuitton` 34/35 (97.1%) — suspicious-name=True — distribution: {'Louis Vuitton': 34, 'Boy Smells': 1}
   - `132-LTN` — Ombre Nomade — ID 49755
   - `809-LTN` — Apogée — ID 40498
   - `810-LTN` — Matière Noire — ID 40496
@@ -150,11 +150,11 @@
   - `181-XER` — Alexandria II — ID 17786
   - `182-XER` — Comandante — ID 16448
   - `183-XER` — Don — ID 26709
-- `iss` — top `Issey Miyake` 5/6 (83.3%) — suspicious-name=False — distribution: {'Accessorize': 1, 'Issey Miyake': 5}
+- `iss` — top `Issey Miyake` 6/7 (85.7%) — suspicious-name=False — distribution: {'Accessorize': 1, 'Issey Miyake': 6}
+  - `717-ISS` — CLASSIC - ISSEY MIYAKE — ID 720
   - `718-ISS` — L Eau D Issey — ID 720
   - `719-ISS` — PLEATS PLEASE — ID 15464
   - `1172-ISS` — EAU D'ISSEY HOMME - ISSEY MIYAKE — ID 721
-  - `1173-ISS` — Nuit D Issey Bleu Astral — ID 43311
 - `ken` — top `Kenzo` 15/17 (88.2%) — suspicious-name=False — distribution: {'Kenzo': 15, 'Ciclo Cosmeticos': 1, 'Bellerive': 1}
   - `747-KEN` — Kenzo Amour Le Parfum — ID 4696
   - `748-KEN` — Couleur Kenzo Violet — ID 23315

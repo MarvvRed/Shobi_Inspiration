@@ -1,8 +1,8 @@
 # Multi-source local residual promotion
 
-- Residual queue: **217**
+- Residual queue: **213**
 - Safe multi-source mappings: **0**
-- Blocked multi-source candidates: **2**
+- Blocked multi-source candidates: **0**
 - database_v2_clean.json: **0** promoted
 - database_complete.json: **0** promoted
 
@@ -11,5 +11,3 @@
 
 ## Blocked candidates
 
-- `717-ISS` — CLASSIC - ISSEY MIYAKE -> Issey Miyake / L eau d Issey — ID 720 — src 3 — rank 1 — brand_ok True — name 0.4000 — recall 0.0000 — precision 0.0000
-- `1998-LTN` — Citrus fragrance for women and men -> Louis Vuitton / Afternoon Swim — ID 53947 — src 3 — rank 3 — brand_ok True — name 0.3333 — recall 0.0000 — precision 0.0000

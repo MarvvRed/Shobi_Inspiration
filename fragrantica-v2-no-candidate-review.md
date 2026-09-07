@@ -1,7 +1,7 @@
 # NO_CANDIDATE residual review
 
-- Total NO_CANDIDATE: **41**
-- With local brand hint: **19**
+- Total NO_CANDIDATE: **38**
+- With local brand hint: **16**
 - Without brand hint: **22**
 
 ## Brand-hinted residuals
@@ -17,11 +17,8 @@
 - `309-LOC` — MAGNOLIA & MURE - L' OCCITANE — brand `L Occitane en Provence` (name_tail) — #1 L Occitane en Provence / Noble Epine [ID 87134; score 0.5450; name 0.4167]
 - `564-DOL` — SEXY CHOCLATE — brand `Dolce Gabbana` (verified_suffix) — #1 Dolce Gabbana / Rose The One [ID 6461; score 0.5944; name 0.4800] | #2 Dolce Gabbana / Velvet Patchouli [ID 13744; score 0.5428; name 0.4138] | #3 Dolce Gabbana / Velvet Exotic Leather [ID 31355; score 0.5412; name 0.4118] | #4 Dolce Gabbana / Dolce Violet [ID 80038; score 0.5320; name 0.4000] | #5 Dolce Gabbana / The One [ID 698; score 0.5320; name 0.4000]
 - `570-DOL` — (RED CUP) — brand `Dolce Gabbana` (verified_suffix) — no local candidates
-- `717-ISS` — CLASSIC - ISSEY MIYAKE — brand `Issey Miyake` (name_tail) — #1 Issey Miyake / L eau d Issey [ID 720; score 0.5320; name 0.4000] | #2 Issey Miyake / L Eau d Issey Pivoine [ID 79232; score 0.4986; name 0.3571] | #3 Issey Miyake / L Eau d Issey Pure [ID 37741; score 0.4696; name 0.3200] | #4 Issey Miyake / L Eau Bleue d Issey Eau Fraiche [ID 2330; score 0.4663; name 0.3158] | #5 Issey Miyake / Lune d Issey [ID 16973; score 0.4663; name 0.3158]
 - `993-ZAD` — JUST ROCK FOR HER - ZADIG & VOLTAIRE — brand `Zadig Voltaire` (name_tail) — #1 Zadig Voltaire / This is Him [ID 39359; score 0.4429; name 0.2857]
-- `1014-AZZ` — CLASSIC — brand `Azzaro` (verified_suffix) — #1 Azzaro / Solarissimo Levanzo [ID 37912; score 0.5200; name 0.3846] | #2 Azzaro / Solarissimo Favignana [ID 49636; score 0.4986; name 0.3571] | #3 Azzaro / Solarissimo Marettimo [ID 43760; score 0.4986; name 0.3571] | #4 Azzaro / Aqua Cedre Blanc [ID 17861; score 0.4913; name 0.3478] | #5 Azzaro / Shine [ID 54972; score 0.4800; name 0.3333]
 - `1748-BYR` — Marijuana — brand `Byredo` (verified_suffix) — #1 Byredo / Animalique [ID 85157; score 0.5484; name 0.4211] | #2 Byredo / Tobacco Mandarin [ID 63031; score 0.5320; name 0.4000] | #3 Byredo / M Mink [ID 10758; score 0.5320; name 0.4000] | #4 Byredo / Mumbai Noise [ID 69858; score 0.5171; name 0.3810] | #5 Byredo / Bal d Afrique [ID 6458; score 0.5036; name 0.3636]
-- `1998-LTN` — Citrus fragrance for women and men — brand `Louis Vuitton` (verified_suffix) — #1 Louis Vuitton / Attrape Reves [ID 51016; score 0.4855; name 0.3404] | #2 Louis Vuitton / Cactus Garden [ID 53946; score 0.4855; name 0.3404] | #3 Louis Vuitton / Afternoon Swim [ID 53947; score 0.4800; name 0.3333] | #4 Louis Vuitton / Le Jour se Leve [ID 48305; score 0.4747; name 0.3265] | #5 Louis Vuitton / Nuit de Feu [ID 60031; score 0.4627; name 0.3111]
 - `2085-CLIV` — X NEROLI LIMITED EDITION - CLIVE CHRISTIAN — brand `Clive Christian` (name_tail) — #1 Clive Christian / X Twist Mate Tea [ID 59178; score 0.5710; name 0.4500] | #2 Clive Christian / VIII Rococo Immortelle [ID 45206; score 0.5252; name 0.3913] | #3 Clive Christian / L Red Tea Vetiver [ID 101977; score 0.5244; name 0.3902] | #4 Clive Christian / X Twist Liquorice [ID 67267; score 0.5244; name 0.3902] | #5 Clive Christian / Amber Absolute Oil [ID 52416; score 0.5171; name 0.3810]
 - `2586-DIP` — Biscuit DIP — brand `Diptyque` (verified_suffix) — #1 Diptyque / Ilio Limited Edition [ID 82763; score 0.5219; name 0.3871] | #2 Diptyque / Bois Corse [ID 96742; score 0.5171; name 0.3810] | #3 Diptyque / Philosykos Limited Edition [ID 55615; score 0.5151; name 0.3784] | #4 Diptyque / Do Son Limited Edition [ID 90244; score 0.5036; name 0.3636] | #5 Diptyque / Eau d Elide [ID 3830; score 0.5036; name 0.3636]
 - `2701-DIP` — Cafe Verlet — brand `Diptyque` (verified_suffix) — #1 Diptyque / L Eau de Neroli [ID 3835; score 0.5800; name 0.4615] | #2 Diptyque / Vinaigre de Toilette [ID 8777; score 0.5723; name 0.4516] | #3 Diptyque / L Autre Eau de Toilette [ID 3832; score 0.5412; name 0.4118] | #4 Diptyque / Eau de Lierre Eau de Toilette [ID 6500; score 0.5320; name 0.4000] | #5 Diptyque / Eau de Lavande [ID 24917; score 0.5320; name 0.4000]

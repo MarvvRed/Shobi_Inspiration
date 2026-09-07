@@ -1,12 +1,11 @@
 # Brand-locked abbreviation review
 
-- Surfaced candidates: **10**
-- WEAK_REVIEW: **9**
+- Surfaced candidates: **9**
+- WEAK_REVIEW: **8**
 - NO_CANDIDATE: **1**
 
 ## Top candidates
 
-- `502-CHA` [WEAK_REVIEW] — No 5 -> Chanel / Chanel No 5 L Eau — ID 38543 — rank 1 — score 0.9520 — margin 0.0120
 - `1748-BYR` [NO_CANDIDATE] — Marijuana -> Byredo / M Mink — ID 10758 — rank 3 — score 0.8286 — margin 0.4075
 - `228-DIP` [WEAK_REVIEW] — FEUILLE DE LAVANDE -> Diptyque / Eau de Lavande — ID 24917 — rank 1 — score 0.7857 — margin 0.2257
 - `130-LEL` [WEAK_REVIEW] — SANTAL 26 - LE LABO -> Le Labo / Santal 33 — ID 12201 — rank 1 — score 0.7500 — margin 0.2237
