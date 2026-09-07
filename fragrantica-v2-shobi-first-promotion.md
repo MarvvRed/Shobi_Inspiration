@@ -1,17 +1,18 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **183**
+- Reviewed exact identities with Fragrantica target: **189**
 - Target IDs present in local corpus: **20**
-- Target IDs missing from local corpus: **163**
+- Target IDs missing from local corpus: **169**
 - Promotion policy: **all reviewed exact identities are eligible; local corpus presence is informational only**
-- Promoted this run: **2**
-- Already verified with same ID: **332**
+- Promoted this run: **12**
+- No-force rows marked this run: **44**
+- Already verified with same ID: **334**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
-- Identified but deliberately not forced: **7**
+- Identified but deliberately not forced: **22**
 - Probe IDs: **{200: False, 204: False, 456: False, 520: False, 719: False, 905: False, 925: False, 970: False, 993: False, 1014: False, 1061: False, 1365: False, 1499: False, 2068: False, 12201: True}**
-- database_v2_clean.json: **1** rows changed
-- database_complete.json: **1** rows changed
+- database_v2_clean.json: **28** rows changed
+- database_complete.json: **28** rows changed
 
 ## Exact targets
 
@@ -198,6 +199,12 @@
 - `236-IND` -> Indigo Wild / Zum Mist Frankincense & Myrrh — ID 42046 — MISSING_FROM_CORPUS — Residual says ZUM FRANKINCENSE & MYRRH; Fragrantica exact Indigo Wild Zum Mist Frankincense & Myrrh entry ID 42046
 - `237-JOM` -> Jo Loves / Mango Thai Lime — ID 16436 — MISSING_FROM_CORPUS — Shobi label A Shot Of Thai Over Mango / Jo Malone refers to Jo Malone-created Jo Loves Mango collection; Fragrantica current exact entry Mango Thai Lime ID 16436
 - `235-HOLL` -> Hollister / Socal — ID 4307 — MISSING_FROM_CORPUS — Shobi residual SOCAL with Hollister code; Fragrantica exact Hollister Socal women entry ID 4307
+- `238-JOM` -> Jo Loves / A Shot Of Oud Over Mango — ID 16434 — MISSING_FROM_CORPUS — Shobi labels A Shot Of Oud Over Mango under Jo Malone naming; exact fragrance belongs to Jo Loves and Fragrantica ID 16434
+- `257-JOM` -> Jo Loves / Green Orange & Coriander — ID 13827 — MISSING_FROM_CORPUS — Shobi labels GREEN ORANGE & CORIANDER - JO MALONE; exact fragrance is Jo Loves by Jo Malone, Fragrantica ID 13827
+- `279-JOM` -> Jo Loves / Pink Vetiver — ID 16433 — MISSING_FROM_CORPUS — Shobi labels PINK VETIVER - JO MALONE; exact Jo Loves fragrance by Jo Malone, Fragrantica ID 16433
+- `282-JOM` -> Jo Loves / Pomelo — ID 13826 — MISSING_FROM_CORPUS — Shobi labels POMELO - JO MALONE; exact Jo Loves fragrance by Jo Malone, Fragrantica ID 13826
+- `286-JOM` -> Jo Loves / Shards of Cedar & Red Thyme — ID 37578 — MISSING_FROM_CORPUS — Shobi labels SHARDS OF CEDAR & RED THYME - JO MALONE; exact Jo Loves fragrance by Jo Malone, Fragrantica ID 37578
+- `337-TIFF` -> Tiffany / Tiffany & Co Sheer — ID 53062 — MISSING_FROM_CORPUS — Shobi residual explicitly says Tiffany & Co Sheer; exact 2019 Tiffany fragrance, Fragrantica ID 53062
 
 ## No-force identities
 
@@ -208,3 +215,18 @@
 - `227-DIP` — ('Diptyque', 'Feu de Bois / Wood Fire', 'candle/home fragrance identity; do not substitute a perfume')
 - `612-ESC` — ('Escada', 'Turquoise', 'Shobi distinguishes Turquoise from separate Turquoise Summer; no safe exact perfume target yet')
 - `1251-ROM` — ('Romane', 'Royal Blue', 'Shobi identity is Royal Blue - Romane; no safe same-brand Fragrantica target found')
+- `228-DIP` — ('Diptyque', 'Feuille de Lavande', 'candle/home scent identity; do not substitute Eau de Lavande perfume')
+- `230-DIP` — ('Diptyque', 'Opopanax', 'room spray/home fragrance identity; do not substitute a Diptyque perfume')
+- `258-JOM` — ('Jo Malone London', 'Green Tomato Leaf', 'current Jo Malone identity is hand wash/home scent, not a perfume target')
+- `261-JOM` — ('Jo Malone London', 'Incense & Embers', 'home candle/home fragrance identity; do not substitute Incense & Cedrat')
+- `311-MOL` — ('Molton Brown', 'Amber Cocoon', 'body/home product identity; no safe exact Fragrantica perfume target')
+- `379-YAN` — ('Yankee Candle', 'Clean Cotton', 'candle/home fragrance identity')
+- `380-YAN` — ('Yankee Candle', 'Fall Festival', 'candle/home fragrance identity')
+- `381-YAN` — ('Yankee Candle', 'Fresh Cut Roses', 'candle/home fragrance identity')
+- `382-YAN` — ('Yankee Candle', 'Pomegranate Cider', 'candle/home fragrance identity')
+- `383-YAN` — ('Yankee Candle', 'Wedding Day', 'candle/home fragrance identity')
+- `564-DOL` — ('Dolce & Gabbana', 'Sexy Chocolate', 'no authentic Dolce & Gabbana fragrance by this name; do not force a false target')
+- `1550-YAN` — ('Yankee Candle', 'Home Sweet Home', 'candle/home fragrance identity')
+- `1748-BYR` — ('Byredo', 'Marijuana', 'no safe authentic Byredo perfume target')
+- `1955-LAP` — ('La Prairie', 'Cellular Energizing', 'body spray/body product rather than standard perfume identity')
+- `2085-CLIV` — ('Clive Christian', 'X Neroli Limited Edition', 'real product identity but no safe Fragrantica page target found')

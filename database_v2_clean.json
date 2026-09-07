@@ -717,7 +717,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "home fragrance/home oil identity; do not substitute Santal 33"
   },
   {
     "id": "131-LEL",
@@ -2350,7 +2353,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "home scent/candle identity; do not substitute a different perfume"
   },
   {
     "id": "201-CLIV",
@@ -2857,7 +2863,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "home fragrance identity; do not substitute a Diptyque perfume"
   },
   {
     "id": "223-DIP",
@@ -2879,7 +2888,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "candle/home fragrance identity; do not substitute a perfume"
   },
   {
     "id": "224-DIP",
@@ -2971,7 +2983,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "candle/home fragrance identity; do not substitute a perfume"
   },
   {
     "id": "228-DIP",
@@ -2993,7 +3008,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "candle/home scent identity; do not substitute Eau de Lavande perfume"
   },
   {
     "id": "229-DIP",
@@ -3038,7 +3056,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "room spray/home fragrance identity; do not substitute a Diptyque perfume"
   },
   {
     "id": "231-DIP",
@@ -3225,8 +3246,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/238-jom-el",
     "brand": "",
     "inspiredBy": "A Shot Of Oud Over Mango - Jo Malone",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 16434,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -3237,7 +3258,12 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_id": 16434,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Jo-Loves/A-Shot-Of-Oud-Over-Mango-16434.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi labels A Shot Of Oud Over Mango under Jo Malone naming; exact fragrance belongs to Jo Loves and Fragrantica ID 16434"
   },
   {
     "id": "239-JOM",
@@ -3667,8 +3693,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/257-jom-el",
     "brand": "",
     "inspiredBy": "GREEN ORANGE & CORIANDER - JO MALONE",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 13827,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -3679,7 +3705,12 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_id": 13827,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Jo-Loves/Green-Orange-&-Coriander-13827.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi labels GREEN ORANGE & CORIANDER - JO MALONE; exact fragrance is Jo Loves by Jo Malone, Fragrantica ID 13827"
   },
   {
     "id": "258-JOM",
@@ -3701,7 +3732,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "current Jo Malone identity is hand wash/home scent, not a perfume target"
   },
   {
     "id": "259-JOM",
@@ -3769,7 +3803,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "home candle/home fragrance identity; do not substitute Incense & Cedrat"
   },
   {
     "id": "262-JOM",
@@ -4173,8 +4210,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/279-jom-el",
     "brand": "",
     "inspiredBy": "PINK VETIVER - JO MALONE",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 16433,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -4185,7 +4222,12 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_id": 16433,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Jo-Loves/Pink-Vetiver-16433.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi labels PINK VETIVER - JO MALONE; exact Jo Loves fragrance by Jo Malone, Fragrantica ID 16433"
   },
   {
     "id": "280-JOM",
@@ -4241,8 +4283,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/282-jom-el",
     "brand": "",
     "inspiredBy": "POMELO - JO MALONE",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 13826,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -4253,7 +4295,12 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_id": 13826,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Jo-Loves/Pomelo-13826.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi labels POMELO - JO MALONE; exact Jo Loves fragrance by Jo Malone, Fragrantica ID 13826"
   },
   {
     "id": "283-JOM",
@@ -4333,8 +4380,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/286-jom-el",
     "brand": "",
     "inspiredBy": "SHARDS OF CEDAR & RED THYME - JO MALONE",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 37578,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -4345,7 +4392,12 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_id": 37578,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Jo-Loves/Shards-of-Cedar-&-Red-Thyme-37578.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi labels SHARDS OF CEDAR & RED THYME - JO MALONE; exact Jo Loves fragrance by Jo Malone, Fragrantica ID 37578"
   },
   {
     "id": "287-JOM",
@@ -4941,7 +4993,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "body/home product identity; no safe exact Fragrantica perfume target"
   },
   {
     "id": "312-MOL",
@@ -5516,8 +5571,8 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/337-tiff-wp",
     "brand": "",
     "inspiredBy": "Tiffany  Co Sheer",
-    "fragranticaId": null,
-    "fragranticaStatus": "NEEDS_REVERIFICATION",
+    "fragranticaId": 53062,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -5528,7 +5583,12 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_id": 53062,
+    "fragrantica_url": "https://www.fragrantica.com/perfume/Tiffany/Tiffany-&-Co-Sheer-53062.html",
+    "fragrantica_status": "VERIFIED_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
+    "fragrantica_match_reason": "Shobi residual explicitly says Tiffany & Co Sheer; exact 2019 Tiffany fragrance, Fragrantica ID 53062"
   },
   {
     "id": "338-TMFO",
@@ -6495,7 +6555,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "candle/home fragrance identity"
   },
   {
     "id": "380-YAN",
@@ -6517,7 +6580,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "candle/home fragrance identity"
   },
   {
     "id": "381-YAN",
@@ -6539,7 +6605,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "candle/home fragrance identity"
   },
   {
     "id": "382-YAN",
@@ -6561,7 +6630,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "candle/home fragrance identity"
   },
   {
     "id": "383-YAN",
@@ -6583,7 +6655,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "candle/home fragrance identity"
   },
   {
     "id": "384-YAR",
@@ -10618,7 +10693,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "no authentic Dolce & Gabbana fragrance by this name; do not force a false target"
   },
   {
     "id": "565-DOL",
@@ -11742,7 +11820,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "Shobi distinguishes Turquoise from separate Turquoise Summer; no safe exact perfume target yet"
   },
   {
     "id": "613-ESC",
@@ -26628,7 +26709,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "Shobi identity is Royal Blue - Romane; no safe same-brand Fragrantica target found"
   },
   {
     "id": "1252-RCAV",
@@ -29118,7 +29202,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "candle/home fragrance identity"
   },
   {
     "id": "1551-VICT",
@@ -31671,7 +31758,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "no safe authentic Byredo perfume target"
   },
   {
     "id": "1749-BLG",
@@ -36103,7 +36193,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "body spray/body product rather than standard perfume identity"
   },
   {
     "id": "1956-JOM",
@@ -38653,7 +38746,10 @@
       "base": []
     },
     "enrichmentStatus": "PENDING",
-    "masterVersion": "shobi-master-v2-2369"
+    "masterVersion": "shobi-master-v2-2369",
+    "fragrantica_status": "NO_FORCE_SHOBI_FIRST",
+    "fragrantica_match_method": "shobi_first_non_perfume_or_no_safe_target",
+    "fragrantica_match_reason": "real product identity but no safe Fragrantica page target found"
   },
   {
     "id": "2086-VICT",
