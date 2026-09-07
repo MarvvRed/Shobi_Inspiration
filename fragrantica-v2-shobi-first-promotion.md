@@ -1,9 +1,9 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **125**
+- Reviewed exact identities with Fragrantica target: **127**
 - Target IDs present in local corpus: **15**
-- Target IDs missing from local corpus: **110**
+- Target IDs missing from local corpus: **112**
 - Promoted this run: **0**
 - Already verified with same ID: **2**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
@@ -139,6 +139,8 @@
 - `2415-ESC` -> Escada / Sexy Graffiti — ID 1352 — MISSING_FROM_CORPUS — Shobi residual identifies SEXY GRAFFITY - ESCADA without 2011 qualifier; maps to original 2002 Sexy Graffiti
 - `2438-KYLJE` -> Kylie Cosmetics / Cosmic Kylie Jenner — ID 90957 — MISSING_FROM_CORPUS — Shobi code KYLJE plus COSMIC identifies original 2024 Cosmic Kylie Jenner; not 2.0 or Intense
 - `2604-JILS` -> Jil Sander / Sun Men — ID 619 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Sun Men Jil Sander with no EDP/Parfum qualifier; exact original 2002 EDT
+- `2697-RIT` -> Rituals / Ritual of Karma — ID 46391 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Karma Rituals; exact Rituals body mist fragrance entry with lotus and bergamot
+- `2699-RIT` -> Rituals / Rituals of Ayurveda — ID 52638 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Ayurveda Rituals; exact Rituals fragrance entry with rose and honey
 
 ## Identified but not forced
 
