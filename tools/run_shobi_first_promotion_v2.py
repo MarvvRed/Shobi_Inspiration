@@ -7,9 +7,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SPEC = ROOT / 'tools/promote_shobi_first_residuals_v2.py'
 ADD_SPEC = ROOT / 'tools/shobi_first_additional_v2.py'
+NO_FORCE_EXTRA_SPEC = ROOT / 'tools/shobi_first_noforce_extra_v2.py'
 BATCH_SPECS = [
     (ROOT / f'tools/shobi_first_batch_large_{i:02d}_v2.py', f'APPROVED_BATCH_LARGE_{i:02d}')
-    for i in range(1, 16)
+    for i in range(1, 17)
 ]
 DBS = [ROOT / 'database_v2_clean.json', ROOT / 'database_complete.json']
 URLS = ROOT / 'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
@@ -38,6 +39,7 @@ def load_url_ids():
 
 APPROVED = load_literal(SPEC, 'APPROVED')
 NO_FORCE = load_literal(SPEC, 'NO_FORCE')
+NO_FORCE.update(load_literal(NO_FORCE_EXTRA_SPEC, 'NO_FORCE_EXTRA'))
 APPROVED.update(load_literal(ADD_SPEC, 'APPROVED_ADDITIONAL'))
 for batch_path, var_name in BATCH_SPECS:
     APPROVED.update(load_literal(batch_path, var_name))
@@ -52,6 +54,7 @@ changed = {db.name: 0 for db in DBS}
 already = 0
 conflicts = 0
 promoted = 0
+no_force_marked = 0
 
 for db_path in DBS:
     data = json.loads(db_path.read_text(encoding='utf-8'))
@@ -61,6 +64,16 @@ for db_path in DBS:
     n = 0
     for row in rows:
         code = str(row.get('code') or row.get('shobi_code') or row.get('id') or '').strip()
+        if code in NO_FORCE and code not in APPROVED:
+            status = str(row.get('fragrantica_status') or row.get('status') or '').upper()
+            if not status.startswith('VERIFIED_') and not status.startswith('NO_FORCE_'):
+                brand, name, reason = NO_FORCE[code]
+                row['fragrantica_status'] = 'NO_FORCE_SHOBI_FIRST'
+                row['fragrantica_match_method'] = 'shobi_first_non_perfume_or_no_safe_target'
+                row['fragrantica_match_reason'] = reason
+                n += 1
+                no_force_marked += 1
+            continue
         if code not in APPROVED:
             continue
         target_id, brand, name, reason = APPROVED[code]
@@ -91,6 +104,7 @@ lines = [
     f'- Target IDs missing from local corpus: **{len(missing)}**',
     f'- Promotion policy: **all reviewed exact identities are eligible; local corpus presence is informational only**',
     f'- Promoted this run: **{promoted}**',
+    f'- No-force rows marked this run: **{no_force_marked}**',
     f'- Already verified with same ID: **{already}**',
     f'- Conflicting pre-existing VERIFIED mappings left untouched: **{conflicts}**',
     f'- Identified but deliberately not forced: **{len(NO_FORCE)}**',
@@ -106,4 +120,4 @@ lines += ['', '## No-force identities', '']
 for code, reason in NO_FORCE.items():
     lines.append(f'- `{code}` — {reason}')
 OUT.write_text('\n'.join(lines) + '\n', encoding='utf-8')
-print(f'parsed_ids={len(url_ids)} reviewed={len(APPROVED)} in_corpus={len(present)} missing={len(missing)} promoted={promoted} already={already} conflicts={conflicts} no_force={len(NO_FORCE)}')
+print(f'parsed_ids={len(url_ids)} reviewed={len(APPROVED)} in_corpus={len(present)} missing={len(missing)} promoted={promoted} no_force_marked={no_force_marked} already={already} conflicts={conflicts} no_force={len(NO_FORCE)}')
