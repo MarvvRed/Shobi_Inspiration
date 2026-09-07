@@ -25,3 +25,6 @@
   - `VERIFIED_SHOBI_FIRST`: 189
   - `RESOLVED_NO_FORCE`: 39
 
+## Status mismatches
+
+- `pid:2688`: complete=`NEEDS_REVERIFICATION` clean=`VERIFIED_LOCAL_CORPUS_V2`; name=`Danat Al Duniya Eau de Parfum`
