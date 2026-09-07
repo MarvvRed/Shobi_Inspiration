@@ -34,16 +34,21 @@ def walk(obj):
         elif 'code' in obj or 'inspiredBy' in obj:
             yield obj
 
-need = {value[0] for value in APPROVED.values()}
+# Target IDs are strings. Detect the terminal Fragrantica numeric ID independently
+# of hostname/path formatting so embedded URLs and legacy line formats are accepted.
+need = {str(value[0]) for value in APPROVED.values()}
 urls = {}
+parsed_ids = set()
 for raw in URLS.read_text(encoding='utf-8', errors='ignore').splitlines():
     line = raw.strip()
-    # Same structural parser used by match_v2_against_perfume_urls.py: URL may be embedded in a longer line.
-    match = re.search(r'/perfume/([^/]+)/([^/]+?)-(\d+)\.html', line, re.I)
-    if match:
-        fid = match.group(3)
+    matches = re.findall(r'-(\d+)\.html(?:\?[^\s]*)?', line, re.I)
+    if not matches:
+        continue
+    for fid in matches:
+        parsed_ids.add(fid)
         if fid in need and fid not in urls:
-            urls[fid] = match.group(0) if not line.startswith('http') else line
+            url_match = re.search(r'https?://\S*-' + re.escape(fid) + r'\.html(?:\?\S*)?', line, re.I)
+            urls[fid] = url_match.group(0) if url_match else line
 
 promoted = set()
 already_verified = set()
@@ -58,6 +63,7 @@ for path in DBS:
         if code not in APPROVED:
             continue
         fid, brand, name, rationale = APPROVED[code]
+        fid = str(fid)
         if fid not in urls:
             continue
         current_status = str(perfume.get('fragranticaStatus') or '')
@@ -77,10 +83,11 @@ for path in DBS:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     changed[path.name] = count
 
-in_corpus = {code for code, value in APPROVED.items() if value[0] in urls}
+in_corpus = {code for code, value in APPROVED.items() if str(value[0]) in urls}
 missing = set(APPROVED) - in_corpus
 lines = [
     '# Shobi-first residual promotion', '',
+    f'- Local corpus numeric IDs parsed: **{len(parsed_ids)}**',
     f'- Reviewed exact identities with Fragrantica target: **{len(APPROVED)}**',
     f'- Target IDs present in local corpus: **{len(in_corpus)}**',
     f'- Target IDs missing from local corpus: **{len(missing)}**',
@@ -106,6 +113,7 @@ for code, (brand, name, reason) in NO_FORCE.items():
     lines.append(f'- `{code}` -> {brand} / {name} — NO_FORCE — {reason}')
 OUT.write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
+print('parsed_ids', len(parsed_ids))
 print('reviewed', len(APPROVED))
 print('in_corpus', len(in_corpus))
 print('missing_from_corpus', len(missing))
