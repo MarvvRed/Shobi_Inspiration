@@ -1,11 +1,11 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **154**
-- Target IDs present in local corpus: **16**
-- Target IDs missing from local corpus: **138**
+- Reviewed exact identities with Fragrantica target: **159**
+- Target IDs present in local corpus: **20**
+- Target IDs missing from local corpus: **139**
 - Promoted this run: **0**
-- Already verified with same ID: **3**
+- Already verified with same ID: **7**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
 - Identified but deliberately not forced: **7**
 - Probe IDs: **{'200': False, '204': False, '456': False, '520': False, '719': False, '905': False, '925': False, '970': False, '993': False, '1014': False, '1061': False, '1365': False, '1499': False, '2068': False, '12201': True}**
@@ -168,6 +168,11 @@
 - `1753-TEDL` -> Ted Lapidus / Ted — ID 5942 — MISSING_FROM_CORPUS — Shobi residual TED under Ted Lapidus code; exact 1999 fragrance entry
 - `1236-PAL` -> Paloma Picasso / Minotaure — ID 1695 — MISSING_FROM_CORPUS — Current residual code 1236-PAL identifies Minotaure; exact Paloma Picasso 1992 entry
 - `1494-BOD` -> The Body Shop / Red Musk Oud — ID 31568 — MISSING_FROM_CORPUS — Shobi residual RED MUSK OUD under Body Shop code; exact 2015 entry
+- `917-SWA` -> Swarovski / Aura Intense — ID 26119 — MISSING_FROM_CORPUS — Shobi code 917-SWA identifies AURA INTENSE - SWAROVSKI; exact 2012 Fragrantica entry
+- `918-TMU` -> Mugler / Alien Eau de Toilette — ID 6616 — ALREADY_VERIFIED_SAME_ID — Shobi code 918-TMU explicitly identifies ALIEN Eau de Toilette; exact 2009 EDT entry
+- `920-TMU` -> Mugler / Angel — ID 704 — ALREADY_VERIFIED_SAME_ID — Shobi code 920-TMU identifies ANGEL without flanker qualifier; maps to original 1992 Angel
+- `921-TMU` -> Mugler / Angel Muse — ID 36416 — ALREADY_VERIFIED_SAME_ID — Shobi code 921-TMU identifies ANGEL MUSE; exact original 2016 entry
+- `923-TMU` -> Mugler / Aura Mugler — ID 45639 — ALREADY_VERIFIED_SAME_ID — Shobi code 923-TMU identifies AURA; exact original 2017 Mugler Aura entry
 
 ## Identified but not forced
 
