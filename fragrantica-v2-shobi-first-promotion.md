@@ -1,18 +1,18 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **195**
+- Reviewed exact identities with Fragrantica target: **203**
 - Target IDs present in local corpus: **20**
-- Target IDs missing from local corpus: **175**
+- Target IDs missing from local corpus: **183**
 - Promotion policy: **all reviewed exact identities are eligible; local corpus presence is informational only**
-- Promoted this run: **10**
-- Already verified with same ID: **348**
+- Promoted this run: **16**
+- Already verified with same ID: **358**
 - Conflicting pre-existing VERIFIED mappings left untouched: **0**
 - Identified but deliberately not forced: **31**
 - NO_FORCE rows marked this run: **62**
 - Probe IDs: **{200: False, 204: False, 456: False, 520: False, 719: False, 905: False, 925: False, 970: False, 993: False, 1014: False, 1061: False, 1365: False, 1499: False, 2068: False, 12201: True}**
-- database_v2_clean.json: **36** rows changed
-- database_complete.json: **36** rows changed
+- database_v2_clean.json: **39** rows changed
+- database_complete.json: **39** rows changed
 
 ## Exact targets
 
@@ -211,6 +211,14 @@
 - `327-PECK` -> Pecksniff's / Mistraal — ID 31584 — MISSING_FROM_CORPUS — Shobi identifies MISTRAAL - PECKSNIFF'S; Fragrantica exact Pecksniff's Mistraal entry
 - `595-EMIL` -> Emilio Pucci / Pucci — ID 21762 — MISSING_FROM_CORPUS — Shobi residual EMILIO PUCCI maps to the 1981 self-titled Pucci fragrance; Fragrantica exact Pucci by Emilio Pucci entry
 - `601-ESC` -> Escada / Flor del Sol — ID 58398 — MISSING_FROM_CORPUS — Shobi identifies FLOR DEL SOL - ESCADA; Fragrantica exact 2020 Escada Flor del Sol entry
+- `739-JUI` -> Juicy Couture / Viva la Juicy Gold Couture — ID 25753 — MISSING_FROM_CORPUS — exact Shobi identity web-verified on Fragrantica
+- `740-JUI` -> Juicy Couture / Viva La Juicy Luxe Parfum — ID 22574 — MISSING_FROM_CORPUS — exact Shobi identity web-verified on Fragrantica
+- `802-LBI` -> Laura Biagiotti / Venezia — ID 625 — MISSING_FROM_CORPUS — exact unqualified Shobi identity matches original 1992 Venezia; web-verified on Fragrantica
+- `805-LOL` -> Lolita Lempicka / L de Lolita Lempicka — ID 455 — MISSING_FROM_CORPUS — exact Shobi identity web-verified on Fragrantica
+- `806-LOL` -> Lolita Lempicka / L'Eau Jolie — ID 17936 — MISSING_FROM_CORPUS — exact Shobi identity web-verified on Fragrantica
+- `898-ROC` -> Rochas / Aquawoman — ID 1427 — MISSING_FROM_CORPUS — Shobi Aqua Woman spelling corresponds to exact Rochas Aquawoman identity; web-verified on Fragrantica
+- `899-ROC` -> Rochas / Mademoiselle Rochas — ID 43205 — MISSING_FROM_CORPUS — Shobi unqualified Mademoiselle Rochas corresponds to original 2017 EDP, not later EDT; web-verified on Fragrantica
+- `1184-JOO` -> Joop! / Joop! Femme — ID 3100 — MISSING_FROM_CORPUS — Shobi JOOP - JOOP corresponds to the original women fragrance Joop! Femme; web-verified on Fragrantica
 
 ## No-force identities
 
