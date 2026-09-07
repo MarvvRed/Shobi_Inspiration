@@ -140,7 +140,7 @@ for p in perf:
         elif top[0][0]>=.62 or top[0][1]>=.70:cls='WEAK_REVIEW'
         else:cls='NO_CANDIDATE'
     r={'shobi_code':code,'shobi_name':raw_name,'match_name':qname,'shobi_brand':explicit,'inferred_brand':hint,'brand_source':hint_source,'classification':cls,'candidate_count':len(ranked)}
-    for i,(sc,ns,bs,rc,pr,sr,c) in enumerate(top,1):r.update({f'cand{i}_id':c['id'],f'cand{i}_brand':c['brand'],f'cand{i_name':c['name'],f'cand{i}_url':c['url'],f'cand{i}_score':f'{sc:.4f}',f'cand{i}_name_score':f'{ns:.4f}',f'cand{i}_brand_score':f'{bs:.4f}',f'cand{i}_recall':f'{rc:.4f}',f'cand{i}_precision':f'{pr:.4f}',f'cand{i}_seq':f'{sr:.4f}'})
+    for i,(sc,ns,bs,rc,pr,sr,c) in enumerate(top,1):r.update({f'cand{i}_id':c['id'],f'cand{i}_brand':c['brand'],f'cand{i}_name':c['name'],f'cand{i}_url':c['url'],f'cand{i}_score':f'{sc:.4f}',f'cand{i}_name_score':f'{ns:.4f}',f'cand{i}_brand_score':f'{bs:.4f}',f'cand{i}_recall':f'{rc:.4f}',f'cand{i}_precision':f'{pr:.4f}',f'cand{i}_seq':f'{sr:.4f}'})
     rows.append(r)
 fields=['shobi_code','shobi_name','match_name','shobi_brand','inferred_brand','brand_source','classification','candidate_count']
 for i in range(1,6):fields += [f'cand{i}_id',f'cand{i}_brand',f'cand{i}_name',f'cand{i}_url',f'cand{i}_score',f'cand{i}_name_score',f'cand{i}_brand_score',f'cand{i}_recall',f'cand{i}_precision',f'cand{i}_seq']
