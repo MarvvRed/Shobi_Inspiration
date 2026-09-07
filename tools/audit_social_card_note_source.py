@@ -5,6 +5,7 @@ import re
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+# Diagnostic: identify the structured source that preserves social-card note order.
 URL = 'https://www.fragrantica.com/perfume/Yves-Saint-Laurent/MYSLF-Eau-de-Parfum-84094.html'
 OUT = Path('social-card-note-source-audit.md')
 UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36'
@@ -25,7 +26,6 @@ for term in terms:
         lines += ['', '```text', snippet, '```']
     lines.append('')
 
-# Capture likely JSON/script assignments involving ingredient/note IDs and voting.
 patterns = [
     r'.{0,400}(?:notes|ingredients|noteVotes|ingredientsVotes|accords).{0,1400}',
     r'.{0,400}84094.{0,1400}',
