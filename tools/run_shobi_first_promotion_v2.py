@@ -10,7 +10,7 @@ ADD_SPEC = ROOT / 'tools/shobi_first_additional_v2.py'
 NO_FORCE_EXTRA_SPEC = ROOT / 'tools/shobi_first_noforce_extra_v2.py'
 BATCH_SPECS = [
     (ROOT / f'tools/shobi_first_batch_large_{i:02d}_v2.py', f'APPROVED_BATCH_LARGE_{i:02d}')
-    for i in range(1, 17)
+    for i in range(1, 18)
 ]
 DBS = [ROOT / 'database_v2_clean.json', ROOT / 'database_complete.json']
 URLS = ROOT / 'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
@@ -64,33 +64,30 @@ for db_path in DBS:
     n = 0
     for row in rows:
         code = str(row.get('code') or row.get('shobi_code') or row.get('id') or '').strip()
-        if code in NO_FORCE and code not in APPROVED:
-            status = str(row.get('fragrantica_status') or row.get('fragranticaStatus') or row.get('status') or '').upper()
-            if not status.startswith('VERIFIED_NO_FORCE_'):
-                brand, name, reason = NO_FORCE[code]
-                row['fragrantica_status'] = 'VERIFIED_NO_FORCE_SHOBI_FIRST'
-                row['fragranticaStatus'] = 'VERIFIED_NO_FORCE_SHOBI_FIRST'
-                row['fragrantica_match_method'] = 'shobi_first_non_perfume_or_no_safe_target'
-                row['fragrantica_match_reason'] = reason
-                n += 1
-                no_force_marked += 1
+        if code in NO_FORCE:
+            row['fragrantica_status'] = 'RESOLVED_NO_FORCE'
+            row['fragranticaStatus'] = 'RESOLVED_NO_FORCE'
+            row['fragrantica_match_method'] = 'shobi_first_no_force'
+            row['fragrantica_match_reason'] = str(NO_FORCE[code])
+            row['fragranticaId'] = row.get('fragranticaId') or ''
+            row['fragrantica_id'] = row.get('fragrantica_id') or ''
+            n += 1
+            no_force_marked += 1
             continue
         if code not in APPROVED:
             continue
         target_id, brand, name, reason = APPROVED[code]
         current = row.get('fragrantica_id') or row.get('fragranticaId')
         status = str(row.get('fragrantica_status') or row.get('fragranticaStatus') or row.get('status') or '').upper()
-        if current is not None and str(current).strip() == str(target_id) and status.startswith('VERIFIED_'):
+        if current is not None and str(current).strip() == str(target_id):
             already += 1
             continue
         if 'VERIFIED' in status and current not in (None, '', 0, '0') and code not in FORCE_CORRECTIONS:
             conflicts += 1
             continue
-        url = f'https://www.fragrantica.com/perfume/{brand.replace(" ", "-")}/{name.replace(" ", "-")}-{target_id}.html'
         row['fragrantica_id'] = int(target_id)
         row['fragranticaId'] = str(target_id)
-        row['fragrantica_url'] = url
-        row['fragranticaUrl'] = url
+        row['fragrantica_url'] = f'https://www.fragrantica.com/perfume/{brand.replace(" ", "-")}/{name.replace(" ", "-")}-{target_id}.html'
         row['fragrantica_status'] = 'VERIFIED_SHOBI_FIRST'
         row['fragranticaStatus'] = 'VERIFIED_SHOBI_FIRST'
         row['fragrantica_match_method'] = 'shobi_first_exact_identity_web_or_local'
@@ -109,10 +106,10 @@ lines = [
     f'- Target IDs missing from local corpus: **{len(missing)}**',
     f'- Promotion policy: **all reviewed exact identities are eligible; local corpus presence is informational only**',
     f'- Promoted this run: **{promoted}**',
-    f'- No-force rows marked this run: **{no_force_marked}**',
     f'- Already verified with same ID: **{already}**',
     f'- Conflicting pre-existing VERIFIED mappings left untouched: **{conflicts}**',
     f'- Identified but deliberately not forced: **{len(NO_FORCE)}**',
+    f'- NO_FORCE rows marked this run: **{no_force_marked}**',
     f'- Probe IDs: **{probe}**',
 ]
 for k, v in changed.items():
@@ -125,4 +122,4 @@ lines += ['', '## No-force identities', '']
 for code, reason in NO_FORCE.items():
     lines.append(f'- `{code}` — {reason}')
 OUT.write_text('\n'.join(lines) + '\n', encoding='utf-8')
-print(f'parsed_ids={len(url_ids)} reviewed={len(APPROVED)} in_corpus={len(present)} missing={len(missing)} promoted={promoted} no_force_marked={no_force_marked} already={already} conflicts={conflicts} no_force={len(NO_FORCE)}')
+print(f'parsed_ids={len(url_ids)} reviewed={len(APPROVED)} in_corpus={len(present)} missing={len(missing)} promoted={promoted} already={already} conflicts={conflicts} no_force={len(NO_FORCE)} marked={no_force_marked}')
