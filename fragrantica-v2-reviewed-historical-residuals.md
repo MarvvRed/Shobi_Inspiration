@@ -1,6 +1,6 @@
 # Reviewed historical residual promotion
 
-- Approved: **41**
+- Approved: **65**
 - Promoted this run: **0**
 - Already verified: **22**
 - database_v2_clean.json: **0** changed
@@ -49,3 +49,27 @@
 - `1896-ESC` -> Escada / Cherry in Japan — ID 70279 — two local historical sources agree; exact distinctive Cherry in Japan identity
 - `1899-ZARK` -> Zarkoperfume / The Muse — ID 60665 — two local historical sources agree; exact distinctive The Muse identity
 - `1926-KOS` -> Kerosene / Unknown Pleasures No 4 Apres l Amour — ID 53742 — two local historical sources agree on distinctive No. 4 Apres l Amour identity
+- `133-MICA` -> M. Micallef / Ylang in Gold — ID 14409 — Shobi-first: official Shobi code page identifies YLANG IN GOLD - M.MICALLEF; exact Fragrantica base entry, not Nectar flanker
+- `166-AZ` -> The Perfumer's Story by Azzi / Sequoia Wood — ID 40007 — Shobi-first: Shobi code and description identify Sequoia Wood by The Perfumer Story by Azzi; exact Fragrantica entry
+- `184-YAS` -> Yas Perfumes / Huboob Yas — ID 28237 — Shobi-first: HUBOOB with YAS code identifies Yas Perfumes Huboob; exact Fragrantica Yas entry, not Junaid Huboob
+- `605-ESC` -> Escada / Miami Blossom — ID 53054 — Shobi-first: official Shobi page identifies MIAMI BLOSSOM - ESCADA; exact Fragrantica 2019 EDT entry
+- `606-ESC` -> Escada / Escada Margaretha Ley — ID 1365 — Shobi-first: official Shobi page identifies MARGARETHA LEY (CLASSIC) - ESCADA; exact 1990 Fragrantica entry
+- `608-ESC` -> Escada / Escada Moon Sparkle — ID 1887 — Shobi-first: official Shobi code page and notes identify women Moon Sparkle; exact 2007 women entry, not pour Homme
+- `639-FEN` -> Fendi / Fendi — ID 200 — Shobi-first: official Shobi page identifies FENDI Woman; exact original 1985 women Fendi entry
+- `640-FEN` -> Fendi / L'Acquarossa — ID 18706 — Shobi-first: Shobi label is L ACQUA ROSSA without EDT/Elixir qualifier; exact base 2013 EDP entry
+- `673-GRS` -> Gres / Cabotine — ID 1061 — Shobi-first: official Shobi page identifies CABOTIN - GRES; exact original 1990 Cabotine entry, not later flankers
+- `695-GUE` -> Guess / Guess Dare — ID 26415 — Shobi-first: official Shobi page identifies DARE - GUESS; exact 2014 base Dare, not 2015 Limited Edition
+- `696-GLA` -> Guy Laroche / Fidji Eau de Toilette — ID 2068 — Shobi-first: official Shobi page explicitly identifies FIDJI EAU DE TOILETTE - GUY LAROCHE; exact EDT entry
+- `727-JEN` -> Jennifer Lopez / JLuxe — ID 29758 — Shobi-first: official Shobi page identifies JLUXE - JENNIFER LOPEZ; exact Fragrantica entry
+- `728-JES` -> Jesus Del Pozo / In Black — ID 719 — Shobi-first: Shobi code/identity resolves to Jesus Del Pozo In Black; exact Fragrantica entry, rejecting wrong-brand Byblos exact-name candidate
+- `807-LOL` -> Lolita Lempicka / Lolita Lempicka — ID 456 — Shobi-first: official Shobi page identifies LOLITA - LOLITA LEMPICKA; exact original 1997 signature entry, not EDT/later reformulations
+- `808-LOL` -> Lolita Lempicka / Sweet — ID 28177 — Shobi-first: Shobi code page notes candied cherry, cocoa, angelica, iris, musk and cashmere wood exactly identify Sweet 2014
+- `816-MAX` -> Max Mara / Max Mara — ID 204 — Shobi-first: official Shobi listing identifies MAX MARA; exact 2004 signature perfume
+- `817-MIC` -> Michael Kors / 24K Brilliant Gold — ID 31341 — Shobi-first: official Shobi page identifies 24K BRILLIANT GOLD - KORS; exact 2015 Gold Collection entry
+- `818-MIC` -> Michael Kors / Coral — ID 32739 — Shobi-first: official Shobi listing identifies CORAL - KORS; exact 2015 Michael Kors Coral entry
+- `819-MIC` -> Michael Kors / Sexy Amber — ID 18161 — Shobi-first: official Shobi page identifies SEXY AMBER - KORS; exact 2013 entry
+- `820-MIC` -> Michael Kors / Sexy Rio de Janeiro — ID 27497 — Shobi-first: official Shobi page identifies SEXY RIO DE JANEIRO KORS and 2014 release; exact Fragrantica entry
+- `821-MIC` -> Michael Kors / Sexy Sunset — ID 34276 — Shobi-first: official Shobi page identifies SEXY SUNSET - KORS and 2015 release; exact Fragrantica entry
+- `822-MIC` -> Michael Kors / Sexy Ruby — ID 46182 — Shobi-first: official Shobi listing identifies SEXY RUBY - KORS; exact 2017 entry despite noisy residual label
+- `823-MIC` -> Michael Kors / Sporty Citrus — ID 18160 — Shobi-first: official Shobi page identifies SPORTY CITRUS - MICHAEL KORS and Honorine Blanc; exact 2013 entry
+- `824-MIC` -> Michael Kors / White Luminous Gold — ID 31343 — Shobi-first: official Shobi page identifies WHITE LUMINOUS GOLD - MICHAEL KORS, Gold Collection 2015; exact entry
