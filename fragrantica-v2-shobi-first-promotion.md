@@ -1,9 +1,9 @@
 # Shobi-first residual promotion
 
 - Local corpus numeric IDs parsed: **55557**
-- Reviewed exact identities with Fragrantica target: **159**
+- Reviewed exact identities with Fragrantica target: **163**
 - Target IDs present in local corpus: **20**
-- Target IDs missing from local corpus: **139**
+- Target IDs missing from local corpus: **143**
 - Promoted this run: **0**
 - Already verified with same ID: **7**
 - Conflicting pre-existing VERIFIED mappings left untouched: **2**
@@ -173,6 +173,10 @@
 - `920-TMU` -> Mugler / Angel — ID 704 — ALREADY_VERIFIED_SAME_ID — Shobi code 920-TMU identifies ANGEL without flanker qualifier; maps to original 1992 Angel
 - `921-TMU` -> Mugler / Angel Muse — ID 36416 — ALREADY_VERIFIED_SAME_ID — Shobi code 921-TMU identifies ANGEL MUSE; exact original 2016 entry
 - `923-TMU` -> Mugler / Aura Mugler — ID 45639 — ALREADY_VERIFIED_SAME_ID — Shobi code 923-TMU identifies AURA; exact original 2017 Mugler Aura entry
+- `2036-GIS` -> Gisada / Ambassador Men — ID 58226 — MISSING_FROM_CORPUS — Shobi residual explicitly identifies Ambassador Men Eau de Parfum; exact Gisada 2019 entry
+- `2044-LORV` -> Lorenzo Villoresi / Teint de Neige — ID 5079 — MISSING_FROM_CORPUS — Shobi residual TEINT DE NEIGE under Lorenzo Villoresi code; exact original 2000 entry
+- `2051-PRFRO` -> Profumum Roma / Acqua di Sale — ID 3886 — MISSING_FROM_CORPUS — Shobi residual Acqua Di Sale under Profumum Roma code; exact original fragrance, not 2021 limited edition or 2024 Acquerello
+- `2094-SHIS` -> Shiseido / Ever Bloom — ID 31202 — MISSING_FROM_CORPUS — Shobi residual Ever Bloom with no EDT or Extrait qualifier; exact original 2015 Eau de Parfum entry
 
 ## Identified but not forced
 
