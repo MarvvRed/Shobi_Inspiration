@@ -7,6 +7,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SPEC = ROOT / 'tools/promote_shobi_first_residuals_v2.py'
 ADD_SPEC = ROOT / 'tools/shobi_first_additional_v2.py'
+BATCH_SPECS = [
+    (ROOT / 'tools/shobi_first_batch_large_01_v2.py', 'APPROVED_BATCH_LARGE_01'),
+]
 DBS = [ROOT / 'database_v2_clean.json', ROOT / 'database_complete.json']
 URLS = ROOT / 'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
 OUT = ROOT / 'fragrantica-v2-shobi-first-promotion.md'
@@ -23,6 +26,9 @@ def load_literal(path, name):
 APPROVED = load_literal(SPEC, 'APPROVED')
 if ADD_SPEC.exists():
     APPROVED.update(load_literal(ADD_SPEC, 'APPROVED_ADDITIONAL'))
+for batch_path, batch_name in BATCH_SPECS:
+    if batch_path.exists():
+        APPROVED.update(load_literal(batch_path, batch_name))
 NO_FORCE = load_literal(SPEC, 'NO_FORCE')
 
 def walk(obj):
