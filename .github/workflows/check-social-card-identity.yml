@@ -1,0 +1,28 @@
+name: Check social card identity
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/check_social_card_identity.py'
+      - '.github/workflows/check-social-card-identity.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run identity audit
+        run: python tools/check_social_card_identity.py
+      - name: Commit audit report
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add social-card-identity-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record critical social-card identity audit"
+            git push
+          fi
