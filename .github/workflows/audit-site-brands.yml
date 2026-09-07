@@ -3,6 +3,7 @@ name: Audit site brands
 on:
   push:
     paths:
+      - 'tools/apply_official_brands.py'
       - 'tools/audit_site_brands.py'
       - 'tools/audit_brand_sources.py'
       - 'tools/audit_brand_recovery.py'
@@ -21,14 +22,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: python tools/apply_official_brands.py
       - run: python tools/audit_site_brands.py
       - run: python tools/audit_brand_sources.py
       - run: python tools/audit_brand_recovery.py
       - run: python tools/audit_brand_residuals_local.py
-      - name: Commit audit reports
+      - name: Commit database and audit updates
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add site-brand-audit.md brand-source-audit.md brand-recovery-audit.md brand-residual-local-audit.md
-          git diff --cached --quiet || git commit -m "Report residual local brand lookup"
+          git add database_complete.json database_v2_clean.json site-brand-audit.md brand-source-audit.md brand-recovery-audit.md brand-residual-local-audit.md
+          git diff --cached --quiet || git commit -m "Populate official perfume brands"
           git push
