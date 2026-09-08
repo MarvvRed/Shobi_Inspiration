@@ -36,14 +36,21 @@ jobs:
           from pathlib import Path
           p=Path('script.js'); s=p.read_text(encoding='utf-8')
           old='mainNotesContainer.innerHTML = getMainNotesBadges(p.notes);'
-          if old not in s: raise SystemExit('main notes render expression not found')
-          s=s.replace(old,'mainNotesContainer.innerHTML = getMainNotesBadges(getMainNotes(p));',1)
+          new='mainNotesContainer.innerHTML = getMainNotesBadges(getMainNotes(p));'
+          if old in s:
+            s=s.replace(old,new,1)
+          elif new not in s:
+            raise SystemExit('main notes render expression not found')
           old2='const perfumeNotes = getPerfumeNotes(p.notes);'
-          if old2 not in s: raise SystemExit('notes filter expression not found')
-          s=s.replace(old2,'const perfumeNotes = getPerfumeNotes(getMainNotes(p));',1)
+          new2='const perfumeNotes = getPerfumeNotes(getMainNotes(p));'
+          if old2 in s:
+            s=s.replace(old2,new2,1)
+          elif new2 not in s:
+            raise SystemExit('notes filter expression not found')
           marker='function displayPerfumes(perfumes) {'
           fn="function getMainNotes(p) {\n    const v = p?.fragranticaSocialCardNotes;\n    return Array.isArray(v) ? v : [];\n}\n\n"
-          if 'function getMainNotes(p)' not in s:s=s.replace(marker,fn+marker,1)
+          if 'function getMainNotes(p)' not in s:
+            s=s.replace(marker,fn+marker,1)
           p.write_text(s,encoding='utf-8')
           PY
       - name: Integrity checks
