@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/finalize-social-card-main-notes.yml'
       - 'tools/finalize_social_card_main_notes.py'
+      - 'social-card-note-review/manual-*.jsonl'
 permissions:
   contents: write
 jobs:
