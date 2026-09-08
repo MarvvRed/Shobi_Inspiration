@@ -1,0 +1,30 @@
+name: Fix nine bad Fragrantica IDs
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/fix-nine-bad-fragrantica-ids.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply nine verified Fragrantica identity fixes
+        run: python tools/fix_9_bad_fragrantica_ids.py
+      - name: Commit corrected databases
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add database_complete.json database_v2_clean.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Apply nine verified Fragrantica identity fixes"
+            git push
+          fi
