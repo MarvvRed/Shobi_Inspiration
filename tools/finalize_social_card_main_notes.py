@@ -34,7 +34,6 @@ def prepare():
     for c,(_,_,f,_) in FINAL_IDS.items():
         src=CAND/f'{c}_{f}.jpeg'
         if not src.exists(): raise SystemExit(f'Missing confirmed candidate card: {src}')
-        # extractor only requires filename ending in _FID
         dst=IMAGES/f'confirmed_{c}_{f}.jpeg'
         if not dst.exists(): shutil.copy2(src,dst)
     for path in DBS:
@@ -64,11 +63,10 @@ def load_manual():
 def merge():
     val=json.loads(VALID.read_text(encoding='utf-8')); auto={int(r['fragranticaId']):r['mainNotes'] for r in val if r.get('validated') and r.get('mainNotes')}
     manual=load_manual(); merged={**auto,**manual}
-    # Preserve the completed visual review for Oud Maracuja; record OCR comparison for audit.
     oud_manual=manual.get(83842); oud_raw=next((r.get('rawSlots') for r in val if int(r.get('fragranticaId') or -1)==83842),None)
-    counts=[]
+    counts=[]; missing_reference=[]
     for path in DBS:
-        data=json.loads(path.read_text(encoding='utf-8')); recs=flatten(data); official=with_notes=unavail=0
+        data=json.loads(path.read_text(encoding='utf-8')); recs=flatten(data); official=with_notes=unavail=0; missing=[]
         for p in recs:
             if status(p).upper().startswith('RESOLVED_NO_FORCE'): continue
             official+=1; f=fid(p); notes=list(merged.get(f,[])) if f is not None else []
@@ -78,11 +76,24 @@ def merge():
             elif notes:
                 p['fragranticaSocialCardStatus']='VALIDATED_MANUAL' if f in manual else 'VALIDATED_OCR';with_notes+=1
             else:p['fragranticaSocialCardStatus']='UNRESOLVED_NO_INFERENCE'
-        path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');counts.append({'database':path.name,'official':official,'withMainNotes':with_notes,'socialCardUnavailable':unavail,'withoutMainNotes':official-with_notes})
+            if not p['fragranticaSocialCardNotes']:
+                missing.append({
+                    'code':code(p),
+                    'brand':p.get('brand'),
+                    'perfume':p.get('inspiredBy') or p.get('name') or p.get('perfume'),
+                    'fragranticaId':f,
+                    'fragranticaUrl':p.get('fragranticaUrl'),
+                    'reason':p.get('fragranticaSocialCardStatus')
+                })
+        path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        counts.append({'database':path.name,'official':official,'withMainNotes':with_notes,'socialCardUnavailable':unavail,'withoutMainNotes':official-with_notes})
+        if not missing_reference: missing_reference=missing
+        elif missing!=missing_reference: raise SystemExit('Databases disagree on perfumes without Main Notes')
     report={'rule':'Main Notes come only from the left notes box of exact Fragrantica social cards; no accords, pyramid, fallback or inference.',
       'finalIdentityDecisions':{'521-DRC':215,'676-GUC':5226},'socialCardUnavailable':UNAVAILABLE,
       'validatedOcrFids':len(auto),'manualReviewedFids':len(manual),'mergedFidsWithNotes':len(merged),
-      'oudMaracuja83842':{'manualNotes':oud_manual,'ocrRawSlots':oud_raw,'decision':'KEEP_MANUAL_VISUAL_REVIEW'},'databases':counts}
+      'oudMaracuja83842':{'manualNotes':oud_manual,'ocrRawSlots':oud_raw,'decision':'KEEP_MANUAL_VISUAL_REVIEW'},
+      'databases':counts,'perfumesWithoutMainNotes':missing_reference}
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps(report,ensure_ascii=False,indent=2))
 
 if __name__=='__main__':
