@@ -1,0 +1,76 @@
+name: Finalize social-card Main Notes
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/finalize-social-card-main-notes.yml'
+      - 'tools/finalize_social_card_main_notes.py'
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install OCR dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr
+          python -m pip install --quiet pillow
+      - name: Finalize residual identities and confirmed cards
+        run: python tools/finalize_social_card_main_notes.py prepare
+      - name: Extract exact social-card notes panels
+        run: |
+          python tools/extract_social_card_main_notes.py prepare
+          tesseract .social-card-notes-work/social-note-panels.tiff stdout --psm 11 tsv > .social-card-notes-work/ocr.tsv
+          python tools/extract_social_card_main_notes.py parse
+          python tools/validate_social_card_main_notes.py
+      - name: Merge validated and manually reviewed notes
+        run: python tools/finalize_social_card_main_notes.py merge
+      - name: Make site use only dedicated social-card notes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('script.js'); s=p.read_text(encoding='utf-8')
+          old='mainNotesContainer.innerHTML = getMainNotesBadges(p.notes);'
+          if old not in s: raise SystemExit('main notes render expression not found')
+          s=s.replace(old,'mainNotesContainer.innerHTML = getMainNotesBadges(getMainNotes(p));',1)
+          old2='const perfumeNotes = getPerfumeNotes(p.notes);'
+          if old2 not in s: raise SystemExit('notes filter expression not found')
+          s=s.replace(old2,'const perfumeNotes = getPerfumeNotes(getMainNotes(p));',1)
+          marker='function displayPerfumes(perfumes) {'
+          fn="function getMainNotes(p) {\n    const v = p?.fragranticaSocialCardNotes;\n    return Array.isArray(v) ? v : [];\n}\n\n"
+          if 'function getMainNotes(p)' not in s:s=s.replace(marker,fn+marker,1)
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Integrity checks
+        run: |
+          python - <<'PY'
+          import json
+          for fn in ['database_complete.json','database_v2_clean.json']:
+            d=json.load(open(fn,encoding='utf-8')); r=[p for b in d for p in b.get('perfumes',[])] if d and isinstance(d[0],dict) and 'perfumes' in d[0] else d
+            assert len(r)==2369,(fn,len(r))
+            by={str(p.get('id') or p.get('code')):p for p in r}
+            assert int(by['521-DRC']['fragranticaId'])==215
+            assert int(by['676-GUC']['fragranticaId'])==5226
+            for c in ['118-HAM','235-HOLL','325-PECK']:
+              assert by[c]['fragranticaSocialCardStatus']=='SOCIAL_CARD_UNAVAILABLE'
+              assert by[c]['fragranticaSocialCardNotes']==[]
+            official=[p for p in r if not str(p.get('fragranticaStatus') or p.get('fragrantica_status') or '').upper().startswith('RESOLVED_NO_FORCE')]
+            assert len(official)==2330,(fn,len(official))
+            assert all('fragranticaSocialCardNotes' in p for p in official)
+            print(fn,'records',len(r),'official',len(official),'with notes',sum(bool(p['fragranticaSocialCardNotes']) for p in official))
+          PY
+          git diff --check
+      - name: Commit final consolidation
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add database_complete.json database_v2_clean.json script.js social-card-main-notes.json social-card-main-notes-report.json social-card-main-notes-validated.json social-card-main-notes-validation-report.json social-card-main-notes-final-report.json fragrantica-scraper-archive/social-cards/images/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Finalize Fragrantica social-card Main Notes'
+            git push
+          fi
