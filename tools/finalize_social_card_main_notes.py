@@ -12,9 +12,13 @@ VALID=ROOT/'social-card-main-notes-validated.json'
 MANUAL_DIR=ROOT/'social-card-note-review'
 REPORT=ROOT/'social-card-main-notes-final-report.json'
 
+# Audited identity decisions. These are applied to both canonical databases before
+# Main Notes are merged, so later finalizer runs cannot silently restore stale FIDs.
 FINAL_IDS={
- '521-DRC':('Dior','Dior Addict',215,'https://www.fragrantica.com/perfume/Dior/Dior-Addict-215.html'),
- '676-GUC':('Gucci','Flora by Gucci Eau de Toilette',5226,'https://www.fragrantica.com/perfume/Gucci/Flora-by-Gucci-Eau-de-Toilette-5226.html'),
+ '521-DRC':('Dior','Dior Addict',215,'https://www.fragrantica.com/perfume/Dior/Dior-Addict-215.html',True),
+ '676-GUC':('Gucci','Flora by Gucci Eau de Toilette',5226,'https://www.fragrantica.com/perfume/Gucci/Flora-by-Gucci-Eau-de-Toilette-5226.html',True),
+ '843-NRO':('Narciso Rodriguez','For Her',209,'https://www.fragrantica.com/perfume/Narciso-Rodriguez/For-Her-209.html',False),
+ 'pid:2688':('Ajmal','Danat Al Duniya',45398,'https://www.fragrantica.com/perfume/Ajmal/Danat-Al-Duniya-45398.html',False),
 }
 UNAVAILABLE={'118-HAM':27808,'235-HOLL':4307,'325-PECK':31590}
 
@@ -31,17 +35,19 @@ def fid(p):
 
 def prepare():
     IMAGES.mkdir(parents=True,exist_ok=True)
-    for c,(_,_,f,_) in FINAL_IDS.items():
-        src=CAND/f'{c}_{f}.jpeg'
-        if not src.exists(): raise SystemExit(f'Missing confirmed candidate card: {src}')
-        dst=IMAGES/f'confirmed_{c}_{f}.jpeg'
-        if not dst.exists(): shutil.copy2(src,dst)
+    for c,(_,_,f,_,needs_candidate) in FINAL_IDS.items():
+        if needs_candidate:
+            src=CAND/f'{c}_{f}.jpeg'
+            if not src.exists(): raise SystemExit(f'Missing confirmed candidate card: {src}')
+            dst=IMAGES/f'confirmed_{c}_{f}.jpeg'
+            if not dst.exists(): shutil.copy2(src,dst)
     for path in DBS:
         data=json.loads(path.read_text(encoding='utf-8')); recs=flatten(data); seen=set()
         for p in recs:
             c=code(p)
             if c in FINAL_IDS:
-                brand,name,f,url=FINAL_IDS[c]; p['brand']=brand;p['inspiredBy']=name;p['fragranticaId']=f;p['fragranticaUrl']=url
+                brand,name,f,url,_=FINAL_IDS[c]
+                p['brand']=brand;p['inspiredBy']=name;p['fragranticaId']=f;p['fragranticaUrl']=url
                 p['fragranticaStatus']='VERIFIED_SHOBI_FIRST';p['fragranticaVerificationSource']='social-card-main-notes-final-report.json';seen.add(c)
             if c in UNAVAILABLE:
                 if fid(p)!=UNAVAILABLE[c]: raise SystemExit(f'{path.name}: unexpected FID for {c}: {fid(p)}')
@@ -77,21 +83,13 @@ def merge():
                 p['fragranticaSocialCardStatus']='VALIDATED_MANUAL' if f in manual else 'VALIDATED_OCR';with_notes+=1
             else:p['fragranticaSocialCardStatus']='UNRESOLVED_NO_INFERENCE'
             if not p['fragranticaSocialCardNotes']:
-                missing.append({
-                    'code':code(p),
-                    'brand':p.get('brand'),
-                    'perfume':p.get('inspiredBy') or p.get('name') or p.get('perfume'),
-                    'fragranticaId':f,
-                    'fragranticaUrl':p.get('fragranticaUrl'),
-                    'reason':p.get('fragranticaSocialCardStatus')
-                })
+                missing.append({'code':code(p),'brand':p.get('brand'),'perfume':p.get('inspiredBy') or p.get('name') or p.get('perfume'),'fragranticaId':f,'fragranticaUrl':p.get('fragranticaUrl'),'reason':p.get('fragranticaSocialCardStatus')})
         path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         counts.append({'database':path.name,'official':official,'withMainNotes':with_notes,'socialCardUnavailable':unavail,'withoutMainNotes':official-with_notes})
-        if path.name=='database_complete.json':
-            missing_reference=missing
+        if path.name=='database_complete.json': missing_reference=missing
     if missing_reference is None: raise SystemExit('Canonical database_complete.json missing')
     report={'rule':'Main Notes come only from the left notes box of exact Fragrantica social cards; no accords, pyramid, fallback or inference.',
-      'finalIdentityDecisions':{'521-DRC':215,'676-GUC':5226},'socialCardUnavailable':UNAVAILABLE,
+      'finalIdentityDecisions':{c:v[2] for c,v in FINAL_IDS.items()},'socialCardUnavailable':UNAVAILABLE,
       'validatedOcrFids':len(auto),'manualReviewedFids':len(manual),'mergedFidsWithNotes':len(merged),
       'oudMaracuja83842':{'manualNotes':oud_manual,'ocrRawSlots':oud_raw,'decision':'KEEP_MANUAL_VISUAL_REVIEW'},
       'databases':counts,'missingReportSource':'database_complete.json','perfumesWithoutMainNotes':missing_reference}
