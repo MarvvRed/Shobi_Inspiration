@@ -24171,9 +24171,9 @@
     "reference": "",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/for-her-eau-de-toilet-rodriguez-type",
     "brand": "Narciso Rodriguez",
-    "inspiredBy": "FOR HER PINK EAU DE TOILETTE - RODRIGUEZ",
-    "fragranticaId": "72604",
-    "fragranticaStatus": "VERIFIED_LOCAL_CORPUS_V2",
+    "inspiredBy": "For Her",
+    "fragranticaId": 209,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -24187,9 +24187,19 @@
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Narciso-Rodriguez/Narciso-Rodriguez-For-Her-Pink-Edition-72604.html",
-    "fragranticaVerificationSource": "reviewed historical/local residual mapping",
-    "fragranticaSocialCardNotes": [],
-    "fragranticaSocialCardStatus": "UNRESOLVED_NO_INFERENCE"
+    "fragranticaVerificationSource": "social-card-main-notes-final-report.json",
+    "fragranticaSocialCardNotes": [
+      "Musk",
+      "Orange Blossom",
+      "Osmanthus",
+      "Amber",
+      "Vetiver",
+      "Bergamot",
+      "Patchouli",
+      "Vanilla"
+    ],
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Narciso-Rodriguez/For-Her-209.html"
   },
   {
     "id": "844-NRO",
@@ -77836,9 +77846,9 @@
     "reference": "",
     "shobiUrl": "https://leparfum.com.gr/en/arabian-perfumes/danat-al-duniya-ajmal-perfume-type",
     "brand": "Ajmal",
-    "inspiredBy": "Danat Al Duniya Eau de Parfum",
-    "fragranticaId": null,
-    "fragranticaStatus": "VERIFIED_LOCAL_CORPUS_V2",
+    "inspiredBy": "Danat Al Duniya",
+    "fragranticaId": 45398,
+    "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
     "seasons": [],
@@ -77852,8 +77862,15 @@
     "masterVersion": "shobi-master-v2-2369",
     "liveKeyFallback": true,
     "occasions": [],
-    "fragranticaSocialCardNotes": [],
-    "fragranticaSocialCardStatus": "UNRESOLVED_NO_INFERENCE"
+    "fragranticaSocialCardNotes": [
+      "Floral Notes",
+      "Fruity Notes",
+      "Musk",
+      "Woody Notes"
+    ],
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Ajmal/Danat-Al-Duniya-45398.html",
+    "fragranticaVerificationSource": "social-card-main-notes-final-report.json"
   },
   {
     "id": "-HUG",

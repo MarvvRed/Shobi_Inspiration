@@ -1,13 +1,13 @@
 {
   "rule": "Main notes are read ONLY from ordered OCR slots of the archived Fragrantica social-card notes panel. The perfume pyramid is never consulted and slot order is never changed.",
   "official_fragrantica_lexicon_notes": 1906,
-  "raw_cards": 2296,
-  "validated_cards": 1469,
-  "unresolved_cards": 827,
+  "raw_cards": 2297,
+  "validated_cards": 1471,
+  "unresolved_cards": 826,
   "partially_read_but_not_accepted": 474,
   "reason_counts": {
     "LEXICON_UNCERTAIN": 572,
-    "NO_OCR_SLOTS": 255
+    "NO_OCR_SLOTS": 254
   },
   "validated_sample": [
     {
@@ -368,6 +368,24 @@
         "Magnolia",
         "Lily",
         "Musk"
+      ]
+    },
+    {
+      "code": "843-NRO",
+      "fragranticaId": 209,
+      "mainNotes": [
+        "Musk",
+        "Orange Blossom",
+        "Osmanthus",
+        "Amber",
+        "Bergamot"
+      ],
+      "raw": [
+        "Musk",
+        "Orange Blossom",
+        "Osmanthus",
+        "Amber",
+        "Bergamot"
       ]
     },
     {
@@ -974,22 +992,6 @@
         "ae Cardamom",
         "eal Nutmeg",
         "Incense"
-      ]
-    },
-    {
-      "code": "1088-COM",
-      "fragranticaId": 395,
-      "mainNotes": [
-        "Metallic Notes",
-        "Clay",
-        "Pebbles",
-        "Sand"
-      ],
-      "raw": [
-        "oe Metallic Notes",
-        "ns Clay",
-        "Pebbles",
-        "ase Sand"
       ]
     }
   ],

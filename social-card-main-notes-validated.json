@@ -2632,6 +2632,90 @@
     "reasons": []
   },
   {
+    "code": "843-NRO",
+    "fragranticaId": 209,
+    "card": "fragrantica-scraper-archive/social-cards/images/1775_848-NRO_209.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Musk",
+      "Orange Blossom",
+      "Osmanthus",
+      "Amber",
+      "Bergamot"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Musk",
+        "ocrConfidence": 96.4
+      },
+      {
+        "slot": 2,
+        "name": "Orange Blossom",
+        "ocrConfidence": 96.2
+      },
+      {
+        "slot": 3,
+        "name": "Osmanthus",
+        "ocrConfidence": 90.3
+      },
+      {
+        "slot": 4,
+        "name": "Amber",
+        "ocrConfidence": 96.6
+      },
+      {
+        "slot": 6,
+        "name": "Bergamot",
+        "ocrConfidence": 96.1
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Musk",
+        "raw": "Musk",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 96.4
+      },
+      {
+        "slot": 2,
+        "name": "Orange Blossom",
+        "raw": "Orange Blossom",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 96.2
+      },
+      {
+        "slot": 3,
+        "name": "Osmanthus",
+        "raw": "Osmanthus",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 90.3
+      },
+      {
+        "slot": 4,
+        "name": "Amber",
+        "raw": "Amber",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 96.6
+      },
+      {
+        "slot": 6,
+        "name": "Bergamot",
+        "raw": "Bergamot",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 96.1
+      }
+    ],
+    "failures": [],
+    "reasons": []
+  },
+  {
     "code": "530-DRC",
     "fragranticaId": 210,
     "card": "fragrantica-scraper-archive/social-cards/images/623_530-DRC_210.jpeg",
@@ -118043,6 +118127,76 @@
     ]
   },
   {
+    "code": "pid:2688",
+    "fragranticaId": 45398,
+    "card": "fragrantica-scraper-archive/social-cards/images/2688_unknown_45398.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Floral Notes",
+      "Fruity Notes",
+      "Musk",
+      "Woody Notes"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Floral Notes Sai",
+        "ocrConfidence": 76.6
+      },
+      {
+        "slot": 2,
+        "name": "Fruity Notes",
+        "ocrConfidence": 96.8
+      },
+      {
+        "slot": 3,
+        "name": "Musk",
+        "ocrConfidence": 95.5
+      },
+      {
+        "slot": 4,
+        "name": "Woody Notes",
+        "ocrConfidence": 91.0
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Floral Notes",
+        "raw": "Floral Notes Sai",
+        "matchScore": 0.97,
+        "margin": 0.303,
+        "ocrConfidence": 76.6
+      },
+      {
+        "slot": 2,
+        "name": "Fruity Notes",
+        "raw": "Fruity Notes",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 96.8
+      },
+      {
+        "slot": 3,
+        "name": "Musk",
+        "raw": "Musk",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 95.5
+      },
+      {
+        "slot": 4,
+        "name": "Woody Notes",
+        "raw": "Woody Notes",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 91.0
+      }
+    ],
+    "failures": [],
+    "reasons": []
+  },
+  {
     "code": "1539-ORT",
     "fragranticaId": 45475,
     "card": "fragrantica-scraper-archive/social-cards/images/2309_1539-ORT_45475.jpeg",
@@ -158428,19 +158582,6 @@
     "code": "1993-DRIE",
     "fragranticaId": 72594,
     "card": "fragrantica-scraper-archive/social-cards/images/3108_1993-DRIE_72594.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
-    "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
-  },
-  {
-    "code": "843-NRO",
-    "fragranticaId": 72604,
-    "card": "fragrantica-scraper-archive/social-cards/images/887_843-NRO_72604.jpeg",
     "validated": false,
     "mainNotes": [],
     "rawSlots": [],
