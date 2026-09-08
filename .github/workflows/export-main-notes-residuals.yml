@@ -1,0 +1,49 @@
+name: Export Main Notes residuals
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/export-main-notes-residuals.yml'
+permissions:
+  contents: write
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export canonical residuals
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('database_complete.json')
+          d=json.loads(p.read_text(encoding='utf-8'))
+          rows=[x for b in d for x in b.get('perfumes',[])] if d and isinstance(d[0],dict) and isinstance(d[0].get('perfumes'),list) else d
+          out=[]
+          for x in rows:
+            status=str(x.get('fragranticaStatus') or x.get('fragrantica_status') or '').upper()
+            if status.startswith('RESOLVED_NO_FORCE'):
+              continue
+            notes=x.get('fragranticaSocialCardNotes')
+            if not isinstance(notes,list) or not notes:
+              fid=x.get('fragranticaId')
+              out.append({
+                'code':str(x.get('id') or x.get('code') or x.get('shobiCode') or '').strip(),
+                'brand':x.get('brand'),
+                'perfume':x.get('inspiredBy') or x.get('name') or x.get('perfume'),
+                'fragranticaId':fid,
+                'fragranticaUrl':x.get('fragranticaUrl'),
+                'socialCardUrl':f'https://fimgs.net/mdimg/perfume-social-cards/en-p_c_{fid}.jpeg' if str(fid or '').isdigit() else None,
+                'status':x.get('fragranticaSocialCardStatus')
+              })
+          assert len(out)==32, len(out)
+          Path('main-notes-32-residuals.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(out,ensure_ascii=False,indent=2))
+          PY
+      - name: Commit residual list
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add main-notes-32-residuals.json
+          git commit -m 'Add exact 32 Main Notes residual list'
+          git push
