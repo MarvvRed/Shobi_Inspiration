@@ -1,17 +1,17 @@
 {
   "rule": "mainNotes come ONLY from archived Fragrantica social-card notes panel, read row-major; pyramid is never used",
-  "processed_cards": 2222,
-  "with_notes": 1976,
-  "empty": 246,
-  "low_confidence_lt60": 366,
+  "processed_cards": 2296,
+  "with_notes": 2041,
+  "empty": 255,
+  "low_confidence_lt60": 379,
   "note_count_distribution": {
-    "6": 1569,
-    "1": 54,
-    "0": 246,
-    "3": 30,
-    "5": 188,
-    "4": 99,
-    "2": 36
+    "6": 1622,
+    "1": 55,
+    "0": 255,
+    "3": 32,
+    "5": 194,
+    "2": 39,
+    "4": 99
   },
   "low_confidence_sample": [
     {
@@ -192,6 +192,30 @@
       "ocrConfidence": 59.8
     },
     {
+      "code": "1049-CAL",
+      "fragranticaId": 276,
+      "mainNotes": [],
+      "ocrConfidence": 0
+    },
+    {
+      "code": "479-CAR",
+      "fragranticaId": 296,
+      "mainNotes": [],
+      "ocrConfidence": 0
+    },
+    {
+      "code": "1053-CAR",
+      "fragranticaId": 297,
+      "mainNotes": [],
+      "ocrConfidence": 0
+    },
+    {
+      "code": "480-CAR",
+      "fragranticaId": 306,
+      "mainNotes": [],
+      "ocrConfidence": 0
+    },
+    {
       "code": "1176-GUL",
       "fragranticaId": 433,
       "mainNotes": [
@@ -336,37 +360,6 @@
       "fragranticaId": 3923,
       "mainNotes": [],
       "ocrConfidence": 0
-    },
-    {
-      "code": "2366-DIP",
-      "fragranticaId": 3956,
-      "mainNotes": [],
-      "ocrConfidence": 0
-    },
-    {
-      "code": "323-NAS",
-      "fragranticaId": 4291,
-      "mainNotes": [
-        "vs Vv"
-      ],
-      "ocrConfidence": 40.4
-    },
-    {
-      "code": "1860-NAS",
-      "fragranticaId": 4293,
-      "mainNotes": [
-        "ee om re sa at"
-      ],
-      "ocrConfidence": 37.5
-    },
-    {
-      "code": "963-VICT",
-      "fragranticaId": 7989,
-      "mainNotes": [
-        "we ei",
-        "only"
-      ],
-      "ocrConfidence": 34.0
     }
   ]
 }

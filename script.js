@@ -28,6 +28,11 @@ const TOKEN_COLORS = {
     notes: 'token-accord'
 };
 
+function getMainNotes(p) {
+    const v = p?.fragranticaSocialCardNotes;
+    return Array.isArray(v) ? v : [];
+}
+
 function displayPerfumes(perfumes) {
     const container = document.getElementById('resultsContainer');
     const template = document.getElementById('perfume-card-template');
@@ -70,7 +75,7 @@ function displayPerfumes(perfumes) {
         const audienceIconsContainer = card.querySelector('[data-field="audience-icons"]');
         audienceIconsContainer.innerHTML = getAudienceIcons(p.genderAffinity) + getSeasonBadges(p.seasons);
         const mainNotesContainer = card.querySelector('[data-field="main-notes"]');
-        mainNotesContainer.innerHTML = getMainNotesBadges(p.notes);
+        mainNotesContainer.innerHTML = getMainNotesBadges(getMainNotes(p));
 
         card.querySelector('[data-action="filter-brand"]').dataset.brand = p.brand;
         container.appendChild(card);
@@ -128,7 +133,7 @@ function getFilteredPerfumes(overrideFilters = null) {
 
     if (currentFilters.notes.length > 0) {
         filtered = filtered.filter(p => {
-            const perfumeNotes = getPerfumeNotes(p.notes);
+            const perfumeNotes = getPerfumeNotes(getMainNotes(p));
             return currentFilters.notes.every(filterNote => perfumeNotes.includes(filterNote));
         });
     }

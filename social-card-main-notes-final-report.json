@@ -1,0 +1,43 @@
+{
+  "rule": "Main Notes come only from the left notes box of exact Fragrantica social cards; no accords, pyramid, fallback or inference.",
+  "finalIdentityDecisions": {
+    "521-DRC": 215,
+    "676-GUC": 5226
+  },
+  "socialCardUnavailable": {
+    "118-HAM": 27808,
+    "235-HOLL": 4307,
+    "325-PECK": 31590
+  },
+  "validatedOcrFids": 1469,
+  "manualReviewedFids": 799,
+  "mergedFidsWithNotes": 2268,
+  "oudMaracuja83842": {
+    "manualNotes": [
+      "Passionfruit",
+      "Agarwood (Oud)",
+      "Leather",
+      "Fruity Notes",
+      "Agarwood (Oud)",
+      "Saffron"
+    ],
+    "ocrRawSlots": [],
+    "decision": "KEEP_MANUAL_VISUAL_REVIEW"
+  },
+  "databases": [
+    {
+      "database": "database_complete.json",
+      "official": 2330,
+      "withMainNotes": 2298,
+      "socialCardUnavailable": 3,
+      "withoutMainNotes": 32
+    },
+    {
+      "database": "database_v2_clean.json",
+      "official": 2330,
+      "withMainNotes": 2298,
+      "socialCardUnavailable": 3,
+      "withoutMainNotes": 32
+    }
+  ]
+}
