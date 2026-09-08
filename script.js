@@ -393,6 +393,9 @@ function escapeHtml(value) {
 }
 
 function getPerfumeNotes(notes) {
+    if (Array.isArray(notes)) {
+        return [...new Set(notes.filter(Boolean))];
+    }
     if (!notes || typeof notes !== 'object') return [];
     return [...new Set(['top', 'heart', 'base'].flatMap(level =>
         Array.isArray(notes[level]) ? notes[level].filter(Boolean) : []
