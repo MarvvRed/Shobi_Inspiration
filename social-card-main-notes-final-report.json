@@ -10,8 +10,8 @@
     "325-PECK": 31590
   },
   "validatedOcrFids": 1469,
-  "manualReviewedFids": 799,
-  "mergedFidsWithNotes": 2268,
+  "manualReviewedFids": 824,
+  "mergedFidsWithNotes": 2293,
   "oudMaracuja83842": {
     "manualNotes": [
       "Passionfruit",
@@ -28,16 +28,75 @@
     {
       "database": "database_complete.json",
       "official": 2330,
-      "withMainNotes": 2298,
+      "withMainNotes": 2323,
       "socialCardUnavailable": 3,
-      "withoutMainNotes": 32
+      "withoutMainNotes": 7
     },
     {
       "database": "database_v2_clean.json",
       "official": 2330,
-      "withMainNotes": 2298,
+      "withMainNotes": 2323,
       "socialCardUnavailable": 3,
-      "withoutMainNotes": 32
+      "withoutMainNotes": 7
+    }
+  ],
+  "missingReportSource": "database_complete.json",
+  "perfumesWithoutMainNotes": [
+    {
+      "code": "107-ARB",
+      "brand": "Arabian Oud",
+      "perfume": "Titanium",
+      "fragranticaId": 127709,
+      "fragranticaUrl": null,
+      "reason": "UNRESOLVED_NO_INFERENCE"
+    },
+    {
+      "code": "118-HAM",
+      "brand": "Hamidi Oud & Perfumes",
+      "perfume": "REHAN - HAMIDI OUD",
+      "fragranticaId": 27808,
+      "fragranticaUrl": null,
+      "reason": "SOCIAL_CARD_UNAVAILABLE"
+    },
+    {
+      "code": "235-HOLL",
+      "brand": "Hollister",
+      "perfume": "SOCAL",
+      "fragranticaId": 4307,
+      "fragranticaUrl": null,
+      "reason": "SOCIAL_CARD_UNAVAILABLE"
+    },
+    {
+      "code": "325-PECK",
+      "brand": "Pecksniff's",
+      "perfume": "BLACK OAK & CEDAR - PECKSNIFF'S",
+      "fragranticaId": 31590,
+      "fragranticaUrl": null,
+      "reason": "SOCIAL_CARD_UNAVAILABLE"
+    },
+    {
+      "code": "843-NRO",
+      "brand": "Narciso Rodriguez",
+      "perfume": "FOR HER PINK EAU DE TOILETTE - RODRIGUEZ",
+      "fragranticaId": 72604,
+      "fragranticaUrl": null,
+      "reason": "UNRESOLVED_NO_INFERENCE"
+    },
+    {
+      "code": "1629-AL HAR",
+      "brand": "Al Haramain Perfumes",
+      "perfume": "MUSK MALIKI",
+      "fragranticaId": 70385,
+      "fragranticaUrl": null,
+      "reason": "UNRESOLVED_NO_INFERENCE"
+    },
+    {
+      "code": "pid:2688",
+      "brand": "Ajmal",
+      "perfume": "Danat Al Duniya Eau de Parfum",
+      "fragranticaId": null,
+      "fragranticaUrl": null,
+      "reason": "UNRESOLVED_NO_INFERENCE"
     }
   ]
 }
