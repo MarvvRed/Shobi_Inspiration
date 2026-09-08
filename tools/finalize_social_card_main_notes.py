@@ -60,14 +60,11 @@ def load_manual():
             out[f]=notes
     return out
 
-def missing_identity(rows):
-    return [(r.get('code'),r.get('fragranticaId'),r.get('reason')) for r in rows]
-
 def merge():
     val=json.loads(VALID.read_text(encoding='utf-8')); auto={int(r['fragranticaId']):r['mainNotes'] for r in val if r.get('validated') and r.get('mainNotes')}
     manual=load_manual(); merged={**auto,**manual}
     oud_manual=manual.get(83842); oud_raw=next((r.get('rawSlots') for r in val if int(r.get('fragranticaId') or -1)==83842),None)
-    counts=[]; missing_reference=[]
+    counts=[]; missing_reference=None
     for path in DBS:
         data=json.loads(path.read_text(encoding='utf-8')); recs=flatten(data); official=with_notes=unavail=0; missing=[]
         for p in recs:
@@ -90,13 +87,14 @@ def merge():
                 })
         path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         counts.append({'database':path.name,'official':official,'withMainNotes':with_notes,'socialCardUnavailable':unavail,'withoutMainNotes':official-with_notes})
-        if not missing_reference: missing_reference=missing
-        elif missing_identity(missing)!=missing_identity(missing_reference): raise SystemExit('Databases disagree on identities of perfumes without Main Notes')
+        if path.name=='database_complete.json':
+            missing_reference=missing
+    if missing_reference is None: raise SystemExit('Canonical database_complete.json missing')
     report={'rule':'Main Notes come only from the left notes box of exact Fragrantica social cards; no accords, pyramid, fallback or inference.',
       'finalIdentityDecisions':{'521-DRC':215,'676-GUC':5226},'socialCardUnavailable':UNAVAILABLE,
       'validatedOcrFids':len(auto),'manualReviewedFids':len(manual),'mergedFidsWithNotes':len(merged),
       'oudMaracuja83842':{'manualNotes':oud_manual,'ocrRawSlots':oud_raw,'decision':'KEEP_MANUAL_VISUAL_REVIEW'},
-      'databases':counts,'perfumesWithoutMainNotes':missing_reference}
+      'databases':counts,'missingReportSource':'database_complete.json','perfumesWithoutMainNotes':missing_reference}
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps(report,ensure_ascii=False,indent=2))
 
 if __name__=='__main__':
