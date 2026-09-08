@@ -1,11 +1,67 @@
 {
-  "rule": "Targeted direct retry of exact official Fragrantica social-card IDs missing from local archive.",
-  "officialWithFragranticaId": 2329,
-  "archiveExactIdsBefore": 2290,
-  "missingBefore": 9,
-  "recovered": 3,
-  "stillMissing": 6,
-  "archiveExactIdsAfter": 2293,
+  "date": "2026-09-08",
+  "baseCommit": "6c08d6f461330375ee26383525b1d34ae84c4168",
+  "scope": "Nine residual records after the nine-card recovery. Only evidenced identity corrections; no fuzzy card substitutions.",
+  "fixes": [
+    {
+      "code": "548-CLI",
+      "oldId": 66133,
+      "newId": 372,
+      "brand": "Clinique",
+      "name": "Clinique Happy for Women",
+      "url": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-372.html",
+      "source": "https://leparfum.com.gr/en/fragrances-for-women/happy-woman-clinique-type",
+      "basis": "Shobi explicitly identifies Happy Woman Clinique; Fragrantica 372 is the women fragrance."
+    },
+    {
+      "code": "1086-CLI",
+      "oldId": 66133,
+      "newId": 373,
+      "brand": "Clinique",
+      "name": "Clinique Happy for Men",
+      "url": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-373.html",
+      "source": "https://leparfum.com.gr/en/fragrances-for-men/happy-man-clinique-perfume-type",
+      "basis": "Shobi explicitly identifies Happy Man Clinique; Fragrantica 373 is the men fragrance."
+    },
+    {
+      "code": "928-TRU",
+      "oldId": 93471,
+      "newId": 16241,
+      "brand": "Trussardi",
+      "name": "Trussardi Delicate Rose",
+      "url": "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
+      "source": "https://leparfum.com.gr/en/best-sales?page=67&resultsPerPage=36",
+      "basis": "Shobi 928-TRU identifies Delicate Rose; TRU brand code and the exact Trussardi name identify 16241. Previous Aurora Scents match was name-only."
+    }
+  ],
+  "needsIdentityReview": [
+    {
+      "code": "521-DRC",
+      "currentId": 136549,
+      "reason": "Create Scent Addict was matched by name only; DRC suggests Dior but exact edition and original product evidence are missing."
+    },
+    {
+      "code": "676-GUC",
+      "currentId": 138007,
+      "reason": "Shobi says Flora with GUC code; Anthropologie is inconsistent. Gucci EDT versus EDP is not established.",
+      "source": "https://leparfum.com.gr/en/best-sales?category_rewrite=best-sales&page=20&resultsPerPage=36"
+    },
+    {
+      "code": "1751-GUL",
+      "currentId": 12088,
+      "reason": "Shobi says MADAME / MA DAME with GUL code; Cortina match was name-only. Jean Paul Gaultier is a candidate, but exact edition is not established.",
+      "source": "https://leparfum.com.gr/en/fragrances-for-women?page=6&productListView=list&resultsPerPage=36"
+    }
+  ],
+  "recoverySummary": {
+    "rule": "Targeted direct retry of exact official Fragrantica social-card IDs missing from local archive.",
+    "officialWithFragranticaId": 2329,
+    "archiveExactIdsBefore": 2290,
+    "missingBefore": 9,
+    "recovered": 3,
+    "stillMissing": 6,
+    "archiveExactIdsAfter": 2293
+  },
   "results": [
     {
       "code": "118-HAM",
