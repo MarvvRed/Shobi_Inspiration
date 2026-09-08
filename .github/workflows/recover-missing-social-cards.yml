@@ -1,0 +1,31 @@
+name: Recover missing social cards
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/recover_missing_social_cards.py'
+      - '.github/workflows/recover-missing-social-cards.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recover exact missing Fragrantica social cards
+        run: python tools/recover_missing_social_cards.py
+      - name: Commit recovered cards and report
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add fragrantica-scraper-archive/social-cards/images/ missing-social-card-recovery-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Recover missing Fragrantica social cards"
+            git push
+          fi
