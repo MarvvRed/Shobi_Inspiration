@@ -1,0 +1,26 @@
+name: Recover missing social cards from URL corpus
+on:
+  push:
+    paths:
+      - 'tools/recover_missing_social_cards_from_url_corpus.py'
+      - '.github/workflows/recover-missing-social-cards-from-url-corpus.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Cross-check 18 residuals against local 4.29 MB URL corpus
+        run: python tools/recover_missing_social_cards_from_url_corpus.py
+      - name: Commit report and safely recovered cards
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add social-card-corpus-recovery-report.json fragrantica-scraper-archive/social-cards/images/
+          git diff --cached --quiet || git commit -m 'Recover residual social cards from local URL corpus'
+          git push
