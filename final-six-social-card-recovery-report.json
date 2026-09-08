@@ -1,0 +1,192 @@
+{
+  "date": "2026-09-08",
+  "baseCommit": "3fb8522add93263a631ce0b7ad979d5698fe4a7b",
+  "scope": "Six residual Shobi records. Full statistical cards, official Open Graph images, and unassigned candidate cards are counted separately.",
+  "summary": {
+    "targets": 6,
+    "newVerifiedFullCards": 1,
+    "officialOpenGraphFallbacks": 3,
+    "recordsAwaitingExactVersion": 2,
+    "unassignedCandidateCards": 6,
+    "targetsStillWithoutAssignedFullCard": 5,
+    "exactArchivedIdsAfter": 2294
+  },
+  "decisions": [
+    {
+      "code": "1751-GUL",
+      "oldId": 12088,
+      "newId": 3681,
+      "status": "VERIFIED_FULL_CARD",
+      "source": "https://leparfum.com.gr/en/fragrances-for-women/1751-gul-wp",
+      "reason": "Live Shobi image label identifies JPG. Its detailed description lists orange, grenadine, rose, musk and Virginia cedar, matching the original 2008 Ma Dame; not the distinct EDP or 2024 note listing.",
+      "fragranticaSource": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html"
+    },
+    {
+      "code": "521-DRC",
+      "oldId": 136549,
+      "brand": "Dior",
+      "status": "REVIEW_REQUIRED_VERSION",
+      "candidateIds": [
+        215,
+        15270,
+        28201,
+        25159
+      ],
+      "source": "https://leparfum.com.gr/en/fragrances-for-women/521-drc-w",
+      "additionalSource": "https://leparfum.com.gr/en/fragrances-for-women?page=31",
+      "reason": "Historical Shobi listing explicitly names Christian Dior. Live English and Greek descriptions and the single review do not establish edition/year/concentration of the original. Shobi selling its own clone as EDP does not establish the concentration of the inspiration. Removed incorrect Create Scent ID; candidate cards are not assigned."
+    },
+    {
+      "code": "676-GUC",
+      "oldId": 138007,
+      "brand": "Gucci",
+      "status": "REVIEW_REQUIRED_VERSION",
+      "candidateIds": [
+        5226,
+        7610
+      ],
+      "source": "https://leparfum.com.gr/en/fragrances-for-women/676-guc-wp",
+      "reason": "Live Shobi image label explicitly names Gucci. English and Greek descriptions identify Flora without EDT/EDP distinction. Removed incorrect Anthropologie ID; candidate cards are not assigned."
+    },
+    {
+      "code": "118-HAM",
+      "fragranticaId": 27808,
+      "status": "OFFICIAL_OG_FALLBACK_ONLY",
+      "fullCardUrl": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_27808.jpeg",
+      "fullCardError": "HTTP 404",
+      "reason": "Canonical Fragrantica page advertises the downloaded social image in og:image metadata; full statistical card remains unavailable."
+    },
+    {
+      "code": "235-HOLL",
+      "fragranticaId": 4307,
+      "status": "OFFICIAL_OG_FALLBACK_ONLY",
+      "fullCardUrl": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_4307.jpeg",
+      "fullCardError": "HTTP 404",
+      "reason": "Canonical Fragrantica page advertises the downloaded social image in og:image metadata; full statistical card remains unavailable."
+    },
+    {
+      "code": "325-PECK",
+      "fragranticaId": 31590,
+      "status": "OFFICIAL_OG_FALLBACK_ONLY",
+      "fullCardUrl": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_31590.jpeg",
+      "fullCardError": "HTTP 404",
+      "reason": "Canonical Fragrantica page advertises the downloaded social image in og:image metadata; full statistical card remains unavailable."
+    }
+  ],
+  "assets": [
+    {
+      "code": "118-HAM",
+      "fragranticaId": 27808,
+      "kind": "fallback",
+      "page": "https://www.fragrantica.com/perfume/Hamidi-Oud-Perfumes/Rehan-27808.html",
+      "url": "https://fimgs.net/mdimg/perfume/social.27808.jpg",
+      "error": "",
+      "localPath": "fragrantica-scraper-archive/social-cards/fallback-images/118-HAM_27808.jpeg",
+      "bytes": 74168,
+      "sha256": "024f5a7d58e39c451c5c8c0cbf6ba23a03d77aecc9328531987f4779ba152616"
+    },
+    {
+      "code": "235-HOLL",
+      "fragranticaId": 4307,
+      "kind": "fallback",
+      "page": "https://www.fragrantica.com/perfume/Hollister/Socal-4307.html",
+      "url": "https://fimgs.net/mdimg/perfume/social.4307.jpg",
+      "error": "",
+      "localPath": "fragrantica-scraper-archive/social-cards/fallback-images/235-HOLL_4307.jpeg",
+      "bytes": 75813,
+      "sha256": "22c67b4d7576da1cfc83fdce9d3c1a6cb5c076fe3ea8b40a89dc7379db53b5f2"
+    },
+    {
+      "code": "325-PECK",
+      "fragranticaId": 31590,
+      "kind": "fallback",
+      "page": "https://www.fragrantica.com/perfume/Pecksniff-s/Black-Oak-Cedar-31590.html",
+      "url": "https://fimgs.net/mdimg/perfume/social.31590.jpg",
+      "error": "",
+      "localPath": "fragrantica-scraper-archive/social-cards/fallback-images/325-PECK_31590.jpeg",
+      "bytes": 61940,
+      "sha256": "f71a439d0550879aabd4d26a11ca268681e22b4380a0b86cd1b8fcc485865c40"
+    },
+    {
+      "code": "1751-GUL",
+      "fragranticaId": 3681,
+      "kind": "verified",
+      "page": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html",
+      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_3681.jpeg",
+      "error": "",
+      "localPath": "fragrantica-scraper-archive/social-cards/images/2613_1751-GUL_3681.jpeg",
+      "bytes": 103335,
+      "sha256": "e0bb3c2f56a4aad6891b8f8ae5447eb44fc1cce4afa3dcc92f9ceb00b011eac3"
+    },
+    {
+      "code": "521-DRC",
+      "fragranticaId": 215,
+      "kind": "candidate",
+      "page": "https://www.fragrantica.com/perfume/Dior/Dior-Addict-215.html",
+      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_215.jpeg",
+      "error": "",
+      "localPath": "fragrantica-scraper-archive/social-cards/candidate-images/521-DRC_215.jpeg",
+      "bytes": 96787,
+      "sha256": "17e7a5fc8479490cc6b32994a7bc3b888486453a8d5d5bc62991e2cf1161ac45"
+    },
+    {
+      "code": "521-DRC",
+      "fragranticaId": 15270,
+      "kind": "candidate",
+      "page": "https://www.fragrantica.com/perfume/Dior/Dior-Addict-Eau-de-Parfum-15270.html",
+      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_15270.jpeg",
+      "error": "",
+      "localPath": "fragrantica-scraper-archive/social-cards/candidate-images/521-DRC_15270.jpeg",
+      "bytes": 99004,
+      "sha256": "58b674b00a65c617cb461aff9b2640a5d1e9290ecfbdfc93456b42f41a1c9855"
+    },
+    {
+      "code": "521-DRC",
+      "fragranticaId": 28201,
+      "kind": "candidate",
+      "page": "https://www.fragrantica.com/perfume/Dior/Dior-Addict-Eau-de-Parfum-2014-28201.html",
+      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_28201.jpeg",
+      "error": "",
+      "localPath": "fragrantica-scraper-archive/social-cards/candidate-images/521-DRC_28201.jpeg",
+      "bytes": 89700,
+      "sha256": "c7c5190f7c315fa73a9e275dd361bb3d764a8c38744381fa8995bbe814c3e37b"
+    },
+    {
+      "code": "521-DRC",
+      "fragranticaId": 25159,
+      "kind": "candidate",
+      "page": "https://www.fragrantica.com/perfume/Dior/Dior-Addict-Eau-de-Toilette-25159.html",
+      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_25159.jpeg",
+      "error": "",
+      "localPath": "fragrantica-scraper-archive/social-cards/candidate-images/521-DRC_25159.jpeg",
+      "bytes": 101045,
+      "sha256": "9e4a1f1edc78dc068fb3725a20a156460a89efa923b26810f3ba6954f2a5ed36"
+    },
+    {
+      "code": "676-GUC",
+      "fragranticaId": 5226,
+      "kind": "candidate",
+      "page": "https://www.fragrantica.com/perfume/Gucci/Flora-by-Gucci-Eau-de-Toilette-5226.html",
+      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_5226.jpeg",
+      "error": "",
+      "localPath": "fragrantica-scraper-archive/social-cards/candidate-images/676-GUC_5226.jpeg",
+      "bytes": 105075,
+      "sha256": "5f45b14058a0ab80514c83380cf8610c856ced9704d4e45a236ea55777e5a3d5"
+    },
+    {
+      "code": "676-GUC",
+      "fragranticaId": 7610,
+      "kind": "candidate",
+      "page": "https://www.fragrantica.com/perfume/Gucci/Flora-by-Gucci-Eau-de-Parfum-7610.html",
+      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_7610.jpeg",
+      "error": "",
+      "localPath": "fragrantica-scraper-archive/social-cards/candidate-images/676-GUC_7610.jpeg",
+      "bytes": 107615,
+      "sha256": "b97854f7012593a8c951100a6a3109eb8052b9e6fcdd6914295f8e3208495614"
+    }
+  ],
+  "limitations": [
+    "Open Graph fallback images contain product photographs and branding, not accords, notes, seasons or performance statistics. They are excluded from the full-card images directory.",
+    "Two exact edition choices remain unresolved; six candidate files are kept outside the full-card images directory and must not be treated as confirmed mappings."
+  ]
+}
