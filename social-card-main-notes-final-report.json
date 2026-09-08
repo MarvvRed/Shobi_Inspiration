@@ -12,8 +12,8 @@
     "325-PECK": 31590
   },
   "validatedOcrFids": 1471,
-  "manualReviewedFids": 825,
-  "mergedFidsWithNotes": 2294,
+  "manualReviewedFids": 830,
+  "mergedFidsWithNotes": 2299,
   "oudMaracuja83842": {
     "manualNotes": [
       "Passionfruit",
@@ -30,28 +30,20 @@
     {
       "database": "database_complete.json",
       "official": 2330,
-      "withMainNotes": 2324,
+      "withMainNotes": 2327,
       "socialCardUnavailable": 3,
-      "withoutMainNotes": 6
+      "withoutMainNotes": 3
     },
     {
       "database": "database_v2_clean.json",
       "official": 2330,
-      "withMainNotes": 2324,
+      "withMainNotes": 2327,
       "socialCardUnavailable": 3,
-      "withoutMainNotes": 6
+      "withoutMainNotes": 3
     }
   ],
   "missingReportSource": "database_complete.json",
   "perfumesWithoutMainNotes": [
-    {
-      "code": "107-ARB",
-      "brand": "Arabian Oud",
-      "perfume": "Titanium",
-      "fragranticaId": 127709,
-      "fragranticaUrl": null,
-      "reason": "UNRESOLVED_NO_INFERENCE"
-    },
     {
       "code": "118-HAM",
       "brand": "Hamidi Oud & Perfumes",
@@ -75,22 +67,6 @@
       "fragranticaId": 31590,
       "fragranticaUrl": null,
       "reason": "SOCIAL_CARD_UNAVAILABLE"
-    },
-    {
-      "code": "973-VICT",
-      "brand": "Victoria's Secret",
-      "perfume": "Wicked",
-      "fragranticaId": 133200,
-      "fragranticaUrl": null,
-      "reason": "UNRESOLVED_NO_INFERENCE"
-    },
-    {
-      "code": "1629-AL HAR",
-      "brand": "Al Haramain Perfumes",
-      "perfume": "MUSK MALIKI",
-      "fragranticaId": 70385,
-      "fragranticaUrl": null,
-      "reason": "UNRESOLVED_NO_INFERENCE"
     }
   ]
 }

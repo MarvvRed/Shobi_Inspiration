@@ -252,8 +252,15 @@
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
-    "fragranticaSocialCardNotes": [],
-    "fragranticaSocialCardStatus": "UNRESOLVED_NO_INFERENCE"
+    "fragranticaSocialCardNotes": [
+      "Patchouli",
+      "Musk",
+      "Grapefruit",
+      "Pepper",
+      "Saffron",
+      "Incense"
+    ],
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL"
   },
   {
     "id": "108-ARM",
@@ -28511,8 +28518,12 @@
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
-    "fragranticaSocialCardNotes": [],
-    "fragranticaSocialCardStatus": "UNRESOLVED_NO_INFERENCE"
+    "fragranticaSocialCardNotes": [
+      "Brown Sugar",
+      "Freesia",
+      "Vanilla"
+    ],
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL"
   },
   {
     "id": "975-YZLO",
@@ -41918,8 +41929,15 @@
     "occasions": [],
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Al-Haramain-Perfumes/Musk-Maliki-70385.html",
     "fragranticaVerificationSource": "brand-locked abbreviation review against local corpus",
-    "fragranticaSocialCardNotes": [],
-    "fragranticaSocialCardStatus": "UNRESOLVED_NO_INFERENCE"
+    "fragranticaSocialCardNotes": [
+      "Jasmine",
+      "Violet",
+      "Geranium",
+      "Musk",
+      "Narcissus",
+      "Violet Leaf"
+    ],
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL"
   },
   {
     "id": "1630-GUL",
