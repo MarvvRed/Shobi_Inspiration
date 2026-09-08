@@ -60,6 +60,9 @@ def load_manual():
             out[f]=notes
     return out
 
+def missing_identity(rows):
+    return [(r.get('code'),r.get('fragranticaId'),r.get('reason')) for r in rows]
+
 def merge():
     val=json.loads(VALID.read_text(encoding='utf-8')); auto={int(r['fragranticaId']):r['mainNotes'] for r in val if r.get('validated') and r.get('mainNotes')}
     manual=load_manual(); merged={**auto,**manual}
@@ -88,7 +91,7 @@ def merge():
         path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         counts.append({'database':path.name,'official':official,'withMainNotes':with_notes,'socialCardUnavailable':unavail,'withoutMainNotes':official-with_notes})
         if not missing_reference: missing_reference=missing
-        elif missing!=missing_reference: raise SystemExit('Databases disagree on perfumes without Main Notes')
+        elif missing_identity(missing)!=missing_identity(missing_reference): raise SystemExit('Databases disagree on identities of perfumes without Main Notes')
     report={'rule':'Main Notes come only from the left notes box of exact Fragrantica social cards; no accords, pyramid, fallback or inference.',
       'finalIdentityDecisions':{'521-DRC':215,'676-GUC':5226},'socialCardUnavailable':UNAVAILABLE,
       'validatedOcrFids':len(auto),'manualReviewedFids':len(manual),'mergedFidsWithNotes':len(merged),
