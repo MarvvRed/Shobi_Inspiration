@@ -23,7 +23,7 @@ def fid(p):
 def code(p): return str(p.get('code') or p.get('shobiCode') or '').strip()
 
 def main():
-    from PIL import Image
+    from PIL import Image,ImageEnhance,ImageOps
     import pytesseract
     base=json.loads(DBS[0].read_text(encoding='utf-8')); recs=[p for p in flatten(base) if official(p)]; byid={fid(p):p for p in recs if fid(p)}
     cards={}
@@ -34,18 +34,20 @@ def main():
     found={}; unresolved=[]
     for n,(i,f) in enumerate(sorted(cards.items()),1):
         im=Image.open(f).convert('L')
-        # Gender label is in the upper metadata area; OCR a broad crop and classify only explicit Fragrantica wording.
-        crop=im.crop((0,0,im.width,min(im.height,int(im.height*.68))))
-        text=' '.join(pytesseract.image_to_string(crop,config='--psm 11').split())
-        low=text.lower()
+        crop=im.crop((0,0,im.width,min(im.height,int(im.height*.72))))
+        variants=[crop,ImageEnhance.Contrast(crop).enhance(2.0),ImageOps.autocontrast(crop)]
+        texts=[]
+        for v in variants:
+            for psm in (6,11,12):
+                texts.append(' '.join(pytesseract.image_to_string(v,config=f'--psm {psm}').split()))
+        low=' '.join(texts).lower()
         g=None
-        if re.search(r'\bfor women and men\b|\bfor men and women\b|\bunisex\b',low): g='Unisex'
-        elif re.search(r'\bfor women\b|\bfor woman\b',low): g='Female'
-        elif re.search(r'\bfor men\b|\bfor man\b',low): g='Male'
+        if re.search(r'\bfor women and men\b|\bfor men and women\b|\bfor women & men\b|\bfor men & women\b|\bunisex\b',low): g='Unisex'
+        elif re.search(r'\bfor women\b|\bfor woman\b|\bwomen fragrance\b',low): g='Female'
+        elif re.search(r'\bfor men\b|\bfor man\b|\bmen fragrance\b',low): g='Male'
         if g: found[i]=g
-        else: unresolved.append({'code':code(byid[i]),'fragranticaId':i,'card':str(f.relative_to(ROOT))})
+        else: unresolved.append({'code':code(byid[i]),'fragranticaId':i,'card':str(f.relative_to(ROOT)),'ocr':texts[:3]})
         if n%100==0: print(n,len(found),len(unresolved))
-    # Never overwrite unresolved records with an inferred value.
     for db in DBS:
         data=json.loads(db.read_text(encoding='utf-8'))
         for p in flatten(data):
