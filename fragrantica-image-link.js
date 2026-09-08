@@ -6,7 +6,7 @@
 
       const shobiLink = card.querySelector('[data-field="shobiLink"]');
       const title = card.querySelector('[data-field="inspiredBy"]')?.textContent?.trim() || 'perfume';
-      const code = card.querySelector('[data-field="code"]')?.textContent?.trim();
+      const code = card.querySelector('.favorite-btn')?.dataset.code || card.querySelector('[data-field="code"]')?.textContent?.trim();
 
       let perfume = null;
       if (typeof allPerfumes !== 'undefined' && Array.isArray(allPerfumes)) {
