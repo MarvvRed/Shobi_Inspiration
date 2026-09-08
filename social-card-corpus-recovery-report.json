@@ -1,7 +1,247 @@
 {
-  "rule": "Local perfume_urls corpus identity cross-check; exact normalized brand required; no note-pyramid use; alternate card auto-saved only at name similarity >= 0.94.",
-  "targets": 0,
+  "rule": "Exactly the 18 MISSING entries from missing-social-card-recovery-report.json; local URL corpus only; same normalized brand; no pyramid.",
+  "targets": 18,
   "recovered": 0,
-  "stillUnresolved": 0,
-  "results": []
+  "stillUnresolved": 18,
+  "results": [
+    {
+      "code": "118-HAM",
+      "brand": "Hamidi Oud & Perfumes",
+      "name": "REHAN - HAMIDI OUD",
+      "currentId": 27808,
+      "candidateCount": 0,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "235-HOLL",
+      "brand": "Hollister",
+      "name": "SOCAL",
+      "currentId": 4307,
+      "candidateCount": 0,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "325-PECK",
+      "brand": "Pecksniff's",
+      "name": "BLACK OAK & CEDAR - PECKSNIFF'S",
+      "currentId": 31590,
+      "candidateCount": 0,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "521-DRC",
+      "brand": "Create Scent",
+      "name": "ADDICT",
+      "currentId": 136549,
+      "candidateCount": 1,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "1086-CLI",
+      "brand": "The Dua Brand",
+      "name": "Happy",
+      "currentId": 66133,
+      "candidateCount": 2,
+      "tested": [
+        {
+          "id": 104225,
+          "url": "https://www.fragrantica.com/perfume/The-Dua-Brand/HappyHomme-104225.html",
+          "nameScore": 0.6667,
+          "card": true
+        }
+      ],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "646-ARM",
+      "brand": "Aqua Arabia",
+      "name": "Armani Code for Women Eau de Parfum",
+      "currentId": 101026,
+      "candidateCount": 0,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "676-GUC",
+      "brand": "Anthropologie",
+      "name": "Flora",
+      "currentId": 138007,
+      "candidateCount": 1,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "716-ISS",
+      "brand": "Accessorize",
+      "name": "A SCENT - ISSEY MIYAKE",
+      "currentId": 40294,
+      "candidateCount": 0,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "847-NRO",
+      "brand": "Asia Perfumes",
+      "name": "Narciso Eau De Parfum Poudree",
+      "currentId": 101576,
+      "candidateCount": 0,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "866-PAC",
+      "brand": "Be Style Perfumes",
+      "name": "ULTRA VIOLET for women",
+      "currentId": 52121,
+      "candidateCount": 1,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "928-TRU",
+      "brand": "Aurora Scents",
+      "name": "Delicate Rose",
+      "currentId": 93471,
+      "candidateCount": 2,
+      "tested": [
+        {
+          "id": 93470,
+          "url": "https://www.fragrantica.com/perfume/Aurora-Scents/Delicate-93470.html",
+          "nameScore": 0.7619,
+          "card": false
+        }
+      ],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "1086-CLI",
+      "brand": "The Dua Brand",
+      "name": "Happy",
+      "currentId": 66133,
+      "candidateCount": 2,
+      "tested": [
+        {
+          "id": 104225,
+          "url": "https://www.fragrantica.com/perfume/The-Dua-Brand/HappyHomme-104225.html",
+          "nameScore": 0.6667,
+          "card": true
+        }
+      ],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "1165-HUG",
+      "brand": "Avon",
+      "name": "ENERGISE - HUGO BOSS",
+      "currentId": 77736,
+      "candidateCount": 0,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "1189-KEN",
+      "brand": "Bellerive",
+      "name": "Kenzo Homme Sport Extrme",
+      "currentId": 110164,
+      "candidateCount": 1,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "1281-YZLO",
+      "brand": "Alan Bray",
+      "name": "L'HOMME INTENSE",
+      "currentId": 118000,
+      "candidateCount": 5,
+      "tested": [
+        {
+          "id": 117674,
+          "url": "https://www.fragrantica.com/perfume/Alan-Bray/L-Homme-Noble-117674.html",
+          "nameScore": 0.7143,
+          "card": false
+        },
+        {
+          "id": 102510,
+          "url": "https://www.fragrantica.com/perfume/Alan-Bray/L-Homme-Legend-102510.html",
+          "nameScore": 0.6897,
+          "card": false
+        },
+        {
+          "id": 43049,
+          "url": "https://www.fragrantica.com/perfume/Alan-Bray/L-Homme-Adventure-43049.html",
+          "nameScore": 0.6875,
+          "card": true
+        },
+        {
+          "id": 116867,
+          "url": "https://www.fragrantica.com/perfume/Alan-Bray/L-Homme-Mission-116867.html",
+          "nameScore": 0.6667,
+          "card": false
+        }
+      ],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "1751-GUL",
+      "brand": "Cortina 1224",
+      "name": "MADAME",
+      "currentId": 12088,
+      "candidateCount": 1,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "1890-LEL",
+      "brand": "Abercrombie & Fitch",
+      "name": "LYS 41 - LELABO",
+      "currentId": 3510,
+      "candidateCount": 0,
+      "tested": [],
+      "recoveredId": null,
+      "recoveredUrl": null
+    },
+    {
+      "code": "2265-KAY",
+      "brand": "Kayali Fragrances",
+      "name": "Oudgasm-rose-oud-16-eau-de-",
+      "currentId": 118808,
+      "candidateCount": 3,
+      "tested": [
+        {
+          "id": 85186,
+          "url": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Oudgasm-Rose-Oud-16-Eau-de-Parfum-Intense-85186.html",
+          "nameScore": 0.7761,
+          "card": true
+        },
+        {
+          "id": 85187,
+          "url": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Oudgasm-Cafe-Oud-19-Eau-de-Parfum-Intense-85187.html",
+          "nameScore": 0.6567,
+          "card": true
+        }
+      ],
+      "recoveredId": null,
+      "recoveredUrl": null
+    }
+  ]
 }
