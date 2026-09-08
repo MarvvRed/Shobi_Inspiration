@@ -10,8 +10,8 @@
     "325-PECK": 31590
   },
   "validatedOcrFids": 1469,
-  "manualReviewedFids": 824,
-  "mergedFidsWithNotes": 2293,
+  "manualReviewedFids": 825,
+  "mergedFidsWithNotes": 2294,
   "oudMaracuja83842": {
     "manualNotes": [
       "Passionfruit",
@@ -28,9 +28,9 @@
     {
       "database": "database_complete.json",
       "official": 2330,
-      "withMainNotes": 2323,
+      "withMainNotes": 2322,
       "socialCardUnavailable": 3,
-      "withoutMainNotes": 7
+      "withoutMainNotes": 8
     },
     {
       "database": "database_v2_clean.json",
@@ -79,6 +79,14 @@
       "brand": "Narciso Rodriguez",
       "perfume": "FOR HER PINK EAU DE TOILETTE - RODRIGUEZ",
       "fragranticaId": 72604,
+      "fragranticaUrl": null,
+      "reason": "UNRESOLVED_NO_INFERENCE"
+    },
+    {
+      "code": "973-VICT",
+      "brand": "Victoria's Secret",
+      "perfume": "Wicked",
+      "fragranticaId": 133200,
       "fragranticaUrl": null,
       "reason": "UNRESOLVED_NO_INFERENCE"
     },

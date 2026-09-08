@@ -27641,12 +27641,8 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
-    "fragranticaSocialCardNotes": [
-      "Brown Sugar",
-      "Vanilla",
-      "Freesia"
-    ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL"
+    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardStatus": "UNRESOLVED_NO_INFERENCE"
   },
   {
     "id": "975-YZLO",
@@ -75492,8 +75488,13 @@
     "masterVersion": "shobi-master-v2-2369",
     "fragranticaVerificationSource": "fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt",
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Ajmal/Danat-Al-Duniya-45398.html",
-    "fragranticaSocialCardNotes": [],
-    "fragranticaSocialCardStatus": "UNRESOLVED_NO_INFERENCE"
+    "fragranticaSocialCardNotes": [
+      "Floral Notes",
+      "Fruity Notes",
+      "Musk",
+      "Woody Notes"
+    ],
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL"
   },
   {
     "id": "-HUG",
