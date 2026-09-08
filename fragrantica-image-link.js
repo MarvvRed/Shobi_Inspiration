@@ -14,7 +14,9 @@
                   allPerfumes.find(p => String(p.inspiredBy || '').trim().toUpperCase() === title.toUpperCase());
       }
 
-      const fragranticaUrl = perfume?.fragranticaUrl || perfume?.fragranticaLocalUrl || perfume?.fragranticaURL;
+      const fragranticaId = String(perfume?.fragranticaId || perfume?.fragrantica_id || '').trim();
+      const fragranticaUrl = perfume?.fragranticaUrl || perfume?.fragranticaLocalUrl || perfume?.fragranticaURL || perfume?.fragrantica_url ||
+        (/^\d+$/.test(fragranticaId) ? `https://www.fragrantica.com/p/${fragranticaId}` : '');
       if (!fragranticaUrl) return;
 
       imageWrap.dataset.fragranticaEnhanced = '1';
