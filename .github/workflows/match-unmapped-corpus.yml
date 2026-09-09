@@ -1,0 +1,26 @@
+name: Match unmapped against Fragrantica corpus
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/match_unmapped_against_corpus.py'
+      - '.github/match-unmapped-corpus-trigger'
+jobs:
+  match:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Match unmapped queue
+        run: python tools/match_unmapped_against_corpus.py
+      - name: Commit results
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add fragrantica-v2-corpus-candidates.csv fragrantica-v2-corpus-candidates-summary.txt
+          git diff --cached --quiet || git commit -m "Generate Fragrantica corpus candidates"
+          git push
