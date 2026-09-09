@@ -5,8 +5,8 @@
   "excludedResolvedNoForce": 39,
   "statusCounts": {
     "SOCIAL_CARD_UNAVAILABLE": 3,
-    "VALIDATED_MANUAL": 833,
-    "VALIDATED_OCR": 1494
+    "VALIDATED_MANUAL": 839,
+    "VALIDATED_OCR": 1488
   },
   "issueCount": 27,
   "issues": [
@@ -435,7 +435,7 @@
       ]
     }
   ],
-  "sharedFragranticaIdCount": 28,
+  "sharedFragranticaIdCount": 20,
   "sharedFragranticaIds": [
     {
       "fid": "2289",
@@ -488,21 +488,6 @@
       ]
     },
     {
-      "fid": "248",
-      "records": [
-        {
-          "code": "475-CAL",
-          "name": "Obsession for Women Eau de Parfum",
-          "brand": "Calvin Klein"
-        },
-        {
-          "code": "1048-CAL",
-          "name": "Obsession for Men Eau de Toilette",
-          "brand": "Calvin Klein"
-        }
-      ]
-    },
-    {
       "fid": "35780",
       "records": [
         {
@@ -514,21 +499,6 @@
           "code": "1057-CAR",
           "name": "212 Vip Wild Party",
           "brand": "Carolina Herrera"
-        }
-      ]
-    },
-    {
-      "fid": "502",
-      "records": [
-        {
-          "code": "494-CHA",
-          "name": "ALLURE",
-          "brand": "Chanel"
-        },
-        {
-          "code": "1064-CHA",
-          "name": "ALLURE FOR MEN",
-          "brand": "Chanel"
         }
       ]
     },
@@ -548,36 +518,6 @@
       ]
     },
     {
-      "fid": "221",
-      "records": [
-        {
-          "code": "525-DRC",
-          "name": "DUNE",
-          "brand": "Dior"
-        },
-        {
-          "code": "1074-DRC",
-          "name": "Dune pour Homme Eau de Toilette",
-          "brand": "Dior"
-        }
-      ]
-    },
-    {
-      "fid": "485",
-      "records": [
-        {
-          "code": "557-DOL",
-          "name": "Light-blue-eau-de-toilette",
-          "brand": "Dolce & Gabbana"
-        },
-        {
-          "code": "1095-DOL",
-          "name": "LIGHT BLUE MAN",
-          "brand": "Dolce & Gabbana"
-        }
-      ]
-    },
-    {
       "fid": "698",
       "records": [
         {
@@ -589,36 +529,6 @@
           "code": "1099-DOL",
           "name": "The One",
           "brand": "Dolce & Gabbana"
-        }
-      ]
-    },
-    {
-      "fid": "498",
-      "records": [
-        {
-          "code": "574-DON",
-          "name": "Be Delicious Eau de Parfum",
-          "brand": "Donna Karan"
-        },
-        {
-          "code": "1504-DON",
-          "name": "BE DELICIOUS ΜΑΙ ΤΑΙ - DKNY",
-          "brand": "Donna Karan"
-        }
-      ]
-    },
-    {
-      "fid": "423",
-      "records": [
-        {
-          "code": "653-ARM",
-          "name": "ARMANI MANIA FOR WOMEN",
-          "brand": "Giorgio Armani"
-        },
-        {
-          "code": "1131-ARM",
-          "name": "Armani Mania for Men Eau de Toilette",
-          "brand": "Giorgio Armani"
         }
       ]
     },
@@ -703,21 +613,6 @@
       ]
     },
     {
-      "fid": "22194",
-      "records": [
-        {
-          "code": "896-RCAV",
-          "name": "Splendid-vanilla",
-          "brand": "Roberto Cavalli"
-        },
-        {
-          "code": "897-RCAV",
-          "name": "Tiger Oud",
-          "brand": "Roberto Cavalli"
-        }
-      ]
-    },
-    {
       "fid": "26777",
       "records": [
         {
@@ -789,21 +684,6 @@
           "code": "2224-ARM",
           "name": "DIAMONDS WOMAN",
           "brand": "Giorgio Armani"
-        }
-      ]
-    },
-    {
-      "fid": "55858",
-      "records": [
-        {
-          "code": "1220-MOS",
-          "name": "Toy",
-          "brand": "Moschino"
-        },
-        {
-          "code": "2352-MOS",
-          "name": "Toy Boy",
-          "brand": "Moschino"
         }
       ]
     },
