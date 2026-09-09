@@ -13530,7 +13530,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/500-cha-w",
     "brand": "Chanel",
     "inspiredBy": "No 19",
-    "fragranticaId": "12424",
+    "fragranticaId": 11,
     "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
     "image": null,
     "genderAffinity": "",
@@ -13545,17 +13545,18 @@
     "masterVersion": "shobi-master-v2-2369",
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Iris",
       "Galbanum",
+      "Oakmoss",
+      "Iris",
+      "Hyacinth",
       "Vetiver",
-      "Musk",
-      "Neroli",
-      "Tonka Bean"
+      "Orris Root"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaUrl": "https://www.fragrantica.com/p/11"
   },
   {
     "id": "501-CHA",
@@ -36656,7 +36657,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/1163-hug-mp",
     "brand": "Hugo Boss",
     "inspiredBy": "Boss Orange Man Eau de Toilette",
-    "fragranticaId": "5979",
+    "fragranticaId": 11070,
     "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
     "image": null,
     "genderAffinity": "",
@@ -36671,17 +36672,18 @@
     "masterVersion": "shobi-master-v2-2369",
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Orange Blossom",
-      "Vanilla",
       "Red Apple",
-      "White Flowers",
-      "Sandalwood",
-      "Olive Tree"
+      "Vanilla",
+      "Woodsy Notes",
+      "Incense",
+      "Sichuan Pepper",
+      "Coriander"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaUrl": "https://www.fragrantica.com/p/11070"
   },
   {
     "id": "1164-HUG",
@@ -62541,7 +62543,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/moncler-pour-femme-inspired-perfume",
     "brand": "Moncler",
     "inspiredBy": "pour Femme",
-    "fragranticaId": 833,
+    "fragranticaId": 69819,
     "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
@@ -62556,23 +62558,24 @@
     "masterVersion": "shobi-master-v2-2369",
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Montblanc/Femme-de-Montblanc-833.html",
     "fragranticaVerificationSource": "Shobi-first reviewed identity + local Fragrantica corpus",
-    "fragrantica_id": 833,
+    "fragrantica_id": 69819,
     "fragrantica_url": "https://www.fragrantica.com/perfume/Montblanc/Femme-de-Montblanc-833.html",
     "fragrantica_status": "VERIFIED_SHOBI_FIRST",
     "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
     "fragrantica_match_reason": "Shobi residual pour Femme under MON code identifies the original Montblanc feminine fragrance; exact 2006 Femme de Montblanc entry",
     "fragranticaSocialCardNotes": [
-      "Cola",
-      "Cinnamon",
-      "Cardamom",
-      "Pineapple",
+      "Powdery Notes",
+      "Vanilla",
       "Heliotrope",
-      "Patchouli"
+      "Sandalwood",
+      "Snow",
+      "Amber"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaUrl": "https://www.fragrantica.com/p/69819"
   },
   {
     "id": "2235-PRA",
