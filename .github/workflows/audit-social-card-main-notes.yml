@@ -1,0 +1,33 @@
+name: Audit Social Card Main Notes
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/audit_social_card_main_notes.py'
+      - 'database_complete.json'
+      - '.github/workflows/audit-social-card-main-notes.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit Main Notes
+        run: python tools/audit_social_card_main_notes.py
+      - name: Commit audit report
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add social-card-main-notes-audit.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Audit Fragrantica social-card Main Notes"
+          git pull --rebase origin main
+          git push origin HEAD:main
