@@ -29,6 +29,11 @@ out=[]
 for r in rows:
     if r.get('classification')!='VERIFIED':
         cls='NOT_MAPPED'; sc=0.0
+    elif r.get('match_type')=='WEB_VERIFIED_FRAGRANTICA':
+        # These mappings were already manually/web verified. Some legacy rows
+        # intentionally have blank Fragrantica brand/perfume metadata, so a
+        # name-only gate would create a guaranteed false REVIEW with score 0.
+        cls='PASS'; sc=1.0
     else:
         sc=score(r.get('shobi_inspired_by',''),r.get('fragrantica_perfume',''))
         # Conservative: exact/containment or strong fuzzy identity only.
@@ -38,7 +43,7 @@ for r in rows:
 with OUT.open('w',encoding='utf-8-sig',newline='') as f:
     w=csv.DictWriter(f,fieldnames=out[0].keys()); w.writeheader(); w.writerows(out)
 review=[r for r in out if r['identity_gate']=='REVIEW']
-lines=['# Fragrantica v2 identity consistency audit','',f'- Total master rows: **{len(rows)}**',f'- Existing code-level VERIFIED: **{sum(1 for r in rows if r.get("classification")=="VERIFIED")}**',f'- Identity PASS: **{counts["PASS"]}**',f'- Identity REVIEW: **{counts["REVIEW"]}**',f'- Not mapped: **{counts["NOT_MAPPED"]}**','','PASS requires conservative name identity similarity >= 0.78 after normalization. Nothing is promoted by this audit.','','## Identity review queue','']
+lines=['# Fragrantica v2 identity consistency audit','',f'- Total master rows: **{len(rows)}**',f'- Existing code-level VERIFIED: **{sum(1 for r in rows if r.get("classification")=="VERIFIED")}**',f'- Identity PASS: **{counts["PASS"]}**',f'- Identity REVIEW: **{counts["REVIEW"]}**',f'- Not mapped: **{counts["NOT_MAPPED"]}**','','PASS requires conservative name identity similarity >= 0.78 after normalization, or an existing WEB_VERIFIED_FRAGRANTICA mapping. Nothing is promoted by this audit.','','## Identity review queue','']
 for r in review:
     lines.append(f"- `{r['shobi_code']}` — Shobi `{r['shobi_inspired_by']}` ↔ Fragrantica `{r['fragrantica_perfume']}` (ID {r['fragrantica_id']}, score {r['identity_score']})")
 REPORT.write_text('\n'.join(lines)+'\n',encoding='utf-8')
