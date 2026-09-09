@@ -23,7 +23,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add fragrantica-v2-identity-audit.csv fragrantica-v2-identity-audit.md
+          git add fragrantica-v2-identity-audit.csv fragrantica-v2-identity-audit.md fragrantica-v2-unmapped.csv
           git diff --cached --quiet || git commit -m 'Audit Fragrantica v2 identity consistency'
           git pull --rebase origin main
           git push origin main
