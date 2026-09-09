@@ -1,0 +1,1120 @@
+{
+  "rule": "Audit only. Do not infer, reorder, deduplicate, or replace Social Card notes automatically.",
+  "totalRecords": 2369,
+  "officialRecords": 2369,
+  "statusCounts": {
+    "": 2369
+  },
+  "issueCount": 69,
+  "issues": [
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "118-HAM",
+      "fid": 27808,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "130-LEL",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "200-CIR",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "222-DIP",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "223-DIP",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "227-DIP",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "228-DIP",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "230-DIP",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "235-HOLL",
+      "fid": 4307,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "258-JOM",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "261-JOM",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "289-JOM",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "311-MOL",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "313-MOL",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "314-MOL",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "320-NAS",
+      "fid": 40200,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Whiskey",
+        "Woody Notes",
+        "Musk",
+        "Rose",
+        "Ambroxan",
+        "Musk"
+      ]
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "325-PECK",
+      "fid": 31590,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "326-PECK",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "330-PG",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "331-PG",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "334-SHI",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "335-THCO",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "336-THCO",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "355-TMFO",
+      "fid": 12192,
+      "duplicates": [
+        "Orange"
+      ],
+      "notes": [
+        "Orange Blossom",
+        "Neroli",
+        "Bergamot",
+        "Orange",
+        "Lemon",
+        "Orange"
+      ]
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "379-YAN",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "380-YAN",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "381-YAN",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "382-YAN",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "383-YAN",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "455-BYR",
+      "fid": 46358,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Patchouli",
+        "Musk",
+        "Coconut",
+        "Cacao Pod",
+        "Musk",
+        "Cashmeran"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "457-CAC",
+      "fid": 238,
+      "duplicates": [
+        "Orange"
+      ],
+      "notes": [
+        "Black Currant",
+        "Vanilla",
+        "Orange",
+        "Rose",
+        "Apricot",
+        "Orange"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "458-CAC",
+      "fid": 236,
+      "duplicates": [
+        "Lily"
+      ],
+      "notes": [
+        "Lily",
+        "Hyacinth",
+        "Lily",
+        "Jasmine",
+        "Carnation",
+        "Honeysuckle"
+      ]
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "564-DOL",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "570-DOL",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "612-ESC",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "823-MIC",
+      "fid": 18160,
+      "duplicates": [
+        "Orange"
+      ],
+      "notes": [
+        "Orange Blossom",
+        "Orange",
+        "Musk",
+        "Orange"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "900-ROG",
+      "fid": 17583,
+      "duplicates": [
+        "Fig"
+      ],
+      "notes": [
+        "Fig",
+        "Fig",
+        "Mandarin Orange",
+        "Grapefruit",
+        "Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "904-SALV",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "925-TMU",
+      "fid": 8766,
+      "duplicates": [
+        "Fig"
+      ],
+      "notes": [
+        "Fig",
+        "Caviar",
+        "Fig tree",
+        "Fig"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "1111-DSQ",
+      "fid": 1936,
+      "duplicates": [
+        "Violet"
+      ],
+      "notes": [
+        "Violet",
+        "Cedar",
+        "Violet",
+        "Vetiver",
+        "Fir",
+        "Musk"
+      ]
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "1251-ROM",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "1526-AL HAR",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "1550-YAN",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "1699-LTN",
+      "fid": 60031,
+      "duplicates": [
+        "Incense"
+      ],
+      "notes": [
+        "Incense",
+        "Agarwood (Oud)",
+        "Leather",
+        "Incense",
+        "Musk"
+      ]
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "1748-BYR",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "1831-TMFO",
+      "fid": 6384,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Musk",
+        "Honey",
+        "Jasmine",
+        "Musk",
+        "Benzoin",
+        "Plum"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "1848-LEL",
+      "fid": 6334,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Musk",
+        "Fruity Notes",
+        "Musk",
+        "Aldehydes",
+        "Lemon",
+        "Amber"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "1850-LEL",
+      "fid": 10131,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Iso E Super",
+        "Musk",
+        "Ambergris",
+        "Musk",
+        "Pear",
+        "Cetalox"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "1874-LTN",
+      "fid": 60388,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Mandarin Orange",
+        "Musk",
+        "Pear",
+        "Musk",
+        "Benzoin"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "1883-NISH",
+      "fid": 30567,
+      "duplicates": [
+        "Orange"
+      ],
+      "notes": [
+        "Bergamot",
+        "Oolong Tea",
+        "Orange",
+        "Orange",
+        "Fig",
+        "Musk"
+      ]
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "1955-LAP",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "2085-CLIV",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2119-ARM",
+      "fid": 78561,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Iris Pallida",
+        "Tuberose",
+        "Orange Blossom",
+        "Musk",
+        "Musk",
+        "Orange"
+      ]
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "2178-MON",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2210-JOM",
+      "fid": 87710,
+      "duplicates": [
+        "Orange"
+      ],
+      "notes": [
+        "Bitter Orange",
+        "Orange",
+        "Orange",
+        "Amber",
+        "Sandalwood",
+        "Plum"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2255-VER",
+      "fid": 8009,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Kumquat",
+        "Lemon",
+        "Star Apple",
+        "Musk",
+        "Orange Blossom",
+        "Musk"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2301-DIP",
+      "fid": 131717,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Musk",
+        "Carrot",
+        "Musk",
+        "Iris",
+        "Aldehydes",
+        "Cedar"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2431-ROJ",
+      "fid": 23008,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Agarwood (Oud)",
+        "Musk",
+        "Rose",
+        "Leather",
+        "Woody Notes",
+        "Musk"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2489-KKWI",
+      "fid": 56352,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Gardenia",
+        "Vanilla",
+        "Musk",
+        "Ylang-Ylang",
+        "Juniper",
+        "Musk"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2502-MATIE",
+      "fid": 59063,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Musk",
+        "Musk",
+        "Cedar",
+        "Ambrettolide",
+        "Ambroxan"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2509-CRIVEL",
+      "fid": 83842,
+      "duplicates": [
+        "Agarwood (Oud)"
+      ],
+      "notes": [
+        "Passionfruit",
+        "Agarwood (Oud)",
+        "Leather",
+        "Fruity Notes",
+        "Agarwood (Oud)",
+        "Saffron"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2536-PRA",
+      "fid": 95006,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Jasmine",
+        "Neroli",
+        "Bergamot",
+        "Musk",
+        "Musk"
+      ]
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "2552-SOR",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "2586-DIP",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "2701-DIP",
+      "fid": null,
+      "status": ""
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2733-LES",
+      "fid": 70189,
+      "duplicates": [
+        "Musk"
+      ],
+      "notes": [
+        "Milk",
+        "Vanilla",
+        "Musk",
+        "Tuberose",
+        "Tonka Bean",
+        "Musk"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2762-LAT",
+      "fid": 113777,
+      "duplicates": [
+        "Pistachio"
+      ],
+      "notes": [
+        "Pistachio",
+        "Pistachio",
+        "Vanilla",
+        "Cream",
+        "Cacao Pod",
+        "Milk"
+      ]
+    },
+    {
+      "type": "DUPLICATE_NOTE_IN_CARD",
+      "code": "2814-TMFO",
+      "fid": 119402,
+      "duplicates": [
+        "Fig"
+      ],
+      "notes": [
+        "Fig",
+        "Fig",
+        "Ylang-Ylang",
+        "Salt",
+        "Brown Sugar",
+        "Licorice"
+      ]
+    },
+    {
+      "type": "VALIDATED_WITHOUT_NOTES",
+      "code": "2816-MOOD",
+      "fid": null,
+      "status": ""
+    }
+  ],
+  "sharedFragranticaIdCount": 28,
+  "sharedFragranticaIds": [
+    {
+      "fid": "2289",
+      "records": [
+        {
+          "code": "254-JOM",
+          "name": null,
+          "brand": "Jo Malone London"
+        },
+        {
+          "code": "297-JOM",
+          "name": null,
+          "brand": "Jo Malone London"
+        }
+      ]
+    },
+    {
+      "fid": "813",
+      "records": [
+        {
+          "code": "426-BRB",
+          "name": null,
+          "brand": "Burberry"
+        },
+        {
+          "code": "1027-BRB",
+          "name": null,
+          "brand": "Burberry"
+        }
+      ]
+    },
+    {
+      "fid": "257",
+      "records": [
+        {
+          "code": "470-CAL",
+          "name": null,
+          "brand": "Calvin Klein"
+        },
+        {
+          "code": "1044-CAL",
+          "name": null,
+          "brand": "Calvin Klein"
+        },
+        {
+          "code": "1045-CAL",
+          "name": null,
+          "brand": "Calvin Klein"
+        }
+      ]
+    },
+    {
+      "fid": "248",
+      "records": [
+        {
+          "code": "475-CAL",
+          "name": null,
+          "brand": "Calvin Klein"
+        },
+        {
+          "code": "1048-CAL",
+          "name": null,
+          "brand": "Calvin Klein"
+        }
+      ]
+    },
+    {
+      "fid": "35780",
+      "records": [
+        {
+          "code": "483-CAR",
+          "name": null,
+          "brand": "Carolina Herrera"
+        },
+        {
+          "code": "1057-CAR",
+          "name": null,
+          "brand": "Carolina Herrera"
+        }
+      ]
+    },
+    {
+      "fid": "502",
+      "records": [
+        {
+          "code": "494-CHA",
+          "name": null,
+          "brand": "Chanel"
+        },
+        {
+          "code": "1064-CHA",
+          "name": null,
+          "brand": "Chanel"
+        }
+      ]
+    },
+    {
+      "fid": "12424",
+      "records": [
+        {
+          "code": "500-CHA",
+          "name": null,
+          "brand": "Chanel"
+        },
+        {
+          "code": "501-CHA",
+          "name": null,
+          "brand": "Chanel"
+        }
+      ]
+    },
+    {
+      "fid": "221",
+      "records": [
+        {
+          "code": "525-DRC",
+          "name": null,
+          "brand": "Dior"
+        },
+        {
+          "code": "1074-DRC",
+          "name": null,
+          "brand": "Dior"
+        }
+      ]
+    },
+    {
+      "fid": "485",
+      "records": [
+        {
+          "code": "557-DOL",
+          "name": null,
+          "brand": "Dolce & Gabbana"
+        },
+        {
+          "code": "1095-DOL",
+          "name": null,
+          "brand": "Dolce & Gabbana"
+        }
+      ]
+    },
+    {
+      "fid": "698",
+      "records": [
+        {
+          "code": "566-DOL",
+          "name": null,
+          "brand": "Dolce & Gabbana"
+        },
+        {
+          "code": "1099-DOL",
+          "name": null,
+          "brand": "Dolce & Gabbana"
+        }
+      ]
+    },
+    {
+      "fid": "498",
+      "records": [
+        {
+          "code": "574-DON",
+          "name": null,
+          "brand": "Donna Karan"
+        },
+        {
+          "code": "1504-DON",
+          "name": null,
+          "brand": "Donna Karan"
+        }
+      ]
+    },
+    {
+      "fid": "423",
+      "records": [
+        {
+          "code": "653-ARM",
+          "name": null,
+          "brand": "Giorgio Armani"
+        },
+        {
+          "code": "1131-ARM",
+          "name": null,
+          "brand": "Giorgio Armani"
+        }
+      ]
+    },
+    {
+      "fid": "5979",
+      "records": [
+        {
+          "code": "711-HUG",
+          "name": null,
+          "brand": "Hugo Boss"
+        },
+        {
+          "code": "1163-HUG",
+          "name": null,
+          "brand": "Hugo Boss"
+        }
+      ]
+    },
+    {
+      "fid": "720",
+      "records": [
+        {
+          "code": "717-ISS",
+          "name": null,
+          "brand": "Issey Miyake"
+        },
+        {
+          "code": "718-ISS",
+          "name": null,
+          "brand": "Issey Miyake"
+        }
+      ]
+    },
+    {
+      "fid": "3403",
+      "records": [
+        {
+          "code": "753-KEN",
+          "name": null,
+          "brand": "Kenzo"
+        },
+        {
+          "code": "1190-KEN",
+          "name": null,
+          "brand": "Kenzo"
+        }
+      ]
+    },
+    {
+      "fid": "833",
+      "records": [
+        {
+          "code": "829-MNTB",
+          "name": null,
+          "brand": "Montblanc"
+        },
+        {
+          "code": "2234-MON",
+          "name": null,
+          "brand": "Moncler"
+        }
+      ]
+    },
+    {
+      "fid": "1044",
+      "records": [
+        {
+          "code": "882-PRA",
+          "name": null,
+          "brand": "Prada"
+        },
+        {
+          "code": "1244-PRA",
+          "name": null,
+          "brand": "Prada"
+        },
+        {
+          "code": "1245-PRA",
+          "name": null,
+          "brand": "Prada"
+        }
+      ]
+    },
+    {
+      "fid": "22194",
+      "records": [
+        {
+          "code": "896-RCAV",
+          "name": null,
+          "brand": "Roberto Cavalli"
+        },
+        {
+          "code": "897-RCAV",
+          "name": null,
+          "brand": "Roberto Cavalli"
+        }
+      ]
+    },
+    {
+      "fid": "26777",
+      "records": [
+        {
+          "code": "909-SFER",
+          "name": null,
+          "brand": "Salvatore Ferragamo"
+        },
+        {
+          "code": "1258-SFER",
+          "name": null,
+          "brand": "Salvatore Ferragamo"
+        }
+      ]
+    },
+    {
+      "fid": "704",
+      "records": [
+        {
+          "code": "920-TMU",
+          "name": null,
+          "brand": "Mugler"
+        },
+        {
+          "code": "1262-TMU",
+          "name": null,
+          "brand": "Mugler"
+        }
+      ]
+    },
+    {
+      "fid": "490",
+      "records": [
+        {
+          "code": "1092-DOL",
+          "name": null,
+          "brand": "Dolce & Gabbana"
+        },
+        {
+          "code": "1869-DOL",
+          "name": null,
+          "brand": "Dolce & Gabbana"
+        }
+      ]
+    },
+    {
+      "fid": "44034",
+      "records": [
+        {
+          "code": "1096-DOL",
+          "name": null,
+          "brand": "Dolce & Gabbana"
+        },
+        {
+          "code": "1872-DOL",
+          "name": null,
+          "brand": "Dolce & Gabbana"
+        }
+      ]
+    },
+    {
+      "fid": "1292",
+      "records": [
+        {
+          "code": "1134-ARM",
+          "name": null,
+          "brand": "Giorgio Armani"
+        },
+        {
+          "code": "2224-ARM",
+          "name": null,
+          "brand": "Giorgio Armani"
+        }
+      ]
+    },
+    {
+      "fid": "55858",
+      "records": [
+        {
+          "code": "1220-MOS",
+          "name": null,
+          "brand": "Moschino"
+        },
+        {
+          "code": "2352-MOS",
+          "name": null,
+          "brand": "Moschino"
+        }
+      ]
+    },
+    {
+      "fid": "897",
+      "records": [
+        {
+          "code": "1250-RAL",
+          "name": null,
+          "brand": "Ralph Lauren"
+        },
+        {
+          "code": "2533-RAL",
+          "name": null,
+          "brand": "Ralph Lauren"
+        }
+      ]
+    },
+    {
+      "fid": "46186",
+      "records": [
+        {
+          "code": "1542-JOM",
+          "name": null,
+          "brand": "Jo Malone London"
+        },
+        {
+          "code": "2626-JOM",
+          "name": null,
+          "brand": "Jo Malone London"
+        }
+      ]
+    },
+    {
+      "fid": "90957",
+      "records": [
+        {
+          "code": "2438-KYLJ",
+          "name": null,
+          "brand": "Kylie Cosmetics"
+        },
+        {
+          "code": "2438-KYLJE",
+          "name": null,
+          "brand": "Kylie Cosmetics"
+        }
+      ]
+    },
+    {
+      "fid": "95641",
+      "records": [
+        {
+          "code": "2456-PAC",
+          "name": null,
+          "brand": "Rabanne"
+        },
+        {
+          "code": "2513-PAC",
+          "name": null,
+          "brand": "Rabanne"
+        }
+      ]
+    }
+  ]
+}
