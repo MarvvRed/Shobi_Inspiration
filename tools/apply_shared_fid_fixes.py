@@ -3,8 +3,8 @@ import json
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-# Only corrections for which both identity and exact Fragrantica Social Card
-# notes were directly verified. Notes preserve the card order verbatim.
+# Corrections for which both identity and exact Fragrantica Social Card notes
+# were directly verified in the earlier Main Notes pass.
 FIXES={
  '1048-CAL': {'fid':249,'notes':['Cinnamon','Amber','Vanilla','Sandalwood','Myrrh','Nutmeg']},
  '1064-CHA': {'fid':523,'notes':['Vanilla','Lemon','Peach','Tonka Bean','Ginger','Mandarin Orange']},
@@ -19,7 +19,23 @@ FIXES={
  '2234-MON': {'fid':69819,'notes':['Powdery Notes','Vanilla','Heliotrope','Sandalwood','Snow','Amber']},
 }
 
+# FID-only pass. Main Notes are deliberately frozen here: these entries were
+# verified from Shobi identity + the exact Fragrantica perfume page, but their
+# Social Card notes are left untouched until the later notes-only audit.
+FID_ONLY={
+ '1044-CAL': 258,   # Calvin Klein Eternity For Men
+ '1099-DOL': 2056,  # Dolce & Gabbana The One for Men
+ '1190-KEN': 77,    # Kenzo pour Homme
+ '1250-RAL': 896,   # Ralph Lauren Safari for Men
+}
+
 def code_of(p): return str(p.get('id') or p.get('code') or p.get('shobiCode') or p.get('shobi_code') or '')
+
+def set_fid(p, fid):
+ p['fragranticaId']=fid
+ if 'fragrantica_id' in p: p['fragrantica_id']=fid
+ if 'fid' in p: p['fid']=fid
+ p['fragranticaUrl']=f"https://www.fragrantica.com/p/{fid}"
 
 def patch(path):
  data=json.loads(path.read_text(encoding='utf-8'))
@@ -29,15 +45,15 @@ def patch(path):
  hit=[]
  for p in rows:
   c=code_of(p)
-  if c not in FIXES: continue
-  f=FIXES[c]
-  p['fragranticaId']=f['fid']
-  if 'fragrantica_id' in p: p['fragrantica_id']=f['fid']
-  if 'fid' in p: p['fid']=f['fid']
-  p['fragranticaUrl']=f"https://www.fragrantica.com/p/{f['fid']}"
-  p['fragranticaSocialCardNotes']=f['notes']
-  p['fragranticaSocialCardStatus']='VALIDATED_MANUAL'
-  hit.append(c)
+  if c in FIXES:
+   f=FIXES[c]
+   set_fid(p,f['fid'])
+   p['fragranticaSocialCardNotes']=f['notes']
+   p['fragranticaSocialCardStatus']='VALIDATED_MANUAL'
+   hit.append(c)
+  elif c in FID_ONLY:
+   set_fid(p,FID_ONLY[c])
+   hit.append(c+' (FID only)')
  path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  return hit
 
