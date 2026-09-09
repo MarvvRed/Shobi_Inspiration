@@ -32,8 +32,9 @@ FID_ONLY={
  '1099-DOL': 2056,   # Dolce & Gabbana The One for Men
  '1134-ARM': 3793,   # Giorgio Armani Emporio Armani Diamonds for Men
  '1190-KEN': 77,     # Kenzo pour Homme
- '1250-RAL': 896,    # Ralph Lauren Safari for Men
+ '1250-RAL': 896,    # Ralph Lauren Safari For Men
  '735-JIM': 27431,   # Jimmy Choo Stars
+ '2194-ORT': 69923,  # Orto Parisi Cuoium
 }
 
 def code_of(p): return str(p.get('id') or p.get('code') or p.get('shobiCode') or p.get('shobi_code') or '')
