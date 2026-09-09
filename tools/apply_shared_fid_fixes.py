@@ -25,6 +25,7 @@ FIXES={
 FID_ONLY={
  '1044-CAL': 258,    # Calvin Klein Eternity For Men
  '1057-CAR': 35781,  # Carolina Herrera 212 VIP Men Wild Party
+ '1096-DOL': 44035,  # Dolce & Gabbana Light Blue Eau Intense Pour Homme
  '1099-DOL': 2056,   # Dolce & Gabbana The One for Men
  '1134-ARM': 3793,   # Giorgio Armani Emporio Armani Diamonds for Men
  '1190-KEN': 77,     # Kenzo pour Homme
