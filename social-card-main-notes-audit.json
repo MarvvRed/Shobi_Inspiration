@@ -1,102 +1,15 @@
 {
   "rule": "Audit only. Do not infer, reorder, deduplicate, or replace Social Card notes automatically.",
   "totalRecords": 2369,
-  "officialRecords": 2369,
+  "officialRecords": 2330,
+  "excludedResolvedNoForce": 39,
   "statusCounts": {
-    "": 2369
+    "SOCIAL_CARD_UNAVAILABLE": 3,
+    "VALIDATED_MANUAL": 833,
+    "VALIDATED_OCR": 1494
   },
-  "issueCount": 69,
+  "issueCount": 27,
   "issues": [
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "118-HAM",
-      "fid": 27808,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "130-LEL",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "200-CIR",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "222-DIP",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "223-DIP",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "227-DIP",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "228-DIP",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "230-DIP",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "235-HOLL",
-      "fid": 4307,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "258-JOM",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "261-JOM",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "289-JOM",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "311-MOL",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "313-MOL",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "314-MOL",
-      "fid": null,
-      "status": ""
-    },
     {
       "type": "DUPLICATE_NOTE_IN_CARD",
       "code": "320-NAS",
@@ -114,48 +27,6 @@
       ]
     },
     {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "325-PECK",
-      "fid": 31590,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "326-PECK",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "330-PG",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "331-PG",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "334-SHI",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "335-THCO",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "336-THCO",
-      "fid": null,
-      "status": ""
-    },
-    {
       "type": "DUPLICATE_NOTE_IN_CARD",
       "code": "355-TMFO",
       "fid": 12192,
@@ -170,36 +41,6 @@
         "Lemon",
         "Orange"
       ]
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "379-YAN",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "380-YAN",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "381-YAN",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "382-YAN",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "383-YAN",
-      "fid": null,
-      "status": ""
     },
     {
       "type": "DUPLICATE_NOTE_IN_CARD",
@@ -250,24 +91,6 @@
       ]
     },
     {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "564-DOL",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "570-DOL",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "612-ESC",
-      "fid": null,
-      "status": ""
-    },
-    {
       "type": "DUPLICATE_NOTE_IN_CARD",
       "code": "823-MIC",
       "fid": 18160,
@@ -296,12 +119,6 @@
         "Musk",
         "Cedar"
       ]
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "904-SALV",
-      "fid": null,
-      "status": ""
     },
     {
       "type": "DUPLICATE_NOTE_IN_CARD",
@@ -334,24 +151,6 @@
       ]
     },
     {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "1251-ROM",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "1526-AL HAR",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "1550-YAN",
-      "fid": null,
-      "status": ""
-    },
-    {
       "type": "DUPLICATE_NOTE_IN_CARD",
       "code": "1699-LTN",
       "fid": 60031,
@@ -365,12 +164,6 @@
         "Incense",
         "Musk"
       ]
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "1748-BYR",
-      "fid": null,
-      "status": ""
     },
     {
       "type": "DUPLICATE_NOTE_IN_CARD",
@@ -452,18 +245,6 @@
       ]
     },
     {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "1955-LAP",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "2085-CLIV",
-      "fid": null,
-      "status": ""
-    },
-    {
       "type": "DUPLICATE_NOTE_IN_CARD",
       "code": "2119-ARM",
       "fid": 78561,
@@ -478,12 +259,6 @@
         "Musk",
         "Orange"
       ]
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "2178-MON",
-      "fid": null,
-      "status": ""
     },
     {
       "type": "DUPLICATE_NOTE_IN_CARD",
@@ -612,24 +387,6 @@
       ]
     },
     {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "2552-SOR",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "2586-DIP",
-      "fid": null,
-      "status": ""
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "2701-DIP",
-      "fid": null,
-      "status": ""
-    },
-    {
       "type": "DUPLICATE_NOTE_IN_CARD",
       "code": "2733-LES",
       "fid": 70189,
@@ -676,12 +433,6 @@
         "Brown Sugar",
         "Licorice"
       ]
-    },
-    {
-      "type": "VALIDATED_WITHOUT_NOTES",
-      "code": "2816-MOOD",
-      "fid": null,
-      "status": ""
     }
   ],
   "sharedFragranticaIdCount": 28,
@@ -691,12 +442,12 @@
       "records": [
         {
           "code": "254-JOM",
-          "name": null,
+          "name": "GARDENIA - JO MALONE",
           "brand": "Jo Malone London"
         },
         {
           "code": "297-JOM",
-          "name": null,
+          "name": "VINTAGE GARDENIA - JO MALONE",
           "brand": "Jo Malone London"
         }
       ]
@@ -706,12 +457,12 @@
       "records": [
         {
           "code": "426-BRB",
-          "name": null,
+          "name": "BURBERRY LONDON",
           "brand": "Burberry"
         },
         {
           "code": "1027-BRB",
-          "name": null,
+          "name": "LONDON",
           "brand": "Burberry"
         }
       ]
@@ -721,17 +472,17 @@
       "records": [
         {
           "code": "470-CAL",
-          "name": null,
+          "name": "Eternity",
           "brand": "Calvin Klein"
         },
         {
           "code": "1044-CAL",
-          "name": null,
+          "name": "ETERNITY",
           "brand": "Calvin Klein"
         },
         {
           "code": "1045-CAL",
-          "name": null,
+          "name": "Eternity Now",
           "brand": "Calvin Klein"
         }
       ]
@@ -741,12 +492,12 @@
       "records": [
         {
           "code": "475-CAL",
-          "name": null,
+          "name": "Obsession for Women Eau de Parfum",
           "brand": "Calvin Klein"
         },
         {
           "code": "1048-CAL",
-          "name": null,
+          "name": "Obsession for Men Eau de Toilette",
           "brand": "Calvin Klein"
         }
       ]
@@ -756,12 +507,12 @@
       "records": [
         {
           "code": "483-CAR",
-          "name": null,
+          "name": "212 Vip Wild Party",
           "brand": "Carolina Herrera"
         },
         {
           "code": "1057-CAR",
-          "name": null,
+          "name": "212 Vip Wild Party",
           "brand": "Carolina Herrera"
         }
       ]
@@ -771,12 +522,12 @@
       "records": [
         {
           "code": "494-CHA",
-          "name": null,
+          "name": "ALLURE",
           "brand": "Chanel"
         },
         {
           "code": "1064-CHA",
-          "name": null,
+          "name": "ALLURE FOR MEN",
           "brand": "Chanel"
         }
       ]
@@ -786,12 +537,12 @@
       "records": [
         {
           "code": "500-CHA",
-          "name": null,
+          "name": "No 19",
           "brand": "Chanel"
         },
         {
           "code": "501-CHA",
-          "name": null,
+          "name": "No 19 Poudre",
           "brand": "Chanel"
         }
       ]
@@ -801,12 +552,12 @@
       "records": [
         {
           "code": "525-DRC",
-          "name": null,
+          "name": "DUNE",
           "brand": "Dior"
         },
         {
           "code": "1074-DRC",
-          "name": null,
+          "name": "Dune pour Homme Eau de Toilette",
           "brand": "Dior"
         }
       ]
@@ -816,12 +567,12 @@
       "records": [
         {
           "code": "557-DOL",
-          "name": null,
+          "name": "Light-blue-eau-de-toilette",
           "brand": "Dolce & Gabbana"
         },
         {
           "code": "1095-DOL",
-          "name": null,
+          "name": "LIGHT BLUE MAN",
           "brand": "Dolce & Gabbana"
         }
       ]
@@ -831,12 +582,12 @@
       "records": [
         {
           "code": "566-DOL",
-          "name": null,
+          "name": "The One",
           "brand": "Dolce & Gabbana"
         },
         {
           "code": "1099-DOL",
-          "name": null,
+          "name": "The One",
           "brand": "Dolce & Gabbana"
         }
       ]
@@ -846,12 +597,12 @@
       "records": [
         {
           "code": "574-DON",
-          "name": null,
+          "name": "Be Delicious Eau de Parfum",
           "brand": "Donna Karan"
         },
         {
           "code": "1504-DON",
-          "name": null,
+          "name": "BE DELICIOUS ΜΑΙ ΤΑΙ - DKNY",
           "brand": "Donna Karan"
         }
       ]
@@ -861,12 +612,12 @@
       "records": [
         {
           "code": "653-ARM",
-          "name": null,
+          "name": "ARMANI MANIA FOR WOMEN",
           "brand": "Giorgio Armani"
         },
         {
           "code": "1131-ARM",
-          "name": null,
+          "name": "Armani Mania for Men Eau de Toilette",
           "brand": "Giorgio Armani"
         }
       ]
@@ -876,12 +627,12 @@
       "records": [
         {
           "code": "711-HUG",
-          "name": null,
+          "name": "BOSS ORANGE FEMME - HUGO BOSS",
           "brand": "Hugo Boss"
         },
         {
           "code": "1163-HUG",
-          "name": null,
+          "name": "Boss Orange Man Eau de Toilette",
           "brand": "Hugo Boss"
         }
       ]
@@ -891,12 +642,12 @@
       "records": [
         {
           "code": "717-ISS",
-          "name": null,
+          "name": "CLASSIC - ISSEY MIYAKE",
           "brand": "Issey Miyake"
         },
         {
           "code": "718-ISS",
-          "name": null,
+          "name": "L Eau D Issey",
           "brand": "Issey Miyake"
         }
       ]
@@ -906,12 +657,12 @@
       "records": [
         {
           "code": "753-KEN",
-          "name": null,
+          "name": "KENZO-ΚΕΝΖΟ",
           "brand": "Kenzo"
         },
         {
           "code": "1190-KEN",
-          "name": null,
+          "name": "KENZO - KENZO",
           "brand": "Kenzo"
         }
       ]
@@ -921,12 +672,12 @@
       "records": [
         {
           "code": "829-MNTB",
-          "name": null,
+          "name": "FEMME - MONT BLANC",
           "brand": "Montblanc"
         },
         {
           "code": "2234-MON",
-          "name": null,
+          "name": "pour Femme",
           "brand": "Moncler"
         }
       ]
@@ -936,17 +687,17 @@
       "records": [
         {
           "code": "882-PRA",
-          "name": null,
+          "name": "PRADA AMBER MAN",
           "brand": "Prada"
         },
         {
           "code": "1244-PRA",
-          "name": null,
+          "name": "PRADA AMBER POUR HOMME",
           "brand": "Prada"
         },
         {
           "code": "1245-PRA",
-          "name": null,
+          "name": "PRADA AMBER",
           "brand": "Prada"
         }
       ]
@@ -956,12 +707,12 @@
       "records": [
         {
           "code": "896-RCAV",
-          "name": null,
+          "name": "Splendid-vanilla",
           "brand": "Roberto Cavalli"
         },
         {
           "code": "897-RCAV",
-          "name": null,
+          "name": "Tiger Oud",
           "brand": "Roberto Cavalli"
         }
       ]
@@ -971,12 +722,12 @@
       "records": [
         {
           "code": "909-SFER",
-          "name": null,
+          "name": "TUSCAN SCENT WHITE MIMOSA - FERRAGAMO",
           "brand": "Salvatore Ferragamo"
         },
         {
           "code": "1258-SFER",
-          "name": null,
+          "name": "TUSCAN SCENT WHITE MIMOSA - SALVATORE FERRAGAMO",
           "brand": "Salvatore Ferragamo"
         }
       ]
@@ -986,12 +737,12 @@
       "records": [
         {
           "code": "920-TMU",
-          "name": null,
+          "name": "Angel",
           "brand": "Mugler"
         },
         {
           "code": "1262-TMU",
-          "name": null,
+          "name": "Angel",
           "brand": "Mugler"
         }
       ]
@@ -1001,12 +752,12 @@
       "records": [
         {
           "code": "1092-DOL",
-          "name": null,
+          "name": "By Man Eau de Toilette",
           "brand": "Dolce & Gabbana"
         },
         {
           "code": "1869-DOL",
-          "name": null,
+          "name": "BY",
           "brand": "Dolce & Gabbana"
         }
       ]
@@ -1016,12 +767,12 @@
       "records": [
         {
           "code": "1096-DOL",
-          "name": null,
+          "name": "Light Blue Eau Intense",
           "brand": "Dolce & Gabbana"
         },
         {
           "code": "1872-DOL",
-          "name": null,
+          "name": "Light Blue Eau Intense",
           "brand": "Dolce & Gabbana"
         }
       ]
@@ -1031,12 +782,12 @@
       "records": [
         {
           "code": "1134-ARM",
-          "name": null,
+          "name": "Emporio Armani Diamonds",
           "brand": "Giorgio Armani"
         },
         {
           "code": "2224-ARM",
-          "name": null,
+          "name": "DIAMONDS WOMAN",
           "brand": "Giorgio Armani"
         }
       ]
@@ -1046,12 +797,12 @@
       "records": [
         {
           "code": "1220-MOS",
-          "name": null,
+          "name": "Toy",
           "brand": "Moschino"
         },
         {
           "code": "2352-MOS",
-          "name": null,
+          "name": "Toy Boy",
           "brand": "Moschino"
         }
       ]
@@ -1061,12 +812,12 @@
       "records": [
         {
           "code": "1250-RAL",
-          "name": null,
+          "name": "Safari",
           "brand": "Ralph Lauren"
         },
         {
           "code": "2533-RAL",
-          "name": null,
+          "name": "Safari",
           "brand": "Ralph Lauren"
         }
       ]
@@ -1076,12 +827,12 @@
       "records": [
         {
           "code": "1542-JOM",
-          "name": null,
+          "name": "English Oak & Redcurrant by Jo Malone London",
           "brand": "Jo Malone London"
         },
         {
           "code": "2626-JOM",
-          "name": null,
+          "name": "English Oak  Redcurrant",
           "brand": "Jo Malone London"
         }
       ]
@@ -1091,12 +842,12 @@
       "records": [
         {
           "code": "2438-KYLJ",
-          "name": null,
+          "name": "Cosmic-kylie-jenner-eau-de-",
           "brand": "Kylie Cosmetics"
         },
         {
           "code": "2438-KYLJE",
-          "name": null,
+          "name": "COSMIC",
           "brand": "Kylie Cosmetics"
         }
       ]
@@ -1106,12 +857,12 @@
       "records": [
         {
           "code": "2456-PAC",
-          "name": null,
+          "name": "Million-gold",
           "brand": "Rabanne"
         },
         {
           "code": "2513-PAC",
-          "name": null,
+          "name": "Million Gold",
           "brand": "Rabanne"
         }
       ]
