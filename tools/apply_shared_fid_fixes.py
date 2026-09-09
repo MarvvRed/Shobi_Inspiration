@@ -14,6 +14,9 @@ FIXES={
  '1504-DON': {'fid':53501,'notes':['Solar Notes','Peach','Orange','Amber','Floral Notes','Pink Pepper']},
  '896-RCAV': {'fid':58538,'notes':['Vanilla','Magnolia','Rose','Patchouli','Cypriol Oil or Nagarmotha','Cedar']},
  '1220-MOS': {'fid':28805,'notes':['Lavender','Cardamom','Cedar','Mandarin Orange','Bergamot','Violet']},
+ '500-CHA': {'fid':11,'notes':['Galbanum','Oakmoss','Iris','Hyacinth','Vetiver','Orris Root']},
+ '1163-HUG': {'fid':11070,'notes':['Red Apple','Vanilla','Woodsy Notes','Incense','Sichuan Pepper','Coriander']},
+ '2234-MON': {'fid':69819,'notes':['Powdery Notes','Vanilla','Heliotrope','Sandalwood','Snow','Amber']},
 }
 
 def code_of(p): return str(p.get('id') or p.get('code') or p.get('shobiCode') or p.get('shobi_code') or '')
