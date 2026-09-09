@@ -23,10 +23,12 @@ FIXES={
 # verified from Shobi identity + the exact Fragrantica perfume page, but their
 # Social Card notes are left untouched until the later notes-only audit.
 FID_ONLY={
- '1044-CAL': 258,   # Calvin Klein Eternity For Men
- '1099-DOL': 2056,  # Dolce & Gabbana The One for Men
- '1190-KEN': 77,    # Kenzo pour Homme
- '1250-RAL': 896,   # Ralph Lauren Safari for Men
+ '1044-CAL': 258,    # Calvin Klein Eternity For Men
+ '1057-CAR': 35781,  # Carolina Herrera 212 VIP Men Wild Party
+ '1099-DOL': 2056,   # Dolce & Gabbana The One for Men
+ '1134-ARM': 3793,   # Giorgio Armani Emporio Armani Diamonds for Men
+ '1190-KEN': 77,     # Kenzo pour Homme
+ '1250-RAL': 896,    # Ralph Lauren Safari for Men
 }
 
 def code_of(p): return str(p.get('id') or p.get('code') or p.get('shobiCode') or p.get('shobi_code') or '')
