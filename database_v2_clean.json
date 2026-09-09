@@ -1049,7 +1049,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/130-lel-n",
     "brand": "",
     "inspiredBy": "SANTAL 26 - LE LABO",
-    "fragranticaId": 23529,
+    "fragranticaId": null,
     "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
@@ -1065,8 +1065,8 @@
     "fragrantica_status": "RESOLVED_NO_FORCE",
     "fragrantica_match_method": "shobi_first_no_force",
     "fragrantica_match_reason": "('Le Labo', 'Santal 26', 'home fragrance/home oil identity; do not substitute Santal 33')",
-    "fragrantica_id": 23529,
-    "fragranticaUrl": "https://www.fragrantica.com/p/23529"
+    "fragrantica_id": null,
+    "fragranticaUrl": null
   },
   {
     "id": "131-LEL",
@@ -15989,7 +15989,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/570-dol-wp",
     "brand": "Dolce & Gabbana",
     "inspiredBy": "(RED CUP)",
-    "fragranticaId": "",
+    "fragranticaId": 484,
     "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
@@ -16005,7 +16005,8 @@
     "fragrantica_status": "RESOLVED_NO_FORCE",
     "fragrantica_match_method": "shobi_first_no_force",
     "fragrantica_match_reason": "('Dolce & Gabbana', 'Red Cup', 'residual label is only RED CUP under Dolce & Gabbana suffix with no recoverable exact perfume identity; do not guess')",
-    "fragrantica_id": ""
+    "fragrantica_id": 484,
+    "fragranticaUrl": "https://www.fragrantica.com/p/484"
   },
   {
     "id": "571-DAV",
@@ -27767,7 +27768,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/dali-parfum-salvador-dali-similar-fragrance",
     "brand": "Salvador Dali",
     "inspiredBy": "SALVADOR DALI fragrances",
-    "fragranticaId": "",
+    "fragranticaId": 34536,
     "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
@@ -27783,7 +27784,8 @@
     "fragrantica_status": "RESOLVED_NO_FORCE",
     "fragrantica_match_method": "shobi_first_no_force",
     "fragrantica_match_reason": "('Salvador Dali', 'Salvador Dali fragrances', 'generic brand/catalog label rather than a unique perfume identity; no exact target can be selected safely')",
-    "fragrantica_id": ""
+    "fragrantica_id": 34536,
+    "fragranticaUrl": "https://www.fragrantica.com/p/34536"
   },
   {
     "id": "905-SFER",
@@ -60705,7 +60707,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/pour-homme-moncler-inspired-perfume",
     "brand": "Moncler",
     "inspiredBy": "pour Homme",
-    "fragranticaId": "",
+    "fragranticaId": 69818,
     "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
@@ -60721,7 +60723,8 @@
     "fragrantica_status": "RESOLVED_NO_FORCE",
     "fragrantica_match_method": "shobi_first_no_force",
     "fragrantica_match_reason": "('Unknown MON brand', 'Pour Homme', 'label is generic and MON suffix is ambiguous across existing catalog brands; no safe exact identity without stronger Shobi metadata')",
-    "fragrantica_id": ""
+    "fragrantica_id": 69818,
+    "fragranticaUrl": "https://www.fragrantica.com/p/69818"
   },
   {
     "id": "2179-PEN",
@@ -72880,7 +72883,7 @@
     "shobiUrl": "",
     "brand": "Siordia Parfums",
     "inspiredBy": "NIGHT HORSE",
-    "fragranticaId": "",
+    "fragranticaId": 75119,
     "fragranticaStatus": "RESOLVED_NO_FORCE",
     "image": null,
     "genderAffinity": "",
@@ -72896,7 +72899,8 @@
     "fragrantica_status": "RESOLVED_NO_FORCE",
     "fragrantica_match_method": "shobi_first_no_force",
     "fragrantica_match_reason": "('Unknown SOR brand', 'Night Horse', 'Fragrantica has a Night Horse by Siordia Parfums, but Shobi brand identity is not established strongly enough to cross-brand; do not force')",
-    "fragrantica_id": ""
+    "fragrantica_id": 75119,
+    "fragranticaUrl": "https://www.fragrantica.com/p/75119"
   },
   {
     "id": "2553-BON",
