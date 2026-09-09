@@ -28231,7 +28231,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/896-rcav-wp",
     "brand": "Roberto Cavalli",
     "inspiredBy": "Splendid-vanilla",
-    "fragranticaId": 22194,
+    "fragranticaId": 58538,
     "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
@@ -28245,19 +28245,24 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-master-v2-2369",
     "occasions": [],
-    "fragrantica_id": 22194,
+    "fragrantica_id": 58538,
     "fragrantica_url": "https://www.fragrantica.com/perfume/Roberto-Cavalli/Tiger-Oud-22194.html",
     "fragrantica_status": "VERIFIED_SHOBI_FIRST",
     "fragrantica_match_method": "shobi_first_exact_identity_web_or_local",
     "fragrantica_match_reason": "Shobi residual identifies Tiger Oud; exact Roberto Cavalli 2013 entry",
     "fragranticaSocialCardNotes": [
-      "Agarwood (Oud)",
-      "Rose"
+      "Vanilla",
+      "Magnolia",
+      "Rose",
+      "Patchouli",
+      "Cypriol Oil or Nagarmotha",
+      "Cedar"
     ],
     "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaUrl": "https://www.fragrantica.com/p/58538"
   },
   {
     "id": "897-RCAV",
@@ -33561,7 +33566,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/1048-cal-m",
     "brand": "Calvin Klein",
     "inspiredBy": "Obsession for Men Eau de Toilette",
-    "fragranticaId": "248",
+    "fragranticaId": 249,
     "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
     "image": null,
     "genderAffinity": "",
@@ -33577,17 +33582,18 @@
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Spicy Notes",
+      "Cinnamon",
       "Amber",
-      "Incense",
       "Vanilla",
       "Sandalwood",
-      "Civet"
+      "Myrrh",
+      "Nutmeg"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaUrl": "https://www.fragrantica.com/p/249"
   },
   {
     "id": "1049-CAL",
@@ -34136,7 +34142,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/1064-cha-m",
     "brand": "Chanel",
     "inspiredBy": "ALLURE FOR MEN",
-    "fragranticaId": "502",
+    "fragranticaId": 523,
     "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
     "image": null,
     "genderAffinity": "",
@@ -34154,15 +34160,16 @@
     "fragranticaSocialCardNotes": [
       "Vanilla",
       "Lemon",
-      "Honeysuckle",
-      "Jasmine",
-      "Magnolia",
+      "Peach",
+      "Tonka Bean",
+      "Ginger",
       "Mandarin Orange"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaUrl": "https://www.fragrantica.com/p/523"
   },
   {
     "id": "1065-CHA",
@@ -34496,7 +34503,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/1074-drc-m",
     "brand": "Dior",
     "inspiredBy": "Dune pour Homme Eau de Toilette",
-    "fragranticaId": "221",
+    "fragranticaId": 235,
     "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
     "image": null,
     "genderAffinity": "",
@@ -34512,17 +34519,18 @@
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Brazilian Rosewood",
-      "Amber",
+      "Fig Leaf",
+      "Fig",
       "Sandalwood",
-      "Aldehydes",
-      "Benzoin",
-      "Oakmoss"
+      "Currant Leaf and Bud",
+      "Sage",
+      "Rose"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaUrl": "https://www.fragrantica.com/p/235"
   },
   {
     "id": "1075-DRC",
@@ -35216,7 +35224,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/1095-dol-m",
     "brand": "Dolce & Gabbana",
     "inspiredBy": "LIGHT BLUE MAN",
-    "fragranticaId": "485",
+    "fragranticaId": 1068,
     "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
     "image": null,
     "genderAffinity": "",
@@ -35232,17 +35240,18 @@
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Lemon",
-      "Apple",
-      "Cedar",
-      "Bamboo",
-      "Musk",
-      "Jasmine"
+      "Grapefruit",
+      "Bergamot",
+      "Pepper",
+      "Mandarin Orange",
+      "Rosemary",
+      "Juniper"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaUrl": "https://www.fragrantica.com/p/1068"
   },
   {
     "id": "1096-DOL",
@@ -36532,7 +36541,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/1131-arm-m",
     "brand": "Giorgio Armani",
     "inspiredBy": "Armani Mania for Men Eau de Toilette",
-    "fragranticaId": "423",
+    "fragranticaId": 414,
     "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
     "image": null,
     "genderAffinity": "",
@@ -36548,17 +36557,18 @@
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
+      "Mandarin Orange",
+      "Cedar",
       "Saffron",
-      "Nutmeg",
-      "Cloves",
-      "Labdanum",
       "Musk",
-      "Guaiac Wood"
+      "Vetiver",
+      "Amber"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaUrl": "https://www.fragrantica.com/p/414"
   },
   {
     "id": "1132-ARM",
@@ -39690,7 +39700,7 @@
     "shobiUrl": "",
     "brand": "Moschino",
     "inspiredBy": "Toy",
-    "fragranticaId": 55858,
+    "fragranticaId": 28805,
     "fragranticaStatus": "VERIFIED_SHOBI_FIRST",
     "image": null,
     "genderAffinity": "",
@@ -39706,23 +39716,24 @@
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt",
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Moschino/Toy-28805.html",
-    "fragrantica_id": 55858,
+    "fragrantica_id": 28805,
     "fragrantica_url": "https://www.fragrantica.com/perfume/Moschino/Toy-Boy-55858.html",
     "fragrantica_status": "VERIFIED_SHOBI_FIRST",
     "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
     "fragrantica_match_reason": "Previously reviewed exact Shobi identity retained",
     "fragranticaSocialCardNotes": [
-      "Rose",
-      "Pink Pepper",
-      "Pear",
-      "Nutmeg",
-      "Cloves",
-      "Vetiver"
+      "Lavender",
+      "Cardamom",
+      "Cedar",
+      "Mandarin Orange",
+      "Bergamot",
+      "Violet"
     ],
     "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaUrl": "https://www.fragrantica.com/p/28805"
   },
   {
     "id": "1221-MOS",
@@ -43237,7 +43248,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/1504-don-wp",
     "brand": "Donna Karan",
     "inspiredBy": "BE DELICIOUS ΜΑΙ ΤΑΙ - DKNY",
-    "fragranticaId": "498",
+    "fragranticaId": 53501,
     "fragranticaStatus": "VERIFIED_ARCHIVE_IDENTITY_V2",
     "image": null,
     "genderAffinity": "",
@@ -43253,17 +43264,18 @@
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Apple",
-      "Cucumber",
-      "Grapefruit",
-      "Lily-of-the-Valley",
-      "Magnolia",
-      "Woody Notes"
+      "Solar Notes",
+      "Peach",
+      "Orange",
+      "Amber",
+      "Floral Notes",
+      "Pink Pepper"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaUrl": "https://www.fragrantica.com/p/53501"
   },
   {
     "id": "1505-EST",
