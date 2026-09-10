@@ -19,15 +19,15 @@ CATEGORIES={
  'Niche Perfumes':'https://leparfum.com.gr/en/niche-perfumes',
  'Luxury Perfumes':'https://leparfum.com.gr/en/luxury-perfumes',
 }
-PAGE_SIZE=24
-MAX_PAGES=80
-CODE_RE=re.compile(r'(?<!\d)(\d{1,4}-[A-Z0-9]+(?:\s+(?:W|M|MP|N|EL|L|LUX|AR))?)(?![A-Z0-9])',re.I)
+PAGE_SIZE=36
+MAX_PAGES=50
+CODE_RE=re.compile(r'(?<!\d)(\d{1,4}-[A-Z0-9]+)(?:\s+(?:W|M|MP|N|EL|L|LUX|AR))?(?![A-Z0-9])',re.I)
 REF_RE=re.compile(r'\b(?:WP|MP|AR|EL|LUX)\d{3}\b',re.I)
 OPENER=build_opener()
 HEADERS={
- 'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36',
- 'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
- 'Accept-Language':'en-US,en;q=0.9',
+ 'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
+ 'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+ 'Accept-Language':'en-US,en;q=0.9', 'Referer':'https://leparfum.com.gr/en/',
  'Cache-Control':'no-cache','Pragma':'no-cache','Connection':'close',
 }
 
@@ -49,52 +49,53 @@ def get(url, attempts=6):
 def clean(s):
  s=re.sub(r'<[^>]+>',' ',s); s=unescape(s); return re.sub(r'\s+',' ',s).strip()
 
-def canonical(code):
- return re.sub(r'\s+',' ',code.upper().strip()).split(' ')[0]
+def canonical(code): return code.upper().strip()
 
 def parse_products(html,category):
- blocks=re.findall(r'<article\b[^>]*class=["\'][^"\']*product-miniature[^"\']*["\'][^>]*>(.*?)</article>',html,re.I|re.S)
- if not blocks:
-  blocks=re.findall(r'<div\b[^>]*class=["\'][^"\']*(?:product-miniature|js-product-miniature)[^"\']*["\'][^>]*>(.*?)(?=<div\b[^>]*class=["\'][^"\']*(?:product-miniature|js-product-miniature)|\Z)',html,re.I|re.S)
- rows=[]
- for b in blocks:
-  text=clean(b); cm=CODE_RE.search(text)
-  if not cm: continue
-  code=canonical(cm.group(1)); rm=REF_RE.search(text)
-  hrefs=re.findall(r'href=["\']([^"\']+)["\']',b,re.I); url=''
-  for h in hrefs:
-   if '/en/' in h or h.startswith('/'):
-    url=urljoin(BASE,h); break
-  rows.append({'shobi_code':code,'display_code':cm.group(1).upper(),'reference':rm.group(0).upper() if rm else '', 'category':category,'url':url})
- if rows:
-  return list({(r['shobi_code'],r['url']):r for r in rows}.values())
- # Last-resort parser: official category pages expose product codes in visible text even if theme markup changes.
- text=clean(html); found=[]; seen=set()
+ # Do not depend on Prestashop product-card classes: the live theme exposes the
+ # product code/reference as ordinary visible text. Extract code/reference pairs
+ # from the whole document, then use nearby text for a product URL where present.
+ text=clean(html)
+ rows=[]; seen=set()
  for cm in CODE_RE.finditer(text):
   code=canonical(cm.group(1))
   if code in seen: continue
   seen.add(code)
-  window=text[cm.start():cm.start()+500]; rm=REF_RE.search(window)
-  found.append({'shobi_code':code,'display_code':cm.group(1).upper(),'reference':rm.group(0).upper() if rm else '', 'category':category,'url':''})
- return found
+  window=text[cm.start():cm.start()+700]
+  rm=REF_RE.search(window)
+  # Search raw HTML around the code for the nearest product URL.
+  raw_start=max(0, cm.start()-1000); raw_end=min(len(html), cm.end()+3000)
+  raw=html[raw_start:raw_end]
+  hrefs=re.findall(r'href=["\']([^"\']+)["\']',raw,re.I)
+  url=''
+  for h in hrefs:
+   if '/en/' in h or h.startswith('/'):
+    url=urljoin(BASE,h); break
+  rows.append({'shobi_code':code,'display_code':cm.group(0).upper(),'reference':rm.group(0).upper() if rm else '', 'category':category,'url':url})
+ return rows
 
 def scrape_category(category,base_url):
  out=[]; seen=set()
  for page in range(1,MAX_PAGES+1):
   url=f'{base_url}?'+urlencode({'page':page,'resultsPerPage':PAGE_SIZE})
-  rows=parse_products(get(url),category)
+  html=get(url)
+  rows=parse_products(html,category)
   fresh=[r for r in rows if r['shobi_code'] not in seen]
-  print(f'{category}: page {page}: parsed={len(rows)} fresh={len(fresh)}',flush=True)
+  print(f'{category}: page {page}: bytes={len(html)} parsed={len(rows)} fresh={len(fresh)}',flush=True)
+  if page == 1 and not rows:
+   title=re.search(r'<title[^>]*>(.*?)</title>',html,re.I|re.S)
+   print('DIAGNOSTIC title=',clean(title.group(1)) if title else 'NO TITLE',flush=True)
+   print('DIAGNOSTIC head=',clean(html[:1200])[:1200],flush=True)
   if not rows: break
   for r in fresh: seen.add(r['shobi_code']); out.append(r)
   if not fresh or len(rows)<PAGE_SIZE: break
-  time.sleep(random.uniform(.8,1.5))
+  time.sleep(random.uniform(.5,1.1))
  return out
 
 def main():
  all_rows=[]; diagnostics=[]
  for cat,url in CATEGORIES.items():
-  rows=scrape_category(cat,url); diagnostics.append((cat,len(rows))); all_rows.extend(rows); time.sleep(random.uniform(1,2))
+  rows=scrape_category(cat,url); diagnostics.append((cat,len(rows))); all_rows.extend(rows); time.sleep(random.uniform(.5,1.2))
  if not all_rows: raise SystemExit('ABORT: scraper extracted zero products')
  if len(all_rows)<2200: raise SystemExit(f'ABORT: suspiciously partial scrape: {len(all_rows)} category rows; diagnostics={diagnostics}')
  bycode=defaultdict(list)
