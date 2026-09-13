@@ -1,9 +1,9 @@
 {
-  "count": 151,
+  "count": 130,
   "kinds": {
-    "no_social_card_record": 70,
-    "validated_record_unresolved": 62,
-    "validated_fid_mismatch": 19
+    "no_social_card_record": 51,
+    "validated_record_unresolved": 61,
+    "validated_fid_mismatch": 18
   },
   "rows": [
     {
@@ -126,27 +126,6 @@
       "raw": null
     },
     {
-      "code": "2438-KYLJ",
-      "brand": "Kylie Cosmetics",
-      "inspiredBy": "Cosmic Kylie Jenner",
-      "fid": "90957",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Musk",
-        "Amber",
-        "Vanilla",
-        "Jasmine",
-        "Peony",
-        "Blood Orange"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
       "code": "2586-DIP",
       "brand": "Diptyque",
       "inspiredBy": "Biscuit DIP",
@@ -180,25 +159,6 @@
       ],
       "kind": "no_social_card_record",
       "notes": [],
-      "validated": null,
-      "raw": null
-    },
-    {
-      "code": "2456-PAC",
-      "brand": "Rabanne",
-      "inspiredBy": "Million Gold",
-      "fid": "95641",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Sandalwood",
-        "Spicy Notes",
-        "Mandarin Orange",
-        "Cedar"
-      ],
       "validated": null,
       "raw": null
     },
@@ -3601,46 +3561,6 @@
       }
     },
     {
-      "code": "848-NRO",
-      "brand": "Narciso Rodriguez",
-      "inspiredBy": "Narciso Rodriguez For Her",
-      "fid": "209",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "validated_record_unresolved",
-      "notes": [
-        "Musk",
-        "Cashmeran",
-        "Jasmine",
-        "Ylang-Ylang",
-        "Orange Blossom"
-      ],
-      "validated": {
-        "code": "848-NRO",
-        "fragranticaId": 53441,
-        "card": "fragrantica-scraper-archive/social-cards/images/1775_848-NRO_53441.jpeg",
-        "validated": false,
-        "mainNotes": [],
-        "rawSlots": [],
-        "validatedSlots": [],
-        "failures": [],
-        "reasons": [
-          "NO_OCR_SLOTS"
-        ]
-      },
-      "raw": {
-        "page": 1548,
-        "fragranticaId": 53441,
-        "code": "848-NRO",
-        "card": "fragrantica-scraper-archive/social-cards/images/1775_848-NRO_53441.jpeg",
-        "mainNotes": [],
-        "slots": [],
-        "ocrConfidence": 0
-      }
-    },
-    {
       "code": "118-HAM",
       "brand": "Hamidi Oud Perfumes",
       "inspiredBy": "REHAN - HAMIDI OUD",
@@ -4866,27 +4786,6 @@
       }
     },
     {
-      "code": "920-TMU",
-      "brand": "Mugler",
-      "inspiredBy": "Angel",
-      "fid": "704",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Patchouli",
-        "Dark Chocolate",
-        "Honey",
-        "Caramel",
-        "Vanilla",
-        "Cotton Candy"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
       "code": "917-SWA",
       "brand": "Swarovski",
       "inspiredBy": "Aura",
@@ -5241,27 +5140,6 @@
       "raw": null
     },
     {
-      "code": "882-PRA",
-      "brand": "Prada",
-      "inspiredBy": "Prada Amber Pour Homme Prada Man",
-      "fid": "1044",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Saffron",
-        "Myrrh",
-        "Musk",
-        "Neroli",
-        "Vanilla",
-        "Orange Blossom"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
       "code": "858-PAC",
       "brand": "Rabanne",
       "inspiredBy": "Black XS for Her",
@@ -5414,27 +5292,6 @@
         ],
         "ocrConfidence": 83.2
       }
-    },
-    {
-      "code": "829-MNTB",
-      "brand": "Montblanc",
-      "inspiredBy": "FEMME - MONT BLANC",
-      "fid": "833",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Cola",
-        "Cinnamon",
-        "Cardamom",
-        "Pineapple",
-        "Heliotrope",
-        "Patchouli"
-      ],
-      "validated": null,
-      "raw": null
     },
     {
       "code": "828-MIY",
@@ -5767,191 +5624,6 @@
       }
     },
     {
-      "code": "753-KEN",
-      "brand": "Kenzo",
-      "inspiredBy": "Kenzo",
-      "fid": "3403",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Tuberose",
-        "Sandalwood",
-        "Peach",
-        "Spicy Notes",
-        "Orange Blossom",
-        "Coriander"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
-      "code": "735-JIM",
-      "brand": "Jimmy Choo",
-      "inspiredBy": "Jimmy Choo",
-      "fid": "10573",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "validated_fid_mismatch",
-      "notes": [
-        "Candied Orange",
-        "Toffee",
-        "Patchouli",
-        "Orange",
-        "Orchid",
-        "Sandalwood"
-      ],
-      "validated": {
-        "code": "735-JIM",
-        "fragranticaId": 27431,
-        "card": "fragrantica-scraper-archive/social-cards/images/798_735-JIM_27431.jpeg",
-        "validated": true,
-        "mainNotes": [
-          "Candied Orange",
-          "Toffee",
-          "Patchouli",
-          "Orange",
-          "Orchid",
-          "Sandalwood"
-        ],
-        "rawSlots": [
-          {
-            "slot": 1,
-            "name": "Candied Orange",
-            "ocrConfidence": 92.0
-          },
-          {
-            "slot": 2,
-            "name": "Toffee",
-            "ocrConfidence": 88.1
-          },
-          {
-            "slot": 3,
-            "name": "Patchoull",
-            "ocrConfidence": 91.2
-          },
-          {
-            "slot": 4,
-            "name": "Orange",
-            "ocrConfidence": 96.2
-          },
-          {
-            "slot": 5,
-            "name": "at Orchid",
-            "ocrConfidence": 59.4
-          },
-          {
-            "slot": 6,
-            "name": "aaa Sandalwood",
-            "ocrConfidence": 68.3
-          }
-        ],
-        "validatedSlots": [
-          {
-            "slot": 1,
-            "name": "Candied Orange",
-            "raw": "Candied Orange",
-            "matchScore": 1,
-            "margin": 1,
-            "ocrConfidence": 92.0
-          },
-          {
-            "slot": 2,
-            "name": "Toffee",
-            "raw": "Toffee",
-            "matchScore": 1,
-            "margin": 1,
-            "ocrConfidence": 88.1
-          },
-          {
-            "slot": 3,
-            "name": "Patchouli",
-            "raw": "Patchoull",
-            "matchScore": 0.889,
-            "margin": 0.193,
-            "ocrConfidence": 91.2
-          },
-          {
-            "slot": 4,
-            "name": "Orange",
-            "raw": "Orange",
-            "matchScore": 1,
-            "margin": 1,
-            "ocrConfidence": 96.2
-          },
-          {
-            "slot": 5,
-            "name": "Orchid",
-            "raw": "at Orchid",
-            "matchScore": 0.97,
-            "margin": 0.152,
-            "ocrConfidence": 59.4
-          },
-          {
-            "slot": 6,
-            "name": "Sandalwood",
-            "raw": "aaa Sandalwood",
-            "matchScore": 0.97,
-            "margin": 0.04,
-            "ocrConfidence": 68.3
-          }
-        ],
-        "failures": [],
-        "reasons": []
-      },
-      "raw": {
-        "page": 996,
-        "fragranticaId": 27431,
-        "code": "735-JIM",
-        "card": "fragrantica-scraper-archive/social-cards/images/798_735-JIM_27431.jpeg",
-        "mainNotes": [
-          "Candied Orange",
-          "Toffee",
-          "Patchoull",
-          "Orange",
-          "at Orchid",
-          "aaa Sandalwood"
-        ],
-        "slots": [
-          {
-            "slot": 1,
-            "name": "Candied Orange",
-            "ocrConfidence": 92.0
-          },
-          {
-            "slot": 2,
-            "name": "Toffee",
-            "ocrConfidence": 88.1
-          },
-          {
-            "slot": 3,
-            "name": "Patchoull",
-            "ocrConfidence": 91.2
-          },
-          {
-            "slot": 4,
-            "name": "Orange",
-            "ocrConfidence": 96.2
-          },
-          {
-            "slot": 5,
-            "name": "at Orchid",
-            "ocrConfidence": 59.4
-          },
-          {
-            "slot": 6,
-            "name": "aaa Sandalwood",
-            "ocrConfidence": 68.3
-          }
-        ],
-        "ocrConfidence": 82.5
-      }
-    },
-    {
       "code": "719-ISS",
       "brand": "Issey Miyake",
       "inspiredBy": "Pleats Please",
@@ -6104,48 +5776,6 @@
         ],
         "ocrConfidence": 88.3
       }
-    },
-    {
-      "code": "717-ISS",
-      "brand": "Issey Miyake",
-      "inspiredBy": "CLASSIC - ISSEY MIYAKE",
-      "fid": "720",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Lotus",
-        "Melon",
-        "Lily-of-the-Valley",
-        "Lily",
-        "Freesia",
-        "Peony"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
-      "code": "711-HUG",
-      "brand": "Hugo Boss",
-      "inspiredBy": "Boss Orange",
-      "fid": "5979",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Orange Blossom",
-        "Vanilla",
-        "Red Apple",
-        "White Flowers",
-        "Sandalwood",
-        "Olive Tree"
-      ],
-      "validated": null,
-      "raw": null
     },
     {
       "code": "692-GUR",
@@ -6917,27 +6547,6 @@
       "raw": null
     },
     {
-      "code": "574-DON",
-      "brand": "Donna Karan",
-      "inspiredBy": "DKNY Be Delicious",
-      "fid": "498",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Apple",
-        "Cucumber",
-        "Grapefruit",
-        "Lily-of-the-Valley",
-        "Magnolia",
-        "Woody Notes"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
       "code": "570-DOL",
       "brand": "Dolce & Gabbana",
       "inspiredBy": "(RED CUP)",
@@ -6949,48 +6558,6 @@
       ],
       "kind": "no_social_card_record",
       "notes": [],
-      "validated": null,
-      "raw": null
-    },
-    {
-      "code": "566-DOL",
-      "brand": "Dolce & Gabbana",
-      "inspiredBy": "The One",
-      "fid": "698",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Vanilla",
-        "Peach",
-        "Lily",
-        "Litchi",
-        "Amber",
-        "Plum"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
-      "code": "557-DOL",
-      "brand": "Dolce & Gabbana",
-      "inspiredBy": "Light Blue",
-      "fid": "485",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Lemon",
-        "Apple",
-        "Cedar",
-        "Bamboo",
-        "Musk",
-        "Jasmine"
-      ],
       "validated": null,
       "raw": null
     },
@@ -7795,27 +7362,6 @@
       }
     },
     {
-      "code": "500-CHA",
-      "brand": "Chanel",
-      "inspiredBy": "Chanel No 19 Poudre",
-      "fid": "12424",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Galbanum",
-        "Oakmoss",
-        "Iris",
-        "Hyacinth",
-        "Vetiver",
-        "Orris Root"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
       "code": "497-CHA",
       "brand": "Chanel",
       "inspiredBy": "Chance",
@@ -8176,69 +7722,6 @@
       }
     },
     {
-      "code": "483-CAR",
-      "brand": "Carolina Herrera",
-      "inspiredBy": "212 VIP Wild Party",
-      "fid": "35780",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Pineapple",
-        "Orchid",
-        "Orange Blossom",
-        "Rose",
-        "Grapefruit",
-        "Musk"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
-      "code": "475-CAL",
-      "brand": "Calvin Klein",
-      "inspiredBy": "Obsession",
-      "fid": "248",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Spicy Notes",
-        "Amber",
-        "Incense",
-        "Vanilla",
-        "Sandalwood",
-        "Civet"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
-      "code": "470-CAL",
-      "brand": "Calvin Klein",
-      "inspiredBy": "Eternity",
-      "fid": "257",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Carnation",
-        "Green Notes",
-        "Lily",
-        "Freesia",
-        "Lily-of-the-Valley",
-        "Narcissus"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
       "code": "468-CAL",
       "brand": "Calvin Klein",
       "inspiredBy": "Calvin Klein",
@@ -8396,27 +7879,6 @@
         ],
         "ocrConfidence": 66.3
       }
-    },
-    {
-      "code": "426-BRB",
-      "brand": "Burberry",
-      "inspiredBy": "London",
-      "fid": "813",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Jasmine",
-        "Honeysuckle",
-        "Tangerine",
-        "Tiare Flower",
-        "Musk",
-        "Peony"
-      ],
-      "validated": null,
-      "raw": null
     },
     {
       "code": "425-BRB",
@@ -8813,27 +8275,6 @@
       ],
       "kind": "no_social_card_record",
       "notes": [],
-      "validated": null,
-      "raw": null
-    },
-    {
-      "code": "1250-RAL",
-      "brand": "Ralph Lauren",
-      "inspiredBy": "Safari",
-      "fid": "897",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Galbanum",
-        "Marigold",
-        "Narcissus",
-        "Hyacinth",
-        "Vetiver",
-        "Amber"
-      ],
       "validated": null,
       "raw": null
     },
@@ -10238,48 +9679,6 @@
         ],
         "ocrConfidence": 90.4
       }
-    },
-    {
-      "code": "1096-DOL",
-      "brand": "Dolce & Gabbana",
-      "inspiredBy": "Light Blue Eau Intense",
-      "fid": "44034",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Lemon",
-        "Apple",
-        "Musk",
-        "Amberwood",
-        "Jasmine",
-        "French Marigold"
-      ],
-      "validated": null,
-      "raw": null
-    },
-    {
-      "code": "1092-DOL",
-      "brand": "Dolce & Gabbana",
-      "inspiredBy": "By Man Eau de Toilette",
-      "fid": "490",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [
-        "Lavender",
-        "Sandalwood",
-        "Nutmeg",
-        "Tobacco",
-        "Leather",
-        "Amber"
-      ],
-      "validated": null,
-      "raw": null
     },
     {
       "code": "1086-CLI",

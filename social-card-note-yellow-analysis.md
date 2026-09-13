@@ -1,19 +1,17 @@
 # Social Card / Main Notes yellow analysis
 
-- Rows: **151**
-- `no_social_card_record`: **70**
-- `validated_record_unresolved`: **62**
-- `validated_fid_mismatch`: **19**
+- Rows: **130**
+- `validated_record_unresolved`: **61**
+- `no_social_card_record`: **51**
+- `validated_fid_mismatch`: **18**
 
 ## Rows
 
 - `2816-MOOD` — no_social_card_record — failed=identity,fid,url,socialCard,image,notes,icons,gender,season — notes=0
 - `2692-SOL` — validated_record_unresolved — failed=socialCard,notes — notes=2
 - `2701-DIP` — no_social_card_record — failed=identity,fid,url,socialCard,image,notes,icons,gender,season — notes=0
-- `2438-KYLJ` — no_social_card_record — failed=socialCard,notes — notes=6
 - `2586-DIP` — no_social_card_record — failed=identity,fid,url,socialCard,image,notes,icons,gender,season — notes=0
 - `2552-SOR` — no_social_card_record — failed=identity,socialCard,notes,icons — notes=0
-- `2456-PAC` — no_social_card_record — failed=socialCard,notes — notes=4
 - `2439-ZEG` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `2427-CLEA` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `2351-LOU` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
@@ -52,7 +50,6 @@
 - `1161-HUG` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `127-KIL` — validated_record_unresolved — failed=socialCard,notes — notes=6
 - `466-CAL` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `848-NRO` — validated_record_unresolved — failed=socialCard,notes — notes=5
 - `118-HAM` — no_social_card_record — failed=socialCard,notes,icons,gender,season — notes=0
 - `382-YAN` — no_social_card_record — failed=identity,fid,url,socialCard,image,notes,icons,gender,season — notes=0
 - `381-YAN` — no_social_card_record — failed=identity,fid,url,socialCard,image,notes,icons,gender,season — notes=0
@@ -86,21 +83,14 @@
 - `979-YZLO` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `945-VER` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `928-TRU` — validated_fid_mismatch — failed=socialCard,notes,season — notes=6
-- `920-TMU` — no_social_card_record — failed=socialCard,notes — notes=6
 - `917-SWA` — validated_fid_mismatch — failed=socialCard,notes — notes=6
 - `910-SARJ` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `909-SFER` — no_social_card_record — failed=socialCard,notes — notes=6
 - `904-SALV` — no_social_card_record — failed=socialCard,notes,icons — notes=0
-- `882-PRA` — no_social_card_record — failed=socialCard,notes — notes=6
 - `858-PAC` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `829-MNTB` — no_social_card_record — failed=socialCard,notes — notes=6
 - `828-MIY` — validated_fid_mismatch — failed=identity,socialCard,notes,gender — notes=6
 - `827-MISN` — validated_fid_mismatch — failed=socialCard,notes — notes=6
-- `753-KEN` — no_social_card_record — failed=socialCard,notes — notes=6
-- `735-JIM` — validated_fid_mismatch — failed=socialCard,notes — notes=6
 - `719-ISS` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `717-ISS` — no_social_card_record — failed=socialCard,notes — notes=6
-- `711-HUG` — no_social_card_record — failed=socialCard,notes — notes=6
 - `692-GUR` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `674-GUC` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `668-GIV` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
@@ -110,32 +100,23 @@
 - `621-EST` — validated_fid_mismatch — failed=identity,socialCard,notes — notes=6
 - `613-ESC` — validated_record_unresolved — failed=socialCard,notes — notes=6
 - `612-ESC` — no_social_card_record — failed=socialCard,notes,icons — notes=0
-- `574-DON` — no_social_card_record — failed=socialCard,notes — notes=6
 - `570-DOL` — no_social_card_record — failed=socialCard,notes,icons — notes=0
-- `566-DOL` — no_social_card_record — failed=socialCard,notes — notes=6
-- `557-DOL` — no_social_card_record — failed=socialCard,notes — notes=6
 - `548-CLI` — validated_fid_mismatch — failed=socialCard,notes,season — notes=6
 - `533-DRC` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `525-DRC` — no_social_card_record — failed=identity,socialCard,notes,icons — notes=0
 - `521-DRC` — validated_record_unresolved — failed=identity,socialCard,image,notes,icons,gender,season — notes=0
 - `520-CHO` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `514-CHL` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `500-CHA` — no_social_card_record — failed=socialCard,notes — notes=6
 - `497-CHA` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `494-CHA` — no_social_card_record — failed=identity,socialCard,notes,icons — notes=0
 - `493-CER` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `487-CRT` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `483-CAR` — no_social_card_record — failed=socialCard,notes — notes=6
-- `475-CAL` — no_social_card_record — failed=socialCard,notes — notes=6
-- `470-CAL` — no_social_card_record — failed=socialCard,notes — notes=6
 - `468-CAL` — validated_record_unresolved — failed=socialCard,notes — notes=6
-- `426-BRB` — no_social_card_record — failed=socialCard,notes — notes=6
 - `425-BRB` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `421-BRB` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `411-BOD` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `399-ARA` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `1251-ROM` — no_social_card_record — failed=identity,socialCard,notes,icons,gender,season — notes=0
-- `1250-RAL` — no_social_card_record — failed=socialCard,notes — notes=6
 - `1248-RAL` — validated_fid_mismatch — failed=socialCard,notes — notes=6
 - `1245-PRA` — validated_fid_mismatch — failed=socialCard,notes — notes=6
 - `880-PRA` — no_social_card_record — failed=identity,socialCard,notes,icons — notes=0
@@ -149,8 +130,6 @@
 - `1136-ARM` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `1134-ARM` — no_social_card_record — failed=socialCard,notes — notes=6
 - `1118-FAB` — validated_fid_mismatch — failed=identity,socialCard,notes — notes=6
-- `1096-DOL` — no_social_card_record — failed=socialCard,notes — notes=6
-- `1092-DOL` — no_social_card_record — failed=socialCard,notes — notes=6
 - `1086-CLI` — validated_fid_mismatch — failed=socialCard,notes,season — notes=6
 - `1076-DRC` — validated_record_unresolved — failed=identity,socialCard,notes,icons,gender,season — notes=0
 - `1061-CRT` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0

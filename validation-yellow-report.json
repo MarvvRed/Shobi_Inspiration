@@ -1,6 +1,6 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 165,
+  "yellowRows": 144,
   "singleFailureRows": [],
   "byFailureSignature": [
     {
@@ -65,57 +65,6 @@
       ]
     },
     {
-      "signature": "socialCard,notes",
-      "count": 45,
-      "codes": [
-        "2692-SOL",
-        "2438-KYLJ",
-        "2456-PAC",
-        "2234-MON",
-        "2224-ARM",
-        "2185-DRC",
-        "2016-PARELM",
-        "1542-JOM",
-        "896-RCAV",
-        "884-RAL",
-        "1037-BLG",
-        "337-TIFF",
-        "127-KIL",
-        "848-NRO",
-        "254-JOM",
-        "920-TMU",
-        "917-SWA",
-        "909-SFER",
-        "882-PRA",
-        "829-MNTB",
-        "827-MISN",
-        "753-KEN",
-        "735-JIM",
-        "717-ISS",
-        "711-HUG",
-        "613-ESC",
-        "574-DON",
-        "566-DOL",
-        "557-DOL",
-        "500-CHA",
-        "483-CAR",
-        "475-CAL",
-        "470-CAL",
-        "468-CAL",
-        "426-BRB",
-        "1250-RAL",
-        "1248-RAL",
-        "1245-PRA",
-        "1184-JOO",
-        "1172-ISS",
-        "1134-ARM",
-        "1096-DOL",
-        "1092-DOL",
-        "1043-CAL",
-        "1036-BLG"
-      ]
-    },
-    {
       "signature": "identity,fid,url,socialCard,image,notes,icons,gender,season",
       "count": 31,
       "codes": [
@@ -150,6 +99,36 @@
         "223-DIP",
         "222-DIP",
         "200-CIR"
+      ]
+    },
+    {
+      "signature": "socialCard,notes",
+      "count": 24,
+      "codes": [
+        "2692-SOL",
+        "2234-MON",
+        "2224-ARM",
+        "2185-DRC",
+        "2016-PARELM",
+        "1542-JOM",
+        "896-RCAV",
+        "884-RAL",
+        "1037-BLG",
+        "337-TIFF",
+        "127-KIL",
+        "254-JOM",
+        "917-SWA",
+        "909-SFER",
+        "827-MISN",
+        "613-ESC",
+        "468-CAL",
+        "1248-RAL",
+        "1245-PRA",
+        "1184-JOO",
+        "1172-ISS",
+        "1134-ARM",
+        "1043-CAL",
+        "1036-BLG"
       ]
     },
     {
@@ -244,15 +223,13 @@
   "byIssue": [
     {
       "issue": "Social Card not fully verified",
-      "count": 151,
+      "count": 130,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
         "2701-DIP",
-        "2438-KYLJ",
         "2586-DIP",
         "2552-SOR",
-        "2456-PAC",
         "2439-ZEG",
         "2427-CLEA",
         "2351-LOU",
@@ -291,7 +268,6 @@
         "1161-HUG",
         "127-KIL",
         "466-CAL",
-        "848-NRO",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -325,21 +301,14 @@
         "979-YZLO",
         "945-VER",
         "928-TRU",
-        "920-TMU",
         "917-SWA",
         "910-SARJ",
         "909-SFER",
         "904-SALV",
-        "882-PRA",
         "858-PAC",
-        "829-MNTB",
         "828-MIY",
         "827-MISN",
-        "753-KEN",
-        "735-JIM",
         "719-ISS",
-        "717-ISS",
-        "711-HUG",
         "692-GUR",
         "674-GUC",
         "668-GIV",
@@ -349,32 +318,23 @@
         "621-EST",
         "613-ESC",
         "612-ESC",
-        "574-DON",
         "570-DOL",
-        "566-DOL",
-        "557-DOL",
         "548-CLI",
         "533-DRC",
         "525-DRC",
         "521-DRC",
         "520-CHO",
         "514-CHL",
-        "500-CHA",
         "497-CHA",
         "494-CHA",
         "493-CER",
         "487-CRT",
-        "483-CAR",
-        "475-CAL",
-        "470-CAL",
         "468-CAL",
-        "426-BRB",
         "425-BRB",
         "421-BRB",
         "411-BOD",
         "399-ARA",
         "1251-ROM",
-        "1250-RAL",
         "1248-RAL",
         "1245-PRA",
         "880-PRA",
@@ -388,8 +348,6 @@
         "1136-ARM",
         "1134-ARM",
         "1118-FAB",
-        "1096-DOL",
-        "1092-DOL",
         "1086-CLI",
         "1076-DRC",
         "1061-CRT",
@@ -774,66 +732,6 @@
       ]
     },
     {
-      "issue": "Main Notes order not fully verified",
-      "count": 54,
-      "codes": [
-        "2692-SOL",
-        "2438-KYLJ",
-        "2456-PAC",
-        "2282-DRC",
-        "2234-MON",
-        "2224-ARM",
-        "2194-ORT",
-        "2185-DRC",
-        "2016-PARELM",
-        "1542-JOM",
-        "1751-GUL",
-        "896-RCAV",
-        "884-RAL",
-        "1037-BLG",
-        "337-TIFF",
-        "127-KIL",
-        "848-NRO",
-        "254-JOM",
-        "928-TRU",
-        "920-TMU",
-        "917-SWA",
-        "909-SFER",
-        "882-PRA",
-        "829-MNTB",
-        "828-MIY",
-        "827-MISN",
-        "753-KEN",
-        "735-JIM",
-        "717-ISS",
-        "711-HUG",
-        "621-EST",
-        "613-ESC",
-        "574-DON",
-        "566-DOL",
-        "557-DOL",
-        "548-CLI",
-        "500-CHA",
-        "483-CAR",
-        "475-CAL",
-        "470-CAL",
-        "468-CAL",
-        "426-BRB",
-        "1250-RAL",
-        "1248-RAL",
-        "1245-PRA",
-        "1184-JOO",
-        "1172-ISS",
-        "1134-ARM",
-        "1118-FAB",
-        "1096-DOL",
-        "1092-DOL",
-        "1086-CLI",
-        "1043-CAL",
-        "1036-BLG"
-      ]
-    },
-    {
       "issue": "Gender not fully verified",
       "count": 43,
       "codes": [
@@ -931,6 +829,45 @@
       ]
     },
     {
+      "issue": "Main Notes order not fully verified",
+      "count": 33,
+      "codes": [
+        "2692-SOL",
+        "2282-DRC",
+        "2234-MON",
+        "2224-ARM",
+        "2194-ORT",
+        "2185-DRC",
+        "2016-PARELM",
+        "1542-JOM",
+        "1751-GUL",
+        "896-RCAV",
+        "884-RAL",
+        "1037-BLG",
+        "337-TIFF",
+        "127-KIL",
+        "254-JOM",
+        "928-TRU",
+        "917-SWA",
+        "909-SFER",
+        "828-MIY",
+        "827-MISN",
+        "621-EST",
+        "613-ESC",
+        "548-CLI",
+        "468-CAL",
+        "1248-RAL",
+        "1245-PRA",
+        "1184-JOO",
+        "1172-ISS",
+        "1134-ARM",
+        "1118-FAB",
+        "1086-CLI",
+        "1043-CAL",
+        "1036-BLG"
+      ]
+    },
+    {
       "issue": "Missing Fragrantica ID",
       "count": 31,
       "codes": [
@@ -1008,15 +945,13 @@
   "byFailedCheck": [
     {
       "check": "socialCard",
-      "count": 151,
+      "count": 130,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
         "2701-DIP",
-        "2438-KYLJ",
         "2586-DIP",
         "2552-SOR",
-        "2456-PAC",
         "2439-ZEG",
         "2427-CLEA",
         "2351-LOU",
@@ -1055,7 +990,6 @@
         "1161-HUG",
         "127-KIL",
         "466-CAL",
-        "848-NRO",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -1089,21 +1023,14 @@
         "979-YZLO",
         "945-VER",
         "928-TRU",
-        "920-TMU",
         "917-SWA",
         "910-SARJ",
         "909-SFER",
         "904-SALV",
-        "882-PRA",
         "858-PAC",
-        "829-MNTB",
         "828-MIY",
         "827-MISN",
-        "753-KEN",
-        "735-JIM",
         "719-ISS",
-        "717-ISS",
-        "711-HUG",
         "692-GUR",
         "674-GUC",
         "668-GIV",
@@ -1113,32 +1040,23 @@
         "621-EST",
         "613-ESC",
         "612-ESC",
-        "574-DON",
         "570-DOL",
-        "566-DOL",
-        "557-DOL",
         "548-CLI",
         "533-DRC",
         "525-DRC",
         "521-DRC",
         "520-CHO",
         "514-CHL",
-        "500-CHA",
         "497-CHA",
         "494-CHA",
         "493-CER",
         "487-CRT",
-        "483-CAR",
-        "475-CAL",
-        "470-CAL",
         "468-CAL",
-        "426-BRB",
         "425-BRB",
         "421-BRB",
         "411-BOD",
         "399-ARA",
         "1251-ROM",
-        "1250-RAL",
         "1248-RAL",
         "1245-PRA",
         "880-PRA",
@@ -1152,8 +1070,6 @@
         "1136-ARM",
         "1134-ARM",
         "1118-FAB",
-        "1096-DOL",
-        "1092-DOL",
         "1086-CLI",
         "1076-DRC",
         "1061-CRT",
@@ -1165,15 +1081,13 @@
     },
     {
       "check": "notes",
-      "count": 151,
+      "count": 130,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
         "2701-DIP",
-        "2438-KYLJ",
         "2586-DIP",
         "2552-SOR",
-        "2456-PAC",
         "2439-ZEG",
         "2427-CLEA",
         "2351-LOU",
@@ -1212,7 +1126,6 @@
         "1161-HUG",
         "127-KIL",
         "466-CAL",
-        "848-NRO",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -1246,21 +1159,14 @@
         "979-YZLO",
         "945-VER",
         "928-TRU",
-        "920-TMU",
         "917-SWA",
         "910-SARJ",
         "909-SFER",
         "904-SALV",
-        "882-PRA",
         "858-PAC",
-        "829-MNTB",
         "828-MIY",
         "827-MISN",
-        "753-KEN",
-        "735-JIM",
         "719-ISS",
-        "717-ISS",
-        "711-HUG",
         "692-GUR",
         "674-GUC",
         "668-GIV",
@@ -1270,32 +1176,23 @@
         "621-EST",
         "613-ESC",
         "612-ESC",
-        "574-DON",
         "570-DOL",
-        "566-DOL",
-        "557-DOL",
         "548-CLI",
         "533-DRC",
         "525-DRC",
         "521-DRC",
         "520-CHO",
         "514-CHL",
-        "500-CHA",
         "497-CHA",
         "494-CHA",
         "493-CER",
         "487-CRT",
-        "483-CAR",
-        "475-CAL",
-        "470-CAL",
         "468-CAL",
-        "426-BRB",
         "425-BRB",
         "421-BRB",
         "411-BOD",
         "399-ARA",
         "1251-ROM",
-        "1250-RAL",
         "1248-RAL",
         "1245-PRA",
         "880-PRA",
@@ -1309,8 +1206,6 @@
         "1136-ARM",
         "1134-ARM",
         "1118-FAB",
-        "1096-DOL",
-        "1092-DOL",
         "1086-CLI",
         "1076-DRC",
         "1061-CRT",
@@ -1844,23 +1739,6 @@
       "iconsCount": 0
     },
     {
-      "code": "2438-KYLJ",
-      "brand": "Kylie Cosmetics",
-      "inspiredBy": "Cosmic Kylie Jenner",
-      "fragranticaUrl": "https://www.fragrantica.com/p/90957",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
       "code": "2586-DIP",
       "brand": "Diptyque",
       "inspiredBy": "Biscuit DIP",
@@ -1911,23 +1789,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "2456-PAC",
-      "brand": "Rabanne",
-      "inspiredBy": "Million Gold",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Rabanne/Million-Gold-95641.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 4,
-      "matchedNotesCount": 0,
-      "iconsCount": 4
     },
     {
       "code": "2439-ZEG",
@@ -2864,23 +2725,6 @@
       "iconsCount": 0
     },
     {
-      "code": "848-NRO",
-      "brand": "Narciso Rodriguez",
-      "inspiredBy": "Narciso Rodriguez For Her",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Narciso-Rodriguez/Narciso-Rodriguez-For-Her-209.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 0,
-      "iconsCount": 5
-    },
-    {
       "code": "118-HAM",
       "brand": "Hamidi Oud Perfumes",
       "inspiredBy": "REHAN - HAMIDI OUD",
@@ -3786,23 +3630,6 @@
       "iconsCount": 6
     },
     {
-      "code": "920-TMU",
-      "brand": "Mugler",
-      "inspiredBy": "Angel",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Mugler/Angel-704.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
       "code": "917-SWA",
       "brand": "Swarovski",
       "inspiredBy": "Aura",
@@ -3877,23 +3704,6 @@
       "iconsCount": 0
     },
     {
-      "code": "882-PRA",
-      "brand": "Prada",
-      "inspiredBy": "Prada Amber Pour Homme Prada Man",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-Pour-Homme-Prada-Man-1044.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
       "code": "866-PAC",
       "brand": "Rabanne",
       "inspiredBy": "Ultraviolet",
@@ -3949,23 +3759,6 @@
       "iconsCount": 6
     },
     {
-      "code": "829-MNTB",
-      "brand": "Montblanc",
-      "inspiredBy": "FEMME - MONT BLANC",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Mont-Blanc/Femme-de-Montblanc-833.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
       "code": "828-MIY",
       "brand": "Miu Miu",
       "inspiredBy": "Miu Miu L Eau Bleue",
@@ -4004,40 +3797,6 @@
       "iconsCount": 6
     },
     {
-      "code": "753-KEN",
-      "brand": "Kenzo",
-      "inspiredBy": "Kenzo",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kenzo/Kenzo-3403.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "735-JIM",
-      "brand": "Jimmy Choo",
-      "inspiredBy": "Jimmy Choo",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Jimmy-Choo/Jimmy-Choo-10573.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
       "code": "719-ISS",
       "brand": "Issey Miyake",
       "inspiredBy": "Pleats Please",
@@ -4059,23 +3818,6 @@
       "iconsCount": 0
     },
     {
-      "code": "717-ISS",
-      "brand": "Issey Miyake",
-      "inspiredBy": "CLASSIC - ISSEY MIYAKE",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/L-eau-d-Issey-720.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
       "code": "716-ISS",
       "brand": "Issey Miyake",
       "inspiredBy": "A Scent by Issey Miyake",
@@ -4090,23 +3832,6 @@
       ],
       "notesCount": 6,
       "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "711-HUG",
-      "brand": "Hugo Boss",
-      "inspiredBy": "Boss Orange",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Orange-5979.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
       "iconsCount": 6
     },
     {
@@ -4325,23 +4050,6 @@
       "iconsCount": 0
     },
     {
-      "code": "574-DON",
-      "brand": "Donna Karan",
-      "inspiredBy": "DKNY Be Delicious",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Donna-Karan/DKNY-Be-Delicious-498.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
       "code": "570-DOL",
       "brand": "Dolce & Gabbana",
       "inspiredBy": "(RED CUP)",
@@ -4359,40 +4067,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "566-DOL",
-      "brand": "Dolce & Gabbana",
-      "inspiredBy": "The One",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-698.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "557-DOL",
-      "brand": "Dolce & Gabbana",
-      "inspiredBy": "Light Blue",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-485.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
     },
     {
       "code": "548-CLI",
@@ -4525,23 +4199,6 @@
       "iconsCount": 0
     },
     {
-      "code": "500-CHA",
-      "brand": "Chanel",
-      "inspiredBy": "Chanel No 19 Poudre",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Chanel-No-19-Poudre-12424.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
       "code": "497-CHA",
       "brand": "Chanel",
       "inspiredBy": "Chance",
@@ -4626,78 +4283,10 @@
       "iconsCount": 0
     },
     {
-      "code": "483-CAR",
-      "brand": "Carolina Herrera",
-      "inspiredBy": "212 VIP Wild Party",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Wild-Party-35780.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "475-CAL",
-      "brand": "Calvin Klein",
-      "inspiredBy": "Obsession",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Obsession-248.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "470-CAL",
-      "brand": "Calvin Klein",
-      "inspiredBy": "Eternity",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Eternity-257.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
       "code": "468-CAL",
       "brand": "Calvin Klein",
       "inspiredBy": "Calvin Klein",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Calvin-Klein-14606.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "426-BRB",
-      "brand": "Burberry",
-      "inspiredBy": "London",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Burberry/London-813.html",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"
@@ -4835,23 +4424,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "1250-RAL",
-      "brand": "Ralph Lauren",
-      "inspiredBy": "Safari",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Safari-897.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
     },
     {
       "code": "1248-RAL",
@@ -5131,40 +4703,6 @@
       ],
       "failedChecks": [
         "identity",
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "1096-DOL",
-      "brand": "Dolce & Gabbana",
-      "inspiredBy": "Light Blue Eau Intense",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-Eau-Intense-44034.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "1092-DOL",
-      "brand": "Dolce & Gabbana",
-      "inspiredBy": "By Man Eau de Toilette",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dolce-Gabbana/By-490.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
         "socialCard",
         "notes"
       ],
