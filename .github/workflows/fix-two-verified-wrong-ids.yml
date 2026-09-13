@@ -1,0 +1,35 @@
+name: Fix two verified wrong Fragrantica IDs
+
+on:
+  push:
+    paths:
+      - 'tools/fix_two_verified_wrong_ids.py'
+      - '.github/workflows/fix-two-verified-wrong-ids.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Correct exact externally verified IDs and fetch exact-ID media
+        run: python tools/fix_two_verified_wrong_ids.py
+      - name: Rebuild strict validation
+        run: python tools/build_validation_audit.py
+      - name: Refresh yellow report
+        run: python tools/analyze_validation_yellows.py
+      - name: Commit verified corrections
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database_complete.json catalog_site.json perfume-images/map.js perfume-images/*.avif fragrantica-scraper-archive/social-cards/images two-verified-id-corrections.json validation-yellow-report.json validation-yellow-report.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Correct verified Fragrantica IDs for Ma Dame and Delicate Rose"
+          git pull --rebase origin main
+          git push origin HEAD:main
