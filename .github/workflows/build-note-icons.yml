@@ -1,0 +1,31 @@
+name: Build local Fragrantica note icons
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/build_note_icon_library.py'
+      - 'social-card-main-notes-validated.json'
+
+permissions:
+  contents: write
+
+jobs:
+  build-note-icons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow
+      - run: python tools/build_note_icon_library.py
+      - name: Commit note icon library
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add note-icons/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Build local Fragrantica note icon library'
+          git push
