@@ -18,6 +18,21 @@ GENDER = ROOT / "social-card-gender.json"
 GENDER_SEASON = ROOT / "fragrantica-scraper-archive/social-cards/gender-season.csv"
 OUTPUT = ROOT / "database_complete.json"
 
+# Corrections individually verified against the Shobi product identity and the
+# corresponding perfume page. These override stale candidate matches in the
+# historical mapping file until that large source file is regenerated.
+CONFIRMED_IDENTITY_OVERRIDES = {
+    "646-ARM": ("Giorgio Armani", "Armani Code for Women", "413", "https://www.fragrantica.com/perfume/Giorgio-Armani/Armani-Code-for-Women-413.html"),
+    "716-ISS": ("Issey Miyake", "A Scent by Issey Miyake", "6432", "https://www.fragrantica.com/perfume/Issey-Miyake/A-Scent-by-Issey-Miyake-6432.html"),
+    "847-NRO": ("Narciso Rodriguez", "Narciso Poudree", "36679", "https://www.fragrantica.com/perfume/Narciso-Rodriguez/Narciso-Poudree-36679.html"),
+    "866-PAC": ("Paco Rabanne", "Ultraviolet", "519", "https://www.fragrantica.com/perfume/Paco-Rabanne/Ultraviolet-519.html"),
+    "1165-HUG": ("Hugo Boss", "Hugo Energise", "569", "https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Energise-569.html"),
+    "1189-KEN": ("Kenzo", "Kenzo Homme Sport Extreme", "18174", "https://www.fragrantica.com/perfume/Kenzo/Kenzo-Homme-Sport-Extreme-18174.html"),
+    "1281-YZLO": ("Yves Saint Laurent", "L'Homme Parfum Intense", "18841", "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/L-Homme-Parfum-Intense-18841.html"),
+    "1890-LEL": ("Le Labo", "Lys 41", "18382", "https://www.fragrantica.com/perfume/Le-Labo/Lys-41-18382.html"),
+    "2265-KAY": ("Kayali Fragrances", "Oudgasm Rose Oud 16 Eau de Parfum Intense", "85186", "https://www.fragrantica.com/perfume/Kayali-Fragrances/Oudgasm-Rose-Oud-16-Eau-de-Parfum-Intense-85186.html"),
+}
+
 
 def read_csv(path):
     with path.open(encoding="utf-8-sig", newline="") as handle:
@@ -77,15 +92,21 @@ for live in live_rows:
 
     url_brand, url_name = identity_from_fragrantica_url(mapping.get("fragrantica_url", ""))
     fallback_brand, fallback_name = identity_from_description(live.get("description_short", ""))
-    brand = (mapping.get("original_brand") or old.get("brand") or url_brand or fallback_brand).strip()
-    inspired_by = (
-        mapping.get("original_perfume")
-        or old.get("inspiredBy")
-        or url_name
-        or master.get("inspired_by")
-        or live.get("inspired_by")
-        or fallback_name
-    ).strip()
+    override = CONFIRMED_IDENTITY_OVERRIDES.get(canonical_code)
+    if override:
+        brand, inspired_by, fragrantica_id, fragrantica_url = override
+    else:
+        brand = (mapping.get("original_brand") or old.get("brand") or url_brand or fallback_brand).strip()
+        inspired_by = (
+            mapping.get("original_perfume")
+            or old.get("inspiredBy")
+            or url_name
+            or master.get("inspired_by")
+            or live.get("inspired_by")
+            or fallback_name
+        ).strip()
+        fragrantica_id = mapping.get("fragrantica_id") or old.get("fragranticaId") or None
+        fragrantica_url = mapping.get("fragrantica_url") or old.get("fragranticaUrl") or ""
 
     row = dict(old)
     row.update({
@@ -100,7 +121,8 @@ for live in live_rows:
         "shobiPriceEur": live["price_eur"].strip(),
         "brand": brand,
         "inspiredBy": inspired_by,
-        "fragranticaId": (mapping.get("fragrantica_id") or old.get("fragranticaId") or None),
+        "fragranticaId": fragrantica_id,
+        "fragranticaUrl": fragrantica_url,
         "fragranticaStatus": mapping.get("fragrantica_status") or old.get("fragranticaStatus") or "NOT_FOUND",
         "identityStatus": mapping.get("identity_status") or "AMBIGUOUS",
         "masterVersion": "shobi-live-unique-2026-09-13-2332",
@@ -144,6 +166,13 @@ if len({row["shobiUrl"] for row in out}) != len(out):
     raise SystemExit("Duplicate Shobi URL")
 if any(not row["brand"] or not row["inspiredBy"] for row in out):
     raise SystemExit("Blank brand or perfume identity remains")
+out_by_code = {row["code"]: row for row in out}
+for code, (brand, name, fragrantica_id, fragrantica_url) in CONFIRMED_IDENTITY_OVERRIDES.items():
+    row = out_by_code.get(code)
+    actual = (row.get("brand"), row.get("inspiredBy"), str(row.get("fragranticaId")), row.get("fragranticaUrl"))
+    expected = (brand, name, fragrantica_id, fragrantica_url)
+    if actual != expected:
+        raise SystemExit(f"Confirmed identity regression for {code}: {actual!r} != {expected!r}")
 
 OUTPUT.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print("rows", len(out))
