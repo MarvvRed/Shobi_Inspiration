@@ -633,7 +633,7 @@ function initTheme() {
 async function init() {
     console.log("DEBUG: init() started.");
     try {
-        const response = await fetch('database_complete.json');
+        const response = await fetch('catalog_site.json');
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
         const rawDataAll = await response.json();
