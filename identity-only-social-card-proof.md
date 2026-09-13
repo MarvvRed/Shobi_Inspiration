@@ -1,92 +1,30 @@
 # Identity-only Social Card proof
 
-- Identity-only yellow rows: **82**
-- Strict exact-ID + local-card + all brand/name tokens visible: **62**
+- Identity-only yellow rows: **20**
+- Strict exact-ID + local-card + all brand/name tokens visible: **0**
 
 ## Strict proof rows
 
-- `490-CRT` — Cartier · Must de Cartier · FID 312 · `fragrantica-scraper-archive/social-cards/images/4386_490-CRT_312.jpeg`
-- `2483-CLEA` — Clean · Clean Skin · FID 16603 · `fragrantica-scraper-archive/social-cards/images/4235_2483-CLEA_16603.jpeg`
-- `2482-CLEA` — Clean · Cool Cotton · FID 23032 · `fragrantica-scraper-archive/social-cards/images/4234_2482-CLEA_23032.jpeg`
-- `2301-DIP` — Diptyque · Fleur de Peau · FID 131717 · `fragrantica-scraper-archive/social-cards/images/3943_2301-DIP_131717.jpeg`
-- `2193-LTN` — Louis Vuitton · Nouveau Monde · FID 49753 · `fragrantica-scraper-archive/social-cards/images/3728_2193-LTN_49753.jpeg`
-- `2190-ROJ` — Roja Dove · Diaghilev · FID 10109 · `fragrantica-scraper-archive/social-cards/images/3686_2190-ROJ_10109.jpeg`
-- `1753-TEDL` — Ted Lapidus · Ted · FID 5942 · `fragrantica-scraper-archive/social-cards/images/2824_1753-TEDL_5942.jpeg`
-- `1829-BOB` — Bobbi Brown · Bath · FID 11983 · `fragrantica-scraper-archive/social-cards/images/2708_1829-BOB_11983.jpeg`
-- `1763-JILS` — Jil Sander · Sun · FID 618 · `fragrantica-scraper-archive/social-cards/images/2612_1763-JILS_618.jpeg`
-- `1701-TOSC` — Tosca · Tosca · FID 5796 · `fragrantica-scraper-archive/social-cards/images/2437_1701-TOSC_5796.jpeg`
-- `140-KUR` — Maison Francis Kurkdjian · Oud Silk Mood · FID 48456 · `fragrantica-scraper-archive/social-cards/images/2226_140-KUR_48456.jpeg`
-- `703-HER` — Hermès · Kelly Caleche · FID 1335 · `fragrantica-scraper-archive/social-cards/images/2206_703-HER_1335.jpeg`
-- `410-BOD` — The Body Shop · Black Musk · FID 32247 · `fragrantica-scraper-archive/social-cards/images/2146_410-BOD_32247.jpeg`
-- `1090-COS` — CoSTUME NATIONAL · Costume National Homme · FID 7047 · `fragrantica-scraper-archive/social-cards/images/1882_1090-COS_7047.jpeg`
-- `1091-COS` — CoSTUME NATIONAL · Scent Intense · FID 2305 · `fragrantica-scraper-archive/social-cards/images/1881_1091-COS_2305.jpeg`
-- `139-KUR` — Maison Francis Kurkdjian · Oud Satin Mood · FID 30352 · `fragrantica-scraper-archive/social-cards/images/1790_139-KUR_30352.jpeg`
-- `408-BAT` — Bath Body Works · Warm Vanilla Sugar · FID 3545 · `fragrantica-scraper-archive/social-cards/images/1781_408-BAT_3545.jpeg`
-- `988-YZLO` — Yves Saint Laurent · Parisienne · FID 6493 · `fragrantica-scraper-archive/social-cards/images/1011_988-YZLO_6493.jpeg`
-- `977-YZLO` — Yves Saint Laurent · Black Opium · FID 25324 · `fragrantica-scraper-archive/social-cards/images/1001_977-YZLO_25324.jpeg`
-- `944-VER` — Versace · Crystal Noir · FID 631 · `fragrantica-scraper-archive/social-cards/images/975_944-VER_631.jpeg`
-- `921-TMU` — Mugler · Angel Muse · FID 36416 · `fragrantica-scraper-archive/social-cards/images/956_921-TMU_36416.jpeg`
-- `901-ROG` — Roger Gallet · Rose · FID 3482 · `fragrantica-scraper-archive/social-cards/images/938_901-ROG_3482.jpeg`
-- `879-PRA` — Prada · Infusion d Iris · FID 1795 · `fragrantica-scraper-archive/social-cards/images/917_879-PRA_1795.jpeg`
-- `867-PAL` — Paloma Picasso · Paloma Picasso · FID 1009 · `fragrantica-scraper-archive/social-cards/images/907_867-PAL_1009.jpeg`
-- `863-PAC` — Rabanne · Olympea · FID 31666 · `fragrantica-scraper-archive/social-cards/images/903_863-PAC_31666.jpeg`
-- `860-PAC` — Rabanne · Lady Million · FID 9045 · `fragrantica-scraper-archive/social-cards/images/901_860-PAC_9045.jpeg`
-- `787-LAN` — Lancôme · Magie Noire · FID 174 · `fragrantica-scraper-archive/social-cards/images/837_787-LAN_174.jpeg`
-- `776-LAL` — Lalique · Satine · FID 17840 · `fragrantica-scraper-archive/social-cards/images/830_776-LAL_17840.jpeg`
-- `756-KEN` — Kenzo · Kenzo World · FID 40278 · `fragrantica-scraper-archive/social-cards/images/818_756-KEN_40278.jpeg`
-- `738-JUI` — Juicy Couture · Viva la Juicy · FID 4410 · `fragrantica-scraper-archive/social-cards/images/801_738-JUI_4410.jpeg`
-- `709-HER` — Hermès · Voyage d Hermes · FID 7916 · `fragrantica-scraper-archive/social-cards/images/776_709-HER_7916.jpeg`
-- `688-GUR` — Guerlain · L Instant Magic · FID 1106 · `fragrantica-scraper-archive/social-cards/images/759_688-GUR_1106.jpeg`
-- `686-GUR` — Guerlain · Insolence · FID 667 · `fragrantica-scraper-archive/social-cards/images/758_686-GUR_667.jpeg`
-- `673-GRS` — Gres · Cabotine · FID 1061 · `fragrantica-scraper-archive/social-cards/images/749_673-GRS_1061.jpeg`
-- `671-GIV` — Givenchy · Play For Her · FID 9369 · `fragrantica-scraper-archive/social-cards/images/747_671-GIV_9369.jpeg`
-- `670-GIV` — Givenchy · Organza · FID 4 · `fragrantica-scraper-archive/social-cards/images/746_670-GIV_4.jpeg`
-- `624-EST` — Estée Lauder · Intuition · FID 541 · `fragrantica-scraper-archive/social-cards/images/707_624-EST_541.jpeg`
-- `571-DAV` — Davidoff · Cool Water · FID 508 · `fragrantica-scraper-archive/social-cards/images/660_571-DAV_508.jpeg`
-- `544-DRC` — Dior · Tendre Poison · FID 220 · `fragrantica-scraper-archive/social-cards/images/634_544-DRC_220.jpeg`
-- `541-DRC` — Dior · Poison Girl · FID 35561 · `fragrantica-scraper-archive/social-cards/images/632_541-DRC_35561.jpeg`
-- `528-DRC` — Dior · Hypnotic Poison · FID 219 · `fragrantica-scraper-archive/social-cards/images/621_528-DRC_219.jpeg`
-- `524-DRC` — Dior · Dolce Vita · FID 222 · `fragrantica-scraper-archive/social-cards/images/617_524-DRC_222.jpeg`
-- `489-CRT` — Cartier · La Panthere · FID 23295 · `fragrantica-scraper-archive/social-cards/images/585_489-CRT_23295.jpeg`
-- `469-CAL` — Calvin Klein · Escape · FID 271 · `fragrantica-scraper-archive/social-cards/images/568_469-CAL_271.jpeg`
-- `462-CAC` — Cacharel · LouLou · FID 1276 · `fragrantica-scraper-archive/social-cards/images/562_462-CAC_1276.jpeg`
-- `1286-YZLO` — Yves Saint Laurent · Opium Pour Homme · FID 562 · `fragrantica-scraper-archive/social-cards/images/362_1286-YZLO_562.jpeg`
-- `1275-VER` — Versace · Eros · FID 16657 · `fragrantica-scraper-archive/social-cards/images/351_1275-VER_16657.jpeg`
-- `1259-SHU` — Shulton Company · Old Spice Original · FID 14746 · `fragrantica-scraper-archive/social-cards/images/336_1259-SHU_14746.jpeg`
-- `1246-RAL` — Ralph Lauren · Polo Blue · FID 1198 · `fragrantica-scraper-archive/social-cards/images/323_1246-RAL_1198.jpeg`
-- `1226-PAC` — Rabanne · Invictus · FID 18471 · `fragrantica-scraper-archive/social-cards/images/307_1226-PAC_18471.jpeg`
-- `1224-APO` — Nikos · Sculpture Homme · FID 925 · `fragrantica-scraper-archive/social-cards/images/305_1224-APO_925.jpeg`
-- `1182-JIM` — Jimmy Choo · Jimmy Choo Man · FID 25977 · `fragrantica-scraper-archive/social-cards/images/269_1182-JIM_25977.jpeg`
-- `1123-ARM` — Giorgio Armani · Acqua di Gio · FID 410 · `fragrantica-scraper-archive/social-cards/images/216_1123-ARM_410.jpeg`
-- `1108-DIE` — Diesel · Only The Brave · FID 5532 · `fragrantica-scraper-archive/social-cards/images/199_1108-DIE_5532.jpeg`
-- `1102-DAV` — Davidoff · Cool Water · FID 507 · `fragrantica-scraper-archive/social-cards/images/193_1102-DAV_507.jpeg`
-- `1085-DRC` — Dior · Sauvage · FID 31861 · `fragrantica-scraper-archive/social-cards/images/181_1085-DRC_31861.jpeg`
-- `1075-DRC` — Dior · Eau Sauvage · FID 231 · `fragrantica-scraper-archive/social-cards/images/171_1075-DRC_231.jpeg`
-- `1068-CHA` — Chanel · Boy Eau de Parfum · FID 37473 · `fragrantica-scraper-archive/social-cards/images/165_1068-CHA_37473.jpeg`
-- `1065-CHA` — Chanel · Allure Homme Sport · FID 607 · `fragrantica-scraper-archive/social-cards/images/162_1065-CHA_607.jpeg`
-- `1059-CRT` — Cartier · Declaration · FID 307 · `fragrantica-scraper-archive/social-cards/images/156_1059-CRT_307.jpeg`
-- `1029-BRB` — Burberry · Mr Burberry · FID 32565 · `fragrantica-scraper-archive/social-cards/images/130_1029-BRB_32565.jpeg`
-- `1020-AZZ` — Azzaro · Wanted · FID 38686 · `fragrantica-scraper-archive/social-cards/images/121_1020-AZZ_38686.jpeg`
 
 ## Remaining rows
 
-- `2044-LORV` — brand 2/2, name 1/2, exactId=True, file=True
-- `1986-SOO` — brand 1/1, name 0/1, exactId=True, file=True
-- `1682-HER` — brand 1/1, name 0/2, exactId=True, file=True
-- `1126-ARM` — brand 2/2, name 3/4, exactId=True, file=True
-- `1046-CAL` — brand 2/2, name 2/3, exactId=True, file=True
-- `495-CHA` — brand 1/1, name 1/2, exactId=True, file=True
-- `943-VER` — brand 1/1, name 0/2, exactId=True, file=True
-- `926-TOM` — brand 2/2, name 1/2, exactId=True, file=True
-- `912-SHIS` — brand 1/1, name 0/1, exactId=True, file=True
-- `850-NIN` — brand 2/2, name 0/2, exactId=True, file=True
-- `778-LAN` — brand 1/1, name 0/1, exactId=True, file=True
-- `751-KEN` — brand 1/1, name 1/2, exactId=True, file=True
-- `696-GLA` — brand 2/2, name 0/1, exactId=True, file=True
-- `515-CHL` — brand 1/1, name 0/1, exactId=True, file=True
-- `441-BLG` — brand 0/1, name 2/2, exactId=True, file=True
-- `1284-YZLO` — brand 3/3, name 0/1, exactId=True, file=True
-- `1270-VAN` — brand 4/4, name 1/2, exactId=True, file=True
-- `1247-RAL` — brand 1/2, name 1/2, exactId=True, file=True
-- `1149-GUR` — brand 1/1, name 1/2, exactId=True, file=True
-- `390-ACQ` — brand 3/3, name 7/8, exactId=True, file=True
+- `2044-LORV` — Lorenzo Villoresi · Teint de Neige — FID **5079** — https://www.fragrantica.com/perfume/Lorenzo-Villoresi/Teint-de-Neige-5079.html — brand 2/2, name 1/2
+- `1986-SOO` — SoOud · Nur — FID **10016** — https://www.fragrantica.com/perfume/SoOud/Nur-10016.html — brand 1/1, name 0/1
+- `1682-HER` — Hermès · 24 Faubourg — FID **27** — https://www.fragrantica.com/perfume/Hermes/24-Faubourg-27.html — brand 1/1, name 0/2
+- `1126-ARM` — Giorgio Armani · Acqua di Gio Profondo — FID **59532** — https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Profondo-59532.html — brand 2/2, name 3/4
+- `1046-CAL` — Calvin Klein · CK Everyone Eau de Toilette — FID **59021** — https://www.fragrantica.com/perfume/Calvin-Klein/CK-Everyone-Eau-de-Toilette-59021.html — brand 2/2, name 2/3
+- `495-CHA` — Chanel · Allure Sensuelle — FID **606** — https://www.fragrantica.com/perfume/Chanel/Allure-Sensuelle-606.html — brand 1/1, name 1/2
+- `943-VER` — Versace · Bright Crystal — FID **632** — https://www.fragrantica.com/perfume/Versace/Bright-Crystal-632.html — brand 1/1, name 0/2
+- `926-TOM` — Tommy Hilfiger · Tommy Girl — FID **3016** — https://www.fragrantica.com/perfume/Tommy-Hilfiger/Tommy-Girl-3016.html — brand 2/2, name 1/2
+- `912-SHIS` — Shiseido · Zen — FID **1499** — https://www.fragrantica.com/perfume/Shiseido/Zen-1499.html — brand 1/1, name 0/1
+- `850-NIN` — Nina Ricci · L Air du Temps — FID **1014** — https://www.fragrantica.com/perfume/Nina-Ricci/L-Air-du-Temps-1014.html — brand 2/2, name 0/2
+- `778-LAN` — Lancôme · Climat — FID **180** — https://www.fragrantica.com/perfume/Lancome/Climat-180.html — brand 1/1, name 0/1
+- `751-KEN` — Kenzo · Jeu d Amour — FID **25866** — https://www.fragrantica.com/perfume/Kenzo/Jeu-d-Amour-25866.html — brand 1/1, name 1/2
+- `696-GLA` — Guy Laroche · fidji — FID **2068** — https://www.fragrantica.com/perfume/guy-laroche/fidji-2068.html — brand 2/2, name 0/1
+- `515-CHL` — Chloe · Nomade — FID **48434** — https://www.fragrantica.com/perfume/Chloe/Nomade-48434.html — brand 1/1, name 0/1
+- `441-BLG` — Bvlgari · Jasmin Noir — FID **3750** — https://www.fragrantica.com/perfume/Bvlgari/Jasmin-Noir-3750.html — brand 0/1, name 2/2
+- `1284-YZLO` — Yves Saint Laurent · M7 — FID **1031** — https://www.fragrantica.com/perfume/Yves-Saint-Laurent/M7-1031.html — brand 3/3, name 0/1
+- `1270-VAN` — Van Cleef & Arpels · Bois Dore — FID **44864** — https://www.fragrantica.com/perfume/Van-Cleef-Arpels/Bois-Dore-44864.html — brand 4/4, name 1/2
+- `1247-RAL` — Ralph Lauren · Polo Red — FID **18598** — https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Red-18598.html — brand 1/2, name 1/2
+- `1149-GUR` — Guerlain · L Homme Ideal — FID **25780** — https://www.fragrantica.com/perfume/Guerlain/L-Homme-Ideal-25780.html — brand 1/1, name 1/2
+- `390-ACQ` — Acqua di Parma · Acqua di Parma Blu Mediterraneo Mandorlo di Sicilia — FID **1688** — https://www.fragrantica.com/perfume/Acqua-di-Parma/Acqua-di-Parma-Blu-Mediterraneo-Mandorlo-di-Sicilia-1688.html — brand 3/3, name 7/8
