@@ -64,7 +64,8 @@ jobs:
           assert len(site_rows) == 2324
           assert len({r['prestashopProductId'] for r in rows}) == 2324
           assert len({r['shobiUrl'] for r in rows}) == 2324
-          assert not any(str(r.get('reference', '')).upper().startswith('MIX') for r in rows)\n          assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in rows)
+          assert not any(str(r.get('reference', '')).upper().startswith('MIX') for r in rows)
+          assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in rows)
           assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in site_rows)
           assert [(r['code'], r['brand'], r['inspiredBy']) for r in site_rows] == [(r['code'], r['brand'], r['inspiredBy']) for r in rows]
           assert __import__('os').path.getsize('catalog_site.json') < __import__('os').path.getsize('database_complete.json')
