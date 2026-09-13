@@ -2,6 +2,7 @@
 
 - Catalog rows: **2324**
 - Yellow rows: **266**
+- One check from green: **84**
 
 ## Failed checks
 
@@ -14,6 +15,112 @@
 - `image`: **42**
 - `fid`: **31**
 - `url`: **31**
+
+## Failure signatures
+
+- `identity`: **82** — 490-CRT, 2483-CLEA, 2482-CLEA, 2301-DIP, 2193-LTN, 2190-ROJ, 2044-LORV, 1986-SOO, 1753-TEDL, 1829-BOB, 1763-JILS, 1701-TOSC, 1682-HER, 140-KUR, 703-HER, 1126-ARM, 410-BOD, 1046-CAL, 1090-COS, 1091-COS
+- `socialCard,notes`: **60** — 2692-SOL, 2438-KYLJ, 2533-RAL, 2513-PAC, 2456-PAC, 2234-MON, 2224-ARM, 2185-DRC, 2016-PARELM, 1542-JOM, 1504-DON, 896-RCAV, 884-RAL, 1037-BLG, 337-TIFF, 127-KIL, 848-NRO, 254-JOM, 920-TMU, 917-SWA
+- `identity,socialCard,notes,icons`: **55** — 2552-SOR, 2439-ZEG, 2427-CLEA, 2351-LOU, 2250-ARBAS, 2160-ZAR, 2104-CHA, 1989-VERT, 1885-WID, 1836-COT, 1684-GIV, 1659-CHRA, 1483-DSQ, 687-GUR, 153-PARF, 1161-HUG, 466-CAL, 304-KIE, 236-IND, 989-YZLO
+- `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
+- `image,season`: **10** — 2265-KAY, 1890-LEL, 866-PAC, 847-NRO, 716-ISS, 676-GUC, 646-ARM, 1281-YZLO, 1189-KEN, 1165-HUG
+- `socialCard,notes,season`: **8** — 2514-DRC, 2282-DRC, 2194-ORT, 2133-FRE, 1751-GUL, 928-TRU, 548-CLI, 1086-CLI
+- `identity,socialCard,notes,gender,season`: **4** — 2313-DRC, 2106-MARC, 1950-SWISA, 1767-LTN
+- `socialCard,notes,icons`: **4** — 2178-MON, 904-SALV, 612-ESC, 570-DOL
+- `identity,socialCard,notes,icons,gender,season`: **4** — 1644-DRC, 235-HOLL, 1251-ROM, 1076-DRC
+- `socialCard,notes,icons,gender,season`: **2** — 118-HAM, 325-PECK
+- `season`: **2** — 107-ARB, 973-VICT
+- `identity,socialCard,notes`: **2** — 621-EST, 1118-FAB
+- `identity,socialCard,notes,gender`: **1** — 828-MIY
+- `identity,socialCard,image,notes,icons,gender,season`: **1** — 521-DRC
+
+## One check from green
+
+| Code | Brand | Inspired by | Remaining check |
+|---|---|---|---|
+| 490-CRT | Cartier | Must de Cartier | identity |
+| 2483-CLEA | Clean | Clean Skin | identity |
+| 2482-CLEA | Clean | Cool Cotton | identity |
+| 2301-DIP | Diptyque | Fleur de Peau | identity |
+| 2193-LTN | Louis Vuitton | Nouveau Monde | identity |
+| 2190-ROJ | Roja Dove | Diaghilev | identity |
+| 2044-LORV | Lorenzo Villoresi | Teint de Neige | identity |
+| 1986-SOO | SoOud | Nur | identity |
+| 1753-TEDL | Ted Lapidus | Ted | identity |
+| 1829-BOB | Bobbi Brown | Bath | identity |
+| 1763-JILS | Jil Sander | Sun | identity |
+| 1701-TOSC | Tosca | Tosca | identity |
+| 1682-HER | Hermès | 24 Faubourg | identity |
+| 140-KUR | Maison Francis Kurkdjian | Oud Silk Mood | identity |
+| 703-HER | Hermès | Kelly Caleche | identity |
+| 1126-ARM | Giorgio Armani | Acqua di Gio Profondo | identity |
+| 410-BOD | The Body Shop | Black Musk | identity |
+| 1046-CAL | Calvin Klein | CK Everyone Eau de Toilette | identity |
+| 1090-COS | CoSTUME NATIONAL | Costume National Homme | identity |
+| 1091-COS | CoSTUME NATIONAL | Scent Intense | identity |
+| 139-KUR | Maison Francis Kurkdjian | Oud Satin Mood | identity |
+| 495-CHA | Chanel | Allure Sensuelle | identity |
+| 408-BAT | Bath Body Works | Warm Vanilla Sugar | identity |
+| 107-ARB | Arabian Oud | Titanium | season |
+| 988-YZLO | Yves Saint Laurent | Parisienne | identity |
+| 977-YZLO | Yves Saint Laurent | Black Opium | identity |
+| 973-VICT | Victoria's Secret | Wicked | season |
+| 944-VER | Versace | Crystal Noir | identity |
+| 943-VER | Versace | Bright Crystal | identity |
+| 926-TOM | Tommy Hilfiger | Tommy Girl | identity |
+| 921-TMU | Mugler | Angel Muse | identity |
+| 912-SHIS | Shiseido | Zen | identity |
+| 901-ROG | Roger Gallet | Rose | identity |
+| 879-PRA | Prada | Infusion d Iris | identity |
+| 867-PAL | Paloma Picasso | Paloma Picasso | identity |
+| 863-PAC | Rabanne | Olympea | identity |
+| 860-PAC | Rabanne | Lady Million | identity |
+| 850-NIN | Nina Ricci | L Air du Temps | identity |
+| 787-LAN | Lancôme | Magie Noire | identity |
+| 778-LAN | Lancôme | Climat | identity |
+| 776-LAL | Lalique | Satine | identity |
+| 756-KEN | Kenzo | Kenzo World | identity |
+| 751-KEN | Kenzo | Jeu d Amour | identity |
+| 738-JUI | Juicy Couture | Viva la Juicy | identity |
+| 709-HER | Hermès | Voyage d Hermes | identity |
+| 696-GLA | Guy Laroche | fidji | identity |
+| 688-GUR | Guerlain | L Instant Magic | identity |
+| 686-GUR | Guerlain | Insolence | identity |
+| 673-GRS | Gres | Cabotine | identity |
+| 671-GIV | Givenchy | Play For Her | identity |
+| 670-GIV | Givenchy | Organza | identity |
+| 624-EST | Estée Lauder | Intuition | identity |
+| 571-DAV | Davidoff | Cool Water | identity |
+| 544-DRC | Dior | Tendre Poison | identity |
+| 541-DRC | Dior | Poison Girl | identity |
+| 528-DRC | Dior | Hypnotic Poison | identity |
+| 524-DRC | Dior | Dolce Vita | identity |
+| 515-CHL | Chloe | Nomade | identity |
+| 489-CRT | Cartier | La Panthere | identity |
+| 469-CAL | Calvin Klein | Escape | identity |
+| 462-CAC | Cacharel | LouLou | identity |
+| 441-BLG | Bvlgari | Jasmin Noir | identity |
+| 1286-YZLO | Yves Saint Laurent | Opium Pour Homme | identity |
+| 1284-YZLO | Yves Saint Laurent | M7 | identity |
+| 1275-VER | Versace | Eros | identity |
+| 1270-VAN | Van Cleef & Arpels | Bois Dore | identity |
+| 1259-SHU | Shulton Company | Old Spice Original | identity |
+| 1247-RAL | Ralph Lauren | Polo Red | identity |
+| 1246-RAL | Ralph Lauren | Polo Blue | identity |
+| 1226-PAC | Rabanne | Invictus | identity |
+| 1224-APO | Nikos | Sculpture Homme | identity |
+| 1182-JIM | Jimmy Choo | Jimmy Choo Man | identity |
+| 1149-GUR | Guerlain | L Homme Ideal | identity |
+| 1123-ARM | Giorgio Armani | Acqua di Gio | identity |
+| 1108-DIE | Diesel | Only The Brave | identity |
+| 1102-DAV | Davidoff | Cool Water | identity |
+| 1085-DRC | Dior | Sauvage | identity |
+| 1075-DRC | Dior | Eau Sauvage | identity |
+| 1068-CHA | Chanel | Boy Eau de Parfum | identity |
+| 1065-CHA | Chanel | Allure Homme Sport | identity |
+| 1059-CRT | Cartier | Declaration | identity |
+| 1029-BRB | Burberry | Mr Burberry | identity |
+| 1020-AZZ | Azzaro | Wanted | identity |
+| 390-ACQ | Acqua di Parma | Acqua di Parma Blu Mediterraneo Mandorlo di Sicilia | identity |
 
 ## Issues
 

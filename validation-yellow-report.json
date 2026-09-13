@@ -1,6 +1,1620 @@
 {
   "catalogRows": 2324,
   "yellowRows": 266,
+  "singleFailureRows": [
+    {
+      "code": "490-CRT",
+      "brand": "Cartier",
+      "inspiredBy": "Must de Cartier",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/Must-de-Cartier-312.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "2483-CLEA",
+      "brand": "Clean",
+      "inspiredBy": "Clean Skin",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Clean/Clean-Skin-16603.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "2482-CLEA",
+      "brand": "Clean",
+      "inspiredBy": "Cool Cotton",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Clean/Cool-Cotton-23032.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "2301-DIP",
+      "brand": "Diptyque",
+      "inspiredBy": "Fleur de Peau",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Diptyque/Fleur-de-Peau-131717.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "2193-LTN",
+      "brand": "Louis Vuitton",
+      "inspiredBy": "Nouveau Monde",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Louis-Vuitton/Nouveau-Monde-49753.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "2190-ROJ",
+      "brand": "Roja Dove",
+      "inspiredBy": "Diaghilev",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Roja-Dove/Diaghilev-10109.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "2044-LORV",
+      "brand": "Lorenzo Villoresi",
+      "inspiredBy": "Teint de Neige",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lorenzo-Villoresi/Teint-de-Neige-5079.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1986-SOO",
+      "brand": "SoOud",
+      "inspiredBy": "Nur",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/SoOud/Nur-10016.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1753-TEDL",
+      "brand": "Ted Lapidus",
+      "inspiredBy": "Ted",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ted-Lapidus/Ted-5942.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1829-BOB",
+      "brand": "Bobbi Brown",
+      "inspiredBy": "Bath",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bobbi-Brown/Bath-11983.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1763-JILS",
+      "brand": "Jil Sander",
+      "inspiredBy": "Sun",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Jil-Sander/Sun-618.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1701-TOSC",
+      "brand": "Tosca",
+      "inspiredBy": "Tosca",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tosca/Tosca-5796.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1682-HER",
+      "brand": "Hermès",
+      "inspiredBy": "24 Faubourg",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/24-Faubourg-27.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "140-KUR",
+      "brand": "Maison Francis Kurkdjian",
+      "inspiredBy": "Oud Silk Mood",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Oud-Silk-Mood-48456.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "703-HER",
+      "brand": "Hermès",
+      "inspiredBy": "Kelly Caleche",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/Kelly-Caleche-1335.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1126-ARM",
+      "brand": "Giorgio Armani",
+      "inspiredBy": "Acqua di Gio Profondo",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Profondo-59532.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "410-BOD",
+      "brand": "The Body Shop",
+      "inspiredBy": "Black Musk",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Body-Shop/Black-Musk-32247.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1046-CAL",
+      "brand": "Calvin Klein",
+      "inspiredBy": "CK Everyone Eau de Toilette",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-Everyone-Eau-de-Toilette-59021.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1090-COS",
+      "brand": "CoSTUME NATIONAL",
+      "inspiredBy": "Costume National Homme",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/CoSTUME-NATIONAL/Costume-National-Homme-7047.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "1091-COS",
+      "brand": "CoSTUME NATIONAL",
+      "inspiredBy": "Scent Intense",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/CoSTUME-NATIONAL/Scent-Intense-2305.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "139-KUR",
+      "brand": "Maison Francis Kurkdjian",
+      "inspiredBy": "Oud Satin Mood",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Oud-Satin-Mood-30352.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "495-CHA",
+      "brand": "Chanel",
+      "inspiredBy": "Allure Sensuelle",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Allure-Sensuelle-606.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "408-BAT",
+      "brand": "Bath Body Works",
+      "inspiredBy": "Warm Vanilla Sugar",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bath-Body-Works/Warm-Vanilla-Sugar-3545.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "107-ARB",
+      "brand": "Arabian Oud",
+      "inspiredBy": "Titanium",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Arabian-Oud/Titanium-127709.html",
+      "issues": [
+        "Season not fully verified"
+      ],
+      "failedChecks": [
+        "season"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "988-YZLO",
+      "brand": "Yves Saint Laurent",
+      "inspiredBy": "Parisienne",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Parisienne-6493.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "977-YZLO",
+      "brand": "Yves Saint Laurent",
+      "inspiredBy": "Black Opium",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Black-Opium-25324.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "973-VICT",
+      "brand": "Victoria's Secret",
+      "inspiredBy": "Wicked",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Victoria-s-Secret/Wicked-133200.html",
+      "issues": [
+        "Season not fully verified"
+      ],
+      "failedChecks": [
+        "season"
+      ],
+      "notesCount": 3,
+      "matchedNotesCount": 3,
+      "iconsCount": 3
+    },
+    {
+      "code": "944-VER",
+      "brand": "Versace",
+      "inspiredBy": "Crystal Noir",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Versace/Crystal-Noir-631.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "943-VER",
+      "brand": "Versace",
+      "inspiredBy": "Bright Crystal",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Versace/Bright-Crystal-632.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "926-TOM",
+      "brand": "Tommy Hilfiger",
+      "inspiredBy": "Tommy Girl",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tommy-Hilfiger/Tommy-Girl-3016.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "921-TMU",
+      "brand": "Mugler",
+      "inspiredBy": "Angel Muse",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Mugler/Angel-Muse-36416.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "912-SHIS",
+      "brand": "Shiseido",
+      "inspiredBy": "Zen",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Shiseido/Zen-1499.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "901-ROG",
+      "brand": "Roger Gallet",
+      "inspiredBy": "Rose",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Roger-Gallet/Rose-3482.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "879-PRA",
+      "brand": "Prada",
+      "inspiredBy": "Infusion d Iris",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Infusion-d-Iris-1795.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "867-PAL",
+      "brand": "Paloma Picasso",
+      "inspiredBy": "Paloma Picasso",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Paloma-Picasso/Paloma-Picasso-1009.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "863-PAC",
+      "brand": "Rabanne",
+      "inspiredBy": "Olympea",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Rabanne/Olympea-31666.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "860-PAC",
+      "brand": "Rabanne",
+      "inspiredBy": "Lady Million",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Rabanne/Lady-Million-9045.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "850-NIN",
+      "brand": "Nina Ricci",
+      "inspiredBy": "L Air du Temps",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Nina-Ricci/L-Air-du-Temps-1014.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "787-LAN",
+      "brand": "Lancôme",
+      "inspiredBy": "Magie Noire",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lancome/Magie-Noire-174.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "778-LAN",
+      "brand": "Lancôme",
+      "inspiredBy": "Climat",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lancome/Climat-180.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "776-LAL",
+      "brand": "Lalique",
+      "inspiredBy": "Satine",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lalique/Satine-17840.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "756-KEN",
+      "brand": "Kenzo",
+      "inspiredBy": "Kenzo World",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kenzo/Kenzo-World-40278.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "751-KEN",
+      "brand": "Kenzo",
+      "inspiredBy": "Jeu d Amour",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kenzo/Jeu-d-Amour-25866.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "738-JUI",
+      "brand": "Juicy Couture",
+      "inspiredBy": "Viva la Juicy",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Juicy-Couture/Viva-la-Juicy-4410.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "709-HER",
+      "brand": "Hermès",
+      "inspiredBy": "Voyage d Hermes",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/Voyage-d-Hermes-7916.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "696-GLA",
+      "brand": "Guy Laroche",
+      "inspiredBy": "fidji",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/guy-laroche/fidji-2068.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "688-GUR",
+      "brand": "Guerlain",
+      "inspiredBy": "L Instant Magic",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Guerlain/L-Instant-Magic-1106.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "686-GUR",
+      "brand": "Guerlain",
+      "inspiredBy": "Insolence",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Guerlain/Insolence-667.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "673-GRS",
+      "brand": "Gres",
+      "inspiredBy": "Cabotine",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Gres/Cabotine-1061.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "671-GIV",
+      "brand": "Givenchy",
+      "inspiredBy": "Play For Her",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Play-For-Her-9369.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "670-GIV",
+      "brand": "Givenchy",
+      "inspiredBy": "Organza",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Organza-4.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "624-EST",
+      "brand": "Estée Lauder",
+      "inspiredBy": "Intuition",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Estee-Lauder/Intuition-541.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "571-DAV",
+      "brand": "Davidoff",
+      "inspiredBy": "Cool Water",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Davidoff/Cool-Water-508.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "544-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Tendre Poison",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Tendre-Poison-220.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "541-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Poison Girl",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Poison-Girl-35561.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "528-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Hypnotic Poison",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Hypnotic-Poison-219.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "524-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Dolce Vita",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dolce-Vita-222.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "515-CHL",
+      "brand": "Chloe",
+      "inspiredBy": "Nomade",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chloe/Nomade-48434.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "489-CRT",
+      "brand": "Cartier",
+      "inspiredBy": "La Panthere",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/La-Panthere-23295.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "469-CAL",
+      "brand": "Calvin Klein",
+      "inspiredBy": "Escape",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Escape-271.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "462-CAC",
+      "brand": "Cacharel",
+      "inspiredBy": "LouLou",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Cacharel/LouLou-1276.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "441-BLG",
+      "brand": "Bvlgari",
+      "inspiredBy": "Jasmin Noir",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Jasmin-Noir-3750.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1286-YZLO",
+      "brand": "Yves Saint Laurent",
+      "inspiredBy": "Opium Pour Homme",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Opium-Pour-Homme-562.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1284-YZLO",
+      "brand": "Yves Saint Laurent",
+      "inspiredBy": "M7",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/M7-1031.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1275-VER",
+      "brand": "Versace",
+      "inspiredBy": "Eros",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Versace/Eros-16657.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1270-VAN",
+      "brand": "Van Cleef & Arpels",
+      "inspiredBy": "Bois Dore",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Van-Cleef-Arpels/Bois-Dore-44864.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1259-SHU",
+      "brand": "Shulton Company",
+      "inspiredBy": "Old Spice Original",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Shulton-Company/Old-Spice-Original-14746.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1247-RAL",
+      "brand": "Ralph Lauren",
+      "inspiredBy": "Polo Red",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Red-18598.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1246-RAL",
+      "brand": "Ralph Lauren",
+      "inspiredBy": "Polo Blue",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Blue-1198.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1226-PAC",
+      "brand": "Rabanne",
+      "inspiredBy": "Invictus",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Rabanne/Invictus-18471.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1224-APO",
+      "brand": "Nikos",
+      "inspiredBy": "Sculpture Homme",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Nikos/Sculpture-Homme-925.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1182-JIM",
+      "brand": "Jimmy Choo",
+      "inspiredBy": "Jimmy Choo Man",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Jimmy-Choo/Jimmy-Choo-Man-25977.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1149-GUR",
+      "brand": "Guerlain",
+      "inspiredBy": "L Homme Ideal",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Guerlain/L-Homme-Ideal-25780.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1123-ARM",
+      "brand": "Giorgio Armani",
+      "inspiredBy": "Acqua di Gio",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-410.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1108-DIE",
+      "brand": "Diesel",
+      "inspiredBy": "Only The Brave",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Diesel/Only-The-Brave-5532.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1102-DAV",
+      "brand": "Davidoff",
+      "inspiredBy": "Cool Water",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Davidoff/Cool-Water-507.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1085-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Sauvage",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Sauvage-31861.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1075-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Eau Sauvage",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Eau-Sauvage-231.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1068-CHA",
+      "brand": "Chanel",
+      "inspiredBy": "Boy Eau de Parfum",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Boy-Eau-de-Parfum-37473.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1065-CHA",
+      "brand": "Chanel",
+      "inspiredBy": "Allure Homme Sport",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Allure-Homme-Sport-607.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1059-CRT",
+      "brand": "Cartier",
+      "inspiredBy": "Declaration",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/Declaration-307.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 3,
+      "matchedNotesCount": 3,
+      "iconsCount": 3
+    },
+    {
+      "code": "1029-BRB",
+      "brand": "Burberry",
+      "inspiredBy": "Mr Burberry",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Burberry/Mr-Burberry-32565.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1020-AZZ",
+      "brand": "Azzaro",
+      "inspiredBy": "Wanted",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Azzaro/Wanted-38686.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "390-ACQ",
+      "brand": "Acqua di Parma",
+      "inspiredBy": "Acqua di Parma Blu Mediterraneo Mandorlo di Sicilia",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Acqua-di-Parma/Acqua-di-Parma-Blu-Mediterraneo-Mandorlo-di-Sicilia-1688.html",
+      "issues": [
+        "Fragrantica identity not fully verified"
+      ],
+      "failedChecks": [
+        "identity"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    }
+  ],
+  "byFailureSignature": [
+    {
+      "signature": "identity",
+      "count": 82,
+      "codes": [
+        "490-CRT",
+        "2483-CLEA",
+        "2482-CLEA",
+        "2301-DIP",
+        "2193-LTN",
+        "2190-ROJ",
+        "2044-LORV",
+        "1986-SOO",
+        "1753-TEDL",
+        "1829-BOB",
+        "1763-JILS",
+        "1701-TOSC",
+        "1682-HER",
+        "140-KUR",
+        "703-HER",
+        "1126-ARM",
+        "410-BOD",
+        "1046-CAL",
+        "1090-COS",
+        "1091-COS",
+        "139-KUR",
+        "495-CHA",
+        "408-BAT",
+        "988-YZLO",
+        "977-YZLO",
+        "944-VER",
+        "943-VER",
+        "926-TOM",
+        "921-TMU",
+        "912-SHIS",
+        "901-ROG",
+        "879-PRA",
+        "867-PAL",
+        "863-PAC",
+        "860-PAC",
+        "850-NIN",
+        "787-LAN",
+        "778-LAN",
+        "776-LAL",
+        "756-KEN",
+        "751-KEN",
+        "738-JUI",
+        "709-HER",
+        "696-GLA",
+        "688-GUR",
+        "686-GUR",
+        "673-GRS",
+        "671-GIV",
+        "670-GIV",
+        "624-EST",
+        "571-DAV",
+        "544-DRC",
+        "541-DRC",
+        "528-DRC",
+        "524-DRC",
+        "515-CHL",
+        "489-CRT",
+        "469-CAL",
+        "462-CAC",
+        "441-BLG",
+        "1286-YZLO",
+        "1284-YZLO",
+        "1275-VER",
+        "1270-VAN",
+        "1259-SHU",
+        "1247-RAL",
+        "1246-RAL",
+        "1226-PAC",
+        "1224-APO",
+        "1182-JIM",
+        "1149-GUR",
+        "1123-ARM",
+        "1108-DIE",
+        "1102-DAV",
+        "1085-DRC",
+        "1075-DRC",
+        "1068-CHA",
+        "1065-CHA",
+        "1059-CRT",
+        "1029-BRB",
+        "1020-AZZ",
+        "390-ACQ"
+      ]
+    },
+    {
+      "signature": "socialCard,notes",
+      "count": 60,
+      "codes": [
+        "2692-SOL",
+        "2438-KYLJ",
+        "2533-RAL",
+        "2513-PAC",
+        "2456-PAC",
+        "2234-MON",
+        "2224-ARM",
+        "2185-DRC",
+        "2016-PARELM",
+        "1542-JOM",
+        "1504-DON",
+        "896-RCAV",
+        "884-RAL",
+        "1037-BLG",
+        "337-TIFF",
+        "127-KIL",
+        "848-NRO",
+        "254-JOM",
+        "920-TMU",
+        "917-SWA",
+        "909-SFER",
+        "882-PRA",
+        "843-NRO",
+        "829-MNTB",
+        "827-MISN",
+        "753-KEN",
+        "735-JIM",
+        "734-JIM",
+        "718-ISS",
+        "717-ISS",
+        "711-HUG",
+        "613-ESC",
+        "574-DON",
+        "566-DOL",
+        "557-DOL",
+        "500-CHA",
+        "483-CAR",
+        "475-CAL",
+        "470-CAL",
+        "468-CAL",
+        "426-BRB",
+        "1262-TMU",
+        "1250-RAL",
+        "1248-RAL",
+        "1245-PRA",
+        "1184-JOO",
+        "1172-ISS",
+        "1163-HUG",
+        "1134-ARM",
+        "1131-ARM",
+        "1096-DOL",
+        "1095-DOL",
+        "1092-DOL",
+        "1074-DRC",
+        "1064-CHA",
+        "1057-CAR",
+        "1045-CAL",
+        "1043-CAL",
+        "1036-BLG",
+        "1027-BRB"
+      ]
+    },
+    {
+      "signature": "identity,socialCard,notes,icons",
+      "count": 55,
+      "codes": [
+        "2552-SOR",
+        "2439-ZEG",
+        "2427-CLEA",
+        "2351-LOU",
+        "2250-ARBAS",
+        "2160-ZAR",
+        "2104-CHA",
+        "1989-VERT",
+        "1885-WID",
+        "1836-COT",
+        "1684-GIV",
+        "1659-CHRA",
+        "1483-DSQ",
+        "687-GUR",
+        "153-PARF",
+        "1161-HUG",
+        "466-CAL",
+        "304-KIE",
+        "236-IND",
+        "989-YZLO",
+        "987-YZLO",
+        "985-YZLO",
+        "979-YZLO",
+        "945-VER",
+        "910-SARJ",
+        "858-PAC",
+        "719-ISS",
+        "692-GUR",
+        "674-GUC",
+        "668-GIV",
+        "667-GIV",
+        "666-GIV",
+        "653-ARM",
+        "533-DRC",
+        "525-DRC",
+        "520-CHO",
+        "514-CHL",
+        "497-CHA",
+        "494-CHA",
+        "493-CER",
+        "487-CRT",
+        "425-BRB",
+        "421-BRB",
+        "411-BOD",
+        "399-ARA",
+        "880-PRA",
+        "777-LAL",
+        "769-LART",
+        "1160-HUG",
+        "1156-HER",
+        "1141-GIV",
+        "1136-ARM",
+        "1061-CRT",
+        "1060-CRT",
+        "476-CAL"
+      ]
+    },
+    {
+      "signature": "identity,fid,url,socialCard,image,notes,icons,gender,season",
+      "count": 31,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2085-CLIV",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "314-MOL",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR"
+      ]
+    },
+    {
+      "signature": "image,season",
+      "count": 10,
+      "codes": [
+        "2265-KAY",
+        "1890-LEL",
+        "866-PAC",
+        "847-NRO",
+        "716-ISS",
+        "676-GUC",
+        "646-ARM",
+        "1281-YZLO",
+        "1189-KEN",
+        "1165-HUG"
+      ]
+    },
+    {
+      "signature": "socialCard,notes,season",
+      "count": 8,
+      "codes": [
+        "2514-DRC",
+        "2282-DRC",
+        "2194-ORT",
+        "2133-FRE",
+        "1751-GUL",
+        "928-TRU",
+        "548-CLI",
+        "1086-CLI"
+      ]
+    },
+    {
+      "signature": "identity,socialCard,notes,gender,season",
+      "count": 4,
+      "codes": [
+        "2313-DRC",
+        "2106-MARC",
+        "1950-SWISA",
+        "1767-LTN"
+      ]
+    },
+    {
+      "signature": "socialCard,notes,icons",
+      "count": 4,
+      "codes": [
+        "2178-MON",
+        "904-SALV",
+        "612-ESC",
+        "570-DOL"
+      ]
+    },
+    {
+      "signature": "identity,socialCard,notes,icons,gender,season",
+      "count": 4,
+      "codes": [
+        "1644-DRC",
+        "235-HOLL",
+        "1251-ROM",
+        "1076-DRC"
+      ]
+    },
+    {
+      "signature": "socialCard,notes,icons,gender,season",
+      "count": 2,
+      "codes": [
+        "118-HAM",
+        "325-PECK"
+      ]
+    },
+    {
+      "signature": "season",
+      "count": 2,
+      "codes": [
+        "107-ARB",
+        "973-VICT"
+      ]
+    },
+    {
+      "signature": "identity,socialCard,notes",
+      "count": 2,
+      "codes": [
+        "621-EST",
+        "1118-FAB"
+      ]
+    },
+    {
+      "signature": "identity,socialCard,notes,gender",
+      "count": 1,
+      "codes": [
+        "828-MIY"
+      ]
+    },
+    {
+      "signature": "identity,socialCard,image,notes,icons,gender,season",
+      "count": 1,
+      "codes": [
+        "521-DRC"
+      ]
+    }
+  ],
   "byIssue": [
     {
       "issue": "Fragrantica identity not fully verified",
