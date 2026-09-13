@@ -1,0 +1,36 @@
+name: Analyze current-FID cards multipass
+
+on:
+  push:
+    paths:
+      - '.github/workflows/analyze-current-fid-cards-multipass.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr
+          python -m pip install pillow pytesseract
+      - name: Analyze current-ID Social Cards without mutating catalog
+        env:
+          DRY_RUN: '1'
+        run: python tools/validate_current_fid_cards_multipass.py
+      - name: Publish analysis
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add current-fid-card-multipass-validation.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Analyze current-FID Social Cards with multipass OCR"
+          git pull --rebase origin main
+          git push origin HEAD:main
