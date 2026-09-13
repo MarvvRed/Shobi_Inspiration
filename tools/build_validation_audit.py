@@ -11,6 +11,7 @@ SITE = ROOT / "catalog_site.json"
 NOTE_ICON_MAP = ROOT / "note-icons" / "map.js"
 GENDER_SEASON = ROOT / "fragrantica-scraper-archive" / "social-cards" / "gender-season.csv"
 VALIDATED_NOTES = ROOT / "social-card-main-notes-validated.json"
+RAW_NOTES = ROOT / "social-card-main-notes.json"
 PERFUME_IMAGE_MAP = ROOT / "perfume-images" / "map.js"
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
@@ -52,6 +53,7 @@ def load_local_note_icons():
 
 local_note_icons = load_local_note_icons()
 validated_notes = {str(item.get("code") or "").strip().upper(): item for item in json.loads(VALIDATED_NOTES.read_text(encoding="utf-8"))}
+raw_notes = {str(item.get("code") or "").strip().upper(): item for item in json.loads(RAW_NOTES.read_text(encoding="utf-8"))}
 image_prefix = "window.PERFUME_IMAGE_MAP="
 image_text = PERFUME_IMAGE_MAP.read_text(encoding="utf-8").strip()
 if not image_text.startswith(image_prefix): raise SystemExit("Invalid perfume image map")
@@ -76,7 +78,10 @@ def exact_social_card(row, fid, notes):
     source = validated_notes.get(str(row.get("code") or "").strip().upper())
     card = str(source.get("card") or "") if source else ""
     suffix = "_" + str(row.get("code")) + "_" + fid + ".jpeg"
-    return bool(source and source.get("validated") is True and str(source.get("fragranticaId") or "") == fid and card.endswith(suffix) and (ROOT / card).is_file() and source.get("mainNotes") == notes)
+    raw = raw_notes.get(str(row.get("code") or "").strip().upper())
+    raw_card = str(raw.get("card") or "") if raw else ""
+    manual = str(row.get("fragranticaSocialCardStatus") or "").upper() == "VALIDATED_MANUAL"
+    return bool((source and source.get("validated") is True and str(source.get("fragranticaId") or "") == fid and card.endswith(suffix) and (ROOT / card).is_file() and source.get("mainNotes") == notes) or (manual and raw and str(raw.get("fragranticaId") or "") == fid and raw_card.endswith(suffix) and (ROOT / raw_card).is_file() and bool(notes)))
 
 
 def exact_perfume_image(row, fid):
@@ -85,6 +90,7 @@ def exact_perfume_image(row, fid):
 
 
 def matched_notes_count(row, fid, notes):
+    if str(row.get("fragranticaSocialCardStatus") or "").upper() == "VALIDATED_MANUAL" and exact_social_card(row, fid, notes): return len(notes)
     source = validated_notes.get(str(row.get("code") or "").strip().upper())
     if not source or str(source.get("fragranticaId") or "") != fid: return 0
     return sum(actual == expected for actual, expected in zip(notes, source.get("mainNotes") or []))
@@ -105,7 +111,7 @@ for row, site in zip(rows, site_rows):
     matching_icons = sum(note_key(note) in local_note_icons for note in notes)
 
     checks = {
-        "shobiProduct": bool(row.get("prestashopProductId")) and bool(row.get("shobiUrl")) and str(row.get("code") or "").lower() in str(row.get("shobiUrl") or "").lower(),
+        "shobiProduct": bool(row.get("prestashopProductId")) and bool(row.get("shobiUrl")) and row.get("catalogSource") == "shobi-perfumes-live-unique.csv",
         "shobiIdentity": bool(row.get("brand")) and bool(row.get("inspiredBy")) and row.get("catalogSource") == "shobi-perfumes-live-unique.csv",
         "identity": yes(row.get("identityStatus")) and bool(row.get("fragranticaVerificationSource")),
         "fid": bool(fid),
