@@ -1,8 +1,8 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **47**
-- One check from green: **2**
+- Yellow rows: **46**
+- One check from green: **1**
 
 ## Failed checks
 
@@ -12,9 +12,9 @@
 - `identity`: **37**
 - `gender`: **36**
 - `season`: **36**
-- `image`: **32**
 - `fid`: **31**
 - `url`: **31**
+- `image`: **31**
 
 ## Failure signatures
 
@@ -26,14 +26,12 @@
 - `identity,socialCard,notes,icons,gender,season`: **2** — 235-HOLL, 1251-ROM
 - `socialCard,notes,season`: **1** — 2194-ORT
 - `gender`: **1** — 828-MIY
-- `image`: **1** — 521-DRC
 
 ## One check from green
 
 | Code | Brand | Inspired by | Remaining check |
 |---|---|---|---|
 | 828-MIY | Miu Miu | Miu Miu L Eau Bleue | gender |
-| 521-DRC | Dior | Dior Addict | image |
 
 ## Issues
 
@@ -43,9 +41,9 @@
 - Fragrantica identity not fully verified: **37**
 - Gender not fully verified: **36**
 - Season not fully verified: **36**
-- Missing perfume image: **32**
 - Missing Fragrantica ID: **31**
 - Missing direct Fragrantica URL: **31**
+- Missing perfume image: **31**
 - Main Notes order not fully verified: **4**
 
 ## Yellow rows
@@ -94,7 +92,6 @@
 | 945-VER | Versace | Eros Pour Femme | socialCard, notes, icons |
 | 828-MIY | Miu Miu | Miu Miu L Eau Bleue | gender |
 | 525-DRC | Dior | Dune | identity, socialCard, notes, icons |
-| 521-DRC | Dior | Dior Addict | image |
 | 487-CRT | Cartier | Baiser Vole | identity, socialCard, notes, icons |
 | 421-BRB | Burberry | Body | identity, socialCard, notes, icons |
 | 1251-ROM | Romane | Royal Blue | identity, socialCard, notes, icons, gender, season |

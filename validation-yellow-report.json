@@ -1,6 +1,6 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 47,
+  "yellowRows": 46,
   "singleFailureRows": [
     {
       "code": "828-MIY",
@@ -16,21 +16,6 @@
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
-    },
-    {
-      "code": "521-DRC",
-      "brand": "Dior",
-      "inspiredBy": "Dior Addict",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dior-Addict-215.html",
-      "issues": [
-        "Missing perfume image"
-      ],
-      "failedChecks": [
-        "image"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
     }
   ],
   "byFailureSignature": [
@@ -126,13 +111,6 @@
       "count": 1,
       "codes": [
         "828-MIY"
-      ]
-    },
-    {
-      "signature": "image",
-      "count": 1,
-      "codes": [
-        "521-DRC"
       ]
     }
   ],
@@ -410,44 +388,6 @@
       ]
     },
     {
-      "issue": "Missing perfume image",
-      "count": 32,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "521-DRC"
-      ]
-    },
-    {
       "issue": "Missing Fragrantica ID",
       "count": 31,
       "codes": [
@@ -486,6 +426,43 @@
     },
     {
       "issue": "Missing direct Fragrantica URL",
+      "count": 31,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2085-CLIV",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "314-MOL",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR"
+      ]
+    },
+    {
+      "issue": "Missing perfume image",
       "count": 31,
       "codes": [
         "2816-MOOD",
@@ -810,44 +787,6 @@
       ]
     },
     {
-      "check": "image",
-      "count": 32,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "521-DRC"
-      ]
-    },
-    {
       "check": "fid",
       "count": 31,
       "codes": [
@@ -886,6 +825,43 @@
     },
     {
       "check": "url",
+      "count": 31,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2085-CLIV",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "314-MOL",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR"
+      ]
+    },
+    {
+      "check": "image",
       "count": 31,
       "codes": [
         "2816-MOOD",
@@ -2102,21 +2078,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "521-DRC",
-      "brand": "Dior",
-      "inspiredBy": "Dior Addict",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dior-Addict-215.html",
-      "issues": [
-        "Missing perfume image"
-      ],
-      "failedChecks": [
-        "image"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
     },
     {
       "code": "487-CRT",
