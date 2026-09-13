@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: shobi-validation-writes
+  cancel-in-progress: false
+
 jobs:
   fix:
     runs-on: ubuntu-latest
@@ -28,7 +32,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add database_complete.json catalog_site.json social-card-main-notes-validated.json social-card-main-notes.json perfume-images/map.js perfume-images/*.avif fragrantica-scraper-archive/social-cards/images/corrected_*.jpeg seven-verified-fid-corrections.json validation-yellow-report.json validation-yellow-report.md
+          git add -A
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Correct eight verified Fragrantica IDs"
           git pull --rebase origin main
