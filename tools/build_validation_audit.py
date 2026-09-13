@@ -10,7 +10,8 @@ SITE = ROOT / "catalog_site.json"
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
 site_rows = json.loads(SITE.read_text(encoding="utf-8-sig"))
-site_by_code = {r["code"]: r for r in site_rows}
+if len(rows) != len(site_rows):
+    raise SystemExit("Complete/site catalog row count mismatch")
 
 
 def url_id(url):
@@ -22,7 +23,14 @@ def yes(value):
     return str(value or "").strip().upper() in {"VERIFIED", "VALIDATED", "CONFIRMED", "OK", "MATCH_CORRETTO", "MATCH CORRETTO"}
 
 counts = {"green": 0, "yellow": 0, "red": 0}
-for row in rows:
+for row, site in zip(rows, site_rows):
+    # catalog_site.json is deliberately generated in the exact same order as
+    # database_complete.json. Do not join by Shobi code: codes are display
+    # identifiers and are not guaranteed to be unique. The complete database
+    # uses PrestaShop product ID / Shobi URL as its uniqueness guarantees.
+    if (site.get("code"), site.get("brand"), site.get("inspiredBy")) != (row.get("code"), row.get("brand"), row.get("inspiredBy")):
+        raise SystemExit(f"Complete/site catalog alignment mismatch at product {row.get('prestashopProductId')}")
+
     fid = str(row.get("fragranticaId") or "").strip()
     furl = str(row.get("fragranticaUrl") or "").strip()
     notes = row.get("fragranticaSocialCardNotes") or []
@@ -66,12 +74,10 @@ for row in rows:
         "notesCount": len(notes),
     }
     row["validationAudit"] = audit
-    site = site_by_code.get(row["code"])
-    if site is not None:
-        site["validationStatus"] = status
-        site["validationIssues"] = issues
-        site["validationChecks"] = checks
-        site["validationNotesCount"] = len(notes)
+    site["validationStatus"] = status
+    site["validationIssues"] = issues
+    site["validationChecks"] = checks
+    site["validationNotesCount"] = len(notes)
 
 DB.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 SITE.write_text(json.dumps(site_rows, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
