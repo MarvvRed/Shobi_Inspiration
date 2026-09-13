@@ -36319,7 +36319,7 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -36327,15 +36327,13 @@
         "fid": true,
         "url": true,
         "socialCard": true,
-        "image": false,
+        "image": true,
         "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Missing perfume image"
-      ],
+      "issues": [],
       "notesCount": 4,
       "matchedNotesCount": 4,
       "iconsCount": 4
@@ -117366,7 +117364,7 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -117374,15 +117372,13 @@
         "fid": true,
         "url": true,
         "socialCard": true,
-        "image": false,
+        "image": true,
         "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Missing perfume image"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -141994,7 +141990,7 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -142002,15 +141998,13 @@
         "fid": true,
         "url": true,
         "socialCard": true,
-        "image": false,
+        "image": true,
         "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Missing perfume image"
-      ],
+      "issues": [],
       "notesCount": 4,
       "matchedNotesCount": 4,
       "iconsCount": 4

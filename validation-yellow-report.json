@@ -1,53 +1,7 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 133,
-  "singleFailureRows": [
-    {
-      "code": "2265-KAY",
-      "brand": "Kayali Fragrances",
-      "inspiredBy": "Oudgasm Rose Oud 16 Eau de Parfum Intense",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Oudgasm-Rose-Oud-16-Eau-de-Parfum-Intense-85186.html",
-      "issues": [
-        "Missing perfume image"
-      ],
-      "failedChecks": [
-        "image"
-      ],
-      "notesCount": 4,
-      "matchedNotesCount": 4,
-      "iconsCount": 4
-    },
-    {
-      "code": "716-ISS",
-      "brand": "Issey Miyake",
-      "inspiredBy": "A Scent by Issey Miyake",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/A-Scent-by-Issey-Miyake-6432.html",
-      "issues": [
-        "Missing perfume image"
-      ],
-      "failedChecks": [
-        "image"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "1165-HUG",
-      "brand": "Hugo Boss",
-      "inspiredBy": "Hugo Energise",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Energise-569.html",
-      "issues": [
-        "Missing perfume image"
-      ],
-      "failedChecks": [
-        "image"
-      ],
-      "notesCount": 4,
-      "matchedNotesCount": 4,
-      "iconsCount": 4
-    }
-  ],
+  "yellowRows": 130,
+  "singleFailureRows": [],
   "byFailureSignature": [
     {
       "signature": "socialCard,notes,icons",
@@ -190,15 +144,6 @@
         "1136-ARM",
         "1076-DRC",
         "476-CAL"
-      ]
-    },
-    {
-      "signature": "image",
-      "count": 3,
-      "codes": [
-        "2265-KAY",
-        "716-ISS",
-        "1165-HUG"
       ]
     },
     {
@@ -751,12 +696,11 @@
     },
     {
       "issue": "Missing perfume image",
-      "count": 35,
+      "count": 32,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2265-KAY",
         "2085-CLIV",
         "1748-BYR",
         "1550-YAN",
@@ -785,9 +729,7 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "716-ISS",
-        "521-DRC",
-        "1165-HUG"
+        "521-DRC"
       ]
     },
     {
@@ -1435,12 +1377,11 @@
     },
     {
       "check": "image",
-      "count": 35,
+      "count": 32,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2265-KAY",
         "2085-CLIV",
         "1748-BYR",
         "1550-YAN",
@@ -1469,9 +1410,7 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "716-ISS",
-        "521-DRC",
-        "1165-HUG"
+        "521-DRC"
       ]
     },
     {
@@ -1754,21 +1693,6 @@
       "notesCount": 3,
       "matchedNotesCount": 0,
       "iconsCount": 3
-    },
-    {
-      "code": "2265-KAY",
-      "brand": "Kayali Fragrances",
-      "inspiredBy": "Oudgasm Rose Oud 16 Eau de Parfum Intense",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Oudgasm-Rose-Oud-16-Eau-de-Parfum-Intense-85186.html",
-      "issues": [
-        "Missing perfume image"
-      ],
-      "failedChecks": [
-        "image"
-      ],
-      "notesCount": 4,
-      "matchedNotesCount": 4,
-      "iconsCount": 4
     },
     {
       "code": "2250-ARBAS",
@@ -3534,21 +3458,6 @@
       "iconsCount": 0
     },
     {
-      "code": "716-ISS",
-      "brand": "Issey Miyake",
-      "inspiredBy": "A Scent by Issey Miyake",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/A-Scent-by-Issey-Miyake-6432.html",
-      "issues": [
-        "Missing perfume image"
-      ],
-      "failedChecks": [
-        "image"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "692-GUR",
       "brand": "Guerlain",
       "inspiredBy": "Samsara Eau de Parfum",
@@ -4194,21 +4103,6 @@
       "notesCount": 6,
       "matchedNotesCount": 0,
       "iconsCount": 6
-    },
-    {
-      "code": "1165-HUG",
-      "brand": "Hugo Boss",
-      "inspiredBy": "Hugo Energise",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Energise-569.html",
-      "issues": [
-        "Missing perfume image"
-      ],
-      "failedChecks": [
-        "image"
-      ],
-      "notesCount": 4,
-      "matchedNotesCount": 4,
-      "iconsCount": 4
     },
     {
       "code": "1160-HUG",
