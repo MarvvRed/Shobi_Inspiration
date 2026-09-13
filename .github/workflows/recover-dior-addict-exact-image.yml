@@ -1,0 +1,42 @@
+name: Recover Dior Addict exact Fragrantica image
+
+on:
+  push:
+    paths:
+      - 'tools/recover_dior_addict_exact_image.py'
+      - '.github/workflows/recover-dior-addict-exact-image.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-validation-writes
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pillow pillow-avif-plugin
+      - run: python tools/recover_dior_addict_exact_image.py
+      - run: python tools/build_validation_audit.py
+      - run: python tools/analyze_validation_yellows.py
+      - name: Commit exact image
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add perfume-images/215.avif perfume-images/map.js dior-addict-image-recovery.json catalog_site.json validation-yellow-report.json validation-yellow-report.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Recover exact Fragrantica image for Dior Addict"
+          git push origin HEAD:main
