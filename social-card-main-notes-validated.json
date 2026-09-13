@@ -894,67 +894,467 @@
   {
     "code": "668-GIV",
     "fragranticaId": 35,
-    "card": "fragrantica-scraper-archive/social-cards/images/744_668-GIV_35.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_668-GIV_35.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Raspberry",
+      "Pepper",
+      "Vetiver",
+      "Sand",
+      "Magnolia",
+      "Amber"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Raspberry",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Pepper",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Vetiver",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Sand",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Magnolia",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Amber",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Raspberry",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Pepper",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Vetiver",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Sand",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Magnolia",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Amber",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "1684-GIV",
     "fragranticaId": 36,
-    "card": "fragrantica-scraper-archive/social-cards/images/2412_1684-GIV_36.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1684-GIV_36.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Aldehydes",
+      "Ylang-Ylang",
+      "Civet",
+      "Honey",
+      "Tuberose",
+      "Jasmine"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Aldehydes",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Ylang-Ylang",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Civet",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Honey",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Tuberose",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Jasmine",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Aldehydes",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Ylang-Ylang",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Civet",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Honey",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Tuberose",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Jasmine",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "1141-GIV",
     "fragranticaId": 39,
-    "card": "fragrantica-scraper-archive/social-cards/images/231_1141-GIV_39.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1141-GIV_39.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Vanilla",
+      "Almond",
+      "Tonka Bean",
+      "Benzoin",
+      "Mandarin Orange",
+      "Anise"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Vanilla",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Almond",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Tonka Bean",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Benzoin",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Mandarin Orange",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Anise",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Vanilla",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Almond",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Tonka Bean",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Benzoin",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Mandarin Orange",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Anise",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "687-GUR",
     "fragranticaId": 51,
-    "card": "fragrantica-scraper-archive/social-cards/images/1921_687-GUR_51.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_687-GUR_51.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Honey",
+      "Vanilla",
+      "Magnolia",
+      "Iris",
+      "Amber",
+      "Ylang-Ylang"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Honey",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Vanilla",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Magnolia",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Iris",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Amber",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Ylang-Ylang",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Honey",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Vanilla",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Magnolia",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Iris",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Amber",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Ylang-Ylang",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "692-GUR",
     "fragranticaId": 55,
-    "card": "fragrantica-scraper-archive/social-cards/images/762_692-GUR_55.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_692-GUR_55.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Sand",
+      "Ylang-Ylang",
+      "Vanilla",
+      "Iris",
+      "Jasmine",
+      "Amber"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Sand",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Ylang-Ylang",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Vanilla",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Iris",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Jasmine",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Amber",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Sand",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Ylang-Ylang",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Vanilla",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Iris",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Jasmine",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Amber",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "752-KEN",
@@ -1024,15 +1424,95 @@
   {
     "code": "979-YZLO",
     "fragranticaId": 92,
-    "card": "fragrantica-scraper-archive/social-cards/images/1003_979-YZLO_92.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_979-YZLO_92.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Vanilla",
+      "Almond Blossom",
+      "Clementine",
+      "Amber",
+      "Benzoin",
+      "Jasmine"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Vanilla",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Almond Blossom",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Clementine",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Amber",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Benzoin",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Jasmine",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Vanilla",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Almond Blossom",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Clementine",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Amber",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Benzoin",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Jasmine",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "986-YZLO",
@@ -1050,28 +1530,188 @@
   {
     "code": "987-YZLO",
     "fragranticaId": 94,
-    "card": "fragrantica-scraper-archive/social-cards/images/1010_987-YZLO_94.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_987-YZLO_94.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Rose",
+      "Violet",
+      "Mimosa",
+      "Hyacinth",
+      "Iris",
+      "Geranium"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Rose",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Violet",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Mimosa",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Hyacinth",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Iris",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Geranium",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Rose",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Violet",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Mimosa",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Hyacinth",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Iris",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Geranium",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "989-YZLO",
     "fragranticaId": 96,
-    "card": "fragrantica-scraper-archive/social-cards/images/1012_989-YZLO_96.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_989-YZLO_96.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Aldehydes",
+      "Oakmoss",
+      "Rose",
+      "Green Notes",
+      "Iris",
+      "Vetiver"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Aldehydes",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Oakmoss",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Rose",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Green Notes",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Iris",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Vetiver",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Aldehydes",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Oakmoss",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Rose",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Green Notes",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Iris",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Vetiver",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "1842-YZLO",
@@ -1115,28 +1755,188 @@
   {
     "code": "399-ARA",
     "fragranticaId": 122,
-    "card": "fragrantica-scraper-archive/social-cards/images/510_399-ARA_122.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_399-ARA_122.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Sand",
+      "Plum",
+      "Peach",
+      "Carnation",
+      "Ylang-Ylang",
+      "Styrax"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Sand",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Plum",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Peach",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Carnation",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Ylang-Ylang",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Styrax",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Sand",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Plum",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Peach",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Carnation",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Ylang-Ylang",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Styrax",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "2250-ARBAS",
     "fragranticaId": 128,
-    "card": "fragrantica-scraper-archive/social-cards/images/3841_2250-ARBAS_128.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_2250-ARBAS_128.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Bergamot",
+      "Ginger",
+      "Mandarin Orange",
+      "Woody Notes",
+      "Cardamom",
+      "Lily"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Bergamot",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Ginger",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Mandarin Orange",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Woody Notes",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Cardamom",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Lily",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Bergamot",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Ginger",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Mandarin Orange",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Woody Notes",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Cardamom",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Lily",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "437-BLG",
@@ -3000,95 +3800,82 @@
   {
     "code": "521-DRC",
     "fragranticaId": 215,
-    "card": "fragrantica-scraper-archive/social-cards/images/confirmed_521-DRC_215.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_521-DRC_215.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Vanilla",
+      "Tonka Bean",
+      "Blackberry",
+      "Jasmine",
+      "Orange Blossom"
+    ],
     "rawSlots": [
       {
         "slot": 1,
         "name": "Vanilla",
-        "ocrConfidence": 96.4
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Tonka Bean Ww",
-        "ocrConfidence": 70.0
+        "name": "Tonka Bean",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Blackberry",
-        "ocrConfidence": 96.2
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "ET ia Jasmine",
-        "ocrConfidence": 61.0
+        "name": "Jasmine",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Orange Blossom",
-        "ocrConfidence": 96.1
-      },
-      {
-        "slot": 6,
-        "name": "ad J Night Bloomin",
-        "ocrConfidence": 76.6
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Vanilla",
-        "raw": "Vanilla",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.4
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Tonka Bean",
-        "raw": "Tonka Bean Ww",
-        "matchScore": 0.97,
-        "margin": 0.377,
-        "ocrConfidence": 70.0
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Blackberry",
-        "raw": "Blackberry",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.2
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Jasmine",
-        "raw": "ET ia Jasmine",
-        "matchScore": 0.97,
-        "margin": 0.303,
-        "ocrConfidence": 61.0
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Orange Blossom",
-        "raw": "Orange Blossom",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.1
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 6,
-        "raw": "ad J Night Bloomin",
-        "bestScore": 0.75,
-        "margin": 0.032,
-        "ocrConfidence": 76.6
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "540-DRC",
@@ -3779,95 +4566,82 @@
   {
     "code": "1076-DRC",
     "fragranticaId": 228,
-    "card": "fragrantica-scraper-archive/social-cards/images/172_unknown_228.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1076-DRC_228.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Leather",
+      "Nutmeg",
+      "Vetiver",
+      "Lavender",
+      "Cedar"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "wr Leather La",
-        "ocrConfidence": 56.4
-      },
-      {
-        "slot": 2,
-        "name": "Leaf Violet a",
-        "ocrConfidence": 83.2
+        "name": "Leather",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Nutmeg lle",
-        "ocrConfidence": 57.9
+        "name": "Nutmeg",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Bh ea Vetiver",
-        "ocrConfidence": 49.2
+        "name": "Vetiver",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "oe",
-        "ocrConfidence": 15.7
+        "name": "Lavender",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Cedar",
-        "ocrConfidence": 96.5
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Leather",
-        "raw": "wr Leather La",
-        "matchScore": 0.93,
-        "margin": 0.161,
-        "ocrConfidence": 56.4
-      },
-      {
-        "slot": 2,
-        "name": "Violet",
-        "raw": "Leaf Violet a",
-        "matchScore": 0.93,
-        "margin": 0.013,
-        "ocrConfidence": 83.2
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Nutmeg",
-        "raw": "Nutmeg lle",
-        "matchScore": 0.97,
-        "margin": 0.264,
-        "ocrConfidence": 57.9
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Vetiver",
-        "raw": "Bh ea Vetiver",
-        "matchScore": 0.97,
-        "margin": 0.37,
-        "ocrConfidence": 49.2
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Lavender",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Cedar",
-        "raw": "Cedar",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.5
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 5,
-        "raw": "oe",
-        "bestScore": 0.667,
-        "margin": 0.095,
-        "ocrConfidence": 15.7
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "1080-DRC",
@@ -4062,101 +4836,96 @@
   },
   {
     "code": "2185-DRC",
-    "fragranticaId": 232,
-    "card": "fragrantica-scraper-archive/social-cards/images/3681_2185-DRC_232.jpeg",
+    "fragranticaId": 72771,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_2185-DRC_72771.jpeg",
     "validated": true,
     "mainNotes": [
-      "Lemon",
+      "Elemi",
       "Lavender",
-      "Rosemary",
       "Bergamot",
-      "Oakmoss",
-      "Basil"
+      "Lemon",
+      "Basil",
+      "Oakmoss"
     ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Lemon",
-        "ocrConfidence": 96.0
+        "name": "Elemi",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Lavender",
-        "ocrConfidence": 96.3
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "peers Rosemary iim",
-        "ocrConfidence": 59.7
+        "name": "Bergamot",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Bergamot",
-        "ocrConfidence": 91.6
+        "name": "Lemon",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "wT apy Oakmoss",
-        "ocrConfidence": 51.4
+        "name": "Basil",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "Basil",
-        "ocrConfidence": 95.7
+        "name": "Oakmoss",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
-        "name": "Lemon",
-        "raw": "Lemon",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.0
+        "name": "Elemi",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Lavender",
-        "raw": "Lavender",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.3
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 3,
-        "name": "Rosemary",
-        "raw": "peers Rosemary iim",
-        "matchScore": 0.93,
-        "margin": 0.0,
-        "ocrConfidence": 59.7
+        "name": "Bergamot",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
-        "name": "Bergamot",
-        "raw": "Bergamot",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 91.6
+        "name": "Lemon",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
-        "name": "Oakmoss",
-        "raw": "wT apy Oakmoss",
-        "matchScore": 0.97,
-        "margin": 0.451,
-        "ocrConfidence": 51.4
+        "name": "Basil",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
-        "name": "Basil",
-        "raw": "Basil",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.7
+        "name": "Oakmoss",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "1078-DRC",
@@ -16638,101 +17407,96 @@
   },
   {
     "code": "828-MIY",
-    "fragranticaId": 724,
-    "card": "fragrantica-scraper-archive/social-cards/images/unknown_828-MIY_724.jpeg",
+    "fragranticaId": 42720,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_828-MIY_42720.jpeg",
     "validated": true,
     "mainNotes": [
-      "Rosemary",
-      "Cypress",
-      "Bagas de Zimbro",
-      "Lime",
-      "Cedar",
-      "Ginger"
+      "Lily",
+      "Green Notes",
+      "Dew Drop",
+      "White Flowers",
+      "Akigalawood",
+      "Musk"
     ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Rosemary",
-        "ocrConfidence": 96.7
+        "name": "Lily",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Cypress ea 4 ie",
-        "ocrConfidence": 70.9
+        "name": "Green Notes",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Bagas de Zimboro 2",
-        "ocrConfidence": 69.5
+        "name": "Dew Drop",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Lime",
-        "ocrConfidence": 95.0
+        "name": "White Flowers",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "Cedar",
-        "ocrConfidence": 96.5
+        "name": "Akigalawood",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "Ginger",
-        "ocrConfidence": 96.4
+        "name": "Musk",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
-        "name": "Rosemary",
-        "raw": "Rosemary",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.7
+        "name": "Lily",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
-        "name": "Cypress",
-        "raw": "Cypress ea 4 ie",
-        "matchScore": 0.97,
-        "margin": 0.327,
-        "ocrConfidence": 70.9
+        "name": "Green Notes",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 3,
-        "name": "Bagas de Zimbro",
-        "raw": "Bagas de Zimboro 2",
-        "matchScore": 0.909,
-        "margin": 0.409,
-        "ocrConfidence": 69.5
+        "name": "Dew Drop",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
-        "name": "Lime",
-        "raw": "Lime",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.0
+        "name": "White Flowers",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
-        "name": "Cedar",
-        "raw": "Cedar",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.5
+        "name": "Akigalawood",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
-        "name": "Ginger",
-        "raw": "Ginger",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.4
+        "name": "Musk",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "831-MOS",
@@ -32590,95 +33354,82 @@
   {
     "code": "2427-CLEA",
     "fragranticaId": 3024,
-    "card": "fragrantica-scraper-archive/social-cards/images/4164_2427-CLEA_3024.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_2427-CLEA_3024.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Sea Water",
+      "Citruses",
+      "Musk",
+      "Fern",
+      "Orange Blossom"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Sea Water Ara",
-        "ocrConfidence": 76.5
+        "name": "Sea Water",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Citruses YF",
-        "ocrConfidence": 65.0
-      },
-      {
-        "slot": 3,
-        "name": "Lemon Verbena",
-        "ocrConfidence": 92.0
+        "name": "Citruses",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "rz usk",
-        "ocrConfidence": 69.2
+        "name": "Musk",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "SP Fern",
-        "ocrConfidence": 68.1
+        "name": "Fern",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Orange Blossom",
-        "ocrConfidence": 96.2
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Sea Water",
-        "raw": "Sea Water Ara",
-        "matchScore": 0.97,
-        "margin": 0.04,
-        "ocrConfidence": 76.5
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Citruses",
-        "raw": "Citruses YF",
-        "matchScore": 0.97,
-        "margin": 0.361,
-        "ocrConfidence": 65.0
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
-        "slot": 3,
-        "name": "Lemon Verbena",
-        "raw": "Lemon Verbena",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 92.0
+        "slot": 4,
+        "name": "Musk",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Fern",
-        "raw": "SP Fern",
-        "matchScore": 0.97,
-        "margin": 0.303,
-        "ocrConfidence": 68.1
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Orange Blossom",
-        "raw": "Orange Blossom",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.2
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 4,
-        "raw": "rz usk",
-        "bestScore": 0.6,
-        "margin": 0.067,
-        "ocrConfidence": 69.2
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "932-TRU",
@@ -32878,96 +33629,96 @@
   },
   {
     "code": "1184-JOO",
-    "fragranticaId": 3100,
-    "card": "fragrantica-scraper-archive/social-cards/images/271_1184-JOO_3100.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "fragranticaId": 1251,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1184-JOO_1251.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Vanilla",
+      "Cinnamon",
+      "Heliotrope",
+      "Tonka Bean",
+      "Orange Blossom",
+      "Jasmine"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Civet ij",
-        "ocrConfidence": 60.4
+        "name": "Vanilla",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Aldenydes",
-        "ocrConfidence": 92.2
+        "name": "Cinnamon",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "eee",
-        "ocrConfidence": 30.6
+        "name": "Heliotrope",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Ea Jasmine",
-        "ocrConfidence": 70.3
+        "name": "Tonka Bean",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "Amber",
-        "ocrConfidence": 94.9
+        "name": "Orange Blossom",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "Vanilla",
-        "ocrConfidence": 95.0
+        "name": "Jasmine",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
-        "name": "Civet",
-        "raw": "Civet ij",
-        "matchScore": 0.97,
-        "margin": 0.355,
-        "ocrConfidence": 60.4
+        "name": "Vanilla",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
-        "name": "Aldehydes",
-        "raw": "Aldenydes",
-        "matchScore": 0.889,
-        "margin": 0.28,
-        "ocrConfidence": 92.2
+        "name": "Cinnamon",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Heliotrope",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
-        "name": "Jasmine",
-        "raw": "Ea Jasmine",
-        "matchScore": 0.97,
-        "margin": 0.22,
-        "ocrConfidence": 70.3
+        "name": "Tonka Bean",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
-        "name": "Amber",
-        "raw": "Amber",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 94.9
+        "name": "Orange Blossom",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
-        "name": "Vanilla",
-        "raw": "Vanilla",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.0
+        "name": "Jasmine",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 3,
-        "raw": "eee",
-        "bestScore": 0.667,
-        "margin": 0.095,
-        "ocrConfidence": 30.6
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "2097-ACQ",
@@ -42357,95 +43108,69 @@
   {
     "code": "1836-COT",
     "fragranticaId": 6029,
-    "card": "fragrantica-scraper-archive/social-cards/images/2715_1836-COT_6029.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1836-COT_6029.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Vanilla",
+      "Tonka Bean",
+      "Coconut",
+      "Jasmine"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Vanilla ae",
-        "ocrConfidence": 66.9
+        "name": "Vanilla",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "ee Tonka Bean",
-        "ocrConfidence": 75.0
-      },
-      {
-        "slot": 3,
-        "name": "Amber",
-        "ocrConfidence": 96.5
+        "name": "Tonka Bean",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Coconut",
-        "ocrConfidence": 96.2
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "S Jasmine",
-        "ocrConfidence": 86.4
-      },
-      {
-        "slot": 6,
-        "name": "ioe",
-        "ocrConfidence": 26.6
+        "name": "Jasmine",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Vanilla",
-        "raw": "Vanilla ae",
-        "matchScore": 0.97,
-        "margin": 0.1,
-        "ocrConfidence": 66.9
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Tonka Bean",
-        "raw": "ee Tonka Bean",
-        "matchScore": 0.97,
-        "margin": 0.41,
-        "ocrConfidence": 75.0
-      },
-      {
-        "slot": 3,
-        "name": "Amber",
-        "raw": "Amber",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.5
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Coconut",
-        "raw": "Coconut",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.2
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Jasmine",
-        "raw": "S Jasmine",
-        "matchScore": 0.97,
-        "margin": 0.17,
-        "ocrConfidence": 86.4
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 6,
-        "raw": "ioe",
-        "bestScore": 0.667,
-        "margin": 0.0,
-        "ocrConfidence": 26.6
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "2045-HER",
@@ -42935,95 +43660,82 @@
   {
     "code": "304-KIE",
     "fragranticaId": 6188,
-    "card": "fragrantica-scraper-archive/social-cards/images/1203_304-KIE_6188.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_304-KIE_6188.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Musk",
+      "Ylang-Ylang",
+      "Tonka Bean",
+      "Lily",
+      "Neroli"
+    ],
     "rawSlots": [
       {
         "slot": 1,
         "name": "Musk",
-        "ocrConfidence": 95.7
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Ylang- Ylang",
-        "ocrConfidence": 90.9
-      },
-      {
-        "slot": 3,
-        "name": "Orange Blossom om",
-        "ocrConfidence": 73.0
+        "name": "Ylang-Ylang",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "WY Tonka Bean",
-        "ocrConfidence": 74.7
+        "name": "Tonka Bean",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Lily",
-        "ocrConfidence": 96.9
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "aT Neroll",
-        "ocrConfidence": 47.2
+        "name": "Neroli",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Musk",
-        "raw": "Musk",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.7
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Ylang-Ylang",
-        "raw": "Ylang- Ylang",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 90.9
-      },
-      {
-        "slot": 3,
-        "name": "Orange Blossom",
-        "raw": "Orange Blossom om",
-        "matchScore": 0.97,
-        "margin": 0.0,
-        "ocrConfidence": 73.0
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Tonka Bean",
-        "raw": "WY Tonka Bean",
-        "matchScore": 0.97,
-        "margin": 0.303,
-        "ocrConfidence": 74.7
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Lily",
-        "raw": "Lily",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.9
-      }
-    ],
-    "failures": [
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
       {
         "slot": 6,
-        "raw": "aT Neroll",
-        "bestScore": 0.667,
-        "margin": 0.0,
-        "ocrConfidence": 47.2
+        "name": "Neroli",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "2591-CRD",
@@ -46867,95 +47579,82 @@
   {
     "code": "1659-CHRA",
     "fragranticaId": 6714,
-    "card": "fragrantica-scraper-archive/social-cards/images/2401_1659-CHRA_6714.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1659-CHRA_6714.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Vanilla",
+      "Red Apple",
+      "Amber",
+      "Sand",
+      "Heliotrope"
+    ],
     "rawSlots": [
       {
         "slot": 1,
         "name": "Vanilla",
-        "ocrConfidence": 96.5
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Red Apple os Wl",
-        "ocrConfidence": 56.0
+        "name": "Red Apple",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Amber hat",
-        "ocrConfidence": 62.7
+        "name": "Amber",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "avd",
-        "ocrConfidence": 58.4
-      },
-      {
-        "slot": 5,
-        "name": "yy Pineapple",
-        "ocrConfidence": 67.5
+        "name": "Sand",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "FY Heliotrope",
-        "ocrConfidence": 64.0
+        "name": "Heliotrope",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Vanilla",
-        "raw": "Vanilla",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.5
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Red Apple",
-        "raw": "Red Apple os Wl",
-        "matchScore": 0.97,
-        "margin": 0.04,
-        "ocrConfidence": 56.0
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Amber",
-        "raw": "Amber hat",
-        "matchScore": 0.97,
-        "margin": 0.264,
-        "ocrConfidence": 62.7
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
-        "slot": 5,
-        "name": "Pineapple",
-        "raw": "yy Pineapple",
-        "matchScore": 0.97,
-        "margin": 0.04,
-        "ocrConfidence": 67.5
+        "slot": 4,
+        "name": "Sand",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Heliotrope",
-        "raw": "FY Heliotrope",
-        "matchScore": 0.97,
-        "margin": 0.418,
-        "ocrConfidence": 64.0
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 4,
-        "raw": "avd",
-        "bestScore": 0.6,
-        "margin": 0.029,
-        "ocrConfidence": 58.4
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "2547-KUR",
@@ -57225,15 +57924,95 @@
   {
     "code": "1483-DSQ",
     "fragranticaId": 12937,
-    "card": "fragrantica-scraper-archive/social-cards/images/2283_1483-DSQ_12937.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1483-DSQ_12937.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Cinnamon",
+      "Amber",
+      "Cashmir wood",
+      "Pepper",
+      "Patchouli",
+      "Angelica"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Cinnamon",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Amber",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Cashmir wood",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Pepper",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Patchouli",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Angelica",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Cinnamon",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Amber",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Cashmir wood",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Pepper",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Patchouli",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Angelica",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "421-BRB",
@@ -61864,101 +62643,96 @@
   },
   {
     "code": "1118-FAB",
-    "fragranticaId": 15303,
-    "card": "fragrantica-scraper-archive/social-cards/images/unknown_1118-FAB_15303.jpeg",
+    "fragranticaId": 38206,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1118-FAB_38206.jpeg",
     "validated": true,
     "mainNotes": [
       "Lavender",
       "Anise",
-      "Coumarin",
-      "Musk",
-      "Ylang-Ylang",
-      "Sandalwood"
+      "Oakmoss",
+      "Bergamot",
+      "Basil",
+      "Geranium"
     ],
     "rawSlots": [
       {
         "slot": 1,
         "name": "Lavender",
-        "ocrConfidence": 96.1
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Anise",
-        "ocrConfidence": 96.5
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "ee Coumarin",
-        "ocrConfidence": 67.0
+        "name": "Oakmoss",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Musk",
-        "ocrConfidence": 96.5
+        "name": "Bergamot",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "Ylang- Ylang",
-        "ocrConfidence": 90.6
+        "name": "Basil",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "Sandalwood",
-        "ocrConfidence": 95.8
+        "name": "Geranium",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Lavender",
-        "raw": "Lavender",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.1
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Anise",
-        "raw": "Anise",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.5
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 3,
-        "name": "Coumarin",
-        "raw": "ee Coumarin",
-        "matchScore": 0.97,
-        "margin": 0.303,
-        "ocrConfidence": 67.0
+        "name": "Oakmoss",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
-        "name": "Musk",
-        "raw": "Musk",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.5
+        "name": "Bergamot",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
-        "name": "Ylang-Ylang",
-        "raw": "Ylang- Ylang",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 90.6
+        "name": "Basil",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
-        "name": "Sandalwood",
-        "raw": "Sandalwood",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.8
+        "name": "Geranium",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "561-DOL",
@@ -66090,96 +66864,96 @@
   },
   {
     "code": "153-PARF",
-    "fragranticaId": 16939,
-    "card": "fragrantica-scraper-archive/social-cards/images/unknown_153-PARF_16939.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "fragranticaId": 4323,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_153-PARF_4323.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Cedar",
+      "Patchouli",
+      "Rum",
+      "Dried Fruits",
+      "Nutmeg",
+      "Musk"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Tobacco",
-        "ocrConfidence": 96.4
+        "name": "Cedar",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Vanilla",
-        "ocrConfidence": 87.8
+        "name": "Patchouli",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Cinnamon",
-        "ocrConfidence": 96.6
+        "name": "Rum",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Incense",
-        "ocrConfidence": 95.4
+        "name": "Dried Fruits",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "Osmanthus",
-        "ocrConfidence": 89.1
+        "name": "Nutmeg",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "Super",
-        "ocrConfidence": 76.6
+        "name": "Musk",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
-        "name": "Tobacco",
-        "raw": "Tobacco",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.4
+        "name": "Cedar",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
-        "name": "Vanilla",
-        "raw": "Vanilla",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 87.8
+        "name": "Patchouli",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 3,
-        "name": "Cinnamon",
-        "raw": "Cinnamon",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.6
+        "name": "Rum",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
-        "name": "Incense",
-        "raw": "Incense",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.4
+        "name": "Dried Fruits",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
-        "name": "Osmanthus",
-        "raw": "Osmanthus",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 89.1
-      }
-    ],
-    "failures": [
+        "name": "Nutmeg",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
       {
         "slot": 6,
-        "raw": "Super",
-        "bestScore": 0.667,
-        "margin": 0.0,
-        "ocrConfidence": 76.6
+        "name": "Musk",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "702-HER",
@@ -84163,94 +84937,82 @@
   {
     "code": "666-GIV",
     "fragranticaId": 25972,
-    "card": "fragrantica-scraper-archive/social-cards/images/742_666-GIV_25972.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_666-GIV_25972.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Mirabelle",
+      "Jasmine",
+      "Sand",
+      "Vetiver",
+      "Peach"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "4 Mirabelle",
-        "ocrConfidence": 64.6
+        "name": "Mirabelle",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "ts Jasmine LORE",
-        "ocrConfidence": 46.7
-      },
-      {
-        "slot": 3,
-        "name": "2p Patchoull Py",
-        "ocrConfidence": 51.6
+        "name": "Jasmine",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "me Sa wood",
-        "ocrConfidence": 45.8
+        "name": "Sand",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Vetiver",
-        "ocrConfidence": 96.4
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "EE Peach",
-        "ocrConfidence": 74.7
+        "name": "Peach",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Mirabelle",
-        "raw": "4 Mirabelle",
-        "matchScore": 0.97,
-        "margin": 0.37,
-        "ocrConfidence": 64.6
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Jasmine",
-        "raw": "ts Jasmine LORE",
-        "matchScore": 0.93,
-        "margin": 0.171,
-        "ocrConfidence": 46.7
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Sand",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Vetiver",
-        "raw": "Vetiver",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.4
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Peach",
-        "raw": "EE Peach",
-        "matchScore": 0.97,
-        "margin": 0.192,
-        "ocrConfidence": 74.7
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 3,
-        "raw": "2p Patchoull Py",
-        "bestScore": 0.667,
-        "margin": 0.046,
-        "ocrConfidence": 51.6
-      },
-      {
-        "slot": 4,
-        "raw": "me Sa wood",
-        "bestScore": 0.737,
-        "margin": 0.041,
-        "ocrConfidence": 45.8
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "1182-JIM",
@@ -84640,101 +85402,96 @@
   },
   {
     "code": "917-SWA",
-    "fragranticaId": 26119,
-    "card": "fragrantica-scraper-archive/social-cards/images/953_917-SWA_26119.jpeg",
+    "fragranticaId": 11258,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_917-SWA_11258.jpeg",
     "validated": true,
     "mainNotes": [
-      "Incense",
-      "Patchouli",
-      "Amber",
-      "Benzoin",
+      "Litchi",
+      "Pink Pepper",
       "Rose",
-      "Pink Pepper"
+      "Musk",
+      "Tuberose",
+      "Benzoin"
     ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Incense",
-        "ocrConfidence": 93.2
+        "name": "Litchi",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Patchoull",
-        "ocrConfidence": 91.2
+        "name": "Pink Pepper",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Amber",
-        "ocrConfidence": 96.4
+        "name": "Rose",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Benzoin",
-        "ocrConfidence": 91.4
+        "name": "Musk",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "Rose",
-        "ocrConfidence": 96.4
+        "name": "Tuberose",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "Pink Pepper",
-        "ocrConfidence": 96.1
+        "name": "Benzoin",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
-        "name": "Incense",
-        "raw": "Incense",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 93.2
+        "name": "Litchi",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
-        "name": "Patchouli",
-        "raw": "Patchoull",
-        "matchScore": 0.889,
-        "margin": 0.193,
-        "ocrConfidence": 91.2
+        "name": "Pink Pepper",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 3,
-        "name": "Amber",
-        "raw": "Amber",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.4
+        "name": "Rose",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
-        "name": "Benzoin",
-        "raw": "Benzoin",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 91.4
+        "name": "Musk",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
-        "name": "Rose",
-        "raw": "Rose",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.4
+        "name": "Tuberose",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
-        "name": "Pink Pepper",
-        "raw": "Pink Pepper",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.1
+        "name": "Benzoin",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "845-NRO",
@@ -85193,95 +85950,82 @@
   {
     "code": "514-CHL",
     "fragranticaId": 26227,
-    "card": "fragrantica-scraper-archive/social-cards/images/609_514-CHL_26227.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_514-CHL_26227.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Neroli",
+      "Orange",
+      "Stephanotis",
+      "Musk",
+      "Rose"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "ee Nerol",
-        "ocrConfidence": 31.8
+        "name": "Neroli",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Orange Blossom",
-        "ocrConfidence": 96.3
+        "name": "Orange",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Stephanotis",
-        "ocrConfidence": 90.7
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Musk",
-        "ocrConfidence": 96.1
-      },
-      {
-        "slot": 5,
-        "name": "Ss wa Rose",
-        "ocrConfidence": 60.9
-      },
-      {
-        "slot": 6,
-        "name": "Pear",
-        "ocrConfidence": 96.3
-      }
-    ],
-    "validatedSlots": [
-      {
-        "slot": 2,
-        "name": "Orange Blossom",
-        "raw": "Orange Blossom",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.3
-      },
-      {
-        "slot": 3,
-        "name": "Stephanotis",
-        "raw": "Stephanotis",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 90.7
-      },
-      {
-        "slot": 4,
-        "name": "Musk",
-        "raw": "Musk",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.1
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Rose",
-        "raw": "Ss wa Rose",
-        "matchScore": 0.97,
-        "margin": 0.27,
-        "ocrConfidence": 60.9
-      },
-      {
-        "slot": 6,
-        "name": "Pear",
-        "raw": "Pear",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.3
+        "ocrConfidence": null
       }
     ],
-    "failures": [
+    "validatedSlots": [
       {
         "slot": 1,
-        "raw": "ee Nerol",
-        "bestScore": 0.714,
-        "margin": 0.048,
-        "ocrConfidence": 31.8
+        "name": "Neroli",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Orange",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Stephanotis",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Musk",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Rose",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "2101-KUR",
@@ -87419,15 +88163,95 @@
   {
     "code": "777-LAL",
     "fragranticaId": 28250,
-    "card": "fragrantica-scraper-archive/social-cards/images/831_777-LAL_28250.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_777-LAL_28250.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Tonka Bean",
+      "Cinnamon",
+      "Rose",
+      "Patchouli",
+      "Pepper",
+      "Labdanum"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Tonka Bean",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Cinnamon",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Rose",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Patchouli",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Pepper",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Labdanum",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Tonka Bean",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Cinnamon",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Rose",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Patchouli",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Pepper",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Labdanum",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "964-VICT",
@@ -105918,95 +106742,82 @@
   {
     "code": "985-YZLO",
     "fragranticaId": 38914,
-    "card": "fragrantica-scraper-archive/social-cards/images/1008_985-YZLO_38914.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_985-YZLO_38914.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Straw",
+      "Raspberry",
+      "Peony",
+      "Pear",
+      "Musk"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "strawberry Nie",
-        "ocrConfidence": 63.8
+        "name": "Straw",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Raspberry",
-        "ocrConfidence": 91.5
-      },
-      {
-        "slot": 3,
-        "name": "Gp Patchouli",
-        "ocrConfidence": 60.3
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "2 Peony",
-        "ocrConfidence": 74.2
+        "name": "Peony",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Pear",
-        "ocrConfidence": 96.2
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "se usk",
-        "ocrConfidence": 54.3
+        "name": "Musk",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
-        "name": "Strawberry",
-        "raw": "strawberry Nie",
-        "matchScore": 0.97,
-        "margin": 0.04,
-        "ocrConfidence": 63.8
+        "name": "Straw",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Raspberry",
-        "raw": "Raspberry",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 91.5
-      },
-      {
-        "slot": 3,
-        "name": "Patchouli",
-        "raw": "Gp Patchouli",
-        "matchScore": 0.97,
-        "margin": 0.155,
-        "ocrConfidence": 60.3
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Peony",
-        "raw": "2 Peony",
-        "matchScore": 0.97,
-        "margin": 0.47,
-        "ocrConfidence": 74.2
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Pear",
-        "raw": "Pear",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.2
-      }
-    ],
-    "failures": [
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
       {
         "slot": 6,
-        "raw": "se usk",
-        "bestScore": 0.667,
-        "margin": 0.0,
-        "ocrConfidence": 54.3
+        "name": "Musk",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "2316-ATKI",
@@ -115533,101 +116344,96 @@
   },
   {
     "code": "621-EST",
-    "fragranticaId": 43639,
-    "card": "fragrantica-scraper-archive/social-cards/images/unknown_621-EST_43639.jpeg",
+    "fragranticaId": 11538,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_621-EST_11538.jpeg",
     "validated": true,
     "mainNotes": [
       "Coconut",
-      "Frangipani",
-      "Vanilla",
-      "Cashmir wood",
-      "Jasmine",
+      "Tiare Flower",
+      "Caramel",
+      "Sand",
+      "Myrrh",
       "Amber"
     ],
     "rawSlots": [
       {
         "slot": 1,
         "name": "Coconut",
-        "ocrConfidence": 87.7
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Frangipani eee",
-        "ocrConfidence": 68.8
+        "name": "Tiare Flower",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Vanilla",
-        "ocrConfidence": 96.7
+        "name": "Caramel",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Cashmir wood",
-        "ocrConfidence": 80.0
+        "name": "Sand",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "Jasmine",
-        "ocrConfidence": 96.3
+        "name": "Myrrh",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Amber",
-        "ocrConfidence": 95.5
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Coconut",
-        "raw": "Coconut",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 87.7
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
-        "name": "Frangipani",
-        "raw": "Frangipani eee",
-        "matchScore": 0.97,
-        "margin": 0.349,
-        "ocrConfidence": 68.8
+        "name": "Tiare Flower",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 3,
-        "name": "Vanilla",
-        "raw": "Vanilla",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.7
+        "name": "Caramel",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
-        "name": "Cashmir wood",
-        "raw": "Cashmir wood",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 80.0
+        "name": "Sand",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
-        "name": "Jasmine",
-        "raw": "Jasmine",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.3
+        "name": "Myrrh",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Amber",
-        "raw": "Amber",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.5
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "531-DRC",
@@ -122483,15 +123289,95 @@
   {
     "code": "1885-WID",
     "fragranticaId": 47781,
-    "card": "fragrantica-scraper-archive/social-cards/images/2798_1885-WID_47781.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1885-WID_47781.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Leather",
+      "Raspberry",
+      "Agarwood (Oud)",
+      "Vanilla",
+      "Violet",
+      "Amber"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Leather",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Raspberry",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Agarwood (Oud)",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Vanilla",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Violet",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Amber",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Leather",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Raspberry",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Agarwood (Oud)",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Vanilla",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Violet",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Amber",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "2504-JUL",
@@ -122522,15 +123408,95 @@
   {
     "code": "1989-VERT",
     "fragranticaId": 47923,
-    "card": "fragrantica-scraper-archive/social-cards/images/3370_1989-VERT_47923.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1989-VERT_47923.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Mango",
+      "Rhubarb",
+      "Cardamom",
+      "Ginger",
+      "Coffee",
+      "Vetiver"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Mango",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Rhubarb",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Cardamom",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Ginger",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Coffee",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Vetiver",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Mango",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Rhubarb",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Cardamom",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Ginger",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Coffee",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Vetiver",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "172-SHALM",
@@ -124291,101 +125257,96 @@
   },
   {
     "code": "1248-RAL",
-    "fragranticaId": 48482,
-    "card": "fragrantica-scraper-archive/social-cards/images/325_1248-RAL_48482.jpeg",
+    "fragranticaId": 29738,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1248-RAL_29738.jpeg",
     "validated": true,
     "mainNotes": [
+      "Cranberry",
+      "Amber",
+      "Coffee",
       "Leather",
-      "Apple",
-      "Lavender",
-      "Musk",
-      "Cedar",
+      "Grapefruit",
       "Ginger"
     ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Leather &",
-        "ocrConfidence": 89.8
+        "name": "Cranberry",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Apple",
-        "ocrConfidence": 96.7
+        "name": "Amber",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "ao Lavender Tid",
-        "ocrConfidence": 55.2
+        "name": "Coffee",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "SS Musk",
-        "ocrConfidence": 68.4
+        "name": "Leather",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "tl Se Cedar",
-        "ocrConfidence": 58.8
+        "name": "Grapefruit",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Ginger",
-        "ocrConfidence": 96.0
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
-        "name": "Leather",
-        "raw": "Leather &",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 89.8
+        "name": "Cranberry",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 2,
-        "name": "Apple",
-        "raw": "Apple",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.7
+        "name": "Amber",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 3,
-        "name": "Lavender",
-        "raw": "ao Lavender Tid",
-        "matchScore": 0.93,
-        "margin": 0.33,
-        "ocrConfidence": 55.2
+        "name": "Coffee",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
-        "name": "Musk",
-        "raw": "SS Musk",
-        "matchScore": 0.97,
-        "margin": 0.22,
-        "ocrConfidence": 68.4
+        "name": "Leather",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
-        "name": "Cedar",
-        "raw": "tl Se Cedar",
-        "matchScore": 0.97,
-        "margin": 0.325,
-        "ocrConfidence": 58.8
+        "name": "Grapefruit",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Ginger",
-        "raw": "Ginger",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.0
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "683-GUR",
@@ -152616,15 +153577,95 @@
   {
     "code": "1644-DRC",
     "fragranticaId": 68415,
-    "card": "fragrantica-scraper-archive/social-cards/images/2371_unknown_68415.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1644-DRC_68415.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Lavender",
+      "Licorice",
+      "Nutmeg",
+      "Cinnamon",
+      "Sand",
+      "Cardamom"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Lavender",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Licorice",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Nutmeg",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Cinnamon",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Sand",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Cardamom",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Lavender",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Licorice",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Nutmeg",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Cinnamon",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Sand",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Cardamom",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "1788-YZLO",
@@ -163115,42 +164156,96 @@
   },
   {
     "code": "2692-SOL",
-    "fragranticaId": 76319,
-    "card": "fragrantica-scraper-archive/social-cards/images/4653_2692-SOL_76319.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "fragranticaId": 82595,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_2692-SOL_82595.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Tuberose",
+      "Coconut",
+      "Ylang-Ylang",
+      "Sand",
+      "Vanilla",
+      "Amber"
+    ],
     "rawSlots": [
       {
+        "slot": 1,
+        "name": "Tuberose",
+        "ocrConfidence": null
+      },
+      {
         "slot": 2,
-        "name": "boa",
-        "ocrConfidence": 28.9
+        "name": "Coconut",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Ylang-Ylang",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Sand",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "th",
-        "ocrConfidence": 24.5
+        "name": "Vanilla",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Amber",
+        "ocrConfidence": null
       }
     ],
-    "validatedSlots": [],
-    "failures": [
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Tuberose",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
       {
         "slot": 2,
-        "raw": "boa",
-        "bestScore": 0.857,
-        "margin": 0.19,
-        "ocrConfidence": 28.9
+        "name": "Coconut",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Ylang-Ylang",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Sand",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
-        "raw": "th",
-        "bestScore": 0.571,
-        "margin": 0.0,
-        "ocrConfidence": 24.5
+        "name": "Vanilla",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Amber",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "2004-BYR",
@@ -166997,96 +168092,96 @@
   },
   {
     "code": "2016-PARELM",
-    "fragranticaId": 79218,
-    "card": "fragrantica-scraper-archive/social-cards/images/3374_2016-PARELM_79218.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "fragranticaId": 50275,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_2016-PARELM_50275.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Raspberry",
+      "Amber",
+      "Saffron",
+      "Rose",
+      "Guaiac Wood",
+      "Agarwood (Oud)"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Agarwood Oud",
-        "ocrConfidence": 91.8
+        "name": "Raspberry",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "ig eat F",
-        "ocrConfidence": 56.0
+        "name": "Amber",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Raspberry",
-        "ocrConfidence": 96.2
+        "name": "Saffron",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Vanilla",
-        "ocrConfidence": 95.5
+        "name": "Rose",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "Caramel",
-        "ocrConfidence": 57.2
+        "name": "Guaiac Wood",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "Ee Amber",
-        "ocrConfidence": 73.5
+        "name": "Agarwood (Oud)",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
-        "name": "Agarwood (Oud)",
-        "raw": "Agarwood Oud",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 91.8
+        "name": "Raspberry",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Amber",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 3,
-        "name": "Raspberry",
-        "raw": "Raspberry",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.2
+        "name": "Saffron",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 4,
-        "name": "Vanilla",
-        "raw": "Vanilla",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.5
+        "name": "Rose",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 5,
-        "name": "Caramel",
-        "raw": "Caramel",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 57.2
+        "name": "Guaiac Wood",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       },
       {
         "slot": 6,
-        "name": "Amber",
-        "raw": "Ee Amber",
-        "matchScore": 0.97,
-        "margin": 0.146,
-        "ocrConfidence": 73.5
+        "name": "Agarwood (Oud)",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 2,
-        "raw": "ig eat F",
-        "bestScore": 0.75,
-        "margin": 0.179,
-        "ocrConfidence": 56.0
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "2114-HER",
@@ -170581,15 +171676,95 @@
   {
     "code": "2160-ZAR",
     "fragranticaId": 83741,
-    "card": "fragrantica-scraper-archive/social-cards/images/3784_2160-ZAR_83741.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_2160-ZAR_83741.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Vanilla",
+      "Neroli",
+      "Orange Blossom",
+      "Tonka Bean",
+      "Orange",
+      "Rose"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Vanilla",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Neroli",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Orange Blossom",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Tonka Bean",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Orange",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Rose",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Vanilla",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Neroli",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Orange Blossom",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Tonka Bean",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Orange",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Rose",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   },
   {
     "code": "2479-PHL",
@@ -190054,5 +191229,965 @@
     "failures": [],
     "reasons": [],
     "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
+  },
+  {
+    "code": "2552-SOR",
+    "fragranticaId": 75119,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_2552-SOR_75119.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Animal Notes",
+      "Wormwood",
+      "Chamomile"
+    ],
+    "rawSlots": [
+      {
+        "slot": 4,
+        "name": "Animal Notes",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Wormwood",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Chamomile",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 4,
+        "name": "Animal Notes",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Wormwood",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Chamomile",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "2178-MON",
+    "fragranticaId": 69818,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_2178-MON_69818.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Pine Tree",
+      "Sandalwood",
+      "Green Notes",
+      "Cedar",
+      "Vetiver",
+      "Clary Sage"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Pine Tree",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Sandalwood",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Green Notes",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Cedar",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Vetiver",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Clary Sage",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Pine Tree",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Sandalwood",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Green Notes",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Cedar",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Vetiver",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Clary Sage",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "1542-JOM",
+    "fragranticaId": 46186,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1542-JOM_46186.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Ice"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Ice",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Ice",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "896-RCAV",
+    "fragranticaId": 58538,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_896-RCAV_58538.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Vanilla",
+      "Magnolia",
+      "Cedar",
+      "Patchouli",
+      "Rose"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Vanilla",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Magnolia",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Cedar",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Patchouli",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Rose",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Vanilla",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Magnolia",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Cedar",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Patchouli",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Rose",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "254-JOM",
+    "fragranticaId": 13829,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_254-JOM_13829.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Gardenia",
+      "Jasmine",
+      "Ylang-Ylang",
+      "Narcissus",
+      "Musk",
+      "Bergamot"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Gardenia",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Jasmine",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Ylang-Ylang",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Narcissus",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Musk",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Bergamot",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Gardenia",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Jasmine",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Ylang-Ylang",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Narcissus",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Musk",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Bergamot",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "909-SFER",
+    "fragranticaId": 26777,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_909-SFER_26777.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Mimosa",
+      "Musk",
+      "Iris",
+      "Vanilla",
+      "Heliotrope",
+      "White Flowers"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Mimosa",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Musk",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Iris",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Vanilla",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Heliotrope",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "White Flowers",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Mimosa",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Musk",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Iris",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Vanilla",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Heliotrope",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "White Flowers",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "904-SALV",
+    "fragranticaId": 765,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_904-SALV_765.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Aldehydes",
+      "Narcissus",
+      "Incense",
+      "Benzoin",
+      "Myrrh",
+      "Amber"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Aldehydes",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Narcissus",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Incense",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Benzoin",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Myrrh",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Amber",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Aldehydes",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Narcissus",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Incense",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Benzoin",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Myrrh",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Amber",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "612-ESC",
+    "fragranticaId": 28630,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_612-ESC_28630.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Fruity Notes",
+      "Strawberry",
+      "Pineapple",
+      "Milk",
+      "Caramel",
+      "Melon"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Fruity Notes",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Strawberry",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Pineapple",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Milk",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Caramel",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Melon",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Fruity Notes",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Strawberry",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Pineapple",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Milk",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Caramel",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Melon",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "570-DOL",
+    "fragranticaId": 484,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_570-DOL_484.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Aldehydes",
+      "Carnation",
+      "French Marigold",
+      "Vanilla"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Aldehydes",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Carnation",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "French Marigold",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Vanilla",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Aldehydes",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Carnation",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "French Marigold",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Vanilla",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "880-PRA",
+    "fragranticaId": 31045,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_880-PRA_31045.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Carnation",
+      "Styrax",
+      "Sandalwood",
+      "Patchouli",
+      "Orange"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Carnation",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Styrax",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Sandalwood",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Patchouli",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Orange",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Carnation",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Styrax",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Sandalwood",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Patchouli",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Orange",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "769-LART",
+    "fragranticaId": 1261,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_769-LART_1261.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Fig Leaf",
+      "Fig",
+      "Coconut",
+      "Sand",
+      "Almond",
+      "Dried Fruits"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Fig Leaf",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Fig",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Coconut",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Sand",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Almond",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Dried Fruits",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Fig Leaf",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Fig",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Coconut",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Sand",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Almond",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Dried Fruits",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "476-CAL",
+    "fragranticaId": 35568,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_476-CAL_35568.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Mojito",
+      "Lime",
+      "Coconut",
+      "Guava",
+      "Lemon",
+      "Cedar"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Mojito",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Lime",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Coconut",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Guava",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Lemon",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Cedar",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Mojito",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Lime",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Coconut",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Guava",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Lemon",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Cedar",
+        "raw": "CURRENT_FID_MULTIPASS_OCR",
+        "matchScore": null,
+        "margin": null
+      }
+    ],
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
   }
 ]
