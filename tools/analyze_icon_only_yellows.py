@@ -4,7 +4,10 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 DB=json.loads((ROOT/'database_complete.json').read_text(encoding='utf-8-sig'))
 SITE=json.loads((ROOT/'catalog_site.json').read_text(encoding='utf-8-sig'))
-txt=(ROOT/'note-icons'/'map.js').read_text(encoding='utf-8').strip(); p='window.NOTE_ICON_MAP='; mp=json.loads(txt[len(p):].rstrip(';'))
+txt=(ROOT/'note-icons'/'map.js').read_text(encoding='utf-8').strip()
+m=re.match(r'^window\.[A-Z0-9_]+\s*=\s*(\{.*\})\s*;?$',txt,re.S)
+if not m: raise SystemExit('Cannot parse note-icons/map.js')
+mp=json.loads(m.group(1))
 def key(s): return re.sub(r'\s+',' ',str(s or '').strip().lower())
 def loose(s): return re.sub(r'[^a-z0-9]+','',key(s))
 loose_map={}
