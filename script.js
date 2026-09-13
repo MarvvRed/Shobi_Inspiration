@@ -33,31 +33,26 @@ function getMainNotes(p) {
     return Array.isArray(v) ? v : [];
 }
 
-function displayPerfumes(perfumes) {
+const PERFUME_BATCH_SIZE = 60;
+let renderedPerfumes = [];
+let renderedPerfumeCount = 0;
+let batchObserver = null;
+
+function renderNextPerfumeBatch() {
     const container = document.getElementById('resultsContainer');
+    if (!container || renderedPerfumeCount >= renderedPerfumes.length) return;
+
+    batchObserver?.disconnect();
+    document.getElementById('results-load-sentinel')?.remove();
+
     const template = document.getElementById('perfume-card-template');
-    const resultsCountEl = document.getElementById('results-count');
+    const batch = renderedPerfumes.slice(renderedPerfumeCount, renderedPerfumeCount + PERFUME_BATCH_SIZE);
+    const fragment = document.createDocumentFragment();
 
-    container.innerHTML = '';
-
-    let countText = `Showing ${perfumes.length}`;
-    if (state.selectedBrand) {
-        countText += ` result(s) for "${state.selectedBrand}"`;
-    } else if (state.showingFavorites) {
-        countText += ` favorite(s)`;
-    } else {
-        countText += ` of ${allPerfumes.length} results`;
-    }
-    resultsCountEl.textContent = countText + ".";
-
-    if (perfumes.length === 0) {
-        container.innerHTML = `<p class="text-secondary col-span-full">No perfumes matched your selection.</p>`;
-        return;
-    }
-
-    perfumes.forEach(perfume => {
+    batch.forEach(perfume => {
         const p = perfume.item ? perfume.item : perfume;
         const card = template.content.cloneNode(true);
+        const cardElement = card.firstElementChild;
         const isFavorite = state.favorites.includes(p.code);
 
         card.querySelector('[data-field="code"]').textContent = p.code;
@@ -71,28 +66,72 @@ function displayPerfumes(perfumes) {
         favButton.dataset.code = p.code;
         favButton.innerHTML = isFavorite ? '<i class="fa-solid fa-heart"></i>' : '<i class="fa-regular fa-heart"></i>';
         if (isFavorite) favButton.classList.add('is-favorite');
+        favButton.addEventListener('click', toggleFavorite);
 
         const audienceIconsContainer = card.querySelector('[data-field="audience-icons"]');
         audienceIconsContainer.innerHTML = getAudienceIcons(p.genderAffinity) + getSeasonBadges(p.seasons);
         const mainNotesContainer = card.querySelector('[data-field="main-notes"]');
         mainNotesContainer.innerHTML = getMainNotesBadges(getMainNotes(p));
 
-        card.querySelector('[data-action="filter-brand"]').dataset.brand = p.brand;
-        container.appendChild(card);
+        const brandButton = card.querySelector('[data-action="filter-brand"]');
+        brandButton.dataset.brand = p.brand;
+        brandButton.addEventListener('click', e => handleBrandFilterClick(e.currentTarget.dataset.brand));
+        card.querySelectorAll('[data-action="filter-icon"]').forEach(btn =>
+            btn.addEventListener('click', e => {
+                const el = e.currentTarget;
+                handleIconFilterClick(el.dataset.filterType, el.dataset.filterValue);
+            })
+        );
+        fragment.appendChild(cardElement);
     });
 
-    container.querySelectorAll('.favorite-btn').forEach(btn =>
-        btn.addEventListener('click', toggleFavorite)
-    );
-    container.querySelectorAll('[data-action="filter-brand"]').forEach(btn =>
-        btn.addEventListener('click', (e) => handleBrandFilterClick(e.currentTarget.dataset.brand))
-    );
-    container.querySelectorAll('[data-action="filter-icon"]').forEach(btn =>
-        btn.addEventListener('click', (e) => {
-            const el = e.currentTarget;
-            handleIconFilterClick(el.dataset.filterType, el.dataset.filterValue);
-        })
-    );
+    container.appendChild(fragment);
+    renderedPerfumeCount += batch.length;
+    window.enhancePerfumeBatch?.(batch);
+
+    if (renderedPerfumeCount < renderedPerfumes.length) {
+        const sentinel = document.createElement('div');
+        sentinel.id = 'results-load-sentinel';
+        sentinel.className = 'col-span-full h-1';
+        sentinel.setAttribute('aria-hidden', 'true');
+        container.appendChild(sentinel);
+
+        if ('IntersectionObserver' in window) {
+            batchObserver = new IntersectionObserver(entries => {
+                if (entries.some(entry => entry.isIntersecting)) renderNextPerfumeBatch();
+            }, { rootMargin: '900px 0px' });
+            batchObserver.observe(sentinel);
+        } else {
+            renderNextPerfumeBatch();
+        }
+    }
+}
+
+function displayPerfumes(perfumes) {
+    const container = document.getElementById('resultsContainer');
+    const resultsCountEl = document.getElementById('results-count');
+
+    batchObserver?.disconnect();
+    container.innerHTML = '';
+    renderedPerfumes = perfumes;
+    renderedPerfumeCount = 0;
+
+    let countText = `Showing ${perfumes.length}`;
+    if (state.selectedBrand) {
+        countText += ` result(s) for "${state.selectedBrand}"`;
+    } else if (state.showingFavorites) {
+        countText += ' favorite(s)';
+    } else {
+        countText += ` of ${allPerfumes.length} results`;
+    }
+    resultsCountEl.textContent = countText + '.';
+
+    if (perfumes.length === 0) {
+        container.innerHTML = '<p class="text-secondary col-span-full">No perfumes matched your selection.</p>';
+        return;
+    }
+
+    renderNextPerfumeBatch();
 }
 
 function applyFiltersAndRender() {
