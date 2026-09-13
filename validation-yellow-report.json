@@ -1,6 +1,6 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 144,
+  "yellowRows": 137,
   "singleFailureRows": [],
   "byFailureSignature": [
     {
@@ -132,22 +132,6 @@
       ]
     },
     {
-      "signature": "image,season",
-      "count": 10,
-      "codes": [
-        "2265-KAY",
-        "1890-LEL",
-        "866-PAC",
-        "847-NRO",
-        "716-ISS",
-        "676-GUC",
-        "646-ARM",
-        "1281-YZLO",
-        "1189-KEN",
-        "1165-HUG"
-      ]
-    },
-    {
       "signature": "socialCard,notes,season",
       "count": 6,
       "codes": [
@@ -187,6 +171,15 @@
         "235-HOLL",
         "1251-ROM",
         "1076-DRC"
+      ]
+    },
+    {
+      "signature": "image,season",
+      "count": 3,
+      "codes": [
+        "2265-KAY",
+        "716-ISS",
+        "1165-HUG"
       ]
     },
     {
@@ -669,7 +662,7 @@
     },
     {
       "issue": "Season not fully verified",
-      "count": 58,
+      "count": 51,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -681,7 +674,6 @@
         "2106-MARC",
         "2085-CLIV",
         "1950-SWISA",
-        "1890-LEL",
         "1767-LTN",
         "1751-GUL",
         "1748-BYR",
@@ -716,16 +708,10 @@
         "222-DIP",
         "200-CIR",
         "928-TRU",
-        "866-PAC",
-        "847-NRO",
         "716-ISS",
-        "676-GUC",
-        "646-ARM",
         "548-CLI",
         "521-DRC",
-        "1281-YZLO",
         "1251-ROM",
-        "1189-KEN",
         "1165-HUG",
         "1086-CLI",
         "1076-DRC"
@@ -782,14 +768,13 @@
     },
     {
       "issue": "Missing perfume image",
-      "count": 42,
+      "count": 35,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
         "2265-KAY",
         "2085-CLIV",
-        "1890-LEL",
         "1748-BYR",
         "1550-YAN",
         "383-YAN",
@@ -817,14 +802,8 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "866-PAC",
-        "847-NRO",
         "716-ISS",
-        "676-GUC",
-        "646-ARM",
         "521-DRC",
-        "1281-YZLO",
-        "1189-KEN",
         "1165-HUG"
       ]
     },
@@ -1424,7 +1403,7 @@
     },
     {
       "check": "season",
-      "count": 58,
+      "count": 51,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -1436,7 +1415,6 @@
         "2106-MARC",
         "2085-CLIV",
         "1950-SWISA",
-        "1890-LEL",
         "1767-LTN",
         "1751-GUL",
         "1748-BYR",
@@ -1471,16 +1449,10 @@
         "222-DIP",
         "200-CIR",
         "928-TRU",
-        "866-PAC",
-        "847-NRO",
         "716-ISS",
-        "676-GUC",
-        "646-ARM",
         "548-CLI",
         "521-DRC",
-        "1281-YZLO",
         "1251-ROM",
-        "1189-KEN",
         "1165-HUG",
         "1086-CLI",
         "1076-DRC"
@@ -1537,14 +1509,13 @@
     },
     {
       "check": "image",
-      "count": 42,
+      "count": 35,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
         "2265-KAY",
         "2085-CLIV",
-        "1890-LEL",
         "1748-BYR",
         "1550-YAN",
         "383-YAN",
@@ -1572,14 +1543,8 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "866-PAC",
-        "847-NRO",
         "716-ISS",
-        "676-GUC",
-        "646-ARM",
         "521-DRC",
-        "1281-YZLO",
-        "1189-KEN",
         "1165-HUG"
       ]
     },
@@ -2187,23 +2152,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "1890-LEL",
-      "brand": "Le Labo",
-      "inspiredBy": "Lys 41",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Le-Labo/Lys-41-18382.html",
-      "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "image",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "1542-JOM",
@@ -3704,23 +3652,6 @@
       "iconsCount": 0
     },
     {
-      "code": "866-PAC",
-      "brand": "Rabanne",
-      "inspiredBy": "Ultraviolet",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Paco-Rabanne/Ultraviolet-519.html",
-      "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "image",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "858-PAC",
       "brand": "Rabanne",
       "inspiredBy": "Black XS for Her",
@@ -3740,23 +3671,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "847-NRO",
-      "brand": "Narciso Rodriguez",
-      "inspiredBy": "Narciso Poudree",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Narciso-Rodriguez/Narciso-Poudree-36679.html",
-      "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "image",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "828-MIY",
@@ -3854,23 +3768,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "676-GUC",
-      "brand": "Gucci",
-      "inspiredBy": "Flora by Gucci Eau de Toilette",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Gucci/Flora-by-Gucci-Eau-de-Toilette-5226.html",
-      "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "image",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "674-GUC",
@@ -3976,23 +3873,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "646-ARM",
-      "brand": "Giorgio Armani",
-      "inspiredBy": "Armani Code for Women",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Armani-Code-for-Women-413.html",
-      "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "image",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "621-EST",
@@ -4384,23 +4264,6 @@
       "iconsCount": 0
     },
     {
-      "code": "1281-YZLO",
-      "brand": "Yves Saint Laurent",
-      "inspiredBy": "L'Homme Parfum Intense",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/L-Homme-Parfum-Intense-18841.html",
-      "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "image",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "1251-ROM",
       "brand": "Romane",
       "inspiredBy": "Royal Blue",
@@ -4521,23 +4384,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "1189-KEN",
-      "brand": "Kenzo",
-      "inspiredBy": "Kenzo Homme Sport Extreme",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kenzo/Kenzo-Homme-Sport-Extreme-18174.html",
-      "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "image",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "1184-JOO",
