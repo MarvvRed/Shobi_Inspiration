@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import json,re,unicodedata
+import json,os,re,unicodedata
 from collections import defaultdict
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -9,6 +9,7 @@ import pytesseract
 
 ROOT=Path(__file__).resolve().parents[1]
 DB=ROOT/'database_complete.json';SITE=ROOT/'catalog_site.json';VALID=ROOT/'social-card-main-notes-validated.json';LEX=ROOT/'fragrantica-note-lexicon.txt';PAT=ROOT/'validated-note-slot-patterns.json';FETCH=ROOT/'current-fid-card-fetch-report.json';OUT=ROOT/'current-fid-card-multipass-validation.json'
+DRY_RUN=str(os.environ.get('DRY_RUN','0')).strip()=='1'
 CROP_1200=(48,738,448,1097);BANDS=[(145,232),(288,359)];COLS=[(0,133),(133,267),(267,400)]
 
 def code(v):return str(v or '').strip().upper()
@@ -49,16 +50,11 @@ def read_slot(crop,names):
  if not votes:return None,None,attempts
  name,arr=max(votes.items(),key=lambda kv:(len(kv[1]),max(a['score'] for a in kv[1])))
  strongest=max(arr,key=lambda a:a['score'])
- # Require independent agreement or near-perfect OCR.
  if len(arr)>=2 or strongest['score']>=.985:return name,strongest,attempts
  return None,None,attempts
 
 db=json.loads(DB.read_text(encoding='utf-8-sig'));site=json.loads(SITE.read_text(encoding='utf-8-sig'));valid_list=json.loads(VALID.read_text(encoding='utf-8'));valid_by={code(x.get('code')):x for x in valid_list};fetch=json.loads(FETCH.read_text(encoding='utf-8'));names=[x.strip() for x in LEX.read_text(encoding='utf-8').splitlines() if x.strip()];patterns=json.loads(PAT.read_text(encoding='utf-8'))
-allowed=set()
-for x in patterns.get('allPatterns',[]):
- p=tuple(int(v) for v in x.get('slots') or []);count=int(x.get('count') or 0)
- # For rare 2/3 note layouts require pattern seen at least once; for >=4 require normal observed layout.
- if p and count>=1:allowed.add(p)
+allowed={tuple(int(v) for v in x.get('slots') or []) for x in patterns.get('allPatterns',[]) if x.get('slots') and int(x.get('count') or 0)>=1}
 byrow={code(r.get('code')):(r,s) for r,s in zip(db,site)}
 accepted=[];rejected=[]
 for fr in fetch.get('rows',[]):
@@ -81,18 +77,20 @@ for fr in fetch.get('rows',[]):
    note,strong,attempts=read_slot(crop,names);diag.append({'slot':sl,'note':note,'strongest':strong,'attempts':attempts[:10]})
    if note:found.append((sl,note,strong))
  slots=tuple(sl for sl,_,_ in found);notes=[n for _,n,_ in found]
- # Reject repeated identical note caused by OCR spillover, and only accept known validated layouts.
- valid_layout=bool(notes and slots in allowed and len(notes)==len(set((sl,n) for sl,n,_ in found)))
+ valid_layout=bool(notes and slots in allowed and len({sl for sl,_,_ in found})==len(found))
+ old=list(row.get('fragranticaSocialCardNotes') or [])
  if valid_layout:
-  old=list(row.get('fragranticaSocialCardNotes') or [])
-  row['fragranticaSocialCardNotes']=notes;row['fragranticaSocialCardStatus']='VALIDATED_OCR'
-  valid_by[c]={'code':c,'fragranticaId':int(fid) if fid.isdigit() else fid,'card':card,'validated':True,'mainNotes':notes,'rawSlots':[{'slot':sl,'name':n,'ocrConfidence':None} for sl,n,_ in found],'validatedSlots':[{'slot':sl,'name':n,'raw':'CURRENT_FID_MULTIPASS_OCR','matchScore':(st or {}).get('score'),'margin':(st or {}).get('margin')} for sl,n,st in found],'failures':[],'reasons':[],'validationMethod':'CURRENT_FID_MULTIPASS_OCR'}
-  accepted.append({'code':c,'fid':fid,'card':card,'slots':list(slots),'oldNotes':old,'notes':notes,'diagnostics':diag})
+  if not DRY_RUN:
+   row['fragranticaSocialCardNotes']=notes;row['fragranticaSocialCardStatus']='VALIDATED_OCR'
+   valid_by[c]={'code':c,'fragranticaId':int(fid) if fid.isdigit() else fid,'card':card,'validated':True,'mainNotes':notes,'rawSlots':[{'slot':sl,'name':n,'ocrConfidence':None} for sl,n,_ in found],'validatedSlots':[{'slot':sl,'name':n,'raw':'CURRENT_FID_MULTIPASS_OCR','matchScore':(st or {}).get('score'),'margin':(st or {}).get('margin')} for sl,n,st in found],'failures':[],'reasons':[],'validationMethod':'CURRENT_FID_MULTIPASS_OCR'}
+  accepted.append({'code':c,'fid':fid,'card':card,'slots':list(slots),'oldNotes':old,'notes':notes,'sameAsOld':old==notes,'diagnostics':diag})
  else:rejected.append({'code':c,'fid':fid,'card':card,'slots':list(slots),'notes':notes,'knownLayout':slots in allowed,'diagnostics':diag})
-seen=set();rebuilt=[]
-for item in valid_list:
- c=code(item.get('code'))
- if c in valid_by and c not in seen:rebuilt.append(valid_by[c]);seen.add(c)
-for c,item in valid_by.items():
- if c not in seen:rebuilt.append(item);seen.add(c)
-DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');VALID.write_text(json.dumps(rebuilt,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');OUT.write_text(json.dumps({'accepted':len(accepted),'rejected':len(rejected),'rows':accepted,'rejectedRows':rejected},ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print('accepted',len(accepted),'rejected',len(rejected))
+if not DRY_RUN:
+ seen=set();rebuilt=[]
+ for item in valid_list:
+  c=code(item.get('code'))
+  if c in valid_by and c not in seen:rebuilt.append(valid_by[c]);seen.add(c)
+ for c,item in valid_by.items():
+  if c not in seen:rebuilt.append(item);seen.add(c)
+ DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');VALID.write_text(json.dumps(rebuilt,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+OUT.write_text(json.dumps({'dryRun':DRY_RUN,'accepted':len(accepted),'sameAsOld':sum(r['sameAsOld'] for r in accepted),'replaceOld':sum(bool(r['oldNotes']) and not r['sameAsOld'] for r in accepted),'fillMissing':sum(not r['oldNotes'] for r in accepted),'rejected':len(rejected),'rows':accepted,'rejectedRows':rejected},ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print('dry_run',DRY_RUN,'accepted',len(accepted),'same',sum(r['sameAsOld'] for r in accepted),'replace',sum(bool(r['oldNotes']) and not r['sameAsOld'] for r in accepted),'fill',sum(not r['oldNotes'] for r in accepted),'rejected',len(rejected))
