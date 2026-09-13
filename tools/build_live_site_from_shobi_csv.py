@@ -145,7 +145,7 @@ def identity_from_description(description):
     return "Unknown Brand", text.strip(" .") or "Unidentified Shobi fragrance"
 
 
-live_rows = read_csv(LIVE_CSV)
+# Layered "MIX" products are real Shobi listings, but are intentionally not\n# part of the inspiration catalog shown by this site.\nlive_rows = [\n    row for row in read_csv(LIVE_CSV)\n    if not re.fullmatch(r"MIX\\d+", (row.get("reference") or "").strip(), flags=re.I)\n]
 master_by_pid = {row["prestashop_product_id"].strip(): row for row in read_csv(MASTER)}
 mapping_by_pid = {row["prestashop_product_id"].strip(): row for row in read_csv(MAPPING)}
 review_by_pid = {
@@ -220,7 +220,7 @@ for live in live_rows:
         "fragranticaUrl": fragrantica_url,
         "fragranticaStatus": mapping.get("fragrantica_status") or old.get("fragranticaStatus") or "NOT_FOUND",
         "identityStatus": mapping.get("identity_status") or "AMBIGUOUS",
-        "masterVersion": "shobi-live-unique-2026-09-13-2332",
+        "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
         "catalogSource": "shobi-perfumes-live-unique.csv",
     })
 
