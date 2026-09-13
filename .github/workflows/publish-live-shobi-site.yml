@@ -7,6 +7,8 @@ on:
     paths:
       - '.github/workflows/publish-live-shobi-site.yml'
       - 'tools/build_live_site_from_shobi_csv.py'
+      - 'tools/build_validation_audit.py'
+      - 'validation-tracker.js'
       - 'shobi-perfumes-live-unique.csv'
       - 'data/shobi-fragrantica-mapping.csv'
       - 'data/shobi-identity-review-2026-09-04.csv'
@@ -23,7 +25,10 @@ jobs:
       - name: Build website database from live CSV
         run: python tools/build_live_site_from_shobi_csv.py
 
-      - name: Point frontend at lightweight catalog
+      - name: Build strict validation audit
+        run: python tools/build_validation_audit.py
+
+      - name: Point frontend at lightweight catalog and install tracker
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -36,6 +41,16 @@ jobs:
               path.write_text(text, encoding='utf-8')
           elif new not in text:
               raise SystemExit('Could not find frontend catalog fetch')
+
+          index = Path('index.html')
+          html = index.read_text(encoding='utf-8')
+          tracker = '<script src="validation-tracker.js"></script>'
+          if tracker not in html:
+              marker = '<script src="perfume-images/map.js"></script>'
+              if marker not in html:
+                  raise SystemExit('Could not find tracker insertion point')
+              html = html.replace(marker, marker + '\n' + tracker, 1)
+              index.write_text(html, encoding='utf-8')
           PY
 
       - name: Validate website catalog
@@ -54,19 +69,25 @@ jobs:
           assert [(r['code'], r['brand'], r['inspiredBy']) for r in site_rows] == [(r['code'], r['brand'], r['inspiredBy']) for r in rows]
           assert __import__('os').path.getsize('catalog_site.json') < __import__('os').path.getsize('database_complete.json')
           assert "fetch('catalog_site.json')" in Path('script.js').read_text(encoding='utf-8')
+          assert '<script src="validation-tracker.js"></script>' in Path('index.html').read_text(encoding='utf-8')
+          assert all(r.get('validationStatus') in {'green','yellow','red'} for r in site_rows)
+          assert all('validationChecks' in r and 'validationIssues' in r for r in site_rows)
+          assert all(all(r['validationChecks'].values()) for r in site_rows if r['validationStatus'] == 'green')
           excluded = {'Home Fragrances', 'Gifts', 'Lattafa', 'Paris Corner', 'Al Haramain Oriental Perfumes'}
           assert not any(r.get('shobiCategory') in excluded for r in rows)
+          counts = {s: sum(r['validationStatus'] == s for r in site_rows) for s in ('green','yellow','red')}
           print('Validated 2332 unique live Shobi perfumes and lightweight frontend catalog')
+          print('QA tracker:', counts)
           PY
 
       - name: Commit website database
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add database_complete.json catalog_site.json script.js
+          git add database_complete.json catalog_site.json script.js index.html
           if git diff --cached --quiet; then
             echo 'No website catalog changes.'
             exit 0
           fi
-          git commit -m 'Serve lightweight Shobi site catalog'
+          git commit -m 'Publish Shobi validation tracker'
           git push
