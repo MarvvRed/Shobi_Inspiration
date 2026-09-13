@@ -1,0 +1,42 @@
+name: Apply five known-FID identity proofs
+
+on:
+  push:
+    paths:
+      - 'tools/apply_five_known_fid_identity_proofs.py'
+      - '.github/workflows/apply-five-known-fid-identity-proofs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-validation-writes
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/apply_five_known_fid_identity_proofs.py
+      - run: python tools/build_validation_audit.py
+      - run: python tools/analyze_validation_yellows.py
+      - name: Commit identity proofs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database_complete.json catalog_site.json five-known-fid-identity-proofs.json validation-yellow-report.json validation-yellow-report.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Verify five remaining known-ID Fragrantica identities"
+          git pull --rebase origin main
+          git push origin HEAD:main
