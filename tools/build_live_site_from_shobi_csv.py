@@ -297,7 +297,7 @@ SITE_OUTPUT.write_text(
     json.dumps(site_rows, ensure_ascii=False, separators=(",", ":")) + "\n",
     encoding="utf-8",
 )
-print("rows", len(out))
+print("rows", len(out))  # non-MIX catalog
 print("old enrichments retained", sum(row["prestashopProductId"] in old_by_pid for row in out))
 print("with main notes", sum(bool(row["fragranticaSocialCardNotes"]) for row in out))
 print("with gender", sum(bool(row["genderAffinity"]) for row in out))
