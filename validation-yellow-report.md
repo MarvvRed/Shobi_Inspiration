@@ -1,14 +1,14 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **266**
-- One check from green: **84**
+- Yellow rows: **204**
+- One check from green: **22**
 
 ## Failed checks
 
-- `identity`: **180**
 - `socialCard`: **172**
 - `notes`: **172**
+- `identity`: **118**
 - `icons`: **97**
 - `season`: **62**
 - `gender`: **43**
@@ -18,10 +18,10 @@
 
 ## Failure signatures
 
-- `identity`: **82** — 490-CRT, 2483-CLEA, 2482-CLEA, 2301-DIP, 2193-LTN, 2190-ROJ, 2044-LORV, 1986-SOO, 1753-TEDL, 1829-BOB, 1763-JILS, 1701-TOSC, 1682-HER, 140-KUR, 703-HER, 1126-ARM, 410-BOD, 1046-CAL, 1090-COS, 1091-COS
 - `socialCard,notes`: **60** — 2692-SOL, 2438-KYLJ, 2533-RAL, 2513-PAC, 2456-PAC, 2234-MON, 2224-ARM, 2185-DRC, 2016-PARELM, 1542-JOM, 1504-DON, 896-RCAV, 884-RAL, 1037-BLG, 337-TIFF, 127-KIL, 848-NRO, 254-JOM, 920-TMU, 917-SWA
 - `identity,socialCard,notes,icons`: **55** — 2552-SOR, 2439-ZEG, 2427-CLEA, 2351-LOU, 2250-ARBAS, 2160-ZAR, 2104-CHA, 1989-VERT, 1885-WID, 1836-COT, 1684-GIV, 1659-CHRA, 1483-DSQ, 687-GUR, 153-PARF, 1161-HUG, 466-CAL, 304-KIE, 236-IND, 989-YZLO
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
+- `identity`: **20** — 2044-LORV, 1986-SOO, 1682-HER, 1126-ARM, 1046-CAL, 495-CHA, 943-VER, 926-TOM, 912-SHIS, 850-NIN, 778-LAN, 751-KEN, 696-GLA, 515-CHL, 441-BLG, 1284-YZLO, 1270-VAN, 1247-RAL, 1149-GUR, 390-ACQ
 - `image,season`: **10** — 2265-KAY, 1890-LEL, 866-PAC, 847-NRO, 716-ISS, 676-GUC, 646-ARM, 1281-YZLO, 1189-KEN, 1165-HUG
 - `socialCard,notes,season`: **8** — 2514-DRC, 2282-DRC, 2194-ORT, 2133-FRE, 1751-GUL, 928-TRU, 548-CLI, 1086-CLI
 - `identity,socialCard,notes,gender,season`: **4** — 2313-DRC, 2106-MARC, 1950-SWISA, 1767-LTN
@@ -37,95 +37,33 @@
 
 | Code | Brand | Inspired by | Remaining check |
 |---|---|---|---|
-| 490-CRT | Cartier | Must de Cartier | identity |
-| 2483-CLEA | Clean | Clean Skin | identity |
-| 2482-CLEA | Clean | Cool Cotton | identity |
-| 2301-DIP | Diptyque | Fleur de Peau | identity |
-| 2193-LTN | Louis Vuitton | Nouveau Monde | identity |
-| 2190-ROJ | Roja Dove | Diaghilev | identity |
 | 2044-LORV | Lorenzo Villoresi | Teint de Neige | identity |
 | 1986-SOO | SoOud | Nur | identity |
-| 1753-TEDL | Ted Lapidus | Ted | identity |
-| 1829-BOB | Bobbi Brown | Bath | identity |
-| 1763-JILS | Jil Sander | Sun | identity |
-| 1701-TOSC | Tosca | Tosca | identity |
 | 1682-HER | Hermès | 24 Faubourg | identity |
-| 140-KUR | Maison Francis Kurkdjian | Oud Silk Mood | identity |
-| 703-HER | Hermès | Kelly Caleche | identity |
 | 1126-ARM | Giorgio Armani | Acqua di Gio Profondo | identity |
-| 410-BOD | The Body Shop | Black Musk | identity |
 | 1046-CAL | Calvin Klein | CK Everyone Eau de Toilette | identity |
-| 1090-COS | CoSTUME NATIONAL | Costume National Homme | identity |
-| 1091-COS | CoSTUME NATIONAL | Scent Intense | identity |
-| 139-KUR | Maison Francis Kurkdjian | Oud Satin Mood | identity |
 | 495-CHA | Chanel | Allure Sensuelle | identity |
-| 408-BAT | Bath Body Works | Warm Vanilla Sugar | identity |
 | 107-ARB | Arabian Oud | Titanium | season |
-| 988-YZLO | Yves Saint Laurent | Parisienne | identity |
-| 977-YZLO | Yves Saint Laurent | Black Opium | identity |
 | 973-VICT | Victoria's Secret | Wicked | season |
-| 944-VER | Versace | Crystal Noir | identity |
 | 943-VER | Versace | Bright Crystal | identity |
 | 926-TOM | Tommy Hilfiger | Tommy Girl | identity |
-| 921-TMU | Mugler | Angel Muse | identity |
 | 912-SHIS | Shiseido | Zen | identity |
-| 901-ROG | Roger Gallet | Rose | identity |
-| 879-PRA | Prada | Infusion d Iris | identity |
-| 867-PAL | Paloma Picasso | Paloma Picasso | identity |
-| 863-PAC | Rabanne | Olympea | identity |
-| 860-PAC | Rabanne | Lady Million | identity |
 | 850-NIN | Nina Ricci | L Air du Temps | identity |
-| 787-LAN | Lancôme | Magie Noire | identity |
 | 778-LAN | Lancôme | Climat | identity |
-| 776-LAL | Lalique | Satine | identity |
-| 756-KEN | Kenzo | Kenzo World | identity |
 | 751-KEN | Kenzo | Jeu d Amour | identity |
-| 738-JUI | Juicy Couture | Viva la Juicy | identity |
-| 709-HER | Hermès | Voyage d Hermes | identity |
 | 696-GLA | Guy Laroche | fidji | identity |
-| 688-GUR | Guerlain | L Instant Magic | identity |
-| 686-GUR | Guerlain | Insolence | identity |
-| 673-GRS | Gres | Cabotine | identity |
-| 671-GIV | Givenchy | Play For Her | identity |
-| 670-GIV | Givenchy | Organza | identity |
-| 624-EST | Estée Lauder | Intuition | identity |
-| 571-DAV | Davidoff | Cool Water | identity |
-| 544-DRC | Dior | Tendre Poison | identity |
-| 541-DRC | Dior | Poison Girl | identity |
-| 528-DRC | Dior | Hypnotic Poison | identity |
-| 524-DRC | Dior | Dolce Vita | identity |
 | 515-CHL | Chloe | Nomade | identity |
-| 489-CRT | Cartier | La Panthere | identity |
-| 469-CAL | Calvin Klein | Escape | identity |
-| 462-CAC | Cacharel | LouLou | identity |
 | 441-BLG | Bvlgari | Jasmin Noir | identity |
-| 1286-YZLO | Yves Saint Laurent | Opium Pour Homme | identity |
 | 1284-YZLO | Yves Saint Laurent | M7 | identity |
-| 1275-VER | Versace | Eros | identity |
 | 1270-VAN | Van Cleef & Arpels | Bois Dore | identity |
-| 1259-SHU | Shulton Company | Old Spice Original | identity |
 | 1247-RAL | Ralph Lauren | Polo Red | identity |
-| 1246-RAL | Ralph Lauren | Polo Blue | identity |
-| 1226-PAC | Rabanne | Invictus | identity |
-| 1224-APO | Nikos | Sculpture Homme | identity |
-| 1182-JIM | Jimmy Choo | Jimmy Choo Man | identity |
 | 1149-GUR | Guerlain | L Homme Ideal | identity |
-| 1123-ARM | Giorgio Armani | Acqua di Gio | identity |
-| 1108-DIE | Diesel | Only The Brave | identity |
-| 1102-DAV | Davidoff | Cool Water | identity |
-| 1085-DRC | Dior | Sauvage | identity |
-| 1075-DRC | Dior | Eau Sauvage | identity |
-| 1068-CHA | Chanel | Boy Eau de Parfum | identity |
-| 1065-CHA | Chanel | Allure Homme Sport | identity |
-| 1059-CRT | Cartier | Declaration | identity |
-| 1029-BRB | Burberry | Mr Burberry | identity |
-| 1020-AZZ | Azzaro | Wanted | identity |
 | 390-ACQ | Acqua di Parma | Acqua di Parma Blu Mediterraneo Mandorlo di Sicilia | identity |
 
 ## Issues
 
-- Fragrantica identity not fully verified: **180**
 - Social Card not fully verified: **172**
+- Fragrantica identity not fully verified: **118**
 - Missing Main Notes: **97**
 - Note icons not fully verified: **97**
 - Main Notes order not fully verified: **75**
@@ -142,13 +80,10 @@
 | 2816-MOOD | Mood London | Blonde Maracuja Mood London | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2692-SOL | Sol de Janeiro | Rio Radiance / Cheirosa 87 | socialCard, notes |
 | 2701-DIP | Diptyque | Cafe Verlet | identity, fid, url, socialCard, image, notes, icons, gender, season |
-| 490-CRT | Cartier | Must de Cartier | identity |
 | 2438-KYLJ | Kylie Cosmetics | Cosmic Kylie Jenner | socialCard, notes |
 | 2586-DIP | Diptyque | Biscuit DIP | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2552-SOR | Siordia Parfums | Night Horse | identity, socialCard, notes, icons |
 | 2533-RAL | Ralph Lauren | Safari | socialCard, notes |
-| 2483-CLEA | Clean | Clean Skin | identity |
-| 2482-CLEA | Clean | Cool Cotton | identity |
 | 2514-DRC | Dior | Sauvage Eau Forte | socialCard, notes, season |
 | 2513-PAC | Rabanne | Million Gold | socialCard, notes |
 | 2456-PAC | Rabanne | Million Gold | socialCard, notes |
@@ -156,7 +91,6 @@
 | 2427-CLEA | Clean | Clean Warm Cotton | identity, socialCard, notes, icons |
 | 2351-LOU | Christian Louboutin | Bikini Questa Sera | identity, socialCard, notes, icons |
 | 2313-DRC | Dior | Sauvage Parfum | identity, socialCard, notes, gender, season |
-| 2301-DIP | Diptyque | Fleur de Peau | identity |
 | 2282-DRC | Dior | Dioriviera Eau de Parfum | socialCard, notes, season |
 | 2265-KAY | Kayali Fragrances | Oudgasm Rose Oud 16 Eau de Parfum Intense | image, season |
 | 2250-ARBAS | Armand Basi | In Red | identity, socialCard, notes, icons |
@@ -164,8 +98,6 @@
 | 2224-ARM | Giorgio Armani | Emporio Armani Diamonds | socialCard, notes |
 | 2160-ZAR | Zara | Barbie | identity, socialCard, notes, icons |
 | 2194-ORT | Orto Parisi | ORTO | socialCard, notes, season |
-| 2193-LTN | Louis Vuitton | Nouveau Monde | identity |
-| 2190-ROJ | Roja Dove | Diaghilev | identity |
 | 2185-DRC | Dior | Eau Sauvage Extreme 2010 | socialCard, notes |
 | 2178-MON | moncler | Moncler pour Homme | socialCard, notes, icons |
 | 2133-FRE | Frédéric Malle | Lipstick Rose Eau de Parfum | socialCard, notes, season |
@@ -177,17 +109,13 @@
 | 1989-VERT | Vertus | Narcos is | identity, socialCard, notes, icons |
 | 1986-SOO | SoOud | Nur | identity |
 | 1950-SWISA | Swiss Arabian | Al Amaken | identity, socialCard, notes, gender, season |
-| 1753-TEDL | Ted Lapidus | Ted | identity |
 | 1885-WID | Widian | Widian London | identity, socialCard, notes, icons |
 | 1890-LEL | Le Labo | Lys 41 | image, season |
 | 1542-JOM | Jo Malone London | English Oak Redcurrant | socialCard, notes |
 | 1836-COT | Coty | Vanilla Fields | identity, socialCard, notes, icons |
-| 1829-BOB | Bobbi Brown | Bath | identity |
 | 1767-LTN | Louis Vuitton | Attrape-Rêves | identity, socialCard, notes, gender, season |
 | 1751-GUL | Jean Paul Gaultier | Madame | socialCard, notes, season |
-| 1763-JILS | Jil Sander | Sun | identity |
 | 1748-BYR | Byredo | Marijuana | identity, fid, url, socialCard, image, notes, icons, gender, season |
-| 1701-TOSC | Tosca | Tosca | identity |
 | 1682-HER | Hermès | 24 Faubourg | identity |
 | 1684-GIV | Givenchy | Ysatis | identity, socialCard, notes, icons |
 | 1659-CHRA | Christina Aguilera | Christina Aguilera by Night | identity, socialCard, notes, icons |
@@ -195,11 +123,8 @@
 | 1644-DRC | Dior | Sauvage Elixir | identity, socialCard, notes, icons, gender, season |
 | 1550-YAN | Yankee Candle | HOME SWEET HOME - YANKEE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1483-DSQ | Dsquared2 | Potion | identity, socialCard, notes, icons |
-| 140-KUR | Maison Francis Kurkdjian | Oud Silk Mood | identity |
 | 896-RCAV | Roberto Cavalli | Splendid-vanilla | socialCard, notes |
-| 703-HER | Hermès | Kelly Caleche | identity |
 | 1126-ARM | Giorgio Armani | Acqua di Gio Profondo | identity |
-| 410-BOD | The Body Shop | Black Musk | identity |
 | 383-YAN | Yankee Candle | WEDDING DAY - YANKEE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1046-CAL | Calvin Klein | CK Everyone Eau de Toilette | identity |
 | 130-LEL | Le Labo | SANTAL 26 - LE LABO | identity, fid, url, socialCard, image, notes, icons, gender, season |
@@ -208,15 +133,11 @@
 | 884-RAL | Ralph Lauren | Big Pony 2 | socialCard, notes |
 | 314-MOL | Molton Brown | ZIAO JAO - MOLTON BROWN | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1037-BLG | Bvlgari | Bvl Man | socialCard, notes |
-| 1090-COS | CoSTUME NATIONAL | Costume National Homme | identity |
-| 1091-COS | CoSTUME NATIONAL | Scent Intense | identity |
 | 337-TIFF | Tiffany Co | Tiffany  Co Sheer | socialCard, notes |
 | 153-PARF | By Kilian | Straight to Heaven | identity, socialCard, notes, icons |
 | 1161-HUG | Hugo Boss | Boss Bottled Oud | identity, socialCard, notes, icons |
 | 127-KIL | By Kilian | Straight to Heaven | socialCard, notes |
-| 139-KUR | Maison Francis Kurkdjian | Oud Satin Mood | identity |
 | 495-CHA | Chanel | Allure Sensuelle | identity |
-| 408-BAT | Bath Body Works | Warm Vanilla Sugar | identity |
 | 466-CAL | Calvin Klein | Calvin Klein Women | identity, socialCard, notes, icons |
 | 848-NRO | Narciso Rodriguez | Narciso Rodriguez For Her | socialCard, notes |
 | 118-HAM | Hamidi Oud Perfumes | REHAN - HAMIDI OUD | socialCard, notes, icons, gender, season |
@@ -248,31 +169,22 @@
 | 222-DIP | Diptyque | AMBRE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 200-CIR | CIRE TRUDON | ERNESTO CHE GUEVARA | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 989-YZLO | Yves Saint Laurent | Rive Gauche | identity, socialCard, notes, icons |
-| 988-YZLO | Yves Saint Laurent | Parisienne | identity |
 | 987-YZLO | Yves Saint Laurent | Paris | identity, socialCard, notes, icons |
 | 985-YZLO | Yves Saint Laurent | Mon Paris | identity, socialCard, notes, icons |
 | 979-YZLO | Yves Saint Laurent | Cinema | identity, socialCard, notes, icons |
-| 977-YZLO | Yves Saint Laurent | Black Opium | identity |
 | 973-VICT | Victoria's Secret | Wicked | season |
 | 945-VER | Versace | Eros Pour Femme | identity, socialCard, notes, icons |
-| 944-VER | Versace | Crystal Noir | identity |
 | 943-VER | Versace | Bright Crystal | identity |
 | 928-TRU | Trussardi | Delicate Rose | socialCard, notes, season |
 | 926-TOM | Tommy Hilfiger | Tommy Girl | identity |
-| 921-TMU | Mugler | Angel Muse | identity |
 | 920-TMU | Mugler | Angel | socialCard, notes |
 | 917-SWA | Swarovski | Aura | socialCard, notes |
 | 912-SHIS | Shiseido | Zen | identity |
 | 910-SARJ | Sarah Jessica Parker | Lovely | identity, socialCard, notes, icons |
 | 909-SFER | Salvatore Ferragamo | TUSCAN SCENT WHITE MIMOSA - FERRAGAMO | socialCard, notes |
 | 904-SALV | Salvador Dali | SALVADOR DALI fragrances | socialCard, notes, icons |
-| 901-ROG | Roger Gallet | Rose | identity |
 | 882-PRA | Prada | Prada Amber Pour Homme Prada Man | socialCard, notes |
-| 879-PRA | Prada | Infusion d Iris | identity |
-| 867-PAL | Paloma Picasso | Paloma Picasso | identity |
 | 866-PAC | Rabanne | Ultraviolet | image, season |
-| 863-PAC | Rabanne | Olympea | identity |
-| 860-PAC | Rabanne | Lady Million | identity |
 | 858-PAC | Rabanne | Black XS for Her | identity, socialCard, notes, icons |
 | 850-NIN | Nina Ricci | L Air du Temps | identity |
 | 847-NRO | Narciso Rodriguez | Narciso Poudree | image, season |
@@ -280,13 +192,9 @@
 | 829-MNTB | Montblanc | FEMME - MONT BLANC | socialCard, notes |
 | 828-MIY | Miu Miu | Miu Miu L Eau Bleue | identity, socialCard, notes, gender |
 | 827-MISN | Missoni | Missoni | socialCard, notes |
-| 787-LAN | Lancôme | Magie Noire | identity |
 | 778-LAN | Lancôme | Climat | identity |
-| 776-LAL | Lalique | Satine | identity |
-| 756-KEN | Kenzo | Kenzo World | identity |
 | 753-KEN | Kenzo | Kenzo | socialCard, notes |
 | 751-KEN | Kenzo | Jeu d Amour | identity |
-| 738-JUI | Juicy Couture | Viva la Juicy | identity |
 | 735-JIM | Jimmy Choo | Jimmy Choo | socialCard, notes |
 | 734-JIM | Jimmy Choo | Jimmy Choo | socialCard, notes |
 | 719-ISS | Issey Miyake | Pleats Please | identity, socialCard, notes, icons |
@@ -294,37 +202,25 @@
 | 717-ISS | Issey Miyake | CLASSIC - ISSEY MIYAKE | socialCard, notes |
 | 716-ISS | Issey Miyake | A Scent by Issey Miyake | image, season |
 | 711-HUG | Hugo Boss | Boss Orange | socialCard, notes |
-| 709-HER | Hermès | Voyage d Hermes | identity |
 | 696-GLA | Guy Laroche | fidji | identity |
 | 692-GUR | Guerlain | Samsara Eau de Parfum | identity, socialCard, notes, icons |
-| 688-GUR | Guerlain | L Instant Magic | identity |
-| 686-GUR | Guerlain | Insolence | identity |
 | 676-GUC | Gucci | Flora by Gucci Eau de Toilette | image, season |
 | 674-GUC | Gucci | Gucci Bamboo | identity, socialCard, notes, icons |
-| 673-GRS | Gres | Cabotine | identity |
-| 671-GIV | Givenchy | Play For Her | identity |
-| 670-GIV | Givenchy | Organza | identity |
 | 668-GIV | Givenchy | Hot Couture | identity, socialCard, notes, icons |
 | 667-GIV | Givenchy | Dahlia Noir | identity, socialCard, notes, icons |
 | 666-GIV | Givenchy | Dahlia Divin | identity, socialCard, notes, icons |
 | 653-ARM | Giorgio Armani | Mania | identity, socialCard, notes, icons |
 | 646-ARM | Giorgio Armani | Armani Code for Women | image, season |
-| 624-EST | Estée Lauder | Intuition | identity |
 | 621-EST | Estée Lauder | Bronze Goddess 2011 | identity, socialCard, notes |
 | 613-ESC | Escada | Turquoise Summer | socialCard, notes |
 | 612-ESC | Escada | TURQUOISE - ESCADA | socialCard, notes, icons |
 | 574-DON | Donna Karan | DKNY Be Delicious | socialCard, notes |
-| 571-DAV | Davidoff | Cool Water | identity |
 | 570-DOL | Dolce & Gabbana | (RED CUP) | socialCard, notes, icons |
 | 566-DOL | Dolce & Gabbana | The One | socialCard, notes |
 | 557-DOL | Dolce & Gabbana | Light Blue | socialCard, notes |
 | 548-CLI | Clinique | Happy | socialCard, notes, season |
-| 544-DRC | Dior | Tendre Poison | identity |
-| 541-DRC | Dior | Poison Girl | identity |
 | 533-DRC | Dior | Midnight Poison | identity, socialCard, notes, icons |
-| 528-DRC | Dior | Hypnotic Poison | identity |
 | 525-DRC | Dior | Dune | identity, socialCard, notes, icons |
-| 524-DRC | Dior | Dolce Vita | identity |
 | 521-DRC | Dior | Dior Addict | identity, socialCard, image, notes, icons, gender, season |
 | 520-CHO | Chopard | Wish | identity, socialCard, notes, icons |
 | 515-CHL | Chloe | Nomade | identity |
@@ -333,41 +229,31 @@
 | 497-CHA | Chanel | Chance | identity, socialCard, notes, icons |
 | 494-CHA | Chanel | Allure | identity, socialCard, notes, icons |
 | 493-CER | Cerruti | 1881 | identity, socialCard, notes, icons |
-| 489-CRT | Cartier | La Panthere | identity |
 | 487-CRT | Cartier | Baiser Vole | identity, socialCard, notes, icons |
 | 483-CAR | Carolina Herrera | 212 VIP Wild Party | socialCard, notes |
 | 475-CAL | Calvin Klein | Obsession | socialCard, notes |
 | 470-CAL | Calvin Klein | Eternity | socialCard, notes |
-| 469-CAL | Calvin Klein | Escape | identity |
 | 468-CAL | Calvin Klein | Calvin Klein | socialCard, notes |
-| 462-CAC | Cacharel | LouLou | identity |
 | 441-BLG | Bvlgari | Jasmin Noir | identity |
 | 426-BRB | Burberry | London | socialCard, notes |
 | 425-BRB | Burberry | Burberry Her | identity, socialCard, notes, icons |
 | 421-BRB | Burberry | Body | identity, socialCard, notes, icons |
 | 411-BOD | The Body Shop | White Musk | identity, socialCard, notes, icons |
 | 399-ARA | Aramis | Tuscany Per Donna | identity, socialCard, notes, icons |
-| 1286-YZLO | Yves Saint Laurent | Opium Pour Homme | identity |
 | 1284-YZLO | Yves Saint Laurent | M7 | identity |
 | 1281-YZLO | Yves Saint Laurent | L'Homme Parfum Intense | image, season |
-| 1275-VER | Versace | Eros | identity |
 | 1270-VAN | Van Cleef & Arpels | Bois Dore | identity |
 | 1262-TMU | Mugler | Angel | socialCard, notes |
-| 1259-SHU | Shulton Company | Old Spice Original | identity |
 | 1251-ROM | Romane | Royal Blue | identity, socialCard, notes, icons, gender, season |
 | 1250-RAL | Ralph Lauren | Safari | socialCard, notes |
 | 1248-RAL | Ralph Lauren | Polo Red Intense | socialCard, notes |
 | 1247-RAL | Ralph Lauren | Polo Red | identity |
-| 1246-RAL | Ralph Lauren | Polo Blue | identity |
 | 1245-PRA | Prada | PRADA AMBER | socialCard, notes |
 | 880-PRA | Prada | Infusion d Oeillet | identity, socialCard, notes, icons |
-| 1226-PAC | Rabanne | Invictus | identity |
-| 1224-APO | Nikos | Sculpture Homme | identity |
 | 777-LAL | Lalique | Sculpteur d Epices | identity, socialCard, notes, icons |
 | 769-LART | LArtisan Parfumeur | Premier Figuier | identity, socialCard, notes, icons |
 | 1189-KEN | Kenzo | Kenzo Homme Sport Extreme | image, season |
 | 1184-JOO | Joop! | Joop! Homme | socialCard, notes |
-| 1182-JIM | Jimmy Choo | Jimmy Choo Man | identity |
 | 1172-ISS | Issey Miyake | L'Eau d'Issey Pour Homme | socialCard, notes |
 | 1165-HUG | Hugo Boss | Hugo Energise | image, season |
 | 1163-HUG | Hugo Boss | Boss Orange | socialCard, notes |
@@ -378,30 +264,20 @@
 | 1136-ARM | Giorgio Armani | Emporio Armani Stronger With You | identity, socialCard, notes, icons |
 | 1134-ARM | Giorgio Armani | Emporio Armani Diamonds | socialCard, notes |
 | 1131-ARM | Giorgio Armani | Mania | socialCard, notes |
-| 1123-ARM | Giorgio Armani | Acqua di Gio | identity |
 | 1118-FAB | Faberge | Brut | identity, socialCard, notes |
-| 1108-DIE | Diesel | Only The Brave | identity |
-| 1102-DAV | Davidoff | Cool Water | identity |
 | 1096-DOL | Dolce & Gabbana | Light Blue Eau Intense | socialCard, notes |
 | 1095-DOL | Dolce & Gabbana | Light Blue | socialCard, notes |
 | 1092-DOL | Dolce & Gabbana | By Man Eau de Toilette | socialCard, notes |
 | 1086-CLI | Clinique | Happy | socialCard, notes, season |
-| 1085-DRC | Dior | Sauvage | identity |
 | 1076-DRC | Dior | Fahrenheit | identity, socialCard, notes, icons, gender, season |
-| 1075-DRC | Dior | Eau Sauvage | identity |
 | 1074-DRC | Dior | Dune | socialCard, notes |
-| 1068-CHA | Chanel | Boy Eau de Parfum | identity |
-| 1065-CHA | Chanel | Allure Homme Sport | identity |
 | 1064-CHA | Chanel | Allure | socialCard, notes |
 | 1061-CRT | Cartier | Pasha de Cartier Fraicheur Menthe | identity, socialCard, notes, icons |
 | 1060-CRT | Cartier | L Envol de Cartier | identity, socialCard, notes, icons |
-| 1059-CRT | Cartier | Declaration | identity |
 | 1057-CAR | Carolina Herrera | 212 VIP Wild Party | socialCard, notes |
 | 476-CAL | Calvin Klein | CK One Summer 2016 | identity, socialCard, notes, icons |
 | 1045-CAL | Calvin Klein | Eternity | socialCard, notes |
 | 1043-CAL | Calvin Klein | Calvin Klein | socialCard, notes |
 | 1036-BLG | Bvlgari | BLV Pour Homme | socialCard, notes |
-| 1029-BRB | Burberry | Mr Burberry | identity |
 | 1027-BRB | Burberry | London | socialCard, notes |
-| 1020-AZZ | Azzaro | Wanted | identity |
 | 390-ACQ | Acqua di Parma | Acqua di Parma Blu Mediterraneo Mandorlo di Sicilia | identity |
