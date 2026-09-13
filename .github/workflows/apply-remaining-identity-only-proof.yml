@@ -1,0 +1,40 @@
+name: Apply remaining identity-only proofs
+
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-remaining-identity-only-proof.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-validation-writes
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recompute exact Social Card identity proof
+        run: python tools/analyze_all_identity_card_proof.py
+      - name: Apply only strict proofs
+        run: python tools/apply_all_identity_card_proof.py
+      - name: Rebuild strict validation
+        run: python tools/build_validation_audit.py
+      - name: Refresh yellow report
+        run: python tools/analyze_validation_yellows.py
+      - name: Commit proven identities
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Prove remaining identities from exact Social Cards"
+          git pull --rebase origin main
+          git push origin HEAD:main
