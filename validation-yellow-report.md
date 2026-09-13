@@ -1,13 +1,13 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **114**
+- Yellow rows: **110**
 - One check from green: **11**
 
 ## Failed checks
 
-- `socialCard`: **103**
-- `notes`: **103**
+- `socialCard`: **99**
+- `notes`: **99**
 - `icons`: **77**
 - `identity`: **61**
 - `season`: **38**
@@ -19,8 +19,8 @@
 ## Failure signatures
 
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
-- `socialCard,notes`: **23** — 2692-SOL, 2282-DRC, 2234-MON, 2185-DRC, 2016-PARELM, 1542-JOM, 896-RCAV, 884-RAL, 1037-BLG, 337-TIFF, 254-JOM, 917-SWA, 909-SFER, 827-MISN, 613-ESC, 468-CAL, 1248-RAL, 1245-PRA, 1184-JOO, 1172-ISS
 - `socialCard,notes,icons`: **21** — 2552-SOR, 2427-CLEA, 2250-ARBAS, 2178-MON, 1885-WID, 1836-COT, 1684-GIV, 1659-CHRA, 687-GUR, 153-PARF, 304-KIE, 985-YZLO, 979-YZLO, 945-VER, 904-SALV, 668-GIV, 612-ESC, 570-DOL, 514-CHL, 399-ARA
+- `socialCard,notes`: **19** — 2692-SOL, 2282-DRC, 2185-DRC, 2016-PARELM, 1542-JOM, 896-RCAV, 884-RAL, 1037-BLG, 337-TIFF, 254-JOM, 917-SWA, 909-SFER, 827-MISN, 1248-RAL, 1245-PRA, 1184-JOO, 1172-ISS, 1043-CAL, 1036-BLG
 - `identity,socialCard,notes,icons`: **17** — 2160-ZAR, 1989-VERT, 1644-DRC, 1483-DSQ, 236-IND, 989-YZLO, 987-YZLO, 692-GUR, 666-GIV, 525-DRC, 487-CRT, 421-BRB, 880-PRA, 769-LART, 1141-GIV, 1076-DRC, 476-CAL
 - `identity`: **8** — 2351-LOU, 2104-CHA, 667-GIV, 533-DRC, 520-CHO, 493-CER, 1156-HER, 1136-ARM
 - `socialCard,notes,season`: **3** — 2194-ORT, 548-CLI, 1086-CLI
@@ -49,7 +49,7 @@
 
 ## Issues
 
-- Social Card not fully verified: **103**
+- Social Card not fully verified: **99**
 - Note icons not fully verified: **77**
 - Missing Main Notes: **74**
 - Fragrantica identity not fully verified: **61**
@@ -58,7 +58,7 @@
 - Missing perfume image: **32**
 - Missing Fragrantica ID: **31**
 - Missing direct Fragrantica URL: **31**
-- Main Notes order not fully verified: **29**
+- Main Notes order not fully verified: **25**
 
 ## Yellow rows
 
@@ -73,7 +73,6 @@
 | 2351-LOU | Christian Louboutin | Bikini Questa Sera | identity |
 | 2282-DRC | Dior | Dioriviera Eau de Parfum | socialCard, notes |
 | 2250-ARBAS | Armand Basi | In Red | socialCard, notes, icons |
-| 2234-MON | moncler | Moncler pour Femme | socialCard, notes |
 | 2160-ZAR | Zara | Barbie | identity, socialCard, notes, icons |
 | 2194-ORT | Orto Parisi | ORTO | socialCard, notes, season |
 | 2185-DRC | Dior | Eau Sauvage Extreme 2010 | socialCard, notes |
@@ -145,7 +144,6 @@
 | 667-GIV | Givenchy | Dahlia Noir | identity |
 | 666-GIV | Givenchy | Dahlia Divin | identity, socialCard, notes, icons |
 | 621-EST | Estée Lauder | Bronze Goddess 2011 | identity, socialCard, notes |
-| 613-ESC | Escada | Turquoise Summer | socialCard, notes |
 | 612-ESC | Escada | TURQUOISE - ESCADA | socialCard, notes, icons |
 | 570-DOL | Dolce & Gabbana | (RED CUP) | socialCard, notes, icons |
 | 548-CLI | Clinique | Happy | socialCard, notes, season |
@@ -156,7 +154,6 @@
 | 514-CHL | Chloe | Love Story | socialCard, notes, icons |
 | 493-CER | Cerruti | 1881 | identity |
 | 487-CRT | Cartier | Baiser Vole | identity, socialCard, notes, icons |
-| 468-CAL | Calvin Klein | Calvin Klein | socialCard, notes |
 | 425-BRB | Burberry | Burberry Her | icons |
 | 421-BRB | Burberry | Body | identity, socialCard, notes, icons |
 | 399-ARA | Aramis | Tuscany Per Donna | socialCard, notes, icons |
@@ -171,7 +168,6 @@
 | 1156-HER | Hermès | Terre d Hermes | identity |
 | 1141-GIV | Givenchy | Pi | identity, socialCard, notes, icons |
 | 1136-ARM | Giorgio Armani | Emporio Armani Stronger With You | identity |
-| 1134-ARM | Giorgio Armani | Emporio Armani Diamonds | socialCard, notes |
 | 1118-FAB | Faberge | Brut | identity, socialCard, notes |
 | 1086-CLI | Clinique | Happy | socialCard, notes, season |
 | 1076-DRC | Dior | Fahrenheit | identity, socialCard, notes, icons |

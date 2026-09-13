@@ -1,6 +1,6 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 114,
+  "yellowRows": 110,
   "singleFailureRows": [
     {
       "code": "2351-LOU",
@@ -207,35 +207,6 @@
       ]
     },
     {
-      "signature": "socialCard,notes",
-      "count": 23,
-      "codes": [
-        "2692-SOL",
-        "2282-DRC",
-        "2234-MON",
-        "2185-DRC",
-        "2016-PARELM",
-        "1542-JOM",
-        "896-RCAV",
-        "884-RAL",
-        "1037-BLG",
-        "337-TIFF",
-        "254-JOM",
-        "917-SWA",
-        "909-SFER",
-        "827-MISN",
-        "613-ESC",
-        "468-CAL",
-        "1248-RAL",
-        "1245-PRA",
-        "1184-JOO",
-        "1172-ISS",
-        "1134-ARM",
-        "1043-CAL",
-        "1036-BLG"
-      ]
-    },
-    {
       "signature": "socialCard,notes,icons",
       "count": 21,
       "codes": [
@@ -260,6 +231,31 @@
         "514-CHL",
         "399-ARA",
         "777-LAL"
+      ]
+    },
+    {
+      "signature": "socialCard,notes",
+      "count": 19,
+      "codes": [
+        "2692-SOL",
+        "2282-DRC",
+        "2185-DRC",
+        "2016-PARELM",
+        "1542-JOM",
+        "896-RCAV",
+        "884-RAL",
+        "1037-BLG",
+        "337-TIFF",
+        "254-JOM",
+        "917-SWA",
+        "909-SFER",
+        "827-MISN",
+        "1248-RAL",
+        "1245-PRA",
+        "1184-JOO",
+        "1172-ISS",
+        "1043-CAL",
+        "1036-BLG"
       ]
     },
     {
@@ -359,7 +355,7 @@
   "byIssue": [
     {
       "issue": "Social Card not fully verified",
-      "count": 103,
+      "count": 99,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
@@ -369,7 +365,6 @@
         "2427-CLEA",
         "2282-DRC",
         "2250-ARBAS",
-        "2234-MON",
         "2160-ZAR",
         "2194-ORT",
         "2185-DRC",
@@ -437,7 +432,6 @@
         "668-GIV",
         "666-GIV",
         "621-EST",
-        "613-ESC",
         "612-ESC",
         "570-DOL",
         "548-CLI",
@@ -445,7 +439,6 @@
         "521-DRC",
         "514-CHL",
         "487-CRT",
-        "468-CAL",
         "421-BRB",
         "399-ARA",
         "1251-ROM",
@@ -457,7 +450,6 @@
         "1184-JOO",
         "1172-ISS",
         "1141-GIV",
-        "1134-ARM",
         "1118-FAB",
         "1086-CLI",
         "1076-DRC",
@@ -896,11 +888,10 @@
     },
     {
       "issue": "Main Notes order not fully verified",
-      "count": 29,
+      "count": 25,
       "codes": [
         "2692-SOL",
         "2282-DRC",
-        "2234-MON",
         "2194-ORT",
         "2185-DRC",
         "2016-PARELM",
@@ -915,14 +906,11 @@
         "828-MIY",
         "827-MISN",
         "621-EST",
-        "613-ESC",
         "548-CLI",
-        "468-CAL",
         "1248-RAL",
         "1245-PRA",
         "1184-JOO",
         "1172-ISS",
-        "1134-ARM",
         "1118-FAB",
         "1086-CLI",
         "1043-CAL",
@@ -933,7 +921,7 @@
   "byFailedCheck": [
     {
       "check": "socialCard",
-      "count": 103,
+      "count": 99,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
@@ -943,7 +931,6 @@
         "2427-CLEA",
         "2282-DRC",
         "2250-ARBAS",
-        "2234-MON",
         "2160-ZAR",
         "2194-ORT",
         "2185-DRC",
@@ -1011,7 +998,6 @@
         "668-GIV",
         "666-GIV",
         "621-EST",
-        "613-ESC",
         "612-ESC",
         "570-DOL",
         "548-CLI",
@@ -1019,7 +1005,6 @@
         "521-DRC",
         "514-CHL",
         "487-CRT",
-        "468-CAL",
         "421-BRB",
         "399-ARA",
         "1251-ROM",
@@ -1031,7 +1016,6 @@
         "1184-JOO",
         "1172-ISS",
         "1141-GIV",
-        "1134-ARM",
         "1118-FAB",
         "1086-CLI",
         "1076-DRC",
@@ -1042,7 +1026,7 @@
     },
     {
       "check": "notes",
-      "count": 103,
+      "count": 99,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
@@ -1052,7 +1036,6 @@
         "2427-CLEA",
         "2282-DRC",
         "2250-ARBAS",
-        "2234-MON",
         "2160-ZAR",
         "2194-ORT",
         "2185-DRC",
@@ -1120,7 +1103,6 @@
         "668-GIV",
         "666-GIV",
         "621-EST",
-        "613-ESC",
         "612-ESC",
         "570-DOL",
         "548-CLI",
@@ -1128,7 +1110,6 @@
         "521-DRC",
         "514-CHL",
         "487-CRT",
-        "468-CAL",
         "421-BRB",
         "399-ARA",
         "1251-ROM",
@@ -1140,7 +1121,6 @@
         "1184-JOO",
         "1172-ISS",
         "1141-GIV",
-        "1134-ARM",
         "1118-FAB",
         "1086-CLI",
         "1076-DRC",
@@ -1697,23 +1677,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "2234-MON",
-      "brand": "moncler",
-      "inspiredBy": "Moncler pour Femme",
-      "fragranticaUrl": "https://www.fragrantica.com/p/69819",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
     },
     {
       "code": "2160-ZAR",
@@ -3395,23 +3358,6 @@
       "iconsCount": 6
     },
     {
-      "code": "613-ESC",
-      "brand": "Escada",
-      "inspiredBy": "Turquoise Summer",
-      "fragranticaUrl": "https://www.fragrantica.com/p/28630",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
       "code": "612-ESC",
       "brand": "Escada",
       "inspiredBy": "TURQUOISE - ESCADA",
@@ -3596,23 +3542,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "468-CAL",
-      "brand": "Calvin Klein",
-      "inspiredBy": "Calvin Klein",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Calvin-Klein-14606.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
     },
     {
       "code": "425-BRB",
@@ -3872,23 +3801,6 @@
       ],
       "notesCount": 6,
       "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "1134-ARM",
-      "brand": "Giorgio Armani",
-      "inspiredBy": "Emporio Armani Diamonds",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Diamonds-1292.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
       "iconsCount": 6
     },
     {
