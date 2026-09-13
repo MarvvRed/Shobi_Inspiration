@@ -1,0 +1,29 @@
+name: Reanalyze shared-FID Social Cards
+
+on:
+  push:
+    paths:
+      - '.github/workflows/reanalyze-shared-fid-social-cards.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/analyze_shared_fid_social_card_recovery.py
+      - name: Publish report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add shared-fid-social-card-recovery.json shared-fid-social-card-recovery.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Reanalyze shared-FID Social Card recoveries"
+          git pull --rebase origin main
+          git push origin HEAD:main
