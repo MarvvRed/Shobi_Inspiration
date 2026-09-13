@@ -1,0 +1,42 @@
+name: Fix identity-gender-season four
+
+on:
+  push:
+    paths:
+      - 'tools/fix_identity_gender_season_four.py'
+      - '.github/workflows/fix-identity-gender-season-four.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr
+          python -m pip install pillow pytesseract
+      - name: Verify exact identity gender season chain
+        run: python tools/fix_identity_gender_season_four.py
+      - name: Rebuild strict validation
+        run: python tools/build_validation_audit.py
+      - name: Refresh yellow report
+        run: python tools/analyze_validation_yellows.py
+      - name: Commit verified four-row batch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database_complete.json catalog_site.json fragrantica-scraper-archive/social-cards/gender-season.csv identity-gender-season-four-fixes.json validation-yellow-report.json validation-yellow-report.md
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Verify identity gender and season for exact four-row batch"
+          git pull --rebase origin main
+          git push origin HEAD:main
