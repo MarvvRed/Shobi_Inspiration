@@ -1,6 +1,6 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 174,
+  "yellowRows": 167,
   "singleFailureRows": [
     {
       "code": "2514-DRC",
@@ -97,7 +97,7 @@
     },
     {
       "signature": "socialCard,notes",
-      "count": 52,
+      "count": 45,
       "codes": [
         "2692-SOL",
         "2438-KYLJ",
@@ -107,7 +107,6 @@
         "2185-DRC",
         "2016-PARELM",
         "1542-JOM",
-        "1504-DON",
         "896-RCAV",
         "884-RAL",
         "1037-BLG",
@@ -119,7 +118,6 @@
         "917-SWA",
         "909-SFER",
         "882-PRA",
-        "843-NRO",
         "829-MNTB",
         "827-MISN",
         "753-KEN",
@@ -141,14 +139,9 @@
         "1245-PRA",
         "1184-JOO",
         "1172-ISS",
-        "1163-HUG",
         "1134-ARM",
-        "1131-ARM",
         "1096-DOL",
-        "1095-DOL",
         "1092-DOL",
-        "1074-DRC",
-        "1064-CHA",
         "1043-CAL",
         "1036-BLG"
       ]
@@ -290,7 +283,7 @@
   "byIssue": [
     {
       "issue": "Social Card not fully verified",
-      "count": 158,
+      "count": 151,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
@@ -321,7 +314,6 @@
         "1748-BYR",
         "1684-GIV",
         "1659-CHRA",
-        "1504-DON",
         "1644-DRC",
         "1550-YAN",
         "1483-DSQ",
@@ -379,7 +371,6 @@
         "904-SALV",
         "882-PRA",
         "858-PAC",
-        "843-NRO",
         "829-MNTB",
         "828-MIY",
         "827-MISN",
@@ -430,21 +421,16 @@
         "769-LART",
         "1184-JOO",
         "1172-ISS",
-        "1163-HUG",
         "1160-HUG",
         "1156-HER",
         "1141-GIV",
         "1136-ARM",
         "1134-ARM",
-        "1131-ARM",
         "1118-FAB",
         "1096-DOL",
-        "1095-DOL",
         "1092-DOL",
         "1086-CLI",
         "1076-DRC",
-        "1074-DRC",
-        "1064-CHA",
         "1061-CRT",
         "1060-CRT",
         "476-CAL",
@@ -763,73 +749,6 @@
       ]
     },
     {
-      "issue": "Main Notes order not fully verified",
-      "count": 61,
-      "codes": [
-        "2692-SOL",
-        "2438-KYLJ",
-        "2456-PAC",
-        "2282-DRC",
-        "2234-MON",
-        "2224-ARM",
-        "2194-ORT",
-        "2185-DRC",
-        "2016-PARELM",
-        "1542-JOM",
-        "1751-GUL",
-        "1504-DON",
-        "896-RCAV",
-        "884-RAL",
-        "1037-BLG",
-        "337-TIFF",
-        "127-KIL",
-        "848-NRO",
-        "254-JOM",
-        "928-TRU",
-        "920-TMU",
-        "917-SWA",
-        "909-SFER",
-        "882-PRA",
-        "843-NRO",
-        "829-MNTB",
-        "828-MIY",
-        "827-MISN",
-        "753-KEN",
-        "735-JIM",
-        "717-ISS",
-        "711-HUG",
-        "621-EST",
-        "613-ESC",
-        "574-DON",
-        "566-DOL",
-        "557-DOL",
-        "548-CLI",
-        "500-CHA",
-        "483-CAR",
-        "475-CAL",
-        "470-CAL",
-        "468-CAL",
-        "426-BRB",
-        "1250-RAL",
-        "1248-RAL",
-        "1245-PRA",
-        "1184-JOO",
-        "1172-ISS",
-        "1163-HUG",
-        "1134-ARM",
-        "1131-ARM",
-        "1118-FAB",
-        "1096-DOL",
-        "1095-DOL",
-        "1092-DOL",
-        "1086-CLI",
-        "1074-DRC",
-        "1064-CHA",
-        "1043-CAL",
-        "1036-BLG"
-      ]
-    },
-    {
       "issue": "Season not fully verified",
       "count": 60,
       "codes": [
@@ -893,6 +812,66 @@
         "1165-HUG",
         "1086-CLI",
         "1076-DRC"
+      ]
+    },
+    {
+      "issue": "Main Notes order not fully verified",
+      "count": 54,
+      "codes": [
+        "2692-SOL",
+        "2438-KYLJ",
+        "2456-PAC",
+        "2282-DRC",
+        "2234-MON",
+        "2224-ARM",
+        "2194-ORT",
+        "2185-DRC",
+        "2016-PARELM",
+        "1542-JOM",
+        "1751-GUL",
+        "896-RCAV",
+        "884-RAL",
+        "1037-BLG",
+        "337-TIFF",
+        "127-KIL",
+        "848-NRO",
+        "254-JOM",
+        "928-TRU",
+        "920-TMU",
+        "917-SWA",
+        "909-SFER",
+        "882-PRA",
+        "829-MNTB",
+        "828-MIY",
+        "827-MISN",
+        "753-KEN",
+        "735-JIM",
+        "717-ISS",
+        "711-HUG",
+        "621-EST",
+        "613-ESC",
+        "574-DON",
+        "566-DOL",
+        "557-DOL",
+        "548-CLI",
+        "500-CHA",
+        "483-CAR",
+        "475-CAL",
+        "470-CAL",
+        "468-CAL",
+        "426-BRB",
+        "1250-RAL",
+        "1248-RAL",
+        "1245-PRA",
+        "1184-JOO",
+        "1172-ISS",
+        "1134-ARM",
+        "1118-FAB",
+        "1096-DOL",
+        "1092-DOL",
+        "1086-CLI",
+        "1043-CAL",
+        "1036-BLG"
       ]
     },
     {
@@ -1070,7 +1049,7 @@
   "byFailedCheck": [
     {
       "check": "socialCard",
-      "count": 158,
+      "count": 151,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
@@ -1101,7 +1080,6 @@
         "1748-BYR",
         "1684-GIV",
         "1659-CHRA",
-        "1504-DON",
         "1644-DRC",
         "1550-YAN",
         "1483-DSQ",
@@ -1159,7 +1137,6 @@
         "904-SALV",
         "882-PRA",
         "858-PAC",
-        "843-NRO",
         "829-MNTB",
         "828-MIY",
         "827-MISN",
@@ -1210,21 +1187,16 @@
         "769-LART",
         "1184-JOO",
         "1172-ISS",
-        "1163-HUG",
         "1160-HUG",
         "1156-HER",
         "1141-GIV",
         "1136-ARM",
         "1134-ARM",
-        "1131-ARM",
         "1118-FAB",
         "1096-DOL",
-        "1095-DOL",
         "1092-DOL",
         "1086-CLI",
         "1076-DRC",
-        "1074-DRC",
-        "1064-CHA",
         "1061-CRT",
         "1060-CRT",
         "476-CAL",
@@ -1234,7 +1206,7 @@
     },
     {
       "check": "notes",
-      "count": 158,
+      "count": 151,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
@@ -1265,7 +1237,6 @@
         "1748-BYR",
         "1684-GIV",
         "1659-CHRA",
-        "1504-DON",
         "1644-DRC",
         "1550-YAN",
         "1483-DSQ",
@@ -1323,7 +1294,6 @@
         "904-SALV",
         "882-PRA",
         "858-PAC",
-        "843-NRO",
         "829-MNTB",
         "828-MIY",
         "827-MISN",
@@ -1374,21 +1344,16 @@
         "769-LART",
         "1184-JOO",
         "1172-ISS",
-        "1163-HUG",
         "1160-HUG",
         "1156-HER",
         "1141-GIV",
         "1136-ARM",
         "1134-ARM",
-        "1131-ARM",
         "1118-FAB",
         "1096-DOL",
-        "1095-DOL",
         "1092-DOL",
         "1086-CLI",
         "1076-DRC",
-        "1074-DRC",
-        "1064-CHA",
         "1061-CRT",
         "1060-CRT",
         "476-CAL",
@@ -2600,23 +2565,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "1504-DON",
-      "brand": "Donna Karan",
-      "inspiredBy": "DKNY Be Delicious",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Donna-Karan/DKNY-Be-Delicious-498.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
     },
     {
       "code": "1644-DRC",
@@ -4074,23 +4022,6 @@
       "iconsCount": 6
     },
     {
-      "code": "843-NRO",
-      "brand": "Narciso Rodriguez",
-      "inspiredBy": "For Her",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Narciso-Rodriguez/For-Her-209.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 8,
-      "matchedNotesCount": 4,
-      "iconsCount": 8
-    },
-    {
       "code": "829-MNTB",
       "brand": "Montblanc",
       "inspiredBy": "FEMME - MONT BLANC",
@@ -5161,23 +5092,6 @@
       "iconsCount": 4
     },
     {
-      "code": "1163-HUG",
-      "brand": "Hugo Boss",
-      "inspiredBy": "Boss Orange",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Orange-5979.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 1,
-      "iconsCount": 6
-    },
-    {
       "code": "1160-HUG",
       "brand": "Hugo Boss",
       "inspiredBy": "Boss Bottled",
@@ -5279,23 +5193,6 @@
       "iconsCount": 6
     },
     {
-      "code": "1131-ARM",
-      "brand": "Giorgio Armani",
-      "inspiredBy": "Mania",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Mania-423.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
       "code": "1118-FAB",
       "brand": "Faberge",
       "inspiredBy": "Brut",
@@ -5319,23 +5216,6 @@
       "brand": "Dolce & Gabbana",
       "inspiredBy": "Light Blue Eau Intense",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-Eau-Intense-44034.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "1095-DOL",
-      "brand": "Dolce & Gabbana",
-      "inspiredBy": "Light Blue",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-485.html",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"
@@ -5408,40 +5288,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "1074-DRC",
-      "brand": "Dior",
-      "inspiredBy": "Dune",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dune-221.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 1,
-      "iconsCount": 6
-    },
-    {
-      "code": "1064-CHA",
-      "brand": "Chanel",
-      "inspiredBy": "Allure",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Allure-502.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 3,
-      "iconsCount": 6
     },
     {
       "code": "1061-CRT",

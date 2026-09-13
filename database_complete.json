@@ -71785,14 +71785,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Solar Notes",
-      "Peach",
-      "Orange",
-      "Amber",
-      "Floral Notes",
-      "Pink Pepper"
+      "Apple",
+      "Cucumber",
+      "Grapefruit",
+      "Lily-of-the-Valley",
+      "Magnolia",
+      "Woody Notes"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -71804,28 +71804,27 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaSocialCardVerificationSource": "fragrantica-scraper-archive/social-cards/images/663_574-DON_498.jpeg",
+    "fragranticaSocialCardVerificationFragranticaId": "498"
   },
   {
     "id": "pid:2381",
@@ -110842,12 +110841,9 @@
       "Orange Blossom",
       "Osmanthus",
       "Amber",
-      "Vetiver",
-      "Bergamot",
-      "Patchouli",
-      "Vanilla"
+      "Bergamot"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Narciso-Rodriguez/For-Her-209.html",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
@@ -110859,28 +110855,27 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "notesCount": 8,
-      "matchedNotesCount": 4,
-      "iconsCount": 8
-    }
+      "issues": [],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    "fragranticaSocialCardVerificationSource": "fragrantica-scraper-archive/social-cards/images/1775_848-NRO_209.jpeg",
+    "fragranticaSocialCardVerificationFragranticaId": "209"
   },
   {
     "id": "pid:886",
@@ -142180,14 +142175,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Red Apple",
+      "Orange Blossom",
       "Vanilla",
-      "Woodsy Notes",
-      "Incense",
-      "Sichuan Pepper",
-      "Coriander"
+      "Red Apple",
+      "White Flowers",
+      "Sandalwood",
+      "Olive Tree"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -142199,28 +142194,27 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 1,
+      "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaSocialCardVerificationSource": "fragrantica-scraper-archive/social-cards/images/778_711-HUG_5979.jpeg",
+    "fragranticaSocialCardVerificationFragranticaId": "5979"
   },
   {
     "id": "pid:250",
@@ -143927,14 +143921,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Mandarin Orange",
-      "Cedar",
       "Saffron",
+      "Nutmeg",
+      "Cloves",
+      "Labdanum",
       "Musk",
-      "Vetiver",
-      "Amber"
+      "Guaiac Wood"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -143946,28 +143940,27 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaSocialCardVerificationSource": "fragrantica-scraper-archive/social-cards/images/732_653-ARM_423.jpeg",
+    "fragranticaSocialCardVerificationFragranticaId": "423"
   },
   {
     "id": "pid:222",
@@ -146103,14 +146096,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Grapefruit",
-      "Bergamot",
-      "Pepper",
-      "Mandarin Orange",
-      "Rosemary",
-      "Juniper"
+      "Lemon",
+      "Apple",
+      "Cedar",
+      "Bamboo",
+      "Musk",
+      "Jasmine"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -146122,28 +146115,27 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaSocialCardVerificationSource": "fragrantica-scraper-archive/social-cards/images/647_557-DOL_485.jpeg",
+    "fragranticaSocialCardVerificationFragranticaId": "485"
   },
   {
     "id": "pid:186",
@@ -147085,14 +147077,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Fig Leaf",
-      "Fig",
+      "Brazilian Rosewood",
+      "Amber",
       "Sandalwood",
-      "Currant Leaf and Bud",
-      "Sage",
-      "Rose"
+      "Aldehydes",
+      "Benzoin",
+      "Oakmoss"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -147104,28 +147096,27 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 1,
+      "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaSocialCardVerificationSource": "fragrantica-scraper-archive/social-cards/images/618_525-DRC_221.jpeg",
+    "fragranticaSocialCardVerificationFragranticaId": "221"
   },
   {
     "id": "pid:169",
@@ -147683,12 +147674,12 @@
     "fragranticaSocialCardNotes": [
       "Vanilla",
       "Lemon",
-      "Peach",
-      "Tonka Bean",
-      "Ginger",
+      "Honeysuckle",
+      "Jasmine",
+      "Magnolia",
       "Mandarin Orange"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -147700,28 +147691,27 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 3,
+      "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaSocialCardVerificationSource": "fragrantica-scraper-archive/social-cards/images/590_494-CHA_502.jpeg",
+    "fragranticaSocialCardVerificationFragranticaId": "502"
   },
   {
     "id": "pid:160",
