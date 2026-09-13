@@ -1,9 +1,9 @@
 {
-  "count": 130,
+  "count": 126,
   "kinds": {
-    "no_social_card_record": 51,
+    "no_social_card_record": 49,
     "validated_record_unresolved": 61,
-    "validated_fid_mismatch": 18
+    "validated_fid_mismatch": 16
   },
   "rows": [
     {
@@ -152,7 +152,6 @@
       "inspiredBy": "Night Horse",
       "fid": "75119",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -168,7 +167,6 @@
       "inspiredBy": "Indonesian Oud",
       "fid": "16188",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -303,7 +301,6 @@
       "inspiredBy": "Clean Warm Cotton",
       "fid": "3024",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -612,8 +609,7 @@
       "fid": "81847",
       "failedChecks": [
         "socialCard",
-        "notes",
-        "season"
+        "notes"
       ],
       "kind": "validated_record_unresolved",
       "notes": [
@@ -650,7 +646,6 @@
       "inspiredBy": "In Red",
       "fid": "128",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -1759,7 +1754,6 @@
       "inspiredBy": "Widian London",
       "fid": "47781",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -1813,7 +1807,6 @@
       "inspiredBy": "Vanilla Fields",
       "fid": "6029",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -1962,150 +1955,6 @@
       }
     },
     {
-      "code": "1751-GUL",
-      "brand": "Jean Paul Gaultier",
-      "inspiredBy": "Madame",
-      "fid": "12088",
-      "failedChecks": [
-        "socialCard",
-        "notes",
-        "season"
-      ],
-      "kind": "validated_fid_mismatch",
-      "notes": [
-        "Grenadine",
-        "Orange",
-        "Rose",
-        "Musk",
-        "Cedar"
-      ],
-      "validated": {
-        "code": "1751-GUL",
-        "fragranticaId": 3681,
-        "card": "fragrantica-scraper-archive/social-cards/images/2613_1751-GUL_3681.jpeg",
-        "validated": true,
-        "mainNotes": [
-          "Grenadine",
-          "Orange",
-          "Rose",
-          "Musk",
-          "Cedar"
-        ],
-        "rawSlots": [
-          {
-            "slot": 1,
-            "name": "Grenadine bd",
-            "ocrConfidence": 78.4
-          },
-          {
-            "slot": 2,
-            "name": "4 Orange",
-            "ocrConfidence": 91.6
-          },
-          {
-            "slot": 3,
-            "name": "ae Rose",
-            "ocrConfidence": 73.8
-          },
-          {
-            "slot": 4,
-            "name": "SR Musk",
-            "ocrConfidence": 64.5
-          },
-          {
-            "slot": 5,
-            "name": "EE Cedar",
-            "ocrConfidence": 74.1
-          }
-        ],
-        "validatedSlots": [
-          {
-            "slot": 1,
-            "name": "Grenadine",
-            "raw": "Grenadine bd",
-            "matchScore": 0.97,
-            "margin": 0.37,
-            "ocrConfidence": 78.4
-          },
-          {
-            "slot": 2,
-            "name": "Orange",
-            "raw": "4 Orange",
-            "matchScore": 0.97,
-            "margin": 0.233,
-            "ocrConfidence": 91.6
-          },
-          {
-            "slot": 3,
-            "name": "Rose",
-            "raw": "ae Rose",
-            "matchScore": 0.97,
-            "margin": 0.146,
-            "ocrConfidence": 73.8
-          },
-          {
-            "slot": 4,
-            "name": "Musk",
-            "raw": "SR Musk",
-            "matchScore": 0.97,
-            "margin": 0.22,
-            "ocrConfidence": 64.5
-          },
-          {
-            "slot": 5,
-            "name": "Cedar",
-            "raw": "EE Cedar",
-            "matchScore": 0.97,
-            "margin": 0.17,
-            "ocrConfidence": 74.1
-          }
-        ],
-        "failures": [],
-        "reasons": []
-      },
-      "raw": {
-        "page": 403,
-        "fragranticaId": 3681,
-        "code": "1751-GUL",
-        "card": "fragrantica-scraper-archive/social-cards/images/2613_1751-GUL_3681.jpeg",
-        "mainNotes": [
-          "Grenadine bd",
-          "4 Orange",
-          "ae Rose",
-          "SR Musk",
-          "EE Cedar"
-        ],
-        "slots": [
-          {
-            "slot": 1,
-            "name": "Grenadine bd",
-            "ocrConfidence": 78.4
-          },
-          {
-            "slot": 2,
-            "name": "4 Orange",
-            "ocrConfidence": 91.6
-          },
-          {
-            "slot": 3,
-            "name": "ae Rose",
-            "ocrConfidence": 73.8
-          },
-          {
-            "slot": 4,
-            "name": "SR Musk",
-            "ocrConfidence": 64.5
-          },
-          {
-            "slot": 5,
-            "name": "EE Cedar",
-            "ocrConfidence": 74.1
-          }
-        ],
-        "ocrConfidence": 76.5
-      }
-    },
-    {
       "code": "1748-BYR",
       "brand": "Byredo",
       "inspiredBy": "Marijuana",
@@ -2132,7 +1981,6 @@
       "inspiredBy": "Ysatis",
       "fid": "36",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2168,7 +2016,6 @@
       "inspiredBy": "Christina Aguilera by Night",
       "fid": "6714",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2325,9 +2172,7 @@
         "identity",
         "socialCard",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "icons"
       ],
       "kind": "validated_record_unresolved",
       "notes": [],
@@ -2501,7 +2346,6 @@
       "inspiredBy": "L Instant de Guerlain",
       "fid": "51",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2945,7 +2789,6 @@
       "inspiredBy": "Straight to Heaven",
       "fid": "4323",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3099,7 +2942,6 @@
       "inspiredBy": "Boss Bottled Oud",
       "fid": "31141",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3412,7 +3254,6 @@
       "inspiredBy": "Calvin Klein Women",
       "fid": "50662",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3852,7 +3693,6 @@
       "inspiredBy": "Original Musk",
       "fid": "6188",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -4400,7 +4240,6 @@
       "inspiredBy": "Mon Paris",
       "fid": "38914",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -4554,7 +4393,6 @@
       "inspiredBy": "Cinema",
       "fid": "92",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -4590,7 +4428,6 @@
       "inspiredBy": "Eros Pour Femme",
       "fid": "28958",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -4618,171 +4455,6 @@
         "mainNotes": [],
         "slots": [],
         "ocrConfidence": 0
-      }
-    },
-    {
-      "code": "928-TRU",
-      "brand": "Trussardi",
-      "inspiredBy": "Delicate Rose",
-      "fid": "93471",
-      "failedChecks": [
-        "socialCard",
-        "notes",
-        "season"
-      ],
-      "kind": "validated_fid_mismatch",
-      "notes": [
-        "Rose",
-        "Lotus",
-        "Yuzu",
-        "Apple",
-        "Bamboo",
-        "Musk"
-      ],
-      "validated": {
-        "code": "928-TRU",
-        "fragranticaId": 16241,
-        "card": "fragrantica-scraper-archive/social-cards/images/962_928-TRU_16241.jpeg",
-        "validated": true,
-        "mainNotes": [
-          "Rose",
-          "Lotus",
-          "Yuzu",
-          "Apple",
-          "Bamboo",
-          "Musk"
-        ],
-        "rawSlots": [
-          {
-            "slot": 1,
-            "name": "Rose",
-            "ocrConfidence": 96.5
-          },
-          {
-            "slot": 2,
-            "name": "Lotus",
-            "ocrConfidence": 95.3
-          },
-          {
-            "slot": 3,
-            "name": "eS YuZuU hd",
-            "ocrConfidence": 48.3
-          },
-          {
-            "slot": 4,
-            "name": "Apple",
-            "ocrConfidence": 96.8
-          },
-          {
-            "slot": 5,
-            "name": "Ine Bamboo",
-            "ocrConfidence": 62.0
-          },
-          {
-            "slot": 6,
-            "name": "Musk",
-            "ocrConfidence": 95.4
-          }
-        ],
-        "validatedSlots": [
-          {
-            "slot": 1,
-            "name": "Rose",
-            "raw": "Rose",
-            "matchScore": 1,
-            "margin": 1,
-            "ocrConfidence": 96.5
-          },
-          {
-            "slot": 2,
-            "name": "Lotus",
-            "raw": "Lotus",
-            "matchScore": 1,
-            "margin": 1,
-            "ocrConfidence": 95.3
-          },
-          {
-            "slot": 3,
-            "name": "Yuzu",
-            "raw": "eS YuZuU hd",
-            "matchScore": 0.93,
-            "margin": 0.374,
-            "ocrConfidence": 48.3
-          },
-          {
-            "slot": 4,
-            "name": "Apple",
-            "raw": "Apple",
-            "matchScore": 1,
-            "margin": 1,
-            "ocrConfidence": 96.8
-          },
-          {
-            "slot": 5,
-            "name": "Bamboo",
-            "raw": "Ine Bamboo",
-            "matchScore": 0.97,
-            "margin": 0.303,
-            "ocrConfidence": 62.0
-          },
-          {
-            "slot": 6,
-            "name": "Musk",
-            "raw": "Musk",
-            "matchScore": 1,
-            "margin": 1,
-            "ocrConfidence": 95.4
-          }
-        ],
-        "failures": [],
-        "reasons": []
-      },
-      "raw": {
-        "page": 754,
-        "fragranticaId": 16241,
-        "code": "928-TRU",
-        "card": "fragrantica-scraper-archive/social-cards/images/962_928-TRU_16241.jpeg",
-        "mainNotes": [
-          "Rose",
-          "Lotus",
-          "eS YuZuU hd",
-          "Apple",
-          "Ine Bamboo",
-          "Musk"
-        ],
-        "slots": [
-          {
-            "slot": 1,
-            "name": "Rose",
-            "ocrConfidence": 96.5
-          },
-          {
-            "slot": 2,
-            "name": "Lotus",
-            "ocrConfidence": 95.3
-          },
-          {
-            "slot": 3,
-            "name": "eS YuZuU hd",
-            "ocrConfidence": 48.3
-          },
-          {
-            "slot": 4,
-            "name": "Apple",
-            "ocrConfidence": 96.8
-          },
-          {
-            "slot": 5,
-            "name": "Ine Bamboo",
-            "ocrConfidence": 62.0
-          },
-          {
-            "slot": 6,
-            "name": "Musk",
-            "ocrConfidence": 95.4
-          }
-        ],
-        "ocrConfidence": 82.4
       }
     },
     {
@@ -4955,7 +4627,6 @@
       "inspiredBy": "Lovely",
       "fid": "993",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -5145,7 +4816,6 @@
       "inspiredBy": "Black XS for Her",
       "fid": "1138",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -5299,7 +4969,6 @@
       "inspiredBy": "Miu Miu L Eau Bleue",
       "fid": "42720",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "gender"
@@ -5629,7 +5298,6 @@
       "inspiredBy": "Pleats Please",
       "fid": "15464",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -5819,7 +5487,6 @@
       "inspiredBy": "Gucci Bamboo",
       "fid": "30815",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -5973,7 +5640,6 @@
       "inspiredBy": "Hot Couture",
       "fid": "35",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -6308,22 +5974,6 @@
         ],
         "ocrConfidence": 63.3
       }
-    },
-    {
-      "code": "653-ARM",
-      "brand": "Giorgio Armani",
-      "inspiredBy": "Mania",
-      "fid": "423",
-      "failedChecks": [
-        "identity",
-        "socialCard",
-        "notes",
-        "icons"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [],
-      "validated": null,
-      "raw": null
     },
     {
       "code": "621-EST",
@@ -6906,9 +6556,7 @@
         "socialCard",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "icons"
       ],
       "kind": "validated_record_unresolved",
       "notes": [],
@@ -7213,7 +6861,6 @@
       "inspiredBy": "Love Story",
       "fid": "26227",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -7367,7 +7014,6 @@
       "inspiredBy": "Chance",
       "fid": "610",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -7514,22 +7160,6 @@
         ],
         "ocrConfidence": 82.3
       }
-    },
-    {
-      "code": "494-CHA",
-      "brand": "Chanel",
-      "inspiredBy": "Allure",
-      "fid": "502",
-      "failedChecks": [
-        "identity",
-        "socialCard",
-        "notes",
-        "icons"
-      ],
-      "kind": "no_social_card_record",
-      "notes": [],
-      "validated": null,
-      "raw": null
     },
     {
       "code": "493-CER",
@@ -7886,7 +7516,6 @@
       "inspiredBy": "Burberry Her",
       "fid": "51694",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -8076,7 +7705,6 @@
       "inspiredBy": "White Musk",
       "fid": "2432",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -8230,7 +7858,6 @@
       "inspiredBy": "Tuscany Per Donna",
       "fid": "122",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -8628,7 +8255,6 @@
       "inspiredBy": "Sculpteur d Epices",
       "fid": "28250",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -9003,7 +8629,6 @@
       "inspiredBy": "Boss Bottled",
       "fid": "383",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -9854,9 +9479,7 @@
         "identity",
         "socialCard",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "icons"
       ],
       "kind": "validated_record_unresolved",
       "notes": [],
@@ -10007,7 +9630,6 @@
       "inspiredBy": "Pasha de Cartier Fraicheur Menthe",
       "fid": "2446",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -10160,7 +9782,6 @@
       "inspiredBy": "L Envol de Cartier",
       "fid": "39885",
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"

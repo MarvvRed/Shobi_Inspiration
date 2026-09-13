@@ -1,11 +1,11 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 130,
+  "yellowRows": 126,
   "singleFailureRows": [],
   "byFailureSignature": [
     {
       "signature": "socialCard,notes,icons",
-      "count": 38,
+      "count": 34,
       "codes": [
         "2552-SOR",
         "2439-ZEG",
@@ -14,7 +14,6 @@
         "2178-MON",
         "1885-WID",
         "1836-COT",
-        "1751-GUL",
         "1684-GIV",
         "1659-CHRA",
         "687-GUR",
@@ -25,19 +24,16 @@
         "985-YZLO",
         "979-YZLO",
         "945-VER",
-        "928-TRU",
         "910-SARJ",
         "904-SALV",
         "858-PAC",
         "719-ISS",
         "674-GUC",
         "668-GIV",
-        "653-ARM",
         "612-ESC",
         "570-DOL",
         "514-CHL",
         "497-CHA",
-        "494-CHA",
         "425-BRB",
         "411-BOD",
         "399-ARA",
@@ -197,7 +193,7 @@
   "byIssue": [
     {
       "issue": "Social Card not fully verified",
-      "count": 130,
+      "count": 126,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
@@ -222,7 +218,6 @@
         "1885-WID",
         "1542-JOM",
         "1836-COT",
-        "1751-GUL",
         "1748-BYR",
         "1684-GIV",
         "1659-CHRA",
@@ -274,7 +269,6 @@
         "985-YZLO",
         "979-YZLO",
         "945-VER",
-        "928-TRU",
         "917-SWA",
         "910-SARJ",
         "909-SFER",
@@ -288,7 +282,6 @@
         "668-GIV",
         "667-GIV",
         "666-GIV",
-        "653-ARM",
         "621-EST",
         "613-ESC",
         "612-ESC",
@@ -300,7 +293,6 @@
         "520-CHO",
         "514-CHL",
         "497-CHA",
-        "494-CHA",
         "493-CER",
         "487-CRT",
         "468-CAL",
@@ -333,7 +325,7 @@
     },
     {
       "issue": "Missing Main Notes",
-      "count": 99,
+      "count": 95,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -350,7 +342,6 @@
         "1989-VERT",
         "1885-WID",
         "1836-COT",
-        "1751-GUL",
         "1748-BYR",
         "1684-GIV",
         "1659-CHRA",
@@ -396,7 +387,6 @@
         "985-YZLO",
         "979-YZLO",
         "945-VER",
-        "928-TRU",
         "910-SARJ",
         "904-SALV",
         "858-PAC",
@@ -406,7 +396,6 @@
         "668-GIV",
         "667-GIV",
         "666-GIV",
-        "653-ARM",
         "612-ESC",
         "570-DOL",
         "533-DRC",
@@ -415,7 +404,6 @@
         "520-CHO",
         "514-CHL",
         "497-CHA",
-        "494-CHA",
         "493-CER",
         "487-CRT",
         "425-BRB",
@@ -438,7 +426,7 @@
     },
     {
       "issue": "Note icons not fully verified",
-      "count": 99,
+      "count": 95,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -455,7 +443,6 @@
         "1989-VERT",
         "1885-WID",
         "1836-COT",
-        "1751-GUL",
         "1748-BYR",
         "1684-GIV",
         "1659-CHRA",
@@ -501,7 +488,6 @@
         "985-YZLO",
         "979-YZLO",
         "945-VER",
-        "928-TRU",
         "910-SARJ",
         "904-SALV",
         "858-PAC",
@@ -511,7 +497,6 @@
         "668-GIV",
         "667-GIV",
         "666-GIV",
-        "653-ARM",
         "612-ESC",
         "570-DOL",
         "533-DRC",
@@ -520,7 +505,6 @@
         "520-CHO",
         "514-CHL",
         "497-CHA",
-        "494-CHA",
         "493-CER",
         "487-CRT",
         "425-BRB",
@@ -847,7 +831,7 @@
   "byFailedCheck": [
     {
       "check": "socialCard",
-      "count": 130,
+      "count": 126,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
@@ -872,7 +856,6 @@
         "1885-WID",
         "1542-JOM",
         "1836-COT",
-        "1751-GUL",
         "1748-BYR",
         "1684-GIV",
         "1659-CHRA",
@@ -924,7 +907,6 @@
         "985-YZLO",
         "979-YZLO",
         "945-VER",
-        "928-TRU",
         "917-SWA",
         "910-SARJ",
         "909-SFER",
@@ -938,7 +920,6 @@
         "668-GIV",
         "667-GIV",
         "666-GIV",
-        "653-ARM",
         "621-EST",
         "613-ESC",
         "612-ESC",
@@ -950,7 +931,6 @@
         "520-CHO",
         "514-CHL",
         "497-CHA",
-        "494-CHA",
         "493-CER",
         "487-CRT",
         "468-CAL",
@@ -983,7 +963,7 @@
     },
     {
       "check": "notes",
-      "count": 130,
+      "count": 126,
       "codes": [
         "2816-MOOD",
         "2692-SOL",
@@ -1008,7 +988,6 @@
         "1885-WID",
         "1542-JOM",
         "1836-COT",
-        "1751-GUL",
         "1748-BYR",
         "1684-GIV",
         "1659-CHRA",
@@ -1060,7 +1039,6 @@
         "985-YZLO",
         "979-YZLO",
         "945-VER",
-        "928-TRU",
         "917-SWA",
         "910-SARJ",
         "909-SFER",
@@ -1074,7 +1052,6 @@
         "668-GIV",
         "667-GIV",
         "666-GIV",
-        "653-ARM",
         "621-EST",
         "613-ESC",
         "612-ESC",
@@ -1086,7 +1063,6 @@
         "520-CHO",
         "514-CHL",
         "497-CHA",
-        "494-CHA",
         "493-CER",
         "487-CRT",
         "468-CAL",
@@ -1119,7 +1095,7 @@
     },
     {
       "check": "icons",
-      "count": 99,
+      "count": 95,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -1136,7 +1112,6 @@
         "1989-VERT",
         "1885-WID",
         "1836-COT",
-        "1751-GUL",
         "1748-BYR",
         "1684-GIV",
         "1659-CHRA",
@@ -1182,7 +1157,6 @@
         "985-YZLO",
         "979-YZLO",
         "945-VER",
-        "928-TRU",
         "910-SARJ",
         "904-SALV",
         "858-PAC",
@@ -1192,7 +1166,6 @@
         "668-GIV",
         "667-GIV",
         "666-GIV",
-        "653-ARM",
         "612-ESC",
         "570-DOL",
         "533-DRC",
@@ -1201,7 +1174,6 @@
         "520-CHO",
         "514-CHL",
         "497-CHA",
-        "494-CHA",
         "493-CER",
         "487-CRT",
         "425-BRB",
@@ -1954,25 +1926,6 @@
       "brand": "Coty",
       "inspiredBy": "Vanilla Fields",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Coty/Vanilla-Fields-6029.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes",
-        "icons"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
-    },
-    {
-      "code": "1751-GUL",
-      "brand": "Jean Paul Gaultier",
-      "inspiredBy": "Madame",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html",
       "issues": [
         "Social Card not fully verified",
         "Missing Main Notes",
@@ -3293,25 +3246,6 @@
       "iconsCount": 0
     },
     {
-      "code": "928-TRU",
-      "brand": "Trussardi",
-      "inspiredBy": "Delicate Rose",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes",
-        "icons"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
-    },
-    {
       "code": "917-SWA",
       "brand": "Swarovski",
       "inspiredBy": "Aura",
@@ -3559,25 +3493,6 @@
       "iconsCount": 0
     },
     {
-      "code": "653-ARM",
-      "brand": "Giorgio Armani",
-      "inspiredBy": "Mania",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Mania-423.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes",
-        "icons"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
-    },
-    {
       "code": "621-EST",
       "brand": "Estée Lauder",
       "inspiredBy": "Bronze Goddess 2011",
@@ -3780,25 +3695,6 @@
       "brand": "Chanel",
       "inspiredBy": "Chance",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Chance-610.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes",
-        "icons"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
-    },
-    {
-      "code": "494-CHA",
-      "brand": "Chanel",
-      "inspiredBy": "Allure",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Allure-502.html",
       "issues": [
         "Social Card not fully verified",
         "Missing Main Notes",

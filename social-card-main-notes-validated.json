@@ -189951,5 +189951,201 @@
     ],
     "failures": [],
     "reasons": []
+  },
+  {
+    "code": "653-ARM",
+    "fragranticaId": 423,
+    "card": "fragrantica-scraper-archive/social-cards/images/732_653-ARM_423.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Saffron",
+      "Nutmeg",
+      "Cloves",
+      "Labdanum",
+      "Musk",
+      "Guaiac Wood"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Saffron fon",
+        "ocrConfidence": 77.3
+      },
+      {
+        "slot": 2,
+        "name": "Nutmeg",
+        "ocrConfidence": 96.1
+      },
+      {
+        "slot": 3,
+        "name": "Cloves am",
+        "ocrConfidence": 71.3
+      },
+      {
+        "slot": 4,
+        "name": "Labdanum",
+        "ocrConfidence": 67.1
+      },
+      {
+        "slot": 5,
+        "name": "Musk",
+        "ocrConfidence": 96.7
+      },
+      {
+        "slot": 6,
+        "name": "Guailac Wood",
+        "ocrConfidence": 62.0
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Saffron",
+        "raw": "Saffron fon",
+        "matchScore": 0.97,
+        "margin": 0.37,
+        "ocrConfidence": 77.3
+      },
+      {
+        "slot": 2,
+        "name": "Nutmeg",
+        "raw": "Nutmeg",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 96.1
+      },
+      {
+        "slot": 3,
+        "name": "Cloves",
+        "raw": "Cloves am",
+        "matchScore": 0.97,
+        "margin": 0.233,
+        "ocrConfidence": 71.3
+      },
+      {
+        "slot": 4,
+        "name": "Labdanum",
+        "raw": "Labdanum",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 67.1
+      },
+      {
+        "slot": 5,
+        "name": "Musk",
+        "raw": "Musk",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 96.7
+      },
+      {
+        "slot": 6,
+        "name": "Guaiac Wood",
+        "raw": "Guailac Wood",
+        "matchScore": 0.957,
+        "margin": 0.257,
+        "ocrConfidence": 62.0
+      }
+    ],
+    "failures": [],
+    "reasons": []
+  },
+  {
+    "code": "494-CHA",
+    "fragranticaId": 502,
+    "card": "fragrantica-scraper-archive/social-cards/images/590_494-CHA_502.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Vanilla",
+      "Lemon",
+      "Honeysuckle",
+      "Jasmine",
+      "Magnolia",
+      "Mandarin Orange"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Vanilla 4",
+        "ocrConfidence": 70.8
+      },
+      {
+        "slot": 2,
+        "name": "Lemon",
+        "ocrConfidence": 95.8
+      },
+      {
+        "slot": 3,
+        "name": "Honeysuckle",
+        "ocrConfidence": 96.6
+      },
+      {
+        "slot": 4,
+        "name": "Jasmine",
+        "ocrConfidence": 95.9
+      },
+      {
+        "slot": 5,
+        "name": "Magnolia",
+        "ocrConfidence": 94.7
+      },
+      {
+        "slot": 6,
+        "name": "Mandarin Orange",
+        "ocrConfidence": 95.9
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Vanilla",
+        "raw": "Vanilla 4",
+        "matchScore": 0.97,
+        "margin": 0.243,
+        "ocrConfidence": 70.8
+      },
+      {
+        "slot": 2,
+        "name": "Lemon",
+        "raw": "Lemon",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 95.8
+      },
+      {
+        "slot": 3,
+        "name": "Honeysuckle",
+        "raw": "Honeysuckle",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 96.6
+      },
+      {
+        "slot": 4,
+        "name": "Jasmine",
+        "raw": "Jasmine",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 95.9
+      },
+      {
+        "slot": 5,
+        "name": "Magnolia",
+        "raw": "Magnolia",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 94.7
+      },
+      {
+        "slot": 6,
+        "name": "Mandarin Orange",
+        "raw": "Mandarin Orange",
+        "matchScore": 1,
+        "margin": 1,
+        "ocrConfidence": 95.9
+      }
+    ],
+    "failures": [],
+    "reasons": []
   }
 ]

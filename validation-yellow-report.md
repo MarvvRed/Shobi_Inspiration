@@ -1,14 +1,14 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **130**
+- Yellow rows: **126**
 - One check from green: **0**
 
 ## Failed checks
 
-- `socialCard`: **130**
-- `notes`: **130**
-- `icons`: **99**
+- `socialCard`: **126**
+- `notes`: **126**
+- `icons`: **95**
 - `identity`: **61**
 - `season`: **38**
 - `gender`: **36**
@@ -18,7 +18,7 @@
 
 ## Failure signatures
 
-- `socialCard,notes,icons`: **38** — 2552-SOR, 2439-ZEG, 2427-CLEA, 2250-ARBAS, 2178-MON, 1885-WID, 1836-COT, 1751-GUL, 1684-GIV, 1659-CHRA, 687-GUR, 153-PARF, 1161-HUG, 466-CAL, 304-KIE, 985-YZLO, 979-YZLO, 945-VER, 928-TRU, 910-SARJ
+- `socialCard,notes,icons`: **34** — 2552-SOR, 2439-ZEG, 2427-CLEA, 2250-ARBAS, 2178-MON, 1885-WID, 1836-COT, 1684-GIV, 1659-CHRA, 687-GUR, 153-PARF, 1161-HUG, 466-CAL, 304-KIE, 985-YZLO, 979-YZLO, 945-VER, 910-SARJ, 904-SALV, 858-PAC
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
 - `socialCard,notes`: **25** — 2692-SOL, 2282-DRC, 2234-MON, 2224-ARM, 2185-DRC, 2016-PARELM, 1542-JOM, 896-RCAV, 884-RAL, 1037-BLG, 337-TIFF, 127-KIL, 254-JOM, 917-SWA, 909-SFER, 827-MISN, 613-ESC, 468-CAL, 1248-RAL, 1245-PRA
 - `identity,socialCard,notes,icons`: **25** — 2351-LOU, 2160-ZAR, 2104-CHA, 1989-VERT, 1644-DRC, 1483-DSQ, 236-IND, 989-YZLO, 987-YZLO, 692-GUR, 667-GIV, 666-GIV, 533-DRC, 525-DRC, 520-CHO, 493-CER, 487-CRT, 421-BRB, 880-PRA, 769-LART
@@ -36,9 +36,9 @@
 
 ## Issues
 
-- Social Card not fully verified: **130**
-- Missing Main Notes: **99**
-- Note icons not fully verified: **99**
+- Social Card not fully verified: **126**
+- Missing Main Notes: **95**
+- Note icons not fully verified: **95**
 - Fragrantica identity not fully verified: **61**
 - Season not fully verified: **38**
 - Gender not fully verified: **36**
@@ -74,7 +74,6 @@
 | 1885-WID | Widian | Widian London | socialCard, notes, icons |
 | 1542-JOM | Jo Malone London | English Oak Redcurrant | socialCard, notes |
 | 1836-COT | Coty | Vanilla Fields | socialCard, notes, icons |
-| 1751-GUL | Jean Paul Gaultier | Madame | socialCard, notes, icons |
 | 1748-BYR | Byredo | Marijuana | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1684-GIV | Givenchy | Ysatis | socialCard, notes, icons |
 | 1659-CHRA | Christina Aguilera | Christina Aguilera by Night | socialCard, notes, icons |
@@ -126,7 +125,6 @@
 | 985-YZLO | Yves Saint Laurent | Mon Paris | socialCard, notes, icons |
 | 979-YZLO | Yves Saint Laurent | Cinema | socialCard, notes, icons |
 | 945-VER | Versace | Eros Pour Femme | socialCard, notes, icons |
-| 928-TRU | Trussardi | Delicate Rose | socialCard, notes, icons |
 | 917-SWA | Swarovski | Aura | socialCard, notes |
 | 910-SARJ | Sarah Jessica Parker | Lovely | socialCard, notes, icons |
 | 909-SFER | Salvatore Ferragamo | TUSCAN SCENT WHITE MIMOSA - FERRAGAMO | socialCard, notes |
@@ -140,7 +138,6 @@
 | 668-GIV | Givenchy | Hot Couture | socialCard, notes, icons |
 | 667-GIV | Givenchy | Dahlia Noir | identity, socialCard, notes, icons |
 | 666-GIV | Givenchy | Dahlia Divin | identity, socialCard, notes, icons |
-| 653-ARM | Giorgio Armani | Mania | socialCard, notes, icons |
 | 621-EST | Estée Lauder | Bronze Goddess 2011 | identity, socialCard, notes |
 | 613-ESC | Escada | Turquoise Summer | socialCard, notes |
 | 612-ESC | Escada | TURQUOISE - ESCADA | socialCard, notes, icons |
@@ -152,7 +149,6 @@
 | 520-CHO | Chopard | Wish | identity, socialCard, notes, icons |
 | 514-CHL | Chloe | Love Story | socialCard, notes, icons |
 | 497-CHA | Chanel | Chance | socialCard, notes, icons |
-| 494-CHA | Chanel | Allure | socialCard, notes, icons |
 | 493-CER | Cerruti | 1881 | identity, socialCard, notes, icons |
 | 487-CRT | Cartier | Baiser Vole | identity, socialCard, notes, icons |
 | 468-CAL | Calvin Klein | Calvin Klein | socialCard, notes |

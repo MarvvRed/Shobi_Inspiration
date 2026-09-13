@@ -67073,7 +67073,13 @@
     "occasions": [],
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html",
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Grenadine",
+      "Orange",
+      "Rose",
+      "Musk",
+      "Cedar"
+    ],
     "fragranticaSocialCardStatus": "",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
@@ -67085,28 +67091,24 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
     }
   },
   {
@@ -106020,7 +106022,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Rose",
+      "Lotus",
+      "Yuzu",
+      "Apple",
+      "Bamboo",
+      "Musk"
+    ],
     "fragranticaSocialCardStatus": "",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
@@ -106032,28 +106041,24 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     }
   },
   {
@@ -120594,31 +120599,34 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Saffron",
+      "Nutmeg",
+      "Cloves",
+      "Labdanum",
+      "Musk",
+      "Guaiac Wood"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Mania-423.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/732_653-ARM_423.jpeg",
@@ -129728,31 +129736,34 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Vanilla",
+      "Lemon",
+      "Honeysuckle",
+      "Jasmine",
+      "Magnolia",
+      "Mandarin Orange"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Allure-502.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/590_494-CHA_502.jpeg",
