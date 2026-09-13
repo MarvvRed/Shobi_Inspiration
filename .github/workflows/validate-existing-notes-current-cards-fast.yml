@@ -1,0 +1,34 @@
+name: Validate existing notes on current cards fast
+
+on:
+  push:
+    paths:
+      - 'tools/validate_existing_notes_on_current_cards_fast.py'
+      - '.github/workflows/validate-existing-notes-current-cards-fast.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr
+          python -m pip install pillow pytesseract
+      - run: python tools/validate_existing_notes_on_current_cards_fast.py
+      - name: Publish proof report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add existing-notes-current-card-fast-proof.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Analyze existing Main Notes on exact current-ID cards"
+          git pull --rebase origin main
+          git push origin HEAD:main
