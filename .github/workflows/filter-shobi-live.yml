@@ -37,7 +37,7 @@ jobs:
           # such as "24 Carat..." products from Lattafa.
           shobi = [
               r for r in rows
-              if re.match(r'^\d+\s*-[A-Za-z]', (r.get('code') or '').strip())
+              if re.match(r'^\d+\s*-\s*\S', (r.get('code') or '').strip())
           ]
 
           # Remove only actual duplicate records. Distinct product pages sharing
