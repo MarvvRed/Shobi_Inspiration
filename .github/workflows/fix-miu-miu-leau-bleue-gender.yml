@@ -1,5 +1,6 @@
 name: Fix Miu Miu L Eau Bleue gender from exact card
 
+# rerun with race-safe push
 on:
   push:
     paths:
@@ -42,4 +43,5 @@ jobs:
           git add database_complete.json catalog_site.json miu-miu-leau-bleue-gender-fix.json validation-yellow-report.json validation-yellow-report.md
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Correct Miu Miu L Eau Bleue gender from exact Social Card"
+          git pull --rebase origin main
           git push origin HEAD:main
