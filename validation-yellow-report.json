@@ -1,6 +1,6 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 110,
+  "yellowRows": 103,
   "singleFailureRows": [
     {
       "code": "2351-LOU",
@@ -208,7 +208,7 @@
     },
     {
       "signature": "socialCard,notes,icons",
-      "count": 23,
+      "count": 24,
       "codes": [
         "2552-SOR",
         "2427-CLEA",
@@ -220,6 +220,7 @@
         "1659-CHRA",
         "1644-DRC",
         "687-GUR",
+        "884-RAL",
         "153-PARF",
         "304-KIE",
         "985-YZLO",
@@ -290,34 +291,20 @@
       ]
     },
     {
-      "signature": "gender,season",
-      "count": 7,
-      "codes": [
-        "337-TIFF",
-        "827-MISN",
-        "548-CLI",
-        "1245-PRA",
-        "1172-ISS",
-        "1086-CLI",
-        "1043-CAL"
-      ]
-    },
-    {
-      "signature": "socialCard,notes,icons,gender,season",
-      "count": 3,
-      "codes": [
-        "884-RAL",
-        "118-HAM",
-        "325-PECK"
-      ]
-    },
-    {
       "signature": "icons",
       "count": 3,
       "codes": [
         "910-SARJ",
         "719-ISS",
         "425-BRB"
+      ]
+    },
+    {
+      "signature": "socialCard,notes,icons,gender,season",
+      "count": 2,
+      "codes": [
+        "118-HAM",
+        "325-PECK"
       ]
     },
     {
@@ -688,7 +675,7 @@
     },
     {
       "issue": "Gender not fully verified",
-      "count": 44,
+      "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -699,9 +686,7 @@
         "383-YAN",
         "130-LEL",
         "564-DOL",
-        "884-RAL",
         "314-MOL",
-        "337-TIFF",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -727,18 +712,12 @@
         "222-DIP",
         "200-CIR",
         "828-MIY",
-        "827-MISN",
-        "548-CLI",
-        "1251-ROM",
-        "1245-PRA",
-        "1172-ISS",
-        "1086-CLI",
-        "1043-CAL"
+        "1251-ROM"
       ]
     },
     {
       "issue": "Season not fully verified",
-      "count": 44,
+      "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -750,9 +729,7 @@
         "383-YAN",
         "130-LEL",
         "564-DOL",
-        "884-RAL",
         "314-MOL",
-        "337-TIFF",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -777,13 +754,7 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "827-MISN",
-        "548-CLI",
-        "1251-ROM",
-        "1245-PRA",
-        "1172-ISS",
-        "1086-CLI",
-        "1043-CAL"
+        "1251-ROM"
       ]
     },
     {
@@ -1269,7 +1240,7 @@
     },
     {
       "check": "gender",
-      "count": 44,
+      "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -1280,9 +1251,7 @@
         "383-YAN",
         "130-LEL",
         "564-DOL",
-        "884-RAL",
         "314-MOL",
-        "337-TIFF",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -1308,18 +1277,12 @@
         "222-DIP",
         "200-CIR",
         "828-MIY",
-        "827-MISN",
-        "548-CLI",
-        "1251-ROM",
-        "1245-PRA",
-        "1172-ISS",
-        "1086-CLI",
-        "1043-CAL"
+        "1251-ROM"
       ]
     },
     {
       "check": "season",
-      "count": 44,
+      "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -1331,9 +1294,7 @@
         "383-YAN",
         "130-LEL",
         "564-DOL",
-        "884-RAL",
         "314-MOL",
-        "337-TIFF",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -1358,13 +1319,7 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "827-MISN",
-        "548-CLI",
-        "1251-ROM",
-        "1245-PRA",
-        "1172-ISS",
-        "1086-CLI",
-        "1043-CAL"
+        "1251-ROM"
       ]
     },
     {
@@ -2172,16 +2127,12 @@
       "issues": [
         "Social Card not fully verified",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "failedChecks": [
         "socialCard",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "icons"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -2233,23 +2184,6 @@
       ],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "337-TIFF",
-      "brand": "Tiffany Co",
-      "inspiredBy": "Tiffany  Co Sheer",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tiffany/Tiffany-Co-Sheer-53062.html",
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "gender",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     {
@@ -3237,23 +3171,6 @@
       "iconsCount": 6
     },
     {
-      "code": "827-MISN",
-      "brand": "Missoni",
-      "inspiredBy": "Missoni",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Missoni/Missoni-2015-33017.html",
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "gender",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "719-ISS",
       "brand": "Issey Miyake",
       "inspiredBy": "Pleats Please",
@@ -3400,23 +3317,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "548-CLI",
-      "brand": "Clinique",
-      "inspiredBy": "Happy",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-372.html",
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "gender",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "533-DRC",
@@ -3643,23 +3543,6 @@
       "iconsCount": 6
     },
     {
-      "code": "1245-PRA",
-      "brand": "Prada",
-      "inspiredBy": "PRADA AMBER",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-Pour-Homme-Prada-Man-1044.html",
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "gender",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "880-PRA",
       "brand": "Prada",
       "inspiredBy": "Infusion d Oeillet",
@@ -3738,23 +3621,6 @@
       "iconsCount": 6
     },
     {
-      "code": "1172-ISS",
-      "brand": "Issey Miyake",
-      "inspiredBy": "L'Eau d'Issey Pour Homme",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-d-Issey-Pour-Homme-721.html",
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "gender",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "1156-HER",
       "brand": "Hermès",
       "inspiredBy": "Terre d Hermes",
@@ -3825,23 +3691,6 @@
       "iconsCount": 6
     },
     {
-      "code": "1086-CLI",
-      "brand": "Clinique",
-      "inspiredBy": "Happy",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-373.html",
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "gender",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "1076-DRC",
       "brand": "Dior",
       "inspiredBy": "Fahrenheit",
@@ -3880,23 +3729,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "1043-CAL",
-      "brand": "Calvin Klein",
-      "inspiredBy": "Calvin Klein",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-be-275.html",
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "gender",
-        "season"
-      ],
-      "notesCount": 2,
-      "matchedNotesCount": 2,
-      "iconsCount": 2
     },
     {
       "code": "1036-BLG",

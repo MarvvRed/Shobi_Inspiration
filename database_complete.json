@@ -86572,7 +86572,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [],
+    "seasons": [
+      "summer"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -86592,7 +86594,7 @@
     "fragranticaSocialCardStatus": "",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "liveDisplayCode": "884-RAL W",
     "shobiImageUrl": "https://leparfum.com.gr/44358-home_default/884-ral-w.jpg",
     "shobiCategory": "Fragrances For Women",
@@ -86612,15 +86614,13 @@
         "image": true,
         "notes": false,
         "icons": false,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
       "issues": [
         "Social Card not fully verified",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -88685,7 +88685,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [],
+    "seasons": [
+      "spring"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -88711,7 +88713,7 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Tiffany/Tiffany-Co-Sheer-53062.html",
     "liveDisplayCode": "337-TIFF WP",
     "shobiImageUrl": "https://leparfum.com.gr/43745-home_default/337-tiff-wp.jpg",
@@ -88721,7 +88723,7 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Tiffany/Tiffany-Co-Sheer-53062.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -88732,13 +88734,10 @@
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -111804,7 +111803,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [],
+    "seasons": [
+      "spring"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -111830,7 +111831,7 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Missoni/Missoni-2015-33017.html",
     "liveDisplayCode": "827-MISN WP",
     "shobiImageUrl": "https://leparfum.com.gr/40114-home_default/missoni-fragrance-type.jpg",
@@ -111840,7 +111841,7 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Missoni/Missoni-2015-33017.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -111851,13 +111852,10 @@
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -126632,7 +126630,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [],
+    "seasons": [
+      "summer"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -126655,7 +126655,7 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "liveDisplayCode": "548-CLI WP",
     "shobiImageUrl": "https://leparfum.com.gr/36619-home_default/happy-woman-clinique-type.jpg",
     "shobiCategory": "Fragrances For Women",
@@ -126663,7 +126663,7 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -126674,13 +126674,10 @@
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -137975,7 +137972,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
-    "seasons": [],
+    "seasons": [
+      "spring"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -138003,7 +138002,7 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "liveDisplayCode": "1245-PRA MP",
     "shobiImageUrl": "https://leparfum.com.gr/29401-home_default/1245-pra-mp.jpg",
     "shobiCategory": "Fragrances For Men",
@@ -138012,7 +138011,7 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-Pour-Homme-Prada-Man-1044.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -138023,13 +138022,10 @@
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -141694,7 +141690,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
-    "seasons": [],
+    "seasons": [
+      "summer"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -141717,7 +141715,7 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "liveDisplayCode": "1172-ISS MP",
     "shobiImageUrl": "https://leparfum.com.gr/28330-home_default/1172-iss-mp.jpg",
     "shobiCategory": "Fragrances For Men",
@@ -141726,7 +141724,7 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-d-Issey-Pour-Homme-721.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -141737,13 +141735,10 @@
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -146405,7 +146400,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
-    "seasons": [],
+    "seasons": [
+      "summer"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -146428,7 +146425,7 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "liveDisplayCode": "1086-CLI MP",
     "shobiImageUrl": "https://leparfum.com.gr/27003-home_default/happy-man-clinique-perfume-type.jpg",
     "shobiCategory": "Fragrances For Men",
@@ -146436,7 +146433,7 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -146447,13 +146444,10 @@
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -148754,7 +148748,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "unisex",
-    "seasons": [],
+    "seasons": [
+      "summer"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -148773,7 +148769,7 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-be-275.html",
     "liveDisplayCode": "1043-CAL MP",
     "shobiImageUrl": "https://leparfum.com.gr/26340-home_default/1043-cal-mp.jpg",
@@ -148782,7 +148778,7 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -148793,13 +148789,10 @@
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 2,
       "matchedNotesCount": 2,
       "iconsCount": 2

@@ -1,181 +1,165 @@
 {
-  "changed": 9,
+  "changed": 8,
   "rows": [
     {
-      "code": "2282-DRC",
-      "fid": "81847",
-      "card": "fragrantica-scraper-archive/social-cards/images/3915_unknown_81847.jpeg",
-      "checks": [
-        "season"
-      ],
-      "currentGender": "unisex",
-      "ocrGender": "unisex",
-      "season": "summer",
-      "scores": {
-        "winter": 0.1259259259259259,
-        "spring": 0.4354243542435424,
-        "summer": 0.4962962962962963,
-        "fall": 0.14391143911439114
-      },
-      "seasonConfidence": "MEDIUM",
-      "seasonMargin": 0.06087194205275387
-    },
-    {
-      "code": "2265-KAY",
-      "fid": "85186",
-      "card": "fragrantica-scraper-archive/social-cards/images/3904_2265-KAY_85186.jpeg",
-      "checks": [
-        "season"
-      ],
-      "currentGender": "unisex",
-      "ocrGender": "unisex",
-      "season": "summer",
-      "scores": {
-        "winter": 0.0,
-        "spring": 0.0,
-        "summer": 0.43333333333333335,
-        "fall": 0.33948339483394835
-      },
-      "seasonConfidence": "MEDIUM",
-      "seasonMargin": 0.093849938499385
-    },
-    {
-      "code": "1751-GUL",
-      "fid": "3681",
-      "card": "fragrantica-scraper-archive/social-cards/images/2613_1751-GUL_3681.jpeg",
+      "code": "884-RAL",
+      "fid": "14446",
+      "card": "fragrantica-scraper-archive/social-cards/images/corrected_884-RAL_14446.jpeg",
       "checks": [
         "season",
         "gender"
       ],
       "currentGender": "female",
       "ocrGender": "female",
-      "season": "spring",
+      "season": "summer",
       "scores": {
-        "winter": 0.15185185185185185,
+        "winter": 0.1259259259259259,
         "spring": 0.3874538745387454,
-        "summer": 0.37777777777777777,
-        "fall": 0.2029520295202952
-      },
-      "seasonConfidence": "CLOSE",
-      "seasonMargin": 0.009676096760967645
-    },
-    {
-      "code": "1644-DRC",
-      "fid": "68415",
-      "card": "fragrantica-scraper-archive/social-cards/images/2371_unknown_68415.jpeg",
-      "checks": [
-        "season",
-        "gender"
-      ],
-      "currentGender": "male",
-      "ocrGender": "male",
-      "season": "winter",
-      "scores": {
-        "winter": 0.43333333333333335,
-        "spring": 0.23616236162361623,
-        "summer": 0.10740740740740741,
-        "fall": 0.3874538745387454
-      },
-      "seasonConfidence": "MEDIUM",
-      "seasonMargin": 0.045879458794587935
-    },
-    {
-      "code": "928-TRU",
-      "fid": "16241",
-      "card": "fragrantica-scraper-archive/social-cards/images/962_928-TRU_16241.jpeg",
-      "checks": [
-        "season",
-        "gender"
-      ],
-      "currentGender": "female",
-      "ocrGender": "female",
-      "season": "spring",
-      "scores": {
-        "winter": 0.1259259259259259,
-        "spring": 0.4907749077490775,
-        "summer": 0.40370370370370373,
-        "fall": 0.15867158671586715
-      },
-      "seasonConfidence": "MEDIUM",
-      "seasonMargin": 0.08707120404537377
-    },
-    {
-      "code": "716-ISS",
-      "fid": "6432",
-      "card": "fragrantica-scraper-archive/social-cards/images/783_716-ISS_6432.jpeg",
-      "checks": [
-        "season"
-      ],
-      "currentGender": "female",
-      "ocrGender": "female",
-      "season": "summer",
-      "scores": {
-        "winter": 0.1259259259259259,
-        "spring": 0.42435424354243545,
-        "summer": 0.48518518518518516,
-        "fall": 0.15867158671586715
-      },
-      "seasonConfidence": "MEDIUM",
-      "seasonMargin": 0.060830941642749714
-    },
-    {
-      "code": "521-DRC",
-      "fid": "215",
-      "card": "fragrantica-scraper-archive/social-cards/images/confirmed_521-DRC_215.jpeg",
-      "checks": [
-        "season",
-        "gender"
-      ],
-      "currentGender": "female",
-      "ocrGender": "female",
-      "season": "winter",
-      "scores": {
-        "winter": 0.5666666666666667,
-        "spring": 0.1033210332103321,
-        "summer": 0.10740740740740741,
-        "fall": 0.36162361623616235
+        "summer": 0.4962962962962963,
+        "fall": 0.15498154981549817
       },
       "seasonConfidence": "HIGH",
-      "seasonMargin": 0.2050430504305043
+      "seasonMargin": 0.10884242175755088
     },
     {
-      "code": "1165-HUG",
-      "fid": "569",
-      "card": "fragrantica-scraper-archive/social-cards/images/253_1165-HUG_569.jpeg",
+      "code": "337-TIFF",
+      "fid": "53062",
+      "card": "fragrantica-scraper-archive/social-cards/images/1878_337-TIFF_53062.jpeg",
       "checks": [
-        "season"
+        "season",
+        "gender"
       ],
-      "currentGender": "male",
-      "ocrGender": "male",
+      "currentGender": "female",
+      "ocrGender": "female",
+      "season": "spring",
+      "scores": {
+        "winter": 0.1259259259259259,
+        "spring": 0.46863468634686345,
+        "summer": 0.4185185185185185,
+        "fall": 0.15867158671586715
+      },
+      "seasonConfidence": "MEDIUM",
+      "seasonMargin": 0.05011616782834494
+    },
+    {
+      "code": "827-MISN",
+      "fid": "33017",
+      "card": "fragrantica-scraper-archive/social-cards/images/871_827-MISN_33017.jpeg",
+      "checks": [
+        "season",
+        "gender"
+      ],
+      "currentGender": "female",
+      "ocrGender": "female",
+      "season": "spring",
+      "scores": {
+        "winter": 0.1259259259259259,
+        "spring": 0.3985239852398524,
+        "summer": 0.34814814814814815,
+        "fall": 0.2878228782287823
+      },
+      "seasonConfidence": "MEDIUM",
+      "seasonMargin": 0.050375837091704234
+    },
+    {
+      "code": "548-CLI",
+      "fid": "372",
+      "card": "fragrantica-scraper-archive/social-cards/images/638_548-CLI_372.jpeg",
+      "checks": [
+        "season",
+        "gender"
+      ],
+      "currentGender": "female",
+      "ocrGender": "female",
       "season": "summer",
       "scores": {
         "winter": 0.1259259259259259,
         "spring": 0.3985239852398524,
-        "summer": 0.42962962962962964,
-        "fall": 0.17712177121771217
+        "summer": 0.5185185185185185,
+        "fall": 0.12546125461254612
       },
-      "seasonConfidence": "MEDIUM",
-      "seasonMargin": 0.031105644389777254
+      "seasonConfidence": "HIGH",
+      "seasonMargin": 0.1199945332786661
     },
     {
-      "code": "1076-DRC",
-      "fid": "228",
-      "card": "fragrantica-scraper-archive/social-cards/images/172_unknown_228.jpeg",
+      "code": "1245-PRA",
+      "fid": "1044",
+      "card": "fragrantica-scraper-archive/social-cards/images/920_882-PRA_1044.jpeg",
       "checks": [
         "season",
         "gender"
       ],
       "currentGender": "male",
       "ocrGender": "male",
-      "season": "winter",
+      "season": "spring",
       "scores": {
-        "winter": 0.4,
-        "spring": 0.23616236162361623,
-        "summer": 0.10740740740740741,
-        "fall": 0.3763837638376384
+        "winter": 0.24444444444444444,
+        "spring": 0.36531365313653136,
+        "summer": 0.2740740740740741,
+        "fall": 0.2988929889298893
       },
       "seasonConfidence": "MEDIUM",
-      "seasonMargin": 0.023616236162361637
+      "seasonMargin": 0.06642066420664205
+    },
+    {
+      "code": "1172-ISS",
+      "fid": "721",
+      "card": "fragrantica-scraper-archive/social-cards/images/259_1172-ISS_721.jpeg",
+      "checks": [
+        "season",
+        "gender"
+      ],
+      "currentGender": "male",
+      "ocrGender": "male",
+      "season": "summer",
+      "scores": {
+        "winter": 0.1259259259259259,
+        "spring": 0.41697416974169743,
+        "summer": 0.5074074074074074,
+        "fall": 0.15867158671586715
+      },
+      "seasonConfidence": "MEDIUM",
+      "seasonMargin": 0.09043323766570999
+    },
+    {
+      "code": "1086-CLI",
+      "fid": "373",
+      "card": "fragrantica-scraper-archive/social-cards/images/182_1086-CLI_373.jpeg",
+      "checks": [
+        "season",
+        "gender"
+      ],
+      "currentGender": "male",
+      "ocrGender": "male",
+      "season": "summer",
+      "scores": {
+        "winter": 0.1259259259259259,
+        "spring": 0.36531365313653136,
+        "summer": 0.5851851851851851,
+        "fall": 0.12546125461254612
+      },
+      "seasonConfidence": "HIGH",
+      "seasonMargin": 0.21987153204865378
+    },
+    {
+      "code": "1043-CAL",
+      "fid": "275",
+      "card": "fragrantica-scraper-archive/social-cards/images/143_1043-CAL_275.jpeg",
+      "checks": [
+        "season",
+        "gender"
+      ],
+      "currentGender": "unisex",
+      "ocrGender": "unisex",
+      "season": "summer",
+      "scores": {
+        "winter": 0.12962962962962962,
+        "spring": 0.3874538745387454,
+        "summer": 0.3925925925925926,
+        "fall": 0.1881918819188192
+      },
+      "seasonConfidence": "CLOSE",
+      "seasonMargin": 0.005138718053847191
     }
   ]
 }

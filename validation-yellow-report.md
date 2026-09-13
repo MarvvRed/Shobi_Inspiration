@@ -1,7 +1,7 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **110**
+- Yellow rows: **103**
 - One check from green: **11**
 
 ## Failed checks
@@ -10,8 +10,8 @@
 - `notes`: **92**
 - `icons`: **78**
 - `identity`: **58**
-- `gender`: **44**
-- `season`: **44**
+- `gender`: **36**
+- `season`: **36**
 - `image`: **32**
 - `fid`: **31**
 - `url`: **31**
@@ -19,13 +19,12 @@
 ## Failure signatures
 
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
-- `socialCard,notes,icons`: **23** — 2552-SOR, 2427-CLEA, 2250-ARBAS, 2178-MON, 1885-WID, 1836-COT, 1684-GIV, 1659-CHRA, 1644-DRC, 687-GUR, 153-PARF, 304-KIE, 985-YZLO, 979-YZLO, 945-VER, 904-SALV, 668-GIV, 612-ESC, 570-DOL, 514-CHL
+- `socialCard,notes,icons`: **24** — 2552-SOR, 2427-CLEA, 2250-ARBAS, 2178-MON, 1885-WID, 1836-COT, 1684-GIV, 1659-CHRA, 1644-DRC, 687-GUR, 884-RAL, 153-PARF, 304-KIE, 985-YZLO, 979-YZLO, 945-VER, 904-SALV, 668-GIV, 612-ESC, 570-DOL
 - `identity,socialCard,notes,icons`: **15** — 2160-ZAR, 1989-VERT, 1483-DSQ, 236-IND, 989-YZLO, 987-YZLO, 692-GUR, 666-GIV, 525-DRC, 487-CRT, 421-BRB, 880-PRA, 769-LART, 1141-GIV, 476-CAL
 - `socialCard,notes`: **13** — 2692-SOL, 2282-DRC, 2185-DRC, 2016-PARELM, 1542-JOM, 896-RCAV, 1037-BLG, 254-JOM, 917-SWA, 909-SFER, 1248-RAL, 1184-JOO, 1036-BLG
 - `identity`: **8** — 2351-LOU, 2104-CHA, 667-GIV, 533-DRC, 520-CHO, 493-CER, 1156-HER, 1136-ARM
-- `gender,season`: **7** — 337-TIFF, 827-MISN, 548-CLI, 1245-PRA, 1172-ISS, 1086-CLI, 1043-CAL
-- `socialCard,notes,icons,gender,season`: **3** — 884-RAL, 118-HAM, 325-PECK
 - `icons`: **3** — 910-SARJ, 719-ISS, 425-BRB
+- `socialCard,notes,icons,gender,season`: **2** — 118-HAM, 325-PECK
 - `identity,socialCard,notes,icons,gender,season`: **2** — 235-HOLL, 1251-ROM
 - `identity,socialCard,notes`: **2** — 621-EST, 1118-FAB
 - `socialCard,notes,season`: **1** — 2194-ORT
@@ -54,8 +53,8 @@
 - Note icons not fully verified: **78**
 - Missing Main Notes: **75**
 - Fragrantica identity not fully verified: **58**
-- Gender not fully verified: **44**
-- Season not fully verified: **44**
+- Gender not fully verified: **36**
+- Season not fully verified: **36**
 - Missing perfume image: **32**
 - Missing Fragrantica ID: **31**
 - Missing direct Fragrantica URL: **31**
@@ -96,10 +95,9 @@
 | 130-LEL | Le Labo | SANTAL 26 - LE LABO | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 564-DOL | Dolce & Gabbana | SEXY CHOCLATE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 687-GUR | Guerlain | L Instant de Guerlain | socialCard, notes, icons |
-| 884-RAL | Ralph Lauren | Big Pony 2 | socialCard, notes, icons, gender, season |
+| 884-RAL | Ralph Lauren | Big Pony 2 | socialCard, notes, icons |
 | 314-MOL | Molton Brown | ZIAO JAO - MOLTON BROWN | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1037-BLG | Bvlgari | Bvl Man | socialCard, notes |
-| 337-TIFF | Tiffany Co | Tiffany  Co Sheer | gender, season |
 | 153-PARF | By Kilian | Straight to Heaven | socialCard, notes, icons |
 | 118-HAM | Hamidi Oud Perfumes | REHAN - HAMIDI OUD | socialCard, notes, icons, gender, season |
 | 382-YAN | Yankee Candle | POMEGRANATE CIDER - YANKEE CANDLES | identity, fid, url, socialCard, image, notes, icons, gender, season |
@@ -138,7 +136,6 @@
 | 909-SFER | Salvatore Ferragamo | TUSCAN SCENT WHITE MIMOSA - FERRAGAMO | socialCard, notes |
 | 904-SALV | Salvador Dali | SALVADOR DALI fragrances | socialCard, notes, icons |
 | 828-MIY | Miu Miu | Miu Miu L Eau Bleue | socialCard, notes, gender |
-| 827-MISN | Missoni | Missoni | gender, season |
 | 719-ISS | Issey Miyake | Pleats Please | icons |
 | 692-GUR | Guerlain | Samsara Eau de Parfum | identity, socialCard, notes, icons |
 | 668-GIV | Givenchy | Hot Couture | socialCard, notes, icons |
@@ -147,7 +144,6 @@
 | 621-EST | Estée Lauder | Bronze Goddess 2011 | identity, socialCard, notes |
 | 612-ESC | Escada | TURQUOISE - ESCADA | socialCard, notes, icons |
 | 570-DOL | Dolce & Gabbana | (RED CUP) | socialCard, notes, icons |
-| 548-CLI | Clinique | Happy | gender, season |
 | 533-DRC | Dior | Midnight Poison | identity |
 | 525-DRC | Dior | Dune | identity, socialCard, notes, icons |
 | 521-DRC | Dior | Dior Addict | socialCard, image, notes, icons |
@@ -160,18 +156,14 @@
 | 399-ARA | Aramis | Tuscany Per Donna | socialCard, notes, icons |
 | 1251-ROM | Romane | Royal Blue | identity, socialCard, notes, icons, gender, season |
 | 1248-RAL | Ralph Lauren | Polo Red Intense | socialCard, notes |
-| 1245-PRA | Prada | PRADA AMBER | gender, season |
 | 880-PRA | Prada | Infusion d Oeillet | identity, socialCard, notes, icons |
 | 777-LAL | Lalique | Sculpteur d Epices | socialCard, notes, icons |
 | 769-LART | LArtisan Parfumeur | Premier Figuier | identity, socialCard, notes, icons |
 | 1184-JOO | Joop! | Joop! Homme | socialCard, notes |
-| 1172-ISS | Issey Miyake | L'Eau d'Issey Pour Homme | gender, season |
 | 1156-HER | Hermès | Terre d Hermes | identity |
 | 1141-GIV | Givenchy | Pi | identity, socialCard, notes, icons |
 | 1136-ARM | Giorgio Armani | Emporio Armani Stronger With You | identity |
 | 1118-FAB | Faberge | Brut | identity, socialCard, notes |
-| 1086-CLI | Clinique | Happy | gender, season |
 | 1076-DRC | Dior | Fahrenheit | socialCard, notes, icons |
 | 476-CAL | Calvin Klein | CK One Summer 2016 | identity, socialCard, notes, icons |
-| 1043-CAL | Calvin Klein | Calvin Klein | gender, season |
 | 1036-BLG | Bvlgari | BLV Pour Homme | socialCard, notes |
