@@ -258,8 +258,8 @@ for live in live_rows:
     row["fragranticaSocialCardNotes"] = row.get("fragranticaSocialCardNotes") or note_entry.get("mainNotes") or []
     out.append(row)
 
-if len(out) != 2332:
-    raise SystemExit(f"Expected 2332 live Shobi perfumes, found {len(out)}")
+if len(out) != 2324:
+    raise SystemExit(f"Expected 2324 non-MIX Shobi perfumes, found {len(out)}")
 if len({row["prestashopProductId"] for row in out}) != len(out):
     raise SystemExit("Duplicate PrestaShop product ID")
 if len({row["shobiUrl"] for row in out}) != len(out):
