@@ -1,0 +1,36 @@
+name: Fix season-only from exact card geometry
+
+on:
+  push:
+    paths:
+      - tools/fix_season_only_from_exact_card_geometry.py
+      - .github/workflows/fix-season-only-from-exact-card-geometry.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pillow
+      - name: Measure exact Social Card season bars
+        run: python tools/fix_season_only_from_exact_card_geometry.py
+      - name: Rebuild strict validation
+        run: python tools/build_validation_audit.py
+      - name: Refresh yellow report
+        run: python tools/analyze_validation_yellows.py
+      - name: Commit verified season fixes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database_complete.json catalog_site.json fragrantica-scraper-archive/social-cards/gender-season.csv season-only-card-geometry-fixes.json validation-yellow-report.json validation-yellow-report.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Verify season-only rows from exact Social Card geometry"
+          git pull --rebase origin main
+          git push
