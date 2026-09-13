@@ -1,0 +1,66 @@
+name: Scrape Shobi catalog
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/scrape-shobi-catalog.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade requests beautifulsoup4 pandas
+
+      - name: Run Shobi scraper
+        run: python scrape_shobi_catalog.py
+
+      - name: Validate generated catalog
+        run: |
+          python - <<'PY'
+          import pandas as pd
+          from pathlib import Path
+
+          path = Path('shobi-master-v1-refresh.csv')
+          if not path.exists():
+              raise SystemExit('CSV non generato')
+
+          df = pd.read_csv(path)
+          print(f'Rows: {len(df)}')
+          print(f'Unique product_id: {df.product_id.nunique(dropna=True)}')
+          print(f'Unique code: {df.code.nunique(dropna=True)}')
+          print(f'Duplicate product_id: {df.product_id.duplicated().sum()}')
+          print(f'Duplicate code: {df.code.duplicated().sum()}')
+
+          if len(df) < 2000:
+              raise SystemExit(f'Troppi pochi prodotti: {len(df)}')
+          if df.product_id.nunique(dropna=True) < 2000:
+              raise SystemExit('Troppi pochi product_id unici')
+          PY
+
+      - name: Commit refreshed catalog
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add shobi-master-v1-refresh.csv
+          if git diff --cached --quiet; then
+            echo 'Nessuna modifica al catalogo.'
+            exit 0
+          fi
+          git commit -m 'Refresh Shobi live catalog'
+          git push
