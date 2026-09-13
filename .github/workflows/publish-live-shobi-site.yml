@@ -1,0 +1,48 @@
+name: Publish live Shobi catalog to site
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-live-shobi-site.yml'
+      - 'tools/build_live_site_from_shobi_csv.py'
+      - 'shobi-perfumes-live-unique.csv'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build website database from live CSV
+        run: python tools/build_live_site_from_shobi_csv.py
+
+      - name: Validate website catalog
+        run: |
+          python - <<'PY'
+          import json
+          rows = json.load(open('database_complete.json', encoding='utf-8'))
+          assert len(rows) == 2332
+          assert len({r['prestashopProductId'] for r in rows}) == 2332
+          assert len({r['shobiUrl'] for r in rows}) == 2332
+          assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in rows)
+          excluded = {'Home Fragrances', 'Gifts', 'Lattafa', 'Paris Corner', 'Al Haramain Oriental Perfumes'}
+          assert not any(r.get('shobiCategory') in excluded for r in rows)
+          print('Validated 2332 unique live Shobi perfumes')
+          PY
+
+      - name: Commit website database
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database_complete.json
+          if git diff --cached --quiet; then
+            echo 'No website catalog changes.'
+            exit 0
+          fi
+          git commit -m 'Replace site catalog with 2332 live Shobi perfumes'
+          git push
