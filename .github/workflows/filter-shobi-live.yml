@@ -32,8 +32,13 @@ jobs:
               rows = list(csv.DictReader(f))
               fields = list(rows[0])
 
-          # Shobi's own perfume titles use a numeric Shobi code prefix.
-          shobi = [r for r in rows if re.match(r'^\d+[- ]', (r.get('code') or '').strip())]
+          # Shobi codes are numeric IDs followed by a hyphen and letters.
+          # This excludes retail names that merely start with a number,
+          # such as "24 Carat..." products from Lattafa.
+          shobi = [
+              r for r in rows
+              if re.match(r'^\d+\s*-[A-Za-z]', (r.get('code') or '').strip())
+          ]
 
           # Remove only actual duplicate records. Distinct product pages sharing
           # a displayed code are preserved and reported separately.
@@ -54,8 +59,8 @@ jobs:
 
           if len(rows) != 2562:
               raise SystemExit(f'Expected 2562 live products, found {len(rows)}')
-          if len(unique) != 2334:
-              raise SystemExit(f'Expected 2334 unique Shobi perfumes, found {len(unique)}')
+          if len(unique) != 2332:
+              raise SystemExit(f'Expected 2332 unique Shobi perfumes, found {len(unique)}')
           if len(seen_ids) != len(unique) or len(seen_urls) != len(unique):
               raise SystemExit('Duplicate product_id or URL remains')
           if len(conflict_rows) != 4:
@@ -88,5 +93,5 @@ jobs:
             echo 'No catalog changes.'
             exit 0
           fi
-          git commit -m 'Add unique Shobi-only live perfume catalog'
+          git commit -m 'Refresh corrected Shobi-only live catalog'
           git push
