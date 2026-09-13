@@ -59713,28 +59713,14 @@
   {
     "code": "884-RAL",
     "fragranticaId": 14446,
-    "card": "fragrantica-scraper-archive/social-cards/images/1917_884-RAL_14446.jpeg",
+    "card": "fragrantica-scraper-archive/social-cards/images/corrected_884-RAL_14446.jpeg",
     "validated": false,
     "mainNotes": [],
-    "rawSlots": [
-      {
-        "slot": 5,
-        "name": "er ee",
-        "ocrConfidence": 45.4
-      }
-    ],
+    "rawSlots": [],
     "validatedSlots": [],
-    "failures": [
-      {
-        "slot": 5,
-        "raw": "er ee",
-        "bestScore": 0.714,
-        "margin": 0.048,
-        "ocrConfidence": 45.4
-      }
-    ],
+    "failures": [],
     "reasons": [
-      "LEXICON_UNCERTAIN"
+      "PENDING_CURRENT_FID_OCR"
     ]
   },
   {

@@ -86568,13 +86568,11 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/884-ral-w#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Ralph Lauren",
     "inspiredBy": "Big Pony 2",
-    "fragranticaId": "9006",
+    "fragranticaId": "14446",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [
-      "fall"
-    ],
+    "seasons": [],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -86584,27 +86582,24 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-for-Women-14446.html",
     "fragrantica_id": 14446,
     "fragrantica_url": "https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-for-Women-14446.html",
     "fragrantica_status": "VERIFIED_SHOBI_FIRST",
     "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
     "fragrantica_match_reason": "Shobi residual is Big Pony 2 in women catalog; exact 2012 women entry, not 2010 men version",
-    "fragranticaSocialCardNotes": [
-      "Cranberry",
-      "Tonka Bean"
-    ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardStatus": "",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "genderStatus": "",
     "liveDisplayCode": "884-RAL W",
     "shobiImageUrl": "https://leparfum.com.gr/44358-home_default/884-ral-w.jpg",
     "shobiCategory": "Fragrances For Women",
     "shobiPriceEur": "9",
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-9006.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-for-Women-14446.html",
     "validationAudit": {
       "status": "yellow",
       "checks": {
@@ -86616,17 +86611,20 @@
         "socialCard": false,
         "image": true,
         "notes": false,
-        "icons": true,
-        "gender": true,
-        "season": true
+        "icons": false,
+        "gender": false,
+        "season": false
       },
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Missing Main Notes",
+        "Note icons not fully verified",
+        "Gender not fully verified",
+        "Season not fully verified"
       ],
-      "notesCount": 2,
+      "notesCount": 0,
       "matchedNotesCount": 0,
-      "iconsCount": 2
+      "iconsCount": 0
     }
   },
   {
@@ -88683,13 +88681,11 @@
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/337-tiff-wp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Tiffany Co",
     "inspiredBy": "Tiffany  Co Sheer",
-    "fragranticaId": "12922",
+    "fragranticaId": "53062",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [
-      "spring"
-    ],
+    "seasons": [],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -88715,15 +88711,15 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
+    "genderStatus": "",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Tiffany/Tiffany-Co-Sheer-53062.html",
     "liveDisplayCode": "337-TIFF WP",
     "shobiImageUrl": "https://leparfum.com.gr/43745-home_default/337-tiff-wp.jpg",
     "shobiCategory": "Elegants Fragrances",
     "shobiPriceEur": "10",
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Tiffany/Sheer-Tiffany-12922.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Tiffany/Tiffany-Co-Sheer-53062.html",
     "validationAudit": {
       "status": "yellow",
       "checks": {
@@ -88732,19 +88728,19 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
-        "gender": true,
-        "season": true
+        "gender": false,
+        "season": false
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Gender not fully verified",
+        "Season not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -111804,13 +111800,11 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/missoni-fragrance-type#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Missoni",
     "inspiredBy": "Missoni",
-    "fragranticaId": "1069",
+    "fragranticaId": "33017",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [
-      "fall"
-    ],
+    "seasons": [],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -111836,15 +111830,15 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
+    "genderStatus": "",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Missoni/Missoni-2015-33017.html",
     "liveDisplayCode": "827-MISN WP",
     "shobiImageUrl": "https://leparfum.com.gr/40114-home_default/missoni-fragrance-type.jpg",
     "shobiCategory": "Fragrances For Women",
     "shobiPriceEur": "9",
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Missoni/Missoni-1069.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Missoni/Missoni-2015-33017.html",
     "validationAudit": {
       "status": "yellow",
       "checks": {
@@ -111853,19 +111847,19 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
-        "gender": true,
-        "season": true
+        "gender": false,
+        "season": false
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Gender not fully verified",
+        "Season not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -126634,7 +126628,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/happy-woman-clinique-type#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Clinique",
     "inspiredBy": "Happy",
-    "fragranticaId": "66133",
+    "fragranticaId": "372",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
@@ -126648,8 +126642,8 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Dua-Brand/Happy-66133.html",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-372.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-372.html",
     "fragranticaSocialCardNotes": [
       "Orange",
       "Grapefruit",
@@ -126661,7 +126655,7 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "genderStatus": "",
     "liveDisplayCode": "548-CLI WP",
     "shobiImageUrl": "https://leparfum.com.gr/36619-home_default/happy-woman-clinique-type.jpg",
     "shobiCategory": "Fragrances For Women",
@@ -126676,20 +126670,19 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
-        "gender": true,
+        "gender": false,
         "season": false
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified",
+        "Gender not fully verified",
         "Season not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -137978,13 +137971,11 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/1245-pra-mp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Prada",
     "inspiredBy": "PRADA AMBER",
-    "fragranticaId": "1045",
+    "fragranticaId": "1044",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
-    "seasons": [
-      "winter"
-    ],
+    "seasons": [],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -137995,7 +137986,7 @@
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-Pour-Homme-Prada-Man-1044.html",
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-Pour-Homme-Prada-Man-1044.html",
     "fragrantica_id": 1044,
     "fragrantica_url": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-Pour-Homme-1044.html",
     "fragrantica_status": "VERIFIED_SHOBI_FIRST",
@@ -138012,14 +138003,14 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "genderStatus": "",
     "liveDisplayCode": "1245-PRA MP",
     "shobiImageUrl": "https://leparfum.com.gr/29401-home_default/1245-pra-mp.jpg",
     "shobiCategory": "Fragrances For Men",
     "shobiPriceEur": "9",
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-1045.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-Pour-Homme-Prada-Man-1044.html",
     "validationAudit": {
       "status": "yellow",
       "checks": {
@@ -138028,19 +138019,19 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
-        "gender": true,
-        "season": true
+        "gender": false,
+        "season": false
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Gender not fully verified",
+        "Season not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -141699,13 +141690,11 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/1172-iss-mp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Issey Miyake",
     "inspiredBy": "L'Eau d'Issey Pour Homme",
-    "fragranticaId": "79",
+    "fragranticaId": "721",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
-    "seasons": [
-      "summer"
-    ],
+    "seasons": [],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -141716,7 +141705,7 @@
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-d-Issey-Pour-Homme-721.html",
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-d-Issey-Pour-Homme-721.html",
     "fragranticaSocialCardNotes": [
       "Yuzu",
       "Lemon",
@@ -141728,14 +141717,14 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "genderStatus": "",
     "liveDisplayCode": "1172-ISS MP",
     "shobiImageUrl": "https://leparfum.com.gr/28330-home_default/1172-iss-mp.jpg",
     "shobiCategory": "Fragrances For Men",
     "shobiPriceEur": "9",
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/p/79",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-d-Issey-Pour-Homme-721.html",
     "validationAudit": {
       "status": "yellow",
       "checks": {
@@ -141744,19 +141733,19 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
-        "gender": true,
-        "season": true
+        "gender": false,
+        "season": false
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Gender not fully verified",
+        "Season not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -146412,7 +146401,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/happy-man-clinique-perfume-type#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Clinique",
     "inspiredBy": "Happy",
-    "fragranticaId": "66133",
+    "fragranticaId": "373",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
@@ -146426,8 +146415,8 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Dua-Brand/Happy-66133.html",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-373.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-373.html",
     "fragranticaSocialCardNotes": [
       "Mandarin Orange",
       "Lime",
@@ -146439,7 +146428,7 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "genderStatus": "",
     "liveDisplayCode": "1086-CLI MP",
     "shobiImageUrl": "https://leparfum.com.gr/27003-home_default/happy-man-clinique-perfume-type.jpg",
     "shobiCategory": "Fragrances For Men",
@@ -146454,20 +146443,19 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
-        "gender": true,
+        "gender": false,
         "season": false
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified",
+        "Gender not fully verified",
         "Season not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -148762,13 +148750,11 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/1043-cal-mp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Calvin Klein",
     "inspiredBy": "Calvin Klein",
-    "fragranticaId": "14606",
+    "fragranticaId": "275",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "unisex",
-    "seasons": [
-      "fall"
-    ],
+    "seasons": [],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -148787,8 +148773,8 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Calvin-Klein-14606.html",
+    "genderStatus": "",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-be-275.html",
     "liveDisplayCode": "1043-CAL MP",
     "shobiImageUrl": "https://leparfum.com.gr/26340-home_default/1043-cal-mp.jpg",
     "shobiCategory": "Fragrances For Men",
@@ -148803,19 +148789,19 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
-        "gender": true,
-        "season": true
+        "gender": false,
+        "season": false
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Gender not fully verified",
+        "Season not fully verified"
       ],
       "notesCount": 2,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 2,
       "iconsCount": 2
     }
   },
