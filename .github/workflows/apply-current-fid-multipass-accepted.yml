@@ -1,0 +1,48 @@
+name: Apply accepted current-FID multipass OCR proofs
+
+on:
+  push:
+    paths:
+      - 'tools/apply_current_fid_multipass_accepted.py'
+      - '.github/workflows/apply-current-fid-multipass-accepted.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-validation-writes
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply only still-current accepted proofs
+        run: python tools/apply_current_fid_multipass_accepted.py
+      - name: Rebuild note icons from newly validated cards
+        run: |
+          python -m pip install pillow
+          python tools/build_note_icon_library.py
+      - name: Rebuild strict validation
+        run: python tools/build_validation_audit.py
+      - name: Refresh yellow report
+        run: python tools/analyze_validation_yellows.py
+      - name: Commit accepted proofs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Apply guarded current-ID multipass Social Card proofs"
+          git push origin HEAD:main
