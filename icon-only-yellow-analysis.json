@@ -1,0 +1,65 @@
+{
+  "count": 3,
+  "rows": [
+    {
+      "code": "910-SARJ",
+      "brand": "Sarah Jessica Parker",
+      "inspiredBy": "Lovely",
+      "notes": [
+        "Musk",
+        "Lavender",
+        "Patchouli",
+        "Martini",
+        "Woody Notes",
+        "Bergamot"
+      ],
+      "missing": [
+        {
+          "note": "Martini",
+          "key": "martini",
+          "normalizedCandidates": []
+        }
+      ]
+    },
+    {
+      "code": "719-ISS",
+      "brand": "Issey Miyake",
+      "inspiredBy": "Pleats Please",
+      "notes": [
+        "Sweet Pea",
+        "Pear",
+        "Peony",
+        "Indole",
+        "Musk",
+        "Patchouli"
+      ],
+      "missing": [
+        {
+          "note": "Indole",
+          "key": "indole",
+          "normalizedCandidates": []
+        }
+      ]
+    },
+    {
+      "code": "425-BRB",
+      "brand": "Burberry",
+      "inspiredBy": "Burberry Her",
+      "notes": [
+        "Straw",
+        "Raspberry",
+        "Musk",
+        "Blackberry",
+        "Vanilla",
+        "Sour Cherry"
+      ],
+      "missing": [
+        {
+          "note": "Straw",
+          "key": "straw",
+          "normalizedCandidates": []
+        }
+      ]
+    }
+  ]
+}
