@@ -1,5 +1,6 @@
 name: Validate existing notes on current cards fast
 
+# rerun after refreshed exact current-FID cards
 on:
   push:
     paths:
@@ -15,6 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -29,6 +36,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add existing-notes-current-card-fast-proof.json
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Analyze existing Main Notes on exact current-ID cards"
+          git commit -m "Recheck existing Main Notes on refreshed current-ID cards"
           git pull --rebase origin main
           git push origin HEAD:main
