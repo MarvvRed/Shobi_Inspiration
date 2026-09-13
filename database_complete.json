@@ -23424,7 +23424,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
-    "seasons": [],
+    "seasons": [
+      "spring"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -23455,7 +23457,7 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -23467,11 +23469,9 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
-      "issues": [
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 5,
       "matchedNotesCount": 5,
       "iconsCount": 5
@@ -44549,7 +44549,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [],
+    "seasons": [
+      "fall"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -44581,7 +44583,7 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -44593,11 +44595,9 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
-      "issues": [
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6

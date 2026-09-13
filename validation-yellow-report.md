@@ -1,8 +1,8 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **167**
-- One check from green: **2**
+- Yellow rows: **165**
+- One check from green: **0**
 
 ## Failed checks
 
@@ -10,7 +10,7 @@
 - `notes`: **151**
 - `identity`: **98**
 - `icons`: **97**
-- `season`: **60**
+- `season`: **58**
 - `gender`: **43**
 - `image`: **42**
 - `fid`: **31**
@@ -26,7 +26,6 @@
 - `identity,gender,season`: **4** — 2313-DRC, 2106-MARC, 1950-SWISA, 1767-LTN
 - `socialCard,notes,icons`: **4** — 2178-MON, 904-SALV, 612-ESC, 570-DOL
 - `identity,socialCard,notes,icons,gender,season`: **4** — 1644-DRC, 235-HOLL, 1251-ROM, 1076-DRC
-- `season`: **2** — 2514-DRC, 2133-FRE
 - `socialCard,notes,icons,gender,season`: **2** — 118-HAM, 325-PECK
 - `identity,socialCard,notes`: **2** — 621-EST, 1118-FAB
 - `identity,socialCard,notes,gender`: **1** — 828-MIY
@@ -36,8 +35,6 @@
 
 | Code | Brand | Inspired by | Remaining check |
 |---|---|---|---|
-| 2514-DRC | Dior | Sauvage Eau Forte | season |
-| 2133-FRE | Frédéric Malle | Lipstick Rose Eau de Parfum | season |
 
 ## Issues
 
@@ -45,7 +42,7 @@
 - Fragrantica identity not fully verified: **98**
 - Missing Main Notes: **97**
 - Note icons not fully verified: **97**
-- Season not fully verified: **60**
+- Season not fully verified: **58**
 - Main Notes order not fully verified: **54**
 - Gender not fully verified: **43**
 - Missing perfume image: **42**
@@ -62,7 +59,6 @@
 | 2438-KYLJ | Kylie Cosmetics | Cosmic Kylie Jenner | socialCard, notes |
 | 2586-DIP | Diptyque | Biscuit DIP | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2552-SOR | Siordia Parfums | Night Horse | identity, socialCard, notes, icons |
-| 2514-DRC | Dior | Sauvage Eau Forte | season |
 | 2456-PAC | Rabanne | Million Gold | socialCard, notes |
 | 2439-ZEG | Ermenegildo Zegna | Indonesian Oud | identity, socialCard, notes, icons |
 | 2427-CLEA | Clean | Clean Warm Cotton | identity, socialCard, notes, icons |
@@ -77,7 +73,6 @@
 | 2194-ORT | Orto Parisi | ORTO | socialCard, notes, season |
 | 2185-DRC | Dior | Eau Sauvage Extreme 2010 | socialCard, notes |
 | 2178-MON | moncler | Moncler pour Homme | socialCard, notes, icons |
-| 2133-FRE | Frédéric Malle | Lipstick Rose Eau de Parfum | season |
 | 2104-CHA | Chanel | 1957 Eau de Parfum | identity, socialCard, notes, icons |
 | 2106-MARC | Marc-Antoine Barrois | B683 Eau de Parfum | identity, gender, season |
 | 2085-CLIV | Clive Christian | X NEROLI LIMITED EDITION - CLIVE CHRISTIAN | identity, fid, url, socialCard, image, notes, icons, gender, season |

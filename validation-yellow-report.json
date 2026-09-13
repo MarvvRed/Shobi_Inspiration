@@ -1,38 +1,7 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 167,
-  "singleFailureRows": [
-    {
-      "code": "2514-DRC",
-      "brand": "Dior",
-      "inspiredBy": "Sauvage Eau Forte",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Sauvage-Eau-Forte-95863.html",
-      "issues": [
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "season"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
-    },
-    {
-      "code": "2133-FRE",
-      "brand": "Frédéric Malle",
-      "inspiredBy": "Lipstick Rose Eau de Parfum",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Frederic-Malle/Lipstick-Rose-2799.html",
-      "issues": [
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    }
-  ],
+  "yellowRows": 165,
+  "singleFailureRows": [],
   "byFailureSignature": [
     {
       "signature": "identity,socialCard,notes,icons",
@@ -239,14 +208,6 @@
         "235-HOLL",
         "1251-ROM",
         "1076-DRC"
-      ]
-    },
-    {
-      "signature": "season",
-      "count": 2,
-      "codes": [
-        "2514-DRC",
-        "2133-FRE"
       ]
     },
     {
@@ -750,17 +711,15 @@
     },
     {
       "issue": "Season not fully verified",
-      "count": 60,
+      "count": 58,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2514-DRC",
         "2313-DRC",
         "2282-DRC",
         "2265-KAY",
         "2194-ORT",
-        "2133-FRE",
         "2106-MARC",
         "2085-CLIV",
         "1950-SWISA",
@@ -1570,17 +1529,15 @@
     },
     {
       "check": "season",
-      "count": 60,
+      "count": 58,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2514-DRC",
         "2313-DRC",
         "2282-DRC",
         "2265-KAY",
         "2194-ORT",
-        "2133-FRE",
         "2106-MARC",
         "2085-CLIV",
         "1950-SWISA",
@@ -1956,21 +1913,6 @@
       "iconsCount": 0
     },
     {
-      "code": "2514-DRC",
-      "brand": "Dior",
-      "inspiredBy": "Sauvage Eau Forte",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Sauvage-Eau-Forte-95863.html",
-      "issues": [
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "season"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
-    },
-    {
       "code": "2456-PAC",
       "brand": "Rabanne",
       "inspiredBy": "Million Gold",
@@ -2235,21 +2177,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "2133-FRE",
-      "brand": "Frédéric Malle",
-      "inspiredBy": "Lipstick Rose Eau de Parfum",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Frederic-Malle/Lipstick-Rose-2799.html",
-      "issues": [
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "2104-CHA",
