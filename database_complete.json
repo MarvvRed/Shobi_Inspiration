@@ -87799,13 +87799,11 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/1037-blg-m#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Bvlgari",
     "inspiredBy": "Bvl Man",
-    "fragranticaId": "148",
+    "fragranticaId": "9403",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
-    "seasons": [
-      "spring"
-    ],
+    "seasons": [],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -87815,7 +87813,7 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
     "fragranticaSocialCardNotes": [
       "Vetiver",
@@ -87828,14 +87826,14 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "genderStatus": "",
     "liveDisplayCode": "1037-BLG M",
     "shobiImageUrl": "https://leparfum.com.gr/44053-home_default/1037-blg-m.jpg",
     "shobiCategory": "Fragrances For Men",
     "shobiPriceEur": "9",
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
     "validationAudit": {
       "status": "yellow",
       "checks": {
@@ -87844,21 +87842,23 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
-        "gender": true,
-        "season": true
+        "gender": false,
+        "season": false
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Gender not fully verified",
+        "Season not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaVerificationReason": "SHOBI_1037_IS_BVLGARI_MAN_AND_EXACT_FRAGRANTICA_9403",
+    "fragranticaVerificationFragranticaId": "9403"
   },
   {
     "id": "pid:1896",
@@ -149283,9 +149283,9 @@
       "Tobacco Blossom",
       "Sandalwood",
       "Juniper",
-      "Green Notes"
+      "Galanga"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -149297,26 +149297,23 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },

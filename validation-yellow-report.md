@@ -1,16 +1,16 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **44**
+- Yellow rows: **43**
 - One check from green: **0**
 
 ## Failed checks
 
-- `socialCard`: **44**
-- `notes`: **44**
+- `socialCard`: **42**
+- `notes`: **42**
 - `icons`: **41**
-- `gender`: **35**
-- `season`: **35**
+- `gender`: **36**
+- `season`: **36**
 - `identity`: **32**
 - `fid`: **31**
 - `url`: **31**
@@ -20,8 +20,9 @@
 
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
 - `socialCard,notes,icons`: **6** — 884-RAL, 236-IND, 945-VER, 525-DRC, 487-CRT, 421-BRB
-- `socialCard,notes`: **3** — 2282-DRC, 1037-BLG, 1036-BLG
 - `socialCard,notes,icons,gender,season`: **3** — 118-HAM, 325-PECK, 235-HOLL
+- `socialCard,notes`: **1** — 2282-DRC
+- `gender,season`: **1** — 1037-BLG
 - `identity,socialCard,notes,icons,gender,season`: **1** — 1251-ROM
 
 ## One check from green
@@ -31,16 +32,16 @@
 
 ## Issues
 
-- Social Card not fully verified: **44**
+- Social Card not fully verified: **42**
 - Missing Main Notes: **41**
 - Note icons not fully verified: **41**
-- Gender not fully verified: **35**
-- Season not fully verified: **35**
+- Gender not fully verified: **36**
+- Season not fully verified: **36**
 - Fragrantica identity not fully verified: **32**
 - Missing Fragrantica ID: **31**
 - Missing direct Fragrantica URL: **31**
 - Missing perfume image: **31**
-- Main Notes order not fully verified: **3**
+- Main Notes order not fully verified: **1**
 
 ## Yellow rows
 
@@ -58,7 +59,7 @@
 | 564-DOL | Dolce & Gabbana | SEXY CHOCLATE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 884-RAL | Ralph Lauren | Big Pony 2 | socialCard, notes, icons |
 | 314-MOL | Molton Brown | ZIAO JAO - MOLTON BROWN | identity, fid, url, socialCard, image, notes, icons, gender, season |
-| 1037-BLG | Bvlgari | Bvl Man | socialCard, notes |
+| 1037-BLG | Bvlgari | Bvl Man | gender, season |
 | 118-HAM | Hamidi Oud Perfumes | REHAN - HAMIDI OUD | socialCard, notes, icons, gender, season |
 | 382-YAN | Yankee Candle | POMEGRANATE CIDER - YANKEE CANDLES | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 381-YAN | Yankee Candle | FRESH CUT ROSES - YANKEE CANDLES | identity, fid, url, socialCard, image, notes, icons, gender, season |
@@ -89,4 +90,3 @@
 | 487-CRT | Cartier | Baiser Vole | socialCard, notes, icons |
 | 421-BRB | Burberry | Body | socialCard, notes, icons |
 | 1251-ROM | Romane | Royal Blue | identity, socialCard, notes, icons, gender, season |
-| 1036-BLG | Bvlgari | BLV Pour Homme | socialCard, notes |

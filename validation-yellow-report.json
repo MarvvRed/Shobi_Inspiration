@@ -1,6 +1,6 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 44,
+  "yellowRows": 43,
   "singleFailureRows": [],
   "byFailureSignature": [
     {
@@ -53,21 +53,26 @@
       ]
     },
     {
-      "signature": "socialCard,notes",
-      "count": 3,
-      "codes": [
-        "2282-DRC",
-        "1037-BLG",
-        "1036-BLG"
-      ]
-    },
-    {
       "signature": "socialCard,notes,icons,gender,season",
       "count": 3,
       "codes": [
         "118-HAM",
         "325-PECK",
         "235-HOLL"
+      ]
+    },
+    {
+      "signature": "socialCard,notes",
+      "count": 1,
+      "codes": [
+        "2282-DRC"
+      ]
+    },
+    {
+      "signature": "gender,season",
+      "count": 1,
+      "codes": [
+        "1037-BLG"
       ]
     },
     {
@@ -81,7 +86,7 @@
   "byIssue": [
     {
       "issue": "Social Card not fully verified",
-      "count": 44,
+      "count": 42,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -95,7 +100,6 @@
         "564-DOL",
         "884-RAL",
         "314-MOL",
-        "1037-BLG",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -125,8 +129,7 @@
         "525-DRC",
         "487-CRT",
         "421-BRB",
-        "1251-ROM",
-        "1036-BLG"
+        "1251-ROM"
       ]
     },
     {
@@ -225,7 +228,7 @@
     },
     {
       "issue": "Gender not fully verified",
-      "count": 35,
+      "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -237,6 +240,7 @@
         "130-LEL",
         "564-DOL",
         "314-MOL",
+        "1037-BLG",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -266,7 +270,7 @@
     },
     {
       "issue": "Season not fully verified",
-      "count": 35,
+      "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -278,6 +282,7 @@
         "130-LEL",
         "564-DOL",
         "314-MOL",
+        "1037-BLG",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -456,18 +461,16 @@
     },
     {
       "issue": "Main Notes order not fully verified",
-      "count": 3,
+      "count": 1,
       "codes": [
-        "2282-DRC",
-        "1037-BLG",
-        "1036-BLG"
+        "2282-DRC"
       ]
     }
   ],
   "byFailedCheck": [
     {
       "check": "socialCard",
-      "count": 44,
+      "count": 42,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -481,7 +484,6 @@
         "564-DOL",
         "884-RAL",
         "314-MOL",
-        "1037-BLG",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -511,13 +513,12 @@
         "525-DRC",
         "487-CRT",
         "421-BRB",
-        "1251-ROM",
-        "1036-BLG"
+        "1251-ROM"
       ]
     },
     {
       "check": "notes",
-      "count": 44,
+      "count": 42,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -531,7 +532,6 @@
         "564-DOL",
         "884-RAL",
         "314-MOL",
-        "1037-BLG",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -561,8 +561,7 @@
         "525-DRC",
         "487-CRT",
         "421-BRB",
-        "1251-ROM",
-        "1036-BLG"
+        "1251-ROM"
       ]
     },
     {
@@ -614,7 +613,7 @@
     },
     {
       "check": "gender",
-      "count": 35,
+      "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -626,6 +625,7 @@
         "130-LEL",
         "564-DOL",
         "314-MOL",
+        "1037-BLG",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -655,7 +655,7 @@
     },
     {
       "check": "season",
-      "count": 35,
+      "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -667,6 +667,7 @@
         "130-LEL",
         "564-DOL",
         "314-MOL",
+        "1037-BLG",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -1195,17 +1196,17 @@
       "code": "1037-BLG",
       "brand": "Bvlgari",
       "inspiredBy": "Bvl Man",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Gender not fully verified",
+        "Season not fully verified"
       ],
       "failedChecks": [
-        "socialCard",
-        "notes"
+        "gender",
+        "season"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     {
@@ -2047,23 +2048,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "1036-BLG",
-      "brand": "Bvlgari",
-      "inspiredBy": "BLV Pour Homme",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
     }
   ]
 }

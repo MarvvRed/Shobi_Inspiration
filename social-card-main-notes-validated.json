@@ -1993,15 +1993,95 @@
   {
     "code": "1036-BLG",
     "fragranticaId": 148,
-    "card": "fragrantica-scraper-archive/social-cards/images/1897_1037-BLG_148.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_1036-BLG_148.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Ginger",
+      "Cardamom",
+      "Tobacco Blossom",
+      "Sandalwood",
+      "Juniper",
+      "Galanga"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Ginger",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Cardamom",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Tobacco Blossom",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Sandalwood",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Juniper",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Galanga",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Ginger",
+        "raw": "CURRENT_FID_FAST_EXACT_OCR",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Cardamom",
+        "raw": "CURRENT_FID_FAST_EXACT_OCR",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Tobacco Blossom",
+        "raw": "CURRENT_FID_FAST_EXACT_OCR",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Sandalwood",
+        "raw": "CURRENT_FID_FAST_EXACT_OCR",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Juniper",
+        "raw": "CURRENT_FID_FAST_EXACT_OCR",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Galanga",
+        "raw": "CURRENT_FID_FAST_EXACT_OCR",
+        "matchScore": 1.0,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_OCR"
   },
   {
     "code": "443-BLG",
