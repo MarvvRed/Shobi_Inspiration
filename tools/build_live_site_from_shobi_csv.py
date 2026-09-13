@@ -26,12 +26,15 @@ CONFIRMED_IDENTITY_OVERRIDES = {
     "646-ARM": ("Giorgio Armani", "Armani Code for Women", "413", "https://www.fragrantica.com/perfume/Giorgio-Armani/Armani-Code-for-Women-413.html"),
     "716-ISS": ("Issey Miyake", "A Scent by Issey Miyake", "6432", "https://www.fragrantica.com/perfume/Issey-Miyake/A-Scent-by-Issey-Miyake-6432.html"),
     "847-NRO": ("Narciso Rodriguez", "Narciso Poudree", "36679", "https://www.fragrantica.com/perfume/Narciso-Rodriguez/Narciso-Poudree-36679.html"),
-    "866-PAC": ("Paco Rabanne", "Ultraviolet", "519", "https://www.fragrantica.com/perfume/Paco-Rabanne/Ultraviolet-519.html"),
+    "866-PAC": ("Rabanne", "Ultraviolet", "519", "https://www.fragrantica.com/perfume/Paco-Rabanne/Ultraviolet-519.html"),
     "1165-HUG": ("Hugo Boss", "Hugo Energise", "569", "https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Energise-569.html"),
     "1189-KEN": ("Kenzo", "Kenzo Homme Sport Extreme", "18174", "https://www.fragrantica.com/perfume/Kenzo/Kenzo-Homme-Sport-Extreme-18174.html"),
     "1281-YZLO": ("Yves Saint Laurent", "L'Homme Parfum Intense", "18841", "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/L-Homme-Parfum-Intense-18841.html"),
     "1890-LEL": ("Le Labo", "Lys 41", "18382", "https://www.fragrantica.com/perfume/Le-Labo/Lys-41-18382.html"),
     "2265-KAY": ("Kayali Fragrances", "Oudgasm Rose Oud 16 Eau de Parfum Intense", "85186", "https://www.fragrantica.com/perfume/Kayali-Fragrances/Oudgasm-Rose-Oud-16-Eau-de-Parfum-Intense-85186.html"),
+    "521-DRC": ("Dior", "Dior Addict", "215", "https://www.fragrantica.com/perfume/Dior/Dior-Addict-215.html"),
+    "676-GUC": ("Gucci", "Flora by Gucci Eau de Toilette", "5226", "https://www.fragrantica.com/perfume/Gucci/Flora-by-Gucci-Eau-de-Toilette-5226.html"),
+    "843-NRO": ("Narciso Rodriguez", "For Her", "209", "https://www.fragrantica.com/perfume/Narciso-Rodriguez/For-Her-209.html"),
 }
 
 
@@ -101,6 +104,7 @@ BRAND_ALIASES = {
     "Zarko Perfume": "ZARKOPERFUME",
     "Comme des Garons": "Comme des Garçons",
     "Banderas": "Antonio Banderas",
+    "Paco Rabanne": "Rabanne",
 }
 
 
