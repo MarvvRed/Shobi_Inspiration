@@ -1,7 +1,23 @@
 {
   "catalogRows": 2324,
   "yellowRows": 45,
-  "singleFailureRows": [],
+  "singleFailureRows": [
+    {
+      "code": "2194-ORT",
+      "brand": "Orto Parisi",
+      "inspiredBy": "ORTO",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html",
+      "issues": [
+        "Gender not fully verified"
+      ],
+      "failedChecks": [
+        "gender"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    }
+  ],
   "byFailureSignature": [
     {
       "signature": "identity,fid,url,socialCard,image,notes,icons,gender,season",
@@ -71,7 +87,7 @@
       ]
     },
     {
-      "signature": "socialCard,notes,season",
+      "signature": "gender",
       "count": 1,
       "codes": [
         "2194-ORT"
@@ -88,13 +104,12 @@
   "byIssue": [
     {
       "issue": "Social Card not fully verified",
-      "count": 45,
+      "count": 44,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
         "2282-DRC",
-        "2194-ORT",
         "2085-CLIV",
         "1748-BYR",
         "1550-YAN",
@@ -232,7 +247,7 @@
       ]
     },
     {
-      "issue": "Season not fully verified",
+      "issue": "Gender not fully verified",
       "count": 36,
       "codes": [
         "2816-MOOD",
@@ -274,7 +289,7 @@
       ]
     },
     {
-      "issue": "Gender not fully verified",
+      "issue": "Season not fully verified",
       "count": 35,
       "codes": [
         "2816-MOOD",
@@ -465,10 +480,9 @@
     },
     {
       "issue": "Main Notes order not fully verified",
-      "count": 4,
+      "count": 3,
       "codes": [
         "2282-DRC",
-        "2194-ORT",
         "1037-BLG",
         "1036-BLG"
       ]
@@ -477,13 +491,12 @@
   "byFailedCheck": [
     {
       "check": "socialCard",
-      "count": 45,
+      "count": 44,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
         "2282-DRC",
-        "2194-ORT",
         "2085-CLIV",
         "1748-BYR",
         "1550-YAN",
@@ -528,13 +541,12 @@
     },
     {
       "check": "notes",
-      "count": 45,
+      "count": 44,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
         "2282-DRC",
-        "2194-ORT",
         "2085-CLIV",
         "1748-BYR",
         "1550-YAN",
@@ -625,7 +637,7 @@
       ]
     },
     {
-      "check": "season",
+      "check": "gender",
       "count": 36,
       "codes": [
         "2816-MOOD",
@@ -667,7 +679,7 @@
       ]
     },
     {
-      "check": "gender",
+      "check": "season",
       "count": 35,
       "codes": [
         "2816-MOOD",
@@ -972,19 +984,15 @@
       "code": "2194-ORT",
       "brand": "Orto Parisi",
       "inspiredBy": "ORTO",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Al-Qasim-Oud/ORTO-119473.html",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html",
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified",
-        "Season not fully verified"
+        "Gender not fully verified"
       ],
       "failedChecks": [
-        "socialCard",
-        "notes",
-        "season"
+        "gender"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     {

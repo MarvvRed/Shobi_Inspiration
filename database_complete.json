@@ -40495,11 +40495,13 @@
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/2194-ort-%CE%BD#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Orto Parisi",
     "inspiredBy": "ORTO",
-    "fragranticaId": "119473",
+    "fragranticaId": "69923",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "unisex",
-    "seasons": [],
+    "seasons": [
+      "winter"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -40522,8 +40524,8 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Al-Qasim-Oud/ORTO-119473.html",
+    "genderStatus": "",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html",
     "liveDisplayCode": "2194-ORT Ν",
     "shobiImageUrl": "https://leparfum.com.gr/62070-home_default/2194-ort-ν.jpg",
     "shobiCategory": "Niche Perfumes",
@@ -40538,22 +40540,22 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
-        "gender": true,
-        "season": false
+        "gender": false,
+        "season": true
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified",
-        "Season not fully verified"
+        "Gender not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaVerificationReason": "SHOBI_2194_ORT_IS_CUOIUM_ORTO_PARISI_AND_EXACT_FRAGRANTICA_69923",
+    "fragranticaVerificationFragranticaId": "69923"
   },
   {
     "id": "pid:3731",
