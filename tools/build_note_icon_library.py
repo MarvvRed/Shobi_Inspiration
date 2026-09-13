@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Extract one local Fragrantica note icon per validated note name."""
+"""Extract one local Fragrantica note icon per validated note name.\n\nThe generated assets are committed by GitHub Actions.\n"""
 
 import json
 import re
