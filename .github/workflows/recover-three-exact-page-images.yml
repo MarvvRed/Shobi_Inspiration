@@ -1,0 +1,36 @@
+name: Recover three exact-page images
+
+on:
+  push:
+    paths:
+      - 'tools/recover_three_exact_page_images.py'
+      - '.github/workflows/recover-three-exact-page-images.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pillow pillow-avif-plugin
+      - name: Recover images from exact Fragrantica page metadata
+        run: python tools/recover_three_exact_page_images.py
+      - name: Rebuild strict validation
+        run: python tools/build_validation_audit.py
+      - name: Refresh yellow report
+        run: python tools/analyze_validation_yellows.py
+      - name: Commit recovered images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add perfume-images/map.js perfume-images/*.avif three-exact-page-image-recovery.json database_complete.json catalog_site.json validation-yellow-report.json validation-yellow-report.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Recover exact-page images for image-only yellows"
+          git pull --rebase origin main
+          git push origin HEAD:main
