@@ -1,0 +1,391 @@
+{
+  "targets": 31,
+  "uniqueExact": 0,
+  "uniqueStrongNoExact": 0,
+  "rows": [
+    {
+      "code": "2816-MOOD",
+      "brand": "Mood London",
+      "inspiredBy": "Blonde Maracuja Mood London",
+      "normalizedBrand": "mood london",
+      "normalizedName": "blonde maracuja mood london",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "2701-DIP",
+      "brand": "Diptyque",
+      "inspiredBy": "Cafe Verlet",
+      "normalizedBrand": "diptyque",
+      "normalizedName": "cafe verlet",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "2586-DIP",
+      "brand": "Diptyque",
+      "inspiredBy": "Biscuit DIP",
+      "normalizedBrand": "diptyque",
+      "normalizedName": "biscuit dip",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "2085-CLIV",
+      "brand": "Clive Christian",
+      "inspiredBy": "X NEROLI LIMITED EDITION - CLIVE CHRISTIAN",
+      "normalizedBrand": "clive christian",
+      "normalizedName": "x neroli limited edition clive christian",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "1748-BYR",
+      "brand": "Byredo",
+      "inspiredBy": "Marijuana",
+      "normalizedBrand": "byredo",
+      "normalizedName": "marijuana",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "1550-YAN",
+      "brand": "Yankee Candle",
+      "inspiredBy": "HOME SWEET HOME - YANKEE",
+      "normalizedBrand": "yankee candle",
+      "normalizedName": "home sweet home yankee",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "383-YAN",
+      "brand": "Yankee Candle",
+      "inspiredBy": "WEDDING DAY - YANKEE",
+      "normalizedBrand": "yankee candle",
+      "normalizedName": "wedding day yankee",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "130-LEL",
+      "brand": "Le Labo",
+      "inspiredBy": "SANTAL 26 - LE LABO",
+      "normalizedBrand": "le labo",
+      "normalizedName": "santal 26 le labo",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": [
+        {
+          "url": "https://www.fragrantica.com/perfume/Le-Labo/Santal-33-Perfume-Oil-17278.html",
+          "fid": "17278",
+          "brand": "le labo",
+          "name": "santal 33 oil",
+          "brandScore": 1.0,
+          "nameScore": 0.6,
+          "exactBrand": true,
+          "exactName": false
+        }
+      ]
+    },
+    {
+      "code": "564-DOL",
+      "brand": "Dolce & Gabbana",
+      "inspiredBy": "SEXY CHOCLATE",
+      "normalizedBrand": "dolce and gabbana",
+      "normalizedName": "sexy choclate",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "314-MOL",
+      "brand": "Molton Brown",
+      "inspiredBy": "ZIAO JAO - MOLTON BROWN",
+      "normalizedBrand": "molton brown",
+      "normalizedName": "ziao jao molton brown",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "382-YAN",
+      "brand": "Yankee Candle",
+      "inspiredBy": "POMEGRANATE CIDER - YANKEE CANDLES",
+      "normalizedBrand": "yankee candle",
+      "normalizedName": "pomegranate cider yankee candles",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "381-YAN",
+      "brand": "Yankee Candle",
+      "inspiredBy": "FRESH CUT ROSES - YANKEE CANDLES",
+      "normalizedBrand": "yankee candle",
+      "normalizedName": "fresh cut roses yankee candles",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "380-YAN",
+      "brand": "Yankee Candle",
+      "inspiredBy": "FALL FESTIVAL - YANKEE CANDLES",
+      "normalizedBrand": "yankee candle",
+      "normalizedName": "fall festival yankee candles",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "379-YAN",
+      "brand": "Yankee Candle",
+      "inspiredBy": "CLEAN COTTON - YANKEE CANDLES",
+      "normalizedBrand": "yankee candle",
+      "normalizedName": "clean cotton yankee candles",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "336-THCO",
+      "brand": "The White Company",
+      "inspiredBy": "NARCISSUS NOIR - THE WHITE COMPANY",
+      "normalizedBrand": "the white company",
+      "normalizedName": "narcissus noir the white company",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "335-THCO",
+      "brand": "The White Company",
+      "inspiredBy": "CASHMERE BLANC - THE WHITE COMPANY",
+      "normalizedBrand": "the white company",
+      "normalizedName": "cashmere blanc the white company",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "334-SHI",
+      "brand": "SHIRLEY MAY",
+      "inspiredBy": "SHIRLEY MAY",
+      "normalizedBrand": "shirley may",
+      "normalizedName": "shirley may",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "331-PG",
+      "brand": "P&G",
+      "inspiredBy": "CRYSTAL WATER & WATER LILY",
+      "normalizedBrand": "p and g",
+      "normalizedName": "crystal water and water lily",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "330-PG",
+      "brand": "P&G",
+      "inspiredBy": "ORIENTAL BLOSSOM",
+      "normalizedBrand": "p and g",
+      "normalizedName": "oriental blossom",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "326-PECK",
+      "brand": "Pecksniff's",
+      "inspiredBy": "CALM - PECKSNIFF'S",
+      "normalizedBrand": "pecksniff s",
+      "normalizedName": "calm pecksniff s",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "313-MOL",
+      "brand": "Molton Brown",
+      "inspiredBy": "thai vert-mol",
+      "normalizedBrand": "molton brown",
+      "normalizedName": "thai vert mol",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "311-MOL",
+      "brand": "Molton Brown",
+      "inspiredBy": "amber cocoon-mol",
+      "normalizedBrand": "molton brown",
+      "normalizedName": "amber cocoon mol",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "289-JOM",
+      "brand": "Jo Malone London",
+      "inspiredBy": "SWEET ALMON & MACARRON - JO MALONE",
+      "normalizedBrand": "jo malone london",
+      "normalizedName": "sweet almon and macarron jo malone",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "261-JOM",
+      "brand": "Jo Malone London",
+      "inspiredBy": "INCENSE & EMBERS - JO MALONE",
+      "normalizedBrand": "jo malone london",
+      "normalizedName": "incense and embers jo malone",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": [
+        {
+          "url": "https://www.fragrantica.com/perfume/Jo-Malone-London/Lavender-Coriander-Cologne-59428.html",
+          "fid": "59428",
+          "brand": "jo malone london",
+          "name": "lavender coriander cologne",
+          "brandScore": 1.0,
+          "nameScore": 0.5556,
+          "exactBrand": true,
+          "exactName": false
+        },
+        {
+          "url": "https://www.fragrantica.com/perfume/Jo-Malone-London/Ginger-Beer-Cologne-90252.html",
+          "fid": "90252",
+          "brand": "jo malone london",
+          "name": "ginger beer cologne",
+          "brandScore": 1.0,
+          "nameScore": 0.5532,
+          "exactBrand": true,
+          "exactName": false
+        },
+        {
+          "url": "https://www.fragrantica.com/perfume/Jo-Malone-London/Salty-Amber-Cologne-74043.html",
+          "fid": "74043",
+          "brand": "jo malone london",
+          "name": "salty amber cologne",
+          "brandScore": 1.0,
+          "nameScore": 0.5532,
+          "exactBrand": true,
+          "exactName": false
+        }
+      ]
+    },
+    {
+      "code": "258-JOM",
+      "brand": "Jo Malone London",
+      "inspiredBy": "GREEN TOMATO LEAF - JO MALONE",
+      "normalizedBrand": "jo malone london",
+      "normalizedName": "green tomato leaf jo malone",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "230-DIP",
+      "brand": "Diptyque",
+      "inspiredBy": "OPOPANAX",
+      "normalizedBrand": "diptyque",
+      "normalizedName": "opopanax",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": [
+        {
+          "url": "https://www.fragrantica.com/perfume/Diptyque/Opone-3959.html",
+          "fid": "3959",
+          "brand": "diptyque",
+          "name": "opone",
+          "brandScore": 1.0,
+          "nameScore": 0.6154,
+          "exactBrand": true,
+          "exactName": false
+        }
+      ]
+    },
+    {
+      "code": "228-DIP",
+      "brand": "Diptyque",
+      "inspiredBy": "FEUILLE DE LAVANDE",
+      "normalizedBrand": "diptyque",
+      "normalizedName": "feuille de lavande",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": [
+        {
+          "url": "https://www.fragrantica.com/perfume/Diptyque/Eau-de-Lavande-24917.html",
+          "fid": "24917",
+          "brand": "diptyque",
+          "name": "eau de lavande",
+          "brandScore": 1.0,
+          "nameScore": 0.8125,
+          "exactBrand": true,
+          "exactName": false
+        },
+        {
+          "url": "https://www.fragrantica.com/perfume/Diptyque/Eau-d-Elide-3830.html",
+          "fid": "3830",
+          "brand": "diptyque",
+          "name": "eau d elide",
+          "brandScore": 1.0,
+          "nameScore": 0.5517,
+          "exactBrand": true,
+          "exactName": false
+        }
+      ]
+    },
+    {
+      "code": "227-DIP",
+      "brand": "Diptyque",
+      "inspiredBy": "FEU DE BOIS / WOOD FIRE",
+      "normalizedBrand": "diptyque",
+      "normalizedName": "feu de bois wood fire",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "223-DIP",
+      "brand": "Diptyque",
+      "inspiredBy": "BAIES",
+      "normalizedBrand": "diptyque",
+      "normalizedName": "baies",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "222-DIP",
+      "brand": "Diptyque",
+      "inspiredBy": "AMBRE",
+      "normalizedBrand": "diptyque",
+      "normalizedName": "ambre",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    },
+    {
+      "code": "200-CIR",
+      "brand": "CIRE TRUDON",
+      "inspiredBy": "ERNESTO CHE GUEVARA",
+      "normalizedBrand": "cire trudon",
+      "normalizedName": "ernesto che guevara",
+      "exactCandidates": [],
+      "strongCandidates": [],
+      "topCandidates": []
+    }
+  ]
+}
