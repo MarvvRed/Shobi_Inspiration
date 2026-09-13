@@ -15,8 +15,13 @@ if len(rows) != len(site_rows):
 
 
 def url_id(url):
-    m = re.search(r"-(\d+)\.html(?:$|[?#])", str(url or ""))
-    return m.group(1) if m else ""
+    """Extract the ID from canonical Fragrantica URLs and valid /p/ID short URLs."""
+    text = str(url or "").strip()
+    for pattern in (r"-(\d+)\.html(?:$|[?#])", r"/p/(\d+)(?:/?$|[?#])"):
+        m = re.search(pattern, text, re.I)
+        if m:
+            return m.group(1)
+    return ""
 
 
 def yes(value):
@@ -24,10 +29,6 @@ def yes(value):
 
 counts = {"green": 0, "yellow": 0, "red": 0}
 for row, site in zip(rows, site_rows):
-    # catalog_site.json is deliberately generated in the exact same order as
-    # database_complete.json. Do not join by Shobi code: codes are display
-    # identifiers and are not guaranteed to be unique. The complete database
-    # uses PrestaShop product ID / Shobi URL as its uniqueness guarantees.
     if (site.get("code"), site.get("brand"), site.get("inspiredBy")) != (row.get("code"), row.get("brand"), row.get("inspiredBy")):
         raise SystemExit(f"Complete/site catalog alignment mismatch at product {row.get('prestashopProductId')}")
 
@@ -36,15 +37,15 @@ for row, site in zip(rows, site_rows):
     notes = row.get("fragranticaSocialCardNotes") or []
     seasons = row.get("seasons") or []
     image = str(row.get("shobiImageUrl") or row.get("image") or "").strip()
+    parsed_fid = url_id(furl)
 
     checks = {
         "identity": yes(row.get("identityStatus")),
         "fid": bool(fid),
-        "url": bool(furl) and bool(fid) and url_id(furl) == fid,
+        "url": bool(furl) and bool(fid) and parsed_fid == fid,
         "socialCard": yes(row.get("fragranticaSocialCardStatus")),
         "image": bool(image),
         "notes": bool(notes) and yes(row.get("fragranticaSocialCardStatus")),
-        # Icon correctness/order require explicit audit evidence; presence alone must never create green.
         "icons": yes(row.get("noteIconsStatus")),
         "gender": bool(row.get("gender") or row.get("genderAffinity")) and yes(row.get("genderStatus")),
         "season": bool(seasons) and yes(row.get("seasonStatus")),
@@ -53,7 +54,7 @@ for row, site in zip(rows, site_rows):
     issues = []
     if not checks["identity"]: issues.append("Identity not fully verified")
     if not checks["fid"]: issues.append("Missing Fragrantica ID")
-    if fid and furl and url_id(furl) != fid: issues.append("Fragrantica URL/ID mismatch")
+    if fid and furl and parsed_fid != fid: issues.append("Fragrantica URL/ID mismatch")
     elif not furl: issues.append("Missing direct Fragrantica URL")
     if not checks["socialCard"]: issues.append("Social Card not fully verified")
     if not checks["image"]: issues.append("Missing perfume image")
@@ -63,16 +64,11 @@ for row, site in zip(rows, site_rows):
     if not checks["gender"]: issues.append("Gender not fully verified")
     if not checks["season"]: issues.append("Season not fully verified")
 
-    hard_error = (bool(fid and furl) and url_id(furl) != fid) or str(row.get("identityStatus") or "").upper() in {"ERROR", "WRONG", "MISMATCH"}
+    hard_error = (bool(fid and furl) and parsed_fid != fid) or str(row.get("identityStatus") or "").upper() in {"ERROR", "WRONG", "MISMATCH"}
     status = "red" if hard_error else ("green" if all(checks.values()) else "yellow")
     counts[status] += 1
 
-    audit = {
-        "status": status,
-        "checks": checks,
-        "issues": issues,
-        "notesCount": len(notes),
-    }
+    audit = {"status": status, "checks": checks, "issues": issues, "notesCount": len(notes)}
     row["validationAudit"] = audit
     site["validationStatus"] = status
     site["validationIssues"] = issues
