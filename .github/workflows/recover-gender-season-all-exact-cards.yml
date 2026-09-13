@@ -1,5 +1,6 @@
 name: Recover gender and season from all exact cards
 
+# rerun after current-FID multipass validation
 on:
   push:
     paths:
