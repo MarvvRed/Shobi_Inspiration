@@ -1,13 +1,13 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **182**
-- One check from green: **0**
+- Yellow rows: **174**
+- One check from green: **2**
 
 ## Failed checks
 
-- `socialCard`: **172**
-- `notes`: **172**
+- `socialCard`: **158**
+- `notes`: **158**
 - `identity`: **98**
 - `icons`: **97**
 - `season`: **60**
@@ -18,14 +18,15 @@
 
 ## Failure signatures
 
-- `socialCard,notes`: **60** — 2692-SOL, 2438-KYLJ, 2533-RAL, 2513-PAC, 2456-PAC, 2234-MON, 2224-ARM, 2185-DRC, 2016-PARELM, 1542-JOM, 1504-DON, 896-RCAV, 884-RAL, 1037-BLG, 337-TIFF, 127-KIL, 848-NRO, 254-JOM, 920-TMU, 917-SWA
 - `identity,socialCard,notes,icons`: **55** — 2552-SOR, 2439-ZEG, 2427-CLEA, 2351-LOU, 2250-ARBAS, 2160-ZAR, 2104-CHA, 1989-VERT, 1885-WID, 1836-COT, 1684-GIV, 1659-CHRA, 1483-DSQ, 687-GUR, 153-PARF, 1161-HUG, 466-CAL, 304-KIE, 236-IND, 989-YZLO
+- `socialCard,notes`: **52** — 2692-SOL, 2438-KYLJ, 2456-PAC, 2234-MON, 2224-ARM, 2185-DRC, 2016-PARELM, 1542-JOM, 1504-DON, 896-RCAV, 884-RAL, 1037-BLG, 337-TIFF, 127-KIL, 848-NRO, 254-JOM, 920-TMU, 917-SWA, 909-SFER, 882-PRA
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
 - `image,season`: **10** — 2265-KAY, 1890-LEL, 866-PAC, 847-NRO, 716-ISS, 676-GUC, 646-ARM, 1281-YZLO, 1189-KEN, 1165-HUG
-- `socialCard,notes,season`: **8** — 2514-DRC, 2282-DRC, 2194-ORT, 2133-FRE, 1751-GUL, 928-TRU, 548-CLI, 1086-CLI
-- `identity,socialCard,notes,gender,season`: **4** — 2313-DRC, 2106-MARC, 1950-SWISA, 1767-LTN
+- `socialCard,notes,season`: **6** — 2282-DRC, 2194-ORT, 1751-GUL, 928-TRU, 548-CLI, 1086-CLI
+- `identity,gender,season`: **4** — 2313-DRC, 2106-MARC, 1950-SWISA, 1767-LTN
 - `socialCard,notes,icons`: **4** — 2178-MON, 904-SALV, 612-ESC, 570-DOL
 - `identity,socialCard,notes,icons,gender,season`: **4** — 1644-DRC, 235-HOLL, 1251-ROM, 1076-DRC
+- `season`: **2** — 2514-DRC, 2133-FRE
 - `socialCard,notes,icons,gender,season`: **2** — 118-HAM, 325-PECK
 - `identity,socialCard,notes`: **2** — 621-EST, 1118-FAB
 - `identity,socialCard,notes,gender`: **1** — 828-MIY
@@ -35,14 +36,16 @@
 
 | Code | Brand | Inspired by | Remaining check |
 |---|---|---|---|
+| 2514-DRC | Dior | Sauvage Eau Forte | season |
+| 2133-FRE | Frédéric Malle | Lipstick Rose Eau de Parfum | season |
 
 ## Issues
 
-- Social Card not fully verified: **172**
+- Social Card not fully verified: **158**
 - Fragrantica identity not fully verified: **98**
 - Missing Main Notes: **97**
 - Note icons not fully verified: **97**
-- Main Notes order not fully verified: **75**
+- Main Notes order not fully verified: **61**
 - Season not fully verified: **60**
 - Gender not fully verified: **43**
 - Missing perfume image: **42**
@@ -59,14 +62,12 @@
 | 2438-KYLJ | Kylie Cosmetics | Cosmic Kylie Jenner | socialCard, notes |
 | 2586-DIP | Diptyque | Biscuit DIP | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2552-SOR | Siordia Parfums | Night Horse | identity, socialCard, notes, icons |
-| 2533-RAL | Ralph Lauren | Safari | socialCard, notes |
-| 2514-DRC | Dior | Sauvage Eau Forte | socialCard, notes, season |
-| 2513-PAC | Rabanne | Million Gold | socialCard, notes |
+| 2514-DRC | Dior | Sauvage Eau Forte | season |
 | 2456-PAC | Rabanne | Million Gold | socialCard, notes |
 | 2439-ZEG | Ermenegildo Zegna | Indonesian Oud | identity, socialCard, notes, icons |
 | 2427-CLEA | Clean | Clean Warm Cotton | identity, socialCard, notes, icons |
 | 2351-LOU | Christian Louboutin | Bikini Questa Sera | identity, socialCard, notes, icons |
-| 2313-DRC | Dior | Sauvage Parfum | identity, socialCard, notes, gender, season |
+| 2313-DRC | Dior | Sauvage Parfum | identity, gender, season |
 | 2282-DRC | Dior | Dioriviera Eau de Parfum | socialCard, notes, season |
 | 2265-KAY | Kayali Fragrances | Oudgasm Rose Oud 16 Eau de Parfum Intense | image, season |
 | 2250-ARBAS | Armand Basi | In Red | identity, socialCard, notes, icons |
@@ -76,18 +77,18 @@
 | 2194-ORT | Orto Parisi | ORTO | socialCard, notes, season |
 | 2185-DRC | Dior | Eau Sauvage Extreme 2010 | socialCard, notes |
 | 2178-MON | moncler | Moncler pour Homme | socialCard, notes, icons |
-| 2133-FRE | Frédéric Malle | Lipstick Rose Eau de Parfum | socialCard, notes, season |
+| 2133-FRE | Frédéric Malle | Lipstick Rose Eau de Parfum | season |
 | 2104-CHA | Chanel | 1957 Eau de Parfum | identity, socialCard, notes, icons |
-| 2106-MARC | Marc-Antoine Barrois | B683 Eau de Parfum | identity, socialCard, notes, gender, season |
+| 2106-MARC | Marc-Antoine Barrois | B683 Eau de Parfum | identity, gender, season |
 | 2085-CLIV | Clive Christian | X NEROLI LIMITED EDITION - CLIVE CHRISTIAN | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2016-PARELM | Parfums d'Elmar | Elixir d'Amour | socialCard, notes |
 | 1989-VERT | Vertus | Narcos is | identity, socialCard, notes, icons |
-| 1950-SWISA | Swiss Arabian | Al Amaken | identity, socialCard, notes, gender, season |
+| 1950-SWISA | Swiss Arabian | Al Amaken | identity, gender, season |
 | 1885-WID | Widian | Widian London | identity, socialCard, notes, icons |
 | 1890-LEL | Le Labo | Lys 41 | image, season |
 | 1542-JOM | Jo Malone London | English Oak Redcurrant | socialCard, notes |
 | 1836-COT | Coty | Vanilla Fields | identity, socialCard, notes, icons |
-| 1767-LTN | Louis Vuitton | Attrape-Rêves | identity, socialCard, notes, gender, season |
+| 1767-LTN | Louis Vuitton | Attrape-Rêves | identity, gender, season |
 | 1751-GUL | Jean Paul Gaultier | Madame | socialCard, notes, season |
 | 1748-BYR | Byredo | Marijuana | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1684-GIV | Givenchy | Ysatis | identity, socialCard, notes, icons |
@@ -158,9 +159,7 @@
 | 827-MISN | Missoni | Missoni | socialCard, notes |
 | 753-KEN | Kenzo | Kenzo | socialCard, notes |
 | 735-JIM | Jimmy Choo | Jimmy Choo | socialCard, notes |
-| 734-JIM | Jimmy Choo | Jimmy Choo | socialCard, notes |
 | 719-ISS | Issey Miyake | Pleats Please | identity, socialCard, notes, icons |
-| 718-ISS | Issey Miyake | L eau d Issey | socialCard, notes |
 | 717-ISS | Issey Miyake | CLASSIC - ISSEY MIYAKE | socialCard, notes |
 | 716-ISS | Issey Miyake | A Scent by Issey Miyake | image, season |
 | 711-HUG | Hugo Boss | Boss Orange | socialCard, notes |
@@ -200,7 +199,6 @@
 | 411-BOD | The Body Shop | White Musk | identity, socialCard, notes, icons |
 | 399-ARA | Aramis | Tuscany Per Donna | identity, socialCard, notes, icons |
 | 1281-YZLO | Yves Saint Laurent | L'Homme Parfum Intense | image, season |
-| 1262-TMU | Mugler | Angel | socialCard, notes |
 | 1251-ROM | Romane | Royal Blue | identity, socialCard, notes, icons, gender, season |
 | 1250-RAL | Ralph Lauren | Safari | socialCard, notes |
 | 1248-RAL | Ralph Lauren | Polo Red Intense | socialCard, notes |
@@ -229,9 +227,6 @@
 | 1064-CHA | Chanel | Allure | socialCard, notes |
 | 1061-CRT | Cartier | Pasha de Cartier Fraicheur Menthe | identity, socialCard, notes, icons |
 | 1060-CRT | Cartier | L Envol de Cartier | identity, socialCard, notes, icons |
-| 1057-CAR | Carolina Herrera | 212 VIP Wild Party | socialCard, notes |
 | 476-CAL | Calvin Klein | CK One Summer 2016 | identity, socialCard, notes, icons |
-| 1045-CAL | Calvin Klein | Eternity | socialCard, notes |
 | 1043-CAL | Calvin Klein | Calvin Klein | socialCard, notes |
 | 1036-BLG | Bvlgari | BLV Pour Homme | socialCard, notes |
-| 1027-BRB | Burberry | London | socialCard, notes |

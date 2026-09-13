@@ -1,10 +1,9 @@
 # Social Card / Main Notes yellow analysis
 
-- Rows: **172**
+- Rows: **158**
 - `no_social_card_record`: **70**
 - `validated_record_unresolved`: **62**
 - `validated_fid_mismatch`: **19**
-- `validated_exact_except_filename_suffix`: **14**
 - `validated_exact_id_notes_differ`: **7**
 
 ## Rows
@@ -15,14 +14,10 @@
 - `2438-KYLJ` — no_social_card_record — failed=socialCard,notes — notes=6
 - `2586-DIP` — no_social_card_record — failed=identity,fid,url,socialCard,image,notes,icons,gender,season — notes=0
 - `2552-SOR` — no_social_card_record — failed=identity,socialCard,notes,icons — notes=0
-- `2533-RAL` — validated_exact_except_filename_suffix — failed=socialCard,notes — notes=6
-- `2514-DRC` — validated_exact_except_filename_suffix — failed=socialCard,notes,season — notes=5
-- `2513-PAC` — validated_exact_except_filename_suffix — failed=socialCard,notes — notes=4
 - `2456-PAC` — no_social_card_record — failed=socialCard,notes — notes=4
 - `2439-ZEG` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `2427-CLEA` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `2351-LOU` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `2313-DRC` — validated_exact_except_filename_suffix — failed=identity,socialCard,notes,gender,season — notes=6
 - `2282-DRC` — validated_record_unresolved — failed=socialCard,notes,season — notes=3
 - `2250-ARBAS` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `2234-MON` — validated_fid_mismatch — failed=socialCard,notes — notes=6
@@ -31,17 +26,13 @@
 - `2194-ORT` — validated_fid_mismatch — failed=socialCard,notes,season — notes=6
 - `2185-DRC` — validated_fid_mismatch — failed=socialCard,notes — notes=6
 - `2178-MON` — no_social_card_record — failed=socialCard,notes,icons — notes=0
-- `2133-FRE` — validated_exact_except_filename_suffix — failed=socialCard,notes,season — notes=6
 - `2104-CHA` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `2106-MARC` — validated_exact_except_filename_suffix — failed=identity,socialCard,notes,gender,season — notes=6
 - `2085-CLIV` — no_social_card_record — failed=identity,fid,url,socialCard,image,notes,icons,gender,season — notes=0
 - `2016-PARELM` — validated_record_unresolved — failed=socialCard,notes — notes=6
 - `1989-VERT` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `1950-SWISA` — validated_exact_except_filename_suffix — failed=identity,socialCard,notes,gender,season — notes=6
 - `1885-WID` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `1542-JOM` — no_social_card_record — failed=socialCard,notes — notes=3
 - `1836-COT` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `1767-LTN` — validated_exact_except_filename_suffix — failed=identity,socialCard,notes,gender,season — notes=6
 - `1751-GUL` — validated_fid_mismatch — failed=socialCard,notes,season — notes=5
 - `1748-BYR` — no_social_card_record — failed=identity,fid,url,socialCard,image,notes,icons,gender,season — notes=0
 - `1684-GIV` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
@@ -110,9 +101,7 @@
 - `827-MISN` — validated_fid_mismatch — failed=socialCard,notes — notes=6
 - `753-KEN` — no_social_card_record — failed=socialCard,notes — notes=6
 - `735-JIM` — validated_fid_mismatch — failed=socialCard,notes — notes=6
-- `734-JIM` — validated_exact_except_filename_suffix — failed=socialCard,notes — notes=6
 - `719-ISS` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `718-ISS` — validated_exact_except_filename_suffix — failed=socialCard,notes — notes=6
 - `717-ISS` — no_social_card_record — failed=socialCard,notes — notes=6
 - `711-HUG` — no_social_card_record — failed=socialCard,notes — notes=6
 - `692-GUR` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
@@ -148,7 +137,6 @@
 - `421-BRB` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `411-BOD` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `399-ARA` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `1262-TMU` — validated_exact_except_filename_suffix — failed=socialCard,notes — notes=6
 - `1251-ROM` — no_social_card_record — failed=identity,socialCard,notes,icons,gender,season — notes=0
 - `1250-RAL` — no_social_card_record — failed=socialCard,notes — notes=6
 - `1248-RAL` — validated_fid_mismatch — failed=socialCard,notes — notes=6
@@ -175,9 +163,6 @@
 - `1064-CHA` — validated_exact_id_notes_differ — failed=socialCard,notes — notes=6
 - `1061-CRT` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
 - `1060-CRT` — validated_record_unresolved — failed=identity,socialCard,notes,icons — notes=0
-- `1057-CAR` — validated_exact_except_filename_suffix — failed=socialCard,notes — notes=6
 - `476-CAL` — no_social_card_record — failed=identity,socialCard,notes,icons — notes=0
-- `1045-CAL` — validated_exact_except_filename_suffix — failed=socialCard,notes — notes=6
 - `1043-CAL` — validated_fid_mismatch — failed=socialCard,notes — notes=2
 - `1036-BLG` — validated_record_unresolved — failed=socialCard,notes — notes=6
-- `1027-BRB` — validated_exact_except_filename_suffix — failed=socialCard,notes — notes=6
