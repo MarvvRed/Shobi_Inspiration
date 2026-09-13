@@ -33300,7 +33300,9 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "genderAffinity": "masculine",
     "gender": "Male",
-    "seasons": [],
+    "seasons": [
+      "fall"
+    ],
     "occasions": [],
     "mainAccords": [],
     "notes": {
@@ -33318,29 +33320,27 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Sauvage-Parfum-56324.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Dior/Sauvage-Parfum-56324.html",
+    "genderStatus": "VALIDATED_SOCIAL_CARD"
   },
   {
     "id": "pid:3957",
@@ -48242,7 +48242,9 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "genderAffinity": "masculine",
     "gender": "Male",
-    "seasons": [],
+    "seasons": [
+      "fall"
+    ],
     "occasions": [],
     "mainAccords": [],
     "notes": {
@@ -48260,29 +48262,27 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Marc-Antoine-Barrois/B683-46802.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Marc-Antoine-Barrois/B683-46802.html",
+    "genderStatus": "VALIDATED_SOCIAL_CARD"
   },
   {
     "id": "pid:3484",
@@ -55489,7 +55489,9 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "genderAffinity": "feminine",
     "gender": "Female",
-    "seasons": [],
+    "seasons": [
+      "fall"
+    ],
     "occasions": [],
     "mainAccords": [],
     "notes": {
@@ -55507,29 +55509,27 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Swiss-Arabian/Al-Amaken-22928.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Swiss-Arabian/Al-Amaken-22928.html",
+    "genderStatus": "VALIDATED_SOCIAL_CARD"
   },
   {
     "id": "pid:2940",
@@ -66811,7 +66811,9 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "genderAffinity": "feminine",
     "gender": "Female",
-    "seasons": [],
+    "seasons": [
+      "spring"
+    ],
     "occasions": [],
     "mainAccords": [],
     "notes": {
@@ -66829,29 +66831,27 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Louis-Vuitton/Attrape-Reves-51016.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
-    }
+    },
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Louis-Vuitton/Attrape-Reves-51016.html",
+    "genderStatus": "VALIDATED_SOCIAL_CARD"
   },
   {
     "id": "pid:2620",

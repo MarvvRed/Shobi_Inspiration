@@ -1,17 +1,17 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **137**
+- Yellow rows: **133**
 - One check from green: **0**
 
 ## Failed checks
 
 - `socialCard`: **130**
 - `notes`: **130**
-- `identity`: **98**
 - `icons`: **97**
-- `season`: **51**
-- `gender`: **43**
+- `identity`: **94**
+- `season`: **47**
+- `gender`: **39**
 - `image`: **35**
 - `fid`: **31**
 - `url`: **31**
@@ -22,7 +22,6 @@
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
 - `socialCard,notes`: **24** — 2692-SOL, 2234-MON, 2224-ARM, 2185-DRC, 2016-PARELM, 1542-JOM, 896-RCAV, 884-RAL, 1037-BLG, 337-TIFF, 127-KIL, 254-JOM, 917-SWA, 909-SFER, 827-MISN, 613-ESC, 468-CAL, 1248-RAL, 1245-PRA, 1184-JOO
 - `socialCard,notes,season`: **6** — 2282-DRC, 2194-ORT, 1751-GUL, 928-TRU, 548-CLI, 1086-CLI
-- `identity,gender,season`: **4** — 2313-DRC, 2106-MARC, 1950-SWISA, 1767-LTN
 - `socialCard,notes,icons`: **4** — 2178-MON, 904-SALV, 612-ESC, 570-DOL
 - `identity,socialCard,notes,icons,gender,season`: **4** — 1644-DRC, 235-HOLL, 1251-ROM, 1076-DRC
 - `image,season`: **3** — 2265-KAY, 716-ISS, 1165-HUG
@@ -39,11 +38,11 @@
 ## Issues
 
 - Social Card not fully verified: **130**
-- Fragrantica identity not fully verified: **98**
 - Missing Main Notes: **97**
 - Note icons not fully verified: **97**
-- Season not fully verified: **51**
-- Gender not fully verified: **43**
+- Fragrantica identity not fully verified: **94**
+- Season not fully verified: **47**
+- Gender not fully verified: **39**
 - Missing perfume image: **35**
 - Main Notes order not fully verified: **33**
 - Missing Fragrantica ID: **31**
@@ -61,7 +60,6 @@
 | 2439-ZEG | Ermenegildo Zegna | Indonesian Oud | identity, socialCard, notes, icons |
 | 2427-CLEA | Clean | Clean Warm Cotton | identity, socialCard, notes, icons |
 | 2351-LOU | Christian Louboutin | Bikini Questa Sera | identity, socialCard, notes, icons |
-| 2313-DRC | Dior | Sauvage Parfum | identity, gender, season |
 | 2282-DRC | Dior | Dioriviera Eau de Parfum | socialCard, notes, season |
 | 2265-KAY | Kayali Fragrances | Oudgasm Rose Oud 16 Eau de Parfum Intense | image, season |
 | 2250-ARBAS | Armand Basi | In Red | identity, socialCard, notes, icons |
@@ -72,15 +70,12 @@
 | 2185-DRC | Dior | Eau Sauvage Extreme 2010 | socialCard, notes |
 | 2178-MON | moncler | Moncler pour Homme | socialCard, notes, icons |
 | 2104-CHA | Chanel | 1957 Eau de Parfum | identity, socialCard, notes, icons |
-| 2106-MARC | Marc-Antoine Barrois | B683 Eau de Parfum | identity, gender, season |
 | 2085-CLIV | Clive Christian | X NEROLI LIMITED EDITION - CLIVE CHRISTIAN | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2016-PARELM | Parfums d'Elmar | Elixir d'Amour | socialCard, notes |
 | 1989-VERT | Vertus | Narcos is | identity, socialCard, notes, icons |
-| 1950-SWISA | Swiss Arabian | Al Amaken | identity, gender, season |
 | 1885-WID | Widian | Widian London | identity, socialCard, notes, icons |
 | 1542-JOM | Jo Malone London | English Oak Redcurrant | socialCard, notes |
 | 1836-COT | Coty | Vanilla Fields | identity, socialCard, notes, icons |
-| 1767-LTN | Louis Vuitton | Attrape-Rêves | identity, gender, season |
 | 1751-GUL | Jean Paul Gaultier | Madame | socialCard, notes, season |
 | 1748-BYR | Byredo | Marijuana | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1684-GIV | Givenchy | Ysatis | identity, socialCard, notes, icons |
