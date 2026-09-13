@@ -10,6 +10,8 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "social-card-main-notes-validated.json"
+RAW_SOURCE = ROOT / "social-card-main-notes.json"
+DATABASE = ROOT / "database_complete.json"
 OUTPUT_DIR = ROOT / "note-icons"
 MAP_JS = OUTPUT_DIR / "map.js"
 X_RANGES = ((75, 167), (195, 287), (316, 408))
@@ -51,6 +53,39 @@ def main():
             filename = f"{slug(name)}.webp"
             crop.save(OUTPUT_DIR / filename, "WEBP", quality=82, method=6)
             icons[key] = f"note-icons/{filename}"
+    # Corrected note labels retain the slot position from their archived
+    # Fragrantica card, which provides the matching original icon.
+    raw_by_code = {
+        str(row.get("code") or "").strip(): row
+        for row in json.loads(RAW_SOURCE.read_text(encoding="utf-8"))
+    }
+    catalog = json.loads(DATABASE.read_text(encoding="utf-8"))
+    for perfume in catalog:
+        source = raw_by_code.get(str(perfume.get("code") or "").strip())
+        if not source:
+            continue
+        card = ROOT / str(source.get("card") or "")
+        notes = perfume.get("fragranticaSocialCardNotes") or []
+        if not card.is_file():
+            continue
+        try:
+            image = Image.open(card).convert("RGB")
+        except Exception:
+            continue
+        sx, sy = image.width / 1200, image.height / 1200
+        for slot, name in enumerate(notes[:6]):
+            name = str(name or "").strip()
+            key = " ".join(name.lower().split())
+            if not name or key in icons:
+                continue
+            x1, x2 = X_RANGES[slot % 3]
+            y1, y2 = Y_RANGES[slot // 3]
+            crop = image.crop((round(x1*sx), round(y1*sy), round(x2*sx), round(y2*sy)))
+            crop = crop.resize((96, 96), Image.Resampling.LANCZOS)
+            filename = f"{slug(name)}.webp"
+            crop.save(OUTPUT_DIR / filename, "WEBP", quality=82, method=6)
+            icons[key] = f"note-icons/{filename}"
+
     MAP_JS.write_text("window.FRAGRANTICA_NOTE_ICON_MAP=" + json.dumps(icons, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
     print(f"Extracted {len(icons)} local note icons")
 
