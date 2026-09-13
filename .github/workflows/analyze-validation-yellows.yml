@@ -1,0 +1,36 @@
+name: Analyze validation yellows
+
+on:
+  push:
+    paths:
+      - tools/analyze_validation_yellows.py
+      - .github/workflows/analyze-validation-yellows.yml
+      - catalog_site.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Analyze yellow validation rows
+        run: python tools/analyze_validation_yellows.py
+      - name: Publish report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add validation-yellow-report.json validation-yellow-report.md
+          if git diff --cached --quiet; then
+            echo "No report changes"
+            exit 0
+          fi
+          git commit -m "Publish validation yellow report"
+          git push
