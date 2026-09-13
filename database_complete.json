@@ -72183,7 +72183,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -72194,7 +72194,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -72203,7 +72202,8 @@
       "matchedNotesCount": 0,
       "iconsCount": 0
     },
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/2371_unknown_68415.jpeg"
   },
   {
     "id": "pid:2370",
@@ -128108,7 +128108,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -128119,7 +128119,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing perfume image",
         "Missing Main Notes",
@@ -128129,7 +128128,8 @@
       "matchedNotesCount": 0,
       "iconsCount": 0
     },
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/confirmed_521-DRC_215.jpeg"
   },
   {
     "id": "pid:615",
@@ -146964,7 +146964,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -146975,7 +146975,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -146984,7 +146983,8 @@
       "matchedNotesCount": 0,
       "iconsCount": 0
     },
-    "genderStatus": "VALIDATED_SOCIAL_CARD"
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/172_unknown_228.jpeg"
   },
   {
     "id": "pid:171",

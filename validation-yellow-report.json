@@ -208,7 +208,7 @@
     },
     {
       "signature": "socialCard,notes,icons",
-      "count": 21,
+      "count": 23,
       "codes": [
         "2552-SOR",
         "2427-CLEA",
@@ -218,6 +218,7 @@
         "1836-COT",
         "1684-GIV",
         "1659-CHRA",
+        "1644-DRC",
         "687-GUR",
         "153-PARF",
         "304-KIE",
@@ -230,7 +231,8 @@
         "570-DOL",
         "514-CHL",
         "399-ARA",
-        "777-LAL"
+        "777-LAL",
+        "1076-DRC"
       ]
     },
     {
@@ -260,11 +262,10 @@
     },
     {
       "signature": "identity,socialCard,notes,icons",
-      "count": 17,
+      "count": 15,
       "codes": [
         "2160-ZAR",
         "1989-VERT",
-        "1644-DRC",
         "1483-DSQ",
         "236-IND",
         "989-YZLO",
@@ -277,7 +278,6 @@
         "880-PRA",
         "769-LART",
         "1141-GIV",
-        "1076-DRC",
         "476-CAL"
       ]
     },
@@ -345,7 +345,7 @@
       ]
     },
     {
-      "signature": "identity,socialCard,image,notes,icons",
+      "signature": "socialCard,image,notes,icons",
       "count": 1,
       "codes": [
         "521-DRC"
@@ -623,7 +623,7 @@
     },
     {
       "issue": "Fragrantica identity not fully verified",
-      "count": 61,
+      "count": 58,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -634,7 +634,6 @@
         "2085-CLIV",
         "1989-VERT",
         "1748-BYR",
-        "1644-DRC",
         "1550-YAN",
         "1483-DSQ",
         "383-YAN",
@@ -672,7 +671,6 @@
         "621-EST",
         "533-DRC",
         "525-DRC",
-        "521-DRC",
         "520-CHO",
         "493-CER",
         "487-CRT",
@@ -684,7 +682,6 @@
         "1141-GIV",
         "1136-ARM",
         "1118-FAB",
-        "1076-DRC",
         "476-CAL"
       ]
     },
@@ -1214,7 +1211,7 @@
     },
     {
       "check": "identity",
-      "count": 61,
+      "count": 58,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -1225,7 +1222,6 @@
         "2085-CLIV",
         "1989-VERT",
         "1748-BYR",
-        "1644-DRC",
         "1550-YAN",
         "1483-DSQ",
         "383-YAN",
@@ -1263,7 +1259,6 @@
         "621-EST",
         "533-DRC",
         "525-DRC",
-        "521-DRC",
         "520-CHO",
         "493-CER",
         "487-CRT",
@@ -1275,7 +1270,6 @@
         "1141-GIV",
         "1136-ARM",
         "1118-FAB",
-        "1076-DRC",
         "476-CAL"
       ]
     },
@@ -1968,13 +1962,11 @@
       "inspiredBy": "Sauvage Elixir",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Sauvage-Elixir-68415.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3456,14 +3448,12 @@
       "inspiredBy": "Dior Addict",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dior-Addict-215.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing perfume image",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "image",
         "notes",
@@ -3847,13 +3837,11 @@
       "inspiredBy": "Fahrenheit",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Fahrenheit-228.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"

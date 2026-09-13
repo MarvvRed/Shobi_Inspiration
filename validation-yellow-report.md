@@ -9,7 +9,7 @@
 - `socialCard`: **99**
 - `notes`: **99**
 - `icons`: **77**
-- `identity`: **61**
+- `identity`: **58**
 - `season`: **38**
 - `gender`: **36**
 - `image`: **32**
@@ -19,9 +19,9 @@
 ## Failure signatures
 
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
-- `socialCard,notes,icons`: **21** — 2552-SOR, 2427-CLEA, 2250-ARBAS, 2178-MON, 1885-WID, 1836-COT, 1684-GIV, 1659-CHRA, 687-GUR, 153-PARF, 304-KIE, 985-YZLO, 979-YZLO, 945-VER, 904-SALV, 668-GIV, 612-ESC, 570-DOL, 514-CHL, 399-ARA
+- `socialCard,notes,icons`: **23** — 2552-SOR, 2427-CLEA, 2250-ARBAS, 2178-MON, 1885-WID, 1836-COT, 1684-GIV, 1659-CHRA, 1644-DRC, 687-GUR, 153-PARF, 304-KIE, 985-YZLO, 979-YZLO, 945-VER, 904-SALV, 668-GIV, 612-ESC, 570-DOL, 514-CHL
 - `socialCard,notes`: **19** — 2692-SOL, 2282-DRC, 2185-DRC, 2016-PARELM, 1542-JOM, 896-RCAV, 884-RAL, 1037-BLG, 337-TIFF, 254-JOM, 917-SWA, 909-SFER, 827-MISN, 1248-RAL, 1245-PRA, 1184-JOO, 1172-ISS, 1043-CAL, 1036-BLG
-- `identity,socialCard,notes,icons`: **17** — 2160-ZAR, 1989-VERT, 1644-DRC, 1483-DSQ, 236-IND, 989-YZLO, 987-YZLO, 692-GUR, 666-GIV, 525-DRC, 487-CRT, 421-BRB, 880-PRA, 769-LART, 1141-GIV, 1076-DRC, 476-CAL
+- `identity,socialCard,notes,icons`: **15** — 2160-ZAR, 1989-VERT, 1483-DSQ, 236-IND, 989-YZLO, 987-YZLO, 692-GUR, 666-GIV, 525-DRC, 487-CRT, 421-BRB, 880-PRA, 769-LART, 1141-GIV, 476-CAL
 - `identity`: **8** — 2351-LOU, 2104-CHA, 667-GIV, 533-DRC, 520-CHO, 493-CER, 1156-HER, 1136-ARM
 - `socialCard,notes,season`: **3** — 2194-ORT, 548-CLI, 1086-CLI
 - `icons`: **3** — 910-SARJ, 719-ISS, 425-BRB
@@ -29,7 +29,7 @@
 - `identity,socialCard,notes,icons,gender,season`: **2** — 235-HOLL, 1251-ROM
 - `identity,socialCard,notes`: **2** — 621-EST, 1118-FAB
 - `socialCard,notes,gender`: **1** — 828-MIY
-- `identity,socialCard,image,notes,icons`: **1** — 521-DRC
+- `socialCard,image,notes,icons`: **1** — 521-DRC
 
 ## One check from green
 
@@ -52,7 +52,7 @@
 - Social Card not fully verified: **99**
 - Note icons not fully verified: **77**
 - Missing Main Notes: **74**
-- Fragrantica identity not fully verified: **61**
+- Fragrantica identity not fully verified: **58**
 - Season not fully verified: **38**
 - Gender not fully verified: **36**
 - Missing perfume image: **32**
@@ -87,7 +87,7 @@
 | 1748-BYR | Byredo | Marijuana | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1684-GIV | Givenchy | Ysatis | socialCard, notes, icons |
 | 1659-CHRA | Christina Aguilera | Christina Aguilera by Night | socialCard, notes, icons |
-| 1644-DRC | Dior | Sauvage Elixir | identity, socialCard, notes, icons |
+| 1644-DRC | Dior | Sauvage Elixir | socialCard, notes, icons |
 | 1550-YAN | Yankee Candle | HOME SWEET HOME - YANKEE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1483-DSQ | Dsquared2 | Potion | identity, socialCard, notes, icons |
 | 896-RCAV | Roberto Cavalli | Splendid-vanilla | socialCard, notes |
@@ -149,7 +149,7 @@
 | 548-CLI | Clinique | Happy | socialCard, notes, season |
 | 533-DRC | Dior | Midnight Poison | identity |
 | 525-DRC | Dior | Dune | identity, socialCard, notes, icons |
-| 521-DRC | Dior | Dior Addict | identity, socialCard, image, notes, icons |
+| 521-DRC | Dior | Dior Addict | socialCard, image, notes, icons |
 | 520-CHO | Chopard | Wish | identity |
 | 514-CHL | Chloe | Love Story | socialCard, notes, icons |
 | 493-CER | Cerruti | 1881 | identity |
@@ -170,7 +170,7 @@
 | 1136-ARM | Giorgio Armani | Emporio Armani Stronger With You | identity |
 | 1118-FAB | Faberge | Brut | identity, socialCard, notes |
 | 1086-CLI | Clinique | Happy | socialCard, notes, season |
-| 1076-DRC | Dior | Fahrenheit | identity, socialCard, notes, icons |
+| 1076-DRC | Dior | Fahrenheit | socialCard, notes, icons |
 | 476-CAL | Calvin Klein | CK One Summer 2016 | identity, socialCard, notes, icons |
 | 1043-CAL | Calvin Klein | Calvin Klein | socialCard, notes |
 | 1036-BLG | Bvlgari | BLV Pour Homme | socialCard, notes |

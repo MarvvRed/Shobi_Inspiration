@@ -1,40 +1,10 @@
 {
-  "identityFailures": 94,
-  "strictCardProof": 33,
+  "identityFailures": 61,
+  "strictCardProof": 3,
   "strictCodes": [
-    "2552-SOR",
-    "2439-ZEG",
-    "2427-CLEA",
-    "2250-ARBAS",
-    "1885-WID",
-    "1836-COT",
-    "1684-GIV",
-    "1659-CHRA",
-    "687-GUR",
-    "153-PARF",
-    "1161-HUG",
-    "466-CAL",
-    "304-KIE",
-    "985-YZLO",
-    "979-YZLO",
-    "945-VER",
-    "910-SARJ",
-    "858-PAC",
-    "828-MIY",
-    "719-ISS",
-    "674-GUC",
-    "668-GIV",
-    "653-ARM",
-    "514-CHL",
-    "497-CHA",
-    "494-CHA",
-    "425-BRB",
-    "411-BOD",
-    "399-ARA",
-    "777-LAL",
-    "1160-HUG",
-    "1061-CRT",
-    "1060-CRT"
+    "1644-DRC",
+    "521-DRC",
+    "1076-DRC"
   ],
   "rows": [
     {
@@ -98,66 +68,6 @@
       "strictProof": false
     },
     {
-      "code": "2552-SOR",
-      "brand": "Siordia Parfums",
-      "inspiredBy": "Night Horse",
-      "fid": "75119",
-      "card": "fragrantica-scraper-archive/social-cards/images/4364_2552-SOR_75119.jpeg",
-      "ocr": "night horse houhaa kooblia siordia parfums pace opsetes a ane for women and men main accords",
-      "exactIdFile": true,
-      "brandTokens": [
-        "siordia",
-        "parfums"
-      ],
-      "nameTokens": [
-        "night",
-        "horse"
-      ],
-      "brandHits": 2,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
-      "code": "2439-ZEG",
-      "brand": "Ermenegildo Zegna",
-      "inspiredBy": "Indonesian Oud",
-      "fid": "16188",
-      "card": "fragrantica-scraper-archive/social-cards/images/4169_2439-ZEG_16188.jpeg",
-      "ocr": "indonesian oud eau de louette ermenegildo zegna as for men main accords ee",
-      "exactIdFile": true,
-      "brandTokens": [
-        "ermenegildo",
-        "zegna"
-      ],
-      "nameTokens": [
-        "indonesian",
-        "oud"
-      ],
-      "brandHits": 2,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
-      "code": "2427-CLEA",
-      "brand": "Clean",
-      "inspiredBy": "Clean Warm Cotton",
-      "fid": "3024",
-      "card": "fragrantica-scraper-archive/social-cards/images/4164_2427-CLEA_3024.jpeg",
-      "ocr": "clean warm cotton ee clean bak for women main accords citrus",
-      "exactIdFile": true,
-      "brandTokens": [
-        "clean"
-      ],
-      "nameTokens": [
-        "clean",
-        "warm",
-        "cotton"
-      ],
-      "brandHits": 1,
-      "nameHits": 3,
-      "strictProof": true
-    },
-    {
       "code": "2351-LOU",
       "brand": "Christian Louboutin",
       "inspiredBy": "Bikini Questa Sera",
@@ -177,26 +87,6 @@
       "brandHits": 2,
       "nameHits": 2,
       "strictProof": false
-    },
-    {
-      "code": "2250-ARBAS",
-      "brand": "Armand Basi",
-      "inspiredBy": "In Red",
-      "fid": "128",
-      "card": "fragrantica-scraper-archive/social-cards/images/3841_2250-ARBAS_128.jpeg",
-      "ocr": "note re bie ener in red oe armand basi mirseeinacee for women i a main accords hay il i i citrus y",
-      "exactIdFile": true,
-      "brandTokens": [
-        "armand",
-        "basi"
-      ],
-      "nameTokens": [
-        "in",
-        "red"
-      ],
-      "brandHits": 2,
-      "nameHits": 2,
-      "strictProof": true
     },
     {
       "code": "2160-ZAR",
@@ -277,44 +167,6 @@
       "strictProof": false
     },
     {
-      "code": "1885-WID",
-      "brand": "Widian",
-      "inspiredBy": "Widian London",
-      "fid": "47781",
-      "card": "fragrantica-scraper-archive/social-cards/images/2798_1885-WID_47781.jpeg",
-      "ocr": "ae ee london soeaker ta ir widian see for women and men main accords es yt",
-      "exactIdFile": true,
-      "brandTokens": [
-        "widian"
-      ],
-      "nameTokens": [
-        "widian",
-        "london"
-      ],
-      "brandHits": 1,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
-      "code": "1836-COT",
-      "brand": "Coty",
-      "inspiredBy": "Vanilla Fields",
-      "fid": "6029",
-      "card": "fragrantica-scraper-archive/social-cards/images/2715_1836-COT_6029.jpeg",
-      "ocr": "vanilla fields ee ee coty eee i for women a main accords vanilla",
-      "exactIdFile": true,
-      "brandTokens": [
-        "coty"
-      ],
-      "nameTokens": [
-        "vanilla",
-        "fields"
-      ],
-      "brandHits": 1,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
       "code": "1748-BYR",
       "brand": "Byredo",
       "inspiredBy": "Marijuana",
@@ -333,52 +185,13 @@
       "strictProof": false
     },
     {
-      "code": "1684-GIV",
-      "brand": "Givenchy",
-      "inspiredBy": "Ysatis",
-      "fid": "36",
-      "card": "fragrantica-scraper-archive/social-cards/images/2412_1684-GIV_36.jpeg",
-      "ocr": "fis eet a peete ge ysatis givenchy ae aie for women main accords fy woody a",
-      "exactIdFile": true,
-      "brandTokens": [
-        "givenchy"
-      ],
-      "nameTokens": [
-        "ysatis"
-      ],
-      "brandHits": 1,
-      "nameHits": 1,
-      "strictProof": true
-    },
-    {
-      "code": "1659-CHRA",
-      "brand": "Christina Aguilera",
-      "inspiredBy": "Christina Aguilera by Night",
-      "fid": "6714",
-      "card": "fragrantica-scraper-archive/social-cards/images/2401_1659-CHRA_6714.jpeg",
-      "ocr": "christina aguilera by night christina aguilera eae ata for women main accords vanilla any",
-      "exactIdFile": true,
-      "brandTokens": [
-        "christina",
-        "aguilera"
-      ],
-      "nameTokens": [
-        "christina",
-        "aguilera",
-        "night"
-      ],
-      "brandHits": 2,
-      "nameHits": 3,
-      "strictProof": true
-    },
-    {
       "code": "1644-DRC",
       "brand": "Dior",
       "inspiredBy": "Sauvage Elixir",
       "fid": "68415",
-      "card": "",
-      "ocr": null,
-      "exactIdFile": false,
+      "card": "fragrantica-scraper-archive/social-cards/images/2371_unknown_68415.jpeg",
+      "ocr": "sauvage elixir ce dior ee for men main accords",
+      "exactIdFile": true,
       "brandTokens": [
         "dior"
       ],
@@ -386,9 +199,9 @@
         "sauvage",
         "elixir"
       ],
-      "brandHits": 0,
-      "nameHits": 0,
-      "strictProof": false
+      "brandHits": 1,
+      "nameHits": 2,
+      "strictProof": true
     },
     {
       "code": "1550-YAN",
@@ -493,25 +306,6 @@
       "strictProof": false
     },
     {
-      "code": "687-GUR",
-      "brand": "Guerlain",
-      "inspiredBy": "L Instant de Guerlain",
-      "fid": "51",
-      "card": "fragrantica-scraper-archive/social-cards/images/1921_687-GUR_51.jpeg",
-      "ocr": "l instant de guerlain guerlain be ee for women vag a main accords iil",
-      "exactIdFile": true,
-      "brandTokens": [
-        "guerlain"
-      ],
-      "nameTokens": [
-        "instant",
-        "guerlain"
-      ],
-      "brandHits": 1,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
       "code": "314-MOL",
       "brand": "Molton Brown",
       "inspiredBy": "ZIAO JAO - MOLTON BROWN",
@@ -532,68 +326,6 @@
       "brandHits": 0,
       "nameHits": 0,
       "strictProof": false
-    },
-    {
-      "code": "153-PARF",
-      "brand": "By Kilian",
-      "inspiredBy": "Straight to Heaven",
-      "fid": "4323",
-      "card": "fragrantica-scraper-archive/social-cards/images/1814_153-PARF_4323.jpeg",
-      "ocr": "straight to heaven by kilian soeth for men main accords ves",
-      "exactIdFile": true,
-      "brandTokens": [
-        "kilian"
-      ],
-      "nameTokens": [
-        "straight",
-        "to",
-        "heaven"
-      ],
-      "brandHits": 1,
-      "nameHits": 3,
-      "strictProof": true
-    },
-    {
-      "code": "1161-HUG",
-      "brand": "Hugo Boss",
-      "inspiredBy": "Boss Bottled Oud",
-      "fid": "31141",
-      "card": "fragrantica-scraper-archive/social-cards/images/1810_1161-HUG_31141.jpeg",
-      "ocr": "boss bottled oud hugo boss ae cet for men main accords es",
-      "exactIdFile": true,
-      "brandTokens": [
-        "hugo",
-        "boss"
-      ],
-      "nameTokens": [
-        "boss",
-        "bottled",
-        "oud"
-      ],
-      "brandHits": 2,
-      "nameHits": 3,
-      "strictProof": true
-    },
-    {
-      "code": "466-CAL",
-      "brand": "Calvin Klein",
-      "inspiredBy": "Calvin Klein Women",
-      "fid": "50662",
-      "card": "fragrantica-scraper-archive/social-cards/images/1779_466-CAL_50662.jpeg",
-      "ocr": "calvin klein women oe calvin klein eee a for women main accords a gece citrus",
-      "exactIdFile": true,
-      "brandTokens": [
-        "calvin",
-        "klein"
-      ],
-      "nameTokens": [
-        "calvin",
-        "klein",
-        "women"
-      ],
-      "brandHits": 2,
-      "nameHits": 3,
-      "strictProof": true
     },
     {
       "code": "382-YAN",
@@ -849,25 +581,6 @@
       "brandHits": 0,
       "nameHits": 0,
       "strictProof": false
-    },
-    {
-      "code": "304-KIE",
-      "brand": "Kiehl s",
-      "inspiredBy": "Original Musk",
-      "fid": "6188",
-      "card": "fragrantica-scraper-archive/social-cards/images/1203_304-KIE_6188.jpeg",
-      "ocr": "original musk ae reba eesiec kiehl s sae for women and men main accords musky",
-      "exactIdFile": true,
-      "brandTokens": [
-        "kiehl"
-      ],
-      "nameTokens": [
-        "original",
-        "musk"
-      ],
-      "brandHits": 1,
-      "nameHits": 2,
-      "strictProof": true
     },
     {
       "code": "289-JOM",
@@ -1139,147 +852,6 @@
       "strictProof": false
     },
     {
-      "code": "985-YZLO",
-      "brand": "Yves Saint Laurent",
-      "inspiredBy": "Mon Paris",
-      "fid": "38914",
-      "card": "fragrantica-scraper-archive/social-cards/images/1008_985-YZLO_38914.jpeg",
-      "ocr": "mon paris ee yves saint laurent psuaenee es for women tt main accords wo fy",
-      "exactIdFile": true,
-      "brandTokens": [
-        "yves",
-        "saint",
-        "laurent"
-      ],
-      "nameTokens": [
-        "mon",
-        "paris"
-      ],
-      "brandHits": 3,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
-      "code": "979-YZLO",
-      "brand": "Yves Saint Laurent",
-      "inspiredBy": "Cinema",
-      "fid": "92",
-      "card": "fragrantica-scraper-archive/social-cards/images/1003_979-YZLO_92.jpeg",
-      "ocr": "cinema oe ee ta es yves saint laurent sats for women i main accords",
-      "exactIdFile": true,
-      "brandTokens": [
-        "yves",
-        "saint",
-        "laurent"
-      ],
-      "nameTokens": [
-        "cinema"
-      ],
-      "brandHits": 3,
-      "nameHits": 1,
-      "strictProof": true
-    },
-    {
-      "code": "945-VER",
-      "brand": "Versace",
-      "inspiredBy": "Eros Pour Femme",
-      "fid": "28958",
-      "card": "fragrantica-scraper-archive/social-cards/images/976_945-VER_28958.jpeg",
-      "ocr": "eee eros pour femme versace eae for women main accords citrus",
-      "exactIdFile": true,
-      "brandTokens": [
-        "versace"
-      ],
-      "nameTokens": [
-        "eros",
-        "femme"
-      ],
-      "brandHits": 1,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
-      "code": "910-SARJ",
-      "brand": "Sarah Jessica Parker",
-      "inspiredBy": "Lovely",
-      "fid": "993",
-      "card": "fragrantica-scraper-archive/social-cards/images/946_910-SARJ_993.jpeg",
-      "ocr": "lovely ee sarah jessica parker sinema for women thas main accords pwooty e vg ge i oody",
-      "exactIdFile": true,
-      "brandTokens": [
-        "sarah",
-        "jessica",
-        "parker"
-      ],
-      "nameTokens": [
-        "lovely"
-      ],
-      "brandHits": 3,
-      "nameHits": 1,
-      "strictProof": true
-    },
-    {
-      "code": "858-PAC",
-      "brand": "Rabanne",
-      "inspiredBy": "Black XS for Her",
-      "fid": "1138",
-      "card": "fragrantica-scraper-archive/social-cards/images/899_858-PAC_1138.jpeg",
-      "ocr": "black xs tor her rabanne for women main accords a",
-      "exactIdFile": true,
-      "brandTokens": [
-        "rabanne"
-      ],
-      "nameTokens": [
-        "black",
-        "xs",
-        "her"
-      ],
-      "brandHits": 1,
-      "nameHits": 3,
-      "strictProof": true
-    },
-    {
-      "code": "828-MIY",
-      "brand": "Miu Miu",
-      "inspiredBy": "Miu Miu L Eau Bleue",
-      "fid": "42720",
-      "card": "fragrantica-scraper-archive/social-cards/images/872_828-MIY_42720.jpeg",
-      "ocr": "miu miu lkau bleue miu miu hee for women main accords white floral",
-      "exactIdFile": true,
-      "brandTokens": [
-        "miu",
-        "miu"
-      ],
-      "nameTokens": [
-        "miu",
-        "miu",
-        "bleue"
-      ],
-      "brandHits": 2,
-      "nameHits": 3,
-      "strictProof": true
-    },
-    {
-      "code": "719-ISS",
-      "brand": "Issey Miyake",
-      "inspiredBy": "Pleats Please",
-      "fid": "15464",
-      "card": "fragrantica-scraper-archive/social-cards/images/786_719-ISS_15464.jpeg",
-      "ocr": "pleats please issey miyake aes for women w main accords ee",
-      "exactIdFile": true,
-      "brandTokens": [
-        "issey",
-        "miyake"
-      ],
-      "nameTokens": [
-        "pleats",
-        "please"
-      ],
-      "brandHits": 2,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
       "code": "692-GUR",
       "brand": "Guerlain",
       "inspiredBy": "Samsara Eau de Parfum",
@@ -1296,44 +868,6 @@
       "brandHits": 0,
       "nameHits": 1,
       "strictProof": false
-    },
-    {
-      "code": "674-GUC",
-      "brand": "Gucci",
-      "inspiredBy": "Gucci Bamboo",
-      "fid": "30815",
-      "card": "fragrantica-scraper-archive/social-cards/images/750_674-GUC_30815.jpeg",
-      "ocr": "guccl bamboo gucci ae cepe bie for women main accords white floral",
-      "exactIdFile": true,
-      "brandTokens": [
-        "gucci"
-      ],
-      "nameTokens": [
-        "gucci",
-        "bamboo"
-      ],
-      "brandHits": 1,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
-      "code": "668-GIV",
-      "brand": "Givenchy",
-      "inspiredBy": "Hot Couture",
-      "fid": "35",
-      "card": "fragrantica-scraper-archive/social-cards/images/744_668-GIV_35.jpeg",
-      "ocr": "soh aree hot couture givenchy res for women main accords mi hit sy i lz ry a",
-      "exactIdFile": true,
-      "brandTokens": [
-        "givenchy"
-      ],
-      "nameTokens": [
-        "hot",
-        "couture"
-      ],
-      "brandHits": 1,
-      "nameHits": 2,
-      "strictProof": true
     },
     {
       "code": "667-GIV",
@@ -1372,25 +906,6 @@
       "brandHits": 1,
       "nameHits": 1,
       "strictProof": false
-    },
-    {
-      "code": "653-ARM",
-      "brand": "Giorgio Armani",
-      "inspiredBy": "Mania",
-      "fid": "423",
-      "card": "fragrantica-scraper-archive/social-cards/images/732_653-ARM_423.jpeg",
-      "ocr": "mania giorgio armani sss for women main accords warm spicy ee",
-      "exactIdFile": true,
-      "brandTokens": [
-        "giorgio",
-        "armani"
-      ],
-      "nameTokens": [
-        "mania"
-      ],
-      "brandHits": 2,
-      "nameHits": 1,
-      "strictProof": true
     },
     {
       "code": "621-EST",
@@ -1455,9 +970,9 @@
       "brand": "Dior",
       "inspiredBy": "Dior Addict",
       "fid": "215",
-      "card": "",
-      "ocr": null,
-      "exactIdFile": false,
+      "card": "fragrantica-scraper-archive/social-cards/images/confirmed_521-DRC_215.jpeg",
+      "ocr": "dior addict ee ior ic lior cee for women lo main accords vanilla ss a white floral",
+      "exactIdFile": true,
       "brandTokens": [
         "dior"
       ],
@@ -1465,9 +980,9 @@
         "dior",
         "addict"
       ],
-      "brandHits": 0,
-      "nameHits": 0,
-      "strictProof": false
+      "brandHits": 1,
+      "nameHits": 2,
+      "strictProof": true
     },
     {
       "code": "520-CHO",
@@ -1486,61 +1001,6 @@
       "brandHits": 1,
       "nameHits": 0,
       "strictProof": false
-    },
-    {
-      "code": "514-CHL",
-      "brand": "Chloe",
-      "inspiredBy": "Love Story",
-      "fid": "26227",
-      "card": "fragrantica-scraper-archive/social-cards/images/609_514-CHL_26227.jpeg",
-      "ocr": "love story chloe apenas for women main accords white floral rea",
-      "exactIdFile": true,
-      "brandTokens": [
-        "chloe"
-      ],
-      "nameTokens": [
-        "love",
-        "story"
-      ],
-      "brandHits": 1,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
-      "code": "497-CHA",
-      "brand": "Chanel",
-      "inspiredBy": "Chance",
-      "fid": "610",
-      "card": "fragrantica-scraper-archive/social-cards/images/592_497-CHA_610.jpeg",
-      "ocr": "chance kau de louette chanel sea for women i main accords eo a",
-      "exactIdFile": true,
-      "brandTokens": [
-        "chanel"
-      ],
-      "nameTokens": [
-        "chance"
-      ],
-      "brandHits": 1,
-      "nameHits": 1,
-      "strictProof": true
-    },
-    {
-      "code": "494-CHA",
-      "brand": "Chanel",
-      "inspiredBy": "Allure",
-      "fid": "502",
-      "card": "fragrantica-scraper-archive/social-cards/images/590_494-CHA_502.jpeg",
-      "ocr": "allure ar aaegrele chanel bata enn for women main accords l are citrus",
-      "exactIdFile": true,
-      "brandTokens": [
-        "chanel"
-      ],
-      "nameTokens": [
-        "allure"
-      ],
-      "brandHits": 1,
-      "nameHits": 1,
-      "strictProof": true
     },
     {
       "code": "493-CER",
@@ -1580,25 +1040,6 @@
       "strictProof": false
     },
     {
-      "code": "425-BRB",
-      "brand": "Burberry",
-      "inspiredBy": "Burberry Her",
-      "fid": "51694",
-      "card": "fragrantica-scraper-archive/social-cards/images/531_425-BRB_51694.jpeg",
-      "ocr": "burberry her burberry leases for women main accords a ss",
-      "exactIdFile": true,
-      "brandTokens": [
-        "burberry"
-      ],
-      "nameTokens": [
-        "burberry",
-        "her"
-      ],
-      "brandHits": 1,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
       "code": "421-BRB",
       "brand": "Burberry",
       "inspiredBy": "Body",
@@ -1615,46 +1056,6 @@
       "brandHits": 1,
       "nameHits": 0,
       "strictProof": false
-    },
-    {
-      "code": "411-BOD",
-      "brand": "The Body Shop",
-      "inspiredBy": "White Musk",
-      "fid": "2432",
-      "card": "fragrantica-scraper-archive/social-cards/images/518_411-BOD_2432.jpeg",
-      "ocr": "white musk the body shop seo for women main accords",
-      "exactIdFile": true,
-      "brandTokens": [
-        "body",
-        "shop"
-      ],
-      "nameTokens": [
-        "white",
-        "musk"
-      ],
-      "brandHits": 2,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
-      "code": "399-ARA",
-      "brand": "Aramis",
-      "inspiredBy": "Tuscany Per Donna",
-      "fid": "122",
-      "card": "fragrantica-scraper-archive/social-cards/images/510_399-ARA_122.jpeg",
-      "ocr": "tuscany per donna aramis ees for women main accords",
-      "exactIdFile": true,
-      "brandTokens": [
-        "aramis"
-      ],
-      "nameTokens": [
-        "tuscany",
-        "per",
-        "donna"
-      ],
-      "brandHits": 1,
-      "nameHits": 3,
-      "strictProof": true
     },
     {
       "code": "1251-ROM",
@@ -1695,25 +1096,6 @@
       "strictProof": false
     },
     {
-      "code": "777-LAL",
-      "brand": "Lalique",
-      "inspiredBy": "Sculpteur d Epices",
-      "fid": "28250",
-      "card": "fragrantica-scraper-archive/social-cards/images/284_777-LAL_28250.jpeg",
-      "ocr": "sculpteur d epices lalique ong ie for women and men main accords y wih",
-      "exactIdFile": true,
-      "brandTokens": [
-        "lalique"
-      ],
-      "nameTokens": [
-        "sculpteur",
-        "epices"
-      ],
-      "brandHits": 1,
-      "nameHits": 2,
-      "strictProof": true
-    },
-    {
       "code": "769-LART",
       "brand": "LArtisan Parfumeur",
       "inspiredBy": "Premier Figuier",
@@ -1732,26 +1114,6 @@
       "brandHits": 1,
       "nameHits": 1,
       "strictProof": false
-    },
-    {
-      "code": "1160-HUG",
-      "brand": "Hugo Boss",
-      "inspiredBy": "Boss Bottled",
-      "fid": "383",
-      "card": "fragrantica-scraper-archive/social-cards/images/249_1160-HUG_383.jpeg",
-      "ocr": "boss bottled oe hugo boss sie ter iad for men main accords a inci y",
-      "exactIdFile": true,
-      "brandTokens": [
-        "hugo",
-        "boss"
-      ],
-      "nameTokens": [
-        "boss",
-        "bottled"
-      ],
-      "brandHits": 2,
-      "nameHits": 2,
-      "strictProof": true
     },
     {
       "code": "1156-HER",
@@ -1836,57 +1198,17 @@
       "brand": "Dior",
       "inspiredBy": "Fahrenheit",
       "fid": "228",
-      "card": "",
-      "ocr": null,
-      "exactIdFile": false,
+      "card": "fragrantica-scraper-archive/social-cards/images/172_unknown_228.jpeg",
+      "ocr": "fahrenheit fet pt if seri dior se ts oe for men main accords ozonic",
+      "exactIdFile": true,
       "brandTokens": [
         "dior"
       ],
       "nameTokens": [
         "fahrenheit"
       ],
-      "brandHits": 0,
-      "nameHits": 0,
-      "strictProof": false
-    },
-    {
-      "code": "1061-CRT",
-      "brand": "Cartier",
-      "inspiredBy": "Pasha de Cartier Fraicheur Menthe",
-      "fid": "2446",
-      "card": "fragrantica-scraper-archive/social-cards/images/158_1061-CRT_2446.jpeg",
-      "ocr": "pasha de cartier fraicheur menthe cartier oe for men meee main accords mit",
-      "exactIdFile": true,
-      "brandTokens": [
-        "cartier"
-      ],
-      "nameTokens": [
-        "pasha",
-        "cartier",
-        "fraicheur",
-        "menthe"
-      ],
       "brandHits": 1,
-      "nameHits": 4,
-      "strictProof": true
-    },
-    {
-      "code": "1060-CRT",
-      "brand": "Cartier",
-      "inspiredBy": "L Envol de Cartier",
-      "fid": "39885",
-      "card": "fragrantica-scraper-archive/social-cards/images/157_1060-CRT_39885.jpeg",
-      "ocr": "l envol de cartier kau de partum oe cartier be for men oo fi i i main accords oe",
-      "exactIdFile": true,
-      "brandTokens": [
-        "cartier"
-      ],
-      "nameTokens": [
-        "envol",
-        "cartier"
-      ],
-      "brandHits": 1,
-      "nameHits": 2,
+      "nameHits": 1,
       "strictProof": true
     },
     {
