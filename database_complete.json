@@ -35639,7 +35639,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "unisex",
-    "seasons": [],
+    "seasons": [
+      "summer"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -35680,12 +35682,11 @@
         "notes": false,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified",
-        "Season not fully verified"
+        "Main Notes order not fully verified"
       ],
       "notesCount": 3,
       "matchedNotesCount": 0,
@@ -36287,7 +36288,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "unisex",
-    "seasons": [],
+    "seasons": [
+      "summer"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -36328,11 +36331,10 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
       "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
+        "Missing perfume image"
       ],
       "notesCount": 4,
       "matchedNotesCount": 4,
@@ -67059,7 +67061,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [],
+    "seasons": [
+      "spring"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -67075,7 +67079,7 @@
     "fragranticaSocialCardStatus": "",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "liveDisplayCode": "1751-GUL WP",
     "shobiImageUrl": "https://leparfum.com.gr/51701-home_default/1751-gul-wp.jpg",
     "shobiCategory": "Fragrances For Women",
@@ -67094,15 +67098,13 @@
         "image": true,
         "notes": false,
         "icons": false,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
       "issues": [
         "Social Card not fully verified",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -72157,7 +72159,9 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "genderAffinity": "masculine",
     "gender": "Male",
-    "seasons": [],
+    "seasons": [
+      "winter"
+    ],
     "occasions": [],
     "mainAccords": [],
     "notes": {
@@ -72179,21 +72183,20 @@
         "image": true,
         "notes": false,
         "icons": false,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
       "issues": [
         "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    }
+    },
+    "genderStatus": "VALIDATED_SOCIAL_CARD"
   },
   {
     "id": "pid:2370",
@@ -106005,7 +106008,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [],
+    "seasons": [
+      "spring"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -106021,7 +106026,7 @@
     "fragranticaSocialCardStatus": "",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "liveDisplayCode": "928-TRU WP",
     "shobiImageUrl": "https://leparfum.com.gr/41479-home_default/928-tru-wp.jpg",
     "shobiCategory": "Fragrances For Women",
@@ -106040,15 +106045,13 @@
         "image": true,
         "notes": false,
         "icons": false,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
       "issues": [
         "Social Card not fully verified",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -117330,7 +117333,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [],
+    "seasons": [
+      "summer"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -117373,11 +117378,10 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
       "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
+        "Missing perfume image"
       ],
       "notesCount": 6,
       "matchedNotesCount": 6,
@@ -128044,7 +128048,9 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "genderAffinity": "feminine",
     "gender": "Female",
-    "seasons": [],
+    "seasons": [
+      "winter"
+    ],
     "occasions": [],
     "mainAccords": [],
     "notes": {
@@ -128066,22 +128072,21 @@
         "image": false,
         "notes": false,
         "icons": false,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
       "issues": [
         "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing perfume image",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    }
+    },
+    "genderStatus": "VALIDATED_SOCIAL_CARD"
   },
   {
     "id": "pid:615",
@@ -141958,7 +141963,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
-    "seasons": [],
+    "seasons": [
+      "summer"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -141999,11 +142006,10 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
       "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
+        "Missing perfume image"
       ],
       "notesCount": 4,
       "matchedNotesCount": 4,
@@ -146865,7 +146871,9 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "genderAffinity": "masculine",
     "gender": "Male",
-    "seasons": [],
+    "seasons": [
+      "winter"
+    ],
     "occasions": [],
     "mainAccords": [],
     "notes": {
@@ -146887,21 +146895,20 @@
         "image": true,
         "notes": false,
         "icons": false,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
       "issues": [
         "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    }
+    },
+    "genderStatus": "VALIDATED_SOCIAL_CARD"
   },
   {
     "id": "pid:171",

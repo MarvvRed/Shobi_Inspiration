@@ -1,11 +1,57 @@
 {
   "catalogRows": 2324,
   "yellowRows": 133,
-  "singleFailureRows": [],
+  "singleFailureRows": [
+    {
+      "code": "2265-KAY",
+      "brand": "Kayali Fragrances",
+      "inspiredBy": "Oudgasm Rose Oud 16 Eau de Parfum Intense",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Oudgasm-Rose-Oud-16-Eau-de-Parfum-Intense-85186.html",
+      "issues": [
+        "Missing perfume image"
+      ],
+      "failedChecks": [
+        "image"
+      ],
+      "notesCount": 4,
+      "matchedNotesCount": 4,
+      "iconsCount": 4
+    },
+    {
+      "code": "716-ISS",
+      "brand": "Issey Miyake",
+      "inspiredBy": "A Scent by Issey Miyake",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/A-Scent-by-Issey-Miyake-6432.html",
+      "issues": [
+        "Missing perfume image"
+      ],
+      "failedChecks": [
+        "image"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1165-HUG",
+      "brand": "Hugo Boss",
+      "inspiredBy": "Hugo Energise",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Energise-569.html",
+      "issues": [
+        "Missing perfume image"
+      ],
+      "failedChecks": [
+        "image"
+      ],
+      "notesCount": 4,
+      "matchedNotesCount": 4,
+      "iconsCount": 4
+    }
+  ],
   "byFailureSignature": [
     {
       "signature": "socialCard,notes,icons",
-      "count": 36,
+      "count": 38,
       "codes": [
         "2552-SOR",
         "2439-ZEG",
@@ -14,6 +60,7 @@
         "2178-MON",
         "1885-WID",
         "1836-COT",
+        "1751-GUL",
         "1684-GIV",
         "1659-CHRA",
         "687-GUR",
@@ -24,6 +71,7 @@
         "985-YZLO",
         "979-YZLO",
         "945-VER",
+        "928-TRU",
         "910-SARJ",
         "904-SALV",
         "858-PAC",
@@ -84,9 +132,10 @@
     },
     {
       "signature": "socialCard,notes",
-      "count": 24,
+      "count": 25,
       "codes": [
         "2692-SOL",
+        "2282-DRC",
         "2234-MON",
         "2224-ARM",
         "2185-DRC",
@@ -114,12 +163,13 @@
     },
     {
       "signature": "identity,socialCard,notes,icons",
-      "count": 23,
+      "count": 25,
       "codes": [
         "2351-LOU",
         "2160-ZAR",
         "2104-CHA",
         "1989-VERT",
+        "1644-DRC",
         "1483-DSQ",
         "236-IND",
         "989-YZLO",
@@ -138,14 +188,23 @@
         "1156-HER",
         "1141-GIV",
         "1136-ARM",
+        "1076-DRC",
         "476-CAL"
       ]
     },
     {
-      "signature": "socialCard,notes,season",
-      "count": 4,
+      "signature": "image",
+      "count": 3,
       "codes": [
-        "2282-DRC",
+        "2265-KAY",
+        "716-ISS",
+        "1165-HUG"
+      ]
+    },
+    {
+      "signature": "socialCard,notes,season",
+      "count": 3,
+      "codes": [
         "2194-ORT",
         "548-CLI",
         "1086-CLI"
@@ -153,31 +212,18 @@
     },
     {
       "signature": "socialCard,notes,icons,gender,season",
-      "count": 4,
+      "count": 2,
       "codes": [
-        "1751-GUL",
         "118-HAM",
-        "325-PECK",
-        "928-TRU"
+        "325-PECK"
       ]
     },
     {
       "signature": "identity,socialCard,notes,icons,gender,season",
-      "count": 4,
+      "count": 2,
       "codes": [
-        "1644-DRC",
         "235-HOLL",
-        "1251-ROM",
-        "1076-DRC"
-      ]
-    },
-    {
-      "signature": "image,season",
-      "count": 3,
-      "codes": [
-        "2265-KAY",
-        "716-ISS",
-        "1165-HUG"
+        "1251-ROM"
       ]
     },
     {
@@ -196,7 +242,7 @@
       ]
     },
     {
-      "signature": "identity,socialCard,image,notes,icons,gender,season",
+      "signature": "identity,socialCard,image,notes,icons",
       "count": 1,
       "codes": [
         "521-DRC"
@@ -619,18 +665,14 @@
     },
     {
       "issue": "Season not fully verified",
-      "count": 47,
+      "count": 38,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2282-DRC",
-        "2265-KAY",
         "2194-ORT",
         "2085-CLIV",
-        "1751-GUL",
         "1748-BYR",
-        "1644-DRC",
         "1550-YAN",
         "383-YAN",
         "130-LEL",
@@ -660,27 +702,20 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "928-TRU",
-        "716-ISS",
         "548-CLI",
-        "521-DRC",
         "1251-ROM",
-        "1165-HUG",
-        "1086-CLI",
-        "1076-DRC"
+        "1086-CLI"
       ]
     },
     {
       "issue": "Gender not fully verified",
-      "count": 41,
+      "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
         "2085-CLIV",
-        "1751-GUL",
         "1748-BYR",
-        "1644-DRC",
         "1550-YAN",
         "383-YAN",
         "130-LEL",
@@ -710,11 +745,8 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "928-TRU",
         "828-MIY",
-        "521-DRC",
-        "1251-ROM",
-        "1076-DRC"
+        "1251-ROM"
       ]
     },
     {
@@ -1317,18 +1349,14 @@
     },
     {
       "check": "season",
-      "count": 47,
+      "count": 38,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2282-DRC",
-        "2265-KAY",
         "2194-ORT",
         "2085-CLIV",
-        "1751-GUL",
         "1748-BYR",
-        "1644-DRC",
         "1550-YAN",
         "383-YAN",
         "130-LEL",
@@ -1358,27 +1386,20 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "928-TRU",
-        "716-ISS",
         "548-CLI",
-        "521-DRC",
         "1251-ROM",
-        "1165-HUG",
-        "1086-CLI",
-        "1076-DRC"
+        "1086-CLI"
       ]
     },
     {
       "check": "gender",
-      "count": 41,
+      "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
         "2085-CLIV",
-        "1751-GUL",
         "1748-BYR",
-        "1644-DRC",
         "1550-YAN",
         "383-YAN",
         "130-LEL",
@@ -1408,11 +1429,8 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "928-TRU",
         "828-MIY",
-        "521-DRC",
-        "1251-ROM",
-        "1076-DRC"
+        "1251-ROM"
       ]
     },
     {
@@ -1727,13 +1745,11 @@
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dioriviera-81847.html",
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified",
-        "Season not fully verified"
+        "Main Notes order not fully verified"
       ],
       "failedChecks": [
         "socialCard",
-        "notes",
-        "season"
+        "notes"
       ],
       "notesCount": 3,
       "matchedNotesCount": 0,
@@ -1745,12 +1761,10 @@
       "inspiredBy": "Oudgasm Rose Oud 16 Eau de Parfum Intense",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Oudgasm-Rose-Oud-16-Eau-de-Parfum-Intense-85186.html",
       "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
+        "Missing perfume image"
       ],
       "failedChecks": [
-        "image",
-        "season"
+        "image"
       ],
       "notesCount": 4,
       "matchedNotesCount": 4,
@@ -2038,16 +2052,12 @@
       "issues": [
         "Social Card not fully verified",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "failedChecks": [
         "socialCard",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "icons"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -2131,17 +2141,13 @@
         "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "failedChecks": [
         "identity",
         "socialCard",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "icons"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -3370,16 +3376,12 @@
       "issues": [
         "Social Card not fully verified",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "failedChecks": [
         "socialCard",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "icons"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -3537,12 +3539,10 @@
       "inspiredBy": "A Scent by Issey Miyake",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/A-Scent-by-Issey-Miyake-6432.html",
       "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
+        "Missing perfume image"
       ],
       "failedChecks": [
-        "image",
-        "season"
+        "image"
       ],
       "notesCount": 6,
       "matchedNotesCount": 6,
@@ -3813,18 +3813,14 @@
         "Social Card not fully verified",
         "Missing perfume image",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "failedChecks": [
         "identity",
         "socialCard",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "icons"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -4205,12 +4201,10 @@
       "inspiredBy": "Hugo Energise",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Hugo-Energise-569.html",
       "issues": [
-        "Missing perfume image",
-        "Season not fully verified"
+        "Missing perfume image"
       ],
       "failedChecks": [
-        "image",
-        "season"
+        "image"
       ],
       "notesCount": 4,
       "matchedNotesCount": 4,
@@ -4362,17 +4356,13 @@
         "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
-        "Note icons not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Note icons not fully verified"
       ],
       "failedChecks": [
         "identity",
         "socialCard",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "icons"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
