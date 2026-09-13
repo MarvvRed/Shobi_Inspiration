@@ -1,0 +1,92 @@
+name: Build unique Shobi perfume catalog
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/filter-shobi-live.yml'
+      - 'shobi-master-v1-refresh.csv'
+
+permissions:
+  contents: write
+
+jobs:
+  filter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Filter Shobi perfumes and validate uniqueness
+        run: |
+          python - <<'PY'
+          import csv
+          import re
+          from collections import Counter
+
+          source = 'shobi-master-v1-refresh.csv'
+          output = 'shobi-perfumes-live-unique.csv'
+          conflicts = 'shobi-perfumes-code-conflicts.csv'
+
+          with open(source, encoding='utf-8-sig', newline='') as f:
+              rows = list(csv.DictReader(f))
+              fields = list(rows[0])
+
+          # Shobi's own perfume titles use a numeric Shobi code prefix.
+          shobi = [r for r in rows if re.match(r'^\d+[- ]', (r.get('code') or '').strip())]
+
+          # Remove only actual duplicate records. Distinct product pages sharing
+          # a displayed code are preserved and reported separately.
+          seen_ids = set()
+          seen_urls = set()
+          unique = []
+          for row in shobi:
+              product_id = (row.get('product_id') or '').strip()
+              url = (row.get('url') or '').strip()
+              if product_id in seen_ids or url in seen_urls:
+                  continue
+              seen_ids.add(product_id)
+              seen_urls.add(url)
+              unique.append(row)
+
+          code_counts = Counter((r.get('code') or '').strip() for r in unique)
+          conflict_rows = [r for r in unique if code_counts[(r.get('code') or '').strip()] > 1]
+
+          if len(rows) != 2562:
+              raise SystemExit(f'Expected 2562 live products, found {len(rows)}')
+          if len(unique) != 2334:
+              raise SystemExit(f'Expected 2334 unique Shobi perfumes, found {len(unique)}')
+          if len(seen_ids) != len(unique) or len(seen_urls) != len(unique):
+              raise SystemExit('Duplicate product_id or URL remains')
+          if len(conflict_rows) != 4:
+              raise SystemExit(f'Expected 4 code-conflict rows, found {len(conflict_rows)}')
+
+          with open(output, 'w', encoding='utf-8', newline='') as f:
+              writer = csv.DictWriter(f, fieldnames=fields)
+              writer.writeheader()
+              writer.writerows(unique)
+
+          conflict_fields = ['product_id', 'code', 'reference', 'category', 'inspired_by', 'url']
+          with open(conflicts, 'w', encoding='utf-8', newline='') as f:
+              writer = csv.DictWriter(f, fieldnames=conflict_fields)
+              writer.writeheader()
+              writer.writerows({k: r.get(k, '') for k in conflict_fields} for r in conflict_rows)
+
+          print(f'Live products: {len(rows)}')
+          print(f'Unique Shobi perfumes: {len(unique)}')
+          print(f'Duplicate product IDs: {len(unique) - len(seen_ids)}')
+          print(f'Duplicate URLs: {len(unique) - len(seen_urls)}')
+          print(f'Code-conflict rows: {len(conflict_rows)}')
+          PY
+
+      - name: Commit filtered catalogs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add shobi-perfumes-live-unique.csv shobi-perfumes-code-conflicts.csv
+          if git diff --cached --quiet; then
+            echo 'No catalog changes.'
+            exit 0
+          fi
+          git commit -m 'Add unique Shobi-only live perfume catalog'
+          git push
