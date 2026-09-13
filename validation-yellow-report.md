@@ -1,15 +1,15 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **45**
-- One check from green: **1**
+- Yellow rows: **44**
+- One check from green: **0**
 
 ## Failed checks
 
 - `socialCard`: **44**
 - `notes`: **44**
 - `icons`: **41**
-- `gender`: **36**
+- `gender`: **35**
 - `season`: **35**
 - `identity`: **32**
 - `fid`: **31**
@@ -22,21 +22,19 @@
 - `socialCard,notes,icons`: **6** — 884-RAL, 236-IND, 945-VER, 525-DRC, 487-CRT, 421-BRB
 - `socialCard,notes`: **3** — 2282-DRC, 1037-BLG, 1036-BLG
 - `socialCard,notes,icons,gender,season`: **3** — 118-HAM, 325-PECK, 235-HOLL
-- `gender`: **1** — 2194-ORT
 - `identity,socialCard,notes,icons,gender,season`: **1** — 1251-ROM
 
 ## One check from green
 
 | Code | Brand | Inspired by | Remaining check |
 |---|---|---|---|
-| 2194-ORT | Orto Parisi | ORTO | gender |
 
 ## Issues
 
 - Social Card not fully verified: **44**
 - Missing Main Notes: **41**
 - Note icons not fully verified: **41**
-- Gender not fully verified: **36**
+- Gender not fully verified: **35**
 - Season not fully verified: **35**
 - Fragrantica identity not fully verified: **32**
 - Missing Fragrantica ID: **31**
@@ -52,7 +50,6 @@
 | 2701-DIP | Diptyque | Cafe Verlet | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2586-DIP | Diptyque | Biscuit DIP | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2282-DRC | Dior | Dioriviera Eau de Parfum | socialCard, notes |
-| 2194-ORT | Orto Parisi | ORTO | gender |
 | 2085-CLIV | Clive Christian | X NEROLI LIMITED EDITION - CLIVE CHRISTIAN | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1748-BYR | Byredo | Marijuana | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1550-YAN | Yankee Candle | HOME SWEET HOME - YANKEE | identity, fid, url, socialCard, image, notes, icons, gender, season |

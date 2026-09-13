@@ -1,23 +1,7 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 45,
-  "singleFailureRows": [
-    {
-      "code": "2194-ORT",
-      "brand": "Orto Parisi",
-      "inspiredBy": "ORTO",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html",
-      "issues": [
-        "Gender not fully verified"
-      ],
-      "failedChecks": [
-        "gender"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    }
-  ],
+  "yellowRows": 44,
+  "singleFailureRows": [],
   "byFailureSignature": [
     {
       "signature": "identity,fid,url,socialCard,image,notes,icons,gender,season",
@@ -84,13 +68,6 @@
         "118-HAM",
         "325-PECK",
         "235-HOLL"
-      ]
-    },
-    {
-      "signature": "gender",
-      "count": 1,
-      "codes": [
-        "2194-ORT"
       ]
     },
     {
@@ -248,12 +225,11 @@
     },
     {
       "issue": "Gender not fully verified",
-      "count": 36,
+      "count": 35,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2194-ORT",
         "2085-CLIV",
         "1748-BYR",
         "1550-YAN",
@@ -638,12 +614,11 @@
     },
     {
       "check": "gender",
-      "count": 36,
+      "count": 35,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2194-ORT",
         "2085-CLIV",
         "1748-BYR",
         "1550-YAN",
@@ -979,21 +954,6 @@
       "notesCount": 3,
       "matchedNotesCount": 0,
       "iconsCount": 3
-    },
-    {
-      "code": "2194-ORT",
-      "brand": "Orto Parisi",
-      "inspiredBy": "ORTO",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html",
-      "issues": [
-        "Gender not fully verified"
-      ],
-      "failedChecks": [
-        "gender"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "2085-CLIV",

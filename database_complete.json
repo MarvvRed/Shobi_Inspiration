@@ -40524,7 +40524,7 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html",
     "liveDisplayCode": "2194-ORT Ν",
     "shobiImageUrl": "https://leparfum.com.gr/62070-home_default/2194-ort-ν.jpg",
@@ -40533,7 +40533,7 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -40544,18 +40544,18 @@
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
+        "gender": true,
         "season": true
       },
-      "issues": [
-        "Gender not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
     },
     "fragranticaVerificationReason": "SHOBI_2194_ORT_IS_CUOIUM_ORTO_PARISI_AND_EXACT_FRAGRANTICA_69923",
-    "fragranticaVerificationFragranticaId": "69923"
+    "fragranticaVerificationFragranticaId": "69923",
+    "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/3732_2194-ORT_69923.jpeg",
+    "genderVerificationFragranticaId": "69923"
   },
   {
     "id": "pid:3731",
