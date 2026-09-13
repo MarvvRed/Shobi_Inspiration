@@ -278,7 +278,7 @@ for code, (brand, name, fragrantica_id, fragrantica_url) in CONFIRMED_IDENTITY_O
 
 OUTPUT.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-site_required_fields = ("code", "inspiredBy", "brand")
+site_required_fields = ("code", "inspiredBy", "brand", "fragranticaUrl")
 site_optional_fields = (
     "genderAffinity",
     "seasons",
