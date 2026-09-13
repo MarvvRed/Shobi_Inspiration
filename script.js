@@ -598,13 +598,10 @@ async function init() {
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
         const rawDataAll = await response.json();
-        const isOfficialPerfume = (p) => {
-            const status = String((p && (p.fragrantica_status || p.fragranticaStatus)) || '').toUpperCase();
-            return !status.startsWith('RESOLVED_NO_FORCE');
-        };
-        const rawData = (Array.isArray(rawDataAll) && rawDataAll.length > 0 && Array.isArray(rawDataAll[0]?.perfumes))
-            ? rawDataAll.map(brandObject => ({ ...brandObject, perfumes: (brandObject.perfumes || []).filter(isOfficialPerfume) }))
-            : (Array.isArray(rawDataAll) ? rawDataAll.filter(isOfficialPerfume) : rawDataAll);
+        // The live Shobi CSV is authoritative: every row in database_complete.json
+        // is a current Shobi perfume and must be visible even when its optional
+        // Fragrantica association is unresolved.
+        const rawData = rawDataAll;
         allBrands.clear();
 
         if (rawData.length > 0 && Array.isArray(rawData[0].perfumes)) {
