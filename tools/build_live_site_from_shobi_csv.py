@@ -145,7 +145,12 @@ def identity_from_description(description):
     return "Unknown Brand", text.strip(" .") or "Unidentified Shobi fragrance"
 
 
-# Layered "MIX" products are real Shobi listings, but are intentionally not\n# part of the inspiration catalog shown by this site.\nlive_rows = [\n    row for row in read_csv(LIVE_CSV)\n    if not re.fullmatch(r"MIX\\d+", (row.get("reference") or "").strip(), flags=re.I)\n]
+# Layered "MIX" products are real Shobi listings, but are intentionally not
+# part of the inspiration catalog shown by this site.
+live_rows = [
+    row for row in read_csv(LIVE_CSV)
+    if not re.fullmatch(r"MIX\d+", (row.get("reference") or "").strip(), flags=re.I)
+]
 master_by_pid = {row["prestashop_product_id"].strip(): row for row in read_csv(MASTER)}
 mapping_by_pid = {row["prestashop_product_id"].strip(): row for row in read_csv(MAPPING)}
 review_by_pid = {
