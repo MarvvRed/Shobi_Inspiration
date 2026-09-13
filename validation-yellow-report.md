@@ -1,15 +1,15 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **103**
-- One check from green: **11**
+- Yellow rows: **95**
+- One check from green: **3**
 
 ## Failed checks
 
 - `socialCard`: **92**
 - `notes`: **92**
 - `icons`: **78**
-- `identity`: **58**
+- `identity`: **50**
 - `gender`: **36**
 - `season`: **36**
 - `image`: **32**
@@ -22,7 +22,6 @@
 - `socialCard,notes,icons`: **24** — 2552-SOR, 2427-CLEA, 2250-ARBAS, 2178-MON, 1885-WID, 1836-COT, 1684-GIV, 1659-CHRA, 1644-DRC, 687-GUR, 884-RAL, 153-PARF, 304-KIE, 985-YZLO, 979-YZLO, 945-VER, 904-SALV, 668-GIV, 612-ESC, 570-DOL
 - `identity,socialCard,notes,icons`: **15** — 2160-ZAR, 1989-VERT, 1483-DSQ, 236-IND, 989-YZLO, 987-YZLO, 692-GUR, 666-GIV, 525-DRC, 487-CRT, 421-BRB, 880-PRA, 769-LART, 1141-GIV, 476-CAL
 - `socialCard,notes`: **13** — 2692-SOL, 2282-DRC, 2185-DRC, 2016-PARELM, 1542-JOM, 896-RCAV, 1037-BLG, 254-JOM, 917-SWA, 909-SFER, 1248-RAL, 1184-JOO, 1036-BLG
-- `identity`: **8** — 2351-LOU, 2104-CHA, 667-GIV, 533-DRC, 520-CHO, 493-CER, 1156-HER, 1136-ARM
 - `icons`: **3** — 910-SARJ, 719-ISS, 425-BRB
 - `socialCard,notes,icons,gender,season`: **2** — 118-HAM, 325-PECK
 - `identity,socialCard,notes,icons,gender,season`: **2** — 235-HOLL, 1251-ROM
@@ -35,24 +34,16 @@
 
 | Code | Brand | Inspired by | Remaining check |
 |---|---|---|---|
-| 2351-LOU | Christian Louboutin | Bikini Questa Sera | identity |
-| 2104-CHA | Chanel | 1957 Eau de Parfum | identity |
 | 910-SARJ | Sarah Jessica Parker | Lovely | icons |
 | 719-ISS | Issey Miyake | Pleats Please | icons |
-| 667-GIV | Givenchy | Dahlia Noir | identity |
-| 533-DRC | Dior | Midnight Poison | identity |
-| 520-CHO | Chopard | Wish | identity |
-| 493-CER | Cerruti | 1881 | identity |
 | 425-BRB | Burberry | Burberry Her | icons |
-| 1156-HER | Hermès | Terre d Hermes | identity |
-| 1136-ARM | Giorgio Armani | Emporio Armani Stronger With You | identity |
 
 ## Issues
 
 - Social Card not fully verified: **92**
 - Note icons not fully verified: **78**
 - Missing Main Notes: **75**
-- Fragrantica identity not fully verified: **58**
+- Fragrantica identity not fully verified: **50**
 - Gender not fully verified: **36**
 - Season not fully verified: **36**
 - Missing perfume image: **32**
@@ -70,14 +61,12 @@
 | 2586-DIP | Diptyque | Biscuit DIP | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2552-SOR | Siordia Parfums | Night Horse | socialCard, notes, icons |
 | 2427-CLEA | Clean | Clean Warm Cotton | socialCard, notes, icons |
-| 2351-LOU | Christian Louboutin | Bikini Questa Sera | identity |
 | 2282-DRC | Dior | Dioriviera Eau de Parfum | socialCard, notes |
 | 2250-ARBAS | Armand Basi | In Red | socialCard, notes, icons |
 | 2160-ZAR | Zara | Barbie | identity, socialCard, notes, icons |
 | 2194-ORT | Orto Parisi | ORTO | socialCard, notes, season |
 | 2185-DRC | Dior | Eau Sauvage Extreme 2010 | socialCard, notes |
 | 2178-MON | moncler | Moncler pour Homme | socialCard, notes, icons |
-| 2104-CHA | Chanel | 1957 Eau de Parfum | identity |
 | 2085-CLIV | Clive Christian | X NEROLI LIMITED EDITION - CLIVE CHRISTIAN | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2016-PARELM | Parfums d'Elmar | Elixir d'Amour | socialCard, notes |
 | 1989-VERT | Vertus | Narcos is | identity, socialCard, notes, icons |
@@ -139,17 +128,13 @@
 | 719-ISS | Issey Miyake | Pleats Please | icons |
 | 692-GUR | Guerlain | Samsara Eau de Parfum | identity, socialCard, notes, icons |
 | 668-GIV | Givenchy | Hot Couture | socialCard, notes, icons |
-| 667-GIV | Givenchy | Dahlia Noir | identity |
 | 666-GIV | Givenchy | Dahlia Divin | identity, socialCard, notes, icons |
 | 621-EST | Estée Lauder | Bronze Goddess 2011 | identity, socialCard, notes |
 | 612-ESC | Escada | TURQUOISE - ESCADA | socialCard, notes, icons |
 | 570-DOL | Dolce & Gabbana | (RED CUP) | socialCard, notes, icons |
-| 533-DRC | Dior | Midnight Poison | identity |
 | 525-DRC | Dior | Dune | identity, socialCard, notes, icons |
 | 521-DRC | Dior | Dior Addict | socialCard, image, notes, icons |
-| 520-CHO | Chopard | Wish | identity |
 | 514-CHL | Chloe | Love Story | socialCard, notes, icons |
-| 493-CER | Cerruti | 1881 | identity |
 | 487-CRT | Cartier | Baiser Vole | identity, socialCard, notes, icons |
 | 425-BRB | Burberry | Burberry Her | icons |
 | 421-BRB | Burberry | Body | identity, socialCard, notes, icons |
@@ -160,9 +145,7 @@
 | 777-LAL | Lalique | Sculpteur d Epices | socialCard, notes, icons |
 | 769-LART | LArtisan Parfumeur | Premier Figuier | identity, socialCard, notes, icons |
 | 1184-JOO | Joop! | Joop! Homme | socialCard, notes |
-| 1156-HER | Hermès | Terre d Hermes | identity |
 | 1141-GIV | Givenchy | Pi | identity, socialCard, notes, icons |
-| 1136-ARM | Giorgio Armani | Emporio Armani Stronger With You | identity |
 | 1118-FAB | Faberge | Brut | identity, socialCard, notes |
 | 1076-DRC | Dior | Fahrenheit | socialCard, notes, icons |
 | 476-CAL | Calvin Klein | CK One Summer 2016 | identity, socialCard, notes, icons |

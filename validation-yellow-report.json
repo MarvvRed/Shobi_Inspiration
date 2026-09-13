@@ -1,37 +1,7 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 103,
+  "yellowRows": 95,
   "singleFailureRows": [
-    {
-      "code": "2351-LOU",
-      "brand": "Christian Louboutin",
-      "inspiredBy": "Bikini Questa Sera",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Christian-Louboutin/Bikini-Questa-Sera-40982.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "2104-CHA",
-      "brand": "Chanel",
-      "inspiredBy": "1957 Eau de Parfum",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/1957-Eau-de-Parfum-52483.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
     {
       "code": "910-SARJ",
       "brand": "Sarah Jessica Parker",
@@ -63,66 +33,6 @@
       "iconsCount": 5
     },
     {
-      "code": "667-GIV",
-      "brand": "Givenchy",
-      "inspiredBy": "Dahlia Noir",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Dahlia-Noir-12146.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "533-DRC",
-      "brand": "Dior",
-      "inspiredBy": "Midnight Poison",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Midnight-Poison-1282.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "520-CHO",
-      "brand": "Chopard",
-      "inspiredBy": "Wish",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chopard/Wish-353.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "493-CER",
-      "brand": "Cerruti",
-      "inspiredBy": "1881",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Cerruti/1881-327.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "425-BRB",
       "brand": "Burberry",
       "inspiredBy": "Burberry Her",
@@ -136,36 +46,6 @@
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 5
-    },
-    {
-      "code": "1156-HER",
-      "brand": "Hermès",
-      "inspiredBy": "Terre d Hermes",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/Terre-d-Hermes-17.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "1136-ARM",
-      "brand": "Giorgio Armani",
-      "inspiredBy": "Emporio Armani Stronger With You",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-45258.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     }
   ],
   "byFailureSignature": [
@@ -274,20 +154,6 @@
         "1248-RAL",
         "1184-JOO",
         "1036-BLG"
-      ]
-    },
-    {
-      "signature": "identity",
-      "count": 8,
-      "codes": [
-        "2351-LOU",
-        "2104-CHA",
-        "667-GIV",
-        "533-DRC",
-        "520-CHO",
-        "493-CER",
-        "1156-HER",
-        "1136-ARM"
       ]
     },
     {
@@ -611,14 +477,12 @@
     },
     {
       "issue": "Fragrantica identity not fully verified",
-      "count": 58,
+      "count": 50,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2351-LOU",
         "2160-ZAR",
-        "2104-CHA",
         "2085-CLIV",
         "1989-VERT",
         "1748-BYR",
@@ -654,21 +518,15 @@
         "989-YZLO",
         "987-YZLO",
         "692-GUR",
-        "667-GIV",
         "666-GIV",
         "621-EST",
-        "533-DRC",
         "525-DRC",
-        "520-CHO",
-        "493-CER",
         "487-CRT",
         "421-BRB",
         "1251-ROM",
         "880-PRA",
         "769-LART",
-        "1156-HER",
         "1141-GIV",
-        "1136-ARM",
         "1118-FAB",
         "476-CAL"
       ]
@@ -1176,14 +1034,12 @@
     },
     {
       "check": "identity",
-      "count": 58,
+      "count": 50,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2351-LOU",
         "2160-ZAR",
-        "2104-CHA",
         "2085-CLIV",
         "1989-VERT",
         "1748-BYR",
@@ -1219,21 +1075,15 @@
         "989-YZLO",
         "987-YZLO",
         "692-GUR",
-        "667-GIV",
         "666-GIV",
         "621-EST",
-        "533-DRC",
         "525-DRC",
-        "520-CHO",
-        "493-CER",
         "487-CRT",
         "421-BRB",
         "1251-ROM",
         "880-PRA",
         "769-LART",
-        "1156-HER",
         "1141-GIV",
-        "1136-ARM",
         "1118-FAB",
         "476-CAL"
       ]
@@ -1585,21 +1435,6 @@
       "iconsCount": 0
     },
     {
-      "code": "2351-LOU",
-      "brand": "Christian Louboutin",
-      "inspiredBy": "Bikini Questa Sera",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Christian-Louboutin/Bikini-Questa-Sera-40982.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "2282-DRC",
       "brand": "Dior",
       "inspiredBy": "Dioriviera Eau de Parfum",
@@ -1710,21 +1545,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "2104-CHA",
-      "brand": "Chanel",
-      "inspiredBy": "1957 Eau de Parfum",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/1957-Eau-de-Parfum-52483.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "2085-CLIV",
@@ -3226,21 +3046,6 @@
       "iconsCount": 0
     },
     {
-      "code": "667-GIV",
-      "brand": "Givenchy",
-      "inspiredBy": "Dahlia Noir",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Dahlia-Noir-12146.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "666-GIV",
       "brand": "Givenchy",
       "inspiredBy": "Dahlia Divin",
@@ -3319,21 +3124,6 @@
       "iconsCount": 0
     },
     {
-      "code": "533-DRC",
-      "brand": "Dior",
-      "inspiredBy": "Midnight Poison",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Midnight-Poison-1282.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "525-DRC",
       "brand": "Dior",
       "inspiredBy": "Dune",
@@ -3376,21 +3166,6 @@
       "iconsCount": 0
     },
     {
-      "code": "520-CHO",
-      "brand": "Chopard",
-      "inspiredBy": "Wish",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chopard/Wish-353.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "514-CHL",
       "brand": "Chloe",
       "inspiredBy": "Love Story",
@@ -3408,21 +3183,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "493-CER",
-      "brand": "Cerruti",
-      "inspiredBy": "1881",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Cerruti/1881-327.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "487-CRT",
@@ -3621,21 +3381,6 @@
       "iconsCount": 6
     },
     {
-      "code": "1156-HER",
-      "brand": "Hermès",
-      "inspiredBy": "Terre d Hermes",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/Terre-d-Hermes-17.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "1141-GIV",
       "brand": "Givenchy",
       "inspiredBy": "Pi",
@@ -3655,21 +3400,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "1136-ARM",
-      "brand": "Giorgio Armani",
-      "inspiredBy": "Emporio Armani Stronger With You",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-45258.html",
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
-      "failedChecks": [
-        "identity"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "1118-FAB",
