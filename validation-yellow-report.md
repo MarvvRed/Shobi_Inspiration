@@ -1,8 +1,8 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **184**
-- One check from green: **2**
+- Yellow rows: **182**
+- One check from green: **0**
 
 ## Failed checks
 
@@ -10,7 +10,7 @@
 - `notes`: **172**
 - `identity`: **98**
 - `icons`: **97**
-- `season`: **62**
+- `season`: **60**
 - `gender`: **43**
 - `image`: **42**
 - `fid`: **31**
@@ -27,7 +27,6 @@
 - `socialCard,notes,icons`: **4** — 2178-MON, 904-SALV, 612-ESC, 570-DOL
 - `identity,socialCard,notes,icons,gender,season`: **4** — 1644-DRC, 235-HOLL, 1251-ROM, 1076-DRC
 - `socialCard,notes,icons,gender,season`: **2** — 118-HAM, 325-PECK
-- `season`: **2** — 107-ARB, 973-VICT
 - `identity,socialCard,notes`: **2** — 621-EST, 1118-FAB
 - `identity,socialCard,notes,gender`: **1** — 828-MIY
 - `identity,socialCard,image,notes,icons,gender,season`: **1** — 521-DRC
@@ -36,8 +35,6 @@
 
 | Code | Brand | Inspired by | Remaining check |
 |---|---|---|---|
-| 107-ARB | Arabian Oud | Titanium | season |
-| 973-VICT | Victoria's Secret | Wicked | season |
 
 ## Issues
 
@@ -46,7 +43,7 @@
 - Missing Main Notes: **97**
 - Note icons not fully verified: **97**
 - Main Notes order not fully verified: **75**
-- Season not fully verified: **62**
+- Season not fully verified: **60**
 - Gender not fully verified: **43**
 - Missing perfume image: **42**
 - Missing Fragrantica ID: **31**
@@ -114,7 +111,6 @@
 | 466-CAL | Calvin Klein | Calvin Klein Women | identity, socialCard, notes, icons |
 | 848-NRO | Narciso Rodriguez | Narciso Rodriguez For Her | socialCard, notes |
 | 118-HAM | Hamidi Oud Perfumes | REHAN - HAMIDI OUD | socialCard, notes, icons, gender, season |
-| 107-ARB | Arabian Oud | Titanium | season |
 | 382-YAN | Yankee Candle | POMEGRANATE CIDER - YANKEE CANDLES | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 381-YAN | Yankee Candle | FRESH CUT ROSES - YANKEE CANDLES | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 380-YAN | Yankee Candle | FALL FESTIVAL - YANKEE CANDLES | identity, fid, url, socialCard, image, notes, icons, gender, season |
@@ -145,7 +141,6 @@
 | 987-YZLO | Yves Saint Laurent | Paris | identity, socialCard, notes, icons |
 | 985-YZLO | Yves Saint Laurent | Mon Paris | identity, socialCard, notes, icons |
 | 979-YZLO | Yves Saint Laurent | Cinema | identity, socialCard, notes, icons |
-| 973-VICT | Victoria's Secret | Wicked | season |
 | 945-VER | Versace | Eros Pour Femme | identity, socialCard, notes, icons |
 | 928-TRU | Trussardi | Delicate Rose | socialCard, notes, season |
 | 920-TMU | Mugler | Angel | socialCard, notes |

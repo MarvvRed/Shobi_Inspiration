@@ -92877,7 +92877,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "unisex",
-    "seasons": [],
+    "seasons": [
+      "summer"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -92908,7 +92910,7 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Arabian-Oud/Titanium-127709.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -92920,11 +92922,9 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
-      "issues": [
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -103779,7 +103779,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
-    "seasons": [],
+    "seasons": [
+      "spring"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -103807,7 +103809,7 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Victoria-s-Secret/Wicked-133200.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -103819,11 +103821,9 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
-      "issues": [
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 3,
       "matchedNotesCount": 3,
       "iconsCount": 3

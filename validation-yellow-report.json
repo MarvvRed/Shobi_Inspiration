@@ -1,38 +1,7 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 184,
-  "singleFailureRows": [
-    {
-      "code": "107-ARB",
-      "brand": "Arabian Oud",
-      "inspiredBy": "Titanium",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Arabian-Oud/Titanium-127709.html",
-      "issues": [
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "973-VICT",
-      "brand": "Victoria's Secret",
-      "inspiredBy": "Wicked",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Victoria-s-Secret/Wicked-133200.html",
-      "issues": [
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "season"
-      ],
-      "notesCount": 3,
-      "matchedNotesCount": 3,
-      "iconsCount": 3
-    }
-  ],
+  "yellowRows": 182,
+  "singleFailureRows": [],
   "byFailureSignature": [
     {
       "signature": "socialCard,notes",
@@ -264,14 +233,6 @@
       "codes": [
         "118-HAM",
         "325-PECK"
-      ]
-    },
-    {
-      "signature": "season",
-      "count": 2,
-      "codes": [
-        "107-ARB",
-        "973-VICT"
       ]
     },
     {
@@ -869,7 +830,7 @@
     },
     {
       "issue": "Season not fully verified",
-      "count": 62,
+      "count": 60,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -894,7 +855,6 @@
         "564-DOL",
         "314-MOL",
         "118-HAM",
-        "107-ARB",
         "382-YAN",
         "381-YAN",
         "380-YAN",
@@ -918,7 +878,6 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "973-VICT",
         "928-TRU",
         "866-PAC",
         "847-NRO",
@@ -1673,7 +1632,7 @@
     },
     {
       "check": "season",
-      "count": 62,
+      "count": 60,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -1698,7 +1657,6 @@
         "564-DOL",
         "314-MOL",
         "118-HAM",
-        "107-ARB",
         "382-YAN",
         "381-YAN",
         "380-YAN",
@@ -1722,7 +1680,6 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "973-VICT",
         "928-TRU",
         "866-PAC",
         "847-NRO",
@@ -3157,21 +3114,6 @@
       "iconsCount": 0
     },
     {
-      "code": "107-ARB",
-      "brand": "Arabian Oud",
-      "inspiredBy": "Titanium",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Arabian-Oud/Titanium-127709.html",
-      "issues": [
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "382-YAN",
       "brand": "Yankee Candle",
       "inspiredBy": "POMEGRANATE CIDER - YANKEE CANDLES",
@@ -4012,21 +3954,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "973-VICT",
-      "brand": "Victoria's Secret",
-      "inspiredBy": "Wicked",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Victoria-s-Secret/Wicked-133200.html",
-      "issues": [
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "season"
-      ],
-      "notesCount": 3,
-      "matchedNotesCount": 3,
-      "iconsCount": 3
     },
     {
       "code": "945-VER",
