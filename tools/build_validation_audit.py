@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Build strict per-perfume QA status. Green is never inferred from mere field presence."""
+import csv
 import json
 import re
 from pathlib import Path
@@ -7,6 +8,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "database_complete.json"
 SITE = ROOT / "catalog_site.json"
+NOTE_ICON_MAP = ROOT / "note-icons" / "map.js"
+GENDER_SEASON = ROOT / "fragrantica-scraper-archive" / "social-cards" / "gender-season.csv"
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
 site_rows = json.loads(SITE.read_text(encoding="utf-8-sig"))
@@ -25,7 +28,42 @@ def url_id(url):
 
 
 def yes(value):
-    return str(value or "").strip().upper() in {"VERIFIED", "VALIDATED", "CONFIRMED", "OK", "MATCH_CORRETTO", "MATCH CORRETTO"}
+    """Accept the explicit verification labels used by the import pipelines."""
+    return str(value or "").strip().upper() in {
+        "VERIFIED", "VALIDATED", "CONFIRMED", "OK", "MATCH_CORRETTO", "MATCH CORRETTO",
+        "VALIDATED_OCR", "VALIDATED_MANUAL", "VALIDATED_SOCIAL_CARD",
+    }
+
+
+def note_key(note):
+    return " ".join(str(note or "").strip().lower().split())
+
+
+def load_local_note_icons():
+    """Read the locally committed Fragrantica icon index without external URLs."""
+    prefix = "window.FRAGRANTICA_NOTE_ICON_MAP="
+    text = NOTE_ICON_MAP.read_text(encoding="utf-8").strip()
+    if not text.startswith(prefix):
+        raise SystemExit("Invalid local note icon map")
+    return json.loads(text[len(prefix):].rstrip(";"))
+
+
+local_note_icons = load_local_note_icons()
+with GENDER_SEASON.open(encoding="utf-8-sig", newline="") as handle:
+    social_seasons = {
+        str(item.get("shobi_code") or "").strip().upper(): item
+        for item in csv.DictReader(handle)
+    }
+
+
+def has_verified_social_season(row, fid, seasons):
+    """The dominant season must come from the card of the exact Fragrantica ID."""
+    source = social_seasons.get(str(row.get("code") or "").strip().upper())
+    if not source or str(source.get("fragrantica_id") or "").strip() != fid:
+        return False
+    main_season = str(source.get("main_season") or "").strip().lower()
+    return bool(main_season) and main_season in {str(value).strip().lower() for value in seasons}
+
 
 counts = {"green": 0, "yellow": 0, "red": 0}
 for row, site in zip(rows, site_rows):
@@ -46,9 +84,9 @@ for row, site in zip(rows, site_rows):
         "socialCard": yes(row.get("fragranticaSocialCardStatus")),
         "image": bool(image),
         "notes": bool(notes) and yes(row.get("fragranticaSocialCardStatus")),
-        "icons": yes(row.get("noteIconsStatus")),
+        "icons": bool(notes) and all(note_key(note) in local_note_icons for note in notes),
         "gender": bool(row.get("gender") or row.get("genderAffinity")) and yes(row.get("genderStatus")),
-        "season": bool(seasons) and yes(row.get("seasonStatus")),
+        "season": bool(seasons) and has_verified_social_season(row, fid, seasons),
     }
 
     issues = []
@@ -64,7 +102,12 @@ for row, site in zip(rows, site_rows):
     if not checks["gender"]: issues.append("Gender not fully verified")
     if not checks["season"]: issues.append("Season not fully verified")
 
-    hard_error = (bool(fid and furl) and parsed_fid != fid) or str(row.get("identityStatus") or "").upper() in {"ERROR", "WRONG", "MISMATCH"}
+    hard_error = (
+        not checks["identity"]
+        or not checks["fid"]
+        or not checks["url"]
+        or str(row.get("identityStatus") or "").upper() in {"ERROR", "WRONG", "MISMATCH", "AMBIGUOUS"}
+    )
     status = "red" if hard_error else ("green" if all(checks.values()) else "yellow")
     counts[status] += 1
 
