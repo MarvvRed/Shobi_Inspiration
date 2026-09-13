@@ -23,9 +23,14 @@ def uid(u):
         if m:return m.group(1)
     return ''
 def code(r): return str(r.get('code') or '').strip().upper()
+def norm_gender(v):
+    s=str(v or '').strip().lower()
+    return {'female':'feminine','woman':'feminine','women':'feminine','male':'masculine','man':'masculine','men':'masculine','unisex':'unisex'}.get(s,s)
 
-yellow_codes={code(r) for r in SITE if str(r.get('validationStatus') or '').lower()=='yellow'}
-rows=[r for r in DB if code(r) in yellow_codes]
+# Preserve row identity, including blank/duplicate codes, by aligning DB and site by position.
+rows=[]
+for db,site in zip(DB,SITE):
+    if str(site.get('validationStatus') or '').lower()=='yellow': rows.append(db)
 
 validated={code(x):x for x in json.loads(VALIDATED_NOTES.read_text(encoding='utf-8'))}
 raw={code(x):x for x in json.loads(RAW_NOTES.read_text(encoding='utf-8'))}
@@ -45,28 +50,34 @@ for r in rows:
     freq['socialCardStatus'][str(r.get('fragranticaSocialCardStatus') or '<EMPTY>')]+=1
     exact_url=bool(fid and url and uid(url)==fid)
     has_src=bool(str(r.get('fragranticaVerificationSource') or '').strip())
-    has_gender=bool(r.get('gender') or r.get('genderAffinity'))
+    current_gender=norm_gender(r.get('gender') or r.get('genderAffinity'))
+    has_gender=bool(current_gender)
     v=validated.get(c) or {}; rw=raw.get(c) or {}; g=gs.get(c) or {}
-    validated_same=bool(v and v.get('validated') is True and str(v.get('fragranticaId') or '')==fid)
-    raw_same=bool(rw and str(rw.get('fragranticaId') or '')==fid and rw.get('card'))
+    validated_same=bool(v and v.get('validated') is True and str(v.get('fragranticaId') or '')==fid and (ROOT/str(v.get('card') or '')).is_file())
+    raw_same=bool(rw and str(rw.get('fragranticaId') or '')==fid and rw.get('card') and (ROOT/str(rw.get('card') or '')).is_file())
     gs_same=bool(g and str(g.get('fragrantica_id') or '').strip()==fid and str(g.get('main_season') or '').strip())
+    csv_gender=norm_gender(g.get('gender')) if g and str(g.get('fragrantica_id') or '').strip()==fid else ''
+    gender_csv_match=bool(current_gender and csv_gender and current_gender==csv_gender)
     mapped=image_map.get(c,''); expected_img=f'perfume-images/{fid}.avif' if fid else ''
-    image_map_same=bool(fid and mapped==expected_img)
+    image_map_same=bool(fid and mapped==expected_img and (ROOT/expected_img).is_file())
+    expected_file_exists=bool(fid and (ROOT/expected_img).is_file())
 
     tests={
       'identity_label_only': (not checks.get('identity',False)) and has_src and not ok(r.get('identityStatus')),
       'gender_label_only': (not checks.get('gender',False)) and has_gender and not ok(r.get('genderStatus')),
       'identity_has_exact_chain': (not checks.get('identity',False)) and exact_url and has_src and validated_same and image_map_same,
       'gender_exact_card_exists': (not checks.get('gender',False)) and has_gender and (validated_same or raw_same),
+      'gender_csv_exact_match': (not checks.get('gender',False)) and gender_csv_match,
       'social_validated_same_id': (not checks.get('socialCard',False)) and validated_same,
       'social_raw_same_id': (not checks.get('socialCard',False)) and raw_same,
       'season_exact_csv_exists': (not checks.get('season',False)) and gs_same,
       'image_map_exact': (not checks.get('image',False)) and image_map_same,
+      'image_file_exists_unmapped': (not checks.get('image',False)) and expected_file_exists and not image_map_same,
     }
     for name,yes in tests.items():
         if yes:
             patterns[name]+=1
-            if len(samples[name])<20:samples[name].append(c)
+            if len(samples[name])<20:samples[name].append(c or '<EMPTY>')
 
 out={'yellowRows':len(rows),'frequencies':{k:dict(v.most_common()) for k,v in freq.items()},'patterns':dict(patterns),'samples':dict(samples)}
 (ROOT/'validation-recoverability-report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
