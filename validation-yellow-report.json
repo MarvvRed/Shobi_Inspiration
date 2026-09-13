@@ -722,63 +722,6 @@
       ]
     },
     {
-      "issue": "Missing perfume image",
-      "count": 51,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2514-DRC",
-        "2313-DRC",
-        "2282-DRC",
-        "2265-KAY",
-        "2133-FRE",
-        "2106-MARC",
-        "2085-CLIV",
-        "1950-SWISA",
-        "1890-LEL",
-        "1767-LTN",
-        "1748-BYR",
-        "1644-DRC",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "866-PAC",
-        "847-NRO",
-        "716-ISS",
-        "676-GUC",
-        "646-ARM",
-        "521-DRC",
-        "1281-YZLO",
-        "1189-KEN",
-        "1165-HUG",
-        "1076-DRC"
-      ]
-    },
-    {
       "issue": "Gender not fully verified",
       "count": 43,
       "codes": [
@@ -825,6 +768,54 @@
         "521-DRC",
         "1251-ROM",
         "1076-DRC"
+      ]
+    },
+    {
+      "issue": "Missing perfume image",
+      "count": 42,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2265-KAY",
+        "2085-CLIV",
+        "1890-LEL",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "314-MOL",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "866-PAC",
+        "847-NRO",
+        "716-ISS",
+        "676-GUC",
+        "646-ARM",
+        "521-DRC",
+        "1281-YZLO",
+        "1189-KEN",
+        "1165-HUG"
       ]
     },
     {
@@ -1617,63 +1608,6 @@
       ]
     },
     {
-      "check": "image",
-      "count": 51,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2514-DRC",
-        "2313-DRC",
-        "2282-DRC",
-        "2265-KAY",
-        "2133-FRE",
-        "2106-MARC",
-        "2085-CLIV",
-        "1950-SWISA",
-        "1890-LEL",
-        "1767-LTN",
-        "1748-BYR",
-        "1644-DRC",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "866-PAC",
-        "847-NRO",
-        "716-ISS",
-        "676-GUC",
-        "646-ARM",
-        "521-DRC",
-        "1281-YZLO",
-        "1189-KEN",
-        "1165-HUG",
-        "1076-DRC"
-      ]
-    },
-    {
       "check": "gender",
       "count": 43,
       "codes": [
@@ -1720,6 +1654,54 @@
         "521-DRC",
         "1251-ROM",
         "1076-DRC"
+      ]
+    },
+    {
+      "check": "image",
+      "count": 42,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2265-KAY",
+        "2085-CLIV",
+        "1890-LEL",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "314-MOL",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "866-PAC",
+        "847-NRO",
+        "716-ISS",
+        "676-GUC",
+        "646-ARM",
+        "521-DRC",
+        "1281-YZLO",
+        "1189-KEN",
+        "1165-HUG"
       ]
     },
     {
@@ -2015,13 +1997,11 @@
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Sauvage-Eau-Forte-95863.html",
       "issues": [
         "Social Card not fully verified",
-        "Missing perfume image",
         "Main Notes order not fully verified",
         "Season not fully verified"
       ],
       "failedChecks": [
         "socialCard",
-        "image",
         "notes",
         "season"
       ],
@@ -2134,7 +2114,6 @@
       "issues": [
         "Fragrantica identity not fully verified",
         "Social Card not fully verified",
-        "Missing perfume image",
         "Main Notes order not fully verified",
         "Gender not fully verified",
         "Season not fully verified"
@@ -2142,7 +2121,6 @@
       "failedChecks": [
         "identity",
         "socialCard",
-        "image",
         "notes",
         "gender",
         "season"
@@ -2173,13 +2151,11 @@
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dioriviera-81847.html",
       "issues": [
         "Social Card not fully verified",
-        "Missing perfume image",
         "Main Notes order not fully verified",
         "Season not fully verified"
       ],
       "failedChecks": [
         "socialCard",
-        "image",
         "notes",
         "season"
       ],
@@ -2372,13 +2348,11 @@
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Frederic-Malle/Lipstick-Rose-2799.html",
       "issues": [
         "Social Card not fully verified",
-        "Missing perfume image",
         "Main Notes order not fully verified",
         "Season not fully verified"
       ],
       "failedChecks": [
         "socialCard",
-        "image",
         "notes",
         "season"
       ],
@@ -2415,7 +2389,6 @@
       "issues": [
         "Fragrantica identity not fully verified",
         "Social Card not fully verified",
-        "Missing perfume image",
         "Main Notes order not fully verified",
         "Gender not fully verified",
         "Season not fully verified"
@@ -2423,7 +2396,6 @@
       "failedChecks": [
         "identity",
         "socialCard",
-        "image",
         "notes",
         "gender",
         "season"
@@ -2539,7 +2511,6 @@
       "issues": [
         "Fragrantica identity not fully verified",
         "Social Card not fully verified",
-        "Missing perfume image",
         "Main Notes order not fully verified",
         "Gender not fully verified",
         "Season not fully verified"
@@ -2547,7 +2518,6 @@
       "failedChecks": [
         "identity",
         "socialCard",
-        "image",
         "notes",
         "gender",
         "season"
@@ -2670,7 +2640,6 @@
       "issues": [
         "Fragrantica identity not fully verified",
         "Social Card not fully verified",
-        "Missing perfume image",
         "Main Notes order not fully verified",
         "Gender not fully verified",
         "Season not fully verified"
@@ -2678,7 +2647,6 @@
       "failedChecks": [
         "identity",
         "socialCard",
-        "image",
         "notes",
         "gender",
         "season"
@@ -2849,7 +2817,6 @@
       "issues": [
         "Fragrantica identity not fully verified",
         "Social Card not fully verified",
-        "Missing perfume image",
         "Missing Main Notes",
         "Note icons not fully verified",
         "Gender not fully verified",
@@ -2858,7 +2825,6 @@
       "failedChecks": [
         "identity",
         "socialCard",
-        "image",
         "notes",
         "icons",
         "gender",
@@ -6628,7 +6594,6 @@
       "issues": [
         "Fragrantica identity not fully verified",
         "Social Card not fully verified",
-        "Missing perfume image",
         "Missing Main Notes",
         "Note icons not fully verified",
         "Gender not fully verified",
@@ -6637,7 +6602,6 @@
       "failedChecks": [
         "identity",
         "socialCard",
-        "image",
         "notes",
         "icons",
         "gender",

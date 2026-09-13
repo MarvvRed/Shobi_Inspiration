@@ -10,8 +10,8 @@
 - `notes`: **172**
 - `icons`: **97**
 - `season`: **62**
-- `image`: **51**
 - `gender`: **43**
+- `image`: **42**
 - `fid`: **31**
 - `url`: **31**
 
@@ -23,8 +23,8 @@
 - Note icons not fully verified: **97**
 - Main Notes order not fully verified: **75**
 - Season not fully verified: **62**
-- Missing perfume image: **51**
 - Gender not fully verified: **43**
+- Missing perfume image: **42**
 - Missing Fragrantica ID: **31**
 - Missing direct Fragrantica URL: **31**
 
@@ -42,15 +42,15 @@
 | 2533-RAL | Ralph Lauren | Safari | socialCard, notes |
 | 2483-CLEA | Clean | Clean Skin | identity |
 | 2482-CLEA | Clean | Cool Cotton | identity |
-| 2514-DRC | Dior | Sauvage Eau Forte | socialCard, image, notes, season |
+| 2514-DRC | Dior | Sauvage Eau Forte | socialCard, notes, season |
 | 2513-PAC | Rabanne | Million Gold | socialCard, notes |
 | 2456-PAC | Rabanne | Million Gold | socialCard, notes |
 | 2439-ZEG | Ermenegildo Zegna | Indonesian Oud | identity, socialCard, notes, icons |
 | 2427-CLEA | Clean | Clean Warm Cotton | identity, socialCard, notes, icons |
 | 2351-LOU | Christian Louboutin | Bikini Questa Sera | identity, socialCard, notes, icons |
-| 2313-DRC | Dior | Sauvage Parfum | identity, socialCard, image, notes, gender, season |
+| 2313-DRC | Dior | Sauvage Parfum | identity, socialCard, notes, gender, season |
 | 2301-DIP | Diptyque | Fleur de Peau | identity |
-| 2282-DRC | Dior | Dioriviera Eau de Parfum | socialCard, image, notes, season |
+| 2282-DRC | Dior | Dioriviera Eau de Parfum | socialCard, notes, season |
 | 2265-KAY | Kayali Fragrances | Oudgasm Rose Oud 16 Eau de Parfum Intense | image, season |
 | 2250-ARBAS | Armand Basi | In Red | identity, socialCard, notes, icons |
 | 2234-MON | moncler | Moncler pour Femme | socialCard, notes |
@@ -61,22 +61,22 @@
 | 2190-ROJ | Roja Dove | Diaghilev | identity |
 | 2185-DRC | Dior | Eau Sauvage Extreme 2010 | socialCard, notes |
 | 2178-MON | moncler | Moncler pour Homme | socialCard, notes, icons |
-| 2133-FRE | Frédéric Malle | Lipstick Rose Eau de Parfum | socialCard, image, notes, season |
+| 2133-FRE | Frédéric Malle | Lipstick Rose Eau de Parfum | socialCard, notes, season |
 | 2104-CHA | Chanel | 1957 Eau de Parfum | identity, socialCard, notes, icons |
-| 2106-MARC | Marc-Antoine Barrois | B683 Eau de Parfum | identity, socialCard, image, notes, gender, season |
+| 2106-MARC | Marc-Antoine Barrois | B683 Eau de Parfum | identity, socialCard, notes, gender, season |
 | 2044-LORV | Lorenzo Villoresi | Teint de Neige | identity |
 | 2085-CLIV | Clive Christian | X NEROLI LIMITED EDITION - CLIVE CHRISTIAN | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2016-PARELM | Parfums d'Elmar | Elixir d'Amour | socialCard, notes |
 | 1989-VERT | Vertus | Narcos is | identity, socialCard, notes, icons |
 | 1986-SOO | SoOud | Nur | identity |
-| 1950-SWISA | Swiss Arabian | Al Amaken | identity, socialCard, image, notes, gender, season |
+| 1950-SWISA | Swiss Arabian | Al Amaken | identity, socialCard, notes, gender, season |
 | 1753-TEDL | Ted Lapidus | Ted | identity |
 | 1885-WID | Widian | Widian London | identity, socialCard, notes, icons |
 | 1890-LEL | Le Labo | Lys 41 | image, season |
 | 1542-JOM | Jo Malone London | English Oak Redcurrant | socialCard, notes |
 | 1836-COT | Coty | Vanilla Fields | identity, socialCard, notes, icons |
 | 1829-BOB | Bobbi Brown | Bath | identity |
-| 1767-LTN | Louis Vuitton | Attrape-Rêves | identity, socialCard, image, notes, gender, season |
+| 1767-LTN | Louis Vuitton | Attrape-Rêves | identity, socialCard, notes, gender, season |
 | 1751-GUL | Jean Paul Gaultier | Madame | socialCard, notes, season |
 | 1763-JILS | Jil Sander | Sun | identity |
 | 1748-BYR | Byredo | Marijuana | identity, fid, url, socialCard, image, notes, icons, gender, season |
@@ -85,7 +85,7 @@
 | 1684-GIV | Givenchy | Ysatis | identity, socialCard, notes, icons |
 | 1659-CHRA | Christina Aguilera | Christina Aguilera by Night | identity, socialCard, notes, icons |
 | 1504-DON | Donna Karan | DKNY Be Delicious | socialCard, notes |
-| 1644-DRC | Dior | Sauvage Elixir | identity, socialCard, image, notes, icons, gender, season |
+| 1644-DRC | Dior | Sauvage Elixir | identity, socialCard, notes, icons, gender, season |
 | 1550-YAN | Yankee Candle | HOME SWEET HOME - YANKEE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1483-DSQ | Dsquared2 | Potion | identity, socialCard, notes, icons |
 | 140-KUR | Maison Francis Kurkdjian | Oud Silk Mood | identity |
@@ -280,7 +280,7 @@
 | 1092-DOL | Dolce & Gabbana | By Man Eau de Toilette | socialCard, notes |
 | 1086-CLI | Clinique | Happy | socialCard, notes, season |
 | 1085-DRC | Dior | Sauvage | identity |
-| 1076-DRC | Dior | Fahrenheit | identity, socialCard, image, notes, icons, gender, season |
+| 1076-DRC | Dior | Fahrenheit | identity, socialCard, notes, icons, gender, season |
 | 1075-DRC | Dior | Eau Sauvage | identity |
 | 1074-DRC | Dior | Dune | socialCard, notes |
 | 1068-CHA | Chanel | Boy Eau de Parfum | identity |
