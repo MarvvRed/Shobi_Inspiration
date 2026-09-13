@@ -31,29 +31,24 @@ for db,site in zip(DB,SITE):
     e=gs.get(c) or {}; ocr=norm(e.get('gender_ocr_text'))
     exact_id=bool(fid and str(e.get('fragrantica_id') or '').strip()==fid)
     card=str(e.get('local_path') or '').strip(); file_ok=bool(card and (ROOT/card).is_file())
-    brand_tokens=toks(db.get('brand'))
-    name_tokens=toks(db.get('inspiredBy'))
-    brand_ok=covered(brand_tokens,ocr)
-    name_ok=covered(name_tokens,ocr)
-    # Also calculate token coverage for diagnostics only; never used to mutate.
+    brand_tokens=toks(db.get('brand')); name_tokens=toks(db.get('inspiredBy'))
+    brand_ok=covered(brand_tokens,ocr); name_ok=covered(name_tokens,ocr)
     b_hit=sum(t in ocr for t in brand_tokens); n_hit=sum(t in ocr for t in name_tokens)
-    row={
-      'code':c,'brand':db.get('brand'),'inspiredBy':db.get('inspiredBy'),'fragranticaId':fid,
+    row={'code':c,'brand':db.get('brand'),'inspiredBy':db.get('inspiredBy'),'fragranticaId':fid,
       'fragranticaUrl':db.get('fragranticaUrl'),'card':card,'ocrText':e.get('gender_ocr_text'),
       'brandTokens':brand_tokens,'nameTokens':name_tokens,'brandHits':b_hit,'nameHits':n_hit,
       'exactId':exact_id,'fileExists':file_ok,'brandExactTokens':brand_ok,'nameExactTokens':name_ok,
-      'strictProof':bool(exact_id and file_ok and brand_ok and name_ok),
-    }
+      'strictProof':bool(exact_id and file_ok and brand_ok and name_ok)}
     out.append(row)
 
 strict=[r for r in out if r['strictProof']]
-report={'identityOnlyRows':len(out),'strictSocialCardProof':len(strict),'strictCodes':[r['code'] for r in strict],'rows':out}
+remaining=[r for r in out if not r['strictProof']]
+report={'identityOnlyRows':len(out),'strictSocialCardProof':len(strict),'strictCodes':[r['code'] for r in strict],'remainingRows':remaining,'rows':out}
 (ROOT/'identity-only-social-card-proof.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 lines=['# Identity-only Social Card proof','',f'- Identity-only yellow rows: **{len(out)}**',f'- Strict exact-ID + local-card + all brand/name tokens visible: **{len(strict)}**','','## Strict proof rows','']
 for r in strict: lines.append(f"- `{r['code']}` — {r['brand']} · {r['inspiredBy']} · FID {r['fragranticaId']} · `{r['card']}`")
 lines += ['','## Remaining rows','']
-for r in out:
-    if r['strictProof']: continue
-    lines.append(f"- `{r['code']}` — brand {r['brandHits']}/{len(r['brandTokens'])}, name {r['nameHits']}/{len(r['nameTokens'])}, exactId={r['exactId']}, file={r['fileExists']}")
+for r in remaining:
+    lines.append(f"- `{r['code']}` — {r['brand']} · {r['inspiredBy']} — FID **{r['fragranticaId']}** — {r['fragranticaUrl']} — brand {r['brandHits']}/{len(r['brandTokens'])}, name {r['nameHits']}/{len(r['nameTokens'])}")
 (ROOT/'identity-only-social-card-proof.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
-print('identity_only',len(out),'strict_proof',len(strict))
+print('identity_only',len(out),'strict_proof',len(strict),'remaining',len(remaining))
