@@ -1,0 +1,35 @@
+name: Recover remaining exact-ID Social Cards
+
+on:
+  push:
+    paths:
+      - '.github/workflows/recover-remaining-social-cards.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Retry exact Fragrantica Social Card IDs
+        env:
+          SOCIAL_CARD_DELAY: '0.15'
+        run: python tools/recover_missing_social_cards.py
+      - name: Commit recovered evidence
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fragrantica-scraper-archive/social-cards/images missing-social-card-recovery-report.json
+          if git diff --cached --quiet; then
+            echo "No recovered cards"
+            exit 0
+          fi
+          git commit -m "Recover remaining exact-ID Fragrantica Social Cards"
+          git pull --rebase origin main
+          git push origin HEAD:main
