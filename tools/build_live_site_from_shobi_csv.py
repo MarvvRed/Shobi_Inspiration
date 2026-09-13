@@ -105,6 +105,7 @@ BRAND_ALIASES = {
     "Comme des Garons": "Comme des Garçons",
     "Banderas": "Antonio Banderas",
     "Paco Rabanne": "Rabanne",
+    "Baccarat": "Maison Francis Kurkdjian",
 }
 
 
