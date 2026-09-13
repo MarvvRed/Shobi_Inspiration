@@ -75,13 +75,35 @@ def has_verified_social_season(row, fid, seasons):
 
 
 def exact_social_card(row, fid, notes):
+    """Require an explicit validated record for this code, the same FID, a local file, and exact notes.
+
+    The validated JSON is already keyed by Shobi code, so the filename itself is not evidence and
+    must not be used as an additional identity gate. Legacy VALIDATED_MANUAL raw cards keep the
+    historical filename guard until their metadata is migrated to the validated source.
+    """
     source = validated_notes.get(str(row.get("code") or "").strip().upper())
     card = str(source.get("card") or "") if source else ""
     suffix = "_" + str(row.get("code")) + "_" + fid + ".jpeg"
     raw = raw_notes.get(str(row.get("code") or "").strip().upper())
     raw_card = str(raw.get("card") or "") if raw else ""
     manual = str(row.get("fragranticaSocialCardStatus") or "").upper() == "VALIDATED_MANUAL"
-    return bool((source and source.get("validated") is True and str(source.get("fragranticaId") or "") == fid and card.endswith(suffix) and (ROOT / card).is_file() and source.get("mainNotes") == notes) or (manual and raw and str(raw.get("fragranticaId") or "") == fid and raw_card.endswith(suffix) and (ROOT / raw_card).is_file() and bool(notes)))
+    validated_exact = bool(
+        source
+        and source.get("validated") is True
+        and str(source.get("fragranticaId") or "") == fid
+        and card
+        and (ROOT / card).is_file()
+        and source.get("mainNotes") == notes
+    )
+    manual_exact = bool(
+        manual
+        and raw
+        and str(raw.get("fragranticaId") or "") == fid
+        and raw_card.endswith(suffix)
+        and (ROOT / raw_card).is_file()
+        and bool(notes)
+    )
+    return validated_exact or manual_exact
 
 
 def exact_perfume_image(row, fid):
@@ -105,7 +127,6 @@ for row, site in zip(rows, site_rows):
     furl = str(row.get("fragranticaUrl") or "").strip()
     notes = row.get("fragranticaSocialCardNotes") or []
     seasons = row.get("seasons") or []
-    image = str(row.get("shobiImageUrl") or row.get("image") or "").strip()
     parsed_fid = url_id(furl)
     matching_notes = matched_notes_count(row, fid, notes)
     matching_icons = sum(note_key(note) in local_note_icons for note in notes)
