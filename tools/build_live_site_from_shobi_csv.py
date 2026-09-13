@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LIVE_CSV = ROOT / "shobi-perfumes-live-unique.csv"
 MASTER = ROOT / "data/shobi-master-v1.csv"
 MAPPING = ROOT / "data/shobi-fragrantica-mapping.csv"
+IDENTITY_REVIEW = ROOT / "data/shobi-identity-review-2026-09-04.csv"
 OLD_SITE = ROOT / "database_complete.json"
 NOTES = ROOT / "social-card-main-notes-validated.json"
 GENDER = ROOT / "social-card-gender.json"
@@ -32,6 +33,80 @@ CONFIRMED_IDENTITY_OVERRIDES = {
     "1890-LEL": ("Le Labo", "Lys 41", "18382", "https://www.fragrantica.com/perfume/Le-Labo/Lys-41-18382.html"),
     "2265-KAY": ("Kayali Fragrances", "Oudgasm Rose Oud 16 Eau de Parfum Intense", "85186", "https://www.fragrantica.com/perfume/Kayali-Fragrances/Oudgasm-Rose-Oud-16-Eau-de-Parfum-Intense-85186.html"),
 }
+
+
+BRAND_ALIASES = {
+    "Abercrombie Fitch": "Abercrombie & Fitch",
+    "Victoria s Secret": "Victoria's Secret",
+    "Penhaligons": "Penhaligon's",
+    "Penhaligon s": "Penhaligon's",
+    "Estee Lauder": "Estée Lauder",
+    "Kayali": "Kayali Fragrances",
+    "mugler": "Mugler",
+    "Frederic Malle": "Frédéric Malle",
+    "Dolce&Gabbana": "Dolce & Gabbana",
+    "Dolce Gabbana": "Dolce & Gabbana",
+    "DSQUARED2": "Dsquared2",
+    "DSQUARED²": "Dsquared2",
+    "Dsquared²": "Dsquared2",
+    "Marc Antoine Barrois": "Marc-Antoine Barrois",
+    "Zadig  Voltaire": "Zadig & Voltaire",
+    "Zadig Voltaire": "Zadig & Voltaire",
+    "kylie-cosmetics": "Kylie Cosmetics",
+    "Kylie Jenner": "Kylie Cosmetics",
+    "maison-mataha": "Maison Mataha",
+    "Lacoste": "Lacoste Fragrances",
+    "guy laroche": "Guy Laroche",
+    "Jo Malone": "Jo Malone London",
+    "Kilian": "By Kilian",
+    "Maison Margiela": "Maison Martin Margiela",
+    "Roja Parfums": "Roja Dove",
+    "Initio": "Initio Parfums Prives",
+    "Stephane Humbert Lucas": "Stéphane Humbert Lucas 777",
+    "Stéphane Humbert Lucas": "Stéphane Humbert Lucas 777",
+    "liquides-imaginaires": "Les Liquides Imaginaires",
+    "DKNY": "Donna Karan",
+    "Goldfield & Banks": "Goldfield & Banks Australia",
+    "Goldfield Banks Australia": "Goldfield & Banks Australia",
+    "Sospiro": "Sospiro Perfumes",
+    "Chabaud": "Chabaud Maison de Parfum",
+    "Martine Micallef": "M. Micallef",
+    "Tauer": "Tauer Perfumes",
+    "Lancome": "Lancôme",
+    "Hermes": "Hermès",
+    "Viktor Rolf": "Viktor&Rolf",
+    "Born to Stand Out": "BORNTOSTANDOUT",
+    "Borntostandout": "BORNTOSTANDOUT",
+    "borntostandout": "BORNTOSTANDOUT",
+    "mind-games": "Mind Games",
+    "bdk Parfums": "BDK Parfums",
+    "matiere-premiere": "Matiere Premiere",
+    "Ramon Monegal": "Ramón Monegal",
+    "Courreges": "Courrèges",
+    "Juliette Has A Gun": "Juliette Has a Gun",
+    "memo-paris": "Memo Paris",
+    "atelier-materi": "Atelier Materi",
+    "boy-smells": "Boy Smells",
+    "sabrina-carpenter": "Sabrina Carpenter",
+    "lorenzo-pazzaglia": "Lorenzo Pazzaglia",
+    "somens": "Somens",
+    "paris-corner": "Paris Corner",
+    "the-spirit-of-dubai": "The Spirit of Dubai",
+    "zielinski-rozen": "Zielinski & Rozen",
+    "dries-van-noten": "Dries Van Noten",
+    "billie-eilish": "Billie Eilish",
+    "casamorati": "Casamorati",
+    "scent-salim": "Scent Salim",
+    "parfums-delrae": "Parfums DelRae",
+    "Zarko Perfume": "ZARKOPERFUME",
+    "Comme des Garons": "Comme des Garçons",
+    "Banderas": "Antonio Banderas",
+}
+
+
+def canonical_brand(value):
+    brand = " ".join(str(value or "").split())
+    return BRAND_ALIASES.get(brand, brand)
 
 
 def read_csv(path):
@@ -67,6 +142,12 @@ def identity_from_description(description):
 live_rows = read_csv(LIVE_CSV)
 master_by_pid = {row["prestashop_product_id"].strip(): row for row in read_csv(MASTER)}
 mapping_by_pid = {row["prestashop_product_id"].strip(): row for row in read_csv(MAPPING)}
+review_by_pid = {
+    row["prestashop_product_id"].strip(): row
+    for row in read_csv(IDENTITY_REVIEW)
+    if row.get("esito_revisione", "").strip().lower() == "match corretto"
+    and row.get("marchio_abbinato", "").strip()
+}
 old_by_pid = {
     str(row.get("prestashopProductId") or "").strip(): row
     for row in json.loads(OLD_SITE.read_text(encoding="utf-8-sig"))
@@ -89,6 +170,7 @@ for live in live_rows:
     master = master_by_pid[pid]
     mapping = mapping_by_pid[pid]
     old = old_by_pid.get(pid, {})
+    review = review_by_pid.get(pid, {})
 
     url_brand, url_name = identity_from_fragrantica_url(mapping.get("fragrantica_url", ""))
     fallback_brand, fallback_name = identity_from_description(live.get("description_short", ""))
@@ -96,7 +178,13 @@ for live in live_rows:
     if override:
         brand, inspired_by, fragrantica_id, fragrantica_url = override
     else:
-        brand = (mapping.get("original_brand") or old.get("brand") or url_brand or fallback_brand).strip()
+        brand = (
+            review.get("marchio_abbinato")
+            or mapping.get("original_brand")
+            or old.get("brand")
+            or url_brand
+            or fallback_brand
+        ).strip()
         inspired_by = (
             mapping.get("original_perfume")
             or old.get("inspiredBy")
@@ -108,6 +196,7 @@ for live in live_rows:
         fragrantica_id = mapping.get("fragrantica_id") or old.get("fragranticaId") or None
         fragrantica_url = mapping.get("fragrantica_url") or old.get("fragranticaUrl") or ""
 
+    brand = canonical_brand(brand)
     row = dict(old)
     row.update({
         "id": f"pid:{pid}",
@@ -166,6 +255,8 @@ if len({row["shobiUrl"] for row in out}) != len(out):
     raise SystemExit("Duplicate Shobi URL")
 if any(not row["brand"] or not row["inspiredBy"] for row in out):
     raise SystemExit("Blank brand or perfume identity remains")
+if any(row["brand"] != canonical_brand(row["brand"]) for row in out):
+    raise SystemExit("Non-canonical brand label remains")
 out_by_code = {row["code"]: row for row in out}
 for code, (brand, name, fragrantica_id, fragrantica_url) in CONFIRMED_IDENTITY_OVERRIDES.items():
     row = out_by_code.get(code)
@@ -180,3 +271,5 @@ print("old enrichments retained", sum(row["prestashopProductId"] in old_by_pid f
 print("with main notes", sum(bool(row["fragranticaSocialCardNotes"]) for row in out))
 print("with gender", sum(bool(row["genderAffinity"]) for row in out))
 print("with season", sum(bool(row["seasons"]) for row in out))
+print("confirmed Shobi review brands", sum(row["prestashopProductId"] in review_by_pid for row in out))
+print("canonical brands", len({row["brand"] for row in out}))
