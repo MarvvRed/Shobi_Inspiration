@@ -1,0 +1,34 @@
+name: Analyze RAW same-FID note proof
+
+on:
+  push:
+    paths:
+      - 'tools/analyze_raw_same_fid_note_proof.py'
+      - '.github/workflows/analyze-raw-same-fid-note-proof.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Analyze exact ordered RAW note proof
+        run: python tools/analyze_raw_same_fid_note_proof.py
+      - name: Publish report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add raw-same-fid-note-proof.json raw-same-fid-note-proof.md
+          if git diff --cached --quiet; then
+            echo "No report changes"
+            exit 0
+          fi
+          git commit -m "Publish exact RAW same-FID note proof"
+          git pull --rebase origin main
+          git push origin HEAD:main
