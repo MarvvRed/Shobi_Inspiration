@@ -1,0 +1,40 @@
+name: Apply shared-FID Social Card recovery
+
+on:
+  push:
+    paths:
+      - 'tools/apply_shared_fid_social_card_recovery.py'
+      - '.github/workflows/apply-shared-fid-social-card-recovery.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply exact-FID validated Social Card recovery
+        run: python tools/apply_shared_fid_social_card_recovery.py
+      - name: Rebuild strict validation
+        run: python tools/build_validation_audit.py
+      - name: Refresh reports
+        run: |
+          python tools/analyze_validation_yellows.py
+          python tools/analyze_social_card_note_yellows.py
+      - name: Commit recovered rows
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database_complete.json catalog_site.json social-card-main-notes-validated.json shared-fid-social-card-recovery-applied.json validation-yellow-report.json validation-yellow-report.md social-card-note-yellow-analysis.json social-card-note-yellow-analysis.md
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Recover exact-FID validated Social Cards"
+          git pull --rebase origin main
+          git push origin HEAD:main
