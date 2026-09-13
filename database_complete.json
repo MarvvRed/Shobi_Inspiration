@@ -109,11 +109,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/11220",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -122,7 +122,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -508,11 +507,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/117345",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -521,7 +520,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -575,11 +573,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/117347",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -588,7 +586,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -643,11 +640,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/117346",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -656,7 +653,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -913,11 +909,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/90972",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -926,7 +922,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -1179,11 +1174,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/103492",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -1192,7 +1187,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -1247,11 +1241,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/126288",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -1260,7 +1254,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -1650,11 +1643,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/112206",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -1663,7 +1656,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -2441,11 +2433,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/105465",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -2454,7 +2446,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -2840,11 +2831,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/116996",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -2853,7 +2844,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -3376,11 +3366,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/103407",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -3389,7 +3379,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -3444,11 +3433,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/91006",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -3457,7 +3446,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -3646,11 +3634,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/24483",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -3659,7 +3647,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -4970,11 +4957,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/13410",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -4983,7 +4970,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -6371,11 +6357,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/949",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -6384,7 +6370,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -7509,11 +7494,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/88834",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -7522,7 +7507,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -8511,11 +8495,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/61946",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -8524,7 +8508,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -9182,11 +9165,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/91364",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -9195,7 +9178,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -9712,11 +9694,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/102994",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -9725,7 +9707,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -10246,11 +10227,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/82595",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -10259,7 +10240,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -10716,11 +10696,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/52638",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -10729,7 +10709,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -10785,11 +10764,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/46391",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -10798,7 +10777,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -10853,11 +10831,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/86927",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -10866,7 +10844,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -11114,11 +11091,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/110478",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -11127,7 +11104,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -11249,11 +11225,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1681",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -11262,7 +11238,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -11785,11 +11760,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/4333",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -11798,7 +11773,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -13713,11 +13687,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/120744",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -13726,7 +13700,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -16051,11 +16024,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/714",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -16064,7 +16037,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -16117,11 +16089,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/88990",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -16130,7 +16102,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -16312,11 +16283,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/90957",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -16325,7 +16296,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -16380,11 +16350,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/39041",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -16393,7 +16363,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -16448,11 +16417,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/53042",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -16461,7 +16430,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -16650,11 +16618,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/96728",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -16663,7 +16631,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -17167,11 +17134,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/647",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -17180,7 +17147,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -17435,11 +17401,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/99254",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -17448,7 +17414,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -18832,11 +18797,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/71727",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -18845,7 +18810,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -18967,11 +18931,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/6483",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -18980,7 +18944,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -19495,11 +19458,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/18810",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -19508,7 +19471,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -19563,11 +19525,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/48387",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -19576,7 +19538,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -19697,11 +19658,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/2732",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -19710,7 +19671,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -21295,11 +21255,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/60300",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -21308,7 +21268,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -21363,11 +21322,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/69941",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -21376,7 +21335,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -22699,11 +22657,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/56352",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -22712,7 +22670,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -22834,11 +22791,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/42254",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -22847,7 +22804,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -23292,11 +23248,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/32571",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -23305,7 +23261,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -25020,11 +24975,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/64092",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -25033,7 +24988,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -25286,11 +25240,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/89350",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -25299,7 +25253,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -25616,11 +25569,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/48939",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -25629,7 +25582,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -26079,11 +26031,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/90117",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -26092,7 +26044,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -26147,11 +26098,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/17934",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -26160,7 +26111,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -26616,11 +26566,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/37468",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -26629,7 +26579,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -26751,11 +26700,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/23008",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -26764,7 +26713,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -26940,11 +26888,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/41799",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -26953,7 +26901,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -27728,11 +27675,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1685",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -27741,7 +27688,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -28199,11 +28145,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/18470",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -28212,7 +28158,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -28669,11 +28614,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/88416",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -28682,7 +28627,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -28737,11 +28681,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/90868",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -28750,7 +28694,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -30204,11 +30147,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/2882",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -30217,7 +30160,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -30536,11 +30478,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/60923",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -30549,7 +30491,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -30609,11 +30550,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/80353",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -30622,7 +30563,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -30811,11 +30751,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/69553",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -30824,7 +30764,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -30944,11 +30883,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/49688",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -30957,7 +30896,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -31335,11 +31273,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/84933",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -31348,7 +31286,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -31468,11 +31405,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/78658",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -31481,7 +31418,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -31603,11 +31539,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/88837",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -31616,7 +31552,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -31805,11 +31740,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/15944",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -31818,7 +31753,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -32738,11 +32672,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/44233",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -32751,7 +32685,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -33407,11 +33340,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/14896",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -33420,7 +33353,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -33593,11 +33525,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/63440",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -33606,7 +33538,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -33725,11 +33656,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/41053",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -33738,7 +33669,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -33925,11 +33855,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/88588",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -33938,7 +33868,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -34196,11 +34125,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/56457",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -34209,7 +34138,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -34593,11 +34521,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/20693",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -34606,7 +34534,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -35124,11 +35051,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/85187",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -35137,7 +35064,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -35393,11 +35319,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/72806",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -35406,7 +35332,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -35461,11 +35386,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/46165",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -35474,7 +35399,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -35996,11 +35920,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/81839",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -36009,7 +35933,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -36199,11 +36122,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/62320",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -36212,7 +36135,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -36468,11 +36390,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/16896",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -36481,7 +36403,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -37339,11 +37260,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/85185",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -37352,7 +37273,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -37537,11 +37457,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/13201",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -37550,7 +37470,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -37871,11 +37790,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/71272",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -37884,7 +37803,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -38194,11 +38112,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/49435",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -38207,7 +38125,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -38660,11 +38577,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/55003",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -38673,7 +38590,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -39067,11 +38983,11 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -39080,7 +38996,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -39265,11 +39180,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/66049",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -39278,7 +39193,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -39329,11 +39243,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/66048",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -39342,7 +39256,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -39665,11 +39578,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1292",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -39678,7 +39591,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -39932,11 +39844,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/84951",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -39945,7 +39857,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -40332,11 +40243,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/34996",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -40345,7 +40256,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -40534,11 +40444,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/31760",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -40547,7 +40457,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -40736,11 +40645,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/77309",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -40749,7 +40658,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -40804,11 +40712,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/80177",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -40817,7 +40725,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -41466,11 +41373,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/75805",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -41479,7 +41386,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -41920,11 +41826,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/71301",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -41933,7 +41839,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -43101,11 +43006,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/78755",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -43114,7 +43019,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -43163,11 +43067,11 @@
     "gender": "",
     "fragranticaSocialCardNotes": [],
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -43176,7 +43080,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified",
@@ -43498,11 +43401,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/77430",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -43511,7 +43414,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -43565,11 +43467,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/17310",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -43578,7 +43480,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -43628,11 +43529,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/65069",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -43641,7 +43542,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -43696,11 +43596,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/3612",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -43709,7 +43609,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -43760,11 +43659,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/66047",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -43773,7 +43672,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -44027,11 +43925,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/44100",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -44040,7 +43938,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -44755,11 +44652,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/73265",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -44768,7 +44665,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -45020,11 +44916,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/78425",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -45033,7 +44929,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -45217,11 +45112,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/79414",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -45230,7 +45125,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -46618,11 +46512,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/78849",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -46631,7 +46525,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -61243,11 +61136,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/58969",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -61256,7 +61149,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -61912,11 +61804,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/669",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -61925,7 +61817,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -62179,11 +62070,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/4293",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -62192,7 +62083,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -62848,11 +62738,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/58970",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -62861,7 +62751,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -62982,11 +62871,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/11701",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -62995,7 +62884,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -63047,11 +62935,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/3887",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -63060,7 +62948,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -64251,11 +64138,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/3923",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -64264,7 +64151,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -64781,11 +64667,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/4648",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -64794,7 +64680,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -64849,11 +64734,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/660",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -64862,7 +64747,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -64916,11 +64800,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/44237",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -64929,7 +64813,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -64984,11 +64867,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/4573",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -64997,7 +64880,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -65052,11 +64934,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/2708",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -65065,7 +64947,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -65901,11 +65782,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/5534",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -65914,7 +65795,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -65969,11 +65849,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/38989",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -65982,7 +65862,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -66700,11 +66579,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/15083",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -66713,7 +66592,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -67433,11 +67311,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/40775",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -67446,7 +67324,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -67902,11 +67779,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/47780",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -67915,7 +67792,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -68304,11 +68180,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/64643",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -68317,7 +68193,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -68766,11 +68641,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/16760",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -68779,7 +68654,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -69620,11 +69494,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/870",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -69633,7 +69507,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -70602,11 +70475,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/11700",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -70615,7 +70488,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -72460,11 +72332,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/2793",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -72473,7 +72345,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -73310,11 +73181,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/41970",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -73323,7 +73194,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -73959,11 +73829,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/845",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -73972,7 +73842,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -74944,11 +74813,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/5937",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -74957,7 +74826,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -75079,11 +74947,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/44128",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -75092,7 +74960,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -76734,11 +76601,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/56516",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -76747,7 +76614,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -78064,11 +77930,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/18518",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -78077,7 +77943,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -78132,11 +77997,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/55770",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -78145,7 +78010,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -78401,11 +78265,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/629",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -78414,7 +78278,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -78990,11 +78853,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/62194",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -79003,7 +78866,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -79124,11 +78986,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/64313",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -79137,7 +78999,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -79256,11 +79117,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/46066",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -79269,7 +79130,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -79787,11 +79647,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/60794",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -79800,7 +79660,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -80588,11 +80447,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/59756",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -80601,7 +80460,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -80724,11 +80582,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/38675",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -80737,7 +80595,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -81590,11 +81447,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/45063",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -81603,7 +81460,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -81658,11 +81514,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/2381",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -81671,7 +81527,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -81726,11 +81581,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1179",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -81739,7 +81594,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -81861,11 +81715,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/51055",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -81874,7 +81728,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -123882,11 +123735,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/417",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -123895,7 +123748,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -124489,11 +124341,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/18706",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -124502,7 +124354,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -125826,11 +125677,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/2857",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -125839,7 +125690,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126163,11 +126013,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/28630",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126176,7 +126026,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126292,11 +126141,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/10611",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126305,7 +126154,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126360,11 +126208,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/47255",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126373,7 +126221,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126426,11 +126273,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/7303",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126439,7 +126286,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126499,11 +126345,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1365",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126512,7 +126358,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126567,11 +126412,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1036",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126580,7 +126425,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126635,11 +126479,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/3861",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126648,7 +126492,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126703,11 +126546,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/25459",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126716,7 +126559,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126771,11 +126613,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/41897",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126784,7 +126626,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126839,11 +126680,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/17129",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126852,7 +126693,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126911,11 +126751,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/46180",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126924,7 +126764,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -126979,11 +126818,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/22106",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -126992,7 +126831,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -127047,11 +126885,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/32741",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -127060,7 +126898,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -127187,11 +127024,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/901",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -127200,7 +127037,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -127255,11 +127091,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/887",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -127268,7 +127104,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -127457,11 +127292,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/81",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -127470,7 +127305,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -127525,11 +127359,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/12258",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -127538,7 +127372,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -127794,11 +127627,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/15481",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -127807,7 +127640,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -127930,11 +127762,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/25948",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -127943,7 +127775,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -128133,11 +127964,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/504",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -128146,7 +127977,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -129731,11 +129561,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/6086",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -129744,7 +129574,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -130523,11 +130352,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/213",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -130536,7 +130365,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -130591,11 +130419,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/23280",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -130604,7 +130432,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -130848,11 +130675,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/51285",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -130861,7 +130688,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -131179,11 +131005,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/14984",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -131192,7 +131018,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -132251,11 +132076,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/15963",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -132264,7 +132089,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -132319,11 +132143,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/48310",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -132332,7 +132156,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -132388,11 +132211,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/611",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -132401,7 +132224,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -132456,11 +132278,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/609",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -132469,7 +132291,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -132525,11 +132346,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/38543",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -132538,7 +132359,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -134539,11 +134359,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/255",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -134552,7 +134372,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -135933,11 +135752,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/142",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -135946,7 +135765,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -136336,11 +136154,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/814",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -136349,7 +136167,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -138633,11 +138450,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1687",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -138646,7 +138463,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -139942,11 +139758,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/29601",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -139955,7 +139771,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -140678,11 +140493,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/659",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -140691,7 +140506,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -142195,11 +142009,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/3747",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -142208,7 +142022,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -143388,11 +143201,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/26264",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -143401,7 +143214,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -143778,11 +143590,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1834",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -143791,7 +143603,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -144039,11 +143850,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1673",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -144052,7 +143863,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -144107,11 +143917,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/35459",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -144120,7 +143930,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -144379,11 +144188,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1721",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -144392,7 +144201,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -144452,11 +144260,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1251",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -144465,7 +144273,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -144520,11 +144327,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/2355",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -144533,7 +144340,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -144980,11 +144786,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1454",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -144993,7 +144799,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -145048,11 +144853,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/3804",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -145061,7 +144866,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -145183,11 +144987,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/79",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -145196,7 +145000,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -145318,11 +145121,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/31445",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -145331,7 +145134,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -146295,11 +146097,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/3697",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -146308,7 +146110,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -146363,11 +146164,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/2069",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -146376,7 +146177,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -146492,11 +146292,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/25946",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -146505,7 +146305,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -147272,11 +147071,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/412",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -147285,7 +147084,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -147340,11 +147138,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1067",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -147353,7 +147151,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -147876,11 +147673,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/6530",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -147889,7 +147686,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -148139,11 +147935,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/533",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -148152,7 +147948,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
@@ -148413,11 +148208,11 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/416",
     "validationAudit": {
-      "status": "red",
+      "status": "yellow",
       "checks": {
         "identity": true,
         "fid": true,
-        "url": false,
+        "url": true,
         "socialCard": false,
         "image": true,
         "notes": false,
@@ -148426,7 +148221,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica URL/ID mismatch",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Note icons not fully verified",
