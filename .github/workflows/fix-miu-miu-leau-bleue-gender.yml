@@ -1,0 +1,45 @@
+name: Fix Miu Miu L Eau Bleue gender from exact card
+
+on:
+  push:
+    paths:
+      - 'tools/fix_miu_miu_leau_bleue_gender.py'
+      - '.github/workflows/fix-miu-miu-leau-bleue-gender.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-validation-writes
+  cancel-in-progress: false
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr
+          python -m pip install pillow pytesseract
+      - run: python tools/fix_miu_miu_leau_bleue_gender.py
+      - run: python tools/build_validation_audit.py
+      - run: python tools/analyze_validation_yellows.py
+      - name: Commit proven gender correction
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database_complete.json catalog_site.json miu-miu-leau-bleue-gender-fix.json validation-yellow-report.json validation-yellow-report.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Correct Miu Miu L Eau Bleue gender from exact Social Card"
+          git push origin HEAD:main
