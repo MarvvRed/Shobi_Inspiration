@@ -18,6 +18,7 @@ NOTES = ROOT / "social-card-main-notes-validated.json"
 GENDER = ROOT / "social-card-gender.json"
 GENDER_SEASON = ROOT / "fragrantica-scraper-archive/social-cards/gender-season.csv"
 OUTPUT = ROOT / "database_complete.json"
+SITE_OUTPUT = ROOT / "catalog_site.json"
 
 # Corrections individually verified against the Shobi product identity and the
 # corresponding perfume page. These override stale candidate matches in the
@@ -271,6 +272,31 @@ for code, (brand, name, fragrantica_id, fragrantica_url) in CONFIRMED_IDENTITY_O
         raise SystemExit(f"Confirmed identity regression for {code}: {actual!r} != {expected!r}")
 
 OUTPUT.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+site_required_fields = ("code", "inspiredBy", "brand")
+site_optional_fields = (
+    "genderAffinity",
+    "seasons",
+    "occasions",
+    "mainAccords",
+    "fragranticaSocialCardNotes",
+    "userRatings",
+)
+site_rows = []
+for row in out:
+    site_row = {field: row[field] for field in site_required_fields}
+    site_row.update({
+        field: row[field]
+        for field in site_optional_fields
+        if row.get(field) not in (None, "", [], {})
+    })
+    site_rows.append(site_row)
+if len(site_rows) != len(out):
+    raise SystemExit("Site catalog row count differs from complete database")
+SITE_OUTPUT.write_text(
+    json.dumps(site_rows, ensure_ascii=False, separators=(",", ":")) + "\n",
+    encoding="utf-8",
+)
 print("rows", len(out))
 print("old enrichments retained", sum(row["prestashopProductId"] in old_by_pid for row in out))
 print("with main notes", sum(bool(row["fragranticaSocialCardNotes"]) for row in out))
@@ -278,3 +304,4 @@ print("with gender", sum(bool(row["genderAffinity"]) for row in out))
 print("with season", sum(bool(row["seasons"]) for row in out))
 print("confirmed Shobi review brands", sum(row["prestashopProductId"] in review_by_pid for row in out))
 print("canonical brands", len({row["brand"] for row in out}))
+print("site catalog bytes", SITE_OUTPUT.stat().st_size)
