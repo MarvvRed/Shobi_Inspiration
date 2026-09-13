@@ -4,64 +4,45 @@
   "singleFailureRows": [],
   "byFailureSignature": [
     {
-      "signature": "identity,socialCard,notes,icons",
-      "count": 55,
+      "signature": "socialCard,notes,icons",
+      "count": 36,
       "codes": [
         "2552-SOR",
         "2439-ZEG",
         "2427-CLEA",
-        "2351-LOU",
         "2250-ARBAS",
-        "2160-ZAR",
-        "2104-CHA",
-        "1989-VERT",
+        "2178-MON",
         "1885-WID",
         "1836-COT",
         "1684-GIV",
         "1659-CHRA",
-        "1483-DSQ",
         "687-GUR",
         "153-PARF",
         "1161-HUG",
         "466-CAL",
         "304-KIE",
-        "236-IND",
-        "989-YZLO",
-        "987-YZLO",
         "985-YZLO",
         "979-YZLO",
         "945-VER",
         "910-SARJ",
+        "904-SALV",
         "858-PAC",
         "719-ISS",
-        "692-GUR",
         "674-GUC",
         "668-GIV",
-        "667-GIV",
-        "666-GIV",
         "653-ARM",
-        "533-DRC",
-        "525-DRC",
-        "520-CHO",
+        "612-ESC",
+        "570-DOL",
         "514-CHL",
         "497-CHA",
         "494-CHA",
-        "493-CER",
-        "487-CRT",
         "425-BRB",
-        "421-BRB",
         "411-BOD",
         "399-ARA",
-        "880-PRA",
         "777-LAL",
-        "769-LART",
         "1160-HUG",
-        "1156-HER",
-        "1141-GIV",
-        "1136-ARM",
         "1061-CRT",
-        "1060-CRT",
-        "476-CAL"
+        "1060-CRT"
       ]
     },
     {
@@ -132,6 +113,35 @@
       ]
     },
     {
+      "signature": "identity,socialCard,notes,icons",
+      "count": 23,
+      "codes": [
+        "2351-LOU",
+        "2160-ZAR",
+        "2104-CHA",
+        "1989-VERT",
+        "1483-DSQ",
+        "236-IND",
+        "989-YZLO",
+        "987-YZLO",
+        "692-GUR",
+        "667-GIV",
+        "666-GIV",
+        "533-DRC",
+        "525-DRC",
+        "520-CHO",
+        "493-CER",
+        "487-CRT",
+        "421-BRB",
+        "880-PRA",
+        "769-LART",
+        "1156-HER",
+        "1141-GIV",
+        "1136-ARM",
+        "476-CAL"
+      ]
+    },
+    {
       "signature": "socialCard,notes,season",
       "count": 6,
       "codes": [
@@ -141,16 +151,6 @@
         "928-TRU",
         "548-CLI",
         "1086-CLI"
-      ]
-    },
-    {
-      "signature": "socialCard,notes,icons",
-      "count": 4,
-      "codes": [
-        "2178-MON",
-        "904-SALV",
-        "612-ESC",
-        "570-DOL"
       ]
     },
     {
@@ -189,7 +189,7 @@
       ]
     },
     {
-      "signature": "identity,socialCard,notes,gender",
+      "signature": "socialCard,notes,gender",
       "count": 1,
       "codes": [
         "828-MIY"
@@ -548,36 +548,24 @@
     },
     {
       "issue": "Fragrantica identity not fully verified",
-      "count": 94,
+      "count": 61,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2552-SOR",
-        "2439-ZEG",
-        "2427-CLEA",
         "2351-LOU",
-        "2250-ARBAS",
         "2160-ZAR",
         "2104-CHA",
         "2085-CLIV",
         "1989-VERT",
-        "1885-WID",
-        "1836-COT",
         "1748-BYR",
-        "1684-GIV",
-        "1659-CHRA",
         "1644-DRC",
         "1550-YAN",
         "1483-DSQ",
         "383-YAN",
         "130-LEL",
         "564-DOL",
-        "687-GUR",
         "314-MOL",
-        "153-PARF",
-        "1161-HUG",
-        "466-CAL",
         "382-YAN",
         "381-YAN",
         "380-YAN",
@@ -590,7 +578,6 @@
         "326-PECK",
         "313-MOL",
         "311-MOL",
-        "304-KIE",
         "289-JOM",
         "261-JOM",
         "258-JOM",
@@ -604,45 +591,25 @@
         "200-CIR",
         "989-YZLO",
         "987-YZLO",
-        "985-YZLO",
-        "979-YZLO",
-        "945-VER",
-        "910-SARJ",
-        "858-PAC",
-        "828-MIY",
-        "719-ISS",
         "692-GUR",
-        "674-GUC",
-        "668-GIV",
         "667-GIV",
         "666-GIV",
-        "653-ARM",
         "621-EST",
         "533-DRC",
         "525-DRC",
         "521-DRC",
         "520-CHO",
-        "514-CHL",
-        "497-CHA",
-        "494-CHA",
         "493-CER",
         "487-CRT",
-        "425-BRB",
         "421-BRB",
-        "411-BOD",
-        "399-ARA",
         "1251-ROM",
         "880-PRA",
-        "777-LAL",
         "769-LART",
-        "1160-HUG",
         "1156-HER",
         "1141-GIV",
         "1136-ARM",
         "1118-FAB",
         "1076-DRC",
-        "1061-CRT",
-        "1060-CRT",
         "476-CAL"
       ]
     },
@@ -1277,36 +1244,24 @@
     },
     {
       "check": "identity",
-      "count": 94,
+      "count": 61,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2552-SOR",
-        "2439-ZEG",
-        "2427-CLEA",
         "2351-LOU",
-        "2250-ARBAS",
         "2160-ZAR",
         "2104-CHA",
         "2085-CLIV",
         "1989-VERT",
-        "1885-WID",
-        "1836-COT",
         "1748-BYR",
-        "1684-GIV",
-        "1659-CHRA",
         "1644-DRC",
         "1550-YAN",
         "1483-DSQ",
         "383-YAN",
         "130-LEL",
         "564-DOL",
-        "687-GUR",
         "314-MOL",
-        "153-PARF",
-        "1161-HUG",
-        "466-CAL",
         "382-YAN",
         "381-YAN",
         "380-YAN",
@@ -1319,7 +1274,6 @@
         "326-PECK",
         "313-MOL",
         "311-MOL",
-        "304-KIE",
         "289-JOM",
         "261-JOM",
         "258-JOM",
@@ -1333,45 +1287,25 @@
         "200-CIR",
         "989-YZLO",
         "987-YZLO",
-        "985-YZLO",
-        "979-YZLO",
-        "945-VER",
-        "910-SARJ",
-        "858-PAC",
-        "828-MIY",
-        "719-ISS",
         "692-GUR",
-        "674-GUC",
-        "668-GIV",
         "667-GIV",
         "666-GIV",
-        "653-ARM",
         "621-EST",
         "533-DRC",
         "525-DRC",
         "521-DRC",
         "520-CHO",
-        "514-CHL",
-        "497-CHA",
-        "494-CHA",
         "493-CER",
         "487-CRT",
-        "425-BRB",
         "421-BRB",
-        "411-BOD",
-        "399-ARA",
         "1251-ROM",
         "880-PRA",
-        "777-LAL",
         "769-LART",
-        "1160-HUG",
         "1156-HER",
         "1141-GIV",
         "1136-ARM",
         "1118-FAB",
         "1076-DRC",
-        "1061-CRT",
-        "1060-CRT",
         "476-CAL"
       ]
     },
@@ -1706,13 +1640,11 @@
       "inspiredBy": "Night Horse",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Siordia-Parfums/Night-Horse--75119.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -1727,13 +1659,11 @@
       "inspiredBy": "Indonesian Oud",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Ermenegildo-Zegna/Indonesian-Oud-16188.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -1748,13 +1678,11 @@
       "inspiredBy": "Clean Warm Cotton",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Clean/Clean-Warm-Cotton-3024.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -1826,13 +1754,11 @@
       "inspiredBy": "In Red",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Armand-Basi/In-Red-128.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2047,13 +1973,11 @@
       "inspiredBy": "Widian London",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Widian/Widian-London-47781.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2085,13 +2009,11 @@
       "inspiredBy": "Vanilla Fields",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Coty/Vanilla-Fields-6029.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2156,13 +2078,11 @@
       "inspiredBy": "Ysatis",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Ysatis-36.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2177,13 +2097,11 @@
       "inspiredBy": "Christina Aguilera by Night",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Christina-Aguilera/Christina-Aguilera-by-Night-6714.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2385,13 +2303,11 @@
       "inspiredBy": "L Instant de Guerlain",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Guerlain/L-Instant-de-Guerlain-51.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2488,13 +2404,11 @@
       "inspiredBy": "Straight to Heaven",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/By-Kilian/Straight-to-Heaven-4323.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2509,13 +2423,11 @@
       "inspiredBy": "Boss Bottled Oud",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-Oud-31141.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2547,13 +2459,11 @@
       "inspiredBy": "Calvin Klein Women",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Calvin-Klein-Women-50662.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2986,13 +2896,11 @@
       "inspiredBy": "Original Musk",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Kiehl-s/Original-Musk-6188.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3391,13 +3299,11 @@
       "inspiredBy": "Mon Paris",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Mon-Paris-38914.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3412,13 +3318,11 @@
       "inspiredBy": "Cinema",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Cinema-92.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3433,13 +3337,11 @@
       "inspiredBy": "Eros Pour Femme",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Versace/Eros-Pour-Femme-28958.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3490,13 +3392,11 @@
       "inspiredBy": "Lovely",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Sarah-Jessica-Parker/Lovely-993.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3547,13 +3447,11 @@
       "inspiredBy": "Black XS for Her",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Rabanne/Black-XS-for-Her-1138.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3568,13 +3466,11 @@
       "inspiredBy": "Miu Miu L Eau Bleue",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Miu-Miu/Miu-Miu-L-Eau-Bleue-42720.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Gender not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "gender"
@@ -3606,13 +3502,11 @@
       "inspiredBy": "Pleats Please",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/Pleats-Please-15464.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3665,13 +3559,11 @@
       "inspiredBy": "Gucci Bamboo",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Gucci/Gucci-Bamboo-30815.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3686,13 +3578,11 @@
       "inspiredBy": "Hot Couture",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Hot-Couture-35.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3749,13 +3639,11 @@
       "inspiredBy": "Mania",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Mania-423.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3953,13 +3841,11 @@
       "inspiredBy": "Love Story",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Chloe/Love-Story-26227.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3974,13 +3860,11 @@
       "inspiredBy": "Chance",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Chance-610.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -3995,13 +3879,11 @@
       "inspiredBy": "Allure",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Allure-502.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -4075,13 +3957,11 @@
       "inspiredBy": "Burberry Her",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Burberry/Burberry-Her-51694.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -4117,13 +3997,11 @@
       "inspiredBy": "White Musk",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Body-Shop/White-Musk-2432.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -4138,13 +4016,11 @@
       "inspiredBy": "Tuscany Per Donna",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Aramis/Tuscany-Per-Donna-122.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -4239,13 +4115,11 @@
       "inspiredBy": "Sculpteur d Epices",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Lalique/Sculpteur-d-Epices-28250.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -4332,13 +4206,11 @@
       "inspiredBy": "Boss Bottled",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-383.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -4496,13 +4368,11 @@
       "inspiredBy": "Pasha de Cartier Fraicheur Menthe",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/Pasha-de-Cartier-Fraicheur-Menthe-2446.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -4517,13 +4387,11 @@
       "inspiredBy": "L Envol de Cartier",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/L-Envol-de-Cartier-39885.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"

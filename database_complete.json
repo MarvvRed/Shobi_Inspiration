@@ -16596,7 +16596,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -16607,7 +16607,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -16618,7 +16617,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/4364_2552-SOR_75119.jpeg",
-    "genderVerificationFragranticaId": "75119"
+    "genderVerificationFragranticaId": "75119",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/4364_2552-SOR_75119.jpeg"
   },
   {
     "id": "pid:4363",
@@ -25962,7 +25962,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -25973,7 +25973,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -25984,7 +25983,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/4169_2439-ZEG_16188.jpeg",
-    "genderVerificationFragranticaId": "16188"
+    "genderVerificationFragranticaId": "16188",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/4169_2439-ZEG_16188.jpeg"
   },
   {
     "id": "pid:4168",
@@ -26217,7 +26217,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -26228,7 +26228,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -26239,7 +26238,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/4164_2427-CLEA_3024.jpeg",
-    "genderVerificationFragranticaId": "3024"
+    "genderVerificationFragranticaId": "3024",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/4164_2427-CLEA_3024.jpeg"
   },
   {
     "id": "pid:4163",
@@ -36958,7 +36958,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -36969,7 +36969,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -36980,7 +36979,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/3841_2250-ARBAS_128.jpeg",
-    "genderVerificationFragranticaId": "128"
+    "genderVerificationFragranticaId": "128",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/3841_2250-ARBAS_128.jpeg"
   },
   {
     "id": "pid:3840",
@@ -58230,7 +58230,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -58241,7 +58241,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -58252,7 +58251,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/2798_1885-WID_47781.jpeg",
-    "genderVerificationFragranticaId": "47781"
+    "genderVerificationFragranticaId": "47781",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/2798_1885-WID_47781.jpeg"
   },
   {
     "id": "pid:2797",
@@ -62825,7 +62825,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -62836,7 +62836,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -62847,7 +62846,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/2715_1836-COT_6029.jpeg",
-    "genderVerificationFragranticaId": "6029"
+    "genderVerificationFragranticaId": "6029",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/2715_1836-COT_6029.jpeg"
   },
   {
     "id": "pid:2713",
@@ -70250,7 +70250,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -70261,7 +70261,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -70272,7 +70271,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/2412_1684-GIV_36.jpeg",
-    "genderVerificationFragranticaId": "36"
+    "genderVerificationFragranticaId": "36",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/2412_1684-GIV_36.jpeg"
   },
   {
     "id": "pid:2411",
@@ -70958,7 +70958,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -70969,7 +70969,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -70980,7 +70979,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/2401_1659-CHRA_6714.jpeg",
-    "genderVerificationFragranticaId": "6714"
+    "genderVerificationFragranticaId": "6714",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/2401_1659-CHRA_6714.jpeg"
   },
   {
     "id": "pid:2400",
@@ -86330,7 +86330,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -86341,7 +86341,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -86352,7 +86351,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1921_687-GUR_51.jpeg",
-    "genderVerificationFragranticaId": "51"
+    "genderVerificationFragranticaId": "51",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/1921_687-GUR_51.jpeg"
   },
   {
     "id": "pid:1920",
@@ -89559,7 +89559,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -89570,7 +89570,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -89581,7 +89580,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1814_153-PARF_4323.jpeg",
-    "genderVerificationFragranticaId": "4323"
+    "genderVerificationFragranticaId": "4323",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/1814_153-PARF_4323.jpeg"
   },
   {
     "id": "pid:1813",
@@ -89749,7 +89749,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -89760,7 +89760,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -89771,7 +89770,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1810_1161-HUG_31141.jpeg",
-    "genderVerificationFragranticaId": "31141"
+    "genderVerificationFragranticaId": "31141",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/1810_1161-HUG_31141.jpeg"
   },
   {
     "id": "pid:1808",
@@ -91244,7 +91244,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -91255,7 +91255,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -91266,7 +91265,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1779_466-CAL_50662.jpeg",
-    "genderVerificationFragranticaId": "50662"
+    "genderVerificationFragranticaId": "50662",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/1779_466-CAL_50662.jpeg"
   },
   {
     "id": "pid:1778",
@@ -96787,7 +96787,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -96798,7 +96798,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -96809,7 +96808,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1203_304-KIE_6188.jpeg",
-    "genderVerificationFragranticaId": "6188"
+    "genderVerificationFragranticaId": "6188",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/1203_304-KIE_6188.jpeg"
   },
   {
     "id": "pid:1202",
@@ -103195,7 +103195,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -103206,7 +103206,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -103217,7 +103216,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1008_985-YZLO_38914.jpeg",
-    "genderVerificationFragranticaId": "38914"
+    "genderVerificationFragranticaId": "38914",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/1008_985-YZLO_38914.jpeg"
   },
   {
     "id": "pid:1007",
@@ -103515,7 +103515,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -103526,7 +103526,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -103537,7 +103536,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1003_979-YZLO_92.jpeg",
-    "genderVerificationFragranticaId": "92"
+    "genderVerificationFragranticaId": "92",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/1003_979-YZLO_92.jpeg"
   },
   {
     "id": "pid:1002",
@@ -105113,7 +105113,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -105124,7 +105124,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -105135,7 +105134,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/976_945-VER_28958.jpeg",
-    "genderVerificationFragranticaId": "28958"
+    "genderVerificationFragranticaId": "28958",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/976_945-VER_28958.jpeg"
   },
   {
     "id": "pid:975",
@@ -107066,7 +107066,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -107077,7 +107077,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -107088,7 +107087,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/946_910-SARJ_993.jpeg",
-    "genderVerificationFragranticaId": "993"
+    "genderVerificationFragranticaId": "993",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/946_910-SARJ_993.jpeg"
   },
   {
     "id": "pid:945",
@@ -110021,7 +110021,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -110032,7 +110032,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -110043,7 +110042,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/899_858-PAC_1138.jpeg",
-    "genderVerificationFragranticaId": "1138"
+    "genderVerificationFragranticaId": "1138",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/899_858-PAC_1138.jpeg"
   },
   {
     "id": "pid:898",
@@ -111756,7 +111756,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -111767,7 +111767,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Main Notes order not fully verified",
         "Gender not fully verified"
@@ -111775,7 +111774,8 @@
       "notesCount": 6,
       "matchedNotesCount": 0,
       "iconsCount": 6
-    }
+    },
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/872_828-MIY_42720.jpeg"
   },
   {
     "id": "pid:871",
@@ -117172,7 +117172,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -117183,7 +117183,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -117194,7 +117193,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/786_719-ISS_15464.jpeg",
-    "genderVerificationFragranticaId": "15464"
+    "genderVerificationFragranticaId": "15464",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/786_719-ISS_15464.jpeg"
   },
   {
     "id": "pid:785",
@@ -119513,7 +119513,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -119524,7 +119524,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -119535,7 +119534,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/750_674-GUC_30815.jpeg",
-    "genderVerificationFragranticaId": "30815"
+    "genderVerificationFragranticaId": "30815",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/750_674-GUC_30815.jpeg"
   },
   {
     "id": "pid:749",
@@ -119845,7 +119845,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -119856,7 +119856,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -119867,7 +119866,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/744_668-GIV_35.jpeg",
-    "genderVerificationFragranticaId": "35"
+    "genderVerificationFragranticaId": "35",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/744_668-GIV_35.jpeg"
   },
   {
     "id": "pid:743",
@@ -120610,7 +120610,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -120621,7 +120621,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -120632,7 +120631,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/732_653-ARM_423.jpeg",
-    "genderVerificationFragranticaId": "423"
+    "genderVerificationFragranticaId": "423",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/732_653-ARM_423.jpeg"
   },
   {
     "id": "pid:731",
@@ -128515,7 +128515,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -128526,7 +128526,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -128537,7 +128536,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/609_514-CHL_26227.jpeg",
-    "genderVerificationFragranticaId": "26227"
+    "genderVerificationFragranticaId": "26227",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/609_514-CHL_26227.jpeg"
   },
   {
     "id": "pid:608",
@@ -129618,7 +129618,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -129629,7 +129629,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -129640,7 +129639,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/592_497-CHA_610.jpeg",
-    "genderVerificationFragranticaId": "610"
+    "genderVerificationFragranticaId": "610",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/592_497-CHA_610.jpeg"
   },
   {
     "id": "pid:591",
@@ -129743,7 +129743,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -129754,7 +129754,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -129765,7 +129764,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/590_494-CHA_502.jpeg",
-    "genderVerificationFragranticaId": "502"
+    "genderVerificationFragranticaId": "502",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/590_494-CHA_502.jpeg"
   },
   {
     "id": "pid:589",
@@ -133318,7 +133318,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -133329,7 +133329,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -133340,7 +133339,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/531_425-BRB_51694.jpeg",
-    "genderVerificationFragranticaId": "51694"
+    "genderVerificationFragranticaId": "51694",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/531_425-BRB_51694.jpeg"
   },
   {
     "id": "pid:530",
@@ -134090,7 +134090,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -134101,7 +134101,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -134112,7 +134111,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/518_411-BOD_2432.jpeg",
-    "genderVerificationFragranticaId": "2432"
+    "genderVerificationFragranticaId": "2432",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/518_411-BOD_2432.jpeg"
   },
   {
     "id": "pid:517",
@@ -134604,7 +134604,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -134615,7 +134615,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -134626,7 +134625,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/510_399-ARA_122.jpeg",
-    "genderVerificationFragranticaId": "122"
+    "genderVerificationFragranticaId": "122",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/510_399-ARA_122.jpeg"
   },
   {
     "id": "pid:509",
@@ -140228,7 +140228,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -140239,7 +140239,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -140250,7 +140249,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/284_777-LAL_28250.jpeg",
-    "genderVerificationFragranticaId": "28250"
+    "genderVerificationFragranticaId": "28250",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/284_777-LAL_28250.jpeg"
   },
   {
     "id": "pid:283",
@@ -142253,7 +142253,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -142264,7 +142264,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -142275,7 +142274,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/249_1160-HUG_383.jpeg",
-    "genderVerificationFragranticaId": "383"
+    "genderVerificationFragranticaId": "383",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/249_1160-HUG_383.jpeg"
   },
   {
     "id": "pid:248",
@@ -147810,7 +147810,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -147821,7 +147821,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -147832,7 +147831,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/158_1061-CRT_2446.jpeg",
-    "genderVerificationFragranticaId": "2446"
+    "genderVerificationFragranticaId": "2446",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/158_1061-CRT_2446.jpeg"
   },
   {
     "id": "pid:157",
@@ -147870,7 +147870,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -147881,7 +147881,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -147892,7 +147891,8 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/157_1060-CRT_39885.jpeg",
-    "genderVerificationFragranticaId": "39885"
+    "genderVerificationFragranticaId": "39885",
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/157_1060-CRT_39885.jpeg"
   },
   {
     "id": "pid:156",
