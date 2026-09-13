@@ -1,23 +1,7 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 46,
-  "singleFailureRows": [
-    {
-      "code": "828-MIY",
-      "brand": "Miu Miu",
-      "inspiredBy": "Miu Miu L Eau Bleue",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Miu-Miu/Miu-Miu-L-Eau-Bleue-42720.html",
-      "issues": [
-        "Gender not fully verified"
-      ],
-      "failedChecks": [
-        "gender"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    }
-  ],
+  "yellowRows": 45,
+  "singleFailureRows": [],
   "byFailureSignature": [
     {
       "signature": "identity,fid,url,socialCard,image,notes,icons,gender,season",
@@ -104,13 +88,6 @@
       "count": 1,
       "codes": [
         "2194-ORT"
-      ]
-    },
-    {
-      "signature": "gender",
-      "count": 1,
-      "codes": [
-        "828-MIY"
       ]
     }
   ],
@@ -304,12 +281,13 @@
       ]
     },
     {
-      "issue": "Gender not fully verified",
+      "issue": "Season not fully verified",
       "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
+        "2194-ORT",
         "2085-CLIV",
         "1748-BYR",
         "1550-YAN",
@@ -341,18 +319,16 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "828-MIY",
         "1251-ROM"
       ]
     },
     {
-      "issue": "Season not fully verified",
-      "count": 36,
+      "issue": "Gender not fully verified",
+      "count": 35,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2194-ORT",
         "2085-CLIV",
         "1748-BYR",
         "1550-YAN",
@@ -703,12 +679,13 @@
       ]
     },
     {
-      "check": "gender",
+      "check": "season",
       "count": 36,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
+        "2194-ORT",
         "2085-CLIV",
         "1748-BYR",
         "1550-YAN",
@@ -740,18 +717,16 @@
         "223-DIP",
         "222-DIP",
         "200-CIR",
-        "828-MIY",
         "1251-ROM"
       ]
     },
     {
-      "check": "season",
-      "count": 36,
+      "check": "gender",
+      "count": 35,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
         "2586-DIP",
-        "2194-ORT",
         "2085-CLIV",
         "1748-BYR",
         "1550-YAN",
@@ -2042,21 +2017,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "828-MIY",
-      "brand": "Miu Miu",
-      "inspiredBy": "Miu Miu L Eau Bleue",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Miu-Miu/Miu-Miu-L-Eau-Bleue-42720.html",
-      "issues": [
-        "Gender not fully verified"
-      ],
-      "failedChecks": [
-        "gender"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "525-DRC",

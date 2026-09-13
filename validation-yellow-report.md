@@ -1,8 +1,8 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **46**
-- One check from green: **1**
+- Yellow rows: **45**
+- One check from green: **0**
 
 ## Failed checks
 
@@ -10,8 +10,8 @@
 - `notes`: **45**
 - `icons`: **41**
 - `identity`: **37**
-- `gender`: **36**
 - `season`: **36**
+- `gender`: **35**
 - `fid`: **31**
 - `url`: **31**
 - `image`: **31**
@@ -25,13 +25,11 @@
 - `socialCard,notes,icons,gender,season`: **2** — 118-HAM, 325-PECK
 - `identity,socialCard,notes,icons,gender,season`: **2** — 235-HOLL, 1251-ROM
 - `socialCard,notes,season`: **1** — 2194-ORT
-- `gender`: **1** — 828-MIY
 
 ## One check from green
 
 | Code | Brand | Inspired by | Remaining check |
 |---|---|---|---|
-| 828-MIY | Miu Miu | Miu Miu L Eau Bleue | gender |
 
 ## Issues
 
@@ -39,8 +37,8 @@
 - Missing Main Notes: **41**
 - Note icons not fully verified: **41**
 - Fragrantica identity not fully verified: **37**
-- Gender not fully verified: **36**
 - Season not fully verified: **36**
+- Gender not fully verified: **35**
 - Missing Fragrantica ID: **31**
 - Missing direct Fragrantica URL: **31**
 - Missing perfume image: **31**
@@ -90,7 +88,6 @@
 | 222-DIP | Diptyque | AMBRE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 200-CIR | CIRE TRUDON | ERNESTO CHE GUEVARA | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 945-VER | Versace | Eros Pour Femme | socialCard, notes, icons |
-| 828-MIY | Miu Miu | Miu Miu L Eau Bleue | gender |
 | 525-DRC | Dior | Dune | identity, socialCard, notes, icons |
 | 487-CRT | Cartier | Baiser Vole | identity, socialCard, notes, icons |
 | 421-BRB | Burberry | Body | identity, socialCard, notes, icons |

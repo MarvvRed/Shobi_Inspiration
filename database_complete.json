@@ -111802,8 +111802,8 @@
     "identityStatus": "CONFIRMED",
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "catalogSource": "shobi-perfumes-live-unique.csv",
-    "genderAffinity": "masculine",
-    "gender": "Male",
+    "genderAffinity": "feminine",
+    "gender": "Female",
     "seasons": [
       "spring"
     ],
@@ -111824,7 +111824,7 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Miu-Miu/Miu-Miu-L-Eau-Bleue-42720.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -111835,18 +111835,20 @@
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
+        "gender": true,
         "season": true
       },
-      "issues": [
-        "Gender not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
     },
     "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/872_828-MIY_42720.jpeg",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/current_828-MIY_42720.jpeg",
+    "genderVerificationFragranticaId": "42720",
+    "genderVerificationWebCorroboration": "https://www.fragrantica.com/perfume/Miu-Miu/Miu-Miu-L-Eau-Bleue-42720.html"
   },
   {
     "id": "pid:871",
@@ -128178,7 +128180,7 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dior-Addict-215.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -128186,15 +128188,13 @@
         "fid": true,
         "url": true,
         "socialCard": true,
-        "image": false,
+        "image": true,
         "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Missing perfume image"
-      ],
+      "issues": [],
       "notesCount": 5,
       "matchedNotesCount": 5,
       "iconsCount": 5
