@@ -8,10 +8,10 @@
 
 - `socialCard`: **130**
 - `notes`: **130**
-- `icons`: **97**
+- `icons`: **99**
 - `identity`: **61**
 - `season`: **47**
-- `gender`: **39**
+- `gender`: **41**
 - `image`: **35**
 - `fid`: **31**
 - `url`: **31**
@@ -22,10 +22,10 @@
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
 - `socialCard,notes`: **24** — 2692-SOL, 2234-MON, 2224-ARM, 2185-DRC, 2016-PARELM, 1542-JOM, 896-RCAV, 884-RAL, 1037-BLG, 337-TIFF, 127-KIL, 254-JOM, 917-SWA, 909-SFER, 827-MISN, 613-ESC, 468-CAL, 1248-RAL, 1245-PRA, 1184-JOO
 - `identity,socialCard,notes,icons`: **23** — 2351-LOU, 2160-ZAR, 2104-CHA, 1989-VERT, 1483-DSQ, 236-IND, 989-YZLO, 987-YZLO, 692-GUR, 667-GIV, 666-GIV, 533-DRC, 525-DRC, 520-CHO, 493-CER, 487-CRT, 421-BRB, 880-PRA, 769-LART, 1156-HER
-- `socialCard,notes,season`: **6** — 2282-DRC, 2194-ORT, 1751-GUL, 928-TRU, 548-CLI, 1086-CLI
+- `socialCard,notes,season`: **4** — 2282-DRC, 2194-ORT, 548-CLI, 1086-CLI
+- `socialCard,notes,icons,gender,season`: **4** — 1751-GUL, 118-HAM, 325-PECK, 928-TRU
 - `identity,socialCard,notes,icons,gender,season`: **4** — 1644-DRC, 235-HOLL, 1251-ROM, 1076-DRC
 - `image,season`: **3** — 2265-KAY, 716-ISS, 1165-HUG
-- `socialCard,notes,icons,gender,season`: **2** — 118-HAM, 325-PECK
 - `identity,socialCard,notes`: **2** — 621-EST, 1118-FAB
 - `socialCard,notes,gender`: **1** — 828-MIY
 - `identity,socialCard,image,notes,icons,gender,season`: **1** — 521-DRC
@@ -38,15 +38,15 @@
 ## Issues
 
 - Social Card not fully verified: **130**
-- Missing Main Notes: **97**
-- Note icons not fully verified: **97**
+- Missing Main Notes: **99**
+- Note icons not fully verified: **99**
 - Fragrantica identity not fully verified: **61**
 - Season not fully verified: **47**
-- Gender not fully verified: **39**
+- Gender not fully verified: **41**
 - Missing perfume image: **35**
-- Main Notes order not fully verified: **33**
 - Missing Fragrantica ID: **31**
 - Missing direct Fragrantica URL: **31**
+- Main Notes order not fully verified: **31**
 
 ## Yellow rows
 
@@ -76,7 +76,7 @@
 | 1885-WID | Widian | Widian London | socialCard, notes, icons |
 | 1542-JOM | Jo Malone London | English Oak Redcurrant | socialCard, notes |
 | 1836-COT | Coty | Vanilla Fields | socialCard, notes, icons |
-| 1751-GUL | Jean Paul Gaultier | Madame | socialCard, notes, season |
+| 1751-GUL | Jean Paul Gaultier | Madame | socialCard, notes, icons, gender, season |
 | 1748-BYR | Byredo | Marijuana | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1684-GIV | Givenchy | Ysatis | socialCard, notes, icons |
 | 1659-CHRA | Christina Aguilera | Christina Aguilera by Night | socialCard, notes, icons |
@@ -128,7 +128,7 @@
 | 985-YZLO | Yves Saint Laurent | Mon Paris | socialCard, notes, icons |
 | 979-YZLO | Yves Saint Laurent | Cinema | socialCard, notes, icons |
 | 945-VER | Versace | Eros Pour Femme | socialCard, notes, icons |
-| 928-TRU | Trussardi | Delicate Rose | socialCard, notes, season |
+| 928-TRU | Trussardi | Delicate Rose | socialCard, notes, icons, gender, season |
 | 917-SWA | Swarovski | Aura | socialCard, notes |
 | 910-SARJ | Sarah Jessica Parker | Lovely | socialCard, notes, icons |
 | 909-SFER | Salvatore Ferragamo | TUSCAN SCENT WHITE MIMOSA - FERRAGAMO | socialCard, notes |

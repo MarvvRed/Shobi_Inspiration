@@ -67055,7 +67055,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/1751-gul-wp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Jean Paul Gaultier",
     "inspiredBy": "Madame",
-    "fragranticaId": "12088",
+    "fragranticaId": "3681",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
@@ -67069,19 +67069,13 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Cortina-1224/Madame-12088.html",
-    "fragranticaSocialCardNotes": [
-      "Grenadine",
-      "Orange",
-      "Rose",
-      "Musk",
-      "Cedar"
-    ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html",
+    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardStatus": "",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "genderStatus": "",
     "liveDisplayCode": "1751-GUL WP",
     "shobiImageUrl": "https://leparfum.com.gr/51701-home_default/1751-gul-wp.jpg",
     "shobiCategory": "Fragrances For Women",
@@ -67099,18 +67093,20 @@
         "socialCard": false,
         "image": true,
         "notes": false,
-        "icons": true,
-        "gender": true,
+        "icons": false,
+        "gender": false,
         "season": false
       },
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified",
+        "Missing Main Notes",
+        "Note icons not fully verified",
+        "Gender not fully verified",
         "Season not fully verified"
       ],
-      "notesCount": 5,
+      "notesCount": 0,
       "matchedNotesCount": 0,
-      "iconsCount": 5
+      "iconsCount": 0
     }
   },
   {
@@ -106005,7 +106001,7 @@
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/928-tru-wp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Trussardi",
     "inspiredBy": "Delicate Rose",
-    "fragranticaId": "93471",
+    "fragranticaId": "16241",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
@@ -106019,20 +106015,13 @@
     "enrichmentStatus": "PENDING",
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
-    "fragranticaVerificationSource": "fragrantica-v2-identity-audit.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Aurora-Scents/Delicate-Rose-93471.html",
-    "fragranticaSocialCardNotes": [
-      "Rose",
-      "Lotus",
-      "Yuzu",
-      "Apple",
-      "Bamboo",
-      "Musk"
-    ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
+    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardStatus": "",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "genderStatus": "",
     "liveDisplayCode": "928-TRU WP",
     "shobiImageUrl": "https://leparfum.com.gr/41479-home_default/928-tru-wp.jpg",
     "shobiCategory": "Fragrances For Women",
@@ -106050,18 +106039,20 @@
         "socialCard": false,
         "image": true,
         "notes": false,
-        "icons": true,
-        "gender": true,
+        "icons": false,
+        "gender": false,
         "season": false
       },
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified",
+        "Missing Main Notes",
+        "Note icons not fully verified",
+        "Gender not fully verified",
         "Season not fully verified"
       ],
-      "notesCount": 6,
+      "notesCount": 0,
       "matchedNotesCount": 0,
-      "iconsCount": 6
+      "iconsCount": 0
     }
   },
   {
