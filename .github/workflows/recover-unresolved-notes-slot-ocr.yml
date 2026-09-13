@@ -1,5 +1,6 @@
 name: Recover unresolved notes with slot OCR
 
+# rerun on current catalog state
 on:
   push:
     paths:
