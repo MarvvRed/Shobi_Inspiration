@@ -8,6 +8,8 @@ on:
       - '.github/workflows/publish-live-shobi-site.yml'
       - 'tools/build_live_site_from_shobi_csv.py'
       - 'shobi-perfumes-live-unique.csv'
+      - 'data/shobi-fragrantica-mapping.csv'
+      - 'data/shobi-identity-review-2026-09-04.csv'
 
 permissions:
   contents: write
@@ -26,10 +28,15 @@ jobs:
           python - <<'PY'
           import json
           rows = json.load(open('database_complete.json', encoding='utf-8'))
+          site_rows = json.load(open('catalog_site.json', encoding='utf-8'))
           assert len(rows) == 2332
+          assert len(site_rows) == 2332
           assert len({r['prestashopProductId'] for r in rows}) == 2332
           assert len({r['shobiUrl'] for r in rows}) == 2332
           assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in rows)
+          assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in site_rows)
+          assert [(r['code'], r['brand'], r['inspiredBy']) for r in site_rows] == [(r['code'], r['brand'], r['inspiredBy']) for r in rows]
+          assert __import__('os').path.getsize('catalog_site.json') < __import__('os').path.getsize('database_complete.json')
           excluded = {'Home Fragrances', 'Gifts', 'Lattafa', 'Paris Corner', 'Al Haramain Oriental Perfumes'}
           assert not any(r.get('shobiCategory') in excluded for r in rows)
           print('Validated 2332 unique live Shobi perfumes')
@@ -39,10 +46,10 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add database_complete.json
+          git add database_complete.json catalog_site.json
           if git diff --cached --quiet; then
             echo 'No website catalog changes.'
             exit 0
           fi
-          git commit -m 'Replace site catalog with 2332 live Shobi perfumes'
+          git commit -m 'Publish complete and lightweight Shobi catalogs'
           git push
