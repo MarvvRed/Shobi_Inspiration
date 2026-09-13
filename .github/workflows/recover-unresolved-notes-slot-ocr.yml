@@ -1,0 +1,39 @@
+name: Recover unresolved notes with slot OCR
+
+on:
+  push:
+    paths:
+      - 'tools/recover_unresolved_notes_slot_ocr.py'
+      - '.github/workflows/recover-unresolved-notes-slot-ocr.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr
+          python -m pip install pillow pytesseract
+      - name: Recover unresolved Main Notes slot by slot
+        run: python tools/recover_unresolved_notes_slot_ocr.py
+      - name: Rebuild strict validation
+        run: python tools/build_validation_audit.py
+      - name: Refresh yellow report
+        run: python tools/analyze_validation_yellows.py
+      - name: Commit only fully validated recoveries
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database_complete.json catalog_site.json social-card-main-notes-validated.json slot-ocr-note-recovery.json validation-yellow-report.json validation-yellow-report.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Recover fully proven Main Notes with per-slot OCR"
+          git pull --rebase origin main
+          git push origin HEAD:main
