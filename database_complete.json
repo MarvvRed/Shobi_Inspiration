@@ -25955,36 +25955,39 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Agarwood (Oud)",
+      "Rose",
+      "Amber",
+      "Patchouli",
+      "Bergamot"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Ermenegildo-Zegna/Indonesian-Oud-16188.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/4169_2439-ZEG_16188.jpeg",
     "genderVerificationFragranticaId": "16188",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/4169_2439-ZEG_16188.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/4169_2439-ZEG_16188.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:4168",
@@ -32476,7 +32479,14 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Tuberose",
+      "Jasmine",
+      "Green Notes",
+      "Ambergris",
+      "Vetiver",
+      "Sandalwood"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Christian-Louboutin/Bikini-Questa-Sera-40982.html",
     "validationAudit": {
       "status": "yellow",
@@ -32486,26 +32496,24 @@
         "identity": false,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
+        "Fragrantica identity not fully verified"
       ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/3989_2351-LOU_40982.jpeg",
-    "genderVerificationFragranticaId": "40982"
+    "genderVerificationFragranticaId": "40982",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:3988",
@@ -38440,7 +38448,7 @@
       "Freesia",
       "Patchouli"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -38452,26 +38460,23 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/1292",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -48192,7 +48197,14 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Musk",
+      "Aldehydes",
+      "Orris Root",
+      "Powdery Notes",
+      "Orange Blossom",
+      "Iris"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/1957-Eau-de-Parfum-52483.html",
     "validationAudit": {
       "status": "yellow",
@@ -48202,26 +48214,24 @@
         "identity": false,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
+        "Fragrantica identity not fully verified"
       ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/3486_2104-CHA_52483.jpeg",
-    "genderVerificationFragranticaId": "52483"
+    "genderVerificationFragranticaId": "52483",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:3485",
@@ -89741,36 +89751,40 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Agarwood (Oud)",
+      "Apple",
+      "Cinnamon",
+      "Sand",
+      "Saffron",
+      "Cloves"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-Oud-31141.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1810_1161-HUG_31141.jpeg",
     "genderVerificationFragranticaId": "31141",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/1810_1161-HUG_31141.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/1810_1161-HUG_31141.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:1808",
@@ -89805,7 +89819,7 @@
       "Nutmeg",
       "Musk"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -89817,26 +89831,23 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/By-Kilian/Straight-to-Heaven-4323.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -91236,36 +91247,40 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Cedar",
+      "Grapefruit",
+      "Eucalyptus",
+      "Orange Blossom",
+      "Bergamot",
+      "Lemon"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Calvin-Klein-Women-50662.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1779_466-CAL_50662.jpeg",
     "genderVerificationFragranticaId": "50662",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/1779_466-CAL_50662.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/1779_466-CAL_50662.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:1778",
@@ -107056,7 +107071,14 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Musk",
+      "Lavender",
+      "Patchouli",
+      "Martini",
+      "Woody Notes",
+      "Bergamot"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Sarah-Jessica-Parker/Lovely-993.html",
     "validationAudit": {
       "status": "yellow",
@@ -107066,26 +107088,25 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
         "Note icons not fully verified"
       ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 5
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/946_910-SARJ_993.jpeg",
     "genderVerificationFragranticaId": "993",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/946_910-SARJ_993.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/946_910-SARJ_993.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:945",
@@ -110011,36 +110032,40 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Cranberry",
+      "Cacao Pod",
+      "Vanilla",
+      "Patchouli",
+      "Pink Pepper",
+      "Rose"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Rabanne/Black-XS-for-Her-1138.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/899_858-PAC_1138.jpeg",
     "genderVerificationFragranticaId": "1138",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/899_858-PAC_1138.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/899_858-PAC_1138.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:898",
@@ -117162,7 +117187,14 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Sweet Pea",
+      "Pear",
+      "Peony",
+      "Indole",
+      "Musk",
+      "Patchouli"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/Pleats-Please-15464.html",
     "validationAudit": {
       "status": "yellow",
@@ -117172,26 +117204,25 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
         "Note icons not fully verified"
       ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 5
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/786_719-ISS_15464.jpeg",
     "genderVerificationFragranticaId": "15464",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/786_719-ISS_15464.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/786_719-ISS_15464.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:785",
@@ -119502,36 +119533,40 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Lily",
+      "Bergamot",
+      "Ylang-Ylang",
+      "Orange Blossom",
+      "Sandalwood",
+      "Vanilla"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Gucci/Gucci-Bamboo-30815.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/750_674-GUC_30815.jpeg",
     "genderVerificationFragranticaId": "30815",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/750_674-GUC_30815.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/750_674-GUC_30815.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:749",
@@ -119894,7 +119929,14 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Iris",
+      "Rose",
+      "Pepper",
+      "Patchouli",
+      "Mimosa",
+      "Sandalwood"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Dahlia-Noir-12146.html",
     "validationAudit": {
       "status": "yellow",
@@ -119904,26 +119946,24 @@
         "identity": false,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
+        "Fragrantica identity not fully verified"
       ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/743_667-GIV_12146.jpeg",
-    "genderVerificationFragranticaId": "12146"
+    "genderVerificationFragranticaId": "12146",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:742",
@@ -127413,7 +127453,14 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Patchouli",
+      "Rose",
+      "Amber",
+      "Bergamot",
+      "Mandarin Orange",
+      "Vanilla"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Midnight-Poison-1282.html",
     "validationAudit": {
       "status": "yellow",
@@ -127423,26 +127470,24 @@
         "identity": false,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
+        "Fragrantica identity not fully verified"
       ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/626_533-DRC_1282.jpeg",
-    "genderVerificationFragranticaId": "1282"
+    "genderVerificationFragranticaId": "1282",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:625",
@@ -128121,7 +128166,14 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Caramel",
+      "Honey",
+      "Milk",
+      "Vanilla",
+      "Patchouli",
+      "Toffee"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Chopard/Wish-353.html",
     "validationAudit": {
       "status": "yellow",
@@ -128131,26 +128183,24 @@
         "identity": false,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
+        "Fragrantica identity not fully verified"
       ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/615_520-CHO_353.jpeg",
-    "genderVerificationFragranticaId": "353"
+    "genderVerificationFragranticaId": "353",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:614",
@@ -129611,36 +129661,40 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Patchouli",
+      "Lemon",
+      "Pink Pepper",
+      "Pineapple",
+      "Jasmine",
+      "Musk"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Chance-610.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/592_497-CHA_610.jpeg",
     "genderVerificationFragranticaId": "610",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/592_497-CHA_610.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/592_497-CHA_610.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:591",
@@ -129799,7 +129853,14 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Chamomile",
+      "Mimosa",
+      "Iris",
+      "Musk",
+      "Rose",
+      "Freesia"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Cerruti/1881-327.html",
     "validationAudit": {
       "status": "yellow",
@@ -129809,26 +129870,24 @@
         "identity": false,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
+        "Fragrantica identity not fully verified"
       ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/589_493-CER_327.jpeg",
-    "genderVerificationFragranticaId": "327"
+    "genderVerificationFragranticaId": "327",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:588",
@@ -133314,7 +133373,14 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Straw",
+      "Raspberry",
+      "Musk",
+      "Blackberry",
+      "Vanilla",
+      "Sour Cherry"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Burberry/Burberry-Her-51694.html",
     "validationAudit": {
       "status": "yellow",
@@ -133324,26 +133390,25 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
         "Note icons not fully verified"
       ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 5
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/531_425-BRB_51694.jpeg",
     "genderVerificationFragranticaId": "51694",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/531_425-BRB_51694.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/531_425-BRB_51694.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:530",
@@ -134086,36 +134151,40 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Musk",
+      "Iris",
+      "Lily",
+      "Jasmine",
+      "Oakmoss",
+      "Ylang-Ylang"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Body-Shop/White-Musk-2432.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/518_411-BOD_2432.jpeg",
     "genderVerificationFragranticaId": "2432",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/518_411-BOD_2432.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/518_411-BOD_2432.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:517",
@@ -142248,36 +142317,40 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Apple",
+      "Vanilla",
+      "Cinnamon",
+      "Sand",
+      "Plum",
+      "Bergamot"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-383.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/249_1160-HUG_383.jpeg",
     "genderVerificationFragranticaId": "383",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/249_1160-HUG_383.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/249_1160-HUG_383.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:248",
@@ -142438,7 +142511,14 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Orange",
+      "Vetiver",
+      "Pepper",
+      "Grapefruit",
+      "Cedar",
+      "Patchouli"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/Terre-d-Hermes-17.html",
     "validationAudit": {
       "status": "yellow",
@@ -142448,26 +142528,24 @@
         "identity": false,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
+        "Fragrantica identity not fully verified"
       ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/246_1156-HER_17.jpeg",
-    "genderVerificationFragranticaId": "17"
+    "genderVerificationFragranticaId": "17",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:245",
@@ -143603,7 +143681,14 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Vanilla",
+      "Chestnut",
+      "Sugar",
+      "Sage",
+      "Lavender",
+      "Smoke"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-45258.html",
     "validationAudit": {
       "status": "yellow",
@@ -143613,26 +143698,24 @@
         "identity": false,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
+        "Fragrantica identity not fully verified"
       ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/227_1136-ARM_45258.jpeg",
-    "genderVerificationFragranticaId": "45258"
+    "genderVerificationFragranticaId": "45258",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:226",
@@ -147806,36 +147889,40 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Mint",
+      "Lavender",
+      "Oakmoss",
+      "Patchouli",
+      "Sandalwood",
+      "Coriander"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/Pasha-de-Cartier-Fraicheur-Menthe-2446.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/158_1061-CRT_2446.jpeg",
     "genderVerificationFragranticaId": "2446",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/158_1061-CRT_2446.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/158_1061-CRT_2446.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:157",
@@ -147866,36 +147953,40 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Honey",
+      "Iris",
+      "Guaiac Wood",
+      "Musk",
+      "Violet",
+      "Patchouli"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/L-Envol-de-Cartier-39885.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/157_1060-CRT_39885.jpeg",
     "genderVerificationFragranticaId": "39885",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/157_1060-CRT_39885.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/157_1060-CRT_39885.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_OCR"
   },
   {
     "id": "pid:156",
