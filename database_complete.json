@@ -40460,11 +40460,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Zara/Barbie-83741.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -40474,9 +40474,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -40484,7 +40482,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/3784_2160-ZAR_83741.jpeg",
     "genderVerificationFragranticaId": "83741",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Zara/Barbie-83741.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "83741"
   },
   {
     "id": "pid:3732",
@@ -50951,11 +50952,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Vertus/Narcos-is-47923.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -50965,9 +50966,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -50975,7 +50974,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/3370_1989-VERT_47923.jpeg",
     "genderVerificationFragranticaId": "47923",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Vertus/Narcos-is-47923.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "47923"
   },
   {
     "id": "pid:3369",
@@ -75953,11 +75955,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/DSQUARED2/Potion-12937.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -75967,9 +75969,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -75977,7 +75977,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/2283_1483-DSQ_12937.jpeg",
     "genderVerificationFragranticaId": "12937",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/DSQUARED2/Potion-12937.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "12937"
   },
   {
     "id": "pid:2282",
@@ -102990,11 +102993,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Rive-Gauche-96.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -103004,9 +103007,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -103014,7 +103015,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1012_989-YZLO_96.jpeg",
     "genderVerificationFragranticaId": "96",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Rive-Gauche-96.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "96"
   },
   {
     "id": "pid:1011",
@@ -103123,11 +103127,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Paris-94.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -103137,9 +103141,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -103147,7 +103149,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1010_987-YZLO_94.jpeg",
     "genderVerificationFragranticaId": "94",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Paris-94.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "94"
   },
   {
     "id": "pid:1009",
@@ -118802,11 +118807,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Guerlain/Samsara-Eau-de-Parfum-55.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -118816,9 +118821,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -118826,7 +118829,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/762_692-GUR_55.jpeg",
     "genderVerificationFragranticaId": "55",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Guerlain/Samsara-Eau-de-Parfum-55.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "55"
   },
   {
     "id": "pid:761",
@@ -120052,11 +120058,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Dahlia-Divin-25972.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -120066,9 +120072,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 5,
       "matchedNotesCount": 5,
       "iconsCount": 5
@@ -120076,7 +120080,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/742_666-GIV_25972.jpeg",
     "genderVerificationFragranticaId": "25972",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Givenchy/Dahlia-Divin-25972.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "25972"
   },
   {
     "id": "pid:741",
@@ -122538,11 +122545,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Estee-Lauder/Bronze-Goddess-2011-11538.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -122552,9 +122559,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -122562,7 +122567,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/704_621-EST_11538.jpeg",
     "genderVerificationFragranticaId": "11538",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Estee-Lauder/Bronze-Goddess-2011-11538.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "11538"
   },
   {
     "id": "pid:703",
@@ -138406,11 +138414,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Infusion-d-Oeillet-31045.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -138420,9 +138428,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 5,
       "matchedNotesCount": 5,
       "iconsCount": 5
@@ -138430,7 +138436,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/316_880-PRA_31045.jpeg",
     "genderVerificationFragranticaId": "31045",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Prada/Infusion-d-Oeillet-31045.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "31045"
   },
   {
     "id": "pid:315",
@@ -140561,11 +140570,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/L-Artisan-Parfumeur/Premier-Figuier-1261.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -140575,9 +140584,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -140585,7 +140592,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/280_769-LART_1261.jpeg",
     "genderVerificationFragranticaId": "1261",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/L-Artisan-Parfumeur/Premier-Figuier-1261.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "1261"
   },
   {
     "id": "pid:278",
@@ -143500,11 +143510,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Pi-39.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -143514,9 +143524,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -143524,7 +143532,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/231_1141-GIV_39.jpeg",
     "genderVerificationFragranticaId": "39",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Givenchy/Pi-39.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "39"
   },
   {
     "id": "pid:230",
@@ -144683,11 +144694,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Faberge/Brut-38206.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -144697,9 +144708,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -144707,7 +144716,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/211_1118-FAB_38206.jpeg",
     "genderVerificationFragranticaId": "38206",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Faberge/Brut-38206.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "38206"
   },
   {
     "id": "pid:210",
@@ -148420,11 +148432,11 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-One-Summer-2016-35568.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": true,
@@ -148434,9 +148446,7 @@
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Fragrantica identity not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -148444,7 +148454,10 @@
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/151_476-CAL_35568.jpeg",
     "genderVerificationFragranticaId": "35568",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR"
+    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-One-Summer-2016-35568.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "35568"
   },
   {
     "id": "pid:150",

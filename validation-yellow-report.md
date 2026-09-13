@@ -1,15 +1,15 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **60**
-- One check from green: **15**
+- Yellow rows: **47**
+- One check from green: **2**
 
 ## Failed checks
 
-- `identity`: **50**
 - `socialCard`: **45**
 - `notes`: **45**
 - `icons`: **41**
+- `identity`: **37**
 - `gender`: **36**
 - `season`: **36**
 - `image`: **32**
@@ -19,7 +19,6 @@
 ## Failure signatures
 
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
-- `identity`: **13** — 2160-ZAR, 1989-VERT, 1483-DSQ, 989-YZLO, 987-YZLO, 692-GUR, 666-GIV, 621-EST, 880-PRA, 769-LART, 1141-GIV, 1118-FAB, 476-CAL
 - `identity,socialCard,notes,icons`: **4** — 236-IND, 525-DRC, 487-CRT, 421-BRB
 - `socialCard,notes`: **3** — 2282-DRC, 1037-BLG, 1036-BLG
 - `socialCard,notes,icons`: **2** — 884-RAL, 945-VER
@@ -33,28 +32,15 @@
 
 | Code | Brand | Inspired by | Remaining check |
 |---|---|---|---|
-| 2160-ZAR | Zara | Barbie | identity |
-| 1989-VERT | Vertus | Narcos is | identity |
-| 1483-DSQ | Dsquared2 | Potion | identity |
-| 989-YZLO | Yves Saint Laurent | Rive Gauche | identity |
-| 987-YZLO | Yves Saint Laurent | Paris | identity |
 | 828-MIY | Miu Miu | Miu Miu L Eau Bleue | gender |
-| 692-GUR | Guerlain | Samsara Eau de Parfum | identity |
-| 666-GIV | Givenchy | Dahlia Divin | identity |
-| 621-EST | Estée Lauder | Bronze Goddess 2011 | identity |
 | 521-DRC | Dior | Dior Addict | image |
-| 880-PRA | Prada | Infusion d Oeillet | identity |
-| 769-LART | LArtisan Parfumeur | Premier Figuier | identity |
-| 1141-GIV | Givenchy | Pi | identity |
-| 1118-FAB | Faberge | Brut | identity |
-| 476-CAL | Calvin Klein | CK One Summer 2016 | identity |
 
 ## Issues
 
-- Fragrantica identity not fully verified: **50**
 - Social Card not fully verified: **45**
 - Missing Main Notes: **41**
 - Note icons not fully verified: **41**
+- Fragrantica identity not fully verified: **37**
 - Gender not fully verified: **36**
 - Season not fully verified: **36**
 - Missing perfume image: **32**
@@ -70,13 +56,10 @@
 | 2701-DIP | Diptyque | Cafe Verlet | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2586-DIP | Diptyque | Biscuit DIP | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 2282-DRC | Dior | Dioriviera Eau de Parfum | socialCard, notes |
-| 2160-ZAR | Zara | Barbie | identity |
 | 2194-ORT | Orto Parisi | ORTO | socialCard, notes, season |
 | 2085-CLIV | Clive Christian | X NEROLI LIMITED EDITION - CLIVE CHRISTIAN | identity, fid, url, socialCard, image, notes, icons, gender, season |
-| 1989-VERT | Vertus | Narcos is | identity |
 | 1748-BYR | Byredo | Marijuana | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1550-YAN | Yankee Candle | HOME SWEET HOME - YANKEE | identity, fid, url, socialCard, image, notes, icons, gender, season |
-| 1483-DSQ | Dsquared2 | Potion | identity |
 | 383-YAN | Yankee Candle | WEDDING DAY - YANKEE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 130-LEL | Le Labo | SANTAL 26 - LE LABO | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 564-DOL | Dolce & Gabbana | SEXY CHOCLATE | identity, fid, url, socialCard, image, notes, icons, gender, season |
@@ -108,21 +91,11 @@
 | 223-DIP | Diptyque | BAIES | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 222-DIP | Diptyque | AMBRE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 200-CIR | CIRE TRUDON | ERNESTO CHE GUEVARA | identity, fid, url, socialCard, image, notes, icons, gender, season |
-| 989-YZLO | Yves Saint Laurent | Rive Gauche | identity |
-| 987-YZLO | Yves Saint Laurent | Paris | identity |
 | 945-VER | Versace | Eros Pour Femme | socialCard, notes, icons |
 | 828-MIY | Miu Miu | Miu Miu L Eau Bleue | gender |
-| 692-GUR | Guerlain | Samsara Eau de Parfum | identity |
-| 666-GIV | Givenchy | Dahlia Divin | identity |
-| 621-EST | Estée Lauder | Bronze Goddess 2011 | identity |
 | 525-DRC | Dior | Dune | identity, socialCard, notes, icons |
 | 521-DRC | Dior | Dior Addict | image |
 | 487-CRT | Cartier | Baiser Vole | identity, socialCard, notes, icons |
 | 421-BRB | Burberry | Body | identity, socialCard, notes, icons |
 | 1251-ROM | Romane | Royal Blue | identity, socialCard, notes, icons, gender, season |
-| 880-PRA | Prada | Infusion d Oeillet | identity |
-| 769-LART | LArtisan Parfumeur | Premier Figuier | identity |
-| 1141-GIV | Givenchy | Pi | identity |
-| 1118-FAB | Faberge | Brut | identity |
-| 476-CAL | Calvin Klein | CK One Summer 2016 | identity |
 | 1036-BLG | Bvlgari | BLV Pour Homme | socialCard, notes |
