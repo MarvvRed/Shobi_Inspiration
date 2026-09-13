@@ -1,0 +1,30 @@
+name: Fetch current-FID cards for yellows
+
+on:
+  push:
+    paths:
+      - 'tools/fetch_current_fid_cards_for_yellows.py'
+      - '.github/workflows/fetch-current-fid-cards-for-yellows.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/fetch_current_fid_cards_for_yellows.py
+      - name: Commit recovered current-ID cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fragrantica-scraper-archive/social-cards/images/current_*.jpeg current-fid-card-fetch-report.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Fetch exact current-FID Social Cards for yellows"
+          git pull --rebase origin main
+          git push origin HEAD:main
