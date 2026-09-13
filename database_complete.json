@@ -100660,7 +100660,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -100671,7 +100671,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -100682,7 +100681,10 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1144_236-IND_42046.jpeg",
-    "genderVerificationFragranticaId": "42046"
+    "genderVerificationFragranticaId": "42046",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Indigo-Wild/Zum-Mist-Frankincense-Myrrh-42046.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "42046"
   },
   {
     "id": "pid:1143",
@@ -100718,7 +100720,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -100729,7 +100731,6 @@
         "season": false
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified",
@@ -100739,7 +100740,10 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    }
+    },
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Hollister/Socal-4307.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "4307"
   },
   {
     "id": "pid:1142",
@@ -128049,7 +128053,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -128060,7 +128064,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -128071,7 +128074,10 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/618_525-DRC_221.jpeg",
-    "genderVerificationFragranticaId": "221"
+    "genderVerificationFragranticaId": "221",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Dior/Dune-221.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "221"
   },
   {
     "id": "pid:617",
@@ -130195,7 +130201,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -130206,7 +130212,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -130217,7 +130222,10 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/583_487-CRT_12878.jpeg",
-    "genderVerificationFragranticaId": "12878"
+    "genderVerificationFragranticaId": "12878",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Cartier/Baiser-Vole-12878.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "12878"
   },
   {
     "id": "pid:582",
@@ -133708,7 +133716,7 @@
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
-        "identity": false,
+        "identity": true,
         "fid": true,
         "url": true,
         "socialCard": false,
@@ -133719,7 +133727,6 @@
         "season": true
       },
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
@@ -133730,7 +133737,10 @@
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/527_421-BRB_13014.jpeg",
-    "genderVerificationFragranticaId": "13014"
+    "genderVerificationFragranticaId": "13014",
+    "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Burberry/Body-13014.html",
+    "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
+    "fragranticaVerificationFragranticaId": "13014"
   },
   {
     "id": "pid:525",

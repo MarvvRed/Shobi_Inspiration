@@ -41,10 +41,12 @@
       ]
     },
     {
-      "signature": "identity,socialCard,notes,icons",
-      "count": 4,
+      "signature": "socialCard,notes,icons",
+      "count": 6,
       "codes": [
+        "884-RAL",
         "236-IND",
+        "945-VER",
         "525-DRC",
         "487-CRT",
         "421-BRB"
@@ -60,27 +62,12 @@
       ]
     },
     {
-      "signature": "socialCard,notes,icons",
-      "count": 2,
-      "codes": [
-        "884-RAL",
-        "945-VER"
-      ]
-    },
-    {
       "signature": "socialCard,notes,icons,gender,season",
-      "count": 2,
+      "count": 3,
       "codes": [
         "118-HAM",
-        "325-PECK"
-      ]
-    },
-    {
-      "signature": "identity,socialCard,notes,icons,gender,season",
-      "count": 2,
-      "codes": [
-        "235-HOLL",
-        "1251-ROM"
+        "325-PECK",
+        "235-HOLL"
       ]
     },
     {
@@ -88,6 +75,13 @@
       "count": 1,
       "codes": [
         "2194-ORT"
+      ]
+    },
+    {
+      "signature": "identity,socialCard,notes,icons,gender,season",
+      "count": 1,
+      "codes": [
+        "1251-ROM"
       ]
     }
   ],
@@ -238,49 +232,6 @@
       ]
     },
     {
-      "issue": "Fragrantica identity not fully verified",
-      "count": 37,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "236-IND",
-        "235-HOLL",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "525-DRC",
-        "487-CRT",
-        "421-BRB",
-        "1251-ROM"
-      ]
-    },
-    {
       "issue": "Season not fully verified",
       "count": 36,
       "codes": [
@@ -354,6 +305,44 @@
         "261-JOM",
         "258-JOM",
         "235-HOLL",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "1251-ROM"
+      ]
+    },
+    {
+      "issue": "Fragrantica identity not fully verified",
+      "count": 32,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2085-CLIV",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "314-MOL",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
         "230-DIP",
         "228-DIP",
         "227-DIP",
@@ -636,49 +625,6 @@
       ]
     },
     {
-      "check": "identity",
-      "count": 37,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "236-IND",
-        "235-HOLL",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "525-DRC",
-        "487-CRT",
-        "421-BRB",
-        "1251-ROM"
-      ]
-    },
-    {
       "check": "season",
       "count": 36,
       "codes": [
@@ -752,6 +698,44 @@
         "261-JOM",
         "258-JOM",
         "235-HOLL",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "1251-ROM"
+      ]
+    },
+    {
+      "check": "identity",
+      "count": 32,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2085-CLIV",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "314-MOL",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
         "230-DIP",
         "228-DIP",
         "227-DIP",
@@ -1773,13 +1757,11 @@
       "inspiredBy": "Zum Mist Frankincense Myrrh",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Indigo-Wild/Zum-Mist-Frankincense-Myrrh-42046.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -1794,7 +1776,6 @@
       "inspiredBy": "Socal",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Hollister/Socal-4307.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified",
@@ -1802,7 +1783,6 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons",
@@ -2024,13 +2004,11 @@
       "inspiredBy": "Dune",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dune-221.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2045,13 +2023,11 @@
       "inspiredBy": "Baiser Vole",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/Baiser-Vole-12878.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"
@@ -2066,13 +2042,11 @@
       "inspiredBy": "Body",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Burberry/Body-13014.html",
       "issues": [
-        "Fragrantica identity not fully verified",
         "Social Card not fully verified",
         "Missing Main Notes",
         "Note icons not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "socialCard",
         "notes",
         "icons"

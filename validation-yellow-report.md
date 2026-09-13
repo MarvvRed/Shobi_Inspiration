@@ -9,9 +9,9 @@
 - `socialCard`: **45**
 - `notes`: **45**
 - `icons`: **41**
-- `identity`: **37**
 - `season`: **36**
 - `gender`: **35**
+- `identity`: **32**
 - `fid`: **31**
 - `url`: **31**
 - `image`: **31**
@@ -19,12 +19,11 @@
 ## Failure signatures
 
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
-- `identity,socialCard,notes,icons`: **4** — 236-IND, 525-DRC, 487-CRT, 421-BRB
+- `socialCard,notes,icons`: **6** — 884-RAL, 236-IND, 945-VER, 525-DRC, 487-CRT, 421-BRB
 - `socialCard,notes`: **3** — 2282-DRC, 1037-BLG, 1036-BLG
-- `socialCard,notes,icons`: **2** — 884-RAL, 945-VER
-- `socialCard,notes,icons,gender,season`: **2** — 118-HAM, 325-PECK
-- `identity,socialCard,notes,icons,gender,season`: **2** — 235-HOLL, 1251-ROM
+- `socialCard,notes,icons,gender,season`: **3** — 118-HAM, 325-PECK, 235-HOLL
 - `socialCard,notes,season`: **1** — 2194-ORT
+- `identity,socialCard,notes,icons,gender,season`: **1** — 1251-ROM
 
 ## One check from green
 
@@ -36,9 +35,9 @@
 - Social Card not fully verified: **45**
 - Missing Main Notes: **41**
 - Note icons not fully verified: **41**
-- Fragrantica identity not fully verified: **37**
 - Season not fully verified: **36**
 - Gender not fully verified: **35**
+- Fragrantica identity not fully verified: **32**
 - Missing Fragrantica ID: **31**
 - Missing direct Fragrantica URL: **31**
 - Missing perfume image: **31**
@@ -79,8 +78,8 @@
 | 289-JOM | Jo Malone London | SWEET ALMON & MACARRON - JO MALONE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 261-JOM | Jo Malone London | INCENSE & EMBERS - JO MALONE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 258-JOM | Jo Malone London | GREEN TOMATO LEAF - JO MALONE | identity, fid, url, socialCard, image, notes, icons, gender, season |
-| 236-IND | Indigo Wild | Zum Mist Frankincense Myrrh | identity, socialCard, notes, icons |
-| 235-HOLL | Hollister | Socal | identity, socialCard, notes, icons, gender, season |
+| 236-IND | Indigo Wild | Zum Mist Frankincense Myrrh | socialCard, notes, icons |
+| 235-HOLL | Hollister | Socal | socialCard, notes, icons, gender, season |
 | 230-DIP | Diptyque | OPOPANAX | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 228-DIP | Diptyque | FEUILLE DE LAVANDE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 227-DIP | Diptyque | FEU DE BOIS / WOOD FIRE | identity, fid, url, socialCard, image, notes, icons, gender, season |
@@ -88,8 +87,8 @@
 | 222-DIP | Diptyque | AMBRE | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 200-CIR | CIRE TRUDON | ERNESTO CHE GUEVARA | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 945-VER | Versace | Eros Pour Femme | socialCard, notes, icons |
-| 525-DRC | Dior | Dune | identity, socialCard, notes, icons |
-| 487-CRT | Cartier | Baiser Vole | identity, socialCard, notes, icons |
-| 421-BRB | Burberry | Body | identity, socialCard, notes, icons |
+| 525-DRC | Dior | Dune | socialCard, notes, icons |
+| 487-CRT | Cartier | Baiser Vole | socialCard, notes, icons |
+| 421-BRB | Burberry | Body | socialCard, notes, icons |
 | 1251-ROM | Romane | Royal Blue | identity, socialCard, notes, icons, gender, season |
 | 1036-BLG | Bvlgari | BLV Pour Homme | socialCard, notes |
