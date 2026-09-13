@@ -1,5 +1,6 @@
 name: Apply shared-FID Social Card recovery
 
+# rerun after refreshed exact-FID evidence
 on:
   push:
     paths:
