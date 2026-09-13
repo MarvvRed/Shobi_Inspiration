@@ -3,7 +3,7 @@ from __future__ import annotations
 import json,urllib.request,time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json';SITE=ROOT/'catalog_site.json';VALID=ROOT/'social-card-main-notes-validated.json';RAW=ROOT/'social-card-main-notes.json';IMAP=ROOT/'perfume-images'/'map.js';CARDS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images';OUT=ROOT/'seven-verified-fid-corrections.json'
+DB=ROOT/'database_complete.json';SITE=ROOT/'catalog_site.json';VALID=ROOT/'social-card-main-notes-validated.json';RAW=ROOT/'social-card-main-notes.json';IMAP=ROOT/'perfume-images'/'map.js';CARDS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images';OUT=ROOT/'eight-verified-fid-corrections.json'
 FIX={
  '884-RAL':('9006','14446','https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-for-Women-14446.html'),
  '337-TIFF':('12922','53062','https://www.fragrantica.com/perfume/Tiffany/Tiffany-Co-Sheer-53062.html'),
@@ -12,6 +12,7 @@ FIX={
  '1172-ISS':('79','721','https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-d-Issey-Pour-Homme-721.html'),
  '1086-CLI':('66133','373','https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-373.html'),
  '1043-CAL':('14606','275','https://www.fragrantica.com/perfume/Calvin-Klein/CK-be-275.html'),
+ '827-MISN':('1069','33017','https://www.fragrantica.com/perfume/Missoni/Missoni-2015-33017.html'),
 }
 def code(v):return str(v or '').strip().upper()
 def fetch(url,accept):
@@ -40,7 +41,6 @@ for r,s in zip(db,site):
  if str(r.get('fragranticaId') or '')!=old:raise SystemExit(f'Unexpected FID for {c}: {r.get("fragranticaId")}')
  card,cardurl=get_card(c,new);img,imgurl=get_image(new)
  if not card:raise SystemExit(f'No exact current Social Card for corrected {c} {new}')
- # Preserve old derived evidence only if an already validated record for this exact new FID exists.
  src=vby.get(c) or {}; exact_valid=src.get('validated') is True and str(src.get('fragranticaId') or '')==new and src.get('card') and (ROOT/str(src.get('card'))).is_file()
  r['fragranticaId']=new;r['fragranticaUrl']=url;r['fragranticaVerificationSource']=url;r['identityStatus']='CONFIRMED';s['fragranticaUrl']=url
  if img:imap[c]=img
@@ -48,14 +48,11 @@ for r,s in zip(db,site):
   notes=list(src.get('mainNotes') or []);r['fragranticaSocialCardNotes']=notes;r['fragranticaSocialCardStatus']='VALIDATED_OCR'
  else:
   r['fragranticaSocialCardNotes']=[];r['fragranticaSocialCardStatus']=''
-  # replace stale validation/raw entry so old-FID evidence cannot accidentally pass later
   vby[c]={'code':c,'fragranticaId':int(new),'card':card,'validated':False,'mainNotes':[],'rawSlots':[],'validatedSlots':[],'failures':[],'reasons':['PENDING_CURRENT_FID_OCR']}
   rby[c]={'code':c,'fragranticaId':int(new),'card':card,'mainNotes':[],'slots':[],'ocrConfidence':None}
- # Gender/season evidence must be rebuilt from corrected ID unless already exact elsewhere.
  r['genderStatus']='';r['seasons']=[];s['seasons']=[]
  changes.append({'code':c,'oldFid':old,'newFid':new,'url':url,'card':card,'cardSource':cardurl,'image':img,'imageSource':imgurl,'usedExistingValidatedNotes':exact_valid})
  time.sleep(.05)
-# rebuild validation/raw lists preserving order
 seen=set();newv=[]
 for x in valid_list:
  c=code(x.get('code'));newv.append(vby.get(c,x));seen.add(c)
