@@ -1,0 +1,35 @@
+name: Report identity-only current rows
+
+on:
+  push:
+    paths:
+      - 'tools/report_identity_only_rows.py'
+      - '.github/workflows/report-identity-only-current.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/report_identity_only_rows.py
+      - name: Publish report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add identity-only-current.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Report identity-only current rows"
+          git push origin HEAD:main
