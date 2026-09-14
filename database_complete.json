@@ -87801,7 +87801,9 @@
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
-    "seasons": [],
+    "seasons": [
+      "spring"
+    ],
     "mainAccords": [],
     "notes": {
       "top": [],
@@ -87824,7 +87826,7 @@
     "fragranticaSocialCardStatus": "VALIDATED_OCR",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
-    "genderStatus": "",
+    "genderStatus": "VALIDATED_SOCIAL_CARD",
     "liveDisplayCode": "1037-BLG M",
     "shobiImageUrl": "https://leparfum.com.gr/44053-home_default/1037-blg-m.jpg",
     "shobiCategory": "Fragrances For Men",
@@ -87833,7 +87835,7 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -87844,13 +87846,10 @@
         "image": true,
         "notes": true,
         "icons": true,
-        "gender": false,
-        "season": false
+        "gender": true,
+        "season": true
       },
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
