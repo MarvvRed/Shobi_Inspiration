@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 20
 
       - name: Recover malformed generated metadata
         run: |
@@ -30,9 +30,18 @@ jobs:
             echo 'Generated metadata is valid.'
             exit 0
           fi
-          echo 'Recovering the last valid generated metadata from the parent commit.'
-          git show HEAD^:database_complete.json > database_complete.json
-          git show HEAD^:social-card-main-notes-validated.json > social-card-main-notes-validated.json
+          echo 'Recovering the last valid generated metadata from history.'
+          for commit in $(git rev-list HEAD^); do
+            if git show "$commit:database_complete.json" 2>/dev/null | python -m json.tool >/dev/null 2>&1 && \
+               git show "$commit:social-card-main-notes-validated.json" 2>/dev/null | python -m json.tool >/dev/null 2>&1; then
+              git show "$commit:database_complete.json" > database_complete.json
+              git show "$commit:social-card-main-notes-validated.json" > social-card-main-notes-validated.json
+              echo "Recovered metadata from $commit."
+              exit 0
+            fi
+          done
+          echo 'No valid historical metadata was found.' >&2
+          exit 1
 
       - name: Build website database from live CSV
         run: python tools/build_live_site_from_shobi_csv.py
