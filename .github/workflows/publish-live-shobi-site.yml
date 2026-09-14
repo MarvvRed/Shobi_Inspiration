@@ -50,7 +50,7 @@ jobs:
         run: |
           command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
           python -m pip install --disable-pip-version-check pillow
-          python tools/audit_social_card_order_from_images.py
+          SOCIAL_CARD_AUDIT_WORKERS=2 python tools/audit_social_card_order_from_images.py
           python tools/apply_strict_ordered_card_audit.py
           python tools/refresh_strict_ordered_mismatches.py
 
