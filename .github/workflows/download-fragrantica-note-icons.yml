@@ -1,0 +1,93 @@
+name: Download Fragrantica note icons
+
+on:
+  push:
+    paths:
+      - '.github/workflows/download-fragrantica-note-icons.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download note icons
+        run: |
+          python - <<'PY'
+          import json, re, time, urllib.request, urllib.parse
+          from pathlib import Path
+
+          PAGE = 'https://www.fragrantica.com/notes/'
+          OUT = Path('public/note-icons')
+          OUT.mkdir(parents=True, exist_ok=True)
+          headers = {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140 Safari/537.36',
+              'Referer': PAGE,
+          }
+
+          req = urllib.request.Request(PAGE, headers=headers)
+          html = urllib.request.urlopen(req, timeout=30).read().decode('utf-8', 'ignore')
+
+          matches = re.findall(r'href=["\'](?:https://www\.fragrantica\.com)?(/notes/([^"\']+)-(\d+)\.html)["\']', html, re.I)
+          seen = set()
+          index = []
+          ok = failed = 0
+
+          for path, slug, note_id in matches:
+              if note_id in seen:
+                  continue
+              seen.add(note_id)
+              clean_slug = urllib.parse.unquote(slug).lower()
+              clean_slug = re.sub(r'[^a-z0-9]+', '-', clean_slug).strip('-') or f'note-{note_id}'
+              filename = f'{clean_slug}-{note_id}.jpg'
+              image_url = f'https://fimgs.net/mdimg/sastojci/t.{note_id}.jpg'
+              dest = OUT / filename
+              try:
+                  r = urllib.request.Request(image_url, headers={**headers, 'Referer': 'https://www.fragrantica.com' + path})
+                  with urllib.request.urlopen(r, timeout=20) as resp:
+                      data = resp.read()
+                      ctype = (resp.headers.get('Content-Type') or '').lower()
+                  if len(data) < 100 or 'image' not in ctype:
+                      raise ValueError(f'invalid image ({ctype}, {len(data)} bytes)')
+                  dest.write_bytes(data)
+                  ok += 1
+                  status = 'ok'
+              except Exception as e:
+                  failed += 1
+                  status = f'failed: {e}'
+
+              index.append({
+                  'id': int(note_id),
+                  'slug': slug,
+                  'page_url': 'https://www.fragrantica.com' + path,
+                  'image_url': image_url,
+                  'file': filename if status == 'ok' else None,
+                  'status': status,
+              })
+              time.sleep(0.03)
+
+          (OUT / 'index.json').write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding='utf-8')
+          (OUT / 'README.md').write_text(
+              f'# Fragrantica note icons\n\nDownloaded: {ok}\nFailed: {failed}\nSource: {PAGE}\n',
+              encoding='utf-8'
+          )
+          print(f'Found {len(seen)} notes; downloaded {ok}; failed {failed}')
+          if ok == 0:
+              raise SystemExit('No icons downloaded')
+          PY
+
+      - name: Commit icons
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/note-icons
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Add Fragrantica note icons"
+            git push
+          fi
