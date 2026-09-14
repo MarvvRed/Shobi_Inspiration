@@ -7,10 +7,10 @@
     "Rechecked the current 2324-row Shobi live catalog and previous perfume-only audit.",
     "Reviewed high-risk brands/product families where Fragrantica can contain non-perfume entries.",
     "Used exact product-type evidence rather than treating the presence of a Fragrantica ID as proof that the original is a true perfume.",
-    "Only confirmed exclusions are listed below; unresolved identity/product-type cases remain in manual review."
+    "Excluded entries when the original is confirmed non-wearable or when a genuine exact wearable original cannot be demonstrated after targeted research."
   ],
-  "confirmedOutOfScopeCount": 61,
-  "projectedPublicRowsAfterConfirmedExclusions": 2263,
+  "confirmedOutOfScopeCount": 67,
+  "projectedPublicRowsAfterConfirmedExclusions": 2257,
   "confirmedOutOfScopeGroups": {
     "previouslyClassifiedHomeBody": [
       "2701-DIP",
@@ -88,6 +88,14 @@
     ],
     "pgLaundry": [
       "330-PG"
+    ],
+    "unverifiedWearableIdentity": [
+      "1748-BYR",
+      "564-DOL",
+      "336-THCO",
+      "335-THCO",
+      "334-SHI",
+      "331-PG"
     ]
   },
   "keepExceptionsChecked": [
@@ -132,35 +140,10 @@
       "reason": "Crush exists as a genuine Eau de Parfum."
     }
   ],
-  "manualReview": [
-    {
-      "code": "1748-BYR",
-      "reason": "Claimed Byredo Marijuana identity is not established as a legitimate Byredo wearable perfume."
-    },
-    {
-      "code": "564-DOL",
-      "reason": "Claimed Dolce & Gabbana Sexy Chocolate identity is not established as a legitimate D&G release."
-    },
-    {
-      "code": "336-THCO",
-      "reason": "Narcissus Noir exact The White Company original remains ambiguous."
-    },
-    {
-      "code": "335-THCO",
-      "reason": "Cashmere Blanc exact original product type remains ambiguous."
-    },
-    {
-      "code": "334-SHI",
-      "reason": "Shirley May row gives a brand but no unique fragrance identity."
-    },
-    {
-      "code": "331-PG",
-      "reason": "Crystal Water & Water Lily exact wearable original is not established."
-    }
-  ],
+  "manualReview": [],
   "notes": [
     "Fragrantica presence is not sufficient for scope inclusion because body/fragrance mists can have Fragrantica pages.",
-    "This audit is intentionally conservative: a row is excluded only when the non-perfume nature of the original is sufficiently demonstrated.",
+    "Entries with no demonstrable exact wearable original are excluded from the public catalog but retained in the canonical source for traceability.",
     "Canonical database rows are not deleted by this audit file. Use a separate public-scope exclusion manifest/filter so evidence and history remain recoverable.",
     "1642-VICT Rose Caramel was rechecked and retained as a wearable perfume. 911-SEPH remains manual review because the current Sephora listing is a hair/body mist.",
     "330-PG was confirmed as Daz laundry fragrance and excluded. 911-SEPH was rechecked as Fleur de Coton Eau de Toilette and restored to green."
