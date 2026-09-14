@@ -1,0 +1,44 @@
+name: Migrate site to public note icons
+
+on:
+  push:
+    paths:
+      - 'tools/migrate_site_to_public_note_icons.py'
+      - '.github/workflows/migrate-site-public-note-icons.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - name: Migrate note icon library
+        run: python tools/migrate_site_to_public_note_icons.py
+      - name: Rebuild validation audit
+        run: python tools/build_validation_audit.py
+      - name: Verify no legacy note-icons directory remains
+        run: |
+          test ! -d note-icons
+          test -f public/note-icons/map.js
+          grep -q 'public/note-icons/map.js' index.html
+      - name: Commit migration
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Use new WebP note icon library and remove legacy icons"
+            git pull --rebase origin main
+            git push
+          fi
