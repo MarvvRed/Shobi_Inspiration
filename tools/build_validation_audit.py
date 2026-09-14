@@ -12,6 +12,7 @@ NOTE_ICON_MAP = ROOT / "public" / "note-icons" / "map.js"
 GENDER_SEASON = ROOT / "fragrantica-scraper-archive" / "social-cards" / "gender-season.csv"
 VALIDATED_NOTES = ROOT / "social-card-main-notes-validated.json"
 RAW_NOTES = ROOT / "social-card-main-notes.json"
+ORDERED_CARD_AUDIT = ROOT / "social-card-ordered-image-audit.json"
 PERFUME_IMAGE_MAP = ROOT / "perfume-images" / "map.js"
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
@@ -54,6 +55,7 @@ def load_local_note_icons():
 local_note_icons = load_local_note_icons()
 validated_notes = {str(item.get("code") or "").strip().upper(): item for item in json.loads(VALIDATED_NOTES.read_text(encoding="utf-8"))}
 raw_notes = {str(item.get("code") or "").strip().upper(): item for item in json.loads(RAW_NOTES.read_text(encoding="utf-8"))}
+ordered_card_audit = {str(item.get("code") or "").strip().upper(): item for item in json.loads(ORDERED_CARD_AUDIT.read_text(encoding="utf-8")).get("rows", [])}
 image_prefix = "window.PERFUME_IMAGE_MAP="
 image_text = PERFUME_IMAGE_MAP.read_text(encoding="utf-8").strip()
 if not image_text.startswith(image_prefix): raise SystemExit("Invalid perfume image map")
@@ -72,6 +74,21 @@ def has_verified_social_season(row, fid, seasons):
         return False
     main_season = str(source.get("main_season") or "").strip().lower()
     return bool(main_season) and main_season in {str(value).strip().lower() for value in seasons}
+
+
+def exact_ordered_card_evidence(row, fid, notes):
+    """Green needs a fresh exact-order image audit, not historic OCR metadata."""
+    item = ordered_card_audit.get(str(row.get("code") or "").strip().upper())
+    card = str(item.get("card") or "") if item else ""
+    return bool(
+        item
+        and item.get("result") == "EXACT_ORDERED_MATCH"
+        and str(item.get("fragranticaId") or "") == fid
+        and item.get("catalogNotes") == notes
+        and item.get("observedNotes") == notes
+        and card
+        and (ROOT / card).is_file()
+    )
 
 
 def exact_social_card(row, fid, notes):
@@ -94,6 +111,7 @@ def exact_social_card(row, fid, notes):
         and card
         and (ROOT / card).is_file()
         and source.get("mainNotes") == notes
+        and exact_ordered_card_evidence(row, fid, notes)
     )
     manual_exact = bool(
         manual
@@ -102,6 +120,7 @@ def exact_social_card(row, fid, notes):
         and raw_card.endswith(suffix)
         and (ROOT / raw_card).is_file()
         and bool(notes)
+        and exact_ordered_card_evidence(row, fid, notes)
     )
     return validated_exact or manual_exact
 
@@ -174,7 +193,7 @@ for row, site in zip(rows, site_rows):
     site["validationIconsCount"] = matching_icons
 
 DB.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-SITE.write_text(json.dumps(site_rows, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+SITE.write_text(json.dumps(site_rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print("validation", counts)
 if counts["green"] and any(not all(r.get("validationAudit", {}).get("checks", {}).values()) for r in rows if r.get("validationAudit", {}).get("status") == "green"):
     raise SystemExit("Invalid green validation state")

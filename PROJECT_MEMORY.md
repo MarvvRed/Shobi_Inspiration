@@ -209,6 +209,13 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 
 ## Decisions Made
 
+### Strict ordered Social Card gate — 2026-09-14
+
+- A Main Notes field is eligible for green only when it is proven against the exact archived Fragrantica Social Card image for the same FID.
+- Proof requires two independent OCR passes, the visible note-icon count, and an exact position-by-position sequence match. Matching only the number of notes is invalid.
+- The independent result is saved in `social-card-ordered-image-audit.json`; `tools/build_validation_audit.py` now requires its `EXACT_ORDERED_MATCH` result before assigning green.
+- The 110 exact image-proven note differences found in the first full pass were corrected at source, then re-read successfully. Every remaining unreadable/ambiguous card is yellow by design.
+
 - Work should proceed **step by step**, without jumping ahead into implementation before the current question/decision is settled.
 - The project will be English-language and international.
 - GitHub/project files act as persistent project memory rather than relying solely on one ChatGPT conversation.

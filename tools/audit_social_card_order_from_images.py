@@ -1,0 +1,286 @@
+#!/usr/bin/env python3
+"""Independent, conservative audit of Main Notes against card *images*.
+
+This does not use social-card-main-notes(-validated).json as input.  It reads
+the visible note-label area from the exact-ID archived Social Card, preserves
+its top-to-bottom / left-to-right order, and compares it to the live catalog.
+
+Only a fully readable ordered list is allowed to pass.  Anything unreadable,
+missing, or different is intentionally unresolved; it is never an automatic
+pass.
+"""
+from __future__ import annotations
+
+import json
+import os
+import re
+import csv
+import io
+import subprocess
+import unicodedata
+from collections import Counter, defaultdict
+from concurrent.futures import ProcessPoolExecutor, as_completed
+from difflib import SequenceMatcher
+from pathlib import Path
+
+from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+
+ROOT = Path(__file__).resolve().parents[1]
+DB = ROOT / "database_complete.json"
+LEXICON = ROOT / "fragrantica-note-lexicon.txt"
+CARD_DIR = ROOT / "fragrantica-scraper-archive" / "social-cards" / "images"
+OUT = ROOT / "social-card-ordered-image-audit.json"
+
+# Coordinates on the 1200x1200 English card.  This is the entire notes panel;
+# labels are located dynamically, not forced into fixed three-column slots.
+CROP = (45, 730, 465, 1110)
+SCALE = 3
+
+
+def code(value):
+    return str(value or "").strip().upper()
+
+
+def norm(value):
+    text = unicodedata.normalize("NFKD", str(value or "")).encode("ascii", "ignore").decode()
+    return " ".join(re.findall(r"[a-z0-9]+", text.lower()))
+
+
+def find_card(row):
+    c, fid = code(row.get("code")), str(row.get("fragranticaId") or "").strip()
+    if not c or not fid:
+        return None
+    exact = sorted(CARD_DIR.glob(f"*_{c}_{fid}.jpeg")) + sorted(CARD_DIR.glob(f"*_{c}_{fid}.jpg"))
+    if exact:
+        return exact[0]
+    # Historical files can lack the code only when the Fragrantica ID is unique.
+    matches = sorted(CARD_DIR.glob(f"*_{fid}.jpeg")) + sorted(CARD_DIR.glob(f"*_{fid}.jpg"))
+    return matches[0] if len(matches) == 1 else None
+
+
+def component_words(words):
+    """Join OCR words belonging to one physical label, without fixed columns."""
+    n = len(words)
+    parent = list(range(n))
+
+    def root(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+
+    def union(i, j):
+        a, b = root(i), root(j)
+        if a != b:
+            parent[b] = a
+
+    for i, a in enumerate(words):
+        for j in range(i):
+            b = words[j]
+            # Same text line: words in one note label are close; distinct notes
+            # are separated by the flex-layout gap on the Social Card.
+            same_line = abs(a["cy"] - b["cy"]) <= 13
+            hgap = max(0, max(a["x"], b["x"]) - min(a["right"], b["right"]))
+            if same_line and hgap <= 10:
+                union(i, j)
+                continue
+            # Wrapped labels (for example "Orris Root") overlap horizontally.
+            x_overlap = min(a["right"], b["right"]) - max(a["x"], b["x"])
+            vgap = max(0, max(a["y"], b["y"]) - min(a["bottom"], b["bottom"]))
+            if x_overlap >= -5 and vgap <= 28:
+                union(i, j)
+
+    groups = defaultdict(list)
+    for i, word in enumerate(words):
+        groups[root(i)].append(word)
+    out = []
+    for items in groups.values():
+        items.sort(key=lambda w: (w["y"], w["x"]))
+        out.append({
+            "raw": " ".join(w["text"] for w in items),
+            "x": min(w["x"] for w in items),
+            "y": min(w["y"] for w in items),
+            "row": min(w["row"] for w in items),
+            "confidence": round(min(w["confidence"] for w in items), 1),
+        })
+    return out
+
+
+def candidate(raw, lexicon):
+    target = norm(raw)
+    exact = [name for name in lexicon if norm(name) == target]
+    if len(exact) == 1:
+        return exact[0], 1.0, 1.0, True
+    ranked = sorted(((SequenceMatcher(None, target, norm(name)).ratio(), name) for name in lexicon), reverse=True)
+    if not ranked:
+        return None, 0.0, 0.0, False
+    score, name = ranked[0]
+    margin = score - (ranked[1][0] if len(ranked) > 1 else 0)
+    return name, round(score, 3), round(margin, 3), False
+
+
+def parse_attempt(data, lexicon):
+    """Return one independent OCR reading, or its reason for not being strict."""
+    all_words = []
+    for item in data:
+        text = " ".join(str(item.get("text") or "").split())
+        if not text or sum(ch.isalpha() for ch in text) < 2:
+            continue
+        try:
+            confidence = float(item.get("conf") or -1)
+        except Exception:
+            confidence = -1
+        if confidence < 35:
+            continue
+        x, y = int(item["left"]) / SCALE, int(item["top"]) / SCALE
+        w, h = int(item["width"]) / SCALE, int(item["height"]) / SCALE
+        all_words.append({"text": text, "confidence": confidence, "x": x, "right": x + w,
+                          "y": y, "bottom": y + h, "cy": y + h / 2})
+    headings = [w for w in all_words if norm(w["text"]) == "notes" and w["y"] < 180]
+    if not headings:
+        return {"strict": False, "reason": "NO_NOTES_PANEL_HEADER", "notes": [], "components": []}
+    header_y = min(w["y"] for w in headings)
+    bands = ((header_y + 90, header_y + 190), (header_y + 225, header_y + 350))
+    words = []
+    for word in all_words:
+        if norm(word["text"]) in {"note", "notes"}:
+            continue
+        row_index = next((idx for idx, (lo, hi) in enumerate(bands) if lo <= word["cy"] < hi), None)
+        if row_index is not None:
+            words.append({**word, "row": row_index})
+    components = component_words(words)
+    parsed, uncertain = [], []
+    for item in components:
+        name, score, margin, exact = candidate(item["raw"], lexicon)
+        record = {**item, "note": name, "score": score, "margin": margin, "exactText": exact}
+        parsed.append(record)
+        if not exact or item["confidence"] < 50:
+            uncertain.append(record)
+    parsed.sort(key=lambda x: (x["row"], x["x"]))
+    observed = [x["note"] for x in parsed if x["note"]]
+    strict = bool(observed) and len(observed) <= 6 and not uncertain
+    reason = "" if strict else ("NO_READABLE_NOTES" if not observed else
+                                 "UNSUPPORTED_NOTE_LAYOUT" if len(observed) > 6 else
+                                 "READING_NOT_STRICT_ENOUGH")
+    return {"strict": strict, "reason": reason, "notes": observed, "components": parsed,
+            "uncertainComponents": uncertain, "notesHeaderY": round(header_y, 1)}
+
+
+def is_subsequence(shorter, longer):
+    pos = 0
+    for item in longer:
+        if pos < len(shorter) and shorter[pos] == item:
+            pos += 1
+    return pos == len(shorter)
+
+
+def visible_icon_counts(panel, header_y, rows):
+    """Count separated note-icon groups before each visible label row.
+
+    This is a completeness guard: an OCR list cannot pass if the card visibly
+    contains more note icons than the labels it read.
+    """
+    import numpy as np
+    pixels = np.asarray(panel)
+    counts = []
+    for row in range(rows):
+        lo, hi = (header_y + 15, header_y + 125) if row == 0 else (header_y + 150, header_y + 260)
+        lo, hi = max(0, int(lo)), min(pixels.shape[0], int(hi))
+        active = ((pixels[lo:hi, :] < 200).sum(axis=0) > 3).tolist()
+        # Join holes inside a detailed icon, but never the larger gap between
+        # two separately rendered note tiles.
+        i = 0
+        while i < len(active):
+            if active[i]:
+                i += 1; continue
+            j = i
+            while j < len(active) and not active[j]: j += 1
+            if i > 0 and j < len(active) and j - i <= 14:
+                for k in range(i, j): active[k] = True
+            i = j
+        segments, start = [], None
+        for x, value in enumerate(active + [False]):
+            if value and start is None: start = x
+            if start is not None and not value:
+                if x - start >= 20: segments.append((start, x))
+                start = None
+        counts.append(len(segments))
+    return counts
+
+
+def inspect(task):
+    row, card_text, lexicon = task
+    card = Path(card_text)
+    base = {"code": code(row.get("code")), "fragranticaId": str(row.get("fragranticaId") or ""),
+            "card": str(card.relative_to(ROOT)) if card_text else None,
+            "catalogNotes": list(row.get("fragranticaSocialCardNotes") or [])}
+    if not card_text:
+        return {**base, "result": "NO_EXACT_CARD"}
+    try:
+        with Image.open(card) as src:
+            if src.width < 800 or src.height < 800 or src.height / src.width < 0.85:
+                return {**base, "result": "UNSUPPORTED_CARD_GEOMETRY", "size": [src.width, src.height]}
+            sx, sy = src.width / 1200, src.height / 1200
+            x1, y1, x2, y2 = CROP
+            source_panel = src.crop((round(x1 * sx), round(y1 * sy), round(x2 * sx), round(y2 * sy))).convert("L").resize((420, 380), Image.Resampling.LANCZOS)
+        panel = ImageOps.autocontrast(source_panel)
+        panel = ImageEnhance.Contrast(panel).enhance(2.0)
+        panel = panel.resize((panel.width * SCALE, panel.height * SCALE), Image.Resampling.LANCZOS).filter(ImageFilter.SHARPEN)
+        payload = io.BytesIO(); panel.save(payload, format="PNG")
+        attempts = []
+        for psm in (6, 11):
+            run = subprocess.run(
+                ["tesseract", "stdin", "stdout", "--psm", str(psm), "-l", "eng", "tsv"],
+                input=payload.getvalue(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True,
+                # Tesseract otherwise creates its own large OpenMP pool per card;
+                # parallel card workers would then oversubscribe the machine.
+                env={**os.environ, "OMP_THREAD_LIMIT": "1"}, timeout=12,
+            )
+            attempts.append({"psm": psm, **parse_attempt(list(csv.DictReader(
+                io.StringIO(run.stdout.decode("utf-8", "replace")), delimiter="\t")), lexicon)})
+    except Exception as exc:
+        return {**base, "result": "OCR_ERROR", "error": str(exc)}
+    strict = [a for a in attempts if a["strict"]]
+    if not strict:
+        return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
+    # A longer strict list wins only when every other strict reading is its
+    # ordered subsequence.  This accepts a second OCR pass recovering a word
+    # missed by the first, but never resolves competing readings by guesswork.
+    selected = max(strict, key=lambda a: len(a["notes"]))
+    if not all(is_subsequence(a["notes"], selected["notes"]) for a in strict):
+        return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
+    visible_rows = 2 if selected["notesHeaderY"] < 90 else 1
+    icon_counts = visible_icon_counts(source_panel, selected["notesHeaderY"], visible_rows)
+    label_counts = [sum(1 for item in selected["components"] if item["row"] == i) for i in range(visible_rows)]
+    if icon_counts != label_counts:
+        return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts,
+                "iconCounts": icon_counts, "labelCounts": label_counts}
+    result = "EXACT_ORDERED_MATCH" if selected["notes"] == base["catalogNotes"] else "ORDERED_MISMATCH"
+    return {**base, "result": result, "observedNotes": selected["notes"], "components": selected["components"],
+            "notesHeaderY": selected["notesHeaderY"], "iconCounts": icon_counts, "labelCounts": label_counts, "attempts": attempts}
+
+
+def main():
+    rows = json.loads(DB.read_text(encoding="utf-8-sig"))
+    lexicon = [line.strip() for line in LEXICON.read_text(encoding="utf-8").splitlines() if line.strip()]
+    tasks = [(row, str(find_card(row)) if find_card(row) else "", lexicon) for row in rows]
+    workers = max(1, min(6, (os.cpu_count() or 2)))
+    results = []
+    with ProcessPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(inspect, task) for task in tasks]
+        for i, future in enumerate(as_completed(futures), 1):
+            results.append(future.result())
+            if i % 100 == 0:
+                print(f"audited {i}/{len(tasks)}", flush=True)
+    results.sort(key=lambda r: code(r["code"]))
+    counts = Counter(r["result"] for r in results)
+    report = {
+        "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
+        "catalogRows": len(rows), "results": dict(sorted(counts.items())), "rows": results,
+    }
+    OUT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"catalogRows": len(rows), "results": report["results"], "output": str(OUT)}, indent=2))
+
+
+if __name__ == "__main__":
+    main()
