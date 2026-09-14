@@ -1,11 +1,11 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 99,
+  "yellowRows": 100,
   "singleFailureRows": [],
   "byFailureSignature": [
     {
       "signature": "icons,notes,socialCard",
-      "count": 64,
+      "count": 65,
       "codes": [
         "2552-SOR",
         "2439-ZEG",
@@ -52,6 +52,7 @@
         "525-DRC",
         "521-DRC",
         "520-CHO",
+        "514-CHL",
         "497-CHA",
         "494-CHA",
         "493-CER",
@@ -130,7 +131,7 @@
   "byIssue": [
     {
       "issue": "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required.",
-      "count": 63,
+      "count": 64,
       "codes": [
         "2552-SOR",
         "2439-ZEG",
@@ -176,6 +177,7 @@
         "525-DRC",
         "521-DRC",
         "520-CHO",
+        "514-CHL",
         "497-CHA",
         "494-CHA",
         "493-CER",
@@ -562,7 +564,7 @@
   "byFailedCheck": [
     {
       "check": "icons",
-      "count": 99,
+      "count": 100,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -643,6 +645,7 @@
         "525-DRC",
         "521-DRC",
         "520-CHO",
+        "514-CHL",
         "497-CHA",
         "494-CHA",
         "493-CER",
@@ -667,7 +670,7 @@
     },
     {
       "check": "notes",
-      "count": 99,
+      "count": 100,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -748,6 +751,7 @@
         "525-DRC",
         "521-DRC",
         "520-CHO",
+        "514-CHL",
         "497-CHA",
         "494-CHA",
         "493-CER",
@@ -772,7 +776,7 @@
     },
     {
       "check": "socialCard",
-      "count": 99,
+      "count": 100,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -853,6 +857,7 @@
         "525-DRC",
         "521-DRC",
         "520-CHO",
+        "514-CHL",
         "497-CHA",
         "494-CHA",
         "493-CER",
@@ -2902,6 +2907,23 @@
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
+    },
+    {
+      "code": "514-CHL",
+      "brand": "Chloe",
+      "inspiredBy": "Love Story",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chloe/Love-Story-26227.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
     },
     {
       "code": "497-CHA",

@@ -1,14 +1,14 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **99**
+- Yellow rows: **100**
 - One check from green: **0**
 
 ## Failed checks
 
-- `icons`: **99**
-- `notes`: **99**
-- `socialCard`: **99**
+- `icons`: **100**
+- `notes`: **100**
+- `socialCard`: **100**
 - `gender`: **35**
 - `season`: **35**
 - `identity`: **32**
@@ -18,7 +18,7 @@
 
 ## Failure signatures
 
-- `icons,notes,socialCard`: **64** — 2552-SOR, 2439-ZEG, 2427-CLEA, 2351-LOU, 2250-ARBAS, 2160-ZAR, 2178-MON, 2104-CHA, 1989-VERT, 1912-AMG, 1885-WID, 1542-JOM, 1836-COT, 1684-GIV, 1659-CHRA, 1644-DRC, 1483-DSQ, 896-RCAV, 687-GUR, 153-PARF
+- `icons,notes,socialCard`: **65** — 2552-SOR, 2439-ZEG, 2427-CLEA, 2351-LOU, 2250-ARBAS, 2160-ZAR, 2178-MON, 2104-CHA, 1989-VERT, 1912-AMG, 1885-WID, 1542-JOM, 1836-COT, 1684-GIV, 1659-CHRA, 1644-DRC, 1483-DSQ, 896-RCAV, 687-GUR, 153-PARF
 - `fid,gender,icons,identity,image,notes,season,socialCard,url`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
 - `gender,icons,notes,season,socialCard`: **3** — 118-HAM, 325-PECK, 235-HOLL
 - `gender,icons,identity,notes,season,socialCard`: **1** — 1251-ROM
@@ -30,7 +30,7 @@
 
 ## Issues
 
-- Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required.: **63**
+- Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required.: **64**
 - Social Card not fully verified: **35**
 - Missing Main Notes: **35**
 - Note icons not fully verified: **35**
@@ -125,6 +125,7 @@
 | 525-DRC | Dior | Dune | icons, notes, socialCard |
 | 521-DRC | Dior | Dior Addict | icons, notes, socialCard |
 | 520-CHO | Chopard | Wish | icons, notes, socialCard |
+| 514-CHL | Chloe | Love Story | icons, notes, socialCard |
 | 497-CHA | Chanel | Chance | icons, notes, socialCard |
 | 494-CHA | Chanel | Allure | icons, notes, socialCard |
 | 493-CER | Cerruti | 1881 | icons, notes, socialCard |
