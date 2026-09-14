@@ -264,7 +264,10 @@ def main():
     rows = json.loads(DB.read_text(encoding="utf-8-sig"))
     lexicon = [line.strip() for line in LEXICON.read_text(encoding="utf-8").splitlines() if line.strip()]
     tasks = [(row, str(find_card(row)) if find_card(row) else "", lexicon) for row in rows]
-    workers = max(1, min(6, (os.cpu_count() or 2)))
+    # Hosted CI runners have less headroom than a development machine. Keep
+    # the default fast locally, while allowing workflows to lower concurrency.
+    requested_workers = int(os.environ.get("SOCIAL_CARD_AUDIT_WORKERS", "6"))
+    workers = max(1, min(requested_workers, 6, (os.cpu_count() or 2)))
     results = []
     with ProcessPoolExecutor(max_workers=workers) as pool:
         futures = [pool.submit(inspect, task) for task in tasks]
