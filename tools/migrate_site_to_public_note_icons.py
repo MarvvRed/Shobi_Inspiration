@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, re, shutil
+import json, re, shutil, unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +16,8 @@ idx=json.loads(INDEX.read_text(encoding='utf-8'))
 
 def norm(s):
     s=str(s or '').lower().replace('™','')
+    s=unicodedata.normalize('NFKD', s)
+    s=''.join(ch for ch in s if not unicodedata.combining(ch))
     s=re.sub(r'[^a-z0-9]+',' ',s)
     return ' '.join(s.split())
 
@@ -29,7 +31,8 @@ aliases={
  'cedarwood':'cedar',
  'cocoa':'cacao',
  'fruits':'fruity notes',
- 'meringue':'meringue',
+ 'frosting glace':'frosting',
+ 'meringue':'sugar',
  'poplar populus':'poplar',
  'strawberry s mores':'strawberry',
  'tiare and oud':'tiare flower',
@@ -60,7 +63,6 @@ for p in new_map.values():
 
 NEWMAP.write_text(prefix+json.dumps(new_map,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
 
-# Update active code references.
 repls={
  'src="note-icons/map.js"':'src="public/note-icons/map.js"',
  "src='note-icons/map.js'":"src='public/note-icons/map.js'",
@@ -79,14 +81,12 @@ for path in ROOT.rglob('*'):
     if new!=text:
         path.write_text(new,encoding='utf-8'); changed.append(str(path.relative_to(ROOT)))
 
-# Safety: active site + validator must reference new map.
 if 'public/note-icons/map.js' not in (ROOT/'index.html').read_text(encoding='utf-8'):
     raise SystemExit('index.html not migrated')
 validator=(ROOT/'tools'/'build_validation_audit.py').read_text(encoding='utf-8')
 if 'ROOT / "public" / "note-icons" / "map.js"' not in validator:
     raise SystemExit('validator not migrated')
 
-# Remove legacy icon library only after all checks above pass.
 shutil.rmtree(OLD)
 
 report = [
