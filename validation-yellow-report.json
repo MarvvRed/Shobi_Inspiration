@@ -1,8 +1,78 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 35,
+  "yellowRows": 99,
   "singleFailureRows": [],
   "byFailureSignature": [
+    {
+      "signature": "icons,notes,socialCard",
+      "count": 64,
+      "codes": [
+        "2552-SOR",
+        "2439-ZEG",
+        "2427-CLEA",
+        "2351-LOU",
+        "2250-ARBAS",
+        "2160-ZAR",
+        "2178-MON",
+        "2104-CHA",
+        "1989-VERT",
+        "1912-AMG",
+        "1885-WID",
+        "1542-JOM",
+        "1836-COT",
+        "1684-GIV",
+        "1659-CHRA",
+        "1644-DRC",
+        "1483-DSQ",
+        "896-RCAV",
+        "687-GUR",
+        "153-PARF",
+        "1161-HUG",
+        "466-CAL",
+        "304-KIE",
+        "989-YZLO",
+        "987-YZLO",
+        "985-YZLO",
+        "979-YZLO",
+        "945-VER",
+        "910-SARJ",
+        "904-SALV",
+        "858-PAC",
+        "777-LAL",
+        "719-ISS",
+        "692-GUR",
+        "674-GUC",
+        "668-GIV",
+        "667-GIV",
+        "666-GIV",
+        "653-ARM",
+        "612-ESC",
+        "570-DOL",
+        "533-DRC",
+        "525-DRC",
+        "521-DRC",
+        "520-CHO",
+        "497-CHA",
+        "494-CHA",
+        "493-CER",
+        "487-CRT",
+        "425-BRB",
+        "421-BRB",
+        "411-BOD",
+        "399-ARA",
+        "880-PRA",
+        "777-LAL",
+        "769-LART",
+        "1160-HUG",
+        "1156-HER",
+        "1141-GIV",
+        "1136-ARM",
+        "1076-DRC",
+        "1061-CRT",
+        "1060-CRT",
+        "476-CAL"
+      ]
+    },
     {
       "signature": "fid,gender,icons,identity,image,notes,season,socialCard,url",
       "count": 31,
@@ -58,6 +128,75 @@
     }
   ],
   "byIssue": [
+    {
+      "issue": "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required.",
+      "count": 63,
+      "codes": [
+        "2552-SOR",
+        "2439-ZEG",
+        "2427-CLEA",
+        "2351-LOU",
+        "2250-ARBAS",
+        "2160-ZAR",
+        "2178-MON",
+        "2104-CHA",
+        "1989-VERT",
+        "1885-WID",
+        "1542-JOM",
+        "1836-COT",
+        "1684-GIV",
+        "1659-CHRA",
+        "1644-DRC",
+        "1483-DSQ",
+        "896-RCAV",
+        "687-GUR",
+        "153-PARF",
+        "1161-HUG",
+        "466-CAL",
+        "304-KIE",
+        "989-YZLO",
+        "987-YZLO",
+        "985-YZLO",
+        "979-YZLO",
+        "945-VER",
+        "910-SARJ",
+        "904-SALV",
+        "858-PAC",
+        "777-LAL",
+        "719-ISS",
+        "692-GUR",
+        "674-GUC",
+        "668-GIV",
+        "667-GIV",
+        "666-GIV",
+        "653-ARM",
+        "612-ESC",
+        "570-DOL",
+        "533-DRC",
+        "525-DRC",
+        "521-DRC",
+        "520-CHO",
+        "497-CHA",
+        "494-CHA",
+        "493-CER",
+        "487-CRT",
+        "425-BRB",
+        "421-BRB",
+        "411-BOD",
+        "399-ARA",
+        "880-PRA",
+        "777-LAL",
+        "769-LART",
+        "1160-HUG",
+        "1156-HER",
+        "1141-GIV",
+        "1136-ARM",
+        "1076-DRC",
+        "1061-CRT",
+        "1060-CRT",
+        "476-CAL"
+      ]
+    },
     {
       "issue": "Social Card not fully verified",
       "count": 35,
@@ -411,9 +550,331 @@
         "222-DIP",
         "200-CIR"
       ]
+    },
+    {
+      "issue": "Social Card note-count discrepancy reported; current stored evidence is not independently sufficient. Complete revalidation required.",
+      "count": 1,
+      "codes": [
+        "1912-AMG"
+      ]
     }
   ],
   "byFailedCheck": [
+    {
+      "check": "icons",
+      "count": 99,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2552-SOR",
+        "2439-ZEG",
+        "2427-CLEA",
+        "2351-LOU",
+        "2250-ARBAS",
+        "2160-ZAR",
+        "2178-MON",
+        "2104-CHA",
+        "2085-CLIV",
+        "1989-VERT",
+        "1912-AMG",
+        "1885-WID",
+        "1542-JOM",
+        "1836-COT",
+        "1748-BYR",
+        "1684-GIV",
+        "1659-CHRA",
+        "1644-DRC",
+        "1550-YAN",
+        "1483-DSQ",
+        "896-RCAV",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "687-GUR",
+        "314-MOL",
+        "153-PARF",
+        "1161-HUG",
+        "466-CAL",
+        "118-HAM",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "325-PECK",
+        "313-MOL",
+        "311-MOL",
+        "304-KIE",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "235-HOLL",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "989-YZLO",
+        "987-YZLO",
+        "985-YZLO",
+        "979-YZLO",
+        "945-VER",
+        "910-SARJ",
+        "904-SALV",
+        "858-PAC",
+        "777-LAL",
+        "719-ISS",
+        "692-GUR",
+        "674-GUC",
+        "668-GIV",
+        "667-GIV",
+        "666-GIV",
+        "653-ARM",
+        "612-ESC",
+        "570-DOL",
+        "533-DRC",
+        "525-DRC",
+        "521-DRC",
+        "520-CHO",
+        "497-CHA",
+        "494-CHA",
+        "493-CER",
+        "487-CRT",
+        "425-BRB",
+        "421-BRB",
+        "411-BOD",
+        "399-ARA",
+        "1251-ROM",
+        "880-PRA",
+        "777-LAL",
+        "769-LART",
+        "1160-HUG",
+        "1156-HER",
+        "1141-GIV",
+        "1136-ARM",
+        "1076-DRC",
+        "1061-CRT",
+        "1060-CRT",
+        "476-CAL"
+      ]
+    },
+    {
+      "check": "notes",
+      "count": 99,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2552-SOR",
+        "2439-ZEG",
+        "2427-CLEA",
+        "2351-LOU",
+        "2250-ARBAS",
+        "2160-ZAR",
+        "2178-MON",
+        "2104-CHA",
+        "2085-CLIV",
+        "1989-VERT",
+        "1912-AMG",
+        "1885-WID",
+        "1542-JOM",
+        "1836-COT",
+        "1748-BYR",
+        "1684-GIV",
+        "1659-CHRA",
+        "1644-DRC",
+        "1550-YAN",
+        "1483-DSQ",
+        "896-RCAV",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "687-GUR",
+        "314-MOL",
+        "153-PARF",
+        "1161-HUG",
+        "466-CAL",
+        "118-HAM",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "325-PECK",
+        "313-MOL",
+        "311-MOL",
+        "304-KIE",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "235-HOLL",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "989-YZLO",
+        "987-YZLO",
+        "985-YZLO",
+        "979-YZLO",
+        "945-VER",
+        "910-SARJ",
+        "904-SALV",
+        "858-PAC",
+        "777-LAL",
+        "719-ISS",
+        "692-GUR",
+        "674-GUC",
+        "668-GIV",
+        "667-GIV",
+        "666-GIV",
+        "653-ARM",
+        "612-ESC",
+        "570-DOL",
+        "533-DRC",
+        "525-DRC",
+        "521-DRC",
+        "520-CHO",
+        "497-CHA",
+        "494-CHA",
+        "493-CER",
+        "487-CRT",
+        "425-BRB",
+        "421-BRB",
+        "411-BOD",
+        "399-ARA",
+        "1251-ROM",
+        "880-PRA",
+        "777-LAL",
+        "769-LART",
+        "1160-HUG",
+        "1156-HER",
+        "1141-GIV",
+        "1136-ARM",
+        "1076-DRC",
+        "1061-CRT",
+        "1060-CRT",
+        "476-CAL"
+      ]
+    },
+    {
+      "check": "socialCard",
+      "count": 99,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2552-SOR",
+        "2439-ZEG",
+        "2427-CLEA",
+        "2351-LOU",
+        "2250-ARBAS",
+        "2160-ZAR",
+        "2178-MON",
+        "2104-CHA",
+        "2085-CLIV",
+        "1989-VERT",
+        "1912-AMG",
+        "1885-WID",
+        "1542-JOM",
+        "1836-COT",
+        "1748-BYR",
+        "1684-GIV",
+        "1659-CHRA",
+        "1644-DRC",
+        "1550-YAN",
+        "1483-DSQ",
+        "896-RCAV",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "687-GUR",
+        "314-MOL",
+        "153-PARF",
+        "1161-HUG",
+        "466-CAL",
+        "118-HAM",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "325-PECK",
+        "313-MOL",
+        "311-MOL",
+        "304-KIE",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "235-HOLL",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "989-YZLO",
+        "987-YZLO",
+        "985-YZLO",
+        "979-YZLO",
+        "945-VER",
+        "910-SARJ",
+        "904-SALV",
+        "858-PAC",
+        "777-LAL",
+        "719-ISS",
+        "692-GUR",
+        "674-GUC",
+        "668-GIV",
+        "667-GIV",
+        "666-GIV",
+        "653-ARM",
+        "612-ESC",
+        "570-DOL",
+        "533-DRC",
+        "525-DRC",
+        "521-DRC",
+        "520-CHO",
+        "497-CHA",
+        "494-CHA",
+        "493-CER",
+        "487-CRT",
+        "425-BRB",
+        "421-BRB",
+        "411-BOD",
+        "399-ARA",
+        "1251-ROM",
+        "880-PRA",
+        "777-LAL",
+        "769-LART",
+        "1160-HUG",
+        "1156-HER",
+        "1141-GIV",
+        "1136-ARM",
+        "1076-DRC",
+        "1061-CRT",
+        "1060-CRT",
+        "476-CAL"
+      ]
+    },
     {
       "check": "gender",
       "count": 35,
@@ -456,130 +917,7 @@
       ]
     },
     {
-      "check": "icons",
-      "count": 35,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "118-HAM",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "325-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "235-HOLL",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "1251-ROM"
-      ]
-    },
-    {
-      "check": "notes",
-      "count": 35,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "118-HAM",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "325-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "235-HOLL",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "1251-ROM"
-      ]
-    },
-    {
       "check": "season",
-      "count": 35,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "118-HAM",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "325-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "235-HOLL",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "1251-ROM"
-      ]
-    },
-    {
-      "check": "socialCard",
       "count": 35,
       "codes": [
         "2816-MOOD",
@@ -864,6 +1202,142 @@
       "iconsCount": 0
     },
     {
+      "code": "2552-SOR",
+      "brand": "Siordia Parfums",
+      "inspiredBy": "Night Horse",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Siordia-Parfums/Night-Horse--75119.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 3,
+      "matchedNotesCount": 3,
+      "iconsCount": 3
+    },
+    {
+      "code": "2439-ZEG",
+      "brand": "Ermenegildo Zegna",
+      "inspiredBy": "Indonesian Oud",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ermenegildo-Zegna/Indonesian-Oud-16188.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "2427-CLEA",
+      "brand": "Clean",
+      "inspiredBy": "Clean Warm Cotton",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Clean/Clean-Warm-Cotton-3024.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "2351-LOU",
+      "brand": "Christian Louboutin",
+      "inspiredBy": "Bikini Questa Sera",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Christian-Louboutin/Bikini-Questa-Sera-40982.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "2250-ARBAS",
+      "brand": "Armand Basi",
+      "inspiredBy": "In Red",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Armand-Basi/In-Red-128.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "2160-ZAR",
+      "brand": "Zara",
+      "inspiredBy": "Barbie",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Zara/Barbie-83741.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "2178-MON",
+      "brand": "moncler",
+      "inspiredBy": "Moncler pour Homme",
+      "fragranticaUrl": "https://www.fragrantica.com/p/69818",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "2104-CHA",
+      "brand": "Chanel",
+      "inspiredBy": "1957 Eau de Parfum",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/1957-Eau-de-Parfum-52483.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
       "code": "2085-CLIV",
       "brand": "Clive Christian",
       "inspiredBy": "X NEROLI LIMITED EDITION - CLIVE CHRISTIAN",
@@ -893,6 +1367,91 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
+    },
+    {
+      "code": "1989-VERT",
+      "brand": "Vertus",
+      "inspiredBy": "Narcos is",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Vertus/Narcos-is-47923.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1912-AMG",
+      "brand": "Amouage",
+      "inspiredBy": "Myths Man",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Amouage/Myths-Man-38259.html",
+      "issues": [
+        "Social Card note-count discrepancy reported; current stored evidence is not independently sufficient. Complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 4,
+      "matchedNotesCount": 4,
+      "iconsCount": 4
+    },
+    {
+      "code": "1885-WID",
+      "brand": "Widian",
+      "inspiredBy": "Widian London",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Widian/Widian-London-47781.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1542-JOM",
+      "brand": "Jo Malone London",
+      "inspiredBy": "English Oak Redcurrant",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Jo-Malone-London/English-Oak-Redcurrant-46186.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 1,
+      "matchedNotesCount": 1,
+      "iconsCount": 1
+    },
+    {
+      "code": "1836-COT",
+      "brand": "Coty",
+      "inspiredBy": "Vanilla Fields",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Coty/Vanilla-Fields-6029.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 4,
+      "matchedNotesCount": 4,
+      "iconsCount": 4
     },
     {
       "code": "1748-BYR",
@@ -926,6 +1485,57 @@
       "iconsCount": 0
     },
     {
+      "code": "1684-GIV",
+      "brand": "Givenchy",
+      "inspiredBy": "Ysatis",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Ysatis-36.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1659-CHRA",
+      "brand": "Christina Aguilera",
+      "inspiredBy": "Christina Aguilera by Night",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Christina-Aguilera/Christina-Aguilera-by-Night-6714.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "1644-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Sauvage Elixir",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Sauvage-Elixir-68415.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
       "code": "1550-YAN",
       "brand": "Yankee Candle",
       "inspiredBy": "HOME SWEET HOME - YANKEE",
@@ -955,6 +1565,40 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
+    },
+    {
+      "code": "1483-DSQ",
+      "brand": "Dsquared2",
+      "inspiredBy": "Potion",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/DSQUARED2/Potion-12937.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "896-RCAV",
+      "brand": "Roberto Cavalli",
+      "inspiredBy": "Splendid-vanilla",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Roberto-Cavalli/Splendid-Vanilla-58538.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
     },
     {
       "code": "383-YAN",
@@ -1050,6 +1694,23 @@
       "iconsCount": 0
     },
     {
+      "code": "687-GUR",
+      "brand": "Guerlain",
+      "inspiredBy": "L Instant de Guerlain",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Guerlain/L-Instant-de-Guerlain-51.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
       "code": "314-MOL",
       "brand": "Molton Brown",
       "inspiredBy": "ZIAO JAO - MOLTON BROWN",
@@ -1079,6 +1740,57 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
+    },
+    {
+      "code": "153-PARF",
+      "brand": "By Kilian",
+      "inspiredBy": "Straight to Heaven",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/By-Kilian/Straight-to-Heaven-4323.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1161-HUG",
+      "brand": "Hugo Boss",
+      "inspiredBy": "Boss Bottled Oud",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-Oud-31141.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "466-CAL",
+      "brand": "Calvin Klein",
+      "inspiredBy": "Calvin Klein Women",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Calvin-Klein-Women-50662.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     {
       "code": "118-HAM",
@@ -1499,6 +2211,23 @@
       "iconsCount": 0
     },
     {
+      "code": "304-KIE",
+      "brand": "Kiehl s",
+      "inspiredBy": "Original Musk",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kiehl-s/Original-Musk-6188.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
       "code": "289-JOM",
       "brand": "Jo Malone London",
       "inspiredBy": "SWEET ALMON & MACARRON - JO MALONE",
@@ -1801,6 +2530,516 @@
       "iconsCount": 0
     },
     {
+      "code": "989-YZLO",
+      "brand": "Yves Saint Laurent",
+      "inspiredBy": "Rive Gauche",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Rive-Gauche-96.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "987-YZLO",
+      "brand": "Yves Saint Laurent",
+      "inspiredBy": "Paris",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Paris-94.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "985-YZLO",
+      "brand": "Yves Saint Laurent",
+      "inspiredBy": "Mon Paris",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Mon-Paris-38914.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "979-YZLO",
+      "brand": "Yves Saint Laurent",
+      "inspiredBy": "Cinema",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Cinema-92.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "945-VER",
+      "brand": "Versace",
+      "inspiredBy": "Eros Pour Femme",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Versace/Eros-Pour-Femme-28958.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "910-SARJ",
+      "brand": "Sarah Jessica Parker",
+      "inspiredBy": "Lovely",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Sarah-Jessica-Parker/Lovely-993.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "904-SALV",
+      "brand": "Salvador Dali",
+      "inspiredBy": "SALVADOR DALI fragrances",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Salvador-Dali/Salvador-Dali-765.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "858-PAC",
+      "brand": "Rabanne",
+      "inspiredBy": "Black XS for Her",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Rabanne/Black-XS-for-Her-1138.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "777-LAL",
+      "brand": "Lalique",
+      "inspiredBy": "Sculpteur d Epices",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lalique/Sculpteur-d-Epices-28250.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "719-ISS",
+      "brand": "Issey Miyake",
+      "inspiredBy": "Pleats Please",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/Pleats-Please-15464.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "692-GUR",
+      "brand": "Guerlain",
+      "inspiredBy": "Samsara Eau de Parfum",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Guerlain/Samsara-Eau-de-Parfum-55.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "674-GUC",
+      "brand": "Gucci",
+      "inspiredBy": "Gucci Bamboo",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Gucci/Gucci-Bamboo-30815.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "668-GIV",
+      "brand": "Givenchy",
+      "inspiredBy": "Hot Couture",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Hot-Couture-35.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "667-GIV",
+      "brand": "Givenchy",
+      "inspiredBy": "Dahlia Noir",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Dahlia-Noir-12146.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "666-GIV",
+      "brand": "Givenchy",
+      "inspiredBy": "Dahlia Divin",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Dahlia-Divin-25972.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "653-ARM",
+      "brand": "Giorgio Armani",
+      "inspiredBy": "Mania",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Mania-423.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "612-ESC",
+      "brand": "Escada",
+      "inspiredBy": "TURQUOISE - ESCADA",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Escada/Turquoise-Summer-28630.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "570-DOL",
+      "brand": "Dolce & Gabbana",
+      "inspiredBy": "(RED CUP)",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dolce-Gabbana/D-G-484.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 4,
+      "matchedNotesCount": 4,
+      "iconsCount": 4
+    },
+    {
+      "code": "533-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Midnight Poison",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Midnight-Poison-1282.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "525-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Dune",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dune-221.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "521-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Dior Addict",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dior-Addict-215.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "520-CHO",
+      "brand": "Chopard",
+      "inspiredBy": "Wish",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chopard/Wish-353.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "497-CHA",
+      "brand": "Chanel",
+      "inspiredBy": "Chance",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Chance-610.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "494-CHA",
+      "brand": "Chanel",
+      "inspiredBy": "Allure",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Allure-502.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "493-CER",
+      "brand": "Cerruti",
+      "inspiredBy": "1881",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Cerruti/1881-327.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "487-CRT",
+      "brand": "Cartier",
+      "inspiredBy": "Baiser Vole",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/Baiser-Vole-12878.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 3,
+      "matchedNotesCount": 3,
+      "iconsCount": 3
+    },
+    {
+      "code": "425-BRB",
+      "brand": "Burberry",
+      "inspiredBy": "Burberry Her",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Burberry/Burberry-Her-51694.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "421-BRB",
+      "brand": "Burberry",
+      "inspiredBy": "Body",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Burberry/Body-13014.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "411-BOD",
+      "brand": "The Body Shop",
+      "inspiredBy": "White Musk",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Body-Shop/White-Musk-2432.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "399-ARA",
+      "brand": "Aramis",
+      "inspiredBy": "Tuscany Per Donna",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Aramis/Tuscany-Per-Donna-122.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
       "code": "1251-ROM",
       "brand": "Romane",
       "inspiredBy": "Royal Blue",
@@ -1824,6 +3063,193 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
+    },
+    {
+      "code": "880-PRA",
+      "brand": "Prada",
+      "inspiredBy": "Infusion d Oeillet",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Infusion-d-Oeillet-31045.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "777-LAL",
+      "brand": "Lalique",
+      "inspiredBy": "Sculpteur d Epices",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lalique/Sculpteur-d-Epices-28250.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "769-LART",
+      "brand": "LArtisan Parfumeur",
+      "inspiredBy": "Premier Figuier",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/L-Artisan-Parfumeur/Premier-Figuier-1261.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1160-HUG",
+      "brand": "Hugo Boss",
+      "inspiredBy": "Boss Bottled",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hugo-Boss/Boss-Bottled-383.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1156-HER",
+      "brand": "Hermès",
+      "inspiredBy": "Terre d Hermes",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/Terre-d-Hermes-17.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1141-GIV",
+      "brand": "Givenchy",
+      "inspiredBy": "Pi",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Pi-39.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1136-ARM",
+      "brand": "Giorgio Armani",
+      "inspiredBy": "Emporio Armani Stronger With You",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-45258.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1076-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Fahrenheit",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Fahrenheit-228.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
+    },
+    {
+      "code": "1061-CRT",
+      "brand": "Cartier",
+      "inspiredBy": "Pasha de Cartier Fraicheur Menthe",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/Pasha-de-Cartier-Fraicheur-Menthe-2446.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1060-CRT",
+      "brand": "Cartier",
+      "inspiredBy": "L Envol de Cartier",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/L-Envol-de-Cartier-39885.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "476-CAL",
+      "brand": "Calvin Klein",
+      "inspiredBy": "CK One Summer 2016",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-One-Summer-2016-35568.html",
+      "issues": [
+        "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+      ],
+      "failedChecks": [
+        "icons",
+        "notes",
+        "socialCard"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     }
   ]
 }
