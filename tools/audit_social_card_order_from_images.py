@@ -268,13 +268,18 @@ def main():
     # the default fast locally, while allowing workflows to lower concurrency.
     requested_workers = int(os.environ.get("SOCIAL_CARD_AUDIT_WORKERS", "6"))
     workers = max(1, min(requested_workers, 6, (os.cpu_count() or 2)))
+    batch_size = max(1, int(os.environ.get("SOCIAL_CARD_AUDIT_BATCH", str(len(tasks)))))
     results = []
-    with ProcessPoolExecutor(max_workers=workers) as pool:
-        futures = [pool.submit(inspect, task) for task in tasks]
-        for i, future in enumerate(as_completed(futures), 1):
-            results.append(future.result())
-            if i % 100 == 0:
-                print(f"audited {i}/{len(tasks)}", flush=True)
+    for start in range(0, len(tasks), batch_size):
+        batch = tasks[start:start + batch_size]
+        # Restarting the small OCR worker pool between batches keeps hosted CI
+        # memory bounded without changing what is read or accepted as proof.
+        with ProcessPoolExecutor(max_workers=workers) as pool:
+            futures = [pool.submit(inspect, task) for task in batch]
+            for i, future in enumerate(as_completed(futures), start + 1):
+                results.append(future.result())
+                if i % 100 == 0:
+                    print(f"audited {i}/{len(tasks)}", flush=True)
     results.sort(key=lambda r: code(r["code"]))
     counts = Counter(r["result"] for r in results)
     report = {
