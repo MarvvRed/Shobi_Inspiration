@@ -21,9 +21,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Recover malformed generated metadata
+        run: |
+          if python -m json.tool database_complete.json >/dev/null 2>&1 && python -m json.tool social-card-main-notes-validated.json >/dev/null 2>&1; then
+            echo 'Generated metadata is valid.'
+            exit 0
+          fi
+          echo 'Recovering the last valid generated metadata from the parent commit.'
+          git show HEAD^:database_complete.json > database_complete.json
+          git show HEAD^:social-card-main-notes-validated.json > social-card-main-notes-validated.json
 
       - name: Build website database from live CSV
         run: python tools/build_live_site_from_shobi_csv.py
+
+      - name: Rebuild strict ordered Social Card audit
+        run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow
+          python tools/audit_social_card_order_from_images.py
+          python tools/apply_strict_ordered_card_audit.py
+          python tools/refresh_strict_ordered_mismatches.py
 
       - name: Build strict validation audit
         run: python tools/build_validation_audit.py
@@ -85,7 +105,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add database_complete.json catalog_site.json script.js index.html
+          git add database_complete.json catalog_site.json social-card-main-notes-validated.json social-card-ordered-image-audit.json strict-ordered-card-corrections.json script.js index.html
           if git diff --cached --quiet; then
             echo 'No website catalog changes.'
             exit 0
