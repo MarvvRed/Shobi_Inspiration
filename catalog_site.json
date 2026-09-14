@@ -69961,21 +69961,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 5,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 5,
     "validationNotesCount": 5,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Chloe",
