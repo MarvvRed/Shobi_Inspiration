@@ -1,8 +1,8 @@
 # Validation yellow report
 
 - Catalog rows: **2324**
-- Yellow rows: **36**
-- One check from green: **1**
+- Yellow rows: **35**
+- One check from green: **0**
 
 ## Failed checks
 
@@ -15,20 +15,17 @@
 - `fid`: **31**
 - `image`: **31**
 - `url`: **31**
-- `originalProductType`: **1**
 
 ## Failure signatures
 
 - `fid,gender,icons,identity,image,notes,season,socialCard,url`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
 - `gender,icons,notes,season,socialCard`: **3** — 118-HAM, 325-PECK, 235-HOLL
-- `originalProductType`: **1** — 911-SEPH
 - `gender,icons,identity,notes,season,socialCard`: **1** — 1251-ROM
 
 ## One check from green
 
 | Code | Brand | Inspired by | Remaining check |
 |---|---|---|---|
-| 911-SEPH | Sephora | Fleur de Coton / Cotton Flower | originalProductType |
 
 ## Issues
 
@@ -41,7 +38,6 @@
 - Missing Fragrantica ID: **31**
 - Missing direct Fragrantica URL: **31**
 - Missing perfume image: **31**
-- Original product type not fully verified (current Sephora listing is hair/body mist): **1**
 
 ## Yellow rows
 
@@ -81,5 +77,4 @@
 | 223-DIP | Diptyque | BAIES | fid, gender, icons, identity, image, notes, season, socialCard, url |
 | 222-DIP | Diptyque | AMBRE | fid, gender, icons, identity, image, notes, season, socialCard, url |
 | 200-CIR | CIRE TRUDON | ERNESTO CHE GUEVARA | fid, gender, icons, identity, image, notes, season, socialCard, url |
-| 911-SEPH | Sephora | Fleur de Coton / Cotton Flower | originalProductType |
 | 1251-ROM | Romane | Royal Blue | gender, icons, identity, notes, season, socialCard |

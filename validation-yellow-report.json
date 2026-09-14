@@ -1,23 +1,7 @@
 {
   "catalogRows": 2324,
-  "yellowRows": 36,
-  "singleFailureRows": [
-    {
-      "code": "911-SEPH",
-      "brand": "Sephora",
-      "inspiredBy": "Fleur de Coton / Cotton Flower",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Sephora/Fleur-de-Coton-Cotton-Flower-37955.html",
-      "issues": [
-        "Original product type not fully verified (current Sephora listing is hair/body mist)"
-      ],
-      "failedChecks": [
-        "originalProductType"
-      ],
-      "notesCount": 1,
-      "matchedNotesCount": 1,
-      "iconsCount": 1
-    }
-  ],
+  "yellowRows": 35,
+  "singleFailureRows": [],
   "byFailureSignature": [
     {
       "signature": "fid,gender,icons,identity,image,notes,season,socialCard,url",
@@ -63,13 +47,6 @@
         "118-HAM",
         "325-PECK",
         "235-HOLL"
-      ]
-    },
-    {
-      "signature": "originalProductType",
-      "count": 1,
-      "codes": [
-        "911-SEPH"
       ]
     },
     {
@@ -434,13 +411,6 @@
         "222-DIP",
         "200-CIR"
       ]
-    },
-    {
-      "issue": "Original product type not fully verified (current Sephora listing is hair/body mist)",
-      "count": 1,
-      "codes": [
-        "911-SEPH"
-      ]
     }
   ],
   "byFailedCheck": [
@@ -796,13 +766,6 @@
         "223-DIP",
         "222-DIP",
         "200-CIR"
-      ]
-    },
-    {
-      "check": "originalProductType",
-      "count": 1,
-      "codes": [
-        "911-SEPH"
       ]
     }
   ],
@@ -1836,21 +1799,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "911-SEPH",
-      "brand": "Sephora",
-      "inspiredBy": "Fleur de Coton / Cotton Flower",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Sephora/Fleur-de-Coton-Cotton-Flower-37955.html",
-      "issues": [
-        "Original product type not fully verified (current Sephora listing is hair/body mist)"
-      ],
-      "failedChecks": [
-        "originalProductType"
-      ],
-      "notesCount": 1,
-      "matchedNotesCount": 1,
-      "iconsCount": 1
     },
     {
       "code": "1251-ROM",
