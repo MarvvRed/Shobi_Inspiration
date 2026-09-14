@@ -1,0 +1,188 @@
+{
+  "indexRecords": 1923,
+  "downloadedIndex": 1922,
+  "failed": [
+    {
+      "id": 1743,
+      "slug": "Melbaton",
+      "page_url": "https://www.fragrantica.com/notes/Melbaton-1743.html",
+      "image_url": "https://fimgs.net/mdimg/sastojci/t.1743.jpg",
+      "file": null,
+      "status": "failed: HTTP Error 404: Not Found"
+    }
+  ],
+  "actualJpgFiles": 1922,
+  "missingIndexedFiles": [],
+  "extraJpgFiles": [],
+  "corruptImages": [],
+  "tinyImages": [],
+  "dimensionCounts": {
+    "120x120": 1910,
+    "120x119": 2,
+    "120x73": 1,
+    "120x121": 3,
+    "120x113": 1,
+    "120x94": 1,
+    "120x117": 1,
+    "120x126": 1,
+    "120x112": 1,
+    "120x111": 1
+  },
+  "duplicateContentGroups": [
+    [
+      "australian-oud-1719.jpg",
+      "kyara-wood-1638.jpg"
+    ],
+    [
+      "brazilian-rosewood-110.jpg",
+      "palisander-rosewood-38.jpg"
+    ],
+    [
+      "cambodian-oud-762.jpg",
+      "indian-oud-759.jpg"
+    ],
+    [
+      "chinese-oud-1434.jpg",
+      "malaysian-oud-1433.jpg"
+    ],
+    [
+      "cider-apple-1872.jpg",
+      "cider-apple-1873.jpg"
+    ],
+    [
+      "coumarin-259.jpg",
+      "tonka-bean-73.jpg"
+    ],
+    [
+      "dartanol-1726.jpg",
+      "paraguayan-green-sandalwood-1710.jpg"
+    ],
+    [
+      "fabric-953.jpg",
+      "linen-857.jpg"
+    ],
+    [
+      "galaxolide-887.jpg",
+      "musk-4.jpg"
+    ],
+    [
+      "gyokuro-tea-1708.jpg",
+      "jin-xuan-tea-leaves-1707.jpg"
+    ],
+    [
+      "indonesian-oud-1820.jpg",
+      "trat-oud-1867.jpg"
+    ],
+    [
+      "lishan-tea-1705.jpg",
+      "winter-tea-1706.jpg"
+    ],
+    [
+      "magnolia-leaf-1170.jpg",
+      "michelia-1160.jpg"
+    ],
+    [
+      "mignonette-226.jpg",
+      "reseda-690.jpg"
+    ],
+    [
+      "molasses-767.jpg",
+      "molasses-768.jpg"
+    ],
+    [
+      "orange-flower-water-1403.jpg",
+      "orange-flower-water-1411.jpg"
+    ],
+    [
+      "spiranol-1052.jpg",
+      "verdox-1053.jpg"
+    ],
+    [
+      "tomato-252.jpg",
+      "tomato-leaf-253.jpg"
+    ],
+    [
+      "vietnamese-oud-1425.jpg",
+      "vietnamese-oud-1426.jpg"
+    ]
+  ],
+  "databaseUniqueUsedNotes": 525,
+  "databaseNoteOccurrences": 12793,
+  "usedNotesMissingFromNewFragranticaIndex": [
+    {
+      "note": "Almonds",
+      "count": 1
+    },
+    {
+      "note": "Aloe",
+      "count": 1
+    },
+    {
+      "note": "Amalfi Lemon",
+      "count": 1
+    },
+    {
+      "note": "Ambrofix™",
+      "count": 5
+    },
+    {
+      "note": "Aqual™",
+      "count": 1
+    },
+    {
+      "note": "Cedarwood",
+      "count": 1
+    },
+    {
+      "note": "Cocoa",
+      "count": 1
+    },
+    {
+      "note": "Fruits",
+      "count": 1
+    },
+    {
+      "note": "Meringue",
+      "count": 1
+    },
+    {
+      "note": "Poplar (Populus)",
+      "count": 1
+    },
+    {
+      "note": "Strawberry S’mores",
+      "count": 1
+    },
+    {
+      "note": "Tiare and Oud",
+      "count": 1
+    },
+    {
+      "note": "Verbena",
+      "count": 1
+    },
+    {
+      "note": "White Ginger",
+      "count": 1
+    }
+  ],
+  "existingMapKeys": 525,
+  "existingMapMissingFiles": [],
+  "existingMapKeysMatchedByNewIndex": 511,
+  "existingMapKeysNotMatchedByNewIndex": [
+    "aqual™",
+    "ambrofix™",
+    "strawberry s’mores",
+    "cedarwood",
+    "white ginger",
+    "cocoa",
+    "tiare and oud",
+    "almonds",
+    "fruits",
+    "meringue",
+    "poplar (populus)",
+    "aloe",
+    "verbena",
+    "amalfi lemon"
+  ]
+}
