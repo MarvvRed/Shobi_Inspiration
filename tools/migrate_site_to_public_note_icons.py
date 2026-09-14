@@ -64,10 +64,10 @@ for p in new_map.values():
 NEWMAP.write_text(prefix+json.dumps(new_map,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
 
 repls={
- 'src="note-icons/map.js"':'src="public/note-icons/map.js"',
- "src='note-icons/map.js'":"src='public/note-icons/map.js'",
- 'ROOT / "note-icons" / "map.js"':'ROOT / "public" / "note-icons" / "map.js"',
- "ROOT / 'note-icons' / 'map.js'":"ROOT / 'public' / 'note-icons' / 'map.js'",
+ 'src="public/note-icons/map.js"':'src="public/note-icons/map.js"',
+ "src='public/note-icons/map.js'":"src='public/note-icons/map.js'",
+ 'ROOT / "public" / "note-icons" / "map.js"':'ROOT / "public" / "note-icons" / "map.js"',
+ "ROOT / 'public' / 'note-icons' / 'map.js'":"ROOT / 'public' / 'note-icons' / 'map.js'",
 }
 changed=[]
 for path in ROOT.rglob('*'):

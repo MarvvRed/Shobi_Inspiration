@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "database_complete.json"
 SITE = ROOT / "catalog_site.json"
-NOTE_ICON_MAP = ROOT / "note-icons" / "map.js"
+NOTE_ICON_MAP = ROOT / "public" / "note-icons" / "map.js"
 GENDER_SEASON = ROOT / "fragrantica-scraper-archive" / "social-cards" / "gender-season.csv"
 VALIDATED_NOTES = ROOT / "social-card-main-notes-validated.json"
 RAW_NOTES = ROOT / "social-card-main-notes.json"
