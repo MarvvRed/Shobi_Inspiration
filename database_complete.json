@@ -35672,7 +35672,7 @@
       "Green Notes",
       "Rose"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -35684,28 +35684,26 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 3,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 3,
       "iconsCount": 3
-    }
+    },
+    "fragranticaSocialCardSource": "fragrantica-scraper-archive/social-cards/images/current_2282-DRC_81847.jpeg"
   },
   {
     "id": "pid:3914",
@@ -86631,8 +86629,11 @@
     "fragrantica_status": "VERIFIED_SHOBI_FIRST",
     "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
     "fragrantica_match_reason": "Shobi residual is Big Pony 2 in women catalog; exact 2012 women entry, not 2010 men version",
-    "fragranticaSocialCardNotes": [],
-    "fragranticaSocialCardStatus": "",
+    "fragranticaSocialCardNotes": [
+      "Cranberry",
+      "Tonka Bean"
+    ],
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -86644,29 +86645,26 @@
     "catalogSource": "shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-for-Women-14446.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
-    }
+      "issues": [],
+      "notesCount": 2,
+      "matchedNotesCount": 2,
+      "iconsCount": 2
+    },
+    "fragranticaSocialCardSource": "fragrantica-scraper-archive/social-cards/images/current_884-RAL_14446.jpeg"
   },
   {
     "id": "pid:1916",
@@ -100655,38 +100653,39 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Myrrh",
+      "Olibanum (Frankincense)"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Indigo-Wild/Zum-Mist-Frankincense-Myrrh-42046.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 2,
+      "matchedNotesCount": 2,
+      "iconsCount": 2
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/1144_236-IND_42046.jpeg",
     "genderVerificationFragranticaId": "42046",
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Indigo-Wild/Zum-Mist-Frankincense-Myrrh-42046.html",
     "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
-    "fragranticaVerificationFragranticaId": "42046"
+    "fragranticaVerificationFragranticaId": "42046",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaSocialCardSource": "fragrantica-scraper-archive/social-cards/images/current_236-IND_42046.jpeg"
   },
   {
     "id": "pid:1143",
@@ -105180,36 +105179,41 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Lemon Blossom",
+      "Lemon",
+      "Jasmine",
+      "Pomegranate",
+      "Bergamot",
+      "Musk"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Versace/Eros-Pour-Femme-28958.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/976_945-VER_28958.jpeg",
     "genderVerificationFragranticaId": "28958",
-    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/976_945-VER_28958.jpeg"
+    "fragranticaVerificationSource": "fragrantica-scraper-archive/social-cards/images/976_945-VER_28958.jpeg",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaSocialCardSource": "fragrantica-scraper-archive/social-cards/images/current_945-VER_28958.jpeg"
   },
   {
     "id": "pid:975",
@@ -128048,38 +128052,43 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Brazilian Rosewood",
+      "Amber",
+      "Sandalwood",
+      "Aldehydes",
+      "Benzoin",
+      "Oakmoss"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dune-221.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/618_525-DRC_221.jpeg",
     "genderVerificationFragranticaId": "221",
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Dior/Dune-221.html",
     "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
-    "fragranticaVerificationFragranticaId": "221"
+    "fragranticaVerificationFragranticaId": "221",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaSocialCardSource": "fragrantica-scraper-archive/social-cards/images/current_525-DRC_221.jpeg"
   },
   {
     "id": "pid:617",
@@ -130196,38 +130205,40 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Lily",
+      "Green Notes",
+      "Citruses"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Cartier/Baiser-Vole-12878.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 3,
+      "matchedNotesCount": 3,
+      "iconsCount": 3
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/583_487-CRT_12878.jpeg",
     "genderVerificationFragranticaId": "12878",
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Cartier/Baiser-Vole-12878.html",
     "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
-    "fragranticaVerificationFragranticaId": "12878"
+    "fragranticaVerificationFragranticaId": "12878",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaSocialCardSource": "fragrantica-scraper-archive/social-cards/images/current_487-CRT_12878.jpeg"
   },
   {
     "id": "pid:582",
@@ -133711,38 +133722,43 @@
       "heart": [],
       "base": []
     },
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Wormwood",
+      "Peach",
+      "Rose",
+      "Musk",
+      "Cashmir wood",
+      "Sandalwood"
+    ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Burberry/Body-13014.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": false,
+        "notes": true,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
-      ],
-      "notesCount": 0,
-      "matchedNotesCount": 0,
-      "iconsCount": 0
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "fragrantica-scraper-archive/social-cards/images/527_421-BRB_13014.jpeg",
     "genderVerificationFragranticaId": "13014",
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Burberry/Body-13014.html",
     "fragranticaVerificationReason": "WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14",
-    "fragranticaVerificationFragranticaId": "13014"
+    "fragranticaVerificationFragranticaId": "13014",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaSocialCardSource": "fragrantica-scraper-archive/social-cards/images/current_421-BRB_13014.jpeg"
   },
   {
     "id": "pid:525",

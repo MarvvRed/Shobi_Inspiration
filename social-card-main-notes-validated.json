@@ -57952,14 +57952,18 @@
   {
     "code": "487-CRT",
     "fragranticaId": 12878,
-    "card": "fragrantica-scraper-archive/social-cards/images/583_487-CRT_12878.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_487-CRT_12878.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Lily",
+      "Green Notes",
+      "Citruses"
+    ],
     "rawSlots": [],
     "validatedSlots": [],
     "failures": [],
     "reasons": [
-      "NO_OCR_SLOTS"
+      "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
     ]
   },
   {
@@ -58097,14 +58101,21 @@
   {
     "code": "421-BRB",
     "fragranticaId": 13014,
-    "card": "fragrantica-scraper-archive/social-cards/images/527_421-BRB_13014.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_421-BRB_13014.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Wormwood",
+      "Peach",
+      "Rose",
+      "Musk",
+      "Cashmir wood",
+      "Sandalwood"
+    ],
     "rawSlots": [],
     "validatedSlots": [],
     "failures": [],
     "reasons": [
-      "NO_OCR_SLOTS"
+      "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
     ]
   },
   {
@@ -60572,14 +60583,17 @@
   {
     "code": "884-RAL",
     "fragranticaId": 14446,
-    "card": "fragrantica-scraper-archive/social-cards/images/corrected_884-RAL_14446.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_884-RAL_14446.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Cranberry",
+      "Tonka Bean"
+    ],
     "rawSlots": [],
     "validatedSlots": [],
     "failures": [],
     "reasons": [
-      "PENDING_CURRENT_FID_OCR"
+      "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
     ]
   },
   {
@@ -88533,14 +88547,21 @@
   {
     "code": "945-VER",
     "fragranticaId": 28958,
-    "card": "fragrantica-scraper-archive/social-cards/images/976_945-VER_28958.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_945-VER_28958.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Lemon Blossom",
+      "Lemon",
+      "Jasmine",
+      "Pomegranate",
+      "Bergamot",
+      "Musk"
+    ],
     "rawSlots": [],
     "validatedSlots": [],
     "failures": [],
     "reasons": [
-      "NO_OCR_SLOTS"
+      "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
     ]
   },
   {
@@ -113292,52 +113313,17 @@
   {
     "code": "236-IND",
     "fragranticaId": 42046,
-    "card": "fragrantica-scraper-archive/social-cards/images/1144_236-IND_42046.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [
-      {
-        "slot": 2,
-        "name": "Por 5 Gee",
-        "ocrConfidence": 41.5
-      },
-      {
-        "slot": 5,
-        "name": "wr",
-        "ocrConfidence": 27.7
-      },
-      {
-        "slot": 6,
-        "name": "wey",
-        "ocrConfidence": 29.4
-      }
+    "card": "fragrantica-scraper-archive/social-cards/images/current_236-IND_42046.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Myrrh",
+      "Olibanum (Frankincense)"
     ],
+    "rawSlots": [],
     "validatedSlots": [],
-    "failures": [
-      {
-        "slot": 2,
-        "raw": "Por 5 Gee",
-        "bestScore": 0.632,
-        "margin": 0.06,
-        "ocrConfidence": 41.5
-      },
-      {
-        "slot": 5,
-        "raw": "wr",
-        "bestScore": 0.571,
-        "margin": 0.0,
-        "ocrConfidence": 27.7
-      },
-      {
-        "slot": 6,
-        "raw": "wey",
-        "bestScore": 0.6,
-        "margin": 0.055,
-        "ocrConfidence": 29.4
-      }
-    ],
+    "failures": [],
     "reasons": [
-      "LEXICON_UNCERTAIN"
+      "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
     ]
   },
   {
@@ -170613,14 +170599,18 @@
   {
     "code": "2282-DRC",
     "fragranticaId": 81847,
-    "card": "fragrantica-scraper-archive/social-cards/images/3915_unknown_81847.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "card": "fragrantica-scraper-archive/social-cards/images/current_2282-DRC_81847.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Fig",
+      "Green Notes",
+      "Rose"
+    ],
     "rawSlots": [],
     "validatedSlots": [],
     "failures": [],
     "reasons": [
-      "NO_OCR_SLOTS"
+      "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
     ]
   },
   {
@@ -192269,5 +192259,25 @@
     "failures": [],
     "reasons": [],
     "validationMethod": "CURRENT_FID_MULTIPASS_OCR"
+  },
+  {
+    "code": "525-DRC",
+    "fragranticaId": 221,
+    "card": "fragrantica-scraper-archive/social-cards/images/current_525-DRC_221.jpeg",
+    "validated": true,
+    "mainNotes": [
+      "Brazilian Rosewood",
+      "Amber",
+      "Sandalwood",
+      "Aldehydes",
+      "Benzoin",
+      "Oakmoss"
+    ],
+    "rawSlots": [],
+    "validatedSlots": [],
+    "failures": [],
+    "reasons": [
+      "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
+    ]
   }
 ]
