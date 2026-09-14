@@ -49,7 +49,7 @@ jobs:
       - name: Rebuild strict ordered Social Card audit
         run: |
           command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
-          python -m pip install --disable-pip-version-check pillow
+          python -m pip install --disable-pip-version-check pillow numpy
           set +e
           SOCIAL_CARD_AUDIT_WORKERS=2 SOCIAL_CARD_AUDIT_BATCH=100 python tools/audit_social_card_order_from_images.py > social-card-audit-ci.log 2>&1
           audit_status=$?
