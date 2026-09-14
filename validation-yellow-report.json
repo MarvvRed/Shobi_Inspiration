@@ -1,10 +1,26 @@
 {
   "catalogRows": 2324,
   "yellowRows": 36,
-  "singleFailureRows": [],
+  "singleFailureRows": [
+    {
+      "code": "911-SEPH",
+      "brand": "Sephora",
+      "inspiredBy": "Fleur de Coton / Cotton Flower",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Sephora/Fleur-de-Coton-Cotton-Flower-37955.html",
+      "issues": [
+        "Original product type not fully verified (current Sephora listing is hair/body mist)"
+      ],
+      "failedChecks": [
+        "originalProductType"
+      ],
+      "notesCount": 1,
+      "matchedNotesCount": 1,
+      "iconsCount": 1
+    }
+  ],
   "byFailureSignature": [
     {
-      "signature": "identity,fid,url,socialCard,image,notes,icons,gender,season",
+      "signature": "fid,gender,icons,identity,image,notes,season,socialCard,url",
       "count": 31,
       "codes": [
         "2816-MOOD",
@@ -41,7 +57,7 @@
       ]
     },
     {
-      "signature": "socialCard,notes,icons,gender,season",
+      "signature": "gender,icons,notes,season,socialCard",
       "count": 3,
       "codes": [
         "118-HAM",
@@ -50,14 +66,14 @@
       ]
     },
     {
-      "signature": "gender,season",
+      "signature": "originalProductType",
       "count": 1,
       "codes": [
-        "1037-BLG"
+        "911-SEPH"
       ]
     },
     {
-      "signature": "identity,socialCard,notes,icons,gender,season",
+      "signature": "gender,icons,identity,notes,season,socialCard",
       "count": 1,
       "codes": [
         "1251-ROM"
@@ -65,90 +81,6 @@
     }
   ],
   "byIssue": [
-    {
-      "issue": "Gender not fully verified",
-      "count": 36,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "1037-BLG",
-        "118-HAM",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "325-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "235-HOLL",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "1251-ROM"
-      ]
-    },
-    {
-      "issue": "Season not fully verified",
-      "count": 36,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "1037-BLG",
-        "118-HAM",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "325-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "235-HOLL",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "1251-ROM"
-      ]
-    },
     {
       "issue": "Social Card not fully verified",
       "count": 35,
@@ -233,6 +165,88 @@
     },
     {
       "issue": "Note icons not fully verified",
+      "count": 35,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2085-CLIV",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "314-MOL",
+        "118-HAM",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "325-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "235-HOLL",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "1251-ROM"
+      ]
+    },
+    {
+      "issue": "Gender not fully verified",
+      "count": 35,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2085-CLIV",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "314-MOL",
+        "118-HAM",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "325-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "235-HOLL",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "1251-ROM"
+      ]
+    },
+    {
+      "issue": "Season not fully verified",
       "count": 35,
       "codes": [
         "2816-MOOD",
@@ -420,12 +434,19 @@
         "222-DIP",
         "200-CIR"
       ]
+    },
+    {
+      "issue": "Original product type not fully verified (current Sephora listing is hair/body mist)",
+      "count": 1,
+      "codes": [
+        "911-SEPH"
+      ]
     }
   ],
   "byFailedCheck": [
     {
       "check": "gender",
-      "count": 36,
+      "count": 35,
       "codes": [
         "2816-MOOD",
         "2701-DIP",
@@ -437,7 +458,6 @@
         "130-LEL",
         "564-DOL",
         "314-MOL",
-        "1037-BLG",
         "118-HAM",
         "382-YAN",
         "381-YAN",
@@ -466,49 +486,7 @@
       ]
     },
     {
-      "check": "season",
-      "count": 36,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "1037-BLG",
-        "118-HAM",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "325-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "235-HOLL",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "1251-ROM"
-      ]
-    },
-    {
-      "check": "socialCard",
+      "check": "icons",
       "count": 35,
       "codes": [
         "2816-MOOD",
@@ -590,7 +568,48 @@
       ]
     },
     {
-      "check": "icons",
+      "check": "season",
+      "count": 35,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2085-CLIV",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "314-MOL",
+        "118-HAM",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "325-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "235-HOLL",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "1251-ROM"
+      ]
+    },
+    {
+      "check": "socialCard",
       "count": 35,
       "codes": [
         "2816-MOOD",
@@ -706,6 +725,43 @@
       ]
     },
     {
+      "check": "image",
+      "count": 31,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2085-CLIV",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "314-MOL",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR"
+      ]
+    },
+    {
       "check": "url",
       "count": 31,
       "codes": [
@@ -743,40 +799,10 @@
       ]
     },
     {
-      "check": "image",
-      "count": 31,
+      "check": "originalProductType",
+      "count": 1,
       "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR"
+        "911-SEPH"
       ]
     }
   ],
@@ -798,15 +824,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -829,15 +855,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -860,15 +886,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -891,15 +917,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -922,15 +948,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -953,15 +979,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -984,15 +1010,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1015,15 +1041,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1046,15 +1072,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1077,36 +1103,19 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "1037-BLG",
-      "brand": "Bvlgari",
-      "inspiredBy": "Bvl Man",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
-      "issues": [
-        "Gender not fully verified",
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "gender",
-        "season"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "118-HAM",
@@ -1121,11 +1130,11 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "socialCard",
-        "notes",
-        "icons",
         "gender",
-        "season"
+        "icons",
+        "notes",
+        "season",
+        "socialCard"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1148,15 +1157,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1179,15 +1188,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1210,15 +1219,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1241,15 +1250,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1272,15 +1281,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1303,15 +1312,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1334,15 +1343,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1365,15 +1374,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1396,15 +1405,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1427,15 +1436,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1454,11 +1463,11 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "socialCard",
-        "notes",
-        "icons",
         "gender",
-        "season"
+        "icons",
+        "notes",
+        "season",
+        "socialCard"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1481,15 +1490,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1512,15 +1521,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1543,15 +1552,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1574,15 +1583,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1605,15 +1614,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1632,11 +1641,11 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "socialCard",
-        "notes",
-        "icons",
         "gender",
-        "season"
+        "icons",
+        "notes",
+        "season",
+        "socialCard"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1659,15 +1668,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1690,15 +1699,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1721,15 +1730,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1752,15 +1761,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1783,15 +1792,15 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
@@ -1814,19 +1823,34 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
         "fid",
-        "url",
-        "socialCard",
+        "gender",
+        "icons",
+        "identity",
         "image",
         "notes",
-        "icons",
-        "gender",
-        "season"
+        "season",
+        "socialCard",
+        "url"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
+    },
+    {
+      "code": "911-SEPH",
+      "brand": "Sephora",
+      "inspiredBy": "Fleur de Coton / Cotton Flower",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Sephora/Fleur-de-Coton-Cotton-Flower-37955.html",
+      "issues": [
+        "Original product type not fully verified (current Sephora listing is hair/body mist)"
+      ],
+      "failedChecks": [
+        "originalProductType"
+      ],
+      "notesCount": 1,
+      "matchedNotesCount": 1,
+      "iconsCount": 1
     },
     {
       "code": "1251-ROM",
@@ -1842,12 +1866,12 @@
         "Season not fully verified"
       ],
       "failedChecks": [
-        "identity",
-        "socialCard",
-        "notes",
-        "icons",
         "gender",
-        "season"
+        "icons",
+        "identity",
+        "notes",
+        "season",
+        "socialCard"
       ],
       "notesCount": 0,
       "matchedNotesCount": 0,
