@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-09-14",
+  "sourceCatalogRows": 2324,
+  "scopeRule": "Keep a Shobi entry in the public perfume-dupe catalog only when the original inspiration is a genuine wearable perfume product. Exclude candles, home fragrances, room sprays, body/hair/perfume mists, body-care/amenity products, laundry scents and other non-perfume originals even when Shobi sells its own version as Eau de Parfum.",
+  "method": [
+    "Rechecked the current 2324-row Shobi live catalog and previous perfume-only audit.",
+    "Reviewed high-risk brands/product families where Fragrantica can contain non-perfume entries.",
+    "Used exact product-type evidence rather than treating the presence of a Fragrantica ID as proof that the original is a true perfume.",
+    "Only confirmed exclusions are listed below; unresolved identity/product-type cases remain in manual review."
+  ],
+  "confirmedOutOfScopeCount": 60,
+  "projectedPublicRowsAfterConfirmedExclusions": 2264,
+  "confirmedOutOfScopeGroups": {
+    "previouslyClassifiedHomeBody": [
+      "2701-DIP","2586-DIP","1550-YAN","383-YAN","130-LEL","314-MOL","382-YAN","381-YAN","380-YAN","379-YAN","326-PECK","313-MOL","311-MOL","289-JOM","261-JOM","258-JOM","230-DIP","228-DIP","227-DIP","223-DIP","222-DIP","200-CIR"
+    ],
+    "indigoWildRoomBodySpray": ["236-IND"],
+    "ritualsHairBodyOrBodyHome": ["2773-RIT","2699-RIT","2697-RIT","2548-RIT"],
+    "solDeJaneiroPerfumeMists": ["2826-SOL","2698-SOL","2692-SOL","2693-SOL","2691-SOL","2635-SOL","2585-SOL","2567-SOL","2521-SOL","2385-SOL","2386-SOL","2129-SOL"],
+    "bathBodyWorksMistOnly": ["2419-BAT","2288-BAT","408-BAT","407-BAT"],
+    "victoriasSecretMistOnly": ["2377-VICT","967-VICT","950-VICT","1747-VICT","963-VICT","961-VICT","955-VICT","2095-VICT","2037-VICT","2020-VICT","1916-VICT","2499-VICT","972-VICT"],
+    "lushNonPerfumeOriginal": ["2845-LUS","2738-LUS","2706-LUS","2612-LUS"]
+  },
+  "keepExceptionsChecked": [
+    {"code":"2844-LUS","reason":"Black Pearl exists as a genuine Lush perfume/EDP."},
+    {"code":"2148-BAT","reason":"Pure Wonder exists as a genuine Eau de Parfum."},
+    {"code":"2055-BAT","reason":"Dream Bright exists as a genuine Eau de Parfum."},
+    {"code":"2060-BAT","reason":"Whiskey Reserve exists as a genuine Cologne."},
+    {"code":"2086-VICT","reason":"Bare exists as a genuine Eau de Parfum."},
+    {"code":"2027-VICT","reason":"Tease Sugar Fleur exists as a genuine Eau de Parfum."},
+    {"code":"1551-VICT","reason":"Tease Dreamer exists as a genuine Eau de Parfum."},
+    {"code":"2046-VICT","reason":"Very Sexy Oasis exists as a genuine Eau de Parfum."},
+    {"code":"973-VICT","reason":"Wicked exists as a genuine Eau de Parfum."},
+    {"code":"956-VICT","reason":"Crush exists as a genuine Eau de Parfum."}
+  ],
+  "manualReview": [
+    {"code":"1748-BYR","reason":"Claimed Byredo Marijuana identity is not established as a legitimate Byredo wearable perfume."},
+    {"code":"564-DOL","reason":"Claimed Dolce & Gabbana Sexy Chocolate identity is not established as a legitimate D&G release."},
+    {"code":"330-PG","reason":"Oriental Blossom attribution appears to be a non-perfume/laundry identity problem."},
+    {"code":"336-THCO","reason":"Narcissus Noir exact The White Company original remains ambiguous."},
+    {"code":"335-THCO","reason":"Cashmere Blanc exact original product type remains ambiguous."},
+    {"code":"334-SHI","reason":"Shirley May row gives a brand but no unique fragrance identity."},
+    {"code":"331-PG","reason":"Crystal Water & Water Lily exact wearable original is not established."},
+    {"code":"1642-VICT","reason":"Rose Caramel appears to belong to a Victoria's Secret trend/body-fragrance line, but exact original concentration still needs a stronger primary source."},
+    {"code":"911-SEPH","reason":"Fleur de Coton exists as Sephora body mist today and has a Fragrantica record from 2012; exact historical original concentration needs disambiguation before exclusion."}
+  ],
+  "notes": [
+    "Fragrantica presence is not sufficient for scope inclusion because body/fragrance mists can have Fragrantica pages.",
+    "This audit is intentionally conservative: a row is excluded only when the non-perfume nature of the original is sufficiently demonstrated.",
+    "Canonical database rows are not deleted by this audit file. Use a separate public-scope exclusion manifest/filter so evidence and history remain recoverable."
+  ]
+}
