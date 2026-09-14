@@ -1,0 +1,40 @@
+name: Analyze final five yellow rows
+
+on:
+  push:
+    paths:
+      - 'tools/analyze_final_five_yellows.py'
+      - '.github/workflows/analyze-final-five-yellows.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr
+          python -m pip install pillow pytesseract
+      - run: python tools/analyze_final_five_yellows.py
+      - name: Commit focused report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add final-five-yellow-analysis.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Analyze final five known-FID yellow rows"
+          git pull --rebase origin main
+          git push origin HEAD:main
