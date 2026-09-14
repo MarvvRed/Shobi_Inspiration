@@ -1,0 +1,239 @@
+[
+  {
+    "code": "2282-DRC",
+    "fid": "81847",
+    "dbNotes": [
+      "Fig",
+      "Green Notes",
+      "Rose"
+    ],
+    "dbStatus": "VALIDATED_MANUAL",
+    "validated": {
+      "code": "2282-DRC",
+      "fragranticaId": 81847,
+      "card": "fragrantica-scraper-archive/social-cards/images/3915_unknown_81847.jpeg",
+      "validated": false,
+      "mainNotes": [],
+      "rawSlots": [],
+      "validatedSlots": [],
+      "failures": [],
+      "reasons": [
+        "NO_OCR_SLOTS"
+      ]
+    },
+    "raw": {
+      "page": 2035,
+      "fragranticaId": 81847,
+      "code": "2282-DRC",
+      "card": "fragrantica-scraper-archive/social-cards/images/3915_unknown_81847.jpeg",
+      "mainNotes": [],
+      "slots": [],
+      "ocrConfidence": 0
+    }
+  },
+  {
+    "code": "236-IND",
+    "fid": "42046",
+    "dbNotes": [],
+    "dbStatus": null,
+    "validated": {
+      "code": "236-IND",
+      "fragranticaId": 42046,
+      "card": "fragrantica-scraper-archive/social-cards/images/1144_236-IND_42046.jpeg",
+      "validated": false,
+      "mainNotes": [],
+      "rawSlots": [
+        {
+          "slot": 2,
+          "name": "Por 5 Gee",
+          "ocrConfidence": 41.5
+        },
+        {
+          "slot": 5,
+          "name": "wr",
+          "ocrConfidence": 27.7
+        },
+        {
+          "slot": 6,
+          "name": "wey",
+          "ocrConfidence": 29.4
+        }
+      ],
+      "validatedSlots": [],
+      "failures": [
+        {
+          "slot": 2,
+          "raw": "Por 5 Gee",
+          "bestScore": 0.632,
+          "margin": 0.06,
+          "ocrConfidence": 41.5
+        },
+        {
+          "slot": 5,
+          "raw": "wr",
+          "bestScore": 0.571,
+          "margin": 0.0,
+          "ocrConfidence": 27.7
+        },
+        {
+          "slot": 6,
+          "raw": "wey",
+          "bestScore": 0.6,
+          "margin": 0.055,
+          "ocrConfidence": 29.4
+        }
+      ],
+      "reasons": [
+        "LEXICON_UNCERTAIN"
+      ]
+    },
+    "raw": {
+      "page": 1299,
+      "fragranticaId": 42046,
+      "code": "236-IND",
+      "card": "fragrantica-scraper-archive/social-cards/images/1144_236-IND_42046.jpeg",
+      "mainNotes": [
+        "Por 5 Gee",
+        "wr",
+        "wey"
+      ],
+      "slots": [
+        {
+          "slot": 2,
+          "name": "Por 5 Gee",
+          "ocrConfidence": 41.5
+        },
+        {
+          "slot": 5,
+          "name": "wr",
+          "ocrConfidence": 27.7
+        },
+        {
+          "slot": 6,
+          "name": "wey",
+          "ocrConfidence": 29.4
+        }
+      ],
+      "ocrConfidence": 32.9
+    }
+  },
+  {
+    "code": "421-BRB",
+    "fid": "13014",
+    "dbNotes": [],
+    "dbStatus": null,
+    "validated": {
+      "code": "421-BRB",
+      "fragranticaId": 13014,
+      "card": "fragrantica-scraper-archive/social-cards/images/527_421-BRB_13014.jpeg",
+      "validated": false,
+      "mainNotes": [],
+      "rawSlots": [],
+      "validatedSlots": [],
+      "failures": [],
+      "reasons": [
+        "NO_OCR_SLOTS"
+      ]
+    },
+    "raw": {
+      "page": 667,
+      "fragranticaId": 13014,
+      "code": "421-BRB",
+      "card": "fragrantica-scraper-archive/social-cards/images/527_421-BRB_13014.jpeg",
+      "mainNotes": [],
+      "slots": [],
+      "ocrConfidence": 0
+    }
+  },
+  {
+    "code": "487-CRT",
+    "fid": "12878",
+    "dbNotes": [],
+    "dbStatus": null,
+    "validated": {
+      "code": "487-CRT",
+      "fragranticaId": 12878,
+      "card": "fragrantica-scraper-archive/social-cards/images/583_487-CRT_12878.jpeg",
+      "validated": false,
+      "mainNotes": [],
+      "rawSlots": [],
+      "validatedSlots": [],
+      "failures": [],
+      "reasons": [
+        "NO_OCR_SLOTS"
+      ]
+    },
+    "raw": {
+      "page": 662,
+      "fragranticaId": 12878,
+      "code": "487-CRT",
+      "card": "fragrantica-scraper-archive/social-cards/images/583_487-CRT_12878.jpeg",
+      "mainNotes": [],
+      "slots": [],
+      "ocrConfidence": 0
+    }
+  },
+  {
+    "code": "525-DRC",
+    "fid": "221",
+    "dbNotes": [],
+    "dbStatus": null,
+    "validated": null,
+    "raw": null
+  },
+  {
+    "code": "884-RAL",
+    "fid": "14446",
+    "dbNotes": [],
+    "dbStatus": "",
+    "validated": {
+      "code": "884-RAL",
+      "fragranticaId": 14446,
+      "card": "fragrantica-scraper-archive/social-cards/images/corrected_884-RAL_14446.jpeg",
+      "validated": false,
+      "mainNotes": [],
+      "rawSlots": [],
+      "validatedSlots": [],
+      "failures": [],
+      "reasons": [
+        "PENDING_CURRENT_FID_OCR"
+      ]
+    },
+    "raw": {
+      "code": "884-RAL",
+      "fragranticaId": 14446,
+      "card": "fragrantica-scraper-archive/social-cards/images/corrected_884-RAL_14446.jpeg",
+      "mainNotes": [],
+      "slots": [],
+      "ocrConfidence": null
+    }
+  },
+  {
+    "code": "945-VER",
+    "fid": "28958",
+    "dbNotes": [],
+    "dbStatus": null,
+    "validated": {
+      "code": "945-VER",
+      "fragranticaId": 28958,
+      "card": "fragrantica-scraper-archive/social-cards/images/976_945-VER_28958.jpeg",
+      "validated": false,
+      "mainNotes": [],
+      "rawSlots": [],
+      "validatedSlots": [],
+      "failures": [],
+      "reasons": [
+        "NO_OCR_SLOTS"
+      ]
+    },
+    "raw": {
+      "page": 1019,
+      "fragranticaId": 28958,
+      "code": "945-VER",
+      "card": "fragrantica-scraper-archive/social-cards/images/976_945-VER_28958.jpeg",
+      "mainNotes": [],
+      "slots": [],
+      "ocrConfidence": 0
+    }
+  }
+]
