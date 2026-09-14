@@ -50,7 +50,19 @@ jobs:
         run: |
           command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
           python -m pip install --disable-pip-version-check pillow
-          SOCIAL_CARD_AUDIT_WORKERS=2 SOCIAL_CARD_AUDIT_BATCH=100 python tools/audit_social_card_order_from_images.py
+          set +e
+          SOCIAL_CARD_AUDIT_WORKERS=2 SOCIAL_CARD_AUDIT_BATCH=100 python tools/audit_social_card_order_from_images.py > social-card-audit-ci.log 2>&1
+          audit_status=$?
+          if [ "$audit_status" -ne 0 ]; then
+            tail -n 160 social-card-audit-ci.log > social-card-audit-ci-error.log
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add social-card-audit-ci-error.log
+            git commit -m 'Capture Social Card audit failure details'
+            git push
+            exit "$audit_status"
+          fi
+          rm social-card-audit-ci.log
           python tools/apply_strict_ordered_card_audit.py
           python tools/refresh_strict_ordered_mismatches.py
 
