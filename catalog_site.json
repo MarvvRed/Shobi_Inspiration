@@ -9100,21 +9100,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 3,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 3,
     "validationNotesCount": 3,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Versace",
@@ -14247,21 +14249,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 5,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 5,
     "validationNotesCount": 5,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Rabanne",
@@ -14383,21 +14387,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 5,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 5,
     "validationNotesCount": 5,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Maison Martin Margiela",
@@ -17819,21 +17825,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Christian Louboutin",
@@ -20273,21 +20281,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Jovoy Paris",
@@ -22179,21 +22189,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Orto Parisi",
@@ -22948,21 +22960,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Tom Ford",
@@ -26404,21 +26418,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Marc-Antoine Barrois",
@@ -27884,21 +27900,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "The Merchant Of Venice",
@@ -30850,21 +30868,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 4,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card note-count discrepancy reported; current stored evidence is not independently sufficient. Complete revalidation required."
+    ],
     "validationMatchedNotesCount": 4,
     "validationNotesCount": 4,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Amouage",
@@ -31860,21 +31880,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Parfums de Marly",
@@ -33605,21 +33627,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 1,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 1,
     "validationNotesCount": 1,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Creed",
@@ -34380,21 +34404,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 4,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 4,
     "validationNotesCount": 4,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Juliette Has a Gun",
@@ -38440,21 +38466,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Narciso Rodriguez",
@@ -38826,21 +38854,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 5,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 5,
     "validationNotesCount": 5,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Jo Malone London",
@@ -39483,21 +39513,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Jean Paul Gaultier",
@@ -41531,21 +41563,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Dior",
@@ -43349,21 +43383,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 5,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 5,
     "validationNotesCount": 5,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Mugler",
@@ -47214,21 +47250,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Gucci",
@@ -48950,21 +48988,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Guerlain",
@@ -49050,21 +49090,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "By Kilian",
@@ -49859,21 +49901,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Yves Saint Laurent",
@@ -52863,21 +52907,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 5,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 5,
     "validationNotesCount": 5,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Jo Malone London",
@@ -56182,21 +56228,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Yves Saint Laurent",
@@ -56245,21 +56293,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Yves Saint Laurent",
@@ -56309,21 +56359,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 5,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 5,
     "validationNotesCount": 5,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Yves Saint Laurent",
@@ -56481,21 +56533,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Yves Saint Laurent",
@@ -57339,21 +57393,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Versace",
@@ -58367,21 +58423,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Salvatore Ferragamo",
@@ -58611,21 +58669,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Roger Gallet",
@@ -59912,21 +59972,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "One Direction",
@@ -62197,21 +62259,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Lalique",
@@ -63733,21 +63797,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Issey Miyake",
@@ -64578,21 +64644,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Guerlain",
@@ -64996,21 +65064,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Gres",
@@ -65168,21 +65238,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Givenchy",
@@ -65196,21 +65268,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Givenchy",
@@ -65224,21 +65298,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 5,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 5,
     "validationNotesCount": 5,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Givenchy",
@@ -65576,21 +65652,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Giorgio Armani",
@@ -66863,21 +66941,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Escada",
@@ -68148,21 +68228,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 4,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 4,
     "validationNotesCount": 4,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Dolce & Gabbana",
@@ -69292,21 +69374,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Dior",
@@ -69572,21 +69656,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Dior",
@@ -69636,21 +69722,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 5,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 5,
     "validationNotesCount": 5,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Chopard",
@@ -69664,21 +69752,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Chopard",
@@ -70472,21 +70562,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Chanel",
@@ -70536,21 +70628,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Cerruti",
@@ -70564,21 +70658,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Carven",
@@ -70700,21 +70796,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 3,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 3,
     "validationNotesCount": 3,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Carolina Herrera",
@@ -72485,21 +72583,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Burberry",
@@ -72621,21 +72721,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Britney Spears",
@@ -72901,21 +73003,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Bobbi Brown",
@@ -73178,21 +73282,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Aquolina",
@@ -75174,21 +75280,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 5,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 5,
     "validationNotesCount": 5,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Prada",
@@ -76244,21 +76352,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Lalique",
@@ -76342,21 +76452,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Kenzo",
@@ -77333,21 +77445,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Hugo Boss",
@@ -77433,21 +77547,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Hermès",
@@ -77925,21 +78041,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Givenchy",
@@ -78061,21 +78179,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Giorgio Armani",
@@ -79847,21 +79967,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 5,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 5,
     "validationNotesCount": 5,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Dior",
@@ -80343,21 +80465,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Cartier",
@@ -80371,21 +80495,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Cartier",
@@ -80576,21 +80702,23 @@
     "validationChecks": {
       "fid": true,
       "gender": true,
-      "icons": true,
+      "icons": false,
       "identity": true,
       "image": true,
-      "notes": true,
+      "notes": false,
       "season": true,
       "shobiIdentity": true,
       "shobiProduct": true,
-      "socialCard": true,
+      "socialCard": false,
       "url": true
     },
     "validationIconsCount": 6,
-    "validationIssues": [],
+    "validationIssues": [
+      "Social Card notes currently missing or inconsistent with the stored validation evidence; complete revalidation required."
+    ],
     "validationMatchedNotesCount": 6,
     "validationNotesCount": 6,
-    "validationStatus": "green"
+    "validationStatus": "yellow"
   },
   {
     "brand": "Calvin Klein",
