@@ -633,14 +633,22 @@ function initTheme() {
 async function init() {
     console.log("DEBUG: init() started.");
     try {
-        const response = await fetch('catalog_site.json');
+        const [response, scopeResponse] = await Promise.all([
+            fetch('catalog_site.json'),
+            fetch('catalog-scope-exclusions.json')
+        ]);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
         const rawDataAll = await response.json();
-        // The live Shobi CSV is authoritative: every row in database_complete.json
-        // is a current Shobi perfume and must be visible even when its optional
-        // Fragrantica association is unresolved.
-        const rawData = rawDataAll;
+        const scopeData = scopeResponse.ok ? await scopeResponse.json() : { codes: [] };
+        const excludedCodes = new Set(
+            Array.isArray(scopeData?.codes)
+                ? scopeData.codes.map(code => String(code || '').trim().toUpperCase())
+                : []
+        );
+        // Keep the canonical audit data intact, but never show originals confirmed
+        // as home/body/non-perfume products in the public perfume catalog.
+        const rawData = rawDataAll.filter(p => !excludedCodes.has(String(p.code || '').trim().toUpperCase()));
         allBrands.clear();
 
         if (rawData.length > 0 && Array.isArray(rawData[0].perfumes)) {
