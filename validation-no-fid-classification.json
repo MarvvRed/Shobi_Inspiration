@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Conservative classification of the 31 current yellow rows without a defensible Fragrantica ID. This file does not by itself promote any row to green.",
+  "auditRule": "Do not fabricate or infer a Fragrantica ID. Keep yellow unless the normal provenance chain is satisfied or an explicit approved N/A policy is introduced.",
+  "totals": {
+    "WEARABLE_REAL_NO_FID": 2,
+    "NON_WEARABLE": 22,
+    "IDENTITY_PROBLEM": 3,
+    "AMBIGUOUS": 4,
+    "total": 31
+  },
+  "rows": [
+    {"code":"2816-MOOD","brand":"Mood London","inspiredBy":"Blonde Maracuja Mood London","classification":"WEARABLE_REAL_NO_FID","detail":"Official wearable fragrance exists; no defensible Fragrantica perfume ID found."},
+    {"code":"2085-CLIV","brand":"Clive Christian","inspiredBy":"X NEROLI LIMITED EDITION - CLIVE CHRISTIAN","classification":"WEARABLE_REAL_NO_FID","detail":"Official wearable perfume exists; no defensible Fragrantica perfume ID found."},
+
+    {"code":"2701-DIP","brand":"Diptyque","inspiredBy":"Cafe Verlet","classification":"NON_WEARABLE_HOME","detail":"Home-fragrance/candle collection rather than a normal wearable perfume record."},
+    {"code":"2586-DIP","brand":"Diptyque","inspiredBy":"Biscuit DIP","classification":"NON_WEARABLE_HOME","detail":"Diptyque candle/home fragrance."},
+    {"code":"1550-YAN","brand":"Yankee Candle","inspiredBy":"HOME SWEET HOME - YANKEE","classification":"NON_WEARABLE_HOME","detail":"Yankee Candle home fragrance/candle."},
+    {"code":"383-YAN","brand":"Yankee Candle","inspiredBy":"WEDDING DAY - YANKEE","classification":"NON_WEARABLE_HOME","detail":"Yankee Candle home fragrance/candle."},
+    {"code":"130-LEL","brand":"Le Labo","inspiredBy":"SANTAL 26 - LE LABO","classification":"NON_WEARABLE_HOME","detail":"Le Labo home scent/candle, distinct from Santal 33 EDP."},
+    {"code":"314-MOL","brand":"Molton Brown","inspiredBy":"ZIAO JAO - MOLTON BROWN","classification":"NON_WEARABLE_BODY","detail":"Historical evidence points to hair/body product rather than an EDP."},
+    {"code":"382-YAN","brand":"Yankee Candle","inspiredBy":"POMEGRANATE CIDER - YANKEE CANDLES","classification":"NON_WEARABLE_HOME","detail":"Yankee Candle home fragrance/candle."},
+    {"code":"381-YAN","brand":"Yankee Candle","inspiredBy":"FRESH CUT ROSES - YANKEE CANDLES","classification":"NON_WEARABLE_HOME","detail":"Yankee Candle home fragrance/candle."},
+    {"code":"380-YAN","brand":"Yankee Candle","inspiredBy":"FALL FESTIVAL - YANKEE CANDLES","classification":"NON_WEARABLE_HOME","detail":"Yankee Candle home fragrance/candle."},
+    {"code":"379-YAN","brand":"Yankee Candle","inspiredBy":"CLEAN COTTON - YANKEE CANDLES","classification":"NON_WEARABLE_HOME","detail":"Yankee Candle home fragrance/candle."},
+    {"code":"326-PECK","brand":"Pecksniff's","inspiredBy":"CALM - PECKSNIFF'S","classification":"NON_WEARABLE_BODY","detail":"Body/amenity line; no standalone wearable perfume record established."},
+    {"code":"313-MOL","brand":"Molton Brown","inspiredBy":"thai vert-mol","classification":"NON_WEARABLE_BODY","detail":"Historical skin/body/hand-care evidence; no reliable EDP record found."},
+    {"code":"311-MOL","brand":"Molton Brown","inspiredBy":"amber cocoon-mol","classification":"NON_WEARABLE_BODY","detail":"Hand wash/hand lotion collection; no reliable EDP record found."},
+    {"code":"289-JOM","brand":"Jo Malone London","inspiredBy":"SWEET ALMON & MACARRON - JO MALONE","classification":"NON_WEARABLE_HOME","detail":"Documented candle/home fragrance."},
+    {"code":"261-JOM","brand":"Jo Malone London","inspiredBy":"INCENSE & EMBERS - JO MALONE","classification":"NON_WEARABLE_HOME","detail":"Documented home candle."},
+    {"code":"258-JOM","brand":"Jo Malone London","inspiredBy":"GREEN TOMATO LEAF - JO MALONE","classification":"NON_WEARABLE_HOME_BODY","detail":"Documented in hand/home products, not as a Cologne/EDP."},
+    {"code":"230-DIP","brand":"Diptyque","inspiredBy":"OPOPANAX","classification":"NON_WEARABLE_HOME","detail":"Diptyque scented candle/home fragrance."},
+    {"code":"228-DIP","brand":"Diptyque","inspiredBy":"FEUILLE DE LAVANDE","classification":"NON_WEARABLE_HOME","detail":"Diptyque scented candle/home fragrance."},
+    {"code":"227-DIP","brand":"Diptyque","inspiredBy":"FEU DE BOIS / WOOD FIRE","classification":"NON_WEARABLE_HOME","detail":"Diptyque scented candle/home fragrance."},
+    {"code":"223-DIP","brand":"Diptyque","inspiredBy":"BAIES","classification":"NON_WEARABLE_HOME","detail":"Diptyque scented candle/home fragrance."},
+    {"code":"222-DIP","brand":"Diptyque","inspiredBy":"AMBRE","classification":"NON_WEARABLE_HOME","detail":"Diptyque scented candle/home fragrance."},
+    {"code":"200-CIR","brand":"CIRE TRUDON","inspiredBy":"ERNESTO CHE GUEVARA","classification":"NON_WEARABLE_HOME","detail":"Trudon candle/home-fragrance line; later wearable fragrances are different products."},
+
+    {"code":"1748-BYR","brand":"Byredo","inspiredBy":"Marijuana","classification":"IDENTITY_PROBLEM","detail":"No legitimate Byredo fragrance by this name established; do not remap to another cannabis-related Byredo scent."},
+    {"code":"564-DOL","brand":"Dolce & Gabbana","inspiredBy":"SEXY CHOCLATE","classification":"IDENTITY_PROBLEM","detail":"No legitimate Dolce & Gabbana release established; community evidence identifies the claimed fragrance as fake/non-authentic."},
+    {"code":"330-PG","brand":"P&G","inspiredBy":"ORIENTAL BLOSSOM","classification":"IDENTITY_PROBLEM","detail":"Attribution appears wrong or incomplete; known use of the name is not a P&G wearable perfume."},
+
+    {"code":"336-THCO","brand":"The White Company","inspiredBy":"NARCISSUS NOIR - THE WHITE COMPANY","classification":"AMBIGUOUS_IDENTITY","detail":"No safe exact record; mapping to Caron Narcisse Noir would be unsupported."},
+    {"code":"335-THCO","brand":"The White Company","inspiredBy":"CASHMERE BLANC - THE WHITE COMPANY","classification":"AMBIGUOUS_HOME","detail":"Insufficient evidence to establish the exact original product type."},
+    {"code":"334-SHI","brand":"SHIRLEY MAY","inspiredBy":"SHIRLEY MAY","classification":"AMBIGUOUS_IDENTITY","detail":"Brand is real but Shobi supplies no specific fragrance name, so no unique Fragrantica record can be selected."},
+    {"code":"331-PG","brand":"P&G","inspiredBy":"CRYSTAL WATER & WATER LILY","classification":"AMBIGUOUS_IDENTITY","detail":"No reliable original wearable perfume or exact Fragrantica record established."}
+  ]
+}
