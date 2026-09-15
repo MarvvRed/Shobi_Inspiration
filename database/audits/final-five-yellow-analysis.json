@@ -5,18 +5,22 @@
       "code": "1037-BLG",
       "brand": "Bvlgari",
       "inspiredBy": "Bvl Man",
-      "fid": "9403",
-      "url": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
+      "fid": "148",
+      "url": "https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html",
       "failed": [
-        "gender",
+        "socialCard",
+        "image",
+        "notes",
         "season"
       ],
       "identityStatus": "CONFIRMED",
       "verificationSource": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
       "dbGender": "Male",
       "dbGenderAffinity": "masculine",
-      "dbGenderStatus": "",
-      "dbSeasons": [],
+      "dbGenderStatus": "VALIDATED_SOCIAL_CARD",
+      "dbSeasons": [
+        "spring"
+      ],
       "dbNotes": [
         "Vetiver",
         "Honey",
@@ -36,26 +40,26 @@
         "Lotus",
         "Cashmir wood"
       ],
-      "card": "database/fragrantica/social-cards/images/1897_1037-BLG_9403.jpeg",
-      "cardKind": "validated",
+      "card": "database/fragrantica/social-cards/images/current_1037-BLG_148.jpeg",
+      "cardKind": "fallback",
       "cardSize": [
         1200,
         1200
       ],
       "ocrGender": "male",
-      "ocrTopText": "the een bvigari man eet aa bvlgari ded fay in for men it main accords bv lga r",
-      "ocrFullText": "bvlgari man oft bvlgari formen i al main accords bv lugar ozonic bvlgari man bente eee fragrance profile x h longevity strong sillage notes diie day time ma x day volver honey woody notes ss seasons p violet leaf lotus cashmir spring wood e winter summer fragrantica free to choose",
+      "ocrTopText": "oe ie fr le blv pour homme te te bvlgari aes binet a for men main accords y",
+      "ocrFullText": "blv pour homme re bvlgari for men main accords i fresh fragrance profile x hlongevity strong sillage notes h day time aa e ss if day cardamom tobacco ginger blossom seasons op spring sandalwood juniper galanga vires summer fragrantica a free to choose",
       "genderSeasonCsv": {
-        "fragrantica_id": "148",
+        "fragrantica_id": "9403",
         "gender": "male",
-        "winter": "0.1926",
-        "spring": "0.3542",
-        "summer": "0.3259",
-        "fall": "0.2325",
+        "winter": "0.1481",
+        "spring": "0.3875",
+        "summer": "0.2852",
+        "fall": "0.2989",
         "main_season": "spring",
         "season_confidence": "MEDIUM",
-        "season_margin": "0.0283",
-        "local_path": "database/fragrantica/social-cards/images/1897_1037-BLG_148.jpeg"
+        "season_margin": "0.0886",
+        "local_path": "database/fragrantica/social-cards/images/1897_1037-BLG_9403.jpeg"
       }
     },
     {
