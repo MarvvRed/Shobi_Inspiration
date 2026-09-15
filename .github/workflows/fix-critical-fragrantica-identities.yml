@@ -2,13 +2,13 @@ name: Fix critical Fragrantica identity mappings
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/fix-critical-fragrantica-identities.yml'
 
 permissions:
   contents: write
+
+concurrency:
+  group: shobi-catalog-write-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   fix:
@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Correct source mappings and add regression registry
+      - name: Correct source mappings without rewriting historical proof
         run: |
           python - <<'PY'
           import csv
@@ -28,46 +28,33 @@ jobs:
           from pathlib import Path
 
           FIXES = {
-              '1037-BLG': {
-                  'brand': 'Bvlgari', 'name': 'Bvlgari Man', 'fid': '9403',
-                  'url': 'https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html',
-                  'reason': 'Correct Bvlgari Man identity; FID 148 is BLV Pour Homme, a different fragrance.'
-              },
-              '1751-GUL': {
-                  'brand': 'Jean Paul Gaultier', 'name': 'Ma Dame', 'fid': '3681',
-                  'url': 'https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html',
-                  'reason': 'Correct Ma Dame by Jean Paul Gaultier; FID 12088 belongs to Cortina 1224 Madame.'
-              },
-              '928-TRU': {
-                  'brand': 'Trussardi', 'name': 'Trussardi Delicate Rose', 'fid': '16241',
-                  'url': 'https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html',
-                  'reason': 'Correct Trussardi Delicate Rose; FID 93471 belongs to Aurora Scents.'
-              },
-              '548-CLI': {
-                  'brand': 'Clinique', 'name': 'Clinique Happy', 'fid': '372',
-                  'url': 'https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-372.html',
-                  'reason': 'Correct women Clinique Happy; FID 66133 belongs to The Dua Brand.'
-              },
-              '1086-CLI': {
-                  'brand': 'Clinique', 'name': 'Clinique Happy For Men', 'fid': '373',
-                  'url': 'https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-For-Men-373.html',
-                  'reason': 'Correct men Clinique Happy; FID 66133 belongs to The Dua Brand.'
-              },
-              '2194-ORT': {
-                  'brand': 'Orto Parisi', 'name': 'Cuoium', 'fid': '69923',
-                  'url': 'https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html',
-                  'reason': 'Shobi 2194-ORT is Cuoium by Orto Parisi; FID 119473 belongs to Al Qasim Oud ORTO.'
-              },
+              '1037-BLG': {'brand': 'Bvlgari', 'name': 'Bvlgari Man', 'fid': '9403', 'url': 'https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html', 'reason': 'Correct Bvlgari Man identity; FID 148 is BLV Pour Homme, a different fragrance.'},
+              '1751-GUL': {'brand': 'Jean Paul Gaultier', 'name': 'Ma Dame', 'fid': '3681', 'url': 'https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html', 'reason': 'Correct Ma Dame by Jean Paul Gaultier; FID 12088 belongs to Cortina 1224 Madame.'},
+              '928-TRU': {'brand': 'Trussardi', 'name': 'Trussardi Delicate Rose', 'fid': '16241', 'url': 'https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html', 'reason': 'Correct Trussardi Delicate Rose; FID 93471 belongs to Aurora Scents.'},
+              '548-CLI': {'brand': 'Clinique', 'name': 'Clinique Happy', 'fid': '372', 'url': 'https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-372.html', 'reason': 'Correct women Clinique Happy; FID 66133 belongs to The Dua Brand.'},
+              '1086-CLI': {'brand': 'Clinique', 'name': 'Clinique Happy For Men', 'fid': '373', 'url': 'https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-For-Men-373.html', 'reason': 'Correct men Clinique Happy; FID 66133 belongs to The Dua Brand.'},
+              '2194-ORT': {'brand': 'Orto Parisi', 'name': 'Cuoium', 'fid': '69923', 'url': 'https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html', 'reason': 'Shobi 2194-ORT is Cuoium by Orto Parisi; FID 119473 belongs to Al Qasim Oud ORTO.'},
           }
 
-          path = Path('database/source/shobi-fragrantica-mapping.csv')
-          with path.open(encoding='utf-8-sig', newline='') as handle:
+          source = Path('database/source/shobi-fragrantica-mapping.csv')
+          history = Path('database/audits/critical-identity-fixes.json')
+          registry_path = Path('database/audits/critical-identity-regression-registry.json')
+          if not history.is_file():
+              raise SystemExit('Refusing repair: critical-identity-fixes.json historical proof is missing')
+
+          historical = json.loads(history.read_text(encoding='utf-8-sig'))
+          historical_by_code = {str(x.get('code') or '').strip().upper(): x for x in historical}
+          missing_history = sorted(set(FIXES) - set(historical_by_code))
+          if missing_history:
+              raise SystemExit(f'Refusing repair: historical before/after proof missing for {missing_history}')
+
+          with source.open(encoding='utf-8-sig', newline='') as handle:
               reader = csv.DictReader(handle)
               fields = reader.fieldnames
               rows = list(reader)
 
           seen = set()
-          changes = []
+          changed = []
           for row in rows:
               code = str(row.get('shobi_code') or '').strip().upper()
               fix = FIXES.get(code)
@@ -76,34 +63,22 @@ jobs:
               if code in seen:
                   raise SystemExit(f'Duplicate mapping row for {code}')
               seen.add(code)
-              before = {
-                  'brand': row.get('original_brand'),
-                  'name': row.get('original_perfume'),
-                  'fid': row.get('fragrantica_id'),
-                  'url': row.get('fragrantica_url'),
-              }
-              row['original_brand'] = fix['brand']
-              row['original_perfume'] = fix['name']
-              row['fragrantica_id'] = fix['fid']
-              row['fragrantica_url'] = fix['url']
-              row['identity_status'] = 'CONFIRMED'
-              row['fragrantica_status'] = 'FOUND'
-              proof = f"CRITICAL_IDENTITY_FIX: {fix['reason']} Verified URL: {fix['url']}"
-              old_note = str(row.get('evidence_note') or '').strip()
-              row['evidence_note'] = proof if proof in old_note else (old_note + ' | ' + proof).strip(' |')
-              changes.append({'code': code, 'before': before, 'after': fix})
+              target = (fix['brand'], fix['name'], fix['fid'], fix['url'])
+              current = (row.get('original_brand'), row.get('original_perfume'), row.get('fragrantica_id'), row.get('fragrantica_url'))
+              if current != target:
+                  row['original_brand'], row['original_perfume'], row['fragrantica_id'], row['fragrantica_url'] = target
+                  row['identity_status'] = 'CONFIRMED'
+                  row['fragrantica_status'] = 'FOUND'
+                  proof = f"CRITICAL_IDENTITY_FIX: {fix['reason']} Verified URL: {fix['url']}"
+                  old_note = str(row.get('evidence_note') or '').strip()
+                  row['evidence_note'] = proof if proof in old_note else (old_note + ' | ' + proof).strip(' |')
+                  changed.append(code)
 
-          missing = sorted(set(FIXES) - seen)
-          if missing:
-              raise SystemExit(f'Missing source rows: {missing}')
+          missing_source = sorted(set(FIXES) - seen)
+          if missing_source:
+              raise SystemExit(f'Missing source rows: {missing_source}')
 
-          # The two Clinique products must never share one FID again.
-          by_code = {str(r.get('shobi_code') or '').strip().upper(): r for r in rows}
-          assert by_code['548-CLI']['fragrantica_id'] == '372'
-          assert by_code['1086-CLI']['fragrantica_id'] == '373'
-          assert by_code['548-CLI']['fragrantica_id'] != by_code['1086-CLI']['fragrantica_id']
-
-          with path.open('w', encoding='utf-8-sig', newline='') as handle:
+          with source.open('w', encoding='utf-8-sig', newline='') as handle:
               writer = csv.DictWriter(handle, fieldnames=fields, lineterminator='\n')
               writer.writeheader()
               writer.writerows(rows)
@@ -115,19 +90,19 @@ jobs:
                   for code, fix in FIXES.items()
               ]
           }
-          Path('database/audits/critical-identity-regression-registry.json').write_text(
-              json.dumps(registry, ensure_ascii=False, indent=2) + '\n', encoding='utf-8'
-          )
-          Path('database/audits/critical-identity-fixes.json').write_text(
-              json.dumps(changes, ensure_ascii=False, indent=2) + '\n', encoding='utf-8'
-          )
-          print(json.dumps(changes, ensure_ascii=False, indent=2))
+          registry_path.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps({'changedSourceRows': changed, 'historicalProofPreserved': True}, ensure_ascii=False, indent=2))
           PY
-      - name: Commit corrected identity source
+      - name: Verify independent safety gate
+        run: python tools/verify_catalog_invariants.py --baseline-ref HEAD
+      - name: Commit corrected source only if necessary
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add database/source/shobi-fragrantica-mapping.csv database/audits/critical-identity-regression-registry.json database/audits/critical-identity-fixes.json
-          git commit -m 'Correct six critical Fragrantica identities'
-          git pull --rebase origin main
-          git push
+          git add database/source/shobi-fragrantica-mapping.csv database/audits/critical-identity-regression-registry.json
+          if git diff --cached --quiet; then
+            echo 'Critical identity source already correct; historical proof left untouched.'
+            exit 0
+          fi
+          git commit -m 'Repair critical Fragrantica identity source'
+          git push origin HEAD:main
