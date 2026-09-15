@@ -1,3 +1,88 @@
 {
-  "authorizedChanges": []
+  "authorizedChanges": [
+    {
+      "code": "1551-VICT",
+      "from": {"brand": "Victoria's Secret", "name": "Tease Dreamer Eau de", "fid": "54073"},
+      "to": {"brand": "Victoria's Secret", "name": "Tease Dreamer", "fid": "54073"},
+      "reason": "Verified Fragrantica FID 54073 canonical name: Tease Dreamer. Display-name cleanup only; source identity/FID unchanged."
+    },
+    {
+      "code": "1893-CHA",
+      "from": {"brand": "Chanel", "name": "N 1 L Eau Rouge", "fid": "71442"},
+      "to": {"brand": "Chanel", "name": "N°1 de Chanel L'Eau Rouge", "fid": "71442"},
+      "reason": "Verified Fragrantica FID 71442 canonical name: N°1 de Chanel L'Eau Rouge."
+    },
+    {
+      "code": "1929-BLG",
+      "from": {"brand": "Bvlgari", "name": "Le Gemme Tygar Eau de", "fid": "41222"},
+      "to": {"brand": "Bvlgari", "name": "Tygar", "fid": "41222"},
+      "reason": "Verified Fragrantica FID 41222 canonical name: Tygar."
+    },
+    {
+      "code": "1958-DRC",
+      "from": {"brand": "Dior", "name": "Bois d Argent Eau de", "fid": "1377"},
+      "to": {"brand": "Dior", "name": "Bois d'Argent", "fid": "1377"},
+      "reason": "Verified Fragrantica FID 1377 canonical name: Bois d'Argent."
+    },
+    {
+      "code": "2055-BAT",
+      "from": {"brand": "Bath Body Works", "name": "Dream Bright Eau de", "fid": "78849"},
+      "to": {"brand": "Bath Body Works", "name": "Dream Bright", "fid": "78849"},
+      "reason": "Verified Fragrantica FID 78849 canonical name: Dream Bright."
+    },
+    {
+      "code": "2148-BAT",
+      "from": {"brand": "Bath Body Works", "name": "Pure Wonder Eau de", "fid": "70500"},
+      "to": {"brand": "Bath Body Works", "name": "Pure Wonder", "fid": "70500"},
+      "reason": "Verified Fragrantica FID 70500 canonical name: Pure Wonder."
+    },
+    {
+      "code": "2622-PHL",
+      "from": {"brand": "Phlur", "name": "Vanilla Skin Eau de", "fid": "87258"},
+      "to": {"brand": "Phlur", "name": "Vanilla Skin", "fid": "87258"},
+      "reason": "Verified Fragrantica FID 87258 canonical name: Vanilla Skin."
+    },
+    {
+      "code": "2799-OBVI",
+      "from": {"brand": "Obvious", "name": "Milk Matcha Un Ete", "fid": "103407"},
+      "to": {"brand": "Obvious", "name": "Milk & Matcha", "fid": "103407"},
+      "reason": "Verified Fragrantica FID 103407 canonical name: Milk & Matcha."
+    },
+    {
+      "code": "2831-GISS",
+      "from": {"brand": "Gissah", "name": "Martinique Osmanthus Eau de Parfum", "fid": "126288"},
+      "to": {"brand": "Gissah", "name": "Martinique Osmanthus 2025", "fid": "126288"},
+      "reason": "Verified Fragrantica FID 126288 canonical name: Martinique Osmanthus 2025."
+    },
+    {
+      "code": "401-ARIA",
+      "from": {"brand": "Ariana Grande", "name": "Cloud Eau de", "fid": "50384"},
+      "to": {"brand": "Ariana Grande", "name": "Cloud", "fid": "50384"},
+      "reason": "Verified Fragrantica FID 50384 canonical name: Cloud."
+    },
+    {
+      "code": "799-LANV",
+      "from": {"brand": "Lanvin", "name": "Eclat d Arpege Eau de", "fid": "988"},
+      "to": {"brand": "Lanvin", "name": "Eclat d'Arpege", "fid": "988"},
+      "reason": "Verified Fragrantica FID 988 canonical identity: Eclat d'Arpège."
+    },
+    {
+      "code": "822-MIC",
+      "from": {"brand": "Michael Kors", "name": "Sexy Ruby Glam Ruby", "fid": "46182"},
+      "to": {"brand": "Michael Kors", "name": "Sexy Ruby", "fid": "46182"},
+      "reason": "Verified Fragrantica FID 46182 canonical name: Sexy Ruby."
+    },
+    {
+      "code": "923-TMU",
+      "from": {"brand": "Mugler", "name": "Notes Aura", "fid": "45639"},
+      "to": {"brand": "Mugler", "name": "Aura Mugler", "fid": "45639"},
+      "reason": "Verified Fragrantica FID 45639 canonical name: Aura Mugler."
+    },
+    {
+      "code": "958-VICT",
+      "from": {"brand": "Victoria's Secret", "name": "Fabulous Eau de", "fid": "17699"},
+      "to": {"brand": "Victoria's Secret", "name": "Fabulous", "fid": "17699"},
+      "reason": "Verified Fragrantica FID 17699 canonical name: Fabulous."
+    }
+  ]
 }
