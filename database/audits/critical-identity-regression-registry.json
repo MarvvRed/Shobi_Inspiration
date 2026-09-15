@@ -1,0 +1,53 @@
+{
+  "rule": "These identities are regression-locked because stale same-name or related-name mappings previously pointed to the wrong Fragrantica perfume.",
+  "rows": [
+    {
+      "code": "1037-BLG",
+      "brand": "Bvlgari",
+      "name": "Bvlgari Man",
+      "fragranticaId": "9403",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
+      "reason": "Correct Bvlgari Man identity; FID 148 is BLV Pour Homme, a different fragrance."
+    },
+    {
+      "code": "1751-GUL",
+      "brand": "Jean Paul Gaultier",
+      "name": "Ma Dame",
+      "fragranticaId": "3681",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html",
+      "reason": "Correct Ma Dame by Jean Paul Gaultier; FID 12088 belongs to Cortina 1224 Madame."
+    },
+    {
+      "code": "928-TRU",
+      "brand": "Trussardi",
+      "name": "Trussardi Delicate Rose",
+      "fragranticaId": "16241",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
+      "reason": "Correct Trussardi Delicate Rose; FID 93471 belongs to Aurora Scents."
+    },
+    {
+      "code": "548-CLI",
+      "brand": "Clinique",
+      "name": "Clinique Happy",
+      "fragranticaId": "372",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-372.html",
+      "reason": "Correct women Clinique Happy; FID 66133 belongs to The Dua Brand."
+    },
+    {
+      "code": "1086-CLI",
+      "brand": "Clinique",
+      "name": "Clinique Happy For Men",
+      "fragranticaId": "373",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-For-Men-373.html",
+      "reason": "Correct men Clinique Happy; FID 66133 belongs to The Dua Brand."
+    },
+    {
+      "code": "2194-ORT",
+      "brand": "Orto Parisi",
+      "name": "Cuoium",
+      "fragranticaId": "69923",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html",
+      "reason": "Shobi 2194-ORT is Cuoium by Orto Parisi; FID 119473 belongs to Al Qasim Oud ORTO."
+    }
+  ]
+}
