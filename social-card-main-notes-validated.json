@@ -8333,94 +8333,94 @@
     "code": "403-BAL",
     "fragranticaId": 397,
     "card": "fragrantica-scraper-archive/social-cards/images/512_403-BAL_397.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "validated": true,
+    "mainNotes": [
+      "Vanilla",
+      "Fig Leaf",
+      "Sandalwood",
+      "Patchouli",
+      "Carnation",
+      "Peony"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Vanilla 44",
-        "ocrConfidence": 78.5
+        "name": "Vanilla",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Ce aad Leaf Fig Miia",
-        "ocrConfidence": 57.6
+        "name": "Fig Leaf",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Sandalwood ety",
-        "ocrConfidence": 65.8
+        "name": "Sandalwood",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Fs Patchouli",
-        "ocrConfidence": 62.7
+        "name": "Patchouli",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Carnation",
-        "ocrConfidence": 95.4
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Peony",
-        "ocrConfidence": 96.4
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Vanilla",
-        "raw": "Vanilla 44",
-        "matchScore": 0.97,
-        "margin": 0.274,
-        "ocrConfidence": 78.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Fig Leaf",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Sandalwood",
-        "raw": "Sandalwood ety",
-        "matchScore": 0.97,
-        "margin": 0.04,
-        "ocrConfidence": 65.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Patchouli",
-        "raw": "Fs Patchouli",
-        "matchScore": 0.97,
-        "margin": 0.201,
-        "ocrConfidence": 62.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Carnation",
-        "raw": "Carnation",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Peony",
-        "raw": "Peony",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 2,
-        "raw": "Ce aad Leaf Fig Miia",
-        "bestScore": 0.571,
-        "margin": 0.026,
-        "ocrConfidence": 57.6
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "186-ARM",
@@ -16077,74 +16077,70 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Leaf Fig",
-        "ocrConfidence": 94.8
+        "name": "Fig Leaf",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Cedar",
-        "ocrConfidence": 96.6
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "eee Grapefruit",
-        "ocrConfidence": 68.2
+        "name": "Grapefruit",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Sandalwood",
-        "ocrConfidence": 95.8
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Carnation",
-        "ocrConfidence": 95.8
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Fig Leaf",
-        "raw": "Leaf Fig",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
         "matchScore": 1.0,
-        "margin": 0.03,
-        "ocrConfidence": 94.8
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Cedar",
-        "raw": "Cedar",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Grapefruit",
-        "raw": "eee Grapefruit",
-        "matchScore": 0.97,
-        "margin": 0.28,
-        "ocrConfidence": 68.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Sandalwood",
-        "raw": "Sandalwood",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Carnation",
-        "raw": "Carnation",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "1840-JOO",
@@ -20586,61 +20582,58 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "ISOE super",
-        "ocrConfidence": 85.2
+        "name": "Iso E Super",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Pink Pepper",
-        "ocrConfidence": 96.1
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Lemon",
-        "ocrConfidence": 96.2
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "aE Iris",
-        "ocrConfidence": 37.4
+        "name": "Iris",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Iso E Super",
-        "raw": "ISOE super",
-        "matchScore": 0.952,
-        "margin": 0.316,
-        "ocrConfidence": 85.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Pink Pepper",
-        "raw": "Pink Pepper",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.1
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Lemon",
-        "raw": "Lemon",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Iris",
-        "raw": "aE Iris",
-        "matchScore": 0.97,
-        "margin": 0.303,
-        "ocrConfidence": 37.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "892-RCAV",
@@ -27259,87 +27252,82 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Pine Tree ee",
-        "ocrConfidence": 73.6
+        "name": "Pine Tree",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Bagas de Zimboro",
-        "ocrConfidence": 89.2
+        "name": "Bagas de Zimbro",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Cedar DBD a",
-        "ocrConfidence": 65.0
+        "name": "Cedar",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "7 Basil",
-        "ocrConfidence": 65.4
+        "name": "Basil",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Lemon",
-        "ocrConfidence": 96.3
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Lavender",
-        "ocrConfidence": 95.8
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Pine Tree",
-        "raw": "Pine Tree ee",
-        "matchScore": 0.97,
-        "margin": 0.25,
-        "ocrConfidence": 73.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Bagas de Zimbro",
-        "raw": "Bagas de Zimboro",
-        "matchScore": 0.968,
-        "margin": 0.422,
-        "ocrConfidence": 89.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Cedar",
-        "raw": "Cedar DBD a",
-        "matchScore": 0.97,
-        "margin": 0.361,
-        "ocrConfidence": 65.0
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Basil",
-        "raw": "7 Basil",
-        "matchScore": 0.97,
-        "margin": 0.399,
-        "ocrConfidence": 65.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Lemon",
-        "raw": "Lemon",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Lavender",
-        "raw": "Lavender",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "1921-VIV",
@@ -28115,87 +28103,82 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "NE Fig",
-        "ocrConfidence": 63.5
+        "name": "Fig",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Fig tree",
-        "ocrConfidence": 96.7
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Grapefruit a",
-        "ocrConfidence": 85.2
+        "name": "Grapefruit",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "_—_ Bergamot",
-        "ocrConfidence": 56.8
+        "name": "Bergamot",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Citron",
-        "ocrConfidence": 93.1
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Lemon",
-        "ocrConfidence": 95.1
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Fig",
-        "raw": "NE Fig",
-        "matchScore": 0.97,
-        "margin": 0.256,
-        "ocrConfidence": 63.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Fig tree",
-        "raw": "Fig tree",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Grapefruit",
-        "raw": "Grapefruit a",
-        "matchScore": 0.97,
-        "margin": 0.081,
-        "ocrConfidence": 85.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Bergamot",
-        "raw": "_—_ Bergamot",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 56.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Citron",
-        "raw": "Citron",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 93.1
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Lemon",
-        "raw": "Lemon",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.1
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "390-ACQ",
@@ -28392,94 +28375,94 @@
     "code": "2330-JUL",
     "fragranticaId": 1715,
     "card": "fragrantica-scraper-archive/social-cards/images/3967_2330-JUL_1715.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "validated": true,
+    "mainNotes": [
+      "Rose",
+      "Patchouli",
+      "Musk",
+      "Lavender",
+      "Ambroxan",
+      "Iso E Super"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Rose 2",
-        "ocrConfidence": 60.3
+        "name": "Rose",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Patchoull 10",
-        "ocrConfidence": 72.3
+        "name": "Patchouli",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Musk",
-        "ocrConfidence": 96.9
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Lavender",
-        "ocrConfidence": 70.7
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Ambroxan",
-        "ocrConfidence": 90.5
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "ISoE super",
-        "ocrConfidence": 72.9
+        "name": "Iso E Super",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Rose",
-        "raw": "Rose 2",
-        "matchScore": 0.97,
-        "margin": 0.256,
-        "ocrConfidence": 60.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Patchouli",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Musk",
-        "raw": "Musk",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Lavender",
-        "raw": "Lavender",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 70.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Ambroxan",
-        "raw": "Ambroxan",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 90.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Iso E Super",
-        "raw": "ISoE super",
-        "matchScore": 0.952,
-        "margin": 0.316,
-        "ocrConfidence": 72.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 2,
-        "raw": "Patchoull 10",
-        "bestScore": 0.762,
-        "margin": 0.07,
-        "ocrConfidence": 72.3
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "1185-JOO",
@@ -38264,14 +38247,94 @@
     "code": "229-DIP",
     "fragranticaId": 3865,
     "card": "fragrantica-scraper-archive/social-cards/images/1132_229-DIP_3865.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "validated": true,
+    "mainNotes": [
+      "Fig Leaf",
+      "Fig",
+      "Green Notes",
+      "Coconut",
+      "Fig Tree",
+      "Woody Notes"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Fig Leaf",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Fig",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Green Notes",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Coconut",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Fig Tree",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Woody Notes",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Fig Leaf",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Fig",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Green Notes",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Coconut",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Fig Tree",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Woody Notes",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "2051-PRFRO",
@@ -53782,87 +53845,82 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "ISOE super eR",
-        "ocrConfidence": 62.2
+        "name": "Iso E Super",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Musk",
-        "ocrConfidence": 95.7
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Ambergris",
-        "ocrConfidence": 89.7
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Ambrette Musk",
-        "ocrConfidence": 91.6
+        "name": "Musk",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Pear",
-        "ocrConfidence": 91.3
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Cetalox",
-        "ocrConfidence": 92.9
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Iso E Super",
-        "raw": "ISOE super eR",
-        "matchScore": 0.917,
-        "margin": 0.277,
-        "ocrConfidence": 62.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Musk",
-        "raw": "Musk",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Ambergris",
-        "raw": "Ambergris",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 89.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Musk",
-        "raw": "Ambrette Musk",
-        "matchScore": 0.97,
-        "margin": 0.182,
-        "ocrConfidence": 91.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Pear",
-        "raw": "Pear",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 91.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Cetalox",
-        "raw": "Cetalox",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 92.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "952-VICT",
@@ -67834,86 +67892,81 @@
       {
         "slot": 1,
         "name": "Tobacco",
-        "ocrConfidence": 96.4
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "ISOE super",
-        "ocrConfidence": 87.2
+        "name": "Iso E Super",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Tea",
-        "ocrConfidence": 95.2
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Cardamom",
-        "ocrConfidence": 94.7
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "2 ae Mountain Air",
-        "ocrConfidence": 62.6
+        "name": "Mountain Air",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Suede",
-        "ocrConfidence": 96.2
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Tobacco",
-        "raw": "Tobacco",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Iso E Super",
-        "raw": "ISOE super",
-        "matchScore": 0.952,
-        "margin": 0.316,
-        "ocrConfidence": 87.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Tea",
-        "raw": "Tea",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Cardamom",
-        "raw": "Cardamom",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 94.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Mountain Air",
-        "raw": "2 ae Mountain Air",
-        "matchScore": 0.97,
-        "margin": 0.355,
-        "ocrConfidence": 62.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Suede",
-        "raw": "Suede",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "157-PARF",
@@ -72158,94 +72211,94 @@
     "code": "2411-JAME",
     "fragranticaId": 18470,
     "card": "fragrantica-scraper-archive/social-cards/images/4147_2411-JAME_18470.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "validated": true,
+    "mainNotes": [
+      "Coconut",
+      "Palm Leaf",
+      "Salt",
+      "Gardenia",
+      "Sandalwood",
+      "Cedar"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Coconut 4",
-        "ocrConfidence": 92.9
+        "name": "Coconut",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "SFOS Leaf Palm",
-        "ocrConfidence": 72.1
+        "name": "Palm Leaf",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "ec Salt jth",
-        "ocrConfidence": 54.6
+        "name": "Salt",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Gardenia",
-        "ocrConfidence": 95.5
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "SaaS",
-        "ocrConfidence": 31.0
+        "name": "Sandalwood",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Cedar",
-        "ocrConfidence": 96.0
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Coconut",
-        "raw": "Coconut 4",
-        "matchScore": 0.97,
-        "margin": 0.17,
-        "ocrConfidence": 92.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Palm Leaf",
-        "raw": "SFOS Leaf Palm",
-        "matchScore": 0.783,
-        "margin": 0.167,
-        "ocrConfidence": 72.1
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Salt",
-        "raw": "ec Salt jth",
-        "matchScore": 0.93,
-        "margin": 0.321,
-        "ocrConfidence": 54.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Gardenia",
-        "raw": "Gardenia",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Sandalwood",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Cedar",
-        "raw": "Cedar",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.0
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 5,
-        "raw": "SaaS",
-        "bestScore": 0.667,
-        "margin": 0.0,
-        "ocrConfidence": 31.0
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "1226-PAC",
@@ -99409,87 +99462,82 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "ee Coumarin eg 4",
-        "ocrConfidence": 66.7
+        "name": "Coumarin",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Ambrete Musk AU",
-        "ocrConfidence": 42.7
+        "name": "Musk",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "ISOE super Ban",
-        "ocrConfidence": 74.7
+        "name": "Iso E Super",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "VE Cedar",
-        "ocrConfidence": 67.6
+        "name": "Cedar",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Hedione",
-        "ocrConfidence": 91.5
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "as’ Orris Root",
-        "ocrConfidence": 80.2
+        "name": "Orris Root",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Coumarin",
-        "raw": "ee Coumarin eg 4",
-        "matchScore": 0.93,
-        "margin": 0.37,
-        "ocrConfidence": 66.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Musk",
-        "raw": "Ambrete Musk AU",
-        "matchScore": 0.93,
-        "margin": 0.13,
-        "ocrConfidence": 42.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Iso E Super",
-        "raw": "ISOE super Ban",
-        "matchScore": 0.8,
-        "margin": 0.133,
-        "ocrConfidence": 74.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Cedar",
-        "raw": "VE Cedar",
-        "matchScore": 0.97,
-        "margin": 0.17,
-        "ocrConfidence": 67.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Hedione",
-        "raw": "Hedione",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 91.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Orris Root",
-        "raw": "as’ Orris Root",
-        "matchScore": 0.97,
-        "margin": 0.387,
-        "ocrConfidence": 80.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "410-BOD",
@@ -126191,87 +126239,82 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Fig tree m",
-        "ocrConfidence": 87.6
+        "name": "Fig tree",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Fig",
-        "ocrConfidence": 94.9
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Solar Notes fl",
-        "ocrConfidence": 82.3
+        "name": "Solar Notes",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "ne Bergamot",
-        "ocrConfidence": 52.7
+        "name": "Bergamot",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "Sa Ozonic Notes",
-        "ocrConfidence": 78.4
+        "name": "Ozonic Notes",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Petitgrain",
-        "ocrConfidence": 91.7
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Fig tree",
-        "raw": "Fig tree m",
-        "matchScore": 0.97,
-        "margin": 0.0,
-        "ocrConfidence": 87.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Fig",
-        "raw": "Fig",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 94.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Solar Notes",
-        "raw": "Solar Notes fl",
-        "matchScore": 0.97,
-        "margin": 0.303,
-        "ocrConfidence": 82.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Bergamot",
-        "raw": "ne Bergamot",
-        "matchScore": 0.97,
-        "margin": 0.137,
-        "ocrConfidence": 52.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Ozonic Notes",
-        "raw": "Sa Ozonic Notes",
-        "matchScore": 0.97,
-        "margin": 0.278,
-        "ocrConfidence": 78.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Petitgrain",
-        "raw": "Petitgrain",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 91.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "515-CHL",
@@ -131335,87 +131378,82 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Plum Se",
-        "ocrConfidence": 64.8
+        "name": "Plum",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Rum",
-        "ocrConfidence": 95.6
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Fig",
-        "ocrConfidence": 92.8
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Cedar",
-        "ocrConfidence": 96.8
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Cashmir wood",
-        "ocrConfidence": 79.9
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "ISOE super",
-        "ocrConfidence": 83.8
+        "name": "Iso E Super",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Plum",
-        "raw": "Plum Se",
-        "matchScore": 0.97,
-        "margin": 0.22,
-        "ocrConfidence": 64.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Rum",
-        "raw": "Rum",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Fig",
-        "raw": "Fig",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 92.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Cedar",
-        "raw": "Cedar",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Cashmir wood",
-        "raw": "Cashmir wood",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 79.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Iso E Super",
-        "raw": "ISOE super",
-        "matchScore": 0.952,
-        "margin": 0.316,
-        "ocrConfidence": 83.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "1767-LTN",
@@ -134565,86 +134603,81 @@
       {
         "slot": 1,
         "name": "Lemon",
-        "ocrConfidence": 96.2
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Cypress 25",
-        "ocrConfidence": 72.8
+        "name": "Cypress",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "pine Tree alll",
-        "ocrConfidence": 70.3
+        "name": "Pine Tree",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Bagas de Zimbro",
-        "ocrConfidence": 70.5
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Mastic or Lentisque",
-        "ocrConfidence": 92.5
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Amber",
-        "ocrConfidence": 94.4
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Lemon",
-        "raw": "Lemon",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Cypress",
-        "raw": "Cypress 25",
-        "matchScore": 0.97,
-        "margin": 0.361,
-        "ocrConfidence": 72.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Pine Tree",
-        "raw": "pine Tree alll",
-        "matchScore": 0.97,
-        "margin": 0.303,
-        "ocrConfidence": 70.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Bagas de Zimbro",
-        "raw": "Bagas de Zimbro",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 70.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Mastic or Lentisque",
-        "raw": "Mastic or Lentisque",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 92.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Amber",
-        "raw": "Amber",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 94.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "339-TMFO",
@@ -136273,14 +136306,94 @@
     "code": "136-KUR",
     "fragranticaId": 53400,
     "card": "fragrantica-scraper-archive/social-cards/images/2209_136-KUR_53400.jpeg",
-    "validated": false,
-    "mainNotes": [],
-    "rawSlots": [],
-    "validatedSlots": [],
+    "validated": true,
+    "mainNotes": [
+      "Bagas de Zimbro",
+      "Nutmeg",
+      "Musk",
+      "Woody Notes",
+      "Coriander",
+      "Bergamot"
+    ],
+    "rawSlots": [
+      {
+        "slot": 1,
+        "name": "Bagas de Zimbro",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 2,
+        "name": "Nutmeg",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 3,
+        "name": "Musk",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 4,
+        "name": "Woody Notes",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 5,
+        "name": "Coriander",
+        "ocrConfidence": null
+      },
+      {
+        "slot": 6,
+        "name": "Bergamot",
+        "ocrConfidence": null
+      }
+    ],
+    "validatedSlots": [
+      {
+        "slot": 1,
+        "name": "Bagas de Zimbro",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 2,
+        "name": "Nutmeg",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Musk",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 4,
+        "name": "Woody Notes",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 5,
+        "name": "Coriander",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 6,
+        "name": "Bergamot",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      }
+    ],
     "failures": [],
-    "reasons": [
-      "NO_OCR_SLOTS"
-    ]
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "135-KUR",
@@ -139093,86 +139206,81 @@
       {
         "slot": 1,
         "name": "Fig Leaf",
-        "ocrConfidence": 81.9
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Bergamot",
-        "ocrConfidence": 96.4
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Tree Olive",
-        "ocrConfidence": 94.3
+        "name": "Olive Tree",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Orange Blossom",
-        "ocrConfidence": 95.8
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Black Currant",
-        "ocrConfidence": 96.7
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Tonka Bean",
-        "ocrConfidence": 96.6
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Fig Leaf",
-        "raw": "Fig Leaf",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 81.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Bergamot",
-        "raw": "Bergamot",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Olive Tree",
-        "raw": "Tree Olive",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
         "matchScore": 1.0,
-        "margin": 0.03,
-        "ocrConfidence": 94.3
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Orange Blossom",
-        "raw": "Orange Blossom",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Black Currant",
-        "raw": "Black Currant",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Tonka Bean",
-        "raw": "Tonka Bean",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "2775-BOT",
@@ -141606,74 +141714,70 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Bagas de Zimboro a",
-        "ocrConfidence": 83.3
+        "name": "Bagas de Zimbro",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Citruses DBD a w",
-        "ocrConfidence": 63.9
+        "name": "Citruses",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Blood Orange",
-        "ocrConfidence": 96.1
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Pimento",
-        "ocrConfidence": 95.9
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Lavender",
-        "ocrConfidence": 96.6
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Bagas de Zimbro",
-        "raw": "Bagas de Zimboro a",
-        "matchScore": 0.909,
-        "margin": 0.409,
-        "ocrConfidence": 83.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Citruses",
-        "raw": "Citruses DBD a w",
-        "matchScore": 0.97,
-        "margin": 0.399,
-        "ocrConfidence": 63.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Blood Orange",
-        "raw": "Blood Orange",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.1
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Pimento",
-        "raw": "Pimento",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Lavender",
-        "raw": "Lavender",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "1671-KIL",
@@ -143564,87 +143668,82 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "ISOE Super",
-        "ocrConfidence": 84.3
+        "name": "Iso E Super",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Cedar",
-        "ocrConfidence": 96.9
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Cashmir wood a",
-        "ocrConfidence": 66.6
+        "name": "Cashmir wood",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "Cc Bergamot",
-        "ocrConfidence": 65.9
+        "name": "Bergamot",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "CE Vetiver",
-        "ocrConfidence": 54.3
+        "name": "Vetiver",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "Le Musk",
-        "ocrConfidence": 61.5
+        "name": "Musk",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Iso E Super",
-        "raw": "ISOE Super",
-        "matchScore": 0.952,
-        "margin": 0.316,
-        "ocrConfidence": 84.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Cedar",
-        "raw": "Cedar",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Cashmir wood",
-        "raw": "Cashmir wood a",
-        "matchScore": 0.97,
-        "margin": 0.355,
-        "ocrConfidence": 66.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Bergamot",
-        "raw": "Cc Bergamot",
-        "matchScore": 0.97,
-        "margin": 0.22,
-        "ocrConfidence": 65.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Vetiver",
-        "raw": "CE Vetiver",
-        "matchScore": 0.97,
-        "margin": 0.37,
-        "ocrConfidence": 54.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Musk",
-        "raw": "Le Musk",
-        "matchScore": 0.97,
-        "margin": 0.345,
-        "ocrConfidence": 61.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "659-ARM",
@@ -144376,87 +144475,82 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "- Juniper",
-        "ocrConfidence": 88.0
+        "name": "Juniper",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Cypress",
-        "ocrConfidence": 81.2
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Bergamot",
-        "ocrConfidence": 96.5
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Rosemary",
-        "ocrConfidence": 93.3
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "ISOE Super",
-        "ocrConfidence": 91.2
+        "name": "Iso E Super",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Cashmeran",
-        "ocrConfidence": 90.9
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Juniper",
-        "raw": "- Juniper",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 88.0
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Cypress",
-        "raw": "Cypress",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 81.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Bergamot",
-        "raw": "Bergamot",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Rosemary",
-        "raw": "Rosemary",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 93.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Iso E Super",
-        "raw": "ISOE Super",
-        "matchScore": 0.952,
-        "margin": 0.316,
-        "ocrConfidence": 91.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Cashmeran",
-        "raw": "Cashmeran",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 90.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "1046-CAL",
@@ -153671,73 +153765,69 @@
       {
         "slot": 1,
         "name": "Powdery Notes",
-        "ocrConfidence": 96.5
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Bagas de Zimbro",
-        "ocrConfidence": 85.7
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Cedar",
-        "ocrConfidence": 96.6
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "YET Jasmine",
-        "ocrConfidence": 66.8
+        "name": "Jasmine",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "waY wv Tonka Bean",
-        "ocrConfidence": 69.8
+        "name": "Tonka Bean",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Powdery Notes",
-        "raw": "Powdery Notes",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Bagas de Zimbro",
-        "raw": "Bagas de Zimbro",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 85.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Cedar",
-        "raw": "Cedar",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Jasmine",
-        "raw": "YET Jasmine",
-        "matchScore": 0.97,
-        "margin": 0.152,
-        "ocrConfidence": 66.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Tonka Bean",
-        "raw": "waY wv Tonka Bean",
-        "matchScore": 0.97,
-        "margin": 0.389,
-        "ocrConfidence": 69.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "2067-ROJ",
@@ -160997,86 +161087,81 @@
       {
         "slot": 1,
         "name": "Vanilla",
-        "ocrConfidence": 96.4
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Coffee Sha",
-        "ocrConfidence": 75.2
+        "name": "Coffee",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Fig Ww",
-        "ocrConfidence": 68.5
+        "name": "Fig",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Pear",
-        "ocrConfidence": 96.4
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "Leaf Fig",
-        "ocrConfidence": 96.0
+        "name": "Fig Leaf",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Orange Blossom",
-        "ocrConfidence": 96.5
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Vanilla",
-        "raw": "Vanilla",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Coffee",
-        "raw": "Coffee Sha",
-        "matchScore": 0.97,
-        "margin": 0.27,
-        "ocrConfidence": 75.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Fig",
-        "raw": "Fig Ww",
-        "matchScore": 0.97,
-        "margin": 0.399,
-        "ocrConfidence": 68.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Pear",
-        "raw": "Pear",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Fig Leaf",
-        "raw": "Leaf Fig",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
         "matchScore": 1.0,
-        "margin": 0.03,
-        "ocrConfidence": 96.0
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Orange Blossom",
-        "raw": "Orange Blossom",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "2259-GIV",
@@ -165429,94 +165514,94 @@
     "code": "2126-GIV",
     "fragranticaId": 74819,
     "card": "fragrantica-scraper-archive/social-cards/images/3535_2126-GIV_74819.jpeg",
-    "validated": false,
-    "mainNotes": [],
+    "validated": true,
+    "mainNotes": [
+      "Ambroxan",
+      "Cedar",
+      "Iso E Super",
+      "Palo Santo",
+      "Cardamom",
+      "Vetiver"
+    ],
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Ambroxan mz",
-        "ocrConfidence": 71.1
+        "name": "Ambroxan",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Cedar Mi _",
-        "ocrConfidence": 65.4
+        "name": "Cedar",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "ISOE super LORE",
-        "ocrConfidence": 69.6
+        "name": "Iso E Super",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "eS hip Palo Santo",
-        "ocrConfidence": 72.1
+        "name": "Palo Santo",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "ul Cardamom",
-        "ocrConfidence": 59.7
+        "name": "Cardamom",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Vetiver",
-        "ocrConfidence": 95.3
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Ambroxan",
-        "raw": "Ambroxan mz",
-        "matchScore": 0.97,
-        "margin": 0.338,
-        "ocrConfidence": 71.1
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Cedar",
-        "raw": "Cedar Mi _",
-        "matchScore": 0.97,
-        "margin": 0.303,
-        "ocrConfidence": 65.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
+      },
+      {
+        "slot": 3,
+        "name": "Iso E Super",
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Palo Santo",
-        "raw": "eS hip Palo Santo",
-        "matchScore": 0.97,
-        "margin": 0.437,
-        "ocrConfidence": 72.1
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Cardamom",
-        "raw": "ul Cardamom",
-        "matchScore": 0.97,
-        "margin": 0.201,
-        "ocrConfidence": 59.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Vetiver",
-        "raw": "Vetiver",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
-    "failures": [
-      {
-        "slot": 3,
-        "raw": "ISOE super LORE",
-        "bestScore": 0.769,
-        "margin": 0.209,
-        "ocrConfidence": 69.6
-      }
-    ],
-    "reasons": [
-      "LEXICON_UNCERTAIN"
-    ]
+    "failures": [],
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "2205-TMU",
@@ -171479,87 +171564,82 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Orange Blossom uaF",
-        "ocrConfidence": 71.6
+        "name": "Orange Blossom",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Honey ae nA",
-        "ocrConfidence": 47.2
+        "name": "Honey",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Oakmoss",
-        "ocrConfidence": 87.5
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Vanilla",
-        "ocrConfidence": 96.6
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "Frankincense",
-        "ocrConfidence": 96.5
+        "name": "Incense",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "Paradicone",
-        "ocrConfidence": 53.9
+        "name": "Paradisone",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Orange Blossom",
-        "raw": "Orange Blossom uaF",
-        "matchScore": 0.97,
-        "margin": 0.0,
-        "ocrConfidence": 71.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Honey",
-        "raw": "Honey ae nA",
-        "matchScore": 0.97,
-        "margin": 0.303,
-        "ocrConfidence": 47.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Oakmoss",
-        "raw": "Oakmoss",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 87.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Vanilla",
-        "raw": "Vanilla",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Incense",
-        "raw": "Frankincense",
-        "matchScore": 0.93,
-        "margin": 0.203,
-        "ocrConfidence": 96.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Paradisone",
-        "raw": "Paradicone",
-        "matchScore": 0.9,
-        "margin": 0.122,
-        "ocrConfidence": 53.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "2287-VAL",
@@ -174597,86 +174677,81 @@
       {
         "slot": 1,
         "name": "Cognac",
-        "ocrConfidence": 96.5
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "SS Red Berries",
-        "ocrConfidence": 79.6
+        "name": "Red Berries",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "pi Vanilla",
-        "ocrConfidence": 57.0
+        "name": "Vanilla",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Amber",
-        "ocrConfidence": 95.9
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Sandalwood",
-        "ocrConfidence": 92.5
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "Se Benzoin",
-        "ocrConfidence": 65.9
+        "name": "Benzoin",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Cognac",
-        "raw": "Cognac",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Red Berries",
-        "raw": "SS Red Berries",
-        "matchScore": 0.97,
-        "margin": 0.0,
-        "ocrConfidence": 79.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Vanilla",
-        "raw": "pi Vanilla",
-        "matchScore": 0.97,
-        "margin": 0.22,
-        "ocrConfidence": 57.0
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Amber",
-        "raw": "Amber",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Sandalwood",
-        "raw": "Sandalwood",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 92.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Benzoin",
-        "raw": "Se Benzoin",
-        "matchScore": 0.97,
-        "margin": 0.37,
-        "ocrConfidence": 65.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "2569-GOLD",
@@ -178398,86 +178473,81 @@
       {
         "slot": 1,
         "name": "Coffee",
-        "ocrConfidence": 96.0
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Brown Sugar",
-        "ocrConfidence": 89.1
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Vanilla",
-        "ocrConfidence": 89.4
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Amaretto",
-        "ocrConfidence": 96.5
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Ice cream",
-        "ocrConfidence": 69.7
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Ambergris",
-        "ocrConfidence": 49.0
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Coffee",
-        "raw": "Coffee",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.0
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Brown Sugar",
-        "raw": "Brown Sugar",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 89.1
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Vanilla",
-        "raw": "Vanilla",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 89.4
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Amaretto",
-        "raw": "Amaretto",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Ice cream",
-        "raw": "Ice cream",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 69.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Ambergris",
-        "raw": "Ambergris",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 49.0
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "2581-GUR",
@@ -182703,86 +182773,81 @@
       {
         "slot": 1,
         "name": "Aldehydes",
-        "ocrConfidence": 95.9
+        "ocrConfidence": null
       },
       {
         "slot": 2,
-        "name": "Peach aa",
-        "ocrConfidence": 73.9
+        "name": "Peach",
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Orange Blossom aa",
-        "ocrConfidence": 76.6
+        "name": "Orange Blossom",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "es Musk",
-        "ocrConfidence": 68.3
+        "name": "Musk",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "ae Violet",
-        "ocrConfidence": 66.6
+        "name": "Violet",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
-        "name": "ae ISOE super",
-        "ocrConfidence": 68.3
+        "name": "Iso E Super",
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Aldehydes",
-        "raw": "Aldehydes",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Peach",
-        "raw": "Peach aa",
-        "matchScore": 0.97,
-        "margin": 0.192,
-        "ocrConfidence": 73.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Orange Blossom",
-        "raw": "Orange Blossom aa",
-        "matchScore": 0.97,
-        "margin": 0.0,
-        "ocrConfidence": 76.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Musk",
-        "raw": "es Musk",
-        "matchScore": 0.97,
-        "margin": 0.22,
-        "ocrConfidence": 68.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Violet",
-        "raw": "ae Violet",
-        "matchScore": 0.97,
-        "margin": 0.17,
-        "ocrConfidence": 66.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Iso E Super",
-        "raw": "ae ISOE super",
-        "matchScore": 0.917,
-        "margin": 0.277,
-        "ocrConfidence": 68.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "2707-ROOM",
@@ -185270,86 +185335,81 @@
       {
         "slot": 1,
         "name": "Milk",
-        "ocrConfidence": 57.9
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Vanilla",
-        "ocrConfidence": 92.5
+        "ocrConfidence": null
       },
       {
         "slot": 3,
         "name": "Pepper",
-        "ocrConfidence": 94.2
+        "ocrConfidence": null
       },
       {
         "slot": 4,
         "name": "Orange Blossom",
-        "ocrConfidence": 96.0
+        "ocrConfidence": null
       },
       {
         "slot": 5,
-        "name": "Bagas de ZiImboro",
-        "ocrConfidence": 77.5
+        "name": "Bagas de Zimbro",
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Sandalwood",
-        "ocrConfidence": 96.3
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Milk",
-        "raw": "Milk",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 57.9
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Vanilla",
-        "raw": "Vanilla",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 92.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Pepper",
-        "raw": "Pepper",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 94.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Orange Blossom",
-        "raw": "Orange Blossom",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.0
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Bagas de Zimbro",
-        "raw": "Bagas de ZiImboro",
-        "matchScore": 0.938,
-        "margin": 0.416,
-        "ocrConfidence": 77.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Sandalwood",
-        "raw": "Sandalwood",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 96.3
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "2642-CRD",
@@ -192718,87 +192778,82 @@
     "rawSlots": [
       {
         "slot": 1,
-        "name": "Strawberry S'mores itp",
-        "ocrConfidence": 70.2
+        "name": "Strawberry S’mores",
+        "ocrConfidence": null
       },
       {
         "slot": 2,
         "name": "Vanilla",
-        "ocrConfidence": 95.7
+        "ocrConfidence": null
       },
       {
         "slot": 3,
-        "name": "Caramel ee",
-        "ocrConfidence": 44.8
+        "name": "Caramel",
+        "ocrConfidence": null
       },
       {
         "slot": 4,
-        "name": "w Black Currant",
-        "ocrConfidence": 92.6
+        "name": "Black Currant",
+        "ocrConfidence": null
       },
       {
         "slot": 5,
         "name": "Amber",
-        "ocrConfidence": 94.1
+        "ocrConfidence": null
       },
       {
         "slot": 6,
         "name": "Musk",
-        "ocrConfidence": 95.5
+        "ocrConfidence": null
       }
     ],
     "validatedSlots": [
       {
         "slot": 1,
         "name": "Strawberry S’mores",
-        "raw": "Strawberry S'mores itp",
-        "matchScore": 0.97,
-        "margin": 0.0,
-        "ocrConfidence": 70.2
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 2,
         "name": "Vanilla",
-        "raw": "Vanilla",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.7
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 3,
         "name": "Caramel",
-        "raw": "Caramel ee",
-        "matchScore": 0.97,
-        "margin": 0.22,
-        "ocrConfidence": 44.8
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 4,
         "name": "Black Currant",
-        "raw": "w Black Currant",
-        "matchScore": 0.97,
-        "margin": 0.122,
-        "ocrConfidence": 92.6
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 5,
         "name": "Amber",
-        "raw": "Amber",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 94.1
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       },
       {
         "slot": 6,
         "name": "Musk",
-        "raw": "Musk",
-        "matchScore": 1,
-        "margin": 1,
-        "ocrConfidence": 95.5
+        "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+        "matchScore": 1.0,
+        "margin": null
       }
     ],
     "failures": [],
-    "reasons": []
+    "reasons": [],
+    "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
   },
   {
     "code": "2761-LAT",
