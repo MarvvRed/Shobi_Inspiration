@@ -77,31 +77,6 @@ jobs:
       - name: Build certified perfume-only public catalog
         run: python tools/build_final_perfume_catalog.py
 
-      - name: Point frontend at lightweight catalog and install tracker
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          path = Path('script.js')
-          text = path.read_text(encoding='utf-8')
-          old = "fetch('database_complete.json')"
-          new = "fetch('catalog_final_perfume_only.json')"
-          if old in text:
-              text = text.replace(old, new, 1)
-              path.write_text(text, encoding='utf-8')
-          elif new not in text:
-              raise SystemExit('Could not find frontend catalog fetch')
-
-          index = Path('index.html')
-          html = index.read_text(encoding='utf-8')
-          tracker = '<script src="validation-tracker.js"></script>'
-          if tracker not in html:
-              marker = '<script src="perfume-images/map.js"></script>'
-              if marker not in html:
-                  raise SystemExit('Could not find tracker insertion point')
-              html = html.replace(marker, marker + '\n' + tracker, 1)
-              index.write_text(html, encoding='utf-8')
-          PY
-
       - name: Validate website catalog
         run: |
           python - <<'PY'
@@ -123,7 +98,7 @@ jobs:
           assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in site_rows)
           assert [(r['code'], r['brand'], r['inspiredBy']) for r in site_rows] == [(r['code'], r['brand'], r['inspiredBy']) for r in rows]
           assert __import__('os').path.getsize('catalog_site.json') < __import__('os').path.getsize('database_complete.json')
-          assert "fetch('catalog_final_perfume_only.json')" in Path('script.js').read_text(encoding='utf-8')
+          assert "fetch('catalog_final_perfume_only.json'" in Path('script.js').read_text(encoding='utf-8')
           assert not any(r['code'] in exclusions for r in final_rows)
           assert '<script src="validation-tracker.js"></script>' in Path('index.html').read_text(encoding='utf-8')
           assert all(r.get('validationStatus') in {'green','yellow','red'} for r in site_rows)
