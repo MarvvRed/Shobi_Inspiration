@@ -10,12 +10,14 @@ import argparse
 import json
 import re
 import subprocess
+import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "database/catalog/database_complete.json"
 SITE = ROOT / "database/catalog/catalog_site.json"
+FINAL = ROOT / "database/catalog/catalog_final_perfume_only.json"
 ORDERED_AUDIT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
 REPORT = ROOT / "database/audits/CURRENT-CATALOG-AUDIT.md"
 ALLOWLIST = ROOT / "database/audits/identity-change-allowlist.json"
@@ -29,7 +31,8 @@ def load(path: Path):
 
 
 def norm(value):
-    return re.sub(r"[^a-z0-9]+", " ", str(value or "").lower()).strip()
+    text = unicodedata.normalize("NFKD", str(value or "")).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
 
 
 def identity(row):
@@ -92,15 +95,23 @@ def main():
 
     db = load(DB)
     site = load(SITE)
+    final = load(FINAL)
     audit_rows = load(ORDERED_AUDIT).get("rows", [])
     by_code = {str(r.get("code") or "").strip().upper(): r for r in db}
     site_by_code = {str(r.get("code") or "").strip().upper(): r for r in site}
+    final_by_code = {str(r.get("code") or "").strip().upper(): r for r in final}
     audit_by_code = {str(r.get("code") or "").strip().upper(): r for r in audit_rows}
 
     failures = []
     if len(by_code) != len(db): failures.append("duplicate Shobi codes in database_complete.json")
     if len(site_by_code) != len(site): failures.append("duplicate Shobi codes in catalog_site.json")
     if set(by_code) != set(site_by_code): failures.append("database_complete/catalog_site code sets differ")
+    if len(final_by_code) != len(final): failures.append("duplicate Shobi codes in catalog_final_perfume_only.json")
+    if set(final_by_code) != set(site_by_code): failures.append("catalog_final_perfume_only/catalog_site code sets differ")
+    for code, final_row in final_by_code.items():
+        site_row = site_by_code.get(code)
+        if site_row and final_row.get("validationStatus") != site_row.get("validationStatus"):
+            failures.append(f"{code}: final catalog validation status differs from audit catalog")
 
     green = []
     for code, srow in site_by_code.items():
