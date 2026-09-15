@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/audit-validation-edge-gaps.yml'
 
+# Reports small non-note validation gaps without changing catalog data.
 jobs:
   audit:
     runs-on: ubuntu-latest
