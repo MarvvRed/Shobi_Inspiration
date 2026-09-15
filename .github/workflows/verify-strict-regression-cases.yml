@@ -1,0 +1,71 @@
+name: Verify strict validation regression cases
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-strict-regression-cases.yml'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify Myths Man and green invariants
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          db = json.load(open('database/catalog/database_complete.json', encoding='utf-8'))
+          site = json.load(open('database/catalog/catalog_site.json', encoding='utf-8'))
+          audit = json.load(open('database/fragrantica/social-cards/records/social-card-ordered-image-audit.json', encoding='utf-8'))['rows']
+          by_code = {str(r.get('code') or '').upper(): r for r in db}
+          site_by_code = {str(r.get('code') or '').upper(): r for r in site}
+          audit_by_code = {str(r.get('code') or '').upper(): r for r in audit}
+
+          green = [r for r in site if r.get('validationStatus') == 'green']
+          failures = []
+          for item in green:
+              code = str(item.get('code') or '').upper()
+              row = by_code[code]
+              evidence = audit_by_code.get(code)
+              if not evidence or evidence.get('result') != 'EXACT_ORDERED_MATCH':
+                  failures.append((code, 'missing_exact_ordered_match'))
+                  continue
+              if str(evidence.get('fragranticaId') or '') != str(row.get('fragranticaId') or ''):
+                  failures.append((code, 'fid_mismatch'))
+              if evidence.get('catalogNotes') != row.get('fragranticaSocialCardNotes'):
+                  failures.append((code, 'catalog_notes_mismatch'))
+              if evidence.get('observedNotes') != row.get('fragranticaSocialCardNotes'):
+                  failures.append((code, 'observed_notes_mismatch'))
+          if failures:
+              raise SystemExit(f'Green invariant failures: {failures[:20]} (total {len(failures)})')
+
+          code = '1912-AMG'
+          row = by_code.get(code)
+          s = site_by_code.get(code)
+          evidence = audit_by_code.get(code)
+          if not row or not s or not evidence:
+              raise SystemExit('Myths Man regression record/evidence missing')
+          result = {
+              'code': code,
+              'name': row.get('inspiredBy'),
+              'brand': row.get('brand'),
+              'fid': row.get('fragranticaId'),
+              'validationStatus': s.get('validationStatus'),
+              'catalogNotes': row.get('fragranticaSocialCardNotes'),
+              'auditResult': evidence.get('result'),
+              'observedNotes': evidence.get('observedNotes'),
+              'noteCount': len(row.get('fragranticaSocialCardNotes') or []),
+              'allGreenRowsHaveExactOrderedMatch': True,
+              'greenCount': len(green),
+          }
+          print(json.dumps(result, ensure_ascii=False, indent=2))
+          assert result['auditResult'] == 'EXACT_ORDERED_MATCH'
+          assert result['catalogNotes'] == result['observedNotes']
+          PY
