@@ -89,13 +89,13 @@ jobs:
           final_rows = json.load(open('database/catalog/catalog_final_perfume_only.json', encoding='utf-8'))
           final_db_rows = json.load(open('database/catalog/database_final_perfume_only.json', encoding='utf-8'))
           exclusions = json.load(open('database/catalog/catalog-scope-exclusions.json', encoding='utf-8'))['codes']
-          assert len(rows) == 2320
-          assert len(site_rows) == 2320
+          assert len(rows) == 2253
+          assert len(site_rows) == 2253
           assert len(final_rows) == 2253
           assert len(final_db_rows) == 2253
-          assert len({r['code'] for r in rows}) == 2320
-          assert len({r['prestashopProductId'] for r in rows}) == 2320
-          assert len({r['shobiUrl'] for r in rows}) == 2320
+          assert len({r['code'] for r in rows}) == 2253
+          assert len({r['prestashopProductId'] for r in rows}) == 2253
+          assert len({r['shobiUrl'] for r in rows}) == 2253
           assert not any(str(r.get('reference', '')).upper().startswith('MIX') for r in rows)
           assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in rows)
           assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in site_rows)
@@ -103,6 +103,8 @@ jobs:
           assert __import__('os').path.getsize('database/catalog/catalog_site.json') < __import__('os').path.getsize('database/catalog/database_complete.json')
           assert "fetch('database/catalog/catalog_final_perfume_only.json'" in Path('script.js').read_text(encoding='utf-8')
           assert not any(r['code'] in exclusions for r in final_rows)
+          assert not any(r['code'] in exclusions for r in rows)
+          assert not any(r['code'] in exclusions for r in site_rows)
           assert len({r['code'] for r in final_rows}) == len(final_rows)
           assert len({r['code'] for r in final_db_rows}) == len(final_db_rows)
           assert len({r['prestashopProductId'] for r in final_db_rows}) == len(final_db_rows)

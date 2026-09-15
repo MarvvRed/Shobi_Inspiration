@@ -17,6 +17,7 @@ OLD_SITE = ROOT / "database/catalog/database_complete.json"
 NOTES = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes-validated.json"
 GENDER = ROOT / "database/fragrantica/social-cards/records/social-card-gender.json"
 GENDER_SEASON = ROOT / "database/fragrantica/social-cards/gender-season.csv"
+EXCLUSIONS = ROOT / "database/catalog/catalog-scope-exclusions.json"
 OUTPUT = ROOT / "database/catalog/database_complete.json"
 SITE_OUTPUT = ROOT / "database/catalog/catalog_site.json"
 
@@ -309,7 +310,13 @@ for product_code, candidates in by_code.items():
 
 if len(unique_out) != 2320 or len({row["code"] for row in unique_out}) != len(unique_out):
     raise SystemExit(f"Expected 2320 unique Shobi perfumes, found {len(unique_out)}")
-out = unique_out
+excluded_codes = {
+    clean_code(value)
+    for value in json.loads(EXCLUSIONS.read_text(encoding="utf-8")).get("codes", [])
+}
+out = [row for row in unique_out if row["code"] not in excluded_codes]
+if len(out) != 2253 or any(row["code"] in excluded_codes for row in out):
+    raise SystemExit(f"Expected 2253 clean in-scope Shobi perfumes, found {len(out)}")
 out_by_code = {row["code"]: row for row in out}
 for code, (brand, name, fragrantica_id, fragrantica_url) in CONFIRMED_IDENTITY_OVERRIDES.items():
     row = out_by_code.get(code)
@@ -344,7 +351,7 @@ SITE_OUTPUT.write_text(
     json.dumps(site_rows, ensure_ascii=False, separators=(",", ":")) + "\n",
     encoding="utf-8",
 )
-print("unique rows", len(out))
+print("clean in-scope unique rows", len(out))
 print("cross-listed pages collapsed", len(collapsed))
 print("old enrichments retained", sum(row["prestashopProductId"] in old_by_pid for row in out))
 print("with main notes", sum(bool(row["fragranticaSocialCardNotes"]) for row in out))
