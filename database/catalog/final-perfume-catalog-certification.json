@@ -1,11 +1,43 @@
 {
   "rule": "Publish only one-to-one Shobi records whose original is an audited genuine wearable perfume. Candles, home/room/car fragrance, body or hair mists, laundry scents, accessories, and Shobi-invented/non-demonstrable originals are excluded.",
-  "sourceCatalogRows": 2324,
+  "sourceCatalogRows": 2253,
   "confirmedExcludedRows": 67,
-  "finalRows": 2257,
+  "eligibleVerifiedShobiListings": 2253,
+  "sourceCrossListedShobiListingsCollapsed": [
+    {
+      "code": "1270-VAN",
+      "keptPrestashopProductId": "346",
+      "removedPrestashopProductIds": [
+        "971"
+      ]
+    },
+    {
+      "code": "777-LAL",
+      "keptPrestashopProductId": "284",
+      "removedPrestashopProductIds": [
+        "831"
+      ]
+    },
+    {
+      "code": "1068-CHA",
+      "keptPrestashopProductId": "165",
+      "removedPrestashopProductIds": [
+        "591"
+      ]
+    },
+    {
+      "code": "390-ACQ",
+      "keptPrestashopProductId": "106",
+      "removedPrestashopProductIds": [
+        "502"
+      ]
+    }
+  ],
+  "unexpectedOperationalDuplicatesCollapsed": [],
+  "finalRows": 2253,
   "allFinalRowsFromLiveShobiSource": true,
   "allFinalRowsHaveShobiProductIdAndUrl": true,
-  "directFragranticaIdentityProofRows": 2254,
+  "directFragranticaIdentityProofRows": 2250,
   "exceptionRowsWithSpecificEvidence": [
     {
       "code": "2816-MOOD",
