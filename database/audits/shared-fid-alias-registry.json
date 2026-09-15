@@ -2,6 +2,60 @@
   "rule": "Only these exact code sets may intentionally share a Fragrantica ID. Any additional code or any new shared FID fails the catalog safety gate.",
   "rows": [
     {
+      "fragranticaId": "221",
+      "codes": ["525-DRC", "1074-DRC"],
+      "canonicalIdentity": "Dune — Dior",
+      "reason": "Both independently confirmed source mappings resolve to the same Dior Dune page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "248",
+      "codes": ["475-CAL", "1048-CAL"],
+      "canonicalIdentity": "Obsession — Calvin Klein",
+      "reason": "Both independently confirmed source mappings resolve to the same Calvin Klein Obsession page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "257",
+      "codes": ["470-CAL", "1045-CAL"],
+      "canonicalIdentity": "Eternity — Calvin Klein",
+      "reason": "Both independently confirmed source mappings resolve to the same Calvin Klein Eternity page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "423",
+      "codes": ["653-ARM", "1131-ARM"],
+      "canonicalIdentity": "Mania — Giorgio Armani",
+      "reason": "Both independently confirmed source mappings resolve to the same Giorgio Armani Mania page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "485",
+      "codes": ["557-DOL", "1095-DOL"],
+      "canonicalIdentity": "Light Blue — Dolce & Gabbana",
+      "reason": "Both independently confirmed source mappings resolve to the same Dolce & Gabbana Light Blue page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "498",
+      "codes": ["574-DON", "1504-DON"],
+      "canonicalIdentity": "DKNY Be Delicious — Donna Karan",
+      "reason": "Both independently confirmed source mappings resolve to the same Donna Karan DKNY Be Delicious page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "502",
+      "codes": ["494-CHA", "1064-CHA"],
+      "canonicalIdentity": "Allure — Chanel",
+      "reason": "Both independently confirmed source mappings resolve to the same Chanel Allure page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "698",
+      "codes": ["566-DOL", "1099-DOL"],
+      "canonicalIdentity": "The One — Dolce & Gabbana",
+      "reason": "Both independently confirmed source mappings resolve to the same Dolce & Gabbana The One page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "704",
+      "codes": ["920-TMU", "1262-TMU"],
+      "canonicalIdentity": "Angel — Mugler",
+      "reason": "Both independently confirmed source mappings resolve to the same Mugler Angel page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
       "fragranticaId": "209",
       "codes": ["843-NRO", "848-NRO"],
       "canonicalIdentity": "Narciso Rodriguez For Her — Narciso Rodriguez",
@@ -24,6 +78,96 @@
       "codes": ["612-ESC", "613-ESC"],
       "canonicalIdentity": "Turquoise Summer — Escada",
       "reason": "Both Shobi labels resolve to Fragrantica FID 28630; the shortened Turquoise label refers to the same source perfume."
+    },
+    {
+      "fragranticaId": "813",
+      "codes": ["426-BRB", "1027-BRB"],
+      "canonicalIdentity": "London — Burberry",
+      "reason": "Both independently confirmed source mappings resolve to the same Burberry London page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "897",
+      "codes": ["1250-RAL", "2533-RAL"],
+      "canonicalIdentity": "Safari — Ralph Lauren",
+      "reason": "Both independently confirmed source mappings resolve to the same Ralph Lauren Safari page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "1261",
+      "codes": ["769-LART", "1195-LART"],
+      "canonicalIdentity": "Premier Figuier — L'Artisan Parfumeur",
+      "reason": "Both independently confirmed source mappings resolve to the same L'Artisan Parfumeur Premier Figuier page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "1292",
+      "codes": ["1134-ARM", "2224-ARM"],
+      "canonicalIdentity": "Emporio Armani Diamonds — Giorgio Armani",
+      "reason": "Both independently confirmed source mappings resolve to FID 1292; one canonical URL uses Fragrantica's /p/ short form."
+    },
+    {
+      "fragranticaId": "3403",
+      "codes": ["753-KEN", "1190-KEN"],
+      "canonicalIdentity": "Kenzo — Kenzo",
+      "reason": "Both independently confirmed source mappings resolve to the same Kenzo page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "4323",
+      "codes": ["127-KIL", "153-PARF"],
+      "canonicalIdentity": "Straight to Heaven — By Kilian",
+      "reason": "Both independently confirmed source mappings resolve to the same By Kilian Straight to Heaven page and FID; the two Shobi code suffixes are brand aliases."
+    },
+    {
+      "fragranticaId": "5979",
+      "codes": ["711-HUG", "1163-HUG"],
+      "canonicalIdentity": "Boss Orange — Hugo Boss",
+      "reason": "Both independently confirmed source mappings resolve to the same Hugo Boss Boss Orange page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "10573",
+      "codes": ["734-JIM", "735-JIM"],
+      "canonicalIdentity": "Jimmy Choo — Jimmy Choo",
+      "reason": "Both independently confirmed source mappings resolve to the same Jimmy Choo page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "12424",
+      "codes": ["500-CHA", "501-CHA"],
+      "canonicalIdentity": "Chanel No. 19 Poudre — Chanel",
+      "reason": "Both independently confirmed source mappings resolve to the same Chanel No. 19 Poudre page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "14606",
+      "codes": ["468-CAL", "1043-CAL"],
+      "canonicalIdentity": "Calvin Klein — Calvin Klein",
+      "reason": "Both independently confirmed source mappings resolve to the same Calvin Klein page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "31045",
+      "codes": ["880-PRA", "1239-PRA"],
+      "canonicalIdentity": "Infusion d'Oeillet — Prada",
+      "reason": "Both independently confirmed source mappings resolve to the same Prada Infusion d'Oeillet page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "35780",
+      "codes": ["483-CAR", "1057-CAR"],
+      "canonicalIdentity": "212 VIP Wild Party — Carolina Herrera",
+      "reason": "Both independently confirmed source mappings resolve to the same Carolina Herrera 212 VIP Wild Party page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "44034",
+      "codes": ["1096-DOL", "1872-DOL"],
+      "canonicalIdentity": "Light Blue Eau Intense — Dolce & Gabbana",
+      "reason": "Both independently confirmed source mappings resolve to the same Dolce & Gabbana Light Blue Eau Intense page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "46186",
+      "codes": ["1542-JOM", "2626-JOM"],
+      "canonicalIdentity": "English Oak & Redcurrant — Jo Malone London",
+      "reason": "Both independently confirmed source mappings resolve to the same Jo Malone London English Oak & Redcurrant page and FID; the two Shobi codes are retained as separate listings."
+    },
+    {
+      "fragranticaId": "95641",
+      "codes": ["2456-PAC", "2513-PAC"],
+      "canonicalIdentity": "Million Gold — Rabanne",
+      "reason": "Both independently confirmed source mappings resolve to the same Rabanne Million Gold page and FID; the two Shobi codes are retained as separate listings."
     }
   ]
 }
