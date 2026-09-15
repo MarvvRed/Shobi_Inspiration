@@ -7,7 +7,7 @@ import pytesseract
 from pytesseract import Output
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json';SITE=ROOT/'catalog_site.json';FETCH=ROOT/'current-fid-card-fetch-report.json';PAT=ROOT/'validated-note-slot-patterns.json';OUT=ROOT/'existing-notes-current-card-fast-proof.json'
+DB=ROOT/'database_complete.json';SITE=ROOT/'catalog_site.json';CARD_DIR=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images';PAT=ROOT/'validated-note-slot-patterns.json';OUT=ROOT/'existing-notes-current-card-fast-proof.json'
 CROP=(48,738,448,1097);BANDS=[(145,232),(288,359)];COLS=[(0,133),(133,267),(267,400)]
 def code(v):return str(v or '').strip().upper()
 def norm(s):
@@ -25,16 +25,18 @@ def proves(note,text):
   return False
  return True
 
-db=json.loads(DB.read_text(encoding='utf-8-sig'));site=json.loads(SITE.read_text(encoding='utf-8-sig'));fetch={code(x.get('code')):x for x in json.loads(FETCH.read_text(encoding='utf-8')).get('rows',[])};patterns=json.loads(PAT.read_text(encoding='utf-8'))
+db=json.loads(DB.read_text(encoding='utf-8-sig'));site=json.loads(SITE.read_text(encoding='utf-8-sig'));patterns=json.loads(PAT.read_text(encoding='utf-8'))
 bycount={}
 for k,items in patterns.get('byCount',{}).items():
  bycount[int(k)]=[tuple(int(v) for v in x.get('slots') or []) for x in items if x.get('slots')]
 rows=[]
 for r,s in zip(db,site):
  if str(s.get('validationStatus') or '').lower()!='yellow' or (s.get('validationChecks') or {}).get('socialCard',False):continue
- notes=list(r.get('fragranticaSocialCardNotes') or []);fid=str(r.get('fragranticaId') or '');c=code(r.get('code'));fr=fetch.get(c) or {}
- if not notes or not fid or str(fr.get('fid') or '')!=fid or fr.get('status') not in {'RECOVERED','EXISTS'}:continue
- card=str(fr.get('card') or '');p=ROOT/card
+ notes=list(r.get('fragranticaSocialCardNotes') or []);fid=str(r.get('fragranticaId') or '');c=code(r.get('code'))
+ if not notes or not fid:continue
+ matches=sorted(CARD_DIR.glob(f'*_{c}_{fid}.jpeg'))+sorted(CARD_DIR.glob(f'*_{c}_{fid}.jpg'))
+ if not matches:continue
+ p=matches[0];card=str(p.relative_to(ROOT))
  if not p.is_file():continue
  with Image.open(p) as im:
   sx=im.width/1200;sy=im.height/1200;x1,y1,x2,y2=CROP;panel=im.crop((round(x1*sx),round(y1*sy),round(x2*sx),round(y2*sy))).resize((400,359)).convert('L');panel=ImageOps.autocontrast(panel);panel=ImageEnhance.Contrast(panel).enhance(2.3);panel=panel.resize((800,718),Image.Resampling.LANCZOS)
