@@ -1,57 +1,7 @@
 {
-  "validatedWithSlotPattern": 1491,
+  "validatedWithSlotPattern": 1854,
   "byCount": {
-    "1": [
-      {
-        "slots": [
-          1
-        ],
-        "count": 1,
-        "examples": [
-          {
-            "code": "824-MIC",
-            "fid": 31343,
-            "notes": [
-              "Meat"
-            ]
-          }
-        ]
-      }
-    ],
     "2": [
-      {
-        "slots": [
-          2,
-          3
-        ],
-        "count": 3,
-        "examples": [
-          {
-            "code": "701-HER",
-            "fid": 39584,
-            "notes": [
-              "Rose",
-              "Quince"
-            ]
-          },
-          {
-            "code": "2168-MARG",
-            "fid": 53379,
-            "notes": [
-              "Tea",
-              "Petitgrain"
-            ]
-          },
-          {
-            "code": "2246-GUC",
-            "fid": 83621,
-            "notes": [
-              "Dewberry",
-              "Coconut"
-            ]
-          }
-        ]
-      },
       {
         "slots": [
           1,
@@ -71,17 +21,17 @@
       },
       {
         "slots": [
-          1,
-          2
+          2,
+          3
         ],
         "count": 1,
         "examples": [
           {
-            "code": "1746-XER",
-            "fid": 57363,
+            "code": "2246-GUC",
+            "fid": 83621,
             "notes": [
-              "Rose",
-              "Laotian Oud"
+              "Dewberry",
+              "Coconut"
             ]
           }
         ]
@@ -94,7 +44,7 @@
           5,
           6
         ],
-        "count": 9,
+        "count": 7,
         "examples": [
           {
             "code": "1059-CRT",
@@ -124,21 +74,21 @@
             ]
           },
           {
-            "code": "511-CHL",
-            "fid": 39632,
+            "code": "1939-BYR",
+            "fid": 73438,
             "notes": [
-              "Grapefruit",
-              "Cherry Blossom",
-              "Rice"
+              "Musk",
+              "Labdanum",
+              "Plum"
             ]
           },
           {
-            "code": "1618-NISH",
-            "fid": 54785,
+            "code": "2361-ARM",
+            "fid": 79699,
             "notes": [
-              "Cardamom",
-              "Benzoin",
-              "Sandalwood"
+              "Amber",
+              "Vanilla",
+              "Lavender"
             ]
           }
         ]
@@ -149,7 +99,7 @@
           2,
           3
         ],
-        "count": 6,
+        "count": 4,
         "examples": [
           {
             "code": "872-PRA",
@@ -158,15 +108,6 @@
               "Caramel",
               "Benzoin",
               "Powdery Notes"
-            ]
-          },
-          {
-            "code": "1011-ARA",
-            "fid": 27572,
-            "notes": [
-              "Seaweed",
-              "Wormwood",
-              "Lavender"
             ]
           },
           {
@@ -194,6 +135,58 @@
               "Citron",
               "Bagas de Zimbro",
               "Mineral Notes"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1
+        ],
+        "count": 2,
+        "examples": [
+          {
+            "code": "824-MIC",
+            "fid": 31343,
+            "notes": [
+              "Amber",
+              "Jasmine",
+              "Pear"
+            ]
+          },
+          {
+            "code": "1542-JOM",
+            "fid": 46186,
+            "notes": [
+              "Oak",
+              "Red Currant",
+              "Rose"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          3
+        ],
+        "count": 2,
+        "examples": [
+          {
+            "code": "2159-CAR",
+            "fid": 77691,
+            "notes": [
+              "Cherry Milk",
+              "Tonka Bean",
+              "Orange Blossom"
+            ]
+          },
+          {
+            "code": "2543-HUG",
+            "fid": 78424,
+            "notes": [
+              "Vanilla",
+              "Maninka",
+              "Bran"
             ]
           }
         ]
@@ -245,7 +238,7 @@
           3,
           4
         ],
-        "count": 69,
+        "count": 81,
         "examples": [
           {
             "code": "1088-COM",
@@ -255,6 +248,16 @@
               "Clay",
               "Pebbles",
               "Sand"
+            ]
+          },
+          {
+            "code": "187-ARM",
+            "fid": 406,
+            "notes": [
+              "Labdanum",
+              "Spicy Notes",
+              "Cedar",
+              "Vetiver"
             ]
           },
           {
@@ -268,6 +271,16 @@
             ]
           },
           {
+            "code": "1223-NRO",
+            "fid": 1063,
+            "notes": [
+              "Violet Leaf",
+              "Musk",
+              "Patchouli",
+              "Amber"
+            ]
+          },
+          {
             "code": "1198-LAL",
             "fid": 1834,
             "notes": [
@@ -275,57 +288,6 @@
               "Cypress",
               "Cashmir wood",
               "Musk"
-            ]
-          },
-          {
-            "code": "308-LOC",
-            "fid": 2224,
-            "notes": [
-              "Lemon",
-              "Grapefruit",
-              "Lemon Verbena",
-              "Cedar"
-            ]
-          },
-          {
-            "code": "272-JOM",
-            "fid": 2290,
-            "notes": [
-              "Ginger",
-              "Nutmeg",
-              "Sandalwood",
-              "Cedar"
-            ]
-          }
-        ]
-      },
-      {
-        "slots": [
-          1,
-          2,
-          4,
-          5
-        ],
-        "count": 2,
-        "examples": [
-          {
-            "code": "1984-ATTAR",
-            "fid": 38134,
-            "notes": [
-              "Musk",
-              "Pepper",
-              "Gardenia",
-              "Cloves"
-            ]
-          },
-          {
-            "code": "1290-ZAD",
-            "fid": 39359,
-            "notes": [
-              "Incense",
-              "Vanilla",
-              "Pepper",
-              "Grapefruit"
             ]
           }
         ]
@@ -371,6 +333,27 @@
             ]
           }
         ]
+      },
+      {
+        "slots": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "count": 1,
+        "examples": [
+          {
+            "code": "570-DOL",
+            "fid": 484,
+            "notes": [
+              "Aldehydes",
+              "Carnation",
+              "French Marigold",
+              "Vanilla"
+            ]
+          }
+        ]
       }
     ],
     "5": [
@@ -382,8 +365,30 @@
           4,
           5
         ],
-        "count": 107,
+        "count": 131,
         "examples": [
+          {
+            "code": "779-LAN",
+            "fid": 170,
+            "notes": [
+              "Vanilla",
+              "Passion Flower",
+              "Jasmine",
+              "Vetiver",
+              "Gardenia"
+            ]
+          },
+          {
+            "code": "521-DRC",
+            "fid": 215,
+            "notes": [
+              "Vanilla",
+              "Tonka Bean",
+              "Blackberry",
+              "Jasmine",
+              "Orange Blossom"
+            ]
+          },
           {
             "code": "2131-CRD",
             "fid": 475,
@@ -407,17 +412,6 @@
             ]
           },
           {
-            "code": "1654-ACQ",
-            "fid": 1681,
-            "notes": [
-              "Citruses",
-              "Lavender",
-              "Lemon Verbena",
-              "Rosemary",
-              "Musk"
-            ]
-          },
-          {
             "code": "191-ARM",
             "fid": 2699,
             "notes": [
@@ -426,84 +420,6 @@
               "Mimosa",
               "Mandarin Orange",
               "Bergamot"
-            ]
-          },
-          {
-            "code": "1990-MNT",
-            "fid": 3241,
-            "notes": [
-              "Strawberry",
-              "Vanilla",
-              "Almond",
-              "Peru Balsam",
-              "Musk"
-            ]
-          }
-        ]
-      },
-      {
-        "slots": [
-          1,
-          2,
-          3,
-          5,
-          6
-        ],
-        "count": 13,
-        "examples": [
-          {
-            "code": "775-LAL",
-            "fid": 1833,
-            "notes": [
-              "Patchouli",
-              "Rose",
-              "Pepper",
-              "Vetiver",
-              "Iris"
-            ]
-          },
-          {
-            "code": "2671-KIL",
-            "fid": 4320,
-            "notes": [
-              "Agarwood (Oud)",
-              "Guaiac Wood",
-              "Rose",
-              "Sandalwood",
-              "Papyrus"
-            ]
-          },
-          {
-            "code": "988-YZLO",
-            "fid": 6493,
-            "notes": [
-              "Rose",
-              "Blackberry",
-              "Cranberry",
-              "Violet",
-              "Peony"
-            ]
-          },
-          {
-            "code": "249-JOM",
-            "fid": 11488,
-            "notes": [
-              "Bergamot",
-              "Beeswax",
-              "Cucumber",
-              "Angelica",
-              "Water"
-            ]
-          },
-          {
-            "code": "113-DRC",
-            "fid": 15231,
-            "notes": [
-              "Agarwood (Oud)",
-              "Rose",
-              "Labdanum",
-              "Patchouli",
-              "Saffron"
             ]
           }
         ]
@@ -516,7 +432,7 @@
           5,
           6
         ],
-        "count": 11,
+        "count": 10,
         "examples": [
           {
             "code": "2177-SERG",
@@ -541,25 +457,25 @@
             ]
           },
           {
-            "code": "1143-GUC",
-            "fid": 688,
+            "code": "2427-CLEA",
+            "fid": 3024,
             "notes": [
-              "Ginger",
-              "Incense",
-              "Tobacco",
-              "Lavender",
-              "Cardamom"
+              "Sea Water",
+              "Citruses",
+              "Musk",
+              "Fern",
+              "Orange Blossom"
             ]
           },
           {
-            "code": "1498-BYR",
-            "fid": 3575,
+            "code": "304-KIE",
+            "fid": 6188,
             "notes": [
-              "Juniper",
-              "Vanilla",
-              "Lemon",
-              "Pine Tree",
-              "Bergamot"
+              "Musk",
+              "Ylang-Ylang",
+              "Tonka Bean",
+              "Lily",
+              "Neroli"
             ]
           },
           {
@@ -583,7 +499,7 @@
           4,
           6
         ],
-        "count": 8,
+        "count": 7,
         "examples": [
           {
             "code": "843-NRO",
@@ -594,6 +510,17 @@
               "Osmanthus",
               "Amber",
               "Bergamot"
+            ]
+          },
+          {
+            "code": "1659-CHRA",
+            "fid": 6714,
+            "notes": [
+              "Vanilla",
+              "Red Apple",
+              "Amber",
+              "Sand",
+              "Heliotrope"
             ]
           },
           {
@@ -608,28 +535,6 @@
             ]
           },
           {
-            "code": "401-ARIA",
-            "fid": 50384,
-            "notes": [
-              "Cream",
-              "Coconut",
-              "Praline",
-              "Vine",
-              "Pear"
-            ]
-          },
-          {
-            "code": "2607-TMU",
-            "fid": 53351,
-            "notes": [
-              "Mango",
-              "Sorbet",
-              "Praline",
-              "Grapefruit",
-              "Black Currant"
-            ]
-          },
-          {
             "code": "848-NRO",
             "fid": 209,
             "notes": [
@@ -638,6 +543,17 @@
               "Osmanthus",
               "Amber",
               "Bergamot"
+            ]
+          },
+          {
+            "code": "854-NIN",
+            "fid": 56162,
+            "notes": [
+              "Raspberry",
+              "Caramel",
+              "Citron",
+              "Vanilla",
+              "Ginger"
             ]
           }
         ]
@@ -650,8 +566,19 @@
           5,
           6
         ],
-        "count": 7,
+        "count": 4,
         "examples": [
+          {
+            "code": "1076-DRC",
+            "fid": 228,
+            "notes": [
+              "Leather",
+              "Nutmeg",
+              "Vetiver",
+              "Lavender",
+              "Cedar"
+            ]
+          },
           {
             "code": "1864-GUC",
             "fid": 687,
@@ -664,47 +591,92 @@
             ]
           },
           {
-            "code": "771-LAP",
-            "fid": 823,
+            "code": "2678-PARF",
+            "fid": 96023,
             "notes": [
-              "Blackberry",
-              "Plum",
-              "Patchouli",
+              "Violet",
+              "Pear",
+              "Floral Notes",
+              "Sandalwood",
+              "Lavender"
+            ]
+          },
+          {
+            "code": "896-RCAV",
+            "fid": 58538,
+            "notes": [
               "Vanilla",
-              "Agarwood (Oud)"
-            ]
-          },
-          {
-            "code": "881-PRA",
-            "fid": 6524,
-            "notes": [
-              "Amber",
+              "Magnolia",
+              "Cedar",
               "Patchouli",
-              "Citruses",
-              "Vanilla",
-              "Lemon"
+              "Rose"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "count": 2,
+        "examples": [
           {
-            "code": "204-CRD",
-            "fid": 9828,
+            "code": "2671-KIL",
+            "fid": 4320,
             "notes": [
-              "Pineapple",
-              "Bergamot",
-              "Musk",
-              "Black Currant",
-              "Oakmoss"
-            ]
-          },
-          {
-            "code": "2335-BOA",
-            "fid": 42568,
-            "notes": [
+              "Agarwood (Oud)",
+              "Guaiac Wood",
               "Rose",
-              "Saffron",
-              "Geranium",
-              "Patchouli",
-              "Curcuma (Turmeric)"
+              "Sandalwood",
+              "Papyrus"
+            ]
+          },
+          {
+            "code": "2134-MEM",
+            "fid": 60587,
+            "notes": [
+              "Mandarin Orange",
+              "Sage",
+              "Basil",
+              "Leather",
+              "Violet"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "count": 2,
+        "examples": [
+          {
+            "code": "1984-ATTAR",
+            "fid": 38134,
+            "notes": [
+              "Musk",
+              "Pepper",
+              "Sandalwood",
+              "Gardenia",
+              "Cloves"
+            ]
+          },
+          {
+            "code": "1290-ZAD",
+            "fid": 39359,
+            "notes": [
+              "Incense",
+              "Vanilla",
+              "Sandalwood",
+              "Pepper",
+              "Grapefruit"
             ]
           }
         ]
@@ -717,30 +689,8 @@
           5,
           6
         ],
-        "count": 3,
+        "count": 1,
         "examples": [
-          {
-            "code": "434-BRB",
-            "fid": 45820,
-            "notes": [
-              "Rose",
-              "Pomegranate",
-              "Wisteria",
-              "Lemon",
-              "Jasmine"
-            ]
-          },
-          {
-            "code": "2267-KAY",
-            "fid": 52615,
-            "notes": [
-              "Vanilla",
-              "Freesia",
-              "Lotus",
-              "Sandalwood",
-              "Jasmine"
-            ]
-          },
           {
             "code": "2453-INI",
             "fid": 89368,
@@ -765,7 +715,7 @@
           5,
           6
         ],
-        "count": 1246,
+        "count": 1547,
         "examples": [
           {
             "code": "662-GIV",
@@ -804,6 +754,18 @@
             ]
           },
           {
+            "code": "1156-HER",
+            "fid": 17,
+            "notes": [
+              "Orange",
+              "Vetiver",
+              "Pepper",
+              "Grapefruit",
+              "Cedar",
+              "Patchouli"
+            ]
+          },
+          {
             "code": "708-HER",
             "fid": 18,
             "notes": [
@@ -814,17 +776,650 @@
               "Bulrush",
               "Carrot"
             ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "count": 11,
+        "examples": [
+          {
+            "code": "775-LAL",
+            "fid": 1833,
+            "notes": [
+              "Patchouli",
+              "Rose",
+              "Pepper",
+              "Oakmoss",
+              "Vetiver",
+              "Iris"
+            ]
           },
           {
-            "code": "1154-HER",
-            "fid": 19,
+            "code": "988-YZLO",
+            "fid": 6493,
             "notes": [
-              "Fig",
-              "Cypress",
-              "Juniper",
+              "Rose",
+              "Blackberry",
+              "Cranberry",
+              "Vinyl",
+              "Violet",
+              "Peony"
+            ]
+          },
+          {
+            "code": "249-JOM",
+            "fid": 11488,
+            "notes": [
               "Bergamot",
+              "Beeswax",
+              "Cucumber",
+              "Musk",
+              "Angelica",
+              "Water"
+            ]
+          },
+          {
+            "code": "113-DRC",
+            "fid": 15231,
+            "notes": [
+              "Agarwood (Oud)",
+              "Rose",
+              "Labdanum",
+              "Sandalwood",
+              "Patchouli",
+              "Saffron"
+            ]
+          },
+          {
+            "code": "181-XER",
+            "fid": 17786,
+            "notes": [
+              "Palisander Rosewood",
+              "Lavender",
+              "Agarwood (Oud)",
+              "Sandalwood",
+              "Amber",
+              "Vanilla"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 6,
+        "examples": [
+          {
+            "code": "1165-HUG",
+            "fid": 569,
+            "notes": [
+              "Pink Pepper",
               "Lemon",
-              "Orange Blossom"
+              "Kumquat",
+              "Pineapple",
+              "Mint",
+              "Mandarin Orange"
+            ]
+          },
+          {
+            "code": "1143-GUC",
+            "fid": 688,
+            "notes": [
+              "Ginger",
+              "Incense",
+              "Sandalwood",
+              "Tobacco",
+              "Lavender",
+              "Cardamom"
+            ]
+          },
+          {
+            "code": "1498-BYR",
+            "fid": 3575,
+            "notes": [
+              "Juniper",
+              "Vanilla",
+              "Sandalwood",
+              "Lemon",
+              "Pine Tree",
+              "Bergamot"
+            ]
+          },
+          {
+            "code": "666-GIV",
+            "fid": 25972,
+            "notes": [
+              "Mirabelle",
+              "Jasmine",
+              "Patchouli",
+              "Sandalwood",
+              "Vetiver",
+              "Peach"
+            ]
+          },
+          {
+            "code": "363-TMFO",
+            "fid": 45192,
+            "notes": [
+              "Sea Water",
+              "Salt",
+              "Seaweed",
+              "Ambergris",
+              "Agarwood (Oud)",
+              "Styrax"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5,
+        "examples": [
+          {
+            "code": "771-LAP",
+            "fid": 823,
+            "notes": [
+              "Blackberry",
+              "Sugar",
+              "Plum",
+              "Patchouli",
+              "Vanilla",
+              "Agarwood (Oud)"
+            ]
+          },
+          {
+            "code": "881-PRA",
+            "fid": 6524,
+            "notes": [
+              "Amber",
+              "Opoponax",
+              "Patchouli",
+              "Citruses",
+              "Vanilla",
+              "Lemon"
+            ]
+          },
+          {
+            "code": "204-CRD",
+            "fid": 9828,
+            "notes": [
+              "Pineapple",
+              "Birch",
+              "Bergamot",
+              "Musk",
+              "Black Currant",
+              "Oakmoss"
+            ]
+          },
+          {
+            "code": "2335-BOA",
+            "fid": 42568,
+            "notes": [
+              "Rose",
+              "Immortelle",
+              "Saffron",
+              "Geranium",
+              "Patchouli",
+              "Curcuma (Turmeric)"
+            ]
+          },
+          {
+            "code": "2136-PARF",
+            "fid": 78574,
+            "notes": [
+              "Musk",
+              "Aldehydes",
+              "Ambroxan",
+              "Peach",
+              "Orange Blossom",
+              "Bergamot"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "count": 4,
+        "examples": [
+          {
+            "code": "1654-ACQ",
+            "fid": 1681,
+            "notes": [
+              "Citruses",
+              "Lavender",
+              "Lemon Verbena",
+              "Rosemary",
+              "Musk",
+              "Vetiver"
+            ]
+          },
+          {
+            "code": "1082-DRC",
+            "fid": 4033,
+            "notes": [
+              "Lemon",
+              "Grapefruit",
+              "Bergamot",
+              "Rosemary",
+              "Ginger",
+              "Lavender"
+            ]
+          },
+          {
+            "code": "1633-PAC",
+            "fid": 65177,
+            "notes": [
+              "Vanilla",
+              "Tonka Bean",
+              "Amber",
+              "Olibanum (Frankincense)",
+              "Pink Pepper",
+              "Lavender"
+            ]
+          },
+          {
+            "code": "2685-FRAG",
+            "fid": 110478,
+            "notes": [
+              "Cherry",
+              "Agarwood (Oud)",
+              "Saffron",
+              "Almond",
+              "Ambergris",
+              "Vetiver"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          4,
+          5,
+          6
+        ],
+        "count": 4,
+        "examples": [
+          {
+            "code": "511-CHL",
+            "fid": 39632,
+            "notes": [
+              "Rose",
+              "Lemon Verbena",
+              "Bergamot",
+              "Grapefruit",
+              "Cherry Blossom",
+              "Rice"
+            ]
+          },
+          {
+            "code": "1618-NISH",
+            "fid": 54785,
+            "notes": [
+              "Vanilla",
+              "Ginger",
+              "Bergamot",
+              "Cardamom",
+              "Benzoin",
+              "Sandalwood"
+            ]
+          },
+          {
+            "code": "1732-MIC",
+            "fid": 68626,
+            "notes": [
+              "Amber",
+              "Myrrh",
+              "Ylang-Ylang",
+              "Tobacco",
+              "Jasmine",
+              "Sandalwood"
+            ]
+          },
+          {
+            "code": "2834-AMG",
+            "fid": 116626,
+            "notes": [
+              "Honey",
+              "Apricot",
+              "Cappuccino",
+              "Cedar",
+              "Cardamom",
+              "Tea"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 3,
+        "examples": [
+          {
+            "code": "899-ROC",
+            "fid": 43205,
+            "notes": [
+              "Candy apple",
+              "Rose",
+              "Black Currant",
+              "Vanilla",
+              "Musk",
+              "Sandalwood"
+            ]
+          },
+          {
+            "code": "434-BRB",
+            "fid": 45820,
+            "notes": [
+              "Apple",
+              "Rose",
+              "Pomegranate",
+              "Wisteria",
+              "Lemon",
+              "Jasmine"
+            ]
+          },
+          {
+            "code": "2267-KAY",
+            "fid": 52615,
+            "notes": [
+              "Musk",
+              "Vanilla",
+              "Freesia",
+              "Lotus",
+              "Sandalwood",
+              "Jasmine"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 3,
+        "examples": [
+          {
+            "code": "401-ARIA",
+            "fid": 50384,
+            "notes": [
+              "Cream",
+              "Coconut",
+              "Praline",
+              "Musk",
+              "Lavender",
+              "Pear"
+            ]
+          },
+          {
+            "code": "2607-TMU",
+            "fid": 53351,
+            "notes": [
+              "Mango",
+              "Sorbet",
+              "Praline",
+              "Grapefruit",
+              "Patchouli",
+              "Black Currant"
+            ]
+          },
+          {
+            "code": "2798-NICO",
+            "fid": 91006,
+            "notes": [
+              "Rose",
+              "Musk",
+              "Rum",
+              "Almond",
+              "Patchouli",
+              "Davana"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          2,
+          3
+        ],
+        "count": 2,
+        "examples": [
+          {
+            "code": "1011-ARA",
+            "fid": 27572,
+            "notes": [
+              "Seaweed",
+              "Wormwood",
+              "Lavender",
+              "Cedar",
+              "Lemon",
+              "Pepper"
+            ]
+          },
+          {
+            "code": "2758-YZLO",
+            "fid": 120531,
+            "notes": [
+              "Raspberry",
+              "Orange Blossom",
+              "Lavender",
+              "Vanilla",
+              "Musk",
+              "Coconut"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          2,
+          3
+        ],
+        "count": 2,
+        "examples": [
+          {
+            "code": "701-HER",
+            "fid": 39584,
+            "notes": [
+              "Leather",
+              "Rose",
+              "Quince",
+              "Osmanthus",
+              "Musk",
+              "Saffron"
+            ]
+          },
+          {
+            "code": "2168-MARG",
+            "fid": 53379,
+            "notes": [
+              "Lime",
+              "Tea",
+              "Petitgrain",
+              "Musk",
+              "Mate",
+              "Cedar"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 2,
+        "examples": [
+          {
+            "code": "1972-KAY",
+            "fid": 70875,
+            "notes": [
+              "Red Apple",
+              "Forest Fruits",
+              "Sugar",
+              "Raspberry Blossom",
+              "Litchi",
+              "Black Currant"
+            ]
+          },
+          {
+            "code": "2646-PEN",
+            "fid": 95396,
+            "notes": [
+              "Oak",
+              "Whiskey",
+              "Patchouli",
+              "Cedar",
+              "Raspberry",
+              "Clearwood"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "count": 1,
+        "examples": [
+          {
+            "code": "1836-COT",
+            "fid": 6029,
+            "notes": [
+              "Vanilla",
+              "Tonka Bean",
+              "Amber",
+              "Coconut",
+              "Jasmine",
+              "Sandalwood"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "count": 1,
+        "examples": [
+          {
+            "code": "1912-AMG",
+            "fid": 38259,
+            "notes": [
+              "Ash",
+              "Chrysanthemum",
+              "Leather",
+              "Orris Root",
+              "Elemi",
+              "Labdanum"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          2
+        ],
+        "count": 1,
+        "examples": [
+          {
+            "code": "1746-XER",
+            "fid": 57363,
+            "notes": [
+              "Rose",
+              "Laotian Oud",
+              "Lavender",
+              "Thailand Oud",
+              "Palisander Rosewood",
+              "Musk"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "count": 1,
+        "examples": [
+          {
+            "code": "2614-AMG",
+            "fid": 94033,
+            "notes": [
+              "Rose",
+              "Sandalwood",
+              "Pear",
+              "Hazelnut",
+              "Akigalawood",
+              "Almond"
+            ]
+          }
+        ]
+      },
+      {
+        "slots": [
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 1,
+        "examples": [
+          {
+            "code": "2679-CAR",
+            "fid": 105931,
+            "notes": [
+              "Pitahaya",
+              "Vanilla",
+              "Frangipani",
+              "Peony",
+              "Patchouli",
+              "Ambrofix™"
             ]
           }
         ]
@@ -841,7 +1436,7 @@
         5,
         6
       ],
-      "count": 1246
+      "count": 1547
     },
     {
       "slots": [
@@ -851,7 +1446,7 @@
         4,
         5
       ],
-      "count": 107
+      "count": 135
     },
     {
       "slots": [
@@ -860,7 +1455,17 @@
         3,
         4
       ],
-      "count": 69
+      "count": 82
+    },
+    {
+      "slots": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "count": 16
     },
     {
       "slots": [
@@ -874,8 +1479,6 @@
     },
     {
       "slots": [
-        1,
-        2,
         4,
         5,
         6
@@ -884,21 +1487,13 @@
     },
     {
       "slots": [
-        4,
-        5,
-        6
-      ],
-      "count": 9
-    },
-    {
-      "slots": [
         1,
         2,
         3,
         4,
         6
       ],
-      "count": 8
+      "count": 10
     },
     {
       "slots": [
@@ -908,7 +1503,7 @@
         5,
         6
       ],
-      "count": 7
+      "count": 9
     },
     {
       "slots": [
@@ -920,10 +1515,12 @@
     },
     {
       "slots": [
+        1,
         2,
-        3
+        4,
+        5
       ],
-      "count": 3
+      "count": 4
     },
     {
       "slots": [
@@ -933,14 +1530,33 @@
         5,
         6
       ],
+      "count": 4
+    },
+    {
+      "slots": [
+        2,
+        3
+      ],
       "count": 3
     },
     {
       "slots": [
-        1,
+        1
+      ],
+      "count": 2
+    },
+    {
+      "slots": [
         2,
         4,
-        5
+        5,
+        6
+      ],
+      "count": 2
+    },
+    {
+      "slots": [
+        3
       ],
       "count": 2
     },
@@ -969,12 +1585,6 @@
     },
     {
       "slots": [
-        1
-      ],
-      "count": 1
-    },
-    {
-      "slots": [
         1,
         2,
         3,
@@ -995,6 +1605,24 @@
       "slots": [
         1,
         2
+      ],
+      "count": 1
+    },
+    {
+      "slots": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "count": 1
+    },
+    {
+      "slots": [
+        2,
+        3,
+        4,
+        6
       ],
       "count": 1
     }
