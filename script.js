@@ -634,7 +634,7 @@ async function init() {
     console.log("DEBUG: init() started.");
     try {
         const [response, scopeResponse] = await Promise.all([
-            fetch('catalog_site.json'),
+            fetch('catalog_site.json', { cache: 'no-store' }),
             fetch('catalog-scope-exclusions.json')
         ]);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
