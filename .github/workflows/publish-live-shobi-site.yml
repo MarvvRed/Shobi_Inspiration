@@ -12,6 +12,7 @@ on:
       - 'database/catalog/**'
       - 'database/source/**'
       - 'database/fragrantica/social-cards/records/**'
+      - 'database/assets/note-icons/**'
       - 'database/audits/display-identity-hygiene-audit.json'
 
 permissions:
