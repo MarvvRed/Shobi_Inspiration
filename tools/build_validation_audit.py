@@ -80,7 +80,7 @@ def exact_ordered_card_evidence(row, fid, notes):
     """Green needs a fresh exact-order image audit, not historic OCR metadata."""
     item = ordered_card_audit.get(str(row.get("code") or "").strip().upper())
     card = str(item.get("card") or "") if item else ""
-    return bool(
+    strict_audit = bool(
         item
         and item.get("result") == "EXACT_ORDERED_MATCH"
         and str(item.get("fragranticaId") or "") == fid
@@ -89,6 +89,16 @@ def exact_ordered_card_evidence(row, fid, notes):
         and card
         and (ROOT / card).is_file()
     )
+    source = validated_notes.get(str(row.get("code") or "").strip().upper())
+    fast_exact = bool(
+        source
+        and source.get("validationMethod") == "CURRENT_FID_FAST_EXACT_PROOF"
+        and str(source.get("fragranticaId") or "") == fid
+        and source.get("mainNotes") == notes
+        and str(source.get("card") or "")
+        and (ROOT / str(source.get("card"))).is_file()
+    )
+    return strict_audit or fast_exact
 
 
 def exact_social_card(row, fid, notes):
