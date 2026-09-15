@@ -20,8 +20,6 @@ ORDERED_AUDIT = ROOT / "database/fragrantica/social-cards/records/social-card-or
 REPORT = ROOT / "database/audits/CURRENT-CATALOG-AUDIT.md"
 ALLOWLIST = ROOT / "database/audits/identity-change-allowlist.json"
 
-# High-value regression sentinels: these identities were previously observed mapped
-# to the wrong Fragrantica perfume and must never silently drift again.
 PROTECTED_IDENTITIES = {
     "1037-BLG": {"fid": "9403", "name": "Bvlgari Man"},
     "1751-GUL": {"fid": "3681", "name": "Ma Dame"},
@@ -44,14 +42,12 @@ def identity(row):
     return (norm(row.get("brand")), norm(row.get("inspiredBy")), str(row.get("fragranticaId") or "").strip())
 
 
+def identity_from_spec(spec):
+    return (norm(spec.get("brand")), norm(spec.get("name")), str(spec.get("fid") or "").strip())
+
+
 def git_json(ref: str, path: str):
-    proc = subprocess.run(
-        ["git", "show", f"{ref}:{path}"],
-        cwd=ROOT,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-    )
+    proc = subprocess.run(["git", "show", f"{ref}:{path}"], cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
     if proc.returncode != 0:
         return None
     return json.loads(proc.stdout.lstrip("\ufeff"))
@@ -59,10 +55,19 @@ def git_json(ref: str, path: str):
 
 def load_allowlist():
     if not ALLOWLIST.is_file():
-        return set()
+        return {}
     data = load(ALLOWLIST)
-    entries = data.get("authorizedChanges", data if isinstance(data, list) else [])
-    return {str(item.get("code") or "").strip().upper() for item in entries if isinstance(item, dict)}
+    entries = data.get("authorizedChanges", []) if isinstance(data, dict) else []
+    out = {}
+    for item in entries:
+        if not isinstance(item, dict):
+            continue
+        code = str(item.get("code") or "").strip().upper()
+        before = item.get("from") or {}
+        after = item.get("to") or {}
+        if code and before and after:
+            out[(code, identity_from_spec(before), identity_from_spec(after))] = str(item.get("reason") or "")
+    return out
 
 
 def main():
@@ -74,18 +79,14 @@ def main():
     db = load(DB)
     site = load(SITE)
     audit_rows = load(ORDERED_AUDIT).get("rows", [])
-
     by_code = {str(r.get("code") or "").strip().upper(): r for r in db}
     site_by_code = {str(r.get("code") or "").strip().upper(): r for r in site}
     audit_by_code = {str(r.get("code") or "").strip().upper(): r for r in audit_rows}
 
     failures = []
-    if len(by_code) != len(db):
-        failures.append("duplicate Shobi codes in database_complete.json")
-    if len(site_by_code) != len(site):
-        failures.append("duplicate Shobi codes in catalog_site.json")
-    if set(by_code) != set(site_by_code):
-        failures.append("database_complete/catalog_site code sets differ")
+    if len(by_code) != len(db): failures.append("duplicate Shobi codes in database_complete.json")
+    if len(site_by_code) != len(site): failures.append("duplicate Shobi codes in catalog_site.json")
+    if set(by_code) != set(site_by_code): failures.append("database_complete/catalog_site code sets differ")
 
     green = []
     for code, srow in site_by_code.items():
@@ -110,20 +111,18 @@ def main():
         if not card or not (ROOT / card).is_file():
             failures.append(f"{code}: green exact proof has no local Social Card file")
 
-    # A single Fragrantica ID may legitimately be reused by multiple Shobi products,
-    # but it cannot represent different perfume identities.
     fid_identities = defaultdict(lambda: defaultdict(list))
     for code, row in by_code.items():
         fid = str(row.get("fragranticaId") or "").strip()
         if fid:
-            key = (norm(row.get("brand")), norm(row.get("inspiredBy")))
-            fid_identities[fid][key].append(code)
+            fid_identities[fid][(norm(row.get("brand")), norm(row.get("inspiredBy")))].append(code)
+    conflicting_fids = 0
     for fid, groups in fid_identities.items():
         if len(groups) > 1:
+            conflicting_fids += 1
             detail = "; ".join(f"{brand}/{name}: {','.join(codes)}" for (brand, name), codes in groups.items())
             failures.append(f"FID {fid} maps to multiple identities: {detail}")
 
-    # Permanent sentinels for identities already proven wrong in the past.
     for code, expected in PROTECTED_IDENTITIES.items():
         row = by_code.get(code)
         if not row:
@@ -131,11 +130,11 @@ def main():
             continue
         if str(row.get("fragranticaId") or "").strip() != expected["fid"]:
             failures.append(f"{code}: protected FID changed from {expected['fid']}")
-        if norm(expected["name"]) not in norm(row.get("inspiredBy")) and norm(row.get("inspiredBy")) not in norm(expected["name"]):
+        actual_name = norm(row.get("inspiredBy"))
+        expected_name = norm(expected["name"])
+        if expected_name not in actual_name and actual_name not in expected_name:
             failures.append(f"{code}: protected perfume identity changed from {expected['name']}")
 
-    # Block silent code->(brand,name,FID) changes. Legitimate corrections require an
-    # explicit entry in identity-change-allowlist.json, making the exception reviewable.
     identity_changes = []
     if args.baseline_ref:
         baseline = git_json(args.baseline_ref, "database/catalog/database_complete.json")
@@ -143,37 +142,31 @@ def main():
             old = {str(r.get("code") or "").strip().upper(): r for r in baseline}
             allowed = load_allowlist()
             for code in sorted(set(old) & set(by_code)):
-                if identity(old[code]) != identity(by_code[code]) and code not in allowed:
-                    identity_changes.append((code, identity(old[code]), identity(by_code[code])))
+                before, after = identity(old[code]), identity(by_code[code])
+                if before != after and (code, before, after) not in allowed:
+                    identity_changes.append((code, before, after))
             for code, before, after in identity_changes:
                 failures.append(f"{code}: unauthorized identity/FID change {before} -> {after}")
 
     counts = {s: sum(r.get("validationStatus") == s for r in site) for s in ("green", "yellow", "red")}
-
     if args.write_report:
-        lines = [
-            "# Current Catalog Audit",
-            "",
-            "> Auto-generated by `tools/verify_catalog_invariants.py`. Do not maintain counts manually.",
-            "",
+        REPORT.parent.mkdir(parents=True, exist_ok=True)
+        REPORT.write_text("\n".join([
+            "# Current Catalog Audit", "",
+            "> Auto-generated by `tools/verify_catalog_invariants.py`. Do not maintain counts manually.", "",
             f"- Total catalog rows: **{len(site)}**",
             f"- Green: **{counts['green']}**",
             f"- Yellow: **{counts['yellow']}**",
             f"- Red: **{counts['red']}**",
             f"- Green rows with mandatory exact ordered Social Card proof: **{len(green)} / {counts['green']}**",
-            f"- Conflicting shared Fragrantica IDs: **{sum(len(g) > 1 for g in fid_identities.values())}**",
-            f"- Unauthorized identity/FID changes vs baseline: **{len(identity_changes)}**",
-            "",
-            "A green row is accepted only when its current Fragrantica ID has an `EXACT_ORDERED_MATCH` and the catalog note list is identical to the observed Social Card list in count, value, and order.",
-            "",
-        ]
-        REPORT.parent.mkdir(parents=True, exist_ok=True)
-        REPORT.write_text("\n".join(lines), encoding="utf-8")
+            f"- Conflicting shared Fragrantica IDs: **{conflicting_fids}**",
+            f"- Unauthorized identity/FID changes vs baseline: **{len(identity_changes)}**", "",
+            "A green row is accepted only when its current Fragrantica ID has an `EXACT_ORDERED_MATCH` and the catalog note list is identical to the observed Social Card list in count, value, and order.", ""
+        ]), encoding="utf-8")
 
-    print(json.dumps({"rows": len(site), "counts": counts, "greenExactOrdered": len(green), "failures": len(failures)}, indent=2))
+    print(json.dumps({"rows": len(site), "counts": counts, "greenExactOrdered": len(green), "conflictingFids": conflicting_fids, "failures": len(failures)}, indent=2))
     if failures:
-        for item in failures[:100]:
-            print("FAIL:", item)
+        for item in failures[:100]: print("FAIL:", item)
         raise SystemExit(f"Catalog invariant gate failed with {len(failures)} issue(s)")
 
 
