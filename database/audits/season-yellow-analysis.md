@@ -1,34 +1,27 @@
 # Season yellow analysis
 
-- Rows: **62**
-- `no_csv_row`: **62**
+- Rows: **47**
+- `no_csv_row`: **35**
+- `fid_mismatch`: **12**
 
 ## Rows
 
 - `2816-MOOD` — Mood London · Blonde Maracuja Mood London — no_csv_row — current=[] — csv= — csvFID=
 - `2701-DIP` — Diptyque · Cafe Verlet — no_csv_row — current=[] — csv= — csvFID=
 - `2586-DIP` — Diptyque · Biscuit DIP — no_csv_row — current=[] — csv= — csvFID=
-- `2514-DRC` — Dior · Sauvage Eau Forte — no_csv_row — current=[] — csv= — csvFID=
-- `2313-DRC` — Dior · Sauvage Parfum — no_csv_row — current=[] — csv= — csvFID=
-- `2282-DRC` — Dior · Dioriviera Eau de Parfum — no_csv_row — current=[] — csv= — csvFID=
-- `2265-KAY` — Kayali Fragrances · Oudgasm Rose Oud 16 Eau de Parfum Intense — no_csv_row — current=[] — csv= — csvFID=
-- `2194-ORT` — Orto Parisi · ORTO — no_csv_row — current=[] — csv= — csvFID=
-- `2133-FRE` — Frédéric Malle · Lipstick Rose Eau de Parfum — no_csv_row — current=[] — csv= — csvFID=
-- `2106-MARC` — Marc-Antoine Barrois · B683 Eau de Parfum — no_csv_row — current=[] — csv= — csvFID=
+- `2194-ORT` — Orto Parisi · ORTO — fid_mismatch — current=['winter'] — csv=winter — csvFID=69923
 - `2085-CLIV` — Clive Christian · X NEROLI LIMITED EDITION - CLIVE CHRISTIAN — no_csv_row — current=[] — csv= — csvFID=
-- `1950-SWISA` — Swiss Arabian · Al Amaken — no_csv_row — current=[] — csv= — csvFID=
-- `1890-LEL` — Le Labo · Lys 41 — no_csv_row — current=[] — csv= — csvFID=
-- `1767-LTN` — Louis Vuitton · Attrape-Rêves — no_csv_row — current=[] — csv= — csvFID=
-- `1751-GUL` — Jean Paul Gaultier · Madame — no_csv_row — current=[] — csv= — csvFID=
+- `1751-GUL` — Jean Paul Gaultier · Madame — fid_mismatch — current=['spring'] — csv=spring — csvFID=3681
 - `1748-BYR` — Byredo · Marijuana — no_csv_row — current=[] — csv= — csvFID=
-- `1644-DRC` — Dior · Sauvage Elixir — no_csv_row — current=[] — csv= — csvFID=
 - `1550-YAN` — Yankee Candle · HOME SWEET HOME - YANKEE — no_csv_row — current=[] — csv= — csvFID=
 - `383-YAN` — Yankee Candle · WEDDING DAY - YANKEE — no_csv_row — current=[] — csv= — csvFID=
 - `130-LEL` — Le Labo · SANTAL 26 - LE LABO — no_csv_row — current=[] — csv= — csvFID=
 - `564-DOL` — Dolce & Gabbana · SEXY CHOCLATE — no_csv_row — current=[] — csv= — csvFID=
+- `884-RAL` — Ralph Lauren · Big Pony 2 — fid_mismatch — current=['summer'] — csv=summer — csvFID=14446
 - `314-MOL` — Molton Brown · ZIAO JAO - MOLTON BROWN — no_csv_row — current=[] — csv= — csvFID=
+- `1037-BLG` — Bvlgari · Bvl Man — fid_mismatch — current=['spring'] — csv=spring — csvFID=9403
+- `337-TIFF` — Tiffany Co · Tiffany  Co Sheer — fid_mismatch — current=['spring'] — csv=spring — csvFID=53062
 - `118-HAM` — Hamidi Oud Perfumes · REHAN - HAMIDI OUD — no_csv_row — current=[] — csv= — csvFID=
-- `107-ARB` — Arabian Oud · Titanium — no_csv_row — current=[] — csv= — csvFID=
 - `382-YAN` — Yankee Candle · POMEGRANATE CIDER - YANKEE CANDLES — no_csv_row — current=[] — csv= — csvFID=
 - `381-YAN` — Yankee Candle · FRESH CUT ROSES - YANKEE CANDLES — no_csv_row — current=[] — csv= — csvFID=
 - `380-YAN` — Yankee Candle · FALL FESTIVAL - YANKEE CANDLES — no_csv_row — current=[] — csv= — csvFID=
@@ -52,18 +45,11 @@
 - `223-DIP` — Diptyque · BAIES — no_csv_row — current=[] — csv= — csvFID=
 - `222-DIP` — Diptyque · AMBRE — no_csv_row — current=[] — csv= — csvFID=
 - `200-CIR` — CIRE TRUDON · ERNESTO CHE GUEVARA — no_csv_row — current=[] — csv= — csvFID=
-- `973-VICT` — Victoria's Secret · Wicked — no_csv_row — current=[] — csv= — csvFID=
-- `928-TRU` — Trussardi · Delicate Rose — no_csv_row — current=[] — csv= — csvFID=
-- `866-PAC` — Rabanne · Ultraviolet — no_csv_row — current=[] — csv= — csvFID=
-- `847-NRO` — Narciso Rodriguez · Narciso Poudree — no_csv_row — current=[] — csv= — csvFID=
-- `716-ISS` — Issey Miyake · A Scent by Issey Miyake — no_csv_row — current=[] — csv= — csvFID=
-- `676-GUC` — Gucci · Flora by Gucci Eau de Toilette — no_csv_row — current=[] — csv= — csvFID=
-- `646-ARM` — Giorgio Armani · Armani Code for Women — no_csv_row — current=[] — csv= — csvFID=
-- `548-CLI` — Clinique · Happy — no_csv_row — current=[] — csv= — csvFID=
-- `521-DRC` — Dior · Dior Addict — no_csv_row — current=[] — csv= — csvFID=
-- `1281-YZLO` — Yves Saint Laurent · L'Homme Parfum Intense — no_csv_row — current=[] — csv= — csvFID=
+- `928-TRU` — Trussardi · Delicate Rose — fid_mismatch — current=['spring'] — csv=spring — csvFID=16241
+- `827-MISN` — Missoni · Missoni — fid_mismatch — current=['spring'] — csv=spring — csvFID=33017
+- `548-CLI` — Clinique · Happy — fid_mismatch — current=['summer'] — csv=summer — csvFID=372
 - `1251-ROM` — Romane · Royal Blue — no_csv_row — current=[] — csv= — csvFID=
-- `1189-KEN` — Kenzo · Kenzo Homme Sport Extreme — no_csv_row — current=[] — csv= — csvFID=
-- `1165-HUG` — Hugo Boss · Hugo Energise — no_csv_row — current=[] — csv= — csvFID=
-- `1086-CLI` — Clinique · Happy — no_csv_row — current=[] — csv= — csvFID=
-- `1076-DRC` — Dior · Fahrenheit — no_csv_row — current=[] — csv= — csvFID=
+- `1245-PRA` — Prada · PRADA AMBER — fid_mismatch — current=['spring'] — csv=spring — csvFID=1044
+- `1172-ISS` — Issey Miyake · L'Eau d'Issey Pour Homme — fid_mismatch — current=['summer'] — csv=summer — csvFID=721
+- `1086-CLI` — Clinique · Happy — fid_mismatch — current=['summer'] — csv=summer — csvFID=373
+- `1043-CAL` — Calvin Klein · Calvin Klein — fid_mismatch — current=['summer'] — csv=summer — csvFID=275
