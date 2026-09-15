@@ -83,24 +83,33 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          import os
           from pathlib import Path
+
           rows = json.load(open('database/catalog/database_complete.json', encoding='utf-8'))
           site_rows = json.load(open('database/catalog/catalog_site.json', encoding='utf-8'))
           final_rows = json.load(open('database/catalog/catalog_final_perfume_only.json', encoding='utf-8'))
           final_db_rows = json.load(open('database/catalog/database_final_perfume_only.json', encoding='utf-8'))
+          certification = json.load(open('database/catalog/final-perfume-catalog-certification.json', encoding='utf-8'))
           exclusions = json.load(open('database/catalog/catalog-scope-exclusions.json', encoding='utf-8'))['codes']
-          assert len(rows) == 2253
-          assert len(site_rows) == 2253
-          assert len(final_rows) == 2253
-          assert len(final_db_rows) == 2253
-          assert len({r['code'] for r in rows}) == 2253
-          assert len({r['prestashopProductId'] for r in rows}) == 2253
-          assert len({r['shobiUrl'] for r in rows}) == 2253
+
+          expected = int(certification['finalRows'])
+          direct = int(certification['directFragranticaIdentityProofRows'])
+          exceptions = certification.get('exceptionRowsWithSpecificEvidence', [])
+
+          assert expected == direct + len(exceptions)
+          assert len(rows) == expected
+          assert len(site_rows) == expected
+          assert len(final_rows) == expected
+          assert len(final_db_rows) == expected
+          assert len({r['code'] for r in rows}) == expected
+          assert len({r['prestashopProductId'] for r in rows}) == expected
+          assert len({r['shobiUrl'] for r in rows}) == expected
           assert not any(str(r.get('reference', '')).upper().startswith('MIX') for r in rows)
           assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in rows)
           assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in site_rows)
           assert [(r['code'], r['brand'], r['inspiredBy']) for r in site_rows] == [(r['code'], r['brand'], r['inspiredBy']) for r in rows]
-          assert __import__('os').path.getsize('database/catalog/catalog_site.json') < __import__('os').path.getsize('database/catalog/database_complete.json')
+          assert os.path.getsize('database/catalog/catalog_site.json') < os.path.getsize('database/catalog/database_complete.json')
           assert "fetch('database/catalog/catalog_final_perfume_only.json'" in Path('script.js').read_text(encoding='utf-8')
           assert not any(r['code'] in exclusions for r in final_rows)
           assert not any(r['code'] in exclusions for r in rows)
@@ -112,10 +121,11 @@ jobs:
           assert all(r.get('validationStatus') in {'green','yellow','red'} for r in site_rows)
           assert all('validationChecks' in r and 'validationIssues' in r for r in site_rows)
           assert all(all(r['validationChecks'].values()) for r in site_rows if r['validationStatus'] == 'green')
-          excluded = {'Home Fragrances', 'Gifts', 'Lattafa', 'Paris Corner', 'Al Haramain Oriental Perfumes'}
-          assert not any(r.get('shobiCategory') in excluded for r in rows)
+          excluded_categories = {'Home Fragrances', 'Gifts', 'Lattafa', 'Paris Corner', 'Al Haramain Oriental Perfumes'}
+          assert not any(r.get('shobiCategory') in excluded_categories for r in rows)
+
           counts = {s: sum(r['validationStatus'] == s for r in site_rows) for s in ('green','yellow','red')}
-          print('Validated 2253 unique certified wearable Shobi perfumes in the public catalog')
+          print(f'Validated {expected} unique certified wearable Shobi perfumes in the public catalog')
           print('QA tracker:', counts)
           PY
 
