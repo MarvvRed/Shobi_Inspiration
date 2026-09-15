@@ -1,23 +1,12 @@
 {
   "rule": "Targeted direct retry of exact official Fragrantica social-card IDs missing from local archive.",
   "officialWithFragranticaId": 2293,
-  "archiveExactIdsBefore": 2251,
-  "missingBefore": 9,
+  "archiveExactIdsBefore": 2257,
+  "missingBefore": 2,
   "recovered": 0,
-  "stillMissing": 9,
-  "archiveExactIdsAfter": 2251,
+  "stillMissing": 2,
+  "archiveExactIdsAfter": 2257,
   "results": [
-    {
-      "code": "2194-ORT",
-      "prestashopProductId": "3732",
-      "fragranticaId": 119473,
-      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_119473.jpeg",
-      "status": "MISSING",
-      "localPath": "",
-      "bytes": 0,
-      "sha256": "",
-      "error": "HTTP 404"
-    },
     {
       "code": "1751-GUL",
       "prestashopProductId": "2613",
@@ -30,76 +19,10 @@
       "error": "HTTP 404"
     },
     {
-      "code": "118-HAM",
-      "prestashopProductId": "1409",
-      "fragranticaId": 27808,
-      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_27808.jpeg",
-      "status": "MISSING",
-      "localPath": "",
-      "bytes": 0,
-      "sha256": "",
-      "error": "HTTP 404"
-    },
-    {
-      "code": "325-PECK",
-      "prestashopProductId": "1220",
-      "fragranticaId": 31590,
-      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_31590.jpeg",
-      "status": "MISSING",
-      "localPath": "",
-      "bytes": 0,
-      "sha256": "",
-      "error": "HTTP 404"
-    },
-    {
-      "code": "235-HOLL",
-      "prestashopProductId": "1143",
-      "fragranticaId": 4307,
-      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_4307.jpeg",
-      "status": "MISSING",
-      "localPath": "",
-      "bytes": 0,
-      "sha256": "",
-      "error": "HTTP 404"
-    },
-    {
       "code": "928-TRU",
       "prestashopProductId": "962",
       "fragranticaId": 93471,
       "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_93471.jpeg",
-      "status": "MISSING",
-      "localPath": "",
-      "bytes": 0,
-      "sha256": "",
-      "error": "HTTP 404"
-    },
-    {
-      "code": "548-CLI",
-      "prestashopProductId": "638",
-      "fragranticaId": 66133,
-      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_66133.jpeg",
-      "status": "MISSING",
-      "localPath": "",
-      "bytes": 0,
-      "sha256": "",
-      "error": "HTTP 404"
-    },
-    {
-      "code": "1251-ROM",
-      "prestashopProductId": "328",
-      "fragranticaId": 21103,
-      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_21103.jpeg",
-      "status": "MISSING",
-      "localPath": "",
-      "bytes": 0,
-      "sha256": "",
-      "error": "HTTP 404"
-    },
-    {
-      "code": "1086-CLI",
-      "prestashopProductId": "182",
-      "fragranticaId": 66133,
-      "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_66133.jpeg",
       "status": "MISSING",
       "localPath": "",
       "bytes": 0,
