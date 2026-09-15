@@ -10,10 +10,10 @@ from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "social-card-main-notes-validated.json"
-RAW_SOURCE = ROOT / "social-card-main-notes.json"
-DATABASE = ROOT / "database_complete.json"
-OUTPUT_DIR = ROOT / "note-icons"
+SOURCE = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes-validated.json"
+RAW_SOURCE = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes.json"
+DATABASE = ROOT / "database/catalog/database_complete.json"
+OUTPUT_DIR = ROOT / "database" / "assets" / "note-icons"
 MAP_JS = OUTPUT_DIR / "map.js"
 
 X_RANGES = ((75, 167), (195, 287), (316, 408))
@@ -67,7 +67,7 @@ def main():
             crop = crop.resize((96, 96), Image.Resampling.LANCZOS)
             filename = f"{slug(name)}.webp"
             crop.save(OUTPUT_DIR / filename, "WEBP", quality=82, method=6)
-            icons[key] = f"note-icons/{filename}"
+            icons[key] = f"database/assets/note-icons/{filename}"
 
     # Some note labels were corrected after OCR validation. Their associated
     # card and slot are still authoritative, so use the matching original icon.
@@ -97,7 +97,7 @@ def main():
             crop = crop.resize((96, 96), Image.Resampling.LANCZOS)
             filename = f"{slug(name)}.webp"
             crop.save(OUTPUT_DIR / filename, "WEBP", quality=82, method=6)
-            icons[key] = f"note-icons/{filename}"
+            icons[key] = f"database/assets/note-icons/{filename}"
 
     MAP_JS.write_text(
         "window.FRAGRANTICA_NOTE_ICON_MAP=" + json.dumps(icons, ensure_ascii=False, separators=(",", ":")) + ";\n",

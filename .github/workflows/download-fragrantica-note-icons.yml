@@ -22,7 +22,7 @@ jobs:
           from pathlib import Path
 
           PAGE = 'https://www.fragrantica.com/notes/'
-          OUT = Path('public/note-icons')
+          OUT = Path('database/assets/note-icons')
           OUT.mkdir(parents=True, exist_ok=True)
           headers = {
               'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140 Safari/537.36',
@@ -84,7 +84,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/note-icons
+          git add database/assets/note-icons
           if git diff --cached --quiet; then
             echo "No changes"
           else

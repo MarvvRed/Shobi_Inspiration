@@ -3,8 +3,8 @@ import json, re, shutil, unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OLD = ROOT / 'note-icons'
-NEW = ROOT / 'public' / 'note-icons'
+OLD = ROOT / 'database' / 'assets' / 'note-icons'
+NEW = ROOT / 'database' / 'assets' / 'note-icons'
 INDEX = NEW / 'index.json'
 OLDMAP = OLD / 'map.js'
 NEWMAP = NEW / 'map.js'
@@ -52,7 +52,7 @@ for key in old_map:
         if rec: resolved_aliases[key]=rec['slug']
     if not rec:
         unresolved.append(key); continue
-    new_map[key]=f"public/note-icons/{rec['file']}"
+    new_map[key]=f"database/assets/note-icons/{rec['file']}"
 
 if unresolved:
     raise SystemExit('Unresolved note icons: '+', '.join(unresolved))
@@ -64,10 +64,10 @@ for p in new_map.values():
 NEWMAP.write_text(prefix+json.dumps(new_map,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
 
 repls={
- 'src="public/note-icons/map.js"':'src="public/note-icons/map.js"',
- "src='public/note-icons/map.js'":"src='public/note-icons/map.js'",
- 'ROOT / "public" / "note-icons" / "map.js"':'ROOT / "public" / "note-icons" / "map.js"',
- "ROOT / 'public' / 'note-icons' / 'map.js'":"ROOT / 'public' / 'note-icons' / 'map.js'",
+ 'src="database/assets/note-icons/map.js"':'src="database/assets/note-icons/map.js"',
+ "src='database/assets/note-icons/map.js'":"src='database/assets/note-icons/map.js'",
+ 'ROOT / "database" / "assets" / "note-icons" / "map.js"':'ROOT / "database" / "assets" / "note-icons" / "map.js"',
+ "ROOT / 'database' / 'assets' / 'note-icons' / 'map.js'":"ROOT / 'database' / 'assets' / 'note-icons' / 'map.js'",
 }
 changed=[]
 for path in ROOT.rglob('*'):
@@ -81,10 +81,10 @@ for path in ROOT.rglob('*'):
     if new!=text:
         path.write_text(new,encoding='utf-8'); changed.append(str(path.relative_to(ROOT)))
 
-if 'public/note-icons/map.js' not in (ROOT/'index.html').read_text(encoding='utf-8'):
+if 'database/assets/note-icons/map.js' not in (ROOT/'index.html').read_text(encoding='utf-8'):
     raise SystemExit('index.html not migrated')
 validator=(ROOT/'tools'/'build_validation_audit.py').read_text(encoding='utf-8')
-if 'ROOT / "public" / "note-icons" / "map.js"' not in validator:
+if 'ROOT / "database" / "assets" / "note-icons" / "map.js"' not in validator:
     raise SystemExit('validator not migrated')
 
 shutil.rmtree(OLD)
@@ -95,10 +95,10 @@ report = [
  f'- Site map keys preserved: **{len(new_map)}**',
  f'- Alias mappings required: **{len(resolved_aliases)}**',
  '- Legacy `note-icons/` directory removed: **yes**',
- '- Site now loads: `public/note-icons/map.js`','',
+ '- Site now loads: `database/assets/note-icons/map.js`','',
  '## Alias mappings',
 ]
 for k,v in sorted(resolved_aliases.items()): report.append(f'- {k} → {v}')
 report += ['', '## Updated references'] + [f'- {x}' for x in changed]
-(ROOT/'note-icon-migration-report.md').write_text('\n'.join(report)+'\n',encoding='utf-8')
+(ROOT/'database/audits/note-icon-migration-report.md').write_text('\n'.join(report)+'\n',encoding='utf-8')
 print(f'migrated {len(new_map)} keys; aliases {len(resolved_aliases)}; files {len(changed)}')

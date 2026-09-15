@@ -2,7 +2,7 @@
 import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DBS=[ROOT/'database_v2_clean.json',ROOT/'database_complete.json'];URLS=ROOT/'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt';OUT=ROOT/'fragrantica-v2-reviewed-historical-residuals.md'
+DBS=[ROOT/'database/catalog/database_v2_clean.json',ROOT/'database/catalog/database_complete.json'];URLS=ROOT/'database/fragrantica/legacy/original-local-scraper/perfume_urls.txt';OUT=ROOT/'database/audits/fragrantica-v2-reviewed-historical-residuals.md'
 APPROVED={
  '2600-TMU':('714','Mugler','Angel Garden Of Stars Le Lys','historical local ID; Angel Lily clearly corresponds to Le Lys within Angel Garden of Stars'),
  '734-JIM':('10573','Jimmy Choo','Jimmy Choo','historical local ID; Shobi row only carries Eau de Parfum concentration for base Jimmy Choo'),

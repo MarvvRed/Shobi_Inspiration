@@ -3,7 +3,7 @@ from __future__ import annotations
 import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'; SITE=ROOT/'catalog_site.json'; VALID=ROOT/'social-card-main-notes-validated.json'; REPORT=ROOT/'current-fid-card-multipass-validation.json'; OUT=ROOT/'current-fid-multipass-applied.json'
+DB=ROOT/'database/catalog/database_complete.json'; SITE=ROOT/'database/catalog/catalog_site.json'; VALID=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'; REPORT=ROOT/'database/audits/current-fid-card-multipass-validation.json'; OUT=ROOT/'database/audits/current-fid-multipass-applied.json'
 def code(v): return str(v or '').strip().upper()
 def card_matches(card,c,fid):
     p=Path(str(card or ''))

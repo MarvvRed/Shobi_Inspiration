@@ -2,7 +2,7 @@
 import csv
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-REC=ROOT/'fragrantica-v2-local-id-reconciliation.csv';MATCH=ROOT/'fragrantica-v2-local-url-match.csv';OUT=ROOT/'fragrantica-v2-remaining-historical-residuals.md'
+REC=ROOT/'database/audits/fragrantica-v2-local-id-reconciliation.csv';MATCH=ROOT/'database/audits/fragrantica-v2-local-url-match.csv';OUT=ROOT/'database/audits/fragrantica-v2-remaining-historical-residuals.md'
 def rows(p):
  with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 res={r['shobi_code'].strip():r for r in rows(MATCH)}

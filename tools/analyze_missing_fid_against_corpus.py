@@ -3,10 +3,10 @@ import json,re,unicodedata
 from pathlib import Path
 from difflib import SequenceMatcher
 ROOT=Path(__file__).resolve().parents[1]
-DB=json.loads((ROOT/'database_complete.json').read_text(encoding='utf-8-sig'))
-SITE=json.loads((ROOT/'catalog_site.json').read_text(encoding='utf-8-sig'))
-CORPUS=ROOT/'fragrantica-scraper-archive'/'perfume_urls.txt'
-OUT=ROOT/'missing-fid-corpus-analysis.json'
+DB=json.loads((ROOT/'database/catalog/database_complete.json').read_text(encoding='utf-8-sig'))
+SITE=json.loads((ROOT/'database/catalog/catalog_site.json').read_text(encoding='utf-8-sig'))
+CORPUS=ROOT/'database/fragrantica'/'perfume_urls.txt'
+OUT=ROOT/'database/audits/missing-fid-corpus-analysis.json'
 ID_RE=re.compile(r'-(\d+)\.html(?:[?#].*)?$',re.I)
 
 def norm(s):
@@ -35,5 +35,5 @@ lines=['# Missing FID corpus analysis','',f"- Targets: **{out['targets']}**",f"-
 for r in rows:
  ex=r['exactCandidates'];st=r['strongCandidates'];best=(ex[0] if len(ex)==1 else (st[0] if not ex and len(st)==1 else None))
  lines.append(f"- `{r['code']}` — {r['brand']} · {r['inspiredBy']} — "+(f"candidate FID {best['fid']} {best['url']}" if best else 'no unique deterministic candidate'))
-(ROOT/'missing-fid-corpus-analysis.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+(ROOT/'database/audits/missing-fid-corpus-analysis.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print(json.dumps({k:out[k] for k in ('targets','uniqueExact','uniqueStrongNoExact')},indent=2))

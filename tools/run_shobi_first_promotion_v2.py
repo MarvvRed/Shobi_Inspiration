@@ -12,9 +12,9 @@ BATCH_SPECS = [
     (ROOT / f'tools/shobi_first_batch_large_{i:02d}_v2.py', f'APPROVED_BATCH_LARGE_{i:02d}')
     for i in range(1, 21)
 ]
-DBS = [ROOT / 'database_v2_clean.json', ROOT / 'database_complete.json']
-URLS = ROOT / 'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
-OUT = ROOT / 'fragrantica-v2-shobi-first-promotion.md'
+DBS = [ROOT / 'database/catalog/database_v2_clean.json', ROOT / 'database/catalog/database_complete.json']
+URLS = ROOT / 'database/fragrantica/legacy/original-local-scraper/perfume_urls.txt'
+OUT = ROOT / 'database/audits/fragrantica-v2-shobi-first-promotion.md'
 FORCE_CORRECTIONS = {'1186-JOO'}
 
 def load_literal(path, name):

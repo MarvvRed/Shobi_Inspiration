@@ -3,7 +3,7 @@
 ## URL archive recovered — 2026-09-05
 
 The original local `C:\fragrance_scraper\perfume_urls.txt` is now preserved
-unchanged at `fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt`.
+unchanged at `database/fragrantica/legacy/original-local-scraper/perfume_urls.txt`.
 It contains 55,964 nonempty lines, exceeding the historical 21,158-URL run.
 The adjacent README records provenance and SHA-256. This import only archives
 existing URLs; local catalog matching and its report remain pending.
@@ -24,19 +24,19 @@ The project should keep Shobi product data separate from perfume-reference/enric
 - Origin: cloned from `smellyCat-deep/shobi_inspiration` as an independent repository, not a GitHub fork.
 - Original-project attribution has been added to `README.md`.
 - Current application is a static frontend: HTML + CSS + JavaScript + JSON database.
-- Project datasets are stored under `data/`.
-- The authoritative Shobi Master currently lives at `data/shobi-master-v1.csv`.
-- The official identity mapping currently lives at `data/shobi-fragrantica-mapping.csv`.
+- Project datasets are stored under `database/source/`.
+- The authoritative Shobi Master currently lives at `database/source/shobi-master-v1.csv`.
+- The official identity mapping currently lives at `database/source/shobi-fragrantica-mapping.csv`.
 
 ## Current Repository Structure
 
-Main files currently identified: `index.html`, `script.js`, `style.css`, `database_complete.json`, `README.md`, `LICENSE`, `PROJECT_MEMORY.md`, and the `data/` directory.
+Main files currently identified: `index.html`, `script.js`, `style.css`, `database/catalog/database_complete.json`, `README.md`, `LICENSE`, `PROJECT_MEMORY.md`, and the `database/source/` directory.
 
 There is currently no backend required by the cloned application.
 
 ## Current Database
 
-`database_complete.json` currently contains **358 brands** and **2,387 records**. Of these, **2,184** carry a verified `identityStatus = CONFIRMED`; **203** legacy records that could not be tied safely to the completed audit remain preserved and unconfirmed.
+`database/catalog/database_complete.json` currently contains **358 brands** and **2,387 records**. Of these, **2,184** carry a verified `identityStatus = CONFIRMED`; **203** legacy records that could not be tied safely to the completed audit remain preserved and unconfirmed.
 
 The existing records include data such as Shobi/product code, inspired-by perfume, brand, category, description, scent type, olfactory family, notes, main accords, occasions, seasons, gender affinity, sillage, longevity, scent rating, and external reference link.
 
@@ -51,13 +51,13 @@ The existing records include data such as Shobi/product code, inspired-by perfum
 
 ## Shobi Master
 
-The authoritative Shobi catalog dataset is stored at `data/shobi-master-v1.csv` and contains **2,343 Shobi products**.
+The authoritative Shobi catalog dataset is stored at `database/source/shobi-master-v1.csv` and contains **2,343 Shobi products**.
 
 Important fields include `prestashop_product_id`, `shobi_code`, `shobi_name`, `reference`, `reference_prefix`, `inspired_by`, `category`, `official_description`, `url`, and provenance/status fields.
 
 The records are currently ordered by `prestashop_product_id` descending. The PrestaShop product ID is treated as a product identifier, not as a perfume property or ranking.
 
-The Shobi Master has not yet replaced `database_complete.json`; catalog identity/mapping work is being completed first.
+The Shobi Master has not yet replaced `database/catalog/database_complete.json`; catalog identity/mapping work is being completed first.
 
 ## Official Perfume Identification Logic
 
@@ -106,7 +106,7 @@ The method was first tested on the first 10 Shobi Master records (`prestashop_pr
 
 A broader test on the first 50 consecutive Master records (`prestashop_product_id` 5117 through 5067) produced 50 confirmed identities, 49 verified Fragrantica IDs, and one confirmed perfume with no verified Fragrantica page/ID.
 
-The official production mapping is stored in `data/shobi-fragrantica-mapping.csv`. On 4 September 2026 it was aligned with the completed 2,343-row identity audit.
+The official production mapping is stored in `database/source/shobi-fragrantica-mapping.csv`. On 4 September 2026 it was aligned with the completed 2,343-row identity audit.
 
 Current cumulative mapping status:
 
@@ -115,7 +115,7 @@ Current cumulative mapping status:
 - **8 `NON_APPLICABLE` mixtures**
 - **147 previously verified `fragrantica_status = FOUND` links preserved**
 
-The audit source with all evidence and review columns is stored in `data/shobi-identity-review-2026-09-04.csv`. Records without a separately verified Fragrantica ID retain `fragrantica_status = NOT_FOUND`; a Parfumo URL was not converted into a Fragrantica ID. The pre-import mapping is preserved as `data/shobi-fragrantica-mapping.pre-20260904.csv`.
+The audit source with all evidence and review columns is stored in `database/source/shobi-identity-review-2026-09-04.csv`. Records without a separately verified Fragrantica ID retain `fragrantica_status = NOT_FOUND`; a Parfumo URL was not converted into a Fragrantica ID. The pre-import mapping is preserved as `database/source/shobi-fragrantica-mapping.pre-20260904.csv`.
 
 ## Source Strategy
 
@@ -178,7 +178,7 @@ The finished project is intended to be **completely in English** and aimed at an
 
 ## Important Architectural Principle
 
-Do not assume that a value in the existing `database_complete.json` is authoritative merely because it exists.
+Do not assume that a value in the existing `database/catalog/database_complete.json` is authoritative merely because it exists.
 
 For future enrichment work, provenance should ideally be explicit so we can determine where each important field came from and when it was verified.
 
@@ -187,25 +187,25 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 - Independent repository created from the original project.
 - Original-project attribution added to README.
 - Existing frontend architecture reviewed.
-- Existing `database_complete.json` inspected and counted.
+- Existing `database/catalog/database_complete.json` inspected and counted.
 - Basic database quality checks performed.
 - Existing enrichment fields identified.
 - Initial international source candidates identified.
 - Persistent project memory introduced.
-- `data/` directory created for project datasets.
-- Shobi Master placed at `data/shobi-master-v1.csv` as the authoritative Shobi catalog dataset.
+- `database/source/` directory created for project datasets.
+- Shobi Master placed at `database/source/shobi-master-v1.csv` as the authoritative Shobi catalog dataset.
 - Fragrantica Social Card examined and selected as the reference source for the perfume data contained in it.
 - Fragrantica perfume ID identified as the common linkage between a perfume and associated Fragrantica resources when a Fragrantica page exists.
 - Vanilla | 28 (`52616`) confirmed across page, thumbnail/image resource and Social Card.
 - Fragrantica page-ID → English Social Card relationship validated successfully on 10/10 additional perfume examples.
 - Official Shobi → original perfume identification logic defined.
 - Identity status formally separated from Fragrantica availability status.
-- `data/shobi-fragrantica-mapping.csv` created as the official perfume identity mapping dataset.
+- `database/source/shobi-fragrantica-mapping.csv` created as the official perfume identity mapping dataset.
 - First 50 mappings written to the official mapping file.
 - Next 100 mappings completed and appended, bringing official mapping coverage to 150 Shobi Master records.
 - Completed identity audit imported into the official mapping: 2,184 confirmed, 151 ambiguous, and 8 non-applicable out of 2,343 records.
-- Preserved all 147 previously verified Fragrantica IDs and retained the full review evidence in `data/shobi-identity-review-2026-09-04.csv`.
-- Applied the 2,184 confirmed identities to `database_complete.json`: 1,888 existing records were updated and 296 confirmed records were added. No legacy record was deleted; 203 unmatched legacy records remain for later cleanup. The pre-import database is preserved as `database_complete.pre-identity-import-20260904.json`.
+- Preserved all 147 previously verified Fragrantica IDs and retained the full review evidence in `database/source/shobi-identity-review-2026-09-04.csv`.
+- Applied the 2,184 confirmed identities to `database/catalog/database_complete.json`: 1,888 existing records were updated and 296 confirmed records were added. No legacy record was deleted; 203 unmatched legacy records remain for later cleanup. The pre-import database is preserved as `database_complete.pre-identity-import-20260904.json`.
 
 ## Decisions Made
 
@@ -213,15 +213,15 @@ For future enrichment work, provenance should ideally be explicit so we can dete
 
 - A Main Notes field is eligible for green only when it is proven against the exact archived Fragrantica Social Card image for the same FID.
 - Proof requires two independent OCR passes, the visible note-icon count, and an exact position-by-position sequence match. Matching only the number of notes is invalid.
-- The independent result is saved in `social-card-ordered-image-audit.json`; `tools/build_validation_audit.py` now requires its `EXACT_ORDERED_MATCH` result before assigning green.
+- The independent result is saved in `database/fragrantica/social-cards/records/social-card-ordered-image-audit.json`; `tools/build_validation_audit.py` now requires its `EXACT_ORDERED_MATCH` result before assigning green.
 - The 110 exact image-proven note differences found in the first full pass were corrected at source, then re-read successfully. Every remaining unreadable/ambiguous card is yellow by design.
 
 - Work should proceed **step by step**, without jumping ahead into implementation before the current question/decision is settled.
 - The project will be English-language and international.
 - GitHub/project files act as persistent project memory rather than relying solely on one ChatGPT conversation.
 - `PROJECT_MEMORY.md` is the current project handoff/state document.
-- `data/shobi-master-v1.csv` is the authoritative Shobi Master dataset for the current project.
-- `data/shobi-fragrantica-mapping.csv` is the official identity mapping dataset.
+- `database/source/shobi-master-v1.csv` is the authoritative Shobi Master dataset for the current project.
+- `database/source/shobi-fragrantica-mapping.csv` is the official identity mapping dataset.
 - **Perfume identity must be established before enrichment data is collected.**
 - **No Fragrantica ID may be assigned solely from name similarity or a first-result match.**
 - **Identification uses cross-verification of Shobi evidence and the candidate perfume.**
@@ -242,7 +242,7 @@ The following have **not** been decided yet:
 - Parfumo's future role as a source.
 - Basenotes' future role as a source.
 - Exact source priority rules outside the confirmed Social Card decision.
-- Exact replacement strategy for `database_complete.json`.
+- Exact replacement strategy for `database/catalog/database_complete.json`.
 - Which enrichment fields will ultimately be retained outside the confirmed Social Card source decision.
 - Whether existing enrichment data will be reused, replaced, or independently verified.
 - Whether raw Fragrantica vote counts will be stored.
@@ -261,7 +261,7 @@ The official mapping covers all **2,343 Master records**: 2,184 confirmed, 151 a
 
 ## Next Step
 
-When work resumes, investigate the 151 ambiguous identities or decide how the 2,184 confirmed identities should feed the site's `database_complete.json` enrichment records.
+When work resumes, investigate the 151 ambiguous identities or decide how the 2,184 confirmed identities should feed the site's `database/catalog/database_complete.json` enrichment records.
 
 ---
 

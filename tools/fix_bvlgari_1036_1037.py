@@ -3,14 +3,14 @@ from __future__ import annotations
 import json,urllib.request
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json';SITE=ROOT/'catalog_site.json';VALID=ROOT/'social-card-main-notes-validated.json';PROOF=ROOT/'existing-notes-current-card-fast-proof.json';IMAP=ROOT/'perfume-images'/'map.js';OUT=ROOT/'fix-bvlgari-1036-1037.json'
+DB=ROOT/'database/catalog/database_complete.json';SITE=ROOT/'database/catalog/catalog_site.json';VALID=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json';PROOF=ROOT/'database/audits/existing-notes-current-card-fast-proof.json';IMAP=ROOT/'database/assets/perfumes'/'map.js';OUT=ROOT/'database/audits/fix-bvlgari-1036-1037.json'
 def code(v):return str(v or '').strip().upper()
 def fetch_img(fid):
  u=f'https://fimgs.net/mdimg/perfume-thumbs/dark-375x500.{fid}.avif';req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0','Accept':'image/avif,image/*,*/*;q=0.8','Referer':'https://www.fragrantica.com/'})
  try:
   with urllib.request.urlopen(req,timeout=30) as r:data=r.read()
   if len(data)>=1000 and (b'ftypavif' in data[:32] or b'ftypavis' in data[:32]):
-   p=ROOT/'perfume-images'/f'{fid}.avif';p.write_bytes(data);return str(p.relative_to(ROOT))
+   p=ROOT/'database/assets/perfumes'/f'{fid}.avif';p.write_bytes(data);return str(p.relative_to(ROOT))
  except Exception:pass
  return ''
 db=json.loads(DB.read_text(encoding='utf-8-sig'));site=json.loads(SITE.read_text(encoding='utf-8-sig'));valid=json.loads(VALID.read_text(encoding='utf-8'));proof=json.loads(PROOF.read_text(encoding='utf-8'))
@@ -34,8 +34,8 @@ if not card or not (ROOT/card).is_file():raise SystemExit('1036 exact card missi
 r2['fragranticaSocialCardNotes']=expected;r2['fragranticaSocialCardStatus']='VALIDATED_OCR'
 byv['1036-BLG']={'code':'1036-BLG','fragranticaId':148,'card':card,'validated':True,'mainNotes':expected,'rawSlots':[{'slot':i,'name':n,'ocrConfidence':None} for i,n in enumerate(expected,1)],'validatedSlots':[{'slot':i,'name':n,'raw':'CURRENT_FID_FAST_EXACT_OCR','matchScore':1.0,'margin':None} for i,n in enumerate(expected,1)],'failures':[],'reasons':[],'validationMethod':'CURRENT_FID_FAST_EXACT_OCR'}
 # Image map for 1037 exact FID.
-txt=IMAP.read_text(encoding='utf-8').strip();prefix='window.PERFUME_IMAGE_MAP=';mp=json.loads(txt[len(prefix):].rstrip(';'));p9403=ROOT/'perfume-images'/'9403.avif'
-if p9403.exists() and p9403.stat().st_size>=1000:mp['1037-BLG']='perfume-images/9403.avif'
+txt=IMAP.read_text(encoding='utf-8').strip();prefix='window.PERFUME_IMAGE_MAP=';mp=json.loads(txt[len(prefix):].rstrip(';'));p9403=ROOT/'database/assets/perfumes'/'9403.avif'
+if p9403.exists() and p9403.stat().st_size>=1000:mp['1037-BLG']='database/assets/perfumes/9403.avif'
 else:
  im=fetch_img('9403')
  if im:mp['1037-BLG']=im

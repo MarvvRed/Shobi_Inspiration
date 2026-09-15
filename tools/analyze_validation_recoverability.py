@@ -7,12 +7,12 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = json.loads((ROOT / "database_complete.json").read_text(encoding="utf-8-sig"))
-SITE = json.loads((ROOT / "catalog_site.json").read_text(encoding="utf-8-sig"))
-GENDER_SEASON = ROOT / "fragrantica-scraper-archive" / "social-cards" / "gender-season.csv"
-VALIDATED_NOTES = ROOT / "social-card-main-notes-validated.json"
-RAW_NOTES = ROOT / "social-card-main-notes.json"
-IMAGE_MAP = ROOT / "perfume-images" / "map.js"
+DB = json.loads((ROOT / "database/catalog/database_complete.json").read_text(encoding="utf-8-sig"))
+SITE = json.loads((ROOT / "database/catalog/catalog_site.json").read_text(encoding="utf-8-sig"))
+GENDER_SEASON = ROOT / "database/fragrantica" / "social-cards" / "gender-season.csv"
+VALIDATED_NOTES = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes-validated.json"
+RAW_NOTES = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes.json"
+IMAGE_MAP = ROOT / "database/assets/perfumes" / "map.js"
 
 YES = {"VERIFIED","VALIDATED","CONFIRMED","OK","MATCH_CORRETTO","MATCH CORRETTO","VALIDATED_OCR","VALIDATED_MANUAL","VALIDATED_SOCIAL_CARD"}
 def ok(v): return str(v or "").strip().upper() in YES
@@ -58,7 +58,7 @@ for r in rows:
     gs_same=bool(g and str(g.get('fragrantica_id') or '').strip()==fid and str(g.get('main_season') or '').strip())
     csv_gender=norm_gender(g.get('gender')) if g and str(g.get('fragrantica_id') or '').strip()==fid else ''
     gender_csv_match=bool(current_gender and csv_gender and current_gender==csv_gender)
-    mapped=image_map.get(c,''); expected_img=f'perfume-images/{fid}.avif' if fid else ''
+    mapped=image_map.get(c,''); expected_img=f'database/assets/perfumes/{fid}.avif' if fid else ''
     image_map_same=bool(fid and mapped==expected_img and (ROOT/expected_img).is_file())
     expected_file_exists=bool(fid and (ROOT/expected_img).is_file())
 
@@ -80,11 +80,11 @@ for r in rows:
             if len(samples[name])<20:samples[name].append(c or '<EMPTY>')
 
 out={'yellowRows':len(rows),'frequencies':{k:dict(v.most_common()) for k,v in freq.items()},'patterns':dict(patterns),'samples':dict(samples)}
-(ROOT/'validation-recoverability-report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/validation-recoverability-report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 lines=['# Validation recoverability report','',f'- Yellow rows inspected: **{len(rows)}**','','## Existing-evidence patterns','']
 for k,v in patterns.most_common(): lines.append(f'- `{k}`: **{v}** — samples: {", ".join(samples[k][:12])}')
 for title,key in [('Identity status','identityStatus'),('Identity source','identitySource'),('Gender status','genderStatus'),('Social-card status','socialCardStatus')]:
     lines += ['',f'## {title}','']
     for k,v in freq[key].most_common(): lines.append(f'- `{k}`: **{v}**')
-(ROOT/'validation-recoverability-report.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+(ROOT/'database/audits/validation-recoverability-report.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print(json.dumps(out,ensure_ascii=False))

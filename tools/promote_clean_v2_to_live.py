@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
 
-SRC = Path('database_v2_clean.json')
-LIVE = Path('database_complete.json')
-BACKUP = Path('perfume-database/archive/database_complete_pre_v2.json')
+SRC = Path('database/catalog/database_v2_clean.json')
+LIVE = Path('database/catalog/database_complete.json')
+BACKUP = Path('database/archive/archive/database_complete_pre_v2.json')
 
 clean = json.loads(SRC.read_text(encoding='utf-8-sig'))
 if len(clean) != 2369:

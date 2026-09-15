@@ -1,9 +1,9 @@
 import json,re
 from pathlib import Path
 
-TARGETS=[Path('database_v2_clean.json'),Path('database_complete.json')]
-URLS=Path('fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt')
-REPORT=Path('fragrantica-v2-reviewed-promotion.md')
+TARGETS=[Path('database/catalog/database_v2_clean.json'),Path('database/catalog/database_complete.json')]
+URLS=Path('database/fragrantica/legacy/original-local-scraper/perfume_urls.txt')
+REPORT=Path('database/audits/fragrantica-v2-reviewed-promotion.md')
 
 # Manually reviewed only against repository-local perfume_urls.txt and current local matcher ranking.
 APPROVED={
@@ -86,7 +86,7 @@ for path in TARGETS:
         if fid not in url_by_id: continue
         p['fragranticaId']=fid
         p['fragranticaStatus']='VERIFIED_LOCAL_CORPUS_V2'
-        p['fragranticaVerificationSource']='fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
+        p['fragranticaVerificationSource']='database/fragrantica/legacy/original-local-scraper/perfume_urls.txt'
         p['fragranticaLocalUrl']=url_by_id[fid]
         changed+=1; promoted.add(label)
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

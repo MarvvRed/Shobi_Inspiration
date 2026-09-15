@@ -6,8 +6,8 @@ import csv, json, re, unicodedata
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'; SITE=ROOT/'catalog_site.json'
-GS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'gender-season.csv'
+DB=ROOT/'database/catalog/database_complete.json'; SITE=ROOT/'database/catalog/catalog_site.json'
+GS=ROOT/'database/fragrantica'/'social-cards'/'gender-season.csv'
 rows=json.loads(DB.read_text(encoding='utf-8-sig'))
 site=json.loads(SITE.read_text(encoding='utf-8-sig'))
 
@@ -44,5 +44,5 @@ for r,s in zip(rows,site):
     changed.append({'code':c,'brand':r.get('brand'),'inspiredBy':r.get('inspiredBy'),'fragranticaId':fid,'source':card})
 
 DB.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-(ROOT/'strict-social-card-identity-promotions.json').write_text(json.dumps({'changed':len(changed),'rows':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/strict-social-card-identity-promotions.json').write_text(json.dumps({'changed':len(changed),'rows':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('strict_social_card_identity_promotions',len(changed))

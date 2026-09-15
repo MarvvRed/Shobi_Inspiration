@@ -4,9 +4,9 @@ from collections import Counter,defaultdict
 from pathlib import Path
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
-DIR=ROOT/'public'/'note-icons'
-IDX=DIR/'index.json'; DB=ROOT/'database_complete.json'; MAP=ROOT/'note-icons'/'map.js'
-OUTJ=ROOT/'public-note-icons-audit.json'; OUTM=ROOT/'public-note-icons-audit.md'
+DIR=ROOT/'database'/'assets'/'note-icons'
+IDX=DIR/'index.json'; DB=ROOT/'database/catalog/database_complete.json'; MAP=ROOT/'database'/'assets'/'note-icons'/'map.js'
+OUTJ=ROOT/'database/audits/public-note-icons-audit.json'; OUTM=ROOT/'database/audits/public-note-icons-audit.md'
 def norm(s):
  s=unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().lower()
  return ' '.join(re.findall(r'[a-z0-9]+',s))

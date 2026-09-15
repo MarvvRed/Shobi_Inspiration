@@ -5,7 +5,7 @@ on:
     paths:
       - tools/analyze_validation_yellows.py
       - .github/workflows/analyze-validation-yellows.yml
-      - catalog_site.json
+      - database/catalog/catalog_site.json
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add validation-yellow-report.json validation-yellow-report.md
+          git add database/audits/validation-yellow-report.json database/audits/validation-yellow-report.md
           if git diff --cached --quiet; then
             echo "No report changes"
             exit 0

@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add database_complete.json catalog_site.json fragrantica-scraper-archive/social-cards/gender-season.csv season-only-card-geometry-fixes.json validation-yellow-report.json validation-yellow-report.md
+          git add database/catalog/database_complete.json database/catalog/catalog_site.json database/fragrantica/social-cards/gender-season.csv database/audits/season-only-card-geometry-fixes.json database/audits/validation-yellow-report.json database/audits/validation-yellow-report.md
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Verify season-only rows from exact Social Card geometry"
           git pull --rebase origin main

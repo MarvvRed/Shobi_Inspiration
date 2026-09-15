@@ -2,7 +2,7 @@
 import csv
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-MATCH=ROOT/'fragrantica-v2-local-url-match.csv'; OUT=ROOT/'fragrantica-v2-no-candidate-review.md'
+MATCH=ROOT/'database/audits/fragrantica-v2-local-url-match.csv'; OUT=ROOT/'database/audits/fragrantica-v2-no-candidate-review.md'
 def rows(p):
  with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 rr=[r for r in rows(MATCH) if r.get('classification')=='NO_CANDIDATE']

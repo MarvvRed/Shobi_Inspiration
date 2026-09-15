@@ -6,7 +6,7 @@ from PIL import Image,ImageEnhance,ImageOps
 import pytesseract
 from pytesseract import Output
 ROOT=Path(__file__).resolve().parents[1]
-DB=json.loads((ROOT/'database_complete.json').read_text(encoding='utf-8-sig'));SITE=json.loads((ROOT/'catalog_site.json').read_text(encoding='utf-8-sig'));VALID=json.loads((ROOT/'social-card-main-notes-validated.json').read_text(encoding='utf-8'))
+DB=json.loads((ROOT/'database/catalog/database_complete.json').read_text(encoding='utf-8-sig'));SITE=json.loads((ROOT/'database/catalog/catalog_site.json').read_text(encoding='utf-8-sig'));VALID=json.loads((ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json').read_text(encoding='utf-8'))
 def code(v):return str(v or '').strip().upper()
 valid_by={code(x.get('code')):x for x in VALID}
 rows=[]
@@ -16,7 +16,7 @@ for d,s in zip(DB,SITE):
  fid=str(d.get('fragranticaId') or '')
  candidates=[]
  v=valid_by.get(c) or {}
- for card in [v.get('card'), f'fragrantica-scraper-archive/social-cards/images/current_{c}_{fid}.jpeg']:
+ for card in [v.get('card'), f'database/fragrantica/social-cards/images/current_{c}_{fid}.jpeg']:
   if card and (ROOT/str(card)).is_file() and str(card) not in candidates:candidates.append(str(card))
  card=candidates[-1] if candidates else ''
  if not card:continue
@@ -35,4 +35,4 @@ for d,s in zip(DB,SITE):
    words.append({'text':t,'conf':round(conf,1),'x':round(int(data['left'][i])/2),'y':round(int(data['top'][i])/2),'w':round(int(data['width'][i])/2),'h':round(int(data['height'][i])/2)})
   full=' '.join(x['text'] for x in words)
   rows.append({'code':c,'fid':fid,'card':card,'width':w,'height':h,'aspect':round(w/h,3),'currentNotes':d.get('fragranticaSocialCardNotes') or [],'words':words,'fullText':full})
-out={'count':len(rows),'rows':rows};(ROOT/'remaining-card-layout-analysis.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps({'count':len(rows),'sizes':[{k:r[k] for k in ('code','fid','width','height','aspect')} for r in rows]},ensure_ascii=False,indent=2))
+out={'count':len(rows),'rows':rows};(ROOT/'database/audits/remaining-card-layout-analysis.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps({'count':len(rows),'sizes':[{k:r[k] for k in ('code','fid','width','height','aspect')} for r in rows]},ensure_ascii=False,indent=2))

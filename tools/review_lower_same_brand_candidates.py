@@ -1,9 +1,9 @@
 import csv,re,unicodedata
 from pathlib import Path
 
-MATCH=Path('fragrantica-v2-local-url-match.csv')
-OUT=Path('fragrantica-v2-lower-same-brand-review.csv')
-REPORT=Path('fragrantica-v2-lower-same-brand-review.md')
+MATCH=Path('database/audits/fragrantica-v2-local-url-match.csv')
+OUT=Path('database/audits/fragrantica-v2-lower-same-brand-review.csv')
+REPORT=Path('database/audits/fragrantica-v2-lower-same-brand-review.md')
 STOP={'eau','de','parfum','perfume','toilette','edp','edt','for','men','women','man','woman','pour','homme','femme','the','by','and','limited','edition','cologne','notes','note'}
 
 def norm(v):

@@ -3,10 +3,10 @@ from collections import defaultdict, Counter
 from pathlib import Path
 from urllib.parse import urlparse, unquote
 
-DB=Path('database_complete.json')
-CLEAN=Path('database_v2_clean.json')
-AUDIT=Path('fragrantica-v2-identity-audit.csv')
-CORPUS=Path('fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt')
+DB=Path('database/catalog/database_complete.json')
+CLEAN=Path('database/catalog/database_v2_clean.json')
+AUDIT=Path('database/audits/fragrantica-v2-identity-audit.csv')
+CORPUS=Path('database/fragrantica/legacy/original-local-scraper/perfume_urls.txt')
 
 PLACEHOLDERS={'','unknown brand','unknown','n/a','na','none','null','-'}
 

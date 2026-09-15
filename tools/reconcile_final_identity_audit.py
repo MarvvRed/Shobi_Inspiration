@@ -2,11 +2,11 @@
 import csv,json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_v2_clean.json'
-TERM=ROOT/'fragrantica-scraper-archive/corpus-match/resolved-terminal.csv'
-PEND=ROOT/'fragrantica-scraper-archive/corpus-match/pending-review.csv'
-OUT=ROOT/'fragrantica-final-identity-status.csv'
-SUM=ROOT/'fragrantica-final-identity-summary.txt'
+DB=ROOT/'database/catalog/database_v2_clean.json'
+TERM=ROOT/'database/fragrantica/corpus-match/resolved-terminal.csv'
+PEND=ROOT/'database/fragrantica/corpus-match/pending-review.csv'
+OUT=ROOT/'database/audits/fragrantica-final-identity-status.csv'
+SUM=ROOT/'database/audits/fragrantica-final-identity-summary.txt'
 def rows_from_db(data):
  r=data if isinstance(data,list) else (data.get('perfumes') or data.get('records') or data.get('data') or [])
  if r and isinstance(r[0],dict) and isinstance(r[0].get('perfumes'),list):r=[p for b in r for p in b.get('perfumes',[])]

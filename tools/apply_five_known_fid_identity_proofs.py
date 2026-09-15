@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json,re
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];DB=ROOT/'database_complete.json'
+ROOT=Path(__file__).resolve().parents[1];DB=ROOT/'database/catalog/database_complete.json'
 VERIFIED={
 '236-IND':'https://www.fragrantica.com/perfume/Indigo-Wild/Zum-Mist-Frankincense-Myrrh-42046.html',
 '235-HOLL':'https://www.fragrantica.com/perfume/Hollister/Socal-4307.html',
@@ -19,4 +19,4 @@ for c,u in VERIFIED.items():
  if not r or str(r.get('fragranticaId') or '')!=f or urlfid(r.get('fragranticaUrl'))!=f:raise SystemExit(f'drift {c}')
  if str(r.get('identityStatus') or '').upper()!='CONFIRMED':raise SystemExit(f'identity status {c}')
  r['fragranticaVerificationSource']=u;r['fragranticaVerificationReason']='WEB_DIRECT_FRAGRANTICA_PAGE_NAME_BRAND_ID_VERIFIED_2026-09-14';r['fragranticaVerificationFragranticaId']=f;out.append({'code':c,'fid':f,'source':u})
-DB.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');(ROOT/'five-known-fid-identity-proofs.json').write_text(json.dumps({'changed':len(out),'rows':out},ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps({'changed':len(out)},ensure_ascii=False))
+DB.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');(ROOT/'database/audits/five-known-fid-identity-proofs.json').write_text(json.dumps({'changed':len(out),'rows':out},ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps({'changed':len(out)},ensure_ascii=False))

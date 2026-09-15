@@ -6,7 +6,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/filter-shobi-live.yml'
-      - 'shobi-master-v1-refresh.csv'
+      - 'database/source/shobi-master-v1-refresh.csv'
 
 permissions:
   contents: write
@@ -24,9 +24,9 @@ jobs:
           import re
           from collections import Counter
 
-          source = 'shobi-master-v1-refresh.csv'
-          output = 'shobi-perfumes-live-unique.csv'
-          conflicts = 'shobi-perfumes-code-conflicts.csv'
+          source = 'database/source/shobi-master-v1-refresh.csv'
+          output = 'database/source/shobi-perfumes-live-unique.csv'
+          conflicts = 'database/source/shobi-perfumes-code-conflicts.csv'
 
           with open(source, encoding='utf-8-sig', newline='') as f:
               rows = list(csv.DictReader(f))
@@ -88,7 +88,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add shobi-perfumes-live-unique.csv shobi-perfumes-code-conflicts.csv
+          git add database/source/shobi-perfumes-live-unique.csv database/source/shobi-perfumes-code-conflicts.csv
           if git diff --cached --quiet; then
             echo 'No catalog changes.'
             exit 0

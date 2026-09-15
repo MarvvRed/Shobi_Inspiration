@@ -3,10 +3,10 @@ from collections import defaultdict, Counter
 from pathlib import Path
 from urllib.parse import urlparse, unquote
 
-DB=Path('database_complete.json')
-AUDIT=Path('fragrantica-v2-identity-audit.csv')
-CORPUS=Path('fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt')
-OUT=Path('brand-recovery-audit.md')
+DB=Path('database/catalog/database_complete.json')
+AUDIT=Path('database/audits/fragrantica-v2-identity-audit.csv')
+CORPUS=Path('database/fragrantica/legacy/original-local-scraper/perfume_urls.txt')
+OUT=Path('database/audits/brand-recovery-audit.md')
 rows=json.loads(DB.read_text(encoding='utf-8'))
 
 def designer_slug(url):

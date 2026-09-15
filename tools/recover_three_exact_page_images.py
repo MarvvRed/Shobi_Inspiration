@@ -4,7 +4,7 @@ import io,json,re,urllib.parse,urllib.request
 from pathlib import Path
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
-IMAP=ROOT/'perfume-images'/'map.js';OUT=ROOT/'three-exact-page-image-recovery.json'
+IMAP=ROOT/'database/assets/perfumes'/'map.js';OUT=ROOT/'database/audits/three-exact-page-image-recovery.json'
 TARGETS={
  '2265-KAY':('85186','https://www.fragrantica.com/perfume/Kayali-Fragrances/Oudgasm-Rose-Oud-16-Eau-de-Parfum-Intense-85186.html'),
  '716-ISS':('6432','https://www.fragrantica.com/perfume/Issey-Miyake/A-Scent-by-Issey-Miyake-6432.html'),
@@ -43,14 +43,14 @@ for code,(fid,page) in TARGETS.items():
    if im.mode not in ('RGB','RGBA'):im=im.convert('RGB')
    if im.mode=='RGBA':
     bg=Image.new('RGB',im.size,'white');bg.paste(im,mask=im.getchannel('A'));im=bg
-   target=ROOT/'perfume-images'/f'{fid}.avif'
+   target=ROOT/'database/assets/perfumes'/f'{fid}.avif'
    try:im.save(target,'AVIF',quality=90)
    except Exception:
     # Pillow build may lack AVIF encoder; install pillow-avif-plugin in workflow and import there.
     import pillow_avif  # noqa
     im.save(target,'AVIF',quality=90)
    if target.stat().st_size<1000:continue
-   imap[code]=f'perfume-images/{fid}.avif';result.update({'status':'RECOVERED','source':u,'width':im.width,'height':im.height});break
+   imap[code]=f'database/assets/perfumes/{fid}.avif';result.update({'status':'RECOVERED','source':u,'width':im.width,'height':im.height});break
   except Exception as e:result['lastImageError']=repr(e)
  rows.append(result)
 IMAP.write_text(prefix+json.dumps(imap,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8');OUT.write_text(json.dumps({'recovered':sum(r['status']=='RECOVERED' for r in rows),'rows':rows},ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps({'recovered':sum(r['status']=='RECOVERED' for r in rows),'rows':rows},ensure_ascii=False,indent=2))

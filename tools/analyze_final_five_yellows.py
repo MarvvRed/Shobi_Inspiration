@@ -7,13 +7,13 @@ import pytesseract
 
 ROOT = Path(__file__).resolve().parents[1]
 TARGETS = {'1037-BLG','118-HAM','325-PECK','235-HOLL','1251-ROM'}
-DB = json.loads((ROOT/'database_complete.json').read_text(encoding='utf-8-sig'))
-SITE = json.loads((ROOT/'catalog_site.json').read_text(encoding='utf-8-sig'))
-VALID = json.loads((ROOT/'social-card-main-notes-validated.json').read_text(encoding='utf-8'))
-RAW = json.loads((ROOT/'social-card-main-notes.json').read_text(encoding='utf-8'))
-IMGDIR = ROOT/'fragrantica-scraper-archive'/'social-cards'/'images'
-GS_PATH = ROOT/'fragrantica-scraper-archive'/'social-cards'/'gender-season.csv'
-OUT = ROOT/'final-five-yellow-analysis.json'
+DB = json.loads((ROOT/'database/catalog/database_complete.json').read_text(encoding='utf-8-sig'))
+SITE = json.loads((ROOT/'database/catalog/catalog_site.json').read_text(encoding='utf-8-sig'))
+VALID = json.loads((ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json').read_text(encoding='utf-8'))
+RAW = json.loads((ROOT/'database/fragrantica/social-cards/records/social-card-main-notes.json').read_text(encoding='utf-8'))
+IMGDIR = ROOT/'database/fragrantica'/'social-cards'/'images'
+GS_PATH = ROOT/'database/fragrantica'/'social-cards'/'gender-season.csv'
+OUT = ROOT/'database/audits/final-five-yellow-analysis.json'
 
 def code(v): return str(v or '').strip().upper()
 def norm(t): return re.sub(r'\s+',' ',re.sub(r'[^a-z ]+',' ',str(t or '').lower().replace('\n',' '))).strip()
@@ -27,7 +27,7 @@ def parse_gender(t):
 def best_card(c,fid,valid,raw):
     v=valid.get(c) or {}; r=raw.get(c) or {}
     candidates=[]
-    for p in [v.get('card'), r.get('card'), f'fragrantica-scraper-archive/social-cards/images/current_{c}_{fid}.jpeg']:
+    for p in [v.get('card'), r.get('card'), f'database/fragrantica/social-cards/images/current_{c}_{fid}.jpeg']:
         if p and str(p) not in candidates and (ROOT/str(p)).is_file(): candidates.append(str(p))
     # Prefer an exact-FID validated card, then any exact-FID filename/current card.
     if v and v.get('validated') is True and str(v.get('fragranticaId') or '')==fid and v.get('card') and (ROOT/str(v.get('card'))).is_file():

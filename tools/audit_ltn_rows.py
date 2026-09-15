@@ -10,7 +10,7 @@ def walk(x):
             yield x
         for v in x.values(): yield from walk(v)
 
-data=json.loads(Path('database_complete.json').read_text(encoding='utf-8-sig'))
+data=json.loads(Path('database/catalog/database_complete.json').read_text(encoding='utf-8-sig'))
 rows=list(walk(data))
-Path('ltn-row-audit.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+Path('database/audits/ltn-row-audit.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(rows,ensure_ascii=False,indent=2))

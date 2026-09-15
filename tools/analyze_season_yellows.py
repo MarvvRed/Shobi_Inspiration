@@ -4,9 +4,9 @@ import csv,json
 from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=json.loads((ROOT/'database_complete.json').read_text(encoding='utf-8-sig'))
-SITE=json.loads((ROOT/'catalog_site.json').read_text(encoding='utf-8-sig'))
-GS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'gender-season.csv'
+DB=json.loads((ROOT/'database/catalog/database_complete.json').read_text(encoding='utf-8-sig'))
+SITE=json.loads((ROOT/'database/catalog/catalog_site.json').read_text(encoding='utf-8-sig'))
+GS=ROOT/'database/fragrantica'/'social-cards'/'gender-season.csv'
 with GS.open(encoding='utf-8-sig',newline='') as f:
     evidence={str(x.get('shobi_code') or '').strip().upper():x for x in csv.DictReader(f)}
 rows=[]; kinds=Counter()
@@ -23,9 +23,9 @@ for db,s in zip(DB,SITE):
     kinds[k]+=1
     rows.append({'code':c,'brand':db.get('brand'),'inspiredBy':db.get('inspiredBy'),'fid':fid,'currentSeasons':db.get('seasons') or [],'kind':k,'csv':e})
 out={'count':len(rows),'kinds':dict(kinds),'rows':rows}
-(ROOT/'season-yellow-analysis.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/season-yellow-analysis.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 lines=['# Season yellow analysis','',f'- Rows: **{len(rows)}**']+[f'- `{k}`: **{v}**' for k,v in kinds.most_common()]+['','## Rows','']
 for r in rows:
     e=r['csv'] or {}; lines.append(f"- `{r['code']}` — {r['brand']} · {r['inspiredBy']} — {r['kind']} — current={r['currentSeasons']} — csv={e.get('main_season','')} — csvFID={e.get('fragrantica_id','')}")
-(ROOT/'season-yellow-analysis.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+(ROOT/'database/audits/season-yellow-analysis.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print('season_yellows',len(rows),dict(kinds))

@@ -28,8 +28,8 @@ jobs:
       - name: Verify no legacy note-icons directory remains
         run: |
           test ! -d note-icons
-          test -f public/note-icons/map.js
-          grep -q 'public/note-icons/map.js' index.html
+          test -f database/assets/note-icons/map.js
+          grep -q 'database/assets/note-icons/map.js' index.html
       - name: Commit migration
         run: |
           git config user.name "github-actions[bot]"

@@ -28,7 +28,7 @@ UA = os.environ.get(
 )
 HTTP_TIMEOUT = float(os.environ.get("SHOBI_HTTP_TIMEOUT", "25"))
 SEARCH_DELAY = float(os.environ.get("SHOBI_SEARCH_DELAY", "0.8"))
-MAPPING = Path("data/shobi-fragrantica-mapping.csv")
+MAPPING = Path("database/source/shobi-fragrantica-mapping.csv")
 
 BAD_INSPIRED = {
     "", "the fragrance notes", "the fragrance notes of", "fragrance notes",

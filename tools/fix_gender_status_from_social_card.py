@@ -6,8 +6,8 @@ import csv, json
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'
-GS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'gender-season.csv'
+DB=ROOT/'database/catalog/database_complete.json'
+GS=ROOT/'database/fragrantica'/'social-cards'/'gender-season.csv'
 rows=json.loads(DB.read_text(encoding='utf-8-sig'))
 
 def norm(v):
@@ -38,5 +38,5 @@ for r in rows:
     changed.append(c)
 
 DB.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-(ROOT/'gender-status-social-card-fixes.json').write_text(json.dumps({'changed':len(changed),'codes':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/gender-status-social-card-fixes.json').write_text(json.dumps({'changed':len(changed),'codes':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('gender_status_fixed',len(changed))

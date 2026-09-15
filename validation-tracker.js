@@ -10,8 +10,8 @@ function popup(p,anchor){document.querySelectorAll('.validation-pop').forEach(x=
 function findAudit(card){if(!card)return null;const code=card.dataset.validationCode||card.querySelector('[data-field="code"]')?.textContent.trim().toLowerCase();const matches=code?audits.filter(p=>String(p.code||'').trim().toLowerCase()===String(code).toLowerCase()):[];if(matches.length===1)return matches[0];const text=card.textContent.toLowerCase();return audits.find(p=>text.includes(String(p.brand||'').toLowerCase())&&text.includes(String(p.inspiredBy||'').toLowerCase()))||matches[0]||null;}
 function decorate(){document.querySelectorAll('#resultsContainer > div').forEach(card=>{const p=findAudit(card);if(!p||card.querySelector('.validation-badge'))return;const st=statusOf(p);const b=document.createElement('button');b.className='validation-badge';b.style.background=COLORS[st];b.textContent=st==='green'?'✓':st==='red'?'✕':'!';b.title=`${LABEL[st]} · click for audit`;b.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();popup(p,b)});const rel=card.querySelector('.v2-test-info')||card.querySelector('.p-5.relative')||card;rel.appendChild(b);});}
 Promise.all([
-  fetch(`catalog_site.json?qa=${Date.now()}`,{cache:'no-store'}),
-  fetch(`catalog-scope-exclusions.json?qa=${Date.now()}`,{cache:'no-store'})
+  fetch(`database/catalog/catalog_site.json?qa=${Date.now()}`,{cache:'no-store'}),
+  fetch(`database/catalog/catalog-scope-exclusions.json?qa=${Date.now()}`,{cache:'no-store'})
 ]).then(async ([catalogResponse, scopeResponse])=>{
   if(!catalogResponse.ok)throw new Error(`catalog HTTP ${catalogResponse.status}`);
   const [catalog, scopeData]=await Promise.all([

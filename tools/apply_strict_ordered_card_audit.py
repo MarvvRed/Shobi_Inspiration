@@ -6,11 +6,11 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "database_complete.json"
-SITE = ROOT / "catalog_site.json"
-VALIDATED = ROOT / "social-card-main-notes-validated.json"
-AUDIT = ROOT / "social-card-ordered-image-audit.json"
-REPORT = ROOT / "strict-ordered-card-corrections.json"
+DB = ROOT / "database/catalog/database_complete.json"
+SITE = ROOT / "database/catalog/catalog_site.json"
+VALIDATED = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes-validated.json"
+AUDIT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
+REPORT = ROOT / "database/audits/strict-ordered-card-corrections.json"
 
 
 def code(value):

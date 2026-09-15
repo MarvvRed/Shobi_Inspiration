@@ -5,7 +5,7 @@ The mapping is explicit; script refuses any code/URL/FID drift.
 import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'
+DB=ROOT/'database/catalog/database_complete.json'
 rows=json.loads(DB.read_text(encoding='utf-8-sig'))
 VERIFIED={
 '2044-LORV':'https://www.fragrantica.com/perfume/Lorenzo-Villoresi/Teint-de-Neige-5079.html',
@@ -47,5 +47,5 @@ for code,url in VERIFIED.items():
     r['fragranticaVerificationFragranticaId']=current_fid
     changed.append({'code':code,'fragranticaId':current_fid,'source':url})
 DB.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-(ROOT/'web-verified-identity-only-fixes.json').write_text(json.dumps({'changed':len(changed),'rows':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/web-verified-identity-only-fixes.json').write_text(json.dumps({'changed':len(changed),'rows':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('web_verified_identity_only',len(changed))

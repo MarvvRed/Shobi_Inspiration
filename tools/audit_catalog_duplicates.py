@@ -4,8 +4,8 @@ import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
-DB = Path('database_complete.json')
-OUT = Path('catalog-duplicate-audit.md')
+DB = Path('database/catalog/database_complete.json')
+OUT = Path('database/audits/catalog-duplicate-audit.md')
 
 def norm(s):
     s = unicodedata.normalize('NFKD', str(s or '')).encode('ascii','ignore').decode().lower()

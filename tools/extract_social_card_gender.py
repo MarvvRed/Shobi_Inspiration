@@ -3,10 +3,10 @@ from __future__ import annotations
 import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DBS=[ROOT/'database_complete.json',ROOT/'database_v2_clean.json']
-CARD_DIR=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images'
-OUT=ROOT/'social-card-gender.json'
-REPORT=ROOT/'social-card-gender-report.json'
+DBS=[ROOT/'database/catalog/database_complete.json',ROOT/'database/catalog/database_v2_clean.json']
+CARD_DIR=ROOT/'database/fragrantica'/'social-cards'/'images'
+OUT=ROOT/'database/fragrantica/social-cards/records/social-card-gender.json'
+REPORT=ROOT/'database/fragrantica/social-cards/records/social-card-gender-report.json'
 
 def flatten(data):
     if isinstance(data,list) and data and isinstance(data[0],dict) and isinstance(data[0].get('perfumes'),list): return [p for b in data for p in b.get('perfumes',[])]

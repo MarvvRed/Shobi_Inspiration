@@ -5,9 +5,9 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CATALOG = ROOT / "catalog_site.json"
-OUT_JSON = ROOT / "validation-yellow-report.json"
-OUT_MD = ROOT / "validation-yellow-report.md"
+CATALOG = ROOT / "database/catalog/catalog_site.json"
+OUT_JSON = ROOT / "database/audits/validation-yellow-report.json"
+OUT_MD = ROOT / "database/audits/validation-yellow-report.md"
 
 rows = json.loads(CATALOG.read_text(encoding="utf-8-sig"))
 yellow = [r for r in rows if str(r.get("validationStatus") or "").lower() == "yellow"]

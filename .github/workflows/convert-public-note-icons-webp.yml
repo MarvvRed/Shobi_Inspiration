@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A public/note-icons public-note-icons-webp-report.md
+          git add -A database/assets/note-icons database/audits/public-note-icons-webp-report.md
           if git diff --cached --quiet; then
             echo "No changes"
           else

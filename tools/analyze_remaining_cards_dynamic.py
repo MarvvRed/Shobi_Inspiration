@@ -6,11 +6,11 @@ from PIL import Image
 import pytesseract
 
 ROOT=Path(__file__).resolve().parents[1]
-REPORT=ROOT/'validation-yellow-report.json'
-DB=ROOT/'database_complete.json'
-MAP=ROOT/'note-icons'/'map.js'
-IMGDIR=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images'
-OUT=ROOT/'remaining-card-dynamic-analysis.json'
+REPORT=ROOT/'database/audits/validation-yellow-report.json'
+DB=ROOT/'database/catalog/database_complete.json'
+MAP=ROOT/'database'/'assets'/'note-icons'/'map.js'
+IMGDIR=ROOT/'database/fragrantica'/'social-cards'/'images'
+OUT=ROOT/'database/audits/remaining-card-dynamic-analysis.json'
 
 def norm(s):
     s=str(s or '').lower().replace('&',' and ')

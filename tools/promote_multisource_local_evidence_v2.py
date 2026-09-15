@@ -2,8 +2,8 @@
 import csv,json,re,unicodedata
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-MATCH=ROOT/'fragrantica-v2-local-url-match.csv'; MEGA=ROOT/'fragrantica-v2-mega-local-evidence.csv'
-DBS=[ROOT/'database_v2_clean.json',ROOT/'database_complete.json']; OUT=ROOT/'fragrantica-v2-multisource-promotion.md'
+MATCH=ROOT/'database/audits/fragrantica-v2-local-url-match.csv'; MEGA=ROOT/'database/audits/fragrantica-v2-mega-local-evidence.csv'
+DBS=[ROOT/'database/catalog/database_v2_clean.json',ROOT/'database/catalog/database_complete.json']; OUT=ROOT/'database/audits/fragrantica-v2-multisource-promotion.md'
 def rows(p):
  with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 def norm(s):return ' '.join(re.findall(r'[a-z0-9]+',unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().lower()))

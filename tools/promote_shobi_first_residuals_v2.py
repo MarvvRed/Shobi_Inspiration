@@ -4,9 +4,9 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DBS = [ROOT / 'database_v2_clean.json', ROOT / 'database_complete.json']
-URLS = ROOT / 'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
-OUT = ROOT / 'fragrantica-v2-shobi-first-promotion.md'
+DBS = [ROOT / 'database/catalog/database_v2_clean.json', ROOT / 'database/catalog/database_complete.json']
+URLS = ROOT / 'database/fragrantica/legacy/original-local-scraper/perfume_urls.txt'
+OUT = ROOT / 'database/audits/fragrantica-v2-shobi-first-promotion.md'
 
 # code: (Fragrantica ID, brand, exact target name, review rationale)
 # Identity is established from Shobi first; Fragrantica is consulted only after that.

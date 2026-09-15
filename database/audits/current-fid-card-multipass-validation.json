@@ -1,0 +1,6641 @@
+{
+  "dryRun": true,
+  "accepted": 0,
+  "sameAsOld": 0,
+  "replaceOld": 0,
+  "fillMissing": 0,
+  "rejected": 14,
+  "rows": [],
+  "rejectedRows": [
+    {
+      "code": "2282-DRC",
+      "fid": "81847",
+      "card": "database/fragrantica/social-cards/images/current_2282-DRC_81847.jpeg",
+      "slots": [],
+      "notes": [],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "&",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "&",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "&",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "&",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "&",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "&",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 11
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "= =—“ a ~",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "~",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "Ba",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "- =_ _~*- , ™~ - iene",
+              "match": null,
+              "score": 0.625,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "= a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "— ™",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "i;",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "oi,",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "2;",
+              "match": null,
+              "score": 0.182,
+              "margin": 0.028,
+              "psm": 6
+            },
+            {
+              "raw": "2;",
+              "match": null,
+              "score": 0.182,
+              "margin": 0.028,
+              "psm": 7
+            },
+            {
+              "raw": "o",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "e&",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "BS",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "-",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "RO",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Pe",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 7
+            },
+            {
+              "raw": "BO",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "ae Comer Ss Ba",
+              "match": null,
+              "score": 0.522,
+              "margin": 0.003,
+              "psm": 6
+            },
+            {
+              "raw": "7% rs",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "~* ~ ie",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 11
+            },
+            {
+              "raw": "San",
+              "match": null,
+              "score": 0.857,
+              "margin": 0.107,
+              "psm": 13
+            },
+            {
+              "raw": "Sf ee eee. Se",
+              "match": null,
+              "score": 0.538,
+              "margin": 0.017,
+              "psm": 6
+            },
+            {
+              "raw": "Sf ee eee. Se",
+              "match": null,
+              "score": 0.538,
+              "margin": 0.017,
+              "psm": 7
+            },
+            {
+              "raw": "al ye eS",
+              "match": null,
+              "score": 0.588,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a eee is",
+              "match": null,
+              "score": 0.6,
+              "margin": 0.012,
+              "psm": 6
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "—",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "— Vg",
+              "match": null,
+              "score": 0.444,
+              "margin": 0.044,
+              "psm": 7
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "—_ &g",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "— g",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "— g",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "2194-ORT",
+      "fid": "119473",
+      "card": "database/fragrantica/social-cards/images/current_2194-ORT_119473.jpeg",
+      "slots": [],
+      "notes": [],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "d",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.1,
+              "psm": 13
+            },
+            {
+              "raw": "d",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.1,
+              "psm": 13
+            },
+            {
+              "raw": "d",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.1,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": ":",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": ":",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": ":",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "884-RAL",
+      "fid": "14446",
+      "card": "database/fragrantica/social-cards/images/current_884-RAL_14446.jpeg",
+      "slots": [],
+      "notes": [],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "es",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "es",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "es",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "if",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.127,
+              "psm": 6
+            },
+            {
+              "raw": "if",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.127,
+              "psm": 7
+            },
+            {
+              "raw": "Py",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "ie",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 6
+            },
+            {
+              "raw": "oes",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Py",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "ae",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 6
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a I",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "} ay a 9",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.071,
+              "psm": 11
+            },
+            {
+              "raw": "ry",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.229,
+              "psm": 13
+            },
+            {
+              "raw": "a I",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "| » oo I",
+              "match": null,
+              "score": 0.615,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "» nad",
+              "match": null,
+              "score": 0.857,
+              "margin": 0.257,
+              "psm": 11
+            },
+            {
+              "raw": "ry",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.229,
+              "psm": 13
+            },
+            {
+              "raw": "r +t",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.071,
+              "psm": 6
+            },
+            {
+              "raw": "r +t",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.071,
+              "psm": 7
+            },
+            {
+              "raw": "» hk wz",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 11
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "ail",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.15,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "ail",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.15,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "‘ae —C—",
+              "match": null,
+              "score": 0.533,
+              "margin": 0.033,
+              "psm": 6
+            },
+            {
+              "raw": ":",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "-",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Be",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Se",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "SS Oe ee ee",
+              "match": null,
+              "score": 0.56,
+              "margin": 0.015,
+              "psm": 6
+            },
+            {
+              "raw": "SS Oe ee ee",
+              "match": null,
+              "score": 0.56,
+              "margin": 0.015,
+              "psm": 7
+            },
+            {
+              "raw": "ee ee SS =",
+              "match": null,
+              "score": 0.588,
+              "margin": 0.028,
+              "psm": 11
+            },
+            {
+              "raw": "—",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "= we ww et",
+              "match": null,
+              "score": 0.556,
+              "margin": 0.056,
+              "psm": 6
+            },
+            {
+              "raw": "= we ww et",
+              "match": null,
+              "score": 0.556,
+              "margin": 0.056,
+              "psm": 7
+            },
+            {
+              "raw": "a wr had",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.038,
+              "psm": 11
+            },
+            {
+              "raw": "—",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "— ST Sere CU .",
+              "match": null,
+              "score": 0.545,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "— owe",
+              "match": null,
+              "score": 0.6,
+              "margin": 0.029,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "eg",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.229,
+              "psm": 7
+            },
+            {
+              "raw": "i",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "cg",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.056,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": ".",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "et",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": ".",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": ".",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "1037-BLG",
+      "fid": "148",
+      "card": "database/fragrantica/social-cards/images/current_1037-BLG_148.jpeg",
+      "slots": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "notes": [
+        "Ginger",
+        "Sand",
+        "Juniper",
+        "Galanga"
+      ],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": "Ginger",
+          "strongest": {
+            "raw": "Ginger",
+            "match": "Ginger",
+            "score": 1.0,
+            "margin": 0.075,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "Ginger",
+              "match": "Ginger",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 6
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Ginger",
+              "match": "Ginger",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 11
+            },
+            {
+              "raw": "io",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.071,
+              "psm": 13
+            },
+            {
+              "raw": "Ginger",
+              "match": "Ginger",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 6
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Ginger",
+              "match": "Ginger",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 11
+            },
+            {
+              "raw": "or",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Ginger",
+              "match": "Ginger",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 6
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "Cardamor YY L-",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.067,
+              "psm": 6
+            },
+            {
+              "raw": "Ca - mor",
+              "match": null,
+              "score": 0.769,
+              "margin": 0.055,
+              "psm": 7
+            },
+            {
+              "raw": "Cardamor YY L-",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.067,
+              "psm": 11
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Cardamor YL",
+              "match": null,
+              "score": 0.737,
+              "margin": 0.07,
+              "psm": 6
+            },
+            {
+              "raw": "_ |",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Cardamor YL",
+              "match": null,
+              "score": 0.737,
+              "margin": 0.07,
+              "psm": 11
+            },
+            {
+              "raw": "aa",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "Cardamor Xx £.--",
+              "match": null,
+              "score": 0.737,
+              "margin": 0.121,
+              "psm": 6
+            },
+            {
+              "raw": "Carda ™",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "1 Tobacco Blossom _ § x",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": ") sso",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 7
+            },
+            {
+              "raw": "7 Tobacco Blossom =. | ,",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "\"Bosom",
+              "match": null,
+              "score": 0.625,
+              "margin": 0.025,
+              "psm": 13
+            },
+            {
+              "raw": ". Tobacco Blossom _ ff Fr",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "Blossom",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": ") Tobacco Blossom a | A",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "\"Bosom",
+              "match": null,
+              "score": 0.625,
+              "margin": 0.025,
+              "psm": 13
+            },
+            {
+              "raw": "1 Tobacco Blossom _ r",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "losson",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.051,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": "Sand",
+          "strongest": {
+            "raw": "Sandalwor",
+            "match": "Sand",
+            "score": 0.945,
+            "margin": 0.103,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 6
+            },
+            {
+              "raw": "Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 7
+            },
+            {
+              "raw": "acer",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "| Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 13
+            },
+            {
+              "raw": "Sandalwor",
+              "match": "Sand",
+              "score": 0.945,
+              "margin": 0.103,
+              "psm": 6
+            },
+            {
+              "raw": "ie",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 7
+            },
+            {
+              "raw": "Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 11
+            },
+            {
+              "raw": "| Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 13
+            },
+            {
+              "raw": "= Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 6
+            },
+            {
+              "raw": "Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": "Juniper",
+          "strongest": {
+            "raw": "Juniper",
+            "match": "Juniper",
+            "score": 1.0,
+            "margin": 0.375,
+            "psm": 13
+          },
+          "attempts": [
+            {
+              "raw": "ya Juniper",
+              "match": "Juniper",
+              "score": 0.945,
+              "margin": 0.345,
+              "psm": 6
+            },
+            {
+              "raw": "dd rie",
+              "match": null,
+              "score": 0.625,
+              "margin": 0.025,
+              "psm": 7
+            },
+            {
+              "raw": "aS dd Juniper",
+              "match": "Juniper",
+              "score": 0.945,
+              "margin": 0.362,
+              "psm": 11
+            },
+            {
+              "raw": "Juniper",
+              "match": "Juniper",
+              "score": 1.0,
+              "margin": 0.375,
+              "psm": 13
+            },
+            {
+              "raw": "~ yd Juniper",
+              "match": "Juniper",
+              "score": 0.945,
+              "margin": 0.419,
+              "psm": 6
+            },
+            {
+              "raw": "Te Son",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "ys yd Juniper",
+              "match": "Juniper",
+              "score": 0.945,
+              "margin": 0.362,
+              "psm": 11
+            },
+            {
+              "raw": "Juniper |",
+              "match": "Juniper",
+              "score": 1.0,
+              "margin": 0.375,
+              "psm": 13
+            },
+            {
+              "raw": "y rd Juniper",
+              "match": "Juniper",
+              "score": 0.945,
+              "margin": 0.4,
+              "psm": 6
+            },
+            {
+              "raw": "Te pontoet",
+              "match": null,
+              "score": 0.636,
+              "margin": 0.036,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": "Galanga",
+          "strongest": {
+            "raw": "Galanga",
+            "match": "Galanga",
+            "score": 1.0,
+            "margin": 0.075,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "i Galanga",
+              "match": "Galanga",
+              "score": 0.945,
+              "margin": 0.278,
+              "psm": 6
+            },
+            {
+              "raw": "Salange",
+              "match": null,
+              "score": 0.727,
+              "margin": 0.013,
+              "psm": 7
+            },
+            {
+              "raw": "on Galanga",
+              "match": "Galanga",
+              "score": 0.945,
+              "margin": 0.357,
+              "psm": 11
+            },
+            {
+              "raw": "“Galorge",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.051,
+              "psm": 13
+            },
+            {
+              "raw": "Po Galanga",
+              "match": "Galanga",
+              "score": 0.945,
+              "margin": 0.302,
+              "psm": 6
+            },
+            {
+              "raw": "Salen",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "oe ts Galanga",
+              "match": "Galanga",
+              "score": 0.945,
+              "margin": 0.364,
+              "psm": 11
+            },
+            {
+              "raw": "“Galerge",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.078,
+              "psm": 13
+            },
+            {
+              "raw": "\"a Galanga",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 6
+            },
+            {
+              "raw": "caionga",
+              "match": null,
+              "score": 0.714,
+              "margin": 0.048,
+              "psm": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "118-HAM",
+      "fid": "27808",
+      "card": "database/fragrantica/social-cards/images/current_118-HAM_27808.jpeg",
+      "slots": [],
+      "notes": [],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "he",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "LZ",
+              "match": null,
+              "score": 0.444,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Ze",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.071,
+              "psm": 6
+            },
+            {
+              "raw": "LZ",
+              "match": null,
+              "score": 0.444,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "va",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 11
+            },
+            {
+              "raw": "LZ",
+              "match": null,
+              "score": 0.444,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "| 2",
+              "match": null,
+              "score": 0.182,
+              "margin": 0.028,
+              "psm": 7
+            },
+            {
+              "raw": "Z",
+              "match": null,
+              "score": 0.4,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "fo¢",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.229,
+              "psm": 13
+            },
+            {
+              "raw": "s : »",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "325-PECK",
+      "fid": "31590",
+      "card": "database/fragrantica/social-cards/images/current_325-PECK_31590.jpeg",
+      "slots": [],
+      "notes": [],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "' | | | ’ r",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "«wR",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "} | .",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "iE",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 13
+            },
+            {
+              "raw": "7",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "g",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "7",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "-",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "ig",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.229,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "tay",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 6
+            },
+            {
+              "raw": "tay",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 7
+            },
+            {
+              "raw": "tay",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 11
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "tay",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 6
+            },
+            {
+              "raw": "tay",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 7
+            },
+            {
+              "raw": "tay",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 11
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "tae",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "tae",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "236-IND",
+      "fid": "42046",
+      "card": "database/fragrantica/social-cards/images/current_236-IND_42046.jpeg",
+      "slots": [],
+      "notes": [],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "= s ’ ‘ ~ ‘ i ue oe ‘ - } » le , \" ! i ant De",
+              "match": null,
+              "score": 0.556,
+              "margin": 0.056,
+              "psm": 6
+            },
+            {
+              "raw": ". y",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "= - ? ile ~~ >",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "ry",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.229,
+              "psm": 13
+            },
+            {
+              "raw": "‘ aw 4 = | - oe | i -? > gles | i , oe",
+              "match": null,
+              "score": 0.474,
+              "margin": 0.045,
+              "psm": 6
+            },
+            {
+              "raw": ": y |",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "-? ~ ~ ~~",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "ry",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.229,
+              "psm": 13
+            },
+            {
+              "raw": "8 a.",
+              "match": null,
+              "score": 0.4,
+              "margin": 0.036,
+              "psm": 6
+            },
+            {
+              "raw": ": . . : | .",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "aS ~« sw Mi te. = H * Se ’ a Sy",
+              "match": null,
+              "score": 0.533,
+              "margin": 0.033,
+              "psm": 6
+            },
+            {
+              "raw": "; Ci .",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a a 5 Ge",
+              "match": null,
+              "score": 0.556,
+              "margin": 0.056,
+              "psm": 11
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "~~ To a Se , 4 pow! 4 > Sa } ~ i ’ a “ * 4 P",
+              "match": null,
+              "score": 0.417,
+              "margin": 0.048,
+              "psm": 6
+            },
+            {
+              "raw": "aS ~« $e4 © > SP — 4F . ~ a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.038,
+              "psm": 11
+            },
+            {
+              "raw": "he",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "“ -@ ~ aN Se Rag Dh so Me cee 4. ” x “",
+              "match": null,
+              "score": 0.407,
+              "margin": 0.007,
+              "psm": 6
+            },
+            {
+              "raw": "ee = “Ny han no oo",
+              "match": null,
+              "score": 0.483,
+              "margin": 0.009,
+              "psm": 11
+            },
+            {
+              "raw": "ae",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "Pe",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 7
+            },
+            {
+              "raw": "b——",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "bh ——",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "A m7",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.071,
+              "psm": 6
+            },
+            {
+              "raw": "ae",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": ".",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Le",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "Le",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "8 ee ee a ee SS 8 ee Shr A",
+              "match": null,
+              "score": 0.381,
+              "margin": 0.009,
+              "psm": 6
+            },
+            {
+              "raw": "8 ee ee a ee SS 8 ee Shr A",
+              "match": null,
+              "score": 0.381,
+              "margin": 0.009,
+              "psm": 7
+            },
+            {
+              "raw": "= Lt she 38 38 hd = OS i nh",
+              "match": null,
+              "score": 0.378,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "—",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "= 5 wewv es FB ee Oe ee! UL pe CS",
+              "match": null,
+              "score": 0.383,
+              "margin": 0.038,
+              "psm": 6
+            },
+            {
+              "raw": "= 5 wewv es FB ee Oe ee! UL pe CS",
+              "match": null,
+              "score": 0.383,
+              "margin": 0.038,
+              "psm": 7
+            },
+            {
+              "raw": "al , ——v © a! =F 8 SE SS =",
+              "match": null,
+              "score": 0.485,
+              "margin": 0.002,
+              "psm": 11
+            },
+            {
+              "raw": "=",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a ,. wre es Fe eel eee FlCUlUye Ce",
+              "match": null,
+              "score": 0.415,
+              "margin": 0.029,
+              "psm": 6
+            },
+            {
+              "raw": "a ,. wre es Fe eel eee FlCUlUye Ce",
+              "match": null,
+              "score": 0.415,
+              "margin": 0.029,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "— eg",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.229,
+              "psm": 7
+            },
+            {
+              "raw": "an",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "~",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "—_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "+",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "+",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "-",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "—",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "+",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "235-HOLL",
+      "fid": "4307",
+      "card": "database/fragrantica/social-cards/images/current_235-HOLL_4307.jpeg",
+      "slots": [],
+      "notes": [],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "aii",
+              "match": null,
+              "score": 0.6,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "aii",
+              "match": null,
+              "score": 0.6,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "i",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "i",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "}",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "fh",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.167,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "= rf",
+              "match": null,
+              "score": 0.444,
+              "margin": 0.044,
+              "psm": 6
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "&",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "= Ff",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "ge",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "945-VER",
+      "fid": "28958",
+      "card": "database/fragrantica/social-cards/images/current_945-VER_28958.jpeg",
+      "slots": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "notes": [
+        "Lemon Blossom",
+        "Lemon",
+        "Jasmine",
+        "Musk"
+      ],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": "Lemon Blossom",
+          "strongest": {
+            "raw": "Lemon Blossom _",
+            "match": "Lemon Blossom",
+            "score": 1.0,
+            "margin": 0.055,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "Lemon Blossom _",
+              "match": "Lemon Blossom",
+              "score": 1.0,
+              "margin": 0.055,
+              "psm": 6
+            },
+            {
+              "raw": "ston",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Lemon Blossom _",
+              "match": "Lemon Blossom",
+              "score": 1.0,
+              "margin": 0.055,
+              "psm": 11
+            },
+            {
+              "raw": "“Bomon",
+              "match": null,
+              "score": 0.727,
+              "margin": 0.061,
+              "psm": 13
+            },
+            {
+              "raw": "Lemon Blossom =",
+              "match": "Lemon Blossom",
+              "score": 1.0,
+              "margin": 0.055,
+              "psm": 6
+            },
+            {
+              "raw": "losson",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.051,
+              "psm": 7
+            },
+            {
+              "raw": "Lemon Blossom =",
+              "match": "Lemon Blossom",
+              "score": 1.0,
+              "margin": 0.055,
+              "psm": 11
+            },
+            {
+              "raw": "Boman",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Lemon Blossom _ '",
+              "match": "Lemon Blossom",
+              "score": 1.0,
+              "margin": 0.055,
+              "psm": 6
+            },
+            {
+              "raw": "sso",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": "Lemon",
+          "strongest": {
+            "raw": "Lemon",
+            "match": "Lemon",
+            "score": 1.0,
+            "margin": 0.075,
+            "psm": 11
+          },
+          "attempts": [
+            {
+              "raw": "Lemon i,",
+              "match": "Lemon",
+              "score": 0.945,
+              "margin": 0.07,
+              "psm": 6
+            },
+            {
+              "raw": "Lemon i,",
+              "match": "Lemon",
+              "score": 0.945,
+              "margin": 0.07,
+              "psm": 11
+            },
+            {
+              "raw": "Pl",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "Lemon i;",
+              "match": "Lemon",
+              "score": 0.945,
+              "margin": 0.07,
+              "psm": 6
+            },
+            {
+              "raw": "—_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Lemon",
+              "match": "Lemon",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 11
+            },
+            {
+              "raw": "wn",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Lemon io",
+              "match": "Lemon",
+              "score": 0.945,
+              "margin": 0.121,
+              "psm": 6
+            },
+            {
+              "raw": "Le",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Lemon",
+              "match": "Lemon",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 11
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": "Jasmine",
+          "strongest": {
+            "raw": "Jasmine , >",
+            "match": "Jasmine",
+            "score": 1.0,
+            "margin": 0.075,
+            "psm": 11
+          },
+          "attempts": [
+            {
+              "raw": "Jasmine a. | a",
+              "match": "Jasmine",
+              "score": 0.945,
+              "margin": 0.127,
+              "psm": 6
+            },
+            {
+              "raw": "pe ;",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 7
+            },
+            {
+              "raw": "Jasmine , >",
+              "match": "Jasmine",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 11
+            },
+            {
+              "raw": "an",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Jasmine a>. BE ap",
+              "match": "Jasmine",
+              "score": 0.945,
+              "margin": 0.253,
+              "psm": 6
+            },
+            {
+              "raw": "Jasmine a>. BE ap",
+              "match": "Jasmine",
+              "score": 0.945,
+              "margin": 0.253,
+              "psm": 11
+            },
+            {
+              "raw": "caine",
+              "match": "Cocaine",
+              "score": 0.925,
+              "margin": 0.198,
+              "psm": 13
+            },
+            {
+              "raw": "Jasmine a”. H. die",
+              "match": "Jasmine",
+              "score": 0.945,
+              "margin": 0.253,
+              "psm": 6
+            },
+            {
+              "raw": "Jasmine a”. H. die",
+              "match": "Jasmine",
+              "score": 0.945,
+              "margin": 0.253,
+              "psm": 11
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "—— Pomegran",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "= Pomegran",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "| Pomesra",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "—— Pomegran",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "we",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "— Pomegran",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "| Pomesra",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a Pomegran",
+              "match": null,
+              "score": 0.762,
+              "margin": 0.13,
+              "psm": 6
+            },
+            {
+              "raw": "Pomegran",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "= ate Bergamc",
+              "match": null,
+              "score": 0.632,
+              "margin": 0.032,
+              "psm": 6
+            },
+            {
+              "raw": "ate aa",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.051,
+              "psm": 7
+            },
+            {
+              "raw": "= ate Bergamc",
+              "match": null,
+              "score": 0.632,
+              "margin": 0.032,
+              "psm": 11
+            },
+            {
+              "raw": "te Berga",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.042,
+              "psm": 13
+            },
+            {
+              "raw": "= ate Bergame",
+              "match": null,
+              "score": 0.64,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "ate en",
+              "match": null,
+              "score": 0.625,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "= ate Bergame",
+              "match": null,
+              "score": 0.64,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "te erga",
+              "match": null,
+              "score": 0.625,
+              "margin": 0.025,
+              "psm": 13
+            },
+            {
+              "raw": "= ate Bergamec",
+              "match": null,
+              "score": 0.615,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "ate peiceme",
+              "match": null,
+              "score": 0.609,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": "Musk",
+          "strongest": {
+            "raw": "Musk",
+            "match": "Musk",
+            "score": 1.0,
+            "margin": 0.075,
+            "psm": 7
+          },
+          "attempts": [
+            {
+              "raw": "t Musk",
+              "match": "Musk",
+              "score": 0.945,
+              "margin": 0.278,
+              "psm": 6
+            },
+            {
+              "raw": "Musk",
+              "match": "Musk",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 7
+            },
+            {
+              "raw": "+ Musk",
+              "match": "Musk",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 11
+            },
+            {
+              "raw": "MUS",
+              "match": null,
+              "score": 0.857,
+              "margin": 0.19,
+              "psm": 13
+            },
+            {
+              "raw": "> t Musk",
+              "match": "Musk",
+              "score": 0.945,
+              "margin": 0.278,
+              "psm": 6
+            },
+            {
+              "raw": "— t use",
+              "match": null,
+              "score": 0.615,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "MUS",
+              "match": null,
+              "score": 0.857,
+              "margin": 0.19,
+              "psm": 13
+            },
+            {
+              "raw": "Sil t Musk",
+              "match": "Musk",
+              "score": 0.945,
+              "margin": 0.208,
+              "psm": 6
+            },
+            {
+              "raw": "t uel |",
+              "match": null,
+              "score": 0.625,
+              "margin": 0.025,
+              "psm": 7
+            },
+            {
+              "raw": "\"es t Musk",
+              "match": "Musk",
+              "score": 0.945,
+              "margin": 0.278,
+              "psm": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "525-DRC",
+      "fid": "221",
+      "card": "database/fragrantica/social-cards/images/current_525-DRC_221.jpeg",
+      "slots": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "notes": [
+        "Rose",
+        "Amber",
+        "Benzoin",
+        "Oakmoss"
+      ],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": "Rose",
+          "strongest": {
+            "raw": "Rose",
+            "match": "Rose",
+            "score": 1.0,
+            "margin": 0.075,
+            "psm": 13
+          },
+          "attempts": [
+            {
+              "raw": "Brazilian Rosewooc y ~<a ee AN",
+              "match": "Rose",
+              "score": 0.945,
+              "margin": 0.206,
+              "psm": 6
+            },
+            {
+              "raw": "rosewoo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 7
+            },
+            {
+              "raw": "Brazilian Rosewooc y ~<a ee AN",
+              "match": "Rose",
+              "score": 0.945,
+              "margin": 0.206,
+              "psm": 11
+            },
+            {
+              "raw": "Rosen",
+              "match": "Rose",
+              "score": 0.945,
+              "margin": 0.278,
+              "psm": 13
+            },
+            {
+              "raw": "Brazilian Rosewooc yr. ~ i ean",
+              "match": "Rose",
+              "score": 0.945,
+              "margin": 0.189,
+              "psm": 6
+            },
+            {
+              "raw": "rosewo OC",
+              "match": "Rose",
+              "score": 0.945,
+              "margin": 0.239,
+              "psm": 7
+            },
+            {
+              "raw": "Brazilian Rosewooc yr. ~ i ean",
+              "match": "Rose",
+              "score": 0.945,
+              "margin": 0.189,
+              "psm": 11
+            },
+            {
+              "raw": "Rose",
+              "match": "Rose",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 13
+            },
+            {
+              "raw": "Brazilian Rosewooc",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.001,
+              "psm": 6
+            },
+            {
+              "raw": "rosewo OC",
+              "match": "Rose",
+              "score": 0.945,
+              "margin": 0.239,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": "Amber",
+          "strongest": {
+            "raw": "Amber §&",
+            "match": "Amber",
+            "score": 1.0,
+            "margin": 0.075,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "Amber S",
+              "match": "Amber",
+              "score": 0.945,
+              "margin": 0.195,
+              "psm": 6
+            },
+            {
+              "raw": "Amber S — = '",
+              "match": "Amber",
+              "score": 0.945,
+              "margin": 0.195,
+              "psm": 11
+            },
+            {
+              "raw": "ams",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Amber §&",
+              "match": "Amber",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 6
+            },
+            {
+              "raw": "Amber S ——————— a t(‘(C",
+              "match": "Amber",
+              "score": 0.945,
+              "margin": 0.336,
+              "psm": 11
+            },
+            {
+              "raw": "ams",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Amber $",
+              "match": "Amber",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 6
+            },
+            {
+              "raw": "Amber 5 i. , nh a",
+              "match": "Amber",
+              "score": 0.945,
+              "margin": 0.374,
+              "psm": 11
+            },
+            {
+              "raw": "aan",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Amber §S hon ».§ 2.",
+              "match": "Amber",
+              "score": 0.945,
+              "margin": 0.374,
+              "psm": 6
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "3ndalwood pe)",
+              "match": null,
+              "score": 0.727,
+              "margin": 0.038,
+              "psm": 6
+            },
+            {
+              "raw": "- lwood",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "andalwood pay) =",
+              "match": null,
+              "score": 0.783,
+              "margin": 0.116,
+              "psm": 11
+            },
+            {
+              "raw": "econ",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 13
+            },
+            {
+              "raw": "andalwood - pay",
+              "match": null,
+              "score": 0.783,
+              "margin": 0.116,
+              "psm": 6
+            },
+            {
+              "raw": "“ Iwood",
+              "match": null,
+              "score": 0.769,
+              "margin": 0.055,
+              "psm": 7
+            },
+            {
+              "raw": "sandalwood pe)",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "acon",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.036,
+              "psm": 13
+            },
+            {
+              "raw": "andalwood a. s e",
+              "match": null,
+              "score": 0.72,
+              "margin": 0.032,
+              "psm": 6
+            },
+            {
+              "raw": "“ Iwood",
+              "match": null,
+              "score": 0.769,
+              "margin": 0.055,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "pet as] Aldehyde:",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.046,
+              "psm": 6
+            },
+            {
+              "raw": "Aldehyde:",
+              "match": null,
+              "score": 0.941,
+              "margin": 0.016,
+              "psm": 7
+            },
+            {
+              "raw": "as ast Aldehyde:",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.046,
+              "psm": 11
+            },
+            {
+              "raw": "- Aldehyde",
+              "match": null,
+              "score": 0.941,
+              "margin": 0.016,
+              "psm": 13
+            },
+            {
+              "raw": "Pe Aldehyde:",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.16,
+              "psm": 6
+            },
+            {
+              "raw": "Aldehyde:",
+              "match": null,
+              "score": 0.941,
+              "margin": 0.016,
+              "psm": 7
+            },
+            {
+              "raw": "Aldehyde:",
+              "match": null,
+              "score": 0.941,
+              "margin": 0.016,
+              "psm": 11
+            },
+            {
+              "raw": "\"Aldehyde",
+              "match": null,
+              "score": 0.941,
+              "margin": 0.016,
+              "psm": 13
+            },
+            {
+              "raw": "a Aldenydes",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.16,
+              "psm": 6
+            },
+            {
+              "raw": "Aldenydes",
+              "match": null,
+              "score": 0.889,
+              "margin": 0.28,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": "Benzoin",
+          "strongest": {
+            "raw": "= Benzoin ©",
+            "match": "Benzoin",
+            "score": 1.0,
+            "margin": 0.385,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "Benzoin O",
+              "match": "Benzoin",
+              "score": 0.945,
+              "margin": 0.389,
+              "psm": 6
+            },
+            {
+              "raw": "Saun ¢",
+              "match": "Sauna",
+              "score": 0.925,
+              "margin": 0.175,
+              "psm": 7
+            },
+            {
+              "raw": "a Benzoin O",
+              "match": "Benzoin",
+              "score": 0.945,
+              "margin": 0.362,
+              "psm": 11
+            },
+            {
+              "raw": "‘senzoin C",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.194,
+              "psm": 13
+            },
+            {
+              "raw": "= Benzoin ©",
+              "match": "Benzoin",
+              "score": 1.0,
+              "margin": 0.385,
+              "psm": 6
+            },
+            {
+              "raw": "——— ;",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Benzoin ©",
+              "match": "Benzoin",
+              "score": 1.0,
+              "margin": 0.385,
+              "psm": 11
+            },
+            {
+              "raw": "‘senzoin C",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.194,
+              "psm": 13
+            },
+            {
+              "raw": "——_ Benzoin ©",
+              "match": "Benzoin",
+              "score": 1.0,
+              "margin": 0.385,
+              "psm": 6
+            },
+            {
+              "raw": "Benzoin ,",
+              "match": "Benzoin",
+              "score": 1.0,
+              "margin": 0.385,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": "Oakmoss",
+          "strongest": {
+            "raw": "AKMOSS",
+            "match": "Oakmoss",
+            "score": 0.925,
+            "margin": 0.337,
+            "psm": 7
+          },
+          "attempts": [
+            {
+              "raw": "po aKMOSS",
+              "match": null,
+              "score": 0.875,
+              "margin": 0.287,
+              "psm": 6
+            },
+            {
+              "raw": "AKMOSS",
+              "match": "Oakmoss",
+              "score": 0.925,
+              "margin": 0.337,
+              "psm": 7
+            },
+            {
+              "raw": "on AKMOSS",
+              "match": null,
+              "score": 0.875,
+              "margin": 0.319,
+              "psm": 11
+            },
+            {
+              "raw": "Hoss",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.15,
+              "psm": 13
+            },
+            {
+              "raw": "git t aKMOSS",
+              "match": null,
+              "score": 0.632,
+              "margin": 0.08,
+              "psm": 6
+            },
+            {
+              "raw": "aKMOSS",
+              "match": "Oakmoss",
+              "score": 0.925,
+              "margin": 0.337,
+              "psm": 7
+            },
+            {
+              "raw": "aKMOSS",
+              "match": "Oakmoss",
+              "score": 0.925,
+              "margin": 0.337,
+              "psm": 11
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a aKMOSSs",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.162,
+              "psm": 6
+            },
+            {
+              "raw": "aKMOSSs",
+              "match": null,
+              "score": 0.857,
+              "margin": 0.19,
+              "psm": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "487-CRT",
+      "fid": "12878",
+      "card": "database/fragrantica/social-cards/images/current_487-CRT_12878.jpeg",
+      "slots": [],
+      "notes": [],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "yy pis,",
+              "match": null,
+              "score": 0.545,
+              "margin": 0.045,
+              "psm": 6
+            },
+            {
+              "raw": "yy y",
+              "match": null,
+              "score": 0.4,
+              "margin": 0.025,
+              "psm": 7
+            },
+            {
+              "raw": ". =",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "Be",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 13
+            },
+            {
+              "raw": "Be",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 6
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 11
+            },
+            {
+              "raw": "Bee",
+              "match": null,
+              "score": 0.857,
+              "margin": 0.107,
+              "psm": 13
+            },
+            {
+              "raw": "- ! » rage. ; : I . | 4 '",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 6
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "= =—™~ ~* - ——",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "Ba",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "~ eN _~*- , ~ -enwe-",
+              "match": null,
+              "score": 0.588,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "= a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "— ™",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "-\"~\\ be",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 6
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": ">",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "? § jj e",
+              "match": null,
+              "score": 0.6,
+              "margin": 0.156,
+              "psm": 11
+            },
+            {
+              "raw": "Be",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 13
+            },
+            {
+              "raw": "yg",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.1,
+              "psm": 11
+            },
+            {
+              "raw": "Be",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 13
+            },
+            {
+              "raw": "at >",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 6
+            },
+            {
+              "raw": "ry >",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.229,
+              "psm": 7
+            },
+            {
+              "raw": "Se",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "© 2 a ‘",
+              "match": null,
+              "score": 0.4,
+              "margin": 0.0,
+              "psm": 6
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "_—",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "BO",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Sl",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Se",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Pe",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "Na fee ee",
+              "match": null,
+              "score": 0.6,
+              "margin": 0.067,
+              "psm": 6
+            },
+            {
+              "raw": "wee =, ne 7 Vs\"",
+              "match": null,
+              "score": 0.545,
+              "margin": 0.045,
+              "psm": 11
+            },
+            {
+              "raw": "=,",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "See BN Ae Pest NS",
+              "match": null,
+              "score": 0.529,
+              "margin": 0.029,
+              "psm": 6
+            },
+            {
+              "raw": "“Pe fra am",
+              "match": null,
+              "score": 0.6,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "=,",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Sf Se ee ee |",
+              "match": null,
+              "score": 0.56,
+              "margin": 0.015,
+              "psm": 6
+            },
+            {
+              "raw": "Sf Se ee ee |",
+              "match": null,
+              "score": 0.56,
+              "margin": 0.015,
+              "psm": 7
+            },
+            {
+              "raw": "al gle niin ofl",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.02,
+              "psm": 11
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "-_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "—_ gq",
+              "match": null,
+              "score": 0.4,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Ld",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "— J",
+              "match": null,
+              "score": 0.4,
+              "margin": 0.067,
+              "psm": 7
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "ee",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "421-BRB",
+      "fid": "13014",
+      "card": "database/fragrantica/social-cards/images/current_421-BRB_13014.jpeg",
+      "slots": [
+        2,
+        4,
+        5
+      ],
+      "notes": [
+        "Peach",
+        "Musk",
+        "Cashmir wood"
+      ],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "Wormwoo f,ty",
+              "match": null,
+              "score": 0.7,
+              "margin": 0.2,
+              "psm": 6
+            },
+            {
+              "raw": "—",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "ee Wormwoo (,?4",
+              "match": null,
+              "score": 0.7,
+              "margin": 0.155,
+              "psm": 11
+            },
+            {
+              "raw": "—",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Wormwoo f,'y",
+              "match": null,
+              "score": 0.737,
+              "margin": 0.211,
+              "psm": 6
+            },
+            {
+              "raw": "—",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "eee Wormwoo f,'y",
+              "match": null,
+              "score": 0.609,
+              "margin": 0.129,
+              "psm": 11
+            },
+            {
+              "raw": "| am",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 13
+            },
+            {
+              "raw": "Wormwoo 28 |",
+              "match": null,
+              "score": 0.778,
+              "margin": 0.222,
+              "psm": 6
+            },
+            {
+              "raw": "0",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": "Peach",
+          "strongest": {
+            "raw": "1 Peach R S\\\\VE",
+            "match": "Peach",
+            "score": 0.945,
+            "margin": 0.278,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "1 Peach R S\\\\VE",
+              "match": "Peach",
+              "score": 0.945,
+              "margin": 0.278,
+              "psm": 6
+            },
+            {
+              "raw": "J Peach R S\\\\VE",
+              "match": "Peach",
+              "score": 0.945,
+              "margin": 0.278,
+              "psm": 11
+            },
+            {
+              "raw": "—*",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "cy",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 6
+            },
+            {
+              "raw": "1 Peach Rk S\\\\\\it",
+              "match": "Peach",
+              "score": 0.945,
+              "margin": 0.385,
+              "psm": 11
+            },
+            {
+              "raw": "ol",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Y Peach Rk ENT ¢",
+              "match": "Peach",
+              "score": 0.945,
+              "margin": 0.278,
+              "psm": 6
+            },
+            {
+              "raw": "Y Peach R ENT ¢",
+              "match": "Peach",
+              "score": 0.945,
+              "margin": 0.249,
+              "psm": 11
+            },
+            {
+              "raw": "‘a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "1 Peacn R S\\",
+              "match": null,
+              "score": 0.588,
+              "margin": 0.017,
+              "psm": 6
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "OSE 7 _—_—_",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.051,
+              "psm": 6
+            },
+            {
+              "raw": "OSE",
+              "match": null,
+              "score": 0.857,
+              "margin": 0.107,
+              "psm": 7
+            },
+            {
+              "raw": "OSE",
+              "match": null,
+              "score": 0.857,
+              "margin": 0.107,
+              "psm": 11
+            },
+            {
+              "raw": "= |",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "OSE 7 _—_—_",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.051,
+              "psm": 6
+            },
+            {
+              "raw": "OSE 7",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.051,
+              "psm": 7
+            },
+            {
+              "raw": "OSE",
+              "match": null,
+              "score": 0.857,
+              "margin": 0.107,
+              "psm": 11
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "OSE 7 _ ~~",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.051,
+              "psm": 6
+            },
+            {
+              "raw": "OSE -",
+              "match": null,
+              "score": 0.857,
+              "margin": 0.107,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": "Musk",
+          "strongest": {
+            "raw": "Musk",
+            "match": "Musk",
+            "score": 1.0,
+            "margin": 0.075,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "Musk",
+              "match": "Musk",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 6
+            },
+            {
+              "raw": "Musk",
+              "match": "Musk",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 7
+            },
+            {
+              "raw": "Musk",
+              "match": "Musk",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 11
+            },
+            {
+              "raw": "—",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Musk",
+              "match": "Musk",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 6
+            },
+            {
+              "raw": "Musk",
+              "match": "Musk",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 7
+            },
+            {
+              "raw": "Musk",
+              "match": "Musk",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 11
+            },
+            {
+              "raw": "—",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Musk",
+              "match": "Musk",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 6
+            },
+            {
+              "raw": "Musk",
+              "match": "Musk",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": "Cashmir wood",
+          "strongest": {
+            "raw": "Cashmir § wood",
+            "match": "Cashmir wood",
+            "score": 1.0,
+            "margin": 0.333,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "Cashmir S wood",
+              "match": "Cashmir wood",
+              "score": 0.923,
+              "margin": 0.308,
+              "psm": 6
+            },
+            {
+              "raw": "ood",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.15,
+              "psm": 7
+            },
+            {
+              "raw": "Cashmir S wood",
+              "match": "Cashmir wood",
+              "score": 0.923,
+              "margin": 0.308,
+              "psm": 11
+            },
+            {
+              "raw": "“Wood",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Cashmir S wood",
+              "match": "Cashmir wood",
+              "score": 0.923,
+              "margin": 0.308,
+              "psm": 6
+            },
+            {
+              "raw": "wood",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "asnmir wood",
+              "match": null,
+              "score": 0.87,
+              "margin": 0.17,
+              "psm": 11
+            },
+            {
+              "raw": "“wood",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Cashmir S$ wood",
+              "match": "Cashmir wood",
+              "score": 0.923,
+              "margin": 0.308,
+              "psm": 6
+            },
+            {
+              "raw": "woos",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "andalwood",
+              "match": null,
+              "score": 0.947,
+              "margin": 0.022,
+              "psm": 6
+            },
+            {
+              "raw": "andalwood",
+              "match": null,
+              "score": 0.947,
+              "margin": 0.022,
+              "psm": 7
+            },
+            {
+              "raw": "andalwood",
+              "match": null,
+              "score": 0.947,
+              "margin": 0.022,
+              "psm": 11
+            },
+            {
+              "raw": "_— |",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "andalwood",
+              "match": null,
+              "score": 0.947,
+              "margin": 0.022,
+              "psm": 6
+            },
+            {
+              "raw": "andalwood",
+              "match": null,
+              "score": 0.947,
+              "margin": 0.022,
+              "psm": 7
+            },
+            {
+              "raw": "andalwood",
+              "match": null,
+              "score": 0.947,
+              "margin": 0.022,
+              "psm": 11
+            },
+            {
+              "raw": "_ |",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "andalwood",
+              "match": null,
+              "score": 0.947,
+              "margin": 0.022,
+              "psm": 6
+            },
+            {
+              "raw": "andalwood",
+              "match": null,
+              "score": 0.947,
+              "margin": 0.022,
+              "psm": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "1251-ROM",
+      "fid": "21103",
+      "card": "database/fragrantica/social-cards/images/current_1251-ROM_21103.jpeg",
+      "slots": [],
+      "notes": [],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "=",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "=",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "=",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "A",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "A",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "=",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "=",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "=",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "S",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 6
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "oe",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "|",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "1036-BLG",
+      "fid": "148",
+      "card": "database/fragrantica/social-cards/images/current_1036-BLG_148.jpeg",
+      "slots": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "notes": [
+        "Ginger",
+        "Sand",
+        "Juniper",
+        "Galanga"
+      ],
+      "knownLayout": false,
+      "diagnostics": [
+        {
+          "slot": 1,
+          "note": "Ginger",
+          "strongest": {
+            "raw": "Ginger",
+            "match": "Ginger",
+            "score": 1.0,
+            "margin": 0.075,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "Ginger",
+              "match": "Ginger",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 6
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Ginger",
+              "match": "Ginger",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 11
+            },
+            {
+              "raw": "io",
+              "match": null,
+              "score": 0.571,
+              "margin": 0.071,
+              "psm": 13
+            },
+            {
+              "raw": "Ginger",
+              "match": "Ginger",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 6
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Ginger",
+              "match": "Ginger",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 11
+            },
+            {
+              "raw": "or",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Ginger",
+              "match": "Ginger",
+              "score": 1.0,
+              "margin": 0.075,
+              "psm": 6
+            },
+            {
+              "raw": "_",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "Cardamor YY L-",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.067,
+              "psm": 6
+            },
+            {
+              "raw": "Ca - mor",
+              "match": null,
+              "score": 0.769,
+              "margin": 0.055,
+              "psm": 7
+            },
+            {
+              "raw": "Cardamor YY L-",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.067,
+              "psm": 11
+            },
+            {
+              "raw": "a",
+              "match": null,
+              "score": 0.5,
+              "margin": 0.0,
+              "psm": 13
+            },
+            {
+              "raw": "Cardamor YL",
+              "match": null,
+              "score": 0.737,
+              "margin": 0.07,
+              "psm": 6
+            },
+            {
+              "raw": "_ |",
+              "match": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "Cardamor YL",
+              "match": null,
+              "score": 0.737,
+              "margin": 0.07,
+              "psm": 11
+            },
+            {
+              "raw": "aa",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 13
+            },
+            {
+              "raw": "Cardamor Xx £.--",
+              "match": null,
+              "score": 0.737,
+              "margin": 0.121,
+              "psm": 6
+            },
+            {
+              "raw": "Carda ™",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "note": null,
+          "strongest": null,
+          "attempts": [
+            {
+              "raw": "1 Tobacco Blossom _ § x",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": ") sso",
+              "match": null,
+              "score": 0.75,
+              "margin": 0.083,
+              "psm": 7
+            },
+            {
+              "raw": "7 Tobacco Blossom =. | ,",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "\"Bosom",
+              "match": null,
+              "score": 0.625,
+              "margin": 0.025,
+              "psm": 13
+            },
+            {
+              "raw": ". Tobacco Blossom _ ff Fr",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "Blossom",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": ") Tobacco Blossom a | A",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "\"Bosom",
+              "match": null,
+              "score": 0.625,
+              "margin": 0.025,
+              "psm": 13
+            },
+            {
+              "raw": "1 Tobacco Blossom _ r",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.0,
+              "psm": 6
+            },
+            {
+              "raw": "losson",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.051,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "note": "Sand",
+          "strongest": {
+            "raw": "Sandalwor",
+            "match": "Sand",
+            "score": 0.945,
+            "margin": 0.103,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 6
+            },
+            {
+              "raw": "Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 7
+            },
+            {
+              "raw": "acer",
+              "match": null,
+              "score": 0.925,
+              "margin": 0.0,
+              "psm": 11
+            },
+            {
+              "raw": "| Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 13
+            },
+            {
+              "raw": "Sandalwor",
+              "match": "Sand",
+              "score": 0.945,
+              "margin": 0.103,
+              "psm": 6
+            },
+            {
+              "raw": "ie",
+              "match": null,
+              "score": 0.8,
+              "margin": 0.133,
+              "psm": 7
+            },
+            {
+              "raw": "Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 11
+            },
+            {
+              "raw": "| Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 13
+            },
+            {
+              "raw": "= Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 6
+            },
+            {
+              "raw": "Sandalwo",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "note": "Juniper",
+          "strongest": {
+            "raw": "Juniper",
+            "match": "Juniper",
+            "score": 1.0,
+            "margin": 0.375,
+            "psm": 13
+          },
+          "attempts": [
+            {
+              "raw": "ya Juniper",
+              "match": "Juniper",
+              "score": 0.945,
+              "margin": 0.345,
+              "psm": 6
+            },
+            {
+              "raw": "dd rie",
+              "match": null,
+              "score": 0.625,
+              "margin": 0.025,
+              "psm": 7
+            },
+            {
+              "raw": "aS dd Juniper",
+              "match": "Juniper",
+              "score": 0.945,
+              "margin": 0.362,
+              "psm": 11
+            },
+            {
+              "raw": "Juniper",
+              "match": "Juniper",
+              "score": 1.0,
+              "margin": 0.375,
+              "psm": 13
+            },
+            {
+              "raw": "~ yd Juniper",
+              "match": "Juniper",
+              "score": 0.945,
+              "margin": 0.419,
+              "psm": 6
+            },
+            {
+              "raw": "Te Son",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.095,
+              "psm": 7
+            },
+            {
+              "raw": "ys yd Juniper",
+              "match": "Juniper",
+              "score": 0.945,
+              "margin": 0.362,
+              "psm": 11
+            },
+            {
+              "raw": "Juniper |",
+              "match": "Juniper",
+              "score": 1.0,
+              "margin": 0.375,
+              "psm": 13
+            },
+            {
+              "raw": "y rd Juniper",
+              "match": "Juniper",
+              "score": 0.945,
+              "margin": 0.4,
+              "psm": 6
+            },
+            {
+              "raw": "Te pontoet",
+              "match": null,
+              "score": 0.636,
+              "margin": 0.036,
+              "psm": 7
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "note": "Galanga",
+          "strongest": {
+            "raw": "Galanga",
+            "match": "Galanga",
+            "score": 1.0,
+            "margin": 0.075,
+            "psm": 6
+          },
+          "attempts": [
+            {
+              "raw": "i Galanga",
+              "match": "Galanga",
+              "score": 0.945,
+              "margin": 0.278,
+              "psm": 6
+            },
+            {
+              "raw": "Salange",
+              "match": null,
+              "score": 0.727,
+              "margin": 0.013,
+              "psm": 7
+            },
+            {
+              "raw": "on Galanga",
+              "match": "Galanga",
+              "score": 0.945,
+              "margin": 0.357,
+              "psm": 11
+            },
+            {
+              "raw": "“Galorge",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.051,
+              "psm": 13
+            },
+            {
+              "raw": "Po Galanga",
+              "match": "Galanga",
+              "score": 0.945,
+              "margin": 0.302,
+              "psm": 6
+            },
+            {
+              "raw": "Salen",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.0,
+              "psm": 7
+            },
+            {
+              "raw": "oe ts Galanga",
+              "match": "Galanga",
+              "score": 0.945,
+              "margin": 0.364,
+              "psm": 11
+            },
+            {
+              "raw": "“Galerge",
+              "match": null,
+              "score": 0.667,
+              "margin": 0.078,
+              "psm": 13
+            },
+            {
+              "raw": "\"a Galanga",
+              "match": null,
+              "score": 0.945,
+              "margin": 0.02,
+              "psm": 6
+            },
+            {
+              "raw": "caionga",
+              "match": null,
+              "score": 0.714,
+              "margin": 0.048,
+              "psm": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

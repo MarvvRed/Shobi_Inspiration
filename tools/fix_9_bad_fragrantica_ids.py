@@ -12,7 +12,7 @@ FIX={
 '1281-YZLO':('Yves Saint Laurent',"L'Homme Parfum Intense",18841,'https://www.fragrantica.com/perfume/Yves-Saint-Laurent/L-Homme-Parfum-Intense-18841.html'),
 '1890-LEL':('Le Labo','Lys 41',18382,'https://www.fragrantica.com/perfume/Le-Labo/Lys-41-18382.html'),
 '2265-KAY':('Kayali Fragrances','Oudgasm Rose Oud 16 Eau de Parfum Intense',85186,'https://www.fragrantica.com/perfume/Kayali-Fragrances/Oudgasm-Rose-Oud-16-Eau-de-Parfum-Intense-85186.html')}
-for fn in ('database_complete.json','database_v2_clean.json'):
+for fn in ('database/catalog/database_complete.json','database/catalog/database_v2_clean.json'):
  p=ROOT/fn; data=json.loads(p.read_text(encoding='utf-8')); rows=data if isinstance(data,list) else data.get('perfumes',[]); changed=[]
  for r in rows:
   c=str(r.get('code') or '')

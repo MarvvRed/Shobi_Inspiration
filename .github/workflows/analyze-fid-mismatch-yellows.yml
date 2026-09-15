@@ -23,7 +23,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fid-mismatch-yellows.json fid-mismatch-yellows.md
+          git add database/audits/fid-mismatch-yellows.json database/audits/fid-mismatch-yellows.md
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Analyze remaining validated-card FID mismatches"
           git pull --rebase origin main

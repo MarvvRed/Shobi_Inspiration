@@ -32,17 +32,17 @@ jobs:
           python - <<'PY'
           import json
           from collections import Counter
-          rows=json.load(open('catalog_site.json',encoding='utf-8-sig'))
+          rows=json.load(open('database/catalog/catalog_site.json',encoding='utf-8-sig'))
           counts=Counter(str(x.get('validationStatus') or '').lower() for x in rows)
           out={'catalogRows':len(rows),'green':counts['green'],'yellow':counts['yellow'],'red':counts['red']}
-          open('current-validation-counts.json','w',encoding='utf-8').write(json.dumps(out,indent=2)+'\n')
+          open('database/audits/current-validation-counts.json','w',encoding='utf-8').write(json.dumps(out,indent=2)+'\n')
           print(out)
           PY
       - name: Commit fix
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add database_complete.json catalog_site.json fragrantica-scraper-archive/social-cards/gender-season.csv fix-1037-bvlgari-man-gender-season.json current-validation-counts.json
+          git add database/catalog/database_complete.json database/catalog/catalog_site.json database/fragrantica/social-cards/gender-season.csv database/audits/fix-1037-bvlgari-man-gender-season.json database/audits/current-validation-counts.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Validate Bvlgari Man gender and season from exact card"
           git pull --rebase origin main

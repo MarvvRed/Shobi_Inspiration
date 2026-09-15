@@ -4,7 +4,7 @@ on:
     paths:
       - 'tools/reconcile_final_identity_audit.py'
       - '.github/reconcile-final-identity-trigger'
-      - 'database_v2_clean.json'
+      - 'database/catalog/database_v2_clean.json'
   workflow_dispatch:
 jobs:
   reconcile:
@@ -20,6 +20,6 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add fragrantica-final-identity-status.csv fragrantica-final-identity-summary.txt
+          git add database/audits/fragrantica-final-identity-status.csv database/audits/fragrantica-final-identity-summary.txt
           git diff --cached --quiet || git commit -m "Reconcile final Fragrantica identity status"
           git push

@@ -3,10 +3,10 @@ from pathlib import Path
 from difflib import SequenceMatcher
 from collections import Counter,defaultdict
 
-URLS=Path('fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt')
-DB=Path('database_v2_clean.json')
-OUT=Path('fragrantica-v2-local-url-match.csv')
-REPORT=Path('fragrantica-v2-local-url-match.md')
+URLS=Path('database/fragrantica/legacy/original-local-scraper/perfume_urls.txt')
+DB=Path('database/catalog/database_v2_clean.json')
+OUT=Path('database/audits/fragrantica-v2-local-url-match.csv')
+REPORT=Path('database/audits/fragrantica-v2-local-url-match.md')
 STOP={'eau','de','parfum','perfume','toilette','edp','edt','for','men','women','man','woman','pour','homme','femme','the','by','and','limited','edition','cologne'}
 
 def norm(s):

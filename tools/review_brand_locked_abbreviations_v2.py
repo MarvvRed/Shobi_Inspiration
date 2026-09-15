@@ -3,7 +3,7 @@ import csv,re,unicodedata
 from difflib import SequenceMatcher
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-MATCH=ROOT/'fragrantica-v2-local-url-match.csv'; OUTCSV=ROOT/'fragrantica-v2-brand-abbreviation-review.csv'; OUTMD=ROOT/'fragrantica-v2-brand-abbreviation-review.md'
+MATCH=ROOT/'database/audits/fragrantica-v2-local-url-match.csv'; OUTCSV=ROOT/'database/audits/fragrantica-v2-brand-abbreviation-review.csv'; OUTMD=ROOT/'database/audits/fragrantica-v2-brand-abbreviation-review.md'
 def rows(p):
  with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 def norm(s):return ' '.join(re.findall(r'[a-z0-9]+',unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().lower()))

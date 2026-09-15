@@ -1,10 +1,10 @@
 import json, re, unicodedata
 from collections import Counter, defaultdict
 
-P='database_complete.json'
+P='database/catalog/database_complete.json'
 with open(P,encoding='utf-8') as f: data=json.load(f)
 
-# database_complete.json is a list of brand groups; perfume rows live in group['perfumes'].
+# database/catalog/database_complete.json is a list of brand groups; perfume rows live in group['perfumes'].
 R=[]
 for group in data:
     if not isinstance(group,dict):
@@ -52,5 +52,5 @@ lines += ['','## Code-vs-URL conflicts']
 for x in conf: lines.append(f'- {x[0]} — {x[1]} | code=`{x[2]}` url_code=`{x[3]}` | {x[4]}')
 lines += ['','## Same-name groups']
 for (b,n),cs in sorted(ident.items()): lines.append(f'- {b} — {n}: {", ".join(cs)}')
-open('catalog-postfix-audit.md','w',encoding='utf-8').write('\n'.join(lines)+'\n')
+open('database/audits/catalog-postfix-audit.md','w',encoding='utf-8').write('\n'.join(lines)+'\n')
 print('\n'.join(lines[:12]))

@@ -1,0 +1,33 @@
+{
+  "changed": 2,
+  "rows": [
+    {
+      "code": "107-ARB",
+      "fragranticaId": "127709",
+      "mainSeason": "summer",
+      "scores": {
+        "winter": 0.24444444444444444,
+        "spring": 0.36531365313653136,
+        "summer": 0.37407407407407406,
+        "fall": 0.22140221402214022
+      },
+      "confidence": "CLOSE",
+      "margin": 0.008760420937542701,
+      "source": "database/fragrantica/social-cards/images/1407_107-ARB_127709.jpeg"
+    },
+    {
+      "code": "973-VICT",
+      "fragranticaId": "133200",
+      "mainSeason": "spring",
+      "scores": {
+        "winter": 0.337037037037037,
+        "spring": 0.4575645756457565,
+        "summer": 0.1814814814814815,
+        "fall": 0.17712177121771217
+      },
+      "confidence": "HIGH",
+      "margin": 0.12052753860871945,
+      "source": "database/fragrantica/social-cards/images/998_973-VICT_133200.jpeg"
+    }
+  ]
+}

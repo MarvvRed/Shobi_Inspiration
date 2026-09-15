@@ -5,8 +5,8 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'
-AUDIT=ROOT/'fragrantica-v2-identity-audit.csv'
+DB=ROOT/'database/catalog/database_complete.json'
+AUDIT=ROOT/'database/audits/fragrantica-v2-identity-audit.csv'
 rows=json.loads(DB.read_text(encoding='utf-8-sig'))
 
 def code(v): return str(v or '').strip().upper()
@@ -39,12 +39,12 @@ for r in rows:
         matches.append(a)
     if len(matches)!=1: continue
     a=matches[0]
-    r['fragranticaVerificationSource']='fragrantica-v2-identity-audit.csv'
+    r['fragranticaVerificationSource']='database/audits/fragrantica-v2-identity-audit.csv'
     r['fragranticaVerificationReason']=str(a.get('reason') or '').strip()
     r['fragranticaVerificationMatchType']=str(a.get('match_type') or '').strip()
     r['fragranticaVerificationAuditUrl']=str(a.get('fragrantica_url') or '').strip()
     changed.append({'code':c,'prestashopProductId':pid,'fragranticaId':fid,'reason':r['fragranticaVerificationReason']})
 
 DB.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-(ROOT/'identity-source-audit-fixes.json').write_text(json.dumps({'changed':len(changed),'rows':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/identity-source-audit-fixes.json').write_text(json.dumps({'changed':len(changed),'rows':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('identity_sources_fixed',len(changed))

@@ -4,10 +4,10 @@ from pathlib import Path
 from urllib.parse import urlparse
 from difflib import SequenceMatcher
 ROOT=Path(__file__).resolve().parents[1]
-SRC=ROOT/'fragrantica-v2-corpus-candidates.csv'
-CORPUS=ROOT/'fragrantica-scraper-archive'/'perfume_urls.txt'
-OUT=ROOT/'fragrantica-v2-refined-unresolved.csv'
-SUM=ROOT/'fragrantica-v2-refined-summary.txt'
+SRC=ROOT/'database/audits/fragrantica-v2-corpus-candidates.csv'
+CORPUS=ROOT/'database/fragrantica'/'perfume_urls.txt'
+OUT=ROOT/'database/audits/fragrantica-v2-refined-unresolved.csv'
+SUM=ROOT/'database/audits/fragrantica-v2-refined-summary.txt'
 HOME_CODES={'222-DIP','223-DIP','227-DIP','228-DIP','230-DIP','379-YAN','380-YAN','381-YAN','382-YAN','383-YAN','1550-YAN','2586-DIP','2701-DIP','335-THCO','336-THCO'}
 ALIASES={'FAHRENEIT':'FAHRENHEIT','SWEET ALMON MACARRON':'SWEET ALMOND MACAROON','ATTRAPE REVES':'ATTRAPE REVES','L INTERDIT INTENSE':'L INTERDIT EAU DE PARFUM INTENSE','SWISS ARMY VICTORINOX':'SWISS ARMY','SAUVAGE PARFUM 2019':'SAUVAGE PARFUM','Dioriviera Eau de Parfum':'DIORIVIERA','Lipstick Rose Eau de Parfum':'LIPSTICK ROSE'}
 BRAND_HINT={'DRC':['dior'],'PRA':['prada'],'DOL':['dolce gabbana'],'LAC':['lacoste'],'BOD':['body shop'],'SWI':['victorinox','swiss army'],'FRE':['frederic malle'],'ROG':['roger gallet'],'GFE':['gianfranco ferre','ferre'],'AL HAR':['al haramain'],'CLIV':['clive christian'],'HUG':['hugo boss'],'VICT':['victoria secret'],'LTN':['louis vuitton'],'AFN':['afnan']}

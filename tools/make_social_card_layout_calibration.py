@@ -1,7 +1,7 @@
 from pathlib import Path
 from PIL import Image,ImageDraw
 ROOT=Path(__file__).resolve().parents[1]
-D=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images'
+D=ROOT/'database/fragrantica'/'social-cards'/'images'
 ids=[3,4,9,17,433,714,845,905]
 thumbs=[]
 for fid in ids:
@@ -15,5 +15,5 @@ for fid in ids:
 canvas=Image.new('RGB',(600,300*((len(thumbs)+1)//2)),'white')
 for i,im in enumerate(thumbs):
     canvas.paste(im,((i%2)*300,(i//2)*300))
-canvas.save(ROOT/'social-card-layout-calibration.jpg',quality=92)
+canvas.save(ROOT/'database/fragrantica/social-cards/records/social-card-layout-calibration.jpg',quality=92)
 print('saved',len(thumbs))

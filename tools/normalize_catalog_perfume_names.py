@@ -15,9 +15,9 @@ from pathlib import Path
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
-MAPPING = ROOT / "data/shobi-fragrantica-mapping.csv"
-FULL_DB = ROOT / "database_complete.json"
-SITE_DB = ROOT / "catalog_site.json"
+MAPPING = ROOT / "database/source/shobi-fragrantica-mapping.csv"
+FULL_DB = ROOT / "database/catalog/database_complete.json"
+SITE_DB = ROOT / "database/catalog/catalog_site.json"
 
 
 def canonical_name_from_url(url):

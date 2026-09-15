@@ -2,8 +2,8 @@ from pathlib import Path
 import csv, json
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / 'perfume-images' / 'manifest.csv'
-MAP_JS = ROOT / 'perfume-images' / 'map.js'
+MANIFEST = ROOT / 'database/assets/perfumes' / 'manifest.csv'
+MAP_JS = ROOT / 'database/assets/perfumes' / 'map.js'
 INDEX = ROOT / 'index.html'
 
 # Build code -> local image path map from the archived Fragrantica images.
@@ -14,7 +14,7 @@ with MANIFEST.open(encoding='utf-8-sig', newline='') as f:
         fid = (row.get('fragrantica_id') or '').strip()
         status = (row.get('status') or '').strip().upper()
         if code and fid.isdigit() and status in {'DOWNLOADED', 'EXISTS'}:
-            image_map[code] = f'perfume-images/{fid}.avif'
+            image_map[code] = f'database/assets/perfumes/{fid}.avif'
 
 MAP_JS.write_text(
     'window.PERFUME_IMAGE_MAP=' + json.dumps(image_map, ensure_ascii=False, separators=(',', ':')) + ';\n',
@@ -25,8 +25,8 @@ html = INDEX.read_text(encoding='utf-8')
 
 # Load the local image map before the V2-card enhancement script.
 needle = '<script src="script.js"></script>\n<script>(()=>{'
-replacement = '<script src="script.js"></script>\n<script src="perfume-images/map.js"></script>\n<script>(()=>{'
-if needle in html and 'perfume-images/map.js' not in html:
+replacement = '<script src="script.js"></script>\n<script src="database/assets/perfumes/map.js"></script>\n<script>(()=>{'
+if needle in html and 'database/assets/perfumes/map.js' not in html:
     html = html.replace(needle, replacement, 1)
 
 # Give applyV2Card the matching perfume row so it can resolve the archived image.
@@ -39,7 +39,7 @@ html = html.replace(
 # Replace the hard-coded bottle with the local image for that Shobi code; keep current bottle as fallback.
 html = html.replace(
     "image.src='https://fimgs.net/mdimg/perfume-thumbs/dark-375x500.52616.avif';image.alt='Perfume bottle placeholder';image.loading='lazy';",
-    "const perfumeCode=String((perfume&&perfume.item?perfume.item.code:perfume?.code)||'').trim().toUpperCase();image.src=(window.PERFUME_IMAGE_MAP&&window.PERFUME_IMAGE_MAP[perfumeCode])||'perfume-images/52616.avif';image.alt='Perfume bottle';image.loading='lazy';image.onerror=()=>{image.onerror=null;image.src='perfume-images/52616.avif';};",
+    "const perfumeCode=String((perfume&&perfume.item?perfume.item.code:perfume?.code)||'').trim().toUpperCase();image.src=(window.PERFUME_IMAGE_MAP&&window.PERFUME_IMAGE_MAP[perfumeCode])||'database/assets/perfumes/52616.avif';image.alt='Perfume bottle';image.loading='lazy';image.onerror=()=>{image.onerror=null;image.src='database/assets/perfumes/52616.avif';};",
     1,
 )
 

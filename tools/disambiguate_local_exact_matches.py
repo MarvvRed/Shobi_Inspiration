@@ -3,9 +3,9 @@ from pathlib import Path
 from difflib import SequenceMatcher
 from collections import defaultdict
 
-URLS=Path('fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt')
-CSV=Path('fragrantica-v2-local-url-match.csv')
-OUT=Path('fragrantica-v2-local-disambiguation.md')
+URLS=Path('database/fragrantica/legacy/original-local-scraper/perfume_urls.txt')
+CSV=Path('database/audits/fragrantica-v2-local-url-match.csv')
+OUT=Path('database/audits/fragrantica-v2-local-disambiguation.md')
 
 def norm(s):
     s=unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().lower()

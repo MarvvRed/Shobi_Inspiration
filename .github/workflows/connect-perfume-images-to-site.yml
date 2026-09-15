@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - ".github/perfume-images-site-trigger"
+      - ".github/database/assets/perfumes-site-trigger"
 
 permissions:
   contents: write
@@ -32,7 +32,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html perfume-images/map.js
+          git add index.html database/assets/perfumes/map.js
           if git diff --cached --quiet; then
             echo "No perfume image site changes to commit."
             exit 0

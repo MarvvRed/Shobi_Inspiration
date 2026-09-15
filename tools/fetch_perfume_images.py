@@ -8,8 +8,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CORPUS = ROOT / "fragrantica-scraper-archive" / "corpus-match" / "shobi-fragrantica-corpus-match.csv"
-OUT_DIR = ROOT / "perfume-images"
+CORPUS = ROOT / "database/fragrantica" / "corpus-match" / "shobi-fragrantica-corpus-match.csv"
+OUT_DIR = ROOT / "database/assets/perfumes"
 MANIFEST = OUT_DIR / "manifest.csv"
 BASE = "https://fimgs.net/mdimg/perfume-thumbs/dark-375x500.{fid}.avif"
 DELAY = float(os.environ.get("PERFUME_IMAGE_DELAY", "0.08"))
@@ -92,7 +92,7 @@ def main() -> None:
                     "fragrantica_id": fid,
                     "fragrantica_url": row.get("fragrantica_url", ""),
                     "image_url": url,
-                    "local_path": f"perfume-images/{fid}.avif" if status in {"EXISTS", "DOWNLOADED"} else "",
+                    "local_path": f"database/assets/perfumes/{fid}.avif" if status in {"EXISTS", "DOWNLOADED"} else "",
                     "status": status,
                     "detail": detail,
                 }

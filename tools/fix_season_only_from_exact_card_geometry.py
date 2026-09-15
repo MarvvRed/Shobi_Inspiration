@@ -7,11 +7,11 @@ from pathlib import Path
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'; SITE=ROOT/'catalog_site.json'
-GS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'gender-season.csv'
+DB=ROOT/'database/catalog/database_complete.json'; SITE=ROOT/'database/catalog/catalog_site.json'
+GS=ROOT/'database/fragrantica'/'social-cards'/'gender-season.csv'
 TARGETS={
- '107-ARB':'fragrantica-scraper-archive/social-cards/images/1407_107-ARB_127709.jpeg',
- '973-VICT':'fragrantica-scraper-archive/social-cards/images/998_973-VICT_133200.jpeg',
+ '107-ARB':'database/fragrantica/social-cards/images/1407_107-ARB_127709.jpeg',
+ '973-VICT':'database/fragrantica/social-cards/images/998_973-VICT_133200.jpeg',
 }
 SEASONS=('winter','spring','summer','fall')
 ROIS={
@@ -69,5 +69,5 @@ with GS.open('w',encoding='utf-8-sig',newline='') as f:
     w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(existing)
 DB.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 SITE.write_text(json.dumps(site,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
-(ROOT/'season-only-card-geometry-fixes.json').write_text(json.dumps({'changed':len(changes),'rows':changes},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/season-only-card-geometry-fixes.json').write_text(json.dumps({'changed':len(changes),'rows':changes},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(changes,ensure_ascii=False,indent=2))

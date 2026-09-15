@@ -2,10 +2,10 @@ import csv,re
 from pathlib import Path
 from collections import Counter
 
-SRC=Path('fragrantica-v2-identity-audit.csv')
-MAP=Path('data/shobi-fragrantica-mapping.csv')
-OUT=Path('fragrantica-v2-review-classification.csv')
-REPORT=Path('fragrantica-v2-review-classification.md')
+SRC=Path('database/audits/fragrantica-v2-identity-audit.csv')
+MAP=Path('database/source/shobi-fragrantica-mapping.csv')
+OUT=Path('database/audits/fragrantica-v2-review-classification.csv')
+REPORT=Path('database/audits/fragrantica-v2-review-classification.md')
 
 def val(r,*ks):
     for k in ks:

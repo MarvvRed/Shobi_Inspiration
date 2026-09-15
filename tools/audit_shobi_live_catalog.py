@@ -9,9 +9,9 @@ from urllib.error import HTTPError, URLError
 import http.client
 
 BASE='https://leparfum.com.gr'
-MASTER=Path('perfume-database/catalog/shobi-master-v2-2369.csv')
-OUTCSV=Path('data/shobi-live-catalog-2026-09-10.csv')
-REPORT=Path('data/shobi-live-vs-master-v2-2026-09-10.md')
+MASTER=Path('database/archive/catalog/shobi-master-v2-2369.csv')
+OUTCSV=Path('database/source/shobi-live-catalog-2026-09-10.csv')
+REPORT=Path('database/source/shobi-live-vs-master-v2-2026-09-10.md')
 CATEGORIES={
  'Fragrances For Women':'https://leparfum.com.gr/en/fragrances-for-women',
  'Fragrances For Men':'https://leparfum.com.gr/en/fragrances-for-men',

@@ -3,9 +3,9 @@ from __future__ import annotations
 import json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'
-VALID=ROOT/'social-card-main-notes-validated.json'
-IMG='fragrantica-scraper-archive/social-cards/images'
+DB=ROOT/'database/catalog/database_complete.json'
+VALID=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'
+IMG='database/fragrantica/social-cards/images'
 TARGETS={
  '2282-DRC':('81847',['Fig','Green Notes','Rose']),
  '884-RAL':('14446',['Cranberry','Tonka Bean']),
@@ -45,5 +45,5 @@ for c,(fid,notes) in TARGETS.items():
     changed.append({'code':c,'fid':fid,'notes':notes,'card':str(card.relative_to(ROOT))})
 DB.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 VALID.write_text(json.dumps(valid,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-(ROOT/'seven-dynamic-card-proofs-applied.json').write_text(json.dumps(changed,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/seven-dynamic-card-proofs-applied.json').write_text(json.dumps(changed,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({'applied':len(changed),'codes':[x['code'] for x in changed]},ensure_ascii=False))

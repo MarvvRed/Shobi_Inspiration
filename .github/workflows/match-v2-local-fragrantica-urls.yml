@@ -39,7 +39,7 @@ jobs:
                       if isinstance(v, (list, dict)):
                           yield from walk(v)
 
-          for name in ('database_v2_clean.json', 'database_complete.json'):
+          for name in ('database/catalog/database_v2_clean.json', 'database/catalog/database_complete.json'):
               p = Path(name)
               data = json.loads(p.read_text(encoding='utf-8'))
               changed = 0
@@ -62,7 +62,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add database_v2_clean.json database_complete.json fragrantica-v2-shobi-first-promotion.md fragrantica-v2-local-url-match.csv fragrantica-v2-local-url-match.md
+          git add database/catalog/database_v2_clean.json database/catalog/database_complete.json database/audits/fragrantica-v2-shobi-first-promotion.md database/audits/fragrantica-v2-local-url-match.csv database/audits/fragrantica-v2-local-url-match.md
           git diff --cached --quiet && exit 0
           git commit -m 'Promote Shobi-first reviewed residual mappings'
           git pull --rebase origin main

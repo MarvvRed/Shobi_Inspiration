@@ -3,10 +3,10 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / 'database_complete.json'
-VALID = ROOT / 'social-card-main-notes-validated.json'
-REPORT = ROOT / 'shared-fid-social-card-recovery.json'
-OUT = ROOT / 'shared-fid-social-card-recovery-applied.json'
+DB = ROOT / 'database/catalog/database_complete.json'
+VALID = ROOT / 'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'
+REPORT = ROOT / 'database/audits/shared-fid-social-card-recovery.json'
+OUT = ROOT / 'database/audits/shared-fid-social-card-recovery-applied.json'
 
 db = json.loads(DB.read_text(encoding='utf-8-sig'))
 valid = json.loads(VALID.read_text(encoding='utf-8'))

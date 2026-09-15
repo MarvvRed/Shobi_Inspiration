@@ -1,7 +1,7 @@
 import csv,json,re,unicodedata
 from collections import defaultdict
 from pathlib import Path
-DB=Path('database_complete.json'); MASTER=Path('perfume-database/catalog/shobi-master-v1.csv'); OUT=Path('catalog-master-deep-audit.md')
+DB=Path('database/catalog/database_complete.json'); MASTER=Path('database/archive/catalog/shobi-master-v1.csv'); OUT=Path('database/audits/catalog-master-deep-audit.md')
 def norm(s):
  s=unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().lower(); return re.sub(r'[^a-z0-9]+','',s)
 def dbrows():

@@ -1,0 +1,78 @@
+{
+  "yellowRows": 144,
+  "frequencies": {
+    "identityStatus": {
+      "CONFIRMED": 140,
+      "AMBIGUOUS": 4
+    },
+    "identitySource": {
+      "<EMPTY>": 98,
+      "database/audits/fragrantica-v2-identity-audit.csv": 43,
+      "https://www.fragrantica.com/perfume/Dior/Dioriviera-81847.html": 1,
+      "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html": 1,
+      "https://www.fragrantica.com/perfume/Calvin-Klein/CK-be-275.html": 1
+    },
+    "genderStatus": {
+      "VALIDATED_SOCIAL_CARD": 101,
+      "<EMPTY>": 43
+    },
+    "socialCardStatus": {
+      "<EMPTY>": 102,
+      "VALIDATED_OCR": 22,
+      "VALIDATED_MANUAL": 18,
+      "SOCIAL_CARD_UNAVAILABLE": 2
+    }
+  },
+  "patterns": {
+    "gender_label_only": 12,
+    "social_raw_same_id": 56,
+    "gender_exact_card_exists": 7
+  },
+  "samples": {
+    "gender_label_only": [
+      "2816-MOOD",
+      "2313-DRC",
+      "2106-MARC",
+      "1950-SWISA",
+      "1767-LTN",
+      "1644-DRC",
+      "383-YAN",
+      "564-DOL",
+      "828-MIY",
+      "521-DRC",
+      "1251-ROM",
+      "1076-DRC"
+    ],
+    "social_raw_same_id": [
+      "2439-ZEG",
+      "2427-CLEA",
+      "2351-LOU",
+      "2282-DRC",
+      "2250-ARBAS",
+      "2224-ARM",
+      "2160-ZAR",
+      "2104-CHA",
+      "1989-VERT",
+      "1885-WID",
+      "1836-COT",
+      "1684-GIV",
+      "1659-CHRA",
+      "1644-DRC",
+      "1483-DSQ",
+      "687-GUR",
+      "1161-HUG",
+      "127-KIL",
+      "466-CAL",
+      "304-KIE"
+    ],
+    "gender_exact_card_exists": [
+      "2313-DRC",
+      "2106-MARC",
+      "1950-SWISA",
+      "1767-LTN",
+      "1644-DRC",
+      "521-DRC",
+      "1076-DRC"
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-DB = Path('database_complete.json')
+DB = Path('database/catalog/database_complete.json')
 TARGETS = {
     '2783-LTN': ('Louis Vuitton', 'Ink Mark'),
     '2786-LTN': ('Louis Vuitton', 'Rain Tea'),

@@ -2,8 +2,8 @@ import json
 from collections import Counter
 from pathlib import Path
 
-DB = Path('database_complete.json')
-OUT = Path('site-brand-audit.md')
+DB = Path('database/catalog/database_complete.json')
+OUT = Path('database/audits/site-brand-audit.md')
 
 raw = json.loads(DB.read_text(encoding='utf-8'))
 

@@ -25,7 +25,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fragrantica-scraper-archive/social-cards/images missing-social-card-recovery-report.json
+          git add database/fragrantica/social-cards/images database/audits/missing-social-card-recovery-report.json
           if git diff --cached --quiet; then
             echo "No recovered cards"
             exit 0

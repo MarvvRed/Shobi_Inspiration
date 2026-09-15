@@ -2,9 +2,9 @@
 import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=json.loads((ROOT/'database_complete.json').read_text(encoding='utf-8-sig'))
-SITE=json.loads((ROOT/'catalog_site.json').read_text(encoding='utf-8-sig'))
-txt=(ROOT/'note-icons'/'map.js').read_text(encoding='utf-8').strip()
+DB=json.loads((ROOT/'database/catalog/database_complete.json').read_text(encoding='utf-8-sig'))
+SITE=json.loads((ROOT/'database/catalog/catalog_site.json').read_text(encoding='utf-8-sig'))
+txt=(ROOT/'database'/'assets'/'note-icons'/'map.js').read_text(encoding='utf-8').strip()
 m=re.match(r'^window\.[A-Z0-9_]+\s*=\s*(\{.*\})\s*;?$',txt,re.S)
 if not m: raise SystemExit('Cannot parse note-icons/map.js')
 mp=json.loads(m.group(1))
@@ -26,5 +26,5 @@ for d,s in zip(DB,SITE):
         miss.append({'note':n,'key':k,'normalizedCandidates':[{'key':x,'path':y} for x,y in cand]})
     rows.append({'code':d.get('code'),'brand':d.get('brand'),'inspiredBy':d.get('inspiredBy'),'notes':notes,'missing':miss})
 out={'count':len(rows),'rows':rows}
-(ROOT/'icon-only-yellow-analysis.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/icon-only-yellow-analysis.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(out,ensure_ascii=False,indent=2))

@@ -4,10 +4,10 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 ROOT=Path(__file__).resolve().parents[1]
-QUEUE=ROOT/'fragrantica-v2-unmapped.csv'
-CORPUS=ROOT/'fragrantica-scraper-archive'/'perfume_urls.txt'
-OUT=ROOT/'fragrantica-v2-corpus-candidates.csv'
-SUMMARY=ROOT/'fragrantica-v2-corpus-candidates-summary.txt'
+QUEUE=ROOT/'database/audits/fragrantica-v2-unmapped.csv'
+CORPUS=ROOT/'database/fragrantica'/'perfume_urls.txt'
+OUT=ROOT/'database/audits/fragrantica-v2-corpus-candidates.csv'
+SUMMARY=ROOT/'database/audits/fragrantica-v2-corpus-candidates-summary.txt'
 
 # Code suffix -> expected Fragrantica brand slug fragments. Deliberately conservative.
 BRANDS={

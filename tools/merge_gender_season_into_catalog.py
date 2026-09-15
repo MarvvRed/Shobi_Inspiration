@@ -5,9 +5,9 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CATALOG = ROOT / 'database_complete.json'
-EXTRACT = ROOT / 'fragrantica-scraper-archive' / 'social-cards' / 'gender-season.csv'
-REPORT = ROOT / 'fragrantica-scraper-archive' / 'social-cards' / 'catalog-merge-report.md'
+CATALOG = ROOT / 'database/catalog/database_complete.json'
+EXTRACT = ROOT / 'database/fragrantica' / 'social-cards' / 'gender-season.csv'
+REPORT = ROOT / 'database/fragrantica' / 'social-cards' / 'catalog-merge-report.md'
 
 GENDER_MAP = {
     'male': 'masculine',

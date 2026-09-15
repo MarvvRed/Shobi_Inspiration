@@ -633,7 +633,7 @@ function initTheme() {
 async function init() {
     console.log("DEBUG: init() started.");
     try {
-        const response = await fetch('catalog_final_perfume_only.json', { cache: 'no-store' });
+        const response = await fetch('database/catalog/catalog_final_perfume_only.json', { cache: 'no-store' });
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
         // This file contains only the certified wearable-perfume scope; the

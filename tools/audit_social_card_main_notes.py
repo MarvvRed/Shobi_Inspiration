@@ -4,8 +4,8 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / 'database_complete.json'
-OUT = ROOT / 'social-card-main-notes-audit.json'
+DB = ROOT / 'database/catalog/database_complete.json'
+OUT = ROOT / 'database/fragrantica/social-cards/records/social-card-main-notes-audit.json'
 
 def fid_of(p):
     for k in ('fragranticaId','fragrantica_id','fid'):

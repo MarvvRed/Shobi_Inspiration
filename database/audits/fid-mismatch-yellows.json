@@ -1,0 +1,689 @@
+{
+  "count": 21,
+  "rows": [
+    {
+      "code": "2692-SOL",
+      "brand": "Sol de Janeiro",
+      "inspiredBy": "Rio Radiance / Cheirosa 87",
+      "currentFid": "82595",
+      "currentUrl": "https://www.fragrantica.com/p/82595",
+      "currentUrlFid": "",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "76319",
+      "validated": false,
+      "validatedCard": "database/fragrantica/social-cards/images/4653_2692-SOL_76319.jpeg",
+      "validatedNotes": [],
+      "rawFid": "76319",
+      "rawCard": "database/fragrantica/social-cards/images/4653_2692-SOL_76319.jpeg",
+      "currentNotes": [
+        "Coconut Milk",
+        "White Flowers"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "2234-MON",
+      "brand": "moncler",
+      "inspiredBy": "Moncler pour Femme",
+      "currentFid": "69819",
+      "currentUrl": "https://www.fragrantica.com/p/69819",
+      "currentUrlFid": "",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "833",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/873_829-MNTB_833.jpeg",
+      "validatedNotes": [
+        "Cola",
+        "Cinnamon",
+        "Cardamom",
+        "Pineapple",
+        "Heliotrope",
+        "Patchouli"
+      ],
+      "rawFid": "833",
+      "rawCard": "database/fragrantica/social-cards/images/873_829-MNTB_833.jpeg",
+      "currentNotes": [
+        "Powdery Notes",
+        "Vanilla",
+        "Heliotrope",
+        "Sandalwood",
+        "Snow",
+        "Amber"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "2194-ORT",
+      "brand": "Orto Parisi",
+      "inspiredBy": "ORTO",
+      "currentFid": "119473",
+      "currentUrl": "https://www.fragrantica.com/perfume/Al-Qasim-Oud/ORTO-119473.html",
+      "currentUrlFid": "119473",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html",
+      "validatedFid": "69923",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/3732_2194-ORT_69923.jpeg",
+      "validatedNotes": [
+        "Leather",
+        "Animal Notes",
+        "Incense",
+        "Woody Notes",
+        "Cade oil",
+        "Cedar"
+      ],
+      "rawFid": "69923",
+      "rawCard": "database/fragrantica/social-cards/images/3732_2194-ORT_69923.jpeg",
+      "currentNotes": [
+        "Leather",
+        "Animal Notes",
+        "Incense",
+        "Woody Notes",
+        "Cade oil",
+        "Cedar"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes",
+        "season"
+      ]
+    },
+    {
+      "code": "2185-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Eau Sauvage Extreme 2010",
+      "currentFid": "72771",
+      "currentUrl": "https://www.fragrantica.com/perfume/Dior/Eau-Sauvage-Extreme-2010-72771.html",
+      "currentUrlFid": "72771",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "232",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/3681_2185-DRC_232.jpeg",
+      "validatedNotes": [
+        "Lemon",
+        "Lavender",
+        "Rosemary",
+        "Bergamot",
+        "Oakmoss",
+        "Basil"
+      ],
+      "rawFid": "232",
+      "rawCard": "database/fragrantica/social-cards/images/3681_2185-DRC_232.jpeg",
+      "currentNotes": [
+        "Lemon",
+        "Lavender",
+        "Rosemary",
+        "Bergamot",
+        "Oakmoss",
+        "Basil"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "2016-PARELM",
+      "brand": "Parfums d'Elmar",
+      "inspiredBy": "Elixir d'Amour",
+      "currentFid": "50275",
+      "currentUrl": "https://www.fragrantica.com/perfume/Parfums-d-Elmar/Elixir-d-Amour-50275.html",
+      "currentUrlFid": "50275",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "79218",
+      "validated": false,
+      "validatedCard": "database/fragrantica/social-cards/images/3374_2016-PARELM_79218.jpeg",
+      "validatedNotes": [],
+      "rawFid": "79218",
+      "rawCard": "database/fragrantica/social-cards/images/3374_2016-PARELM_79218.jpeg",
+      "currentNotes": [
+        "Agarwood (Oud)",
+        "Fig Leaf",
+        "Raspberry",
+        "Vanilla",
+        "Caramel",
+        "Amber"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "884-RAL",
+      "brand": "Ralph Lauren",
+      "inspiredBy": "Big Pony 2",
+      "currentFid": "9006",
+      "currentUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-9006.html",
+      "currentUrlFid": "9006",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "14446",
+      "validated": false,
+      "validatedCard": "database/fragrantica/social-cards/images/1917_884-RAL_14446.jpeg",
+      "validatedNotes": [],
+      "rawFid": "14446",
+      "rawCard": "database/fragrantica/social-cards/images/1917_884-RAL_14446.jpeg",
+      "currentNotes": [
+        "Cranberry",
+        "Tonka Bean"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "1037-BLG",
+      "brand": "Bvlgari",
+      "inspiredBy": "Bvl Man",
+      "currentFid": "148",
+      "currentUrl": "https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html",
+      "currentUrlFid": "148",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "9403",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/1897_1037-BLG_9403.jpeg",
+      "validatedNotes": [
+        "Vetiver",
+        "Honey",
+        "Woody Notes",
+        "Violet",
+        "Lotus",
+        "Cashmir wood"
+      ],
+      "rawFid": "9403",
+      "rawCard": "database/fragrantica/social-cards/images/1897_1037-BLG_9403.jpeg",
+      "currentNotes": [
+        "Vetiver",
+        "Honey",
+        "Woody Notes",
+        "Violet",
+        "Lotus",
+        "Cashmir wood"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "337-TIFF",
+      "brand": "Tiffany Co",
+      "inspiredBy": "Tiffany  Co Sheer",
+      "currentFid": "12922",
+      "currentUrl": "https://www.fragrantica.com/perfume/Tiffany/Sheer-Tiffany-12922.html",
+      "currentUrlFid": "12922",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "53062",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/1878_337-TIFF_53062.jpeg",
+      "validatedNotes": [
+        "Musk",
+        "Iris",
+        "Petitgrain",
+        "Black Currant",
+        "Rose",
+        "Ylang-Ylang"
+      ],
+      "rawFid": "53062",
+      "rawCard": "database/fragrantica/social-cards/images/1878_337-TIFF_53062.jpeg",
+      "currentNotes": [
+        "Musk",
+        "Iris",
+        "Petitgrain",
+        "Black Currant",
+        "Rose",
+        "Ylang-Ylang"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "153-PARF",
+      "brand": "By Kilian",
+      "inspiredBy": "Straight to Heaven",
+      "currentFid": "4323",
+      "currentUrl": "https://www.fragrantica.com/perfume/By-Kilian/Straight-to-Heaven-4323.html",
+      "currentUrlFid": "4323",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/fragrantica/social-cards/images/1814_153-PARF_4323.jpeg",
+      "validatedFid": "16939",
+      "validated": false,
+      "validatedCard": "database/fragrantica/social-cards/images/unknown_153-PARF_16939.jpeg",
+      "validatedNotes": [],
+      "rawFid": "16939",
+      "rawCard": "database/fragrantica/social-cards/images/unknown_153-PARF_16939.jpeg",
+      "currentNotes": [],
+      "failedChecks": [
+        "socialCard",
+        "notes",
+        "icons"
+      ]
+    },
+    {
+      "code": "917-SWA",
+      "brand": "Swarovski",
+      "inspiredBy": "Aura",
+      "currentFid": "11258",
+      "currentUrl": "https://www.fragrantica.com/perfume/Swarovski/Aura-11258.html",
+      "currentUrlFid": "11258",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "26119",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/953_917-SWA_26119.jpeg",
+      "validatedNotes": [
+        "Incense",
+        "Patchouli",
+        "Amber",
+        "Benzoin",
+        "Rose",
+        "Pink Pepper"
+      ],
+      "rawFid": "26119",
+      "rawCard": "database/fragrantica/social-cards/images/953_917-SWA_26119.jpeg",
+      "currentNotes": [
+        "Incense",
+        "Patchouli",
+        "Amber",
+        "Benzoin",
+        "Rose",
+        "Pink Pepper"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "828-MIY",
+      "brand": "Miu Miu",
+      "inspiredBy": "Miu Miu L Eau Bleue",
+      "currentFid": "42720",
+      "currentUrl": "https://www.fragrantica.com/perfume/Miu-Miu/Miu-Miu-L-Eau-Bleue-42720.html",
+      "currentUrlFid": "42720",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/fragrantica/social-cards/images/872_828-MIY_42720.jpeg",
+      "validatedFid": "724",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/unknown_828-MIY_724.jpeg",
+      "validatedNotes": [
+        "Rosemary",
+        "Cypress",
+        "Bagas de Zimbro",
+        "Lime",
+        "Cedar",
+        "Ginger"
+      ],
+      "rawFid": "724",
+      "rawCard": "database/fragrantica/social-cards/images/unknown_828-MIY_724.jpeg",
+      "currentNotes": [
+        "Rosemary",
+        "Cypress",
+        "Bagas de Zimbro",
+        "Lime",
+        "Cedar",
+        "Ginger"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes",
+        "gender"
+      ]
+    },
+    {
+      "code": "827-MISN",
+      "brand": "Missoni",
+      "inspiredBy": "Missoni",
+      "currentFid": "1069",
+      "currentUrl": "https://www.fragrantica.com/perfume/Missoni/Missoni-1069.html",
+      "currentUrlFid": "1069",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "33017",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/871_827-MISN_33017.jpeg",
+      "validatedNotes": [
+        "Pear",
+        "Floral Notes",
+        "Tonka Bean",
+        "Jasmine",
+        "Citron",
+        "Ambroxan"
+      ],
+      "rawFid": "33017",
+      "rawCard": "database/fragrantica/social-cards/images/871_827-MISN_33017.jpeg",
+      "currentNotes": [
+        "Pear",
+        "Floral Notes",
+        "Tonka Bean",
+        "Jasmine",
+        "Citron",
+        "Ambroxan"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "621-EST",
+      "brand": "Estée Lauder",
+      "inspiredBy": "Bronze Goddess 2011",
+      "currentFid": "11538",
+      "currentUrl": "https://www.fragrantica.com/perfume/Estee-Lauder/Bronze-Goddess-2011-11538.html",
+      "currentUrlFid": "11538",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": null,
+      "validatedFid": "43639",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/unknown_621-EST_43639.jpeg",
+      "validatedNotes": [
+        "Coconut",
+        "Frangipani",
+        "Vanilla",
+        "Cashmir wood",
+        "Jasmine",
+        "Amber"
+      ],
+      "rawFid": "43639",
+      "rawCard": "database/fragrantica/social-cards/images/unknown_621-EST_43639.jpeg",
+      "currentNotes": [
+        "Coconut",
+        "Frangipani",
+        "Vanilla",
+        "Cashmir wood",
+        "Jasmine",
+        "Amber"
+      ],
+      "failedChecks": [
+        "identity",
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "548-CLI",
+      "brand": "Clinique",
+      "inspiredBy": "Happy",
+      "currentFid": "66133",
+      "currentUrl": "https://www.fragrantica.com/perfume/The-Dua-Brand/Happy-66133.html",
+      "currentUrlFid": "66133",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "372",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/638_548-CLI_372.jpeg",
+      "validatedNotes": [
+        "Orange",
+        "Grapefruit",
+        "Mandarin Orange",
+        "Lily-of-the-Valley",
+        "Mimosa",
+        "Bergamot"
+      ],
+      "rawFid": "372",
+      "rawCard": "database/fragrantica/social-cards/images/638_548-CLI_372.jpeg",
+      "currentNotes": [
+        "Orange",
+        "Grapefruit",
+        "Mandarin Orange",
+        "Lily-of-the-Valley",
+        "Mimosa",
+        "Bergamot"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes",
+        "season"
+      ]
+    },
+    {
+      "code": "1248-RAL",
+      "brand": "Ralph Lauren",
+      "inspiredBy": "Polo Red Intense",
+      "currentFid": "29738",
+      "currentUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Red-Intense-29738.html",
+      "currentUrlFid": "29738",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "48482",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/325_1248-RAL_48482.jpeg",
+      "validatedNotes": [
+        "Leather",
+        "Apple",
+        "Lavender",
+        "Musk",
+        "Cedar",
+        "Ginger"
+      ],
+      "rawFid": "48482",
+      "rawCard": "database/fragrantica/social-cards/images/325_1248-RAL_48482.jpeg",
+      "currentNotes": [
+        "Leather",
+        "Apple",
+        "Lavender",
+        "Musk",
+        "Cedar",
+        "Ginger"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "1245-PRA",
+      "brand": "Prada",
+      "inspiredBy": "PRADA AMBER",
+      "currentFid": "1045",
+      "currentUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-1045.html",
+      "currentUrlFid": "1045",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "1044",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/920_882-PRA_1044.jpeg",
+      "validatedNotes": [
+        "Saffron",
+        "Myrrh",
+        "Musk",
+        "Neroli",
+        "Vanilla",
+        "Orange Blossom"
+      ],
+      "rawFid": "1044",
+      "rawCard": "database/fragrantica/social-cards/images/920_882-PRA_1044.jpeg",
+      "currentNotes": [
+        "Saffron",
+        "Myrrh",
+        "Musk",
+        "Neroli",
+        "Vanilla",
+        "Orange Blossom"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "1184-JOO",
+      "brand": "Joop!",
+      "inspiredBy": "Joop! Homme",
+      "currentFid": "1251",
+      "currentUrl": "https://www.fragrantica.com/p/1251",
+      "currentUrlFid": "",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "3100",
+      "validated": false,
+      "validatedCard": "database/fragrantica/social-cards/images/271_1184-JOO_3100.jpeg",
+      "validatedNotes": [],
+      "rawFid": "3100",
+      "rawCard": "database/fragrantica/social-cards/images/271_1184-JOO_3100.jpeg",
+      "currentNotes": [
+        "Civet",
+        "Aldehydes",
+        "Sandalwood",
+        "Jasmine",
+        "Vanilla",
+        "Amber"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "1172-ISS",
+      "brand": "Issey Miyake",
+      "inspiredBy": "L'Eau d'Issey Pour Homme",
+      "currentFid": "79",
+      "currentUrl": "https://www.fragrantica.com/p/79",
+      "currentUrlFid": "",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "721",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/259_1172-ISS_721.jpeg",
+      "validatedNotes": [
+        "Yuzu",
+        "Lemon",
+        "Lotus",
+        "Bergamot",
+        "Vetiver",
+        "Lemon Verbena"
+      ],
+      "rawFid": "721",
+      "rawCard": "database/fragrantica/social-cards/images/259_1172-ISS_721.jpeg",
+      "currentNotes": [
+        "Yuzu",
+        "Lemon",
+        "Lotus",
+        "Bergamot",
+        "Vetiver",
+        "Lemon Verbena"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "1118-FAB",
+      "brand": "Faberge",
+      "inspiredBy": "Brut",
+      "currentFid": "38206",
+      "currentUrl": "https://www.fragrantica.com/perfume/Faberge/Brut-38206.html",
+      "currentUrlFid": "38206",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": null,
+      "validatedFid": "15303",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/unknown_1118-FAB_15303.jpeg",
+      "validatedNotes": [
+        "Lavender",
+        "Anise",
+        "Coumarin",
+        "Musk",
+        "Ylang-Ylang",
+        "Sandalwood"
+      ],
+      "rawFid": "15303",
+      "rawCard": "database/fragrantica/social-cards/images/unknown_1118-FAB_15303.jpeg",
+      "currentNotes": [
+        "Lavender",
+        "Anise",
+        "Coumarin",
+        "Musk",
+        "Ylang-Ylang",
+        "Sandalwood"
+      ],
+      "failedChecks": [
+        "identity",
+        "socialCard",
+        "notes"
+      ]
+    },
+    {
+      "code": "1086-CLI",
+      "brand": "Clinique",
+      "inspiredBy": "Happy",
+      "currentFid": "66133",
+      "currentUrl": "https://www.fragrantica.com/perfume/The-Dua-Brand/Happy-66133.html",
+      "currentUrlFid": "66133",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
+      "validatedFid": "373",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/182_1086-CLI_373.jpeg",
+      "validatedNotes": [
+        "Mandarin Orange",
+        "Lime",
+        "Sea Water",
+        "Lemon",
+        "Green Notes",
+        "Freesia"
+      ],
+      "rawFid": "373",
+      "rawCard": "database/fragrantica/social-cards/images/182_1086-CLI_373.jpeg",
+      "currentNotes": [
+        "Mandarin Orange",
+        "Lime",
+        "Sea Water",
+        "Lemon",
+        "Green Notes",
+        "Freesia"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes",
+        "season"
+      ]
+    },
+    {
+      "code": "1043-CAL",
+      "brand": "Calvin Klein",
+      "inspiredBy": "Calvin Klein",
+      "currentFid": "14606",
+      "currentUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Calvin-Klein-14606.html",
+      "currentUrlFid": "14606",
+      "identityStatus": "CONFIRMED",
+      "verificationSource": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-be-275.html",
+      "validatedFid": "275",
+      "validated": true,
+      "validatedCard": "database/fragrantica/social-cards/images/143_1043-CAL_275.jpeg",
+      "validatedNotes": [
+        "Lavender",
+        "Green Notes"
+      ],
+      "rawFid": "275",
+      "rawCard": "database/fragrantica/social-cards/images/143_1043-CAL_275.jpeg",
+      "currentNotes": [
+        "Lavender",
+        "Green Notes"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ]
+    }
+  ]
+}

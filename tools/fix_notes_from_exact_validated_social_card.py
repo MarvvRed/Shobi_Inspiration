@@ -4,8 +4,8 @@ import json
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'
-VAL=ROOT/'social-card-main-notes-validated.json'
+DB=ROOT/'database/catalog/database_complete.json'
+VAL=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'
 rows=json.loads(DB.read_text(encoding='utf-8-sig'))
 validated={str(x.get('code') or '').strip().upper():x for x in json.loads(VAL.read_text(encoding='utf-8'))}
 changed=[]
@@ -29,5 +29,5 @@ for r in rows:
         r['fragranticaSocialCardVerificationFragranticaId']=fid
         changed.append({'code':c,'fragranticaId':fid,'notes':notes,'card':card})
 DB.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-(ROOT/'exact-validated-social-card-note-fixes.json').write_text(json.dumps({'changed':len(changed),'rows':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/exact-validated-social-card-note-fixes.json').write_text(json.dumps({'changed':len(changed),'rows':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('validated_social_card_note_fixes',len(changed))

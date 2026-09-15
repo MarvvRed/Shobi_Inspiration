@@ -6,8 +6,8 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-RAW=ROOT/'social-card-main-notes.json'; LEX=ROOT/'fragrantica-note-lexicon.txt'
-OUT=ROOT/'social-card-main-notes-validated.json'; REPORT=ROOT/'social-card-main-notes-validation-report.json'
+RAW=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes.json'; LEX=ROOT/'database/audits/fragrantica-note-lexicon.txt'
+OUT=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'; REPORT=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validation-report.json'
 
 def norm(s):
     s=str(s or '').lower().replace('’',"'").replace('–','-').replace('—','-')

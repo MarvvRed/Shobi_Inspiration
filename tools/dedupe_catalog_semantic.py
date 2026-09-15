@@ -3,8 +3,8 @@ import re
 import unicodedata
 from pathlib import Path
 
-DB = Path('database_complete.json')
-REPORT = Path('catalog-semantic-dedupe-report.md')
+DB = Path('database/catalog/database_complete.json')
+REPORT = Path('database/audits/catalog-semantic-dedupe-report.md')
 
 # Verified same-real-perfume duplicates under different Shobi codes / missing codes.
 # Keep the canonical/current code shown on Shobi where available.

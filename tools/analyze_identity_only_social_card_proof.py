@@ -6,9 +6,9 @@ import csv, json, re, unicodedata
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=json.loads((ROOT/'database_complete.json').read_text(encoding='utf-8-sig'))
-SITE=json.loads((ROOT/'catalog_site.json').read_text(encoding='utf-8-sig'))
-GS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'gender-season.csv'
+DB=json.loads((ROOT/'database/catalog/database_complete.json').read_text(encoding='utf-8-sig'))
+SITE=json.loads((ROOT/'database/catalog/catalog_site.json').read_text(encoding='utf-8-sig'))
+GS=ROOT/'database/fragrantica'/'social-cards'/'gender-season.csv'
 
 def norm(s):
     s=unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().lower()
@@ -44,11 +44,11 @@ for db,site in zip(DB,SITE):
 strict=[r for r in out if r['strictProof']]
 remaining=[r for r in out if not r['strictProof']]
 report={'identityOnlyRows':len(out),'strictSocialCardProof':len(strict),'strictCodes':[r['code'] for r in strict],'remainingRows':remaining,'rows':out}
-(ROOT/'identity-only-social-card-proof.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/identity-only-social-card-proof.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 lines=['# Identity-only Social Card proof','',f'- Identity-only yellow rows: **{len(out)}**',f'- Strict exact-ID + local-card + all brand/name tokens visible: **{len(strict)}**','','## Strict proof rows','']
 for r in strict: lines.append(f"- `{r['code']}` — {r['brand']} · {r['inspiredBy']} · FID {r['fragranticaId']} · `{r['card']}`")
 lines += ['','## Remaining rows','']
 for r in remaining:
     lines.append(f"- `{r['code']}` — {r['brand']} · {r['inspiredBy']} — FID **{r['fragranticaId']}** — {r['fragranticaUrl']} — brand {r['brandHits']}/{len(r['brandTokens'])}, name {r['nameHits']}/{len(r['nameTokens'])}")
-(ROOT/'identity-only-social-card-proof.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+(ROOT/'database/audits/identity-only-social-card-proof.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print('identity_only',len(out),'strict_proof',len(strict),'remaining',len(remaining))

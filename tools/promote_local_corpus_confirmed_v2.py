@@ -1,9 +1,9 @@
 import csv,json
 from pathlib import Path
 
-SRC=Path('fragrantica-v2-local-id-reconciliation.csv')
-TARGETS=[Path('database_complete.json'),Path('database_v2_clean.json')]
-REPORT=Path('fragrantica-v2-local-promotion.md')
+SRC=Path('database/audits/fragrantica-v2-local-id-reconciliation.csv')
+TARGETS=[Path('database/catalog/database_complete.json'),Path('database/catalog/database_v2_clean.json')]
+REPORT=Path('database/audits/fragrantica-v2-local-promotion.md')
 
 confirmed={}
 with SRC.open(encoding='utf-8-sig',newline='') as f:
@@ -37,7 +37,7 @@ for path in TARGETS:
         before=(p.get('fragranticaId'),p.get('fragranticaStatus'))
         p['fragranticaId']=v['id']
         p['fragranticaStatus']='VERIFIED_LOCAL_CORPUS_V2'
-        p['fragranticaVerificationSource']='fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
+        p['fragranticaVerificationSource']='database/fragrantica/legacy/original-local-scraper/perfume_urls.txt'
         p['fragranticaLocalUrl']=v['url']
         if before!=(p.get('fragranticaId'),p.get('fragranticaStatus')): changed+=1
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

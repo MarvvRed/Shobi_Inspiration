@@ -3,13 +3,13 @@ import csv, json
 from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-CAT=ROOT/'database_complete.json'
-EX=ROOT/'fragrantica-scraper-archive/social-cards/gender-season.csv'
-CORP=ROOT/'fragrantica-scraper-archive/corpus-match/shobi-fragrantica-corpus-match.csv'
-TERM=ROOT/'fragrantica-scraper-archive/corpus-match/resolved-terminal.csv'
-PEND=ROOT/'fragrantica-scraper-archive/corpus-match/pending-review.csv'
-OUT=ROOT/'fragrantica-scraper-archive/social-cards/catalog-unmatched-classification.csv'
-REP=ROOT/'fragrantica-scraper-archive/social-cards/catalog-unmatched-classification.md'
+CAT=ROOT/'database/catalog/database_complete.json'
+EX=ROOT/'database/fragrantica/social-cards/gender-season.csv'
+CORP=ROOT/'database/fragrantica/corpus-match/shobi-fragrantica-corpus-match.csv'
+TERM=ROOT/'database/fragrantica/corpus-match/resolved-terminal.csv'
+PEND=ROOT/'database/fragrantica/corpus-match/pending-review.csv'
+OUT=ROOT/'database/fragrantica/social-cards/catalog-unmatched-classification.csv'
+REP=ROOT/'database/fragrantica/social-cards/catalog-unmatched-classification.md'
 def code(x): return str(x or '').strip().upper()
 def readcsv(p):
     if not p.exists(): return []

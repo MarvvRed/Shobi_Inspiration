@@ -2,7 +2,7 @@
 import csv,json,re,unicodedata
 from collections import Counter,defaultdict
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];DB=ROOT/'database_v2_clean.json';URLS=ROOT/'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt';OUT=ROOT/'fragrantica-v2-suffix-prior-audit.md'
+ROOT=Path(__file__).resolve().parents[1];DB=ROOT/'database/catalog/database_v2_clean.json';URLS=ROOT/'database/fragrantica/legacy/original-local-scraper/perfume_urls.txt';OUT=ROOT/'database/audits/fragrantica-v2-suffix-prior-audit.md'
 def norm(s):return ' '.join(re.findall(r'[a-z0-9]+',unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().lower()))
 def suffix(c):return norm(str(c or '').rsplit('-',1)[-1]).replace(' ','') if '-' in str(c or '') else ''
 def walk(o):

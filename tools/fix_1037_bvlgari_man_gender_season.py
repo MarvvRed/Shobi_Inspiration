@@ -4,9 +4,9 @@ from pathlib import Path
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'; SITE=ROOT/'catalog_site.json'
-VAL=ROOT/'social-card-main-notes-validated.json'
-GS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'gender-season.csv'
+DB=ROOT/'database/catalog/database_complete.json'; SITE=ROOT/'database/catalog/catalog_site.json'
+VAL=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'
+GS=ROOT/'database/fragrantica'/'social-cards'/'gender-season.csv'
 TARGET='1037-BLG'; FID='9403'
 SEASONS=('winter','spring','summer','fall')
 ROIS={'winter':(0.416,0.835,0.650,0.885),'spring':(0.680,0.835,0.915,0.885),'summer':(0.416,0.900,0.650,0.950),'fall':(0.680,0.900,0.915,0.950)}
@@ -65,5 +65,5 @@ with GS.open('w',encoding='utf-8-sig',newline='') as f:
 DB.write_text(json.dumps(db,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 SITE.write_text(json.dumps(site,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
 report={'code':TARGET,'fid':FID,'gender':'Male','mainSeason':main,'scores':scores,'confidence':conf,'margin':margin,'card':card}
-(ROOT/'fix-1037-bvlgari-man-gender-season.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/fix-1037-bvlgari-man-gender-season.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(report,ensure_ascii=False,indent=2))

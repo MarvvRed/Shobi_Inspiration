@@ -3,7 +3,7 @@ from __future__ import annotations
 import json,urllib.request,time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'; SITE=ROOT/'catalog_site.json'; CARD=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images'; IMAP=ROOT/'perfume-images'/'map.js'; OUT=ROOT/'two-verified-id-corrections.json'
+DB=ROOT/'database/catalog/database_complete.json'; SITE=ROOT/'database/catalog/catalog_site.json'; CARD=ROOT/'database/fragrantica'/'social-cards'/'images'; IMAP=ROOT/'database/assets/perfumes'/'map.js'; OUT=ROOT/'database/audits/two-verified-id-corrections.json'
 FIX={
  '1751-GUL':{'old':'12088','fid':'3681','url':'https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html','brand':'Jean Paul Gaultier','name':'Madame'},
  '928-TRU':{'old':'93471','fid':'16241','url':'https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html','brand':'Trussardi','name':'Delicate Rose'},
@@ -26,14 +26,14 @@ for r,s in zip(db,site):
  card_data=fetch(card_url,'image/jpeg,image/*,*/*;q=0.8')
  if not (card_data.startswith(b'\xff\xd8') and card_data.endswith(b'\xff\xd9')):raise SystemExit(f'Invalid card {c}')
  card_path=CARD/f"verified_{c}_{f['fid']}.jpeg";card_path.write_bytes(card_data)
- image_ok=False;image_path=ROOT/'perfume-images'/f"{f['fid']}.avif"
+ image_ok=False;image_path=ROOT/'database/assets/perfumes'/f"{f['fid']}.avif"
  try:
   data=fetch(image_url,'image/avif,image/*,*/*;q=0.8')
   if len(data)>=1000 and (b'ftypavif' in data[:32] or b'ftypavis' in data[:32]):image_path.write_bytes(data);image_ok=True
  except Exception:pass
  r['fragranticaId']=f['fid'];r['fragranticaUrl']=f['url'];r['fragranticaVerificationSource']=f['url'];r['identityStatus']='CONFIRMED'
  s['fragranticaUrl']=f['url']
- if image_ok:imap[c]=f"perfume-images/{f['fid']}.avif"
+ if image_ok:imap[c]=f"database/assets/perfumes/{f['fid']}.avif"
  # Old notes/gender/season evidence belonged to old ID, so explicitly clear derived values until rebuilt from new card.
  r['fragranticaSocialCardNotes']=[];r['fragranticaSocialCardStatus']='';r['seasons']=[];s['seasons']=[];r['genderStatus']=''
  changes.append({'code':c,'oldFid':old,'newFid':f['fid'],'url':f['url'],'card':str(card_path.relative_to(ROOT)),'image':image_ok})

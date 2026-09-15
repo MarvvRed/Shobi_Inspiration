@@ -1,17 +1,17 @@
 import csv, json, re
 from pathlib import Path
 
-AUDIT=Path('fragrantica-v2-audit.csv')
-OLDDB=Path('perfume-database/archive/database_complete_pre_v2.json')
+AUDIT=Path('database/audits/fragrantica-v2-audit.csv')
+OLDDB=Path('database/archive/archive/database_complete_pre_v2.json')
 FILES=[
- Path('data/shobi-fragrantica-mapping.csv'),
- Path('fragrantica-scraper-archive/corpus-match/source-recovery.csv'),
- Path('fragrantica-scraper-archive/corpus-match/online-resolution-v8.csv'),
- Path('fragrantica-scraper-archive/corpus-match/resolution-audit-batch69.csv'),
- Path('fragrantica-scraper-archive/corpus-match/resolution-audit-batch72.csv'),
+ Path('database/source/shobi-fragrantica-mapping.csv'),
+ Path('database/fragrantica/corpus-match/source-recovery.csv'),
+ Path('database/fragrantica/corpus-match/online-resolution-v8.csv'),
+ Path('database/fragrantica/corpus-match/resolution-audit-batch69.csv'),
+ Path('database/fragrantica/corpus-match/resolution-audit-batch72.csv'),
 ]
-OUT=Path('fragrantica-v2-residual-recovery.csv')
-REPORT=Path('fragrantica-v2-residual-recovery.md')
+OUT=Path('database/audits/fragrantica-v2-residual-recovery.csv')
+REPORT=Path('database/audits/fragrantica-v2-residual-recovery.md')
 
 def s(v): return str(v or '').strip()
 def norm(v): return re.sub(r'[^a-z0-9]+',' ',s(v).lower()).strip()

@@ -2,9 +2,9 @@
 import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DBS=[ROOT/'database_v2_clean.json',ROOT/'database_complete.json']
-URLS=ROOT/'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
-OUT=ROOT/'fragrantica-v2-reviewed-brand-abbreviations.md'
+DBS=[ROOT/'database/catalog/database_v2_clean.json',ROOT/'database/catalog/database_complete.json']
+URLS=ROOT/'database/fragrantica/legacy/original-local-scraper/perfume_urls.txt'
+OUT=ROOT/'database/audits/fragrantica-v2-reviewed-brand-abbreviations.md'
 APPROVED={
  '720-GUL':('427','Jean Paul Gaultier','Classique','exact same-brand title CLASSIQUE'),
  '1629-AL HAR':('70385','Al Haramain Perfumes','Musk Maliki','exact same-brand title MUSK MALIKI'),

@@ -4,7 +4,7 @@ import os
 import tempfile
 from pathlib import Path
 
-PATH = Path("data/shobi-fragrantica-mapping.csv")
+PATH = Path("database/source/shobi-fragrantica-mapping.csv")
 PREFIXES = (
     "No Fragrantica candidate found via public web search",
     "Public search candidate not unique/strong enough",

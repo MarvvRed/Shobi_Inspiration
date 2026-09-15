@@ -1,7 +1,7 @@
 import csv,json
 from pathlib import Path
-DB=Path('database_complete.json')
-MASTER=Path('perfume-database/catalog/shobi-master-v1.csv')
+DB=Path('database/catalog/database_complete.json')
+MASTER=Path('database/archive/catalog/shobi-master-v1.csv')
 TARGET={'2604-JILS','2773-RIT','2783-LTN','2786-LTN','2791-LTN','846-NRO'}
 data=json.loads(DB.read_text(encoding='utf-8'))
 existing={str(p.get('code') or '').strip().upper() for g in data for p in g.get('perfumes',[])}

@@ -8,14 +8,14 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "database_complete.json"
-SITE = ROOT / "catalog_site.json"
-EXCLUSIONS = ROOT / "catalog-scope-exclusions.json"
-SCOPE_AUDIT = ROOT / "catalog-wearable-original-scope-audit.json"
-FINAL = ROOT / "catalog_final_perfume_only.json"
-FINAL_DB = ROOT / "database_final_perfume_only.json"
-CERTIFICATE = ROOT / "final-perfume-catalog-certification.json"
-SUMMARY = ROOT / "FINAL-PERFUME-CATALOG.md"
+DB = ROOT / "database/catalog/database_complete.json"
+SITE = ROOT / "database/catalog/catalog_site.json"
+EXCLUSIONS = ROOT / "database/catalog/catalog-scope-exclusions.json"
+SCOPE_AUDIT = ROOT / "database/catalog/catalog-wearable-original-scope-audit.json"
+FINAL = ROOT / "database/catalog/catalog_final_perfume_only.json"
+FINAL_DB = ROOT / "database/catalog/database_final_perfume_only.json"
+CERTIFICATE = ROOT / "database/catalog/final-perfume-catalog-certification.json"
+SUMMARY = ROOT / "database/audits/FINAL-PERFUME-CATALOG.md"
 
 # These are the only visible rows without the usual complete Fragrantica
 # identity chain.  They are admitted only because the cited primary/archived
@@ -31,7 +31,7 @@ EXCEPTIONS = {
     },
     "1251-ROM": {
         "reason": "Exact archived Fragrantica Social Card for Royal Blue by Romane, FID 21103, visibly labels the bottle as cologne for men.",
-        "source": "fragrantica-scraper-archive/social-cards/images/current_1251-ROM_21103.jpeg",
+        "source": "database/fragrantica/social-cards/images/current_1251-ROM_21103.jpeg",
     },
 }
 
@@ -72,7 +72,7 @@ def main() -> None:
             and url_matches_fid(db.get("fragranticaUrl"), db.get("fragranticaId"))
         )
         exception = EXCEPTIONS.get(product_code)
-        source_ok = db.get("catalogSource") == "shobi-perfumes-live-unique.csv"
+        source_ok = db.get("catalogSource") == "database/source/shobi-perfumes-live-unique.csv"
         shobi_ok = bool(db.get("prestashopProductId")) and bool(db.get("shobiUrl"))
         if not source_ok or not shobi_ok or not (standard_proof or exception):
             failures.append({
@@ -104,7 +104,7 @@ def main() -> None:
         "directFragranticaIdentityProofRows": direct,
         "exceptionRowsWithSpecificEvidence": exceptions,
         "excludedCodes": sorted(excluded),
-        "scopeAudit": "catalog-wearable-original-scope-audit.json",
+        "scopeAudit": "database/catalog/catalog-wearable-original-scope-audit.json",
     }
     FINAL.write_text(json.dumps(final_rows, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     FINAL_DB.write_text(json.dumps(final_db_rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

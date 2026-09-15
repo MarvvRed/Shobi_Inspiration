@@ -2,9 +2,9 @@ import json, re, unicodedata
 from pathlib import Path
 from urllib.parse import urlparse, unquote
 
-DB=Path('database_complete.json')
-CORPUS=Path('fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt')
-OUT=Path('brand-residual-local-audit.md')
+DB=Path('database/catalog/database_complete.json')
+CORPUS=Path('database/fragrantica/legacy/original-local-scraper/perfume_urls.txt')
+OUT=Path('database/audits/brand-residual-local-audit.md')
 rows=json.loads(DB.read_text(encoding='utf-8'))
 
 TARGET_CODES={

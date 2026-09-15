@@ -65,5 +65,5 @@ def patch(path):
   elif c in FID_ONLY:set_fid(p,FID_ONLY[c]);hit.append(c+' (FID only)')
  path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  return hit
-for name in ('database_complete.json','database_v2_clean.json'):
+for name in ('database/catalog/database_complete.json','database/catalog/database_v2_clean.json'):
  p=ROOT/name;print(name,patch(p))

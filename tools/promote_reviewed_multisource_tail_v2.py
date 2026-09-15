@@ -2,9 +2,9 @@
 import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DBS=[ROOT/'database_v2_clean.json',ROOT/'database_complete.json']
-URLS=ROOT/'fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
-OUT=ROOT/'fragrantica-v2-reviewed-multisource-tail.md'
+DBS=[ROOT/'database/catalog/database_v2_clean.json',ROOT/'database/catalog/database_complete.json']
+URLS=ROOT/'database/fragrantica/legacy/original-local-scraper/perfume_urls.txt'
+OUT=ROOT/'database/audits/fragrantica-v2-reviewed-multisource-tail.md'
 APPROVED={
  '1042-CAC':('2036','Cacharel','Cacharel pour L Homme','3 local sources; same Cacharel brand; POUR HOMME is the direct product identity'),
  '923-TMU':('45639','Mugler','Aura Mugler','3 local sources; same Mugler brand; Shobi label explicitly preserves AURA'),

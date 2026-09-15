@@ -30,7 +30,7 @@ jobs:
         run: |
           python - <<'PY'
           import json
-          r=json.load(open('social-card-gender-report.json',encoding='utf-8'))
+          r=json.load(open('database/fragrantica/social-cards/records/social-card-gender-report.json',encoding='utf-8'))
           print(r)
           assert r['official']==2330, r
           # Do not publish a silently incomplete OCR run.
@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add database_complete.json database_v2_clean.json social-card-gender.json social-card-gender-report.json
+          git add database/catalog/database_complete.json database/catalog/database_v2_clean.json database/fragrantica/social-cards/records/social-card-gender.json database/fragrantica/social-cards/records/social-card-gender-report.json
           if ! git diff --cached --quiet; then
             git commit -m "Add gender from Fragrantica social cards"
             git push

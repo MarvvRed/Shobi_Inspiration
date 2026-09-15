@@ -13,7 +13,7 @@ if errorlevel 1 exit /b 1
 
 python tools\shobi_identity_resolver.py stats
 
-git add data\shobi-fragrantica-mapping.csv data\identity-resolver-state.json data\identity-resolver-errors.csv 2>nul
+git add database\source\shobi-fragrantica-mapping.csv database\source\identity-resolver-state.json database\source\identity-resolver-errors.csv 2>nul
 git diff --cached --quiet
 if errorlevel 1 (
   git commit -m "Checkpoint Shobi identities from local PC" || exit /b 1

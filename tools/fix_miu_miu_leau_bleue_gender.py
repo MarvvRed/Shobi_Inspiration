@@ -5,7 +5,7 @@ from pathlib import Path
 from PIL import Image,ImageEnhance,ImageFilter,ImageOps
 import pytesseract
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'; VALID=ROOT/'social-card-main-notes-validated.json'; GS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'gender-season.csv'; OUT=ROOT/'miu-miu-leau-bleue-gender-fix.json'
+DB=ROOT/'database/catalog/database_complete.json'; VALID=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'; GS=ROOT/'database/fragrantica'/'social-cards'/'gender-season.csv'; OUT=ROOT/'database/audits/miu-miu-leau-bleue-gender-fix.json'
 CODE='828-MIY';FID='42720';WEB='https://www.fragrantica.com/perfume/Miu-Miu/Miu-Miu-L-Eau-Bleue-42720.html'
 def code(v):return str(v or '').strip().upper()
 def normocr(t):return re.sub(r'\s+',' ',re.sub(r'[^a-z ]+',' ',t.lower().replace('\n',' '))).strip()

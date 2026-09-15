@@ -1,0 +1,35 @@
+{
+  "changed": 2,
+  "rows": [
+    {
+      "code": "2514-DRC",
+      "fragranticaId": "95863",
+      "mainSeason": "spring",
+      "scores": {
+        "winter": 0.24074074074074073,
+        "spring": 0.2988929889298893,
+        "summer": 0.24814814814814815,
+        "fall": 0.2878228782287823
+      },
+      "confidence": "CLOSE",
+      "margin": 0.011070110701107028,
+      "sourceType": "validated",
+      "source": "database/fragrantica/social-cards/images/4215_unknown_95863.jpeg"
+    },
+    {
+      "code": "2133-FRE",
+      "fragranticaId": "2799",
+      "mainSeason": "fall",
+      "scores": {
+        "winter": 0.337037037037037,
+        "spring": 0.3210332103321033,
+        "summer": 0.13703703703703704,
+        "fall": 0.36162361623616235
+      },
+      "confidence": "MEDIUM",
+      "margin": 0.024586579199125325,
+      "sourceType": "validated",
+      "source": "database/fragrantica/social-cards/images/3567_unknown_2799.jpeg"
+    }
+  ]
+}

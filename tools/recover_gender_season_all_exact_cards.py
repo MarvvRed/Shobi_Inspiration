@@ -6,7 +6,7 @@ from PIL import Image,ImageEnhance,ImageFilter,ImageOps
 import pytesseract
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json';SITE=ROOT/'catalog_site.json';VALID=ROOT/'social-card-main-notes-validated.json';RAW=ROOT/'social-card-main-notes.json';GS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'gender-season.csv';OUT=ROOT/'all-exact-card-gender-season-recovery.json'
+DB=ROOT/'database/catalog/database_complete.json';SITE=ROOT/'database/catalog/catalog_site.json';VALID=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json';RAW=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes.json';GS=ROOT/'database/fragrantica'/'social-cards'/'gender-season.csv';OUT=ROOT/'database/audits/all-exact-card-gender-season-recovery.json'
 SEASONS=('winter','spring','summer','fall');ROIS={'winter':(0.416,0.835,0.650,0.885),'spring':(0.680,0.835,0.915,0.885),'summer':(0.416,0.900,0.650,0.950),'fall':(0.680,0.900,0.915,0.950)};GENDER_ROI=(0.005,0.005,0.995,0.340)
 
 def code(v):return str(v or '').strip().upper()

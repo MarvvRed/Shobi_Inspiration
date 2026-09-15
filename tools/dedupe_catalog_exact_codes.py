@@ -2,8 +2,8 @@ import json
 from pathlib import Path
 from collections import defaultdict
 
-DB = Path('database_complete.json')
-REPORT = Path('catalog-dedupe-report.md')
+DB = Path('database/catalog/database_complete.json')
+REPORT = Path('database/audits/catalog-dedupe-report.md')
 
 # Exact same perfume identity: collapse to the richest row.
 SAFE_CODES = {'1068-CHA', '1270-VAN', '390-ACQ'}

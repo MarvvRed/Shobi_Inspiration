@@ -1,6 +1,6 @@
 import json, sys
 
-PATH='database_complete.json'
+PATH='database/catalog/database_complete.json'
 with open(PATH,encoding='utf-8') as f:
     data=json.load(f)
 

@@ -8,7 +8,7 @@ from PIL import Image,ImageEnhance,ImageFilter,ImageOps
 import pytesseract
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json';SITE=ROOT/'catalog_site.json';VALID=ROOT/'social-card-main-notes-validated.json';LEX=ROOT/'fragrantica-note-lexicon.txt';PAT=ROOT/'validated-note-slot-patterns.json';FETCH=ROOT/'current-fid-card-fetch-report.json';OUT=ROOT/'current-fid-card-multipass-validation.json'
+DB=ROOT/'database/catalog/database_complete.json';SITE=ROOT/'database/catalog/catalog_site.json';VALID=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json';LEX=ROOT/'database/audits/fragrantica-note-lexicon.txt';PAT=ROOT/'database/audits/validated-note-slot-patterns.json';FETCH=ROOT/'database/audits/current-fid-card-fetch-report.json';OUT=ROOT/'database/audits/current-fid-card-multipass-validation.json'
 DRY_RUN=str(os.environ.get('DRY_RUN','0')).strip()=='1'
 CROP_1200=(48,738,448,1097);BANDS=[(145,232),(288,359)];COLS=[(0,133),(133,267),(267,400)]
 

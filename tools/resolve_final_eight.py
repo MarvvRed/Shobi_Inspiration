@@ -3,8 +3,8 @@ import csv,re,unicodedata
 from pathlib import Path
 from urllib.parse import urlparse
 ROOT=Path(__file__).resolve().parents[1]
-CORP=ROOT/'fragrantica-scraper-archive/perfume_urls.txt'
-OUT=ROOT/'fragrantica-final-eight-candidates.csv'
+CORP=ROOT/'database/fragrantica/perfume_urls.txt'
+OUT=ROOT/'database/audits/fragrantica-final-eight-candidates.csv'
 Q={
 '570-DOL':('dolce gabbana',[]),
 '612-ESC':('escada',['turquoise']),

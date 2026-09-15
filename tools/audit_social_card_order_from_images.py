@@ -26,10 +26,10 @@ from pathlib import Path
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "database_complete.json"
-LEXICON = ROOT / "fragrantica-note-lexicon.txt"
-CARD_DIR = ROOT / "fragrantica-scraper-archive" / "social-cards" / "images"
-OUT = ROOT / "social-card-ordered-image-audit.json"
+DB = ROOT / "database/catalog/database_complete.json"
+LEXICON = ROOT / "database/audits/fragrantica-note-lexicon.txt"
+CARD_DIR = ROOT / "database/fragrantica" / "social-cards" / "images"
+OUT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
 
 # Coordinates on the 1200x1200 English card.  This is the entire notes panel;
 # labels are located dynamically, not forced into fixed three-column slots.

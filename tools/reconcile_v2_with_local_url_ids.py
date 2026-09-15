@@ -3,11 +3,11 @@ from pathlib import Path
 from difflib import SequenceMatcher
 from collections import Counter
 
-URLS=Path('fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt')
-IDENT=Path('fragrantica-v2-identity-audit.csv')
-LOCAL=Path('fragrantica-v2-local-url-match.csv')
-OUT=Path('fragrantica-v2-local-id-reconciliation.csv')
-REPORT=Path('fragrantica-v2-local-id-reconciliation.md')
+URLS=Path('database/fragrantica/legacy/original-local-scraper/perfume_urls.txt')
+IDENT=Path('database/audits/fragrantica-v2-identity-audit.csv')
+LOCAL=Path('database/audits/fragrantica-v2-local-url-match.csv')
+OUT=Path('database/audits/fragrantica-v2-local-id-reconciliation.csv')
+REPORT=Path('database/audits/fragrantica-v2-local-id-reconciliation.md')
 
 STOP={'eau','de','parfum','perfume','toilette','edp','edt','for','men','women','man','woman','pour','homme','femme','the','by','and','limited','edition','fragrance'}
 

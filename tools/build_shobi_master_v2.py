@@ -2,9 +2,9 @@ import csv
 import json
 from pathlib import Path
 
-DB = Path('database_complete.json')
-OUT = Path('perfume-database/catalog/shobi-master-v2-2369.csv')
-REPORT = Path('perfume-database/catalog/SHOBI-MASTER-V2-STATUS.md')
+DB = Path('database/catalog/database_complete.json')
+OUT = Path('database/archive/catalog/shobi-master-v2-2369.csv')
+REPORT = Path('database/archive/catalog/SHOBI-MASTER-V2-STATUS.md')
 
 CODE_KEYS = ('Code','code','Shobi Code','shobi_code')
 
@@ -81,7 +81,7 @@ if len(set(codes)) != 2368:
 if len(empty) != 1:
     raise SystemExit(f'ABORT: expected 1 empty-code row, found {len(empty)}')
 
-REPORT.write_text(f'''# Shobi Master v2 status\n\nDate: 2026-09-06\n\n- Official project master: `shobi-master-v2-2369.csv`\n- Rows: **{len(out_rows)}**\n- Unique non-empty Shobi codes: **{len(set(codes))}**\n- Legitimate empty-code rows: **{len(empty)}**\n- Source: verified operational `database_complete.json`\n- Previous `shobi-master-v1.csv` is retained unchanged as historical/source evidence.\n- Backup branch `temporanea` is untouched.\n\n## Governance\n\nThis v2 file is the canonical Shobi perfume universe for the project. Future additions, removals, code changes or identity changes require explicit Shobi evidence (official Shobi page/catalog, Prestashop/Shobi identifier, or documented historical Shobi source). Non-perfume merchandise such as physical candles, home diffusers, room sprays, accessories and body-care products must not be added to this master.\n''', encoding='utf-8')
+REPORT.write_text(f'''# Shobi Master v2 status\n\nDate: 2026-09-06\n\n- Official project master: `shobi-master-v2-2369.csv`\n- Rows: **{len(out_rows)}**\n- Unique non-empty Shobi codes: **{len(set(codes))}**\n- Legitimate empty-code rows: **{len(empty)}**\n- Source: verified operational `database/catalog/database_complete.json`\n- Previous `shobi-master-v1.csv` is retained unchanged as historical/source evidence.\n- Backup branch `temporanea` is untouched.\n\n## Governance\n\nThis v2 file is the canonical Shobi perfume universe for the project. Future additions, removals, code changes or identity changes require explicit Shobi evidence (official Shobi page/catalog, Prestashop/Shobi identifier, or documented historical Shobi source). Non-perfume merchandise such as physical candles, home diffusers, room sprays, accessories and body-care products must not be added to this master.\n''', encoding='utf-8')
 
 print('rows', len(out_rows))
 print('unique_nonempty_codes', len(set(codes)))

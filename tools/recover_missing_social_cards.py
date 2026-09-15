@@ -11,9 +11,9 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "database_complete.json"
-OUT_DIR = ROOT / "fragrantica-scraper-archive" / "social-cards" / "images"
-REPORT = ROOT / "missing-social-card-recovery-report.json"
+DB = ROOT / "database/catalog/database_complete.json"
+OUT_DIR = ROOT / "database/fragrantica" / "social-cards" / "images"
+REPORT = ROOT / "database/audits/missing-social-card-recovery-report.json"
 BASE = "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_{id}.jpeg"
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36"
 TIMEOUT = 30

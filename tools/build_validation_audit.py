@@ -6,14 +6,14 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "database_complete.json"
-SITE = ROOT / "catalog_site.json"
-NOTE_ICON_MAP = ROOT / "public" / "note-icons" / "map.js"
-GENDER_SEASON = ROOT / "fragrantica-scraper-archive" / "social-cards" / "gender-season.csv"
-VALIDATED_NOTES = ROOT / "social-card-main-notes-validated.json"
-RAW_NOTES = ROOT / "social-card-main-notes.json"
-ORDERED_CARD_AUDIT = ROOT / "social-card-ordered-image-audit.json"
-PERFUME_IMAGE_MAP = ROOT / "perfume-images" / "map.js"
+DB = ROOT / "database/catalog/database_complete.json"
+SITE = ROOT / "database/catalog/catalog_site.json"
+NOTE_ICON_MAP = ROOT / "database" / "assets" / "note-icons" / "map.js"
+GENDER_SEASON = ROOT / "database/fragrantica" / "social-cards" / "gender-season.csv"
+VALIDATED_NOTES = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes-validated.json"
+RAW_NOTES = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes.json"
+ORDERED_CARD_AUDIT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
+PERFUME_IMAGE_MAP = ROOT / "database/assets/perfumes" / "map.js"
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
 site_rows = json.loads(SITE.read_text(encoding="utf-8-sig"))
@@ -137,7 +137,7 @@ def exact_social_card(row, fid, notes):
 
 def exact_perfume_image(row, fid):
     path = perfume_images.get(str(row.get("code") or "").strip().upper(), "")
-    return path == "perfume-images/" + fid + ".avif" and (ROOT / path).is_file()
+    return path == "database/assets/perfumes/" + fid + ".avif" and (ROOT / path).is_file()
 
 
 def matched_notes_count(row, fid, notes):
@@ -161,8 +161,8 @@ for row, site in zip(rows, site_rows):
     matching_icons = sum(note_key(note) in local_note_icons for note in notes)
 
     checks = {
-        "shobiProduct": bool(row.get("prestashopProductId")) and bool(row.get("shobiUrl")) and row.get("catalogSource") == "shobi-perfumes-live-unique.csv",
-        "shobiIdentity": bool(row.get("brand")) and bool(row.get("inspiredBy")) and row.get("catalogSource") == "shobi-perfumes-live-unique.csv",
+        "shobiProduct": bool(row.get("prestashopProductId")) and bool(row.get("shobiUrl")) and row.get("catalogSource") == "database/source/shobi-perfumes-live-unique.csv",
+        "shobiIdentity": bool(row.get("brand")) and bool(row.get("inspiredBy")) and row.get("catalogSource") == "database/source/shobi-perfumes-live-unique.csv",
         "identity": yes(row.get("identityStatus")) and bool(row.get("fragranticaVerificationSource")),
         "fid": bool(fid),
         "url": bool(furl) and bool(fid) and parsed_fid == fid,

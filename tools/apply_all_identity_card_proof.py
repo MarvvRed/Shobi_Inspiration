@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'; REPORT=ROOT/'all-identity-card-proof.json'; OUT=ROOT/'all-identity-card-proof-applied.json'
+DB=ROOT/'database/catalog/database_complete.json'; REPORT=ROOT/'database/audits/all-identity-card-proof.json'; OUT=ROOT/'database/audits/all-identity-card-proof-applied.json'
 db=json.loads(DB.read_text(encoding='utf-8-sig')); report=json.loads(REPORT.read_text(encoding='utf-8'))
 strict={str(r.get('code') or '').strip().upper():r for r in report.get('rows',[]) if r.get('strictProof')}
 changed=[]

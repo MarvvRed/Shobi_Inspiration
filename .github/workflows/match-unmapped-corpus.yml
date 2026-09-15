@@ -21,6 +21,6 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add fragrantica-v2-corpus-candidates.csv fragrantica-v2-corpus-candidates-summary.txt
+          git add database/audits/fragrantica-v2-corpus-candidates.csv database/audits/fragrantica-v2-corpus-candidates-summary.txt
           git diff --cached --quiet || git commit -m "Generate Fragrantica corpus candidates"
           git push

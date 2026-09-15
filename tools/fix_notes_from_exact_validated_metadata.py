@@ -8,9 +8,9 @@ import json
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'
-SITE=ROOT/'catalog_site.json'
-VAL=ROOT/'social-card-main-notes-validated.json'
+DB=ROOT/'database/catalog/database_complete.json'
+SITE=ROOT/'database/catalog/catalog_site.json'
+VAL=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'
 rows=json.loads(DB.read_text(encoding='utf-8-sig'))
 site=json.loads(SITE.read_text(encoding='utf-8-sig'))
 validated={str(x.get('code') or '').strip().upper():x for x in json.loads(VAL.read_text(encoding='utf-8'))}
@@ -41,5 +41,5 @@ for db,s in zip(rows,site):
 
 DB.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 SITE.write_text(json.dumps(site,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
-(ROOT/'exact-validated-note-corrections.json').write_text(json.dumps({'changed':len(changes),'rows':changes},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/exact-validated-note-corrections.json').write_text(json.dumps({'changed':len(changes),'rows':changes},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('exact_validated_note_corrections',len(changes))

@@ -4,7 +4,7 @@ on:
     paths:
       - '.github/build-site-database-v2-clean-trigger'
       - 'tools/build_site_database_v2_clean.py'
-      - 'perfume-database/catalog/shobi-master-v2-2369.csv'
+      - 'database/archive/catalog/shobi-master-v2-2369.csv'
   workflow_dispatch:
 permissions:
   contents: write
@@ -22,7 +22,7 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add database_v2_clean.json database-v2-migration-status.md
+          git add database/catalog/database_v2_clean.json database/audits/database-v2-migration-status.md
           git diff --cached --quiet && exit 0
           git commit -m "Build clean 2369-row site database v2"
           git pull --rebase origin main

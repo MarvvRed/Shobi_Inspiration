@@ -3,7 +3,7 @@ from __future__ import annotations
 import json,urllib.request,time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json';SITE=ROOT/'catalog_site.json';VALID=ROOT/'social-card-main-notes-validated.json';RAW=ROOT/'social-card-main-notes.json';IMAP=ROOT/'perfume-images'/'map.js';CARDS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images';OUT=ROOT/'eight-verified-fid-corrections.json'
+DB=ROOT/'database/catalog/database_complete.json';SITE=ROOT/'database/catalog/catalog_site.json';VALID=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json';RAW=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes.json';IMAP=ROOT/'database/assets/perfumes'/'map.js';CARDS=ROOT/'database/fragrantica'/'social-cards'/'images';OUT=ROOT/'database/audits/eight-verified-fid-corrections.json'
 FIX={
  '884-RAL':('9006','14446','https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-for-Women-14446.html'),
  '337-TIFF':('12922','53062','https://www.fragrantica.com/perfume/Tiffany/Tiffany-Co-Sheer-53062.html'),
@@ -30,7 +30,7 @@ def get_image(fid):
  try:data,ctype=fetch(url,'image/avif,image/*,*/*;q=0.8')
  except Exception:return '',url
  if len(data)>=1000 and (b'ftypavif' in data[:32] or b'ftypavis' in data[:32]):
-  p=ROOT/'perfume-images'/f'{fid}.avif';p.write_bytes(data);return str(p.relative_to(ROOT)),url
+  p=ROOT/'database/assets/perfumes'/f'{fid}.avif';p.write_bytes(data);return str(p.relative_to(ROOT)),url
  return '',url
 
 db=json.loads(DB.read_text(encoding='utf-8-sig'));site=json.loads(SITE.read_text(encoding='utf-8-sig'));valid_list=json.loads(VALID.read_text(encoding='utf-8'));raw_list=json.loads(RAW.read_text(encoding='utf-8'));vby={code(x.get('code')):x for x in valid_list};rby={code(x.get('code')):x for x in raw_list};prefix='window.PERFUME_IMAGE_MAP=';txt=IMAP.read_text(encoding='utf-8').strip();imap=json.loads(txt[len(prefix):].rstrip(';'));changes=[]

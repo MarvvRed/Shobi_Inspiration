@@ -1,10 +1,10 @@
 import csv,json
 from pathlib import Path
 
-IDENT=Path('fragrantica-v2-identity-audit.csv')
-WEB=Path('data/fragrantica-v2-web-verified.csv')
-TARGETS=[Path('database_complete.json'),Path('database_v2_clean.json')]
-REPORT=Path('fragrantica-v2-promotion.md')
+IDENT=Path('database/audits/fragrantica-v2-identity-audit.csv')
+WEB=Path('database/source/fragrantica-v2-web-verified.csv')
+TARGETS=[Path('database/catalog/database_complete.json'),Path('database/catalog/database_v2_clean.json')]
+REPORT=Path('database/audits/fragrantica-v2-promotion.md')
 
 verified={}
 with IDENT.open(encoding='utf-8-sig',newline='') as f:
@@ -13,7 +13,7 @@ with IDENT.open(encoding='utf-8-sig',newline='') as f:
             verified[r['shobi_code']]={
                 'id':str(r['fragrantica_id']).strip(),
                 'status':'VERIFIED_ARCHIVE_IDENTITY_V2',
-                'source':'fragrantica-v2-identity-audit.csv'
+                'source':'database/audits/fragrantica-v2-identity-audit.csv'
             }
 with WEB.open(encoding='utf-8-sig',newline='') as f:
     for r in csv.DictReader(f):

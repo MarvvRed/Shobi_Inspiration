@@ -13,12 +13,12 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "database_complete.json"
-SITE = ROOT / "catalog_site.json"
-ORDERED = ROOT / "social-card-ordered-image-audit.json"
-VALIDATED = ROOT / "social-card-main-notes-validated.json"
-JSON_OUT = ROOT / "current-catalog-audit.json"
-MD_OUT = ROOT / "CURRENT-CATALOG-AUDIT.md"
+DB = ROOT / "database/catalog/database_complete.json"
+SITE = ROOT / "database/catalog/catalog_site.json"
+ORDERED = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
+VALIDATED = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes-validated.json"
+JSON_OUT = ROOT / "database/audits/current-catalog-audit.json"
+MD_OUT = ROOT / "database/audits/CURRENT-CATALOG-AUDIT.md"
 
 
 def code(value: object) -> str:

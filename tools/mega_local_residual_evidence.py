@@ -2,13 +2,13 @@
 import csv,re
 from pathlib import Path
 from collections import defaultdict
-ROOT=Path(__file__).resolve().parents[1];MATCH=ROOT/'fragrantica-v2-local-url-match.csv'
+ROOT=Path(__file__).resolve().parents[1];MATCH=ROOT/'database/audits/fragrantica-v2-local-url-match.csv'
 SOURCES=[
- 'fragrantica-v2-local-id-reconciliation.csv','data/shobi-fragrantica-mapping.csv',
- 'fragrantica-scraper-archive/corpus-match/source-recovery.csv',
- 'fragrantica-scraper-archive/corpus-match/online-resolution-v8.csv',
- 'fragrantica-scraper-archive/corpus-match/resolution-audit-batch69.csv',
- 'fragrantica-scraper-archive/corpus-match/resolution-audit-batch72.csv']
+ 'database/audits/fragrantica-v2-local-id-reconciliation.csv','database/source/shobi-fragrantica-mapping.csv',
+ 'database/fragrantica/corpus-match/source-recovery.csv',
+ 'database/fragrantica/corpus-match/online-resolution-v8.csv',
+ 'database/fragrantica/corpus-match/resolution-audit-batch69.csv',
+ 'database/fragrantica/corpus-match/resolution-audit-batch72.csv']
 def first(d,*ks):
  for k in ks:
   if d.get(k) not in (None,''):return str(d[k])
@@ -37,6 +37,6 @@ for r in res:
  for fid,orig in ev[c].items():
   src=sorted(set(x.rsplit(':',2)[0] if ':url' in x else x.rsplit(':',1)[0] for x in orig));out.append({'shobi_code':c,'shobi_name':n,'brand_hint':b,'candidate_id':fid,'independent_sources':len(src),'evidence_score':len(src)*3,'sources':' | '.join(src),'origins':' | '.join(sorted(set(orig)))})
 out.sort(key=lambda x:(-x['evidence_score'],x['shobi_code'],x['candidate_id']));fields=['shobi_code','shobi_name','brand_hint','candidate_id','independent_sources','evidence_score','sources','origins']
-with (ROOT/'fragrantica-v2-mega-local-evidence.csv').open('w',encoding='utf-8',newline='') as f:w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(out)
+with (ROOT/'database/audits/fragrantica-v2-mega-local-evidence.csv').open('w',encoding='utf-8',newline='') as f:w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(out)
 strong=[x for x in out if x['independent_sources']>=2];lines=['# Mega local residual evidence','',f'- Residual rows: **{len(codes)}**',f'- Local evidence files scanned: **{sum(p.exists() for p in files)} / {len(files)}**',f'- Candidate ID records: **{len(out)}**',f'- Candidates supported by >=2 independent local files: **{len(strong)}**','','## Multi-source candidates','']+[f"- `{x['shobi_code']}` — {x['shobi_name']} -> ID {x['candidate_id']} — sources {x['independent_sources']} — {x['sources']}" for x in strong]
-(ROOT/'fragrantica-v2-mega-local-evidence.md').write_text('\n'.join(lines)+'\n',encoding='utf-8');print('residuals',len(codes),'files',sum(p.exists() for p in files),'candidate_records',len(out),'multi_source',len(strong))
+(ROOT/'database/audits/fragrantica-v2-mega-local-evidence.md').write_text('\n'.join(lines)+'\n',encoding='utf-8');print('residuals',len(codes),'files',sum(p.exists() for p in files),'candidate_records',len(out),'multi_source',len(strong))

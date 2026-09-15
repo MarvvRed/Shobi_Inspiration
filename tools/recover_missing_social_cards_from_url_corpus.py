@@ -4,7 +4,7 @@ import json,re,unicodedata,urllib.request
 from pathlib import Path
 from difflib import SequenceMatcher
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'; CORPUS=ROOT/'fragrantica-scraper-archive/perfume_urls.txt'; MISSING=ROOT/'missing-social-card-recovery-report.json'; IMG=ROOT/'fragrantica-scraper-archive/social-cards/images'; OUT=ROOT/'social-card-corpus-recovery-report.json'
+DB=ROOT/'database/catalog/database_complete.json'; CORPUS=ROOT/'database/fragrantica/perfume_urls.txt'; MISSING=ROOT/'database/audits/missing-social-card-recovery-report.json'; IMG=ROOT/'database/fragrantica/social-cards/images'; OUT=ROOT/'database/fragrantica/social-cards/records/social-card-corpus-recovery-report.json'
 BASE='https://fimgs.net/mdimg/perfume-social-cards/en-p_c_{id}.jpeg'; ID_RE=re.compile(r'-(\d+)\.html(?:[?#].*)?$',re.I)
 def norm(s):
  s=unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().lower(); return re.sub(r'[^a-z0-9]+',' ',s).strip()
@@ -47,6 +47,6 @@ def main():
    if d and score>=.94:
     fn=f"corpus_{re.sub(r'[^A-Za-z0-9._-]+','_',code(p) or miss.get('code',''))}_{x['id']}.jpeg"; (IMG/fn).write_bytes(d); chosen=x; recovered+=1; break
   results.append({'code':code(p) or miss.get('code'),'brand':brand(p),'name':name(p),'currentId':old,'candidateCount':len(candidates),'tested':tested,'recoveredId':chosen['id'] if chosen else None,'recoveredUrl':chosen['url'] if chosen else None})
- OUT.write_text(json.dumps({'rule':'Exactly the 18 MISSING entries from missing-social-card-recovery-report.json; local URL corpus only; same normalized brand; no pyramid.','targets':len(missing),'recovered':recovered,'stillUnresolved':len(missing)-recovered,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
+ OUT.write_text(json.dumps({'rule':'Exactly the 18 MISSING entries from database/audits/missing-social-card-recovery-report.json; local URL corpus only; same normalized brand; no pyramid.','targets':len(missing),'recovered':recovered,'stillUnresolved':len(missing)-recovered,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
  print(f'targets={len(missing)} recovered={recovered} unresolved={len(missing)-recovered}')
 if __name__=='__main__':main()

@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "fragrantica-scraper-archive/tools/match_shobi_to_url_corpus.py"
-      - "perfume-database/catalog/shobi-master-v1.csv"
-      - "perfume-database/confirmed/shobi-fragrantica-mapping.csv"
-      - "fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt"
+      - "database/fragrantica/tools/match_shobi_to_url_corpus.py"
+      - "database/archive/catalog/shobi-master-v1.csv"
+      - "database/archive/confirmed/shobi-fragrantica-mapping.csv"
+      - "database/fragrantica/legacy/original-local-scraper/perfume_urls.txt"
 
 permissions:
   contents: write
@@ -33,7 +33,7 @@ jobs:
           python-version: "3.12"
 
       - name: Match Shobi catalog against Fragrantica URL corpus
-        run: python fragrantica-scraper-archive/tools/match_shobi_to_url_corpus.py
+        run: python database/fragrantica/tools/match_shobi_to_url_corpus.py
 
       - name: Commit corpus matching reports
         shell: bash
@@ -42,7 +42,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add fragrantica-scraper-archive/corpus-match/
+          git add database/fragrantica/corpus-match/
 
           if git diff --cached --quiet; then
             echo "No corpus-match changes to commit."

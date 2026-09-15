@@ -4,10 +4,10 @@ import json
 from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=json.loads((ROOT/'database_complete.json').read_text(encoding='utf-8-sig'))
-SITE=json.loads((ROOT/'catalog_site.json').read_text(encoding='utf-8-sig'))
-VAL={str(x.get('code') or '').strip().upper():x for x in json.loads((ROOT/'social-card-main-notes-validated.json').read_text(encoding='utf-8'))}
-RAW={str(x.get('code') or '').strip().upper():x for x in json.loads((ROOT/'social-card-main-notes.json').read_text(encoding='utf-8'))}
+DB=json.loads((ROOT/'database/catalog/database_complete.json').read_text(encoding='utf-8-sig'))
+SITE=json.loads((ROOT/'database/catalog/catalog_site.json').read_text(encoding='utf-8-sig'))
+VAL={str(x.get('code') or '').strip().upper():x for x in json.loads((ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json').read_text(encoding='utf-8'))}
+RAW={str(x.get('code') or '').strip().upper():x for x in json.loads((ROOT/'database/fragrantica/social-cards/records/social-card-main-notes.json').read_text(encoding='utf-8'))}
 
 def classify(db,s):
     c=str(db.get('code') or '').strip().upper(); fid=str(db.get('fragranticaId') or '').strip(); notes=db.get('fragranticaSocialCardNotes') or []
@@ -39,8 +39,8 @@ for db,s in zip(DB,SITE):
     failed=[x for x,v in checks.items() if not v]
     rows.append({'code':db.get('code'),'brand':db.get('brand'),'inspiredBy':db.get('inspiredBy'),'fid':db.get('fragranticaId'),'failedChecks':failed,'kind':k,'notes':db.get('fragranticaSocialCardNotes') or [],'validated':VAL.get(str(db.get('code') or '').strip().upper()),'raw':RAW.get(str(db.get('code') or '').strip().upper())})
 out={'count':len(rows),'kinds':dict(kinds),'rows':rows}
-(ROOT/'social-card-note-yellow-analysis.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/fragrantica/social-cards/records/social-card-note-yellow-analysis.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 lines=['# Social Card / Main Notes yellow analysis','',f'- Rows: **{len(rows)}**']+[f'- `{k}`: **{v}**' for k,v in kinds.most_common()]+['','## Rows','']
 for r in rows:lines.append(f"- `{r['code']}` — {r['kind']} — failed={','.join(r['failedChecks'])} — notes={len(r['notes'])}")
-(ROOT/'social-card-note-yellow-analysis.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+(ROOT/'database/audits/social-card-note-yellow-analysis.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print('social_card_yellows',len(rows),dict(kinds))

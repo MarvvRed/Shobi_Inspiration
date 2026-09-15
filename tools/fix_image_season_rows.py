@@ -5,9 +5,9 @@ from pathlib import Path
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'; SITE=ROOT/'catalog_site.json'
-VAL=ROOT/'social-card-main-notes-validated.json'; GS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'gender-season.csv'
-IMAP=ROOT/'perfume-images'/'map.js'; OUT=ROOT/'image-season-recovery.json'
+DB=ROOT/'database/catalog/database_complete.json'; SITE=ROOT/'database/catalog/catalog_site.json'
+VAL=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'; GS=ROOT/'database/fragrantica'/'social-cards'/'gender-season.csv'
+IMAP=ROOT/'database/assets/perfumes'/'map.js'; OUT=ROOT/'database/audits/image-season-recovery.json'
 SEASONS=('winter','spring','summer','fall')
 ROIS={'winter':(0.416,0.835,0.650,0.885),'spring':(0.680,0.835,0.915,0.885),'summer':(0.416,0.900,0.650,0.950),'fall':(0.680,0.900,0.915,0.950)}
 
@@ -66,18 +66,18 @@ for r,s in zip(db,site):
   print('SKIP proof',c);continue
  scores,main,conf,margin=measure(ROOT/card)
  data,url,err=fetch_image(fid)
- target=ROOT/'perfume-images'/f'{fid}.avif'
+ target=ROOT/'database/assets/perfumes'/f'{fid}.avif'
  if data is None and not (target.is_file() and target.stat().st_size>=1000):
   print('SKIP image',c,err);continue
  if data is not None:
   target.write_bytes(data);time.sleep(.05)
- imap[c]=f'perfume-images/{fid}.avif'
+ imap[c]=f'database/assets/perfumes/{fid}.avif'
  r['seasons']=[main]; s['seasons']=[main]
  rec=by_gs.get(c)
  vals={'prestashop_product_id':str(r.get('prestashopProductId') or ''),'shobi_code':c,'fragrantica_id':fid,'gender':(rec or {}).get('gender',''),'gender_source':(rec or {}).get('gender_source',''),'gender_ocr_text':(rec or {}).get('gender_ocr_text',''),'winter':f"{scores['winter']:.4f}",'spring':f"{scores['spring']:.4f}",'summer':f"{scores['summer']:.4f}",'fall':f"{scores['fall']:.4f}",'main_season':main,'season_confidence':conf,'season_margin':f'{margin:.4f}','local_path':card}
  if rec:rec.update(vals)
  else:gs_rows.append(vals);by_gs[c]=vals
- changes.append({'code':c,'fid':fid,'season':main,'seasonScores':scores,'image':f'perfume-images/{fid}.avif','imageUrl':url,'card':card})
+ changes.append({'code':c,'fid':fid,'season':main,'seasonScores':scores,'image':f'database/assets/perfumes/{fid}.avif','imageUrl':url,'card':card})
 
 with GS.open('w',encoding='utf-8-sig',newline='') as f:
  w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(gs_rows)

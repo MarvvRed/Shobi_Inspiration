@@ -5,9 +5,9 @@ from collections import defaultdict,Counter
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=json.loads((ROOT/'database_complete.json').read_text(encoding='utf-8-sig'))
-SITE=json.loads((ROOT/'catalog_site.json').read_text(encoding='utf-8-sig'))
-VALIDATED=json.loads((ROOT/'social-card-main-notes-validated.json').read_text(encoding='utf-8'))
+DB=json.loads((ROOT/'database/catalog/database_complete.json').read_text(encoding='utf-8-sig'))
+SITE=json.loads((ROOT/'database/catalog/catalog_site.json').read_text(encoding='utf-8-sig'))
+VALIDATED=json.loads((ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json').read_text(encoding='utf-8'))
 
 def code(v):return str(v or '').strip().upper()
 def url_id(url):
@@ -46,11 +46,11 @@ for db,s in zip(DB,SITE):
     rows.append({'code':c,'brand':db.get('brand'),'inspiredBy':db.get('inspiredBy'),'fid':fid,'kind':k,'currentNotes':current,'candidates':candidates,'failedChecks':[x for x,v in checks.items() if not v]})
 
 out={'count':len(rows),'kinds':dict(kinds),'rows':rows}
-(ROOT/'shared-fid-social-card-recovery.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/shared-fid-social-card-recovery.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 lines=['# Shared-FID Social Card recovery','',f'- Social Card failures inspected: **{len(rows)}**']+[f'- `{k}`: **{v}**' for k,v in kinds.most_common()]+['','## Recoverable','']
 for r in rows:
     if r['kind'].startswith('recoverable_'):
         src=r['candidates'][0]
         lines.append(f"- `{r['code']}` — {r['brand']} · {r['inspiredBy']} — FID {r['fid']} — {r['kind']} — source `{src['code']}` `{src['card']}`")
-(ROOT/'shared-fid-social-card-recovery.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+(ROOT/'database/audits/shared-fid-social-card-recovery.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print(json.dumps({'count':len(rows),'kinds':dict(kinds)},ensure_ascii=False))

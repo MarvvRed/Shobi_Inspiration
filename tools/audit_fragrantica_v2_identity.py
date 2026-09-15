@@ -2,10 +2,10 @@ import csv,re
 from difflib import SequenceMatcher
 from pathlib import Path
 
-IN=Path('fragrantica-v2-audit.csv')
-OUT=Path('fragrantica-v2-identity-audit.csv')
-REPORT=Path('fragrantica-v2-identity-audit.md')
-UNMAPPED=Path('fragrantica-v2-unmapped.csv')
+IN=Path('database/audits/fragrantica-v2-audit.csv')
+OUT=Path('database/audits/fragrantica-v2-identity-audit.csv')
+REPORT=Path('database/audits/fragrantica-v2-identity-audit.md')
+UNMAPPED=Path('database/audits/fragrantica-v2-unmapped.csv')
 
 # REVIEW rows manually closed by checking the Shobi identity against the exact
 # Fragrantica perfume/FID. This is deliberately identity-only: Main Notes stay

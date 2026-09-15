@@ -4,8 +4,8 @@ import json,re,math
 from pathlib import Path
 from PIL import Image,ImageOps,ImageDraw,ImageFont
 ROOT=Path(__file__).resolve().parents[1]
-VAL=ROOT/'social-card-main-notes-validated.json'
-CARD_DIR=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images'
+VAL=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'
+CARD_DIR=ROOT/'database/fragrantica'/'social-cards'/'images'
 OUT=ROOT/'social-card-note-review'
 CROP=(40,700,470,1120)
 PER_SHEET=20

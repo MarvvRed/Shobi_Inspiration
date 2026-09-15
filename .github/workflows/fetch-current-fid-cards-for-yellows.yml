@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fragrantica-scraper-archive/social-cards/images/current_*.jpeg current-fid-card-fetch-report.json
+          git add database/fragrantica/social-cards/images/current_*.jpeg database/audits/current-fid-card-fetch-report.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Refresh exact current-FID Social Cards for remaining yellows"
           git pull --rebase origin main

@@ -3,9 +3,9 @@ from __future__ import annotations
 import json,re,urllib.request,urllib.error
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'
-CARD_DIR=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images'
-REPORT=ROOT/'missing-gender-card-recovery.json'
+DB=ROOT/'database/catalog/database_complete.json'
+CARD_DIR=ROOT/'database/fragrantica'/'social-cards'/'images'
+REPORT=ROOT/'database/audits/missing-gender-card-recovery.json'
 
 def flatten(d):
     if isinstance(d,list) and d and isinstance(d[0],dict) and isinstance(d[0].get('perfumes'),list): return [p for b in d for p in b.get('perfumes',[])]

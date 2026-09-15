@@ -1,0 +1,963 @@
+{
+  "identityOnlyRows": 20,
+  "strictSocialCardProof": 0,
+  "strictCodes": [],
+  "remainingRows": [
+    {
+      "code": "2044-LORV",
+      "brand": "Lorenzo Villoresi",
+      "inspiredBy": "Teint de Neige",
+      "fragranticaId": "5079",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lorenzo-Villoresi/Teint-de-Neige-5079.html",
+      "card": "database/fragrantica/social-cards/images/3460_2044-LORV_5079.jpeg",
+      "ocrText": "teint de ne ige lorenzo villoresi eee for women and men main accords powdery",
+      "brandTokens": [
+        "lorenzo",
+        "villoresi"
+      ],
+      "nameTokens": [
+        "teint",
+        "neige"
+      ],
+      "brandHits": 2,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1986-SOO",
+      "brand": "SoOud",
+      "inspiredBy": "Nur",
+      "fragranticaId": "10016",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/SoOud/Nur-10016.html",
+      "card": "database/fragrantica/social-cards/images/3367_1986-SOO_10016.jpeg",
+      "ocrText": "sooud sane for women main accords fy",
+      "brandTokens": [
+        "sooud"
+      ],
+      "nameTokens": [
+        "nur"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1682-HER",
+      "brand": "Hermès",
+      "inspiredBy": "24 Faubourg",
+      "fragranticaId": "27",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/24-Faubourg-27.html",
+      "card": "database/fragrantica/social-cards/images/2415_1682-HER_27.jpeg",
+      "ocrText": "kaubourg ae hermes seen for women main accords white floral ite flora oo a",
+      "brandTokens": [
+        "hermes"
+      ],
+      "nameTokens": [
+        "24",
+        "faubourg"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1126-ARM",
+      "brand": "Giorgio Armani",
+      "inspiredBy": "Acqua di Gio Profondo",
+      "fragranticaId": "59532",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Profondo-59532.html",
+      "card": "database/fragrantica/social-cards/images/2200_1126-ARM_59532.jpeg",
+      "ocrText": "acqua di glo protondo giorgio armani ee for men main accords",
+      "brandTokens": [
+        "giorgio",
+        "armani"
+      ],
+      "nameTokens": [
+        "acqua",
+        "di",
+        "gio",
+        "profondo"
+      ],
+      "brandHits": 2,
+      "nameHits": 3,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1046-CAL",
+      "brand": "Calvin Klein",
+      "inspiredBy": "CK Everyone Eau de Toilette",
+      "fragranticaId": "59021",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-Everyone-Eau-de-Toilette-59021.html",
+      "card": "database/fragrantica/social-cards/images/2091_1046-CAL_59021.jpeg",
+      "ocrText": "ck everyone kau de louette calvin klein ea for women and men ne main accords citrus fy",
+      "brandTokens": [
+        "calvin",
+        "klein"
+      ],
+      "nameTokens": [
+        "ck",
+        "everyone",
+        "toilette"
+      ],
+      "brandHits": 2,
+      "nameHits": 2,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "495-CHA",
+      "brand": "Chanel",
+      "inspiredBy": "Allure Sensuelle",
+      "fragranticaId": "606",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Allure-Sensuelle-606.html",
+      "card": "database/fragrantica/social-cards/images/1789_495-CHA_606.jpeg",
+      "ocrText": "allure sensueltie eee chanel lee for women main accords dit woody",
+      "brandTokens": [
+        "chanel"
+      ],
+      "nameTokens": [
+        "allure",
+        "sensuelle"
+      ],
+      "brandHits": 1,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "943-VER",
+      "brand": "Versace",
+      "inspiredBy": "Bright Crystal",
+      "fragranticaId": "632",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Versace/Bright-Crystal-632.html",
+      "card": "database/fragrantica/social-cards/images/974_943-VER_632.jpeg",
+      "ocrText": "bb n eet f right crysta cael pa versace eee for women main accords pes he s sd ws gere bie",
+      "brandTokens": [
+        "versace"
+      ],
+      "nameTokens": [
+        "bright",
+        "crystal"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "926-TOM",
+      "brand": "Tommy Hilfiger",
+      "inspiredBy": "Tommy Girl",
+      "fragranticaId": "3016",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tommy-Hilfiger/Tommy-Girl-3016.html",
+      "card": "database/fragrantica/social-cards/images/960_926-TOM_3016.jpeg",
+      "ocrText": "dre se tommy gir tommy hilfiger beara for women oy main accords citrus",
+      "brandTokens": [
+        "tommy",
+        "hilfiger"
+      ],
+      "nameTokens": [
+        "tommy",
+        "girl"
+      ],
+      "brandHits": 2,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "912-SHIS",
+      "brand": "Shiseido",
+      "inspiredBy": "Zen",
+      "fragranticaId": "1499",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Shiseido/Zen-1499.html",
+      "card": "database/fragrantica/social-cards/images/948_912-SHIS_1499.jpeg",
+      "ocrText": "ee eat ee aen ee ei oe shiseido tete aets for women main accords ae citrus",
+      "brandTokens": [
+        "shiseido"
+      ],
+      "nameTokens": [
+        "zen"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "850-NIN",
+      "brand": "Nina Ricci",
+      "inspiredBy": "L Air du Temps",
+      "fragranticaId": "1014",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Nina-Ricci/L-Air-du-Temps-1014.html",
+      "card": "database/fragrantica/social-cards/images/892_850-NIN_1014.jpeg",
+      "ocrText": "aw set eate pete lar du lemps nina ricci an for women a main accords tp an eo a e",
+      "brandTokens": [
+        "nina",
+        "ricci"
+      ],
+      "nameTokens": [
+        "air",
+        "temps"
+      ],
+      "brandHits": 2,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "778-LAN",
+      "brand": "Lancôme",
+      "inspiredBy": "Climat",
+      "fragranticaId": "180",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lancome/Climat-180.html",
+      "card": "database/fragrantica/social-cards/images/832_778-LAN_180.jpeg",
+      "ocrText": "ciimat ae lancome gea ee for women main accords white floral",
+      "brandTokens": [
+        "lancome"
+      ],
+      "nameTokens": [
+        "climat"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "751-KEN",
+      "brand": "Kenzo",
+      "inspiredBy": "Jeu d Amour",
+      "fragranticaId": "25866",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kenzo/Jeu-d-Amour-25866.html",
+      "card": "database/fragrantica/social-cards/images/813_751-KEN_25866.jpeg",
+      "ocrText": "nese es yeu damour ae pet bac abe kenzo ears for women main accords tuberose if fs",
+      "brandTokens": [
+        "kenzo"
+      ],
+      "nameTokens": [
+        "jeu",
+        "amour"
+      ],
+      "brandHits": 1,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "696-GLA",
+      "brand": "Guy Laroche",
+      "inspiredBy": "fidji",
+      "fragranticaId": "2068",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/guy-laroche/fidji-2068.html",
+      "card": "database/fragrantica/social-cards/images/765_696-GLA_2068.jpeg",
+      "ocrText": "fidjl kau de louette guy laroche one for women main accords a a",
+      "brandTokens": [
+        "guy",
+        "laroche"
+      ],
+      "nameTokens": [
+        "fidji"
+      ],
+      "brandHits": 2,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "515-CHL",
+      "brand": "Chloe",
+      "inspiredBy": "Nomade",
+      "fragranticaId": "48434",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chloe/Nomade-48434.html",
+      "card": "database/fragrantica/social-cards/images/610_515-CHL_48434.jpeg",
+      "ocrText": "se ine piace ane chloe meer for women main accords a woody",
+      "brandTokens": [
+        "chloe"
+      ],
+      "nameTokens": [
+        "nomade"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "441-BLG",
+      "brand": "Bvlgari",
+      "inspiredBy": "Jasmin Noir",
+      "fragranticaId": "3750",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Jasmin-Noir-3750.html",
+      "card": "database/fragrantica/social-cards/images/547_441-BLG_3750.jpeg",
+      "ocrText": "jasmin noir for women main accords er white floral",
+      "brandTokens": [
+        "bvlgari"
+      ],
+      "nameTokens": [
+        "jasmin",
+        "noir"
+      ],
+      "brandHits": 0,
+      "nameHits": 2,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": false,
+      "nameExactTokens": true,
+      "strictProof": false
+    },
+    {
+      "code": "1284-YZLO",
+      "brand": "Yves Saint Laurent",
+      "inspiredBy": "M7",
+      "fragranticaId": "1031",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/M7-1031.html",
+      "card": "database/fragrantica/social-cards/images/360_1284-YZLO_1031.jpeg",
+      "ocrText": "et m ee yves saint laurent ar ee for men main accords",
+      "brandTokens": [
+        "yves",
+        "saint",
+        "laurent"
+      ],
+      "nameTokens": [
+        "m7"
+      ],
+      "brandHits": 3,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1270-VAN",
+      "brand": "Van Cleef & Arpels",
+      "inspiredBy": "Bois Dore",
+      "fragranticaId": "44864",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Van-Cleef-Arpels/Bois-Dore-44864.html",
+      "card": "database/fragrantica/social-cards/images/346_1270-VAN_44864.jpeg",
+      "ocrText": "a berra chee bos dore ee pera tases van cleef arpels cee for women and men main accords vanilla",
+      "brandTokens": [
+        "van",
+        "cleef",
+        "and",
+        "arpels"
+      ],
+      "nameTokens": [
+        "bois",
+        "dore"
+      ],
+      "brandHits": 4,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1247-RAL",
+      "brand": "Ralph Lauren",
+      "inspiredBy": "Polo Red",
+      "fragranticaId": "18598",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Red-18598.html",
+      "card": "database/fragrantica/social-cards/images/324_1247-RAL_18598.jpeg",
+      "ocrText": "nee polo re er one ata raloh lauren sea for men main accords citrus",
+      "brandTokens": [
+        "ralph",
+        "lauren"
+      ],
+      "nameTokens": [
+        "polo",
+        "red"
+      ],
+      "brandHits": 1,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": false,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1149-GUR",
+      "brand": "Guerlain",
+      "inspiredBy": "L Homme Ideal",
+      "fragranticaId": "25780",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Guerlain/L-Homme-Ideal-25780.html",
+      "card": "database/fragrantica/social-cards/images/239_1149-GUR_25780.jpeg",
+      "ocrText": "lh ideal ee peart omme ide guerlain he ars for men main accords citrus",
+      "brandTokens": [
+        "guerlain"
+      ],
+      "nameTokens": [
+        "homme",
+        "ideal"
+      ],
+      "brandHits": 1,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "390-ACQ",
+      "brand": "Acqua di Parma",
+      "inspiredBy": "Acqua di Parma Blu Mediterraneo Mandorlo di Sicilia",
+      "fragranticaId": "1688",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Acqua-di-Parma/Acqua-di-Parma-Blu-Mediterraneo-Mandorlo-di-Sicilia-1688.html",
+      "card": "database/fragrantica/social-cards/images/106_390-ACQ_1688.jpeg",
+      "ocrText": "acqua dl parma blu mediterraneo mandorio dl oe sicilia os acqua di parma for women and men main accords vanilla",
+      "brandTokens": [
+        "acqua",
+        "di",
+        "parma"
+      ],
+      "nameTokens": [
+        "acqua",
+        "di",
+        "parma",
+        "blu",
+        "mediterraneo",
+        "mandorlo",
+        "di",
+        "sicilia"
+      ],
+      "brandHits": 3,
+      "nameHits": 7,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    }
+  ],
+  "rows": [
+    {
+      "code": "2044-LORV",
+      "brand": "Lorenzo Villoresi",
+      "inspiredBy": "Teint de Neige",
+      "fragranticaId": "5079",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lorenzo-Villoresi/Teint-de-Neige-5079.html",
+      "card": "database/fragrantica/social-cards/images/3460_2044-LORV_5079.jpeg",
+      "ocrText": "teint de ne ige lorenzo villoresi eee for women and men main accords powdery",
+      "brandTokens": [
+        "lorenzo",
+        "villoresi"
+      ],
+      "nameTokens": [
+        "teint",
+        "neige"
+      ],
+      "brandHits": 2,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1986-SOO",
+      "brand": "SoOud",
+      "inspiredBy": "Nur",
+      "fragranticaId": "10016",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/SoOud/Nur-10016.html",
+      "card": "database/fragrantica/social-cards/images/3367_1986-SOO_10016.jpeg",
+      "ocrText": "sooud sane for women main accords fy",
+      "brandTokens": [
+        "sooud"
+      ],
+      "nameTokens": [
+        "nur"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1682-HER",
+      "brand": "Hermès",
+      "inspiredBy": "24 Faubourg",
+      "fragranticaId": "27",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/24-Faubourg-27.html",
+      "card": "database/fragrantica/social-cards/images/2415_1682-HER_27.jpeg",
+      "ocrText": "kaubourg ae hermes seen for women main accords white floral ite flora oo a",
+      "brandTokens": [
+        "hermes"
+      ],
+      "nameTokens": [
+        "24",
+        "faubourg"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1126-ARM",
+      "brand": "Giorgio Armani",
+      "inspiredBy": "Acqua di Gio Profondo",
+      "fragranticaId": "59532",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Profondo-59532.html",
+      "card": "database/fragrantica/social-cards/images/2200_1126-ARM_59532.jpeg",
+      "ocrText": "acqua di glo protondo giorgio armani ee for men main accords",
+      "brandTokens": [
+        "giorgio",
+        "armani"
+      ],
+      "nameTokens": [
+        "acqua",
+        "di",
+        "gio",
+        "profondo"
+      ],
+      "brandHits": 2,
+      "nameHits": 3,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1046-CAL",
+      "brand": "Calvin Klein",
+      "inspiredBy": "CK Everyone Eau de Toilette",
+      "fragranticaId": "59021",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-Everyone-Eau-de-Toilette-59021.html",
+      "card": "database/fragrantica/social-cards/images/2091_1046-CAL_59021.jpeg",
+      "ocrText": "ck everyone kau de louette calvin klein ea for women and men ne main accords citrus fy",
+      "brandTokens": [
+        "calvin",
+        "klein"
+      ],
+      "nameTokens": [
+        "ck",
+        "everyone",
+        "toilette"
+      ],
+      "brandHits": 2,
+      "nameHits": 2,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "495-CHA",
+      "brand": "Chanel",
+      "inspiredBy": "Allure Sensuelle",
+      "fragranticaId": "606",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Allure-Sensuelle-606.html",
+      "card": "database/fragrantica/social-cards/images/1789_495-CHA_606.jpeg",
+      "ocrText": "allure sensueltie eee chanel lee for women main accords dit woody",
+      "brandTokens": [
+        "chanel"
+      ],
+      "nameTokens": [
+        "allure",
+        "sensuelle"
+      ],
+      "brandHits": 1,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "943-VER",
+      "brand": "Versace",
+      "inspiredBy": "Bright Crystal",
+      "fragranticaId": "632",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Versace/Bright-Crystal-632.html",
+      "card": "database/fragrantica/social-cards/images/974_943-VER_632.jpeg",
+      "ocrText": "bb n eet f right crysta cael pa versace eee for women main accords pes he s sd ws gere bie",
+      "brandTokens": [
+        "versace"
+      ],
+      "nameTokens": [
+        "bright",
+        "crystal"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "926-TOM",
+      "brand": "Tommy Hilfiger",
+      "inspiredBy": "Tommy Girl",
+      "fragranticaId": "3016",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tommy-Hilfiger/Tommy-Girl-3016.html",
+      "card": "database/fragrantica/social-cards/images/960_926-TOM_3016.jpeg",
+      "ocrText": "dre se tommy gir tommy hilfiger beara for women oy main accords citrus",
+      "brandTokens": [
+        "tommy",
+        "hilfiger"
+      ],
+      "nameTokens": [
+        "tommy",
+        "girl"
+      ],
+      "brandHits": 2,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "912-SHIS",
+      "brand": "Shiseido",
+      "inspiredBy": "Zen",
+      "fragranticaId": "1499",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Shiseido/Zen-1499.html",
+      "card": "database/fragrantica/social-cards/images/948_912-SHIS_1499.jpeg",
+      "ocrText": "ee eat ee aen ee ei oe shiseido tete aets for women main accords ae citrus",
+      "brandTokens": [
+        "shiseido"
+      ],
+      "nameTokens": [
+        "zen"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "850-NIN",
+      "brand": "Nina Ricci",
+      "inspiredBy": "L Air du Temps",
+      "fragranticaId": "1014",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Nina-Ricci/L-Air-du-Temps-1014.html",
+      "card": "database/fragrantica/social-cards/images/892_850-NIN_1014.jpeg",
+      "ocrText": "aw set eate pete lar du lemps nina ricci an for women a main accords tp an eo a e",
+      "brandTokens": [
+        "nina",
+        "ricci"
+      ],
+      "nameTokens": [
+        "air",
+        "temps"
+      ],
+      "brandHits": 2,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "778-LAN",
+      "brand": "Lancôme",
+      "inspiredBy": "Climat",
+      "fragranticaId": "180",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lancome/Climat-180.html",
+      "card": "database/fragrantica/social-cards/images/832_778-LAN_180.jpeg",
+      "ocrText": "ciimat ae lancome gea ee for women main accords white floral",
+      "brandTokens": [
+        "lancome"
+      ],
+      "nameTokens": [
+        "climat"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "751-KEN",
+      "brand": "Kenzo",
+      "inspiredBy": "Jeu d Amour",
+      "fragranticaId": "25866",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kenzo/Jeu-d-Amour-25866.html",
+      "card": "database/fragrantica/social-cards/images/813_751-KEN_25866.jpeg",
+      "ocrText": "nese es yeu damour ae pet bac abe kenzo ears for women main accords tuberose if fs",
+      "brandTokens": [
+        "kenzo"
+      ],
+      "nameTokens": [
+        "jeu",
+        "amour"
+      ],
+      "brandHits": 1,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "696-GLA",
+      "brand": "Guy Laroche",
+      "inspiredBy": "fidji",
+      "fragranticaId": "2068",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/guy-laroche/fidji-2068.html",
+      "card": "database/fragrantica/social-cards/images/765_696-GLA_2068.jpeg",
+      "ocrText": "fidjl kau de louette guy laroche one for women main accords a a",
+      "brandTokens": [
+        "guy",
+        "laroche"
+      ],
+      "nameTokens": [
+        "fidji"
+      ],
+      "brandHits": 2,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "515-CHL",
+      "brand": "Chloe",
+      "inspiredBy": "Nomade",
+      "fragranticaId": "48434",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chloe/Nomade-48434.html",
+      "card": "database/fragrantica/social-cards/images/610_515-CHL_48434.jpeg",
+      "ocrText": "se ine piace ane chloe meer for women main accords a woody",
+      "brandTokens": [
+        "chloe"
+      ],
+      "nameTokens": [
+        "nomade"
+      ],
+      "brandHits": 1,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "441-BLG",
+      "brand": "Bvlgari",
+      "inspiredBy": "Jasmin Noir",
+      "fragranticaId": "3750",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Jasmin-Noir-3750.html",
+      "card": "database/fragrantica/social-cards/images/547_441-BLG_3750.jpeg",
+      "ocrText": "jasmin noir for women main accords er white floral",
+      "brandTokens": [
+        "bvlgari"
+      ],
+      "nameTokens": [
+        "jasmin",
+        "noir"
+      ],
+      "brandHits": 0,
+      "nameHits": 2,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": false,
+      "nameExactTokens": true,
+      "strictProof": false
+    },
+    {
+      "code": "1284-YZLO",
+      "brand": "Yves Saint Laurent",
+      "inspiredBy": "M7",
+      "fragranticaId": "1031",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/M7-1031.html",
+      "card": "database/fragrantica/social-cards/images/360_1284-YZLO_1031.jpeg",
+      "ocrText": "et m ee yves saint laurent ar ee for men main accords",
+      "brandTokens": [
+        "yves",
+        "saint",
+        "laurent"
+      ],
+      "nameTokens": [
+        "m7"
+      ],
+      "brandHits": 3,
+      "nameHits": 0,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1270-VAN",
+      "brand": "Van Cleef & Arpels",
+      "inspiredBy": "Bois Dore",
+      "fragranticaId": "44864",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Van-Cleef-Arpels/Bois-Dore-44864.html",
+      "card": "database/fragrantica/social-cards/images/346_1270-VAN_44864.jpeg",
+      "ocrText": "a berra chee bos dore ee pera tases van cleef arpels cee for women and men main accords vanilla",
+      "brandTokens": [
+        "van",
+        "cleef",
+        "and",
+        "arpels"
+      ],
+      "nameTokens": [
+        "bois",
+        "dore"
+      ],
+      "brandHits": 4,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1247-RAL",
+      "brand": "Ralph Lauren",
+      "inspiredBy": "Polo Red",
+      "fragranticaId": "18598",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Polo-Red-18598.html",
+      "card": "database/fragrantica/social-cards/images/324_1247-RAL_18598.jpeg",
+      "ocrText": "nee polo re er one ata raloh lauren sea for men main accords citrus",
+      "brandTokens": [
+        "ralph",
+        "lauren"
+      ],
+      "nameTokens": [
+        "polo",
+        "red"
+      ],
+      "brandHits": 1,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": false,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "1149-GUR",
+      "brand": "Guerlain",
+      "inspiredBy": "L Homme Ideal",
+      "fragranticaId": "25780",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Guerlain/L-Homme-Ideal-25780.html",
+      "card": "database/fragrantica/social-cards/images/239_1149-GUR_25780.jpeg",
+      "ocrText": "lh ideal ee peart omme ide guerlain he ars for men main accords citrus",
+      "brandTokens": [
+        "guerlain"
+      ],
+      "nameTokens": [
+        "homme",
+        "ideal"
+      ],
+      "brandHits": 1,
+      "nameHits": 1,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    },
+    {
+      "code": "390-ACQ",
+      "brand": "Acqua di Parma",
+      "inspiredBy": "Acqua di Parma Blu Mediterraneo Mandorlo di Sicilia",
+      "fragranticaId": "1688",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Acqua-di-Parma/Acqua-di-Parma-Blu-Mediterraneo-Mandorlo-di-Sicilia-1688.html",
+      "card": "database/fragrantica/social-cards/images/106_390-ACQ_1688.jpeg",
+      "ocrText": "acqua dl parma blu mediterraneo mandorio dl oe sicilia os acqua di parma for women and men main accords vanilla",
+      "brandTokens": [
+        "acqua",
+        "di",
+        "parma"
+      ],
+      "nameTokens": [
+        "acqua",
+        "di",
+        "parma",
+        "blu",
+        "mediterraneo",
+        "mandorlo",
+        "di",
+        "sicilia"
+      ],
+      "brandHits": 3,
+      "nameHits": 7,
+      "exactId": true,
+      "fileExists": true,
+      "brandExactTokens": true,
+      "nameExactTokens": false,
+      "strictProof": false
+    }
+  ]
+}

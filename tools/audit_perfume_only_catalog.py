@@ -1,6 +1,6 @@
 import json,re
 from collections import Counter
-P='database_complete.json'
+P='database/catalog/database_complete.json'
 D=json.load(open(P,encoding='utf-8'))
 rows=[]
 for g in D:
@@ -37,5 +37,5 @@ out += ['','## Keyword candidates (manual review; product pages may offer home/b
 for r,h in candidates: out.append(f"- {r.get('code','')} | {r['brand']} | {r.get('perfume','')} | hits={h} | {r.get('shobiUrl','')}")
 out += ['','## Unknown/legacy URL forms']
 for r in unknown_urls: out.append(f"- {r.get('code','')} | {r['brand']} | {r.get('perfume','')} | {r.get('shobiUrl','')}")
-open('catalog-perfume-only-audit.md','w',encoding='utf-8').write('\n'.join(out)+'\n')
+open('database/audits/catalog-perfume-only-audit.md','w',encoding='utf-8').write('\n'.join(out)+'\n')
 print('rows',len(rows),'keyword_candidates',len(candidates),'nonperf_urls',len(nonperf_urls),'perfume_urls',len(perfume_urls),'unknown_urls',len(unknown_urls))

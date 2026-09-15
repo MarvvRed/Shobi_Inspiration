@@ -1,11 +1,11 @@
 import csv,json,re,unicodedata
 from pathlib import Path
 
-CSV=Path('fragrantica-v2-local-url-match.csv')
-DIS=Path('fragrantica-v2-local-disambiguation.md')
-URLS=Path('fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt')
-TARGETS=[Path('database_v2_clean.json'),Path('database_complete.json')]
-REPORT=Path('fragrantica-v2-safe-promotion.md')
+CSV=Path('database/audits/fragrantica-v2-local-url-match.csv')
+DIS=Path('database/audits/fragrantica-v2-local-disambiguation.md')
+URLS=Path('database/fragrantica/legacy/original-local-scraper/perfume_urls.txt')
+TARGETS=[Path('database/catalog/database_v2_clean.json'),Path('database/catalog/database_complete.json')]
+REPORT=Path('database/audits/fragrantica-v2-safe-promotion.md')
 
 def norm(s):
     s=unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().lower()
@@ -66,7 +66,7 @@ for path in TARGETS:
             skipped_verified.add(code); continue
         p['fragranticaId']=v['id']
         p['fragranticaStatus']='VERIFIED_LOCAL_CORPUS_V2'
-        p['fragranticaVerificationSource']='fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
+        p['fragranticaVerificationSource']='database/fragrantica/legacy/original-local-scraper/perfume_urls.txt'
         p['fragranticaLocalUrl']=v['url']
         changed+=1; promoted_codes.add(code)
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

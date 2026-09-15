@@ -9,16 +9,16 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-LIVE_CSV = ROOT / "shobi-perfumes-live-unique.csv"
-MASTER = ROOT / "data/shobi-master-v1.csv"
-MAPPING = ROOT / "data/shobi-fragrantica-mapping.csv"
-IDENTITY_REVIEW = ROOT / "data/shobi-identity-review-2026-09-04.csv"
-OLD_SITE = ROOT / "database_complete.json"
-NOTES = ROOT / "social-card-main-notes-validated.json"
-GENDER = ROOT / "social-card-gender.json"
-GENDER_SEASON = ROOT / "fragrantica-scraper-archive/social-cards/gender-season.csv"
-OUTPUT = ROOT / "database_complete.json"
-SITE_OUTPUT = ROOT / "catalog_site.json"
+LIVE_CSV = ROOT / "database/source/shobi-perfumes-live-unique.csv"
+MASTER = ROOT / "database/source/shobi-master-v1.csv"
+MAPPING = ROOT / "database/source/shobi-fragrantica-mapping.csv"
+IDENTITY_REVIEW = ROOT / "database/source/shobi-identity-review-2026-09-04.csv"
+OLD_SITE = ROOT / "database/catalog/database_complete.json"
+NOTES = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes-validated.json"
+GENDER = ROOT / "database/fragrantica/social-cards/records/social-card-gender.json"
+GENDER_SEASON = ROOT / "database/fragrantica/social-cards/gender-season.csv"
+OUTPUT = ROOT / "database/catalog/database_complete.json"
+SITE_OUTPUT = ROOT / "database/catalog/catalog_site.json"
 
 # Corrections individually verified against the Shobi product identity and the
 # corresponding perfume page. These override stale candidate matches in the
@@ -226,7 +226,7 @@ for live in live_rows:
         "fragranticaStatus": mapping.get("fragrantica_status") or old.get("fragranticaStatus") or "NOT_FOUND",
         "identityStatus": mapping.get("identity_status") or "AMBIGUOUS",
         "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
-        "catalogSource": "shobi-perfumes-live-unique.csv",
+        "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     })
 
     note_entry = notes_by_code.get(canonical_code, {})

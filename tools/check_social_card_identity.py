@@ -28,9 +28,9 @@ def find_rows(obj,target):
         if fid==target: out.append(r)
     return out
 
-raw=load('social-card-main-notes.json')
-val=load('social-card-main-notes-validated.json')
-db=load('database_complete.json')
+raw=load('database/fragrantica/social-cards/records/social-card-main-notes.json')
+val=load('database/fragrantica/social-cards/records/social-card-main-notes-validated.json')
+db=load('database/catalog/database_complete.json')
 
 report={
  'rule':'Identity audit only; no database writes. Social-card filename must end in exact Fragrantica ID.',
@@ -38,8 +38,8 @@ report={
 }
 for fid in sorted(TARGETS):
     patterns=[
-      f'fragrantica-scraper-archive/social-cards/images/*_{fid}.jpeg',
-      f'fragrantica-scraper-archive/social-cards/images/*_{fid}.jpg',
+      f'database/fragrantica/social-cards/images/*_{fid}.jpeg',
+      f'database/fragrantica/social-cards/images/*_{fid}.jpg',
       f'fragrantica-social-cards/images/*_{fid}.jpeg',
       f'fragrantica-social-cards/images/*_{fid}.jpg',
     ]
@@ -55,5 +55,5 @@ for fid in sorted(TARGETS):
       'exactSuffixOk':bool(files) and all(os.path.basename(x).rsplit('_',1)[-1].split('.')[0]==str(fid) for x in files),
     }
 
-Path('social-card-identity-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+Path('database/fragrantica/social-cards/records/social-card-identity-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(report,ensure_ascii=False,indent=2))

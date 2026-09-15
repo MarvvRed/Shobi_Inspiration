@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'; VALID=ROOT/'social-card-main-notes-validated.json'; PROOF=ROOT/'existing-notes-current-card-fast-proof.json'; OUT=ROOT/'existing-notes-current-card-fast-applied.json'
+DB=ROOT/'database/catalog/database_complete.json'; VALID=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'; PROOF=ROOT/'database/audits/existing-notes-current-card-fast-proof.json'; OUT=ROOT/'database/audits/existing-notes-current-card-fast-applied.json'
 def code(v): return str(v or '').strip().upper()
 db=json.loads(DB.read_text(encoding='utf-8-sig')); valid=json.loads(VALID.read_text(encoding='utf-8')); proof=json.loads(PROOF.read_text(encoding='utf-8'))
 bydb={code(x.get('code')):x for x in db}; byv={code(x.get('code')):x for x in valid}

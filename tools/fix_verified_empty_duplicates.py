@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-DB=Path('database_complete.json')
+DB=Path('database/catalog/database_complete.json')
 data=json.loads(DB.read_text(encoding='utf-8'))
 
 # Empty-code Prestashop rows independently verified as the same real Shobi

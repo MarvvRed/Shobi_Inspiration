@@ -7,7 +7,7 @@ from PIL import Image,ImageEnhance,ImageFilter,ImageOps
 import pytesseract
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'; SITE=ROOT/'catalog_site.json'; RAW=ROOT/'social-card-main-notes.json'; VALID=ROOT/'social-card-main-notes-validated.json'; LEX=ROOT/'fragrantica-note-lexicon.txt'; OUT=ROOT/'slot-ocr-note-recovery.json'
+DB=ROOT/'database/catalog/database_complete.json'; SITE=ROOT/'database/catalog/catalog_site.json'; RAW=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes.json'; VALID=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'; LEX=ROOT/'database/audits/fragrantica-note-lexicon.txt'; OUT=ROOT/'database/audits/slot-ocr-note-recovery.json'
 CROP_1200=(48,738,448,1097); LABEL_BANDS=[(145,232),(288,359)]; COL_RANGES=[(0,133),(133,267),(267,400)]
 
 def norm(s):

@@ -24,6 +24,6 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add social-card-note-source-audit.md
+          git add database/audits/social-card-note-source-audit.md
           git diff --cached --quiet || git commit -m "Report social card note source"
           git push

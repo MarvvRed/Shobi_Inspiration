@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add database_complete.json catalog_site.json fix-2194-cuoium-gender.json validation-yellow-report.json validation-yellow-report.md
+          git add database/catalog/database_complete.json database/catalog/catalog_site.json database/audits/fix-2194-cuoium-gender.json database/audits/validation-yellow-report.json database/audits/validation-yellow-report.md
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Validate Cuoium gender from exact Social Card"
           git pull --rebase origin main

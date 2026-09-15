@@ -6,8 +6,8 @@ on:
     paths:
       - 'tools/validate_social_card_main_notes.py'
       - '.github/workflows/validate-social-card-main-notes.yml'
-      - 'fragrantica-note-lexicon.txt'
-      - 'social-card-main-notes.json'
+      - 'database/audits/fragrantica-note-lexicon.txt'
+      - 'database/fragrantica/social-cards/records/social-card-main-notes.json'
 
 permissions:
   contents: write
@@ -28,7 +28,7 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add social-card-main-notes-validated.json social-card-main-notes-validation-report.json
+          git add database/fragrantica/social-cards/records/social-card-main-notes-validated.json database/fragrantica/social-cards/records/social-card-main-notes-validation-report.json
           if ! git diff --cached --quiet; then
             git commit -m "Validate ordered main notes from Fragrantica social cards"
             git push

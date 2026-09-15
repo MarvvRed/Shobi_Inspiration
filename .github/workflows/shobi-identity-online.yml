@@ -83,10 +83,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/shobi-fragrantica-mapping.csv || true
-          git add data/identity-resolver-state.json || true
-          git add data/identity-resolver-errors.csv || true
-          git add data/identity-review-queue.csv || true
+          git add database/source/shobi-fragrantica-mapping.csv || true
+          git add database/source/identity-resolver-state.json || true
+          git add database/source/identity-resolver-errors.csv || true
+          git add database/source/identity-review-queue.csv || true
 
           if git diff --cached --quiet; then
             echo "No resolver progress to commit."

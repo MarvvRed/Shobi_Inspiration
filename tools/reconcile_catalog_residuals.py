@@ -1,6 +1,6 @@
 import json,re
 from pathlib import Path
-DB=Path('database_complete.json'); OUT=Path('catalog-residual-reconciliation.md')
+DB=Path('database/catalog/database_complete.json'); OUT=Path('database/audits/catalog-residual-reconciliation.md')
 data=json.loads(DB.read_text(encoding='utf-8'))
 rows=[]
 for g in data:

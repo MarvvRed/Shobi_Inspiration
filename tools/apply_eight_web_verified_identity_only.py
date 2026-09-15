@@ -2,7 +2,7 @@
 import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'
+DB=ROOT/'database/catalog/database_complete.json'
 VERIFIED={
 '2351-LOU':'https://www.fragrantica.com/perfume/Christian-Louboutin/Bikini-Questa-Sera-40982.html',
 '2104-CHA':'https://www.fragrantica.com/perfume/Chanel/1957-Eau-de-Parfum-52483.html',
@@ -29,5 +29,5 @@ for c,url in VERIFIED.items():
     r['fragranticaVerificationFragranticaId']=fid(url)
     changed.append({'code':c,'fid':fid(url),'source':url})
 DB.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-(ROOT/'eight-web-verified-identity-only.json').write_text(json.dumps({'changed':len(changed),'rows':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/eight-web-verified-identity-only.json').write_text(json.dumps({'changed':len(changed),'rows':changed},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({'changed':len(changed),'codes':[x['code'] for x in changed]},ensure_ascii=False))

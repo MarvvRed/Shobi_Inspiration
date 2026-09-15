@@ -7,7 +7,7 @@ import pytesseract
 from pytesseract import Output
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json';SITE=ROOT/'catalog_site.json';CARD_DIR=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images';PAT=ROOT/'validated-note-slot-patterns.json';OUT=ROOT/'existing-notes-current-card-fast-proof.json'
+DB=ROOT/'database/catalog/database_complete.json';SITE=ROOT/'database/catalog/catalog_site.json';CARD_DIR=ROOT/'database/fragrantica'/'social-cards'/'images';PAT=ROOT/'database/audits/validated-note-slot-patterns.json';OUT=ROOT/'database/audits/existing-notes-current-card-fast-proof.json'
 CROP=(48,738,448,1097);BANDS=[(145,232),(288,359)];COLS=[(0,133),(133,267),(267,400)]
 def code(v):return str(v or '').strip().upper()
 def norm(s):

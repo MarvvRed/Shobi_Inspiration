@@ -1,6 +1,6 @@
 import json,csv,re
 from collections import defaultdict
-DB='database_complete.json'; MASTER='perfume-database/catalog/shobi-master-v1.csv'
+DB='database/catalog/database_complete.json'; MASTER='database/archive/catalog/shobi-master-v1.csv'
 d=json.load(open(DB,encoding='utf-8')); rows=[]
 for g in d:
  b=(g.get('brandInfo') or {}).get('name','')
@@ -30,5 +30,5 @@ for r in rows:
  (confirmed if why else residual).append((r,why))
 out=['# Perfume-only master/source crosscheck','',f'- DB rows: **{len(rows)}**',f'- Rows with direct master/Shobi evidence: **{len(confirmed)}**',f'- Residual rows without direct evidence by these fields: **{len(residual)}**','', '## Residual rows']
 for r,w in residual: out.append(f"- {val(r,'code')} | {r.get('brand','')} | {val(r,'perfume','inspiredBy')} | pid={val(r,'prestashopId','prestashop_id','productId','id')} | {val(r,'shobiUrl')}")
-open('catalog-perfume-only-master-crosscheck.md','w',encoding='utf-8').write('\n'.join(out)+'\n')
+open('database/audits/catalog-perfume-only-master-crosscheck.md','w',encoding='utf-8').write('\n'.join(out)+'\n')
 print('rows',len(rows),'confirmed',len(confirmed),'residual',len(residual))

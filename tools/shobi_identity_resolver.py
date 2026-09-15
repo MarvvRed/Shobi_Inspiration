@@ -26,11 +26,11 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-MASTER = Path("data/shobi-master-v1.csv")
-MAPPING = Path("data/shobi-fragrantica-mapping.csv")
-STATE = Path("data/identity-resolver-state.json")
-QUEUE = Path("data/identity-review-queue.csv")
-ERRORS = Path("data/identity-resolver-errors.csv")
+MASTER = Path("database/source/shobi-master-v1.csv")
+MAPPING = Path("database/source/shobi-fragrantica-mapping.csv")
+STATE = Path("database/source/identity-resolver-state.json")
+QUEUE = Path("database/source/identity-review-queue.csv")
+ERRORS = Path("database/source/identity-resolver-errors.csv")
 
 FIELDS = [
     "prestashop_product_id", "shobi_code", "inspired_by", "original_brand",

@@ -5,7 +5,7 @@ from pathlib import Path
 from PIL import Image,ImageEnhance,ImageFilter,ImageOps
 import pytesseract
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json';VALID=ROOT/'social-card-main-notes-validated.json';OUT=ROOT/'fix-2194-cuoium-gender.json';CODE='2194-ORT';FID='69923'
+DB=ROOT/'database/catalog/database_complete.json';VALID=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json';OUT=ROOT/'database/audits/fix-2194-cuoium-gender.json';CODE='2194-ORT';FID='69923'
 def code(v):return str(v or '').strip().upper()
 def norm(t):return re.sub(r'\s+',' ',re.sub(r'[^a-z ]+',' ',str(t or '').lower().replace('\n',' '))).strip()
 def parse(t):

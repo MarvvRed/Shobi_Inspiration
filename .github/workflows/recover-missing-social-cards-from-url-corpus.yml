@@ -21,6 +21,6 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add social-card-corpus-recovery-report.json fragrantica-scraper-archive/social-cards/images/
+          git add database/fragrantica/social-cards/records/social-card-corpus-recovery-report.json database/fragrantica/social-cards/images/
           git diff --cached --quiet || git commit -m 'Recover residual social cards from local URL corpus'
           git push

@@ -3,9 +3,9 @@ from __future__ import annotations
 import json,time,urllib.request,urllib.error
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=json.loads((ROOT/'database_complete.json').read_text(encoding='utf-8-sig'))
-SITE=json.loads((ROOT/'catalog_site.json').read_text(encoding='utf-8-sig'))
-OUTDIR=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images';OUT=ROOT/'current-fid-card-fetch-report.json'
+DB=json.loads((ROOT/'database/catalog/database_complete.json').read_text(encoding='utf-8-sig'))
+SITE=json.loads((ROOT/'database/catalog/catalog_site.json').read_text(encoding='utf-8-sig'))
+OUTDIR=ROOT/'database/fragrantica'/'social-cards'/'images';OUT=ROOT/'database/audits/current-fid-card-fetch-report.json'
 URLS=(
  'https://fimgs.net/mdimg/perfume-social-cards/en-p_c_{fid}.jpeg',
  'https://fimgs.net/mdimg/perfume-social-cards/en-social-{fid}.jpeg',

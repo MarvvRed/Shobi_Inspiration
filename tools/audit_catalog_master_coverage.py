@@ -2,9 +2,9 @@ import csv, json, re, unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 
-DB=Path('database_complete.json')
-MASTER=Path('perfume-database/catalog/shobi-master-v1.csv')
-OUT=Path('catalog-master-coverage-audit.md')
+DB=Path('database/catalog/database_complete.json')
+MASTER=Path('database/archive/catalog/shobi-master-v1.csv')
+OUT=Path('database/audits/catalog-master-coverage-audit.md')
 
 def clean(v): return str(v or '').strip()
 def code(v): return clean(v).upper()

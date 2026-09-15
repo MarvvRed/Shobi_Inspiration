@@ -5,8 +5,8 @@ from pathlib import Path
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 TARGETS={'118-HAM':'27808','325-PECK':'31590','235-HOLL':'4307','1251-ROM':'21103'}
-OUTDIR=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images'
-OUT=ROOT/'final-four-card-refetch.json'
+OUTDIR=ROOT/'database/fragrantica'/'social-cards'/'images'
+OUT=ROOT/'database/audits/final-four-card-refetch.json'
 URLS=(
  'https://fimgs.net/mdimg/perfume-social-cards/en-p_c_{fid}.jpeg',
  'https://fimgs.net/mdimg/perfume-social-cards/en-social-{fid}.jpeg',

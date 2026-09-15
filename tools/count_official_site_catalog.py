@@ -3,9 +3,9 @@ from collections import Counter
 from pathlib import Path
 
 all_rows={}
-out=Path('site-official-count.md')
+out=Path('database/audits/site-official-count.md')
 out.write_text('',encoding='utf-8')
-for filename in ['database_complete.json','database_v2_clean.json']:
+for filename in ['database/catalog/database_complete.json','database/catalog/database_v2_clean.json']:
     data=json.loads(Path(filename).read_text(encoding='utf-8'))
     rows=[]
     if isinstance(data,list) and data and isinstance(data[0],dict) and isinstance(data[0].get('perfumes'),list):
@@ -33,8 +33,8 @@ for filename in ['database_complete.json','database_v2_clean.json']:
             f.write(f'  - `{k or "<empty>"}`: {v}\n')
         f.write('\n')
 
-complete={str(r.get('id') or r.get('code') or ''):r for r in all_rows['database_complete.json']}
-clean={str(r.get('id') or r.get('code') or ''):r for r in all_rows['database_v2_clean.json']}
+complete={str(r.get('id') or r.get('code') or ''):r for r in all_rows['database/catalog/database_complete.json']}
+clean={str(r.get('id') or r.get('code') or ''):r for r in all_rows['database/catalog/database_v2_clean.json']}
 with out.open('a',encoding='utf-8') as f:
     f.write('## Status mismatches\n\n')
     for k in sorted(set(complete)&set(clean)):

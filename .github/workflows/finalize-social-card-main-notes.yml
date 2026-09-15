@@ -5,7 +5,7 @@ on:
     paths:
       - '.github/workflows/finalize-social-card-main-notes.yml'
       - 'tools/finalize_social_card_main_notes.py'
-      - 'social-card-note-review/manual-*.jsonl'
+      - 'database/reviews/social-card-notes/manual-*.jsonl'
 permissions:
   contents: write
 jobs:
@@ -58,7 +58,7 @@ jobs:
         run: |
           python - <<'PY'
           import json
-          for fn in ['database_complete.json','database_v2_clean.json']:
+          for fn in ['database/catalog/database_complete.json','database/catalog/database_v2_clean.json']:
             d=json.load(open(fn,encoding='utf-8')); r=[p for b in d for p in b.get('perfumes',[])] if d and isinstance(d[0],dict) and 'perfumes' in d[0] else d
             assert len(r)==2369,(fn,len(r))
             by={str(p.get('id') or p.get('code')):p for p in r}
@@ -77,7 +77,7 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add database_complete.json database_v2_clean.json script.js social-card-main-notes.json social-card-main-notes-report.json social-card-main-notes-validated.json social-card-main-notes-validation-report.json social-card-main-notes-final-report.json fragrantica-scraper-archive/social-cards/images/
+          git add database/catalog/database_complete.json database/catalog/database_v2_clean.json script.js database/fragrantica/social-cards/records/social-card-main-notes.json database/fragrantica/social-cards/records/social-card-main-notes-report.json database/fragrantica/social-cards/records/social-card-main-notes-validated.json database/fragrantica/social-cards/records/social-card-main-notes-validation-report.json database/fragrantica/social-cards/records/social-card-main-notes-final-report.json database/fragrantica/social-cards/images/
           if ! git diff --cached --quiet; then
             git commit -m 'Finalize Fragrantica social-card Main Notes'
             git push

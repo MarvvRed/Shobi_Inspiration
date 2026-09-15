@@ -8,7 +8,7 @@ DUMPS = [
     ('debug', 'https://raw.githubusercontent.com/david-estrera/fragrance_scraper/master/debug_perfume_page.html'),
     ('inspect', 'https://raw.githubusercontent.com/david-estrera/fragrance_scraper/master/inspect_perfume_page.html'),
 ]
-OUT = Path('social-card-note-source-audit.md')
+OUT = Path('database/audits/social-card-note-source-audit.md')
 UA = 'Mozilla/5.0'
 TERMS = [
     'ingredient','ingredients','note','notes','accord','vote','votes','intensity',

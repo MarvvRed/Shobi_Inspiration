@@ -2,9 +2,9 @@
 import csv,json,re,unicodedata
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DB=json.loads((ROOT/'database_complete.json').read_text(encoding='utf-8-sig'))
-SITE=json.loads((ROOT/'catalog_site.json').read_text(encoding='utf-8-sig'))
-GS=ROOT/'fragrantica-scraper-archive'/'social-cards'/'gender-season.csv'
+DB=json.loads((ROOT/'database/catalog/database_complete.json').read_text(encoding='utf-8-sig'))
+SITE=json.loads((ROOT/'database/catalog/catalog_site.json').read_text(encoding='utf-8-sig'))
+GS=ROOT/'database/fragrantica'/'social-cards'/'gender-season.csv'
 
 def norm(s):
  s=unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().lower().replace('&',' and ')
@@ -26,8 +26,8 @@ for db,site in zip(DB,SITE):
  rows.append({'code':c,'brand':db.get('brand'),'inspiredBy':db.get('inspiredBy'),'fid':fid,'card':card,'ocr':e.get('gender_ocr_text'),'exactIdFile':exact,'brandTokens':bt,'nameTokens':nt,'brandHits':sum(t in ocr for t in bt),'nameHits':sum(t in ocr for t in nt),'strictProof':bool(exact and bo and no)})
 strict=[r for r in rows if r['strictProof']]
 out={'identityFailures':len(rows),'strictCardProof':len(strict),'strictCodes':[r['code'] for r in strict],'rows':rows}
-(ROOT/'all-identity-card-proof.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'database/audits/all-identity-card-proof.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 lines=['# All remaining identity Social Card proof','',f'- Identity failures: **{len(rows)}**',f'- Strict exact-card proofs: **{len(strict)}**','','## Proven rows','']
 for r in strict:lines.append(f"- `{r['code']}` — {r['brand']} · {r['inspiredBy']} · FID {r['fid']} · `{r['card']}`")
-(ROOT/'all-identity-card-proof.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+(ROOT/'database/audits/all-identity-card-proof.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 print('identity',len(rows),'strict',len(strict))

@@ -5,9 +5,9 @@ on:
     paths:
       - 'tools/audit_public_note_icons.py'
       - '.github/workflows/audit-public-note-icons.yml'
-      - 'public/note-icons/**'
-      - 'note-icons/map.js'
-      - 'database_complete.json'
+      - 'database/assets/note-icons/**'
+      - 'database/assets/note-icons/map.js'
+      - 'database/catalog/database_complete.json'
   workflow_dispatch:
 
 permissions:
@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public-note-icons-audit.json public-note-icons-audit.md
+          git add database/audits/public-note-icons-audit.json database/audits/public-note-icons-audit.md
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Audit Fragrantica note icon library"
           git pull --rebase origin main

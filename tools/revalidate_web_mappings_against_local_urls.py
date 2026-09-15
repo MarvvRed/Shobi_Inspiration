@@ -2,9 +2,9 @@ import json,re,unicodedata
 from pathlib import Path
 from difflib import SequenceMatcher
 
-URLS=Path('fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt')
-TARGETS=[Path('database_complete.json'),Path('database_v2_clean.json')]
-REPORT=Path('fragrantica-v2-web-to-local-revalidation.md')
+URLS=Path('database/fragrantica/legacy/original-local-scraper/perfume_urls.txt')
+TARGETS=[Path('database/catalog/database_complete.json'),Path('database/catalog/database_v2_clean.json')]
+REPORT=Path('database/audits/fragrantica-v2-web-to-local-revalidation.md')
 
 STOP={'eau','de','parfum','perfume','toilette','edp','edt','for','men','women','man','woman','pour','homme','femme','the','by','and','limited','edition','fragrance'}
 def norm(s):
@@ -60,7 +60,7 @@ for path in TARGETS:
         ok,fid,u,s,c,name=checks[code]
         if ok:
             p['fragranticaStatus']='VERIFIED_LOCAL_CORPUS_V2'
-            p['fragranticaVerificationSource']='fragrantica-scraper-archive/legacy/original-local-scraper/perfume_urls.txt'
+            p['fragranticaVerificationSource']='database/fragrantica/legacy/original-local-scraper/perfume_urls.txt'
             p['fragranticaLocalUrl']=u[2]
             converted+=1
         else:

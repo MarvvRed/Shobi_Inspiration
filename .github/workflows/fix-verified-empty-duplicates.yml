@@ -19,7 +19,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add database_complete.json
+          git add database/catalog/database_complete.json
           git diff --cached --quiet || git commit -m "Remove verified empty-code duplicate rows"
           git pull --rebase origin main
           git push origin main

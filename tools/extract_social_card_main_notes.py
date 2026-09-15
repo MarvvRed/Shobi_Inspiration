@@ -5,14 +5,14 @@ import argparse, csv, json, re
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-DB=ROOT/'database_complete.json'
-CARD_DIR=ROOT/'fragrantica-scraper-archive'/'social-cards'/'images'
+DB=ROOT/'database/catalog/database_complete.json'
+CARD_DIR=ROOT/'database/fragrantica'/'social-cards'/'images'
 WORK=ROOT/'.social-card-notes-work'
 TIFF=WORK/'social-note-panels.tiff'
 MANIFEST=WORK/'manifest.json'
 TSV=WORK/'ocr.tsv'
-REPORT=ROOT/'social-card-main-notes-report.json'
-OUT_JSON=ROOT/'social-card-main-notes.json'
+REPORT=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-report.json'
+OUT_JSON=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes.json'
 CROP_1200=(48,738,448,1097)
 SCALE=5
 LABEL_BANDS=[(145,232),(288,359)]

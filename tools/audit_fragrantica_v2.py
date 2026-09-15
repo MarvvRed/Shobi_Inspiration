@@ -1,10 +1,10 @@
 import csv,json,re
 from pathlib import Path
 
-MASTER=Path('perfume-database/catalog/shobi-master-v2-2369.csv')
-CORPUS=Path('fragrantica-scraper-archive/corpus-match/shobi-fragrantica-corpus-match.csv')
-OUT=Path('fragrantica-v2-audit.csv')
-REPORT=Path('fragrantica-v2-audit.md')
+MASTER=Path('database/archive/catalog/shobi-master-v2-2369.csv')
+CORPUS=Path('database/fragrantica/corpus-match/shobi-fragrantica-corpus-match.csv')
+OUT=Path('database/audits/fragrantica-v2-audit.csv')
+REPORT=Path('database/audits/fragrantica-v2-audit.md')
 
 def norm(s):
     s=(s or '').lower()

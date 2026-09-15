@@ -4,13 +4,13 @@ import json, shutil
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-DBS=[ROOT/'database_complete.json',ROOT/'database_v2_clean.json']
-CARDS=ROOT/'fragrantica-scraper-archive'/'social-cards'
+DBS=[ROOT/'database/catalog/database_complete.json',ROOT/'database/catalog/database_v2_clean.json']
+CARDS=ROOT/'database/fragrantica'/'social-cards'
 IMAGES=CARDS/'images'
 CAND=CARDS/'candidate-images'
-VALID=ROOT/'social-card-main-notes-validated.json'
+VALID=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-validated.json'
 MANUAL_DIR=ROOT/'social-card-note-review'
-REPORT=ROOT/'social-card-main-notes-final-report.json'
+REPORT=ROOT/'database/fragrantica/social-cards/records/social-card-main-notes-final-report.json'
 
 # Audited identity decisions. These are applied to both canonical databases before
 # Main Notes are merged, so later finalizer runs cannot silently restore stale FIDs.
@@ -48,7 +48,7 @@ def prepare():
             if c in FINAL_IDS:
                 brand,name,f,url,_=FINAL_IDS[c]
                 p['brand']=brand;p['inspiredBy']=name;p['fragranticaId']=f;p['fragranticaUrl']=url
-                p['fragranticaStatus']='VERIFIED_SHOBI_FIRST';p['fragranticaVerificationSource']='social-card-main-notes-final-report.json';seen.add(c)
+                p['fragranticaStatus']='VERIFIED_SHOBI_FIRST';p['fragranticaVerificationSource']='database/fragrantica/social-cards/records/social-card-main-notes-final-report.json';seen.add(c)
             if c in UNAVAILABLE:
                 if fid(p)!=UNAVAILABLE[c]: raise SystemExit(f'{path.name}: unexpected FID for {c}: {fid(p)}')
                 p['fragranticaSocialCardStatus']='SOCIAL_CARD_UNAVAILABLE'
@@ -87,12 +87,12 @@ def merge():
         path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         counts.append({'database':path.name,'official':official,'withMainNotes':with_notes,'socialCardUnavailable':unavail,'withoutMainNotes':official-with_notes})
         if path.name=='database_complete.json': missing_reference=missing
-    if missing_reference is None: raise SystemExit('Canonical database_complete.json missing')
+    if missing_reference is None: raise SystemExit('Canonical database/catalog/database_complete.json missing')
     report={'rule':'Main Notes come only from the left notes box of exact Fragrantica social cards; no accords, pyramid, fallback or inference.',
       'finalIdentityDecisions':{c:v[2] for c,v in FINAL_IDS.items()},'socialCardUnavailable':UNAVAILABLE,
       'validatedOcrFids':len(auto),'manualReviewedFids':len(manual),'mergedFidsWithNotes':len(merged),
       'oudMaracuja83842':{'manualNotes':oud_manual,'ocrRawSlots':oud_raw,'decision':'KEEP_MANUAL_VISUAL_REVIEW'},
-      'databases':counts,'missingReportSource':'database_complete.json','perfumesWithoutMainNotes':missing_reference}
+      'databases':counts,'missingReportSource':'database/catalog/database_complete.json','perfumesWithoutMainNotes':missing_reference}
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps(report,ensure_ascii=False,indent=2))
 
 if __name__=='__main__':

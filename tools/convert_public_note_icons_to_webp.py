@@ -4,7 +4,7 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-DIR = ROOT / "public" / "note-icons"
+DIR = ROOT / "database" / "assets" / "note-icons"
 INDEX = DIR / "index.json"
 UPLOAD = DIR / "ChatGPT Image 14 set 2026, 15_12_30.png"
 MELBATON_WEBP = DIR / "melbaton-1743.webp"
@@ -91,7 +91,7 @@ if missing:
     report += ["", "## Missing", *[f"- {x}" for x in missing]]
 if corrupt:
     report += ["", "## Corrupt", *[f"- {x}" for x in corrupt]]
-(ROOT / "public-note-icons-webp-report.md").write_text("\n".join(report) + "\n", encoding="utf-8")
+(ROOT / "database/audits/public-note-icons-webp-report.md").write_text("\n".join(report) + "\n", encoding="utf-8")
 
 print(f"records={len(records)} webp={len(webps)} non_web={len(non_web_images)} missing={len(missing)} corrupt={len(corrupt)}")
 if non_web_images or missing or corrupt or len(webps) != len(records):

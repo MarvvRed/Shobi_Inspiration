@@ -23,7 +23,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add all-identity-card-proof.json all-identity-card-proof.md
+          git add database/audits/all-identity-card-proof.json database/audits/all-identity-card-proof.md
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Publish strict identity proof for remaining yellows"
           git pull --rebase origin main
