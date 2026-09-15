@@ -14,6 +14,9 @@ on:
       - 'database/source/**'
       - 'database/fragrantica/social-cards/records/**'
       - 'database/audits/identity-change-allowlist.json'
+      - 'database/audits/critical-identity-fixes.json'
+      - 'database/audits/critical-identity-regression-registry.json'
+      - 'database/audits/shared-fid-alias-registry.json'
 
 concurrency:
   group: shobi-catalog-write-${{ github.ref }}
