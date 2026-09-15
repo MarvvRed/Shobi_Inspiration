@@ -9,14 +9,20 @@ on:
       - 'tools/build_live_site_from_shobi_csv.py'
       - 'tools/build_validation_audit.py'
       - 'tools/build_final_perfume_catalog.py'
+      - 'tools/verify_catalog_invariants.py'
       - 'database/catalog/**'
       - 'database/source/**'
       - 'database/fragrantica/social-cards/records/**'
       - 'database/assets/note-icons/**'
       - 'database/audits/display-identity-hygiene-audit.json'
+      - 'database/audits/identity-change-allowlist.json'
 
 permissions:
   contents: write
+
+concurrency:
+  group: shobi-catalog-write-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   publish-catalog:
@@ -81,6 +87,9 @@ jobs:
       - name: Build certified perfume-only public catalog
         run: python tools/build_final_perfume_catalog.py
 
+      - name: Independent green/FID/identity safety gate
+        run: python tools/verify_catalog_invariants.py --baseline-ref HEAD --write-report
+
       - name: Validate website catalog
         run: |
           python - <<'PY'
@@ -144,7 +153,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add database/catalog/database_complete.json database/catalog/catalog_site.json database/catalog/catalog_final_perfume_only.json database/catalog/database_final_perfume_only.json database/catalog/final-perfume-catalog-certification.json database/audits/FINAL-PERFUME-CATALOG.md database/catalog/catalog-scope-exclusions.json database/catalog/catalog-wearable-original-scope-audit.json database/fragrantica/social-cards/records/social-card-main-notes-validated.json database/fragrantica/social-cards/records/social-card-ordered-image-audit.json database/audits/strict-ordered-card-corrections.json script.js index.html tools/build_final_perfume_catalog.py
+          git add database/catalog/database_complete.json database/catalog/catalog_site.json database/catalog/catalog_final_perfume_only.json database/catalog/database_final_perfume_only.json database/catalog/final-perfume-catalog-certification.json database/audits/FINAL-PERFUME-CATALOG.md database/audits/CURRENT-CATALOG-AUDIT.md database/catalog/catalog-scope-exclusions.json database/catalog/catalog-wearable-original-scope-audit.json database/fragrantica/social-cards/records/social-card-main-notes-validated.json database/fragrantica/social-cards/records/social-card-ordered-image-audit.json database/audits/strict-ordered-card-corrections.json script.js index.html tools/build_final_perfume_catalog.py
           if git diff --cached --quiet; then
             echo 'No website catalog changes.'
             exit 0
