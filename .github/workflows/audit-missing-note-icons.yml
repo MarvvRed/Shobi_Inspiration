@@ -1,0 +1,39 @@
+name: Audit missing note icons
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-missing-note-icons.yml'
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Show icon-only validation gaps
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          prefix = 'window.FRAGRANTICA_NOTE_ICON_MAP='
+          text = Path('database/assets/note-icons/map.js').read_text(encoding='utf-8').strip()
+          icons = json.loads(text[len(prefix):].rstrip(';'))
+          site = json.load(open('database/catalog/catalog_site.json', encoding='utf-8'))
+          targets = []
+          for row in site:
+              checks = row.get('validationChecks') or {}
+              failed = [k for k,v in checks.items() if not v]
+              if failed != ['icons']:
+                  continue
+              notes = row.get('fragranticaSocialCardNotes') or []
+              missing = [n for n in notes if ' '.join(str(n).strip().lower().split()) not in icons]
+              targets.append({'code':row.get('code'),'brand':row.get('brand'),'name':row.get('inspiredBy'),'notes':notes,'missingIcons':missing})
+          print(json.dumps(targets, ensure_ascii=False, indent=2))
+          assert len(targets) == 6, f'Expected 6 icon-only yellows, got {len(targets)}'
+          PY
