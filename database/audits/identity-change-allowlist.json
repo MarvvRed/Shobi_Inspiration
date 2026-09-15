@@ -67,6 +67,36 @@
       "reason": "Verified Fragrantica FID 988 canonical identity: Eclat d'Arpège."
     },
     {
+      "code": "1751-GUL",
+      "from": {"brand": "Jean Paul Gaultier", "name": "Madame", "fid": "12088"},
+      "to": {"brand": "Jean Paul Gaultier", "name": "Ma Dame", "fid": "3681"},
+      "reason": "Exact generated-catalog transition: FID 12088 was Cortina 1224 Madame; archived correction evidence establishes Jean Paul Gaultier Ma Dame, FID 3681."
+    },
+    {
+      "code": "928-TRU",
+      "from": {"brand": "Trussardi", "name": "Delicate Rose", "fid": "93471"},
+      "to": {"brand": "Trussardi", "name": "Trussardi Delicate Rose", "fid": "16241"},
+      "reason": "Exact generated-catalog transition: FID 93471 was Aurora Scents Delicate Rose; archived correction evidence establishes Trussardi Delicate Rose, FID 16241."
+    },
+    {
+      "code": "548-CLI",
+      "from": {"brand": "Clinique", "name": "Happy", "fid": "66133"},
+      "to": {"brand": "Clinique", "name": "Clinique Happy", "fid": "372"},
+      "reason": "Exact generated-catalog transition: FID 66133 was The Dua Brand Happy; archived correction evidence establishes Clinique Happy, FID 372."
+    },
+    {
+      "code": "1086-CLI",
+      "from": {"brand": "Clinique", "name": "Happy", "fid": "66133"},
+      "to": {"brand": "Clinique", "name": "Clinique Happy For Men", "fid": "373"},
+      "reason": "Exact generated-catalog transition: FID 66133 was The Dua Brand Happy; archived correction evidence establishes Clinique Happy For Men, FID 373."
+    },
+    {
+      "code": "2194-ORT",
+      "from": {"brand": "Orto Parisi", "name": "ORTO", "fid": "119473"},
+      "to": {"brand": "Orto Parisi", "name": "Cuoium", "fid": "69923"},
+      "reason": "Exact generated-catalog transition: FID 119473 was Al Qasim Oud ORTO; archived correction evidence establishes Orto Parisi Cuoium, FID 69923."
+    },
+    {
       "code": "822-MIC",
       "from": {"brand": "Michael Kors", "name": "Sexy Ruby Glam Ruby", "fid": "46182"},
       "to": {"brand": "Michael Kors", "name": "Sexy Ruby", "fid": "46182"},
