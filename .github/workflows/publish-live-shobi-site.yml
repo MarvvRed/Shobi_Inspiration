@@ -89,12 +89,13 @@ jobs:
           final_rows = json.load(open('database/catalog/catalog_final_perfume_only.json', encoding='utf-8'))
           final_db_rows = json.load(open('database/catalog/database_final_perfume_only.json', encoding='utf-8'))
           exclusions = json.load(open('database/catalog/catalog-scope-exclusions.json', encoding='utf-8'))['codes']
-          assert len(rows) == 2324
-          assert len(site_rows) == 2324
+          assert len(rows) == 2320
+          assert len(site_rows) == 2320
           assert len(final_rows) == 2253
           assert len(final_db_rows) == 2253
-          assert len({r['prestashopProductId'] for r in rows}) == 2324
-          assert len({r['shobiUrl'] for r in rows}) == 2324
+          assert len({r['code'] for r in rows}) == 2320
+          assert len({r['prestashopProductId'] for r in rows}) == 2320
+          assert len({r['shobiUrl'] for r in rows}) == 2320
           assert not any(str(r.get('reference', '')).upper().startswith('MIX') for r in rows)
           assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in rows)
           assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in site_rows)

@@ -11,6 +11,13 @@
     "Collapsed four duplicate live Shobi category listings that have distinct Shobi page IDs but the same code and verified original perfume."
   ],
   "confirmedOutOfScopeCount": 67,
+  "operationalUniqueShobiRows": 2320,
+  "crossListedShobiListingsCollapsed": [
+    {"code": "1270-VAN", "keptPrestashopProductId": "346", "removedPrestashopProductIds": ["971"]},
+    {"code": "777-LAL", "keptPrestashopProductId": "284", "removedPrestashopProductIds": ["831"]},
+    {"code": "1068-CHA", "keptPrestashopProductId": "165", "removedPrestashopProductIds": ["591"]},
+    {"code": "390-ACQ", "keptPrestashopProductId": "106", "removedPrestashopProductIds": ["502"]}
+  ],
   "projectedPublicRowsAfterConfirmedExclusions": 2257,
   "projectedUniquePublicRowsAfterDuplicateCollapse": 2253,
   "confirmedOutOfScopeGroups": {

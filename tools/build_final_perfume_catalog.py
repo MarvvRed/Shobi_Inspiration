@@ -101,7 +101,7 @@ def main() -> None:
             continue
         eligible.append((db, site, exception))
 
-    expected = scope.get("projectedPublicRowsAfterConfirmedExclusions")
+    expected = scope.get("projectedUniquePublicRowsAfterDuplicateCollapse")
     if failures or len(eligible) != expected:
         raise SystemExit(json.dumps({"failures": failures, "eligibleRows": len(eligible), "expected": expected}, ensure_ascii=False))
 
@@ -136,16 +136,16 @@ def main() -> None:
         final_rows.append(site)
         final_db_rows.append(db)
 
-    unique_expected = scope.get("projectedUniquePublicRowsAfterDuplicateCollapse")
-    if failures or len(final_rows) != unique_expected:
-        raise SystemExit(json.dumps({"failures": failures, "finalRows": len(final_rows), "expected": unique_expected}, ensure_ascii=False))
+    if failures or len(final_rows) != expected:
+        raise SystemExit(json.dumps({"failures": failures, "finalRows": len(final_rows), "expected": expected}, ensure_ascii=False))
 
     certificate = {
         "rule": "Publish only one-to-one Shobi records whose original is an audited genuine wearable perfume. Candles, home/room/car fragrance, body or hair mists, laundry scents, accessories, and Shobi-invented/non-demonstrable originals are excluded.",
         "sourceCatalogRows": len(db_rows),
         "confirmedExcludedRows": len(excluded),
         "eligibleVerifiedShobiListings": len(eligible),
-        "crossListedShobiListingsCollapsed": collapsed,
+        "sourceCrossListedShobiListingsCollapsed": scope.get("crossListedShobiListingsCollapsed", []),
+        "unexpectedOperationalDuplicatesCollapsed": collapsed,
         "finalRows": len(final_rows),
         "allFinalRowsFromLiveShobiSource": True,
         "allFinalRowsHaveShobiProductIdAndUrl": True,

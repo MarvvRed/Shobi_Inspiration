@@ -268,6 +268,48 @@ if any(not row["brand"] or not row["inspiredBy"] for row in out):
     raise SystemExit("Blank brand or perfume identity remains")
 if any(row["brand"] != canonical_brand(row["brand"]) for row in out):
     raise SystemExit("Non-canonical brand label remains")
+
+# Shobi can expose the same formula in both its men's and women's categories
+# under different page IDs. The operational catalog represents one perfume,
+# not every duplicate category page. A conflicting same-code mapping is never
+# silently merged: it must be reviewed before publication.
+by_code = {}
+for row in out:
+    by_code.setdefault(row["code"], []).append(row)
+
+
+def identity_key(row):
+    return (
+        str(row.get("fragranticaId") or "").strip(),
+        str(row.get("brand") or "").strip().casefold(),
+        str(row.get("inspiredBy") or "").strip().casefold(),
+        str(row.get("fragranticaUrl") or "").strip().casefold(),
+    )
+
+
+def listing_key(row):
+    product_id = str(row.get("prestashopProductId") or "").strip()
+    return (int(product_id) if product_id.isdigit() else 10**12, str(row.get("shobiUrl") or ""))
+
+
+unique_out, collapsed = [], []
+for product_code, candidates in by_code.items():
+    if len({identity_key(row) for row in candidates}) != 1:
+        raise SystemExit(f"Conflicting same-code Shobi entries require review: {product_code}")
+    chosen = min(candidates, key=listing_key)
+    unique_out.append(chosen)
+    if len(candidates) > 1:
+        collapsed.append({
+            "code": product_code,
+            "keptPrestashopProductId": chosen["prestashopProductId"],
+            "removedPrestashopProductIds": sorted(
+                row["prestashopProductId"] for row in candidates if row is not chosen
+            ),
+        })
+
+if len(unique_out) != 2320 or len({row["code"] for row in unique_out}) != len(unique_out):
+    raise SystemExit(f"Expected 2320 unique Shobi perfumes, found {len(unique_out)}")
+out = unique_out
 out_by_code = {row["code"]: row for row in out}
 for code, (brand, name, fragrantica_id, fragrantica_url) in CONFIRMED_IDENTITY_OVERRIDES.items():
     row = out_by_code.get(code)
@@ -302,7 +344,8 @@ SITE_OUTPUT.write_text(
     json.dumps(site_rows, ensure_ascii=False, separators=(",", ":")) + "\n",
     encoding="utf-8",
 )
-print("rows", len(out))  # non-MIX catalog
+print("unique rows", len(out))
+print("cross-listed pages collapsed", len(collapsed))
 print("old enrichments retained", sum(row["prestashopProductId"] in old_by_pid for row in out))
 print("with main notes", sum(bool(row["fragranticaSocialCardNotes"]) for row in out))
 print("with gender", sum(bool(row["genderAffinity"]) for row in out))
