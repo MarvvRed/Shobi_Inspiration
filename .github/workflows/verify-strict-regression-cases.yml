@@ -19,8 +19,8 @@ on:
       - 'database/audits/shared-fid-alias-registry.json'
 
 concurrency:
-  group: shobi-catalog-write-${{ github.ref }}
-  cancel-in-progress: false
+  group: shobi-catalog-verify-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   verify:
