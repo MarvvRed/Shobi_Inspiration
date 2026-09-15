@@ -1,0 +1,37 @@
+name: Audit remaining validation edge gaps
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-validation-edge-gaps.yml'
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Report non-note validation failures
+        run: |
+          python - <<'PY'
+          import json
+          site=json.load(open('database/catalog/catalog_site.json',encoding='utf-8'))
+          groups={k:[] for k in ('image','season','gender','identity','fid','url','icons')}
+          for r in site:
+              c=r.get('validationChecks') or {}
+              failed=[k for k,v in c.items() if not v]
+              for k in groups:
+                  if k in failed:
+                      groups[k].append({
+                          'code':r.get('code'),'brand':r.get('brand'),'name':r.get('inspiredBy'),
+                          'url':r.get('fragranticaUrl'),'failed':failed,
+                          'issues':r.get('validationIssues') or [],
+                          'notes':r.get('fragranticaSocialCardNotes') or [],
+                          'gender':r.get('genderAffinity'),'seasons':r.get('seasons') or []
+                      })
+          print(json.dumps({k:{'count':len(v),'rows':v} for k,v in groups.items()},ensure_ascii=False,indent=2))
+          PY
