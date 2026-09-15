@@ -24,6 +24,8 @@ jobs:
           python-version: '3.12'
       - name: Prove exact notes from archived Social Cards
         run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
           python -m pip install --disable-pip-version-check pillow pytesseract
           python tools/validate_existing_notes_on_current_cards_fast.py
       - name: Apply unique exact current-card proofs
