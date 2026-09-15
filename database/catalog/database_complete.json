@@ -403,7 +403,7 @@
     "reference": "WP883",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/2842-kylj-w#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Kylie Cosmetics",
-    "inspiredBy": "Vanilla-dew",
+    "inspiredBy": "Vanilla Dew",
     "fragranticaId": "117345",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -439,7 +439,7 @@
     "shobiPriceEur": "9",
     "identityStatus": "CONFIRMED",
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/p/117345",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Kylie-Cosmetics/Vanilla-Dew-117345.html",
     "validationAudit": {
       "status": "green",
       "checks": {
@@ -534,7 +534,7 @@
     "reference": "WP881",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/2840-kylj-w#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Kylie Cosmetics",
-    "inspiredBy": "Caramel-cloud",
+    "inspiredBy": "Caramel Cloud",
     "fragranticaId": "117346",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -1131,7 +1131,7 @@
     "reference": "EL471",
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/Martinique_Osmanthus_Gissah_inspired#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "gissah",
-    "inspiredBy": "Martinique-osmanthus-eau-de-parfum-",
+    "inspiredBy": "Martinique Osmanthus 2025",
     "fragranticaId": "126288",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -1167,7 +1167,7 @@
     "shobiPriceEur": "10",
     "identityStatus": "CONFIRMED",
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/p/126288",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Gissah/Martinique-Osmanthus-2025-126288.html",
     "validationAudit": {
       "status": "green",
       "checks": {
@@ -3174,7 +3174,7 @@
     "reference": "AR590",
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/latte_perfumes#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "obvious",
-    "inspiredBy": "Milk-matcha-un-ete",
+    "inspiredBy": "Milk & Matcha",
     "fragranticaId": "103407",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -3210,7 +3210,7 @@
     "shobiPriceEur": "15",
     "identityStatus": "CONFIRMED",
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/p/103407",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Obvious/Milk-Matcha-103407.html",
     "validationAudit": {
       "status": "green",
       "checks": {
@@ -3439,7 +3439,7 @@
     "reference": "AR587",
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/oud_perfumes#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Fragrance Du Bois",
-    "inspiredBy": "Oud-noir-intense",
+    "inspiredBy": "Oud Noir Intense",
     "fragranticaId": "24483",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -3475,7 +3475,7 @@
     "shobiPriceEur": "15",
     "identityStatus": "CONFIRMED",
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/p/24483",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Fragrance-Du-Bois/Oud-Noir-Intense-24483.html",
     "validationAudit": {
       "status": "yellow",
       "checks": {
@@ -8162,7 +8162,7 @@
     "reference": "AR547",
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/New_York_5th_Avenue_Fragrance#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Fragrance Du Bois",
-    "inspiredBy": "New-york-5th-avenue",
+    "inspiredBy": "New York 5th Avenue",
     "fragranticaId": "61946",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -8198,7 +8198,7 @@
     "shobiPriceEur": "15",
     "identityStatus": "CONFIRMED",
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/p/61946",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Fragrance-Du-Bois/New-York-5th-Avenue-61946.html",
     "validationAudit": {
       "status": "yellow",
       "checks": {
@@ -11793,7 +11793,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Penhaligon-s/The-Dandy-95396.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -11803,16 +11803,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
-      "iconsCount": 5
+      "iconsCount": 6
     },
     "fragranticaSocialCardVerificationSource": "database/fragrantica/social-cards/images/4490_2646-PEN_95396.jpeg",
     "fragranticaSocialCardVerificationFragranticaId": "95396"
@@ -12483,7 +12481,7 @@
     "reference": "AR510",
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/2622-phl-n#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Phlur",
-    "inspiredBy": "Vanilla-skin-eau-de-",
+    "inspiredBy": "Vanilla Skin",
     "fragranticaId": "87258",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -12656,7 +12654,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Naked-Laundry-97132.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -12666,16 +12664,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
-      "iconsCount": 5
+      "iconsCount": 6
     },
     "fragranticaSocialCardVerificationSource": "database/fragrantica/social-cards/images/4444_2649-BORN_97132.jpeg",
     "fragranticaSocialCardVerificationFragranticaId": "97132"
@@ -22734,7 +22730,7 @@
     "reference": "AR448",
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/2518-matah-n#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Maison Mataha",
-    "inspiredBy": "Escapade-gourmande",
+    "inspiredBy": "Escapade Gourmande",
     "fragranticaId": "72607",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -39938,8 +39934,8 @@
     "reference": "AR337",
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/2194-ort-%CE%BD#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Orto Parisi",
-    "inspiredBy": "ORTO",
-    "fragranticaId": "119473",
+    "inspiredBy": "Cuoium",
+    "fragranticaId": "69923",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "unisex",
@@ -39969,7 +39965,7 @@
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Al-Qasim-Oud/ORTO-119473.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html",
     "liveDisplayCode": "2194-ORT Ν",
     "shobiImageUrl": "https://leparfum.com.gr/62070-home_default/2194-ort-ν.jpg",
     "shobiCategory": "Niche Perfumes",
@@ -39985,20 +39981,18 @@
         "fid": true,
         "url": true,
         "socialCard": false,
-        "image": false,
+        "image": true,
         "notes": false,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
       "issues": [
         "Social Card not fully verified",
-        "Missing perfume image",
-        "Main Notes order not fully verified",
-        "Season not fully verified"
+        "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     "fragranticaVerificationReason": "SHOBI_2194_ORT_IS_CUOIUM_ORTO_PARISI_AND_EXACT_FRAGRANTICA_69923",
@@ -42495,7 +42489,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Carolina-Herrera/Call-Me-Darling-77691.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -42505,16 +42499,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 3,
       "matchedNotesCount": 3,
-      "iconsCount": 2
+      "iconsCount": 3
     },
     "fragranticaSocialCardVerificationSource": "database/fragrantica/social-cards/images/3619_2159-CAR_77691.jpeg",
     "fragranticaSocialCardVerificationFragranticaId": "77691"
@@ -43119,7 +43111,7 @@
     "reference": "WP750",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/2148-bat-wp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Bath Body Works",
-    "inspiredBy": "Pure-wonder-eau-de-",
+    "inspiredBy": "Pure Wonder",
     "fragranticaId": "70500",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -44786,7 +44778,7 @@
     "reference": "WP747",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/2055-bat-wp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Bath Body Works",
-    "inspiredBy": "Dream-bright-eau-de-",
+    "inspiredBy": "Dream Bright",
     "fragranticaId": "78849",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -44820,7 +44812,7 @@
     "shobiPriceEur": "9",
     "identityStatus": "CONFIRMED",
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/p/78849",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Bath-Body-Works/Bath-Body-Works-Dream-Bright-78849.html",
     "validationAudit": {
       "status": "green",
       "checks": {
@@ -46407,7 +46399,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Carolina-Herrera/True-Oud-72619.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -46417,16 +46409,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
-      "iconsCount": 5
+      "iconsCount": 6
     },
     "fragranticaSocialCardVerificationSource": "database/fragrantica/social-cards/images/3506_2032-CAR_72619.jpeg",
     "fragranticaSocialCardVerificationFragranticaId": "72619"
@@ -51535,7 +51525,7 @@
     "reference": "EL266",
     "shobiUrl": "https://leparfum.com.gr/en/elegants-fragrances/1958-drc-el#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Dior",
-    "inspiredBy": "Bois-d-argent-eau-de-",
+    "inspiredBy": "Bois D'Argent",
     "fragranticaId": "1377",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -52739,7 +52729,7 @@
     "reference": "AR257",
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/1929-blg-%CE%BD#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Bvlgari",
-    "inspiredBy": "Le-gemme-tygar-eau-de-",
+    "inspiredBy": "Tygar",
     "fragranticaId": "41222",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -53597,7 +53587,7 @@
     "reference": "AR249",
     "shobiUrl": "https://leparfum.com.gr/en/niche-perfumes/1921-viv-n#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Vivienne Westwood",
-    "inspiredBy": "Boudoir-",
+    "inspiredBy": "Boudoir",
     "fragranticaId": "1532",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -57578,7 +57568,7 @@
     "reference": "WP695",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/cherry-in-japan-escada-clone#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Escada",
-    "inspiredBy": "Cherry-in-japan",
+    "inspiredBy": "Cherry in Japan",
     "fragranticaId": "70279",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -58115,7 +58105,7 @@
     "reference": "WP693",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/1893-cha-w#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Chanel",
-    "inspiredBy": "N-1-l-eau-rouge",
+    "inspiredBy": "N°1 de Chanel L'Eau Rouge",
     "fragranticaId": "71442",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -66899,8 +66889,8 @@
     "reference": "WP664",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/1751-gul-wp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Jean Paul Gaultier",
-    "inspiredBy": "Madame",
-    "fragranticaId": "12088",
+    "inspiredBy": "Ma Dame",
+    "fragranticaId": "3681",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
@@ -66917,7 +66907,7 @@
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Cortina-1224/Madame-12088.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html",
     "fragranticaSocialCardNotes": [
       "Grenadine",
       "Orange",
@@ -66943,22 +66933,18 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
-        "image": false,
-        "notes": false,
+        "socialCard": true,
+        "image": true,
+        "notes": true,
         "icons": true,
         "gender": false,
-        "season": false
+        "season": true
       },
       "issues": [
-        "Social Card not fully verified",
-        "Missing perfume image",
-        "Main Notes order not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Gender not fully verified"
       ],
       "notesCount": 5,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 5,
       "iconsCount": 5
     }
   },
@@ -67600,7 +67586,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Xerjoff/Alexandria-III-57363.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -67610,16 +67596,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
-      "iconsCount": 5
+      "iconsCount": 6
     },
     "fragranticaSocialCardVerificationSource": "database/fragrantica/social-cards/images/2600_1746-XER_57363.jpeg",
     "fragranticaSocialCardVerificationFragranticaId": "57363"
@@ -68130,7 +68114,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Victoria-s-Secret/Tease-Creme-Cloud-68550.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -68140,16 +68124,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 4,
       "matchedNotesCount": 4,
-      "iconsCount": 3
+      "iconsCount": 4
     },
     "fragranticaSocialCardVerificationSource": "database/fragrantica/social-cards/images/2516_1731-VICT_68550.jpeg",
     "fragranticaSocialCardVerificationFragranticaId": "68550"
@@ -74202,7 +74184,7 @@
     "reference": "WP631",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/1551-vict-wp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Victoria's Secret",
-    "inspiredBy": "Tease-dreamer-eau-de-",
+    "inspiredBy": "Tease Dreamer",
     "fragranticaId": "54073",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -83509,7 +83491,7 @@
     "reference": "AR042",
     "shobiUrl": "https://leparfum.com.gr/en/arabian-perfumes/172-shalm-ar#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Scent Salim",
-    "inspiredBy": "Moroccan-musk",
+    "inspiredBy": "Moroccan Musk",
     "fragranticaId": "47982",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -84164,7 +84146,7 @@
     "reference": "WP577",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/401-aria-wp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Ariana Grande",
-    "inspiredBy": "Cloud-eau-de-",
+    "inspiredBy": "Cloud",
     "fragranticaId": "50384",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -84496,7 +84478,7 @@
     "reference": "WP575",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/flor-del-sol-escada-arwma-typou#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Escada",
-    "inspiredBy": "Flor-del-sol",
+    "inspiredBy": "Flor del Sol",
     "fragranticaId": "58398",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -87547,8 +87529,8 @@
     "reference": "MP275",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/1037-blg-m#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Bvlgari",
-    "inspiredBy": "Bvl Man",
-    "fragranticaId": "148",
+    "inspiredBy": "Bvlgari Man",
+    "fragranticaId": "9403",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
@@ -87584,7 +87566,7 @@
     "shobiPriceEur": "9",
     "identityStatus": "CONFIRMED",
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
     "validationAudit": {
       "status": "yellow",
       "checks": {
@@ -87594,20 +87576,18 @@
         "fid": true,
         "url": true,
         "socialCard": false,
-        "image": false,
+        "image": true,
         "notes": false,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
       "issues": [
         "Social Card not fully verified",
-        "Missing perfume image",
-        "Main Notes order not fully verified",
-        "Season not fully verified"
+        "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     "fragranticaVerificationReason": "SHOBI_1037_IS_BVLGARI_MAN_AND_EXACT_FRAGRANTICA_9403",
@@ -102992,7 +102972,7 @@
     "reference": "WP488",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/958-vict-wp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Victoria's Secret",
-    "inspiredBy": "Fabulous-eau-de-",
+    "inspiredBy": "Fabulous",
     "fragranticaId": "17699",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -104538,8 +104518,8 @@
     "reference": "WP462",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/928-tru-wp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Trussardi",
-    "inspiredBy": "Delicate Rose",
-    "fragranticaId": "93471",
+    "inspiredBy": "Trussardi Delicate Rose",
+    "fragranticaId": "16241",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
@@ -104556,7 +104536,7 @@
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Aurora-Scents/Delicate-Rose-93471.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
     "fragranticaSocialCardNotes": [
       "Rose",
       "Lotus",
@@ -104583,22 +104563,18 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
-        "image": false,
-        "notes": false,
+        "socialCard": true,
+        "image": true,
+        "notes": true,
         "icons": true,
         "gender": false,
-        "season": false
+        "season": true
       },
       "issues": [
-        "Social Card not fully verified",
-        "Missing perfume image",
-        "Main Notes order not fully verified",
-        "Gender not fully verified",
-        "Season not fully verified"
+        "Gender not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -104816,7 +104792,7 @@
     "reference": "WP457",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/923-tmu-w#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Mugler",
-    "inspiredBy": "notes AURA",
+    "inspiredBy": "Aura Mugler",
     "fragranticaId": "45639",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -110757,7 +110733,7 @@
     "reference": "WP367",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/822-mic-w#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Michael Kors",
-    "inspiredBy": "Sexy-ruby-glam-ruby",
+    "inspiredBy": "Sexy Ruby",
     "fragranticaId": "46182",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -112005,7 +111981,7 @@
     "reference": "WP346",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/799-lanv-wp#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Lanvin",
-    "inspiredBy": "Eclat-d-arpege-eau-de-",
+    "inspiredBy": "Éclat d'Arpège",
     "fragranticaId": "988",
     "fragranticaStatus": "FOUND",
     "image": null,
@@ -125712,8 +125688,8 @@
     "reference": "WP138",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-women/happy-woman-clinique-type#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Clinique",
-    "inspiredBy": "Happy",
-    "fragranticaId": "66133",
+    "inspiredBy": "Clinique Happy",
+    "fragranticaId": "372",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "feminine",
@@ -125730,7 +125706,7 @@
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-372.html",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Dua-Brand/Happy-66133.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-372.html",
     "fragranticaSocialCardNotes": [
       "Orange",
       "Grapefruit",
@@ -125750,28 +125726,23 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
-        "image": false,
-        "notes": false,
+        "socialCard": true,
+        "image": true,
+        "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Missing perfume image",
-        "Main Notes order not fully verified",
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -145901,8 +145872,8 @@
     "reference": "MP082",
     "shobiUrl": "https://leparfum.com.gr/en/fragrances-for-men/happy-man-clinique-perfume-type#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
     "brand": "Clinique",
-    "inspiredBy": "Happy",
-    "fragranticaId": "66133",
+    "inspiredBy": "Clinique Happy For Men",
+    "fragranticaId": "373",
     "fragranticaStatus": "FOUND",
     "image": null,
     "genderAffinity": "masculine",
@@ -145919,7 +145890,7 @@
     "masterVersion": "shobi-live-no-mix-2026-09-13-2324",
     "occasions": [],
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-373.html",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Dua-Brand/Happy-66133.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-For-Men-373.html",
     "fragranticaSocialCardNotes": [
       "Mandarin Orange",
       "Lime",
@@ -145947,20 +145918,18 @@
         "fid": true,
         "url": true,
         "socialCard": false,
-        "image": false,
+        "image": true,
         "notes": false,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
       "issues": [
         "Social Card not fully verified",
-        "Missing perfume image",
-        "Main Notes order not fully verified",
-        "Season not fully verified"
+        "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },

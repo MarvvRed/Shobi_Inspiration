@@ -2,10 +2,10 @@
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
   "results": {
-    "EXACT_ORDERED_MATCH": 1040,
+    "EXACT_ORDERED_MATCH": 1043,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 1202,
-    "UNSUPPORTED_CARD_GEOMETRY": 9
+    "READING_NOT_STRICT_ENOUGH": 1204,
+    "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
     {
@@ -9053,8 +9053,8 @@
     },
     {
       "code": "1037-BLG",
-      "fragranticaId": "148",
-      "card": "database/fragrantica/social-cards/images/1897_1037-BLG_148.jpeg",
+      "fragranticaId": "9403",
+      "card": "database/fragrantica/social-cards/images/1897_1037-BLG_9403.jpeg",
       "catalogNotes": [
         "Vetiver",
         "Honey",
@@ -9070,102 +9070,102 @@
           "strict": false,
           "reason": "READING_NOT_STRICT_ENOUGH",
           "notes": [
-            "Ginger",
-            "Cardamom",
-            "Tobacco Blossom",
-            "Sandalwood",
-            "Juniper",
-            "Grease"
+            "Vetiver",
+            "Honey",
+            "Wool",
+            "Violet",
+            "Lotus",
+            "Cashmir wood"
           ],
           "components": [
             {
-              "raw": "Ginger",
-              "x": 32.0,
-              "y": 156.0,
+              "raw": "Vetiver",
+              "x": 31.666666666666668,
+              "y": 156.33333333333334,
               "row": 0,
-              "confidence": 96.5,
-              "note": "Ginger",
+              "confidence": 96.3,
+              "note": "Vetiver",
               "score": 1.0,
               "margin": 1.0,
               "exactText": true
             },
             {
-              "raw": "Cardamom",
-              "x": 170.0,
-              "y": 156.0,
+              "raw": "Honey",
+              "x": 153.0,
+              "y": 156.33333333333334,
               "row": 0,
-              "confidence": 96.2,
-              "note": "Cardamom",
+              "confidence": 96.3,
+              "note": "Honey",
               "score": 1.0,
               "margin": 1.0,
               "exactText": true
             },
             {
-              "raw": "if Tobacco Blossom",
-              "x": 294.0,
-              "y": 121.66666666666667,
+              "raw": "Woody",
+              "x": 271.6666666666667,
+              "y": 156.33333333333334,
               "row": 0,
-              "confidence": 49.6,
-              "note": "Tobacco Blossom",
-              "score": 0.909,
-              "margin": 0.199,
+              "confidence": 96.7,
+              "note": "Wool",
+              "score": 0.667,
+              "margin": 0.0,
               "exactText": false
             },
             {
-              "raw": "Sandalwood",
-              "x": 32.666666666666664,
+              "raw": "Leaf Violet",
+              "x": 31.666666666666668,
               "y": 316.0,
               "row": 1,
-              "confidence": 94.7,
-              "note": "Sandalwood",
-              "score": 1.0,
-              "margin": 1.0,
-              "exactText": true
+              "confidence": 96.5,
+              "note": "Violet",
+              "score": 0.706,
+              "margin": 0.134,
+              "exactText": false
             },
             {
-              "raw": "Juniper",
-              "x": 170.0,
+              "raw": "Lotus",
+              "x": 153.0,
               "y": 316.6666666666667,
               "row": 1,
-              "confidence": 94.7,
-              "note": "Juniper",
+              "confidence": 95.9,
+              "note": "Lotus",
               "score": 1.0,
               "margin": 1.0,
               "exactText": true
             },
             {
-              "raw": "Green",
-              "x": 294.0,
+              "raw": "Cashmir wood",
+              "x": 272.0,
               "y": 316.0,
               "row": 1,
-              "confidence": 96.9,
-              "note": "Grease",
-              "score": 0.727,
-              "margin": 0.013,
-              "exactText": false
+              "confidence": 87.3,
+              "note": "Cashmir wood",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
             {
-              "raw": "if Tobacco Blossom",
-              "x": 294.0,
-              "y": 121.66666666666667,
+              "raw": "Woody",
+              "x": 271.6666666666667,
+              "y": 156.33333333333334,
               "row": 0,
-              "confidence": 49.6,
-              "note": "Tobacco Blossom",
-              "score": 0.909,
-              "margin": 0.199,
+              "confidence": 96.7,
+              "note": "Wool",
+              "score": 0.667,
+              "margin": 0.0,
               "exactText": false
             },
             {
-              "raw": "Green",
-              "x": 294.0,
+              "raw": "Leaf Violet",
+              "x": 31.666666666666668,
               "y": 316.0,
               "row": 1,
-              "confidence": 96.9,
-              "note": "Grease",
-              "score": 0.727,
-              "margin": 0.013,
+              "confidence": 96.5,
+              "note": "Violet",
+              "score": 0.706,
+              "margin": 0.134,
               "exactText": false
             }
           ],
@@ -9176,79 +9176,124 @@
           "strict": false,
           "reason": "READING_NOT_STRICT_ENOUGH",
           "notes": [
-            "Ginger",
-            "Cardamom",
-            "Tobacco Blossom",
-            "Juniper",
-            "Grease"
+            "Violet Leaf",
+            "Honey",
+            "Wool",
+            "Violet",
+            "Lotus",
+            "Cashmir wood"
           ],
           "components": [
             {
-              "raw": "Ginger",
-              "x": 32.0,
-              "y": 156.0,
+              "raw": "Vet ef",
+              "x": 31.666666666666668,
+              "y": 136.0,
               "row": 0,
-              "confidence": 95.9,
-              "note": "Ginger",
-              "score": 1.0,
-              "margin": 1.0,
-              "exactText": true
+              "confidence": 64.3,
+              "note": "Violet Leaf",
+              "score": 0.706,
+              "margin": 0.081,
+              "exactText": false
             },
             {
-              "raw": "Cardamom",
-              "x": 170.0,
-              "y": 156.0,
-              "row": 0,
-              "confidence": 96.7,
-              "note": "Cardamom",
-              "score": 1.0,
-              "margin": 1.0,
-              "exactText": true
-            },
-            {
-              "raw": "Tobacco Blossom",
-              "x": 294.0,
+              "raw": "Honey",
+              "x": 153.0,
               "y": 156.33333333333334,
               "row": 0,
-              "confidence": 95.4,
-              "note": "Tobacco Blossom",
+              "confidence": 96.2,
+              "note": "Honey",
               "score": 1.0,
               "margin": 1.0,
               "exactText": true
             },
             {
-              "raw": "Juniper",
-              "x": 170.0,
-              "y": 303.3333333333333,
-              "row": 1,
-              "confidence": 96.9,
-              "note": "Juniper",
-              "score": 1.0,
-              "margin": 1.0,
-              "exactText": true
+              "raw": "Woody",
+              "x": 271.6666666666667,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 96.7,
+              "note": "Wool",
+              "score": 0.667,
+              "margin": 0.0,
+              "exactText": false
             },
             {
-              "raw": "Green",
-              "x": 294.0,
+              "raw": "Leaf Violet",
+              "x": 31.666666666666668,
               "y": 316.0,
               "row": 1,
-              "confidence": 96.2,
-              "note": "Grease",
-              "score": 0.727,
-              "margin": 0.013,
+              "confidence": 95.9,
+              "note": "Violet",
+              "score": 0.706,
+              "margin": 0.134,
+              "exactText": false
+            },
+            {
+              "raw": "Lotus",
+              "x": 153.0,
+              "y": 316.6666666666667,
+              "row": 1,
+              "confidence": 96.8,
+              "note": "Lotus",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Caehmir wood",
+              "x": 272.0,
+              "y": 301.3333333333333,
+              "row": 1,
+              "confidence": 39.4,
+              "note": "Cashmir wood",
+              "score": 0.917,
+              "margin": 0.25,
               "exactText": false
             }
           ],
           "uncertainComponents": [
             {
-              "raw": "Green",
-              "x": 294.0,
+              "raw": "Vet ef",
+              "x": 31.666666666666668,
+              "y": 136.0,
+              "row": 0,
+              "confidence": 64.3,
+              "note": "Violet Leaf",
+              "score": 0.706,
+              "margin": 0.081,
+              "exactText": false
+            },
+            {
+              "raw": "Woody",
+              "x": 271.6666666666667,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 96.7,
+              "note": "Wool",
+              "score": 0.667,
+              "margin": 0.0,
+              "exactText": false
+            },
+            {
+              "raw": "Leaf Violet",
+              "x": 31.666666666666668,
               "y": 316.0,
               "row": 1,
-              "confidence": 96.2,
-              "note": "Grease",
-              "score": 0.727,
-              "margin": 0.013,
+              "confidence": 95.9,
+              "note": "Violet",
+              "score": 0.706,
+              "margin": 0.134,
+              "exactText": false
+            },
+            {
+              "raw": "Caehmir wood",
+              "x": 272.0,
+              "y": 301.3333333333333,
+              "row": 1,
+              "confidence": 39.4,
+              "note": "Cashmir wood",
+              "score": 0.917,
+              "margin": 0.25,
               "exactText": false
             }
           ],
@@ -20848,8 +20893,8 @@
     },
     {
       "code": "1086-CLI",
-      "fragranticaId": "66133",
-      "card": "database/fragrantica/social-cards/images/current_1086-CLI_66133.jpeg",
+      "fragranticaId": "373",
+      "card": "database/fragrantica/social-cards/images/182_1086-CLI_373.jpeg",
       "catalogNotes": [
         "Mandarin Orange",
         "Lime",
@@ -20858,10 +20903,162 @@
         "Green Notes",
         "Freesia"
       ],
-      "result": "UNSUPPORTED_CARD_GEOMETRY",
-      "size": [
-        1200,
-        620
+      "result": "READING_NOT_STRICT_ENOUGH",
+      "attempts": [
+        {
+          "psm": 6,
+          "strict": false,
+          "reason": "READING_NOT_STRICT_ENOUGH",
+          "notes": [
+            "Mandarin Orange",
+            "Lime",
+            "Sea Water",
+            "Lemon",
+            "Evergreen",
+            "Freesia"
+          ],
+          "components": [
+            {
+              "raw": "Mandarin Orange",
+              "x": 32.0,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 93.1,
+              "note": "Mandarin Orange",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Lime",
+              "x": 153.0,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 93.1,
+              "note": "Lime",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Sea Water",
+              "x": 272.3333333333333,
+              "y": 156.0,
+              "row": 0,
+              "confidence": 96.7,
+              "note": "Sea Water",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Lemon",
+              "x": 33.0,
+              "y": 316.6666666666667,
+              "row": 1,
+              "confidence": 95.9,
+              "note": "Lemon",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Ee Green",
+              "x": 151.66666666666666,
+              "y": 217.66666666666666,
+              "row": 1,
+              "confidence": 47.3,
+              "note": "Evergreen",
+              "score": 0.824,
+              "margin": 0.062,
+              "exactText": false
+            },
+            {
+              "raw": "Freesia",
+              "x": 273.0,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 92.3,
+              "note": "Freesia",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            }
+          ],
+          "uncertainComponents": [
+            {
+              "raw": "Ee Green",
+              "x": 151.66666666666666,
+              "y": 217.66666666666666,
+              "row": 1,
+              "confidence": 47.3,
+              "note": "Evergreen",
+              "score": 0.824,
+              "margin": 0.062,
+              "exactText": false
+            }
+          ],
+          "notesHeaderY": 26.0
+        },
+        {
+          "psm": 11,
+          "strict": false,
+          "reason": "READING_NOT_STRICT_ENOUGH",
+          "notes": [
+            "Mandarin Orange Blossom",
+            "Lime",
+            "Sea Water"
+          ],
+          "components": [
+            {
+              "raw": "Mandarin Orange OB Green Freesia Lemon",
+              "x": 32.0,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 82.3,
+              "note": "Mandarin Orange Blossom",
+              "score": 0.623,
+              "margin": 0.057,
+              "exactText": false
+            },
+            {
+              "raw": "Lime",
+              "x": 153.0,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 96.0,
+              "note": "Lime",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Sea Water",
+              "x": 272.3333333333333,
+              "y": 156.0,
+              "row": 0,
+              "confidence": 96.3,
+              "note": "Sea Water",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            }
+          ],
+          "uncertainComponents": [
+            {
+              "raw": "Mandarin Orange OB Green Freesia Lemon",
+              "x": 32.0,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 82.3,
+              "note": "Mandarin Orange Blossom",
+              "score": 0.623,
+              "margin": 0.057,
+              "exactText": false
+            }
+          ],
+          "notesHeaderY": 26.0
+        }
       ]
     },
     {
@@ -119714,8 +119911,8 @@
     },
     {
       "code": "1751-GUL",
-      "fragranticaId": "12088",
-      "card": "database/fragrantica/social-cards/images/current_1751-GUL_12088.jpeg",
+      "fragranticaId": "3681",
+      "card": "database/fragrantica/social-cards/images/2613_1751-GUL_3681.jpeg",
       "catalogNotes": [
         "Grenadine",
         "Orange",
@@ -119723,10 +119920,223 @@
         "Musk",
         "Cedar"
       ],
-      "result": "UNSUPPORTED_CARD_GEOMETRY",
-      "size": [
-        1200,
-        620
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Grenadine",
+        "Orange",
+        "Rose",
+        "Musk",
+        "Cedar"
+      ],
+      "components": [
+        {
+          "raw": "Grenadine",
+          "x": 32.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Grenadine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Orange",
+          "x": 152.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 273.0,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 33.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.7,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 152.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.2,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "iconCounts": [
+        3,
+        2
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
+      "attempts": [
+        {
+          "psm": 6,
+          "strict": true,
+          "reason": "",
+          "notes": [
+            "Grenadine",
+            "Orange",
+            "Rose",
+            "Musk",
+            "Cedar"
+          ],
+          "components": [
+            {
+              "raw": "Grenadine",
+              "x": 32.0,
+              "y": 183.0,
+              "row": 0,
+              "confidence": 96.3,
+              "note": "Grenadine",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Orange",
+              "x": 152.0,
+              "y": 183.0,
+              "row": 0,
+              "confidence": 96.7,
+              "note": "Orange",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Rose",
+              "x": 273.0,
+              "y": 183.33333333333334,
+              "row": 0,
+              "confidence": 96.5,
+              "note": "Rose",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Musk",
+              "x": 33.0,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 96.7,
+              "note": "Musk",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Cedar",
+              "x": 152.0,
+              "y": 316.0,
+              "row": 1,
+              "confidence": 96.2,
+              "note": "Cedar",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            }
+          ],
+          "uncertainComponents": [],
+          "notesHeaderY": 53.0
+        },
+        {
+          "psm": 11,
+          "strict": true,
+          "reason": "",
+          "notes": [
+            "Grenadine",
+            "Orange",
+            "Rose",
+            "Musk",
+            "Cedar"
+          ],
+          "components": [
+            {
+              "raw": "Grenadine",
+              "x": 32.0,
+              "y": 183.0,
+              "row": 0,
+              "confidence": 96.3,
+              "note": "Grenadine",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Orange",
+              "x": 152.0,
+              "y": 183.0,
+              "row": 0,
+              "confidence": 96.7,
+              "note": "Orange",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Rose",
+              "x": 273.0,
+              "y": 183.33333333333334,
+              "row": 0,
+              "confidence": 96.0,
+              "note": "Rose",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Musk",
+              "x": 33.0,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 96.1,
+              "note": "Musk",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Cedar",
+              "x": 152.0,
+              "y": 316.0,
+              "row": 1,
+              "confidence": 96.1,
+              "note": "Cedar",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            }
+          ],
+          "uncertainComponents": [],
+          "notesHeaderY": 53.0
+        }
       ]
     },
     {
@@ -216638,8 +217048,8 @@
     },
     {
       "code": "2194-ORT",
-      "fragranticaId": "119473",
-      "card": "database/fragrantica/social-cards/images/current_2194-ORT_119473.jpeg",
+      "fragranticaId": "69923",
+      "card": "database/fragrantica/social-cards/images/3732_2194-ORT_69923.jpeg",
       "catalogNotes": [
         "Leather",
         "Animal Notes",
@@ -216648,10 +217058,242 @@
         "Cade oil",
         "Cedar"
       ],
-      "result": "UNSUPPORTED_CARD_GEOMETRY",
-      "size": [
-        1200,
-        620
+      "result": "READING_NOT_STRICT_ENOUGH",
+      "attempts": [
+        {
+          "psm": 6,
+          "strict": false,
+          "reason": "READING_NOT_STRICT_ENOUGH",
+          "notes": [
+            "Leather",
+            "Truffle",
+            "Mahonial",
+            "Incense"
+          ],
+          "components": [
+            {
+              "raw": "Leather",
+              "x": 33.0,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 89.2,
+              "note": "Leather",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "rf",
+              "x": 62.0,
+              "y": 112.0,
+              "row": 0,
+              "confidence": 41.3,
+              "note": "Truffle",
+              "score": 0.444,
+              "margin": 0.044,
+              "exactText": false
+            },
+            {
+              "raw": "Animal",
+              "x": 151.66666666666666,
+              "y": 155.0,
+              "row": 0,
+              "confidence": 96.0,
+              "note": "Mahonial",
+              "score": 0.714,
+              "margin": 0.048,
+              "exactText": false
+            },
+            {
+              "raw": "Incense",
+              "x": 273.0,
+              "y": 156.66666666666666,
+              "row": 0,
+              "confidence": 92.5,
+              "note": "Incense",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            }
+          ],
+          "uncertainComponents": [
+            {
+              "raw": "rf",
+              "x": 62.0,
+              "y": 112.0,
+              "row": 0,
+              "confidence": 41.3,
+              "note": "Truffle",
+              "score": 0.444,
+              "margin": 0.044,
+              "exactText": false
+            },
+            {
+              "raw": "Animal",
+              "x": 151.66666666666666,
+              "y": 155.0,
+              "row": 0,
+              "confidence": 96.0,
+              "note": "Mahonial",
+              "score": 0.714,
+              "margin": 0.048,
+              "exactText": false
+            }
+          ],
+          "notesHeaderY": 26.0
+        },
+        {
+          "psm": 11,
+          "strict": false,
+          "reason": "UNSUPPORTED_NOTE_LAYOUT",
+          "notes": [
+            "Leather",
+            "Mahonial",
+            "Incense",
+            "Wool",
+            "Walnut",
+            "Cade oil",
+            "Cedar",
+            "Bread"
+          ],
+          "components": [
+            {
+              "raw": "Leather",
+              "x": 33.0,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 82.8,
+              "note": "Leather",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Animal",
+              "x": 151.66666666666666,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 96.2,
+              "note": "Mahonial",
+              "score": 0.714,
+              "margin": 0.048,
+              "exactText": false
+            },
+            {
+              "raw": "Incense",
+              "x": 273.0,
+              "y": 156.66666666666666,
+              "row": 0,
+              "confidence": 95.6,
+              "note": "Incense",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Woody",
+              "x": 31.666666666666668,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 96.6,
+              "note": "Wool",
+              "score": 0.667,
+              "margin": 0.0,
+              "exactText": false
+            },
+            {
+              "raw": "wn",
+              "x": 47.666666666666664,
+              "y": 272.6666666666667,
+              "row": 1,
+              "confidence": 43.9,
+              "note": "Walnut",
+              "score": 0.5,
+              "margin": 0.0,
+              "exactText": false
+            },
+            {
+              "raw": "Cade oil",
+              "x": 152.0,
+              "y": 302.0,
+              "row": 1,
+              "confidence": 67.4,
+              "note": "Cade oil",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Cedar",
+              "x": 272.0,
+              "y": 316.0,
+              "row": 1,
+              "confidence": 96.7,
+              "note": "Cedar",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "bd",
+              "x": 303.6666666666667,
+              "y": 227.0,
+              "row": 1,
+              "confidence": 56.7,
+              "note": "Bread",
+              "score": 0.571,
+              "margin": 0.0,
+              "exactText": false
+            }
+          ],
+          "uncertainComponents": [
+            {
+              "raw": "Animal",
+              "x": 151.66666666666666,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 96.2,
+              "note": "Mahonial",
+              "score": 0.714,
+              "margin": 0.048,
+              "exactText": false
+            },
+            {
+              "raw": "wn",
+              "x": 47.666666666666664,
+              "y": 272.6666666666667,
+              "row": 1,
+              "confidence": 43.9,
+              "note": "Walnut",
+              "score": 0.5,
+              "margin": 0.0,
+              "exactText": false
+            },
+            {
+              "raw": "bd",
+              "x": 303.6666666666667,
+              "y": 227.0,
+              "row": 1,
+              "confidence": 56.7,
+              "note": "Bread",
+              "score": 0.571,
+              "margin": 0.0,
+              "exactText": false
+            },
+            {
+              "raw": "Woody",
+              "x": 31.666666666666668,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 96.6,
+              "note": "Wool",
+              "score": 0.667,
+              "margin": 0.0,
+              "exactText": false
+            }
+          ],
+          "notesHeaderY": 26.0
+        }
       ]
     },
     {
@@ -414675,8 +415317,8 @@
     },
     {
       "code": "548-CLI",
-      "fragranticaId": "66133",
-      "card": "database/fragrantica/social-cards/images/current_548-CLI_66133.jpeg",
+      "fragranticaId": "372",
+      "card": "database/fragrantica/social-cards/images/638_548-CLI_372.jpeg",
       "catalogNotes": [
         "Orange",
         "Grapefruit",
@@ -414685,10 +415327,259 @@
         "Mimosa",
         "Bergamot"
       ],
-      "result": "UNSUPPORTED_CARD_GEOMETRY",
-      "size": [
-        1200,
-        620
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Orange",
+        "Grapefruit",
+        "Mandarin Orange",
+        "Lily-of-the-Valley",
+        "Mimosa",
+        "Bergamot"
+      ],
+      "components": [
+        {
+          "raw": "Orange",
+          "x": 32.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 96.8,
+          "note": "Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Grapefruit",
+          "x": 152.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 92.4,
+          "note": "Grapefruit",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 272.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 92.4,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lily-of- the-Valley",
+          "x": 31.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 91.3,
+          "note": "Lily-of-the-Valley",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mimosa",
+          "x": 153.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 89.9,
+          "note": "Mimosa",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 273.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 82.4,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "attempts": [
+        {
+          "psm": 6,
+          "strict": true,
+          "reason": "",
+          "notes": [
+            "Orange",
+            "Grapefruit",
+            "Mandarin Orange",
+            "Lily-of-the-Valley",
+            "Mimosa",
+            "Bergamot"
+          ],
+          "components": [
+            {
+              "raw": "Orange",
+              "x": 32.0,
+              "y": 156.0,
+              "row": 0,
+              "confidence": 96.8,
+              "note": "Orange",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Grapefruit",
+              "x": 152.0,
+              "y": 156.0,
+              "row": 0,
+              "confidence": 92.4,
+              "note": "Grapefruit",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Mandarin Orange",
+              "x": 272.0,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 92.4,
+              "note": "Mandarin Orange",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Lily-of- the-Valley",
+              "x": 31.0,
+              "y": 316.0,
+              "row": 1,
+              "confidence": 91.3,
+              "note": "Lily-of-the-Valley",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Mimosa",
+              "x": 153.0,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 89.9,
+              "note": "Mimosa",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Bergamot",
+              "x": 273.0,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 82.4,
+              "note": "Bergamot",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            }
+          ],
+          "uncertainComponents": [],
+          "notesHeaderY": 26.0
+        },
+        {
+          "psm": 11,
+          "strict": true,
+          "reason": "",
+          "notes": [
+            "Orange",
+            "Grapefruit",
+            "Mandarin Orange",
+            "Lily-of-the-Valley",
+            "Mimosa",
+            "Bergamot"
+          ],
+          "components": [
+            {
+              "raw": "Orange",
+              "x": 32.0,
+              "y": 156.0,
+              "row": 0,
+              "confidence": 96.8,
+              "note": "Orange",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Grapefruit",
+              "x": 152.0,
+              "y": 156.0,
+              "row": 0,
+              "confidence": 92.4,
+              "note": "Grapefruit",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Mandarin Orange",
+              "x": 272.0,
+              "y": 156.33333333333334,
+              "row": 0,
+              "confidence": 92.4,
+              "note": "Mandarin Orange",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Lily-of- the-Valley",
+              "x": 31.0,
+              "y": 316.0,
+              "row": 1,
+              "confidence": 91.3,
+              "note": "Lily-of-the-Valley",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Mimosa",
+              "x": 153.0,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 95.1,
+              "note": "Mimosa",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Bergamot",
+              "x": 273.0,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 96.0,
+              "note": "Bergamot",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            }
+          ],
+          "uncertainComponents": [],
+          "notesHeaderY": 26.0
+        }
       ]
     },
     {
@@ -500973,8 +501864,8 @@
     },
     {
       "code": "928-TRU",
-      "fragranticaId": "93471",
-      "card": "database/fragrantica/social-cards/images/current_928-TRU_93471.jpeg",
+      "fragranticaId": "16241",
+      "card": "database/fragrantica/social-cards/images/962_928-TRU_16241.jpeg",
       "catalogNotes": [
         "Rose",
         "Lotus",
@@ -500983,10 +501874,259 @@
         "Bamboo",
         "Musk"
       ],
-      "result": "UNSUPPORTED_CARD_GEOMETRY",
-      "size": [
-        1200,
-        620
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Rose",
+        "Lotus",
+        "Yuzu",
+        "Apple",
+        "Bamboo",
+        "Musk"
+      ],
+      "components": [
+        {
+          "raw": "Rose",
+          "x": 32.666666666666664,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 96.9,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lotus",
+          "x": 153.0,
+          "y": 183.66666666666666,
+          "row": 0,
+          "confidence": 96.2,
+          "note": "Lotus",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "YUZU",
+          "x": 271.6666666666667,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 90.0,
+          "note": "Yuzu",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Apple",
+          "x": 31.666666666666668,
+          "y": 308.6666666666667,
+          "row": 1,
+          "confidence": 96.8,
+          "note": "Apple",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bamboo",
+          "x": 153.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 80.0,
+          "note": "Bamboo",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 272.6666666666667,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 76.6,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "attempts": [
+        {
+          "psm": 6,
+          "strict": true,
+          "reason": "",
+          "notes": [
+            "Rose",
+            "Lotus",
+            "Yuzu",
+            "Apple",
+            "Bamboo",
+            "Musk"
+          ],
+          "components": [
+            {
+              "raw": "Rose",
+              "x": 32.666666666666664,
+              "y": 183.33333333333334,
+              "row": 0,
+              "confidence": 96.9,
+              "note": "Rose",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Lotus",
+              "x": 153.0,
+              "y": 183.66666666666666,
+              "row": 0,
+              "confidence": 96.2,
+              "note": "Lotus",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "YUZU",
+              "x": 271.6666666666667,
+              "y": 183.33333333333334,
+              "row": 0,
+              "confidence": 90.0,
+              "note": "Yuzu",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Apple",
+              "x": 31.666666666666668,
+              "y": 308.6666666666667,
+              "row": 1,
+              "confidence": 96.8,
+              "note": "Apple",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Bamboo",
+              "x": 153.0,
+              "y": 316.0,
+              "row": 1,
+              "confidence": 80.0,
+              "note": "Bamboo",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Musk",
+              "x": 272.6666666666667,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 76.6,
+              "note": "Musk",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            }
+          ],
+          "uncertainComponents": [],
+          "notesHeaderY": 53.0
+        },
+        {
+          "psm": 11,
+          "strict": true,
+          "reason": "",
+          "notes": [
+            "Rose",
+            "Lotus",
+            "Yuzu",
+            "Apple",
+            "Bamboo",
+            "Musk"
+          ],
+          "components": [
+            {
+              "raw": "Rose",
+              "x": 32.666666666666664,
+              "y": 183.33333333333334,
+              "row": 0,
+              "confidence": 96.4,
+              "note": "Rose",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Lotus",
+              "x": 153.0,
+              "y": 183.66666666666666,
+              "row": 0,
+              "confidence": 84.0,
+              "note": "Lotus",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "YUZU",
+              "x": 271.6666666666667,
+              "y": 183.33333333333334,
+              "row": 0,
+              "confidence": 63.1,
+              "note": "Yuzu",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Apple",
+              "x": 31.666666666666668,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 96.5,
+              "note": "Apple",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Bamboo",
+              "x": 153.0,
+              "y": 303.0,
+              "row": 1,
+              "confidence": 93.6,
+              "note": "Bamboo",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            },
+            {
+              "raw": "Musk",
+              "x": 272.6666666666667,
+              "y": 316.3333333333333,
+              "row": 1,
+              "confidence": 96.4,
+              "note": "Musk",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
+            }
+          ],
+          "uncertainComponents": [],
+          "notesHeaderY": 53.0
+        }
       ]
     },
     {

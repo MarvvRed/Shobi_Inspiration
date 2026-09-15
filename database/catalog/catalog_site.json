@@ -224,9 +224,9 @@
   },
   {
     "code": "2842-KYLJ",
-    "inspiredBy": "Vanilla-dew",
+    "inspiredBy": "Vanilla Dew",
     "brand": "Kylie Cosmetics",
-    "fragranticaUrl": "https://www.fragrantica.com/p/117345",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Kylie-Cosmetics/Vanilla-Dew-117345.html",
     "genderAffinity": "feminine",
     "seasons": [
       "spring"
@@ -295,7 +295,7 @@
   },
   {
     "code": "2840-KYLJ",
-    "inspiredBy": "Caramel-cloud",
+    "inspiredBy": "Caramel Cloud",
     "brand": "Kylie Cosmetics",
     "fragranticaUrl": "https://www.fragrantica.com/p/117346",
     "genderAffinity": "feminine",
@@ -628,9 +628,9 @@
   },
   {
     "code": "2831-GISS",
-    "inspiredBy": "Martinique-osmanthus-eau-de-parfum-",
+    "inspiredBy": "Martinique Osmanthus 2025",
     "brand": "gissah",
-    "fragranticaUrl": "https://www.fragrantica.com/p/126288",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Gissah/Martinique-Osmanthus-2025-126288.html",
     "genderAffinity": "unisex",
     "seasons": [
       "spring"
@@ -1766,9 +1766,9 @@
   },
   {
     "code": "2799-OBVI",
-    "inspiredBy": "Milk-matcha-un-ete",
+    "inspiredBy": "Milk & Matcha",
     "brand": "obvious",
-    "fragranticaUrl": "https://www.fragrantica.com/p/103407",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Obvious/Milk-Matcha-103407.html",
     "genderAffinity": "unisex",
     "seasons": [
       "spring"
@@ -1913,9 +1913,9 @@
   },
   {
     "code": "2793-FRAG",
-    "inspiredBy": "Oud-noir-intense",
+    "inspiredBy": "Oud Noir Intense",
     "brand": "Fragrance Du Bois",
-    "fragranticaUrl": "https://www.fragrantica.com/p/24483",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Fragrance-Du-Bois/Oud-Noir-Intense-24483.html",
     "genderAffinity": "unisex",
     "seasons": [
       "fall"
@@ -4567,9 +4567,9 @@
   },
   {
     "code": "2719-FRAG",
-    "inspiredBy": "New-york-5th-avenue",
+    "inspiredBy": "New York 5th Avenue",
     "brand": "Fragrance Du Bois",
-    "fragranticaUrl": "https://www.fragrantica.com/p/61946",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Fragrance-Du-Bois/New-York-5th-Avenue-61946.html",
     "genderAffinity": "unisex",
     "seasons": [
       "fall"
@@ -6600,10 +6600,8 @@
       "Raspberry",
       "Clearwood"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -6613,13 +6611,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 6,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "code": "2645-LTN",
@@ -6992,7 +6990,7 @@
   },
   {
     "code": "2622-PHL",
-    "inspiredBy": "Vanilla-skin-eau-de-",
+    "inspiredBy": "Vanilla Skin",
     "brand": "Phlur",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Phlur/Vanilla-Skin-87258.html",
     "genderAffinity": "unisex",
@@ -7082,10 +7080,8 @@
       "Mimosa",
       "Honey"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -7095,13 +7091,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 6,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "code": "2620-CHAR",
@@ -12737,7 +12733,7 @@
   },
   {
     "code": "2518-MATAH",
-    "inspiredBy": "Escapade-gourmande",
+    "inspiredBy": "Escapade Gourmande",
     "brand": "Maison Mataha",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Maison-Mataha/Escapade-Gourmande-72607.html",
     "genderAffinity": "unisex",
@@ -22381,9 +22377,9 @@
   },
   {
     "code": "2194-ORT",
-    "inspiredBy": "ORTO",
+    "inspiredBy": "Cuoium",
     "brand": "Orto Parisi",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Al-Qasim-Oud/ORTO-119473.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html",
     "genderAffinity": "unisex",
     "seasons": [
       "winter"
@@ -22399,9 +22395,7 @@
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Missing perfume image",
-      "Main Notes order not fully verified",
-      "Season not fully verified"
+      "Main Notes order not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -22410,14 +22404,14 @@
       "fid": true,
       "url": true,
       "socialCard": false,
-      "image": false,
+      "image": true,
       "notes": false,
       "icons": true,
       "gender": true,
-      "season": false
+      "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -23792,10 +23786,8 @@
       "Tonka Bean",
       "Orange Blossom"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -23805,13 +23797,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 3,
     "validationMatchedNotesCount": 3,
-    "validationIconsCount": 2
+    "validationIconsCount": 3
   },
   {
     "code": "2155-KAY",
@@ -24147,7 +24139,7 @@
   },
   {
     "code": "2148-BAT",
-    "inspiredBy": "Pure-wonder-eau-de-",
+    "inspiredBy": "Pure Wonder",
     "brand": "Bath Body Works",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Bath-Body-Works/Pure-Wonder-70500.html",
     "genderAffinity": "feminine",
@@ -25083,9 +25075,9 @@
   },
   {
     "code": "2055-BAT",
-    "inspiredBy": "Dream-bright-eau-de-",
+    "inspiredBy": "Dream Bright",
     "brand": "Bath Body Works",
-    "fragranticaUrl": "https://www.fragrantica.com/p/78849",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Bath-Body-Works/Bath-Body-Works-Dream-Bright-78849.html",
     "genderAffinity": "feminine",
     "seasons": [
       "winter"
@@ -25977,10 +25969,8 @@
       "Myrrh",
       "Patchouli"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -25990,13 +25980,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 6,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "code": "2036-GIS",
@@ -28807,7 +28797,7 @@
   },
   {
     "code": "1958-DRC",
-    "inspiredBy": "Bois-d-argent-eau-de-",
+    "inspiredBy": "Bois D'Argent",
     "brand": "Dior",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Bois-D-argent-1377.html",
     "genderAffinity": "unisex",
@@ -29481,7 +29471,7 @@
   },
   {
     "code": "1929-BLG",
-    "inspiredBy": "Le-gemme-tygar-eau-de-",
+    "inspiredBy": "Tygar",
     "brand": "Bvlgari",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Tygar-41222.html",
     "genderAffinity": "masculine",
@@ -29961,7 +29951,7 @@
   },
   {
     "code": "1921-VIV",
-    "inspiredBy": "Boudoir-",
+    "inspiredBy": "Boudoir",
     "brand": "Vivienne Westwood",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Vivienne-Westwood/Boudoir-1532.html",
     "genderAffinity": "feminine",
@@ -32171,7 +32161,7 @@
   },
   {
     "code": "1896-ESC",
-    "inspiredBy": "Cherry-in-japan",
+    "inspiredBy": "Cherry in Japan",
     "brand": "Escada",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Escada/Cherry-In-Japan-70279.html",
     "genderAffinity": "feminine",
@@ -32464,7 +32454,7 @@
   },
   {
     "code": "1893-CHA",
-    "inspiredBy": "N-1-l-eau-rouge",
+    "inspiredBy": "N°1 de Chanel L'Eau Rouge",
     "brand": "Chanel",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/N-1-de-Chanel-L-Eau-Rouge-71442.html",
     "genderAffinity": "feminine",
@@ -37396,9 +37386,9 @@
   },
   {
     "code": "1751-GUL",
-    "inspiredBy": "Madame",
+    "inspiredBy": "Ma Dame",
     "brand": "Jean Paul Gaultier",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Cortina-1224/Madame-12088.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html",
     "genderAffinity": "feminine",
     "seasons": [
       "spring"
@@ -37412,11 +37402,7 @@
     ],
     "validationStatus": "yellow",
     "validationIssues": [
-      "Social Card not fully verified",
-      "Missing perfume image",
-      "Main Notes order not fully verified",
-      "Gender not fully verified",
-      "Season not fully verified"
+      "Gender not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -37424,15 +37410,15 @@
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
-      "image": false,
-      "notes": false,
+      "socialCard": true,
+      "image": true,
+      "notes": true,
       "icons": true,
       "gender": false,
-      "season": false
+      "season": true
     },
     "validationNotesCount": 5,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 5
   },
   {
@@ -37779,10 +37765,8 @@
       "Palisander Rosewood",
       "Musk"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -37792,13 +37776,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 6,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "code": "1745-SERG",
@@ -38072,10 +38056,8 @@
       "Sandalwood Flower",
       "Amber"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -38085,13 +38067,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 4,
     "validationMatchedNotesCount": 4,
-    "validationIconsCount": 3
+    "validationIconsCount": 4
   },
   {
     "code": "1734-TMFO",
@@ -41475,7 +41457,7 @@
   },
   {
     "code": "1551-VICT",
-    "inspiredBy": "Tease-dreamer-eau-de-",
+    "inspiredBy": "Tease Dreamer",
     "brand": "Victoria's Secret",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Victoria-s-Secret/Tease-Dreamer-54073.html",
     "genderAffinity": "feminine",
@@ -46653,7 +46635,7 @@
   },
   {
     "code": "172-SHALM",
-    "inspiredBy": "Moroccan-musk",
+    "inspiredBy": "Moroccan Musk",
     "brand": "Scent Salim",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Scent-Salim/Moroccan-Musk-47982.html",
     "genderAffinity": "unisex",
@@ -47011,7 +46993,7 @@
   },
   {
     "code": "401-ARIA",
-    "inspiredBy": "Cloud-eau-de-",
+    "inspiredBy": "Cloud",
     "brand": "Ariana Grande",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Ariana-Grande/Cloud-50384.html",
     "genderAffinity": "feminine",
@@ -47194,7 +47176,7 @@
   },
   {
     "code": "601-ESC",
-    "inspiredBy": "Flor-del-sol",
+    "inspiredBy": "Flor del Sol",
     "brand": "Escada",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Escada/Flor-del-Sol-58398.html",
     "genderAffinity": "feminine",
@@ -48886,9 +48868,9 @@
   },
   {
     "code": "1037-BLG",
-    "inspiredBy": "Bvl Man",
+    "inspiredBy": "Bvlgari Man",
     "brand": "Bvlgari",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
     "genderAffinity": "masculine",
     "seasons": [
       "spring"
@@ -48904,9 +48886,7 @@
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Missing perfume image",
-      "Main Notes order not fully verified",
-      "Season not fully verified"
+      "Main Notes order not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -48915,14 +48895,14 @@
       "fid": true,
       "url": true,
       "socialCard": false,
-      "image": false,
+      "image": true,
       "notes": false,
       "icons": true,
       "gender": true,
-      "season": false
+      "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -57458,7 +57438,7 @@
   },
   {
     "code": "958-VICT",
-    "inspiredBy": "Fabulous-eau-de-",
+    "inspiredBy": "Fabulous",
     "brand": "Victoria's Secret",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Victoria-s-Secret/Fabulous-17699.html",
     "genderAffinity": "feminine",
@@ -58315,9 +58295,9 @@
   },
   {
     "code": "928-TRU",
-    "inspiredBy": "Delicate Rose",
+    "inspiredBy": "Trussardi Delicate Rose",
     "brand": "Trussardi",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Aurora-Scents/Delicate-Rose-93471.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
     "genderAffinity": "feminine",
     "seasons": [
       "spring"
@@ -58332,11 +58312,7 @@
     ],
     "validationStatus": "yellow",
     "validationIssues": [
-      "Social Card not fully verified",
-      "Missing perfume image",
-      "Main Notes order not fully verified",
-      "Gender not fully verified",
-      "Season not fully verified"
+      "Gender not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -58344,15 +58320,15 @@
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
-      "image": false,
-      "notes": false,
+      "socialCard": true,
+      "image": true,
+      "notes": true,
       "icons": true,
       "gender": false,
-      "season": false
+      "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -58469,7 +58445,7 @@
   },
   {
     "code": "923-TMU",
-    "inspiredBy": "notes AURA",
+    "inspiredBy": "Aura Mugler",
     "brand": "Mugler",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Mugler/Aura-Mugler-45639.html",
     "genderAffinity": "feminine",
@@ -61662,7 +61638,7 @@
   },
   {
     "code": "822-MIC",
-    "inspiredBy": "Sexy-ruby-glam-ruby",
+    "inspiredBy": "Sexy Ruby",
     "brand": "Michael Kors",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Michael-Kors/Sexy-Ruby-46182.html",
     "genderAffinity": "feminine",
@@ -62328,7 +62304,7 @@
   },
   {
     "code": "799-LANV",
-    "inspiredBy": "Eclat-d-arpege-eau-de-",
+    "inspiredBy": "Éclat d'Arpège",
     "brand": "Lanvin",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Lanvin/Eclat-d-Arpege-988.html",
     "genderAffinity": "feminine",
@@ -69941,9 +69917,9 @@
   },
   {
     "code": "548-CLI",
-    "inspiredBy": "Happy",
+    "inspiredBy": "Clinique Happy",
     "brand": "Clinique",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Dua-Brand/Happy-66133.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-372.html",
     "genderAffinity": "feminine",
     "seasons": [
       "summer"
@@ -69956,28 +69932,23 @@
       "Mimosa",
       "Bergamot"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Missing perfume image",
-      "Main Notes order not fully verified",
-      "Season not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
-      "image": false,
-      "notes": false,
+      "socialCard": true,
+      "image": true,
+      "notes": true,
       "icons": true,
       "gender": true,
-      "season": false
+      "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -81223,9 +81194,9 @@
   },
   {
     "code": "1086-CLI",
-    "inspiredBy": "Happy",
+    "inspiredBy": "Clinique Happy For Men",
     "brand": "Clinique",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Dua-Brand/Happy-66133.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-For-Men-373.html",
     "genderAffinity": "masculine",
     "seasons": [
       "summer"
@@ -81241,9 +81212,7 @@
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Missing perfume image",
-      "Main Notes order not fully verified",
-      "Season not fully verified"
+      "Main Notes order not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -81252,14 +81221,14 @@
       "fid": true,
       "url": true,
       "socialCard": false,
-      "image": false,
+      "image": true,
       "notes": false,
       "icons": true,
       "gender": true,
-      "season": false
+      "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
