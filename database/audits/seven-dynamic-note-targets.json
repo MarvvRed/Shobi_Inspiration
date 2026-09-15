@@ -7,18 +7,22 @@
       "Green Notes",
       "Rose"
     ],
-    "dbStatus": "VALIDATED_MANUAL",
+    "dbStatus": "VALIDATED_SOCIAL_CARD",
     "validated": {
       "code": "2282-DRC",
       "fragranticaId": 81847,
-      "card": "database/fragrantica/social-cards/images/3915_unknown_81847.jpeg",
-      "validated": false,
-      "mainNotes": [],
+      "card": "database/fragrantica/social-cards/images/current_2282-DRC_81847.jpeg",
+      "validated": true,
+      "mainNotes": [
+        "Fig",
+        "Green Notes",
+        "Rose"
+      ],
       "rawSlots": [],
       "validatedSlots": [],
       "failures": [],
       "reasons": [
-        "NO_OCR_SLOTS"
+        "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
       ]
     },
     "raw": {
@@ -34,57 +38,25 @@
   {
     "code": "236-IND",
     "fid": "42046",
-    "dbNotes": [],
-    "dbStatus": null,
+    "dbNotes": [
+      "Myrrh",
+      "Olibanum (Frankincense)"
+    ],
+    "dbStatus": "VALIDATED_SOCIAL_CARD",
     "validated": {
       "code": "236-IND",
       "fragranticaId": 42046,
-      "card": "database/fragrantica/social-cards/images/1144_236-IND_42046.jpeg",
-      "validated": false,
-      "mainNotes": [],
-      "rawSlots": [
-        {
-          "slot": 2,
-          "name": "Por 5 Gee",
-          "ocrConfidence": 41.5
-        },
-        {
-          "slot": 5,
-          "name": "wr",
-          "ocrConfidence": 27.7
-        },
-        {
-          "slot": 6,
-          "name": "wey",
-          "ocrConfidence": 29.4
-        }
+      "card": "database/fragrantica/social-cards/images/current_236-IND_42046.jpeg",
+      "validated": true,
+      "mainNotes": [
+        "Myrrh",
+        "Olibanum (Frankincense)"
       ],
+      "rawSlots": [],
       "validatedSlots": [],
-      "failures": [
-        {
-          "slot": 2,
-          "raw": "Por 5 Gee",
-          "bestScore": 0.632,
-          "margin": 0.06,
-          "ocrConfidence": 41.5
-        },
-        {
-          "slot": 5,
-          "raw": "wr",
-          "bestScore": 0.571,
-          "margin": 0.0,
-          "ocrConfidence": 27.7
-        },
-        {
-          "slot": 6,
-          "raw": "wey",
-          "bestScore": 0.6,
-          "margin": 0.055,
-          "ocrConfidence": 29.4
-        }
-      ],
+      "failures": [],
       "reasons": [
-        "LEXICON_UNCERTAIN"
+        "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
       ]
     },
     "raw": {
@@ -120,20 +92,107 @@
   {
     "code": "421-BRB",
     "fid": "13014",
-    "dbNotes": [],
-    "dbStatus": null,
+    "dbNotes": [
+      "Wormwood",
+      "Peach",
+      "Rose",
+      "Musk",
+      "Cashmir wood",
+      "Sandalwood"
+    ],
+    "dbStatus": "VALIDATED_OCR",
     "validated": {
       "code": "421-BRB",
       "fragranticaId": 13014,
       "card": "database/fragrantica/social-cards/images/527_421-BRB_13014.jpeg",
-      "validated": false,
-      "mainNotes": [],
-      "rawSlots": [],
-      "validatedSlots": [],
+      "validated": true,
+      "mainNotes": [
+        "Wormwood",
+        "Peach",
+        "Rose",
+        "Musk",
+        "Cashmir wood",
+        "Sandalwood"
+      ],
+      "rawSlots": [
+        {
+          "slot": 1,
+          "name": "Wormwood",
+          "ocrConfidence": null
+        },
+        {
+          "slot": 2,
+          "name": "Peach",
+          "ocrConfidence": null
+        },
+        {
+          "slot": 3,
+          "name": "Rose",
+          "ocrConfidence": null
+        },
+        {
+          "slot": 4,
+          "name": "Musk",
+          "ocrConfidence": null
+        },
+        {
+          "slot": 5,
+          "name": "Cashmir wood",
+          "ocrConfidence": null
+        },
+        {
+          "slot": 6,
+          "name": "Sandalwood",
+          "ocrConfidence": null
+        }
+      ],
+      "validatedSlots": [
+        {
+          "slot": 1,
+          "name": "Wormwood",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        },
+        {
+          "slot": 2,
+          "name": "Peach",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        },
+        {
+          "slot": 3,
+          "name": "Rose",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        },
+        {
+          "slot": 4,
+          "name": "Musk",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        },
+        {
+          "slot": 5,
+          "name": "Cashmir wood",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        },
+        {
+          "slot": 6,
+          "name": "Sandalwood",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        }
+      ],
       "failures": [],
-      "reasons": [
-        "NO_OCR_SLOTS"
-      ]
+      "reasons": [],
+      "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
     },
     "raw": {
       "page": 667,
@@ -148,19 +207,27 @@
   {
     "code": "487-CRT",
     "fid": "12878",
-    "dbNotes": [],
-    "dbStatus": null,
+    "dbNotes": [
+      "Lily",
+      "Green Notes",
+      "Citruses"
+    ],
+    "dbStatus": "VALIDATED_SOCIAL_CARD",
     "validated": {
       "code": "487-CRT",
       "fragranticaId": 12878,
-      "card": "database/fragrantica/social-cards/images/583_487-CRT_12878.jpeg",
-      "validated": false,
-      "mainNotes": [],
+      "card": "database/fragrantica/social-cards/images/current_487-CRT_12878.jpeg",
+      "validated": true,
+      "mainNotes": [
+        "Lily",
+        "Green Notes",
+        "Citruses"
+      ],
       "rawSlots": [],
       "validatedSlots": [],
       "failures": [],
       "reasons": [
-        "NO_OCR_SLOTS"
+        "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
       ]
     },
     "raw": {
@@ -176,27 +243,132 @@
   {
     "code": "525-DRC",
     "fid": "221",
-    "dbNotes": [],
-    "dbStatus": null,
-    "validated": null,
+    "dbNotes": [
+      "Brazilian Rosewood",
+      "Amber",
+      "Sandalwood",
+      "Aldehydes",
+      "Benzoin",
+      "Oakmoss"
+    ],
+    "dbStatus": "VALIDATED_OCR",
+    "validated": {
+      "code": "525-DRC",
+      "fragranticaId": 221,
+      "card": "database/fragrantica/social-cards/images/618_525-DRC_221.jpeg",
+      "validated": true,
+      "mainNotes": [
+        "Brazilian Rosewood",
+        "Amber",
+        "Sandalwood",
+        "Aldehydes",
+        "Benzoin",
+        "Oakmoss"
+      ],
+      "rawSlots": [
+        {
+          "slot": 1,
+          "name": "Brazilian Rosewood",
+          "ocrConfidence": null
+        },
+        {
+          "slot": 2,
+          "name": "Amber",
+          "ocrConfidence": null
+        },
+        {
+          "slot": 3,
+          "name": "Sandalwood",
+          "ocrConfidence": null
+        },
+        {
+          "slot": 4,
+          "name": "Aldehydes",
+          "ocrConfidence": null
+        },
+        {
+          "slot": 5,
+          "name": "Benzoin",
+          "ocrConfidence": null
+        },
+        {
+          "slot": 6,
+          "name": "Oakmoss",
+          "ocrConfidence": null
+        }
+      ],
+      "validatedSlots": [
+        {
+          "slot": 1,
+          "name": "Brazilian Rosewood",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        },
+        {
+          "slot": 2,
+          "name": "Amber",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        },
+        {
+          "slot": 3,
+          "name": "Sandalwood",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        },
+        {
+          "slot": 4,
+          "name": "Aldehydes",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        },
+        {
+          "slot": 5,
+          "name": "Benzoin",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        },
+        {
+          "slot": 6,
+          "name": "Oakmoss",
+          "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+          "matchScore": 1.0,
+          "margin": null
+        }
+      ],
+      "failures": [],
+      "reasons": [],
+      "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
+    },
     "raw": null
   },
   {
     "code": "884-RAL",
-    "fid": "14446",
-    "dbNotes": [],
-    "dbStatus": "",
+    "fid": "9006",
+    "dbNotes": [
+      "Cranberry",
+      "Tonka Bean"
+    ],
+    "dbStatus": "VALIDATED_SOCIAL_CARD",
     "validated": {
       "code": "884-RAL",
       "fragranticaId": 14446,
-      "card": "database/fragrantica/social-cards/images/corrected_884-RAL_14446.jpeg",
-      "validated": false,
-      "mainNotes": [],
+      "card": "database/fragrantica/social-cards/images/current_884-RAL_14446.jpeg",
+      "validated": true,
+      "mainNotes": [
+        "Cranberry",
+        "Tonka Bean"
+      ],
       "rawSlots": [],
       "validatedSlots": [],
       "failures": [],
       "reasons": [
-        "PENDING_CURRENT_FID_OCR"
+        "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
       ]
     },
     "raw": {
@@ -211,19 +383,33 @@
   {
     "code": "945-VER",
     "fid": "28958",
-    "dbNotes": [],
-    "dbStatus": null,
+    "dbNotes": [
+      "Lemon Blossom",
+      "Lemon",
+      "Jasmine",
+      "Pomegranate",
+      "Bergamot",
+      "Musk"
+    ],
+    "dbStatus": "VALIDATED_SOCIAL_CARD",
     "validated": {
       "code": "945-VER",
       "fragranticaId": 28958,
-      "card": "database/fragrantica/social-cards/images/976_945-VER_28958.jpeg",
-      "validated": false,
-      "mainNotes": [],
+      "card": "database/fragrantica/social-cards/images/current_945-VER_28958.jpeg",
+      "validated": true,
+      "mainNotes": [
+        "Lemon Blossom",
+        "Lemon",
+        "Jasmine",
+        "Pomegranate",
+        "Bergamot",
+        "Musk"
+      ],
       "rawSlots": [],
       "validatedSlots": [],
       "failures": [],
       "reasons": [
-        "NO_OCR_SLOTS"
+        "DYNAMIC_FULL_CARD_OCR_EXACT_LAYOUT_PROOF"
       ]
     },
     "raw": {
