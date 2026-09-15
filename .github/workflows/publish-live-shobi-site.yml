@@ -16,6 +16,9 @@ on:
       - 'database/assets/note-icons/**'
       - 'database/audits/display-identity-hygiene-audit.json'
       - 'database/audits/identity-change-allowlist.json'
+      - 'database/audits/critical-identity-fixes.json'
+      - 'database/audits/critical-identity-regression-registry.json'
+      - 'database/audits/shared-fid-alias-registry.json'
 
 permissions:
   contents: write
