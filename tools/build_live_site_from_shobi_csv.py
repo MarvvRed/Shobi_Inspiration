@@ -25,6 +25,15 @@ SITE_OUTPUT = ROOT / "database/catalog/catalog_site.json"
 # corresponding perfume page. These override stale candidate matches in the
 # historical mapping file until that large source file is regenerated.
 CONFIRMED_IDENTITY_OVERRIDES = {
+    # Regression-locked corrections.  These remain explicit runtime overrides
+    # in addition to the source-mapping repair, so a stale mapping import can
+    # never silently restore a same-name but different Fragrantica perfume.
+    "1037-BLG": ("Bvlgari", "Bvlgari Man", "9403", "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html"),
+    "1751-GUL": ("Jean Paul Gaultier", "Ma Dame", "3681", "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html"),
+    "928-TRU": ("Trussardi", "Trussardi Delicate Rose", "16241", "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html"),
+    "548-CLI": ("Clinique", "Clinique Happy", "372", "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-372.html"),
+    "1086-CLI": ("Clinique", "Clinique Happy For Men", "373", "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-For-Men-373.html"),
+    "2194-ORT": ("Orto Parisi", "Cuoium", "69923", "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html"),
     "646-ARM": ("Giorgio Armani", "Armani Code for Women", "413", "https://www.fragrantica.com/perfume/Giorgio-Armani/Armani-Code-for-Women-413.html"),
     "716-ISS": ("Issey Miyake", "A Scent by Issey Miyake", "6432", "https://www.fragrantica.com/perfume/Issey-Miyake/A-Scent-by-Issey-Miyake-6432.html"),
     "847-NRO": ("Narciso Rodriguez", "Narciso Poudree", "36679", "https://www.fragrantica.com/perfume/Narciso-Rodriguez/Narciso-Poudree-36679.html"),
