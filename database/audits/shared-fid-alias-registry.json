@@ -1,0 +1,29 @@
+{
+  "rule": "Only these exact code sets may intentionally share a Fragrantica ID. Any additional code or any new shared FID fails the catalog safety gate.",
+  "rows": [
+    {
+      "fragranticaId": "209",
+      "codes": ["843-NRO", "848-NRO"],
+      "canonicalIdentity": "Narciso Rodriguez For Her — Narciso Rodriguez",
+      "reason": "Both Shobi labels resolve to Fragrantica FID 209; naming differs only by catalog alias/display wording."
+    },
+    {
+      "fragranticaId": "26777",
+      "codes": ["909-SFER", "1258-SFER"],
+      "canonicalIdentity": "White Mimosa — Salvatore Ferragamo",
+      "reason": "Both Shobi labels resolve to Fragrantica FID 26777; one includes the Tuscan Scent collection wording."
+    },
+    {
+      "fragranticaId": "720",
+      "codes": ["717-ISS", "718-ISS"],
+      "canonicalIdentity": "L'Eau d'Issey — Issey Miyake",
+      "reason": "Both Shobi labels resolve to Fragrantica FID 720; 'Classic Issey Miyake' is an alias/display label for the same source perfume."
+    },
+    {
+      "fragranticaId": "28630",
+      "codes": ["612-ESC", "613-ESC"],
+      "canonicalIdentity": "Turquoise Summer — Escada",
+      "reason": "Both Shobi labels resolve to Fragrantica FID 28630; the shortened Turquoise label refers to the same source perfume."
+    }
+  ]
+}
