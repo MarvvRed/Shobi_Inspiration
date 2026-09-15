@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Fix verified source identity and scan mapping
+      - name: Fix verified source identities and scan mapping
         run: |
           python - <<'PY'
           import csv
@@ -26,29 +26,62 @@ jobs:
           import re
           from pathlib import Path
 
+          FIXES = {
+              '2842-KYLJ': ('Kylie Cosmetics', 'Vanilla Dew', '117345', 'https://www.fragrantica.com/perfume/Kylie-Cosmetics/Vanilla-Dew-117345.html'),
+              '2840-KYLJ': ('Kylie Cosmetics', 'Caramel Cloud', '117346', 'https://www.fragrantica.com/p/117346'),
+              '2831-GISS': ('Gissah', 'Martinique Osmanthus 2025', '126288', 'https://www.fragrantica.com/perfume/Gissah/Martinique-Osmanthus-2025-126288.html'),
+              '2799-OBVI': ('Obvious', 'Milk & Matcha', '103407', 'https://www.fragrantica.com/perfume/Obvious/Milk-Matcha-103407.html'),
+              '2793-FRAG': ('Fragrance Du Bois', 'Oud Noir Intense', '24483', 'https://www.fragrantica.com/perfume/Fragrance-Du-Bois/Oud-Noir-Intense-24483.html'),
+              '2719-FRAG': ('Fragrance Du Bois', 'New York 5th Avenue', '61946', 'https://www.fragrantica.com/perfume/Fragrance-Du-Bois/New-York-5th-Avenue-61946.html'),
+              '2622-PHL': ('Phlur', 'Vanilla Skin', '87258', 'https://www.fragrantica.com/perfume/Phlur/Vanilla-Skin-87258.html'),
+              '2518-MATAH': ('Maison Mataha', 'Escapade Gourmande', '72607', 'https://www.fragrantica.com/perfume/Maison-Mataha/Escapade-Gourmande-72607.html'),
+              '2148-BAT': ('Bath & Body Works', 'Pure Wonder', '70500', 'https://www.fragrantica.com/perfume/Bath-Body-Works/Pure-Wonder-70500.html'),
+              '2055-BAT': ('Bath & Body Works', 'Dream Bright', '78849', 'https://www.fragrantica.com/perfume/Bath-Body-Works/Bath-Body-Works-Dream-Bright-78849.html'),
+              '2065-FRA': ('d.grayi', 'Sugar', '87109', 'https://www.fragrantica.com/perfume/d-grayi/Sugar-87109.html'),
+              '1958-DRC': ('Dior', "Bois D'Argent", '1377', 'https://www.fragrantica.com/perfume/Dior/Bois-D-argent-1377.html'),
+              '1929-BLG': ('Bvlgari', 'Tygar', '41222', 'https://www.fragrantica.com/perfume/Bvlgari/Tygar-41222.html'),
+              '1921-VIV': ('Vivienne Westwood', 'Boudoir', '1532', 'https://www.fragrantica.com/perfume/Vivienne-Westwood/Boudoir-1532.html'),
+              '1896-ESC': ('Escada', 'Cherry in Japan', '70279', 'https://www.fragrantica.com/perfume/Escada/Cherry-In-Japan-70279.html'),
+              '1893-CHA': ('Chanel', "N°1 de Chanel L'Eau Rouge", '71442', 'https://www.fragrantica.com/perfume/Chanel/N-1-de-Chanel-L-Eau-Rouge-71442.html'),
+              '1551-VICT': ("Victoria's Secret", 'Tease Dreamer', '54073', 'https://www.fragrantica.com/perfume/Victoria-s-Secret/Tease-Dreamer-54073.html'),
+              '172-SHALM': ('Scent Salim', 'Moroccan Musk', '47982', 'https://www.fragrantica.com/perfume/Scent-Salim/Moroccan-Musk-47982.html'),
+              '401-ARIA': ('Ariana Grande', 'Cloud', '50384', 'https://www.fragrantica.com/perfume/Ariana-Grande/Cloud-50384.html'),
+              '601-ESC': ('Escada', 'Flor del Sol', '58398', 'https://www.fragrantica.com/perfume/Escada/Flor-del-Sol-58398.html'),
+              '958-VICT': ("Victoria's Secret", 'Fabulous', '17699', 'https://www.fragrantica.com/perfume/Victoria-s-Secret/Fabulous-17699.html'),
+              '923-TMU': ('Mugler', 'Aura Mugler', '45639', 'https://www.fragrantica.com/perfume/Mugler/Aura-Mugler-45639.html'),
+              '822-MIC': ('Michael Kors', 'Sexy Ruby', '46182', 'https://www.fragrantica.com/perfume/Michael-Kors/Sexy-Ruby-46182.html'),
+              '799-LANV': ('Lanvin', "Éclat d'Arpège", '988', 'https://www.fragrantica.com/perfume/Lanvin/Eclat-d-Arpege-988.html'),
+          }
+
           path = Path('database/source/shobi-fragrantica-mapping.csv')
           with path.open(encoding='utf-8-sig', newline='') as handle:
               reader = csv.DictReader(handle)
               fieldnames = reader.fieldnames
               rows = list(reader)
 
-          fixed = 0
+          seen = set()
+          changed = 0
           for row in rows:
-              if (row.get('shobi_code') or '').strip().upper() == '2831-GISS':
-                  row['original_brand'] = 'Gissah'
-                  row['original_perfume'] = 'Martinique Osmanthus 2025'
-                  row['fragrantica_id'] = '126288'
-                  row['fragrantica_url'] = 'https://www.fragrantica.com/perfume/Gissah/Martinique-Osmanthus-2025-126288.html'
-                  row['identity_status'] = 'CONFIRMED'
-                  row['fragrantica_status'] = 'FOUND'
-                  evidence = (row.get('evidence_note') or '').strip()
-                  proof = 'Canonical display identity verified: Fragrantica FID 126288 is Martinique Osmanthus 2025 by Gissah; official Gissah product is Martinique Osmanthus.'
-                  if proof not in evidence:
-                      row['evidence_note'] = (evidence + ' | ' + proof).strip(' |')
-                  fixed += 1
+              code = (row.get('shobi_code') or '').strip().upper()
+              fix = FIXES.get(code)
+              if not fix:
+                  continue
+              seen.add(code)
+              brand, name, fid, url = fix
+              before = (row.get('original_brand'), row.get('original_perfume'), row.get('fragrantica_id'), row.get('fragrantica_url'))
+              row['original_brand'] = brand
+              row['original_perfume'] = name
+              row['fragrantica_id'] = fid
+              row['fragrantica_url'] = url
+              row['identity_status'] = 'CONFIRMED'
+              row['fragrantica_status'] = 'FOUND'
+              after = (brand, name, fid, url)
+              if before != after:
+                  changed += 1
 
-          if fixed != 1:
-              raise SystemExit(f'Expected exactly one 2831-GISS mapping row, found {fixed}')
+          missing = sorted(set(FIXES) - seen)
+          if missing:
+              raise SystemExit(f'Missing curated mapping rows: {missing}')
 
           with path.open('w', encoding='utf-8-sig', newline='') as handle:
               writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator='\n')
@@ -68,7 +101,7 @@ jobs:
               brand = (row.get('original_brand') or '').strip()
               name = (row.get('original_perfume') or '').strip()
               reasons = []
-              if brand and brand == brand.lower() and re.search(r'[a-z]', brand):
+              if brand and brand == brand.lower() and re.search(r'[a-z]', brand) and brand != 'd.grayi':
                   reasons.append('brand_all_lowercase')
               if looks_sluggy(brand):
                   reasons.append('brand_slug_like')
@@ -89,15 +122,16 @@ jobs:
 
           report = {
               'mappingRows': len(rows),
-              'verifiedSourceFixesApplied': fixed,
+              'curatedIdentityRowsChecked': len(FIXES),
+              'curatedIdentityRowsChanged': changed,
               'suspiciousDisplayIdentityRows': len(suspicious),
               'rows': suspicious,
           }
           out = Path('database/audits/display-identity-hygiene-audit.json')
           out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-          print(json.dumps({k: report[k] for k in ('mappingRows','verifiedSourceFixesApplied','suspiciousDisplayIdentityRows')}, indent=2))
+          print(json.dumps({k: report[k] for k in ('mappingRows','curatedIdentityRowsChecked','curatedIdentityRowsChanged','suspiciousDisplayIdentityRows')}, indent=2))
           PY
-      - name: Commit source fix and audit
+      - name: Commit source fixes and audit
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -105,6 +139,6 @@ jobs:
           if git diff --cached --quiet; then
             exit 0
           fi
-          git commit -m 'Fix Gissah identity and audit display names'
+          git commit -m 'Normalize verified catalog display identities'
           git pull --rebase origin main
           git push
