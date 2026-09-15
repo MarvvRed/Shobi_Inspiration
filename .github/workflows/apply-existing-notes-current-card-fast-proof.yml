@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'tools/apply_existing_notes_current_card_fast_proof.py'
+      - 'tools/validate_existing_notes_on_current_cards_fast.py'
+      - 'existing-notes-current-card-fast-proof.json'
       - '.github/workflows/apply-existing-notes-current-card-fast-proof.yml'
   workflow_dispatch:
 
