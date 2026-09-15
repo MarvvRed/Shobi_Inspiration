@@ -8,4 +8,4 @@ The current production database contains only the 2,253 clean, unique Shobi perf
 - `database/catalog/catalog-scope-exclusions.json` — the 67 excluded Shobi codes.
 - `database/catalog/final-perfume-catalog-certification.json` — machine-readable certification and source exceptions.
 
-Every final record has a live Shobi product ID and URL. 2,254 have direct Fragrantica identity proof; the three remaining records have specific documented evidence of a real wearable perfume. Rebuild the final files with `tools/build_final_perfume_catalog.py`; do not add a record unless it satisfies the same scope rule.
+Every final record has a live Shobi product ID and URL. **2,250** have direct Fragrantica identity proof; the three remaining records have specific documented evidence of a real wearable perfume. Rebuild the final files with `tools/build_final_perfume_catalog.py`; do not add a record unless it satisfies the same scope rule.
