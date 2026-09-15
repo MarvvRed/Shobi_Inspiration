@@ -1,0 +1,110 @@
+name: Fix and audit catalog display identities
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-and-audit-display-identities.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit-identities:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fix verified source identity and scan mapping
+        run: |
+          python - <<'PY'
+          import csv
+          import json
+          import re
+          from pathlib import Path
+
+          path = Path('database/source/shobi-fragrantica-mapping.csv')
+          with path.open(encoding='utf-8-sig', newline='') as handle:
+              reader = csv.DictReader(handle)
+              fieldnames = reader.fieldnames
+              rows = list(reader)
+
+          fixed = 0
+          for row in rows:
+              if (row.get('shobi_code') or '').strip().upper() == '2831-GISS':
+                  row['original_brand'] = 'Gissah'
+                  row['original_perfume'] = 'Martinique Osmanthus 2025'
+                  row['fragrantica_id'] = '126288'
+                  row['fragrantica_url'] = 'https://www.fragrantica.com/perfume/Gissah/Martinique-Osmanthus-2025-126288.html'
+                  row['identity_status'] = 'CONFIRMED'
+                  row['fragrantica_status'] = 'FOUND'
+                  evidence = (row.get('evidence_note') or '').strip()
+                  proof = 'Canonical display identity verified: Fragrantica FID 126288 is Martinique Osmanthus 2025 by Gissah; official Gissah product is Martinique Osmanthus.'
+                  if proof not in evidence:
+                      row['evidence_note'] = (evidence + ' | ' + proof).strip(' |')
+                  fixed += 1
+
+          if fixed != 1:
+              raise SystemExit(f'Expected exactly one 2831-GISS mapping row, found {fixed}')
+
+          with path.open('w', encoding='utf-8-sig', newline='') as handle:
+              writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator='\n')
+              writer.writeheader()
+              writer.writerows(rows)
+
+          def looks_sluggy(value):
+              text = str(value or '').strip()
+              return bool(
+                  text.endswith('-')
+                  or re.search(r'[a-z0-9]+(?:-[a-z0-9]+){2,}', text)
+                  or re.search(r'\b(?:eau|de|parfum|perfume|fragrance)-(?:de|parfum|perfume|mist)\b', text, re.I)
+              )
+
+          suspicious = []
+          for row in rows:
+              brand = (row.get('original_brand') or '').strip()
+              name = (row.get('original_perfume') or '').strip()
+              reasons = []
+              if brand and brand == brand.lower() and re.search(r'[a-z]', brand):
+                  reasons.append('brand_all_lowercase')
+              if looks_sluggy(brand):
+                  reasons.append('brand_slug_like')
+              if looks_sluggy(name):
+                  reasons.append('perfume_name_slug_like')
+              if name and name == name.lower() and len(name.split()) > 1:
+                  reasons.append('perfume_name_all_lowercase')
+              if reasons:
+                  suspicious.append({
+                      'prestashopProductId': row.get('prestashop_product_id'),
+                      'code': row.get('shobi_code'),
+                      'brand': brand,
+                      'name': name,
+                      'fid': row.get('fragrantica_id'),
+                      'fragranticaUrl': row.get('fragrantica_url'),
+                      'reasons': reasons,
+                  })
+
+          report = {
+              'mappingRows': len(rows),
+              'verifiedSourceFixesApplied': fixed,
+              'suspiciousDisplayIdentityRows': len(suspicious),
+              'rows': suspicious,
+          }
+          out = Path('database/audits/display-identity-hygiene-audit.json')
+          out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps({k: report[k] for k in ('mappingRows','verifiedSourceFixesApplied','suspiciousDisplayIdentityRows')}, indent=2))
+          PY
+      - name: Commit source fix and audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/source/shobi-fragrantica-mapping.csv database/audits/display-identity-hygiene-audit.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'Fix Gissah identity and audit display names'
+          git pull --rebase origin main
+          git push
