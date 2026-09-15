@@ -96,7 +96,7 @@
   "byFailureSignature": [
     {
       "signature": "socialCard,notes",
-      "count": 1219,
+      "count": 1207,
       "codes": [
         "2848-PRFRO",
         "2847-NISH",
@@ -411,7 +411,6 @@
         "2246-GUC",
         "2245-KUR",
         "2235-PRA",
-        "2234-MON",
         "2229-ESCE",
         "2228-ESCE",
         "2223-AMG",
@@ -430,7 +429,6 @@
         "2203-ARM",
         "2204-TMFO",
         "2160-ZAR",
-        "2194-ORT",
         "2197-MNT",
         "2198-MNT",
         "2191-XER",
@@ -792,7 +790,6 @@
         "486-CAR",
         "479-CAR",
         "452-BYR",
-        "1037-BLG",
         "444-BLG",
         "999-ABE",
         "1006-ACQ",
@@ -802,7 +799,6 @@
         "1090-COS",
         "1091-COS",
         "177-TER",
-        "337-TIFF",
         "271-JOM",
         "722-GUL",
         "854-NIN",
@@ -811,7 +807,6 @@
         "153-PARF",
         "694-GUR",
         "449-BYR",
-        "127-KIL",
         "195-ARM",
         "763-KIL",
         "759-KIL",
@@ -982,7 +977,6 @@
         "835-MOS",
         "833-MOS",
         "828-MIY",
-        "827-MISN",
         "821-MIC",
         "817-MIC",
         "816-MAX",
@@ -1070,7 +1064,6 @@
         "622-EST",
         "619-EST",
         "614-EST",
-        "613-ESC",
         "612-ESC",
         "607-ESC",
         "606-ESC",
@@ -1138,7 +1131,6 @@
         "474-CAL",
         "472-CAL",
         "470-CAL",
-        "468-CAL",
         "467-CAL",
         "465-CAL",
         "460-CAC",
@@ -1202,7 +1194,6 @@
         "1250-RAL",
         "1247-RAL",
         "1246-RAL",
-        "1245-PRA",
         "1243-PRA",
         "1242-PRA",
         "1241-PRA",
@@ -1230,7 +1221,6 @@
         "1175-JAC",
         "1174-JAC",
         "1173-ISS",
-        "1172-ISS",
         "1171-HUG",
         "1169-HUG",
         "1168-HUG",
@@ -1274,7 +1264,6 @@
         "1102-DAV",
         "1101-DOL",
         "1089-COM",
-        "1086-CLI",
         "1080-DRC",
         "1077-DRC",
         "1076-DRC",
@@ -1297,7 +1286,6 @@
         "1049-CAL",
         "1048-CAL",
         "1045-CAL",
-        "1043-CAL",
         "1040-BLG",
         "1039-BLG",
         "1038-BLG",
@@ -1357,6 +1345,22 @@
       ]
     },
     {
+      "signature": "socialCard,image,notes,season",
+      "count": 10,
+      "codes": [
+        "2194-ORT",
+        "1751-GUL",
+        "884-RAL",
+        "1037-BLG",
+        "928-TRU",
+        "548-CLI",
+        "1245-PRA",
+        "1172-ISS",
+        "1086-CLI",
+        "1043-CAL"
+      ]
+    },
+    {
       "signature": "icons",
       "count": 6,
       "codes": [
@@ -1378,6 +1382,14 @@
       ]
     },
     {
+      "signature": "image,season",
+      "count": 2,
+      "codes": [
+        "337-TIFF",
+        "827-MISN"
+      ]
+    },
+    {
       "signature": "identity,socialCard,notes,icons,gender,season",
       "count": 1,
       "codes": [
@@ -1388,7 +1400,7 @@
   "byIssue": [
     {
       "issue": "Social Card not fully verified",
-      "count": 1254,
+      "count": 1252,
       "codes": [
         "2848-PRFRO",
         "2847-NISH",
@@ -1706,7 +1718,6 @@
         "2246-GUC",
         "2245-KUR",
         "2235-PRA",
-        "2234-MON",
         "2229-ESCE",
         "2228-ESCE",
         "2223-AMG",
@@ -1937,6 +1948,7 @@
         "1768-LTN",
         "1764-GUR",
         "1755-MNT",
+        "1751-GUL",
         "1763-JILS",
         "1757-DIP",
         "1754-HER",
@@ -2082,6 +2094,7 @@
         "173-SOS",
         "687-GUR",
         "1236-PAL",
+        "884-RAL",
         "1230-PAC",
         "1201-LBI",
         "795-LAN",
@@ -2104,7 +2117,6 @@
         "1090-COS",
         "1091-COS",
         "177-TER",
-        "337-TIFF",
         "271-JOM",
         "722-GUL",
         "854-NIN",
@@ -2113,7 +2125,6 @@
         "153-PARF",
         "694-GUR",
         "449-BYR",
-        "127-KIL",
         "195-ARM",
         "763-KIL",
         "759-KIL",
@@ -2263,6 +2274,7 @@
         "931-TRU",
         "930-TRU",
         "929-TRU",
+        "928-TRU",
         "927-TOUZ",
         "925-TMU",
         "923-TMU",
@@ -2308,7 +2320,6 @@
         "835-MOS",
         "833-MOS",
         "828-MIY",
-        "827-MISN",
         "821-MIC",
         "817-MIC",
         "816-MAX",
@@ -2396,7 +2407,6 @@
         "622-EST",
         "619-EST",
         "614-EST",
-        "613-ESC",
         "612-ESC",
         "607-ESC",
         "606-ESC",
@@ -2427,6 +2437,7 @@
         "554-DOL",
         "550-COA",
         "549-CLI",
+        "548-CLI",
         "537-DRC",
         "536-DRC",
         "535-DRC",
@@ -2464,7 +2475,6 @@
         "474-CAL",
         "472-CAL",
         "470-CAL",
-        "468-CAL",
         "467-CAL",
         "465-CAL",
         "460-CAC",
@@ -2648,7 +2658,7 @@
     },
     {
       "issue": "Main Notes order not fully verified",
-      "count": 1219,
+      "count": 1217,
       "codes": [
         "2848-PRFRO",
         "2847-NISH",
@@ -2963,7 +2973,6 @@
         "2246-GUC",
         "2245-KUR",
         "2235-PRA",
-        "2234-MON",
         "2229-ESCE",
         "2228-ESCE",
         "2223-AMG",
@@ -3193,6 +3202,7 @@
         "1768-LTN",
         "1764-GUR",
         "1755-MNT",
+        "1751-GUL",
         "1763-JILS",
         "1757-DIP",
         "1754-HER",
@@ -3333,6 +3343,7 @@
         "173-SOS",
         "687-GUR",
         "1236-PAL",
+        "884-RAL",
         "1230-PAC",
         "1201-LBI",
         "795-LAN",
@@ -3354,7 +3365,6 @@
         "1090-COS",
         "1091-COS",
         "177-TER",
-        "337-TIFF",
         "271-JOM",
         "722-GUL",
         "854-NIN",
@@ -3363,7 +3373,6 @@
         "153-PARF",
         "694-GUR",
         "449-BYR",
-        "127-KIL",
         "195-ARM",
         "763-KIL",
         "759-KIL",
@@ -3489,6 +3498,7 @@
         "931-TRU",
         "930-TRU",
         "929-TRU",
+        "928-TRU",
         "927-TOUZ",
         "925-TMU",
         "923-TMU",
@@ -3534,7 +3544,6 @@
         "835-MOS",
         "833-MOS",
         "828-MIY",
-        "827-MISN",
         "821-MIC",
         "817-MIC",
         "816-MAX",
@@ -3622,7 +3631,6 @@
         "622-EST",
         "619-EST",
         "614-EST",
-        "613-ESC",
         "612-ESC",
         "607-ESC",
         "606-ESC",
@@ -3653,6 +3661,7 @@
         "554-DOL",
         "550-COA",
         "549-CLI",
+        "548-CLI",
         "537-DRC",
         "536-DRC",
         "535-DRC",
@@ -3690,7 +3699,6 @@
         "474-CAL",
         "472-CAL",
         "470-CAL",
-        "468-CAL",
         "467-CAL",
         "465-CAL",
         "460-CAC",
@@ -3872,6 +3880,108 @@
       ]
     },
     {
+      "issue": "Season not fully verified",
+      "count": 47,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2194-ORT",
+        "2085-CLIV",
+        "1751-GUL",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "884-RAL",
+        "314-MOL",
+        "1037-BLG",
+        "337-TIFF",
+        "118-HAM",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "325-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "235-HOLL",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "928-TRU",
+        "827-MISN",
+        "548-CLI",
+        "1251-ROM",
+        "1245-PRA",
+        "1172-ISS",
+        "1086-CLI",
+        "1043-CAL"
+      ]
+    },
+    {
+      "issue": "Missing perfume image",
+      "count": 43,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2194-ORT",
+        "2085-CLIV",
+        "1751-GUL",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "884-RAL",
+        "314-MOL",
+        "1037-BLG",
+        "337-TIFF",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "928-TRU",
+        "827-MISN",
+        "548-CLI",
+        "1245-PRA",
+        "1172-ISS",
+        "1086-CLI",
+        "1043-CAL"
+      ]
+    },
+    {
       "issue": "Note icons not fully verified",
       "count": 41,
       "codes": [
@@ -3961,47 +4071,6 @@
     },
     {
       "issue": "Gender not fully verified",
-      "count": 35,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "118-HAM",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "325-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "235-HOLL",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "1251-ROM"
-      ]
-    },
-    {
-      "issue": "Season not fully verified",
       "count": 35,
       "codes": [
         "2816-MOOD",
@@ -4152,49 +4221,12 @@
         "222-DIP",
         "200-CIR"
       ]
-    },
-    {
-      "issue": "Missing perfume image",
-      "count": 31,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR"
-      ]
     }
   ],
   "byFailedCheck": [
     {
       "check": "socialCard",
-      "count": 1254,
+      "count": 1252,
       "codes": [
         "2848-PRFRO",
         "2847-NISH",
@@ -4512,7 +4544,6 @@
         "2246-GUC",
         "2245-KUR",
         "2235-PRA",
-        "2234-MON",
         "2229-ESCE",
         "2228-ESCE",
         "2223-AMG",
@@ -4743,6 +4774,7 @@
         "1768-LTN",
         "1764-GUR",
         "1755-MNT",
+        "1751-GUL",
         "1763-JILS",
         "1757-DIP",
         "1754-HER",
@@ -4888,6 +4920,7 @@
         "173-SOS",
         "687-GUR",
         "1236-PAL",
+        "884-RAL",
         "1230-PAC",
         "1201-LBI",
         "795-LAN",
@@ -4910,7 +4943,6 @@
         "1090-COS",
         "1091-COS",
         "177-TER",
-        "337-TIFF",
         "271-JOM",
         "722-GUL",
         "854-NIN",
@@ -4919,7 +4951,6 @@
         "153-PARF",
         "694-GUR",
         "449-BYR",
-        "127-KIL",
         "195-ARM",
         "763-KIL",
         "759-KIL",
@@ -5069,6 +5100,7 @@
         "931-TRU",
         "930-TRU",
         "929-TRU",
+        "928-TRU",
         "927-TOUZ",
         "925-TMU",
         "923-TMU",
@@ -5114,7 +5146,6 @@
         "835-MOS",
         "833-MOS",
         "828-MIY",
-        "827-MISN",
         "821-MIC",
         "817-MIC",
         "816-MAX",
@@ -5202,7 +5233,6 @@
         "622-EST",
         "619-EST",
         "614-EST",
-        "613-ESC",
         "612-ESC",
         "607-ESC",
         "606-ESC",
@@ -5233,6 +5263,7 @@
         "554-DOL",
         "550-COA",
         "549-CLI",
+        "548-CLI",
         "537-DRC",
         "536-DRC",
         "535-DRC",
@@ -5270,7 +5301,6 @@
         "474-CAL",
         "472-CAL",
         "470-CAL",
-        "468-CAL",
         "467-CAL",
         "465-CAL",
         "460-CAC",
@@ -5454,7 +5484,7 @@
     },
     {
       "check": "notes",
-      "count": 1254,
+      "count": 1252,
       "codes": [
         "2848-PRFRO",
         "2847-NISH",
@@ -5772,7 +5802,6 @@
         "2246-GUC",
         "2245-KUR",
         "2235-PRA",
-        "2234-MON",
         "2229-ESCE",
         "2228-ESCE",
         "2223-AMG",
@@ -6003,6 +6032,7 @@
         "1768-LTN",
         "1764-GUR",
         "1755-MNT",
+        "1751-GUL",
         "1763-JILS",
         "1757-DIP",
         "1754-HER",
@@ -6148,6 +6178,7 @@
         "173-SOS",
         "687-GUR",
         "1236-PAL",
+        "884-RAL",
         "1230-PAC",
         "1201-LBI",
         "795-LAN",
@@ -6170,7 +6201,6 @@
         "1090-COS",
         "1091-COS",
         "177-TER",
-        "337-TIFF",
         "271-JOM",
         "722-GUL",
         "854-NIN",
@@ -6179,7 +6209,6 @@
         "153-PARF",
         "694-GUR",
         "449-BYR",
-        "127-KIL",
         "195-ARM",
         "763-KIL",
         "759-KIL",
@@ -6329,6 +6358,7 @@
         "931-TRU",
         "930-TRU",
         "929-TRU",
+        "928-TRU",
         "927-TOUZ",
         "925-TMU",
         "923-TMU",
@@ -6374,7 +6404,6 @@
         "835-MOS",
         "833-MOS",
         "828-MIY",
-        "827-MISN",
         "821-MIC",
         "817-MIC",
         "816-MAX",
@@ -6462,7 +6491,6 @@
         "622-EST",
         "619-EST",
         "614-EST",
-        "613-ESC",
         "612-ESC",
         "607-ESC",
         "606-ESC",
@@ -6493,6 +6521,7 @@
         "554-DOL",
         "550-COA",
         "549-CLI",
+        "548-CLI",
         "537-DRC",
         "536-DRC",
         "535-DRC",
@@ -6530,7 +6559,6 @@
         "474-CAL",
         "472-CAL",
         "470-CAL",
-        "468-CAL",
         "467-CAL",
         "465-CAL",
         "460-CAC",
@@ -6713,6 +6741,108 @@
       ]
     },
     {
+      "check": "season",
+      "count": 47,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2194-ORT",
+        "2085-CLIV",
+        "1751-GUL",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "884-RAL",
+        "314-MOL",
+        "1037-BLG",
+        "337-TIFF",
+        "118-HAM",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "325-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "235-HOLL",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "928-TRU",
+        "827-MISN",
+        "548-CLI",
+        "1251-ROM",
+        "1245-PRA",
+        "1172-ISS",
+        "1086-CLI",
+        "1043-CAL"
+      ]
+    },
+    {
+      "check": "image",
+      "count": 43,
+      "codes": [
+        "2816-MOOD",
+        "2701-DIP",
+        "2586-DIP",
+        "2194-ORT",
+        "2085-CLIV",
+        "1751-GUL",
+        "1748-BYR",
+        "1550-YAN",
+        "383-YAN",
+        "130-LEL",
+        "564-DOL",
+        "884-RAL",
+        "314-MOL",
+        "1037-BLG",
+        "337-TIFF",
+        "382-YAN",
+        "381-YAN",
+        "380-YAN",
+        "379-YAN",
+        "336-THCO",
+        "335-THCO",
+        "334-SHI",
+        "331-PG",
+        "330-PG",
+        "326-PECK",
+        "313-MOL",
+        "311-MOL",
+        "289-JOM",
+        "261-JOM",
+        "258-JOM",
+        "230-DIP",
+        "228-DIP",
+        "227-DIP",
+        "223-DIP",
+        "222-DIP",
+        "200-CIR",
+        "928-TRU",
+        "827-MISN",
+        "548-CLI",
+        "1245-PRA",
+        "1172-ISS",
+        "1086-CLI",
+        "1043-CAL"
+      ]
+    },
+    {
       "check": "icons",
       "count": 41,
       "codes": [
@@ -6761,47 +6891,6 @@
     },
     {
       "check": "gender",
-      "count": 35,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "118-HAM",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "325-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "235-HOLL",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR",
-        "1251-ROM"
-      ]
-    },
-    {
-      "check": "season",
       "count": 35,
       "codes": [
         "2816-MOOD",
@@ -6918,43 +7007,6 @@
     },
     {
       "check": "url",
-      "count": 31,
-      "codes": [
-        "2816-MOOD",
-        "2701-DIP",
-        "2586-DIP",
-        "2085-CLIV",
-        "1748-BYR",
-        "1550-YAN",
-        "383-YAN",
-        "130-LEL",
-        "564-DOL",
-        "314-MOL",
-        "382-YAN",
-        "381-YAN",
-        "380-YAN",
-        "379-YAN",
-        "336-THCO",
-        "335-THCO",
-        "334-SHI",
-        "331-PG",
-        "330-PG",
-        "326-PECK",
-        "313-MOL",
-        "311-MOL",
-        "289-JOM",
-        "261-JOM",
-        "258-JOM",
-        "230-DIP",
-        "228-DIP",
-        "227-DIP",
-        "223-DIP",
-        "222-DIP",
-        "200-CIR"
-      ]
-    },
-    {
-      "check": "image",
       "count": 31,
       "codes": [
         "2816-MOOD",
@@ -12437,23 +12489,6 @@
       "iconsCount": 6
     },
     {
-      "code": "2234-MON",
-      "brand": "moncler",
-      "inspiredBy": "Moncler pour Femme",
-      "fragranticaUrl": "https://www.fragrantica.com/p/69819",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "2229-ESCE",
       "brand": "Escentric Molecules",
       "inspiredBy": "Molecule 01 + Patchouli",
@@ -12763,17 +12798,21 @@
       "code": "2194-ORT",
       "brand": "Orto Parisi",
       "inspiredBy": "ORTO",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Orto-Parisi/Cuoium-69923.html",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Al-Qasim-Oud/ORTO-119473.html",
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Missing perfume image",
+        "Main Notes order not fully verified",
+        "Season not fully verified"
       ],
       "failedChecks": [
         "socialCard",
-        "notes"
+        "image",
+        "notes",
+        "season"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 0,
       "iconsCount": 6
     },
     {
@@ -16408,6 +16447,27 @@
       "iconsCount": 5
     },
     {
+      "code": "1751-GUL",
+      "brand": "Jean Paul Gaultier",
+      "inspiredBy": "Madame",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Cortina-1224/Madame-12088.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Missing perfume image",
+        "Main Notes order not fully verified",
+        "Season not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "image",
+        "notes",
+        "season"
+      ],
+      "notesCount": 5,
+      "matchedNotesCount": 0,
+      "iconsCount": 5
+    },
+    {
       "code": "1763-JILS",
       "brand": "Jil Sander",
       "inspiredBy": "Sun",
@@ -18973,6 +19033,27 @@
       "iconsCount": 6
     },
     {
+      "code": "884-RAL",
+      "brand": "Ralph Lauren",
+      "inspiredBy": "Big Pony 2",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-9006.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Missing perfume image",
+        "Main Notes order not fully verified",
+        "Season not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "image",
+        "notes",
+        "season"
+      ],
+      "notesCount": 2,
+      "matchedNotesCount": 0,
+      "iconsCount": 2
+    },
+    {
       "code": "1230-PAC",
       "brand": "Rabanne",
       "inspiredBy": "1 Million Lucky",
@@ -19194,17 +19275,21 @@
       "code": "1037-BLG",
       "brand": "Bvlgari",
       "inspiredBy": "Bvl Man",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Bvlgari-Man-9403.html",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html",
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Missing perfume image",
+        "Main Notes order not fully verified",
+        "Season not fully verified"
       ],
       "failedChecks": [
         "socialCard",
-        "notes"
+        "image",
+        "notes",
+        "season"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 0,
       "iconsCount": 6
     },
     {
@@ -19364,14 +19449,14 @@
       "code": "337-TIFF",
       "brand": "Tiffany Co",
       "inspiredBy": "Tiffany  Co Sheer",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tiffany/Tiffany-Co-Sheer-53062.html",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tiffany/Sheer-Tiffany-12922.html",
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Missing perfume image",
+        "Season not fully verified"
       ],
       "failedChecks": [
-        "socialCard",
-        "notes"
+        "image",
+        "season"
       ],
       "notesCount": 6,
       "matchedNotesCount": 6,
@@ -19501,23 +19586,6 @@
       "brand": "Byredo",
       "inspiredBy": "Bal d Afrique",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Byredo/Bal-d-Afrique-6458.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "127-KIL",
-      "brand": "By Kilian",
-      "inspiredBy": "Straight to Heaven",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/By-Kilian/Straight-to-Heaven-4323.html",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"
@@ -22376,6 +22444,27 @@
       "iconsCount": 6
     },
     {
+      "code": "928-TRU",
+      "brand": "Trussardi",
+      "inspiredBy": "Delicate Rose",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Aurora-Scents/Delicate-Rose-93471.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Missing perfume image",
+        "Main Notes order not fully verified",
+        "Season not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "image",
+        "notes",
+        "season"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 0,
+      "iconsCount": 6
+    },
+    {
       "code": "927-TOUZ",
       "brand": "Tous",
       "inspiredBy": "Rosa",
@@ -23144,14 +23233,14 @@
       "code": "827-MISN",
       "brand": "Missoni",
       "inspiredBy": "Missoni",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Missoni/Missoni-2015-33017.html",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Missoni/Missoni-1069.html",
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Missing perfume image",
+        "Season not fully verified"
       ],
       "failedChecks": [
-        "socialCard",
-        "notes"
+        "image",
+        "season"
       ],
       "notesCount": 6,
       "matchedNotesCount": 6,
@@ -24637,23 +24726,6 @@
       "iconsCount": 6
     },
     {
-      "code": "613-ESC",
-      "brand": "Escada",
-      "inspiredBy": "Turquoise Summer",
-      "fragranticaUrl": "https://www.fragrantica.com/p/28630",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "612-ESC",
       "brand": "Escada",
       "inspiredBy": "TURQUOISE - ESCADA",
@@ -25161,6 +25233,27 @@
       ],
       "notesCount": 6,
       "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "548-CLI",
+      "brand": "Clinique",
+      "inspiredBy": "Happy",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Dua-Brand/Happy-66133.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Missing perfume image",
+        "Main Notes order not fully verified",
+        "Season not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "image",
+        "notes",
+        "season"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 0,
       "iconsCount": 6
     },
     {
@@ -25780,23 +25873,6 @@
       "brand": "Calvin Klein",
       "inspiredBy": "Eternity",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Eternity-257.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "468-CAL",
-      "brand": "Calvin Klein",
-      "inspiredBy": "Calvin Klein",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Calvin-Klein-14606.html",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"
@@ -26909,17 +26985,21 @@
       "code": "1245-PRA",
       "brand": "Prada",
       "inspiredBy": "PRADA AMBER",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-Pour-Homme-Prada-Man-1044.html",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-1045.html",
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Missing perfume image",
+        "Main Notes order not fully verified",
+        "Season not fully verified"
       ],
       "failedChecks": [
         "socialCard",
-        "notes"
+        "image",
+        "notes",
+        "season"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 0,
       "iconsCount": 6
     },
     {
@@ -27385,17 +27465,21 @@
       "code": "1172-ISS",
       "brand": "Issey Miyake",
       "inspiredBy": "L'Eau d'Issey Pour Homme",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-d-Issey-Pour-Homme-721.html",
+      "fragranticaUrl": "https://www.fragrantica.com/p/79",
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Missing perfume image",
+        "Main Notes order not fully verified",
+        "Season not fully verified"
       ],
       "failedChecks": [
         "socialCard",
-        "notes"
+        "image",
+        "notes",
+        "season"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 0,
       "iconsCount": 6
     },
     {
@@ -28133,17 +28217,21 @@
       "code": "1086-CLI",
       "brand": "Clinique",
       "inspiredBy": "Happy",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-373.html",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/The-Dua-Brand/Happy-66133.html",
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Missing perfume image",
+        "Main Notes order not fully verified",
+        "Season not fully verified"
       ],
       "failedChecks": [
         "socialCard",
-        "notes"
+        "image",
+        "notes",
+        "season"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 0,
       "iconsCount": 6
     },
     {
@@ -28524,17 +28612,21 @@
       "code": "1043-CAL",
       "brand": "Calvin Klein",
       "inspiredBy": "Calvin Klein",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-be-275.html",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Calvin-Klein-14606.html",
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Missing perfume image",
+        "Main Notes order not fully verified",
+        "Season not fully verified"
       ],
       "failedChecks": [
         "socialCard",
-        "notes"
+        "image",
+        "notes",
+        "season"
       ],
       "notesCount": 2,
-      "matchedNotesCount": 2,
+      "matchedNotesCount": 0,
       "iconsCount": 2
     },
     {

@@ -6,22 +6,24 @@
 
 ## Failed checks
 
-- `socialCard`: **1254**
-- `notes`: **1254**
+- `socialCard`: **1252**
+- `notes`: **1252**
+- `season`: **47**
+- `image`: **43**
 - `icons`: **41**
 - `gender`: **35**
-- `season`: **35**
 - `identity`: **32**
 - `fid`: **31**
 - `url`: **31**
-- `image`: **31**
 
 ## Failure signatures
 
-- `socialCard,notes`: **1219** — 2848-PRFRO, 2847-NISH, 2844-LUS, 2843-LEL, 2840-KYLJ, 2839-JUL, 2833-AMG, 2830-VAL, 2828-ATEL, 2824-NRO, 2822-DRC, 2819-AKR, 2815-DOL, 2814-TMFO, 2812-ARM, 2806-PHL, 2804-BOYS, 2802-HER, 2801-DON, 2795-AMG
+- `socialCard,notes`: **1207** — 2848-PRFRO, 2847-NISH, 2844-LUS, 2843-LEL, 2840-KYLJ, 2839-JUL, 2833-AMG, 2830-VAL, 2828-ATEL, 2824-NRO, 2822-DRC, 2819-AKR, 2815-DOL, 2814-TMFO, 2812-ARM, 2806-PHL, 2804-BOYS, 2802-HER, 2801-DON, 2795-AMG
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
+- `socialCard,image,notes,season`: **10** — 2194-ORT, 1751-GUL, 884-RAL, 1037-BLG, 928-TRU, 548-CLI, 1245-PRA, 1172-ISS, 1086-CLI, 1043-CAL
 - `icons`: **6** — 2646-PEN, 2649-BORN, 2159-CAR, 2032-CAR, 1746-XER, 1731-VICT
 - `socialCard,notes,icons,gender,season`: **3** — 118-HAM, 325-PECK, 235-HOLL
+- `image,season`: **2** — 337-TIFF, 827-MISN
 - `identity,socialCard,notes,icons,gender,season`: **1** — 1251-ROM
 
 ## One check from green
@@ -37,16 +39,16 @@
 
 ## Issues
 
-- Social Card not fully verified: **1254**
-- Main Notes order not fully verified: **1219**
+- Social Card not fully verified: **1252**
+- Main Notes order not fully verified: **1217**
+- Season not fully verified: **47**
+- Missing perfume image: **43**
 - Note icons not fully verified: **41**
 - Missing Main Notes: **35**
 - Gender not fully verified: **35**
-- Season not fully verified: **35**
 - Fragrantica identity not fully verified: **32**
 - Missing Fragrantica ID: **31**
 - Missing direct Fragrantica URL: **31**
-- Missing perfume image: **31**
 
 ## Yellow rows
 
@@ -370,7 +372,6 @@
 | 2246-GUC | Gucci | Flora Gorgeous Magnolia | socialCard, notes |
 | 2245-KUR | Maison Francis Kurkdjian | Aqua Media Cologne Forte | socialCard, notes |
 | 2235-PRA | Prada | Prada Paradoxe Intense | socialCard, notes |
-| 2234-MON | moncler | Moncler pour Femme | socialCard, notes |
 | 2229-ESCE | Escentric Molecules | Molecule 01 + Patchouli | socialCard, notes |
 | 2228-ESCE | Escentric Molecules | Molecule 01 + Iris | socialCard, notes |
 | 2223-AMG | Amouage | Reflection 45 Man | socialCard, notes |
@@ -389,7 +390,7 @@
 | 2203-ARM | Giorgio Armani | Rose Milano | socialCard, notes |
 | 2204-TMFO | Tom Ford | Soleil de Feu | socialCard, notes |
 | 2160-ZAR | Zara | Barbie | socialCard, notes |
-| 2194-ORT | Orto Parisi | ORTO | socialCard, notes |
+| 2194-ORT | Orto Parisi | ORTO | socialCard, image, notes, season |
 | 2197-MNT | Montale | Soleil de Capri | socialCard, notes |
 | 2198-MNT | Montale | Wood On Fire | socialCard, notes |
 | 2191-XER | Xerjoff | Bouquet Ideale | socialCard, notes |
@@ -603,6 +604,7 @@
 | 1768-LTN | Louis Vuitton | Contre Moi | socialCard, notes |
 | 1764-GUR | Guerlain | Aqua Allegoria Coconut Fizz | socialCard, notes |
 | 1755-MNT | Montale | Vanilla Cake | socialCard, notes |
+| 1751-GUL | Jean Paul Gaultier | Madame | socialCard, image, notes, season |
 | 1763-JILS | Jil Sander | Sun | socialCard, notes |
 | 1757-DIP | Diptyque | Eau Duelle Eau de Parfum | socialCard, notes |
 | 1754-HER | Hermès | Hermessence Vanille Galante | socialCard, notes |
@@ -750,6 +752,7 @@
 | 173-SOS | Sospiro Perfumes | Accento | socialCard, notes |
 | 687-GUR | Guerlain | L Instant de Guerlain | socialCard, notes |
 | 1236-PAL | Paloma Picasso | Minotaure | socialCard, notes |
+| 884-RAL | Ralph Lauren | Big Pony 2 | socialCard, image, notes, season |
 | 1230-PAC | Rabanne | 1 Million Lucky | socialCard, notes |
 | 1201-LBI | Laura Biagiotti | Venezia Uomo | socialCard, notes |
 | 795-LAN | Lancôme | La Nuit Tresor Musc Diamant | socialCard, notes |
@@ -762,7 +765,7 @@
 | 486-CAR | Carolina Herrera | Good Girl Legere | socialCard, notes |
 | 479-CAR | Carolina Herrera | 212 | socialCard, notes |
 | 452-BYR | Byredo | La Tulipe | socialCard, notes |
-| 1037-BLG | Bvlgari | Bvl Man | socialCard, notes |
+| 1037-BLG | Bvlgari | Bvl Man | socialCard, image, notes, season |
 | 444-BLG | Bvlgari | Omnia | socialCard, notes |
 | 999-ABE | Abercrombie & Fitch | First Instinct | socialCard, notes |
 | 1006-ACQ | Acqua di Parma | COLONIA INTENSA OUD | socialCard, notes |
@@ -772,7 +775,7 @@
 | 1090-COS | CoSTUME NATIONAL | Costume National Homme | socialCard, notes |
 | 1091-COS | CoSTUME NATIONAL | Scent Intense | socialCard, notes |
 | 177-TER | Tiziana Terenzi | Kirke | socialCard, notes |
-| 337-TIFF | Tiffany Co | Tiffany  Co Sheer | socialCard, notes |
+| 337-TIFF | Tiffany Co | Tiffany  Co Sheer | image, season |
 | 271-JOM | Jo Malone London | Nectarine Blossom Honey | socialCard, notes |
 | 722-GUL | Jean Paul Gaultier | La Belle | socialCard, notes |
 | 854-NIN | Nina Ricci | the fragrance otes of NINA ROUGE | socialCard, notes |
@@ -781,7 +784,6 @@
 | 153-PARF | By Kilian | Straight to Heaven | socialCard, notes |
 | 694-GUR | Guerlain | Terracotta Le Parfum | socialCard, notes |
 | 449-BYR | Byredo | Bal d Afrique | socialCard, notes |
-| 127-KIL | By Kilian | Straight to Heaven | socialCard, notes |
 | 195-ARM | Giorgio Armani | Armani Prive Vert Malachite | socialCard, notes |
 | 763-KIL | By Kilian | Kissing Burns 6 4 Calories A Minute Wanna Workout | socialCard, notes |
 | 759-KIL | By Kilian | Bad Boys Are No Good But Good Boys Are No Fun | socialCard, notes |
@@ -931,6 +933,7 @@
 | 931-TRU | Trussardi | INSIDE | socialCard, notes |
 | 930-TRU | Trussardi | Essenza del Tempo | socialCard, notes |
 | 929-TRU | Trussardi | Donna | socialCard, notes |
+| 928-TRU | Trussardi | Delicate Rose | socialCard, image, notes, season |
 | 927-TOUZ | Tous | Rosa | socialCard, notes |
 | 925-TMU | Mugler | Womanity | socialCard, notes |
 | 923-TMU | Mugler | notes AURA | socialCard, notes |
@@ -976,7 +979,7 @@
 | 835-MOS | Moschino | Moschino Funny | socialCard, notes |
 | 833-MOS | Moschino | Cheap Chic Light Clouds | socialCard, notes |
 | 828-MIY | Miu Miu | Miu Miu L Eau Bleue | socialCard, notes |
-| 827-MISN | Missoni | Missoni | socialCard, notes |
+| 827-MISN | Missoni | Missoni | image, season |
 | 821-MIC | Michael Kors | SEXY SUNSET - KORS | socialCard, notes |
 | 817-MIC | Michael Kors | Gold Collection  24k Brilliant Gold | socialCard, notes |
 | 816-MAX | Max Mara | MAX MARA | socialCard, notes |
@@ -1064,7 +1067,6 @@
 | 622-EST | Estée Lauder | Cinnabar Eau de Parfum | socialCard, notes |
 | 619-EST | Estée Lauder | Bronze Goddess Eau Fraîche Skinscent | socialCard, notes |
 | 614-EST | Estée Lauder | Beautiful | socialCard, notes |
-| 613-ESC | Escada | Turquoise Summer | socialCard, notes |
 | 612-ESC | Escada | TURQUOISE - ESCADA | socialCard, notes |
 | 607-ESC | Escada | Escada Marine Groove | socialCard, notes |
 | 606-ESC | Escada | Escada Margaretha Ley | socialCard, notes |
@@ -1095,6 +1097,7 @@
 | 554-DOL | Dolce & Gabbana | Dolce Floral Drops | socialCard, notes |
 | 550-COA | Coach | Coach the Fragrance | socialCard, notes |
 | 549-CLI | Clinique | Simply Clinique | socialCard, notes |
+| 548-CLI | Clinique | Happy | socialCard, image, notes, season |
 | 537-DRC | Dior | Miss Dior Cherie | socialCard, notes |
 | 536-DRC | Dior | Miss Dior Blooming Bouquet | socialCard, notes |
 | 535-DRC | Dior | Miss Dior Absolutely Blooming | socialCard, notes |
@@ -1132,7 +1135,6 @@
 | 474-CAL | Calvin Klein | Obsessed | socialCard, notes |
 | 472-CAL | Calvin Klein | Euphoria | socialCard, notes |
 | 470-CAL | Calvin Klein | Eternity | socialCard, notes |
-| 468-CAL | Calvin Klein | Calvin Klein | socialCard, notes |
 | 467-CAL | Calvin Klein | Contradiction | socialCard, notes |
 | 465-CAL | Calvin Klein | Beauty | socialCard, notes |
 | 460-CAC | Cacharel | Eden | socialCard, notes |
@@ -1197,7 +1199,7 @@
 | 1250-RAL | Ralph Lauren | Safari | socialCard, notes |
 | 1247-RAL | Ralph Lauren | Polo Red | socialCard, notes |
 | 1246-RAL | Ralph Lauren | Polo Blue | socialCard, notes |
-| 1245-PRA | Prada | PRADA AMBER | socialCard, notes |
+| 1245-PRA | Prada | PRADA AMBER | socialCard, image, notes, season |
 | 1243-PRA | Prada | Luna Rossa Sport | socialCard, notes |
 | 1242-PRA | Prada | Luna Rossa Extreme | socialCard, notes |
 | 1241-PRA | Prada | Luna Rossa Carbon | socialCard, notes |
@@ -1225,7 +1227,7 @@
 | 1175-JAC | Jacomo | Paradox for Men | socialCard, notes |
 | 1174-JAC | Jacomo | Jacomo de Jacomo | socialCard, notes |
 | 1173-ISS | Issey Miyake | Nuit d Issey Bleu Astral | socialCard, notes |
-| 1172-ISS | Issey Miyake | L'Eau d'Issey Pour Homme | socialCard, notes |
+| 1172-ISS | Issey Miyake | L'Eau d'Issey Pour Homme | socialCard, image, notes, season |
 | 1171-HUG | Hugo Boss | Boss Bottled Unlimited | socialCard, notes |
 | 1169-HUG | Hugo Boss | Boss The Scent | socialCard, notes |
 | 1168-HUG | Hugo Boss | Hugo Iced | socialCard, notes |
@@ -1269,7 +1271,7 @@
 | 1102-DAV | Davidoff | Cool Water | socialCard, notes |
 | 1101-DOL | Dolce & Gabbana | Velvet Bergamot | socialCard, notes |
 | 1089-COM | Comme des Garçons | Wonderwood | socialCard, notes |
-| 1086-CLI | Clinique | Happy | socialCard, notes |
+| 1086-CLI | Clinique | Happy | socialCard, image, notes, season |
 | 1080-DRC | Dior | HOMME | socialCard, notes |
 | 1077-DRC | Dior | Fahrenheit 32 | socialCard, notes |
 | 1076-DRC | Dior | Fahrenheit | socialCard, notes |
@@ -1292,7 +1294,7 @@
 | 1049-CAL | Calvin Klein | CK One | socialCard, notes |
 | 1048-CAL | Calvin Klein | Obsession | socialCard, notes |
 | 1045-CAL | Calvin Klein | Eternity | socialCard, notes |
-| 1043-CAL | Calvin Klein | Calvin Klein | socialCard, notes |
+| 1043-CAL | Calvin Klein | Calvin Klein | socialCard, image, notes, season |
 | 1040-BLG | Bvlgari | BLV Notte Pour Homme | socialCard, notes |
 | 1039-BLG | Bvlgari | Bvlgari Man In Black | socialCard, notes |
 | 1038-BLG | Bvlgari | Bvlgari Man Extreme | socialCard, notes |
