@@ -1,7 +1,7 @@
 {
-  "tested": 217,
-  "uniqueProof": 28,
-  "ambiguousOrFail": 189,
+  "tested": 193,
+  "uniqueProof": 5,
+  "ambiguousOrFail": 188,
   "rows": [
     {
       "code": "2833-AMG",
@@ -25,38 +25,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "2830-VAL",
-      "fid": "95537",
-      "card": "database/fragrantica/social-cards/images/5097_2830-VAL_95537.jpeg",
-      "notes": [
-        "Milk",
-        "Vanilla",
-        "Pepper",
-        "Orange Blossom",
-        "Bagas de Zimbro",
-        "Sandalwood"
-      ],
-      "slotText": {
-        "1": "Milk w",
-        "2": "Vanilla » NY",
-        "3": "Pepper",
-        "4": "Orange Blossom",
-        "5": "Bagasde Zimbro",
-        "6": "Sandalwood"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "2814-TMFO",
@@ -213,38 +181,6 @@
       "uniqueProof": false
     },
     {
-      "code": "2760-LAT",
-      "fid": "117615",
-      "card": "database/fragrantica/social-cards/images/4966_2760-LAT_117615.jpeg",
-      "notes": [
-        "Strawberry S’mores",
-        "Vanilla",
-        "Caramel",
-        "Black Currant",
-        "Amber",
-        "Musk"
-      ],
-      "slotText": {
-        "1": "Strawberry S'mores",
-        "2": "Vanilla",
-        "3": "Caramel",
-        "4": "Black Currant",
-        "5": "Amber",
-        "6": "Musk"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "2750-NISH",
       "fid": "66277",
       "card": "database/fragrantica/social-cards/images/4847_2750-NISH_66277.jpeg",
@@ -312,38 +248,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "2737-BORN",
-      "fid": "81882",
-      "card": "database/fragrantica/social-cards/images/4836_2737-BORN_81882.jpeg",
-      "notes": [
-        "Cognac",
-        "Red Berries",
-        "Vanilla",
-        "Amber",
-        "Sandalwood",
-        "Benzoin"
-      ],
-      "slotText": {
-        "1": "Cognac",
-        "2": "RedBerries",
-        "3": "Vanilla",
-        "4": "Amber",
-        "5": "Sandalwood",
-        "6": "Benzoin"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "2722-CRIVEL",
@@ -882,38 +786,6 @@
       "uniqueProof": false
     },
     {
-      "code": "2532-PRA",
-      "fid": "32197",
-      "card": "database/fragrantica/social-cards/images/4258_2532-PRA_32197.jpeg",
-      "notes": [
-        "Coumarin",
-        "Musk",
-        "Iso E Super",
-        "Cedar",
-        "Hedione",
-        "Orris Root"
-      ],
-      "slotText": {
-        "1": "Coumarin a",
-        "2": "Ambrette (Musk...",
-        "3": "IsoE Super i",
-        "4": "Cedar",
-        "5": "Hedione —",
-        "6": "Orris Root"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "2521-SOL",
       "fid": "92623",
       "card": "database/fragrantica/social-cards/images/4254_2521-SOL_92623.jpeg",
@@ -1006,6 +878,36 @@
       "uniqueProof": false
     },
     {
+      "code": "2514-DRC",
+      "fid": "95863",
+      "card": "database/fragrantica/social-cards/images/current_2514-DRC_95863.jpeg",
+      "notes": [
+        "Lavender",
+        "Musk",
+        "Spicy Notes",
+        "Elemi",
+        "Woody Notes"
+      ],
+      "slotText": {
+        "1": "Lavender",
+        "2": "Musk",
+        "3": "Spicy Notes",
+        "4": "Elemi",
+        "5": "Woody Notes",
+        "6": ""
+      },
+      "passingPatterns": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "uniqueProof": true
+    },
+    {
       "code": "2509-CRIVEL",
       "fid": "83842",
       "card": "database/fragrantica/social-cards/images/4213_2509-CRIVEL_83842.jpeg",
@@ -1095,38 +997,6 @@
       "uniqueProof": false
     },
     {
-      "code": "2454-KIL",
-      "fid": "78735",
-      "card": "database/fragrantica/social-cards/images/4185_2454-KIL_78735.jpeg",
-      "notes": [
-        "Orange Blossom",
-        "Honey",
-        "Oakmoss",
-        "Vanilla",
-        "Incense",
-        "Paradisone"
-      ],
-      "slotText": {
-        "1": "Orange Blossom",
-        "2": "Honey",
-        "3": "Oakmoss",
-        "4": "Vanilla",
-        "5": "Olibanum (Frankincense)",
-        "6": "Paradisone"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "2452-JOM",
       "fid": "61928",
       "card": "database/fragrantica/social-cards/images/4182_2452-JOM_61928.jpeg",
@@ -1168,70 +1038,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "2411-JAME",
-      "fid": "18470",
-      "card": "database/fragrantica/social-cards/images/4147_2411-JAME_18470.jpeg",
-      "notes": [
-        "Coconut",
-        "Palm Leaf",
-        "Salt",
-        "Gardenia",
-        "Sandalwood",
-        "Cedar"
-      ],
-      "slotText": {
-        "1": "Coconut vf",
-        "2": "PalmLeaf",
-        "3": "Salt",
-        "4": "Gardenia",
-        "5": "Sandalwood",
-        "6": "Cedar"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
-      "code": "2398-FRE",
-      "fid": "91209",
-      "card": "database/fragrantica/social-cards/images/4136_2398-FRE_91209.jpeg",
-      "notes": [
-        "Aldehydes",
-        "Peach",
-        "Orange Blossom",
-        "Musk",
-        "Violet",
-        "Iso E Super"
-      ],
-      "slotText": {
-        "1": "Aldehydes",
-        "2": "Peach",
-        "3": "Orange Blossom",
-        "4": "Musk",
-        "5": "Violet",
-        "6": "ISOE Super"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "2393-KAY",
@@ -1343,38 +1149,6 @@
       "uniqueProof": false
     },
     {
-      "code": "2369-MAN",
-      "fid": "87409",
-      "card": "database/fragrantica/social-cards/images/4091_2369-MAN_87409.jpeg",
-      "notes": [
-        "Coffee",
-        "Brown Sugar",
-        "Vanilla",
-        "Amaretto",
-        "Ice cream",
-        "Ambergris"
-      ],
-      "slotText": {
-        "1": "Coffee",
-        "2": "Brown Sugar",
-        "3": "Vanilla",
-        "4": "Amaretto",
-        "5": "Icecream",
-        "6": "Ambergris"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "2326-TMFO",
       "fid": "1821",
       "card": "database/fragrantica/social-cards/images/4082_2326-TMFO_1821.jpeg",
@@ -1421,24 +1195,24 @@
       "uniqueProof": false
     },
     {
-      "code": "2330-JUL",
-      "fid": "1715",
-      "card": "database/fragrantica/social-cards/images/3967_2330-JUL_1715.jpeg",
+      "code": "2313-DRC",
+      "fid": "56324",
+      "card": "database/fragrantica/social-cards/images/current_2313-DRC_56324.jpeg",
       "notes": [
-        "Rose",
-        "Patchouli",
-        "Musk",
-        "Lavender",
-        "Ambroxan",
-        "Iso E Super"
+        "Sandalwood",
+        "Bergamot",
+        "Mandarin Orange",
+        "Olibanum (Frankincense)",
+        "Tonka Bean",
+        "Vanilla"
       ],
       "slotText": {
-        "1": "Rose",
-        "2": "Patchouli",
-        "3": "Musk",
-        "4": "Lavender",
-        "5": "Ambroxan",
-        "6": "ISoE Super"
+        "1": "Sandalwood ans",
+        "2": "Bergamot",
+        "3": "Mandarin Orange",
+        "4": "Olibanum (Frankincense)",
+        "5": "Tonka Bean",
+        "6": "Vanilla"
       },
       "passingPatterns": [
         [
@@ -1499,38 +1273,6 @@
       "uniqueProof": false
     },
     {
-      "code": "2285-BOT",
-      "fid": "55300",
-      "card": "database/fragrantica/social-cards/images/3936_2285-BOT_55300.jpeg",
-      "notes": [
-        "Fig Leaf",
-        "Bergamot",
-        "Olive Tree",
-        "Orange Blossom",
-        "Black Currant",
-        "Tonka Bean"
-      ],
-      "slotText": {
-        "1": "FigLeaf",
-        "2": "Bergamot",
-        "3": "Olive Tree",
-        "4": "Orange Blossom",
-        "5": "Black = Currant",
-        "6": "Tonka Bean"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "2271-ROJ",
       "fid": "81839",
       "card": "database/fragrantica/social-cards/images/3929_2271-ROJ_81839.jpeg",
@@ -1575,38 +1317,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "2270-ORMO",
-      "fid": "16896",
-      "card": "database/fragrantica/social-cards/images/3920_2270-ORMO_16896.jpeg",
-      "notes": [
-        "Tobacco",
-        "Iso E Super",
-        "Tea",
-        "Cardamom",
-        "Mountain Air",
-        "Suede"
-      ],
-      "slotText": {
-        "1": "Tobacco",
-        "2": "ISOE Super",
-        "3": "Tea",
-        "4": "Cardamom",
-        "5": "Mountain Air",
-        "6": "Suede"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "2282-DRC",
@@ -1975,38 +1685,6 @@
       "uniqueProof": false
     },
     {
-      "code": "2126-GIV",
-      "fid": "74819",
-      "card": "database/fragrantica/social-cards/images/3535_2126-GIV_74819.jpeg",
-      "notes": [
-        "Ambroxan",
-        "Cedar",
-        "Iso E Super",
-        "Palo Santo",
-        "Cardamom",
-        "Vetiver"
-      ],
-      "slotText": {
-        "1": "Ambroxan",
-        "2": "Cedar",
-        "3": "ISoE Super",
-        "4": "Palo Santo",
-        "5": "Cardamom",
-        "6": "Vetiver"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "2045-HER",
       "fid": "6065",
       "card": "database/fragrantica/social-cards/images/3529_2045-HER_6065.jpeg",
@@ -2098,6 +1776,38 @@
       "uniqueProof": false
     },
     {
+      "code": "2106-MARC",
+      "fid": "46802",
+      "card": "database/fragrantica/social-cards/images/current_2106-MARC_46802.jpeg",
+      "notes": [
+        "Saffron",
+        "Violet",
+        "Pepper",
+        "Ambroxan",
+        "Nutmeg",
+        "Pimento"
+      ],
+      "slotText": {
+        "1": "Saffron",
+        "2": "Violet Leaf",
+        "3": "Pepper",
+        "4": "Ambroxan",
+        "5": "Nutmeg",
+        "6": "Pimento"
+      },
+      "passingPatterns": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "uniqueProof": true
+    },
+    {
       "code": "2086-VICT",
       "fid": "75277",
       "card": "database/fragrantica/social-cards/images/3481_2086-VICT_75277.jpeg",
@@ -2116,38 +1826,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "2075-TMFO",
-      "fid": "52789",
-      "card": "database/fragrantica/social-cards/images/3472_2075-TMFO_52789.jpeg",
-      "notes": [
-        "Lemon",
-        "Cypress",
-        "Pine Tree",
-        "Bagas de Zimbro",
-        "Mastic or Lentisque",
-        "Amber"
-      ],
-      "slotText": {
-        "1": "Lemon \\ y",
-        "2": "Cypress ‘ as #3",
-        "3": "Pine Tree",
-        "4": "Bagasde Zimbro",
-        "5": "Masticor Lentisque",
-        "6": "Amber"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "2065-FRA",
@@ -2373,6 +2051,38 @@
       "uniqueProof": false
     },
     {
+      "code": "1950-SWISA",
+      "fid": "22928",
+      "card": "database/fragrantica/social-cards/images/current_1950-SWISA_22928.jpeg",
+      "notes": [
+        "Peony",
+        "Vanilla",
+        "Black Currant",
+        "Passionfruit",
+        "Bergamot",
+        "Jasmine"
+      ],
+      "slotText": {
+        "1": "Peony",
+        "2": "Vanilla",
+        "3": "Black Currant",
+        "4": "Passionfruit",
+        "5": "Bergamot",
+        "6": "Jasmine"
+      },
+      "passingPatterns": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "uniqueProof": true
+    },
+    {
       "code": "1899-ZARK",
       "fid": "60665",
       "card": "database/fragrantica/social-cards/images/2878_1899-ZARK_60665.jpeg",
@@ -2391,38 +2101,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "1932-YZLO",
-      "fid": "71193",
-      "card": "database/fragrantica/social-cards/images/2872_1932-YZLO_71193.jpeg",
-      "notes": [
-        "Vanilla",
-        "Coffee",
-        "Fig",
-        "Pear",
-        "Fig Leaf",
-        "Orange Blossom"
-      ],
-      "slotText": {
-        "1": "Vanilla }",
-        "2": "Coffee",
-        "3": "Fig iw",
-        "4": "Pear",
-        "5": "FigLeaf",
-        "6": "Orange Blossom"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "1878-KIL",
@@ -2514,38 +2192,6 @@
       "uniqueProof": false
     },
     {
-      "code": "1857-ESCE",
-      "fid": "58970",
-      "card": "database/fragrantica/social-cards/images/2754_1857-ESCE_58970.jpeg",
-      "notes": [
-        "Juniper",
-        "Cypress",
-        "Bergamot",
-        "Rosemary",
-        "Iso E Super",
-        "Cashmeran"
-      ],
-      "slotText": {
-        "1": "Juniper",
-        "2": "Cypress",
-        "3": "Bergamot",
-        "4": "Rosemary",
-        "5": "ISoE Super",
-        "6": "Cashmeran"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "1856-PARF",
       "fid": "18750",
       "card": "database/fragrantica/social-cards/images/2753_1856-PARF_18750.jpeg",
@@ -2567,38 +2213,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "1850-LEL",
-      "fid": "10131",
-      "card": "database/fragrantica/social-cards/images/2750_1850-LEL_10131.jpeg",
-      "notes": [
-        "Iso E Super",
-        "Musk",
-        "Ambergris",
-        "Musk",
-        "Pear",
-        "Cetalox"
-      ],
-      "slotText": {
-        "1": "ISOE Super",
-        "2": "Musk }",
-        "3": "Ambergris y",
-        "4": "Ambrette (Musk...",
-        "5": "S Pear",
-        "6": "Cetalox"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "1817-JUL",
@@ -2757,36 +2371,6 @@
       "uniqueProof": false
     },
     {
-      "code": "1775-DIP",
-      "fid": "65738",
-      "card": "database/fragrantica/social-cards/images/2607_1775-DIP_65738.jpeg",
-      "notes": [
-        "Powdery Notes",
-        "Bagas de Zimbro",
-        "Cedar",
-        "Jasmine",
-        "Tonka Bean"
-      ],
-      "slotText": {
-        "1": "Powdery Notes",
-        "2": "Bagasde Zimbro",
-        "3": "Cedar",
-        "4": "Jasmine",
-        "5": "Tonka Bean",
-        "6": ""
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "1718-TER",
       "fid": "30624",
       "card": "database/fragrantica/social-cards/images/2452_1718-TER_30624.jpeg",
@@ -2831,38 +2415,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "1677-BYR",
-      "fid": "50934",
-      "card": "database/fragrantica/social-cards/images/2406_1677-BYR_50934.jpeg",
-      "notes": [
-        "Plum",
-        "Rum",
-        "Fig",
-        "Cedar",
-        "Cashmir wood",
-        "Iso E Super"
-      ],
-      "slotText": {
-        "1": "Plum",
-        "2": "Rum",
-        "3": "Fig",
-        "4": "Cedar",
-        "5": "Cashmir wood",
-        "6": "IsoE Super"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "1659-CHRA",
@@ -3011,38 +2563,6 @@
       "uniqueProof": false
     },
     {
-      "code": "1490-DRC",
-      "fid": "58714",
-      "card": "database/fragrantica/social-cards/images/2282_1490-DRC_58714.jpeg",
-      "notes": [
-        "Iso E Super",
-        "Cedar",
-        "Cashmir wood",
-        "Bergamot",
-        "Vetiver",
-        "Musk"
-      ],
-      "slotText": {
-        "1": "ISOE Super |",
-        "2": "Cedar",
-        "3": "Cashmir wood",
-        "4": "Bergamot",
-        "5": "Vetiver",
-        "6": "Musk"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "161-PEN",
       "fid": "54665",
       "card": "database/fragrantica/social-cards/images/2233_161-PEN_54665.jpeg",
@@ -3087,38 +2607,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "136-KUR",
-      "fid": "53400",
-      "card": "database/fragrantica/social-cards/images/2209_136-KUR_53400.jpeg",
-      "notes": [
-        "Bagas de Zimbro",
-        "Nutmeg",
-        "Musk",
-        "Woody Notes",
-        "Coriander",
-        "Bergamot"
-      ],
-      "slotText": {
-        "1": "Bagasde Zimbro",
-        "2": "Nutmeg",
-        "3": "Musk I a",
-        "4": "Woody Notes",
-        "5": "Coriander",
-        "6": "Bergamot"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "165-PEN",
@@ -3277,38 +2765,6 @@
       "uniqueProof": false
     },
     {
-      "code": "1072-DRC",
-      "fid": "48398",
-      "card": "database/fragrantica/social-cards/images/1934_1072-DRC_48398.jpeg",
-      "notes": [
-        "Fig tree",
-        "Fig",
-        "Solar Notes",
-        "Bergamot",
-        "Ozonic Notes",
-        "Petitgrain"
-      ],
-      "slotText": {
-        "1": "Figtree",
-        "2": "Fig",
-        "3": "Solar Notes",
-        "4": "Bergamot",
-        "5": "Ozonic Notes",
-        "6": "Petitgrain"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "967-VICT",
       "fid": "56837",
       "card": "database/fragrantica/social-cards/images/1930_967-VICT_56837.jpeg",
@@ -3352,16 +2808,16 @@
     },
     {
       "code": "884-RAL",
-      "fid": "9006",
-      "card": "database/fragrantica/social-cards/images/1917_884-RAL_9006.jpeg",
+      "fid": "14446",
+      "card": "database/fragrantica/social-cards/images/1917_884-RAL_14446.jpeg",
       "notes": [
         "Cranberry",
         "Tonka Bean"
       ],
       "slotText": {
         "1": "",
-        "2": "f | ;",
-        "3": "Wo",
+        "2": "",
+        "3": "",
         "4": "",
         "5": "",
         "6": ""
@@ -3414,36 +2870,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "1094-DOL",
-      "fid": "56358",
-      "card": "database/fragrantica/social-cards/images/1817_1094-DOL_56358.jpeg",
-      "notes": [
-        "Bagas de Zimbro",
-        "Citruses",
-        "Blood Orange",
-        "Pimento",
-        "Lavender"
-      ],
-      "slotText": {
-        "1": "Bagasde Zimbro",
-        "2": "Citruses",
-        "3": "Blood Orange",
-        "4": "Pimento",
-        "5": "Lavender",
-        "6": "Vetiver"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "699-HER",
@@ -3638,66 +3064,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "232-ESCE",
-      "fid": "846",
-      "card": "database/fragrantica/social-cards/images/1134_232-ESCE_846.jpeg",
-      "notes": [
-        "Iso E Super",
-        "Pink Pepper",
-        "Lemon",
-        "Iris"
-      ],
-      "slotText": {
-        "1": "ISoE Super",
-        "2": "Pink Pepper",
-        "3": "Lemon",
-        "4": "Iris",
-        "5": "",
-        "6": ""
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
-      "code": "229-DIP",
-      "fid": "3865",
-      "card": "database/fragrantica/social-cards/images/1132_229-DIP_3865.jpeg",
-      "notes": [
-        "Fig Leaf",
-        "Fig",
-        "Green Notes",
-        "Coconut",
-        "Fig Tree",
-        "Woody Notes"
-      ],
-      "slotText": {
-        "1": "FigLeaf",
-        "2": "Fig",
-        "3": "Green Notes",
-        "4": "Coconut",
-        "5": "Fig tree",
-        "6": "Woody Notes"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "225-DIP",
@@ -4486,38 +3852,6 @@
       "uniqueProof": false
     },
     {
-      "code": "403-BAL",
-      "fid": "397",
-      "card": "database/fragrantica/social-cards/images/512_403-BAL_397.jpeg",
-      "notes": [
-        "Vanilla",
-        "Fig Leaf",
-        "Sandalwood",
-        "Patchouli",
-        "Carnation",
-        "Peony"
-      ],
-      "slotText": {
-        "1": "Vanilla",
-        "2": "FigLeaf",
-        "3": "Sandalwood",
-        "4": "Patchouli",
-        "5": "Carnation",
-        "6": "Peony"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "399-ARA",
       "fid": "122",
       "card": "database/fragrantica/social-cards/images/510_399-ARA_122.jpeg",
@@ -4585,38 +3919,6 @@
       },
       "passingPatterns": [],
       "uniqueProof": false
-    },
-    {
-      "code": "1493-ACQ",
-      "fid": "1687",
-      "card": "database/fragrantica/social-cards/images/501_1493-ACQ_1687.jpeg",
-      "notes": [
-        "Fig",
-        "Fig tree",
-        "Grapefruit",
-        "Bergamot",
-        "Citron",
-        "Lemon"
-      ],
-      "slotText": {
-        "1": "Fig I",
-        "2": "Figtree",
-        "3": "Grapefruit =",
-        "4": "Bergamot",
-        "5": "Citron",
-        "6": "Lemon"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
     },
     {
       "code": "1289-YZLO",
@@ -4688,39 +3990,9 @@
       "uniqueProof": false
     },
     {
-      "code": "1257-SFER",
-      "fid": "659",
-      "card": "database/fragrantica/social-cards/images/334_1257-SFER_659.jpeg",
-      "notes": [
-        "Fig Leaf",
-        "Cedar",
-        "Grapefruit",
-        "Sandalwood",
-        "Carnation"
-      ],
-      "slotText": {
-        "1": "FigLeaf",
-        "2": "Cedar",
-        "3": "Vetiver",
-        "4": "Grapefruit",
-        "5": "Sandalwood",
-        "6": "Carnation"
-      },
-      "passingPatterns": [
-        [
-          1,
-          2,
-          4,
-          5,
-          6
-        ]
-      ],
-      "uniqueProof": true
-    },
-    {
       "code": "1245-PRA",
-      "fid": "1045",
-      "card": "database/fragrantica/social-cards/images/322_1245-PRA_1045.jpeg",
+      "fid": "1044",
+      "card": "database/fragrantica/social-cards/images/corrected_1245-PRA_1044.jpeg",
       "notes": [
         "Saffron",
         "Myrrh",
@@ -4730,35 +4002,12 @@
         "Orange Blossom"
       ],
       "slotText": {
-        "1": "Patchouli f",
-        "2": "Benzoin I",
-        "3": "Sandalwood",
-        "4": "Musk",
-        "5": "Bergamot",
-        "6": "Rose"
-      },
-      "passingPatterns": [],
-      "uniqueProof": false
-    },
-    {
-      "code": "1237-PIN",
-      "fid": "1522",
-      "card": "database/fragrantica/social-cards/images/314_1237-PIN_1522.jpeg",
-      "notes": [
-        "Pine Tree",
-        "Bagas de Zimbro",
-        "Cedar",
-        "Basil",
-        "Lemon",
-        "Lavender"
-      ],
-      "slotText": {
-        "1": "Pine Tree",
-        "2": "Bagasde Zimbro",
-        "3": "Cedar",
-        "4": "Basil",
-        "5": "Lemon",
-        "6": "Lavender"
+        "1": "Saffron",
+        "2": "Myrrh",
+        "3": "Musk",
+        "4": "Neroli",
+        "5": "Vanilla",
+        "6": "Orange Blossom"
       },
       "passingPatterns": [
         [
