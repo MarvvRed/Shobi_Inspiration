@@ -16,6 +16,11 @@ def norm(s):
 STOP={'and','or','of','the','oil','notes','note'}
 def toks(s):return [x for x in norm(s).split() if x not in STOP and len(x)>1]
 def proves(note,text):
+ # OCR sometimes joins otherwise exact words (for example ``Bagasde``).
+ # Accept only a complete normalized label; this never turns a partial label
+ # (such as ``Fig`` versus ``Fig Leaf``) into a match.
+ compact_note=norm(note).replace(' ','');compact_text=norm(text).replace(' ','')
+ if len(compact_note)>=5 and compact_note in compact_text:return True
  nt=toks(note);tt=norm(text).split()
  if not nt:return False
  # Allow conservative OCR prefix matching for tokens >=5 chars; short tokens must be exact.
