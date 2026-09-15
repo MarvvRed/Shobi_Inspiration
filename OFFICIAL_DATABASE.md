@@ -1,20 +1,11 @@
-# Shobi Official Perfume Database
+# Official Shobi perfume-only database
 
-Official catalog baseline frozen on 2026-09-07 after completion of the Fragrantica/Shobi identity review.
+The current production database is built from the live 2,324-row Shobi source and excludes 67 entries whose original is non-wearable, a home/car/body/hair/laundry product, an accessory, or cannot be demonstrated as a genuine original perfume.
 
-- Total Shobi records: **2369**
-- Identified/resolved perfumes: **2330**
-- Deliberately excluded / NO_FORCE: **39**
-- Remaining matcher residuals: **0**
+- `database_final_perfume_only.json` — full final database: **2,257** certified Shobi perfume records, including product IDs and Shobi URLs.
+- `catalog_final_perfume_only.json` — lightweight public projection of the same **2,257** records, loaded by the website.
+- `database_complete.json` and `catalog_site.json` — canonical audit sources: **2,324** rows, retaining excluded records only for traceability.
+- `catalog-scope-exclusions.json` — the 67 excluded Shobi codes.
+- `final-perfume-catalog-certification.json` — machine-readable certification and source exceptions.
 
-## Canonical data files
-
-- `database_v2_clean.json` — canonical clean database
-- `database_complete.json` — complete database used by the site
-
-The **2330 identified/resolved records** are the official Shobi perfume database baseline.
-The **39 `RESOLVED_NO_FORCE` records** are not part of the official identified-perfume set and remain separately classified because an exact perfume identity / Fragrantica target could not be established safely.
-
-The website filters `database_complete.json` at load time so `RESOLVED_NO_FORCE` rows are not displayed.
-
-Do not promote a `RESOLVED_NO_FORCE` record into the official identified set without a new explicit identity verification.
+Every final record has a live Shobi product ID and URL. 2,254 have direct Fragrantica identity proof; the three remaining records have specific documented evidence of a real wearable perfume. Rebuild the final files with `tools/build_final_perfume_catalog.py`; do not add a record unless it satisfies the same scope rule.

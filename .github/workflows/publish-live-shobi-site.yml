@@ -8,8 +8,13 @@ on:
       - '.github/workflows/publish-live-shobi-site.yml'
       - 'tools/build_live_site_from_shobi_csv.py'
       - 'tools/build_validation_audit.py'
+      - 'tools/build_final_perfume_catalog.py'
       - 'validation-tracker.js'
       - 'shobi-perfumes-live-unique.csv'
+      - 'database_complete.json'
+      - 'catalog_site.json'
+      - 'catalog-scope-exclusions.json'
+      - 'catalog-wearable-original-scope-audit.json'
       - 'data/shobi-fragrantica-mapping.csv'
       - 'data/shobi-identity-review-2026-09-04.csv'
 
@@ -69,6 +74,9 @@ jobs:
       - name: Build strict validation audit
         run: python tools/build_validation_audit.py
 
+      - name: Build certified perfume-only public catalog
+        run: python tools/build_final_perfume_catalog.py
+
       - name: Point frontend at lightweight catalog and install tracker
         run: |
           python - <<'PY'
@@ -76,7 +84,7 @@ jobs:
           path = Path('script.js')
           text = path.read_text(encoding='utf-8')
           old = "fetch('database_complete.json')"
-          new = "fetch('catalog_site.json')"
+          new = "fetch('catalog_final_perfume_only.json')"
           if old in text:
               text = text.replace(old, new, 1)
               path.write_text(text, encoding='utf-8')
@@ -101,8 +109,13 @@ jobs:
           from pathlib import Path
           rows = json.load(open('database_complete.json', encoding='utf-8'))
           site_rows = json.load(open('catalog_site.json', encoding='utf-8'))
+          final_rows = json.load(open('catalog_final_perfume_only.json', encoding='utf-8'))
+          final_db_rows = json.load(open('database_final_perfume_only.json', encoding='utf-8'))
+          exclusions = json.load(open('catalog-scope-exclusions.json', encoding='utf-8'))['codes']
           assert len(rows) == 2324
           assert len(site_rows) == 2324
+          assert len(final_rows) == 2257
+          assert len(final_db_rows) == 2257
           assert len({r['prestashopProductId'] for r in rows}) == 2324
           assert len({r['shobiUrl'] for r in rows}) == 2324
           assert not any(str(r.get('reference', '')).upper().startswith('MIX') for r in rows)
@@ -110,7 +123,8 @@ jobs:
           assert all(r.get('code') and r.get('brand') and r.get('inspiredBy') for r in site_rows)
           assert [(r['code'], r['brand'], r['inspiredBy']) for r in site_rows] == [(r['code'], r['brand'], r['inspiredBy']) for r in rows]
           assert __import__('os').path.getsize('catalog_site.json') < __import__('os').path.getsize('database_complete.json')
-          assert "fetch('catalog_site.json')" in Path('script.js').read_text(encoding='utf-8')
+          assert "fetch('catalog_final_perfume_only.json')" in Path('script.js').read_text(encoding='utf-8')
+          assert not any(r['code'] in exclusions for r in final_rows)
           assert '<script src="validation-tracker.js"></script>' in Path('index.html').read_text(encoding='utf-8')
           assert all(r.get('validationStatus') in {'green','yellow','red'} for r in site_rows)
           assert all('validationChecks' in r and 'validationIssues' in r for r in site_rows)
@@ -118,7 +132,7 @@ jobs:
           excluded = {'Home Fragrances', 'Gifts', 'Lattafa', 'Paris Corner', 'Al Haramain Oriental Perfumes'}
           assert not any(r.get('shobiCategory') in excluded for r in rows)
           counts = {s: sum(r['validationStatus'] == s for r in site_rows) for s in ('green','yellow','red')}
-          print('Validated 2324 non-MIX live Shobi perfumes and lightweight frontend catalog')
+          print('Validated 2257 certified wearable Shobi perfumes in the public catalog')
           print('QA tracker:', counts)
           PY
 
@@ -126,7 +140,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add database_complete.json catalog_site.json social-card-main-notes-validated.json social-card-ordered-image-audit.json strict-ordered-card-corrections.json script.js index.html
+          git add database_complete.json catalog_site.json catalog_final_perfume_only.json database_final_perfume_only.json final-perfume-catalog-certification.json FINAL-PERFUME-CATALOG.md catalog-scope-exclusions.json catalog-wearable-original-scope-audit.json social-card-main-notes-validated.json social-card-ordered-image-audit.json strict-ordered-card-corrections.json script.js index.html tools/build_final_perfume_catalog.py
           if git diff --cached --quiet; then
             echo 'No website catalog changes.'
             exit 0
