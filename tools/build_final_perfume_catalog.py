@@ -49,6 +49,22 @@ def url_matches_fid(url: object, fid: object) -> bool:
                 re.search(rf"/p/{escaped}(?:/?$|[?#])", url_text, re.I))
 
 
+def duplicate_identity_key(db: dict, site: dict) -> tuple[str, str, str, str]:
+    """The public catalog may collapse two live Shobi category listings."""
+    return (
+        str(db.get("fragranticaId") or "").strip(),
+        str(site.get("brand") or "").strip().casefold(),
+        str(site.get("inspiredBy") or "").strip().casefold(),
+        str(site.get("fragranticaUrl") or "").strip().casefold(),
+    )
+
+
+def stable_listing_key(db: dict) -> tuple[int, str]:
+    """Keep the oldest live Shobi listing when it is cross-listed by category."""
+    product_id = str(db.get("prestashopProductId") or "").strip()
+    return (int(product_id) if product_id.isdigit() else 10**12, str(db.get("shobiUrl") or ""))
+
+
 def main() -> None:
     db_rows = json.loads(DB.read_text(encoding="utf-8-sig"))
     site_rows = json.loads(SITE.read_text(encoding="utf-8-sig"))
@@ -59,7 +75,7 @@ def main() -> None:
     if scope.get("confirmedOutOfScopeCount") != len(excluded):
         raise SystemExit("Scope audit and exclusion manifest disagree")
 
-    final_rows, final_db_rows, direct, exceptions, failures = [], [], 0, [], []
+    eligible, exceptions, failures = [], [], []
     for db, site in zip(db_rows, site_rows):
         product_code = code(db.get("code"))
         if product_code in excluded:
@@ -83,6 +99,36 @@ def main() -> None:
                 "exception": exception,
             })
             continue
+        eligible.append((db, site, exception))
+
+    expected = scope.get("projectedPublicRowsAfterConfirmedExclusions")
+    if failures or len(eligible) != expected:
+        raise SystemExit(json.dumps({"failures": failures, "eligibleRows": len(eligible), "expected": expected}, ensure_ascii=False))
+
+    by_code: dict[str, list[tuple[dict, dict, dict | None]]] = {}
+    for candidate in eligible:
+        by_code.setdefault(code(candidate[0].get("code")), []).append(candidate)
+
+    final_rows, final_db_rows, direct, collapsed = [], [], 0, []
+    for product_code, candidates in by_code.items():
+        fingerprints = {duplicate_identity_key(db, site) for db, site, _ in candidates}
+        if len(fingerprints) != 1:
+            failures.append({
+                "code": product_code,
+                "reason": "same Shobi code maps to different originals; manual review required",
+                "prestashopProductIds": [db.get("prestashopProductId") for db, _, _ in candidates],
+            })
+            continue
+        db, site, exception = min(candidates, key=lambda item: stable_listing_key(item[0]))
+        if len(candidates) > 1:
+            collapsed.append({
+                "code": product_code,
+                "keptPrestashopProductId": db.get("prestashopProductId"),
+                "removedPrestashopProductIds": sorted(
+                    str(item[0].get("prestashopProductId"))
+                    for item in candidates if item[0] is not db
+                ),
+            })
         if exception:
             exceptions.append({"code": product_code, **exception})
         else:
@@ -90,14 +136,16 @@ def main() -> None:
         final_rows.append(site)
         final_db_rows.append(db)
 
-    expected = scope.get("projectedPublicRowsAfterConfirmedExclusions")
-    if failures or len(final_rows) != expected:
-        raise SystemExit(json.dumps({"failures": failures, "rows": len(final_rows), "expected": expected}, ensure_ascii=False))
+    unique_expected = scope.get("projectedUniquePublicRowsAfterDuplicateCollapse")
+    if failures or len(final_rows) != unique_expected:
+        raise SystemExit(json.dumps({"failures": failures, "finalRows": len(final_rows), "expected": unique_expected}, ensure_ascii=False))
 
     certificate = {
         "rule": "Publish only one-to-one Shobi records whose original is an audited genuine wearable perfume. Candles, home/room/car fragrance, body or hair mists, laundry scents, accessories, and Shobi-invented/non-demonstrable originals are excluded.",
         "sourceCatalogRows": len(db_rows),
         "confirmedExcludedRows": len(excluded),
+        "eligibleVerifiedShobiListings": len(eligible),
+        "crossListedShobiListingsCollapsed": collapsed,
         "finalRows": len(final_rows),
         "allFinalRowsFromLiveShobiSource": True,
         "allFinalRowsHaveShobiProductIdAndUrl": True,
@@ -112,8 +160,9 @@ def main() -> None:
     lines = [
         "# Final perfume-only Shobi catalog",
         "",
-        f"- Final rows: **{len(final_rows)}**",
+        f"- Final unique perfumes: **{len(final_rows)}**",
         f"- Excluded as non-wearable/non-demonstrable originals: **{len(excluded)}**",
+        f"- Cross-listed Shobi pages collapsed: **{len(collapsed)}**",
         f"- Direct Fragrantica identity proofs: **{direct}**",
         f"- Specific-evidence exceptions: **{len(exceptions)}**",
         "- Every published row has a live Shobi product ID and URL.",

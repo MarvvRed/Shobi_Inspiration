@@ -7,10 +7,12 @@
     "Rechecked the current 2324-row Shobi live catalog and previous perfume-only audit.",
     "Reviewed high-risk brands/product families where Fragrantica can contain non-perfume entries.",
     "Used exact product-type evidence rather than treating the presence of a Fragrantica ID as proof that the original is a true perfume.",
-    "Excluded entries when the original is confirmed non-wearable or when a genuine exact wearable original cannot be demonstrated after targeted research."
+    "Excluded entries when the original is confirmed non-wearable or when a genuine exact wearable original cannot be demonstrated after targeted research.",
+    "Collapsed four duplicate live Shobi category listings that have distinct Shobi page IDs but the same code and verified original perfume."
   ],
   "confirmedOutOfScopeCount": 67,
   "projectedPublicRowsAfterConfirmedExclusions": 2257,
+  "projectedUniquePublicRowsAfterDuplicateCollapse": 2253,
   "confirmedOutOfScopeGroups": {
     "previouslyClassifiedHomeBody": [
       "2701-DIP",
