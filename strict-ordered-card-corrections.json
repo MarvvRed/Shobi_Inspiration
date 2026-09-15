@@ -1,6 +1,6 @@
 {
   "rule": "Only ORDERED_MISMATCH rows proven by the strict exact-card image audit are corrected.",
-  "changed": 110,
+  "changed": 112,
   "rows": [
     {
       "code": "1011-ARA",
@@ -1527,6 +1527,27 @@
       ]
     },
     {
+      "code": "337-TIFF",
+      "fragranticaId": "12922",
+      "card": "fragrantica-scraper-archive/social-cards/images/1878_337-TIFF_12922.jpeg",
+      "oldNotes": [
+        "Musk",
+        "Iris",
+        "Petitgrain",
+        "Black Currant",
+        "Rose",
+        "Ylang-Ylang"
+      ],
+      "orderedCardNotes": [
+        "Lily-of-the-Valley",
+        "Water Hyacinth",
+        "Magnolia",
+        "Jasmine",
+        "Peony",
+        "Musk"
+      ]
+    },
+    {
       "code": "355-TMFO",
       "fragranticaId": "12192",
       "card": "fragrantica-scraper-archive/social-cards/images/1243_355-TMFO_12192.jpeg",
@@ -1960,6 +1981,27 @@
         "Amber",
         "Jasmine",
         "Pear"
+      ]
+    },
+    {
+      "code": "827-MISN",
+      "fragranticaId": "1069",
+      "card": "fragrantica-scraper-archive/social-cards/images/871_827-MISN_1069.jpeg",
+      "oldNotes": [
+        "Pear",
+        "Floral Notes",
+        "Tonka Bean",
+        "Jasmine",
+        "Citron",
+        "Ambroxan"
+      ],
+      "orderedCardNotes": [
+        "Dark Chocolate",
+        "Bitter Orange",
+        "Mandarin Orange",
+        "Amber",
+        "Peony",
+        "Magnolia"
       ]
     },
     {
