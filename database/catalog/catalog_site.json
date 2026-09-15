@@ -37135,11 +37135,9 @@
     "code": "1751-GUL",
     "inspiredBy": "Madame",
     "brand": "Jean Paul Gaultier",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Cortina-1224/Madame-12088.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Ma-Dame-3681.html",
     "genderAffinity": "feminine",
-    "seasons": [
-      "spring"
-    ],
+    "seasons": [],
     "fragranticaSocialCardNotes": [
       "Grenadine",
       "Orange",
@@ -37150,8 +37148,9 @@
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Missing perfume image",
-      "Main Notes order not fully verified",
+      "Missing Main Notes",
+      "Note icons not fully verified",
+      "Gender not fully verified",
       "Season not fully verified"
     ],
     "validationChecks": {
@@ -37161,15 +37160,15 @@
       "fid": true,
       "url": true,
       "socialCard": false,
-      "image": false,
+      "image": true,
       "notes": false,
-      "icons": true,
-      "gender": true,
+      "icons": false,
+      "gender": false,
       "season": false
     },
-    "validationNotesCount": 5,
+    "validationNotesCount": 0,
     "validationMatchedNotesCount": 0,
-    "validationIconsCount": 5
+    "validationIconsCount": 0
   },
   {
     "code": "1763-JILS",
@@ -58512,11 +58511,9 @@
     "code": "928-TRU",
     "inspiredBy": "Delicate Rose",
     "brand": "Trussardi",
-    "fragranticaUrl": "https://www.fragrantica.com/perfume/Aurora-Scents/Delicate-Rose-93471.html",
+    "fragranticaUrl": "https://www.fragrantica.com/perfume/Trussardi/Trussardi-Delicate-Rose-16241.html",
     "genderAffinity": "feminine",
-    "seasons": [
-      "spring"
-    ],
+    "seasons": [],
     "fragranticaSocialCardNotes": [
       "Rose",
       "Lotus",
@@ -58528,8 +58525,9 @@
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Missing perfume image",
-      "Main Notes order not fully verified",
+      "Missing Main Notes",
+      "Note icons not fully verified",
+      "Gender not fully verified",
       "Season not fully verified"
     ],
     "validationChecks": {
@@ -58539,15 +58537,15 @@
       "fid": true,
       "url": true,
       "socialCard": false,
-      "image": false,
+      "image": true,
       "notes": false,
-      "icons": true,
-      "gender": true,
+      "icons": false,
+      "gender": false,
       "season": false
     },
-    "validationNotesCount": 6,
+    "validationNotesCount": 0,
     "validationMatchedNotesCount": 0,
-    "validationIconsCount": 6
+    "validationIconsCount": 0
   },
   {
     "code": "927-TOUZ",

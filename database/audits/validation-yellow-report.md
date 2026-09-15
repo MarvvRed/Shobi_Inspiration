@@ -9,9 +9,9 @@
 - `socialCard`: **230**
 - `notes`: **230**
 - `season`: **47**
-- `image`: **43**
-- `icons`: **41**
-- `gender`: **35**
+- `icons`: **43**
+- `image`: **41**
+- `gender`: **37**
 - `identity`: **32**
 - `fid`: **31**
 - `url`: **31**
@@ -20,9 +20,9 @@
 
 - `socialCard,notes`: **185** — 2833-AMG, 2814-TMFO, 2806-PHL, 2786-LTN, 2783-LTN, 2778-JOM, 2744-NISH, 2763-KAY, 2750-NISH, 2743-BORN, 2741-ROJ, 2722-CRIVEL, 2720-ROJ, 2719-FRAG, 2715-CRD, 2712-TMFO, 2708-BORN, 2663-ARM, 2700-BLG, 2645-LTN
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **31** — 2816-MOOD, 2701-DIP, 2586-DIP, 2085-CLIV, 1748-BYR, 1550-YAN, 383-YAN, 130-LEL, 564-DOL, 314-MOL, 382-YAN, 381-YAN, 380-YAN, 379-YAN, 336-THCO, 335-THCO, 334-SHI, 331-PG, 330-PG, 326-PECK
-- `socialCard,image,notes,season`: **10** — 2194-ORT, 1751-GUL, 884-RAL, 1037-BLG, 928-TRU, 548-CLI, 1245-PRA, 1172-ISS, 1086-CLI, 1043-CAL
+- `socialCard,image,notes,season`: **8** — 2194-ORT, 884-RAL, 1037-BLG, 548-CLI, 1245-PRA, 1172-ISS, 1086-CLI, 1043-CAL
 - `icons`: **6** — 2646-PEN, 2649-BORN, 2159-CAR, 2032-CAR, 1746-XER, 1731-VICT
-- `socialCard,notes,icons,gender,season`: **3** — 118-HAM, 325-PECK, 235-HOLL
+- `socialCard,notes,icons,gender,season`: **5** — 1751-GUL, 118-HAM, 325-PECK, 235-HOLL, 928-TRU
 - `image,season`: **2** — 337-TIFF, 827-MISN
 - `identity,socialCard,notes,icons,gender,season`: **1** — 1251-ROM
 
@@ -40,12 +40,12 @@
 ## Issues
 
 - Social Card not fully verified: **230**
-- Main Notes order not fully verified: **195**
+- Main Notes order not fully verified: **193**
 - Season not fully verified: **47**
-- Missing perfume image: **43**
-- Note icons not fully verified: **41**
-- Missing Main Notes: **35**
-- Gender not fully verified: **35**
+- Note icons not fully verified: **43**
+- Missing perfume image: **41**
+- Missing Main Notes: **37**
+- Gender not fully verified: **37**
 - Fragrantica identity not fully verified: **32**
 - Missing Fragrantica ID: **31**
 - Missing direct Fragrantica URL: **31**
@@ -166,7 +166,7 @@
 | 1780-RCAV | Roberto Cavalli | Just Cavalli for Her | socialCard, notes |
 | 1772-TER | Tiziana Terenzi | Burdel | socialCard, notes |
 | 1764-GUR | Guerlain | Aqua Allegoria Coconut Fizz | socialCard, notes |
-| 1751-GUL | Jean Paul Gaultier | Madame | socialCard, image, notes, season |
+| 1751-GUL | Jean Paul Gaultier | Madame | socialCard, notes, icons, gender, season |
 | 1757-DIP | Diptyque | Eau Duelle Eau de Parfum | socialCard, notes |
 | 1748-BYR | Byredo | Marijuana | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1746-XER | Xerjoff | Alexandria III | icons |
@@ -236,7 +236,7 @@
 | 200-CIR | CIRE TRUDON | ERNESTO CHE GUEVARA | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 960-VICT | Victoria's Secret | LOVE ME - VICTORIA'S SECRET | socialCard, notes |
 | 953-VICT | Victoria's Secret | Bombshell Forever | socialCard, notes |
-| 928-TRU | Trussardi | Delicate Rose | socialCard, image, notes, season |
+| 928-TRU | Trussardi | Delicate Rose | socialCard, notes, icons, gender, season |
 | 898-ROC | Rochas | AQUA WOMAN - ROCHAS | socialCard, notes |
 | 874-PRA | Prada | Prada Candy Gloss | socialCard, notes |
 | 865-PAC | Rabanne | Pure XS For Her | socialCard, notes |
