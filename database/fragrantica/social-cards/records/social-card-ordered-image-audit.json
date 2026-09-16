@@ -573433,5 +573433,15 @@
       "conflicting_strict_read": 4,
       "sequence_not_exact": 24
     }
+  },
+  "identicalSocialCardProofReuse": {
+    "examined": 1,
+    "recovered": 0,
+    "codes": [],
+    "rejected": {
+      "no_exact_local_card": 2,
+      "no_identical_strict_source": 383,
+      "target_sequence_not_exact": 1
+    }
   }
 }
