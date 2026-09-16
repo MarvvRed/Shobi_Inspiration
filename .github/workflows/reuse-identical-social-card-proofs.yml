@@ -1,0 +1,42 @@
+name: Reuse identical Social Card proofs
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/reuse_identical_social_card_proofs.py'
+      - '.github/workflows/reuse-identical-social-card-proofs.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Reuse byte-identical strict proofs
+        run: python tools/reuse_identical_social_card_proofs.py
+
+      - name: Rebuild validation and safety gates
+        run: |
+          python tools/build_validation_audit.py
+          python tools/build_final_perfume_catalog.py
+          python tools/verify_catalog_invariants.py
+
+      - name: Commit recovered proofs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/fragrantica/social-cards/records/social-card-ordered-image-audit.json database/catalog database/audits
+          if git diff --cached --quiet; then
+            echo 'No proof changes.'
+            exit 0
+          fi
+          git commit -m 'Reuse strict proofs for identical Social Cards'
+          git pull --rebase origin main
+          git push origin HEAD:main
