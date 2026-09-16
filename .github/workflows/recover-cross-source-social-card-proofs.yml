@@ -1,0 +1,51 @@
+name: Recover cross-source Social Card proofs
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/recover_cross_source_social_card_proofs.py'
+      - '.github/workflows/recover-cross-source-social-card-proofs.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-cross-source-proof-recovery-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - name: Recover exact proofs from archived independent evidence
+        run: python tools/recover_cross_source_social_card_proofs.py
+
+      - name: Rebuild validation outputs
+        run: |
+          python tools/build_validation_audit.py
+          python tools/build_final_perfume_catalog.py
+          python tools/verify_catalog_invariants.py --baseline-ref HEAD --write-report
+
+      - name: Commit recovered proofs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/fragrantica/social-cards/records/social-card-ordered-image-audit.json \
+                  database/catalog/database_complete.json \
+                  database/catalog/catalog_site.json \
+                  database/catalog/catalog_final_perfume_only.json \
+                  database/catalog/database_final_perfume_only.json \
+                  database/audits/CURRENT-CATALOG-AUDIT.md
+          if git diff --cached --quiet; then
+            echo 'No cross-source proofs recovered.'
+            exit 0
+          fi
+          git commit -m 'Publish cross-source Social Card proof recovery'
+          git push
