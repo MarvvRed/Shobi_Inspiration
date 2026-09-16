@@ -1,0 +1,56 @@
+name: Recover conservative fuzzy Social Card proofs
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/recover_conservative_fuzzy_slot_proofs.py'
+      - '.github/workflows/recover-conservative-fuzzy-slot-proofs.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-fuzzy-slot-recovery-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - name: Install OCR dependencies
+        run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow numpy
+
+      - name: Recover conservative fuzzy slot proofs
+        run: python tools/recover_conservative_fuzzy_slot_proofs.py
+
+      - name: Rebuild validation outputs
+        run: |
+          python tools/build_validation_audit.py
+          python tools/build_final_perfume_catalog.py
+          python tools/verify_catalog_invariants.py --baseline-ref HEAD --write-report
+
+      - name: Commit recovered proofs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/fragrantica/social-cards/records/social-card-ordered-image-audit.json \
+                  database/catalog/database_complete.json \
+                  database/catalog/catalog_site.json \
+                  database/catalog/catalog_final_perfume_only.json \
+                  database/catalog/database_final_perfume_only.json \
+                  database/audits/CURRENT-CATALOG-AUDIT.md
+          if git diff --cached --quiet; then
+            echo 'No fuzzy slot proofs recovered.'
+            exit 0
+          fi
+          git commit -m 'Publish conservative fuzzy Social Card proof recovery'
+          git push
