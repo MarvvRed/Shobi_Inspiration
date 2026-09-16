@@ -2,9 +2,9 @@
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
   "results": {
-    "EXACT_ORDERED_MATCH": 1854,
+    "EXACT_ORDERED_MATCH": 1860,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 393,
+    "READING_NOT_STRICT_ENOUGH": 387,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -16269,7 +16269,7 @@
         "Water",
         "Pepper"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -16461,7 +16461,26 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Birch",
+        "Water",
+        "Pepper"
+      ],
+      "components": [],
+      "proof": "HISTORICAL_VALIDATED_SOCIAL_CARD_SLOTS_EXACT_ORDER",
+      "crossSourceEvidence": {
+        "source": "social-card-main-notes-validated.json",
+        "card": "database/fragrantica/social-cards/images/156_1059-CRT_307.jpeg",
+        "code": "1059-CRT",
+        "fragranticaId": "307",
+        "sequence": [
+          "Birch",
+          "Water",
+          "Pepper"
+        ],
+        "deprecatedFastProofUsed": false
+      }
     },
     {
       "code": "106-ARB",
@@ -23322,7 +23341,7 @@
         "Amber",
         "Vetiver"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -23514,7 +23533,32 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Iris",
+        "Cacao Pod",
+        "Lavender",
+        "Leather",
+        "Amber",
+        "Vetiver"
+      ],
+      "components": [],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL_EXACT_ORDER",
+      "crossSourceEvidence": {
+        "source": "social-card-main-notes-visual-review.json",
+        "card": "database/fragrantica/social-cards/images/176_1080-DRC_230.jpeg",
+        "code": "1080-DRC",
+        "fragranticaId": "230",
+        "sequence": [
+          "Iris",
+          "Cacao Pod",
+          "Lavender",
+          "Leather",
+          "Amber",
+          "Vetiver"
+        ],
+        "deprecatedFastProofUsed": false
+      }
     },
     {
       "code": "1082-DRC",
@@ -43585,7 +43629,7 @@
         "Lemon",
         "Orange Blossom"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -43765,7 +43809,32 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Fig",
+        "Cypress",
+        "Juniper",
+        "Bergamot",
+        "Lemon",
+        "Orange Blossom"
+      ],
+      "components": [],
+      "proof": "HISTORICAL_VALIDATED_SOCIAL_CARD_SLOTS_EXACT_ORDER",
+      "crossSourceEvidence": {
+        "source": "social-card-main-notes-validated.json",
+        "card": "database/fragrantica/social-cards/images/244_1154-HER_19.jpeg",
+        "code": "1154-HER",
+        "fragranticaId": "19",
+        "sequence": [
+          "Fig",
+          "Cypress",
+          "Juniper",
+          "Bergamot",
+          "Lemon",
+          "Orange Blossom"
+        ],
+        "deprecatedFastProofUsed": false
+      }
     },
     {
       "code": "1155-HER",
@@ -325276,7 +325345,7 @@
         "Pimento",
         "Amber"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -325444,7 +325513,32 @@
           ],
           "notesHeaderY": 76.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Tobacco",
+        "Vanilla",
+        "Chestnut",
+        "Cinnamon",
+        "Pimento",
+        "Amber"
+      ],
+      "components": [],
+      "proof": "HISTORICAL_VALIDATED_SOCIAL_CARD_SLOTS_EXACT_ORDER",
+      "crossSourceEvidence": {
+        "source": "social-card-main-notes-validated.json",
+        "card": "database/fragrantica/social-cards/images/4270_2550-ARM_90333.jpeg",
+        "code": "2550-ARM",
+        "fragranticaId": "90333",
+        "sequence": [
+          "Tobacco",
+          "Vanilla",
+          "Chestnut",
+          "Cinnamon",
+          "Pimento",
+          "Amber"
+        ],
+        "deprecatedFastProofUsed": false
+      }
     },
     {
       "code": "2551-PAR",
@@ -419369,7 +419463,7 @@
         "Orange Blossom",
         "Galbanum"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -419475,7 +419569,32 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Lilac",
+        "Jasmine",
+        "Angelica",
+        "Honeysuckle",
+        "Orange Blossom",
+        "Galbanum"
+      ],
+      "components": [],
+      "proof": "HISTORICAL_VALIDATED_SOCIAL_CARD_SLOTS_EXACT_ORDER",
+      "crossSourceEvidence": {
+        "source": "social-card-main-notes-validated.json",
+        "card": "database/fragrantica/social-cards/images/504_393-AER_19057.jpeg",
+        "code": "393-AER",
+        "fragranticaId": "19057",
+        "sequence": [
+          "Lilac",
+          "Jasmine",
+          "Angelica",
+          "Honeysuckle",
+          "Orange Blossom",
+          "Galbanum"
+        ],
+        "deprecatedFastProofUsed": false
+      }
     },
     {
       "code": "394-AGE",
@@ -422391,7 +422510,7 @@
         "Pink Pepper",
         "Cedar"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -422583,7 +422702,32 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Fig",
+        "Rose",
+        "Petitgrain",
+        "Grapefruit",
+        "Pink Pepper",
+        "Cedar"
+      ],
+      "components": [],
+      "proof": "HISTORICAL_VALIDATED_SOCIAL_CARD_SLOTS_EXACT_ORDER",
+      "crossSourceEvidence": {
+        "source": "social-card-main-notes-validated.json",
+        "card": "database/fragrantica/social-cards/images/515_406-BAL_21987.jpeg",
+        "code": "406-BAL",
+        "fragranticaId": "21987",
+        "sequence": [
+          "Fig",
+          "Rose",
+          "Petitgrain",
+          "Grapefruit",
+          "Pink Pepper",
+          "Cedar"
+        ],
+        "deprecatedFastProofUsed": false
+      }
     },
     {
       "code": "409-BOB",
@@ -569355,5 +569499,27 @@
       "sequence_not_exact": 3,
       "slot_consensus_failed": 299
     }
+  },
+  "crossSourceRecovery": {
+    "recovered": 6,
+    "codes": [
+      "1059-CRT",
+      "1080-DRC",
+      "1154-HER",
+      "2550-ARM",
+      "393-AER",
+      "406-BAL"
+    ],
+    "evidence": {
+      "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL_EXACT_ORDER": 1,
+      "HISTORICAL_VALIDATED_SOCIAL_CARD_SLOTS_EXACT_ORDER": 5
+    },
+    "rejected": {
+      "fast_marker_method": 270,
+      "no_strong_cross_source_proof": 387,
+      "not_validated": 79,
+      "weak_fuzzy_slot": 34
+    },
+    "policy": "No CURRENT_FID_FAST_EXACT_PROOF. Only same-code same-FID direct visual review or strong historical slot OCR with exact final order."
   }
 }
