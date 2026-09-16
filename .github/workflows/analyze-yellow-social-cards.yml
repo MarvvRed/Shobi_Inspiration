@@ -2,6 +2,11 @@ name: Analyze yellow Social Cards
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/analyze_remaining_cards_dynamic.py'
+      - '.github/workflows/analyze-yellow-social-cards.yml'
 
 permissions:
   contents: write
