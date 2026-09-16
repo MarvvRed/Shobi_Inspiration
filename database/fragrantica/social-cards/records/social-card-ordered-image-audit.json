@@ -2,9 +2,9 @@
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
   "results": {
-    "EXACT_ORDERED_MATCH": 1851,
+    "EXACT_ORDERED_MATCH": 1853,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 396,
+    "READING_NOT_STRICT_ENOUGH": 394,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -17453,7 +17453,7 @@
         "Anise",
         "Cedar"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -17620,7 +17620,112 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Guaiac Wood",
+        "Sandalwood",
+        "Mandarin Orange",
+        "Coriander",
+        "Anise",
+        "Cedar"
+      ],
+      "components": [
+        {
+          "slot": 1,
+          "name": "Guaiac Wood",
+          "raw": "Guaiac Wood",
+          "confidence": 93.6,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-205",
+          "strongestPsm": 11
+        },
+        {
+          "slot": 2,
+          "name": "Sandalwood",
+          "raw": "Sandalwood",
+          "confidence": 96.43,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-contrast",
+          "strongestPsm": 11
+        },
+        {
+          "slot": 3,
+          "name": "Mandarin Orange",
+          "raw": "Mandarin Orange",
+          "confidence": 96.51,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-contrast",
+          "strongestPsm": 6
+        },
+        {
+          "slot": 4,
+          "name": "Coriander",
+          "raw": "Coriander",
+          "confidence": 96.18,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-contrast",
+          "strongestPsm": 11
+        },
+        {
+          "slot": 5,
+          "name": "Anise",
+          "raw": "Anise",
+          "confidence": 96.61,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-205",
+          "strongestPsm": 7
+        },
+        {
+          "slot": 6,
+          "name": "Cedar",
+          "raw": "Cedar",
+          "confidence": 96.87,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-205",
+          "strongestPsm": 11
+        }
+      ],
+      "proof": "SIX_SLOT_EXACT_LEXICON_CONSENSUS_FROM_AT_LEAST_TWO_PREPROCESSING_FAMILIES_PER_SLOT; ALL_STRICT_READS_ORDERED_SUBSEQUENCES",
+      "multipassEvidence": {
+        "variant": "six-slot-consensus",
+        "psm": null
+      }
     },
     {
       "code": "1064-CHA",
@@ -325732,7 +325837,7 @@
         "Sandalwood",
         "Rose"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -325924,7 +326029,111 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Pear",
+        "Musk",
+        "Vanilla",
+        "Orris Root",
+        "Sandalwood",
+        "Rose"
+      ],
+      "components": [
+        {
+          "slot": 1,
+          "name": "Pear",
+          "raw": "Pear",
+          "confidence": 96.66,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-contrast",
+          "strongestPsm": 6
+        },
+        {
+          "slot": 2,
+          "name": "Musk",
+          "raw": "Ambrette (Musk...",
+          "confidence": 93.45,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-185-invert",
+          "strongestPsm": 11
+        },
+        {
+          "slot": 3,
+          "name": "Vanilla",
+          "raw": "Vanilla",
+          "confidence": 95.49,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-205",
+          "strongestPsm": 7
+        },
+        {
+          "slot": 4,
+          "name": "Orris Root",
+          "raw": "Orris Root",
+          "confidence": 94.8,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert"
+          ],
+          "strongestVariant": "slot-contrast",
+          "strongestPsm": 11
+        },
+        {
+          "slot": 5,
+          "name": "Sandalwood",
+          "raw": "Sandalwood",
+          "confidence": 96.39,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-205",
+          "strongestPsm": 11
+        },
+        {
+          "slot": 6,
+          "name": "Rose",
+          "raw": "Rose",
+          "confidence": 96.28,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-205",
+          "strongestPsm": 6
+        }
+      ],
+      "proof": "SIX_SLOT_EXACT_LEXICON_CONSENSUS_FROM_AT_LEAST_TWO_PREPROCESSING_FAMILIES_PER_SLOT; ALL_STRICT_READS_ORDERED_SUBSEQUENCES",
+      "multipassEvidence": {
+        "variant": "six-slot-consensus",
+        "psm": null
+      }
     },
     {
       "code": "2558-LAT",
@@ -567499,7 +567708,7 @@
     "rule": "Only the 110 rows changed after the completed full audit were reread from their exact archived Social Card image."
   },
   "multipassRecovery": {
-    "applied": 606,
+    "applied": 608,
     "codes": [
       "100-AMG",
       "1003-ACQ",
@@ -567521,6 +567730,7 @@
       "1050-CAL",
       "1056-CAR",
       "1061-CRT",
+      "1063-CER",
       "1066-CHA",
       "1067-CHA",
       "1074-DRC",
@@ -567830,6 +568040,7 @@
       "2537-DRC",
       "2542-FUR",
       "2545-MEM",
+      "2557-ARIA",
       "256-JOM",
       "2563-TMFO",
       "2564-NRO",
