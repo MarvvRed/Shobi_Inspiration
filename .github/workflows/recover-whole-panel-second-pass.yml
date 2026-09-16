@@ -1,0 +1,61 @@
+name: Recover whole-panel OCR second pass
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/recover_whole_panel_second_pass.py'
+      - '.github/workflows/recover-whole-panel-second-pass.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-whole-panel-second-pass-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+      - name: Install OCR dependencies
+        run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow numpy
+      - name: Recover strict second-pass whole-panel proofs
+        env:
+          SECOND_PASS_WORKERS: '4'
+        run: python tools/recover_whole_panel_second_pass.py
+      - name: Rebuild validation and safety gates
+        run: |
+          python tools/build_validation_audit.py
+          python tools/build_final_perfume_catalog.py
+          python tools/verify_catalog_invariants.py --baseline-ref HEAD --write-report
+      - name: Commit recovered proofs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/fragrantica/social-cards/records/social-card-ordered-image-audit.json \
+                  database/catalog/database_complete.json \
+                  database/catalog/catalog_site.json \
+                  database/catalog/catalog_final_perfume_only.json \
+                  database/catalog/database_final_perfume_only.json \
+                  database/audits/CURRENT-CATALOG-AUDIT.md
+          if git diff --cached --quiet; then
+            echo 'No second-pass whole-panel proofs recovered.'
+            exit 0
+          fi
+          git commit -m 'Publish second-pass whole-panel OCR recovery'
+          for attempt in 1 2 3; do
+            if git push origin main; then
+              exit 0
+            fi
+            echo "Push raced with main update; rebasing (attempt $attempt)..."
+            git pull --rebase origin main
+          done
+          git push origin main
