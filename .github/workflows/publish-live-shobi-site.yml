@@ -30,7 +30,7 @@ concurrency:
 jobs:
   publish-catalog:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
@@ -84,6 +84,8 @@ jobs:
           rm social-card-audit-ci.log
           python tools/apply_strict_ordered_card_audit.py
           python tools/refresh_strict_ordered_mismatches.py
+          SOCIAL_CARD_RECOVERY_WORKERS=2 python tools/recover_exact_card_proofs_multipass.py
+          python tools/apply_exact_card_proofs_multipass.py
 
       - name: Build strict validation audit
         run: python tools/build_validation_audit.py
