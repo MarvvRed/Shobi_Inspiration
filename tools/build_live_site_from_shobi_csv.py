@@ -258,6 +258,10 @@ for live in live_rows:
         "unisex": "unisex",
     }.get(social_gender, str(row.get("genderAffinity") or "").lower())
 
+    # Preserve direct gender evidence only when it belongs to the current FID.
+    if gender_entry and str(gender_entry.get("fragranticaId") or "") == str(fragrantica_id or ""):
+        row["genderStatus"] = "VALIDATED_SOCIAL_CARD"
+
     row["genderAffinity"] = gender_affinity
     row["gender"] = gender_entry.get("gender") or row.get("gender") or ""
     main_season = str(season_entry.get("main_season") or "").lower()
