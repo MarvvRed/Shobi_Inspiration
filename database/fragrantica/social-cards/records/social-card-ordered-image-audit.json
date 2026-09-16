@@ -2,9 +2,9 @@
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
   "results": {
-    "EXACT_ORDERED_MATCH": 1853,
+    "EXACT_ORDERED_MATCH": 1854,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 394,
+    "READING_NOT_STRICT_ENOUGH": 393,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -19207,7 +19207,7 @@
         "Brazilian Rosewood",
         "Carnation"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -19375,7 +19375,1027 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Cinnamon",
+        "Sandalwood",
+        "Rose",
+        "Tobacco",
+        "Brazilian Rosewood",
+        "Carnation"
+      ],
+      "components": [
+        {
+          "slot": 1,
+          "name": "Cinnamon",
+          "raw": "Cinnamon",
+          "confidence": 96.24,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-185-invert",
+          "strongestPsm": 6
+        },
+        {
+          "slot": 2,
+          "name": "Sandalwood",
+          "raw": "Sandalwood",
+          "confidence": 96.48,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-205",
+          "strongestPsm": 11
+        },
+        {
+          "slot": 3,
+          "name": "Rose",
+          "raw": "Rose",
+          "confidence": 96.64,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-175",
+          "strongestPsm": 11
+        },
+        {
+          "slot": 4,
+          "name": "Tobacco",
+          "raw": "Tobacco",
+          "confidence": 96.63,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-185-invert",
+          "strongestPsm": 6
+        },
+        {
+          "slot": 5,
+          "name": "Brazilian Rosewood",
+          "raw": "Brazilian Rosewood",
+          "confidence": 96.63,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-contrast",
+          "strongestPsm": 11
+        },
+        {
+          "slot": 6,
+          "name": "Carnation",
+          "raw": "Carnation",
+          "confidence": 96.81,
+          "exactText": true,
+          "variantSupport": [
+            "slot-contrast",
+            "slot-threshold-175",
+            "slot-threshold-185-invert",
+            "slot-threshold-205"
+          ],
+          "strongestVariant": "slot-threshold-205",
+          "strongestPsm": 7
+        }
+      ],
+      "proof": "HEADER_ANCHORED_SIX_SLOT_EXACT_LEXICON_CONSENSUS_FROM_AT_LEAST_TWO_PREPROCESSING_FAMILIES_PER_SLOT; ALL_STRICT_READS_ORDERED_SUBSEQUENCES",
+      "headerAnchoredSixSlotEvidence": {
+        "observedHeaderY": 35.0,
+        "alignmentShift": 18,
+        "targetHeaderY": 53.0,
+        "slotDiagnostics": [
+          {
+            "slot": 1,
+            "familyCandidates": {
+              "slot-contrast": "Cinnamon",
+              "slot-threshold-175": "Cinnamon",
+              "slot-threshold-205": "Cinnamon",
+              "slot-threshold-185-invert": "Cinnamon"
+            },
+            "corroborated": {
+              "Cinnamon": [
+                "slot-contrast",
+                "slot-threshold-175",
+                "slot-threshold-205",
+                "slot-threshold-185-invert"
+              ]
+            },
+            "attempts": [
+              {
+                "variant": "slot-contrast",
+                "psm": 6,
+                "text": "a Cinnamon",
+                "confidence": 69.14,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 7,
+                "text": "Cinnamon",
+                "confidence": 95.23,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 11,
+                "text": "1 Cinnamon",
+                "confidence": 73.55,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 13,
+                "text": "|",
+                "confidence": 83.77,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 6,
+                "text": "Cinnamon",
+                "confidence": 95.17,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 7,
+                "text": "Cinnamon",
+                "confidence": 95.17,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 11,
+                "text": "Cinnamon yr",
+                "confidence": 70.43,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 13,
+                "text": "_ Sten",
+                "confidence": 42.64,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 6,
+                "text": "Cinnamon",
+                "confidence": 95.88,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 7,
+                "text": "Cinnamon",
+                "confidence": 95.88,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 11,
+                "text": "a Cinnamon ry 4",
+                "confidence": 55.29,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 13,
+                "text": "—",
+                "confidence": 41.47,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 6,
+                "text": "Cinnamon",
+                "confidence": 96.24,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 7,
+                "text": "Cinnamon",
+                "confidence": 96.24,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 11,
+                "text": "Cinnamon",
+                "confidence": 96.1,
+                "candidates": [
+                  "Cinnamon"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "familyCandidates": {
+              "slot-contrast": "Sandalwood",
+              "slot-threshold-175": "Sandalwood",
+              "slot-threshold-205": "Sandalwood",
+              "slot-threshold-185-invert": "Sandalwood"
+            },
+            "corroborated": {
+              "Sandalwood": [
+                "slot-contrast",
+                "slot-threshold-175",
+                "slot-threshold-205",
+                "slot-threshold-185-invert"
+              ]
+            },
+            "attempts": [
+              {
+                "variant": "slot-contrast",
+                "psm": 6,
+                "text": "Sandalwood",
+                "confidence": 96.05,
+                "candidates": [
+                  "Sandalwood"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 7,
+                "text": "sea",
+                "confidence": 61.34,
+                "candidates": []
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 11,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 6,
+                "text": "Sandalwood",
+                "confidence": 95.69,
+                "candidates": [
+                  "Sandalwood"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 7,
+                "text": "sno",
+                "confidence": 55.54,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 11,
+                "text": "Sa ndalwood",
+                "confidence": 93.29,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 6,
+                "text": "Sandalwood",
+                "confidence": 95.93,
+                "candidates": [
+                  "Sandalwood"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 7,
+                "text": "Sa Ilwood",
+                "confidence": 66.3,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 11,
+                "text": "Sandalwood",
+                "confidence": 96.48,
+                "candidates": [
+                  "Sandalwood"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 6,
+                "text": "Sandalwood",
+                "confidence": 96.04,
+                "candidates": [
+                  "Sandalwood"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 7,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 11,
+                "text": "Sandalwood",
+                "confidence": 95.95,
+                "candidates": [
+                  "Sandalwood"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "familyCandidates": {
+              "slot-contrast": "Rose",
+              "slot-threshold-175": "Rose",
+              "slot-threshold-205": "Rose",
+              "slot-threshold-185-invert": "Rose"
+            },
+            "corroborated": {
+              "Rose": [
+                "slot-contrast",
+                "slot-threshold-175",
+                "slot-threshold-205",
+                "slot-threshold-185-invert"
+              ]
+            },
+            "attempts": [
+              {
+                "variant": "slot-contrast",
+                "psm": 6,
+                "text": "| Rose",
+                "confidence": 66.51,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 7,
+                "text": "Rose",
+                "confidence": 96.06,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 11,
+                "text": "Rose",
+                "confidence": 95.75,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 13,
+                "text": "poe",
+                "confidence": 48.32,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 6,
+                "text": "Rose",
+                "confidence": 96.4,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 7,
+                "text": "Rose",
+                "confidence": 87.87,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 11,
+                "text": "Rose",
+                "confidence": 96.64,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 13,
+                "text": "poe",
+                "confidence": 39.72,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 6,
+                "text": "Rose r",
+                "confidence": 78.21,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 7,
+                "text": "Rose",
+                "confidence": 96.2,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 11,
+                "text": "Rose",
+                "confidence": 96.33,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 13,
+                "text": "poe",
+                "confidence": 39.62,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 6,
+                "text": "ae Rose r *",
+                "confidence": 61.74,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 7,
+                "text": "Rose",
+                "confidence": 96.56,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 11,
+                "text": "Rose",
+                "confidence": 96.4,
+                "candidates": [
+                  "Rose"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              }
+            ]
+          },
+          {
+            "slot": 4,
+            "familyCandidates": {
+              "slot-contrast": "Tobacco",
+              "slot-threshold-175": "Tobacco",
+              "slot-threshold-205": "Tobacco",
+              "slot-threshold-185-invert": "Tobacco"
+            },
+            "corroborated": {
+              "Tobacco": [
+                "slot-contrast",
+                "slot-threshold-175",
+                "slot-threshold-205",
+                "slot-threshold-185-invert"
+              ]
+            },
+            "attempts": [
+              {
+                "variant": "slot-contrast",
+                "psm": 6,
+                "text": "Tobacco",
+                "confidence": 96.46,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 7,
+                "text": "Tobacco",
+                "confidence": 96.46,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 11,
+                "text": "Tobacco",
+                "confidence": 93.88,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 13,
+                "text": "=",
+                "confidence": 80.69,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 6,
+                "text": "Tobacco",
+                "confidence": 96.46,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 7,
+                "text": "Tobacco",
+                "confidence": 96.46,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 11,
+                "text": "Tobacco",
+                "confidence": 95.94,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 6,
+                "text": "| Tobacco",
+                "confidence": 90.97,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 7,
+                "text": "| Tobacco",
+                "confidence": 93.95,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 11,
+                "text": "| Tobacco",
+                "confidence": 92.15,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 13,
+                "text": "eo",
+                "confidence": 44.61,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 6,
+                "text": "Tobacco",
+                "confidence": 96.63,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 7,
+                "text": "Tobacco",
+                "confidence": 96.63,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 11,
+                "text": "Tobacco",
+                "confidence": 96.42,
+                "candidates": [
+                  "Tobacco"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              }
+            ]
+          },
+          {
+            "slot": 5,
+            "familyCandidates": {
+              "slot-contrast": "Brazilian Rosewood",
+              "slot-threshold-175": "Brazilian Rosewood",
+              "slot-threshold-205": "Brazilian Rosewood",
+              "slot-threshold-185-invert": "Brazilian Rosewood"
+            },
+            "corroborated": {
+              "Brazilian Rosewood": [
+                "slot-contrast",
+                "slot-threshold-175",
+                "slot-threshold-205",
+                "slot-threshold-185-invert"
+              ]
+            },
+            "attempts": [
+              {
+                "variant": "slot-contrast",
+                "psm": 6,
+                "text": "Brazilian Rosewood",
+                "confidence": 95.95,
+                "candidates": [
+                  "Brazilian Rosewood"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 7,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 11,
+                "text": "Brazilian Rosewood",
+                "confidence": 96.63,
+                "candidates": [
+                  "Brazilian Rosewood"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 6,
+                "text": "Brazilian Rosewood",
+                "confidence": 96.23,
+                "candidates": [
+                  "Brazilian Rosewood"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 7,
+                "text": "Rosewood",
+                "confidence": 82.81,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 11,
+                "text": "Brazilian Rosewood",
+                "confidence": 96.15,
+                "candidates": [
+                  "Brazilian Rosewood"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 6,
+                "text": "Brazilian Rosewood",
+                "confidence": 95.94,
+                "candidates": [
+                  "Brazilian Rosewood"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 7,
+                "text": "Rosewood",
+                "confidence": 58.95,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 11,
+                "text": "Brazilian Rosewood",
+                "confidence": 96.59,
+                "candidates": [
+                  "Brazilian Rosewood"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 6,
+                "text": "Brazilian Rosewood",
+                "confidence": 96.31,
+                "candidates": [
+                  "Brazilian Rosewood"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 7,
+                "text": "Rosewood",
+                "confidence": 76.19,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 11,
+                "text": "Brazilian Rosewood",
+                "confidence": 96.59,
+                "candidates": [
+                  "Brazilian Rosewood"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              }
+            ]
+          },
+          {
+            "slot": 6,
+            "familyCandidates": {
+              "slot-contrast": "Carnation",
+              "slot-threshold-175": "Carnation",
+              "slot-threshold-205": "Carnation",
+              "slot-threshold-185-invert": "Carnation"
+            },
+            "corroborated": {
+              "Carnation": [
+                "slot-contrast",
+                "slot-threshold-175",
+                "slot-threshold-205",
+                "slot-threshold-185-invert"
+              ]
+            },
+            "attempts": [
+              {
+                "variant": "slot-contrast",
+                "psm": 6,
+                "text": "Carnation",
+                "confidence": 95.72,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 7,
+                "text": "Carnation",
+                "confidence": 95.72,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 11,
+                "text": "Carnation",
+                "confidence": 96.11,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-contrast",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 6,
+                "text": "Carnation",
+                "confidence": 96.13,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 7,
+                "text": "Carnation",
+                "confidence": 96.13,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 11,
+                "text": "Carnation",
+                "confidence": 96.48,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-threshold-175",
+                "psm": 13,
+                "text": "Carnation",
+                "confidence": 35.8,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 6,
+                "text": "Carnation",
+                "confidence": 95.99,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 7,
+                "text": "Carnation",
+                "confidence": 96.81,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 11,
+                "text": "Carnation",
+                "confidence": 96.67,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-threshold-205",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 6,
+                "text": "Carnation",
+                "confidence": 96.31,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 7,
+                "text": "Carnation",
+                "confidence": 96.31,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 11,
+                "text": "Carnation",
+                "confidence": 96.26,
+                "candidates": [
+                  "Carnation"
+                ]
+              },
+              {
+                "variant": "slot-threshold-185-invert",
+                "psm": 13,
+                "text": "",
+                "confidence": -1,
+                "candidates": []
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "code": "107-ARB",
@@ -568319,5 +569339,21 @@
       "990-YZLO",
       "997-ABE"
     ]
+  },
+  "headerAnchoredSixSlotRecovery": {
+    "examined": 303,
+    "recovered": 1,
+    "codes": [
+      "1069-CHA"
+    ],
+    "rejected": {
+      "note_count_1": 1,
+      "note_count_2": 7,
+      "note_count_3": 19,
+      "note_count_4": 16,
+      "note_count_5": 48,
+      "sequence_not_exact": 3,
+      "slot_consensus_failed": 299
+    }
   }
 }
