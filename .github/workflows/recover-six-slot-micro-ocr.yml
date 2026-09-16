@@ -1,0 +1,47 @@
+name: Recover six-slot micro OCR
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/recover_six_slot_micro_ocr.py'
+      - '.github/workflows/recover-six-slot-micro-ocr.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+      - name: Install OCR dependencies
+        run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow numpy
+      - name: Recover exact six-slot proofs
+        run: python tools/recover_six_slot_micro_ocr.py
+      - name: Rebuild validation and safety gates
+        run: |
+          python tools/build_validation_audit.py
+          python tools/build_final_perfume_catalog.py
+          python tools/verify_catalog_invariants.py --baseline-ref HEAD --write-report
+      - name: Commit recovered proofs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/fragrantica/social-cards/records/social-card-ordered-image-audit.json \
+                  database/catalog/database_complete.json \
+                  database/catalog/catalog_site.json \
+                  database/catalog/catalog_final_perfume_only.json \
+                  database/catalog/database_final_perfume_only.json \
+                  database/audits/CURRENT-CATALOG-AUDIT.md
+          if git diff --cached --quiet; then
+            echo 'No six-slot micro OCR proofs recovered.'
+            exit 0
+          fi
+          git commit -m 'Publish six-slot micro OCR recovery'
+          git push
