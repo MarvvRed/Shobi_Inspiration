@@ -143,8 +143,7 @@ def parse_attempt(data, lexicon):
     bands = ((header_y + 90, header_y + 190), (header_y + 225, header_y + 350))
     words = []
     for word in all_words:
-        if norm(word["text"]) in {"note", "notes"}:
-            continue
+        # Exclude only the panel heading. A later "Notes" token belongs to a real\n        # label such as "Woody Notes", "Green Notes" or "Spicy Notes".\n        if norm(word["text"]) in {"note", "notes"} and abs(word["y"] - header_y) <= 13:\n            continue
         row_index = next((idx for idx, (lo, hi) in enumerate(bands) if lo <= word["cy"] < hi), None)
         if row_index is not None:
             words.append({**word, "row": row_index})

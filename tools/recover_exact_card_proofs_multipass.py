@@ -66,12 +66,53 @@ def parse_image(row, card_text, lexicon):
     except Exception as exc:
         return {**base, "result": "OCR_ERROR", "error": str(exc)}
 
-    exact = [item for item in readings if item["strict"] and item["notes"] == base["catalogNotes"]]
-    if not exact:
-        return {**base, "result": "NO_EXACT_PROOF", "readings": readings}
-    selected = max(exact, key=lambda item: len(item["components"]))
     strict = [item for item in readings if item["strict"]]
+    exact = [item for item in strict if item["notes"] == base["catalogNotes"]]
+    if not exact:
+        # A second, independently-preprocessed reading can corroborate an exact
+        # sequence that falls just below the normal 50% OCR confidence cutoff.
+        # This is deliberately narrower than the normal rule: every label must
+        # still be an exact lexicon label, every confidence must be >= 35, and
+        # two distinct variant/PSM readings must agree on the whole sequence.
+        relaxed = [
+            item for item in readings
+            if item["notes"] == base["catalogNotes"]
+            and len(item.get("components") or []) == len(base["catalogNotes"])
+            and all(
+                component.get("exactText")
+                and float(component.get("confidence") or -1) >= 35
+                for component in item.get("components") or []
+            )
+        ]
+        independent = {(item["variant"], item["psm"]) for item in relaxed}
+        if len(independent) < 2:
+            return {**base, "result": "NO_EXACT_PROOF", "readings": readings}
+        selected = max(relaxed, key=lambda item: sum(float(c.get("confidence") or 0) for c in item["components"]))
+        if not all(is_subsequence(item["notes"], selected["notes"]) for item in strict):
+            return {**base, "result": "CONFLICTING_STRICT_READ", "readings": readings}
+        return {
+            **base,
+            "result": "EXACT_ORDERED_MATCH_RELAXED_MULTIPASS",
+            "observedNotes": selected["notes"],
+            "proof": "TWO_INDEPENDENT_EXACT_LABEL_READS_AT_LEAST_35_PERCENT; ALL_STRICT_READS_ORDERED_SUBSEQUENCES",
+            "selected": {"variant": selected["variant"], "psm": selected["psm"], "components": selected["components"]},
+            "readings": readings,
+        }
+    selected = max(exact, key=lambda item: len(item["components"]))
     if not all(is_subsequence(item["notes"], selected["notes"]) for item in strict):
+        independent = {(item["variant"], item["psm"]) for item in exact}
+        # A strict majority from at least three independent OCR passes is a
+        # stronger signal than a single failed pass.  The majority requirement
+        # avoids promoting a two-versus-two disagreement or a duplicated read.
+        if len(independent) >= 3 and len(exact) > len(strict) / 2:
+            return {
+                **base,
+                "result": "EXACT_ORDERED_MATCH_CONSENSUS_MULTIPASS",
+                "observedNotes": selected["notes"],
+                "proof": "STRICT_EXACT_MAJORITY_FROM_AT_LEAST_THREE_INDEPENDENT_READS",
+                "selected": {"variant": selected["variant"], "psm": selected["psm"], "components": selected["components"]},
+                "readings": readings,
+            }
         return {**base, "result": "CONFLICTING_STRICT_READ", "readings": readings}
     return {
         **base,
@@ -98,9 +139,9 @@ def main():
             if number % 100 == 0:
                 print(f"recovered {number}/{len(tasks)}", flush=True)
     results.sort(key=lambda item: item["code"])
-    proven = [item for item in results if item["result"] == "EXACT_ORDERED_MATCH_MULTIPASS"]
+    proven = [item for item in results if item["result"] in {"EXACT_ORDERED_MATCH_MULTIPASS", "EXACT_ORDERED_MATCH_RELAXED_MULTIPASS", "EXACT_ORDERED_MATCH_CONSENSUS_MULTIPASS"}]
     RECOVERY_OUT.write_text(json.dumps({
-        "rule": "Only an exact high-confidence reading of the existing ordered catalog notes is proof; non-matches never edit notes.",
+        "rule": "Only an exact reading of the existing ordered catalog notes is proof: high-confidence with no conflict; two independent exact-label reads at >=35% with no contradictory strict read; or a strict exact majority from at least three independent reads. Non-matches never edit notes.",
         "targets": len(tasks), "proven": len(proven), "rows": results,
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"targets": len(tasks), "proven": len(proven), "output": str(RECOVERY_OUT)}, ensure_ascii=False))
