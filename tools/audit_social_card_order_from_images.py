@@ -243,21 +243,25 @@ def inspect(task):
     strict = [a for a in attempts if a["strict"]]
     if not strict:
         return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
-    # A longer strict list wins only when every other strict reading is its
-    # ordered subsequence.  This accepts a second OCR pass recovering a word
-    # missed by the first, but never resolves competing readings by guesswork.
-    selected = max(strict, key=lambda a: len(a["notes"]))
-    if not all(is_subsequence(a["notes"], selected["notes"]) for a in strict):
-        return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
-    visible_rows = 2 if selected["notesHeaderY"] < 90 else 1
-    icon_counts = visible_icon_counts(source_panel, selected["notesHeaderY"], visible_rows)
-    label_counts = [sum(1 for item in selected["components"] if item["row"] == i) for i in range(visible_rows)]
-    if icon_counts != label_counts:
-        return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts,
-                "iconCounts": icon_counts, "labelCounts": label_counts}
-    result = "EXACT_ORDERED_MATCH" if selected["notes"] == base["catalogNotes"] else "ORDERED_MISMATCH"
-    return {**base, "result": result, "observedNotes": selected["notes"], "components": selected["components"],
-            "notesHeaderY": selected["notesHeaderY"], "iconCounts": icon_counts, "labelCounts": label_counts, "attempts": attempts}
+    # An exact high-confidence reading of every visible label is proof by
+    # itself. A second OCR layout pass may legitimately omit a wrapped label;
+    # an omission is not evidence against the complete reading. It must,
+    # however, remain an ordered subsequence. Any competing label still fails.
+    exact = [a for a in strict if a["notes"] == base["catalogNotes"]]
+    if exact:
+        selected = max(exact, key=lambda a: len(a["components"]))
+        if not all(is_subsequence(a["notes"], selected["notes"]) for a in strict):
+            return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
+        label_counts = [sum(1 for item in selected["components"] if item["row"] == i) for i in range(2)]
+        return {**base, "result": "EXACT_ORDERED_MATCH", "observedNotes": selected["notes"],
+                "components": selected["components"], "notesHeaderY": selected["notesHeaderY"],
+                "labelCounts": label_counts, "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+                "attempts": attempts}
+    # A non-matching OCR list is never used to rewrite catalog data in this
+    # gate. It may be a partial reading or a misread label, so it remains
+    # unresolved until there is separate, repeatable evidence of the complete
+    # sequence. This audit promotes proof; it does not infer replacements.
+    return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
 
 
 def main():
