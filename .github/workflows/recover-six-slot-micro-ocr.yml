@@ -44,4 +44,5 @@ jobs:
             exit 0
           fi
           git commit -m 'Publish six-slot micro OCR recovery'
-          git push
+          git pull --rebase origin main
+          git push origin main
