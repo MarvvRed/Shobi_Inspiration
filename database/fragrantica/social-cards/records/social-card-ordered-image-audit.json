@@ -2,9 +2,9 @@
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
   "results": {
-    "EXACT_ORDERED_MATCH": 1860,
+    "EXACT_ORDERED_MATCH": 1867,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 387,
+    "READING_NOT_STRICT_ENOUGH": 380,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -6323,7 +6323,7 @@
         "Heliotrope",
         "Patchouli"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -6561,7 +6561,338 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Vanilla",
+        "Sandalwood",
+        "Peru Balsam",
+        "Pear",
+        "Heliotrope",
+        "Patchouli"
+      ],
+      "components": [],
+      "proof": "SOCIAL_CARD_ONLY_ADAPTIVE_PHYSICAL_SLOT_CONSENSUS_ACROSS_INDEPENDENT_PREPROCESSING_FAMILIES; CATALOG_NOT_USED_FOR_RECOGNITION_OR_NOTE_COUNT",
+      "adaptiveSocialCardEvidence": {
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Vanilla",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Vanilla": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Peru Balsam",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Peru Balsam": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Pear",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Pear": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Heliotrope",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Heliotrope": 3
+              }
+            },
+            "(1, 2)": {
+              "note": "Patchouli",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Patchouli": 2
+              }
+            }
+          }
+        },
+        "families": {
+          "contrast": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "acceptedCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Peru Balsam",
+                "Peru Balsam"
+              ],
+              "acceptedCandidates": [
+                "Peru Balsam",
+                "Peru Balsam"
+              ],
+              "chosen": "Peru Balsam"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Pear",
+                "Ice",
+                "Pear",
+                "Ice"
+              ],
+              "acceptedCandidates": [
+                "Pear",
+                "Pear"
+              ],
+              "chosen": "Pear"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Heliotrope",
+                "Heliotrope",
+                "Money"
+              ],
+              "acceptedCandidates": [
+                "Heliotrope",
+                "Heliotrope"
+              ],
+              "chosen": "Heliotrope"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Patchouli"
+              ],
+              "acceptedCandidates": [
+                "Patchouli"
+              ],
+              "chosen": "Patchouli"
+            }
+          },
+          "equalize": {},
+          "unsharp": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "acceptedCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Peru Balsam",
+                "Peru Balsam"
+              ],
+              "acceptedCandidates": [
+                "Peru Balsam"
+              ],
+              "chosen": "Peru Balsam"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Pear",
+                "Pear",
+                "Olive"
+              ],
+              "acceptedCandidates": [
+                "Pear",
+                "Pear"
+              ],
+              "chosen": "Pear"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Heliotrope",
+                "Heliotrope"
+              ],
+              "acceptedCandidates": [
+                "Heliotrope",
+                "Heliotrope"
+              ],
+              "chosen": "Heliotrope"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Patchouli",
+                "Patchouli"
+              ],
+              "acceptedCandidates": [],
+              "chosen": null
+            }
+          },
+          "threshold175": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "acceptedCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Peru Balsam",
+                "Peru Balsam"
+              ],
+              "acceptedCandidates": [
+                "Peru Balsam",
+                "Peru Balsam"
+              ],
+              "chosen": "Peru Balsam"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Pear",
+                "Pear"
+              ],
+              "acceptedCandidates": [
+                "Pear",
+                "Pear"
+              ],
+              "chosen": "Pear"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Heliotrope",
+                "Heliotrope"
+              ],
+              "acceptedCandidates": [],
+              "chosen": null
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Patchouli"
+              ],
+              "acceptedCandidates": [],
+              "chosen": null
+            }
+          },
+          "threshold205": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Vanilla",
+                "Vanilla",
+                "Peru Balsam"
+              ],
+              "acceptedCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Peru Balsam"
+              ],
+              "acceptedCandidates": [
+                "Peru Balsam"
+              ],
+              "chosen": "Peru Balsam"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Pear"
+              ],
+              "acceptedCandidates": [
+                "Pear"
+              ],
+              "chosen": "Pear"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Heliotrope"
+              ],
+              "acceptedCandidates": [
+                "Heliotrope"
+              ],
+              "chosen": "Heliotrope"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Patchouli"
+              ],
+              "acceptedCandidates": [
+                "Patchouli"
+              ],
+              "chosen": "Patchouli"
+            }
+          }
+        }
+      }
     },
     {
       "code": "1025-BRB",
@@ -10145,7 +10476,78 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Ginger",
+          "Cardamom",
+          "Tobacco Blossom",
+          "Sandalwood",
+          "Juniper",
+          "Green Notes"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Ginger",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Ginger": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Cardamom",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Cardamom": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Tobacco Blossom",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Tobacco Blossom": 3
+              }
+            },
+            "(1, 0)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Juniper",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Juniper": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Green Notes",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Green Notes": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "1037-BLG",
@@ -36021,7 +36423,78 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Tonka Bean",
+          "Amberwood",
+          "Bergamot",
+          "Mandarin Orange",
+          "Heliotrope",
+          "Orange Blossom"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Tonka Bean",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Tonka Bean": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Amberwood",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Amberwood": 3
+              }
+            },
+            "(0, 2)": {
+              "note": "Bergamot",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Bergamot": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Mandarin Orange",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Mandarin Orange": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Heliotrope",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Heliotrope": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Orange Blossom",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Orange Blossom": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "1129-ARM",
@@ -70585,7 +71058,78 @@
           ],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Fig Leaf",
+          "Cedar",
+          "Vetiver",
+          "Grapefruit",
+          "Sandalwood",
+          "Carnation"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 3
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Fig Leaf",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Fig Leaf": 2
+              }
+            },
+            "(0, 1)": {
+              "note": "Cedar",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Cedar": 3
+              }
+            },
+            "(0, 2)": {
+              "note": "Vetiver",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Vetiver": 2
+              }
+            },
+            "(1, 0)": {
+              "note": "Grapefruit",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Grapefruit": 2
+              }
+            },
+            "(1, 1)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Carnation",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Carnation": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "1258-SFER",
@@ -80076,7 +80620,78 @@
           ],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Sandalwood",
+          "Leather",
+          "Papyrus",
+          "Cedar",
+          "Cardamom",
+          "Violet"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Leather",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Leather": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Papyrus",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Papyrus": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Cedar",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Cedar": 3
+              }
+            },
+            "(1, 1)": {
+              "note": "Cardamom",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Cardamom": 3
+              }
+            },
+            "(1, 2)": {
+              "note": "Violet",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Violet": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "132-LTN",
@@ -106009,7 +106624,78 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Olibanum (Frankincense)",
+          "Agarwood (Oud)",
+          "Labdanum",
+          "Pink Pepper",
+          "Rose",
+          "Vetiver"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Olibanum (Frankincense)",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Olibanum (Frankincense)": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Agarwood (Oud)",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Agarwood (Oud)": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Labdanum",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Labdanum": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Pink Pepper",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Pink Pepper": 3
+              }
+            },
+            "(1, 1)": {
+              "note": "Rose",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Rose": 3
+              }
+            },
+            "(1, 2)": {
+              "note": "Vetiver",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Vetiver": 3
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "1615-FRE",
@@ -115277,7 +115963,48 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Oat",
+          "Hazelnut",
+          "Vetiver"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(0, 0)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Oat",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Oat": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Hazelnut",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Hazelnut": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Vetiver",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Vetiver": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "1656-LOC",
@@ -116261,7 +116988,78 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Vanilla",
+          "Red Apple",
+          "Amber",
+          "Sandalwood",
+          "Pineapple",
+          "Heliotrope"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Vanilla",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Vanilla": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Red Apple",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Red Apple": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Amber",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Amber": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Pineapple",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Pineapple": 3
+              }
+            },
+            "(1, 2)": {
+              "note": "Heliotrope",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Heliotrope": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "166-AZ",
@@ -136055,7 +136853,78 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Coconut",
+          "Water Fruit",
+          "Freesia",
+          "Bergamot",
+          "Sandalwood",
+          "Tonka Bean"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Coconut",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Coconut": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Water Fruit",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Water Fruit": 2
+              }
+            },
+            "(0, 2)": {
+              "note": "Freesia",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Freesia": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Bergamot",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Bergamot": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Sandalwood",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Sandalwood": 3
+              }
+            },
+            "(1, 2)": {
+              "note": "Tonka Bean",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Tonka Bean": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "1765-JEN",
@@ -138897,7 +139766,78 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Almond Blossom",
+          "Amberwood",
+          "Jasmine",
+          "Musk",
+          "Pear",
+          "Mandarin Orange"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Almond Blossom",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Almond Blossom": 3
+              }
+            },
+            "(0, 1)": {
+              "note": "Amberwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Amberwood": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Jasmine",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Jasmine": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Musk",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Musk": 3
+              }
+            },
+            "(1, 1)": {
+              "note": "Pear",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Pear": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Mandarin Orange",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Mandarin Orange": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "1775-DIP",
@@ -176327,7 +177267,60 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Grapefruit",
+          "Ginger",
+          "Musk",
+          "Vetiver"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(0, 0)": 3,
+            "(1, 1)": 4,
+            "(1, 0)": 4,
+            "(1, 2)": 1,
+            "(0, 2)": 1
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Grapefruit",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Grapefruit": 3
+              }
+            },
+            "(0, 1)": {
+              "note": "Ginger",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Ginger": 2
+              }
+            },
+            "(1, 0)": {
+              "note": "Musk",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Musk": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Vetiver",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Vetiver": 3
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "193-ARM",
@@ -235009,7 +236002,78 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Vanilla",
+          "Coconut",
+          "Beeswax",
+          "Licorice",
+          "Sandalwood",
+          "Tonka Bean"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 5,
+            "(1, 2)": 5,
+            "(0, 0)": 4,
+            "(1, 1)": 5,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Vanilla",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Vanilla": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Coconut",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Coconut": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Beeswax",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Beeswax": 3
+              }
+            },
+            "(1, 0)": {
+              "note": "Licorice",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Licorice": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Tonka Bean",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Tonka Bean": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "2178-MON",
@@ -243677,7 +244741,78 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Bitter Orange",
+          "Orange",
+          "Mandarin Orange",
+          "Amber",
+          "Sandalwood",
+          "Plum"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(0, 2)": 4,
+            "(1, 1)": 3,
+            "(1, 0)": 3
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Bitter Orange",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Bitter Orange": 3
+              }
+            },
+            "(0, 1)": {
+              "note": "Orange",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Orange": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Mandarin Orange",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Mandarin Orange": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Amber",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Amber": 3
+              }
+            },
+            "(1, 1)": {
+              "note": "Sandalwood",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Sandalwood": 3
+              }
+            },
+            "(1, 2)": {
+              "note": "Plum",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Plum": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "2211-YZLO",
@@ -268344,7 +269479,7 @@
         "Tonka Bean",
         "Vanilla"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -268559,7 +269694,336 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Sandalwood",
+        "Bergamot",
+        "Mandarin Orange",
+        "Olibanum (Frankincense)",
+        "Tonka Bean",
+        "Vanilla"
+      ],
+      "components": [],
+      "proof": "SOCIAL_CARD_ONLY_ADAPTIVE_PHYSICAL_SLOT_CONSENSUS_ACROSS_INDEPENDENT_PREPROCESSING_FAMILIES; CATALOG_NOT_USED_FOR_RECOGNITION_OR_NOTE_COUNT",
+      "adaptiveSocialCardEvidence": {
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Bergamot",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Bergamot": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Mandarin Orange",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Mandarin Orange": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Olibanum (Frankincense)",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Olibanum (Frankincense)": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Tonka Bean",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Tonka Bean": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Vanilla",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Vanilla": 4
+              }
+            }
+          }
+        },
+        "families": {
+          "contrast": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Bergamot",
+                "Bergamot"
+              ],
+              "acceptedCandidates": [
+                "Bergamot",
+                "Bergamot"
+              ],
+              "chosen": "Bergamot"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Mandarin Orange",
+                "Mandarin Orange"
+              ],
+              "acceptedCandidates": [
+                "Mandarin Orange",
+                "Mandarin Orange"
+              ],
+              "chosen": "Mandarin Orange"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Tonka Bean",
+                "Tonka Bean"
+              ],
+              "acceptedCandidates": [
+                "Tonka Bean",
+                "Tonka Bean"
+              ],
+              "chosen": "Tonka Bean"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "acceptedCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            }
+          },
+          "equalize": {},
+          "unsharp": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Bergamot"
+              ],
+              "acceptedCandidates": [
+                "Bergamot"
+              ],
+              "chosen": "Bergamot"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Mandarin Orange"
+              ],
+              "acceptedCandidates": [
+                "Mandarin Orange"
+              ],
+              "chosen": "Mandarin Orange"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Tonka Bean"
+              ],
+              "acceptedCandidates": [
+                "Tonka Bean"
+              ],
+              "chosen": "Tonka Bean"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Vanilla"
+              ],
+              "acceptedCandidates": [
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            }
+          },
+          "threshold175": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Bergamot",
+                "Bergamot"
+              ],
+              "acceptedCandidates": [
+                "Bergamot",
+                "Bergamot"
+              ],
+              "chosen": "Bergamot"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Mandarin Orange",
+                "Mandarin Orange"
+              ],
+              "acceptedCandidates": [
+                "Mandarin Orange",
+                "Mandarin Orange"
+              ],
+              "chosen": "Mandarin Orange"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Tonka Bean",
+                "Tonka Bean"
+              ],
+              "acceptedCandidates": [
+                "Tonka Bean",
+                "Tonka Bean"
+              ],
+              "chosen": "Tonka Bean"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "acceptedCandidates": [
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            }
+          },
+          "threshold205": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Bergamot",
+                "Mandarin Orange Blossom",
+                "Bergamot"
+              ],
+              "acceptedCandidates": [
+                "Bergamot",
+                "Bergamot"
+              ],
+              "chosen": "Bergamot"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Mandarin Orange"
+              ],
+              "acceptedCandidates": [
+                "Mandarin Orange"
+              ],
+              "chosen": "Mandarin Orange"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)",
+                "Incense"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Tonka Bean"
+              ],
+              "acceptedCandidates": [
+                "Tonka Bean"
+              ],
+              "chosen": "Tonka Bean"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Vanilla"
+              ],
+              "acceptedCandidates": [
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            }
+          }
+        }
+      }
     },
     {
       "code": "2314-CAR",
@@ -270712,7 +272176,7 @@
         "Olibanum (Frankincense)",
         "Pink Pepper"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -270984,7 +272448,348 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Woody Notes",
+        "Patchouli",
+        "Saffron",
+        "Labdanum",
+        "Olibanum (Frankincense)",
+        "Pink Pepper"
+      ],
+      "components": [],
+      "proof": "SOCIAL_CARD_ONLY_ADAPTIVE_PHYSICAL_SLOT_CONSENSUS_ACROSS_INDEPENDENT_PREPROCESSING_FAMILIES; CATALOG_NOT_USED_FOR_RECOGNITION_OR_NOTE_COUNT",
+      "adaptiveSocialCardEvidence": {
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Woody Notes",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Woody Notes": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Patchouli",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Patchouli": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Saffron",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Saffron": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Labdanum",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Labdanum": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Olibanum (Frankincense)",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Olibanum (Frankincense)": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Pink Pepper",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Pink Pepper": 4
+              }
+            }
+          }
+        },
+        "families": {
+          "contrast": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Woody Notes",
+                "Woody Notes"
+              ],
+              "acceptedCandidates": [
+                "Woody Notes",
+                "Woody Notes"
+              ],
+              "chosen": "Woody Notes"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Patchouli",
+                "Patchouli"
+              ],
+              "acceptedCandidates": [
+                "Patchouli"
+              ],
+              "chosen": "Patchouli"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Saffron",
+                "Saffron"
+              ],
+              "acceptedCandidates": [
+                "Saffron"
+              ],
+              "chosen": "Saffron"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Labdanum",
+                "Labdanum"
+              ],
+              "acceptedCandidates": [
+                "Labdanum",
+                "Labdanum"
+              ],
+              "chosen": "Labdanum"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Pink Pepper",
+                "Pink Pepper"
+              ],
+              "acceptedCandidates": [
+                "Pink Pepper",
+                "Pink Pepper"
+              ],
+              "chosen": "Pink Pepper"
+            }
+          },
+          "equalize": {},
+          "unsharp": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Woody Notes",
+                "Woody Notes"
+              ],
+              "acceptedCandidates": [
+                "Woody Notes"
+              ],
+              "chosen": "Woody Notes"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Patchouli",
+                "Patchouli"
+              ],
+              "acceptedCandidates": [
+                "Patchouli"
+              ],
+              "chosen": "Patchouli"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Saffron",
+                "Saffron"
+              ],
+              "acceptedCandidates": [
+                "Saffron"
+              ],
+              "chosen": "Saffron"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Labdanum",
+                "Labdanum",
+                "Oat"
+              ],
+              "acceptedCandidates": [
+                "Labdanum"
+              ],
+              "chosen": "Labdanum"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)",
+                "Silver",
+                "Olibanum (Frankincense)"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Pink Pepper",
+                "Rye",
+                "Pink Pepper"
+              ],
+              "acceptedCandidates": [
+                "Pink Pepper"
+              ],
+              "chosen": "Pink Pepper"
+            }
+          },
+          "threshold175": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Woody Notes",
+                "Woody Notes"
+              ],
+              "acceptedCandidates": [
+                "Woody Notes",
+                "Woody Notes"
+              ],
+              "chosen": "Woody Notes"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Patchouli",
+                "Patchouli"
+              ],
+              "acceptedCandidates": [
+                "Patchouli"
+              ],
+              "chosen": "Patchouli"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Saffron",
+                "Saffron"
+              ],
+              "acceptedCandidates": [
+                "Saffron"
+              ],
+              "chosen": "Saffron"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Labdanum",
+                "Labdanum"
+              ],
+              "acceptedCandidates": [
+                "Labdanum",
+                "Labdanum"
+              ],
+              "chosen": "Labdanum"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Pink Pepper",
+                "Pink Pepper"
+              ],
+              "acceptedCandidates": [
+                "Pink Pepper",
+                "Pink Pepper"
+              ],
+              "chosen": "Pink Pepper"
+            }
+          },
+          "threshold205": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Woody Notes",
+                "Woody Notes"
+              ],
+              "acceptedCandidates": [
+                "Woody Notes",
+                "Woody Notes"
+              ],
+              "chosen": "Woody Notes"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Patchouli",
+                "Patchouli"
+              ],
+              "acceptedCandidates": [
+                "Patchouli",
+                "Patchouli"
+              ],
+              "chosen": "Patchouli"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Saffron",
+                "Saffron"
+              ],
+              "acceptedCandidates": [
+                "Saffron",
+                "Saffron"
+              ],
+              "chosen": "Saffron"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Labdanum",
+                "Labdanum"
+              ],
+              "acceptedCandidates": [
+                "Labdanum",
+                "Labdanum"
+              ],
+              "chosen": "Labdanum"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Pink Pepper",
+                "Pink Pepper"
+              ],
+              "acceptedCandidates": [
+                "Pink Pepper",
+                "Pink Pepper"
+              ],
+              "chosen": "Pink Pepper"
+            }
+          }
+        }
+      }
     },
     {
       "code": "2322-MNT",
@@ -280100,7 +281905,78 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Sandalwood",
+          "Cedar",
+          "Cypress",
+          "Brazilian Rosewood",
+          "Spicy Notes",
+          "Myrtle"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Cedar",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Cedar": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Cypress",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Cypress": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Brazilian Rosewood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Brazilian Rosewood": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Spicy Notes",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Spicy Notes": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Myrtle",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Myrtle": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "2367-DIP",
@@ -290509,7 +292385,7 @@
         "Sandalwood",
         "Cedar"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -290701,7 +292577,350 @@
           ],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Coconut",
+        "Palm Leaf",
+        "Salt",
+        "Gardenia",
+        "Sandalwood",
+        "Cedar"
+      ],
+      "components": [],
+      "proof": "SOCIAL_CARD_ONLY_ADAPTIVE_PHYSICAL_SLOT_CONSENSUS_ACROSS_INDEPENDENT_PREPROCESSING_FAMILIES; CATALOG_NOT_USED_FOR_RECOGNITION_OR_NOTE_COUNT",
+      "adaptiveSocialCardEvidence": {
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Coconut",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Coconut": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Palm Leaf",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Palm Leaf": 3
+              }
+            },
+            "(0, 2)": {
+              "note": "Salt",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Salt": 3
+              }
+            },
+            "(1, 0)": {
+              "note": "Gardenia",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Gardenia": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Cedar",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Cedar": 4
+              }
+            }
+          }
+        },
+        "families": {
+          "contrast": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Coconut",
+                "Coconut",
+                "Myrrh"
+              ],
+              "acceptedCandidates": [
+                "Coconut",
+                "Coconut"
+              ],
+              "chosen": "Coconut"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Palm Leaf",
+                "Lemon Balm"
+              ],
+              "acceptedCandidates": [
+                "Palm Leaf"
+              ],
+              "chosen": null
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Salt",
+                "Salt"
+              ],
+              "acceptedCandidates": [
+                "Salt",
+                "Salt"
+              ],
+              "chosen": "Salt"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Gardenia",
+                "Gardenia"
+              ],
+              "acceptedCandidates": [
+                "Gardenia",
+                "Gardenia"
+              ],
+              "chosen": "Gardenia"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "acceptedCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "chosen": "Cedar"
+            }
+          },
+          "equalize": {},
+          "unsharp": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Coconut",
+                "Coconut"
+              ],
+              "acceptedCandidates": [
+                "Coconut",
+                "Coconut"
+              ],
+              "chosen": "Coconut"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Palm Leaf",
+                "Palm Leaf"
+              ],
+              "acceptedCandidates": [
+                "Palm Leaf"
+              ],
+              "chosen": "Palm Leaf"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Salt",
+                "Salt"
+              ],
+              "acceptedCandidates": [],
+              "chosen": null
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Gardenia",
+                "Sand",
+                "Gardenia"
+              ],
+              "acceptedCandidates": [
+                "Gardenia",
+                "Gardenia"
+              ],
+              "chosen": "Gardenia"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "acceptedCandidates": [
+                "Cedar"
+              ],
+              "chosen": "Cedar"
+            }
+          },
+          "threshold175": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Coconut",
+                "Coconut"
+              ],
+              "acceptedCandidates": [
+                "Coconut",
+                "Coconut"
+              ],
+              "chosen": "Coconut"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Palm Leaf",
+                "Palm Leaf"
+              ],
+              "acceptedCandidates": [
+                "Palm Leaf",
+                "Palm Leaf"
+              ],
+              "chosen": "Palm Leaf"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Salt",
+                "Salt"
+              ],
+              "acceptedCandidates": [
+                "Salt",
+                "Salt"
+              ],
+              "chosen": "Salt"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Gardenia",
+                "Gardenia"
+              ],
+              "acceptedCandidates": [
+                "Gardenia",
+                "Gardenia"
+              ],
+              "chosen": "Gardenia"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "acceptedCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "chosen": "Cedar"
+            }
+          },
+          "threshold205": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Coconut",
+                "Coconut"
+              ],
+              "acceptedCandidates": [
+                "Coconut"
+              ],
+              "chosen": "Coconut"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Palm Leaf",
+                "Palm Leaf"
+              ],
+              "acceptedCandidates": [
+                "Palm Leaf",
+                "Palm Leaf"
+              ],
+              "chosen": "Palm Leaf"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Salt",
+                "Salt"
+              ],
+              "acceptedCandidates": [
+                "Salt",
+                "Salt"
+              ],
+              "chosen": "Salt"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Gardenia",
+                "Gardenia"
+              ],
+              "acceptedCandidates": [
+                "Gardenia",
+                "Gardenia"
+              ],
+              "chosen": "Gardenia"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "acceptedCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "chosen": "Cedar"
+            }
+          }
+        }
+      }
     },
     {
       "code": "2412-LAT",
@@ -297246,7 +299465,7 @@
         "Coriander",
         "Incense"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -297401,7 +299620,339 @@
           ],
           "notesHeaderY": 53.3
         }
-      ]
+      ],
+      "observedNotes": [
+        "Coffee",
+        "Vetiver",
+        "Nutmeg",
+        "Sandalwood",
+        "Coriander",
+        "Incense"
+      ],
+      "components": [],
+      "proof": "SOCIAL_CARD_ONLY_ADAPTIVE_PHYSICAL_SLOT_CONSENSUS_ACROSS_INDEPENDENT_PREPROCESSING_FAMILIES; CATALOG_NOT_USED_FOR_RECOGNITION_OR_NOTE_COUNT",
+      "adaptiveSocialCardEvidence": {
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Coffee",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Coffee": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Vetiver",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Vetiver": 2
+              }
+            },
+            "(0, 2)": {
+              "note": "Nutmeg",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Nutmeg": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Coriander",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Coriander": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Incense",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Incense": 4
+              }
+            }
+          }
+        },
+        "families": {
+          "contrast": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Coffee",
+                "Coffee"
+              ],
+              "acceptedCandidates": [
+                "Coffee",
+                "Coffee"
+              ],
+              "chosen": "Coffee"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Vetiver",
+                "Vetiver"
+              ],
+              "acceptedCandidates": [
+                "Vetiver"
+              ],
+              "chosen": "Vetiver"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Nutmeg"
+              ],
+              "acceptedCandidates": [
+                "Nutmeg"
+              ],
+              "chosen": "Nutmeg"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Coriander",
+                "Coriander"
+              ],
+              "acceptedCandidates": [
+                "Coriander",
+                "Coriander"
+              ],
+              "chosen": "Coriander"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Incense",
+                "Incense"
+              ],
+              "acceptedCandidates": [
+                "Incense",
+                "Incense"
+              ],
+              "chosen": "Incense"
+            }
+          },
+          "equalize": {},
+          "unsharp": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Coffee"
+              ],
+              "acceptedCandidates": [
+                "Coffee"
+              ],
+              "chosen": "Coffee"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Vetiver",
+                "Sea Water",
+                "Wasabi"
+              ],
+              "acceptedCandidates": [],
+              "chosen": null
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Nutmeg",
+                "Nutmeg"
+              ],
+              "acceptedCandidates": [
+                "Nutmeg",
+                "Nutmeg"
+              ],
+              "chosen": "Nutmeg"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Coriander",
+                "Coriander"
+              ],
+              "acceptedCandidates": [
+                "Coriander"
+              ],
+              "chosen": "Coriander"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Incense",
+                "Incense"
+              ],
+              "acceptedCandidates": [
+                "Incense",
+                "Incense"
+              ],
+              "chosen": "Incense"
+            }
+          },
+          "threshold175": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Coffee",
+                "Coffee"
+              ],
+              "acceptedCandidates": [
+                "Coffee",
+                "Coffee"
+              ],
+              "chosen": "Coffee"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Vetiver",
+                "Vetiver"
+              ],
+              "acceptedCandidates": [],
+              "chosen": null
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Nutmeg"
+              ],
+              "acceptedCandidates": [
+                "Nutmeg"
+              ],
+              "chosen": "Nutmeg"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Coriander",
+                "Coriander"
+              ],
+              "acceptedCandidates": [
+                "Coriander",
+                "Coriander"
+              ],
+              "chosen": "Coriander"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Incense",
+                "Incense"
+              ],
+              "acceptedCandidates": [
+                "Incense",
+                "Incense"
+              ],
+              "chosen": "Incense"
+            }
+          },
+          "threshold205": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Coffee",
+                "Coffee"
+              ],
+              "acceptedCandidates": [
+                "Coffee",
+                "Coffee"
+              ],
+              "chosen": "Coffee"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Vetiver",
+                "Vetiver"
+              ],
+              "acceptedCandidates": [
+                "Vetiver"
+              ],
+              "chosen": "Vetiver"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Nutmeg",
+                "Nutmeg"
+              ],
+              "acceptedCandidates": [
+                "Nutmeg"
+              ],
+              "chosen": "Nutmeg"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Coriander",
+                "Coriander"
+              ],
+              "acceptedCandidates": [
+                "Coriander",
+                "Coriander"
+              ],
+              "chosen": "Coriander"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Incense",
+                "Incense"
+              ],
+              "acceptedCandidates": [
+                "Incense",
+                "Incense"
+              ],
+              "chosen": "Incense"
+            }
+          }
+        }
+      }
     },
     {
       "code": "2440-MARC",
@@ -314841,7 +317392,78 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Passionfruit",
+          "Agarwood (Oud)",
+          "Leather",
+          "Fruity Notes",
+          "Akigalawood",
+          "Saffron"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Passionfruit",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Passionfruit": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Agarwood (Oud)",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Agarwood (Oud)": 3
+              }
+            },
+            "(0, 2)": {
+              "note": "Leather",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Leather": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Fruity Notes",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Fruity Notes": 3
+              }
+            },
+            "(1, 1)": {
+              "note": "Akigalawood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Akigalawood": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Saffron",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Saffron": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "251-JOM",
@@ -343592,7 +346214,78 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Vanilla",
+          "Sugar",
+          "Cashmir wood",
+          "Sandalwood",
+          "Pink Pepper",
+          "Benzoin"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Vanilla",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Vanilla": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Sugar",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sugar": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Cashmir wood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Cashmir wood": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Pink Pepper",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Pink Pepper": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Benzoin",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Benzoin": 3
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "2623-NES",
@@ -355469,7 +358162,78 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Agarwood (Oud)",
+          "Guaiac Wood",
+          "Rose",
+          "Vetiver",
+          "Sandalwood",
+          "Papyrus"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Agarwood (Oud)",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Agarwood (Oud)": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Guaiac Wood",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Guaiac Wood": 3
+              }
+            },
+            "(0, 2)": {
+              "note": "Rose",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Rose": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Vetiver",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Vetiver": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Papyrus",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Papyrus": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "2672-MEM",
@@ -356510,7 +359274,78 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Violet",
+          "Musk",
+          "Pear",
+          "Floral Notes",
+          "Sandalwood",
+          "Lavender"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Violet",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Violet": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Musk",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Musk": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Pear",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Pear": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Floral Notes",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Floral Notes": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Lavender",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Lavender": 3
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "2679-CAR",
@@ -365313,7 +368148,7 @@
         "Rose",
         "Ylang-Ylang"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -365480,7 +368315,340 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "Saffron",
+        "Vanilla",
+        "Patchouli",
+        "Olibanum (Frankincense)",
+        "Rose",
+        "Ylang-Ylang"
+      ],
+      "components": [],
+      "proof": "SOCIAL_CARD_ONLY_ADAPTIVE_PHYSICAL_SLOT_CONSENSUS_ACROSS_INDEPENDENT_PREPROCESSING_FAMILIES; CATALOG_NOT_USED_FOR_RECOGNITION_OR_NOTE_COUNT",
+      "adaptiveSocialCardEvidence": {
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Saffron",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Saffron": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Vanilla",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Vanilla": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Patchouli",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Patchouli": 2
+              }
+            },
+            "(1, 0)": {
+              "note": "Olibanum (Frankincense)",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Olibanum (Frankincense)": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Rose",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Rose": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Ylang-Ylang",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Ylang-Ylang": 4
+              }
+            }
+          }
+        },
+        "families": {
+          "contrast": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Saffron",
+                "Saffron"
+              ],
+              "acceptedCandidates": [
+                "Saffron",
+                "Saffron"
+              ],
+              "chosen": "Saffron"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Vanilla",
+                "Ash",
+                "Vanilla"
+              ],
+              "acceptedCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Patchouli",
+                "Rye"
+              ],
+              "acceptedCandidates": [],
+              "chosen": null
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Rose",
+                "Rose"
+              ],
+              "acceptedCandidates": [
+                "Rose",
+                "Rose"
+              ],
+              "chosen": "Rose"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Lysylang",
+                "Ylang-Ylang"
+              ],
+              "acceptedCandidates": [
+                "Ylang-Ylang"
+              ],
+              "chosen": "Ylang-Ylang"
+            }
+          },
+          "equalize": {},
+          "unsharp": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Saffron",
+                "Saffron",
+                "Poppy"
+              ],
+              "acceptedCandidates": [
+                "Saffron",
+                "Saffron"
+              ],
+              "chosen": "Saffron"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "acceptedCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Patchouli",
+                "Pansy",
+                "Patchouli"
+              ],
+              "acceptedCandidates": [
+                "Patchouli",
+                "Patchouli"
+              ],
+              "chosen": "Patchouli"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Rose"
+              ],
+              "acceptedCandidates": [
+                "Rose"
+              ],
+              "chosen": "Rose"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Ylang-Ylang"
+              ],
+              "acceptedCandidates": [
+                "Ylang-Ylang"
+              ],
+              "chosen": "Ylang-Ylang"
+            }
+          },
+          "threshold175": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Saffron",
+                "Saffron"
+              ],
+              "acceptedCandidates": [
+                "Saffron"
+              ],
+              "chosen": "Saffron"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "acceptedCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Patchouli"
+              ],
+              "acceptedCandidates": [],
+              "chosen": null
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)",
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Rose",
+                "Rose"
+              ],
+              "acceptedCandidates": [
+                "Rose",
+                "Rose"
+              ],
+              "chosen": "Rose"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Ylang-Ylang",
+                "Ylang-Ylang"
+              ],
+              "acceptedCandidates": [
+                "Ylang-Ylang",
+                "Ylang-Ylang"
+              ],
+              "chosen": "Ylang-Ylang"
+            }
+          },
+          "threshold205": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "Saffron",
+                "Saffron"
+              ],
+              "acceptedCandidates": [
+                "Saffron",
+                "Saffron"
+              ],
+              "chosen": "Saffron"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "acceptedCandidates": [
+                "Vanilla",
+                "Vanilla"
+              ],
+              "chosen": "Vanilla"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Patchouli",
+                "Patchouli"
+              ],
+              "acceptedCandidates": [
+                "Patchouli",
+                "Patchouli"
+              ],
+              "chosen": "Patchouli"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Olibanum (Frankincense)",
+                "Labdanum"
+              ],
+              "acceptedCandidates": [
+                "Olibanum (Frankincense)"
+              ],
+              "chosen": "Olibanum (Frankincense)"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Rose",
+                "Rose"
+              ],
+              "acceptedCandidates": [
+                "Rose",
+                "Rose"
+              ],
+              "chosen": "Rose"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Lysylang",
+                "Ylang-Ylang"
+              ],
+              "acceptedCandidates": [
+                "Ylang-Ylang"
+              ],
+              "chosen": "Ylang-Ylang"
+            }
+          }
+        }
+      }
     },
     {
       "code": "2718-GUR",
@@ -372004,7 +375172,78 @@
           ],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Orris Root",
+          "Violet",
+          "Moxalone",
+          "Akigalawood",
+          "Civettone",
+          "Sesame"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Orris Root",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Orris Root": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Violet",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Violet": 3
+              }
+            },
+            "(0, 2)": {
+              "note": "Moxalone",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Moxalone": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Akigalawood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Akigalawood": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Civettone",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Civettone": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Sesame",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Sesame": 3
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "2746-DRC",
@@ -376509,7 +379748,7 @@
         "Bagas de Zimbro",
         "Musk"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -376677,7 +379916,333 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "observedNotes": [
+        "AMBROX® SUPER",
+        "Sandalwood",
+        "Vetiver",
+        "Cedar",
+        "Bagas de Zimbro",
+        "Musk"
+      ],
+      "components": [],
+      "proof": "SOCIAL_CARD_ONLY_ADAPTIVE_PHYSICAL_SLOT_CONSENSUS_ACROSS_INDEPENDENT_PREPROCESSING_FAMILIES; CATALOG_NOT_USED_FOR_RECOGNITION_OR_NOTE_COUNT",
+      "adaptiveSocialCardEvidence": {
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "AMBROX® SUPER",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "AMBROX® SUPER": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Vetiver",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Vetiver": 3
+              }
+            },
+            "(1, 0)": {
+              "note": "Cedar",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Cedar": 3
+              }
+            },
+            "(1, 1)": {
+              "note": "Bagas de Zimbro",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Bagas de Zimbro": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Musk",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Musk": 3
+              }
+            }
+          }
+        },
+        "families": {
+          "contrast": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "AMBROX® SUPER",
+                "AMBROX® SUPER"
+              ],
+              "acceptedCandidates": [
+                "AMBROX® SUPER",
+                "AMBROX® SUPER"
+              ],
+              "chosen": "AMBROX® SUPER"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Vetiver",
+                "Olive"
+              ],
+              "acceptedCandidates": [
+                "Vetiver"
+              ],
+              "chosen": "Vetiver"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "acceptedCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "chosen": "Cedar"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Bagas de Zimbro",
+                "Bagas de Zimbro"
+              ],
+              "acceptedCandidates": [
+                "Bagas de Zimbro",
+                "Bagas de Zimbro"
+              ],
+              "chosen": "Bagas de Zimbro"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Musk",
+                "Musk"
+              ],
+              "acceptedCandidates": [
+                "Musk",
+                "Musk"
+              ],
+              "chosen": "Musk"
+            }
+          },
+          "equalize": {},
+          "unsharp": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "AMBROX® SUPER",
+                "AMBROX® SUPER"
+              ],
+              "acceptedCandidates": [
+                "AMBROX® SUPER",
+                "AMBROX® SUPER"
+              ],
+              "chosen": "AMBROX® SUPER"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Vetiver",
+                "Vetiver"
+              ],
+              "acceptedCandidates": [],
+              "chosen": null
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "acceptedCandidates": [],
+              "chosen": null
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Bagas de Zimbro",
+                "Bagas de Zimbro"
+              ],
+              "acceptedCandidates": [
+                "Bagas de Zimbro",
+                "Bagas de Zimbro"
+              ],
+              "chosen": "Bagas de Zimbro"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Musk",
+                "Musk"
+              ],
+              "acceptedCandidates": [
+                "Musk"
+              ],
+              "chosen": "Musk"
+            }
+          },
+          "threshold175": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "AMBROX® SUPER",
+                "AMBROX® SUPER"
+              ],
+              "acceptedCandidates": [
+                "AMBROX® SUPER",
+                "AMBROX® SUPER"
+              ],
+              "chosen": "AMBROX® SUPER"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Vetiver"
+              ],
+              "acceptedCandidates": [
+                "Vetiver"
+              ],
+              "chosen": "Vetiver"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "acceptedCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "chosen": "Cedar"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Bagas de Zimbro",
+                "Bagas de Zimbro"
+              ],
+              "acceptedCandidates": [
+                "Bagas de Zimbro"
+              ],
+              "chosen": "Bagas de Zimbro"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Musk",
+                "Musk"
+              ],
+              "acceptedCandidates": [
+                "Musk",
+                "Musk"
+              ],
+              "chosen": "Musk"
+            }
+          },
+          "threshold205": {
+            "(0, 0)": {
+              "rawCandidates": [
+                "AMBROX® SUPER",
+                "AMBROX® SUPER"
+              ],
+              "acceptedCandidates": [
+                "AMBROX® SUPER",
+                "AMBROX® SUPER"
+              ],
+              "chosen": "AMBROX® SUPER"
+            },
+            "(0, 1)": {
+              "rawCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "acceptedCandidates": [
+                "Sandalwood",
+                "Sandalwood"
+              ],
+              "chosen": "Sandalwood"
+            },
+            "(0, 2)": {
+              "rawCandidates": [
+                "Vetiver",
+                "Vetiver"
+              ],
+              "acceptedCandidates": [
+                "Vetiver"
+              ],
+              "chosen": "Vetiver"
+            },
+            "(1, 0)": {
+              "rawCandidates": [
+                "Cedar",
+                "Cedar"
+              ],
+              "acceptedCandidates": [
+                "Cedar"
+              ],
+              "chosen": "Cedar"
+            },
+            "(1, 1)": {
+              "rawCandidates": [
+                "Bagas de Zimbro",
+                "Bagas de Zimbro"
+              ],
+              "acceptedCandidates": [
+                "Bagas de Zimbro",
+                "Bagas de Zimbro"
+              ],
+              "chosen": "Bagas de Zimbro"
+            },
+            "(1, 2)": {
+              "rawCandidates": [
+                "Skin musk"
+              ],
+              "acceptedCandidates": [],
+              "chosen": null
+            }
+          }
+        }
+      }
     },
     {
       "code": "2766-PARF",
@@ -401510,7 +405075,58 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Grass",
+          "Fig",
+          "Cedar",
+          "Pine Tree"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Grass",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Grass": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Fig",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Fig": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Cedar",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Cedar": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Pine Tree",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Pine Tree": 2
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "302-JOM",
@@ -421105,7 +424721,78 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Sandalwood",
+          "Plum",
+          "Peach",
+          "Carnation",
+          "Ylang-Ylang",
+          "Styrax"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Sandalwood",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sandalwood": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Plum",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Plum": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Peach",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Peach": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Carnation",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Carnation": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Ylang-Ylang",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Ylang-Ylang": 3
+              }
+            },
+            "(1, 2)": {
+              "note": "Styrax",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Styrax": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "400-ARIA",
@@ -430385,7 +434072,58 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Mulberry",
+          "Musk",
+          "Peony",
+          "Tuberose"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Mulberry",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Mulberry": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Musk",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Musk": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Peony",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Peony": 2
+              }
+            },
+            "(1, 1)": {
+              "note": "Tuberose",
+              "families": 3,
+              "exactFamilies": 3,
+              "votes": {
+                "Tuberose": 3
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "441-BLG",
@@ -436631,7 +440369,38 @@
           ],
           "notesHeaderY": 124.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Jasmine",
+          "Cedar"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(0, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Jasmine",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Jasmine": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Cedar",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Cedar": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "466-CAL",
@@ -479605,7 +483374,78 @@
           ],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Strawberry",
+          "Marshmallow",
+          "Patchouli",
+          "Caramel",
+          "Vanilla",
+          "Sugar"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(1, 2)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(0, 2)": 4,
+            "(1, 0)": 4
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Strawberry",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Strawberry": 4
+              }
+            },
+            "(0, 1)": {
+              "note": "Marshmallow",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Marshmallow": 4
+              }
+            },
+            "(0, 2)": {
+              "note": "Patchouli",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Patchouli": 4
+              }
+            },
+            "(1, 0)": {
+              "note": "Caramel",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Caramel": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Vanilla",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Vanilla": 4
+              }
+            },
+            "(1, 2)": {
+              "note": "Sugar",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Sugar": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "631-EST",
@@ -519811,7 +523651,59 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "adaptiveSocialCardDiagnostic": {
+        "observedNotes": [
+          "Oakmoss",
+          "Honey",
+          "Spicy Notes",
+          "Civet"
+        ],
+        "consensus": {
+          "reason": "OK",
+          "presence": {
+            "(0, 1)": 4,
+            "(0, 0)": 4,
+            "(1, 1)": 4,
+            "(1, 0)": 4,
+            "(0, 2)": 1
+          },
+          "slots": {
+            "(0, 0)": {
+              "note": "Oakmoss",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Oakmoss": 2
+              }
+            },
+            "(0, 1)": {
+              "note": "Honey",
+              "families": 2,
+              "exactFamilies": 2,
+              "votes": {
+                "Honey": 2
+              }
+            },
+            "(1, 0)": {
+              "note": "Spicy Notes",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Spicy Notes": 4
+              }
+            },
+            "(1, 1)": {
+              "note": "Civet",
+              "families": 4,
+              "exactFamilies": 4,
+              "votes": {
+                "Civet": 4
+              }
+            }
+          }
+        }
+      }
     },
     {
       "code": "788-LAN",
@@ -569521,5 +573413,25 @@
       "weak_fuzzy_slot": 34
     },
     "policy": "No CURRENT_FID_FAST_EXACT_PROOF. Only same-code same-FID direct visual review or strong historical slot OCR with exact final order."
+  },
+  "adaptiveSocialCardRecovery": {
+    "examined": 387,
+    "recovered": 7,
+    "codes": [
+      "1024-BOU",
+      "2313-DRC",
+      "2321-PARF",
+      "2411-JAME",
+      "244-JOM",
+      "2717-EXN",
+      "2765-GUC"
+    ],
+    "rejected": {
+      "AMBIGUOUS_SLOT_COUNT": 42,
+      "NOTE_CONSENSUS_TOO_WEAK": 116,
+      "NO_NOTE_CONSENSUS": 194,
+      "conflicting_strict_read": 4,
+      "sequence_not_exact": 24
+    }
   }
 }

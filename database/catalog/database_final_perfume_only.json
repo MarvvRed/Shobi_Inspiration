@@ -5250,24 +5250,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Gucci/Muschio-di-Luce-114849.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -8225,24 +8222,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Ex-Nihilo/Brompton-Immortals-52591.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -26274,24 +26268,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/18470",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -30986,24 +30977,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Parfums-de-Marly/Nisean-36540.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -32093,24 +32081,21 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Sauvage-Parfum-56324.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -97584,24 +97569,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Jo-Malone-London/Black-Vetyver-Cafe-8278.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -147032,24 +147014,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Boucheron/Vanille-de-Zanzibar-44720.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
