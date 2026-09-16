@@ -259,13 +259,17 @@ for live in live_rows:
     }.get(social_gender, str(row.get("genderAffinity") or "").lower())
 
     # Preserve direct gender evidence only when it belongs to the current FID.
-    if gender_entry and str(gender_entry.get("fragranticaId") or "") == str(fragrantica_id or ""):
+    if gender_entry and str(gender_entry.get("fragrantica_id") or "") == str(fragrantica_id or ""):
         row["genderStatus"] = "VALIDATED_SOCIAL_CARD"
 
     row["genderAffinity"] = gender_affinity
     row["gender"] = gender_entry.get("gender") or row.get("gender") or ""
     main_season = str(season_entry.get("main_season") or "").lower()
-    row["seasons"] = row.get("seasons") or ([main_season] if main_season else [])
+    # Current Social Card season evidence replaces a season inherited from a legacy ID.
+    if season_entry and str(season_entry.get("fragrantica_id") or "") == str(fragrantica_id or ""):
+        row["seasons"] = [main_season] if main_season else []
+    else:
+        row["seasons"] = row.get("seasons") or ([main_season] if main_season else [])
     row["occasions"] = row.get("occasions") or []
     row["mainAccords"] = row.get("mainAccords") or []
     row["notes"] = row.get("notes") or {"top": [], "heart": [], "base": []}
