@@ -1,0 +1,35 @@
+name: Diagnose legacy Social Cards
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/diagnose_legacy_social_cards.py'
+      - '.github/workflows/diagnose-legacy-social-cards.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install OCR dependencies
+        run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow
+      - name: Diagnose legacy cards
+        run: python tools/diagnose_legacy_social_cards.py
+      - name: Commit diagnostics
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/fragrantica/social-cards/records/legacy-social-card-diagnostics.json
+          if git diff --cached --quiet; then
+            echo 'No diagnostic changes.'
+            exit 0
+          fi
+          git commit -m 'Record legacy Social Card diagnostics'
+          git push
