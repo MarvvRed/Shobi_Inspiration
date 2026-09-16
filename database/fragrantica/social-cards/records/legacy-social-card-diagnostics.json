@@ -1,0 +1,2268 @@
+{
+  "targets": [
+    "118-HAM",
+    "1251-ROM",
+    "235-HOLL",
+    "325-PECK"
+  ],
+  "rows": [
+    {
+      "code": "118-HAM",
+      "fragranticaId": "27808",
+      "catalogNotes": [],
+      "currentAuditResult": "UNSUPPORTED_CARD_GEOMETRY",
+      "card": "database/fragrantica/social-cards/images/current_118-HAM_27808.jpeg",
+      "size": [
+        1200,
+        620
+      ],
+      "ocr": [
+        {
+          "psm": 3,
+          "lines": [],
+          "words": []
+        },
+        {
+          "psm": 6,
+          "lines": [
+            {
+              "key": "1:1",
+              "text": "| 4",
+              "left": 401.5,
+              "top": 231.5,
+              "right": 696.5,
+              "bottom": 292.0,
+              "minConfidence": 62.7
+            },
+            {
+              "key": "1:2",
+              "text": "& A 5 1 1 1 2 4 1215 639 78 77 25.751724 ia. 5 1 1 1 2 5 1366 642 93 54 58.098122 Wa 4 1 1 1 3 0 743 719 948 106 -1 5 1 1 1 3 1 743 743 30 54 35.076607 /| 5 1 1 1 3 2 1180 789 4 11 49.998367 ; 5 1 1 1 3 3 1238 719 111 106 37.966621 Min 5 1 1 1 3 4 1645 748 46 40 48.876133 \\ 4 1 1 1 4 0 1259 826 277 59 -1 5 1 1 1 4 1 1259 826 22 59 63.361343 i 5 1 1 1 4 2 1531 869 5 8 0.000000 , 4 1 1 1 5 0 831 896 541 87 -1 5 1 1 1 5 1 831 963 14 8 30.205742 ; 5 1 1 1 5 2 1071 896 301 87 35.707825 a",
+              "left": 477.0,
+              "top": 301.5,
+              "right": 582.0,
+              "bottom": 354.0,
+              "minConfidence": 40.7
+            }
+          ],
+          "words": [
+            {
+              "text": "|",
+              "confidence": 81.2,
+              "left": 401.5,
+              "top": 231.5,
+              "width": 13.5,
+              "height": 60.5,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "4",
+              "confidence": 62.7,
+              "left": 670.0,
+              "top": 231.5,
+              "width": 26.5,
+              "height": 56.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "&",
+              "confidence": 40.7,
+              "left": 477.0,
+              "top": 301.5,
+              "width": 31.0,
+              "height": 52.5,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "A 5 1 1 1 2 4 1215 639 78 77 25.751724 ia. 5 1 1 1 2 5 1366 642 93 54 58.098122 Wa 4 1 1 1 3 0 743 719 948 106 -1 5 1 1 1 3 1 743 743 30 54 35.076607 /| 5 1 1 1 3 2 1180 789 4 11 49.998367 ; 5 1 1 1 3 3 1238 719 111 106 37.966621 Min 5 1 1 1 3 4 1645 748 46 40 48.876133 \\ 4 1 1 1 4 0 1259 826 277 59 -1 5 1 1 1 4 1 1259 826 22 59 63.361343 i 5 1 1 1 4 2 1531 869 5 8 0.000000 , 4 1 1 1 5 0 831 896 541 87 -1 5 1 1 1 5 1 831 963 14 8 30.205742 ; 5 1 1 1 5 2 1071 896 301 87 35.707825 a",
+              "confidence": 54.1,
+              "left": 538.5,
+              "top": 332.5,
+              "width": 43.5,
+              "height": 12.0,
+              "block": 1,
+              "line": 2
+            }
+          ]
+        },
+        {
+          "psm": 11,
+          "lines": [
+            {
+              "key": "1:1",
+              "text": "we",
+              "left": 638.0,
+              "top": 263.0,
+              "right": 684.0,
+              "bottom": 287.5,
+              "minConfidence": 57.4
+            },
+            {
+              "key": "2:1",
+              "text": "ERY &",
+              "left": 403.0,
+              "top": 311.0,
+              "right": 508.0,
+              "bottom": 360.0,
+              "minConfidence": 31.0
+            },
+            {
+              "key": "4:1",
+              "text": "{",
+              "left": 629.5,
+              "top": 417.0,
+              "right": 640.5,
+              "bottom": 442.5,
+              "minConfidence": 80.9
+            },
+            {
+              "key": "6:1",
+              "text": "=",
+              "left": 745.5,
+              "top": 541.0,
+              "right": 755.5,
+              "bottom": 547.0,
+              "minConfidence": 75.1
+            },
+            {
+              "key": "7:1",
+              "text": "sf,",
+              "left": 1110.0,
+              "top": 550.0,
+              "right": 1182.5,
+              "bottom": 608.0,
+              "minConfidence": 22.5
+            }
+          ],
+          "words": [
+            {
+              "text": "we",
+              "confidence": 57.4,
+              "left": 638.0,
+              "top": 263.0,
+              "width": 46.0,
+              "height": 24.5,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "ERY",
+              "confidence": 31.0,
+              "left": 403.0,
+              "top": 313.0,
+              "width": 105.0,
+              "height": 34.0,
+              "block": 2,
+              "line": 1
+            },
+            {
+              "text": "&",
+              "confidence": 89.4,
+              "left": 482.5,
+              "top": 311.0,
+              "width": 25.0,
+              "height": 49.0,
+              "block": 2,
+              "line": 1
+            },
+            {
+              "text": "{",
+              "confidence": 80.9,
+              "left": 629.5,
+              "top": 417.0,
+              "width": 11.0,
+              "height": 25.5,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "=",
+              "confidence": 75.1,
+              "left": 745.5,
+              "top": 541.0,
+              "width": 10.0,
+              "height": 6.0,
+              "block": 6,
+              "line": 1
+            },
+            {
+              "text": "sf,",
+              "confidence": 22.5,
+              "left": 1110.0,
+              "top": 550.0,
+              "width": 72.5,
+              "height": 58.0,
+              "block": 7,
+              "line": 1
+            }
+          ]
+        },
+        {
+          "psm": 12,
+          "lines": [
+            {
+              "key": "6:1",
+              "text": "ds",
+              "left": 480.0,
+              "top": 233.0,
+              "right": 542.0,
+              "bottom": 347.0,
+              "minConfidence": 37.3
+            },
+            {
+              "key": "4:1",
+              "text": "Af",
+              "left": 621.5,
+              "top": 289.0,
+              "right": 706.0,
+              "bottom": 399.5,
+              "minConfidence": 30.2
+            },
+            {
+              "key": "5:1",
+              "text": "Ss",
+              "left": 618.0,
+              "top": 516.0,
+              "right": 657.5,
+              "bottom": 563.5,
+              "minConfidence": 51.2
+            },
+            {
+              "key": "3:1",
+              "text": "r",
+              "left": 676.5,
+              "top": 523.5,
+              "right": 755.5,
+              "bottom": 559.5,
+              "minConfidence": 88.2
+            }
+          ],
+          "words": [
+            {
+              "text": "r",
+              "confidence": 88.2,
+              "left": 676.5,
+              "top": 523.5,
+              "width": 79.0,
+              "height": 36.0,
+              "block": 3,
+              "line": 1
+            },
+            {
+              "text": "Af",
+              "confidence": 30.2,
+              "left": 621.5,
+              "top": 289.0,
+              "width": 84.5,
+              "height": 110.5,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "Ss",
+              "confidence": 51.2,
+              "left": 618.0,
+              "top": 516.0,
+              "width": 39.5,
+              "height": 47.5,
+              "block": 5,
+              "line": 1
+            },
+            {
+              "text": "ds",
+              "confidence": 37.3,
+              "left": 480.0,
+              "top": 233.0,
+              "width": 62.0,
+              "height": 114.0,
+              "block": 6,
+              "line": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "325-PECK",
+      "fragranticaId": "31590",
+      "catalogNotes": [],
+      "currentAuditResult": "UNSUPPORTED_CARD_GEOMETRY",
+      "card": "database/fragrantica/social-cards/images/current_325-PECK_31590.jpeg",
+      "size": [
+        1200,
+        620
+      ],
+      "ocr": [
+        {
+          "psm": 3,
+          "lines": [
+            {
+              "key": "1:1",
+              "text": "PECKSNIFE'S",
+              "left": 433.0,
+              "top": 85.0,
+              "right": 581.5,
+              "bottom": 113.0,
+              "minConfidence": 65.9
+            },
+            {
+              "key": "3:1",
+              "text": "BLACK OAK",
+              "left": 447.0,
+              "top": 469.5,
+              "right": 555.0,
+              "bottom": 481.0,
+              "minConfidence": 95.8
+            },
+            {
+              "key": "3:2",
+              "text": "& CEDAR",
+              "left": 460.0,
+              "top": 490.5,
+              "right": 542.0,
+              "bottom": 502.0,
+              "minConfidence": 93.3
+            },
+            {
+              "key": "4:1",
+              "text": "€AU PRAICHE COLOGNE",
+              "left": 421.5,
+              "top": 537.5,
+              "right": 574.5,
+              "bottom": 549.0,
+              "minConfidence": 65.2
+            }
+          ],
+          "words": [
+            {
+              "text": "PECKSNIFE'S",
+              "confidence": 65.9,
+              "left": 433.0,
+              "top": 85.0,
+              "width": 148.5,
+              "height": 28.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "BLACK",
+              "confidence": 96.4,
+              "left": 447.0,
+              "top": 469.5,
+              "width": 58.5,
+              "height": 11.5,
+              "block": 3,
+              "line": 1
+            },
+            {
+              "text": "OAK",
+              "confidence": 95.8,
+              "left": 517.0,
+              "top": 469.5,
+              "width": 38.0,
+              "height": 11.5,
+              "block": 3,
+              "line": 1
+            },
+            {
+              "text": "&",
+              "confidence": 93.3,
+              "left": 460.0,
+              "top": 491.5,
+              "width": 9.5,
+              "height": 10.5,
+              "block": 3,
+              "line": 2
+            },
+            {
+              "text": "CEDAR",
+              "confidence": 96.2,
+              "left": 480.5,
+              "top": 490.5,
+              "width": 61.5,
+              "height": 11.5,
+              "block": 3,
+              "line": 2
+            },
+            {
+              "text": "€AU",
+              "confidence": 65.2,
+              "left": 421.5,
+              "top": 537.5,
+              "width": 24.0,
+              "height": 10.0,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "PRAICHE",
+              "confidence": 80.9,
+              "left": 453.0,
+              "top": 539.0,
+              "width": 52.5,
+              "height": 9.0,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "COLOGNE",
+              "confidence": 85.6,
+              "left": 512.5,
+              "top": 539.0,
+              "width": 62.0,
+              "height": 10.0,
+              "block": 4,
+              "line": 1
+            }
+          ]
+        },
+        {
+          "psm": 6,
+          "lines": [
+            {
+              "key": "1:1",
+              "text": "PECKSNIFF'S | h i",
+              "left": 433.0,
+              "top": 85.0,
+              "right": 744.0,
+              "bottom": 429.0,
+              "minConfidence": 49.5
+            },
+            {
+              "key": "1:2",
+              "text": "BLACK OAK re ACK OAR it |",
+              "left": 447.0,
+              "top": 341.0,
+              "right": 829.0,
+              "bottom": 484.5,
+              "minConfidence": 20.6
+            },
+            {
+              "key": "1:3",
+              "text": "& CEDAR 1 5 1 1 5 3 5 1459 979 19 39 42.239128 Pp 5 1 1 5 3 6 1498 986 60 15 0.000000 Stn 4 1 1 5 4 0 1386 1022 200 47 -1 5 1 1 5 4 1 1386 1022 45 37 48.164642 TE 5 1 1 5 4 2 1446 1026 140 43 27.215210 ae 4 1 1 5 5 0 843 1057 1473 121 -1 5 1 1 5 5 1 843 1075 48 20 55.182781 fay 5 1 1 5 5 2 906 1078 105 18 70.798912 PRAICHE 5 1 1 5 5 3 1025 1078 124 20 93.092316 COLOGNE 5 1 1 5 5 4 1402 1061 179 77 0.000000 — 5 1 1 5 5 5 1629 1113 8 6 0.000000 : 5 1 1 5 5 6 1651 1059 7 73 69.207718 | 5 1 1 5 5 7 2182 1091 2 2 16.005920 : 5 1 1 5 5 8 2195 1057 121 121 50.724350 ef 3 1 1 6 0 0 815 1156 839 58 -1 4 1 1 6 1 0 815 1156 839 58 -1 5 1 1 6 1 1 815 1172 65 8 1.054169 A 5 1 1 6 1 2 1380 1167 34 46 29.274757 2 5 1 1 6 1 3 1431 1156 79 30 33.199394 =a 5 1 1 6 1 4 1541 1158 86 56 0.000000 == 5 1 1 6 1 5 1648 1191 6 5 27.493820 :",
+              "left": 460.0,
+              "top": 487.5,
+              "right": 723.0,
+              "bottom": 510.5,
+              "minConfidence": 36.8
+            }
+          ],
+          "words": [
+            {
+              "text": "PECKSNIFF'S",
+              "confidence": 91.4,
+              "left": 433.0,
+              "top": 85.0,
+              "width": 148.5,
+              "height": 28.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "h",
+              "confidence": 70.0,
+              "left": 737.5,
+              "top": 271.0,
+              "width": 4.5,
+              "height": 14.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "i",
+              "confidence": 49.5,
+              "left": 738.5,
+              "top": 286.5,
+              "width": 5.5,
+              "height": 12.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "re",
+              "confidence": 28.2,
+              "left": 722.5,
+              "top": 350.5,
+              "width": 18.5,
+              "height": 10.0,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "it",
+              "confidence": 20.6,
+              "left": 819.0,
+              "top": 341.0,
+              "width": 10.0,
+              "height": 17.5,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "|",
+              "confidence": 93.1,
+              "left": 702.5,
+              "top": 414.0,
+              "width": 2.0,
+              "height": 15.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "BLACK",
+              "confidence": 96.1,
+              "left": 447.0,
+              "top": 469.5,
+              "width": 58.5,
+              "height": 11.5,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "OAK",
+              "confidence": 95.4,
+              "left": 517.0,
+              "top": 469.5,
+              "width": 38.0,
+              "height": 11.5,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "ACK",
+              "confidence": 91.1,
+              "left": 738.0,
+              "top": 468.5,
+              "width": 24.5,
+              "height": 12.0,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "OAR",
+              "confidence": 88.6,
+              "left": 767.5,
+              "top": 468.0,
+              "width": 20.0,
+              "height": 16.5,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "|",
+              "confidence": 61.1,
+              "left": 819.5,
+              "top": 467.0,
+              "width": 0.5,
+              "height": 3.0,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "&",
+              "confidence": 93.2,
+              "left": 460.0,
+              "top": 491.5,
+              "width": 9.5,
+              "height": 10.5,
+              "block": 1,
+              "line": 3
+            },
+            {
+              "text": "CEDAR",
+              "confidence": 96.1,
+              "left": 480.5,
+              "top": 490.5,
+              "width": 61.5,
+              "height": 11.5,
+              "block": 1,
+              "line": 3
+            },
+            {
+              "text": "1 5 1 1 5 3 5 1459 979 19 39 42.239128 Pp 5 1 1 5 3 6 1498 986 60 15 0.000000 Stn 4 1 1 5 4 0 1386 1022 200 47 -1 5 1 1 5 4 1 1386 1022 45 37 48.164642 TE 5 1 1 5 4 2 1446 1026 140 43 27.215210 ae 4 1 1 5 5 0 843 1057 1473 121 -1 5 1 1 5 5 1 843 1075 48 20 55.182781 fay 5 1 1 5 5 2 906 1078 105 18 70.798912 PRAICHE 5 1 1 5 5 3 1025 1078 124 20 93.092316 COLOGNE 5 1 1 5 5 4 1402 1061 179 77 0.000000 — 5 1 1 5 5 5 1629 1113 8 6 0.000000 : 5 1 1 5 5 6 1651 1059 7 73 69.207718 | 5 1 1 5 5 7 2182 1091 2 2 16.005920 : 5 1 1 5 5 8 2195 1057 121 121 50.724350 ef 3 1 1 6 0 0 815 1156 839 58 -1 4 1 1 6 1 0 815 1156 839 58 -1 5 1 1 6 1 1 815 1172 65 8 1.054169 A 5 1 1 6 1 2 1380 1167 34 46 29.274757 2 5 1 1 6 1 3 1431 1156 79 30 33.199394 =a 5 1 1 6 1 4 1541 1158 86 56 0.000000 == 5 1 1 6 1 5 1648 1191 6 5 27.493820 :",
+              "confidence": 36.8,
+              "left": 712.5,
+              "top": 487.5,
+              "width": 10.5,
+              "height": 23.0,
+              "block": 1,
+              "line": 3
+            }
+          ]
+        },
+        {
+          "psm": 11,
+          "lines": [
+            {
+              "key": "1:1",
+              "text": "PECKSNIFE'S",
+              "left": 433.0,
+              "top": 85.0,
+              "right": 581.5,
+              "bottom": 113.0,
+              "minConfidence": 65.9
+            },
+            {
+              "key": "2:1",
+              "text": "th",
+              "left": 738.5,
+              "top": 286.5,
+              "right": 744.0,
+              "bottom": 294.0,
+              "minConfidence": 36.0
+            },
+            {
+              "key": "3:1",
+              "text": "BLACK OAK",
+              "left": 447.0,
+              "top": 469.5,
+              "right": 555.0,
+              "bottom": 481.0,
+              "minConfidence": 95.8
+            },
+            {
+              "key": "4:1",
+              "text": "& CEDAR",
+              "left": 460.0,
+              "top": 490.5,
+              "right": 542.0,
+              "bottom": 502.0,
+              "minConfidence": 93.3
+            },
+            {
+              "key": "10:1",
+              "text": "4",
+              "left": 1099.5,
+              "top": 530.5,
+              "right": 1159.5,
+              "bottom": 587.0,
+              "minConfidence": 28.6
+            },
+            {
+              "key": "5:1",
+              "text": "COLOGNE",
+              "left": 512.5,
+              "top": 539.0,
+              "right": 574.5,
+              "bottom": 549.0,
+              "minConfidence": 80.5
+            },
+            {
+              "key": "6:1",
+              "text": "———",
+              "left": 472.0,
+              "top": 587.5,
+              "right": 531.5,
+              "bottom": 590.0,
+              "minConfidence": 36.9
+            },
+            {
+              "key": "7:1",
+              "text": "—",
+              "left": 552.5,
+              "top": 587.5,
+              "right": 574.5,
+              "bottom": 590.5,
+              "minConfidence": 84.6
+            }
+          ],
+          "words": [
+            {
+              "text": "PECKSNIFE'S",
+              "confidence": 65.9,
+              "left": 433.0,
+              "top": 85.0,
+              "width": 148.5,
+              "height": 28.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "th",
+              "confidence": 36.0,
+              "left": 738.5,
+              "top": 286.5,
+              "width": 5.5,
+              "height": 7.5,
+              "block": 2,
+              "line": 1
+            },
+            {
+              "text": "BLACK",
+              "confidence": 96.4,
+              "left": 447.0,
+              "top": 469.5,
+              "width": 58.5,
+              "height": 11.5,
+              "block": 3,
+              "line": 1
+            },
+            {
+              "text": "OAK",
+              "confidence": 95.8,
+              "left": 517.0,
+              "top": 469.5,
+              "width": 38.0,
+              "height": 11.5,
+              "block": 3,
+              "line": 1
+            },
+            {
+              "text": "&",
+              "confidence": 93.3,
+              "left": 460.0,
+              "top": 491.5,
+              "width": 9.5,
+              "height": 10.5,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "CEDAR",
+              "confidence": 96.2,
+              "left": 480.5,
+              "top": 490.5,
+              "width": 61.5,
+              "height": 11.5,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "COLOGNE",
+              "confidence": 80.5,
+              "left": 512.5,
+              "top": 539.0,
+              "width": 62.0,
+              "height": 10.0,
+              "block": 5,
+              "line": 1
+            },
+            {
+              "text": "———",
+              "confidence": 36.9,
+              "left": 472.0,
+              "top": 587.5,
+              "width": 59.5,
+              "height": 2.5,
+              "block": 6,
+              "line": 1
+            },
+            {
+              "text": "—",
+              "confidence": 84.6,
+              "left": 552.5,
+              "top": 587.5,
+              "width": 22.0,
+              "height": 3.0,
+              "block": 7,
+              "line": 1
+            },
+            {
+              "text": "4",
+              "confidence": 28.6,
+              "left": 1099.5,
+              "top": 530.5,
+              "width": 60.0,
+              "height": 56.5,
+              "block": 10,
+              "line": 1
+            }
+          ]
+        },
+        {
+          "psm": 12,
+          "lines": [
+            {
+              "key": "1:1",
+              "text": "PECKSNIFE'S",
+              "left": 433.0,
+              "top": 85.0,
+              "right": 581.5,
+              "bottom": 113.0,
+              "minConfidence": 65.9
+            },
+            {
+              "key": "3:1",
+              "text": "5",
+              "left": 721.5,
+              "top": 299.5,
+              "right": 750.0,
+              "bottom": 324.0,
+              "minConfidence": 43.6
+            },
+            {
+              "key": "4:1",
+              "text": "BLACK OAK",
+              "left": 447.0,
+              "top": 469.5,
+              "right": 555.0,
+              "bottom": 481.0,
+              "minConfidence": 95.8
+            },
+            {
+              "key": "5:1",
+              "text": "& CEDAR",
+              "left": 460.0,
+              "top": 490.5,
+              "right": 542.0,
+              "bottom": 502.0,
+              "minConfidence": 93.3
+            },
+            {
+              "key": "11:1",
+              "text": "4",
+              "left": 1099.5,
+              "top": 530.5,
+              "right": 1159.5,
+              "bottom": 587.0,
+              "minConfidence": 28.6
+            },
+            {
+              "key": "6:1",
+              "text": "COLOGNE",
+              "left": 512.5,
+              "top": 539.0,
+              "right": 574.5,
+              "bottom": 549.0,
+              "minConfidence": 80.5
+            },
+            {
+              "key": "9:1",
+              "text": "=~",
+              "left": 691.0,
+              "top": 583.5,
+              "right": 703.5,
+              "bottom": 588.5,
+              "minConfidence": 64.1
+            },
+            {
+              "key": "10:1",
+              "text": "—=5",
+              "left": 770.5,
+              "top": 585.0,
+              "right": 813.5,
+              "bottom": 599.0,
+              "minConfidence": 35.3
+            },
+            {
+              "key": "7:1",
+              "text": "———",
+              "left": 472.0,
+              "top": 587.5,
+              "right": 531.5,
+              "bottom": 590.0,
+              "minConfidence": 36.9
+            }
+          ],
+          "words": [
+            {
+              "text": "PECKSNIFE'S",
+              "confidence": 65.9,
+              "left": 433.0,
+              "top": 85.0,
+              "width": 148.5,
+              "height": 28.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "5",
+              "confidence": 43.6,
+              "left": 721.5,
+              "top": 299.5,
+              "width": 28.5,
+              "height": 24.5,
+              "block": 3,
+              "line": 1
+            },
+            {
+              "text": "BLACK",
+              "confidence": 96.4,
+              "left": 447.0,
+              "top": 469.5,
+              "width": 58.5,
+              "height": 11.5,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "OAK",
+              "confidence": 95.8,
+              "left": 517.0,
+              "top": 469.5,
+              "width": 38.0,
+              "height": 11.5,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "&",
+              "confidence": 93.3,
+              "left": 460.0,
+              "top": 491.5,
+              "width": 9.5,
+              "height": 10.5,
+              "block": 5,
+              "line": 1
+            },
+            {
+              "text": "CEDAR",
+              "confidence": 96.2,
+              "left": 480.5,
+              "top": 490.5,
+              "width": 61.5,
+              "height": 11.5,
+              "block": 5,
+              "line": 1
+            },
+            {
+              "text": "COLOGNE",
+              "confidence": 80.5,
+              "left": 512.5,
+              "top": 539.0,
+              "width": 62.0,
+              "height": 10.0,
+              "block": 6,
+              "line": 1
+            },
+            {
+              "text": "———",
+              "confidence": 36.9,
+              "left": 472.0,
+              "top": 587.5,
+              "width": 59.5,
+              "height": 2.5,
+              "block": 7,
+              "line": 1
+            },
+            {
+              "text": "=~",
+              "confidence": 64.1,
+              "left": 691.0,
+              "top": 583.5,
+              "width": 12.5,
+              "height": 5.0,
+              "block": 9,
+              "line": 1
+            },
+            {
+              "text": "—=5",
+              "confidence": 35.3,
+              "left": 770.5,
+              "top": 585.0,
+              "width": 43.0,
+              "height": 14.0,
+              "block": 10,
+              "line": 1
+            },
+            {
+              "text": "4",
+              "confidence": 28.6,
+              "left": 1099.5,
+              "top": 530.5,
+              "width": 60.0,
+              "height": 56.5,
+              "block": 11,
+              "line": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "235-HOLL",
+      "fragranticaId": "4307",
+      "catalogNotes": [],
+      "currentAuditResult": "UNSUPPORTED_CARD_GEOMETRY",
+      "card": "database/fragrantica/social-cards/images/current_235-HOLL_4307.jpeg",
+      "size": [
+        1200,
+        620
+      ],
+      "ocr": [
+        {
+          "psm": 3,
+          "lines": [],
+          "words": []
+        },
+        {
+          "psm": 6,
+          "lines": [
+            {
+              "key": "1:1",
+              "text": "en a",
+              "left": 579.5,
+              "top": 376.5,
+              "right": 748.5,
+              "bottom": 414.5,
+              "minConfidence": 24.1
+            },
+            {
+              "key": "1:2",
+              "text": "1p LO Ud en",
+              "left": 423.5,
+              "top": 397.0,
+              "right": 785.0,
+              "bottom": 421.5,
+              "minConfidence": 30.9
+            },
+            {
+              "key": "1:3",
+              "text": "ited SONI PAT OVS",
+              "left": 424.0,
+              "top": 410.0,
+              "right": 740.5,
+              "bottom": 434.0,
+              "minConfidence": 20.5
+            },
+            {
+              "key": "1:4",
+              "text": "} nee) pat Eat FE",
+              "left": 387.5,
+              "top": 436.5,
+              "right": 784.0,
+              "bottom": 454.5,
+              "minConfidence": 21.2
+            },
+            {
+              "key": "1:5",
+              "text": "1 CFS £9 jf |",
+              "left": 412.0,
+              "top": 448.5,
+              "right": 822.0,
+              "bottom": 489.5,
+              "minConfidence": 26.8
+            },
+            {
+              "key": "1:6",
+              "text": "i Hs a fs",
+              "left": 387.0,
+              "top": 472.5,
+              "right": 733.5,
+              "bottom": 489.0,
+              "minConfidence": 29.1
+            },
+            {
+              "key": "1:7",
+              "text": "~~ KEL",
+              "left": 487.5,
+              "top": 486.0,
+              "right": 751.5,
+              "bottom": 499.0,
+              "minConfidence": 40.9
+            },
+            {
+              "key": "1:8",
+              "text": "A |",
+              "left": 655.0,
+              "top": 500.5,
+              "right": 818.0,
+              "bottom": 511.0,
+              "minConfidence": 45.8
+            },
+            {
+              "key": "1:9",
+              "text": "=> _ a =",
+              "left": 537.0,
+              "top": 524.0,
+              "right": 781.0,
+              "bottom": 541.0,
+              "minConfidence": 21.0
+            }
+          ],
+          "words": [
+            {
+              "text": "en",
+              "confidence": 30.4,
+              "left": 579.5,
+              "top": 376.5,
+              "width": 22.5,
+              "height": 38.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "a",
+              "confidence": 24.1,
+              "left": 703.5,
+              "top": 386.5,
+              "width": 45.0,
+              "height": 16.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "1p",
+              "confidence": 58.8,
+              "left": 423.5,
+              "top": 406.0,
+              "width": 10.0,
+              "height": 10.5,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "LO",
+              "confidence": 30.9,
+              "left": 457.5,
+              "top": 397.5,
+              "width": 42.0,
+              "height": 24.0,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "Ud",
+              "confidence": 41.0,
+              "left": 519.5,
+              "top": 399.5,
+              "width": 8.0,
+              "height": 15.0,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "en",
+              "confidence": 32.2,
+              "left": 757.5,
+              "top": 397.0,
+              "width": 27.5,
+              "height": 21.5,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "ited",
+              "confidence": 20.5,
+              "left": 424.0,
+              "top": 419.5,
+              "width": 2.5,
+              "height": 4.0,
+              "block": 1,
+              "line": 3
+            },
+            {
+              "text": "SONI",
+              "confidence": 28.6,
+              "left": 481.5,
+              "top": 419.0,
+              "width": 70.5,
+              "height": 13.0,
+              "block": 1,
+              "line": 3
+            },
+            {
+              "text": "PAT",
+              "confidence": 43.1,
+              "left": 660.5,
+              "top": 419.0,
+              "width": 62.0,
+              "height": 13.0,
+              "block": 1,
+              "line": 3
+            },
+            {
+              "text": "OVS",
+              "confidence": 29.9,
+              "left": 712.5,
+              "top": 410.0,
+              "width": 28.0,
+              "height": 24.0,
+              "block": 1,
+              "line": 3
+            },
+            {
+              "text": "}",
+              "confidence": 48.2,
+              "left": 387.5,
+              "top": 440.0,
+              "width": 0.5,
+              "height": 3.5,
+              "block": 1,
+              "line": 4
+            },
+            {
+              "text": "nee)",
+              "confidence": 24.6,
+              "left": 601.5,
+              "top": 439.5,
+              "width": 27.0,
+              "height": 15.0,
+              "block": 1,
+              "line": 4
+            },
+            {
+              "text": "pat",
+              "confidence": 33.4,
+              "left": 667.0,
+              "top": 439.0,
+              "width": 2.5,
+              "height": 2.0,
+              "block": 1,
+              "line": 4
+            },
+            {
+              "text": "Eat",
+              "confidence": 22.8,
+              "left": 700.0,
+              "top": 437.5,
+              "width": 19.0,
+              "height": 9.5,
+              "block": 1,
+              "line": 4
+            },
+            {
+              "text": "FE",
+              "confidence": 21.2,
+              "left": 720.0,
+              "top": 436.5,
+              "width": 64.0,
+              "height": 11.5,
+              "block": 1,
+              "line": 4
+            },
+            {
+              "text": "1",
+              "confidence": 59.7,
+              "left": 412.0,
+              "top": 462.5,
+              "width": 0.5,
+              "height": 3.0,
+              "block": 1,
+              "line": 5
+            },
+            {
+              "text": "CFS",
+              "confidence": 41.9,
+              "left": 453.0,
+              "top": 461.0,
+              "width": 14.0,
+              "height": 9.0,
+              "block": 1,
+              "line": 5
+            },
+            {
+              "text": "£9",
+              "confidence": 26.8,
+              "left": 489.0,
+              "top": 461.5,
+              "width": 11.5,
+              "height": 10.0,
+              "block": 1,
+              "line": 5
+            },
+            {
+              "text": "jf",
+              "confidence": 48.2,
+              "left": 527.5,
+              "top": 464.5,
+              "width": 3.5,
+              "height": 6.0,
+              "block": 1,
+              "line": 5
+            },
+            {
+              "text": "|",
+              "confidence": 88.0,
+              "left": 821.0,
+              "top": 448.5,
+              "width": 1.0,
+              "height": 41.0,
+              "block": 1,
+              "line": 5
+            },
+            {
+              "text": "i",
+              "confidence": 44.8,
+              "left": 387.0,
+              "top": 473.0,
+              "width": 30.0,
+              "height": 13.0,
+              "block": 1,
+              "line": 6
+            },
+            {
+              "text": "Hs",
+              "confidence": 59.6,
+              "left": 450.0,
+              "top": 472.5,
+              "width": 26.5,
+              "height": 16.5,
+              "block": 1,
+              "line": 6
+            },
+            {
+              "text": "a",
+              "confidence": 69.8,
+              "left": 508.5,
+              "top": 475.5,
+              "width": 2.5,
+              "height": 1.0,
+              "block": 1,
+              "line": 6
+            },
+            {
+              "text": "fs",
+              "confidence": 29.1,
+              "left": 723.0,
+              "top": 474.0,
+              "width": 10.5,
+              "height": 10.0,
+              "block": 1,
+              "line": 6
+            },
+            {
+              "text": "~~",
+              "confidence": 48.3,
+              "left": 487.5,
+              "top": 486.5,
+              "width": 33.5,
+              "height": 3.5,
+              "block": 1,
+              "line": 7
+            },
+            {
+              "text": "KEL",
+              "confidence": 40.9,
+              "left": 692.5,
+              "top": 486.0,
+              "width": 59.0,
+              "height": 13.0,
+              "block": 1,
+              "line": 7
+            },
+            {
+              "text": "A",
+              "confidence": 45.8,
+              "left": 655.0,
+              "top": 505.0,
+              "width": 1.0,
+              "height": 1.0,
+              "block": 1,
+              "line": 8
+            },
+            {
+              "text": "|",
+              "confidence": 77.6,
+              "left": 816.0,
+              "top": 500.5,
+              "width": 2.0,
+              "height": 10.5,
+              "block": 1,
+              "line": 8
+            },
+            {
+              "text": "=>",
+              "confidence": 72.4,
+              "left": 537.0,
+              "top": 528.0,
+              "width": 19.0,
+              "height": 13.0,
+              "block": 1,
+              "line": 9
+            },
+            {
+              "text": "_",
+              "confidence": 42.2,
+              "left": 669.5,
+              "top": 536.0,
+              "width": 7.5,
+              "height": 0.5,
+              "block": 1,
+              "line": 9
+            },
+            {
+              "text": "a",
+              "confidence": 21.0,
+              "left": 719.0,
+              "top": 524.0,
+              "width": 25.0,
+              "height": 1.0,
+              "block": 1,
+              "line": 9
+            },
+            {
+              "text": "=",
+              "confidence": 31.4,
+              "left": 768.5,
+              "top": 534.5,
+              "width": 12.5,
+              "height": 3.0,
+              "block": 1,
+              "line": 9
+            }
+          ]
+        },
+        {
+          "psm": 11,
+          "lines": [
+            {
+              "key": "3:1",
+              "text": "be",
+              "left": 605.0,
+              "top": 339.5,
+              "right": 614.5,
+              "bottom": 346.0,
+              "minConfidence": 59.0
+            },
+            {
+              "key": "5:1",
+              "text": "Tht",
+              "left": 442.0,
+              "top": 386.5,
+              "right": 463.5,
+              "bottom": 391.0,
+              "minConfidence": 57.4
+            },
+            {
+              "key": "7:1",
+              "text": "Sn",
+              "left": 703.5,
+              "top": 386.5,
+              "right": 748.5,
+              "bottom": 402.0,
+              "minConfidence": 30.9
+            },
+            {
+              "key": "6:1",
+              "text": "*",
+              "left": 549.0,
+              "top": 398.0,
+              "right": 555.0,
+              "bottom": 403.0,
+              "minConfidence": 47.4
+            },
+            {
+              "key": "8:1",
+              "text": "my!",
+              "left": 495.0,
+              "top": 399.5,
+              "right": 521.0,
+              "bottom": 413.5,
+              "minConfidence": 43.1
+            },
+            {
+              "key": "9:1",
+              "text": "Ss",
+              "left": 774.0,
+              "top": 403.0,
+              "right": 785.5,
+              "bottom": 417.5,
+              "minConfidence": 27.1
+            },
+            {
+              "key": "11:1",
+              "text": "~_.-",
+              "left": 761.0,
+              "top": 417.0,
+              "right": 781.0,
+              "bottom": 422.5,
+              "minConfidence": 26.6
+            },
+            {
+              "key": "10:1",
+              "text": "SSF",
+              "left": 452.5,
+              "top": 421.5,
+              "right": 485.0,
+              "bottom": 430.5,
+              "minConfidence": 23.9
+            },
+            {
+              "key": "13:1",
+              "text": "fs",
+              "left": 450.0,
+              "top": 461.0,
+              "right": 467.0,
+              "bottom": 475.5,
+              "minConfidence": 27.6
+            },
+            {
+              "key": "14:1",
+              "text": "te",
+              "left": 692.0,
+              "top": 473.5,
+              "right": 703.5,
+              "bottom": 481.0,
+              "minConfidence": 28.3
+            },
+            {
+              "key": "15:1",
+              "text": "—~",
+              "left": 508.0,
+              "top": 486.5,
+              "right": 521.0,
+              "bottom": 490.0,
+              "minConfidence": 47.2
+            },
+            {
+              "key": "16:1",
+              "text": "—=",
+              "left": 719.0,
+              "top": 524.0,
+              "right": 744.0,
+              "bottom": 525.0,
+              "minConfidence": 48.7
+            }
+          ],
+          "words": [
+            {
+              "text": "be",
+              "confidence": 59.0,
+              "left": 605.0,
+              "top": 339.5,
+              "width": 9.5,
+              "height": 6.5,
+              "block": 3,
+              "line": 1
+            },
+            {
+              "text": "Tht",
+              "confidence": 57.4,
+              "left": 442.0,
+              "top": 386.5,
+              "width": 21.5,
+              "height": 4.5,
+              "block": 5,
+              "line": 1
+            },
+            {
+              "text": "*",
+              "confidence": 47.4,
+              "left": 549.0,
+              "top": 398.0,
+              "width": 6.0,
+              "height": 5.0,
+              "block": 6,
+              "line": 1
+            },
+            {
+              "text": "Sn",
+              "confidence": 30.9,
+              "left": 703.5,
+              "top": 386.5,
+              "width": 45.0,
+              "height": 15.5,
+              "block": 7,
+              "line": 1
+            },
+            {
+              "text": "my!",
+              "confidence": 43.1,
+              "left": 495.0,
+              "top": 399.5,
+              "width": 26.0,
+              "height": 14.0,
+              "block": 8,
+              "line": 1
+            },
+            {
+              "text": "Ss",
+              "confidence": 27.1,
+              "left": 774.0,
+              "top": 403.0,
+              "width": 11.5,
+              "height": 14.5,
+              "block": 9,
+              "line": 1
+            },
+            {
+              "text": "SSF",
+              "confidence": 23.9,
+              "left": 452.5,
+              "top": 421.5,
+              "width": 32.5,
+              "height": 9.0,
+              "block": 10,
+              "line": 1
+            },
+            {
+              "text": "~_.-",
+              "confidence": 26.6,
+              "left": 761.0,
+              "top": 417.0,
+              "width": 20.0,
+              "height": 5.5,
+              "block": 11,
+              "line": 1
+            },
+            {
+              "text": "fs",
+              "confidence": 27.6,
+              "left": 450.0,
+              "top": 461.0,
+              "width": 17.0,
+              "height": 14.5,
+              "block": 13,
+              "line": 1
+            },
+            {
+              "text": "te",
+              "confidence": 28.3,
+              "left": 692.0,
+              "top": 473.5,
+              "width": 11.5,
+              "height": 7.5,
+              "block": 14,
+              "line": 1
+            },
+            {
+              "text": "—~",
+              "confidence": 47.2,
+              "left": 508.0,
+              "top": 486.5,
+              "width": 13.0,
+              "height": 3.5,
+              "block": 15,
+              "line": 1
+            },
+            {
+              "text": "—=",
+              "confidence": 48.7,
+              "left": 719.0,
+              "top": 524.0,
+              "width": 25.0,
+              "height": 1.0,
+              "block": 16,
+              "line": 1
+            }
+          ]
+        },
+        {
+          "psm": 12,
+          "lines": [
+            {
+              "key": "2:1",
+              "text": "be",
+              "left": 605.0,
+              "top": 339.5,
+              "right": 614.5,
+              "bottom": 346.0,
+              "minConfidence": 59.0
+            },
+            {
+              "key": "4:1",
+              "text": "Tht",
+              "left": 442.0,
+              "top": 386.5,
+              "right": 463.5,
+              "bottom": 391.0,
+              "minConfidence": 57.4
+            },
+            {
+              "key": "5:1",
+              "text": "Sn",
+              "left": 703.5,
+              "top": 386.5,
+              "right": 748.5,
+              "bottom": 402.0,
+              "minConfidence": 30.9
+            },
+            {
+              "key": "6:1",
+              "text": "my!",
+              "left": 495.0,
+              "top": 399.5,
+              "right": 521.0,
+              "bottom": 413.5,
+              "minConfidence": 43.1
+            },
+            {
+              "key": "8:1",
+              "text": "SSF",
+              "left": 452.5,
+              "top": 421.5,
+              "right": 485.0,
+              "bottom": 430.5,
+              "minConfidence": 23.9
+            },
+            {
+              "key": "11:1",
+              "text": "ty",
+              "left": 453.0,
+              "top": 461.0,
+              "right": 467.0,
+              "bottom": 470.0,
+              "minConfidence": 39.9
+            },
+            {
+              "key": "12:1",
+              "text": "te",
+              "left": 692.0,
+              "top": 473.5,
+              "right": 703.5,
+              "bottom": 481.0,
+              "minConfidence": 28.3
+            },
+            {
+              "key": "13:1",
+              "text": "—~",
+              "left": 508.0,
+              "top": 486.5,
+              "right": 521.0,
+              "bottom": 490.0,
+              "minConfidence": 47.2
+            },
+            {
+              "key": "14:1",
+              "text": "—=",
+              "left": 719.0,
+              "top": 524.0,
+              "right": 744.0,
+              "bottom": 525.0,
+              "minConfidence": 48.7
+            }
+          ],
+          "words": [
+            {
+              "text": "be",
+              "confidence": 59.0,
+              "left": 605.0,
+              "top": 339.5,
+              "width": 9.5,
+              "height": 6.5,
+              "block": 2,
+              "line": 1
+            },
+            {
+              "text": "Tht",
+              "confidence": 57.4,
+              "left": 442.0,
+              "top": 386.5,
+              "width": 21.5,
+              "height": 4.5,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "Sn",
+              "confidence": 30.9,
+              "left": 703.5,
+              "top": 386.5,
+              "width": 45.0,
+              "height": 15.5,
+              "block": 5,
+              "line": 1
+            },
+            {
+              "text": "my!",
+              "confidence": 43.1,
+              "left": 495.0,
+              "top": 399.5,
+              "width": 26.0,
+              "height": 14.0,
+              "block": 6,
+              "line": 1
+            },
+            {
+              "text": "SSF",
+              "confidence": 23.9,
+              "left": 452.5,
+              "top": 421.5,
+              "width": 32.5,
+              "height": 9.0,
+              "block": 8,
+              "line": 1
+            },
+            {
+              "text": "ty",
+              "confidence": 39.9,
+              "left": 453.0,
+              "top": 461.0,
+              "width": 14.0,
+              "height": 9.0,
+              "block": 11,
+              "line": 1
+            },
+            {
+              "text": "te",
+              "confidence": 28.3,
+              "left": 692.0,
+              "top": 473.5,
+              "width": 11.5,
+              "height": 7.5,
+              "block": 12,
+              "line": 1
+            },
+            {
+              "text": "—~",
+              "confidence": 47.2,
+              "left": 508.0,
+              "top": 486.5,
+              "width": 13.0,
+              "height": 3.5,
+              "block": 13,
+              "line": 1
+            },
+            {
+              "text": "—=",
+              "confidence": 48.7,
+              "left": 719.0,
+              "top": 524.0,
+              "width": 25.0,
+              "height": 1.0,
+              "block": 14,
+              "line": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "1251-ROM",
+      "fragranticaId": "21103",
+      "catalogNotes": [],
+      "currentAuditResult": "UNSUPPORTED_CARD_GEOMETRY",
+      "card": "database/fragrantica/social-cards/images/current_1251-ROM_21103.jpeg",
+      "size": [
+        1200,
+        620
+      ],
+      "ocr": [
+        {
+          "psm": 3,
+          "lines": [
+            {
+              "key": "2:1",
+              "text": "Pw —",
+              "left": 737.0,
+              "top": 572.0,
+              "right": 864.0,
+              "bottom": 577.5,
+              "minConfidence": 50.5
+            },
+            {
+              "key": "2:2",
+              "text": "~ — —————",
+              "left": 602.0,
+              "top": 580.0,
+              "right": 869.0,
+              "bottom": 588.0,
+              "minConfidence": 24.0
+            },
+            {
+              "key": "2:3",
+              "text": "—«",
+              "left": 612.5,
+              "top": 590.0,
+              "right": 638.5,
+              "bottom": 593.5,
+              "minConfidence": 32.7
+            },
+            {
+              "key": "2:4",
+              "text": "=",
+              "left": 685.0,
+              "top": 597.0,
+              "right": 688.5,
+              "bottom": 597.5,
+              "minConfidence": 24.7
+            }
+          ],
+          "words": [
+            {
+              "text": "Pw",
+              "confidence": 50.5,
+              "left": 737.0,
+              "top": 572.0,
+              "width": 21.5,
+              "height": 5.5,
+              "block": 2,
+              "line": 1
+            },
+            {
+              "text": "—",
+              "confidence": 62.3,
+              "left": 850.0,
+              "top": 572.5,
+              "width": 14.0,
+              "height": 2.0,
+              "block": 2,
+              "line": 1
+            },
+            {
+              "text": "~",
+              "confidence": 90.7,
+              "left": 602.0,
+              "top": 583.5,
+              "width": 4.0,
+              "height": 1.5,
+              "block": 2,
+              "line": 2
+            },
+            {
+              "text": "—",
+              "confidence": 82.9,
+              "left": 631.5,
+              "top": 582.0,
+              "width": 15.5,
+              "height": 4.5,
+              "block": 2,
+              "line": 2
+            },
+            {
+              "text": "—————",
+              "confidence": 24.0,
+              "left": 822.0,
+              "top": 580.0,
+              "width": 47.0,
+              "height": 8.0,
+              "block": 2,
+              "line": 2
+            },
+            {
+              "text": "—«",
+              "confidence": 32.7,
+              "left": 612.5,
+              "top": 590.0,
+              "width": 26.0,
+              "height": 3.5,
+              "block": 2,
+              "line": 3
+            },
+            {
+              "text": "=",
+              "confidence": 24.7,
+              "left": 685.0,
+              "top": 597.0,
+              "width": 3.5,
+              "height": 0.5,
+              "block": 2,
+              "line": 4
+            }
+          ]
+        },
+        {
+          "psm": 6,
+          "lines": [
+            {
+              "key": "1:1",
+              "text": "/ q",
+              "left": 385.0,
+              "top": 76.0,
+              "right": 785.0,
+              "bottom": 252.5,
+              "minConfidence": 74.2
+            },
+            {
+              "key": "1:2",
+              "text": "Cf, i",
+              "left": 380.0,
+              "top": 250.5,
+              "right": 867.0,
+              "bottom": 319.5,
+              "minConfidence": 24.2
+            },
+            {
+              "key": "1:3",
+              "text": "{ a",
+              "left": 507.0,
+              "top": 375.0,
+              "right": 570.5,
+              "bottom": 384.5,
+              "minConfidence": 75.7
+            },
+            {
+              "key": "1:4",
+              "text": "pe",
+              "left": 728.5,
+              "top": 461.5,
+              "right": 836.0,
+              "bottom": 572.5,
+              "minConfidence": 48.8
+            }
+          ],
+          "words": [
+            {
+              "text": "/",
+              "confidence": 74.2,
+              "left": 385.0,
+              "top": 218.5,
+              "width": 12.0,
+              "height": 33.5,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "q",
+              "confidence": 82.5,
+              "left": 662.5,
+              "top": 76.0,
+              "width": 122.5,
+              "height": 176.5,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "Cf,",
+              "confidence": 24.2,
+              "left": 380.0,
+              "top": 250.5,
+              "width": 108.5,
+              "height": 63.0,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "i",
+              "confidence": 58.0,
+              "left": 843.5,
+              "top": 256.5,
+              "width": 23.5,
+              "height": 63.0,
+              "block": 1,
+              "line": 2
+            },
+            {
+              "text": "{",
+              "confidence": 85.8,
+              "left": 507.0,
+              "top": 375.0,
+              "width": 2.0,
+              "height": 9.5,
+              "block": 1,
+              "line": 3
+            },
+            {
+              "text": "a",
+              "confidence": 75.7,
+              "left": 565.0,
+              "top": 379.0,
+              "width": 5.5,
+              "height": 5.5,
+              "block": 1,
+              "line": 3
+            },
+            {
+              "text": "pe",
+              "confidence": 48.8,
+              "left": 728.5,
+              "top": 461.5,
+              "width": 107.5,
+              "height": 111.0,
+              "block": 1,
+              "line": 4
+            }
+          ]
+        },
+        {
+          "psm": 11,
+          "lines": [
+            {
+              "key": "1:1",
+              "text": "= ~",
+              "left": 803.5,
+              "top": 247.0,
+              "right": 840.0,
+              "bottom": 249.0,
+              "minConfidence": 67.7
+            },
+            {
+              "key": "3:1",
+              "text": ";",
+              "left": 506.5,
+              "top": 339.0,
+              "right": 519.5,
+              "bottom": 388.5,
+              "minConfidence": 47.6
+            },
+            {
+              "key": "4:1",
+              "text": "yal",
+              "left": 752.0,
+              "top": 446.5,
+              "right": 809.0,
+              "bottom": 499.0,
+              "minConfidence": 37.3
+            },
+            {
+              "key": "6:1",
+              "text": "—",
+              "left": 355.5,
+              "top": 581.0,
+              "right": 388.0,
+              "bottom": 584.0,
+              "minConfidence": 71.5
+            },
+            {
+              "key": "8:1",
+              "text": "$$$ $n",
+              "left": 735.0,
+              "top": 589.0,
+              "right": 861.0,
+              "bottom": 603.0,
+              "minConfidence": 36.8
+            }
+          ],
+          "words": [
+            {
+              "text": "=",
+              "confidence": 96.9,
+              "left": 803.5,
+              "top": 247.0,
+              "width": 6.5,
+              "height": 2.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "~",
+              "confidence": 67.7,
+              "left": 832.5,
+              "top": 247.0,
+              "width": 7.5,
+              "height": 2.0,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": ";",
+              "confidence": 47.6,
+              "left": 506.5,
+              "top": 339.0,
+              "width": 13.0,
+              "height": 49.5,
+              "block": 3,
+              "line": 1
+            },
+            {
+              "text": "yal",
+              "confidence": 37.3,
+              "left": 752.0,
+              "top": 446.5,
+              "width": 57.0,
+              "height": 52.5,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "—",
+              "confidence": 71.5,
+              "left": 355.5,
+              "top": 581.0,
+              "width": 32.5,
+              "height": 3.0,
+              "block": 6,
+              "line": 1
+            },
+            {
+              "text": "$$$",
+              "confidence": 48.8,
+              "left": 735.0,
+              "top": 589.0,
+              "width": 30.5,
+              "height": 14.0,
+              "block": 8,
+              "line": 1
+            },
+            {
+              "text": "$n",
+              "confidence": 36.8,
+              "left": 772.0,
+              "top": 594.0,
+              "width": 89.0,
+              "height": 4.5,
+              "block": 8,
+              "line": 1
+            }
+          ]
+        },
+        {
+          "psm": 12,
+          "lines": [
+            {
+              "key": "1:1",
+              "text": ";",
+              "left": 506.5,
+              "top": 339.0,
+              "right": 519.5,
+              "bottom": 388.5,
+              "minConfidence": 47.6
+            },
+            {
+              "key": "2:1",
+              "text": "————",
+              "left": 689.0,
+              "top": 560.5,
+              "right": 769.5,
+              "bottom": 566.0,
+              "minConfidence": 22.5
+            },
+            {
+              "key": "3:1",
+              "text": "—",
+              "left": 355.5,
+              "top": 581.0,
+              "right": 388.0,
+              "bottom": 584.0,
+              "minConfidence": 71.5
+            },
+            {
+              "key": "4:1",
+              "text": "$$$ $n",
+              "left": 735.0,
+              "top": 589.0,
+              "right": 861.0,
+              "bottom": 603.0,
+              "minConfidence": 36.8
+            }
+          ],
+          "words": [
+            {
+              "text": ";",
+              "confidence": 47.6,
+              "left": 506.5,
+              "top": 339.0,
+              "width": 13.0,
+              "height": 49.5,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "————",
+              "confidence": 22.5,
+              "left": 689.0,
+              "top": 560.5,
+              "width": 80.5,
+              "height": 5.5,
+              "block": 2,
+              "line": 1
+            },
+            {
+              "text": "—",
+              "confidence": 71.5,
+              "left": 355.5,
+              "top": 581.0,
+              "width": 32.5,
+              "height": 3.0,
+              "block": 3,
+              "line": 1
+            },
+            {
+              "text": "$$$",
+              "confidence": 48.8,
+              "left": 735.0,
+              "top": 589.0,
+              "width": 30.5,
+              "height": 14.0,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "$n",
+              "confidence": 36.8,
+              "left": 772.0,
+              "top": 594.0,
+              "width": 89.0,
+              "height": 4.5,
+              "block": 4,
+              "line": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
