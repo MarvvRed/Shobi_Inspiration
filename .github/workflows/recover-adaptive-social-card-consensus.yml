@@ -1,0 +1,56 @@
+name: Recover adaptive Social Card consensus
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/recover_adaptive_social_card_consensus.py'
+      - '.github/workflows/recover-adaptive-social-card-consensus.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-adaptive-social-card-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - name: Install OCR dependencies
+        run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow numpy
+
+      - name: Read unresolved Social Cards with adaptive consensus
+        run: python tools/recover_adaptive_social_card_consensus.py
+
+      - name: Rebuild validation and safety gates
+        run: |
+          python tools/build_validation_audit.py
+          python tools/build_final_perfume_catalog.py
+          python tools/verify_catalog_invariants.py --baseline-ref HEAD --write-report
+
+      - name: Commit recovered Social Card proofs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/fragrantica/social-cards/records/social-card-ordered-image-audit.json \
+                  database/catalog/database_complete.json \
+                  database/catalog/catalog_site.json \
+                  database/catalog/catalog_final_perfume_only.json \
+                  database/catalog/database_final_perfume_only.json \
+                  database/audits/CURRENT-CATALOG-AUDIT.md
+          if git diff --cached --quiet; then
+            echo 'No adaptive Social Card proofs recovered.'
+            exit 0
+          fi
+          git commit -m 'Publish adaptive Social Card proof recovery'
+          git push
