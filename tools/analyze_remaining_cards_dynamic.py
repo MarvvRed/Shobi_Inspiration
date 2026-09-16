@@ -6,8 +6,8 @@ from PIL import Image
 import pytesseract
 
 ROOT=Path(__file__).resolve().parents[1]
-REPORT=ROOT/'database/audits/validation-yellow-report.json'
 DB=ROOT/'database/catalog/database_complete.json'
+SITE=ROOT/'database/catalog/catalog_site.json'
 MAP=ROOT/'database'/'assets'/'note-icons'/'map.js'
 IMGDIR=ROOT/'database/fragrantica'/'social-cards'/'images'
 OUT=ROOT/'database/audits/remaining-card-dynamic-analysis.json'
@@ -98,13 +98,15 @@ def analyze_notes(words,w,h,lex):
     return {'anchor':{'x':a['x'],'y':a['y']},'clusters':result,'matchedNotes':matched}
 
 def main():
-    report=json.loads(REPORT.read_text(encoding='utf-8'))
     db=json.loads(DB.read_text(encoding='utf-8-sig'))
+    site=json.loads(SITE.read_text(encoding='utf-8-sig'))
     bycode={str(r.get('code') or '').upper():r for r in db}
     lex=load_note_lexicon()
     targets=[]
-    for y in report.get('rows',report.get('yellowRows',[])):
-        code=str(y.get('code') or '').upper(); failed=y.get('failedChecks') or y.get('failed') or []
+    for y in site:
+        if str(y.get('validationStatus') or '').lower() != 'yellow':
+            continue
+        code=str(y.get('code') or '').upper(); failed=[k for k,v in (y.get('validationChecks') or {}).items() if not v]
         row=bycode.get(code) or {}
         fid=str(row.get('fragranticaId') or '')
         if fid and ('socialCard' in failed or 'notes' in failed or 'gender' in failed):targets.append((code,fid,row,failed))
@@ -118,7 +120,9 @@ def main():
         full=' '.join(z['text'] for z in sorted(words,key=lambda q:(q['y'],q['x'])))
         top=' '.join(z['text'] for z in words if z['y']<0.18*h)
         notes=analyze_notes(words,w,h,lex)
-        existing=row.get('mainNotes') or row.get('notes') or []
+        # The public schema stores the exact Social Card sequence here.  Generic
+        # perfume pyramids are not interchangeable evidence for Main Notes.
+        existing=row.get('fragranticaSocialCardNotes') or row.get('mainNotes') or row.get('notes') or []
         if isinstance(existing,str): existing=[x.strip() for x in existing.split(',') if x.strip()]
         existing_norm=[norm(x) for x in existing]
         matched_norm=[norm(x) for x in notes['matchedNotes']]
