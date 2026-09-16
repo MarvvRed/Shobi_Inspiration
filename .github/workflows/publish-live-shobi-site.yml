@@ -12,6 +12,7 @@ on:
       - 'tools/verify_catalog_invariants.py'
       - 'tools/audit_social_card_order_from_images.py'
       - 'tools/recover_exact_card_proofs_multipass.py'
+      - 'tools/recover_header_anchored_six_slot_proofs.py'
       - 'tools/apply_exact_card_proofs_multipass.py'
       - 'database/catalog/**'
       - 'database/source/**'
@@ -89,6 +90,7 @@ jobs:
           python tools/refresh_strict_ordered_mismatches.py
           SOCIAL_CARD_RECOVERY_WORKERS=2 python tools/recover_exact_card_proofs_multipass.py
           python tools/apply_exact_card_proofs_multipass.py
+          python tools/recover_header_anchored_six_slot_proofs.py
 
       - name: Build strict validation audit
         run: python tools/build_validation_audit.py
