@@ -87654,7 +87654,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Tiffany/Sheer-Tiffany-12922.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -87666,11 +87666,9 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
-      "issues": [
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -109339,7 +109337,7 @@
     "image": null,
     "genderAffinity": "feminine",
     "seasons": [
-      "spring"
+      "fall"
     ],
     "mainAccords": [],
     "notes": {
@@ -109376,7 +109374,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Missoni/Missoni-1069.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -109388,11 +109386,9 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
-      "issues": [
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6

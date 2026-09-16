@@ -48546,10 +48546,8 @@
       "Peony",
       "Musk"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Season not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -48561,7 +48559,7 @@
       "notes": true,
       "icons": true,
       "gender": true,
-      "season": false
+      "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 6,
@@ -60385,7 +60383,7 @@
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Missoni/Missoni-1069.html",
     "genderAffinity": "feminine",
     "seasons": [
-      "spring"
+      "fall"
     ],
     "fragranticaSocialCardNotes": [
       "Dark Chocolate",
@@ -60395,10 +60393,8 @@
       "Peony",
       "Magnolia"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Season not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -60410,7 +60406,7 @@
       "notes": true,
       "icons": true,
       "gender": true,
-      "season": false
+      "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 6,
