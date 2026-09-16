@@ -24,7 +24,7 @@ audit_by_code = {code(item.get("code")): item for item in audit.get("rows", [])}
 applied = []
 
 for proof in recovery.get("rows", []):
-    if proof.get("result") != "EXACT_ORDERED_MATCH_MULTIPASS":
+    if proof.get("result") not in {"EXACT_ORDERED_MATCH_MULTIPASS", "EXACT_ORDERED_MATCH_RELAXED_MULTIPASS", "EXACT_ORDERED_MATCH_CONSENSUS_MULTIPASS"}:
         continue
     item = audit_by_code.get(code(proof.get("code")))
     row = by_code.get(code(proof.get("code")))
@@ -42,7 +42,7 @@ for proof in recovery.get("rows", []):
         "result": "EXACT_ORDERED_MATCH",
         "observedNotes": notes,
         "components": selected.get("components") or [],
-        "proof": "MULTIPASS_EXACT_HIGH_CONFIDENCE; ALL_OTHER_STRICT_READS_ORDERED_SUBSEQUENCES",
+        "proof": proof.get("proof"),
         "multipassEvidence": {"variant": selected.get("variant"), "psm": selected.get("psm")},
     })
     applied.append(code(proof.get("code")))
