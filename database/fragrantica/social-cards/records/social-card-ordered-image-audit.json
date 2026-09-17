@@ -2,9 +2,9 @@
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
   "results": {
-    "EXACT_ORDERED_MATCH": 1939,
+    "EXACT_ORDERED_MATCH": 1942,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 308,
+    "READING_NOT_STRICT_ENOUGH": 305,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -1411,6 +1411,15 @@
           "Citruses"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Agarwood (Oud)",
+          "Leather",
+          "Citruses"
+        ],
+        "families": 2
       }
     },
     {
@@ -1605,6 +1614,14 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Guaiac Wood",
+          "Rose"
+        ],
+        "families": 1
       }
     },
     {
@@ -3197,6 +3214,30 @@
           "Mandarin Orange"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Tobacco",
+            "Cinnamon",
+            "Fir",
+            "Mandarin Orange"
+          ],
+          [
+            "Tobacco",
+            "Cinnamon",
+            "Mandarin Orange"
+          ],
+          [
+            "Tobacco",
+            "Oakmoss",
+            "Patchouli",
+            "Cinnamon",
+            "Fir",
+            "Mandarin Orange"
+          ]
+        ]
       }
     },
     {
@@ -13054,6 +13095,26 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "SEQUENCE_NOT_EXACT",
+        "observed": [
+          "Ginger",
+          "Cardamom",
+          "Tobacco Blossom",
+          "Sandalwood",
+          "Juniper",
+          "Green Notes"
+        ],
+        "catalog": [
+          "Ginger",
+          "Cardamom",
+          "Tobacco Blossom",
+          "Sandalwood",
+          "Juniper",
+          "Galanga"
+        ],
+        "families": 5
       }
     },
     {
@@ -19572,6 +19633,33 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Musk",
+            "Sorbet",
+            "Black Currant",
+            "Citruses",
+            "Jasmine"
+          ],
+          [
+            "Musk",
+            "Sorbet",
+            "Black Currant",
+            "Citruses",
+            "Patchouli",
+            "Jasmine"
+          ],
+          [
+            "Sorbet",
+            "Black Currant",
+            "Citruses",
+            "Patchouli",
+            "Jasmine"
+          ]
+        ]
       }
     },
     {
@@ -20792,6 +20880,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -21030,6 +21121,26 @@
           "Violet Leaf"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Honey",
+            "Iris",
+            "Guaiac Wood",
+            "Musk",
+            "Violet Leaf"
+          ],
+          [
+            "Honey",
+            "Iris",
+            "Guaiac Wood",
+            "Musk",
+            "Violet Leaf",
+            "Patchouli"
+          ]
+        ]
       }
     },
     {
@@ -21613,6 +21724,42 @@
           "Bergamot"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Mint",
+            "Vetiver",
+            "Patchouli"
+          ],
+          [
+            "Mint",
+            "Vetiver",
+            "Patchouli",
+            "Vanilla",
+            "Labdanum",
+            "Bergamot"
+          ],
+          [
+            "Patchouli",
+            "Vanilla",
+            "Labdanum",
+            "Bergamot"
+          ],
+          [
+            "Vanilla",
+            "Labdanum",
+            "Bergamot"
+          ],
+          [
+            "Vetiver",
+            "Patchouli",
+            "Vanilla",
+            "Labdanum",
+            "Bergamot"
+          ]
+        ]
       }
     },
     {
@@ -25047,6 +25194,35 @@
           "Rosemary"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Lavender",
+            "Geranium",
+            "Rosemary",
+            "Clary Sage",
+            "Neroli"
+          ],
+          [
+            "Lavender",
+            "Geranium",
+            "Rosemary",
+            "Sage",
+            "Neroli"
+          ],
+          [
+            "Lavender",
+            "Oakmoss",
+            "Clary Sage"
+          ],
+          [
+            "Rosemary",
+            "Clary Sage",
+            "Neroli"
+          ]
+        ]
       }
     },
     {
@@ -25811,6 +25987,14 @@
           "Leather",
           "Musk",
           "Rose",
+          "Agarwood (Oud)"
+        ],
+        "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Musk",
           "Agarwood (Oud)"
         ],
         "families": 1
@@ -37936,6 +38120,25 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Ebony Tree",
+            "Sandalwood",
+            "Cardamom",
+            "Suede",
+            "Vetiver",
+            "Bitter Orange"
+          ],
+          [
+            "Sandalwood",
+            "Cardamom",
+            "Vetiver",
+            "Bitter Orange"
+          ]
+        ]
       }
     },
     {
@@ -39537,6 +39740,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -41042,6 +41248,37 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Aquozone",
+            "Mineral Notes",
+            "Bergamot",
+            "Mandarin Orange",
+            "Rosemary"
+          ],
+          [
+            "Sea Water",
+            "Aquozone",
+            "Mineral Notes",
+            "Bergamot",
+            "Mandarin Orange",
+            "Rosemary"
+          ],
+          [
+            "Sea Water",
+            "Mineral Notes"
+          ],
+          [
+            "Sea Water",
+            "Mineral Notes",
+            "Bergamot",
+            "Mandarin Orange",
+            "Rosemary"
+          ]
+        ]
       }
     },
     {
@@ -41643,6 +41880,26 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Amberwood",
+            "Bergamot",
+            "Mandarin Orange",
+            "Heliotrope",
+            "Orange Blossom"
+          ],
+          [
+            "Tonka Bean",
+            "Amberwood",
+            "Bergamot",
+            "Mandarin Orange",
+            "Heliotrope",
+            "Orange Blossom"
+          ]
+        ]
       }
     },
     {
@@ -50246,6 +50503,23 @@
           "Sage"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Leather",
+            "Oakmoss",
+            "Carnation"
+          ],
+          [
+            "Leather",
+            "Styrax",
+            "Vetiver",
+            "Carnation",
+            "Sage"
+          ]
+        ]
       }
     },
     {
@@ -57978,6 +58252,35 @@
           "Cedar"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Cacao Pod",
+            "Patchouli",
+            "Fig",
+            "Cedar"
+          ],
+          [
+            "Cacao Pod",
+            "Patchouli",
+            "Fig Leaf",
+            "Vetiver"
+          ],
+          [
+            "Cacao Pod",
+            "Patchouli",
+            "Fig Leaf",
+            "Vetiver",
+            "Cedar"
+          ],
+          [
+            "Patchouli",
+            "Fig Leaf",
+            "Vetiver"
+          ]
+        ]
       }
     },
     {
@@ -61804,6 +62107,23 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "SEQUENCE_NOT_EXACT",
+        "observed": [
+          "Yuzu",
+          "Grapefruit",
+          "Tonka Bean"
+        ],
+        "catalog": [
+          "Yuzu",
+          "Grapefruit",
+          "Tonka Bean",
+          "Palisander Rosewood",
+          "Mint",
+          "Apple"
+        ],
+        "families": 3
       }
     },
     {
@@ -62310,6 +62630,32 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Bitter Orange",
+            "Lemon Blossom",
+            "Fig",
+            "Lemon",
+            "Peach"
+          ],
+          [
+            "Bitter Orange",
+            "Vetiver",
+            "Lemon Blossom",
+            "Fig tree",
+            "Lemon",
+            "Peach"
+          ],
+          [
+            "Lemon Blossom",
+            "Fig tree",
+            "Lemon",
+            "Peach"
+          ]
+        ]
       }
     },
     {
@@ -64010,6 +64356,32 @@
           "Bergamot"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Lavender",
+            "Cedar",
+            "Oakmoss",
+            "Bergamot"
+          ],
+          [
+            "Lavender",
+            "Cedar",
+            "Patchouli",
+            "Tonka Bean",
+            "Oakmoss",
+            "Bergamot"
+          ],
+          [
+            "Lavender",
+            "Cedar",
+            "Tonka Bean",
+            "Oakmoss",
+            "Bergamot"
+          ]
+        ]
       }
     },
     {
@@ -67236,6 +67608,26 @@
           "Woody Notes"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "SEQUENCE_NOT_EXACT",
+        "observed": [
+          "Violet Leaf",
+          "Cinnamon",
+          "Tonka Bean",
+          "Clary Sage",
+          "Grapefruit",
+          "Woody Notes"
+        ],
+        "catalog": [
+          "Violet",
+          "Cinnamon",
+          "Tonka Bean",
+          "Clary Sage",
+          "Grapefruit",
+          "Woody Notes"
+        ],
+        "families": 3
       }
     },
     {
@@ -70424,6 +70816,46 @@
           "Clary Sage"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Leather",
+            "Carnation",
+            "Clary Sage",
+            "Labdanum"
+          ],
+          [
+            "Leather",
+            "Oakmoss",
+            "Styrax",
+            "Carnation",
+            "Clary Sage"
+          ],
+          [
+            "Leather",
+            "Oakmoss",
+            "Styrax",
+            "Carnation",
+            "Clary Sage",
+            "Labdanum"
+          ],
+          [
+            "Leather",
+            "Styrax",
+            "Carnation",
+            "Clary Sage",
+            "Labdanum"
+          ],
+          [
+            "Oakmoss",
+            "Styrax",
+            "Carnation",
+            "Clary Sage",
+            "Labdanum"
+          ]
+        ]
       }
     },
     {
@@ -71888,6 +72320,33 @@
           "Tolu Balsam"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Praline",
+            "Lemon",
+            "Cinnamon",
+            "Brazilian Rosewood",
+            "Tolu Balsam"
+          ],
+          [
+            "Praline",
+            "Lemon",
+            "Cinnamon",
+            "Patchouli",
+            "Brazilian Rosewood",
+            "Tolu Balsam"
+          ],
+          [
+            "Praline",
+            "Lemon",
+            "Patchouli",
+            "Brazilian Rosewood",
+            "Tolu Balsam"
+          ]
+        ]
       }
     },
     {
@@ -76362,6 +76821,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -76658,6 +77120,26 @@
           "Benzoin"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Iris",
+            "Powdery Notes",
+            "Neroli",
+            "Vetiver",
+            "Olibanum (Frankincense)",
+            "Benzoin"
+          ],
+          [
+            "Iris",
+            "Powdery Notes",
+            "Vetiver",
+            "Olibanum (Frankincense)",
+            "Benzoin"
+          ]
+        ]
       }
     },
     {
@@ -79642,6 +80124,59 @@
           "Rose"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Benzoin",
+            "Sandalwood",
+            "Bergamot",
+            "Rose"
+          ],
+          [
+            "Benzoin",
+            "Sandalwood",
+            "Musk",
+            "Bergamot",
+            "Rose"
+          ],
+          [
+            "Musk",
+            "Bergamot",
+            "Rose"
+          ],
+          [
+            "Patchouli",
+            "Benzoin",
+            "Musk",
+            "Rose"
+          ],
+          [
+            "Patchouli",
+            "Benzoin",
+            "Rose"
+          ],
+          [
+            "Patchouli",
+            "Benzoin",
+            "Sandalwood",
+            "Musk",
+            "Bergamot",
+            "Rose"
+          ],
+          [
+            "Sandalwood",
+            "Musk",
+            "Bergamot",
+            "Rose"
+          ],
+          [
+            "Sandalwood",
+            "Musk",
+            "Rose"
+          ]
+        ]
       }
     },
     {
@@ -82595,6 +83130,45 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Cedar",
+            "Vetiver",
+            "Grapefruit",
+            "Sandalwood",
+            "Carnation"
+          ],
+          [
+            "Fig",
+            "Cedar",
+            "Grapefruit",
+            "Sandalwood",
+            "Carnation"
+          ],
+          [
+            "Fig",
+            "Cedar",
+            "Vetiver",
+            "Grapefruit",
+            "Sandalwood",
+            "Carnation"
+          ],
+          [
+            "Fig Leaf",
+            "Cedar",
+            "Vetiver",
+            "Sandalwood",
+            "Carnation"
+          ],
+          [
+            "Vetiver",
+            "Grapefruit",
+            "Carnation"
+          ]
+        ]
       }
     },
     {
@@ -82838,6 +83412,26 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Mimosa",
+            "Iris",
+            "Vanilla",
+            "Heliotrope",
+            "White Flowers"
+          ],
+          [
+            "Mimosa",
+            "Musk",
+            "Iris",
+            "Vanilla",
+            "Heliotrope",
+            "White Flowers"
+          ]
+        ]
       }
     },
     {
@@ -84969,6 +85563,17 @@
           "Leather"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Licorice",
+          "Spicy Notes",
+          "Patchouli",
+          "Vanilla",
+          "Leather"
+        ],
+        "families": 1
       }
     },
     {
@@ -86323,6 +86928,25 @@
           "Geranium"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Apple",
+            "Tonka Bean",
+            "Leather",
+            "Geranium"
+          ],
+          [
+            "Apple",
+            "Tonka Bean",
+            "Leather",
+            "Lavender",
+            "Violet Leaf",
+            "Geranium"
+          ]
+        ]
       }
     },
     {
@@ -92129,6 +92753,25 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Pepper",
+            "Star Anise",
+            "Nutmeg",
+            "Vetiver"
+          ],
+          [
+            "Violet Leaf",
+            "Pink Pepper",
+            "Basil",
+            "Star Anise",
+            "Nutmeg",
+            "Vetiver"
+          ]
+        ]
       }
     },
     {
@@ -92889,6 +93532,26 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Jasmine",
+            "Orange Blossom",
+            "Patchouli",
+            "Amyris",
+            "Mandarin Orange"
+          ],
+          [
+            "Jasmine",
+            "Orange Blossom",
+            "Ylang-Ylang",
+            "Patchouli",
+            "Amyris",
+            "Mandarin Orange"
+          ]
+        ]
       }
     },
     {
@@ -93843,6 +94506,18 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Aldehydes",
+          "Oakmoss",
+          "Green Notes",
+          "Hyacinth",
+          "Orris Root",
+          "Galbanum"
+        ],
+        "families": 1
       }
     },
     {
@@ -101342,6 +102017,9 @@
           "Ginger"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -102576,6 +103254,16 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Cashmir wood",
+          "Bergamot",
+          "Vetiver",
+          "Musk"
+        ],
+        "families": 1
       }
     },
     {
@@ -102923,6 +103611,31 @@
           "Lemon"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Bergamot",
+            "Citron",
+            "Lemon"
+          ],
+          [
+            "Fig",
+            "Fig",
+            "Bergamot",
+            "Citron",
+            "Lemon"
+          ],
+          [
+            "Fig",
+            "Fig tree",
+            "Grapefruit",
+            "Bergamot",
+            "Citron",
+            "Lemon"
+          ]
+        ]
       }
     },
     {
@@ -108416,6 +109129,53 @@
           "Fig Leaf"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Bamboo",
+            "Bergamot",
+            "Bitter Orange",
+            "Fig"
+          ],
+          [
+            "Bamboo",
+            "Bergamot",
+            "Neroli",
+            "Bitter Orange",
+            "Fig"
+          ],
+          [
+            "Bamboo",
+            "Neroli",
+            "Bitter Orange",
+            "Fig"
+          ],
+          [
+            "Tea",
+            "Bamboo",
+            "Bergamot",
+            "Bitter Orange",
+            "Fig"
+          ],
+          [
+            "Tea",
+            "Bamboo",
+            "Bergamot",
+            "Neroli",
+            "Bitter Orange",
+            "Fig"
+          ],
+          [
+            "Tea",
+            "Bamboo",
+            "Bergamot",
+            "Neroli",
+            "Bitter Orange",
+            "Fig Leaf"
+          ]
+        ]
       }
     },
     {
@@ -117263,6 +118023,38 @@
           "Patchouli"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Peach",
+            "Blood Orange",
+            "Vanilla",
+            "Cognac"
+          ],
+          [
+            "Peach",
+            "Rum",
+            "Blood Orange",
+            "Vanilla",
+            "Cognac"
+          ],
+          [
+            "Peach",
+            "Rum",
+            "Blood Orange",
+            "Vanilla",
+            "Cognac",
+            "Patchouli"
+          ],
+          [
+            "Peach",
+            "Rum",
+            "Orange",
+            "Cognac"
+          ]
+        ]
       }
     },
     {
@@ -120359,6 +121151,40 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Jasmine",
+            "Styrax",
+            "Benzoin"
+          ],
+          [
+            "Tuberose",
+            "Suede"
+          ],
+          [
+            "Tuberose",
+            "Suede",
+            "Jasmine"
+          ],
+          [
+            "Tuberose",
+            "Suede",
+            "Lily",
+            "Jasmine",
+            "Styrax",
+            "Benzoin"
+          ],
+          [
+            "Tuberose",
+            "Suede",
+            "Lily",
+            "Styrax",
+            "Benzoin"
+          ]
+        ]
       }
     },
     {
@@ -122134,6 +122960,13 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Rose"
+        ],
+        "families": 1
       }
     },
     {
@@ -123019,6 +123852,31 @@
           "Vetiver"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Olibanum (Frankincense)",
+            "Agarwood (Oud)",
+            "Labdanum",
+            "Pink Pepper",
+            "Rose",
+            "Vetiver"
+          ],
+          [
+            "Olibanum (Frankincense)",
+            "Labdanum",
+            "Pink Pepper",
+            "Rose",
+            "Vetiver"
+          ],
+          [
+            "Olibanum (Frankincense)",
+            "Pink Pepper",
+            "Rose"
+          ]
+        ]
       }
     },
     {
@@ -123260,6 +124118,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -125324,6 +126185,25 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "SEQUENCE_NOT_EXACT",
+        "observed": [
+          "Tuberose",
+          "Monoi Oil",
+          "Caramel",
+          "Vanilla",
+          "Tobacco"
+        ],
+        "catalog": [
+          "Tuberose",
+          "Lily",
+          "Monoi Oil",
+          "Caramel",
+          "Vanilla",
+          "Tobacco"
+        ],
+        "families": 3
       }
     },
     {
@@ -129152,6 +130032,25 @@
           "Myrrh"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Powdery Notes",
+            "Musk",
+            "Ambergris",
+            "Fig Leaf"
+          ],
+          [
+            "Powdery Notes",
+            "Musk",
+            "Ambroxan",
+            "Ambergris",
+            "Fig Leaf",
+            "Myrrh"
+          ]
+        ]
       }
     },
     {
@@ -131147,6 +132046,31 @@
           "Patchouli"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Coconut",
+            "Vanilla",
+            "Iris",
+            "Orange Blossom",
+            "Patchouli"
+          ],
+          [
+            "Coconut",
+            "Vanilla",
+            "Ylang-Ylang"
+          ],
+          [
+            "Coconut",
+            "Vanilla",
+            "Ylang-Ylang",
+            "Iris",
+            "Orange Blossom",
+            "Patchouli"
+          ]
+        ]
       }
     },
     {
@@ -132395,6 +133319,9 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -132603,6 +133530,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -133842,6 +134772,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -137599,6 +138532,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -141792,6 +142728,35 @@
           "Tea"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Black Currant",
+            "Birch",
+            "Papyrus",
+            "Violet"
+          ],
+          [
+            "Black Currant",
+            "Mate",
+            "Tea"
+          ],
+          [
+            "Black Currant",
+            "Mate",
+            "Tea",
+            "Birch",
+            "Papyrus",
+            "Violet Leaf"
+          ],
+          [
+            "Black Currant",
+            "Mate",
+            "Violet Leaf"
+          ]
+        ]
       }
     },
     {
@@ -146522,6 +147487,15 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Passionfruit",
+          "Tonka Bean",
+          "Musk"
+        ],
+        "families": 1
       }
     },
     {
@@ -148068,6 +149042,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -154838,6 +155815,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -157955,6 +158935,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -159247,6 +160230,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -159835,6 +160821,26 @@
           "Mandarin Orange"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "SEQUENCE_NOT_EXACT",
+        "observed": [
+          "Almond Blossom",
+          "Amberwood",
+          "Jasmine",
+          "Musk",
+          "Pear",
+          "Mandarin Orange"
+        ],
+        "catalog": [
+          "Almond Blossom",
+          "Amberwood",
+          "Jasmine",
+          "Musk",
+          "Pear",
+          "Orange"
+        ],
+        "families": 5
       }
     },
     {
@@ -160019,6 +161025,17 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Powdery Notes",
+          "Bagas de Zimbro",
+          "Cedar",
+          "Jasmine",
+          "Tonka Bean"
+        ],
+        "families": 2
       }
     },
     {
@@ -160531,6 +161548,24 @@
           "Orris Root"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Icing Pink",
+            "Patchouli",
+            "Orris Root"
+          ],
+          [
+            "Mango",
+            "Vanilla",
+            "Blackberry",
+            "Icing Pink",
+            "Patchouli",
+            "Orris Root"
+          ]
+        ]
       }
     },
     {
@@ -165235,6 +166270,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -168265,6 +169303,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -171630,6 +172671,48 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Water Hyacinth"
+          ],
+          [
+            "Water Hyacinth",
+            "Orange Blossom",
+            "Neroli",
+            "Patchouli"
+          ],
+          [
+            "Water Hyacinth",
+            "Orange Blossom",
+            "Neroli",
+            "Sage",
+            "Patchouli"
+          ],
+          [
+            "Water Hyacinth",
+            "Orange Blossom",
+            "Neroli",
+            "Sage",
+            "Patchouli",
+            "Lily"
+          ],
+          [
+            "Water Hyacinth",
+            "Orange Blossom",
+            "Patchouli",
+            "Lily"
+          ],
+          [
+            "Water Hyacinth",
+            "Orange Blossom",
+            "Sage",
+            "Patchouli",
+            "Lily"
+          ]
+        ]
       }
     },
     {
@@ -173736,6 +174819,35 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Musk",
+            "Beeswax",
+            "Orris Root",
+            "Benzoin"
+          ],
+          [
+            "Musk",
+            "Beeswax",
+            "Ylang-Ylang"
+          ],
+          [
+            "Musk",
+            "Beeswax",
+            "Ylang-Ylang",
+            "Orris Root",
+            "Benzoin",
+            "Tonka Bean"
+          ],
+          [
+            "Orris Root",
+            "Benzoin",
+            "Tonka Bean"
+          ]
+        ]
       }
     },
     {
@@ -174231,6 +175343,37 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Violet Leaf",
+            "Iris",
+            "Orris Root",
+            "Jasmine"
+          ],
+          [
+            "Violet Leaf",
+            "Iris",
+            "Suede"
+          ],
+          [
+            "Violet Leaf",
+            "Iris",
+            "Suede",
+            "Orris Root",
+            "Benzoin"
+          ],
+          [
+            "Violet Leaf",
+            "Iris",
+            "Suede",
+            "Orris Root",
+            "Benzoin",
+            "Jasmine"
+          ]
+        ]
       }
     },
     {
@@ -178626,6 +179769,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -179045,6 +180191,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -179265,6 +180414,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -180464,6 +181616,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -180649,6 +181804,15 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Juniper",
+          "Cypress",
+          "Bergamot"
+        ],
+        "families": 1
       }
     },
     {
@@ -181095,6 +182259,33 @@
           "Musk"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Tobacco Blossom",
+            "Ginger",
+            "Lemon",
+            "Bergamot",
+            "Amber"
+          ],
+          [
+            "Tobacco Blossom",
+            "Ginger",
+            "Lemon",
+            "Bergamot",
+            "Amber",
+            "Musk"
+          ],
+          [
+            "Tobacco Blossom",
+            "Lemon",
+            "Bergamot",
+            "Amber",
+            "Musk"
+          ]
+        ]
       }
     },
     {
@@ -187325,6 +188516,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -191899,6 +193093,26 @@
           "Jasmine"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Rose",
+            "Musk",
+            "Red Berries",
+            "Citruses",
+            "Iris",
+            "Jasmine"
+          ],
+          [
+            "Rose",
+            "Musk",
+            "Red Berries",
+            "Citruses",
+            "Jasmine"
+          ]
+        ]
       }
     },
     {
@@ -192315,6 +193529,9 @@
           "Timur"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -197891,6 +199108,9 @@
           "Olibanum (Frankincense)"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -200002,6 +201222,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -201136,6 +202359,14 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Vetiver",
+          "Musk"
+        ],
+        "families": 1
       }
     },
     {
@@ -202147,6 +203378,39 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Vanilla",
+            "Coffee",
+            "Fig"
+          ],
+          [
+            "Vanilla",
+            "Coffee",
+            "Fig",
+            "Pear",
+            "Fig",
+            "Orange Blossom"
+          ],
+          [
+            "Vanilla",
+            "Coffee",
+            "Fig",
+            "Pear",
+            "Fig Leaf",
+            "Orange Blossom"
+          ],
+          [
+            "Vanilla",
+            "Fig",
+            "Pear",
+            "Fig",
+            "Orange Blossom"
+          ]
+        ]
       }
     },
     {
@@ -203584,6 +204848,23 @@
           "Jasmine"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Tea",
+            "Mandarin Orange"
+          ],
+          [
+            "Tea",
+            "Mandarin Orange",
+            "Petitgrain",
+            "Vetiver",
+            "Orange Blossom",
+            "Jasmine"
+          ]
+        ]
       }
     },
     {
@@ -210234,6 +211515,9 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -210450,6 +211734,47 @@
           "Vetiver"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Grapefruit",
+            "Ozonic Notes",
+            "Bergamot",
+            "Green Notes",
+            "Violet",
+            "Vetiver"
+          ],
+          [
+            "Grapefruit",
+            "Ozonic Notes",
+            "Bergamot",
+            "Green Notes",
+            "Violet Leaf",
+            "Vetiver"
+          ],
+          [
+            "Grapefruit",
+            "Ozonic Notes",
+            "Green Notes"
+          ],
+          [
+            "Green Notes"
+          ],
+          [
+            "Green Notes",
+            "Violet Leaf",
+            "Vetiver"
+          ],
+          [
+            "Ozonic Notes",
+            "Bergamot",
+            "Green Notes",
+            "Violet Leaf",
+            "Vetiver"
+          ]
+        ]
       }
     },
     {
@@ -212846,6 +214171,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -217892,6 +219220,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -221720,6 +223051,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -230061,6 +231395,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -230557,6 +231894,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -230960,6 +232300,9 @@
           "Violet Leaf"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -231398,6 +232741,31 @@
           "Oakmoss"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Fir",
+            "Lavender",
+            "Cardamom",
+            "Coriander",
+            "Styrax",
+            "Oakmoss"
+          ],
+          [
+            "Lavender",
+            "Cardamom",
+            "Coriander",
+            "Styrax"
+          ],
+          [
+            "Lavender",
+            "Coriander",
+            "Styrax",
+            "Oakmoss"
+          ]
+        ]
       }
     },
     {
@@ -233456,6 +234824,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -235261,6 +236632,9 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -246595,6 +247969,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -246950,6 +248327,9 @@
           "Bitter Orange"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -247721,6 +249101,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -249035,6 +250418,21 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Ambroxan",
+            "Cedar",
+            "Palo Santo",
+            "Cardamom",
+            "Vetiver"
+          ],
+          [
+            "Cardamom"
+          ]
+        ]
       }
     },
     {
@@ -255264,6 +256662,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -263012,6 +264413,18 @@
           "Pink Pepper"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Bergamot",
+          "Green Notes",
+          "Neroli",
+          "Vetiver",
+          "Cardamom",
+          "Pink Pepper"
+        ],
+        "families": 2
       }
     },
     {
@@ -263200,6 +264613,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -278070,6 +279486,18 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Iris",
+          "Lavender",
+          "Jasmine",
+          "Neroli",
+          "Bagas de Zimbro",
+          "Olibanum (Frankincense)"
+        ],
+        "families": 2
       }
     },
     {
@@ -278853,6 +280281,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -279226,6 +280657,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -279323,6 +280757,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -279836,6 +281273,9 @@
           "Pepper"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -283393,6 +284833,36 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Coconut",
+            "Jasmine",
+            "Patchouli"
+          ],
+          [
+            "Dewberry",
+            "Coconut",
+            "Musk",
+            "Jasmine",
+            "Patchouli"
+          ],
+          [
+            "Magnolia",
+            "Dewberry",
+            "Coconut"
+          ],
+          [
+            "Magnolia",
+            "Dewberry",
+            "Coconut",
+            "Musk",
+            "Jasmine",
+            "Patchouli"
+          ]
+        ]
       }
     },
     {
@@ -284151,6 +285621,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -284340,6 +285813,16 @@
           "Angelica",
           "Bagas de Zimbro",
           "Patchouli"
+        ],
+        "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Orange Blossom",
+          "Bitter Orange",
+          "Angelica",
+          "Bagas de Zimbro"
         ],
         "families": 1
       }
@@ -285891,6 +287374,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -286553,6 +288039,16 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Whiskey",
+          "Chestnut",
+          "Amber",
+          "Bergamot"
+        ],
+        "families": 1
       }
     },
     {
@@ -288301,6 +289797,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -289622,6 +291121,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -292389,6 +293891,24 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Honey",
+            "Orange Blossom",
+            "White Tobacco"
+          ],
+          [
+            "Honey",
+            "Orange Blossom",
+            "White Tobacco",
+            "Ylang-Ylang",
+            "Vanilla",
+            "Bitter Orange"
+          ]
+        ]
       }
     },
     {
@@ -293562,6 +295082,26 @@
           "Tonka Bean"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Bergamot",
+            "Olive Tree",
+            "Orange Blossom",
+            "Black Currant",
+            "Tonka Bean"
+          ],
+          [
+            "Fig Leaf",
+            "Bergamot",
+            "Olive Tree",
+            "Orange Blossom",
+            "Black Currant",
+            "Tonka Bean"
+          ]
+        ]
       }
     },
     {
@@ -294278,6 +295818,27 @@
           "Woody Notes"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Coconut"
+          ],
+          [
+            "Coconut",
+            "Fig tree",
+            "Woody Notes"
+          ],
+          [
+            "Fig Leaf",
+            "Fig",
+            "Green Notes",
+            "Coconut",
+            "Fig tree",
+            "Woody Notes"
+          ]
+        ]
       }
     },
     {
@@ -294783,6 +296344,33 @@
           "Sichuan Pepper"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Lotus",
+            "Mimosa",
+            "Bergamot",
+            "Violet Leaf",
+            "Sichuan Pepper"
+          ],
+          [
+            "Yuzu",
+            "Lotus",
+            "Bergamot",
+            "Violet Leaf",
+            "Sichuan Pepper"
+          ],
+          [
+            "Yuzu",
+            "Lotus",
+            "Mimosa",
+            "Bergamot",
+            "Violet Leaf",
+            "Sichuan Pepper"
+          ]
+        ]
       }
     },
     {
@@ -295254,6 +296842,13 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Musk"
+        ],
+        "families": 1
       }
     },
     {
@@ -299557,6 +301152,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -304733,6 +306331,14 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Pink Pepper",
+          "Lemon"
+        ],
+        "families": 1
       }
     },
     {
@@ -306779,6 +308385,18 @@
           "Woody Notes"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Amber",
+          "Incense",
+          "Olibanum (Frankincense)",
+          "Vanilla",
+          "Labdanum",
+          "Woody Notes"
+        ],
+        "families": 2
       }
     },
     {
@@ -306998,6 +308616,44 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Honey",
+            "Saffron",
+            "Sandalwood",
+            "Lily",
+            "Orange"
+          ],
+          [
+            "Honey",
+            "Saffron",
+            "Sandalwood",
+            "Lily",
+            "Orange",
+            "Vanilla"
+          ],
+          [
+            "Honey",
+            "Sandalwood",
+            "Lily",
+            "Orange",
+            "Vanilla"
+          ],
+          [
+            "Saffron",
+            "Sandalwood",
+            "Orange"
+          ],
+          [
+            "Sandalwood",
+            "Lily",
+            "Orange",
+            "Vanilla"
+          ]
+        ]
       }
     },
     {
@@ -307320,6 +308976,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -310979,6 +312638,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -313836,6 +315498,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -314157,6 +315822,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -318113,6 +319781,35 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Oakmoss"
+          ],
+          [
+            "Tonic Water",
+            "Gin",
+            "Lime",
+            "Mint",
+            "Ginger",
+            "Oakmoss"
+          ],
+          [
+            "Water",
+            "Gin",
+            "Lime",
+            "Mint"
+          ],
+          [
+            "Water",
+            "Lime",
+            "Mint",
+            "Ginger",
+            "Oakmoss"
+          ]
+        ]
       }
     },
     {
@@ -318817,6 +320514,26 @@
           "Coriander"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Finger Lime",
+            "Vetiver",
+            "Bergamot",
+            "Cedar",
+            "Coriander"
+          ],
+          [
+            "Finger Lime",
+            "Vetiver",
+            "Bergamot",
+            "Cedar",
+            "Sandalwood",
+            "Coriander"
+          ]
+        ]
       }
     },
     {
@@ -323696,6 +325413,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -324907,6 +326627,17 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Aldehydes",
+          "Peach",
+          "Orange Blossom",
+          "Musk",
+          "Violet"
+        ],
+        "families": 1
       }
     },
     {
@@ -325801,6 +327532,26 @@
           "Jellybean"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Vanilla",
+            "Bubble Gum",
+            "Pear",
+            "Marshmallow",
+            "Jellybean"
+          ],
+          [
+            "Vanilla",
+            "Sugar",
+            "Bubble Gum",
+            "Pear",
+            "Marshmallow",
+            "Jellybean"
+          ]
+        ]
       }
     },
     {
@@ -329664,6 +331415,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -330614,6 +332368,18 @@
         "reason": "NO_MULTI_FAMILY_CONSENSUS",
         "best": [
           "Blackberry",
+          "Grapefruit",
+          "Cedar",
+          "Vetiver",
+          "Floral Notes"
+        ],
+        "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Blackberry",
+          "Bay Leaf",
           "Grapefruit",
           "Cedar",
           "Vetiver",
@@ -333901,6 +335667,15 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Agarwood (Oud)",
+          "Musk",
+          "Rose"
+        ],
+        "families": 1
       }
     },
     {
@@ -338168,6 +339943,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -339114,6 +340892,18 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_MULTI_FAMILY_CONSENSUS",
+        "best": [
+          "Orange Blossom",
+          "Honey",
+          "Oakmoss",
+          "Vanilla",
+          "Olibanum (Frankincense)",
+          "Paradisone"
+        ],
+        "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
         "best": [
           "Orange Blossom",
           "Honey",
@@ -343626,6 +345416,31 @@
           "Licorice"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Basil",
+            "Licorice"
+          ],
+          [
+            "Basil",
+            "Mint",
+            "Violet Leaf",
+            "Yuzu",
+            "Anise",
+            "Licorice"
+          ],
+          [
+            "Licorice"
+          ],
+          [
+            "Yuzu",
+            "Anise",
+            "Licorice"
+          ]
+        ]
       }
     },
     {
@@ -345351,6 +347166,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -348777,6 +350595,15 @@
           "Hexyl Acetate"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Milk",
+          "Skin",
+          "Yuzu"
+        ],
+        "families": 1
       }
     },
     {
@@ -350983,6 +352810,17 @@
           "Musk"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Gardenia",
+          "Vanilla",
+          "Ylang-Ylang",
+          "Juniper",
+          "Musk"
+        ],
+        "families": 1
       }
     },
     {
@@ -351498,6 +353336,26 @@
           "Pink Pepper"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Black Currant",
+            "Rose",
+            "Patchouli",
+            "Geranium",
+            "Pink Pepper"
+          ],
+          [
+            "Black Currant",
+            "Rose",
+            "Patchouli",
+            "Oakmoss",
+            "Geranium",
+            "Pink Pepper"
+          ]
+        ]
       }
     },
     {
@@ -351978,6 +353836,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -352617,6 +354478,17 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Apple",
+          "Rose",
+          "Akigalawood",
+          "Sandalwood",
+          "Cedar"
+        ],
+        "families": 1
       }
     },
     {
@@ -353760,6 +355632,54 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Milk",
+            "Vanilla",
+            "Lemon",
+            "Rhubarb"
+          ],
+          [
+            "Milk",
+            "Vanilla",
+            "Lemon Verbena",
+            "Mint",
+            "Oakmoss"
+          ],
+          [
+            "Milk",
+            "Vanilla",
+            "Lemon Verbena",
+            "Mint",
+            "Rhubarb",
+            "Oakmoss"
+          ],
+          [
+            "Milk",
+            "Vanilla",
+            "Lemon Verbena",
+            "Oakmoss"
+          ],
+          [
+            "Milk",
+            "Vanilla",
+            "Lemon Verbena",
+            "Rhubarb",
+            "Oakmoss"
+          ],
+          [
+            "Milk",
+            "Vanilla",
+            "Rhubarb"
+          ],
+          [
+            "Vanilla",
+            "Rhubarb"
+          ]
+        ]
       }
     },
     {
@@ -354218,6 +356138,17 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Musk",
+          "Musk",
+          "Cedar",
+          "Ambrettolide",
+          "Ambroxan"
+        ],
+        "families": 1
       }
     },
     {
@@ -355665,6 +357596,35 @@
           "Amber"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Oakmoss",
+            "Bergamot",
+            "Cedar",
+            "Amber"
+          ],
+          [
+            "Rose",
+            "Bergamot",
+            "Amber"
+          ],
+          [
+            "Rose",
+            "Bergamot",
+            "Cedar",
+            "Amber"
+          ],
+          [
+            "Rose",
+            "Oakmoss",
+            "Bergamot",
+            "Cedar",
+            "Amber"
+          ]
+        ]
       }
     },
     {
@@ -355945,6 +357905,18 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Passionfruit",
+          "Agarwood (Oud)",
+          "Leather",
+          "Fruity Notes",
+          "Akigalawood",
+          "Saffron"
+        ],
+        "families": 1
       }
     },
     {
@@ -357404,7 +359376,7 @@
         "Rose",
         "Cacao Butter"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -357619,6 +359591,22 @@
           "Cacao Butter"
         ],
         "families": 1
+      },
+      "observedNotes": [
+        "Raspberry",
+        "Violet Leaf",
+        "Leather",
+        "Liquor",
+        "Rose",
+        "Cacao Butter"
+      ],
+      "proof": "SOCIAL_CARD_ONLY_WHOLE_PANEL_SECOND_PASS; >=3 INDEPENDENT PREPROCESSING FAMILIES; ALL STRICT READS AGREE; COMPLETE ORDERED SEQUENCE; CATALOG_USED_ONLY_FOR_FINAL EXACT CHECK",
+      "wholePanelSecondPassEvidence": {
+        "families": [
+          "t202",
+          "t228",
+          "unsharp3"
+        ]
       }
     },
     {
@@ -360707,6 +362695,15 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Sandalwood",
+          "Milk",
+          "Cedar"
+        ],
+        "families": 1
       }
     },
     {
@@ -362588,6 +364585,18 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Lime",
+          "Beeswax",
+          "Bergamot",
+          "Lily-of-the-Valley",
+          "Petitgrain",
+          "Tarragon"
+        ],
+        "families": 2
       }
     },
     {
@@ -363114,6 +365123,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -364147,6 +366159,16 @@
         "best": [
           "Jasmine",
           "Bergamot"
+        ],
+        "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Jasmine",
+          "Bergamot",
+          "Musk",
+          "Musk"
         ],
         "families": 1
       }
@@ -367476,6 +369498,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -368518,6 +370543,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -379218,6 +381246,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -381216,6 +383247,16 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Olibanum (Frankincense)",
+          "Cedar",
+          "Cardamom",
+          "Vetiver"
+        ],
+        "families": 1
       }
     },
     {
@@ -382162,6 +384203,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -382309,6 +384353,16 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Iris",
+          "Pink Pepper",
+          "Ambroxan",
+          "Musk"
+        ],
+        "families": 1
       }
     },
     {
@@ -386748,6 +388802,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -387056,6 +389113,18 @@
           "Jasmine"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Rose",
+          "Patchouli",
+          "Red Apple",
+          "Amber",
+          "Jasmine",
+          "Vanilla"
+        ],
+        "families": 2
       }
     },
     {
@@ -388552,6 +390621,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -390335,6 +392407,14 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Cacao Pod",
+          "Star Anise"
+        ],
+        "families": 1
       }
     },
     {
@@ -400457,6 +402537,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -402853,6 +404936,23 @@
           "Papyrus"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Agarwood (Oud)",
+            "Guaiac Wood",
+            "Papyrus"
+          ],
+          [
+            "Agarwood (Oud)",
+            "Guaiac Wood",
+            "Vetiver",
+            "Sandalwood",
+            "Papyrus"
+          ]
+        ]
       }
     },
     {
@@ -409174,6 +411274,18 @@
           "Olibanum (Frankincense)"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Jasmine",
+          "Aldehydes",
+          "Musk",
+          "Musk",
+          "Oak",
+          "Olibanum (Frankincense)"
+        ],
+        "families": 1
       }
     },
     {
@@ -410701,6 +412813,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -411760,6 +413875,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -413916,6 +416034,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -414347,6 +416468,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -414832,6 +416956,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -415063,6 +417190,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -415970,6 +418100,9 @@
           "Pink Pepper"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -417476,6 +419609,15 @@
           "Musk",
           "Tuberose",
           "Tonka Bean",
+          "Musk"
+        ],
+        "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Milk",
+          "Vanilla",
           "Musk"
         ],
         "families": 1
@@ -419229,6 +421371,18 @@
           "Sugar"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Musk",
+          "Pink Pepper",
+          "Cashmir wood",
+          "Cloves",
+          "Cedar",
+          "Sugar"
+        ],
+        "families": 2
       }
     },
     {
@@ -419735,6 +421889,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -420303,6 +422460,68 @@
           "Mandarin Orange"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Vanilla",
+            "Rum",
+            "Licorice",
+            "Mandarin Orange"
+          ],
+          [
+            "Vanilla",
+            "Violet",
+            "Suede",
+            "Rum",
+            "Licorice",
+            "Mandarin Orange"
+          ],
+          [
+            "Vanilla",
+            "Violet Leaf",
+            "Suede",
+            "Licorice",
+            "Mandarin Orange"
+          ],
+          [
+            "Vanilla",
+            "Violet Leaf",
+            "Suede",
+            "Licorice",
+            "Orange"
+          ],
+          [
+            "Vanilla",
+            "Violet Leaf",
+            "Suede",
+            "Mandarin Orange"
+          ],
+          [
+            "Vanilla",
+            "Violet Leaf",
+            "Suede",
+            "Rum",
+            "Licorice",
+            "Mandarin Orange"
+          ],
+          [
+            "Vanilla",
+            "Violet Leaf",
+            "Suede",
+            "Rum",
+            "Licorice",
+            "Orange"
+          ],
+          [
+            "Vanilla",
+            "Violet Leaf",
+            "Suede",
+            "Rum",
+            "Mandarin Orange"
+          ]
+        ]
       }
     },
     {
@@ -421332,6 +423551,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -423318,6 +425540,31 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Passionfruit",
+            "Vanilla",
+            "Bitter Orange"
+          ],
+          [
+            "Passionfruit",
+            "Vanilla",
+            "Bitter Orange",
+            "Frangipani",
+            "Solar Notes"
+          ],
+          [
+            "Passionfruit",
+            "Vanilla",
+            "Bitter Orange",
+            "Frangipani",
+            "Solar Notes",
+            "Lemon"
+          ]
+        ]
       }
     },
     {
@@ -425604,6 +427851,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -425702,6 +427952,15 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Ylang-Ylang",
+          "Musk",
+          "Solar Notes"
+        ],
+        "families": 1
       }
     },
     {
@@ -429421,6 +431680,25 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Lotus",
+            "Fig",
+            "Vetiver"
+          ],
+          [
+            "Lotus",
+            "Fig Leaf",
+            "Vetiver"
+          ],
+          [
+            "Lotus",
+            "Vetiver"
+          ]
+        ]
       }
     },
     {
@@ -431355,6 +433633,22 @@
           "Violet Leaf"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Cherry",
+            "Amber",
+            "Blonde Woods",
+            "Cedar",
+            "Rose",
+            "Violet Leaf"
+          ],
+          [
+            "Violet Leaf"
+          ]
+        ]
       }
     },
     {
@@ -436285,6 +438579,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -437987,6 +440284,15 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Chestnut",
+          "Cherry",
+          "Vanilla"
+        ],
+        "families": 1
       }
     },
     {
@@ -438497,6 +440803,15 @@
         "best": [
           "Fig",
           "Ylang-Ylang",
+          "Salt",
+          "Brown Sugar",
+          "Licorice"
+        ],
+        "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
           "Salt",
           "Brown Sugar",
           "Licorice"
@@ -443543,6 +445858,9 @@
           "Cypriol Oil or Nagarmotha"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -447889,6 +450207,31 @@
           "Myrrh"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Chamomile",
+            "Olibanum (Frankincense)"
+          ],
+          [
+            "Chamomile",
+            "Olibanum (Frankincense)",
+            "Myrrh"
+          ],
+          [
+            "Lavender",
+            "Chamomile",
+            "Olibanum (Frankincense)"
+          ],
+          [
+            "Lavender",
+            "Chamomile",
+            "Olibanum (Frankincense)",
+            "Myrrh"
+          ]
+        ]
       }
     },
     {
@@ -450635,6 +452978,26 @@
           "Neroli"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Star Anise",
+            "Vanilla",
+            "Fennel",
+            "Frangipani",
+            "Tonka Bean",
+            "Neroli"
+          ],
+          [
+            "Star Anise",
+            "Vanilla",
+            "Frangipani",
+            "Tonka Bean",
+            "Neroli"
+          ]
+        ]
       }
     },
     {
@@ -452860,6 +455223,9 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -453257,6 +455623,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -453485,6 +455854,25 @@
           "Neroli"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "SEQUENCE_NOT_EXACT",
+        "observed": [
+          "Musk",
+          "Ylang-Ylang",
+          "Orange Blossom",
+          "Tonka Bean",
+          "Lily",
+          "Neroli"
+        ],
+        "catalog": [
+          "Musk",
+          "Ylang-Ylang",
+          "Tonka Bean",
+          "Lily",
+          "Neroli"
+        ],
+        "families": 3
       }
     },
     {
@@ -457850,6 +460238,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -464453,6 +466844,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -467385,6 +469779,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -470785,6 +473182,15 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Musk",
+          "Sandalwood",
+          "Saffron"
+        ],
+        "families": 1
       }
     },
     {
@@ -472573,6 +474979,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -473941,6 +476350,26 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "SEQUENCE_NOT_EXACT",
+        "observed": [
+          "Sandalwood",
+          "Plum",
+          "Peach",
+          "Carnation",
+          "Ylang-Ylang",
+          "Styrax"
+        ],
+        "catalog": [
+          "Sand",
+          "Plum",
+          "Peach",
+          "Carnation",
+          "Ylang-Ylang",
+          "Styrax"
+        ],
+        "families": 3
       }
     },
     {
@@ -474972,6 +477401,47 @@
           "Peony"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Vanilla",
+            "Fig",
+            "Patchouli",
+            "Carnation",
+            "Peony"
+          ],
+          [
+            "Vanilla",
+            "Fig",
+            "Sandalwood",
+            "Patchouli",
+            "Carnation",
+            "Peony"
+          ],
+          [
+            "Vanilla",
+            "Fig Leaf",
+            "Sandalwood",
+            "Carnation",
+            "Peony"
+          ],
+          [
+            "Vanilla",
+            "Fig Leaf",
+            "Sandalwood",
+            "Patchouli",
+            "Carnation",
+            "Peony"
+          ],
+          [
+            "Vanilla",
+            "Patchouli",
+            "Carnation",
+            "Peony"
+          ]
+        ]
       }
     },
     {
@@ -476592,6 +479062,24 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Musk",
+            "Pear",
+            "Lily-of-the-Valley",
+            "Jasmine"
+          ],
+          [
+            "Musk",
+            "Pear",
+            "Lily-of-the-Valley",
+            "Jasmine",
+            "Rose"
+          ]
+        ]
       }
     },
     {
@@ -476797,6 +479285,29 @@
           "Bergamot"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Leather",
+            "Jasmine",
+            "Bergamot"
+          ],
+          [
+            "Leather",
+            "Oakmoss",
+            "Pink Pepper",
+            "Jasmine",
+            "Bergamot"
+          ],
+          [
+            "Leather",
+            "Pink Pepper",
+            "Jasmine",
+            "Bergamot"
+          ]
+        ]
       }
     },
     {
@@ -477899,6 +480410,26 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Violet",
+            "Heliotrope",
+            "Rose",
+            "Ylang-Ylang",
+            "Peach"
+          ],
+          [
+            "Violet",
+            "Iris",
+            "Heliotrope",
+            "Rose",
+            "Ylang-Ylang",
+            "Peach"
+          ]
+        ]
       }
     },
     {
@@ -481262,6 +483793,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -483051,6 +485585,33 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "FAMILY_DISAGREEMENT"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Ylang-Ylang",
+            "Amber",
+            "Musk",
+            "Raspberry",
+            "Jasmine"
+          ],
+          [
+            "Ylang-Ylang",
+            "Amber",
+            "Musk",
+            "Raspberry",
+            "Jasmine",
+            "Patchouli"
+          ],
+          [
+            "Ylang-Ylang",
+            "Amber",
+            "Raspberry",
+            "Jasmine",
+            "Patchouli"
+          ]
+        ]
       }
     },
     {
@@ -483344,6 +485905,9 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -487353,6 +489917,15 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Patchouli",
+          "Musk",
+          "Coconut"
+        ],
+        "families": 1
       }
     },
     {
@@ -489653,6 +492226,15 @@
           "Cedar"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Jasmine",
+          "Musk",
+          "Cedar"
+        ],
+        "families": 2
       }
     },
     {
@@ -493434,6 +496016,37 @@
           "Floral Notes"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Pink Pepper",
+            "Cotton Candy",
+            "Vanilla"
+          ],
+          [
+            "Pink Pepper",
+            "Cotton Candy",
+            "Vanilla",
+            "Musk",
+            "Floral Notes"
+          ],
+          [
+            "Pink Pepper",
+            "Cotton Candy",
+            "Vanilla",
+            "Musk",
+            "Gardenia",
+            "Floral Notes"
+          ],
+          [
+            "Vanilla",
+            "Musk",
+            "Gardenia",
+            "Floral Notes"
+          ]
+        ]
       }
     },
     {
@@ -500458,6 +503071,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -500710,6 +503326,38 @@
           "Tuberose"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Grapefruit",
+            "Orange Blossom",
+            "Jasmine"
+          ],
+          [
+            "Grapefruit",
+            "Orange Blossom",
+            "Jasmine",
+            "Ylang-Ylang",
+            "Mandarin Orange",
+            "Tuberose"
+          ],
+          [
+            "Grapefruit",
+            "Orange Blossom",
+            "Ylang-Ylang",
+            "Mandarin Orange",
+            "Tuberose"
+          ],
+          [
+            "Orange Blossom",
+            "Jasmine",
+            "Ylang-Ylang",
+            "Mandarin Orange",
+            "Tuberose"
+          ]
+        ]
       }
     },
     {
@@ -505206,6 +507854,9 @@
           "Blackberry"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -520078,6 +522729,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -523440,6 +526094,17 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Lime",
+          "Lily-of-the-Valley",
+          "Lilac",
+          "Jasmine",
+          "Tuberose"
+        ],
+        "families": 1
       }
     },
     {
@@ -527046,6 +529711,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -535380,6 +538048,57 @@
           "Sugar"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Caramel",
+            "Sugar"
+          ],
+          [
+            "Marshmallow",
+            "Patchouli",
+            "Caramel",
+            "Vanilla"
+          ],
+          [
+            "Marshmallow",
+            "Patchouli",
+            "Caramel",
+            "Vanilla",
+            "Sugar"
+          ],
+          [
+            "Strawberry",
+            "Marshmallow",
+            "Caramel",
+            "Vanilla",
+            "Sugar"
+          ],
+          [
+            "Strawberry",
+            "Marshmallow",
+            "Patchouli",
+            "Caramel",
+            "Sugar"
+          ],
+          [
+            "Strawberry",
+            "Marshmallow",
+            "Patchouli",
+            "Caramel",
+            "Vanilla",
+            "Sugar"
+          ],
+          [
+            "Strawberry",
+            "Patchouli",
+            "Caramel",
+            "Vanilla",
+            "Sugar"
+          ]
+        ]
       }
     },
     {
@@ -535622,6 +538341,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -541799,6 +544521,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -542294,6 +545019,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -548409,7 +551137,7 @@
         "Musk",
         "Iris"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -548550,6 +551278,21 @@
           "Iris"
         ],
         "families": 1
+      },
+      "observedNotes": [
+        "Rose",
+        "Red Berries",
+        "Musk",
+        "Iris"
+      ],
+      "proof": "SOCIAL_CARD_ONLY_WHOLE_PANEL_SECOND_PASS; >=3 INDEPENDENT PREPROCESSING FAMILIES; ALL STRICT READS AGREE; COMPLETE ORDERED SEQUENCE; CATALOG_USED_ONLY_FOR_FINAL EXACT CHECK",
+      "wholePanelSecondPassEvidence": {
+        "families": [
+          "t178",
+          "t202",
+          "t228",
+          "unsharp1"
+        ]
       }
     },
     {
@@ -552412,6 +555155,18 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Hyacinth",
+          "Galbanum",
+          "Aldehydes",
+          "Oakmoss",
+          "Iris",
+          "Jasmine"
+        ],
+        "families": 1
       }
     },
     {
@@ -557534,6 +560289,38 @@
           "Cedar"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Jasmine"
+          ],
+          [
+            "Lemon",
+            "Hyacinth",
+            "Lemon",
+            "Jasmine"
+          ],
+          [
+            "Lemon Verbena"
+          ],
+          [
+            "Lemon Verbena",
+            "Hyacinth",
+            "Lemon",
+            "Galbanum",
+            "Jasmine",
+            "Cedar"
+          ],
+          [
+            "Lemon Verbena",
+            "Hyacinth",
+            "Lemon",
+            "Jasmine",
+            "Cedar"
+          ]
+        ]
       }
     },
     {
@@ -568249,6 +571036,27 @@
           "Lemon"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Jasmine",
+            "Lily-of-the-Valley",
+            "Orange",
+            "Mandarin Orange",
+            "Musk",
+            "Lemon"
+          ],
+          [
+            "Jasmine",
+            "Lily-of-the-Valley",
+            "Orange Blossom",
+            "Mandarin Orange",
+            "Musk",
+            "Lemon"
+          ]
+        ]
       }
     },
     {
@@ -570904,6 +573712,15 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_MULTI_FAMILY_CONSENSUS",
+        "best": [
+          "Coca-Cola",
+          "Lime",
+          "Cedar"
+        ],
+        "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
         "best": [
           "Coca-Cola",
           "Lime",
@@ -574590,7 +577407,7 @@
         "Iris",
         "Nutmeg"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -574758,6 +577575,22 @@
           "Nutmeg"
         ],
         "families": 1
+      },
+      "observedNotes": [
+        "Vetiver",
+        "Lavender",
+        "Cashmeran",
+        "Pepper",
+        "Iris",
+        "Nutmeg"
+      ],
+      "proof": "SOCIAL_CARD_ONLY_WHOLE_PANEL_SECOND_PASS; >=3 INDEPENDENT PREPROCESSING FAMILIES; ALL STRICT READS AGREE; COMPLETE ORDERED SEQUENCE; CATALOG_USED_ONLY_FOR_FINAL EXACT CHECK",
+      "wholePanelSecondPassEvidence": {
+        "families": [
+          "t178",
+          "t202",
+          "t228"
+        ]
       }
     },
     {
@@ -576875,6 +579708,33 @@
           "Tonka Bean"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Praline",
+            "Vanilla",
+            "Black Currant",
+            "Tonka Bean",
+            "Iris"
+          ],
+          [
+            "Praline",
+            "Vanilla",
+            "Patchouli",
+            "Black Currant",
+            "Tonka Bean"
+          ],
+          [
+            "Praline",
+            "Vanilla",
+            "Patchouli",
+            "Black Currant",
+            "Tonka Bean",
+            "Iris"
+          ]
+        ]
       }
     },
     {
@@ -577095,6 +579955,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -578154,6 +581017,9 @@
       },
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -580928,6 +583794,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -585023,6 +587892,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -586931,6 +589803,18 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Lotus",
+          "Pear",
+          "Freesia",
+          "Vanilla",
+          "Musk",
+          "Peony"
+        ],
+        "families": 2
       }
     },
     {
@@ -588547,6 +591431,22 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Akigalawood",
+            "Musk"
+          ],
+          [
+            "Green Notes",
+            "Dew Drop",
+            "White Flowers",
+            "Akigalawood",
+            "Musk"
+          ]
+        ]
       }
     },
     {
@@ -592379,6 +595279,48 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Musk",
+            "Orange",
+            "Osmanthus",
+            "Amber",
+            "Vetiver",
+            "Bergamot"
+          ],
+          [
+            "Musk",
+            "Orange Blossom",
+            "Amber",
+            "Vetiver",
+            "Bergamot"
+          ],
+          [
+            "Musk",
+            "Orange Blossom",
+            "Osmanthus",
+            "Amber",
+            "Bergamot"
+          ],
+          [
+            "Musk",
+            "Orange Blossom",
+            "Osmanthus",
+            "Amber",
+            "Vetiver",
+            "Bergamot"
+          ],
+          [
+            "Orange",
+            "Osmanthus",
+            "Amber",
+            "Vetiver",
+            "Bergamot"
+          ]
+        ]
       }
     },
     {
@@ -593471,6 +596413,48 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Musk",
+            "Orange",
+            "Osmanthus",
+            "Amber",
+            "Vetiver",
+            "Bergamot"
+          ],
+          [
+            "Musk",
+            "Orange Blossom",
+            "Amber",
+            "Vetiver",
+            "Bergamot"
+          ],
+          [
+            "Musk",
+            "Orange Blossom",
+            "Osmanthus",
+            "Amber",
+            "Bergamot"
+          ],
+          [
+            "Musk",
+            "Orange Blossom",
+            "Osmanthus",
+            "Amber",
+            "Vetiver",
+            "Bergamot"
+          ],
+          [
+            "Orange",
+            "Osmanthus",
+            "Amber",
+            "Vetiver",
+            "Bergamot"
+          ]
+        ]
       }
     },
     {
@@ -598808,6 +601792,30 @@
           "Carnation"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Carnation",
+            "Castoreum",
+            "Coriander"
+          ],
+          [
+            "Carnation",
+            "Castoreum",
+            "Coriander",
+            "Patchouli"
+          ],
+          [
+            "Oakmoss",
+            "Civet",
+            "Carnation",
+            "Castoreum",
+            "Coriander",
+            "Patchouli"
+          ]
+        ]
       }
     },
     {
@@ -599884,6 +602892,29 @@
           "Cedar"
         ],
         "families": 1
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Galbanum",
+            "Violet Leaf",
+            "Vetiver",
+            "Rose",
+            "Cedar"
+          ],
+          [
+            "Iris",
+            "Galbanum",
+            "Violet Leaf",
+            "Vetiver",
+            "Rose",
+            "Cedar"
+          ],
+          [
+            "Vetiver"
+          ]
+        ]
       }
     },
     {
@@ -600573,6 +603604,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -605223,6 +608257,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -608130,6 +611167,26 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "COMPETING_STRICT_SEQUENCE",
+        "sequences": [
+          [
+            "Mimosa",
+            "Iris",
+            "Vanilla",
+            "Heliotrope",
+            "White Flowers"
+          ],
+          [
+            "Mimosa",
+            "Musk",
+            "Iris",
+            "Vanilla",
+            "Heliotrope",
+            "White Flowers"
+          ]
+        ]
       }
     },
     {
@@ -611139,6 +614196,17 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "LESS_THAN_3_FAMILIES",
+        "best": [
+          "Patchouli",
+          "Hazelnut",
+          "Vetiver",
+          "Pink Pepper",
+          "Grapefruit"
+        ],
+        "families": 1
       }
     },
     {
@@ -625532,6 +628600,9 @@
       ],
       "wholePanelConsensusDiagnostic": {
         "reason": "NO_STRICT_WHOLE_PANEL_READ"
+      },
+      "wholePanelSecondPassDiagnostic": {
+        "reason": "NO_STRICT_SECOND_PASS"
       }
     },
     {
@@ -628357,6 +631428,21 @@
       "NO_MULTI_FAMILY_CONSENSUS": 81,
       "NO_STRICT_WHOLE_PANEL_READ": 133,
       "SEQUENCE_NOT_EXACT": 44
+    }
+  },
+  "wholePanelSecondPassRecovery": {
+    "examined": 232,
+    "recovered": 3,
+    "codes": [
+      "2515-LAN",
+      "682-GUR",
+      "774-LAL"
+    ],
+    "rejected": {
+      "COMPETING_STRICT_SEQUENCE": 77,
+      "LESS_THAN_3_FAMILIES": 48,
+      "NO_STRICT_SECOND_PASS": 97,
+      "SEQUENCE_NOT_EXACT": 7
     }
   }
 }
