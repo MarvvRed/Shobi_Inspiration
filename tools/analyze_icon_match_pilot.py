@@ -124,11 +124,15 @@ def segments_from_band(panel_rgb, y1, y2):
     arr = panel_rgb[max(0, int(y1)):min(panel_rgb.shape[0], int(y2)), :, :]
     if arr.size == 0:
         return []
+
     # Icons are colored/dark against white. Text labels are below these narrow bands.
+    # Keep segmentation deliberately independent from catalog note count/content.
     dist = 255 - arr.min(axis=2)
     mask = dist > 18
     active = (mask.sum(axis=0) >= 3).tolist()
-    # Bridge small internal holes within one icon, not the large gap between tiles.
+
+    # Bridge only tiny holes inside a silhouette. The old <=10 px bridge could join
+    # neighbouring note tiles before they were even measured.
     i = 0
     while i < len(active):
         if active[i]:
@@ -137,27 +141,60 @@ def segments_from_band(panel_rgb, y1, y2):
         j = i
         while j < len(active) and not active[j]:
             j += 1
-        if i > 0 and j < len(active) and (j - i) <= 10:
+        if i > 0 and j < len(active) and (j - i) <= 4:
             for k in range(i, j):
                 active[k] = True
         i = j
-    segs, start = [], None
+
+    # First collect raw foreground runs without generous padding. Small fragments are
+    # retained here because one icon can legitimately contain disconnected shapes.
+    raw, start = [], None
     for x, val in enumerate(active + [False]):
         if val and start is None:
             start = x
         elif start is not None and not val:
             width = x - start
-            if 18 <= width <= 125:
-                segs.append((max(0, start-5), min(panel_rgb.shape[1], x+5)))
+            if 5 <= width <= 90:
+                raw.append((start, x))
             start = None
-    # Merge fragments whose centers are implausibly close for separate note tiles.
+
+    # Join fragments only when the union still has the geometry of ONE icon.
+    # This is the critical guard missing from the first pilot: previously any chain of
+    # gaps <16 px could grow into a 200-300 px crop containing multiple icons/text.
     merged = []
-    for seg in segs:
-        if merged and seg[0] - merged[-1][1] < 16:
-            merged[-1] = (merged[-1][0], seg[1])
-        else:
-            merged.append(seg)
-    return merged[:4]
+    for seg in raw:
+        if merged:
+            prev = merged[-1]
+            gap = seg[0] - prev[1]
+            union_width = seg[1] - prev[0]
+            if 0 <= gap <= 8 and union_width <= 82:
+                merged[-1] = (prev[0], seg[1])
+                continue
+        merged.append(seg)
+
+    # Add a small context margin only after merging and reject residual noise. A note
+    # tile in these 74 px bands must have a meaningful horizontal AND vertical span.
+    out = []
+    band_h = arr.shape[0]
+    for xa, xb in merged:
+        xa = max(0, xa - 4)
+        xb = min(panel_rgb.shape[1], xb + 4)
+        width = xb - xa
+        if not (18 <= width <= 90):
+            continue
+        local_mask = mask[:, max(0, xa):min(mask.shape[1], xb)]
+        ys = np.where(local_mask)[0]
+        if len(ys) < 20:
+            continue
+        vertical_span = int(ys.max()) - int(ys.min()) + 1
+        if vertical_span < max(16, int(band_h * 0.28)):
+            continue
+        out.append((xa, xb))
+
+    # Social Card geometry supports at most four note tiles per row. Sorting keeps
+    # visual left-to-right order explicit and prevents edge noise from reordering it.
+    out.sort(key=lambda p: p[0])
+    return out[:4]
 
 
 def match_tile(tile, ref_names, ref_matrix):
