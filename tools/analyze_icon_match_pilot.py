@@ -8,8 +8,9 @@ using the local Fragrantica icon archive.
 Safety properties:
 - Catalog notes never guide segmentation or icon recognition.
 - Each detected icon is matched against the full local icon corpus.
-- A match is considered high-confidence only when both absolute similarity and
-  separation from the runner-up clear conservative thresholds.
+- Recognition combines shape, colour and a perceptual edge hash.
+- A match is high-confidence only when absolute similarity and runner-up separation
+  both clear conservative thresholds.
 - The catalog sequence is compared only after the full image-derived sequence is fixed.
 """
 from __future__ import annotations
@@ -20,7 +21,6 @@ import json
 import os
 import re
 import subprocess
-from pathlib import Path
 
 import numpy as np
 from PIL import Image
@@ -30,8 +30,10 @@ from audit_social_card_order_from_images import ROOT, DB, OUT, CROP, code, find_
 MAP = ROOT / "database/assets/note-icons/map.js"
 PILOT_OUT = ROOT / "database/audits/icon-match-pilot.json"
 ICON_SIZE = 48
-ABS_THRESHOLD = 0.72
-MARGIN_THRESHOLD = 0.055
+RGB_SIZE = 24
+HASH_SIZE = 16
+ABS_THRESHOLD = 0.78
+MARGIN_THRESHOLD = 0.030
 
 
 def parse_map():
@@ -52,26 +54,57 @@ def foreground_bbox(arr):
     return int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1
 
 
+def _unit(vec):
+    vec = np.asarray(vec, dtype=np.float32).reshape(-1)
+    norm = float(np.linalg.norm(vec))
+    if norm < 1e-6:
+        return None
+    return vec / norm
+
+
 def normalize_icon(im):
-    rgb = im.convert("RGBA")
-    bg = Image.new("RGBA", rgb.size, (255, 255, 255, 255))
-    bg.alpha_composite(rgb)
+    """Return one weighted feature vector: silhouette + colour + perceptual edges."""
+    rgba = im.convert("RGBA")
+    bg = Image.new("RGBA", rgba.size, (255, 255, 255, 255))
+    bg.alpha_composite(rgba)
     arr = np.asarray(bg.convert("RGB"), dtype=np.uint8)
     box = foreground_bbox(arr)
     if not box:
         return None
     x1, y1, x2, y2 = box
     crop = Image.fromarray(arr[y1:y2, x1:x2])
-    crop.thumbnail((ICON_SIZE - 4, ICON_SIZE - 4), Image.Resampling.LANCZOS)
-    canvas = Image.new("L", (ICON_SIZE, ICON_SIZE), 255)
-    gray = crop.convert("L")
-    canvas.paste(gray, ((ICON_SIZE - gray.width)//2, (ICON_SIZE - gray.height)//2))
-    vec = np.asarray(canvas, dtype=np.float32).reshape(-1)
-    vec = 255.0 - vec
-    norm = float(np.linalg.norm(vec))
-    if norm < 1e-6:
+
+    # 1) Shape/silhouette. This preserves the strongest signal from the old matcher.
+    shape_crop = crop.copy()
+    shape_crop.thumbnail((ICON_SIZE - 4, ICON_SIZE - 4), Image.Resampling.LANCZOS)
+    shape_canvas = Image.new("L", (ICON_SIZE, ICON_SIZE), 255)
+    gray = shape_crop.convert("L")
+    shape_canvas.paste(gray, ((ICON_SIZE-gray.width)//2, (ICON_SIZE-gray.height)//2))
+    shape = _unit(255.0 - np.asarray(shape_canvas, dtype=np.float32))
+    if shape is None:
         return None
-    return vec / norm
+
+    # 2) Colour layout. Whitespace becomes zero signal; RGB differences remain visible.
+    rgb_crop = crop.copy()
+    rgb_crop.thumbnail((RGB_SIZE - 2, RGB_SIZE - 2), Image.Resampling.LANCZOS)
+    rgb_canvas = Image.new("RGB", (RGB_SIZE, RGB_SIZE), (255, 255, 255))
+    rgb_canvas.paste(rgb_crop, ((RGB_SIZE-rgb_crop.width)//2, (RGB_SIZE-rgb_crop.height)//2))
+    rgb_arr = np.asarray(rgb_canvas, dtype=np.float32)
+    colour = _unit((255.0 - rgb_arr).reshape(-1))
+    if colour is None:
+        return None
+
+    # 3) Perceptual edge hash (dHash-style). Robust to modest resize/antialias changes.
+    h = crop.convert("L").resize((HASH_SIZE + 1, HASH_SIZE), Image.Resampling.LANCZOS)
+    ha = np.asarray(h, dtype=np.float32)
+    dhash = _unit((ha[:, 1:] < ha[:, :-1]).astype(np.float32).reshape(-1))
+    if dhash is None:
+        dhash = np.zeros(HASH_SIZE * HASH_SIZE, dtype=np.float32)
+
+    # Each component is unit length before weighting, so no high-dimensional component
+    # wins merely because it contains more pixels.
+    combined = np.concatenate((shape * 0.52, colour * 0.36, dhash * 0.12))
+    return _unit(combined)
 
 
 def build_reference_matrix(items):
@@ -118,15 +151,7 @@ def locate_notes_header(panel):
 
 
 def segments_from_band(panel_rgb, y1, y2):
-    """Find icon slots by foreground-energy peaks, not by connected-run width.
-
-    The card crop has persistent decorative/edge pixels near x=0 and x=420. The old
-    run-merging segmenter treated those as icons and could also merge several nearby
-    fragments into an 80+ px pseudo-icon. Here we first remove the unsafe side gutters,
-    then identify independent icon centres from a smoothed horizontal energy profile.
-    Fixed-width crops around those centres prevent one candidate from swallowing two
-    neighbouring note tiles. No catalog note count or identity is used.
-    """
+    """Find icon slots from horizontal foreground-energy peaks."""
     arr = panel_rgb[max(0, int(y1)):min(panel_rgb.shape[0], int(y2)), :, :]
     if arr.size == 0:
         return []
@@ -134,22 +159,15 @@ def segments_from_band(panel_rgb, y1, y2):
     width = arr.shape[1]
     dist = 255 - arr.min(axis=2)
     mask = dist > 18
-
-    # The first/last ~25 px repeatedly contain card border/background artifacts.
     gutter = 28
     if width <= gutter * 2 + 40:
         return []
     mask[:, :gutter] = False
     mask[:, width-gutter:] = False
 
-    # Horizontal foreground energy. Smooth over 13 px so disconnected pieces of one
-    # pictogram vote for the same centre while remaining much narrower than tile gaps.
     energy = mask.sum(axis=0).astype(np.float32)
     kernel = np.ones(13, dtype=np.float32) / 13.0
     smooth = np.convolve(energy, kernel, mode="same")
-
-    # Reject weak noise relative to this row. An actual icon occupies many rows and has
-    # a broad local peak; edge specks and isolated letters do not.
     usable = smooth[gutter:width-gutter]
     if usable.size == 0 or float(usable.max()) < 2.0:
         return []
@@ -158,13 +176,9 @@ def segments_from_band(panel_rgb, y1, y2):
     candidates = []
     for x in range(gutter + 1, width - gutter - 1):
         v = float(smooth[x])
-        if v < threshold:
-            continue
-        if v >= float(smooth[x-1]) and v >= float(smooth[x+1]):
+        if v >= threshold and v >= float(smooth[x-1]) and v >= float(smooth[x+1]):
             candidates.append((v, x))
 
-    # Non-maximum suppression: one centre per icon. Social Card note tiles are well
-    # separated horizontally; 62 px is conservative even for four-column layouts.
     chosen = []
     for score, x in sorted(candidates, reverse=True):
         if all(abs(x - cx) >= 62 for _, cx in chosen):
@@ -172,8 +186,6 @@ def segments_from_band(panel_rgb, y1, y2):
         if len(chosen) == 4:
             break
 
-    # Validate each centre using a fixed 76 px crop. This eliminates the old failure
-    # mode where a merged run became 100-300 px wide and included adjacent icons/text.
     out = []
     half = 38
     for _, cx in sorted(chosen, key=lambda p: p[1]):
@@ -188,7 +200,6 @@ def segments_from_band(panel_rgb, y1, y2):
         if vertical_span < 18 or horizontal_span < 12:
             continue
         out.append((xa, xb))
-
     return out
 
 
@@ -197,19 +208,23 @@ def match_tile(tile, ref_names, ref_matrix):
     if vec is None:
         return None
     scores = ref_matrix @ vec
-    if len(scores) < 2:
+    if len(scores) < 3:
         return None
-    idx = np.argpartition(scores, -2)[-2:]
+    idx = np.argpartition(scores, -3)[-3:]
     idx = idx[np.argsort(scores[idx])[::-1]]
-    best, second = int(idx[0]), int(idx[1])
-    s1, s2 = float(scores[best]), float(scores[second])
+    best, second, third = map(int, idx[:3])
+    s1, s2, s3 = float(scores[best]), float(scores[second]), float(scores[third])
+    margin = s1 - s2
+    confident = bool(s1 >= ABS_THRESHOLD and margin >= MARGIN_THRESHOLD)
     return {
         "note": ref_names[best],
         "score": round(s1, 4),
         "runnerUp": ref_names[second],
         "runnerUpScore": round(s2, 4),
-        "margin": round(s1-s2, 4),
-        "confident": bool(s1 >= ABS_THRESHOLD and s1-s2 >= MARGIN_THRESHOLD),
+        "third": ref_names[third],
+        "thirdScore": round(s3, 4),
+        "margin": round(margin, 4),
+        "confident": confident,
     }
 
 
@@ -233,20 +248,16 @@ def inspect(row, ref_names, ref_matrix):
         return {**base, "result": "NO_NOTES_HEADER"}
     arr = np.asarray(panel, dtype=np.uint8)
     bands = [(header_y+12, header_y+86), (header_y+148, header_y+222)]
-    sequence, details = [], []
+    details = []
     for row_idx, (ya,yb) in enumerate(bands):
-        segs = segments_from_band(arr, ya, yb)
-        for xa, xb in segs:
+        for xa, xb in segments_from_band(arr, ya, yb):
             tile = panel.crop((xa, max(0,int(ya)), xb, min(380,int(yb))))
             hit = match_tile(tile, ref_names, ref_matrix)
             if hit:
                 details.append({"row": row_idx, "x": [xa,xb], **hit})
-                if hit["confident"]:
-                    sequence.append(hit["note"])
-                else:
-                    sequence.append(None)
     if not details:
         return {**base, "result": "NO_ICON_SEGMENTS", "headerY": round(header_y,1)}
+
     all_conf = all(x["confident"] for x in details)
     observed = [x["note"] for x in details] if all_conf else []
     catalog = list(row.get("fragranticaSocialCardNotes") or [])
@@ -282,8 +293,9 @@ def main():
     for r in results:
         counts[r["result"]] = counts.get(r["result"], 0) + 1
     payload = {
-        "mode": "NON_DESTRUCTIVE_ICON_MATCH_PILOT",
-        "thresholds": {"absoluteCosine": ABS_THRESHOLD, "runnerUpMargin": MARGIN_THRESHOLD},
+        "mode": "NON_DESTRUCTIVE_MULTIMODAL_ICON_MATCH_PILOT",
+        "thresholds": {"combinedCosine": ABS_THRESHOLD, "runnerUpMargin": MARGIN_THRESHOLD},
+        "featureWeights": {"shape": 0.52, "colour": 0.36, "dHash": 0.12},
         "referenceIcons": len(ref_names),
         "targets": len(targets),
         "counts": dict(sorted(counts.items())),
