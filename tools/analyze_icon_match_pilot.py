@@ -44,7 +44,6 @@ def parse_map():
 
 
 def foreground_bbox(arr):
-    # RGB array on white background. Keep colored/dark icon pixels, ignore white.
     dist = 255 - arr.min(axis=2)
     mask = dist > 14
     ys, xs = np.where(mask)
@@ -63,13 +62,12 @@ def normalize_icon(im):
         return None
     x1, y1, x2, y2 = box
     crop = Image.fromarray(arr[y1:y2, x1:x2])
-    # Preserve aspect ratio on a square white canvas.
     crop.thumbnail((ICON_SIZE - 4, ICON_SIZE - 4), Image.Resampling.LANCZOS)
     canvas = Image.new("L", (ICON_SIZE, ICON_SIZE), 255)
     gray = crop.convert("L")
     canvas.paste(gray, ((ICON_SIZE - gray.width)//2, (ICON_SIZE - gray.height)//2))
     vec = np.asarray(canvas, dtype=np.float32).reshape(-1)
-    vec = 255.0 - vec  # foreground becomes positive signal
+    vec = 255.0 - vec
     norm = float(np.linalg.norm(vec))
     if norm < 1e-6:
         return None
@@ -93,7 +91,6 @@ def build_reference_matrix(items):
 
 
 def locate_notes_header(panel):
-    # One cheap OCR pass only to locate the heading; note identity never comes from OCR here.
     scaled = panel.resize((panel.width*3, panel.height*3), Image.Resampling.LANCZOS)
     buf = io.BytesIO(); scaled.save(buf, format="PNG")
     try:
@@ -121,80 +118,78 @@ def locate_notes_header(panel):
 
 
 def segments_from_band(panel_rgb, y1, y2):
+    """Find icon slots by foreground-energy peaks, not by connected-run width.
+
+    The card crop has persistent decorative/edge pixels near x=0 and x=420. The old
+    run-merging segmenter treated those as icons and could also merge several nearby
+    fragments into an 80+ px pseudo-icon. Here we first remove the unsafe side gutters,
+    then identify independent icon centres from a smoothed horizontal energy profile.
+    Fixed-width crops around those centres prevent one candidate from swallowing two
+    neighbouring note tiles. No catalog note count or identity is used.
+    """
     arr = panel_rgb[max(0, int(y1)):min(panel_rgb.shape[0], int(y2)), :, :]
     if arr.size == 0:
         return []
 
-    # Icons are colored/dark against white. Text labels are below these narrow bands.
-    # Keep segmentation deliberately independent from catalog note count/content.
+    width = arr.shape[1]
     dist = 255 - arr.min(axis=2)
     mask = dist > 18
-    active = (mask.sum(axis=0) >= 3).tolist()
 
-    # Bridge only tiny holes inside a silhouette. The old <=10 px bridge could join
-    # neighbouring note tiles before they were even measured.
-    i = 0
-    while i < len(active):
-        if active[i]:
-            i += 1
+    # The first/last ~25 px repeatedly contain card border/background artifacts.
+    gutter = 28
+    if width <= gutter * 2 + 40:
+        return []
+    mask[:, :gutter] = False
+    mask[:, width-gutter:] = False
+
+    # Horizontal foreground energy. Smooth over 13 px so disconnected pieces of one
+    # pictogram vote for the same centre while remaining much narrower than tile gaps.
+    energy = mask.sum(axis=0).astype(np.float32)
+    kernel = np.ones(13, dtype=np.float32) / 13.0
+    smooth = np.convolve(energy, kernel, mode="same")
+
+    # Reject weak noise relative to this row. An actual icon occupies many rows and has
+    # a broad local peak; edge specks and isolated letters do not.
+    usable = smooth[gutter:width-gutter]
+    if usable.size == 0 or float(usable.max()) < 2.0:
+        return []
+    threshold = max(1.8, float(usable.max()) * 0.24)
+
+    candidates = []
+    for x in range(gutter + 1, width - gutter - 1):
+        v = float(smooth[x])
+        if v < threshold:
             continue
-        j = i
-        while j < len(active) and not active[j]:
-            j += 1
-        if i > 0 and j < len(active) and (j - i) <= 4:
-            for k in range(i, j):
-                active[k] = True
-        i = j
+        if v >= float(smooth[x-1]) and v >= float(smooth[x+1]):
+            candidates.append((v, x))
 
-    # First collect raw foreground runs without generous padding. Small fragments are
-    # retained here because one icon can legitimately contain disconnected shapes.
-    raw, start = [], None
-    for x, val in enumerate(active + [False]):
-        if val and start is None:
-            start = x
-        elif start is not None and not val:
-            width = x - start
-            if 5 <= width <= 90:
-                raw.append((start, x))
-            start = None
+    # Non-maximum suppression: one centre per icon. Social Card note tiles are well
+    # separated horizontally; 62 px is conservative even for four-column layouts.
+    chosen = []
+    for score, x in sorted(candidates, reverse=True):
+        if all(abs(x - cx) >= 62 for _, cx in chosen):
+            chosen.append((score, x))
+        if len(chosen) == 4:
+            break
 
-    # Join fragments only when the union still has the geometry of ONE icon.
-    # This is the critical guard missing from the first pilot: previously any chain of
-    # gaps <16 px could grow into a 200-300 px crop containing multiple icons/text.
-    merged = []
-    for seg in raw:
-        if merged:
-            prev = merged[-1]
-            gap = seg[0] - prev[1]
-            union_width = seg[1] - prev[0]
-            if 0 <= gap <= 8 and union_width <= 82:
-                merged[-1] = (prev[0], seg[1])
-                continue
-        merged.append(seg)
-
-    # Add a small context margin only after merging and reject residual noise. A note
-    # tile in these 74 px bands must have a meaningful horizontal AND vertical span.
+    # Validate each centre using a fixed 76 px crop. This eliminates the old failure
+    # mode where a merged run became 100-300 px wide and included adjacent icons/text.
     out = []
-    band_h = arr.shape[0]
-    for xa, xb in merged:
-        xa = max(0, xa - 4)
-        xb = min(panel_rgb.shape[1], xb + 4)
-        width = xb - xa
-        if not (18 <= width <= 90):
-            continue
-        local_mask = mask[:, max(0, xa):min(mask.shape[1], xb)]
-        ys = np.where(local_mask)[0]
-        if len(ys) < 20:
+    half = 38
+    for _, cx in sorted(chosen, key=lambda p: p[1]):
+        xa = max(gutter, cx - half)
+        xb = min(width - gutter, cx + half)
+        local = mask[:, xa:xb]
+        ys, xs = np.where(local)
+        if len(xs) < 35:
             continue
         vertical_span = int(ys.max()) - int(ys.min()) + 1
-        if vertical_span < max(16, int(band_h * 0.28)):
+        horizontal_span = int(xs.max()) - int(xs.min()) + 1
+        if vertical_span < 18 or horizontal_span < 12:
             continue
         out.append((xa, xb))
 
-    # Social Card geometry supports at most four note tiles per row. Sorting keeps
-    # visual left-to-right order explicit and prevents edge noise from reordering it.
-    out.sort(key=lambda p: p[0])
-    return out[:4]
+    return out
 
 
 def match_tile(tile, ref_names, ref_matrix):
@@ -237,7 +232,6 @@ def inspect(row, ref_names, ref_matrix):
     if header_y is None:
         return {**base, "result": "NO_NOTES_HEADER"}
     arr = np.asarray(panel, dtype=np.uint8)
-    # Icon-only bands end before the label bands used by the existing OCR parser.
     bands = [(header_y+12, header_y+86), (header_y+148, header_y+222)]
     sequence, details = [], []
     for row_idx, (ya,yb) in enumerate(bands):
