@@ -63,7 +63,6 @@ def _unit(vec):
 
 
 def normalize_icon(im):
-    """Return one weighted feature vector: silhouette + colour + perceptual edges."""
     rgba = im.convert("RGBA")
     bg = Image.new("RGBA", rgba.size, (255, 255, 255, 255))
     bg.alpha_composite(rgba)
@@ -74,7 +73,6 @@ def normalize_icon(im):
     x1, y1, x2, y2 = box
     crop = Image.fromarray(arr[y1:y2, x1:x2])
 
-    # 1) Shape/silhouette. This preserves the strongest signal from the old matcher.
     shape_crop = crop.copy()
     shape_crop.thumbnail((ICON_SIZE - 4, ICON_SIZE - 4), Image.Resampling.LANCZOS)
     shape_canvas = Image.new("L", (ICON_SIZE, ICON_SIZE), 255)
@@ -84,7 +82,6 @@ def normalize_icon(im):
     if shape is None:
         return None
 
-    # 2) Colour layout. Whitespace becomes zero signal; RGB differences remain visible.
     rgb_crop = crop.copy()
     rgb_crop.thumbnail((RGB_SIZE - 2, RGB_SIZE - 2), Image.Resampling.LANCZOS)
     rgb_canvas = Image.new("RGB", (RGB_SIZE, RGB_SIZE), (255, 255, 255))
@@ -94,15 +91,12 @@ def normalize_icon(im):
     if colour is None:
         return None
 
-    # 3) Perceptual edge hash (dHash-style). Robust to modest resize/antialias changes.
     h = crop.convert("L").resize((HASH_SIZE + 1, HASH_SIZE), Image.Resampling.LANCZOS)
     ha = np.asarray(h, dtype=np.float32)
     dhash = _unit((ha[:, 1:] < ha[:, :-1]).astype(np.float32).reshape(-1))
     if dhash is None:
         dhash = np.zeros(HASH_SIZE * HASH_SIZE, dtype=np.float32)
 
-    # Each component is unit length before weighting, so no high-dimensional component
-    # wins merely because it contains more pixels.
     combined = np.concatenate((shape * 0.52, colour * 0.36, dhash * 0.12))
     return _unit(combined)
 
@@ -150,47 +144,72 @@ def locate_notes_header(panel):
     return min(hits) if hits else None
 
 
+def _best_grid_centres(smooth, gutter, width):
+    """Infer 2/3/4 equally-spaced Social Card cells from image energy only."""
+    usable = smooth[gutter:width-gutter]
+    if usable.size == 0 or float(usable.max()) < 2.0:
+        return []
+    best = None
+    # Social Card rows are laid out on a regular horizontal grid. Score candidate
+    # 2/3/4-cell grids by summed local foreground energy minus irregularity penalty.
+    for n in (2, 3, 4):
+        span = width - 2 * gutter
+        step = span / n
+        centres = [gutter + step * (i + 0.5) for i in range(n)]
+        snapped = []
+        score = 0.0
+        for c in centres:
+            lo = max(gutter, int(round(c - step * 0.28)))
+            hi = min(width - gutter, int(round(c + step * 0.28)))
+            if hi <= lo:
+                break
+            x = lo + int(np.argmax(smooth[lo:hi]))
+            snapped.append(x)
+            score += float(smooth[x])
+        if len(snapped) != n:
+            continue
+        gaps = np.diff(snapped)
+        if len(gaps):
+            irregularity = float(np.std(gaps) / max(1.0, np.mean(gaps)))
+        else:
+            irregularity = 0.0
+        mean_peak = score / n
+        # Penalize grids that manufacture weak extra cells.
+        floor = float(np.percentile(usable, 70))
+        weak = sum(float(smooth[x]) < max(1.8, floor) for x in snapped)
+        objective = mean_peak - irregularity * 8.0 - weak * 2.5
+        if best is None or objective > best[0]:
+            best = (objective, snapped, step)
+    return best[1:] if best else []
+
+
 def segments_from_band(panel_rgb, y1, y2):
-    """Find icon slots from horizontal foreground-energy peaks."""
+    """Infer the regular Social Card grid, then crop exactly one icon per cell."""
     arr = panel_rgb[max(0, int(y1)):min(panel_rgb.shape[0], int(y2)), :, :]
     if arr.size == 0:
         return []
-
     width = arr.shape[1]
     dist = 255 - arr.min(axis=2)
     mask = dist > 18
     gutter = 28
-    if width <= gutter * 2 + 40:
+    if width <= gutter * 2 + 80:
         return []
     mask[:, :gutter] = False
     mask[:, width-gutter:] = False
 
     energy = mask.sum(axis=0).astype(np.float32)
-    kernel = np.ones(13, dtype=np.float32) / 13.0
+    kernel = np.ones(17, dtype=np.float32) / 17.0
     smooth = np.convolve(energy, kernel, mode="same")
-    usable = smooth[gutter:width-gutter]
-    if usable.size == 0 or float(usable.max()) < 2.0:
+    grid = _best_grid_centres(smooth, gutter, width)
+    if not grid:
         return []
-    threshold = max(1.8, float(usable.max()) * 0.24)
-
-    candidates = []
-    for x in range(gutter + 1, width - gutter - 1):
-        v = float(smooth[x])
-        if v >= threshold and v >= float(smooth[x-1]) and v >= float(smooth[x+1]):
-            candidates.append((v, x))
-
-    chosen = []
-    for score, x in sorted(candidates, reverse=True):
-        if all(abs(x - cx) >= 62 for _, cx in chosen):
-            chosen.append((score, x))
-        if len(chosen) == 4:
-            break
+    centres, step = grid
 
     out = []
-    half = 38
-    for _, cx in sorted(chosen, key=lambda p: p[1]):
-        xa = max(gutter, cx - half)
-        xb = min(width - gutter, cx + half)
+    half = int(min(34, max(24, step * 0.32)))
+    for cx in centres:
+        xa = max(gutter, int(round(cx - half)))
+        xb = min(width - gutter, int(round(cx + half)))
         local = mask[:, xa:xb]
         ys, xs = np.where(local)
         if len(xs) < 35:
@@ -249,8 +268,11 @@ def inspect(row, ref_names, ref_matrix):
     arr = np.asarray(panel, dtype=np.uint8)
     bands = [(header_y+12, header_y+86), (header_y+148, header_y+222)]
     details = []
+    row_counts = []
     for row_idx, (ya,yb) in enumerate(bands):
-        for xa, xb in segments_from_band(arr, ya, yb):
+        segs = segments_from_band(arr, ya, yb)
+        row_counts.append(len(segs))
+        for xa, xb in segs:
             tile = panel.crop((xa, max(0,int(ya)), xb, min(380,int(yb))))
             hit = match_tile(tile, ref_names, ref_matrix)
             if hit:
@@ -266,6 +288,7 @@ def inspect(row, ref_names, ref_matrix):
         **base,
         "result": "EXACT_ICON_SEQUENCE" if exact else ("COMPLETE_ICON_SEQUENCE_DIFFERENT" if all_conf else "ICON_MATCH_AMBIGUOUS"),
         "headerY": round(header_y,1),
+        "rowCounts": row_counts,
         "detectedCount": len(details),
         "observed": observed,
         "catalog": catalog,
@@ -293,7 +316,7 @@ def main():
     for r in results:
         counts[r["result"]] = counts.get(r["result"], 0) + 1
     payload = {
-        "mode": "NON_DESTRUCTIVE_MULTIMODAL_ICON_MATCH_PILOT",
+        "mode": "NON_DESTRUCTIVE_GRID_INFERRED_MULTIMODAL_ICON_PILOT",
         "thresholds": {"combinedCosine": ABS_THRESHOLD, "runnerUpMargin": MARGIN_THRESHOLD},
         "featureWeights": {"shape": 0.52, "colour": 0.36, "dHash": 0.12},
         "referenceIcons": len(ref_names),
