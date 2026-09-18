@@ -22,10 +22,8 @@ LEXICON = ROOT / "database/audits/fragrantica-note-lexicon.txt"
 PILOT_OUT = ROOT / "database/audits/label-ocr-pilot.json"
 SCALE = 3
 MIN_VOTES = 2
-MIN_EXACT_OR_FUZZY = 0.83
-MIN_FUZZY_MARGIN = 0.075
-MIN_WEIGHT = 2.6
-MIN_INDEPENDENT_FAMILIES = 2
+MIN_EXACT_OR_FUZZY = 0.84
+MIN_FUZZY_MARGIN = 0.08
 
 
 def norm(s):
@@ -60,7 +58,7 @@ def label_components(panel, header_y):
     prep = ImageEnhance.Contrast(prep).enhance(1.8)
     scaled = prep.resize((panel.width*SCALE,panel.height*SCALE), Image.Resampling.LANCZOS)
     words=[]
-    bands=((header_y+110,header_y+225),(header_y+285,header_y+445))
+    bands=((header_y+105,header_y+200),(header_y+265,header_y+395))
     for r in tsv(scaled, 11):
         text=" ".join(str(r.get("text") or "").split())
         if not text or sum(c.isalpha() for c in text)<2: continue
@@ -118,86 +116,44 @@ def candidate(raw, lexicon):
     return name,score,score-second,False
 
 
-def _trim_white(im, threshold=246):
-    """Trim only near-white margins; never crop dark glyphs."""
-    g = im.convert("L")
-    px = g.load()
-    xs=[]; ys=[]
-    for y in range(g.height):
-        for x in range(g.width):
-            if px[x,y] < threshold:
-                xs.append(x); ys.append(y)
-    if len(xs) < 8:
-        return im
-    x1=max(0,min(xs)-4); x2=min(g.width,max(xs)+5)
-    y1=max(0,min(ys)-3); y2=min(g.height,max(ys)+4)
-    return im.crop((x1,y1,x2,y2))
-
-
 def read_crop(panel, comp, lexicon):
-    w=max(1.0, comp["x2"]-comp["x1"]); h=max(1.0, comp["y2"]-comp["y1"])
-    pad_x=int(max(9, min(24, w*0.16)))
-    pad_y=int(max(6, min(14, h*0.35)))
-    box=(max(0,int(comp["x1"])-pad_x), max(0,int(comp["y1"])-pad_y),
-         min(panel.width,int(comp["x2"])+pad_x), min(panel.height,int(comp["y2"])+pad_y))
-    crop=_trim_white(panel.crop(box).convert("L"))
-
-    auto=ImageOps.autocontrast(crop)
-    contrast=ImageEnhance.Contrast(auto).enhance(2.0)
-    sharp=auto.filter(ImageFilter.UnsharpMask(radius=1.2, percent=170, threshold=2))
-    variants=[
-        ("auto", auto, 1.00),
-        ("contrast", contrast, 0.95),
-        ("sharp", sharp, 1.05),
-        ("bin165", contrast.point(lambda p: 255 if p>165 else 0), 0.90),
-        ("bin185", contrast.point(lambda p: 255 if p>185 else 0), 0.90),
-        ("bin205", contrast.point(lambda p: 255 if p>205 else 0), 0.85),
-    ]
-
-    weighted=defaultdict(float); families=defaultdict(set); raw_reads=[]
+    pad_x,pad_y=10,7
+    box=(max(0,int(comp["x1"])-pad_x),max(0,int(comp["y1"])-pad_y),
+         min(panel.width,int(comp["x2"])+pad_x),min(panel.height,int(comp["y2"])+pad_y))
+    crop=panel.crop(box).convert("L")
+    variants=[]
+    a=ImageOps.autocontrast(crop); variants.append(("auto",a))
+    b=ImageEnhance.Contrast(a).enhance(2.2); variants.append(("contrast",b))
+    c=b.point(lambda p: 255 if p>178 else 0); variants.append(("binary",c))
+    votes=[]; raw_reads=[]
     lname,lscore,lmargin,lexact=candidate(comp.get("locatorText",""),lexicon)
     locator_ok=bool(lname and (lexact or (lscore>=MIN_EXACT_OR_FUZZY and lmargin>=MIN_FUZZY_MARGIN)))
-    lw=1.15 if lexact else (0.70 if locator_ok else 0.0)
     raw_reads.append({"variant":"locator","psm":11,"raw":comp.get("locatorText",""),
                       "candidate":lname,"score":round(lscore,3),"margin":round(lmargin,3),
-                      "exact":lexact,"eligible":locator_ok,"weight":round(lw,2)})
-    if locator_ok:
-        weighted[lname]+=lw; families[lname].add("locator")
-
-    for vname,im,base_w in variants:
-        big=im.resize((im.width*5,im.height*5), Image.Resampling.LANCZOS)
-        for psm in (6,7,8,11,13):
+                      "exact":lexact,"eligible":locator_ok})
+    if locator_ok: votes.append(lname)
+    for vname,im in variants:
+        big=im.resize((im.width*4,im.height*4), Image.Resampling.LANCZOS).filter(ImageFilter.SHARPEN)
+        for psm in (6,7,8,13):
             try:
                 rows=tsv(big,psm)
             except Exception:
                 continue
             text=" ".join(" ".join(str(r.get("text") or "").split()) for r in rows)
             text=" ".join(text.split())
-            if not text:
-                continue
+            if not text: continue
             name,score,margin,exact=candidate(text,lexicon)
             accepted=bool(name and (exact or (score>=MIN_EXACT_OR_FUZZY and margin>=MIN_FUZZY_MARGIN)))
-            psm_w={6:1.10,7:1.20,8:0.72,11:0.82,13:0.68}[psm]
-            q=(1.30 if exact else max(0.72, score))
-            weight=base_w*psm_w*q if accepted else 0.0
-            family=f"{vname}:{'line' if psm in (6,7) else 'sparse' if psm==11 else 'word'}"
             raw_reads.append({"variant":vname,"psm":psm,"raw":text,"candidate":name,
                               "score":round(score,3),"margin":round(margin,3),"exact":exact,
-                              "eligible":accepted,"weight":round(weight,2)})
-            if accepted:
-                weighted[name]+=weight; families[name].add(family)
-
-    ranking=sorted(weighted.items(), key=lambda kv:kv[1], reverse=True)
-    winner,total=(ranking[0] if ranking else (None,0.0))
-    runner=ranking[1][1] if len(ranking)>1 else 0.0
-    independent=len(families.get(winner,set())) if winner else 0
-    confident=bool(winner and total>=MIN_WEIGHT and independent>=MIN_INDEPENDENT_FAMILIES
-                   and total-runner>=0.85)
-    return {"note":winner if confident else None,
-            "votes":round(total,2),"independentFamilies":independent,
-            "runnerUpWeight":round(runner,2),"confident":confident,
+                              "eligible":accepted})
+            if accepted: votes.append(name)
+    counts=Counter(votes)
+    winner,nvotes=(counts.most_common(1)[0] if counts else (None,0))
+    tie = len(counts)>1 and counts.most_common(2)[0][1]==counts.most_common(2)[1][1]
+    confident=bool(winner and nvotes>=MIN_VOTES and not tie)
+    return {"note":winner if confident else None,"votes":nvotes,"confident":confident,
             "box":list(box),"reads":raw_reads}
-
 
 
 def inspect(row, lexicon):
@@ -209,9 +165,8 @@ def inspect(row, lexicon):
             if src.width<800 or src.height<800 or src.height/src.width<0.85:
                 return {**base,"result":"UNSUPPORTED_GEOMETRY","size":[src.width,src.height]}
             sx,sy=src.width/1200,src.height/1200
-            x1,y1,x2,_=CROP
-            y2=1195
-            panel=src.crop((round(x1*sx),round(y1*sy),round(x2*sx),round(y2*sy))).convert("RGB").resize((420,465),Image.Resampling.LANCZOS)
+            x1,y1,x2,y2=CROP
+            panel=src.crop((round(x1*sx),round(y1*sy),round(x2*sx),round(y2*sy))).convert("RGB").resize((420,380),Image.Resampling.LANCZOS)
     except Exception as e:
         return {**base,"result":"IMAGE_ERROR","error":str(e)}
     try:
@@ -252,9 +207,9 @@ def main():
         results.append(inspect(row,lex))
         if i%20==0: print(f"processed {i}/{len(targets)}",flush=True)
     counts=Counter(r["result"] for r in results)
-    payload={"mode":"NON_DESTRUCTIVE_PER_LABEL_MULTI_OCR_PILOT_V3",
+    payload={"mode":"NON_DESTRUCTIVE_PER_LABEL_MULTI_OCR_PILOT_V2",
              "targets":len(targets),
-             "acceptance":{"minWeight":MIN_WEIGHT,"minIndependentFamilies":MIN_INDEPENDENT_FAMILIES,"fuzzyScore":MIN_EXACT_OR_FUZZY,"fuzzyMargin":MIN_FUZZY_MARGIN},
+             "acceptance":{"minVotes":MIN_VOTES,"fuzzyScore":MIN_EXACT_OR_FUZZY,"fuzzyMargin":MIN_FUZZY_MARGIN},
              "counts":dict(sorted(counts.items())),"rows":results}
     PILOT_OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({"targets":len(targets),"counts":payload["counts"],"output":str(PILOT_OUT)}),flush=True)

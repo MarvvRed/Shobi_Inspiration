@@ -14,7 +14,7 @@ permissions:
 jobs:
   pilot:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,7 +25,7 @@ jobs:
           python -m pip install --disable-pip-version-check pillow
       - name: Run non-destructive per-label OCR pilot
         env:
-          LABEL_OCR_PILOT_LIMIT: '80'
+          LABEL_OCR_PILOT_LIMIT: '0'
         run: python tools/analyze_label_ocr_pilot.py
       - name: Commit pilot analysis only
         run: |
@@ -36,6 +36,6 @@ jobs:
             echo 'No pilot output to publish.'
             exit 0
           fi
-          git commit -m 'Publish per-label OCR pilot analysis'
+          git commit -m 'Publish full V2 per-label OCR analysis'
           git pull --rebase origin main
           git push origin main
