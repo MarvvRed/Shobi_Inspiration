@@ -1,0 +1,4024 @@
+{
+  "sourceMode": "NON_DESTRUCTIVE_PER_LABEL_MULTI_OCR_PILOT_V2",
+  "exactCandidates": 83,
+  "counts": {
+    "REVIEW": 47,
+    "STRONG_EXACT": 36
+  },
+  "rule": "Strong exact requires catalog/FID stability, exact ordered equality, and for every label >=2 eligible exact OCR reads including >=1 crop read, with zero competing eligible candidates.",
+  "rows": [
+    {
+      "code": "1012-ARA",
+      "fid": "599",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Tobacco",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Oakmoss",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 6,
+          "exactCropReads": 6,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cinnamon",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Fir",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Mandarin Orange",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 2
+        }
+      ]
+    },
+    {
+      "code": "1055-CAR",
+      "fid": "30424",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Sorbet",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Black Currant",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Citruses",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 8,
+          "exactCropReads": 8,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Jasmine",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1062-CRT",
+      "fid": "3474",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Mint",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vetiver",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 4,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Labdanum",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1070-CHA",
+      "fid": "614",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Lavender",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Geranium",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rosemary",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Oakmoss",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Clary Sage",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Neroli",
+          "ok": true,
+          "exactReads": 8,
+          "exactCropReads": 8,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1073-DRC",
+      "fid": "27417",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Iris",
+          "ok": true,
+          "exactReads": 5,
+          "exactCropReads": 4,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Leather",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Sandalwood",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Agarwood (Oud)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1090-COS",
+      "fid": "7047",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Cloves",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cinnamon",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cardamom",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Labdanum",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Grapefruit",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1094-DOL",
+      "fid": "56358",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Bagas de Zimbro",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Citruses",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Blood Orange",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 2
+        },
+        {
+          "note": "Pimento",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lavender",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1168-HUG",
+      "fid": "42484",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Mint",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bitter Orange",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Tea",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Juniper",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1177-GUL",
+      "fid": "12711",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Cacao Pod",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 8,
+          "exactCropReads": 8,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Fig Leaf",
+          "ok": true,
+          "exactReads": 12,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vetiver",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 4,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1225-PAC",
+      "fid": "514",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Praline",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lemon",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cinnamon",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 10,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Brazilian Rosewood",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Tolu Balsam",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1237-PIN",
+      "fid": "1522",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Pine Tree",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bagas de Zimbro",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Basil",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lemon",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lavender",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1238-PRA",
+      "fid": "3794",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Iris",
+          "ok": true,
+          "exactReads": 5,
+          "exactCropReads": 4,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Powdery Notes",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 2
+        },
+        {
+          "note": "Neroli",
+          "ok": true,
+          "exactReads": 9,
+          "exactCropReads": 8,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vetiver",
+          "ok": true,
+          "exactReads": 7,
+          "exactCropReads": 7,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Olibanum (Frankincense)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Benzoin",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1266-TRU",
+      "fid": "46287",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Apple",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Tonka Bean",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Leather",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lavender",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Violet Leaf",
+          "ok": true,
+          "exactReads": 12,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Geranium",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "136-KUR",
+      "fid": "53400",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Bagas de Zimbro",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Nutmeg",
+          "ok": true,
+          "exactReads": 7,
+          "exactCropReads": 6,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Woody Notes",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Coriander",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1490-DRC",
+      "fid": "58714",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cashmir wood",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vetiver",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1509-KIL",
+      "fid": "14206",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Amber",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Benzoin",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "West Indian Bay",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1510-KIL",
+      "fid": "14330",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Tea",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bamboo",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Neroli",
+          "ok": true,
+          "exactReads": 9,
+          "exactCropReads": 8,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bitter Orange",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Fig Leaf",
+          "ok": true,
+          "exactReads": 12,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1546-TMFO",
+      "fid": "62707",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Peach",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rum",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Blood Orange",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cognac",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 10,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1558-TMFO",
+      "fid": "64698",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Tuberose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Suede",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lily",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Jasmine",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Styrax",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Benzoin",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1614-FRE",
+      "fid": "52195",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Olibanum (Frankincense)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Agarwood (Oud)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Labdanum",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Pink Pepper",
+          "ok": true,
+          "exactReads": 12,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1660-ESCE",
+      "fid": "845",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1677-BYR",
+      "fid": "50934",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Plum",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rum",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Fig",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cashmir wood",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1718-TER",
+      "fid": "30624",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Passionfruit",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Tonka Bean",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 2
+        },
+        {
+          "note": "Sandalwood",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lemon",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1768-LTN",
+      "fid": "40501",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cacao Pod",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Magnolia",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Orange Blossom",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Pear",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1775-DIP",
+      "fid": "65738",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Powdery Notes",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bagas de Zimbro",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Jasmine",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Tonka Bean",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1820-KUR",
+      "fid": "15565",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Amyris",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lemon Blossom",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iris",
+          "ok": true,
+          "exactReads": 9,
+          "exactCropReads": 8,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Orange",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vetiver",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1829-BOB",
+      "fid": "11983",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Water Hyacinth",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 5
+        },
+        {
+          "note": "Orange Blossom",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Neroli",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Sage",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 8,
+          "exactCropReads": 8,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lily",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1848-LEL",
+      "fid": "6334",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Fruity Notes",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 2
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Aldehydes",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lemon",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Amber",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1856-PARF",
+      "fid": "18750",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Black Currant",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Red Berries",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1857-ESCE",
+      "fid": "58970",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Juniper",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cypress",
+          "ok": true,
+          "exactReads": 7,
+          "exactCropReads": 6,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rosemary",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cashmeran",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1859-XER",
+      "fid": "52433",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Tobacco Blossom",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Ginger",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lemon",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Amber",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1865-YZLO",
+      "fid": "46243",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "White Oud",
+          "ok": false,
+          "exactReads": 1,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Sandalwood",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Saffron",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Pink Pepper",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "1893-CHA",
+      "fid": "71442",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Red Berries",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Citruses",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iris",
+          "ok": true,
+          "exactReads": 6,
+          "exactCropReads": 6,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Jasmine",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2043-VER",
+      "fid": "76274",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Pear",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Freesia",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bitter Orange",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 2
+        },
+        {
+          "note": "Ambroxan",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2045-HER",
+      "fid": "6065",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Orange",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lemon",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Oakmoss",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Mint",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Mandarin Orange",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 2
+        }
+      ]
+    },
+    {
+      "code": "2057-ESCE",
+      "fid": "79414",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Tea",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2175-ESCE",
+      "fid": "66047",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Mandarin Orange",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2226-BON",
+      "fid": "20551",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Pineapple",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bagas de Zimbro",
+          "ok": false,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 4
+        },
+        {
+          "note": "Vetiver",
+          "ok": true,
+          "exactReads": 7,
+          "exactCropReads": 7,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2228-ESCE",
+      "fid": "66048",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Orris Root",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2231-NISH",
+      "fid": "30574",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Vetiver",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 4,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Anise",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Neroli",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Leather",
+          "ok": true,
+          "exactReads": 7,
+          "exactCropReads": 6,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Pepper",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2249-BYR",
+      "fid": "83369",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Plum",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Saffron",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Agarwood (Oud)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 2
+        },
+        {
+          "note": "Praline",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Oak",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "232-ESCE",
+      "fid": "846",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Pink Pepper",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Lemon",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iris",
+          "ok": true,
+          "exactReads": 6,
+          "exactCropReads": 6,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2326-TMFO",
+      "fid": "1821",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Amber",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Incense",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Olibanum (Frankincense)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Labdanum",
+          "ok": true,
+          "exactReads": 10,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Woody Notes",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2330-JUL",
+      "fid": "1715",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 10,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lavender",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Ambroxan",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2398-FRE",
+      "fid": "91209",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Aldehydes",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Peach",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Orange Blossom",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Violet",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2415-ESC",
+      "fid": "1352",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Raspberry",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Strawberry",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Black Currant",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Grapefruit",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 6,
+          "exactCropReads": 6,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2417-ACQ",
+      "fid": "1685",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Orange",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Mandarin Orange",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Petitgrain",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lemon",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Caramel",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2431-ROJ",
+      "fid": "23008",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Agarwood (Oud)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Leather",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Woody Notes",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 2
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2453-INI",
+      "fid": "89368",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Cognac",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Tobacco",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Pink Pepper",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 3
+        },
+        {
+          "note": "Pepper",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2485-ETLR",
+      "fid": "69412",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Milk",
+          "ok": true,
+          "exactReads": 5,
+          "exactCropReads": 4,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Skin",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Yuzu",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Aqual™",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Jasmine",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Hexyl Acetate",
+          "ok": false,
+          "exactReads": 1,
+          "exactCropReads": 1,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2489-KKWI",
+      "fid": "56352",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Gardenia",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Ylang-Ylang",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Juniper",
+          "ok": true,
+          "exactReads": 8,
+          "exactCropReads": 7,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2492-ETLR",
+      "fid": "43531",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Mint",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Green Notes",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Grapefruit",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2502-MATIE",
+      "fid": "59063",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Ambrettolide",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Ambroxan",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2532-PRA",
+      "fid": "32197",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Coumarin",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iso E Super",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Hedione",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Orris Root",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2536-PRA",
+      "fid": "95006",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Jasmine",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Neroli",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2553-BON",
+      "fid": "13630",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Plum",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Agarwood (Oud)",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Sandalwood",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Olibanum (Frankincense)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Labdanum",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2597-TMFO",
+      "fid": "97380",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Amber",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Dates",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cinnamon",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Olibanum (Frankincense)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Sandalwood",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Labdanum",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2618-TMFO",
+      "fid": "100411",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Olibanum (Frankincense)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Oak",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Sandalwood",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cardamom",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Akigalawood",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2658-CHA",
+      "fid": "75821",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Vetiver",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 4,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iris",
+          "ok": true,
+          "exactReads": 6,
+          "exactCropReads": 6,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Leather",
+          "ok": true,
+          "exactReads": 7,
+          "exactCropReads": 6,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2722-CRIVEL",
+      "fid": "69069",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Hibiscus",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Leather",
+          "ok": true,
+          "exactReads": 7,
+          "exactCropReads": 6,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Mint",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2723-LTN",
+      "fid": "68359",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Oakmoss",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Mate",
+          "ok": true,
+          "exactReads": 8,
+          "exactCropReads": 8,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Lily-of-the-Valley",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Jasmine",
+          "ok": true,
+          "exactReads": 6,
+          "exactCropReads": 5,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2733-LES",
+      "fid": "70189",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Milk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Tuberose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Tonka Bean",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2746-DRC",
+      "fid": "23099",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Violet Leaf",
+          "ok": true,
+          "exactReads": 12,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Suede",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rum",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Licorice",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Mandarin Orange",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2753-YZLO",
+      "fid": "113623",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Orange Blossom",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 2
+        },
+        {
+          "note": "Vanilla Caviar",
+          "ok": false,
+          "exactReads": 1,
+          "exactCropReads": 1,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Lavender",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rum",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "2833-AMG",
+      "fid": "62859",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Sandalwood",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Orris Root",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Olibanum (Frankincense)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Carrot Seeds",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vetiver",
+          "ok": false,
+          "exactReads": 7,
+          "exactCropReads": 6,
+          "competingEligibleReads": 2
+        },
+        {
+          "note": "Cypriol Oil or Nagarmotha",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "292-JOM",
+      "fid": "6459",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Star Anise",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Fennel",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Frangipani",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Tonka Bean",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Neroli",
+          "ok": true,
+          "exactReads": 9,
+          "exactCropReads": 8,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "301-JOM",
+      "fid": "4579",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Grass",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Fig",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Cedar",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Pine Tree",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Hyacinth",
+          "ok": true,
+          "exactReads": 10,
+          "exactCropReads": 9,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "303-JOM",
+      "fid": "25529",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Salt",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Sage",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Grapefruit",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Seaweed",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "320-NAS",
+      "fid": "40200",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Whiskey",
+          "ok": true,
+          "exactReads": 12,
+          "exactCropReads": 11,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Woody Notes",
+          "ok": false,
+          "exactReads": 1,
+          "exactCropReads": 1,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Ambroxan",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "353-TMFO",
+      "fid": "55766",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Aldehydes",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Heliotrope",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Peru Balsam",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Sandalwood",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "413-BOT",
+      "fid": "12863",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Leather",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Oakmoss",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 8,
+          "exactCropReads": 8,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Pink Pepper",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Jasmine",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Bergamot",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "417-BOUR",
+      "fid": "3604",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Violet",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iris",
+          "ok": true,
+          "exactReads": 5,
+          "exactCropReads": 4,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Heliotrope",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Ylang-Ylang",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Peach",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "439-BLG",
+      "fid": "31538",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Ylang-Ylang",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Amber",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Raspberry",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Jasmine",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 10,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "508-CHA",
+      "fid": "15963",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Patchouli",
+          "ok": true,
+          "exactReads": 12,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Sandalwood",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Olibanum (Frankincense)",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Grapefruit",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Tonka Bean",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "578-DON",
+      "fid": "504",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Tomato Leaf",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Orange",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Mandarin Orange",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Water Lily",
+          "ok": true,
+          "exactReads": 10,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Birch",
+          "ok": true,
+          "exactReads": 11,
+          "exactCropReads": 10,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "604-ESC",
+      "fid": "1036",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Caramel",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Red Berries",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Black Currant",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Green Notes",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "783-LAN",
+      "fid": "35493",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Iris",
+          "ok": true,
+          "exactReads": 5,
+          "exactCropReads": 4,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Osmanthus",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Violet",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Freesia",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Mimosa",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "784-LAN",
+      "fid": "45892",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Orange Blossom",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "White Flowers",
+          "ok": false,
+          "exactReads": 1,
+          "exactCropReads": 1,
+          "competingEligibleReads": 2
+        },
+        {
+          "note": "Iris",
+          "ok": true,
+          "exactReads": 6,
+          "exactCropReads": 6,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Jasmine",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Sandalwood",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "787-LAN",
+      "fid": "174",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Oakmoss",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Galbanum",
+          "ok": true,
+          "exactReads": 3,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Honey",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Spicy Notes",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 2
+        },
+        {
+          "note": "Civet",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 2
+        }
+      ]
+    },
+    {
+      "code": "798-LAN",
+      "fid": "11721",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Raspberry",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Rose",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Pink Pepper",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 4
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "821-MIC",
+      "fid": "34276",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Lotus",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Pear",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Freesia",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Peony",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "874-PRA",
+      "fid": "44534",
+      "status": "REVIEW",
+      "reasons": [
+        "NOT_ALL_LABELS_STRONG_EXACT"
+      ],
+      "labels": [
+        {
+          "note": "Sour Cherry",
+          "ok": false,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 1
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Almond",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Peach",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Benzoin",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Currant Leaf and Bud",
+          "ok": false,
+          "exactReads": 0,
+          "exactCropReads": 0,
+          "competingEligibleReads": 0
+        }
+      ]
+    },
+    {
+      "code": "909-SFER",
+      "fid": "26777",
+      "status": "STRONG_EXACT",
+      "reasons": [],
+      "labels": [
+        {
+          "note": "Mimosa",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Musk",
+          "ok": true,
+          "exactReads": 2,
+          "exactCropReads": 2,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Iris",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 4,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Vanilla",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "Heliotrope",
+          "ok": true,
+          "exactReads": 13,
+          "exactCropReads": 12,
+          "competingEligibleReads": 0
+        },
+        {
+          "note": "White Flowers",
+          "ok": true,
+          "exactReads": 4,
+          "exactCropReads": 3,
+          "competingEligibleReads": 0
+        }
+      ]
+    }
+  ]
+}
