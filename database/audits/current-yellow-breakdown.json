@@ -1,0 +1,2857 @@
+{
+  "totalCatalog": 2253,
+  "yellow": 275,
+  "issueCounts": {
+    "Social Card not fully verified": 275,
+    "Main Notes order not fully verified": 269,
+    "Season not fully verified": 10,
+    "Gender not fully verified": 6,
+    "Missing Main Notes": 6,
+    "Note icons not fully verified": 6,
+    "Fragrantica identity not fully verified": 3,
+    "Missing Fragrantica ID": 2,
+    "Missing direct Fragrantica URL": 2,
+    "Missing perfume image": 2
+  },
+  "singleIssueCounts": {},
+  "orderedAuditResults": {
+    "READING_NOT_STRICT_ENOUGH": 269,
+    "UNSUPPORTED_CARD_GEOMETRY": 4,
+    "NO_EXACT_CARD": 2
+  },
+  "issueCombinations": [
+    {
+      "count": 265,
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ]
+    },
+    {
+      "count": 4,
+      "issues": [
+        "Main Notes order not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ]
+    },
+    {
+      "count": 3,
+      "issues": [
+        "Gender not fully verified",
+        "Missing Main Notes",
+        "Note icons not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ]
+    },
+    {
+      "count": 2,
+      "issues": [
+        "Fragrantica identity not fully verified",
+        "Gender not fully verified",
+        "Missing Fragrantica ID",
+        "Missing Main Notes",
+        "Missing direct Fragrantica URL",
+        "Missing perfume image",
+        "Note icons not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ]
+    },
+    {
+      "count": 1,
+      "issues": [
+        "Fragrantica identity not fully verified",
+        "Gender not fully verified",
+        "Missing Main Notes",
+        "Note icons not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "code": "2844-LUS",
+      "fid": "10802",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2833-AMG",
+      "fid": "62859",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2816-MOOD",
+      "fid": "",
+      "issues": [
+        "Fragrantica identity not fully verified",
+        "Gender not fully verified",
+        "Missing Fragrantica ID",
+        "Missing Main Notes",
+        "Missing direct Fragrantica URL",
+        "Missing perfume image",
+        "Note icons not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "NO_EXACT_CARD",
+      "v2Status": null
+    },
+    {
+      "code": "2814-TMFO",
+      "fid": "119402",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2812-ARM",
+      "fid": "123070",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2806-PHL",
+      "fid": "119441",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2792-AJMA",
+      "fid": "58837",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2788-MIN",
+      "fid": "88867",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2778-JOM",
+      "fid": "61929",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2744-NISH",
+      "fid": "116224",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2759-ARM",
+      "fid": "121870",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2763-KAY",
+      "fid": "118621",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2762-LAT",
+      "fid": "113777",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2757-LAT",
+      "fid": "114400",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2753-YZLO",
+      "fid": "113623",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2750-NISH",
+      "fid": "66277",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2743-BORN",
+      "fid": "102807",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2741-ROJ",
+      "fid": "97481",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "215-CRD",
+      "fid": "472",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2728-PEN",
+      "fid": "46503",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2722-CRIVEL",
+      "fid": "69069",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2720-ROJ",
+      "fid": "29977",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2719-FRAG",
+      "fid": "61946",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2712-TMFO",
+      "fid": "111206",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2708-BORN",
+      "fid": "102808",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2663-ARM",
+      "fid": "100895",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2700-BLG",
+      "fid": "102120",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2678-PARF",
+      "fid": "96023",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2618-TMFO",
+      "fid": "100411",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2671-KIL",
+      "fid": "4320",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2622-PHL",
+      "fid": "87258",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2625-GUR",
+      "fid": "11570",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2611-KAY",
+      "fid": "52610",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2598-GLO",
+      "fid": "46885",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2609-TMFO",
+      "fid": "15916",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2584-GIV",
+      "fid": "1966",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2553-BON",
+      "fid": "13630",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2552-SOR",
+      "fid": "75119",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2597-TMFO",
+      "fid": "97380",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2593-HUG",
+      "fid": "84074",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2523-KIL",
+      "fid": "23897",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2508-DRC",
+      "fid": "48387",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2526-KAY",
+      "fid": "94204",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2549-MARC",
+      "fid": "91688",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2485-ETLR",
+      "fid": "69412",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2532-PRA",
+      "fid": "32197",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2540-COM",
+      "fid": "45911",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2492-ETLR",
+      "fid": "43531",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2490-MARG",
+      "fid": "78292",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2500-BRB",
+      "fid": "2550",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2495-ETLR",
+      "fid": "50009",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2509-CRIVEL",
+      "fid": "83842",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2473-HER",
+      "fid": "96428",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2468-ESPAR",
+      "fid": "64338",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2467-NISH",
+      "fid": "64092",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2454-KIL",
+      "fid": "78735",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2453-INI",
+      "fid": "89368",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2452-JOM",
+      "fid": "61928",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2431-ROJ",
+      "fid": "23008",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2427-CLEA",
+      "fid": "3024",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2415-ESC",
+      "fid": "1352",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2398-FRE",
+      "fid": "91209",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2401-KAY",
+      "fid": "92258",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2393-KAY",
+      "fid": "88197",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2378-GOLD",
+      "fid": "60923",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2374-MICA",
+      "fid": "80353",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2367-DIP",
+      "fid": "3958",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2363-VER",
+      "fid": "57700",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2366-DIP",
+      "fid": "3956",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2361-ARM",
+      "fid": "79699",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2348-AMG",
+      "fid": "78656",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2330-JUL",
+      "fid": "1715",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2327-SWISA",
+      "fid": "19470",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2303-EXN",
+      "fid": "47569",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2296-KAY",
+      "fid": "85187",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2285-BOT",
+      "fid": "55300",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2294-ACQ",
+      "fid": "56004",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1925-PEN",
+      "fid": "57835",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2270-ORMO",
+      "fid": "16896",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2280-XER",
+      "fid": "52181",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2265-KAY",
+      "fid": "85186",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2255-VER",
+      "fid": "8009",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2259-GIV",
+      "fid": "71272",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2249-BYR",
+      "fid": "83369",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2246-GUC",
+      "fid": "83621",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2229-ESCE",
+      "fid": "66049",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2228-ESCE",
+      "fid": "66048",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2223-AMG",
+      "fid": "69488",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2226-BON",
+      "fid": "20551",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2213-AMG",
+      "fid": "75064",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2210-JOM",
+      "fid": "87710",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2177-SERG",
+      "fid": "478",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2175-ESCE",
+      "fid": "66047",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2171-XER",
+      "fid": "10244",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "412-BOD",
+      "fid": "44100",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2151-GIV",
+      "fid": "78639",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2150-LEL",
+      "fid": "69731",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2057-ESCE",
+      "fid": "79414",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2144-ARM",
+      "fid": "79166",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2126-GIV",
+      "fid": "74819",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2045-HER",
+      "fid": "6065",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2119-ARM",
+      "fid": "78561",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2118-GUC",
+      "fid": "79602",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2121-CAR",
+      "fid": "77688",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2090-MNT",
+      "fid": "67108",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2106-MARC",
+      "fid": "46802",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2049-NISH",
+      "fid": "74667",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2047-KIL",
+      "fid": "68324",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2043-VER",
+      "fid": "76274",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "2065-FRA",
+      "fid": "87109",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "2085-CLIV",
+      "fid": "",
+      "issues": [
+        "Fragrantica identity not fully verified",
+        "Gender not fully verified",
+        "Missing Fragrantica ID",
+        "Missing Main Notes",
+        "Missing direct Fragrantica URL",
+        "Missing perfume image",
+        "Note icons not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "NO_EXACT_CARD",
+      "v2Status": null
+    },
+    {
+      "code": "1978-ARM",
+      "fid": "52802",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1929-BLG",
+      "fid": "41222",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1995-YZLO",
+      "fid": "32267",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1969-DOL",
+      "fid": "72622",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1968-DOL",
+      "fid": "72621",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1939-BYR",
+      "fid": "73438",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1932-YZLO",
+      "fid": "71193",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1918-PAC",
+      "fid": "74962",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1895-HER",
+      "fid": "72439",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1878-KIL",
+      "fid": "66726",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1848-LEL",
+      "fid": "6334",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1859-XER",
+      "fid": "52433",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1865-YZLO",
+      "fid": "46243",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1864-GUC",
+      "fid": "687",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1851-ARM",
+      "fid": "58909",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1857-ESCE",
+      "fid": "58970",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1856-PARF",
+      "fid": "18750",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1850-LEL",
+      "fid": "10131",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "209-CRD",
+      "fid": "4250",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "194-ARM",
+      "fid": "58907",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "201-CLIV",
+      "fid": "4648",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1834-TMFO",
+      "fid": "12767",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1832-TMFO",
+      "fid": "6385",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1829-BOB",
+      "fid": "11983",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1817-JUL",
+      "fid": "46128",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1812-ALJA",
+      "fid": "74402",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "320-NAS",
+      "fid": "40200",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1803-DRC",
+      "fid": "62638",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1774-ARM",
+      "fid": "66409",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1772-TER",
+      "fid": "66816",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1770-BON",
+      "fid": "46057",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1764-GUR",
+      "fid": "53806",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1757-DIP",
+      "fid": "49100",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1729-CAR",
+      "fid": "65560",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1718-TER",
+      "fid": "30624",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1723-TMFO",
+      "fid": "40089",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1693-BYR",
+      "fid": "65525",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1677-BYR",
+      "fid": "50934",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1656-LOC",
+      "fid": "41970",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1659-CHRA",
+      "fid": "6714",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1655-JOM",
+      "fid": "48318",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1660-ESCE",
+      "fid": "845",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1650-LAN",
+      "fid": "65156",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1639-TER",
+      "fid": "25120",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1638-XER",
+      "fid": "21617",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1622-FRA",
+      "fid": "44128",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1615-FRE",
+      "fid": "47332",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1552-VER",
+      "fid": "13064",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1510-KIL",
+      "fid": "14330",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1484-VAL",
+      "fid": "55963",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1490-DRC",
+      "fid": "58714",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "161-PEN",
+      "fid": "54665",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1261-TMU",
+      "fid": "706",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "896-RCAV",
+      "fid": "58538",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1126-ARM",
+      "fid": "59532",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "165-PEN",
+      "fid": "40716",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "178-VIL",
+      "fid": "49305",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "112-BON",
+      "fid": "1301",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "884-RAL",
+      "fid": "9006",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1201-LBI",
+      "fid": "3002",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "795-LAN",
+      "fid": "52788",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1037-BLG",
+      "fid": "9403",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1006-ACQ",
+      "fid": "15519",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "854-NIN",
+      "fid": "56162",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1094-DOL",
+      "fid": "56358",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "131-LEL",
+      "fid": "12201",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "759-KIL",
+      "fid": "50495",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "848-NRO",
+      "fid": "209",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "118-HAM",
+      "fid": "27808",
+      "issues": [
+        "Gender not fully verified",
+        "Missing Main Notes",
+        "Note icons not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "UNSUPPORTED_CARD_GEOMETRY",
+      "v2Status": null
+    },
+    {
+      "code": "106-ARB",
+      "fid": "21560",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "378-TMFO",
+      "fid": "6386",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "365-TMFO",
+      "fid": "28009",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "325-PECK",
+      "fid": "31590",
+      "issues": [
+        "Gender not fully verified",
+        "Missing Main Notes",
+        "Note icons not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "UNSUPPORTED_CARD_GEOMETRY",
+      "v2Status": null
+    },
+    {
+      "code": "312-MOL",
+      "fid": "951",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "304-KIE",
+      "fid": "6188",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "301-JOM",
+      "fid": "4579",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "277-JOM",
+      "fid": "18767",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "253-JOM",
+      "fid": "5580",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "245-JOM",
+      "fid": "2280",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "242-JOM",
+      "fid": "15134",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "235-HOLL",
+      "fid": "4307",
+      "issues": [
+        "Gender not fully verified",
+        "Missing Main Notes",
+        "Note icons not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "UNSUPPORTED_CARD_GEOMETRY",
+      "v2Status": null
+    },
+    {
+      "code": "232-ESCE",
+      "fid": "846",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "229-DIP",
+      "fid": "3865",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "225-DIP",
+      "fid": "35678",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "989-YZLO",
+      "fid": "96",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "985-YZLO",
+      "fid": "38914",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1285-YZLO",
+      "fid": "31050",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "949-VIC",
+      "fid": "42905",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "925-TMU",
+      "fid": "8766",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "921-TMU",
+      "fid": "36416",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "918-TMU",
+      "fid": "6616",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "898-ROC",
+      "fid": "1427",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "895-RCAV",
+      "fid": "837",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "874-PRA",
+      "fid": "44534",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "872-PRA",
+      "fid": "12426",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "871-PIER",
+      "fid": "15557",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "867-PAL",
+      "fid": "1009",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "843-NRO",
+      "fid": "209",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "828-MIY",
+      "fid": "42720",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "813-MAR",
+      "fid": "31226",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "804-LOE",
+      "fid": "6292",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "798-LAN",
+      "fid": "11721",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "787-LAN",
+      "fid": "174",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "784-LAN",
+      "fid": "45892",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "783-LAN",
+      "fid": "35493",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "782-LAN",
+      "fid": "14982",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "750-KEN",
+      "fid": "31539",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "749-KEN",
+      "fid": "68655",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "716-ISS",
+      "fid": "6432",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "696-GLA",
+      "fid": "2068",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "657-ARM",
+      "fid": "25947",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "655-ARM",
+      "fid": "18453",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "650-ARM",
+      "fid": "45257",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "639-FEN",
+      "fid": "200",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "631-EST",
+      "fid": "547",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "630-EST",
+      "fid": "1988",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "604-ESC",
+      "fid": "1036",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "590-ELIZ",
+      "fid": "81",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "578-DON",
+      "fid": "504",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "570-DOL",
+      "fid": "484",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "560-DOL",
+      "fid": "29959",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "521-DRC",
+      "fid": "215",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "514-CHL",
+      "fid": "26227",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "509-CHA",
+      "fid": "43718",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "508-CHA",
+      "fid": "15963",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "482-CAR",
+      "fid": "22857",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "480-CAR",
+      "fid": "306",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "465-CAL",
+      "fid": "8840",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "458-CAC",
+      "fid": "236",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "455-BYR",
+      "fid": "46358",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "440-BLG",
+      "fid": "45241",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "431-BRB",
+      "fid": "814",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "404-BAL",
+      "fid": "7247",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "403-BAL",
+      "fid": "397",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "399-ARA",
+      "fid": "122",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "394-AGE",
+      "fid": "45363",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1493-ACQ",
+      "fid": "1687",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1289-YZLO",
+      "fid": "100",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1282-YZLO",
+      "fid": "12602",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1279-YZLO",
+      "fid": "30240",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1269-VAL",
+      "fid": "29601",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1258-SFER",
+      "fid": "26777",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1257-SFER",
+      "fid": "659",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1251-ROM",
+      "fid": "21103",
+      "issues": [
+        "Fragrantica identity not fully verified",
+        "Gender not fully verified",
+        "Missing Main Notes",
+        "Note icons not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "UNSUPPORTED_CARD_GEOMETRY",
+      "v2Status": null
+    },
+    {
+      "code": "1245-PRA",
+      "fid": "1045",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1238-PRA",
+      "fid": "3794",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1219-MOS",
+      "fid": "5951",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1208-MNTB",
+      "fid": "23711",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "769-LART",
+      "fid": "1261",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1193-KEN",
+      "fid": "31206",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1191-KEN",
+      "fid": "35459",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1172-ISS",
+      "fid": "79",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1160-HUG",
+      "fid": "383",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1152-HER",
+      "fid": "25",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1128-ARM",
+      "fid": "42895",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1114-DUN",
+      "fid": "38982",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1111-DSQ",
+      "fid": "1936",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1076-DRC",
+      "fid": "228",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1070-CHA",
+      "fid": "614",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1060-CRT",
+      "fid": "39885",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1043-CAL",
+      "fid": "14606",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Season not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1036-BLG",
+      "fid": "148",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    },
+    {
+      "code": "1012-ARA",
+      "fid": "599",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": "REVIEW"
+    },
+    {
+      "code": "1007-ACQ",
+      "fid": "25349",
+      "issues": [
+        "Main Notes order not fully verified",
+        "Social Card not fully verified"
+      ],
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
+      "v2Status": null
+    }
+  ]
+}
