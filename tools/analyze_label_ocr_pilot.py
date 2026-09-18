@@ -22,7 +22,7 @@ LEXICON = ROOT / "database/audits/fragrantica-note-lexicon.txt"
 PILOT_OUT = ROOT / "database/audits/label-ocr-pilot.json"
 SCALE = 3
 MIN_VOTES = 2
-MIN_EXACT_OR_FUZZY = 0.86
+MIN_EXACT_OR_FUZZY = 0.84
 MIN_FUZZY_MARGIN = 0.08
 
 
@@ -58,7 +58,7 @@ def label_components(panel, header_y):
     prep = ImageEnhance.Contrast(prep).enhance(1.8)
     scaled = prep.resize((panel.width*SCALE,panel.height*SCALE), Image.Resampling.LANCZOS)
     words=[]
-    bands=((header_y+90,header_y+190),(header_y+225,header_y+350))
+    bands=((header_y+105,header_y+200),(header_y+265,header_y+395))
     for r in tsv(scaled, 11):
         text=" ".join(str(r.get("text") or "").split())
         if not text or sum(c.isalpha() for c in text)<2: continue
@@ -127,9 +127,17 @@ def read_crop(panel, comp, lexicon):
     # Thresholded copy helps anti-aliased small labels.
     c=b.point(lambda p: 255 if p>178 else 0); variants.append(("binary",c))
     votes=[]; raw_reads=[]
+    # The locator pass is useful evidence, but never sufficient by itself:
+    # it contributes at most one vote and still needs agreement from a crop OCR.
+    lname,lscore,lmargin,lexact=candidate(comp.get("locatorText",""),lexicon)
+    locator_ok=bool(lname and (lexact or (lscore>=MIN_EXACT_OR_FUZZY and lmargin>=MIN_FUZZY_MARGIN)))
+    raw_reads.append({"variant":"locator","psm":11,"raw":comp.get("locatorText",""),
+                      "candidate":lname,"score":round(lscore,3),"margin":round(lmargin,3),
+                      "exact":lexact,"eligible":locator_ok})
+    if locator_ok: votes.append(lname)
     for vname,im in variants:
         big=im.resize((im.width*4,im.height*4), Image.Resampling.LANCZOS).filter(ImageFilter.SHARPEN)
-        for psm in (7,8,13):
+        for psm in (6,7,8,13):
             try:
                 rows=tsv(big,psm)
             except Exception:
@@ -203,7 +211,7 @@ def main():
         results.append(inspect(row,lex))
         if i%20==0: print(f"processed {i}/{len(targets)}",flush=True)
     counts=Counter(r["result"] for r in results)
-    payload={"mode":"NON_DESTRUCTIVE_PER_LABEL_MULTI_OCR_PILOT",
+    payload={"mode":"NON_DESTRUCTIVE_PER_LABEL_MULTI_OCR_PILOT_V2",
              "targets":len(targets),
              "acceptance":{"minVotes":MIN_VOTES,"fuzzyScore":MIN_EXACT_OR_FUZZY,"fuzzyMargin":MIN_FUZZY_MARGIN},
              "counts":dict(sorted(counts.items())),"rows":results}
