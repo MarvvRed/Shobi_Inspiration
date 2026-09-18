@@ -13,12 +13,18 @@ GENDER_SEASON = ROOT / "database/fragrantica" / "social-cards" / "gender-season.
 VALIDATED_NOTES = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes-validated.json"
 RAW_NOTES = ROOT / "database/fragrantica/social-cards/records/social-card-main-notes.json"
 ORDERED_CARD_AUDIT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
+V2_LABEL_PILOT = ROOT / "database/audits/label-ocr-pilot.json"
+V2_EXACT_VALIDATION = ROOT / "database/audits/v2-exact-validation.json"
 PERFUME_IMAGE_MAP = ROOT / "database/assets/perfumes" / "map.js"
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
 site_rows = json.loads(SITE.read_text(encoding="utf-8-sig"))
 if len(rows) != len(site_rows):
     raise SystemExit("Complete/site catalog row count mismatch")
+
+
+def row_code(row):
+    return str(row.get("code") or "").strip().upper()
 
 
 def url_id(url):
@@ -53,9 +59,18 @@ def load_local_note_icons():
 
 
 local_note_icons = load_local_note_icons()
-validated_notes = {str(item.get("code") or "").strip().upper(): item for item in json.loads(VALIDATED_NOTES.read_text(encoding="utf-8"))}
-raw_notes = {str(item.get("code") or "").strip().upper(): item for item in json.loads(RAW_NOTES.read_text(encoding="utf-8"))}
-ordered_card_audit = {str(item.get("code") or "").strip().upper(): item for item in json.loads(ORDERED_CARD_AUDIT.read_text(encoding="utf-8")).get("rows", [])}
+validated_notes = {row_code(item): item for item in json.loads(VALIDATED_NOTES.read_text(encoding="utf-8"))}
+raw_notes = {row_code(item): item for item in json.loads(RAW_NOTES.read_text(encoding="utf-8"))}
+ordered_card_audit = {row_code(item): item for item in json.loads(ORDERED_CARD_AUDIT.read_text(encoding="utf-8")).get("rows", [])}
+
+# V2 is an additional conservative proof path.  The report status is never
+# trusted by itself: every relevant condition is recomputed against the live
+# catalog below so stale pilot output cannot turn a product green.
+v2_pilot_payload = json.loads(V2_LABEL_PILOT.read_text(encoding="utf-8")) if V2_LABEL_PILOT.is_file() else {}
+v2_validation_payload = json.loads(V2_EXACT_VALIDATION.read_text(encoding="utf-8")) if V2_EXACT_VALIDATION.is_file() else {}
+v2_pilot = {row_code(item): item for item in v2_pilot_payload.get("rows", [])}
+v2_validation = {row_code(item): item for item in v2_validation_payload.get("rows", [])}
+
 image_prefix = "window.PERFUME_IMAGE_MAP="
 image_text = PERFUME_IMAGE_MAP.read_text(encoding="utf-8").strip()
 if not image_text.startswith(image_prefix): raise SystemExit("Invalid perfume image map")
@@ -69,23 +84,73 @@ with GENDER_SEASON.open(encoding="utf-8-sig", newline="") as handle:
 
 def has_verified_social_season(row, fid, seasons):
     """The dominant season must come from the card of the exact Fragrantica ID."""
-    source = social_seasons.get(str(row.get("code") or "").strip().upper())
+    source = social_seasons.get(row_code(row))
     if not source or str(source.get("fragrantica_id") or "").strip() != fid:
         return False
     main_season = str(source.get("main_season") or "").strip().lower()
     return bool(main_season) and main_season in {str(value).strip().lower() for value in seasons}
 
 
+def v2_strong_ordered_evidence(row, fid, notes):
+    """Revalidate strong V2 per-label OCR evidence against the current catalog.
+
+    A stored STRONG_EXACT label is only a hint.  To pass now, the same exact-FID
+    archived card must still exist, the pilot sequence must still equal the live
+    catalog sequence, and every visible label must have at least two eligible
+    exact reads (including a real crop read) with no competing eligible note.
+    """
+    c = row_code(row)
+    proof = v2_validation.get(c)
+    pilot = v2_pilot.get(c)
+    current_audit = ordered_card_audit.get(c)
+    if not proof or not pilot or not current_audit:
+        return False
+    if proof.get("status") != "STRONG_EXACT" or pilot.get("result") != "EXACT_LABEL_SEQUENCE":
+        return False
+    if str(proof.get("fid") or "") != fid or str(pilot.get("fid") or "") != fid:
+        return False
+    if str(current_audit.get("fragranticaId") or "") != fid:
+        return False
+    card = str(current_audit.get("card") or "")
+    if not card or not (ROOT / card).is_file():
+        return False
+    if list(pilot.get("catalog") or []) != list(notes) or list(pilot.get("observed") or []) != list(notes):
+        return False
+    details = list(pilot.get("details") or [])
+    if not notes or len(details) != len(notes):
+        return False
+    for expected, detail in zip(notes, details):
+        winner = detail.get("note")
+        if not detail.get("confident") or winner != expected:
+            return False
+        reads = list(detail.get("reads") or [])
+        winner_exact = [
+            read for read in reads
+            if read.get("eligible") and read.get("exact") and read.get("candidate") == winner
+        ]
+        exact_crop = [read for read in winner_exact if read.get("variant") != "locator"]
+        competing = [
+            read for read in reads
+            if read.get("eligible") and read.get("candidate") and read.get("candidate") != winner
+        ]
+        if len(winner_exact) < 2 or not exact_crop or competing:
+            return False
+    return True
+
+
 def exact_ordered_card_evidence(row, fid, notes):
     """Require independent exact count, identity and order from the current Social Card.
 
-    CURRENT_FID_FAST_EXACT_PROOF remains useful supporting evidence, but it starts
-    from the existing catalog note list and does not prove that no additional note
-    slots exist on the card. It therefore cannot certify a green status.
+    The primary strict whole-card audit remains authoritative.  Strong V2
+    per-label evidence is accepted only after all of its constraints are
+    recomputed against the current row and exact archived card.
+
+    CURRENT_FID_FAST_EXACT_PROOF remains supporting evidence only and cannot
+    certify a green status.
     """
-    item = ordered_card_audit.get(str(row.get("code") or "").strip().upper())
+    item = ordered_card_audit.get(row_code(row))
     card = str(item.get("card") or "") if item else ""
-    return bool(
+    strict_whole_card = bool(
         item
         and item.get("result") == "EXACT_ORDERED_MATCH"
         and str(item.get("fragranticaId") or "") == fid
@@ -94,6 +159,7 @@ def exact_ordered_card_evidence(row, fid, notes):
         and card
         and (ROOT / card).is_file()
     )
+    return strict_whole_card or v2_strong_ordered_evidence(row, fid, notes)
 
 
 def exact_social_card(row, fid, notes):
@@ -103,10 +169,10 @@ def exact_social_card(row, fid, notes):
     must not be used as an additional identity gate. Legacy VALIDATED_MANUAL raw cards keep the
     historical filename guard until their metadata is migrated to the validated source.
     """
-    source = validated_notes.get(str(row.get("code") or "").strip().upper())
+    source = validated_notes.get(row_code(row))
     card = str(source.get("card") or "") if source else ""
     suffix = "_" + str(row.get("code")) + "_" + fid + ".jpeg"
-    raw = raw_notes.get(str(row.get("code") or "").strip().upper())
+    raw = raw_notes.get(row_code(row))
     raw_card = str(raw.get("card") or "") if raw else ""
     manual = str(row.get("fragranticaSocialCardStatus") or "").upper() == "VALIDATED_MANUAL"
     validated_exact = bool(
@@ -131,13 +197,13 @@ def exact_social_card(row, fid, notes):
 
 
 def exact_perfume_image(row, fid):
-    path = perfume_images.get(str(row.get("code") or "").strip().upper(), "")
+    path = perfume_images.get(row_code(row), "")
     return path == "database/assets/perfumes/" + fid + ".avif" and (ROOT / path).is_file()
 
 
 def matched_notes_count(row, fid, notes):
     if str(row.get("fragranticaSocialCardStatus") or "").upper() == "VALIDATED_MANUAL" and exact_social_card(row, fid, notes): return len(notes)
-    source = validated_notes.get(str(row.get("code") or "").strip().upper())
+    source = validated_notes.get(row_code(row))
     if not source or str(source.get("fragranticaId") or "") != fid: return 0
     return sum(actual == expected for actual, expected in zip(notes, source.get("mainNotes") or []))
 
