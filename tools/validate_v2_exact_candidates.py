@@ -43,3 +43,4 @@ def main():
     print(json.dumps({'exactCandidates':len(rows),'counts':dict(counts),'output':str(OUT)}))
 
 if __name__=='__main__': main()
+# trigger validation workflow
