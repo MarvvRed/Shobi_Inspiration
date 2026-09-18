@@ -1,0 +1,32 @@
+name: Validate V2 exact candidates
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/validate_v2_exact_candidates.py'
+      - '.github/workflows/validate-v2-exact.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate V2 exact candidates conservatively
+        run: python tools/validate_v2_exact_candidates.py
+      - name: Publish validation report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/audits/v2-exact-validation.json
+          if git diff --cached --quiet; then
+            echo 'No validation output to publish.'
+            exit 0
+          fi
+          git commit -m 'Publish V2 exact candidate validation'
+          git pull --rebase origin main
+          git push origin main
