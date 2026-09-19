@@ -1,0 +1,38 @@
+name: Refine remaining current-yellow exact OCR
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/refine_remaining_current_yellow_exact_ocr.py'
+      - '.github/workflows/refine-remaining-current-yellow-exact-ocr.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  refine:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+      - name: Install dependencies
+        run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow
+      - name: Run second exact-sequence refinement
+        run: python tools/refine_remaining_current_yellow_exact_ocr.py
+      - name: Commit report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/audits/current-yellow-remaining-exact-ocr-refinement.json
+          if git diff --cached --quiet; then
+            echo 'No report changes.'
+            exit 0
+          fi
+          git commit -m 'Publish remaining exact-sequence OCR refinement'
+          git pull --rebase origin main
+          git push origin main
