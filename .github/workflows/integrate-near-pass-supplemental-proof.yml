@@ -30,7 +30,9 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add tools/build_validation_audit.py tools/verify_catalog_invariants.py database/catalog/database_complete.json database/catalog/catalog_site.json database/catalog/catalog_final_perfume_only.json database/audits/CURRENT-CATALOG-AUDIT.md
+          # Everything below has just been regenerated and accepted by the independent invariant gate.
+          # Stage the complete verified working tree so no generated file is left unstaged before rebase.
+          git add -A
           if git diff --cached --quiet; then
             echo 'No integration changes.'
             exit 0
