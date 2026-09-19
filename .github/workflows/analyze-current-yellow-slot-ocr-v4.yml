@@ -1,0 +1,40 @@
+name: Analyze current-yellow slot OCR V4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/analyze_current_yellow_slot_ocr_v4.py'
+      - '.github/workflows/analyze-current-yellow-slot-ocr-v4.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+      - name: Install dependencies
+        run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow
+      - name: Refresh current yellow breakdown
+        run: python tools/analyze_current_yellows.py
+      - name: Run independent slot OCR V4
+        run: python tools/analyze_current_yellow_slot_ocr_v4.py
+      - name: Commit reports only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/audits/current-yellow-breakdown.json database/audits/current-yellow-slot-ocr-v4.json
+          if git diff --cached --quiet; then
+            echo 'No report changes.'
+            exit 0
+          fi
+          git commit -m 'Publish current-yellow slot OCR V4 analysis'
+          git pull --rebase origin main
+          git push origin main
