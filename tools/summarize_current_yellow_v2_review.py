@@ -50,3 +50,4 @@ def main():
     print(json.dumps({k:payload[k] for k in ('reviewRows','failedLabels','rowsByFailedLabelCount','failureModes','topFailedNotes')},ensure_ascii=False))
 
 if __name__=='__main__': main()
+# trigger workflow after creation
