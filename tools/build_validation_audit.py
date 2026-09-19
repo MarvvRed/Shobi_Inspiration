@@ -15,6 +15,9 @@ RAW_NOTES = ROOT / "database/fragrantica/social-cards/records/social-card-main-n
 ORDERED_CARD_AUDIT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
 V2_LABEL_PILOT = ROOT / "database/audits/label-ocr-pilot.json"
 V2_EXACT_VALIDATION = ROOT / "database/audits/v2-exact-validation.json"
+CURRENT_YELLOW_V2_PILOT = ROOT / "database/audits/current-yellow-label-ocr-v2.json"
+CURRENT_YELLOW_V2_VALIDATION = ROOT / "database/audits/current-yellow-v2-exact-validation.json"
+NEAR_PASS_REFINEMENT = ROOT / "database/audits/current-yellow-near-pass-ocr-refinement.json"
 PERFUME_IMAGE_MAP = ROOT / "database/assets/perfumes" / "map.js"
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
@@ -70,6 +73,12 @@ v2_pilot_payload = json.loads(V2_LABEL_PILOT.read_text(encoding="utf-8")) if V2_
 v2_validation_payload = json.loads(V2_EXACT_VALIDATION.read_text(encoding="utf-8")) if V2_EXACT_VALIDATION.is_file() else {}
 v2_pilot = {row_code(item): item for item in v2_pilot_payload.get("rows", [])}
 v2_validation = {row_code(item): item for item in v2_validation_payload.get("rows", [])}
+current_yellow_v2_pilot_payload = json.loads(CURRENT_YELLOW_V2_PILOT.read_text(encoding="utf-8")) if CURRENT_YELLOW_V2_PILOT.is_file() else {}
+current_yellow_v2_validation_payload = json.loads(CURRENT_YELLOW_V2_VALIDATION.read_text(encoding="utf-8")) if CURRENT_YELLOW_V2_VALIDATION.is_file() else {}
+near_pass_refinement_payload = json.loads(NEAR_PASS_REFINEMENT.read_text(encoding="utf-8")) if NEAR_PASS_REFINEMENT.is_file() else {}
+current_yellow_v2_pilot = {row_code(item): item for item in current_yellow_v2_pilot_payload.get("rows", [])}
+current_yellow_v2_validation = {row_code(item): item for item in current_yellow_v2_validation_payload.get("rows", [])}
+near_pass_refinement = {row_code(item): item for item in near_pass_refinement_payload.get("rows", [])}
 
 image_prefix = "window.PERFUME_IMAGE_MAP="
 image_text = PERFUME_IMAGE_MAP.read_text(encoding="utf-8").strip()
@@ -138,6 +147,69 @@ def v2_strong_ordered_evidence(row, fid, notes):
     return True
 
 
+
+def near_pass_supplemental_evidence(row, fid, notes):
+    """Recompute targeted supplemental proof for one previously weak V2 label.
+
+    The stored SUPPLEMENTAL_STRONG_EXACT result is only a hint. All original
+    strong labels are rechecked from the current-yellow V2 pilot, while the one
+    failed label must have >=2 new exact crop reads and zero competing eligible
+    reads in the refinement report. Current FID, ordered sequence and archived
+    Social Card must still match the live row.
+    """
+    c = row_code(row)
+    pilot = current_yellow_v2_pilot.get(c)
+    validation = current_yellow_v2_validation.get(c)
+    refinement = near_pass_refinement.get(c)
+    current_audit = ordered_card_audit.get(c)
+    if not pilot or not validation or not refinement or not current_audit:
+        return False
+    if refinement.get("result") != "SUPPLEMENTAL_STRONG_EXACT":
+        return False
+    if pilot.get("result") != "EXACT_LABEL_SEQUENCE" or validation.get("status") != "REVIEW":
+        return False
+    if any(str(x.get("fid") or "") != fid for x in (pilot, validation, refinement)):
+        return False
+    if str(current_audit.get("fragranticaId") or "") != fid:
+        return False
+    card = str(current_audit.get("card") or "")
+    if not card or not (ROOT / card).is_file():
+        return False
+    if list(pilot.get("catalog") or []) != list(notes) or list(pilot.get("observed") or []) != list(notes):
+        return False
+    details = list(pilot.get("details") or [])
+    labels = list(validation.get("labels") or [])
+    if not notes or len(details) != len(notes) or len(labels) != len(notes):
+        return False
+    failed = [lab for lab in labels if not lab.get("ok")]
+    if len(failed) != 1:
+        return False
+    failed_note = failed[0].get("note")
+    if refinement.get("failedNote") != failed_note:
+        return False
+    refined = refinement.get("refined") or {}
+    if refined.get("expected") != failed_note:
+        return False
+    rreads = list(refined.get("reads") or [])
+    rexact = [r for r in rreads if r.get("eligible") and r.get("exact") and r.get("candidate") == failed_note]
+    rcompeting = [r for r in rreads if r.get("eligible") and r.get("candidate") and r.get("candidate") != failed_note]
+    if len(rexact) < 2 or rcompeting:
+        return False
+    for expected, detail, label in zip(notes, details, labels):
+        if detail.get("note") != expected or label.get("note") != expected or not detail.get("confident"):
+            return False
+        if expected == failed_note:
+            continue
+        if not label.get("ok"):
+            return False
+        reads = list(detail.get("reads") or [])
+        winner_exact = [r for r in reads if r.get("eligible") and r.get("exact") and r.get("candidate") == expected]
+        exact_crop = [r for r in winner_exact if r.get("variant") != "locator"]
+        competing = [r for r in reads if r.get("eligible") and r.get("candidate") and r.get("candidate") != expected]
+        if len(winner_exact) < 2 or not exact_crop or competing:
+            return False
+    return True
+
 def exact_ordered_card_evidence(row, fid, notes):
     """Require independent exact count, identity and order from the current Social Card.
 
@@ -159,7 +231,7 @@ def exact_ordered_card_evidence(row, fid, notes):
         and card
         and (ROOT / card).is_file()
     )
-    return strict_whole_card or v2_strong_ordered_evidence(row, fid, notes)
+    return strict_whole_card or v2_strong_ordered_evidence(row, fid, notes) or near_pass_supplemental_evidence(row, fid, notes)
 
 
 def exact_social_card(row, fid, notes):

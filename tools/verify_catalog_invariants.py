@@ -21,6 +21,9 @@ FINAL = ROOT / "database/catalog/catalog_final_perfume_only.json"
 ORDERED_AUDIT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
 V2_LABEL_PILOT = ROOT / "database/audits/label-ocr-pilot.json"
 V2_EXACT_VALIDATION = ROOT / "database/audits/v2-exact-validation.json"
+CURRENT_YELLOW_V2_PILOT = ROOT / "database/audits/current-yellow-label-ocr-v2.json"
+CURRENT_YELLOW_V2_VALIDATION = ROOT / "database/audits/current-yellow-v2-exact-validation.json"
+NEAR_PASS_REFINEMENT = ROOT / "database/audits/current-yellow-near-pass-ocr-refinement.json"
 REPORT = ROOT / "database/audits/CURRENT-CATALOG-AUDIT.md"
 ALLOWLIST = ROOT / "database/audits/identity-change-allowlist.json"
 CRITICAL_FIXES = ROOT / "database/audits/critical-identity-fixes.json"
@@ -132,6 +135,62 @@ def v2_strong_ordered_evidence(row, fid, notes, current_audit, v2_pilot, v2_vali
     return True
 
 
+
+def near_pass_supplemental_evidence(row, fid, notes, current_audit, pilot_map, validation_map, refinement_map):
+    """Independently recompute the targeted one-label supplemental proof."""
+    c = row_code(row)
+    pilot = pilot_map.get(c)
+    validation = validation_map.get(c)
+    refinement = refinement_map.get(c)
+    ev = current_audit.get(c)
+    if not pilot or not validation or not refinement or not ev:
+        return False
+    if refinement.get("result") != "SUPPLEMENTAL_STRONG_EXACT":
+        return False
+    if pilot.get("result") != "EXACT_LABEL_SEQUENCE" or validation.get("status") != "REVIEW":
+        return False
+    if any(str(x.get("fid") or "") != fid for x in (pilot, validation, refinement)):
+        return False
+    if str(ev.get("fragranticaId") or "").strip() != fid:
+        return False
+    card = str(ev.get("card") or "").strip()
+    if not card or not (ROOT / card).is_file():
+        return False
+    if list(pilot.get("catalog") or []) != list(notes) or list(pilot.get("observed") or []) != list(notes):
+        return False
+    details = list(pilot.get("details") or [])
+    labels = list(validation.get("labels") or [])
+    if not notes or len(details) != len(notes) or len(labels) != len(notes):
+        return False
+    failed = [lab for lab in labels if not lab.get("ok")]
+    if len(failed) != 1:
+        return False
+    failed_note = failed[0].get("note")
+    if refinement.get("failedNote") != failed_note:
+        return False
+    refined = refinement.get("refined") or {}
+    if refined.get("expected") != failed_note:
+        return False
+    rreads = list(refined.get("reads") or [])
+    rexact = [r for r in rreads if r.get("eligible") and r.get("exact") and r.get("candidate") == failed_note]
+    rcompeting = [r for r in rreads if r.get("eligible") and r.get("candidate") and r.get("candidate") != failed_note]
+    if len(rexact) < 2 or rcompeting:
+        return False
+    for expected, detail, label in zip(notes, details, labels):
+        if detail.get("note") != expected or label.get("note") != expected or not detail.get("confident"):
+            return False
+        if expected == failed_note:
+            continue
+        if not label.get("ok"):
+            return False
+        reads = list(detail.get("reads") or [])
+        winner_exact = [r for r in reads if r.get("eligible") and r.get("exact") and r.get("candidate") == expected]
+        exact_crop = [r for r in winner_exact if r.get("variant") != "locator"]
+        competing = [r for r in reads if r.get("eligible") and r.get("candidate") and r.get("candidate") != expected]
+        if len(winner_exact) < 2 or not exact_crop or competing:
+            return False
+    return True
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--baseline-ref", help="Git ref whose database_complete.json is the identity baseline")
@@ -144,12 +203,18 @@ def main():
     audit_rows = load(ORDERED_AUDIT).get("rows", [])
     v2_pilot_rows = load(V2_LABEL_PILOT).get("rows", []) if V2_LABEL_PILOT.is_file() else []
     v2_validation_rows = load(V2_EXACT_VALIDATION).get("rows", []) if V2_EXACT_VALIDATION.is_file() else []
+    cy_pilot_rows = load(CURRENT_YELLOW_V2_PILOT).get("rows", []) if CURRENT_YELLOW_V2_PILOT.is_file() else []
+    cy_validation_rows = load(CURRENT_YELLOW_V2_VALIDATION).get("rows", []) if CURRENT_YELLOW_V2_VALIDATION.is_file() else []
+    refinement_rows = load(NEAR_PASS_REFINEMENT).get("rows", []) if NEAR_PASS_REFINEMENT.is_file() else []
     by_code = {row_code(r): r for r in db}
     site_by_code = {row_code(r): r for r in site}
     final_by_code = {row_code(r): r for r in final}
     audit_by_code = {row_code(r): r for r in audit_rows}
     v2_pilot = {row_code(r): r for r in v2_pilot_rows}
     v2_validation = {row_code(r): r for r in v2_validation_rows}
+    cy_pilot = {row_code(r): r for r in cy_pilot_rows}
+    cy_validation = {row_code(r): r for r in cy_validation_rows}
+    refinement = {row_code(r): r for r in refinement_rows}
 
     failures = []
     if len(by_code) != len(db): failures.append("duplicate Shobi codes in database_complete.json")
@@ -164,6 +229,7 @@ def main():
 
     green = []
     green_v2 = []
+    green_supplemental = []
     for code, srow in site_by_code.items():
         if srow.get("validationStatus") != "green":
             continue
@@ -184,11 +250,14 @@ def main():
             and (ROOT / str(ev.get("card") or "").strip()).is_file()
         )
         v2 = v2_strong_ordered_evidence(row, fid, notes, audit_by_code, v2_pilot, v2_validation)
-        if not strict and not v2:
-            failures.append(f"{code}: green without strict whole-card or revalidated STRONG_EXACT V2 proof")
+        supplemental = near_pass_supplemental_evidence(row, fid, notes, audit_by_code, cy_pilot, cy_validation, refinement)
+        if not strict and not v2 and not supplemental:
+            failures.append(f"{code}: green without strict whole-card, revalidated STRONG_EXACT V2, or revalidated supplemental one-label proof")
             continue
         if v2 and not strict:
             green_v2.append(code)
+        if supplemental and not strict and not v2:
+            green_supplemental.append(code)
 
     fid_codes = defaultdict(list)
     for code, row in by_code.items():
@@ -246,15 +315,16 @@ def main():
             f"- Red: **{counts['red']}**",
             f"- Green rows with mandatory ordered Social Card proof: **{len(green)} / {counts['green']}**",
             f"- Green rows using independently revalidated STRONG_EXACT V2 proof: **{len(green_v2)}**",
+            f"- Green rows using independently revalidated supplemental one-label OCR proof: **{len(green_supplemental)}**",
             f"- Approved shared-FID alias groups present: **{len(approved_shared_present)}**",
             f"- Unapproved shared FIDs: **{len(unapproved_shared)}**",
             f"- Unauthorized identity/FID changes vs baseline: **{len(identity_changes)}**", "",
-            "A green row is accepted only when the current FID and ordered note sequence are proven either by the strict whole-card `EXACT_ORDERED_MATCH` path or by independently revalidated `STRONG_EXACT` V2 per-label OCR evidence with multiple exact reads, a real crop read, and zero competing eligible candidates for every note.", "",
+            "A green row is accepted only when the current FID and ordered note sequence are proven by strict whole-card `EXACT_ORDERED_MATCH`, independently revalidated `STRONG_EXACT` V2, or the independently revalidated one-label supplemental OCR path. Supplemental proof preserves the same exact-read and zero-competitor requirements and may replace only one previously weak label while every other label must still satisfy the original strong V2 gate.", "",
             "Shared Fragrantica IDs are allowed only when the exact set of Shobi codes is registered in `shared-fid-alias-registry.json`; any new member or new shared FID fails CI.", ""
         ]), encoding="utf-8")
 
     print(json.dumps({
-        "rows": len(site), "counts": counts, "greenOrderedProof": len(green), "greenV2Strong": len(green_v2),
+        "rows": len(site), "counts": counts, "greenOrderedProof": len(green), "greenV2Strong": len(green_v2), "greenSupplementalStrong": len(green_supplemental),
         "approvedSharedFidGroups": len(approved_shared_present), "unapprovedSharedFids": len(unapproved_shared),
         "protectedIdentities": len(protected), "unauthorizedIdentityChanges": len(identity_changes), "failures": len(failures)
     }, indent=2))
