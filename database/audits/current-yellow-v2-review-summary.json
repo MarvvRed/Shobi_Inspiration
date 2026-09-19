@@ -1,0 +1,982 @@
+{
+  "reviewRows": 47,
+  "failedLabels": 61,
+  "rowsByFailedLabelCount": {
+    "1": 33,
+    "2": 14
+  },
+  "failureModes": {
+    "COMPETING_ELIGIBLE_READS": 32,
+    "LT_2_EXACT_READS": 40,
+    "NO_EXACT_CROP_READ": 36
+  },
+  "topFailedNotes": [
+    [
+      "Currant Leaf and Bud",
+      15
+    ],
+    [
+      "Iso E Super",
+      12
+    ],
+    [
+      "Pink Pepper",
+      4
+    ],
+    [
+      "Mandarin Orange",
+      2
+    ],
+    [
+      "Bitter Orange",
+      2
+    ],
+    [
+      "Orange Blossom",
+      2
+    ],
+    [
+      "Woody Notes",
+      2
+    ],
+    [
+      "Labdanum",
+      2
+    ],
+    [
+      "Clary Sage",
+      1
+    ],
+    [
+      "Blood Orange",
+      1
+    ],
+    [
+      "Powdery Notes",
+      1
+    ],
+    [
+      "Water Hyacinth",
+      1
+    ],
+    [
+      "Fruity Notes",
+      1
+    ],
+    [
+      "Tobacco Blossom",
+      1
+    ],
+    [
+      "White Oud",
+      1
+    ],
+    [
+      "Bagas de Zimbro",
+      1
+    ],
+    [
+      "Hexyl Acetate",
+      1
+    ],
+    [
+      "Agarwood (Oud)",
+      1
+    ],
+    [
+      "Cinnamon",
+      1
+    ],
+    [
+      "Akigalawood",
+      1
+    ],
+    [
+      "Vanilla Caviar",
+      1
+    ],
+    [
+      "Orris Root",
+      1
+    ],
+    [
+      "Vetiver",
+      1
+    ],
+    [
+      "Sandalwood",
+      1
+    ],
+    [
+      "Tonka Bean",
+      1
+    ],
+    [
+      "White Flowers",
+      1
+    ],
+    [
+      "Spicy Notes",
+      1
+    ],
+    [
+      "Sour Cherry",
+      1
+    ]
+  ],
+  "nearPassRows": [
+    {
+      "code": "1012-ARA",
+      "fid": "599",
+      "failedLabel": {
+        "note": "Mandarin Orange",
+        "ok": false,
+        "exactReads": 4,
+        "exactCropReads": 3,
+        "competingEligibleReads": 2
+      }
+    },
+    {
+      "code": "1070-CHA",
+      "fid": "614",
+      "failedLabel": {
+        "note": "Clary Sage",
+        "ok": false,
+        "exactReads": 4,
+        "exactCropReads": 3,
+        "competingEligibleReads": 1
+      }
+    },
+    {
+      "code": "1094-DOL",
+      "fid": "56358",
+      "failedLabel": {
+        "note": "Blood Orange",
+        "ok": false,
+        "exactReads": 4,
+        "exactCropReads": 3,
+        "competingEligibleReads": 2
+      }
+    },
+    {
+      "code": "1238-PRA",
+      "fid": "3794",
+      "failedLabel": {
+        "note": "Powdery Notes",
+        "ok": false,
+        "exactReads": 4,
+        "exactCropReads": 3,
+        "competingEligibleReads": 2
+      }
+    },
+    {
+      "code": "1490-DRC",
+      "fid": "58714",
+      "failedLabel": {
+        "note": "Iso E Super",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "1510-KIL",
+      "fid": "14330",
+      "failedLabel": {
+        "note": "Bitter Orange",
+        "ok": false,
+        "exactReads": 4,
+        "exactCropReads": 3,
+        "competingEligibleReads": 1
+      }
+    },
+    {
+      "code": "1660-ESCE",
+      "fid": "845",
+      "failedLabel": {
+        "note": "Iso E Super",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "1677-BYR",
+      "fid": "50934",
+      "failedLabel": {
+        "note": "Iso E Super",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "1718-TER",
+      "fid": "30624",
+      "failedLabel": {
+        "note": "Currant Leaf and Bud",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 2
+      }
+    },
+    {
+      "code": "1848-LEL",
+      "fid": "6334",
+      "failedLabel": {
+        "note": "Fruity Notes",
+        "ok": false,
+        "exactReads": 4,
+        "exactCropReads": 3,
+        "competingEligibleReads": 2
+      }
+    },
+    {
+      "code": "1856-PARF",
+      "fid": "18750",
+      "failedLabel": {
+        "note": "Currant Leaf and Bud",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 1
+      }
+    },
+    {
+      "code": "1857-ESCE",
+      "fid": "58970",
+      "failedLabel": {
+        "note": "Iso E Super",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "1859-XER",
+      "fid": "52433",
+      "failedLabel": {
+        "note": "Tobacco Blossom",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "2057-ESCE",
+      "fid": "79414",
+      "failedLabel": {
+        "note": "Iso E Super",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "2175-ESCE",
+      "fid": "66047",
+      "failedLabel": {
+        "note": "Iso E Super",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "2228-ESCE",
+      "fid": "66048",
+      "failedLabel": {
+        "note": "Iso E Super",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "2249-BYR",
+      "fid": "83369",
+      "failedLabel": {
+        "note": "Currant Leaf and Bud",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 2
+      }
+    },
+    {
+      "code": "2330-JUL",
+      "fid": "1715",
+      "failedLabel": {
+        "note": "Iso E Super",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "2398-FRE",
+      "fid": "91209",
+      "failedLabel": {
+        "note": "Iso E Super",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "2415-ESC",
+      "fid": "1352",
+      "failedLabel": {
+        "note": "Currant Leaf and Bud",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 1
+      }
+    },
+    {
+      "code": "2431-ROJ",
+      "fid": "23008",
+      "failedLabel": {
+        "note": "Woody Notes",
+        "ok": false,
+        "exactReads": 4,
+        "exactCropReads": 3,
+        "competingEligibleReads": 2
+      }
+    },
+    {
+      "code": "2453-INI",
+      "fid": "89368",
+      "failedLabel": {
+        "note": "Pink Pepper",
+        "ok": false,
+        "exactReads": 4,
+        "exactCropReads": 3,
+        "competingEligibleReads": 3
+      }
+    },
+    {
+      "code": "2485-ETLR",
+      "fid": "69412",
+      "failedLabel": {
+        "note": "Hexyl Acetate",
+        "ok": false,
+        "exactReads": 1,
+        "exactCropReads": 1,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "2492-ETLR",
+      "fid": "43531",
+      "failedLabel": {
+        "note": "Currant Leaf and Bud",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "2532-PRA",
+      "fid": "32197",
+      "failedLabel": {
+        "note": "Iso E Super",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "2618-TMFO",
+      "fid": "100411",
+      "failedLabel": {
+        "note": "Akigalawood",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "2722-CRIVEL",
+      "fid": "69069",
+      "failedLabel": {
+        "note": "Currant Leaf and Bud",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "301-JOM",
+      "fid": "4579",
+      "failedLabel": {
+        "note": "Currant Leaf and Bud",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "320-NAS",
+      "fid": "40200",
+      "failedLabel": {
+        "note": "Woody Notes",
+        "ok": false,
+        "exactReads": 1,
+        "exactCropReads": 1,
+        "competingEligibleReads": 1
+      }
+    },
+    {
+      "code": "578-DON",
+      "fid": "504",
+      "failedLabel": {
+        "note": "Currant Leaf and Bud",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "604-ESC",
+      "fid": "1036",
+      "failedLabel": {
+        "note": "Currant Leaf and Bud",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 1
+      }
+    },
+    {
+      "code": "783-LAN",
+      "fid": "35493",
+      "failedLabel": {
+        "note": "Currant Leaf and Bud",
+        "ok": false,
+        "exactReads": 0,
+        "exactCropReads": 0,
+        "competingEligibleReads": 0
+      }
+    },
+    {
+      "code": "784-LAN",
+      "fid": "45892",
+      "failedLabel": {
+        "note": "White Flowers",
+        "ok": false,
+        "exactReads": 1,
+        "exactCropReads": 1,
+        "competingEligibleReads": 2
+      }
+    }
+  ],
+  "failedLabelDetails": [
+    {
+      "code": "1012-ARA",
+      "fid": "599",
+      "note": "Mandarin Orange",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "1070-CHA",
+      "fid": "614",
+      "note": "Clary Sage",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "1094-DOL",
+      "fid": "56358",
+      "note": "Blood Orange",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "1238-PRA",
+      "fid": "3794",
+      "note": "Powdery Notes",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "1490-DRC",
+      "fid": "58714",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "1510-KIL",
+      "fid": "14330",
+      "note": "Bitter Orange",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "1660-ESCE",
+      "fid": "845",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "1677-BYR",
+      "fid": "50934",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "1718-TER",
+      "fid": "30624",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "1829-BOB",
+      "fid": "11983",
+      "note": "Water Hyacinth",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 5
+    },
+    {
+      "code": "1829-BOB",
+      "fid": "11983",
+      "note": "Orange Blossom",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "1848-LEL",
+      "fid": "6334",
+      "note": "Fruity Notes",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "1856-PARF",
+      "fid": "18750",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "1857-ESCE",
+      "fid": "58970",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "1859-XER",
+      "fid": "52433",
+      "note": "Tobacco Blossom",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "1865-YZLO",
+      "fid": "46243",
+      "note": "White Oud",
+      "exactReads": 1,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "1865-YZLO",
+      "fid": "46243",
+      "note": "Pink Pepper",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "2043-VER",
+      "fid": "76274",
+      "note": "Bitter Orange",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "2043-VER",
+      "fid": "76274",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2045-HER",
+      "fid": "6065",
+      "note": "Mandarin Orange",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "2045-HER",
+      "fid": "6065",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "2057-ESCE",
+      "fid": "79414",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2175-ESCE",
+      "fid": "66047",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2226-BON",
+      "fid": "20551",
+      "note": "Bagas de Zimbro",
+      "exactReads": 3,
+      "exactCropReads": 3,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "2226-BON",
+      "fid": "20551",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 4
+    },
+    {
+      "code": "2228-ESCE",
+      "fid": "66048",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2249-BYR",
+      "fid": "83369",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "232-ESCE",
+      "fid": "846",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "232-ESCE",
+      "fid": "846",
+      "note": "Pink Pepper",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "2330-JUL",
+      "fid": "1715",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2398-FRE",
+      "fid": "91209",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2415-ESC",
+      "fid": "1352",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "2431-ROJ",
+      "fid": "23008",
+      "note": "Woody Notes",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "2453-INI",
+      "fid": "89368",
+      "note": "Pink Pepper",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 3
+    },
+    {
+      "code": "2485-ETLR",
+      "fid": "69412",
+      "note": "Hexyl Acetate",
+      "exactReads": 1,
+      "exactCropReads": 1,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2492-ETLR",
+      "fid": "43531",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2532-PRA",
+      "fid": "32197",
+      "note": "Iso E Super",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2553-BON",
+      "fid": "13630",
+      "note": "Agarwood (Oud)",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2553-BON",
+      "fid": "13630",
+      "note": "Labdanum",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2597-TMFO",
+      "fid": "97380",
+      "note": "Cinnamon",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2597-TMFO",
+      "fid": "97380",
+      "note": "Labdanum",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2618-TMFO",
+      "fid": "100411",
+      "note": "Akigalawood",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2722-CRIVEL",
+      "fid": "69069",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "2753-YZLO",
+      "fid": "113623",
+      "note": "Orange Blossom",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "2753-YZLO",
+      "fid": "113623",
+      "note": "Vanilla Caviar",
+      "exactReads": 1,
+      "exactCropReads": 1,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "2833-AMG",
+      "fid": "62859",
+      "note": "Orris Root",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "2833-AMG",
+      "fid": "62859",
+      "note": "Vetiver",
+      "exactReads": 7,
+      "exactCropReads": 6,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "301-JOM",
+      "fid": "4579",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "320-NAS",
+      "fid": "40200",
+      "note": "Woody Notes",
+      "exactReads": 1,
+      "exactCropReads": 1,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "508-CHA",
+      "fid": "15963",
+      "note": "Sandalwood",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "508-CHA",
+      "fid": "15963",
+      "note": "Tonka Bean",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "578-DON",
+      "fid": "504",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "604-ESC",
+      "fid": "1036",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "783-LAN",
+      "fid": "35493",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "784-LAN",
+      "fid": "45892",
+      "note": "White Flowers",
+      "exactReads": 1,
+      "exactCropReads": 1,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "787-LAN",
+      "fid": "174",
+      "note": "Spicy Notes",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "787-LAN",
+      "fid": "174",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 2
+    },
+    {
+      "code": "798-LAN",
+      "fid": "11721",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    },
+    {
+      "code": "798-LAN",
+      "fid": "11721",
+      "note": "Pink Pepper",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 4
+    },
+    {
+      "code": "874-PRA",
+      "fid": "44534",
+      "note": "Sour Cherry",
+      "exactReads": 4,
+      "exactCropReads": 3,
+      "competingEligibleReads": 1
+    },
+    {
+      "code": "874-PRA",
+      "fid": "44534",
+      "note": "Currant Leaf and Bud",
+      "exactReads": 0,
+      "exactCropReads": 0,
+      "competingEligibleReads": 0
+    }
+  ]
+}
