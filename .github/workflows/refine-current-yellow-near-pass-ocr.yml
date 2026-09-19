@@ -1,0 +1,39 @@
+name: Refine current-yellow near-pass OCR
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/refine_current_yellow_near_pass_ocr.py'
+      - '.github/workflows/refine-current-yellow-near-pass-ocr.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  refine:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+      - name: Install dependencies
+        run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow
+      - name: Run targeted near-pass OCR refinement
+        run: python tools/refine_current_yellow_near_pass_ocr.py
+      - name: Commit refinement report only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/audits/current-yellow-near-pass-ocr-refinement.json
+          if git diff --cached --quiet; then
+            echo 'No refinement report changes.'
+            exit 0
+          fi
+          git commit -m 'Publish current-yellow near-pass OCR refinement'
+          git pull --rebase origin main
+          git push origin main
