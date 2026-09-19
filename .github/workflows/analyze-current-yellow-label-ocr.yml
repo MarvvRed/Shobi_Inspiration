@@ -1,0 +1,41 @@
+name: Analyze current yellow per-label OCR V2
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/analyze_current_yellow_label_ocr.py'
+      - '.github/workflows/analyze-current-yellow-label-ocr.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+      - name: Install dependencies
+        run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow
+      - name: Run isolated V2 OCR on current yellow strict-reading rows
+        env:
+          CURRENT_YELLOW_OCR_LIMIT: '0'
+        run: python tools/analyze_current_yellow_label_ocr.py
+      - name: Commit current-yellow analysis only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/audits/current-yellow-label-ocr-v2.json
+          if git diff --cached --quiet; then
+            echo 'No current-yellow V2 report changes.'
+            exit 0
+          fi
+          git commit -m 'Publish current-yellow V2 OCR analysis'
+          git pull --rebase origin main
+          git push origin main
