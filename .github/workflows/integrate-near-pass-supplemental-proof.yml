@@ -1,0 +1,40 @@
+name: Integrate near-pass supplemental OCR proof
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/integrate_near_pass_supplemental_proof.py'
+      - '.github/workflows/integrate-near-pass-supplemental-proof.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+      - name: Patch builder and independent verifier
+        run: python tools/integrate_near_pass_supplemental_proof.py
+      - name: Rebuild validation and final catalog
+        run: |
+          python tools/build_validation_audit.py
+          python tools/build_final_perfume_catalog.py
+      - name: Run independent invariant gate
+        run: python tools/verify_catalog_invariants.py --write-report
+      - name: Commit certified integration
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add tools/build_validation_audit.py tools/verify_catalog_invariants.py database/catalog/database_complete.json database/catalog/catalog_site.json database/catalog/catalog_final_perfume_only.json database/audits/CURRENT-CATALOG-AUDIT.md
+          if git diff --cached --quiet; then
+            echo 'No integration changes.'
+            exit 0
+          fi
+          git commit -m 'Accept revalidated supplemental near-pass OCR proof'
+          git pull --rebase origin main
+          git push origin main
