@@ -1,9 +1,9 @@
 {
   "totalCatalog": 2253,
-  "yellow": 275,
+  "yellow": 265,
   "issueCounts": {
-    "Social Card not fully verified": 275,
-    "Main Notes order not fully verified": 269,
+    "Social Card not fully verified": 265,
+    "Main Notes order not fully verified": 259,
     "Season not fully verified": 10,
     "Gender not fully verified": 6,
     "Missing Main Notes": 6,
@@ -15,13 +15,13 @@
   },
   "singleIssueCounts": {},
   "orderedAuditResults": {
-    "READING_NOT_STRICT_ENOUGH": 269,
+    "READING_NOT_STRICT_ENOUGH": 259,
     "UNSUPPORTED_CARD_GEOMETRY": 4,
     "NO_EXACT_CARD": 2
   },
   "issueCombinations": [
     {
-      "count": 265,
+      "count": 255,
       "issues": [
         "Main Notes order not fully verified",
         "Social Card not fully verified"
@@ -530,16 +530,6 @@
       "v2Status": "REVIEW"
     },
     {
-      "code": "2532-PRA",
-      "fid": "32197",
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "v2Status": "REVIEW"
-    },
-    {
       "code": "2540-COM",
       "fid": "45911",
       "issues": [
@@ -660,16 +650,6 @@
       "v2Status": null
     },
     {
-      "code": "2431-ROJ",
-      "fid": "23008",
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "v2Status": "REVIEW"
-    },
-    {
       "code": "2427-CLEA",
       "fid": "3024",
       "issues": [
@@ -682,16 +662,6 @@
     {
       "code": "2415-ESC",
       "fid": "1352",
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "v2Status": "REVIEW"
-    },
-    {
-      "code": "2398-FRE",
-      "fid": "91209",
       "issues": [
         "Main Notes order not fully verified",
         "Social Card not fully verified"
@@ -788,16 +758,6 @@
       ],
       "orderedAudit": "READING_NOT_STRICT_ENOUGH",
       "v2Status": null
-    },
-    {
-      "code": "2330-JUL",
-      "fid": "1715",
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "v2Status": "REVIEW"
     },
     {
       "code": "2327-SWISA",
@@ -998,16 +958,6 @@
       ],
       "orderedAudit": "READING_NOT_STRICT_ENOUGH",
       "v2Status": null
-    },
-    {
-      "code": "2175-ESCE",
-      "fid": "66047",
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "v2Status": "REVIEW"
     },
     {
       "code": "2171-XER",
@@ -1297,16 +1247,6 @@
       "v2Status": null
     },
     {
-      "code": "1848-LEL",
-      "fid": "6334",
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "v2Status": "REVIEW"
-    },
-    {
       "code": "1859-XER",
       "fid": "52433",
       "issues": [
@@ -1345,16 +1285,6 @@
       ],
       "orderedAudit": "READING_NOT_STRICT_ENOUGH",
       "v2Status": null
-    },
-    {
-      "code": "1857-ESCE",
-      "fid": "58970",
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "v2Status": "REVIEW"
     },
     {
       "code": "1856-PARF",
@@ -1457,16 +1387,6 @@
       "v2Status": null
     },
     {
-      "code": "320-NAS",
-      "fid": "40200",
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "v2Status": "REVIEW"
-    },
-    {
       "code": "1803-DRC",
       "fid": "62638",
       "issues": [
@@ -1565,16 +1485,6 @@
       ],
       "orderedAudit": "READING_NOT_STRICT_ENOUGH",
       "v2Status": null
-    },
-    {
-      "code": "1677-BYR",
-      "fid": "50934",
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "v2Status": "REVIEW"
     },
     {
       "code": "1656-LOC",
@@ -1695,16 +1605,6 @@
       ],
       "orderedAudit": "READING_NOT_STRICT_ENOUGH",
       "v2Status": null
-    },
-    {
-      "code": "1490-DRC",
-      "fid": "58714",
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "v2Status": "REVIEW"
     },
     {
       "code": "161-PEN",
