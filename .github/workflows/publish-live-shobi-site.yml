@@ -14,6 +14,8 @@ on:
       - 'tools/recover_exact_card_proofs_multipass.py'
       - 'tools/recover_header_anchored_six_slot_proofs.py'
       - 'tools/apply_exact_card_proofs_multipass.py'
+      - 'tools/verify_current_yellow_slot_ocr_v4_independent.py'
+      - 'tools/apply_current_yellow_slot_ocr_v4_independent.py'
       - 'database/catalog/**'
       - 'database/source/**'
       - 'database/fragrantica/social-cards/records/**'
@@ -91,6 +93,10 @@ jobs:
           SOCIAL_CARD_RECOVERY_WORKERS=2 python tools/recover_exact_card_proofs_multipass.py
           python tools/apply_exact_card_proofs_multipass.py
           python tools/recover_header_anchored_six_slot_proofs.py
+          # V4's report is only a work list.  The next two steps independently
+          # re-read the live current card and fail closed before changing audit state.
+          python tools/verify_current_yellow_slot_ocr_v4_independent.py
+          python tools/apply_current_yellow_slot_ocr_v4_independent.py
 
       - name: Build strict validation audit
         run: python tools/build_validation_audit.py
@@ -164,7 +170,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add database/catalog/database_complete.json database/catalog/catalog_site.json database/catalog/catalog_final_perfume_only.json database/catalog/database_final_perfume_only.json database/catalog/final-perfume-catalog-certification.json database/audits/FINAL-PERFUME-CATALOG.md database/audits/CURRENT-CATALOG-AUDIT.md database/catalog/catalog-scope-exclusions.json database/catalog/catalog-wearable-original-scope-audit.json database/fragrantica/social-cards/records/social-card-main-notes-validated.json database/fragrantica/social-cards/records/social-card-ordered-image-audit.json database/audits/strict-ordered-card-corrections.json script.js index.html tools/build_final_perfume_catalog.py
+          git add database/catalog/database_complete.json database/catalog/catalog_site.json database/catalog/catalog_final_perfume_only.json database/catalog/database_final_perfume_only.json database/catalog/final-perfume-catalog-certification.json database/audits/FINAL-PERFUME-CATALOG.md database/audits/CURRENT-CATALOG-AUDIT.md database/audits/current-yellow-breakdown.json database/audits/current-yellow-slot-ocr-v4-independent-verification.json database/catalog/catalog-scope-exclusions.json database/catalog/catalog-wearable-original-scope-audit.json database/fragrantica/social-cards/records/social-card-main-notes-validated.json database/fragrantica/social-cards/records/social-card-ordered-image-audit.json database/audits/strict-ordered-card-corrections.json script.js index.html tools/build_final_perfume_catalog.py
           if git diff --cached --quiet; then
             echo 'No website catalog changes.'
             exit 0

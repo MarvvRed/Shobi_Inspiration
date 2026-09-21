@@ -24,6 +24,7 @@ V2_EXACT_VALIDATION = ROOT / "database/audits/v2-exact-validation.json"
 CURRENT_YELLOW_V2_PILOT = ROOT / "database/audits/current-yellow-label-ocr-v2.json"
 CURRENT_YELLOW_V2_VALIDATION = ROOT / "database/audits/current-yellow-v2-exact-validation.json"
 NEAR_PASS_REFINEMENT = ROOT / "database/audits/current-yellow-near-pass-ocr-refinement.json"
+V4_INDEPENDENT_SLOT_VERIFICATION = ROOT / "database/audits/current-yellow-slot-ocr-v4-independent-verification.json"
 REPORT = ROOT / "database/audits/CURRENT-CATALOG-AUDIT.md"
 ALLOWLIST = ROOT / "database/audits/identity-change-allowlist.json"
 CRITICAL_FIXES = ROOT / "database/audits/critical-identity-fixes.json"
@@ -191,6 +192,42 @@ def near_pass_supplemental_evidence(row, fid, notes, current_audit, pilot_map, v
             return False
     return True
 
+
+def v4_independent_slot_evidence(row, fid, notes, current_audit, proof_map):
+    """Independently revalidate every stored V4 slot proof field used by green."""
+    c = row_code(row)
+    proof = proof_map.get(c)
+    audit = current_audit.get(c)
+    if not proof or not audit:
+        return False
+    if proof.get("result") != "INDEPENDENT_EXACT_SLOT_SEQUENCE" or proof.get("sourceV4Result") != "EXACT_SLOT_SEQUENCE":
+        return False
+    if str(proof.get("fid") or "") != fid or proof.get("catalog") != notes or proof.get("observed") != notes or not notes:
+        return False
+    card = str(proof.get("card") or "")
+    linked = audit.get("v4IndependentSlotProof") or {}
+    if (not card or not (ROOT / card).is_file() or audit.get("result") != "EXACT_ORDERED_MATCH" or
+            str(audit.get("fragranticaId") or "") != fid or audit.get("catalogNotes") != notes or
+            audit.get("observedNotes") != notes or str(audit.get("card") or "") != card or
+            linked.get("report") != "database/audits/current-yellow-slot-ocr-v4-independent-verification.json" or
+            str(linked.get("fid") or "") != fid or str(linked.get("card") or "") != card or
+            proof.get("currentExactCardCandidates") != [card]):
+        return False
+    observed = []
+    for slot in proof.get("slots") or []:
+        reads = list(slot.get("reads") or [])
+        if slot.get("strong"):
+            winner = slot.get("winner")
+            exact = [read for read in reads if read.get("eligible") and read.get("exact") and read.get("candidate") == winner]
+            configurations = {(read.get("family"), read.get("psm")) for read in exact if read.get("family") and read.get("psm") is not None}
+            competitors = [read for read in reads if read.get("eligible") and read.get("candidate") and read.get("candidate") != winner]
+            if not winner or len(exact) < 2 or len(configurations) < 2 or competitors:
+                return False
+            observed.append(winner)
+        elif any(read.get("eligible") for read in reads):
+            return False
+    return observed == notes
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--baseline-ref", help="Git ref whose database_complete.json is the identity baseline")
@@ -206,6 +243,7 @@ def main():
     cy_pilot_rows = load(CURRENT_YELLOW_V2_PILOT).get("rows", []) if CURRENT_YELLOW_V2_PILOT.is_file() else []
     cy_validation_rows = load(CURRENT_YELLOW_V2_VALIDATION).get("rows", []) if CURRENT_YELLOW_V2_VALIDATION.is_file() else []
     refinement_rows = load(NEAR_PASS_REFINEMENT).get("rows", []) if NEAR_PASS_REFINEMENT.is_file() else []
+    v4_independent_rows = load(V4_INDEPENDENT_SLOT_VERIFICATION).get("rows", []) if V4_INDEPENDENT_SLOT_VERIFICATION.is_file() else []
     by_code = {row_code(r): r for r in db}
     site_by_code = {row_code(r): r for r in site}
     final_by_code = {row_code(r): r for r in final}
@@ -215,6 +253,7 @@ def main():
     cy_pilot = {row_code(r): r for r in cy_pilot_rows}
     cy_validation = {row_code(r): r for r in cy_validation_rows}
     refinement = {row_code(r): r for r in refinement_rows}
+    v4_independent = {row_code(r): r for r in v4_independent_rows}
 
     failures = []
     if len(by_code) != len(db): failures.append("duplicate Shobi codes in database_complete.json")
@@ -230,6 +269,7 @@ def main():
     green = []
     green_v2 = []
     green_supplemental = []
+    green_v4_independent = []
     for code, srow in site_by_code.items():
         if srow.get("validationStatus") != "green":
             continue
@@ -242,6 +282,7 @@ def main():
         fid = str(row.get("fragranticaId") or "").strip()
         strict = bool(
             ev
+            and not ev.get("v4IndependentSlotProof")
             and ev.get("result") == "EXACT_ORDERED_MATCH"
             and str(ev.get("fragranticaId") or "").strip() == fid
             and ev.get("catalogNotes") == notes
@@ -251,13 +292,16 @@ def main():
         )
         v2 = v2_strong_ordered_evidence(row, fid, notes, audit_by_code, v2_pilot, v2_validation)
         supplemental = near_pass_supplemental_evidence(row, fid, notes, audit_by_code, cy_pilot, cy_validation, refinement)
-        if not strict and not v2 and not supplemental:
-            failures.append(f"{code}: green without strict whole-card, revalidated STRONG_EXACT V2, or revalidated supplemental one-label proof")
+        v4 = v4_independent_slot_evidence(row, fid, notes, audit_by_code, v4_independent)
+        if not strict and not v2 and not supplemental and not v4:
+            failures.append(f"{code}: green without strict whole-card, revalidated STRONG_EXACT V2, supplemental one-label proof, or independent V4 slot proof")
             continue
         if v2 and not strict:
             green_v2.append(code)
         if supplemental and not strict and not v2:
             green_supplemental.append(code)
+        if v4 and not strict and not v2 and not supplemental:
+            green_v4_independent.append(code)
 
     fid_codes = defaultdict(list)
     for code, row in by_code.items():
@@ -316,15 +360,16 @@ def main():
             f"- Green rows with mandatory ordered Social Card proof: **{len(green)} / {counts['green']}**",
             f"- Green rows using independently revalidated STRONG_EXACT V2 proof: **{len(green_v2)}**",
             f"- Green rows using independently revalidated supplemental one-label OCR proof: **{len(green_supplemental)}**",
+            f"- Green rows using independently revalidated V4 current-card slot proof: **{len(green_v4_independent)}**",
             f"- Approved shared-FID alias groups present: **{len(approved_shared_present)}**",
             f"- Unapproved shared FIDs: **{len(unapproved_shared)}**",
             f"- Unauthorized identity/FID changes vs baseline: **{len(identity_changes)}**", "",
-            "A green row is accepted only when the current FID and ordered note sequence are proven by strict whole-card `EXACT_ORDERED_MATCH`, independently revalidated `STRONG_EXACT` V2, or the independently revalidated one-label supplemental OCR path. Supplemental proof preserves the same exact-read and zero-competitor requirements and may replace only one previously weak label while every other label must still satisfy the original strong V2 gate.", "",
+            "A green row is accepted only when the current FID and ordered note sequence are proven by strict whole-card `EXACT_ORDERED_MATCH`, independently revalidated `STRONG_EXACT` V2, the independently revalidated one-label supplemental OCR path, or a separate V4 current-card slot proof. The V4 route requires the original V4 result only as a work-list selector, then independently re-resolves the current exact-FID card and requires the full pixel-derived sequence, two exact OCR configurations per occupied slot, and zero competing eligible reads.", "",
             "Shared Fragrantica IDs are allowed only when the exact set of Shobi codes is registered in `shared-fid-alias-registry.json`; any new member or new shared FID fails CI.", ""
         ]), encoding="utf-8")
 
     print(json.dumps({
-        "rows": len(site), "counts": counts, "greenOrderedProof": len(green), "greenV2Strong": len(green_v2), "greenSupplementalStrong": len(green_supplemental),
+        "rows": len(site), "counts": counts, "greenOrderedProof": len(green), "greenV2Strong": len(green_v2), "greenSupplementalStrong": len(green_supplemental), "greenV4IndependentSlot": len(green_v4_independent),
         "approvedSharedFidGroups": len(approved_shared_present), "unapprovedSharedFids": len(unapproved_shared),
         "protectedIdentities": len(protected), "unauthorizedIdentityChanges": len(identity_changes), "failures": len(failures)
     }, indent=2))

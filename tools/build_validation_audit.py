@@ -18,6 +18,7 @@ V2_EXACT_VALIDATION = ROOT / "database/audits/v2-exact-validation.json"
 CURRENT_YELLOW_V2_PILOT = ROOT / "database/audits/current-yellow-label-ocr-v2.json"
 CURRENT_YELLOW_V2_VALIDATION = ROOT / "database/audits/current-yellow-v2-exact-validation.json"
 NEAR_PASS_REFINEMENT = ROOT / "database/audits/current-yellow-near-pass-ocr-refinement.json"
+V4_INDEPENDENT_SLOT_VERIFICATION = ROOT / "database/audits/current-yellow-slot-ocr-v4-independent-verification.json"
 PERFUME_IMAGE_MAP = ROOT / "database/assets/perfumes" / "map.js"
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
@@ -76,9 +77,11 @@ v2_validation = {row_code(item): item for item in v2_validation_payload.get("row
 current_yellow_v2_pilot_payload = json.loads(CURRENT_YELLOW_V2_PILOT.read_text(encoding="utf-8")) if CURRENT_YELLOW_V2_PILOT.is_file() else {}
 current_yellow_v2_validation_payload = json.loads(CURRENT_YELLOW_V2_VALIDATION.read_text(encoding="utf-8")) if CURRENT_YELLOW_V2_VALIDATION.is_file() else {}
 near_pass_refinement_payload = json.loads(NEAR_PASS_REFINEMENT.read_text(encoding="utf-8")) if NEAR_PASS_REFINEMENT.is_file() else {}
+v4_independent_payload = json.loads(V4_INDEPENDENT_SLOT_VERIFICATION.read_text(encoding="utf-8")) if V4_INDEPENDENT_SLOT_VERIFICATION.is_file() else {}
 current_yellow_v2_pilot = {row_code(item): item for item in current_yellow_v2_pilot_payload.get("rows", [])}
 current_yellow_v2_validation = {row_code(item): item for item in current_yellow_v2_validation_payload.get("rows", [])}
 near_pass_refinement = {row_code(item): item for item in near_pass_refinement_payload.get("rows", [])}
+v4_independent = {row_code(item): item for item in v4_independent_payload.get("rows", [])}
 
 image_prefix = "window.PERFUME_IMAGE_MAP="
 image_text = PERFUME_IMAGE_MAP.read_text(encoding="utf-8").strip()
@@ -210,6 +213,49 @@ def near_pass_supplemental_evidence(row, fid, notes):
             return False
     return True
 
+
+def v4_independent_slot_evidence(row, fid, notes):
+    """Revalidate the standalone V4 verifier output without trusting a badge.
+
+    The original V4 result is merely a work-list selector.  This route accepts
+    only a current-card proof produced by the separate verifier, with the live
+    FID, exact full sequence, all occupied slots having two distinct exact OCR
+    configurations, and no competing eligible candidate in any slot.
+    """
+    c = row_code(row)
+    proof = v4_independent.get(c)
+    current_audit = ordered_card_audit.get(c)
+    if not proof or not current_audit:
+        return False
+    if proof.get("result") != "INDEPENDENT_EXACT_SLOT_SEQUENCE" or proof.get("sourceV4Result") != "EXACT_SLOT_SEQUENCE":
+        return False
+    if str(proof.get("fid") or "") != fid or proof.get("catalog") != notes or proof.get("observed") != notes or not notes:
+        return False
+    card = str(proof.get("card") or "")
+    linked = current_audit.get("v4IndependentSlotProof") or {}
+    if (not card or not (ROOT / card).is_file() or current_audit.get("result") != "EXACT_ORDERED_MATCH" or
+            str(current_audit.get("fragranticaId") or "") != fid or current_audit.get("catalogNotes") != notes or
+            current_audit.get("observedNotes") != notes or str(current_audit.get("card") or "") != card or
+            linked.get("report") != "database/audits/current-yellow-slot-ocr-v4-independent-verification.json" or
+            str(linked.get("fid") or "") != fid or str(linked.get("card") or "") != card):
+        return False
+    if proof.get("currentExactCardCandidates") != [card]:
+        return False
+    observed = []
+    for slot in proof.get("slots") or []:
+        reads = list(slot.get("reads") or [])
+        if slot.get("strong"):
+            winner = slot.get("winner")
+            exact = [read for read in reads if read.get("eligible") and read.get("exact") and read.get("candidate") == winner]
+            configs = {(read.get("family"), read.get("psm")) for read in exact if read.get("family") and read.get("psm") is not None}
+            competitors = [read for read in reads if read.get("eligible") and read.get("candidate") and read.get("candidate") != winner]
+            if not winner or len(exact) < 2 or len(configs) < 2 or competitors:
+                return False
+            observed.append(winner)
+        elif any(read.get("eligible") for read in reads):
+            return False
+    return observed == notes
+
 def exact_ordered_card_evidence(row, fid, notes):
     """Require independent exact count, identity and order from the current Social Card.
 
@@ -224,6 +270,7 @@ def exact_ordered_card_evidence(row, fid, notes):
     card = str(item.get("card") or "") if item else ""
     strict_whole_card = bool(
         item
+        and not item.get("v4IndependentSlotProof")
         and item.get("result") == "EXACT_ORDERED_MATCH"
         and str(item.get("fragranticaId") or "") == fid
         and item.get("catalogNotes") == notes
@@ -231,7 +278,7 @@ def exact_ordered_card_evidence(row, fid, notes):
         and card
         and (ROOT / card).is_file()
     )
-    return strict_whole_card or v2_strong_ordered_evidence(row, fid, notes) or near_pass_supplemental_evidence(row, fid, notes)
+    return strict_whole_card or v2_strong_ordered_evidence(row, fid, notes) or near_pass_supplemental_evidence(row, fid, notes) or v4_independent_slot_evidence(row, fid, notes)
 
 
 def exact_social_card(row, fid, notes):
