@@ -53,19 +53,28 @@ def main():
     rows_by_code = {code(row.get("code")): row for row in rows}
     audit_by_code = {code(row.get("code")): row for row in audit.get("rows", [])}
     applied = []
+    already_exact = []
     for proof in report.get("rows", []):
         shobi_code = code(proof.get("code"))
         row = rows_by_code.get(shobi_code)
         item = audit_by_code.get(shobi_code)
         if not row or not item:
             raise SystemExit(f"Missing V4 independent target: {shobi_code}")
-        if item.get("result") != "READING_NOT_STRICT_ENOUGH":
-            raise SystemExit(f"V4 independent target is no longer unresolved: {shobi_code}")
         if not proof_is_complete(proof, row):
             raise SystemExit(f"V4 independent proof chain is incomplete: {shobi_code}")
         if (str(item.get("fragranticaId") or "") != str(proof.get("fid") or "") or
                 list(item.get("catalogNotes") or []) != list(proof.get("catalog") or [])):
             raise SystemExit(f"V4 independent audit/card/FID mismatch: {shobi_code}")
+        if item.get("result") == "EXACT_ORDERED_MATCH":
+            # This row has already passed an earlier strict gate in the same
+            # rebuild.  Do not overwrite its proof or claim that V4 promoted
+            # it; the independent report remains an additional re-check.
+            if list(item.get("observedNotes") or []) != list(proof.get("catalog") or []):
+                raise SystemExit(f"Existing exact audit sequence differs from V4 proof: {shobi_code}")
+            already_exact.append(shobi_code)
+            continue
+        if item.get("result") != "READING_NOT_STRICT_ENOUGH":
+            raise SystemExit(f"V4 independent target has unsupported audit state: {shobi_code}")
         item.update({
             "result": "EXACT_ORDERED_MATCH",
             "observedNotes": list(proof["observed"]),
@@ -80,9 +89,14 @@ def main():
         })
         applied.append(shobi_code)
     audit["results"] = dict(sorted(Counter(item.get("result") for item in audit.get("rows", [])).items()))
-    audit["v4IndependentSlotRecovery"] = {"applied": len(applied), "codes": sorted(applied)}
+    audit["v4IndependentSlotRecovery"] = {
+        "applied": len(applied),
+        "codes": sorted(applied),
+        "alreadyExact": len(already_exact),
+        "alreadyExactCodes": sorted(already_exact),
+    }
     ORDERED_AUDIT.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"applied": len(applied), "codes": sorted(applied), "results": audit["results"]}, ensure_ascii=False))
+    print(json.dumps({"applied": len(applied), "codes": sorted(applied), "alreadyExact": len(already_exact), "results": audit["results"]}, ensure_ascii=False))
 
 
 if __name__ == "__main__":

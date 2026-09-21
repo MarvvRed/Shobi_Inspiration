@@ -186,10 +186,18 @@ def verify_candidate(source_item, db_by_code, site_by_code, audit_by_code, lexic
     fid = str(row.get("fragranticaId") or "").strip()
     catalog = list(row.get("fragranticaSocialCardNotes") or [])
     base.update({"fid": fid, "catalog": catalog})
-    if (str(source_item.get("fid") or "") != fid or list(source_item.get("catalog") or []) != catalog or
-            site.get("validationStatus") != "yellow" or audit.get("result") != "READING_NOT_STRICT_ENOUGH" or
+    # The publication workflow can recover an exact ordered match through an
+    # earlier, separate gate before this V4 pass runs.  That must not make the
+    # independent pixel re-check stale: it is either still needed to upgrade a
+    # READING_NOT_STRICT_ENOUGH row, or it is redundant and must leave the
+    # already exact proof untouched.  Site status is deliberately not used
+    # here because the builder has not run at this point in the workflow.
+    if (str(source_item.get("fid") or "") != fid or
+            list(source_item.get("catalog") or []) != catalog or
             str(audit.get("fragranticaId") or "") != fid):
-        return {**base, "result": "INDEPENDENT_REJECTED_STALE_OR_NON_YELLOW_TARGET"}
+        return {**base, "result": "INDEPENDENT_REJECTED_STALE_TARGET"}
+    if audit.get("result") not in {"READING_NOT_STRICT_ENOUGH", "EXACT_ORDERED_MATCH"}:
+        return {**base, "result": "INDEPENDENT_REJECTED_UNEXPECTED_AUDIT_STATE", "currentAuditResult": audit.get("result")}
 
     cards = exact_current_cards(shobi_code, fid)
     relative_cards = [str(card.relative_to(ROOT)) for card in cards]
@@ -220,6 +228,8 @@ def verify_candidate(source_item, db_by_code, site_by_code, audit_by_code, lexic
     base.update({
         "card": str(card.relative_to(ROOT)),
         "previousAuditCard": str(audit.get("card") or ""),
+        "previousAuditResult": audit.get("result"),
+        "previousSiteStatus": site.get("validationStatus"),
         "observed": observed,
         "slots": slot_results,
     })
