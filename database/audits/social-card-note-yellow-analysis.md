@@ -1,8 +1,8 @@
 # Social Card / Main Notes yellow analysis
 
-- Rows: **275**
-- `raw_exact_id_file_suffix`: **181**
-- `validated_record_unresolved`: **74**
+- Rows: **265**
+- `raw_exact_id_file_suffix`: **172**
+- `validated_record_unresolved`: **73**
 - `no_social_card_record`: **10**
 - `validated_fid_mismatch`: **4**
 - `raw_exact_id_file_other_name`: **3**
@@ -56,7 +56,6 @@
 - `2526-KAY` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=5
 - `2549-MARC` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `2485-ETLR` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
-- `2532-PRA` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `2540-COM` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `2492-ETLR` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `2490-MARG` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
@@ -69,10 +68,8 @@
 - `2454-KIL` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `2453-INI` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=5
 - `2452-JOM` — validated_record_unresolved — failed=socialCard,notes — notes=3
-- `2431-ROJ` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `2427-CLEA` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=5
 - `2415-ESC` — validated_record_unresolved — failed=socialCard,notes — notes=6
-- `2398-FRE` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `2401-KAY` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `2393-KAY` — validated_record_unresolved — failed=socialCard,notes — notes=6
 - `2378-GOLD` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=5
@@ -82,7 +79,6 @@
 - `2366-DIP` — validated_record_unresolved — failed=socialCard,notes — notes=6
 - `2361-ARM` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=3
 - `2348-AMG` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
-- `2330-JUL` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `2327-SWISA` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=5
 - `2303-EXN` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `2296-KAY` — validated_record_unresolved — failed=socialCard,notes — notes=6
@@ -103,7 +99,6 @@
 - `2213-AMG` — validated_record_unresolved — failed=socialCard,notes — notes=6
 - `2210-JOM` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `2177-SERG` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=5
-- `2175-ESCE` — validated_record_unresolved — failed=socialCard,notes — notes=2
 - `2171-XER` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `412-BOD` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=4
 - `2151-GIV` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=5
@@ -132,12 +127,10 @@
 - `1918-PAC` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1895-HER` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=3
 - `1878-KIL` — validated_record_unresolved — failed=socialCard,notes — notes=6
-- `1848-LEL` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1859-XER` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1865-YZLO` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1864-GUC` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=5
 - `1851-ARM` — validated_record_unresolved — failed=socialCard,notes — notes=6
-- `1857-ESCE` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1856-PARF` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1850-LEL` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `209-CRD` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
@@ -148,7 +141,6 @@
 - `1829-BOB` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1817-JUL` — validated_record_unresolved — failed=socialCard,notes — notes=6
 - `1812-ALJA` — validated_record_unresolved — failed=socialCard,notes — notes=6
-- `320-NAS` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1803-DRC` — validated_record_unresolved — failed=socialCard,notes — notes=6
 - `1774-ARM` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1772-TER` — validated_record_unresolved — failed=socialCard,notes — notes=6
@@ -159,7 +151,6 @@
 - `1718-TER` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1723-TMFO` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1693-BYR` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
-- `1677-BYR` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1656-LOC` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=5
 - `1659-CHRA` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=5
 - `1655-JOM` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=3
@@ -172,7 +163,6 @@
 - `1552-VER` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=3
 - `1510-KIL` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `1484-VAL` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
-- `1490-DRC` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `161-PEN` — validated_record_unresolved — failed=socialCard,notes — notes=6
 - `1261-TMU` — raw_exact_id_file_suffix — failed=socialCard,notes — notes=6
 - `896-RCAV` — no_social_card_record — failed=socialCard,notes — notes=5
