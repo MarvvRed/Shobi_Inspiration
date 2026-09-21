@@ -75,6 +75,7 @@ jobs:
         run: |
           command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
           python -m pip install --disable-pip-version-check pillow numpy
+          cp database/fragrantica/social-cards/records/social-card-ordered-image-audit.json database/fragrantica/social-cards/records/social-card-ordered-image-audit.pre-rebuild.json
           set +e
           SOCIAL_CARD_AUDIT_WORKERS=2 SOCIAL_CARD_AUDIT_BATCH=100 python tools/audit_social_card_order_from_images.py > social-card-audit-ci.log 2>&1
           audit_status=$?
@@ -93,10 +94,12 @@ jobs:
           SOCIAL_CARD_RECOVERY_WORKERS=2 python tools/recover_exact_card_proofs_multipass.py
           python tools/apply_exact_card_proofs_multipass.py
           python tools/recover_header_anchored_six_slot_proofs.py
+          python tools/preserve_strict_ordered_social_card_proofs.py
           # V4's report is only a work list.  The next two steps independently
           # re-read the live current card and fail closed before changing audit state.
           python tools/verify_current_yellow_slot_ocr_v4_independent.py
           python tools/apply_current_yellow_slot_ocr_v4_independent.py
+          rm database/fragrantica/social-cards/records/social-card-ordered-image-audit.pre-rebuild.json
 
       - name: Build strict validation audit
         run: python tools/build_validation_audit.py
@@ -176,4 +179,8 @@ jobs:
             exit 0
           fi
           git commit -m 'Publish Shobi validation tracker'
+          # A report-only Action can finish while this long audit runs. Rebase
+          # the generated commit on that newer main rather than discarding a
+          # fully verified publication because of an ordinary push race.
+          git pull --rebase origin main
           git push
