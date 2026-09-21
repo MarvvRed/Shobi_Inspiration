@@ -1,0 +1,38 @@
+name: Analyze current yellows with visual templates V5
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/analyze_current_yellow_visual_template_v5.py'
+      - '.github/workflows/analyze-current-yellow-visual-template-v5.yml'
+      - 'database/catalog/database_complete.json'
+      - 'database/fragrantica/social-cards/records/social-card-ordered-image-audit.json'
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run non-OCR visual-template analysis
+        run: |
+          python -m pip install --disable-pip-version-check pillow numpy
+          python tools/analyze_current_yellow_visual_template_v5.py
+
+      - name: Commit analysis report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/audits/current-yellow-visual-template-v5.json
+          if git diff --cached --quiet; then
+            echo 'No V5 report changes.'
+            exit 0
+          fi
+          git commit -m 'Analyze current yellow visual templates V5'
+          git push
