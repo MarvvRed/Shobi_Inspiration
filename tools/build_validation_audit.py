@@ -19,6 +19,8 @@ CURRENT_YELLOW_V2_PILOT = ROOT / "database/audits/current-yellow-label-ocr-v2.js
 CURRENT_YELLOW_V2_VALIDATION = ROOT / "database/audits/current-yellow-v2-exact-validation.json"
 NEAR_PASS_REFINEMENT = ROOT / "database/audits/current-yellow-near-pass-ocr-refinement.json"
 V4_INDEPENDENT_SLOT_VERIFICATION = ROOT / "database/audits/current-yellow-slot-ocr-v4-independent-verification.json"
+V6_NEURAL_REPORT = ROOT / "database/audits/current-yellow-neural-ocr-v6.json"
+V6_INDEPENDENT_LAYOUT_VERIFICATION = ROOT / "database/audits/current-yellow-neural-ocr-v6-independent-verification.json"
 PERFUME_IMAGE_MAP = ROOT / "database/assets/perfumes" / "map.js"
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
@@ -78,10 +80,14 @@ current_yellow_v2_pilot_payload = json.loads(CURRENT_YELLOW_V2_PILOT.read_text(e
 current_yellow_v2_validation_payload = json.loads(CURRENT_YELLOW_V2_VALIDATION.read_text(encoding="utf-8")) if CURRENT_YELLOW_V2_VALIDATION.is_file() else {}
 near_pass_refinement_payload = json.loads(NEAR_PASS_REFINEMENT.read_text(encoding="utf-8")) if NEAR_PASS_REFINEMENT.is_file() else {}
 v4_independent_payload = json.loads(V4_INDEPENDENT_SLOT_VERIFICATION.read_text(encoding="utf-8")) if V4_INDEPENDENT_SLOT_VERIFICATION.is_file() else {}
+v6_neural_payload = json.loads(V6_NEURAL_REPORT.read_text(encoding="utf-8")) if V6_NEURAL_REPORT.is_file() else {}
+v6_independent_payload = json.loads(V6_INDEPENDENT_LAYOUT_VERIFICATION.read_text(encoding="utf-8")) if V6_INDEPENDENT_LAYOUT_VERIFICATION.is_file() else {}
 current_yellow_v2_pilot = {row_code(item): item for item in current_yellow_v2_pilot_payload.get("rows", [])}
 current_yellow_v2_validation = {row_code(item): item for item in current_yellow_v2_validation_payload.get("rows", [])}
 near_pass_refinement = {row_code(item): item for item in near_pass_refinement_payload.get("rows", [])}
 v4_independent = {row_code(item): item for item in v4_independent_payload.get("rows", [])}
+v6_neural = {row_code(item): item for item in v6_neural_payload.get("rows", [])}
+v6_independent = {row_code(item): item for item in v6_independent_payload.get("rows", [])}
 
 image_prefix = "window.PERFUME_IMAGE_MAP="
 image_text = PERFUME_IMAGE_MAP.read_text(encoding="utf-8").strip()
@@ -256,6 +262,37 @@ def v4_independent_slot_evidence(row, fid, notes):
             return False
     return observed == notes
 
+
+def v6_independent_layout_evidence(row, fid, notes):
+    """Revalidate the cross-engine V6 proof; reports are never trusted as badges."""
+    c = row_code(row)
+    proof, source, audit = v6_independent.get(c), v6_neural.get(c), ordered_card_audit.get(c)
+    if not proof or not source or not audit or not notes:
+        return False
+    card = str(proof.get("card") or "")
+    linked = audit.get("v6IndependentLayoutProof") or {}
+    if (proof.get("result") != "INDEPENDENT_EXACT_NEURAL_SEQUENCE" or
+            proof.get("sourceV6Result") != "EXACT_NEURAL_SLOT_SEQUENCE" or
+            source.get("result") != "EXACT_NEURAL_SLOT_SEQUENCE" or
+            any(str(item.get("fid") or "") != fid for item in (proof, source)) or
+            any(list(item.get("catalog") or []) != notes or list(item.get("observed") or []) != notes for item in (proof, source)) or
+            source.get("card") != card or proof.get("cardSource") != source.get("cardSource") or
+            not card or not (ROOT / card).is_file() or audit.get("result") != "EXACT_ORDERED_MATCH" or
+            str(audit.get("fragranticaId") or "") != fid or audit.get("catalogNotes") != notes or audit.get("observedNotes") != notes or
+            audit.get("card") != card or linked.get("report") != "database/audits/current-yellow-neural-ocr-v6-independent-verification.json" or
+            linked.get("sourceReport") != "database/audits/current-yellow-neural-ocr-v6.json" or str(linked.get("fid") or "") != fid or
+            linked.get("card") != card or linked.get("cardSource") != proof.get("cardSource")):
+        return False
+    slots = list(source.get("slots") or [])
+    if len(slots) != len(notes):
+        return False
+    for expected, slot in zip(notes, slots):
+        if slot.get("winner") != expected or int(slot.get("exactReads") or 0) < 2 or list(slot.get("competitors") or []):
+            return False
+    layout = proof.get("layoutEvidence") or {}
+    return (list(layout.get("observed") or []) == notes and int(layout.get("exactReads") or 0) >= 1 and
+            not list(layout.get("competitors") or []))
+
 def exact_ordered_card_evidence(row, fid, notes):
     """Require independent exact count, identity and order from the current Social Card.
 
@@ -271,6 +308,7 @@ def exact_ordered_card_evidence(row, fid, notes):
     strict_whole_card = bool(
         item
         and not item.get("v4IndependentSlotProof")
+        and not item.get("v6IndependentLayoutProof")
         and item.get("result") == "EXACT_ORDERED_MATCH"
         and str(item.get("fragranticaId") or "") == fid
         and item.get("catalogNotes") == notes
@@ -278,7 +316,7 @@ def exact_ordered_card_evidence(row, fid, notes):
         and card
         and (ROOT / card).is_file()
     )
-    return strict_whole_card or v2_strong_ordered_evidence(row, fid, notes) or near_pass_supplemental_evidence(row, fid, notes) or v4_independent_slot_evidence(row, fid, notes)
+    return strict_whole_card or v2_strong_ordered_evidence(row, fid, notes) or near_pass_supplemental_evidence(row, fid, notes) or v4_independent_slot_evidence(row, fid, notes) or v6_independent_layout_evidence(row, fid, notes)
 
 
 def exact_social_card(row, fid, notes):
@@ -340,50 +378,3 @@ for row, site in zip(rows, site_rows):
     matching_notes = matched_notes_count(row, fid, notes)
     matching_icons = sum(note_key(note) in local_note_icons for note in notes)
 
-    checks = {
-        "shobiProduct": bool(row.get("prestashopProductId")) and bool(row.get("shobiUrl")) and row.get("catalogSource") == "database/source/shobi-perfumes-live-unique.csv",
-        "shobiIdentity": bool(row.get("brand")) and bool(row.get("inspiredBy")) and row.get("catalogSource") == "database/source/shobi-perfumes-live-unique.csv",
-        "identity": yes(row.get("identityStatus")) and bool(row.get("fragranticaVerificationSource")),
-        "fid": bool(fid),
-        "url": bool(furl) and bool(fid) and parsed_fid == fid,
-        "socialCard": exact_social_card(row, fid, notes),
-        "image": exact_perfume_image(row, fid),
-        "notes": bool(notes) and exact_social_card(row, fid, notes),
-        "icons": bool(notes) and matching_icons == len(notes),
-        "gender": bool(row.get("gender") or row.get("genderAffinity")) and yes(row.get("genderStatus")),
-        "season": bool(seasons) and has_verified_social_season(row, fid, seasons),
-    }
-
-    issues = []
-    if not checks["shobiProduct"]: issues.append("Shobi product page not fully verified")
-    if not checks["shobiIdentity"]: issues.append("Shobi original name/brand not fully verified")
-    if not checks["identity"]: issues.append("Fragrantica identity not fully verified")
-    if not checks["fid"]: issues.append("Missing Fragrantica ID")
-    if fid and furl and parsed_fid != fid: issues.append("Fragrantica URL/ID mismatch")
-    elif not furl: issues.append("Missing direct Fragrantica URL")
-    if not checks["socialCard"]: issues.append("Social Card not fully verified")
-    if not checks["image"]: issues.append("Missing perfume image")
-    if not notes: issues.append("Missing Main Notes")
-    elif not checks["notes"]: issues.append("Main Notes order not fully verified")
-    if not checks["icons"]: issues.append("Note icons not fully verified")
-    if not checks["gender"]: issues.append("Gender not fully verified")
-    if not checks["season"]: issues.append("Season not fully verified")
-
-    hard_error = (bool(fid and furl) and parsed_fid != fid) or str(row.get("identityStatus") or "").upper() in {"ERROR", "WRONG", "MISMATCH"}
-    status = "red" if hard_error else ("green" if all(checks.values()) else "yellow")
-    counts[status] += 1
-
-    audit = {"status": status, "checks": checks, "issues": issues, "notesCount": len(notes), "matchedNotesCount": matching_notes, "iconsCount": matching_icons}
-    row["validationAudit"] = audit
-    site["validationStatus"] = status
-    site["validationIssues"] = issues
-    site["validationChecks"] = checks
-    site["validationNotesCount"] = len(notes)
-    site["validationMatchedNotesCount"] = matching_notes
-    site["validationIconsCount"] = matching_icons
-
-DB.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-SITE.write_text(json.dumps(site_rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-print("validation", counts)
-if counts["green"] and any(not all(r.get("validationAudit", {}).get("checks", {}).values()) for r in rows if r.get("validationAudit", {}).get("status") == "green"):
-    raise SystemExit("Invalid green validation state")
