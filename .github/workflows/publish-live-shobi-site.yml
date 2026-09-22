@@ -163,9 +163,11 @@ jobs:
           assert len({r['code'] for r in final_db_rows}) == len(final_db_rows)
           assert len({r['prestashopProductId'] for r in final_db_rows}) == len(final_db_rows)
           assert '<script src="validation-tracker.js"></script>' in Path('index.html').read_text(encoding='utf-8')
-          assert all(r.get('validationStatus') in {'green','yellow','red'} for r in site_rows)
-          assert all('validationChecks' in r and 'validationIssues' in r for r in site_rows)
-          assert all(all(r['validationChecks'].values()) for r in site_rows if r['validationStatus'] == 'green')
+          # The browser loads the final catalog. catalog_site.json is the
+          # intentionally lean input used to build it and has no QA fields.
+          assert all(r.get('validationStatus') in {'green','yellow','red'} for r in final_rows)
+          assert all('validationChecks' in r and 'validationIssues' in r for r in final_rows)
+          assert all(all(r['validationChecks'].values()) for r in final_rows if r['validationStatus'] == 'green')
           excluded_categories = {'Home Fragrances', 'Gifts', 'Lattafa', 'Paris Corner', 'Al Haramain Oriental Perfumes'}
           assert not any(r.get('shobiCategory') in excluded_categories for r in rows)
 
@@ -175,7 +177,7 @@ jobs:
           ]
           assert not suspicious_public, f'Public display identity hygiene regressions: {suspicious_public}'
 
-          counts = {s: sum(r['validationStatus'] == s for r in site_rows) for s in ('green','yellow','red')}
+          counts = {s: sum(r['validationStatus'] == s for r in final_rows) for s in ('green','yellow','red')}
           print(f'Validated {expected} unique certified wearable Shobi perfumes in the public catalog')
           print('QA tracker:', counts)
           print('Public display identity hygiene: clean')
