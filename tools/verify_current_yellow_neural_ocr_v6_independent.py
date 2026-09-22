@@ -20,6 +20,7 @@ from pathlib import Path
 
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 
+# The workflow trigger below intentionally starts the verifier after a bot-published V6 report.
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "database/catalog/database_complete.json"
 AUDIT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
