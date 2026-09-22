@@ -56,6 +56,26 @@ def current_cards(shobi_code, fid):
     return sorted(set(found))
 
 
+def resolve_exact_fid_card(shobi_code, fid):
+    """Resolve one card without crossing product or FID boundaries.
+
+    Prefer the explicit ``current_`` namespace.  Older archive filenames are
+    eligible only when their own product code and their trailing FID both
+    match, and exactly one physical card exists.  This is a provenance
+    recovery, not a content merge or a catalog-guided fallback.
+    """
+    current = current_cards(shobi_code, fid)
+    if len(current) == 1:
+        return current[0], "CURRENT_EXACT_FID_CARD", current
+    archived = []
+    for suffix in ("jpeg", "jpg", "png", "webp"):
+        archived.extend(CARDS.glob(f"*_{shobi_code}_{fid}.{suffix}"))
+    archived = sorted(set(archived))
+    if not current and len(archived) == 1:
+        return archived[0], "ARCHIVED_EXACT_CODE_AND_FID_CARD", archived
+    return None, None, current if current else archived
+
+
 def cells(path):
     with Image.open(path) as source:
         if source.width < 800 or source.height < 800 or source.height / source.width < 0.85:
@@ -140,10 +160,9 @@ def inspect_target(row, lexicon, ocr):
     fid = str(row.get("fragranticaId") or "").strip()
     catalog = list(row.get("fragranticaSocialCardNotes") or [])
     base = {"code": shobi_code, "fid": fid, "catalog": catalog}
-    cards = current_cards(shobi_code, fid)
-    if len(cards) != 1:
-        return {**base, "result": "NO_UNIQUE_CURRENT_EXACT_FID_CARD", "cards": [str(path.relative_to(ROOT)) for path in cards]}
-    card = cards[0]
+    card, card_source, candidates = resolve_exact_fid_card(shobi_code, fid)
+    if not card:
+        return {**base, "result": "NO_UNIQUE_EXACT_CODE_AND_FID_CARD", "cards": [str(path.relative_to(ROOT)) for path in candidates]}
     slots = cells(card)
     if not slots:
         return {**base, "result": "UNSUPPORTED_CARD_GEOMETRY", "card": str(card.relative_to(ROOT))}
@@ -155,7 +174,7 @@ def inspect_target(row, lexicon, ocr):
         result = "EXACT_NEURAL_SLOT_SEQUENCE"
     else:
         result = "NEURAL_SLOT_SEQUENCE_DIFFERENT"
-    return {**base, "result": result, "card": str(card.relative_to(ROOT)), "observed": observed, "slots": details}
+    return {**base, "result": result, "card": str(card.relative_to(ROOT)), "cardSource": card_source, "observed": observed, "slots": details}
 
 
 def main():
