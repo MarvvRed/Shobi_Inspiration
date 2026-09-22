@@ -1,0 +1,34 @@
+name: Independently verify neural OCR V6 candidates
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/verify_current_yellow_neural_ocr_v6_independent.py'
+      - '.github/workflows/verify-current-yellow-neural-ocr-v6.yml'
+      - 'database/audits/current-yellow-neural-ocr-v6.json'
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Re-read V6 candidates independently
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+          python -m pip install --disable-pip-version-check pillow
+          python tools/verify_current_yellow_neural_ocr_v6_independent.py
+      - name: Commit independent verification report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/audits/current-yellow-neural-ocr-v6-independent-verification.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Independently verify neural OCR V6 candidates'
+          git push
