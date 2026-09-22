@@ -1,0 +1,1186 @@
+{
+  "mode": "INDEPENDENT_V4_SLOT_VERIFIER",
+  "source": "database/audits/current-yellow-slot-ocr-v4.json",
+  "sourceExactCandidates": 2,
+  "counts": {
+    "INDEPENDENT_EXACT_SLOT_SEQUENCE": 2
+  },
+  "rows": [
+    {
+      "code": "2228-ESCE",
+      "sourceV4Result": "EXACT_SLOT_SEQUENCE",
+      "fid": "66048",
+      "catalog": [
+        "Orris Root",
+        "Iso E Super"
+      ],
+      "currentExactCardCandidates": [
+        "database/fragrantica/social-cards/images/current_2228-ESCE_66048.jpeg"
+      ],
+      "card": "database/fragrantica/social-cards/images/current_2228-ESCE_66048.jpeg",
+      "previousAuditCard": "database/fragrantica/social-cards/images/3823_2228-ESCE_66048.jpeg",
+      "previousAuditResult": "READING_NOT_STRICT_ENOUGH",
+      "previousSiteStatus": null,
+      "observed": [
+        "Orris Root",
+        "Iso E Super"
+      ],
+      "slots": [
+        {
+          "winner": null,
+          "strong": false,
+          "exactReads": 0,
+          "exactFamilies": [],
+          "exactModes": [],
+          "competingEligibleReads": 0,
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "notes al Ra See I , 470 2h _ ~ ‘ a ‘ pe 4 ~",
+              "candidate": "Palestinian Sweet Lime",
+              "score": 0.377,
+              "margin": 0.004,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 11,
+              "raw": "- + Ca . a ated a a ot - Uf sue en NG «*",
+              "candidate": "Christmas Tree or Flame Tree",
+              "score": 0.421,
+              "margin": 0.029,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 12,
+              "raw": "—— |S x - ny + 4 “a | GE A V & Ns “VA ~*~ ree & -* Us",
+              "candidate": "Lily-of-the-Valley Leaves",
+              "score": 0.4,
+              "margin": 0.017,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 6,
+              "raw": "notes 42 E Xe st",
+              "candidate": "Tres Leches",
+              "score": 0.519,
+              "margin": 0.019,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 11,
+              "raw": "notes * or",
+              "candidate": "Rain Notes",
+              "score": 0.556,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 12,
+              "raw": "ae soon Fa | notes",
+              "candidate": "Solar Notes",
+              "score": 0.667,
+              "margin": 0.024,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 6,
+              "raw": "notes ee ee e ¥",
+              "candidate": "Lotus Seed",
+              "score": 0.522,
+              "margin": 0.003,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 11,
+              "raw": "notes » oe - 4% 3",
+              "candidate": "Indonesian Oud",
+              "score": 0.462,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 12,
+              "raw": "te oy notes",
+              "candidate": "Oily Notes",
+              "score": 0.762,
+              "margin": 0.035,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "notes * 4",
+              "candidate": "Rain Notes",
+              "score": 0.588,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 11,
+              "raw": "notes a",
+              "candidate": "Hortensia",
+              "score": 0.625,
+              "margin": 0.01,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 12,
+              "raw": "notes",
+              "candidate": "Rain Notes",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            }
+          ],
+          "row": 0,
+          "col": 0
+        },
+        {
+          "winner": null,
+          "strong": false,
+          "exactReads": 0,
+          "exactFamilies": [],
+          "exactModes": [],
+          "competingEligibleReads": 0,
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "= | if",
+              "candidate": "Hi-Fi",
+              "score": 0.571,
+              "margin": 0.127,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "|",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 11,
+              "raw": "= i | he VP | >",
+              "candidate": "Chen Pi",
+              "score": 0.571,
+              "margin": 0.016,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 12,
+              "raw": "i | Vs ? | >",
+              "candidate": "Ivy",
+              "score": 0.571,
+              "margin": 0.071,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 6,
+              "raw": "ea: if",
+              "candidate": "Sea Foam",
+              "score": 0.615,
+              "margin": 0.044,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 11,
+              "raw": "vs vi, > nih 4 a",
+              "candidate": "Posidonia",
+              "score": 0.455,
+              "margin": 0.01,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 12,
+              "raw": "Vw -¢ ~ — aa",
+              "candidate": "Wasabi",
+              "score": 0.545,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": ".",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            }
+          ],
+          "row": 0,
+          "col": 1
+        },
+        {
+          "winner": null,
+          "strong": false,
+          "exactReads": 0,
+          "exactFamilies": [],
+          "exactModes": [],
+          "competingEligibleReads": 0,
+          "reads": [],
+          "row": 0,
+          "col": 2
+        },
+        {
+          "winner": "Orris Root",
+          "strong": true,
+          "exactReads": 12,
+          "exactFamilies": [
+            "threshold160",
+            "threshold205",
+            "unsharp"
+          ],
+          "exactModes": [
+            "threshold160:psm11",
+            "threshold160:psm12",
+            "threshold160:psm6",
+            "threshold160:psm7",
+            "threshold205:psm11",
+            "threshold205:psm12",
+            "threshold205:psm6",
+            "threshold205:psm7",
+            "unsharp:psm11",
+            "unsharp:psm12",
+            "unsharp:psm6",
+            "unsharp:psm7"
+          ],
+          "competingEligibleReads": 0,
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "hl, te a",
+              "candidate": "Thai Tea",
+              "score": 0.667,
+              "margin": 0.067,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "|",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 11,
+              "raw": "Vee 1 i SS RS i",
+              "candidate": "Edelweiss",
+              "score": 0.417,
+              "margin": 0.003,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 12,
+              "raw": "=! Nts x as <- as wy “1",
+              "candidate": "Nut Grass",
+              "score": 0.48,
+              "margin": 0.036,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 6,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "unsharp",
+              "psm": 7,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "unsharp",
+              "psm": 11,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "unsharp",
+              "psm": 12,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "threshold160",
+              "psm": 6,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "threshold160",
+              "psm": 7,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "threshold160",
+              "psm": 11,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "threshold160",
+              "psm": 12,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "threshold205",
+              "psm": 11,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "threshold205",
+              "psm": 12,
+              "raw": "Orris Root",
+              "candidate": "Orris Root",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            }
+          ],
+          "row": 1,
+          "col": 0
+        },
+        {
+          "winner": "Iso E Super",
+          "strong": true,
+          "exactReads": 2,
+          "exactFamilies": [
+            "threshold205"
+          ],
+          "exactModes": [
+            "threshold205:psm11",
+            "threshold205:psm12"
+          ],
+          "competingEligibleReads": 0,
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "oe 1 Sah ‘4 we wh & _ ll",
+              "candidate": "Sea Shells",
+              "score": 0.483,
+              "margin": 0.016,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": ":",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 11,
+              "raw": "tp AD, “Sa u's —",
+              "candidate": "Tomato Sauce",
+              "score": 0.5,
+              "margin": 0.02,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 12,
+              "raw": "tp AD, “Sa u's",
+              "candidate": "Tomato Sauce",
+              "score": 0.5,
+              "margin": 0.02,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 6,
+              "raw": "ISOE super",
+              "candidate": "Iso E Super",
+              "score": 0.952,
+              "margin": 0.316,
+              "exact": false,
+              "eligible": true
+            },
+            {
+              "family": "unsharp",
+              "psm": 11,
+              "raw": "ISOE super",
+              "candidate": "Iso E Super",
+              "score": 0.952,
+              "margin": 0.316,
+              "exact": false,
+              "eligible": true
+            },
+            {
+              "family": "unsharp",
+              "psm": 12,
+              "raw": "ISOE super",
+              "candidate": "Iso E Super",
+              "score": 0.952,
+              "margin": 0.316,
+              "exact": false,
+              "eligible": true
+            },
+            {
+              "family": "threshold160",
+              "psm": 6,
+              "raw": "ISOE super",
+              "candidate": "Iso E Super",
+              "score": 0.952,
+              "margin": 0.316,
+              "exact": false,
+              "eligible": true
+            },
+            {
+              "family": "threshold160",
+              "psm": 7,
+              "raw": "Super",
+              "candidate": "Sulphur",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 11,
+              "raw": "[SOE super",
+              "candidate": "Iso E Super",
+              "score": 0.9,
+              "margin": 0.233,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 12,
+              "raw": "[SOE super",
+              "candidate": "Iso E Super",
+              "score": 0.9,
+              "margin": 0.233,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "ISOE super",
+              "candidate": "Iso E Super",
+              "score": 0.952,
+              "margin": 0.316,
+              "exact": false,
+              "eligible": true
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "Sipe",
+              "candidate": "Siren",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 11,
+              "raw": "ISO E super",
+              "candidate": "Iso E Super",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "threshold205",
+              "psm": 12,
+              "raw": "ISO E super",
+              "candidate": "Iso E Super",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            }
+          ],
+          "row": 1,
+          "col": 1
+        },
+        {
+          "winner": null,
+          "strong": false,
+          "exactReads": 0,
+          "exactFamilies": [],
+          "exactModes": [],
+          "competingEligibleReads": 0,
+          "reads": [
+            {
+              "family": "unsharp",
+              "psm": 6,
+              "raw": "—",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 7,
+              "raw": "—",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            }
+          ],
+          "row": 1,
+          "col": 2
+        }
+      ],
+      "result": "INDEPENDENT_EXACT_SLOT_SEQUENCE",
+      "proof": "V4_WORKLIST_ONLY; FRESH_EXACT_FID_CARD_RESOLUTION; INDEPENDENT_2X3_SLOT_OCR; >=2_EXACT_READS_FROM_DISTINCT_OCR_CONFIGURATIONS_PER_OCCUPIED_SLOT; ZERO_COMPETING_ELIGIBLE_READS; PIXEL_DERIVED_COMPLETE_SEQUENCE; CATALOG_USED_ONLY_FOR_FINAL_EXACT_COMPARISON"
+    },
+    {
+      "code": "1660-ESCE",
+      "sourceV4Result": "EXACT_SLOT_SEQUENCE",
+      "fid": "845",
+      "catalog": [
+        "Iso E Super"
+      ],
+      "currentExactCardCandidates": [
+        "database/fragrantica/social-cards/images/current_1660-ESCE_845.jpeg"
+      ],
+      "card": "database/fragrantica/social-cards/images/current_1660-ESCE_845.jpeg",
+      "previousAuditCard": "database/fragrantica/social-cards/images/2393_1660-ESCE_845.jpeg",
+      "previousAuditResult": "READING_NOT_STRICT_ENOUGH",
+      "previousSiteStatus": null,
+      "observed": [
+        "Iso E Super"
+      ],
+      "slots": [
+        {
+          "winner": null,
+          "strong": false,
+          "exactReads": 0,
+          "exactFamilies": [],
+          "exactModes": [],
+          "competingEligibleReads": 0,
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "“7 « | — | | | | a",
+              "candidate": "RE Base",
+              "score": 0.4,
+              "margin": 0.036,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "= id a ]",
+              "candidate": "Batida",
+              "score": 0.6,
+              "margin": 0.067,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 11,
+              "raw": "ice. —— = Ise ‘",
+              "candidate": "Ice Wine",
+              "score": 0.8,
+              "margin": 0.086,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 12,
+              "raw": "rit - - a ——— Vj",
+              "candidate": "Fruit Tea",
+              "score": 0.588,
+              "margin": 0.055,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 6,
+              "raw": "notes wa i PBS: 1 al) a > 4",
+              "candidate": "Rosa Alba",
+              "score": 0.438,
+              "margin": 0.026,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 11,
+              "raw": "notes vA i",
+              "candidate": "Hortensia",
+              "score": 0.526,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 12,
+              "raw": "notes",
+              "candidate": "Rain Notes",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 6,
+              "raw": "notes",
+              "candidate": "Rain Notes",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 7,
+              "raw": "notes",
+              "candidate": "Rain Notes",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 11,
+              "raw": "notes",
+              "candidate": "Rain Notes",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 12,
+              "raw": "notes",
+              "candidate": "Rain Notes",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "notes",
+              "candidate": "Rain Notes",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "notes",
+              "candidate": "Rain Notes",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 11,
+              "raw": "notes",
+              "candidate": "Rain Notes",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 12,
+              "raw": "notes",
+              "candidate": "Rain Notes",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            }
+          ],
+          "row": 0,
+          "col": 0
+        },
+        {
+          "winner": null,
+          "strong": false,
+          "exactReads": 0,
+          "exactFamilies": [],
+          "exactModes": [],
+          "competingEligibleReads": 0,
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "I = all",
+              "candidate": "Dill",
+              "score": 0.667,
+              "margin": 0.042,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "wil |",
+              "candidate": "Wool",
+              "score": 0.571,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 6,
+              "raw": "| = = al",
+              "candidate": "Talc",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 6,
+              "raw": "_",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 7,
+              "raw": "_",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "_",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "_",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            }
+          ],
+          "row": 0,
+          "col": 1
+        },
+        {
+          "winner": null,
+          "strong": false,
+          "exactReads": 0,
+          "exactFamilies": [],
+          "exactModes": [],
+          "competingEligibleReads": 0,
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "| = -",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "_",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            }
+          ],
+          "row": 0,
+          "col": 2
+        },
+        {
+          "winner": "Iso E Super",
+          "strong": true,
+          "exactReads": 2,
+          "exactFamilies": [
+            "threshold205"
+          ],
+          "exactModes": [
+            "threshold205:psm11",
+            "threshold205:psm12"
+          ],
+          "competingEligibleReads": 0,
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "OM 7 > ei af Ve te 4 raw Ne ees we",
+              "candidate": "Olive Tree",
+              "score": 0.429,
+              "margin": 0.038,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 11,
+              "raw": "ifs’ «ft af le an ~\\* jes >>>) “",
+              "candidate": "Mimosa Leaves",
+              "score": 0.562,
+              "margin": 0.017,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 12,
+              "raw": "ae) =) an jes ay >>>) “ —",
+              "candidate": "Pandan Leaf",
+              "score": 0.522,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "unsharp",
+              "psm": 6,
+              "raw": "ISOE super",
+              "candidate": "Iso E Super",
+              "score": 0.952,
+              "margin": 0.316,
+              "exact": false,
+              "eligible": true
+            },
+            {
+              "family": "unsharp",
+              "psm": 11,
+              "raw": "ISOE super",
+              "candidate": "Iso E Super",
+              "score": 0.952,
+              "margin": 0.316,
+              "exact": false,
+              "eligible": true
+            },
+            {
+              "family": "unsharp",
+              "psm": 12,
+              "raw": "ISOE super",
+              "candidate": "Iso E Super",
+              "score": 0.952,
+              "margin": 0.316,
+              "exact": false,
+              "eligible": true
+            },
+            {
+              "family": "threshold160",
+              "psm": 6,
+              "raw": "ISOE super",
+              "candidate": "Iso E Super",
+              "score": 0.952,
+              "margin": 0.316,
+              "exact": false,
+              "eligible": true
+            },
+            {
+              "family": "threshold160",
+              "psm": 7,
+              "raw": "Super",
+              "candidate": "Sulphur",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 11,
+              "raw": "super",
+              "candidate": "Sulphur",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 12,
+              "raw": "super",
+              "candidate": "Sulphur",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "ISOE super",
+              "candidate": "Iso E Super",
+              "score": 0.952,
+              "margin": 0.316,
+              "exact": false,
+              "eligible": true
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "Sipe",
+              "candidate": "Siren",
+              "score": 0.667,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 11,
+              "raw": "ISO E super",
+              "candidate": "Iso E Super",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            },
+            {
+              "family": "threshold205",
+              "psm": 12,
+              "raw": "ISO E super",
+              "candidate": "Iso E Super",
+              "score": 1.0,
+              "margin": 1.0,
+              "exact": true,
+              "eligible": true
+            }
+          ],
+          "row": 1,
+          "col": 0
+        },
+        {
+          "winner": null,
+          "strong": false,
+          "exactReads": 0,
+          "exactFamilies": [],
+          "exactModes": [],
+          "competingEligibleReads": 0,
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "alll",
+              "candidate": "Wallflower",
+              "score": 0.571,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "alll",
+              "candidate": "Wallflower",
+              "score": 0.571,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            }
+          ],
+          "row": 1,
+          "col": 1
+        },
+        {
+          "winner": null,
+          "strong": false,
+          "exactReads": 0,
+          "exactFamilies": [],
+          "exactModes": [],
+          "competingEligibleReads": 0,
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "=",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "=",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            },
+            {
+              "family": "threshold160",
+              "psm": 7,
+              "raw": "|",
+              "candidate": null,
+              "score": 0.0,
+              "margin": 0.0,
+              "exact": false,
+              "eligible": false
+            }
+          ],
+          "row": 1,
+          "col": 2
+        }
+      ],
+      "result": "INDEPENDENT_EXACT_SLOT_SEQUENCE",
+      "proof": "V4_WORKLIST_ONLY; FRESH_EXACT_FID_CARD_RESOLUTION; INDEPENDENT_2X3_SLOT_OCR; >=2_EXACT_READS_FROM_DISTINCT_OCR_CONFIGURATIONS_PER_OCCUPIED_SLOT; ZERO_COMPETING_ELIGIBLE_READS; PIXEL_DERIVED_COMPLETE_SEQUENCE; CATALOG_USED_ONLY_FOR_FINAL_EXACT_COMPARISON"
+    }
+  ]
+}

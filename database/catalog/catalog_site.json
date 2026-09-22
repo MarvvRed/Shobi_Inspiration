@@ -2880,17 +2880,20 @@
       "Bagas de Zimbro",
       "Musk"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -4531,17 +4534,20 @@
       "Rose",
       "Ylang-Ylang"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -14467,17 +14473,20 @@
       "Sandalwood",
       "Cedar"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -17054,17 +17063,20 @@
       "Olibanum (Frankincense)",
       "Pink Pepper"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -17662,17 +17674,20 @@
       "Tonka Bean",
       "Vanilla"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -20337,26 +20352,23 @@
       "Orris Root",
       "Iso E Super"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 2,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 2,
     "validationIconsCount": 2
   },
   {
@@ -38556,26 +38568,23 @@
     "fragranticaSocialCardNotes": [
       "Iso E Super"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 1,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 1,
     "validationIconsCount": 1
   },
   {
@@ -53493,17 +53502,20 @@
       "Coriander",
       "Incense"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -80382,17 +80394,20 @@
       "Heliotrope",
       "Patchouli"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
