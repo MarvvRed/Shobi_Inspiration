@@ -13,6 +13,7 @@ on:
       - 'tools/audit_social_card_order_from_images.py'
       - 'tools/recover_exact_card_proofs_multipass.py'
       - 'tools/recover_header_anchored_six_slot_proofs.py'
+      - 'tools/preserve_strict_ordered_social_card_proofs.py'
       - 'tools/apply_exact_card_proofs_multipass.py'
       - 'tools/verify_current_yellow_slot_ocr_v4_independent.py'
       - 'tools/apply_current_yellow_slot_ocr_v4_independent.py'
