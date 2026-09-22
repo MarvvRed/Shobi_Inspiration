@@ -50,12 +50,18 @@ def durable_strict_proof(item):
         return False
     # The existing audit is accepted only for its explicit strict Social Card
     # proof classes.  This is a generic proof taxonomy, never a list of codes.
+    upper = proof.upper()
     required = ("EXACT", "SOCIAL_CARD")
-    return all(token in proof.upper() for token in required) or (
-        "EXACT_HIGH_CONFIDENCE_LABELS" in proof.upper()
-        or "ALL_LABELS_EXACT_HIGH_CONFIDENCE" in proof.upper()
-        or "STRICT_EXACT_MAJORITY" in proof.upper()
-        or "TWO_INDEPENDENT_EXACT_LABEL_READS" in proof.upper()
+    return all(token in upper for token in required) or (
+        "SOCIAL_CARD_ONLY" in upper
+        and "CONSENSUS" in upper
+        and "INDEPENDENT" in upper
+        and "CATALOG_NOT_USED_FOR_RECOGNITION" in upper
+    ) or (
+        "EXACT_HIGH_CONFIDENCE_LABELS" in upper
+        or "ALL_LABELS_EXACT_HIGH_CONFIDENCE" in upper
+        or "STRICT_EXACT_MAJORITY" in upper
+        or "TWO_INDEPENDENT_EXACT_LABEL_READS" in upper
     )
 
 
