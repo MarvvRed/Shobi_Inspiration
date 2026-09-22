@@ -1,11 +1,11 @@
 {
   "catalogRows": 2253,
-  "yellowRows": 265,
+  "yellowRows": 270,
   "singleFailureRows": [],
   "byFailureSignature": [
     {
       "signature": "socialCard,notes",
-      "count": 255,
+      "count": 260,
       "codes": [
         "2844-LUS",
         "2833-AMG",
@@ -16,6 +16,7 @@
         "2788-MIN",
         "2778-JOM",
         "2744-NISH",
+        "2765-GUC",
         "2759-ARM",
         "2763-KAY",
         "2762-LAT",
@@ -29,6 +30,7 @@
         "2722-CRIVEL",
         "2720-ROJ",
         "2719-FRAG",
+        "2717-EXN",
         "2712-TMFO",
         "2708-BORN",
         "2663-ARM",
@@ -65,6 +67,7 @@
         "2452-JOM",
         "2427-CLEA",
         "2415-ESC",
+        "2411-JAME",
         "2401-KAY",
         "2393-KAY",
         "2378-GOLD",
@@ -73,9 +76,11 @@
         "2363-VER",
         "2366-DIP",
         "2361-ARM",
+        "2321-PARF",
         "2348-AMG",
         "2327-SWISA",
         "2303-EXN",
+        "2313-DRC",
         "2296-KAY",
         "2285-BOT",
         "2294-ACQ",
@@ -88,7 +93,6 @@
         "2249-BYR",
         "2246-GUC",
         "2229-ESCE",
-        "2228-ESCE",
         "2223-AMG",
         "2226-BON",
         "2213-AMG",
@@ -148,7 +152,6 @@
         "1656-LOC",
         "1659-CHRA",
         "1655-JOM",
-        "1660-ESCE",
         "1650-LAN",
         "1639-TER",
         "1638-XER",
@@ -182,6 +185,7 @@
         "277-JOM",
         "253-JOM",
         "245-JOM",
+        "244-JOM",
         "242-JOM",
         "232-ESCE",
         "229-DIP",
@@ -260,6 +264,7 @@
         "1070-CHA",
         "1060-CRT",
         "1036-BLG",
+        "1024-BOU",
         "1012-ARA",
         "1007-ACQ"
       ]
@@ -302,7 +307,7 @@
   "byIssue": [
     {
       "issue": "Social Card not fully verified",
-      "count": 265,
+      "count": 270,
       "codes": [
         "2844-LUS",
         "2833-AMG",
@@ -314,6 +319,7 @@
         "2788-MIN",
         "2778-JOM",
         "2744-NISH",
+        "2765-GUC",
         "2759-ARM",
         "2763-KAY",
         "2762-LAT",
@@ -327,6 +333,7 @@
         "2722-CRIVEL",
         "2720-ROJ",
         "2719-FRAG",
+        "2717-EXN",
         "2712-TMFO",
         "2708-BORN",
         "2663-ARM",
@@ -363,6 +370,7 @@
         "2452-JOM",
         "2427-CLEA",
         "2415-ESC",
+        "2411-JAME",
         "2401-KAY",
         "2393-KAY",
         "2378-GOLD",
@@ -371,9 +379,11 @@
         "2363-VER",
         "2366-DIP",
         "2361-ARM",
+        "2321-PARF",
         "2348-AMG",
         "2327-SWISA",
         "2303-EXN",
+        "2313-DRC",
         "2296-KAY",
         "2285-BOT",
         "2294-ACQ",
@@ -386,7 +396,6 @@
         "2249-BYR",
         "2246-GUC",
         "2229-ESCE",
-        "2228-ESCE",
         "2223-AMG",
         "2226-BON",
         "2213-AMG",
@@ -447,7 +456,6 @@
         "1656-LOC",
         "1659-CHRA",
         "1655-JOM",
-        "1660-ESCE",
         "1650-LAN",
         "1639-TER",
         "1638-XER",
@@ -484,6 +492,7 @@
         "277-JOM",
         "253-JOM",
         "245-JOM",
+        "244-JOM",
         "242-JOM",
         "235-HOLL",
         "232-ESCE",
@@ -567,13 +576,14 @@
         "1060-CRT",
         "1043-CAL",
         "1036-BLG",
+        "1024-BOU",
         "1012-ARA",
         "1007-ACQ"
       ]
     },
     {
       "issue": "Main Notes order not fully verified",
-      "count": 259,
+      "count": 264,
       "codes": [
         "2844-LUS",
         "2833-AMG",
@@ -584,6 +594,7 @@
         "2788-MIN",
         "2778-JOM",
         "2744-NISH",
+        "2765-GUC",
         "2759-ARM",
         "2763-KAY",
         "2762-LAT",
@@ -597,6 +608,7 @@
         "2722-CRIVEL",
         "2720-ROJ",
         "2719-FRAG",
+        "2717-EXN",
         "2712-TMFO",
         "2708-BORN",
         "2663-ARM",
@@ -633,6 +645,7 @@
         "2452-JOM",
         "2427-CLEA",
         "2415-ESC",
+        "2411-JAME",
         "2401-KAY",
         "2393-KAY",
         "2378-GOLD",
@@ -641,9 +654,11 @@
         "2363-VER",
         "2366-DIP",
         "2361-ARM",
+        "2321-PARF",
         "2348-AMG",
         "2327-SWISA",
         "2303-EXN",
+        "2313-DRC",
         "2296-KAY",
         "2285-BOT",
         "2294-ACQ",
@@ -656,7 +671,6 @@
         "2249-BYR",
         "2246-GUC",
         "2229-ESCE",
-        "2228-ESCE",
         "2223-AMG",
         "2226-BON",
         "2213-AMG",
@@ -716,7 +730,6 @@
         "1656-LOC",
         "1659-CHRA",
         "1655-JOM",
-        "1660-ESCE",
         "1650-LAN",
         "1639-TER",
         "1638-XER",
@@ -751,6 +764,7 @@
         "277-JOM",
         "253-JOM",
         "245-JOM",
+        "244-JOM",
         "242-JOM",
         "232-ESCE",
         "229-DIP",
@@ -832,6 +846,7 @@
         "1060-CRT",
         "1043-CAL",
         "1036-BLG",
+        "1024-BOU",
         "1012-ARA",
         "1007-ACQ"
       ]
@@ -925,7 +940,7 @@
   "byFailedCheck": [
     {
       "check": "socialCard",
-      "count": 265,
+      "count": 270,
       "codes": [
         "2844-LUS",
         "2833-AMG",
@@ -937,6 +952,7 @@
         "2788-MIN",
         "2778-JOM",
         "2744-NISH",
+        "2765-GUC",
         "2759-ARM",
         "2763-KAY",
         "2762-LAT",
@@ -950,6 +966,7 @@
         "2722-CRIVEL",
         "2720-ROJ",
         "2719-FRAG",
+        "2717-EXN",
         "2712-TMFO",
         "2708-BORN",
         "2663-ARM",
@@ -986,6 +1003,7 @@
         "2452-JOM",
         "2427-CLEA",
         "2415-ESC",
+        "2411-JAME",
         "2401-KAY",
         "2393-KAY",
         "2378-GOLD",
@@ -994,9 +1012,11 @@
         "2363-VER",
         "2366-DIP",
         "2361-ARM",
+        "2321-PARF",
         "2348-AMG",
         "2327-SWISA",
         "2303-EXN",
+        "2313-DRC",
         "2296-KAY",
         "2285-BOT",
         "2294-ACQ",
@@ -1009,7 +1029,6 @@
         "2249-BYR",
         "2246-GUC",
         "2229-ESCE",
-        "2228-ESCE",
         "2223-AMG",
         "2226-BON",
         "2213-AMG",
@@ -1070,7 +1089,6 @@
         "1656-LOC",
         "1659-CHRA",
         "1655-JOM",
-        "1660-ESCE",
         "1650-LAN",
         "1639-TER",
         "1638-XER",
@@ -1107,6 +1125,7 @@
         "277-JOM",
         "253-JOM",
         "245-JOM",
+        "244-JOM",
         "242-JOM",
         "235-HOLL",
         "232-ESCE",
@@ -1190,13 +1209,14 @@
         "1060-CRT",
         "1043-CAL",
         "1036-BLG",
+        "1024-BOU",
         "1012-ARA",
         "1007-ACQ"
       ]
     },
     {
       "check": "notes",
-      "count": 265,
+      "count": 270,
       "codes": [
         "2844-LUS",
         "2833-AMG",
@@ -1208,6 +1228,7 @@
         "2788-MIN",
         "2778-JOM",
         "2744-NISH",
+        "2765-GUC",
         "2759-ARM",
         "2763-KAY",
         "2762-LAT",
@@ -1221,6 +1242,7 @@
         "2722-CRIVEL",
         "2720-ROJ",
         "2719-FRAG",
+        "2717-EXN",
         "2712-TMFO",
         "2708-BORN",
         "2663-ARM",
@@ -1257,6 +1279,7 @@
         "2452-JOM",
         "2427-CLEA",
         "2415-ESC",
+        "2411-JAME",
         "2401-KAY",
         "2393-KAY",
         "2378-GOLD",
@@ -1265,9 +1288,11 @@
         "2363-VER",
         "2366-DIP",
         "2361-ARM",
+        "2321-PARF",
         "2348-AMG",
         "2327-SWISA",
         "2303-EXN",
+        "2313-DRC",
         "2296-KAY",
         "2285-BOT",
         "2294-ACQ",
@@ -1280,7 +1305,6 @@
         "2249-BYR",
         "2246-GUC",
         "2229-ESCE",
-        "2228-ESCE",
         "2223-AMG",
         "2226-BON",
         "2213-AMG",
@@ -1341,7 +1365,6 @@
         "1656-LOC",
         "1659-CHRA",
         "1655-JOM",
-        "1660-ESCE",
         "1650-LAN",
         "1639-TER",
         "1638-XER",
@@ -1378,6 +1401,7 @@
         "277-JOM",
         "253-JOM",
         "245-JOM",
+        "244-JOM",
         "242-JOM",
         "235-HOLL",
         "232-ESCE",
@@ -1461,6 +1485,7 @@
         "1060-CRT",
         "1043-CAL",
         "1036-BLG",
+        "1024-BOU",
         "1012-ARA",
         "1007-ACQ"
       ]
@@ -1725,6 +1750,23 @@
       "iconsCount": 6
     },
     {
+      "code": "2765-GUC",
+      "brand": "Gucci",
+      "inspiredBy": "Muschio di Luce",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Gucci/Muschio-di-Luce-114849.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
       "code": "2759-ARM",
       "brand": "Giorgio Armani",
       "inspiredBy": "Power Of You",
@@ -1943,6 +1985,23 @@
       ],
       "notesCount": 6,
       "matchedNotesCount": 0,
+      "iconsCount": 6
+    },
+    {
+      "code": "2717-EXN",
+      "brand": "Ex Nihilo",
+      "inspiredBy": "Brompton Immortals",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ex-Nihilo/Brompton-Immortals-52591.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     {
@@ -2558,6 +2617,23 @@
       "iconsCount": 6
     },
     {
+      "code": "2411-JAME",
+      "brand": "James Heeley",
+      "inspiredBy": "Coccobello",
+      "fragranticaUrl": "https://www.fragrantica.com/p/18470",
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
       "code": "2401-KAY",
       "brand": "Kayali Fragrances",
       "inspiredBy": "Vanilla Candy Rock Sugar 42",
@@ -2694,6 +2770,23 @@
       "iconsCount": 3
     },
     {
+      "code": "2321-PARF",
+      "brand": "Parfums de Marly",
+      "inspiredBy": "Nisean",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Parfums-de-Marly/Nisean-36540.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
       "code": "2348-AMG",
       "brand": "Amouage",
       "inspiredBy": "Guidance",
@@ -2732,6 +2825,23 @@
       "brand": "Ex Nihilo",
       "inspiredBy": "French Affair",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Ex-Nihilo/French-Affair-47569.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "2313-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Sauvage Parfum",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Sauvage-Parfum-56324.html",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"
@@ -2936,23 +3046,6 @@
       "brand": "Escentric Molecules",
       "inspiredBy": "Molecule 01 + Patchouli",
       "fragranticaUrl": "https://www.fragrantica.com/p/66049",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 2,
-      "matchedNotesCount": 0,
-      "iconsCount": 2
-    },
-    {
-      "code": "2228-ESCE",
-      "brand": "Escentric Molecules",
-      "inspiredBy": "Molecule 01 + Iris",
-      "fragranticaUrl": "https://www.fragrantica.com/p/66048",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"
@@ -4000,23 +4093,6 @@
       "iconsCount": 3
     },
     {
-      "code": "1660-ESCE",
-      "brand": "Escentric Molecules",
-      "inspiredBy": "Molecule 01",
-      "fragranticaUrl": "https://www.fragrantica.com/p/845",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 1,
-      "matchedNotesCount": 0,
-      "iconsCount": 1
-    },
-    {
       "code": "1650-LAN",
       "brand": "Lancôme",
       "inspiredBy": "La Vie Est Belle Soleil Cristal",
@@ -4630,6 +4706,23 @@
       "brand": "Jo Malone London",
       "inspiredBy": "Blue Agava Cacao",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Jo-Malone-London/Blue-Agava-Cacao-2280.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "244-JOM",
+      "brand": "Jo Malone London",
+      "inspiredBy": "Black Vetyver Cafe",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Jo-Malone-London/Black-Vetyver-Cafe-8278.html",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"
@@ -6061,6 +6154,23 @@
       "brand": "Bvlgari",
       "inspiredBy": "BLV Pour Homme",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/BLV-Pour-Homme-148.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
+    },
+    {
+      "code": "1024-BOU",
+      "brand": "Boucheron",
+      "inspiredBy": "Vanille de Zanzibar",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Boucheron/Vanille-de-Zanzibar-44720.html",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"

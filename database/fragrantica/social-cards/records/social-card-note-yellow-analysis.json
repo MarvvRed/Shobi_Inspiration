@@ -1,10 +1,10 @@
 {
-  "count": 265,
+  "count": 270,
   "kinds": {
-    "raw_exact_id_file_suffix": 172,
-    "validated_record_unresolved": 73,
+    "raw_exact_id_file_suffix": 178,
+    "validated_record_unresolved": 71,
     "no_social_card_record": 10,
-    "validated_exact_except_filename_suffix": 1,
+    "validated_exact_except_filename_suffix": 2,
     "validated_fid_mismatch": 4,
     "raw_fid_mismatch": 2,
     "raw_exact_id_file_other_name": 3
@@ -1166,6 +1166,165 @@
         "mainNotes": [],
         "slots": [],
         "ocrConfidence": 0
+      }
+    },
+    {
+      "code": "2765-GUC",
+      "brand": "Gucci",
+      "inspiredBy": "Muschio di Luce",
+      "fid": "114849",
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "kind": "raw_exact_id_file_suffix",
+      "notes": [
+        "AMBROX® SUPER",
+        "Sandalwood",
+        "Vetiver",
+        "Cedar",
+        "Bagas de Zimbro",
+        "Musk"
+      ],
+      "validated": {
+        "code": "2765-GUC",
+        "fragranticaId": 114849,
+        "card": "database/fragrantica/social-cards/images/4992_2765-GUC_114849.jpeg",
+        "validated": true,
+        "mainNotes": [
+          "AMBROX® SUPER",
+          "Sandalwood",
+          "Vetiver",
+          "Cedar",
+          "Bagas de Zimbro",
+          "Musk"
+        ],
+        "rawSlots": [
+          {
+            "slot": 1,
+            "name": "AMBROX® SUPER",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 2,
+            "name": "Sandalwood",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 3,
+            "name": "Vetiver",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 4,
+            "name": "Cedar",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 5,
+            "name": "Bagas de Zimbro",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 6,
+            "name": "Musk",
+            "ocrConfidence": null
+          }
+        ],
+        "validatedSlots": [
+          {
+            "slot": 1,
+            "name": "AMBROX® SUPER",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 2,
+            "name": "Sandalwood",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 3,
+            "name": "Vetiver",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 4,
+            "name": "Cedar",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 5,
+            "name": "Bagas de Zimbro",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 6,
+            "name": "Musk",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          }
+        ],
+        "failures": [],
+        "reasons": [],
+        "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
+      },
+      "raw": {
+        "page": 2261,
+        "fragranticaId": 114849,
+        "code": "2765-GUC",
+        "card": "database/fragrantica/social-cards/images/4992_2765-GUC_114849.jpeg",
+        "mainNotes": [
+          "AMBROX® Seren",
+          "Sandalwood wD",
+          "Vetiver ul",
+          "Cedar",
+          "Bagas de Zimboro",
+          "Musk"
+        ],
+        "slots": [
+          {
+            "slot": 1,
+            "name": "AMBROX® Seren",
+            "ocrConfidence": 56.9
+          },
+          {
+            "slot": 2,
+            "name": "Sandalwood wD",
+            "ocrConfidence": 61.2
+          },
+          {
+            "slot": 3,
+            "name": "Vetiver ul",
+            "ocrConfidence": 69.1
+          },
+          {
+            "slot": 4,
+            "name": "Cedar",
+            "ocrConfidence": 96.6
+          },
+          {
+            "slot": 5,
+            "name": "Bagas de Zimboro",
+            "ocrConfidence": 69.5
+          },
+          {
+            "slot": 6,
+            "name": "Musk",
+            "ocrConfidence": 96.4
+          }
+        ],
+        "ocrConfidence": 75.0
       }
     },
     {
@@ -2859,6 +3018,165 @@
           }
         ],
         "ocrConfidence": 74.2
+      }
+    },
+    {
+      "code": "2717-EXN",
+      "brand": "Ex Nihilo",
+      "inspiredBy": "Brompton Immortals",
+      "fid": "52591",
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "kind": "raw_exact_id_file_suffix",
+      "notes": [
+        "Saffron",
+        "Vanilla",
+        "Patchouli",
+        "Olibanum (Frankincense)",
+        "Rose",
+        "Ylang-Ylang"
+      ],
+      "validated": {
+        "code": "2717-EXN",
+        "fragranticaId": 52591,
+        "card": "database/fragrantica/social-cards/images/4779_2717-EXN_52591.jpeg",
+        "validated": true,
+        "mainNotes": [
+          "Saffron",
+          "Vanilla",
+          "Patchouli",
+          "Olibanum (Frankincense)",
+          "Rose",
+          "Ylang-Ylang"
+        ],
+        "rawSlots": [
+          {
+            "slot": 1,
+            "name": "Saffron",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 2,
+            "name": "Vanilla",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 3,
+            "name": "Patchouli",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 4,
+            "name": "Olibanum (Frankincense)",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 5,
+            "name": "Rose",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 6,
+            "name": "Ylang-Ylang",
+            "ocrConfidence": null
+          }
+        ],
+        "validatedSlots": [
+          {
+            "slot": 1,
+            "name": "Saffron",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 2,
+            "name": "Vanilla",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 3,
+            "name": "Patchouli",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 4,
+            "name": "Olibanum (Frankincense)",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 5,
+            "name": "Rose",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 6,
+            "name": "Ylang-Ylang",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          }
+        ],
+        "failures": [],
+        "reasons": [],
+        "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
+      },
+      "raw": {
+        "page": 1520,
+        "fragranticaId": 52591,
+        "code": "2717-EXN",
+        "card": "database/fragrantica/social-cards/images/4779_2717-EXN_52591.jpeg",
+        "mainNotes": [
+          "Saffron ae",
+          "Vanilla",
+          "Patchoull",
+          "Olibanum Frankincense",
+          "Rose",
+          "Ylang- Ylang"
+        ],
+        "slots": [
+          {
+            "slot": 1,
+            "name": "Saffron ae",
+            "ocrConfidence": 75.9
+          },
+          {
+            "slot": 2,
+            "name": "Vanilla",
+            "ocrConfidence": 95.5
+          },
+          {
+            "slot": 3,
+            "name": "Patchoull",
+            "ocrConfidence": 90.0
+          },
+          {
+            "slot": 4,
+            "name": "Olibanum Frankincense",
+            "ocrConfidence": 93.6
+          },
+          {
+            "slot": 5,
+            "name": "Rose",
+            "ocrConfidence": 96.5
+          },
+          {
+            "slot": 6,
+            "name": "Ylang- Ylang",
+            "ocrConfidence": 91.2
+          }
+        ],
+        "ocrConfidence": 90.5
       }
     },
     {
@@ -7564,6 +7882,165 @@
       }
     },
     {
+      "code": "2411-JAME",
+      "brand": "James Heeley",
+      "inspiredBy": "Coccobello",
+      "fid": "18470",
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "kind": "raw_exact_id_file_suffix",
+      "notes": [
+        "Coconut",
+        "Palm Leaf",
+        "Salt",
+        "Gardenia",
+        "Sandalwood",
+        "Cedar"
+      ],
+      "validated": {
+        "code": "2411-JAME",
+        "fragranticaId": 18470,
+        "card": "database/fragrantica/social-cards/images/4147_2411-JAME_18470.jpeg",
+        "validated": true,
+        "mainNotes": [
+          "Coconut",
+          "Palm Leaf",
+          "Salt",
+          "Gardenia",
+          "Sandalwood",
+          "Cedar"
+        ],
+        "rawSlots": [
+          {
+            "slot": 1,
+            "name": "Coconut",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 2,
+            "name": "Palm Leaf",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 3,
+            "name": "Salt",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 4,
+            "name": "Gardenia",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 5,
+            "name": "Sandalwood",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 6,
+            "name": "Cedar",
+            "ocrConfidence": null
+          }
+        ],
+        "validatedSlots": [
+          {
+            "slot": 1,
+            "name": "Coconut",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 2,
+            "name": "Palm Leaf",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 3,
+            "name": "Salt",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 4,
+            "name": "Gardenia",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 5,
+            "name": "Sandalwood",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 6,
+            "name": "Cedar",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          }
+        ],
+        "failures": [],
+        "reasons": [],
+        "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
+      },
+      "raw": {
+        "page": 814,
+        "fragranticaId": 18470,
+        "code": "2411-JAME",
+        "card": "database/fragrantica/social-cards/images/4147_2411-JAME_18470.jpeg",
+        "mainNotes": [
+          "Coconut 4",
+          "SFOS Leaf Palm",
+          "ec Salt jth",
+          "Gardenia",
+          "SaaS",
+          "Cedar"
+        ],
+        "slots": [
+          {
+            "slot": 1,
+            "name": "Coconut 4",
+            "ocrConfidence": 92.9
+          },
+          {
+            "slot": 2,
+            "name": "SFOS Leaf Palm",
+            "ocrConfidence": 72.1
+          },
+          {
+            "slot": 3,
+            "name": "ec Salt jth",
+            "ocrConfidence": 54.6
+          },
+          {
+            "slot": 4,
+            "name": "Gardenia",
+            "ocrConfidence": 95.5
+          },
+          {
+            "slot": 5,
+            "name": "SaaS",
+            "ocrConfidence": 31.0
+          },
+          {
+            "slot": 6,
+            "name": "Cedar",
+            "ocrConfidence": 96.0
+          }
+        ],
+        "ocrConfidence": 73.7
+      }
+    },
+    {
       "code": "2401-KAY",
       "brand": "Kayali Fragrances",
       "inspiredBy": "Vanilla Candy Rock Sugar 42",
@@ -8424,6 +8901,165 @@
       }
     },
     {
+      "code": "2321-PARF",
+      "brand": "Parfums de Marly",
+      "inspiredBy": "Nisean",
+      "fid": "36540",
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "kind": "raw_exact_id_file_suffix",
+      "notes": [
+        "Woody Notes",
+        "Patchouli",
+        "Saffron",
+        "Labdanum",
+        "Olibanum (Frankincense)",
+        "Pink Pepper"
+      ],
+      "validated": {
+        "code": "2321-PARF",
+        "fragranticaId": 36540,
+        "card": "database/fragrantica/social-cards/images/4012_2321-PARF_36540.jpeg",
+        "validated": true,
+        "mainNotes": [
+          "Woody Notes",
+          "Patchouli",
+          "Saffron",
+          "Labdanum",
+          "Olibanum (Frankincense)",
+          "Pink Pepper"
+        ],
+        "rawSlots": [
+          {
+            "slot": 1,
+            "name": "Woody Notes",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 2,
+            "name": "Patchouli",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 3,
+            "name": "Saffron",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 4,
+            "name": "Labdanum",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 5,
+            "name": "Olibanum (Frankincense)",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 6,
+            "name": "Pink Pepper",
+            "ocrConfidence": null
+          }
+        ],
+        "validatedSlots": [
+          {
+            "slot": 1,
+            "name": "Woody Notes",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 2,
+            "name": "Patchouli",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 3,
+            "name": "Saffron",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 4,
+            "name": "Labdanum",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 5,
+            "name": "Olibanum (Frankincense)",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 6,
+            "name": "Pink Pepper",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          }
+        ],
+        "failures": [],
+        "reasons": [],
+        "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
+      },
+      "raw": {
+        "page": 1187,
+        "fragranticaId": 36540,
+        "code": "2321-PARF",
+        "card": "database/fragrantica/social-cards/images/4012_2321-PARF_36540.jpeg",
+        "mainNotes": [
+          "Woody Notes",
+          "Patchoull ee",
+          "Saffron exe",
+          "Labdanum",
+          "Olibanum Frankincense",
+          "wT w Pink Pepper"
+        ],
+        "slots": [
+          {
+            "slot": 1,
+            "name": "Woody Notes",
+            "ocrConfidence": 96.5
+          },
+          {
+            "slot": 2,
+            "name": "Patchoull ee",
+            "ocrConfidence": 56.6
+          },
+          {
+            "slot": 3,
+            "name": "Saffron exe",
+            "ocrConfidence": 65.8
+          },
+          {
+            "slot": 4,
+            "name": "Labdanum",
+            "ocrConfidence": 84.0
+          },
+          {
+            "slot": 5,
+            "name": "Olibanum Frankincense",
+            "ocrConfidence": 93.9
+          },
+          {
+            "slot": 6,
+            "name": "wT w Pink Pepper",
+            "ocrConfidence": 79.6
+          }
+        ],
+        "ocrConfidence": 79.4
+      }
+    },
+    {
       "code": "2348-AMG",
       "brand": "Amouage",
       "inspiredBy": "Guidance",
@@ -8840,6 +9476,170 @@
         "mainNotes": [],
         "slots": [],
         "ocrConfidence": 0
+      }
+    },
+    {
+      "code": "2313-DRC",
+      "brand": "Dior",
+      "inspiredBy": "Sauvage Parfum",
+      "fid": "56324",
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "kind": "validated_exact_except_filename_suffix",
+      "notes": [
+        "Sandalwood",
+        "Bergamot",
+        "Mandarin Orange",
+        "Olibanum (Frankincense)",
+        "Tonka Bean",
+        "Vanilla"
+      ],
+      "validated": {
+        "code": "2313-DRC",
+        "fragranticaId": 56324,
+        "card": "database/fragrantica/social-cards/images/3958_unknown_56324.jpeg",
+        "validated": true,
+        "mainNotes": [
+          "Sandalwood",
+          "Bergamot",
+          "Mandarin Orange",
+          "Olibanum (Frankincense)",
+          "Tonka Bean",
+          "Vanilla"
+        ],
+        "rawSlots": [
+          {
+            "slot": 1,
+            "name": "Sandalwood we eet",
+            "ocrConfidence": 62.3
+          },
+          {
+            "slot": 2,
+            "name": "Bergamot Gr",
+            "ocrConfidence": 62.0
+          },
+          {
+            "slot": 3,
+            "name": "Mandarin Orange ii",
+            "ocrConfidence": 81.2
+          },
+          {
+            "slot": 4,
+            "name": "Olibanum Frankincense",
+            "ocrConfidence": 93.5
+          },
+          {
+            "slot": 5,
+            "name": "waY wv Tonka Bean",
+            "ocrConfidence": 66.9
+          },
+          {
+            "slot": 6,
+            "name": "Vanilla",
+            "ocrConfidence": 96.4
+          }
+        ],
+        "validatedSlots": [
+          {
+            "slot": 1,
+            "name": "Sandalwood",
+            "raw": "Sandalwood we eet",
+            "matchScore": 0.97,
+            "margin": 0.04,
+            "ocrConfidence": 62.3
+          },
+          {
+            "slot": 2,
+            "name": "Bergamot",
+            "raw": "Bergamot Gr",
+            "matchScore": 0.97,
+            "margin": 0.137,
+            "ocrConfidence": 62.0
+          },
+          {
+            "slot": 3,
+            "name": "Mandarin Orange",
+            "raw": "Mandarin Orange ii",
+            "matchScore": 0.97,
+            "margin": 0.04,
+            "ocrConfidence": 81.2
+          },
+          {
+            "slot": 4,
+            "name": "Olibanum (Frankincense)",
+            "raw": "Olibanum Frankincense",
+            "matchScore": 1,
+            "margin": 1,
+            "ocrConfidence": 93.5
+          },
+          {
+            "slot": 5,
+            "name": "Tonka Bean",
+            "raw": "waY wv Tonka Bean",
+            "matchScore": 0.97,
+            "margin": 0.389,
+            "ocrConfidence": 66.9
+          },
+          {
+            "slot": 6,
+            "name": "Vanilla",
+            "raw": "Vanilla",
+            "matchScore": 1,
+            "margin": 1,
+            "ocrConfidence": 96.4
+          }
+        ],
+        "failures": [],
+        "reasons": []
+      },
+      "raw": {
+        "page": 1618,
+        "fragranticaId": 56324,
+        "code": "2313-DRC",
+        "card": "database/fragrantica/social-cards/images/3958_unknown_56324.jpeg",
+        "mainNotes": [
+          "Sandalwood we eet",
+          "Bergamot Gr",
+          "Mandarin Orange ii",
+          "Olibanum Frankincense",
+          "waY wv Tonka Bean",
+          "Vanilla"
+        ],
+        "slots": [
+          {
+            "slot": 1,
+            "name": "Sandalwood we eet",
+            "ocrConfidence": 62.3
+          },
+          {
+            "slot": 2,
+            "name": "Bergamot Gr",
+            "ocrConfidence": 62.0
+          },
+          {
+            "slot": 3,
+            "name": "Mandarin Orange ii",
+            "ocrConfidence": 81.2
+          },
+          {
+            "slot": 4,
+            "name": "Olibanum Frankincense",
+            "ocrConfidence": 93.5
+          },
+          {
+            "slot": 5,
+            "name": "waY wv Tonka Bean",
+            "ocrConfidence": 66.9
+          },
+          {
+            "slot": 6,
+            "name": "Vanilla",
+            "ocrConfidence": 96.4
+          }
+        ],
+        "ocrConfidence": 77.0
       }
     },
     {
@@ -10389,83 +11189,6 @@
           }
         ],
         "ocrConfidence": 40.1
-      }
-    },
-    {
-      "code": "2228-ESCE",
-      "brand": "Escentric Molecules",
-      "inspiredBy": "Molecule 01 + Iris",
-      "fid": "66048",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "validated_record_unresolved",
-      "notes": [
-        "Orris Root",
-        "Iso E Super"
-      ],
-      "validated": {
-        "code": "2228-ESCE",
-        "fragranticaId": 66048,
-        "card": "database/fragrantica/social-cards/images/3823_2228-ESCE_66048.jpeg",
-        "validated": false,
-        "mainNotes": [],
-        "rawSlots": [
-          {
-            "slot": 1,
-            "name": "- rs",
-            "ocrConfidence": 53.7
-          },
-          {
-            "slot": 5,
-            "name": "Sa Panes",
-            "ocrConfidence": 32.1
-          }
-        ],
-        "validatedSlots": [],
-        "failures": [
-          {
-            "slot": 1,
-            "raw": "- rs",
-            "bestScore": 0.667,
-            "margin": 0.0,
-            "ocrConfidence": 53.7
-          },
-          {
-            "slot": 5,
-            "raw": "Sa Panes",
-            "bestScore": 0.667,
-            "margin": 0.0,
-            "ocrConfidence": 32.1
-          }
-        ],
-        "reasons": [
-          "LEXICON_UNCERTAIN"
-        ]
-      },
-      "raw": {
-        "page": 1776,
-        "fragranticaId": 66048,
-        "code": "2228-ESCE",
-        "card": "database/fragrantica/social-cards/images/3823_2228-ESCE_66048.jpeg",
-        "mainNotes": [
-          "- rs",
-          "Sa Panes"
-        ],
-        "slots": [
-          {
-            "slot": 1,
-            "name": "- rs",
-            "ocrConfidence": 53.7
-          },
-          {
-            "slot": 5,
-            "name": "Sa Panes",
-            "ocrConfidence": 32.1
-          }
-        ],
-        "ocrConfidence": 42.9
       }
     },
     {
@@ -19026,82 +19749,6 @@
       }
     },
     {
-      "code": "1660-ESCE",
-      "brand": "Escentric Molecules",
-      "inspiredBy": "Molecule 01",
-      "fid": "845",
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "kind": "validated_record_unresolved",
-      "notes": [
-        "Iso E Super"
-      ],
-      "validated": {
-        "code": "1660-ESCE",
-        "fragranticaId": 845,
-        "card": "database/fragrantica/social-cards/images/2393_1660-ESCE_845.jpeg",
-        "validated": false,
-        "mainNotes": [],
-        "rawSlots": [
-          {
-            "slot": 1,
-            "name": "Lt",
-            "ocrConfidence": 39.5
-          },
-          {
-            "slot": 4,
-            "name": "PES",
-            "ocrConfidence": 43.4
-          }
-        ],
-        "validatedSlots": [],
-        "failures": [
-          {
-            "slot": 1,
-            "raw": "Lt",
-            "bestScore": 0.667,
-            "margin": 0.0,
-            "ocrConfidence": 39.5
-          },
-          {
-            "slot": 4,
-            "raw": "PES",
-            "bestScore": 0.75,
-            "margin": 0.0,
-            "ocrConfidence": 43.4
-          }
-        ],
-        "reasons": [
-          "LEXICON_UNCERTAIN"
-        ]
-      },
-      "raw": {
-        "page": 229,
-        "fragranticaId": 845,
-        "code": "1660-ESCE",
-        "card": "database/fragrantica/social-cards/images/2393_1660-ESCE_845.jpeg",
-        "mainNotes": [
-          "Lt",
-          "PES"
-        ],
-        "slots": [
-          {
-            "slot": 1,
-            "name": "Lt",
-            "ocrConfidence": 39.5
-          },
-          {
-            "slot": 4,
-            "name": "PES",
-            "ocrConfidence": 43.4
-          }
-        ],
-        "ocrConfidence": 41.5
-      }
-    },
-    {
       "code": "1650-LAN",
       "brand": "Lancôme",
       "inspiredBy": "La Vie Est Belle Soleil Cristal",
@@ -23735,6 +24382,159 @@
           }
         ],
         "ocrConfidence": 77.2
+      }
+    },
+    {
+      "code": "244-JOM",
+      "brand": "Jo Malone London",
+      "inspiredBy": "Black Vetyver Cafe",
+      "fid": "8278",
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "kind": "raw_exact_id_file_suffix",
+      "notes": [
+        "Coffee",
+        "Vetiver",
+        "Nutmeg",
+        "Sandalwood",
+        "Coriander",
+        "Incense"
+      ],
+      "validated": {
+        "code": "244-JOM",
+        "fragranticaId": 8278,
+        "card": "database/fragrantica/social-cards/images/1152_244-JOM_8278.jpeg",
+        "validated": true,
+        "mainNotes": [
+          "Coffee",
+          "Vetiver",
+          "Nutmeg",
+          "Sandalwood",
+          "Coriander",
+          "Incense"
+        ],
+        "rawSlots": [
+          {
+            "slot": 1,
+            "name": "Coffee",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 2,
+            "name": "Vetiver",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 3,
+            "name": "Nutmeg",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 4,
+            "name": "Sandalwood",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 5,
+            "name": "Coriander",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 6,
+            "name": "Incense",
+            "ocrConfidence": null
+          }
+        ],
+        "validatedSlots": [
+          {
+            "slot": 1,
+            "name": "Coffee",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 2,
+            "name": "Vetiver",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 3,
+            "name": "Nutmeg",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 4,
+            "name": "Sandalwood",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 5,
+            "name": "Coriander",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 6,
+            "name": "Incense",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          }
+        ],
+        "failures": [],
+        "reasons": [],
+        "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
+      },
+      "raw": {
+        "page": 566,
+        "fragranticaId": 8278,
+        "code": "244-JOM",
+        "card": "database/fragrantica/social-cards/images/1152_244-JOM_8278.jpeg",
+        "mainNotes": [
+          "Coffee",
+          "Nutmeg TE",
+          "Baer",
+          "Coriander",
+          "Incense"
+        ],
+        "slots": [
+          {
+            "slot": 1,
+            "name": "Coffee",
+            "ocrConfidence": 96.4
+          },
+          {
+            "slot": 3,
+            "name": "Nutmeg TE",
+            "ocrConfidence": 63.2
+          },
+          {
+            "slot": 4,
+            "name": "Baer",
+            "ocrConfidence": 25.8
+          },
+          {
+            "slot": 5,
+            "name": "Coriander",
+            "ocrConfidence": 94.6
+          },
+          {
+            "slot": 6,
+            "name": "Incense",
+            "ocrConfidence": 95.2
+          }
+        ],
+        "ocrConfidence": 75.0
       }
     },
     {
@@ -35478,6 +36278,165 @@
         "mainNotes": [],
         "slots": [],
         "ocrConfidence": 0
+      }
+    },
+    {
+      "code": "1024-BOU",
+      "brand": "Boucheron",
+      "inspiredBy": "Vanille de Zanzibar",
+      "fid": "44720",
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "kind": "raw_exact_id_file_suffix",
+      "notes": [
+        "Vanilla",
+        "Sandalwood",
+        "Peru Balsam",
+        "Pear",
+        "Heliotrope",
+        "Patchouli"
+      ],
+      "validated": {
+        "code": "1024-BOU",
+        "fragranticaId": 44720,
+        "card": "database/fragrantica/social-cards/images/125_1024-BOU_44720.jpeg",
+        "validated": true,
+        "mainNotes": [
+          "Vanilla",
+          "Sandalwood",
+          "Peru Balsam",
+          "Pear",
+          "Heliotrope",
+          "Patchouli"
+        ],
+        "rawSlots": [
+          {
+            "slot": 1,
+            "name": "Vanilla",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 2,
+            "name": "Sandalwood",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 3,
+            "name": "Peru Balsam",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 4,
+            "name": "Pear",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 5,
+            "name": "Heliotrope",
+            "ocrConfidence": null
+          },
+          {
+            "slot": 6,
+            "name": "Patchouli",
+            "ocrConfidence": null
+          }
+        ],
+        "validatedSlots": [
+          {
+            "slot": 1,
+            "name": "Vanilla",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 2,
+            "name": "Sandalwood",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 3,
+            "name": "Peru Balsam",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 4,
+            "name": "Pear",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 5,
+            "name": "Heliotrope",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          },
+          {
+            "slot": 6,
+            "name": "Patchouli",
+            "raw": "CURRENT_FID_FAST_EXACT_PROOF",
+            "matchScore": 1.0,
+            "margin": null
+          }
+        ],
+        "failures": [],
+        "reasons": [],
+        "validationMethod": "CURRENT_FID_FAST_EXACT_PROOF"
+      },
+      "raw": {
+        "page": 1350,
+        "fragranticaId": 44720,
+        "code": "1024-BOU",
+        "card": "database/fragrantica/social-cards/images/125_1024-BOU_44720.jpeg",
+        "mainNotes": [
+          "Vanilla",
+          "Sandalwood",
+          "Peru Balsam MBE",
+          "Pear",
+          "fa heliotrope",
+          "Cr Patcnoull"
+        ],
+        "slots": [
+          {
+            "slot": 1,
+            "name": "Vanilla",
+            "ocrConfidence": 91.3
+          },
+          {
+            "slot": 2,
+            "name": "Sandalwood",
+            "ocrConfidence": 96.2
+          },
+          {
+            "slot": 3,
+            "name": "Peru Balsam MBE",
+            "ocrConfidence": 79.5
+          },
+          {
+            "slot": 4,
+            "name": "Pear",
+            "ocrConfidence": 96.4
+          },
+          {
+            "slot": 5,
+            "name": "fa heliotrope",
+            "ocrConfidence": 30.7
+          },
+          {
+            "slot": 6,
+            "name": "Cr Patcnoull",
+            "ocrConfidence": 54.3
+          }
+        ],
+        "ocrConfidence": 74.7
       }
     },
     {
