@@ -40,4 +40,5 @@ jobs:
             exit 0
           fi
           git commit -m 'Analyze current yellow Social Cards with neural OCR V6'
+          git pull --rebase origin main
           git push
