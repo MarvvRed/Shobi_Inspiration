@@ -31,4 +31,5 @@ jobs:
           git add database/audits/current-yellow-neural-ocr-v6-independent-verification.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Independently verify neural OCR V6 candidates'
+          git pull --rebase origin main
           git push
