@@ -154,7 +154,18 @@ def main() -> None:
             "validationIconsCount": audit.get("iconsCount"),
         }
         final_rows.append(site)
-        final_db_rows.append(db)
+        # Keep the complete companion export in lockstep with the public
+        # final catalog so the independent invariant verifier sees the same
+        # audit state that the browser displays.
+        final_db_rows.append({
+            **db,
+            "validationStatus": status,
+            "validationIssues": issues,
+            "validationChecks": checks,
+            "validationNotesCount": audit.get("notesCount"),
+            "validationMatchedNotesCount": audit.get("matchedNotesCount"),
+            "validationIconsCount": audit.get("iconsCount"),
+        })
 
     if failures or len(final_rows) != expected:
         raise SystemExit(json.dumps({"failures": failures, "finalRows": len(final_rows), "expected": expected}, ensure_ascii=False))
