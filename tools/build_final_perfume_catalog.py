@@ -133,6 +133,26 @@ def main() -> None:
             exceptions.append({"code": product_code, **exception})
         else:
             direct += 1
+
+        # catalog_site.json is deliberately compact.  Its validation fields
+        # must come from the audit generated immediately before this builder,
+        # never from a stale prior site export.
+        audit = db.get("validationAudit") or {}
+        status = audit.get("status")
+        checks = audit.get("checks")
+        issues = audit.get("issues")
+        if status not in {"green", "yellow", "red"} or not isinstance(checks, dict) or not isinstance(issues, list):
+            failures.append({"code": product_code, "reason": "missing_or_invalid_validation_audit"})
+            continue
+        site = {
+            **site,
+            "validationStatus": status,
+            "validationIssues": issues,
+            "validationChecks": checks,
+            "validationNotesCount": audit.get("notesCount"),
+            "validationMatchedNotesCount": audit.get("matchedNotesCount"),
+            "validationIconsCount": audit.get("iconsCount"),
+        }
         final_rows.append(site)
         final_db_rows.append(db)
 
