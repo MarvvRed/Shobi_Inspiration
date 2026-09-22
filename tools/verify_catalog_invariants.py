@@ -25,6 +25,8 @@ CURRENT_YELLOW_V2_PILOT = ROOT / "database/audits/current-yellow-label-ocr-v2.js
 CURRENT_YELLOW_V2_VALIDATION = ROOT / "database/audits/current-yellow-v2-exact-validation.json"
 NEAR_PASS_REFINEMENT = ROOT / "database/audits/current-yellow-near-pass-ocr-refinement.json"
 V4_INDEPENDENT_SLOT_VERIFICATION = ROOT / "database/audits/current-yellow-slot-ocr-v4-independent-verification.json"
+V6_NEURAL_REPORT = ROOT / "database/audits/current-yellow-neural-ocr-v6.json"
+V6_INDEPENDENT_LAYOUT_VERIFICATION = ROOT / "database/audits/current-yellow-neural-ocr-v6-independent-verification.json"
 REPORT = ROOT / "database/audits/CURRENT-CATALOG-AUDIT.md"
 ALLOWLIST = ROOT / "database/audits/identity-change-allowlist.json"
 CRITICAL_FIXES = ROOT / "database/audits/critical-identity-fixes.json"
@@ -228,6 +230,36 @@ def v4_independent_slot_evidence(row, fid, notes, current_audit, proof_map):
             return False
     return observed == notes
 
+
+def v6_independent_layout_evidence(row, fid, notes, current_audit, neural_map, proof_map):
+    """Independently revalidate each field of the V6 cross-engine proof."""
+    c = row_code(row)
+    proof, source, audit = proof_map.get(c), neural_map.get(c), current_audit.get(c)
+    if not proof or not source or not audit or not notes:
+        return False
+    card = str(proof.get("card") or "")
+    linked = audit.get("v6IndependentLayoutProof") or {}
+    if (proof.get("result") != "INDEPENDENT_EXACT_NEURAL_SEQUENCE" or
+            proof.get("sourceV6Result") != "EXACT_NEURAL_SLOT_SEQUENCE" or source.get("result") != "EXACT_NEURAL_SLOT_SEQUENCE" or
+            any(str(item.get("fid") or "") != fid for item in (proof, source)) or
+            any(list(item.get("catalog") or []) != notes or list(item.get("observed") or []) != notes for item in (proof, source)) or
+            source.get("card") != card or proof.get("cardSource") != source.get("cardSource") or
+            not card or not (ROOT / card).is_file() or audit.get("result") != "EXACT_ORDERED_MATCH" or
+            str(audit.get("fragranticaId") or "").strip() != fid or audit.get("catalogNotes") != notes or audit.get("observedNotes") != notes or
+            audit.get("card") != card or linked.get("report") != "database/audits/current-yellow-neural-ocr-v6-independent-verification.json" or
+            linked.get("sourceReport") != "database/audits/current-yellow-neural-ocr-v6.json" or str(linked.get("fid") or "") != fid or
+            linked.get("card") != card or linked.get("cardSource") != proof.get("cardSource")):
+        return False
+    slots = list(source.get("slots") or [])
+    if len(slots) != len(notes):
+        return False
+    for expected, slot in zip(notes, slots):
+        if slot.get("winner") != expected or int(slot.get("exactReads") or 0) < 2 or list(slot.get("competitors") or []):
+            return False
+    layout = proof.get("layoutEvidence") or {}
+    return (list(layout.get("observed") or []) == notes and int(layout.get("exactReads") or 0) >= 1 and
+            not list(layout.get("competitors") or []))
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--baseline-ref", help="Git ref whose database_complete.json is the identity baseline")
@@ -244,6 +276,8 @@ def main():
     cy_validation_rows = load(CURRENT_YELLOW_V2_VALIDATION).get("rows", []) if CURRENT_YELLOW_V2_VALIDATION.is_file() else []
     refinement_rows = load(NEAR_PASS_REFINEMENT).get("rows", []) if NEAR_PASS_REFINEMENT.is_file() else []
     v4_independent_rows = load(V4_INDEPENDENT_SLOT_VERIFICATION).get("rows", []) if V4_INDEPENDENT_SLOT_VERIFICATION.is_file() else []
+    v6_neural_rows = load(V6_NEURAL_REPORT).get("rows", []) if V6_NEURAL_REPORT.is_file() else []
+    v6_independent_rows = load(V6_INDEPENDENT_LAYOUT_VERIFICATION).get("rows", []) if V6_INDEPENDENT_LAYOUT_VERIFICATION.is_file() else []
     by_code = {row_code(r): r for r in db}
     site_by_code = {row_code(r): r for r in site}
     final_by_code = {row_code(r): r for r in final}
@@ -254,6 +288,8 @@ def main():
     cy_validation = {row_code(r): r for r in cy_validation_rows}
     refinement = {row_code(r): r for r in refinement_rows}
     v4_independent = {row_code(r): r for r in v4_independent_rows}
+    v6_neural = {row_code(r): r for r in v6_neural_rows}
+    v6_independent = {row_code(r): r for r in v6_independent_rows}
 
     failures = []
     if len(by_code) != len(db): failures.append("duplicate Shobi codes in database_complete.json")
@@ -270,6 +306,7 @@ def main():
     green_v2 = []
     green_supplemental = []
     green_v4_independent = []
+    green_v6_independent = []
     for code, srow in site_by_code.items():
         if srow.get("validationStatus") != "green":
             continue
@@ -283,6 +320,7 @@ def main():
         strict = bool(
             ev
             and not ev.get("v4IndependentSlotProof")
+            and not ev.get("v6IndependentLayoutProof")
             and ev.get("result") == "EXACT_ORDERED_MATCH"
             and str(ev.get("fragranticaId") or "").strip() == fid
             and ev.get("catalogNotes") == notes
@@ -293,8 +331,9 @@ def main():
         v2 = v2_strong_ordered_evidence(row, fid, notes, audit_by_code, v2_pilot, v2_validation)
         supplemental = near_pass_supplemental_evidence(row, fid, notes, audit_by_code, cy_pilot, cy_validation, refinement)
         v4 = v4_independent_slot_evidence(row, fid, notes, audit_by_code, v4_independent)
-        if not strict and not v2 and not supplemental and not v4:
-            failures.append(f"{code}: green without strict whole-card, revalidated STRONG_EXACT V2, supplemental one-label proof, or independent V4 slot proof")
+        v6 = v6_independent_layout_evidence(row, fid, notes, audit_by_code, v6_neural, v6_independent)
+        if not strict and not v2 and not supplemental and not v4 and not v6:
+            failures.append(f"{code}: green without strict whole-card, revalidated STRONG_EXACT V2, supplemental one-label proof, independent V4 slot proof, or independent V6 layout proof")
             continue
         if v2 and not strict:
             green_v2.append(code)
@@ -302,6 +341,8 @@ def main():
             green_supplemental.append(code)
         if v4 and not strict and not v2 and not supplemental:
             green_v4_independent.append(code)
+        if v6 and not strict and not v2 and not supplemental and not v4:
+            green_v6_independent.append(code)
 
     fid_codes = defaultdict(list)
     for code, row in by_code.items():
@@ -361,15 +402,16 @@ def main():
             f"- Green rows using independently revalidated STRONG_EXACT V2 proof: **{len(green_v2)}**",
             f"- Green rows using independently revalidated supplemental one-label OCR proof: **{len(green_supplemental)}**",
             f"- Green rows using independently revalidated V4 current-card slot proof: **{len(green_v4_independent)}**",
+            f"- Green rows using independently revalidated V6 neural plus layout-aware Tesseract proof: **{len(green_v6_independent)}**",
             f"- Approved shared-FID alias groups present: **{len(approved_shared_present)}**",
             f"- Unapproved shared FIDs: **{len(unapproved_shared)}**",
             f"- Unauthorized identity/FID changes vs baseline: **{len(identity_changes)}**", "",
-            "A green row is accepted only when the current FID and ordered note sequence are proven by strict whole-card `EXACT_ORDERED_MATCH`, independently revalidated `STRONG_EXACT` V2, the independently revalidated one-label supplemental OCR path, or a separate V4 current-card slot proof. The V4 route requires the original V4 result only as a work-list selector, then independently re-resolves the current exact-FID card and requires the full pixel-derived sequence, two exact OCR configurations per occupied slot, and zero competing eligible reads.", "",
+            "A green row is accepted only when the current FID and ordered note sequence are proven by strict whole-card `EXACT_ORDERED_MATCH`, independently revalidated `STRONG_EXACT` V2, the independently revalidated one-label supplemental OCR path, a separate V4 current-card slot proof, or the V6 cross-engine layout proof. V6 uses the neural report only as a work-list: all six slots need two exact neural reads and zero competitors, then independent Tesseract must derive the complete spatial sequence with zero competing sequence.", "",
             "Shared Fragrantica IDs are allowed only when the exact set of Shobi codes is registered in `shared-fid-alias-registry.json`; any new member or new shared FID fails CI.", ""
         ]), encoding="utf-8")
 
     print(json.dumps({
-        "rows": len(site), "counts": counts, "greenOrderedProof": len(green), "greenV2Strong": len(green_v2), "greenSupplementalStrong": len(green_supplemental), "greenV4IndependentSlot": len(green_v4_independent),
+        "rows": len(site), "counts": counts, "greenOrderedProof": len(green), "greenV2Strong": len(green_v2), "greenSupplementalStrong": len(green_supplemental), "greenV4IndependentSlot": len(green_v4_independent), "greenV6IndependentLayout": len(green_v6_independent),
         "approvedSharedFidGroups": len(approved_shared_present), "unapprovedSharedFids": len(unapproved_shared),
         "protectedIdentities": len(protected), "unauthorizedIdentityChanges": len(identity_changes), "failures": len(failures)
     }, indent=2))
