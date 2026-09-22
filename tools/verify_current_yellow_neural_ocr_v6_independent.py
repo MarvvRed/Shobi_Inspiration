@@ -55,15 +55,14 @@ def resolve_exact_fid_card(shobi_code, fid):
     return None, None, current if current else archived
 
 
-def crop_slots(path):
+def notes_panel(path):
     with Image.open(path) as source:
         if source.width < 800 or source.height < 800 or source.height / source.width < .85:
             return None
         image = source.convert("RGB").resize((1200, 1200), Image.Resampling.LANCZOS)
-    # Independently inset from V6: each region is label-only and has complete
-    # first/second-line coverage for standard six-note Social Cards.
-    rows, cols = ((920, 988), (1088, 1138)), ((67, 176), (192, 300), (316, 427))
-    return [image.crop((left, top, right, bottom)) for top, bottom in rows for left, right in cols]
+    # This includes both known official layouts: labels above icons and labels
+    # below icons.  It is deliberately wider than a fixed-label crop.
+    return image.crop((45, 700, 465, 1145))
 
 
 def variants(tile):
@@ -95,9 +94,110 @@ def read_tesseract(image, psm):
     return " ".join(words), min(confidence) if confidence else -1
 
 
+def read_positioned_words(image, psm, scale):
+    payload = io.BytesIO(); image.save(payload, format="PNG")
+    result = subprocess.run(
+        ["tesseract", "stdin", "stdout", "--psm", str(psm), "-l", "eng", "tsv"],
+        input=payload.getvalue(), stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+        timeout=16, check=True, env={**os.environ, "OMP_THREAD_LIMIT": "1"},
+    )
+    words = []
+    for row in csv.DictReader(io.StringIO(result.stdout.decode("utf-8", "replace")), delimiter="\t"):
+        text = " ".join(str(row.get("text") or "").split())
+        if not text: continue
+        try: confidence = float(row.get("conf") or -1)
+        except ValueError: confidence = -1
+        if confidence < 35: continue
+        try:
+            x = (float(row.get("left") or 0) + float(row.get("width") or 0) / 2) / scale
+            y = (float(row.get("top") or 0) + float(row.get("height") or 0) / 2) / scale
+        except ValueError:
+            continue
+        words.append({"text": text, "x": x, "y": y, "confidence": confidence})
+    return words
+
+
 def exact(raw, lexicon):
     matches = [note for note in lexicon if norm(note) == norm(raw)]
     return matches[0] if len(matches) == 1 else None
+
+
+def exact_phrase(words, lexicon):
+    """Find one exact lexicon phrase in a spatial cell, never a fuzzy match."""
+    hits = set()
+    for start in range(len(words)):
+        for end in range(start + 1, len(words) + 1):
+            note = exact(" ".join(item["text"] for item in words[start:end]), lexicon)
+            if note: hits.add(note)
+    return next(iter(hits)) if len(hits) == 1 else None
+
+
+def two_column_notes(words, lexicon):
+    """Derive the two top-to-bottom labels in one physical column.
+
+    Their vertical gap is not fixed: long top labels can occupy two lines.
+    Select two non-overlapping exact lexicon phrases, preferring the pair that
+    accounts for most recognised words.  Ties fail closed.
+    """
+    spans = []
+    for start in range(len(words)):
+        for end in range(start + 1, len(words) + 1):
+            note = exact(" ".join(item["text"] for item in words[start:end]), lexicon)
+            if note:
+                spans.append((start, end, note))
+    pairs = []
+    for first in spans:
+        for second in spans:
+            if first[1] <= second[0]:
+                pairs.append((first, second))
+    if not pairs:
+        return None, None
+    best_width = max((first[1] - first[0]) + (second[1] - second[0]) for first, second in pairs)
+    best = [(first, second) for first, second in pairs if (first[1] - first[0]) + (second[1] - second[0]) == best_width]
+    meanings = {(first[2], second[2]) for first, second in best}
+    return next(iter(meanings)) if len(meanings) == 1 else (None, None)
+
+
+def panel_sequence(panel, lexicon):
+    """Read all six labels spatially from the complete Notes panel.
+
+    The two rows are separated by their physical vertical bands, while text
+    stays attached to its closest column whether it sits above or below the
+    corresponding icon.  Recognition searches the full note lexicon only.
+    """
+    scale = 5
+    sequences = []
+    for family, image in variants(panel).items():
+        scaled = image.resize((image.width * scale, image.height * scale), Image.Resampling.LANCZOS)
+        for psm in (11, 12):
+            try: words = read_positioned_words(scaled, psm, scale)
+            except Exception as exc:
+                sequences.append({"family": family, "psm": psm, "error": str(exc)}); continue
+            columns = [[] for _ in range(3)]
+            for word in words:
+                # Header/footer and the Fragrantica logo are outside the two
+                # label bands.  The rows themselves are inferred per column.
+                if word["y"] < 105 or word["y"] > 415: continue
+                column = min(range(3), key=lambda index: abs(word["x"] - (75 + index * 120)))
+                columns[column].append(word)
+            pairs, raw = [], []
+            for column in columns:
+                column.sort(key=lambda item: (item["y"], item["x"]))
+                raw.append(" ".join(item["text"] for item in column))
+                pairs.append(two_column_notes(column, lexicon))
+            notes = [pairs[index][0] for index in range(3)] + [pairs[index][1] for index in range(3)]
+            sequences.append({"family": family, "psm": psm, "rawSlots": raw, "observed": notes, "complete": all(notes)})
+    complete = [item for item in sequences if item.get("complete")]
+    counts = Counter(tuple(item["observed"]) for item in complete)
+    winner, count = counts.most_common(1)[0] if counts else (None, 0)
+    winner_reads = [item for item in complete if tuple(item["observed"]) == winner]
+    families = sorted({item["family"] for item in winner_reads})
+    competitors = [list(sequence) for sequence in counts if sequence != winner]
+    # V6 already requires two exact neural preprocessing reads.  This second,
+    # different engine must independently derive one complete exact sequence;
+    # a second Tesseract variant is not treated as a substitute for that
+    # cross-engine independence.  Any complete competing sequence still fails.
+    return {"observed": list(winner) if winner and count >= 1 and not competitors else None, "exactReads": count, "families": families, "competitors": competitors, "reads": sequences}
 
 
 def inspect_slot(tile, lexicon):
@@ -134,14 +234,14 @@ def verify(candidate, db_by_code, audit_by_code, lexicon):
     if not card: return {**base, "result": "INDEPENDENT_REJECTED_CARD_AMBIGUITY", "cards": [str(item.relative_to(ROOT)) for item in candidates]}
     if str(candidate.get("card") or "") != str(card.relative_to(ROOT)) or candidate.get("cardSource") != card_source:
         return {**base, "result": "INDEPENDENT_REJECTED_CARD_PROVENANCE_CHANGED"}
-    slots = crop_slots(card)
-    if not slots: return {**base, "result": "INDEPENDENT_REJECTED_UNSUPPORTED_CARD_GEOMETRY"}
-    evidence = [inspect_slot(slot, lexicon) for slot in slots]
-    observed = [item["winner"] for item in evidence]
-    result = "INDEPENDENT_REJECTED_UNRESOLVED_SLOT" if any(note is None for note in observed) else "INDEPENDENT_REJECTED_SEQUENCE_NOT_EXACT"
+    panel = notes_panel(card)
+    if not panel: return {**base, "result": "INDEPENDENT_REJECTED_UNSUPPORTED_CARD_GEOMETRY"}
+    evidence = panel_sequence(panel, lexicon)
+    observed = evidence["observed"]
+    result = "INDEPENDENT_REJECTED_UNRESOLVED_LAYOUT_SEQUENCE" if observed is None else "INDEPENDENT_REJECTED_SEQUENCE_NOT_EXACT"
     if observed == catalog:
         result = "INDEPENDENT_EXACT_NEURAL_SEQUENCE"
-    return {**base, "result": result, "card": str(card.relative_to(ROOT)), "cardSource": card_source, "observed": observed, "slots": evidence}
+    return {**base, "result": result, "card": str(card.relative_to(ROOT)), "cardSource": card_source, "observed": observed or [], "layoutEvidence": evidence}
 
 
 def main():
@@ -150,7 +250,7 @@ def main():
     db_by_code = {code(row.get("code")): row for row in db}; audit_by_code = {code(row.get("code")): row for row in audit}
     candidates = [row for row in report.get("rows", []) if row.get("result") == "EXACT_NEURAL_SLOT_SEQUENCE"]
     rows = [verify(candidate, db_by_code, audit_by_code, lexicon) for candidate in candidates]
-    payload = {"mode": "INDEPENDENT_V6_TESSERACT_SLOT_VERIFIER", "source": str(V6.relative_to(ROOT)), "sourceExactCandidates": len(candidates), "counts": dict(sorted(Counter(row["result"] for row in rows).items())), "rows": rows}
+    payload = {"mode": "INDEPENDENT_V6_LAYOUT_AWARE_TESSERACT_VERIFIER", "source": str(V6.relative_to(ROOT)), "rule": "V6 first requires two exact neural preprocessing reads; this independent Tesseract pass derives one complete spatial 3x2 sequence with zero competing exact sequence. Catalog is used only after recognition.", "sourceExactCandidates": len(candidates), "counts": dict(sorted(Counter(row["result"] for row in rows).items())), "rows": rows}
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"candidates": len(candidates), "counts": payload["counts"], "output": str(OUT)}, ensure_ascii=False))
 
