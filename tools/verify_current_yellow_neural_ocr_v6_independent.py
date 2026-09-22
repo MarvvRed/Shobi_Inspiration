@@ -44,6 +44,16 @@ def current_cards(shobi_code, fid):
     return sorted({path for ext in ("jpeg", "jpg", "png", "webp") for path in CARDS.glob(f"current_{shobi_code}_{fid}.{ext}")})
 
 
+def resolve_exact_fid_card(shobi_code, fid):
+    current = current_cards(shobi_code, fid)
+    if len(current) == 1:
+        return current[0], "CURRENT_EXACT_FID_CARD", current
+    archived = sorted({path for ext in ("jpeg", "jpg", "png", "webp") for path in CARDS.glob(f"*_{shobi_code}_{fid}.{ext}")})
+    if not current and len(archived) == 1:
+        return archived[0], "ARCHIVED_EXACT_CODE_AND_FID_CARD", archived
+    return None, None, current if current else archived
+
+
 def crop_slots(path):
     with Image.open(path) as source:
         if source.width < 800 or source.height < 800 or source.height / source.width < .85:
@@ -119,16 +129,18 @@ def verify(candidate, db_by_code, audit_by_code, lexicon):
         return {**base, "result": "INDEPENDENT_REJECTED_STALE_TARGET"}
     if audit.get("result") != "READING_NOT_STRICT_ENOUGH":
         return {**base, "result": "INDEPENDENT_REJECTED_UNEXPECTED_AUDIT_STATE", "currentAuditResult": audit.get("result")}
-    cards = current_cards(shobi_code, fid)
-    if len(cards) != 1: return {**base, "result": "INDEPENDENT_REJECTED_CARD_AMBIGUITY", "cards": [str(card.relative_to(ROOT)) for card in cards]}
-    slots = crop_slots(cards[0])
+    card, card_source, candidates = resolve_exact_fid_card(shobi_code, fid)
+    if not card: return {**base, "result": "INDEPENDENT_REJECTED_CARD_AMBIGUITY", "cards": [str(item.relative_to(ROOT)) for item in candidates]}
+    if str(candidate.get("card") or "") != str(card.relative_to(ROOT)) or candidate.get("cardSource") != card_source:
+        return {**base, "result": "INDEPENDENT_REJECTED_CARD_PROVENANCE_CHANGED"}
+    slots = crop_slots(card)
     if not slots: return {**base, "result": "INDEPENDENT_REJECTED_UNSUPPORTED_CARD_GEOMETRY"}
     evidence = [inspect_slot(slot, lexicon) for slot in slots]
     observed = [item["winner"] for item in evidence]
     result = "INDEPENDENT_REJECTED_UNRESOLVED_SLOT" if any(note is None for note in observed) else "INDEPENDENT_REJECTED_SEQUENCE_NOT_EXACT"
     if observed == catalog:
         result = "INDEPENDENT_EXACT_NEURAL_SEQUENCE"
-    return {**base, "result": result, "card": str(cards[0].relative_to(ROOT)), "observed": observed, "slots": evidence}
+    return {**base, "result": result, "card": str(card.relative_to(ROOT)), "cardSource": card_source, "observed": observed, "slots": evidence}
 
 
 def main():
