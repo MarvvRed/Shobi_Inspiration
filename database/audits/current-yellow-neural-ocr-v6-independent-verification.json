@@ -1,0 +1,2054 @@
+{
+  "mode": "INDEPENDENT_V6_TESSERACT_SLOT_VERIFIER",
+  "source": "database/audits/current-yellow-neural-ocr-v6.json",
+  "sourceExactCandidates": 4,
+  "counts": {
+    "INDEPENDENT_REJECTED_UNRESOLVED_SLOT": 4
+  },
+  "rows": [
+    {
+      "code": "1693-BYR",
+      "sourceV6Result": "EXACT_NEURAL_SLOT_SEQUENCE",
+      "fid": "65525",
+      "catalog": [
+        "Black Currant",
+        "Mate",
+        "Tea",
+        "Birch",
+        "Papyrus",
+        "Violet Leaf"
+      ],
+      "result": "INDEPENDENT_REJECTED_UNRESOLVED_SLOT",
+      "card": "database/fragrantica/social-cards/images/current_1693-BYR_65525.jpeg",
+      "observed": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "slots": [
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "gD",
+              "confidence": 44.24,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "Ch",
+              "confidence": 36.41,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "Currant",
+              "confidence": 96.34,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "\\",
+              "confidence": 77.83,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "— — NA ~~",
+              "confidence": 36.24,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "« ‘ i",
+              "confidence": 36.05,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "ie.",
+              "confidence": 40.18,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "IN",
+              "confidence": 44.28,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "IN",
+              "confidence": 44.28,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "NPA",
+              "confidence": 38.53,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "INT A",
+              "confidence": 52.73,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "INT A",
+              "confidence": 52.73,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "STA",
+              "confidence": 91.2,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "a",
+              "confidence": 52.14,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "a",
+              "confidence": 52.14,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "a",
+              "confidence": 52.14,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "= - ? ac . jI",
+              "confidence": 35.95,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": ".",
+              "confidence": 50.08,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "_——$—$— “S = —",
+              "confidence": 35.74,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "4",
+              "confidence": 84.68,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "i> _ _",
+              "confidence": 47.46,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "i> _ _",
+              "confidence": 47.46,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "> _ _",
+              "confidence": 40.79,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "> _ _",
+              "confidence": 40.79,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "A A CK",
+              "confidence": 67.44,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "A A CK",
+              "confidence": 67.44,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "ed",
+              "confidence": 40.56,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "hk",
+              "confidence": 52.82,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "“Ww Yt sata",
+              "confidence": 41.95,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": ": : :",
+              "confidence": 49.52,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "——",
+              "confidence": 41.77,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "TT 1 OA",
+              "confidence": 47.1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "TT 1 OA",
+              "confidence": 47.1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "on ore",
+              "confidence": 44.53,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "989-YZLO",
+      "sourceV6Result": "EXACT_NEURAL_SLOT_SEQUENCE",
+      "fid": "96",
+      "catalog": [
+        "Aldehydes",
+        "Oakmoss",
+        "Rose",
+        "Green Notes",
+        "Iris",
+        "Vetiver"
+      ],
+      "result": "INDEPENDENT_REJECTED_UNRESOLVED_SLOT",
+      "card": "database/fragrantica/social-cards/images/current_989-YZLO_96.jpeg",
+      "observed": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "slots": [
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "=",
+              "confidence": 94.42,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "e=",
+              "confidence": 39.81,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "ge",
+              "confidence": 69.71,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "~ =. - ad",
+              "confidence": 38.99,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "| oad ™",
+              "confidence": 38.74,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "[>]",
+              "confidence": 37.52,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "~ =, ed . tet",
+              "confidence": 35.42,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "| ae",
+              "confidence": 36.52,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "ry",
+              "confidence": 41.41,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": ". . . * EE",
+              "confidence": 47.12,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "&",
+              "confidence": 62.14,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "&@",
+              "confidence": 48.2,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "EE",
+              "confidence": 47.12,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "&",
+              "confidence": 65.78,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "ee",
+              "confidence": 41.54,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "~ oe J fe -— 7 j WF Ta -_",
+              "confidence": 36.32,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "iff ,",
+              "confidence": 39.51,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "fa",
+              "confidence": 50.57,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "a Ses fe,” 41 ‘ty hd faa °",
+              "confidence": 37.02,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "H ite OT ee “i if “ih",
+              "confidence": 35.3,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "yo",
+              "confidence": 35.9,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "as",
+              "confidence": 71.99,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "_ _",
+              "confidence": 57.47,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "_ _",
+              "confidence": 57.47,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "> __",
+              "confidence": 55.1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "> __",
+              "confidence": 55.1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "=;",
+              "confidence": 83.94,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "a",
+              "confidence": 35.41,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "A A Rh",
+              "confidence": 50.82,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "A A Rh",
+              "confidence": 50.82,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "SS adh 51>",
+              "confidence": 36.73,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "7 A",
+              "confidence": 49.87,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "413-BOT",
+      "sourceV6Result": "EXACT_NEURAL_SLOT_SEQUENCE",
+      "fid": "12863",
+      "catalog": [
+        "Leather",
+        "Oakmoss",
+        "Patchouli",
+        "Pink Pepper",
+        "Jasmine",
+        "Bergamot"
+      ],
+      "result": "INDEPENDENT_REJECTED_UNRESOLVED_SLOT",
+      "card": "database/fragrantica/social-cards/images/current_413-BOT_12863.jpeg",
+      "observed": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "slots": [
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "‘",
+              "confidence": 36.66,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "|",
+              "confidence": 58.26,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "|",
+              "confidence": 58.26,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "te",
+              "confidence": 49.72,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "ae",
+              "confidence": 49.06,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "al \\ |",
+              "confidence": 57.25,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "wa",
+              "confidence": 53.02,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "aa Sy ss non",
+              "confidence": 39.01,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "i> _ _",
+              "confidence": 47.46,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "i> _ _",
+              "confidence": 47.46,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "_ _",
+              "confidence": 49.83,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "_ _",
+              "confidence": 49.83,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "ii SG Te",
+              "confidence": 43.18,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "PAC",
+              "confidence": 39.81,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "A A ORK",
+              "confidence": 66.32,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "A A ORK",
+              "confidence": 66.32,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "= Pa 5 1 1 1 3 2 160 279 37 28 26.423775 ie 5 1 1 1 3 3 252 279 56 29 50.585747 KS 5 1 1 1 3 4 341 275 80 37 42.172607 SOS 5 1 1 1 3 5 475 279 58 29 30.752678 OS 4 1 1 1 4 0 0 279 589 71 -1 5 1 1 1 4 1 0 279 64 71 46.679554 Sn 5 1 1 1 4 2 77 287 92 63 26.704239 si 5 1 1 1 4 3 189 315 28 35 0.000000 : 5 1 1 1 4 4 253 279 265 71 34.209557 Sie 5 1 1 1 4 5 532 335 57 15 24.585846 “A",
+              "confidence": 40.38,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "A.",
+              "confidence": 38.69,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "A.",
+              "confidence": 38.69,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "ST) A",
+              "confidence": 35.99,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "ST) A",
+              "confidence": 35.99,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "1289-YZLO",
+      "sourceV6Result": "EXACT_NEURAL_SLOT_SEQUENCE",
+      "fid": "100",
+      "catalog": [
+        "Aldehydes",
+        "Oakmoss",
+        "Green Notes",
+        "Hyacinth",
+        "Orris Root",
+        "Galbanum"
+      ],
+      "result": "INDEPENDENT_REJECTED_UNRESOLVED_SLOT",
+      "card": "database/fragrantica/social-cards/images/current_1289-YZLO_100.jpeg",
+      "observed": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "slots": [
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "enn",
+              "confidence": 55.4,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "=",
+              "confidence": 90.48,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "tes,",
+              "confidence": 46.58,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "tes,",
+              "confidence": 46.58,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "f ing” ~~ Sk",
+              "confidence": 37.4,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "eal",
+              "confidence": 37.09,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "he",
+              "confidence": 35.7,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "in. on",
+              "confidence": 42.08,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "Notes",
+              "confidence": 96.51,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "a",
+              "confidence": 39.88,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "Notes gir",
+              "confidence": 38.33,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "a",
+              "confidence": 35.7,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "os",
+              "confidence": 38.17,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "~ i",
+              "confidence": 43.61,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "aa",
+              "confidence": 35.39,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "_ _",
+              "confidence": 57.47,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "_ _",
+              "confidence": 57.47,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "i> __",
+              "confidence": 53.54,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "i> __",
+              "confidence": 53.54,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "Mae a =",
+              "confidence": 39.42,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "dae",
+              "confidence": 42.01,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "—",
+              "confidence": 37.89,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "A Lf A OCR",
+              "confidence": 38.0,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "A Lf A OCR",
+              "confidence": 38.0,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        },
+        {
+          "winner": null,
+          "exactReads": 0,
+          "families": [],
+          "modes": [],
+          "competitors": [],
+          "reads": [
+            {
+              "family": "equalized",
+              "psm": 6,
+              "raw": "| ANOS OS A cam,",
+              "confidence": 50.05,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 7,
+              "raw": "MD NS",
+              "confidence": 45.81,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "equalized",
+              "psm": 13,
+              "raw": "-",
+              "confidence": 66.29,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 6,
+              "raw": "A",
+              "confidence": 82.81,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 7,
+              "raw": "A |",
+              "confidence": 82.81,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold175",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 6,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 7,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            },
+            {
+              "family": "threshold205",
+              "psm": 13,
+              "raw": "",
+              "confidence": -1,
+              "exactNote": null,
+              "eligible": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
