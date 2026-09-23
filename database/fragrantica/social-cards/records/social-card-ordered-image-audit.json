@@ -1,11 +1,11 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 120,
+  "targetedCurrentYellows": 113,
   "results": {
-    "EXACT_ORDERED_MATCH": 2094,
+    "EXACT_ORDERED_MATCH": 2106,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 153,
+    "READING_NOT_STRICT_ENOUGH": 141,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -156492,7 +156492,56 @@
         "Sandalwood",
         "Lemon"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Passionfruit",
+        "Tonka Bean",
+        "Musk",
+        "Currant Leaf and Bud",
+        "Sandalwood",
+        "Lemon"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -197367,7 +197416,56 @@
         "Rose",
         "Vanilla"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Black Currant",
+        "Red Berries",
+        "Currant Leaf and Bud",
+        "Musk",
+        "Rose",
+        "Vanilla"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -255086,7 +255184,53 @@
         "Mandarin Orange",
         "Currant Leaf and Bud"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Orange",
+        "Lemon",
+        "Oakmoss",
+        "Mint",
+        "Mandarin Orange",
+        "Currant Leaf and Bud"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -309360,7 +309504,55 @@
         "Currant Leaf and Bud",
         "Vetiver"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Pineapple",
+        "Bagas de Zimbro",
+        "Cedar",
+        "Bergamot",
+        "Currant Leaf and Bud",
+        "Vetiver"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -316230,7 +316422,56 @@
         "Praline",
         "Oak"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Plum",
+        "Saffron",
+        "Agarwood (Oud)",
+        "Currant Leaf and Bud",
+        "Praline",
+        "Oak"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -396814,7 +397055,55 @@
         "Bergamot",
         "Rose"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Mint",
+        "Green Notes",
+        "Currant Leaf and Bud",
+        "Grapefruit",
+        "Bergamot",
+        "Rose"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -470684,7 +470973,54 @@
         "Leather",
         "Mint"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Hibiscus",
+        "Rose",
+        "Vanilla",
+        "Currant Leaf and Bud",
+        "Leather",
+        "Mint"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -549085,7 +549421,52 @@
         "Blackberry",
         "Black Currant"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Cedar",
+        "Pimento",
+        "Currant Leaf and Bud",
+        "Oakmoss",
+        "Blackberry",
+        "Black Currant"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "threshold-215"
+          ],
+          [
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -602062,7 +602443,56 @@
         "Currant Leaf and Bud",
         "Green Notes"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Caramel",
+        "Red Berries",
+        "Vanilla",
+        "Black Currant",
+        "Currant Leaf and Bud",
+        "Green Notes"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -619620,7 +620050,56 @@
         "Rose",
         "Woody Notes"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Black Currant",
+        "Currant Leaf and Bud",
+        "Vanilla",
+        "Patchouli",
+        "Rose",
+        "Woody Notes"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -659242,7 +659721,54 @@
         "Civet",
         "Currant Leaf and Bud"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Oakmoss",
+        "Galbanum",
+        "Honey",
+        "Spicy Notes",
+        "Civet",
+        "Currant Leaf and Bud"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -663240,7 +663766,54 @@
         "Vanilla",
         "Musk"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Raspberry",
+        "Currant Leaf and Bud",
+        "Rose",
+        "Pink Pepper",
+        "Vanilla",
+        "Musk"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-260",
+            "threshold-185"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
