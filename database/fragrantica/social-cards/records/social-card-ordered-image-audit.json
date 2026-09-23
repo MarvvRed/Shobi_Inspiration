@@ -1,12 +1,12 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 100,
+  "targetedCurrentYellows": 74,
   "results": {
-    "EXACT_ORDERED_CARD_NOTES_DIFFER": 5,
-    "EXACT_ORDERED_MATCH": 2129,
+    "EXACT_ORDERED_CARD_NOTES_DIFFER": 16,
+    "EXACT_ORDERED_MATCH": 2134,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 113,
+    "READING_NOT_STRICT_ENOUGH": 97,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -40238,9 +40238,24 @@
         "Cardamom",
         "Suede",
         "Vetiver",
-        "Orange"
+        "Bitter Orange"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Ebony Tree",
+        "Sandalwood",
+        "Cardamom",
+        "Suede",
+        "Vetiver",
+        "Bitter Orange"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -40937,6 +40952,82 @@
           ],
           "notesHeaderY": 24.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Ebony Tree",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Sandalwood",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Cardamom",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Suede",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Vetiver",
+          "variants": [
+            "contrast-200",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Bitter Orange",
+          "variants": [
+            "contrast-200",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Ebony Tree",
+        "Sandalwood",
+        "Cardamom",
+        "Suede",
+        "Vetiver",
+        "Orange"
       ]
     },
     {
@@ -42281,14 +42372,29 @@
       "fragranticaId": "1301",
       "card": "database/fragrantica/social-cards/images/current_112-BON_1301.jpeg",
       "catalogNotes": [
-        "Violet",
+        "Violet Leaf",
         "Blueberry",
         "Oakmoss",
         "Currant Leaf and Bud",
         "Cedar",
         "Suede"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Violet Leaf",
+        "Blueberry",
+        "Oakmoss",
+        "Currant Leaf and Bud",
+        "Cedar",
+        "Suede"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -43112,6 +43218,79 @@
           ],
           "notesHeaderY": 32.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Violet Leaf",
+          "variants": [
+            "contrast-200",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Blueberry",
+          "variants": [
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Oakmoss",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Currant Leaf and Bud",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Cedar",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Suede",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Violet",
+        "Blueberry",
+        "Oakmoss",
+        "Currant Leaf and Bud",
+        "Cedar",
+        "Suede"
       ]
     },
     {
@@ -138551,10 +138730,25 @@
         "Musk",
         "Ambroxan",
         "Ambergris",
-        "Fig",
+        "Fig Leaf",
         "Myrrh"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Powdery Notes",
+        "Musk",
+        "Ambroxan",
+        "Ambergris",
+        "Fig Leaf",
+        "Myrrh"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -139355,6 +139549,82 @@
           ],
           "notesHeaderY": 32.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Powdery Notes",
+          "variants": [
+            "contrast-200",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Musk",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Ambroxan",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Ambergris",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Fig Leaf",
+          "variants": [
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Myrrh",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Powdery Notes",
+        "Musk",
+        "Ambroxan",
+        "Ambergris",
+        "Fig",
+        "Myrrh"
       ]
     },
     {
@@ -200656,12 +200926,28 @@
       "card": "database/fragrantica/social-cards/images/current_1864-GUC_687.jpeg",
       "catalogNotes": [
         "Freesia",
+        "Palm Leaf",
         "Black Currant",
         "Musk",
         "Narcissus",
         "Lily"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Freesia",
+        "Palm Leaf",
+        "Black Currant",
+        "Musk",
+        "Narcissus",
+        "Lily"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -201405,6 +201691,81 @@
           ],
           "notesHeaderY": 32.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Freesia",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Palm Leaf",
+          "variants": [
+            "contrast-200",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Black Currant",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Musk",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Narcissus",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Lily",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Freesia",
+        "Black Currant",
+        "Musk",
+        "Narcissus",
+        "Lily"
       ]
     },
     {
@@ -216891,10 +217252,23 @@
         "Vanilla",
         "Jasmine",
         "Sandalwood",
-        "Olibanum (Frankincense)",
-        "Bergamot"
+        "Olibanum (Frankincense)"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Mango",
+        "Vanilla",
+        "Jasmine",
+        "Sandalwood",
+        "Olibanum (Frankincense)"
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -217673,6 +218047,73 @@
           ],
           "notesHeaderY": 32.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Mango",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Vanilla",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Jasmine",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Sandalwood",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Olibanum (Frankincense)",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Mango",
+        "Vanilla",
+        "Jasmine",
+        "Sandalwood",
+        "Olibanum (Frankincense)",
+        "Bergamot"
       ]
     },
     {
@@ -261967,14 +262408,29 @@
       "fragranticaId": "87109",
       "card": "database/fragrantica/social-cards/images/current_2065-FRA_87109.jpeg",
       "catalogNotes": [
-        "Malt",
+        "Ethyl Maltol",
         "Sandalwood",
         "Hedione",
         "Iso E Super",
         "Cetalox",
         "Ambroxan"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Ethyl Maltol",
+        "Sandalwood",
+        "Hedione",
+        "Iso E Super",
+        "Cetalox",
+        "Ambroxan"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -262667,6 +263123,82 @@
           ],
           "notesHeaderY": 24.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Ethyl Maltol",
+          "variants": [
+            "contrast-200",
+            "threshold-185"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Sandalwood",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Hedione",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Iso E Super",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Cetalox",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Ambroxan",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Malt",
+        "Sandalwood",
+        "Hedione",
+        "Iso E Super",
+        "Cetalox",
+        "Ambroxan"
       ]
     },
     {
@@ -330972,10 +331504,25 @@
         "Fig",
         "Green Notes",
         "Coconut",
-        "Fig Tree",
+        "Fig tree",
         "Woody Notes"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Fig Leaf",
+        "Fig",
+        "Green Notes",
+        "Coconut",
+        "Fig tree",
+        "Woody Notes"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -331708,6 +332255,83 @@
           ],
           "notesHeaderY": 24.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Fig Leaf",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Fig",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Green Notes",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Coconut",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Fig tree",
+          "variants": [
+            "contrast-200",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Woody Notes",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Fig Leaf",
+        "Fig",
+        "Green Notes",
+        "Coconut",
+        "Fig Tree",
+        "Woody Notes"
       ]
     },
     {
@@ -349172,13 +349796,26 @@
       "card": "database/fragrantica/social-cards/images/current_2348-AMG_78656.jpeg",
       "catalogNotes": [
         "Sandalwood",
-        "Pear",
         "Hazelnut",
+        "Pear",
         "Vanilla",
-        "Akigalawood",
-        "Olibanum (Frankincense)"
+        "Akigalawood"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Sandalwood",
+        "Hazelnut",
+        "Pear",
+        "Vanilla",
+        "Akigalawood"
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -349944,6 +350581,73 @@
           ],
           "notesHeaderY": 32.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Sandalwood",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Hazelnut",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Pear",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Vanilla",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Akigalawood",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Sandalwood",
+        "Pear",
+        "Hazelnut",
+        "Vanilla",
+        "Akigalawood",
+        "Olibanum (Frankincense)"
       ]
     },
     {
@@ -358552,9 +359256,25 @@
         "Vetiver",
         "Bergamot",
         "Cedar",
+        "Sandalwood",
         "Coriander"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Finger Lime",
+        "Vetiver",
+        "Bergamot",
+        "Cedar",
+        "Sandalwood",
+        "Coriander"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -359333,6 +360053,82 @@
           ],
           "notesHeaderY": 32.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Finger Lime",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Vetiver",
+          "variants": [
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Bergamot",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Cedar",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Sandalwood",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Coriander",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Finger Lime",
+        "Vetiver",
+        "Bergamot",
+        "Cedar",
+        "Coriander"
       ]
     },
     {
@@ -387741,14 +388537,29 @@
       "fragranticaId": "64338",
       "card": "database/fragrantica/social-cards/images/current_2468-ESPAR_64338.jpeg",
       "catalogNotes": [
-        "Agarwood (Oud)",
+        "Akigalawood",
         "Woody Notes",
         "Basil",
         "Vetiver",
-        "Truffle",
+        "Timur",
         "Ambroxan"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Akigalawood",
+        "Woody Notes",
+        "Basil",
+        "Vetiver",
+        "Timur",
+        "Ambroxan"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -388482,6 +389293,82 @@
           ],
           "notesHeaderY": 32.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Akigalawood",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Woody Notes",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Basil",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Vetiver",
+          "variants": [
+            "contrast-200",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Timur",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Ambroxan",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Agarwood (Oud)",
+        "Woody Notes",
+        "Basil",
+        "Vetiver",
+        "Truffle",
+        "Ambroxan"
       ]
     },
     {
@@ -389749,12 +390636,27 @@
       "catalogNotes": [
         "Patchouli",
         "Miracle Berry",
-        "Agarwood (Oud)",
+        "Akigalawood",
         "Bergamot",
-        "White Ginger",
+        "White Ginger Lily",
         "Oak"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Patchouli",
+        "Miracle Berry",
+        "Akigalawood",
+        "Bergamot",
+        "White Ginger Lily",
+        "Oak"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -390462,6 +391364,83 @@
           ],
           "notesHeaderY": 24.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Patchouli",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Miracle Berry",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Akigalawood",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Bergamot",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "White Ginger Lily",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Oak",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Patchouli",
+        "Miracle Berry",
+        "Agarwood (Oud)",
+        "Bergamot",
+        "White Ginger",
+        "Oak"
       ]
     },
     {
@@ -484865,6 +485844,7 @@
         "Cacao Pod",
         "Milk"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Pistachio Spread Cream",
         "Pistachio",
@@ -484946,10 +485926,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -485629,16 +486606,6 @@
           "uncertainComponents": [],
           "notesHeaderY": 24.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_MATCH",
-      "catalogNotesBeforeCorrection": [
-        "Pistachio",
-        "Pistachio",
-        "Vanilla",
-        "Cream",
-        "Cacao Pod",
-        "Milk"
       ]
     },
     {
@@ -518288,11 +519255,27 @@
       "catalogNotes": [
         "Musk",
         "Ylang-Ylang",
+        "Orange Blossom",
         "Tonka Bean",
         "Lily",
         "Neroli"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Musk",
+        "Ylang-Ylang",
+        "Orange Blossom",
+        "Tonka Bean",
+        "Lily",
+        "Neroli"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -518927,6 +519910,81 @@
           "uncertainComponents": [],
           "notesHeaderY": 24.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Musk",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Ylang-Ylang",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Orange Blossom",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Tonka Bean",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Lily",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Neroli",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Musk",
+        "Ylang-Ylang",
+        "Tonka Bean",
+        "Lily",
+        "Neroli"
       ]
     },
     {
@@ -556746,10 +557804,25 @@
         "Musk",
         "Coconut",
         "Cacao Pod",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Cashmeran"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Patchouli",
+        "Musk",
+        "Coconut",
+        "Cacao Pod",
+        "Ambrette (Musk Mallow)",
+        "Cashmeran"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -557483,6 +558556,83 @@
           ],
           "notesHeaderY": 32.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Patchouli",
+          "variants": [
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Musk",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Coconut",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Cacao Pod",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Ambrette (Musk Mallow)",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Cashmeran",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Patchouli",
+        "Musk",
+        "Coconut",
+        "Cacao Pod",
+        "Musk",
+        "Cashmeran"
       ]
     },
     {
@@ -564210,10 +565360,27 @@
       "catalogNotes": [
         "Pink Pepper",
         "Cotton Candy",
+        "Vanilla",
+        "Musk",
         "Gardenia",
         "Floral Notes"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Pink Pepper",
+        "Cotton Candy",
+        "Vanilla",
+        "Musk",
+        "Gardenia",
+        "Floral Notes"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -564978,6 +566145,80 @@
           "uncertainComponents": [],
           "notesHeaderY": 24.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Pink Pepper",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Cotton Candy",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Vanilla",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Musk",
+          "variants": [
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Gardenia",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Floral Notes",
+          "variants": [
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Pink Pepper",
+        "Cotton Candy",
+        "Gardenia",
+        "Floral Notes"
       ]
     },
     {
@@ -575433,12 +576674,28 @@
       "card": "database/fragrantica/social-cards/images/current_514-CHL_26227.jpeg",
       "catalogNotes": [
         "Neroli",
-        "Orange",
+        "Orange Blossom",
         "Stephanotis",
         "Musk",
-        "Rose"
+        "Rose",
+        "Pear"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Neroli",
+        "Orange Blossom",
+        "Stephanotis",
+        "Musk",
+        "Rose",
+        "Pear"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -576062,6 +577319,81 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Neroli",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Orange Blossom",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Stephanotis",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Musk",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Rose",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Pear",
+          "variants": [
+            "contrast-200",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Neroli",
+        "Orange",
+        "Stephanotis",
+        "Musk",
+        "Rose"
       ]
     },
     {
@@ -702327,12 +703659,26 @@
       "card": "database/fragrantica/social-cards/images/current_921-TMU_36416.jpeg",
       "catalogNotes": [
         "Patchouli",
-        "Hazelnut",
+        "Hazelnut Cocoa Spread",
         "Vetiver",
         "Pink Pepper",
         "Grapefruit"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Patchouli",
+        "Hazelnut Cocoa Spread",
+        "Vetiver",
+        "Pink Pepper",
+        "Grapefruit"
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -702980,6 +704326,71 @@
           ],
           "notesHeaderY": 24.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Patchouli",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Hazelnut Cocoa Spread",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Vetiver",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Pink Pepper",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Grapefruit",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Patchouli",
+        "Hazelnut",
+        "Vetiver",
+        "Pink Pepper",
+        "Grapefruit"
       ]
     },
     {

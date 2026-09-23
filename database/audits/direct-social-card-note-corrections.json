@@ -1,132 +1,408 @@
 {
   "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
-  "count": 5,
+  "count": 16,
   "corrections": [
     {
-      "code": "2762-LAT",
-      "fragranticaId": "113777",
-      "card": "database/fragrantica/social-cards/images/current_2762-LAT_113777.jpeg",
+      "code": "2473-HER",
+      "fragranticaId": "96428",
+      "card": "database/fragrantica/social-cards/images/current_2473-HER_96428.jpeg",
       "previousNotes": [
-        "Pistachio",
-        "Pistachio",
-        "Vanilla",
-        "Cream",
-        "Cacao Pod",
-        "Milk"
+        "Patchouli",
+        "Miracle Berry",
+        "Agarwood (Oud)",
+        "Bergamot",
+        "White Ginger",
+        "Oak"
       ],
       "socialCardNotes": [
-        "Pistachio Spread Cream",
-        "Pistachio",
-        "Vanilla",
-        "Cream",
-        "Cacao Pod",
-        "Milk"
+        "Patchouli",
+        "Miracle Berry",
+        "Akigalawood",
+        "Bergamot",
+        "White Ginger Lily",
+        "Oak"
       ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
       "iconCounts": [
         3,
         3
       ]
     },
     {
-      "code": "2523-KIL",
-      "fragranticaId": "23897",
-      "card": "database/fragrantica/social-cards/images/current_2523-KIL_23897.jpeg",
+      "code": "2468-ESPAR",
+      "fragranticaId": "64338",
+      "card": "database/fragrantica/social-cards/images/current_2468-ESPAR_64338.jpeg",
+      "previousNotes": [
+        "Agarwood (Oud)",
+        "Woody Notes",
+        "Basil",
+        "Vetiver",
+        "Truffle",
+        "Ambroxan"
+      ],
+      "socialCardNotes": [
+        "Akigalawood",
+        "Woody Notes",
+        "Basil",
+        "Vetiver",
+        "Timur",
+        "Ambroxan"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "2378-GOLD",
+      "fragranticaId": "60923",
+      "card": "database/fragrantica/social-cards/images/current_2378-GOLD_60923.jpeg",
+      "previousNotes": [
+        "Finger Lime",
+        "Vetiver",
+        "Bergamot",
+        "Cedar",
+        "Coriander"
+      ],
+      "socialCardNotes": [
+        "Finger Lime",
+        "Vetiver",
+        "Bergamot",
+        "Cedar",
+        "Sandalwood",
+        "Coriander"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "2348-AMG",
+      "fragranticaId": "78656",
+      "card": "database/fragrantica/social-cards/images/current_2348-AMG_78656.jpeg",
       "previousNotes": [
         "Sandalwood",
-        "Milk",
-        "Cedar",
-        "Musk",
-        "Carrot Seeds",
-        "Amyris"
+        "Pear",
+        "Hazelnut",
+        "Vanilla",
+        "Akigalawood",
+        "Olibanum (Frankincense)"
       ],
       "socialCardNotes": [
         "Sandalwood",
-        "Milk",
+        "Hazelnut",
+        "Pear",
+        "Vanilla",
+        "Akigalawood"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        2
+      ]
+    },
+    {
+      "code": "2065-FRA",
+      "fragranticaId": "87109",
+      "card": "database/fragrantica/social-cards/images/current_2065-FRA_87109.jpeg",
+      "previousNotes": [
+        "Malt",
+        "Sandalwood",
+        "Hedione",
+        "Iso E Super",
+        "Cetalox",
+        "Ambroxan"
+      ],
+      "socialCardNotes": [
+        "Ethyl Maltol",
+        "Sandalwood",
+        "Hedione",
+        "Iso E Super",
+        "Cetalox",
+        "Ambroxan"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "1918-PAC",
+      "fragranticaId": "74962",
+      "card": "database/fragrantica/social-cards/images/current_1918-PAC_74962.jpeg",
+      "previousNotes": [
+        "Mango",
+        "Vanilla",
+        "Jasmine",
+        "Sandalwood",
+        "Olibanum (Frankincense)",
+        "Bergamot"
+      ],
+      "socialCardNotes": [
+        "Mango",
+        "Vanilla",
+        "Jasmine",
+        "Sandalwood",
+        "Olibanum (Frankincense)"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        2
+      ]
+    },
+    {
+      "code": "1864-GUC",
+      "fragranticaId": "687",
+      "card": "database/fragrantica/social-cards/images/current_1864-GUC_687.jpeg",
+      "previousNotes": [
+        "Freesia",
+        "Black Currant",
+        "Musk",
+        "Narcissus",
+        "Lily"
+      ],
+      "socialCardNotes": [
+        "Freesia",
+        "Palm Leaf",
+        "Black Currant",
+        "Musk",
+        "Narcissus",
+        "Lily"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "1639-TER",
+      "fragranticaId": "25120",
+      "card": "database/fragrantica/social-cards/images/current_1639-TER_25120.jpeg",
+      "previousNotes": [
+        "Powdery Notes",
+        "Musk",
+        "Ambroxan",
+        "Ambergris",
+        "Fig",
+        "Myrrh"
+      ],
+      "socialCardNotes": [
+        "Powdery Notes",
+        "Musk",
+        "Ambroxan",
+        "Ambergris",
+        "Fig Leaf",
+        "Myrrh"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "112-BON",
+      "fragranticaId": "1301",
+      "card": "database/fragrantica/social-cards/images/current_112-BON_1301.jpeg",
+      "previousNotes": [
+        "Violet",
+        "Blueberry",
+        "Oakmoss",
+        "Currant Leaf and Bud",
         "Cedar",
-        "Ambrette (Musk Mallow)",
-        "Carrot Seeds",
-        "Amyris"
+        "Suede"
       ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "socialCardNotes": [
+        "Violet Leaf",
+        "Blueberry",
+        "Oakmoss",
+        "Currant Leaf and Bud",
+        "Cedar",
+        "Suede"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
       "iconCounts": [
         3,
         3
       ]
     },
     {
-      "code": "2549-MARC",
-      "fragranticaId": "91688",
-      "card": "database/fragrantica/social-cards/images/current_2549-MARC_91688.jpeg",
+      "code": "304-KIE",
+      "fragranticaId": "6188",
+      "card": "database/fragrantica/social-cards/images/current_304-KIE_6188.jpeg",
       "previousNotes": [
-        "Lime",
-        "Ambrofix™",
-        "Jasmine",
-        "Spanish Broom",
+        "Musk",
+        "Ylang-Ylang",
+        "Tonka Bean",
+        "Lily",
+        "Neroli"
+      ],
+      "socialCardNotes": [
+        "Musk",
+        "Ylang-Ylang",
         "Orange Blossom",
-        "Georgywood"
+        "Tonka Bean",
+        "Lily",
+        "Neroli"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "229-DIP",
+      "fragranticaId": "3865",
+      "card": "database/fragrantica/social-cards/images/current_229-DIP_3865.jpeg",
+      "previousNotes": [
+        "Fig Leaf",
+        "Fig",
+        "Green Notes",
+        "Coconut",
+        "Fig Tree",
+        "Woody Notes"
       ],
       "socialCardNotes": [
-        "Lime (Linden) Blossom",
-        "Ambrofix™",
-        "Jasmine",
-        "Spanish Broom",
+        "Fig Leaf",
+        "Fig",
+        "Green Notes",
+        "Coconut",
+        "Fig tree",
+        "Woody Notes"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "921-TMU",
+      "fragranticaId": "36416",
+      "card": "database/fragrantica/social-cards/images/current_921-TMU_36416.jpeg",
+      "previousNotes": [
+        "Patchouli",
+        "Hazelnut",
+        "Vetiver",
+        "Pink Pepper",
+        "Grapefruit"
+      ],
+      "socialCardNotes": [
+        "Patchouli",
+        "Hazelnut Cocoa Spread",
+        "Vetiver",
+        "Pink Pepper",
+        "Grapefruit"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        2
+      ]
+    },
+    {
+      "code": "514-CHL",
+      "fragranticaId": "26227",
+      "card": "database/fragrantica/social-cards/images/current_514-CHL_26227.jpeg",
+      "previousNotes": [
+        "Neroli",
+        "Orange",
+        "Stephanotis",
+        "Musk",
+        "Rose"
+      ],
+      "socialCardNotes": [
+        "Neroli",
         "Orange Blossom",
-        "Georgywood"
+        "Stephanotis",
+        "Musk",
+        "Rose",
+        "Pear"
       ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
       "iconCounts": [
         3,
         3
       ]
     },
     {
-      "code": "1850-LEL",
-      "fragranticaId": "10131",
-      "card": "database/fragrantica/social-cards/images/current_1850-LEL_10131.jpeg",
+      "code": "480-CAR",
+      "fragranticaId": "306",
+      "card": "database/fragrantica/social-cards/images/current_480-CAR_306.jpeg",
       "previousNotes": [
-        "Iso E Super",
-        "Musk",
-        "Ambergris",
-        "Musk",
-        "Pear",
-        "Cetalox"
+        "Pink Pepper",
+        "Cotton Candy",
+        "Gardenia",
+        "Floral Notes"
       ],
       "socialCardNotes": [
-        "Iso E Super",
+        "Pink Pepper",
+        "Cotton Candy",
+        "Vanilla",
         "Musk",
-        "Ambergris",
+        "Gardenia",
+        "Floral Notes"
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "455-BYR",
+      "fragranticaId": "46358",
+      "card": "database/fragrantica/social-cards/images/current_455-BYR_46358.jpeg",
+      "previousNotes": [
+        "Patchouli",
+        "Musk",
+        "Coconut",
+        "Cacao Pod",
+        "Musk",
+        "Cashmeran"
+      ],
+      "socialCardNotes": [
+        "Patchouli",
+        "Musk",
+        "Coconut",
+        "Cacao Pod",
         "Ambrette (Musk Mallow)",
-        "Pear",
-        "Cetalox"
+        "Cashmeran"
       ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
       "iconCounts": [
         3,
         3
       ]
     },
     {
-      "code": "253-JOM",
-      "fragranticaId": "5580",
-      "card": "database/fragrantica/social-cards/images/current_253-JOM_5580.jpeg",
+      "code": "1114-DUN",
+      "fragranticaId": "38982",
+      "card": "database/fragrantica/social-cards/images/current_1114-DUN_38982.jpeg",
       "previousNotes": [
-        "Lime",
-        "Beeswax",
-        "Bergamot",
-        "Lily-of-the-Valley",
-        "Petitgrain",
-        "Tarragon"
+        "Ebony Tree",
+        "Sandalwood",
+        "Cardamom",
+        "Suede",
+        "Vetiver",
+        "Orange"
       ],
       "socialCardNotes": [
-        "Lime (Linden) Blossom",
-        "Beeswax",
-        "Bergamot",
-        "Lily-of-the-Valley",
-        "Petitgrain",
-        "Tarragon"
+        "Ebony Tree",
+        "Sandalwood",
+        "Cardamom",
+        "Suede",
+        "Vetiver",
+        "Bitter Orange"
       ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
       "iconCounts": [
         3,
         3
