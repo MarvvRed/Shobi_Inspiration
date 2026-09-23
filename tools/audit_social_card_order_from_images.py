@@ -246,6 +246,33 @@ def ocr_panels(source_panel):
     return out
 
 
+def slotwise_direct_consensus(attempts, expected):
+    """Prove each visible 2×3 note position in two renderings of the card."""
+    support = [set() for _ in expected]
+    conflicts = []
+    for attempt in attempts:
+        for item in attempt["components"]:
+            row = item.get("row")
+            if row not in (0, 1):
+                continue
+            column = min(2, max(0, round((item.get("x", 0) - 32) / 120)))
+            position = row * 3 + column
+            if position >= len(expected):
+                continue
+            direct = item["exactText"] or (
+                item["confidence"] >= 60 and item["score"] >= 0.95 and item["margin"] >= 0.15
+            )
+            if not direct:
+                continue
+            if item["note"] == expected[position]:
+                support[position].add(attempt["variant"])
+            elif item["exactText"]:
+                conflicts.append({"position": position, "note": item["note"], "variant": attempt["variant"]})
+    if conflicts or not expected or any(len(variants) < 2 for variants in support):
+        return None
+    return {"variantsPerPosition": [sorted(variants) for variants in support]}
+
+
 def soft_ordered_match(attempt, expected):
     """Accept a non-literal OCR token only with strong, direct card evidence."""
     components = attempt["components"]
@@ -414,6 +441,15 @@ def inspect(task):
                     "tileEvidence": tiles["slots"],
                     "proof": "SIX_PHYSICAL_LABELS_EXACT_MULTIPASS; ORDERED_SEQUENCE_EXACT",
                     "attempts": attempts}
+    # A full card can be proven even when each clear label is recognized by a
+    # different rendering. Every physical position must independently agree in
+    # two renderings; an exact competing label rejects the card.
+    slotwise = slotwise_direct_consensus(attempts, base["catalogNotes"])
+    if slotwise:
+        return {**base, "result": "EXACT_ORDERED_MATCH", "observedNotes": base["catalogNotes"],
+                "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+                "slotwiseEvidence": slotwise, "attempts": attempts}
+
     # Some labels are visibly clear but Tesseract adds/removes a single glyph
     # (for example "be Honey"). They remain direct image evidence only when
     # the complete expected sequence is independently read by three rendering
