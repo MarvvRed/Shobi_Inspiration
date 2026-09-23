@@ -125,6 +125,15 @@ def candidate(raw, lexicon):
     compact_exact = [name for name in lexicon if norm(name).replace(" ", "") == compact_target]
     if len(compact_exact) == 1:
         return compact_exact[0], 1.0, 1.0, True
+    # Some genuine Social Card labels are CSS-truncated with an ellipsis. The
+    # visible prefix remains direct evidence only if it has enough letters and
+    # identifies one, and only one, official Fragrantica note name.
+    if "..." in str(raw):
+        prefix = target.split(" ")
+        compact_prefix = "".join(prefix)
+        prefix_exact = [name for name in lexicon if norm(name).replace(" ", "").startswith(compact_prefix)]
+        if len(compact_prefix) >= 8 and len(prefix_exact) == 1:
+            return prefix_exact[0], 1.0, 1.0, True
     ranked = sorted(((SequenceMatcher(None, target, norm(name)).ratio(), name) for name in lexicon), reverse=True)
     if not ranked:
         return None, 0.0, 0.0, False
