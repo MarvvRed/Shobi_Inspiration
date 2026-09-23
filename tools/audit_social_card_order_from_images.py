@@ -252,6 +252,30 @@ def is_subsequence(shorter, longer):
     return pos == len(shorter)
 
 
+def compatible_partial_labels(attempt, complete):
+    """Accept omissions and literal prefixes from the same physical tiles.
+
+    This is deliberately narrower than fuzzy matching. It handles an OCR pass
+    that reads "Fig" from the visible label "Fig tree" while another pass has
+    already read the complete card literally. A different literal note, or a
+    label at a tile absent from the complete pass, remains a conflict.
+    """
+    complete_by_tile = {(item["row"], round(item["x"] / 30)): item for item in complete["components"]}
+    for item in attempt["components"]:
+        reference = complete_by_tile.get((item["row"], round(item["x"] / 30)))
+        if not reference:
+            return False
+        if item["note"] == reference["note"]:
+            continue
+        raw = norm(item.get("raw", "")).replace(" ", "")
+        label = norm(reference["note"]).replace(" ", "")
+        # A short read must be an actual prefix of the label at this exact
+        # tile. Three characters avoids accepting decorative OCR fragments.
+        if len(raw) < 3 or not label.startswith(raw):
+            return False
+    return True
+
+
 def visible_icon_counts(panel, header_y, rows):
     """Count separated note-icon groups before each visible label row.
 
@@ -508,11 +532,28 @@ def inspect(task):
     if exact:
         selected = max(exact, key=lambda a: len(a["components"]))
         if not all(is_subsequence(a["notes"], selected["notes"]) for a in strict):
-            return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
-        label_counts = [sum(1 for item in selected["components"] if item["row"] == i) for i in range(2)]
+            # The original reader can truncate a multi-word label in one
+            # layout pass. Admit that only when the whole exact sequence was
+            # independently read in two image renderings, every visible icon
+            # has a matching label, and each non-identical read is a literal
+            # prefix at the same physical tile.
+            headers = [attempt.get("notesHeaderY") for attempt in attempts if attempt.get("notesHeaderY") is not None]
+            exact_variants = {attempt["variant"] for attempt in exact}
+            icon_counts = visible_icon_counts(source_panel, min(headers), 2) if headers else []
+            label_counts = [sum(1 for item in selected["components"] if item["row"] == i) for i in range(2)]
+            if not (
+                len(exact_variants) >= 2
+                and label_counts == icon_counts
+                and all(compatible_partial_labels(attempt, selected) for attempt in strict)
+            ):
+                return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
+            proof = "COMPLETE_EXACT_MULTIPASS; PARTIAL_READS_LITERAL_PREFIXES_AT_SAME_TILES; ICON_COUNTS_MATCH"
+        else:
+            label_counts = [sum(1 for item in selected["components"] if item["row"] == i) for i in range(2)]
+            proof = "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES"
         return {**base, "result": "EXACT_ORDERED_MATCH", "observedNotes": selected["notes"],
                 "components": selected["components"], "notesHeaderY": selected["notesHeaderY"],
-                "labelCounts": label_counts, "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+                "labelCounts": label_counts, "proof": proof,
                 "attempts": attempts}
     # When the catalog itself is wrong, a card must be allowed to correct it.
     # This requires a complete physical-card reading: the number of labels in
