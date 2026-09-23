@@ -3,9 +3,10 @@
   "catalogRows": 2253,
   "targetedCurrentYellows": 127,
   "results": {
-    "EXACT_ORDERED_MATCH": 2080,
+    "EXACT_ORDERED_CARD_NOTES_DIFFER": 1,
+    "EXACT_ORDERED_MATCH": 2086,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 167,
+    "READING_NOT_STRICT_ENOUGH": 160,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -33220,15 +33221,100 @@
         "Citruses",
         "Blood Orange",
         "Pimento",
-        "Lavender"
+        "Lavender",
+        "Vetiver"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Bagas de Zimbro",
+        "Citruses",
+        "Blood Orange",
+        "Pimento",
+        "Lavender",
+        "Vetiver"
+      ],
+      "components": [
+        {
+          "raw": "Bagasde Zimbro",
+          "x": 32.333333333333336,
+          "y": 151.33333333333334,
+          "row": 0,
+          "confidence": 91.1,
+          "note": "Bagas de Zimbro",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Citruses",
+          "x": 152.0,
+          "y": 151.0,
+          "row": 0,
+          "confidence": 91.1,
+          "note": "Citruses",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Blood Orange",
+          "x": 272.0,
+          "y": 151.33333333333334,
+          "row": 0,
+          "confidence": 93.8,
+          "note": "Blood Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pimento",
+          "x": 33.0,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 96.6,
+          "note": "Pimento",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lavender",
+          "x": 153.0,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 88.5,
+          "note": "Lavender",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vetiver",
+          "x": 271.6666666666667,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 88.5,
+          "note": "Vetiver",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 32.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Bagas de Zimbro",
             "Citruses",
@@ -33245,9 +33331,9 @@
               "row": 0,
               "confidence": 91.1,
               "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Citruses",
@@ -33305,19 +33391,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Bagasde Zimbro",
-              "x": 32.333333333333336,
-              "y": 151.33333333333334,
-              "row": 0,
-              "confidence": 91.1,
-              "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
@@ -33396,9 +33470,9 @@
               "row": 1,
               "confidence": 71.7,
               "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -33423,17 +33497,6 @@
               "score": 0.968,
               "margin": 0.416,
               "exactText": false
-            },
-            {
-              "raw": "Vetiv er",
-              "x": 271.6666666666667,
-              "y": 279.6666666666667,
-              "row": 1,
-              "confidence": 71.7,
-              "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
             }
           ],
           "notesHeaderY": 32.0
@@ -33441,8 +33504,8 @@
         {
           "variant": "contrast-260",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Bagas de Zimbro",
             "Citruses",
@@ -33459,9 +33522,9 @@
               "row": 0,
               "confidence": 91.6,
               "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Citruses",
@@ -33519,26 +33582,14 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Bagasde Zimbro",
-              "x": 32.333333333333336,
-              "y": 151.33333333333334,
-              "row": 0,
-              "confidence": 91.6,
-              "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "contrast-260",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Bagas de Zimbro",
             "Citruses",
@@ -33610,24 +33661,12 @@
               "row": 1,
               "confidence": 83.6,
               "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Vetiv er",
-              "x": 271.6666666666667,
-              "y": 279.6666666666667,
-              "row": 1,
-              "confidence": 83.6,
-              "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
@@ -34013,6 +34052,15 @@
           ],
           "notesHeaderY": 32.0
         }
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Bagas de Zimbro",
+        "Citruses",
+        "Blood Orange",
+        "Pimento",
+        "Lavender"
       ]
     },
     {
@@ -39005,9 +39053,9 @@
               "row": 1,
               "confidence": 86.9,
               "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Fir",
@@ -39042,17 +39090,6 @@
               "note": "Violet",
               "score": 0.706,
               "margin": 0.134,
-              "exactText": false
-            },
-            {
-              "raw": "Vetiv er",
-              "x": 31.666666666666668,
-              "y": 273.0,
-              "row": 1,
-              "confidence": 86.9,
-              "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
               "exactText": false
             }
           ],
@@ -87107,8 +87144,8 @@
         {
           "variant": "contrast-200",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Fig Leaf",
             "Cedar",
@@ -87125,9 +87162,9 @@
               "row": 0,
               "confidence": 90.8,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cedar",
@@ -87185,19 +87222,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "FigLeaf",
-              "x": 33.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 90.8,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
@@ -87310,8 +87335,8 @@
         {
           "variant": "contrast-260",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Fig Leaf",
             "Cedar",
@@ -87328,9 +87353,9 @@
               "row": 0,
               "confidence": 84.9,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cedar",
@@ -87388,19 +87413,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "FigLeaf",
-              "x": 33.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 84.9,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
@@ -138797,9 +138810,9 @@
               "row": 1,
               "confidence": 54.4,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Myrrh",
@@ -138823,17 +138836,6 @@
               "note": "Powdery Notes",
               "score": 0.897,
               "margin": 0.23,
-              "exactText": false
-            },
-            {
-              "raw": "FigLeaf",
-              "x": 153.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 54.4,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
               "exactText": false
             },
             {
@@ -138960,8 +138962,8 @@
         {
           "variant": "threshold-185",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Powdery Notes",
             "Musk",
@@ -139021,24 +139023,12 @@
               "row": 1,
               "confidence": 90.9,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "FigLeaf",
-              "x": 153.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 90.9,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
@@ -139214,9 +139204,9 @@
               "row": 1,
               "confidence": 89.1,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Myrrh",
@@ -139231,17 +139221,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "FigLeaf",
-              "x": 153.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 89.1,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
-            },
             {
               "raw": "TY TO",
               "x": 95.0,
@@ -183886,9 +183865,9 @@
               "row": 0,
               "confidence": 90.6,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vanilla",
@@ -183925,17 +183904,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 281.6666666666667,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 90.6,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
             {
               "raw": "Ambrette (Musk...",
               "x": 169.66666666666666,
@@ -183993,9 +183961,9 @@
               "row": 0,
               "confidence": 44.2,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vanilla",
@@ -184039,9 +184007,9 @@
               "row": 0,
               "confidence": 44.2,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Ambrette (Musk...",
@@ -184100,9 +184068,9 @@
               "row": 0,
               "confidence": 84.5,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vanilla",
@@ -184139,17 +184107,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 281.6666666666667,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 84.5,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
             {
               "raw": "Ambrette (Musk...",
               "x": 169.66666666666666,
@@ -184314,9 +184271,9 @@
               "row": 0,
               "confidence": 50.2,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vanilla",
@@ -184353,17 +184310,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "ISoE Super",
-              "x": 282.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 50.2,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
             {
               "raw": "Ambrette (Musk...",
               "x": 170.0,
@@ -184528,9 +184474,9 @@
               "row": 0,
               "confidence": 82.7,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vanilla",
@@ -184567,17 +184513,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "ISoE Super",
-              "x": 281.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 82.7,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
             {
               "raw": "Ambrette (Musk...",
               "x": 169.0,
@@ -184624,9 +184559,9 @@
               "row": 0,
               "confidence": 92.0,
               "note": "Coconut",
-              "score": 0.933,
-              "margin": 0.196,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Super",
@@ -184674,17 +184609,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Cocon ut",
-              "x": 170.0,
-              "y": 128.0,
-              "row": 0,
-              "confidence": 92.0,
-              "note": "Coconut",
-              "score": 0.933,
-              "margin": 0.196,
-              "exactText": false
-            },
             {
               "raw": "Super",
               "x": 281.0,
@@ -194842,9 +194766,9 @@
               "row": 0,
               "confidence": 92.5,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Musk",
@@ -194914,17 +194838,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 32.666666666666664,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 92.5,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
             {
               "raw": "Ambrette (Musk...",
               "x": 31.666666666666668,
@@ -195067,9 +194980,9 @@
               "row": 0,
               "confidence": 91.2,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Musk",
@@ -195128,17 +195041,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 32.666666666666664,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 91.2,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
             {
               "raw": "Ambrette (Musk...",
               "x": 31.666666666666668,
@@ -195281,9 +195183,9 @@
               "row": 0,
               "confidence": 60.1,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Musk",
@@ -195343,17 +195245,6 @@
           ],
           "uncertainComponents": [
             {
-              "raw": "IsoE Super",
-              "x": 33.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 60.1,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
-            {
               "raw": "Ambrette (Musk...",
               "x": 32.0,
               "y": 290.0,
@@ -195388,9 +195279,9 @@
               "row": 0,
               "confidence": 72.9,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Musk",
@@ -195450,17 +195341,6 @@
           ],
           "uncertainComponents": [
             {
-              "raw": "ISoE Super",
-              "x": 33.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 72.9,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
-            {
               "raw": "Ambrette (Musk...",
               "x": 32.0,
               "y": 290.0,
@@ -195495,9 +195375,9 @@
               "row": 0,
               "confidence": 55.7,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Musk",
@@ -195556,17 +195436,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "ISoE Super",
-              "x": 32.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 55.7,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
             {
               "raw": "Ambrette (Musk...",
               "x": 32.0,
@@ -211291,8 +211160,8 @@
         {
           "variant": "threshold-185",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Citron",
             "Bagas de Zimbro",
@@ -211319,9 +211188,9 @@
               "row": 0,
               "confidence": 88.5,
               "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Mineral Notes",
@@ -211357,19 +211226,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Bagasde Zimbro",
-              "x": 152.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 88.5,
-              "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 24.0
         },
         {
@@ -221792,9 +221649,9 @@
               "row": 1,
               "confidence": 85.6,
               "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Ambrette (Musk...",
@@ -221818,17 +221675,6 @@
               "note": "Ambroxan",
               "score": 0.941,
               "margin": 0.275,
-              "exactText": false
-            },
-            {
-              "raw": "Vetiv er",
-              "x": 152.0,
-              "y": 252.66666666666666,
-              "row": 1,
-              "confidence": 85.6,
-              "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
               "exactText": false
             },
             {
@@ -254050,7 +253896,89 @@
         "Ambroxan",
         "Iso E Super"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Pear",
+        "Freesia",
+        "Bergamot",
+        "Bitter Orange",
+        "Ambroxan",
+        "Iso E Super"
+      ],
+      "components": [
+        {
+          "raw": "Pear",
+          "x": 32.666666666666664,
+          "y": 148.66666666666666,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Pear",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Freesia",
+          "x": 153.0,
+          "y": 148.66666666666666,
+          "row": 0,
+          "confidence": 90.0,
+          "note": "Freesia",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 273.0,
+          "y": 148.66666666666666,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bitter Orange",
+          "x": 32.0,
+          "y": 270.3333333333333,
+          "row": 1,
+          "confidence": 95.3,
+          "note": "Bitter Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ambroxan",
+          "x": 151.66666666666666,
+          "y": 270.3333333333333,
+          "row": 1,
+          "confidence": 83.2,
+          "note": "Ambroxan",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "ISOE Super",
+          "x": 272.3333333333333,
+          "y": 270.3333333333333,
+          "row": 1,
+          "confidence": 86.3,
+          "note": "Iso E Super",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 29.3,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -254151,8 +254079,8 @@
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Pear",
             "Freesia",
@@ -254224,24 +254152,12 @@
               "row": 1,
               "confidence": 86.3,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 272.3333333333333,
-              "y": 270.3333333333333,
-              "row": 1,
-              "confidence": 86.3,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 29.3
         },
         {
@@ -254320,9 +254236,9 @@
               "row": 1,
               "confidence": 44.0,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -254344,9 +254260,9 @@
               "row": 1,
               "confidence": 44.0,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 29.0
@@ -254427,9 +254343,9 @@
               "row": 1,
               "confidence": 88.4,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -254442,17 +254358,6 @@
               "note": "Pear Tree",
               "score": 0.75,
               "margin": 0.0,
-              "exactText": false
-            },
-            {
-              "raw": "ISOE Super",
-              "x": 272.3333333333333,
-              "y": 270.3333333333333,
-              "row": 1,
-              "confidence": 88.4,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
               "exactText": false
             }
           ],
@@ -254664,23 +254569,12 @@
               "row": 1,
               "confidence": 65.4,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 273.0,
-              "y": 270.0,
-              "row": 1,
-              "confidence": 65.4,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
             {
               "raw": "AADARITICA",
               "x": 144.0,
@@ -254771,9 +254665,9 @@
               "row": 1,
               "confidence": 47.3,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -254784,9 +254678,9 @@
               "row": 1,
               "confidence": 47.3,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 29.0
@@ -254794,8 +254688,8 @@
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Pear",
             "Freesia",
@@ -254867,24 +254761,12 @@
               "row": 1,
               "confidence": 59.4,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 272.0,
-              "y": 270.0,
-              "row": 1,
-              "confidence": 59.4,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 29.0
         }
       ]
@@ -261974,8 +261856,8 @@
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Ethyl Maltol",
             "Sandalwood",
@@ -262025,9 +261907,9 @@
               "row": 1,
               "confidence": 88.2,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cetalox",
@@ -262052,19 +261934,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 32.666666666666664,
-              "y": 289.6666666666667,
-              "row": 1,
-              "confidence": 88.2,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 24.0
         },
         {
@@ -262121,9 +261991,9 @@
               "row": 1,
               "confidence": 89.8,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cetalox",
@@ -262158,17 +262028,6 @@
               "note": "Malt",
               "score": 0.8,
               "margin": 0.133,
-              "exactText": false
-            },
-            {
-              "raw": "ISOE Super",
-              "x": 32.333333333333336,
-              "y": 289.6666666666667,
-              "row": 1,
-              "confidence": 89.8,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
               "exactText": false
             }
           ],
@@ -262216,9 +262075,9 @@
               "row": 1,
               "confidence": 89.4,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cetalox",
@@ -262253,17 +262112,6 @@
               "note": "Ethyl Maltol",
               "score": 0.957,
               "margin": 0.368,
-              "exactText": false
-            },
-            {
-              "raw": "ISOE Super",
-              "x": 32.333333333333336,
-              "y": 289.6666666666667,
-              "row": 1,
-              "confidence": 89.4,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
               "exactText": false
             }
           ],
@@ -262323,9 +262171,9 @@
               "row": 1,
               "confidence": 48.6,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cetalox",
@@ -262369,9 +262217,9 @@
               "row": 1,
               "confidence": 48.6,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 24.0
@@ -262430,9 +262278,9 @@
               "row": 1,
               "confidence": 68.9,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cetalox",
@@ -262468,17 +262316,6 @@
               "score": 1.0,
               "margin": 1.0,
               "exactText": true
-            },
-            {
-              "raw": "ISOE super",
-              "x": 33.0,
-              "y": 290.0,
-              "row": 1,
-              "confidence": 68.9,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
             }
           ],
           "notesHeaderY": 24.0
@@ -262537,9 +262374,9 @@
               "row": 1,
               "confidence": 43.8,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cetalox",
@@ -262583,9 +262420,9 @@
               "row": 1,
               "confidence": 43.8,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 24.0
@@ -278916,7 +278753,89 @@
         "Cardamom",
         "Vetiver"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Ambroxan",
+        "Cedar",
+        "Iso E Super",
+        "Palo Santo",
+        "Cardamom",
+        "Vetiver"
+      ],
+      "components": [
+        {
+          "raw": "Ambroxan",
+          "x": 32.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 89.2,
+          "note": "Ambroxan",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 150.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 96.2,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "ISOE Super",
+          "x": 274.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 89.1,
+          "note": "Iso E Super",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Palo santo",
+          "x": 32.0,
+          "y": 289.0,
+          "row": 1,
+          "confidence": 78.6,
+          "note": "Palo Santo",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cardamom",
+          "x": 150.0,
+          "y": 289.0,
+          "row": 1,
+          "confidence": 95.3,
+          "note": "Cardamom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vetiver",
+          "x": 274.0,
+          "y": 289.0,
+          "row": 1,
+          "confidence": 95.3,
+          "note": "Vetiver",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 24.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -279140,9 +279059,9 @@
               "row": 0,
               "confidence": 73.7,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Ye Palo Santo",
@@ -279188,17 +279107,6 @@
               "note": "Ambroxan",
               "score": 0.64,
               "margin": 0.015,
-              "exactText": false
-            },
-            {
-              "raw": "IsoE Super",
-              "x": 274.6666666666667,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 73.7,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
               "exactText": false
             },
             {
@@ -279449,9 +279357,9 @@
               "row": 0,
               "confidence": 74.8,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Palo Santo",
@@ -279498,17 +279406,6 @@
               "score": 0.714,
               "margin": 0.048,
               "exactText": false
-            },
-            {
-              "raw": "ISoE Super",
-              "x": 275.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 74.8,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
             }
           ],
           "notesHeaderY": 24.0
@@ -279516,8 +279413,8 @@
         {
           "variant": "threshold-215",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Ambroxan",
             "Cedar",
@@ -279556,9 +279453,9 @@
               "row": 0,
               "confidence": 89.1,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Palo santo",
@@ -279594,26 +279491,14 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 274.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 89.1,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 24.0
         },
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Ambroxan",
             "Cedar",
@@ -279652,9 +279537,9 @@
               "row": 0,
               "confidence": 73.3,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Palo Santo",
@@ -279690,19 +279575,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 274.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 73.3,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 24.0
         }
       ]
@@ -305248,9 +305121,9 @@
               "row": 0,
               "confidence": 77.6,
               "note": "Licorice",
-              "score": 0.941,
-              "margin": 0.275,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Olibanum",
@@ -305287,17 +305160,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Lico rice",
-              "x": 132.0,
-              "y": 151.66666666666666,
-              "row": 0,
-              "confidence": 77.6,
-              "note": "Licorice",
-              "score": 0.941,
-              "margin": 0.275,
-              "exactText": false
-            },
             {
               "raw": "Olibanum",
               "x": 230.0,
@@ -305451,9 +305313,9 @@
               "row": 0,
               "confidence": 92.4,
               "note": "Licorice",
-              "score": 0.941,
-              "margin": 0.275,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Olibanum",
@@ -305501,17 +305363,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Lico rice",
-              "x": 132.0,
-              "y": 151.66666666666666,
-              "row": 0,
-              "confidence": 92.4,
-              "note": "Licorice",
-              "score": 0.941,
-              "margin": 0.275,
-              "exactText": false
-            },
             {
               "raw": "Olibanum",
               "x": 230.0,
@@ -308077,8 +307928,8 @@
         {
           "variant": "contrast-200",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Lavender",
             "Jasmine",
@@ -308127,9 +307978,9 @@
               "row": 1,
               "confidence": 86.8,
               "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Olibanum (Frankincense)",
@@ -308143,19 +307994,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Bagasde Zimbro",
-              "x": 121.33333333333333,
-              "y": 273.0,
-              "row": 1,
-              "confidence": 86.8,
-              "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.3
         },
         {
@@ -308307,9 +308146,9 @@
               "row": 1,
               "confidence": 86.7,
               "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Olibanum",
@@ -308344,17 +308183,6 @@
               "note": "Lavender",
               "score": 0.842,
               "margin": 0.287,
-              "exactText": false
-            },
-            {
-              "raw": "Bagasde Zimbro",
-              "x": 121.33333333333333,
-              "y": 273.0,
-              "row": 1,
-              "confidence": 86.7,
-              "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
               "exactText": false
             },
             {
@@ -308554,9 +308382,9 @@
               "row": 1,
               "confidence": 76.7,
               "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Olibanum (Frankincense)",
@@ -308580,17 +308408,6 @@
               "note": "Neroli",
               "score": 0.833,
               "margin": 0.167,
-              "exactText": false
-            },
-            {
-              "raw": "Bagasde Zimbro",
-              "x": 121.0,
-              "y": 273.0,
-              "row": 1,
-              "confidence": 76.7,
-              "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
               "exactText": false
             },
             {
@@ -309504,9 +309321,9 @@
               "row": 0,
               "confidence": 86.0,
               "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cedar",
@@ -309554,17 +309371,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Bagasde Zimbro",
-              "x": 152.33333333333334,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 86.0,
-              "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
-            },
             {
               "raw": "Currant and... Leaf",
               "x": 152.0,
@@ -309655,9 +309461,9 @@
               "row": 1,
               "confidence": 57.6,
               "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -309670,17 +309476,6 @@
               "note": "Currant Leaf and Bud",
               "score": 0.889,
               "margin": 0.183,
-              "exactText": false
-            },
-            {
-              "raw": "Vetiv er",
-              "x": 271.6666666666667,
-              "y": 273.0,
-              "row": 1,
-              "confidence": 57.6,
-              "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
               "exactText": false
             }
           ],
@@ -309718,9 +309513,9 @@
               "row": 0,
               "confidence": 89.6,
               "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cedar",
@@ -309768,17 +309563,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Bagasde Zimbro",
-              "x": 152.33333333333334,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 89.6,
-              "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
-            },
             {
               "raw": "Currant and... Leaf Se Mo",
               "x": 152.0,
@@ -309920,9 +309704,9 @@
               "row": 0,
               "confidence": 91.4,
               "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cedar",
@@ -309970,17 +309754,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Bagasde Zimbro",
-              "x": 152.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 91.4,
-              "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
-            },
             {
               "raw": "Currant Leaf and...",
               "x": 152.0,
@@ -310134,9 +309907,9 @@
               "row": 0,
               "confidence": 89.2,
               "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cedar",
@@ -310184,17 +309957,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Bagasde Zimbro",
-              "x": 152.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 89.2,
-              "note": "Bagas de Zimbro",
-              "score": 0.966,
-              "margin": 0.447,
-              "exactText": false
-            },
             {
               "raw": "Currant and... Leaf",
               "x": 152.0,
@@ -324815,7 +324577,89 @@
         "Mountain Air",
         "Suede"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Tobacco",
+        "Iso E Super",
+        "Tea",
+        "Cardamom",
+        "Mountain Air",
+        "Suede"
+      ],
+      "components": [
+        {
+          "raw": "Tobacco",
+          "x": 32.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Tobacco",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "ISoE Super",
+          "x": 157.0,
+          "y": 141.66666666666666,
+          "row": 0,
+          "confidence": 83.0,
+          "note": "Iso E Super",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Tea",
+          "x": 274.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 95.6,
+          "note": "Tea",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cardamom",
+          "x": 32.0,
+          "y": 289.0,
+          "row": 1,
+          "confidence": 95.4,
+          "note": "Cardamom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mountain Air",
+          "x": 156.0,
+          "y": 290.0,
+          "row": 1,
+          "confidence": 78.0,
+          "note": "Mountain Air",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Suede",
+          "x": 275.0,
+          "y": 289.0,
+          "row": 1,
+          "confidence": 87.7,
+          "note": "Suede",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 24.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -324849,9 +324693,9 @@
               "row": 0,
               "confidence": 56.8,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "me Tea",
@@ -324908,17 +324752,6 @@
               "note": "Mint Tea",
               "score": 0.714,
               "margin": 0.008,
-              "exactText": false
-            },
-            {
-              "raw": "ISOE Super",
-              "x": 156.66666666666666,
-              "y": 141.66666666666666,
-              "row": 0,
-              "confidence": 56.8,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
               "exactText": false
             }
           ],
@@ -325225,8 +325058,8 @@
         {
           "variant": "threshold-185",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Tobacco",
             "Iso E Super",
@@ -325254,9 +325087,9 @@
               "row": 0,
               "confidence": 83.0,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Tea",
@@ -325303,19 +325136,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "ISoE Super",
-              "x": 157.0,
-              "y": 141.66666666666666,
-              "row": 0,
-              "confidence": 83.0,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 24.0
         },
         {
@@ -325350,9 +325171,9 @@
               "row": 0,
               "confidence": 57.0,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Tea",
@@ -325401,17 +325222,6 @@
           ],
           "uncertainComponents": [
             {
-              "raw": "ISoE Super",
-              "x": 157.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 57.0,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
-            {
               "raw": "Dass Mountain Air",
               "x": 156.0,
               "y": 237.0,
@@ -325457,9 +325267,9 @@
               "row": 0,
               "confidence": 48.1,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Tea",
@@ -325514,9 +325324,9 @@
               "row": 0,
               "confidence": 48.1,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 24.0
@@ -325524,8 +325334,8 @@
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Tobacco",
             "Iso E Super",
@@ -325553,9 +325363,9 @@
               "row": 0,
               "confidence": 77.7,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Tea",
@@ -325602,19 +325412,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 156.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 77.7,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 24.0
         }
       ]
@@ -331173,9 +330971,9 @@
               "row": 0,
               "confidence": 86.6,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Fig",
@@ -331234,17 +331032,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "FigLeaf",
-              "x": 33.0,
-              "y": 142.66666666666666,
-              "row": 0,
-              "confidence": 86.6,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
-            },
             {
               "raw": "Fig tree",
               "x": 153.0,
@@ -331358,8 +331145,8 @@
         {
           "variant": "contrast-260",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Fig Leaf",
             "Fig",
@@ -331375,9 +331162,9 @@
               "row": 0,
               "confidence": 83.9,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Fig",
@@ -331424,19 +331211,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "FigLeaf",
-              "x": 33.0,
-              "y": 142.66666666666666,
-              "row": 0,
-              "confidence": 83.9,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 23.7
         },
         {
@@ -331567,9 +331342,9 @@
               "row": 0,
               "confidence": 85.1,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Fig",
@@ -331628,17 +331403,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "FigLeaf",
-              "x": 33.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 85.1,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
-            },
             {
               "raw": "Fig tree",
               "x": 153.0,
@@ -331752,8 +331516,8 @@
         {
           "variant": "threshold-215",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Fig Leaf",
             "Fig",
@@ -331769,9 +331533,9 @@
               "row": 0,
               "confidence": 91.1,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Fig",
@@ -331818,19 +331582,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "FigLeaf",
-              "x": 33.0,
-              "y": 142.0,
-              "row": 0,
-              "confidence": 91.1,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 24.0
         },
         {
@@ -341783,7 +341535,65 @@
         "Lemon",
         "Iris"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Iso E Super",
+        "Pink Pepper",
+        "Lemon",
+        "Iris"
+      ],
+      "components": [
+        {
+          "raw": "ISOE Super",
+          "x": 32.666666666666664,
+          "y": 151.33333333333334,
+          "row": 0,
+          "confidence": 88.6,
+          "note": "Iso E Super",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pink Pepper",
+          "x": 153.0,
+          "y": 151.66666666666666,
+          "row": 0,
+          "confidence": 96.4,
+          "note": "Pink Pepper",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lemon",
+          "x": 273.0,
+          "y": 152.0,
+          "row": 0,
+          "confidence": 96.8,
+          "note": "Lemon",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Iris",
+          "x": 33.0,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 71.7,
+          "note": "Iris",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 32.0,
+      "labelCounts": [
+        3,
+        1
+      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -341804,9 +341614,9 @@
               "row": 0,
               "confidence": 89.0,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Pink Pepper",
@@ -341844,17 +341654,6 @@
           ],
           "uncertainComponents": [
             {
-              "raw": "ISOE Super",
-              "x": 32.666666666666664,
-              "y": 151.33333333333334,
-              "row": 0,
-              "confidence": 89.0,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
-            {
               "raw": "Iris",
               "x": 33.0,
               "y": 298.0,
@@ -341871,8 +341670,8 @@
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Iso E Super",
             "Pink Pepper",
@@ -341887,9 +341686,9 @@
               "row": 0,
               "confidence": 88.6,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Pink Pepper",
@@ -341925,19 +341724,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "ISOE Super",
-              "x": 32.666666666666664,
-              "y": 151.33333333333334,
-              "row": 0,
-              "confidence": 88.6,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
@@ -341959,9 +341746,9 @@
               "row": 0,
               "confidence": 88.0,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Pink Pepper",
@@ -341999,17 +341786,6 @@
           ],
           "uncertainComponents": [
             {
-              "raw": "ISOE Super",
-              "x": 32.333333333333336,
-              "y": 151.33333333333334,
-              "row": 0,
-              "confidence": 88.0,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
-            {
               "raw": "lris",
               "x": 33.0,
               "y": 298.0,
@@ -342042,9 +341818,9 @@
               "row": 0,
               "confidence": 39.5,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Pink Pepper",
@@ -342088,9 +341864,9 @@
               "row": 0,
               "confidence": 39.5,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Iris",
@@ -342124,9 +341900,9 @@
               "row": 0,
               "confidence": 67.0,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Pink Pepper",
@@ -342152,17 +341928,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "ISOE super",
-              "x": 33.0,
-              "y": 151.0,
-              "row": 0,
-              "confidence": 67.0,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
             {
               "raw": "Leron",
               "x": 273.0,
@@ -342197,9 +341962,9 @@
               "row": 0,
               "confidence": 60.0,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Pink Pepper",
@@ -342247,17 +342012,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "ISOE super",
-              "x": 33.0,
-              "y": 151.0,
-              "row": 0,
-              "confidence": 60.0,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            },
             {
               "raw": "AADARITICA",
               "x": 144.0,
@@ -358894,9 +358648,9 @@
               "row": 1,
               "confidence": 91.3,
               "note": "Coriander",
-              "score": 0.947,
-              "margin": 0.255,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -358909,17 +358663,6 @@
               "note": "Vetiver",
               "score": 0.778,
               "margin": 0.141,
-              "exactText": false
-            },
-            {
-              "raw": "Co riander",
-              "x": 279.3333333333333,
-              "y": 297.6666666666667,
-              "row": 1,
-              "confidence": 91.3,
-              "note": "Coriander",
-              "score": 0.947,
-              "margin": 0.255,
               "exactText": false
             }
           ],
@@ -380869,9 +380612,9 @@
               "row": 1,
               "confidence": 86.6,
               "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -380884,17 +380627,6 @@
               "note": "Lime (Linden) Blossom",
               "score": 0.733,
               "margin": 0.102,
-              "exactText": false
-            },
-            {
-              "raw": "Vetiv er",
-              "x": 267.6666666666667,
-              "y": 272.0,
-              "row": 1,
-              "confidence": 86.6,
-              "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
               "exactText": false
             }
           ],
@@ -381072,9 +380804,9 @@
               "row": 1,
               "confidence": 92.5,
               "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -381098,17 +380830,6 @@
               "note": "Lime (Linden) Blossom",
               "score": 0.629,
               "margin": 0.077,
-              "exactText": false
-            },
-            {
-              "raw": "Vetiv er",
-              "x": 267.6666666666667,
-              "y": 272.0,
-              "row": 1,
-              "confidence": 92.5,
-              "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
               "exactText": false
             }
           ],
@@ -398174,7 +397895,89 @@
         "Sandalwood",
         "Cedar"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Apple",
+        "Iso E Super",
+        "Rose",
+        "Akigalawood",
+        "Sandalwood",
+        "Cedar"
+      ],
+      "components": [
+        {
+          "raw": "Apple",
+          "x": 31.666666666666668,
+          "y": 163.66666666666666,
+          "row": 0,
+          "confidence": 96.2,
+          "note": "Apple",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "IsoE Super",
+          "x": 175.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 86.1,
+          "note": "Iso E Super",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 313.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 94.9,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Akigalawood",
+          "x": 31.666666666666668,
+          "y": 286.6666666666667,
+          "row": 1,
+          "confidence": 91.6,
+          "note": "Akigalawood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 174.66666666666666,
+          "y": 286.6666666666667,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 312.0,
+          "y": 286.6666666666667,
+          "row": 1,
+          "confidence": 96.8,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 45.7,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -398208,9 +398011,9 @@
               "row": 0,
               "confidence": 85.7,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Rose",
@@ -398267,17 +398070,6 @@
               "note": "Apple Mint",
               "score": 0.737,
               "margin": 0.023,
-              "exactText": false
-            },
-            {
-              "raw": "IsoE Super",
-              "x": 175.0,
-              "y": 165.0,
-              "row": 0,
-              "confidence": 85.7,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
               "exactText": false
             }
           ],
@@ -398405,8 +398197,8 @@
         {
           "variant": "contrast-260",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Apple",
             "Iso E Super",
@@ -398434,9 +398226,9 @@
               "row": 0,
               "confidence": 86.1,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Rose",
@@ -398483,19 +398275,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "IsoE Super",
-              "x": 175.0,
-              "y": 165.0,
-              "row": 0,
-              "confidence": 86.1,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 45.7
         },
         {
@@ -398530,9 +398310,9 @@
               "row": 0,
               "confidence": 42.6,
               "note": "Iso E Super",
-              "score": 0.857,
-              "margin": 0.286,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Rose",
@@ -398587,9 +398367,9 @@
               "row": 0,
               "confidence": 42.6,
               "note": "Iso E Super",
-              "score": 0.857,
-              "margin": 0.286,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 45.7
@@ -398800,8 +398580,8 @@
         {
           "variant": "threshold-215",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Apple",
             "Iso E Super",
@@ -398829,9 +398609,9 @@
               "row": 0,
               "confidence": 73.2,
               "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Rose",
@@ -398878,19 +398658,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "IsoE Super",
-              "x": 175.0,
-              "y": 165.0,
-              "row": 0,
-              "confidence": 73.2,
-              "note": "Iso E Super",
-              "score": 0.952,
-              "margin": 0.316,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 46.0
         },
         {
@@ -479729,9 +479497,9 @@
               "row": 1,
               "confidence": 89.2,
               "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -479744,17 +479512,6 @@
               "note": "Campion Flower",
               "score": 0.583,
               "margin": 0.012,
-              "exactText": false
-            },
-            {
-              "raw": "Vetiv er",
-              "x": 280.6666666666667,
-              "y": 279.6666666666667,
-              "row": 1,
-              "confidence": 89.2,
-              "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
               "exactText": false
             }
           ],
@@ -541300,13 +541057,95 @@
         "Carnation",
         "Peony"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Vanilla",
+        "Fig Leaf",
+        "Sandalwood",
+        "Patchouli",
+        "Carnation",
+        "Peony"
+      ],
+      "components": [
+        {
+          "raw": "Vanilla",
+          "x": 31.666666666666668,
+          "y": 166.0,
+          "row": 0,
+          "confidence": 96.4,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "FigLeaf",
+          "x": 144.0,
+          "y": 167.0,
+          "row": 0,
+          "confidence": 82.6,
+          "note": "Fig Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 254.66666666666666,
+          "y": 167.66666666666666,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Patchouli",
+          "x": 33.0,
+          "y": 289.6666666666667,
+          "row": 1,
+          "confidence": 93.7,
+          "note": "Patchouli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Carnation",
+          "x": 143.33333333333334,
+          "y": 289.3333333333333,
+          "row": 1,
+          "confidence": 93.7,
+          "note": "Carnation",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Peony",
+          "x": 255.0,
+          "y": 289.6666666666667,
+          "row": 1,
+          "confidence": 95.9,
+          "note": "Peony",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 48.7,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Vanilla",
             "Fig Leaf",
@@ -541334,9 +541173,9 @@
               "row": 0,
               "confidence": 82.6,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Sandalwood",
@@ -541383,19 +541222,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "FigLeaf",
-              "x": 144.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 82.6,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
@@ -541508,8 +541335,8 @@
         {
           "variant": "contrast-260",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Vanilla",
             "Fig Leaf",
@@ -541537,9 +541364,9 @@
               "row": 0,
               "confidence": 81.1,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Sandalwood",
@@ -541586,19 +541413,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "FigLeaf",
-              "x": 144.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 81.1,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
@@ -541921,9 +541736,9 @@
               "row": 0,
               "confidence": 73.5,
               "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Sandalwood BN ity he",
@@ -541971,17 +541786,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "FigLeaf",
-              "x": 144.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 73.5,
-              "note": "Fig Leaf",
-              "score": 0.933,
-              "margin": 0.333,
-              "exactText": false
-            },
             {
               "raw": "Sandalwood BN ity he",
               "x": 254.0,
@@ -588919,9 +588723,9 @@
               "row": 0,
               "confidence": 82.3,
               "note": "Orange Blossom",
-              "score": 0.966,
-              "margin": 0.166,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Leaf Violet",
@@ -588947,17 +588751,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Ora nge Blossom",
-              "x": 272.0,
-              "y": 151.0,
-              "row": 0,
-              "confidence": 82.3,
-              "note": "Orange Blossom",
-              "score": 0.966,
-              "margin": 0.166,
-              "exactText": false
-            },
             {
               "raw": "Leaf Violet",
               "x": 32.0,
@@ -610753,9 +610546,9 @@
               "row": 0,
               "confidence": 76.4,
               "note": "Oakmoss",
-              "score": 0.933,
-              "margin": 0.378,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Narcissus",
@@ -610781,17 +610574,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Oa kmoss",
-              "x": 324.0,
-              "y": 127.0,
-              "row": 0,
-              "confidence": 76.4,
-              "note": "Oakmoss",
-              "score": 0.933,
-              "margin": 0.378,
-              "exactText": false
-            },
             {
               "raw": "TNS Lime (Linde...",
               "x": 325.0,
@@ -668786,8 +668568,8 @@
         {
           "variant": "threshold-185",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Plum",
             "Vetiver",
@@ -668813,9 +668595,9 @@
               "row": 0,
               "confidence": 92.4,
               "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Iris",
@@ -668840,19 +668622,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Vetiv er",
-              "x": 152.0,
-              "y": 150.0,
-              "row": 0,
-              "confidence": 92.4,
-              "note": "Vetiver",
-              "score": 0.933,
-              "margin": 0.4,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 49.0
         },
         {
