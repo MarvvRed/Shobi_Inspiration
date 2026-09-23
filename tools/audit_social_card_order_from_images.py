@@ -119,6 +119,15 @@ def candidate(raw, lexicon):
     exact = [name for name in lexicon if norm(name) == target]
     if len(exact) == 1:
         return exact[0], 1.0, 1.0, True
+    # Tesseract can reverse the two words of a wrapped label while retaining
+    # every visible letter ("Leaf Violet" for the Fragrantica label "Violet
+    # Leaf"). This is an OCR layout artefact, not a substitute supplied by
+    # the catalog, and is accepted only when that unordered word set has one
+    # unique official note name.
+    word_set = sorted(target.split())
+    reordered_exact = [name for name in lexicon if sorted(norm(name).split()) == word_set]
+    if len(reordered_exact) == 1:
+        return reordered_exact[0], 1.0, 1.0, True
     # Typography only: a card can render a space as joined ("ISOE", "FigLeaf")
     # without changing a single visible letter. Never use this if it is ambiguous.
     compact_target = target.replace(" ", "")
