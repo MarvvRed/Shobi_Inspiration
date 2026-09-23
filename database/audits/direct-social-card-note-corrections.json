@@ -1,5 +1,58 @@
 {
   "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
-  "count": 0,
-  "corrections": []
+  "count": 2,
+  "corrections": [
+    {
+      "code": "2213-AMG",
+      "fragranticaId": "75064",
+      "card": "database/fragrantica/social-cards/images/current_2213-AMG_75064.jpeg",
+      "previousNotes": [
+        "Tobacco",
+        "Cocoa",
+        "Olibanum (Frankincense)",
+        "Myrrh",
+        "Vanilla",
+        "Birch Tar"
+      ],
+      "socialCardNotes": [
+        "Tobacco",
+        "Licorice",
+        "Olibanum (Frankincense)",
+        "Myrrh",
+        "Vanilla",
+        "Birch Tar"
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "245-JOM",
+      "fragranticaId": "2280",
+      "card": "database/fragrantica/social-cards/images/current_245-JOM_2280.jpeg",
+      "previousNotes": [
+        "Cacao Pod",
+        "Vanilla",
+        "Cardamom",
+        "Cinnamon",
+        "Lime",
+        "Vetiver"
+      ],
+      "socialCardNotes": [
+        "Cacao Pod",
+        "Vanilla",
+        "Cardamom",
+        "Cinnamon",
+        "Lime (Linden) Blossom",
+        "Vetiver"
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    }
+  ]
 }
