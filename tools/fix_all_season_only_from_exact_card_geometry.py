@@ -41,6 +41,13 @@ def measure(path):
 
 def code(v):return str(v or '').strip().upper()
 
+def exact_current_card(c,fid):
+    """Return the current Social Card only when its filename proves code + FID."""
+    card=ROOT/'database/fragrantica/social-cards/images'/f'current_{c}_{fid}.jpeg'
+    if not card.is_file():
+        return None
+    return str(card.relative_to(ROOT))
+
 db=json.loads(DB.read_text(encoding='utf-8-sig')); site=json.loads(SITE.read_text(encoding='utf-8-sig'))
 val={code(x.get('code')):x for x in json.loads(VAL.read_text(encoding='utf-8'))}
 raw={code(x.get('code')):x for x in json.loads(RAW.read_text(encoding='utf-8'))}
@@ -59,6 +66,11 @@ for r,s in zip(db,site):
         if str(src.get('fragranticaId') or '').strip()!=fid:continue
         card=str(src.get('card') or '').strip()
         if card and (ROOT/card).is_file():candidates.append((src_name,card))
+    # Notes sidecars can be stale after an identity correction. A current-card
+    # filename encodes the exact code + FID, so it remains direct card evidence.
+    if not candidates:
+        card=exact_current_card(c,fid)
+        if card:candidates.append(('exact-current-image',card))
     unique=[]
     for item in candidates:
         if item[1] not in [x[1] for x in unique]:unique.append(item)
