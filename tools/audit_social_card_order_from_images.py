@@ -265,8 +265,24 @@ def inspect(task):
 
 def main():
     rows = json.loads(DB.read_text(encoding="utf-8-sig"))
+    only_current_yellows = os.environ.get("SOCIAL_CARD_AUDIT_ONLY_CURRENT_YELLOWS") == "1"
+    existing_by_code = {}
+    if only_current_yellows:
+        # Preserve certified rows exactly as they are. This mode reuses the
+        # original reader only on the current unresolved set.
+        existing = json.loads(OUT.read_text(encoding="utf-8-sig"))
+        existing_by_code = {code(item.get("code")): item for item in existing.get("rows", [])}
+        missing = [code(row.get("code")) for row in rows if code(row.get("code")) not in existing_by_code]
+        if missing:
+            raise SystemExit(f"Canonical audit is incomplete; refusing targeted overwrite: {missing[:10]}")
+        target_rows = [
+            row for row in rows
+            if str((row.get("validationAudit") or {}).get("status") or "").lower() == "yellow"
+        ]
+    else:
+        target_rows = rows
     lexicon = [line.strip() for line in LEXICON.read_text(encoding="utf-8").splitlines() if line.strip()]
-    tasks = [(row, str(find_card(row)) if find_card(row) else "", lexicon) for row in rows]
+    tasks = [(row, str(find_card(row)) if find_card(row) else "", lexicon) for row in target_rows]
     # Hosted CI runners have less headroom than a development machine. Keep
     # the default fast locally, while allowing workflows to lower concurrency.
     requested_workers = int(os.environ.get("SOCIAL_CARD_AUDIT_WORKERS", "6"))
@@ -283,14 +299,18 @@ def main():
                 results.append(future.result())
                 if i % 100 == 0:
                     print(f"audited {i}/{len(tasks)}", flush=True)
+    if only_current_yellows:
+        result_by_code = {code(item.get("code")): item for item in results}
+        results = [result_by_code.get(code(row.get("code")), existing_by_code[code(row.get("code"))]) for row in rows]
     results.sort(key=lambda r: code(r["code"]))
     counts = Counter(r["result"] for r in results)
     report = {
         "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
-        "catalogRows": len(rows), "results": dict(sorted(counts.items())), "rows": results,
+        "catalogRows": len(rows), "targetedCurrentYellows": len(target_rows) if only_current_yellows else None,
+        "results": dict(sorted(counts.items())), "rows": results,
     }
     OUT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"catalogRows": len(rows), "results": report["results"], "output": str(OUT)}, indent=2))
+    print(json.dumps({"catalogRows": len(rows), "targetedCurrentYellows": len(target_rows) if only_current_yellows else None, "results": report["results"], "output": str(OUT)}, indent=2))
 
 
 if __name__ == "__main__":
