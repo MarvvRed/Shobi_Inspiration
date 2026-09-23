@@ -3,9 +3,10 @@
   "catalogRows": 2253,
   "targetedCurrentYellows": 226,
   "results": {
+    "EXACT_ORDERED_CARD_NOTES_DIFFER": 55,
     "EXACT_ORDERED_MATCH": 1981,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 266,
+    "READING_NOT_STRICT_ENOUGH": 211,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -12634,7 +12635,91 @@
         "Lotus",
         "Cashmir wood"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Vetiver",
+        "Honey",
+        "Woody Notes",
+        "Violet Leaf",
+        "Lotus",
+        "Cashmir wood"
+      ],
+      "components": [
+        {
+          "raw": "Vetiver",
+          "x": 32.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Vetiver",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Honey",
+          "x": 153.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 96.0,
+          "note": "Honey",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Woody Notes",
+          "x": 272.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 95.8,
+          "note": "Woody Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Violet Leaf",
+          "x": 32.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 55.9,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lotus",
+          "x": 153.0,
+          "y": 317.0,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Lotus",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cashmir wood",
+          "x": 272.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 90.8,
+          "note": "Cashmir wood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -13377,7 +13462,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1038-BLG",
@@ -15137,7 +15224,91 @@
         "Lavender",
         "Green Notes"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Oakmoss",
+        "Rose",
+        "Hyacinth",
+        "Aldehydes",
+        "Amber",
+        "Sandalwood"
+      ],
+      "components": [
+        {
+          "raw": "Oakmoss",
+          "x": 32.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 89.2,
+          "note": "Oakmoss",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 153.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Hyacinth",
+          "x": 255.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Hyacinth",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Aldehydes",
+          "x": 32.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.2,
+          "note": "Aldehydes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amber",
+          "x": 152.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 66.2,
+          "note": "Amber",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 254.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 66.2,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -15763,7 +15934,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1045-CAL",
@@ -27320,7 +27493,91 @@
         "Lavender",
         "Cedar"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Leather",
+        "Violet Leaf",
+        "Nutmeg",
+        "Vetiver",
+        "Lavender",
+        "Cedar"
+      ],
+      "components": [
+        {
+          "raw": "Leather",
+          "x": 33.0,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 87.2,
+          "note": "Leather",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Violet Leaf",
+          "x": 151.66666666666666,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 85.1,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Nutmeg",
+          "x": 273.0,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Nutmeg",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vetiver",
+          "x": 32.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Vetiver",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lavender",
+          "x": 153.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 95.5,
+          "note": "Lavender",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 272.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.2,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -28017,7 +28274,9 @@
           ],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1077-DRC",
@@ -43306,7 +43565,91 @@
         "Orange",
         "Rosemary"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Sea Water",
+        "Aquozone",
+        "Mineral Notes",
+        "Bergamot",
+        "Mandarin Orange",
+        "Rosemary"
+      ],
+      "components": [
+        {
+          "raw": "Sea Water",
+          "x": 32.333333333333336,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 92.5,
+          "note": "Sea Water",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Aquozone",
+          "x": 151.66666666666666,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 92.1,
+          "note": "Aquozone",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mineral Notes",
+          "x": 273.0,
+          "y": 141.66666666666666,
+          "row": 0,
+          "confidence": 95.3,
+          "note": "Mineral Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 33.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 152.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.0,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rosemary",
+          "x": 273.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.5,
+          "note": "Rosemary",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -43932,7 +44275,9 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1127-ARM",
@@ -44209,7 +44554,91 @@
         "Heliotrope",
         "Orange Blossom"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Tonka Bean",
+        "Amberwood",
+        "Bergamot",
+        "Mandarin Orange",
+        "Heliotrope",
+        "Orange Blossom"
+      ],
+      "components": [
+        {
+          "raw": "Tonka Bean",
+          "x": 32.333333333333336,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Tonka Bean",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amberwood",
+          "x": 143.66666666666666,
+          "y": 141.0,
+          "row": 0,
+          "confidence": 92.5,
+          "note": "Amberwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 282.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 32.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 91.3,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Heliotrope",
+          "x": 145.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 90.5,
+          "note": "Heliotrope",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Orange Blossom",
+          "x": 281.3333333333333,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.2,
+          "note": "Orange Blossom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -44823,7 +45252,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1129-ARM",
@@ -54699,7 +55130,91 @@
         "Plum",
         "Bergamot"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Apple",
+        "Vanilla",
+        "Cinnamon",
+        "Sandalwood",
+        "Plum",
+        "Bergamot"
+      ],
+      "components": [
+        {
+          "raw": "Apple",
+          "x": 31.666666666666668,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Apple",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 169.66666666666666,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 94.2,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cinnamon",
+          "x": 276.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.0,
+          "note": "Cinnamon",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 32.333333333333336,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Plum",
+          "x": 171.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.7,
+          "note": "Plum",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 277.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.4,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -55337,7 +55852,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1161-HUG",
@@ -58375,7 +58892,91 @@
         "Vetiver",
         "Lemon Verbena"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Yuzu",
+        "Water",
+        "Lemon",
+        "Lotus",
+        "Mint",
+        "Green Notes"
+      ],
+      "components": [
+        {
+          "raw": "YuZU",
+          "x": 32.0,
+          "y": 165.66666666666666,
+          "row": 0,
+          "confidence": 58.5,
+          "note": "Yuzu",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Water",
+          "x": 151.66666666666666,
+          "y": 165.66666666666666,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Water",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lemon",
+          "x": 273.0,
+          "y": 165.66666666666666,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Lemon",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lotus",
+          "x": 33.0,
+          "y": 298.6666666666667,
+          "row": 1,
+          "confidence": 92.1,
+          "note": "Lotus",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mint",
+          "x": 153.0,
+          "y": 298.3333333333333,
+          "row": 1,
+          "confidence": 95.5,
+          "note": "Mint",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Green Notes",
+          "x": 272.0,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 96.6,
+          "note": "Green Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -59095,7 +59696,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1173-ISS",
@@ -69919,7 +70522,91 @@
         "Grapefruit",
         "Woody Notes"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Violet Leaf",
+        "Cinnamon",
+        "Tonka Bean",
+        "Clary Sage",
+        "Grapefruit",
+        "Woody Notes"
+      ],
+      "components": [
+        {
+          "raw": "Violet Leaf",
+          "x": 32.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 96.0,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cinnamon",
+          "x": 152.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 80.7,
+          "note": "Cinnamon",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Tonka Bean",
+          "x": 272.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 80.7,
+          "note": "Tonka Bean",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Clary sage",
+          "x": 32.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 70.8,
+          "note": "Clary Sage",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Grapefruit",
+          "x": 152.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 89.2,
+          "note": "Grapefruit",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Woody Notes",
+          "x": 272.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 89.2,
+          "note": "Woody Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -70629,7 +71316,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1209-MNTB",
@@ -81798,7 +82487,91 @@
         "Vanilla",
         "Orange Blossom"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Patchouli",
+        "Benzoin",
+        "Sandalwood",
+        "Musk",
+        "Bergamot",
+        "Rose"
+      ],
+      "components": [
+        {
+          "raw": "Patchouli",
+          "x": 33.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 70.4,
+          "note": "Patchouli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Benzoin",
+          "x": 144.0,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 89.6,
+          "note": "Benzoin",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 254.33333333333334,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 33.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.8,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 144.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.8,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 255.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.8,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -82460,7 +83233,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1246-RAL",
@@ -90340,7 +91115,91 @@
         "Leather",
         "Cedar"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Dark Chocolate",
+        "Hazelnut",
+        "Coffee",
+        "Myrtle",
+        "Leather",
+        "Cedar"
+      ],
+      "components": [
+        {
+          "raw": "Dark Chocolate",
+          "x": 32.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Dark Chocolate",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Hazelnut",
+          "x": 153.0,
+          "y": 165.66666666666666,
+          "row": 0,
+          "confidence": 95.6,
+          "note": "Hazelnut",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Coffee",
+          "x": 272.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 91.9,
+          "note": "Coffee",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Myrtle",
+          "x": 33.0,
+          "y": 323.6666666666667,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Myrtle",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Leather",
+          "x": 153.0,
+          "y": 325.6666666666667,
+          "row": 1,
+          "confidence": 91.8,
+          "note": "Leather",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 272.0,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 79.3,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -91050,7 +91909,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "127-KIL",
@@ -93770,7 +94631,67 @@
         "Amber",
         "Woody Notes"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Sage",
+        "Apple",
+        "Amber",
+        "Woody Notes"
+      ],
+      "components": [
+        {
+          "raw": "Sage",
+          "x": 32.333333333333336,
+          "y": 162.0,
+          "row": 0,
+          "confidence": 82.3,
+          "note": "Sage",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Apple",
+          "x": 151.66666666666666,
+          "y": 162.33333333333334,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Apple",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amber",
+          "x": 271.6666666666667,
+          "y": 162.33333333333334,
+          "row": 0,
+          "confidence": 95.9,
+          "note": "Amber",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Woody Notes",
+          "x": 31.666666666666668,
+          "y": 295.0,
+          "row": 1,
+          "confidence": 96.5,
+          "note": "Woody Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 32.0,
+      "labelCounts": [
+        3,
+        1
+      ],
+      "iconCounts": [
+        3,
+        1
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -94276,7 +95197,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "128-LEL",
@@ -96424,7 +97347,91 @@
         "Amyris",
         "Orange"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Jasmine",
+        "Orange Blossom",
+        "Ylang-Ylang",
+        "Patchouli",
+        "Amyris",
+        "Mandarin Orange"
+      ],
+      "components": [
+        {
+          "raw": "Jasmine",
+          "x": 32.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 73.7,
+          "note": "Jasmine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Orange Blossom",
+          "x": 152.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 73.7,
+          "note": "Orange Blossom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ylang- Ylang",
+          "x": 272.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 88.9,
+          "note": "Ylang-Ylang",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Patchouli",
+          "x": 33.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 83.4,
+          "note": "Patchouli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amyris",
+          "x": 152.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 85.4,
+          "note": "Amyris",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 272.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.8,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -97071,7 +98078,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1286-YZLO",
@@ -123243,7 +124252,91 @@
         "Freesia",
         "Water Lily"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Lemon",
+        "Mimosa",
+        "Pear",
+        "Bergamot",
+        "Freesia",
+        "Water Lily"
+      ],
+      "components": [
+        {
+          "raw": "Lemon",
+          "x": 32.666666666666664,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 96.0,
+          "note": "Lemon",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mimosa",
+          "x": 153.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.2,
+          "note": "Mimosa",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pear",
+          "x": 272.6666666666667,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Pear",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 32.666666666666664,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 89.2,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Freesia",
+          "x": 152.66666666666666,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 89.2,
+          "note": "Freesia",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Water Lily",
+          "x": 271.6666666666667,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.6,
+          "note": "Water Lily",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -123952,7 +125045,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1553-MNT",
@@ -135383,7 +136478,91 @@
         "Iris",
         "Benzoin"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Musk",
+        "Floral Notes",
+        "Vanilla",
+        "Iris",
+        "Benzoin",
+        "Sandalwood"
+      ],
+      "components": [
+        {
+          "raw": "Musk",
+          "x": 33.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Floral Notes",
+          "x": 144.0,
+          "y": 164.0,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Floral Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 253.66666666666666,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Iris",
+          "x": 33.0,
+          "y": 325.6666666666667,
+          "row": 1,
+          "confidence": 78.6,
+          "note": "Iris",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Benzoin",
+          "x": 144.0,
+          "y": 325.3333333333333,
+          "row": 1,
+          "confidence": 89.4,
+          "note": "Benzoin",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 254.33333333333334,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 95.4,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -136093,7 +137272,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1639-TER",
@@ -142744,7 +143925,91 @@
         "Sand",
         "Heliotrope"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Vanilla",
+        "Red Apple",
+        "Amber",
+        "Sandalwood",
+        "Pineapple",
+        "Heliotrope"
+      ],
+      "components": [
+        {
+          "raw": "Vanilla",
+          "x": 32.0,
+          "y": 164.0,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Red Apple",
+          "x": 169.66666666666666,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.4,
+          "note": "Red Apple",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amber",
+          "x": 282.6666666666667,
+          "y": 165.66666666666666,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Amber",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 32.666666666666664,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 92.9,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pineapple",
+          "x": 171.0,
+          "y": 325.3333333333333,
+          "row": 1,
+          "confidence": 93.2,
+          "note": "Pineapple",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Heliotrope",
+          "x": 284.0,
+          "y": 325.6666666666667,
+          "row": 1,
+          "confidence": 90.8,
+          "note": "Heliotrope",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -143418,7 +144683,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "166-AZ",
@@ -170341,7 +171608,91 @@
         "Pear",
         "Orange"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Almond Blossom",
+        "Amberwood",
+        "Jasmine",
+        "Musk",
+        "Pear",
+        "Mandarin Orange"
+      ],
+      "components": [
+        {
+          "raw": "Almond Blossom",
+          "x": 31.666666666666668,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 78.6,
+          "note": "Almond Blossom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amberwood",
+          "x": 143.66666666666666,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 78.6,
+          "note": "Amberwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Jasmine",
+          "x": 281.0,
+          "y": 156.66666666666666,
+          "row": 0,
+          "confidence": 96.4,
+          "note": "Jasmine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 33.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.5,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pear",
+          "x": 145.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.9,
+          "note": "Pear",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 281.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -171015,7 +172366,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1775-DIP",
@@ -179346,7 +180699,91 @@
         "Almonds",
         "Bergamot"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Rose",
+        "Mandarin Orange",
+        "Musk",
+        "Patchouli",
+        "Ambergris",
+        "Bergamot"
+      ],
+      "components": [
+        {
+          "raw": "Rose",
+          "x": 33.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange...",
+          "x": 152.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 89.1,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 273.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 89.1,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Patchouli",
+          "x": 33.0,
+          "y": 325.3333333333333,
+          "row": 1,
+          "confidence": 86.1,
+          "note": "Patchouli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ambergris",
+          "x": 151.66666666666666,
+          "y": 325.3333333333333,
+          "row": 1,
+          "confidence": 94.0,
+          "note": "Ambergris",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 273.0,
+          "y": 325.3333333333333,
+          "row": 1,
+          "confidence": 96.4,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -179983,7 +181420,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "1814-AJMA",
@@ -220951,7 +222390,91 @@
         "Labdanum",
         "Plum"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Vanilla",
+        "Amber",
+        "Woody Notes",
+        "Musk",
+        "Labdanum",
+        "Plum"
+      ],
+      "components": [
+        {
+          "raw": "Vanilla",
+          "x": 31.666666666666668,
+          "y": 164.0,
+          "row": 0,
+          "confidence": 95.5,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amber",
+          "x": 151.66666666666666,
+          "y": 164.33333333333334,
+          "row": 0,
+          "confidence": 95.6,
+          "note": "Amber",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Woody Notes",
+          "x": 271.6666666666667,
+          "y": 165.66666666666666,
+          "row": 0,
+          "confidence": 96.0,
+          "note": "Woody Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 33.0,
+          "y": 325.6666666666667,
+          "row": 1,
+          "confidence": 96.5,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Labdanum",
+          "x": 153.0,
+          "y": 325.6666666666667,
+          "row": 1,
+          "confidence": 75.2,
+          "note": "Labdanum",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Plum",
+          "x": 273.0,
+          "y": 325.3333333333333,
+          "row": 1,
+          "confidence": 96.8,
+          "note": "Plum",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -221649,7 +223172,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "194-ARM",
@@ -262258,7 +263783,91 @@
         "Violet",
         "Orris Root"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Tuberose",
+        "Bergamot",
+        "Rose",
+        "Jasmine",
+        "Violet Leaf",
+        "Orris Root"
+      ],
+      "components": [
+        {
+          "raw": "Tuberose",
+          "x": 32.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 92.3,
+          "note": "Tuberose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 153.0,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 96.1,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 273.0,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Jasmine",
+          "x": 32.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 88.4,
+          "note": "Jasmine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Violet Leaf",
+          "x": 151.66666666666666,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 74.5,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Orris Root",
+          "x": 272.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 93.0,
+          "note": "Orris Root",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -262841,7 +264450,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2090-MNT",
@@ -267731,7 +269342,91 @@
         "Nutmeg",
         "Pimento"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Saffron",
+        "Violet Leaf",
+        "Pepper",
+        "Ambroxan",
+        "Nutmeg",
+        "Pimento"
+      ],
+      "components": [
+        {
+          "raw": "Saffron",
+          "x": 32.333333333333336,
+          "y": 181.33333333333334,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Saffron",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Violet Leaf",
+          "x": 151.66666666666666,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 92.1,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pepper",
+          "x": 273.0,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Pepper",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ambroxan",
+          "x": 31.666666666666668,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 91.1,
+          "note": "Ambroxan",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Nutmeg",
+          "x": 153.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 89.8,
+          "note": "Nutmeg",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pimento",
+          "x": 273.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Pimento",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -268429,7 +270124,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2107-GUR",
@@ -282727,7 +284424,91 @@
         "Orange",
         "Petitgrain"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Tea",
+        "Musk",
+        "Black Currant",
+        "Bergamot",
+        "Mandarin Orange",
+        "Petitgrain"
+      ],
+      "components": [
+        {
+          "raw": "Tea",
+          "x": 32.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 95.4,
+          "note": "Tea",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 152.66666666666666,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 96.8,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Black Currant",
+          "x": 272.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Black Currant",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 33.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.9,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 152.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 95.4,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Petitgrain",
+          "x": 273.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 91.8,
+          "note": "Petitgrain",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -283424,7 +285205,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2150-LEL",
@@ -291147,7 +292930,91 @@
         "Sandalwood",
         "Tonka Bean"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Vanilla",
+        "Coconut",
+        "Beeswax",
+        "Licorice",
+        "Sandalwood",
+        "Tonka Bean"
+      ],
+      "components": [
+        {
+          "raw": "Vanilla",
+          "x": 32.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Coconut",
+          "x": 143.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Coconut",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Beeswax",
+          "x": 282.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 93.5,
+          "note": "Beeswax",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Licorice",
+          "x": 33.0,
+          "y": 298.3333333333333,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Licorice",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 143.33333333333334,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Tonka Bean",
+          "x": 280.6666666666667,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 96.4,
+          "note": "Tonka Bean",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -291881,7 +293748,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2178-MON",
@@ -300460,7 +302329,91 @@
         "Sandalwood",
         "Plum"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Bitter Orange",
+        "Orange",
+        "Mandarin Orange",
+        "Amber",
+        "Sandalwood",
+        "Plum"
+      ],
+      "components": [
+        {
+          "raw": "Bitter Orange",
+          "x": 32.0,
+          "y": 164.0,
+          "row": 0,
+          "confidence": 96.0,
+          "note": "Bitter Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Orange",
+          "x": 143.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 96.2,
+          "note": "Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 281.0,
+          "y": 165.66666666666666,
+          "row": 0,
+          "confidence": 95.9,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amber",
+          "x": 31.666666666666668,
+          "y": 323.6666666666667,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Amber",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 143.66666666666666,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Plum",
+          "x": 282.0,
+          "y": 325.3333333333333,
+          "row": 1,
+          "confidence": 96.9,
+          "note": "Plum",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -301014,7 +302967,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2211-YZLO",
@@ -311278,7 +313233,91 @@
         "Dewberry",
         "Coconut"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Magnolia",
+        "Dewberry",
+        "Coconut",
+        "Musk",
+        "Jasmine",
+        "Patchouli"
+      ],
+      "components": [
+        {
+          "raw": "Magnolia",
+          "x": 33.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 91.2,
+          "note": "Magnolia",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Dewberry",
+          "x": 153.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 91.2,
+          "note": "Dewberry",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Coconut",
+          "x": 272.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 95.8,
+          "note": "Coconut",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 33.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.6,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Jasmine",
+          "x": 152.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 89.8,
+          "note": "Jasmine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Patchouli",
+          "x": 273.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 69.0,
+          "note": "Patchouli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -312023,7 +314062,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2247-LTN",
@@ -340407,7 +342448,91 @@
         "Orange",
         "Vanilla"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Honey",
+        "Saffron",
+        "Sandalwood",
+        "Lily",
+        "Orange",
+        "Vanilla"
+      ],
+      "components": [
+        {
+          "raw": "Honey",
+          "x": 33.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.2,
+          "note": "Honey",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Saffron",
+          "x": 143.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Saffron",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 254.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 95.8,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lily",
+          "x": 33.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.5,
+          "note": "Lily",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Orange",
+          "x": 143.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 254.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.0,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -341162,7 +343287,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "233-ESCE",
@@ -349783,7 +351910,91 @@
         "Spicy Notes",
         "Myrtle"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Sandalwood",
+        "Cedar",
+        "Cypress",
+        "Brazilian Rosewood",
+        "Spicy Notes",
+        "Myrtle"
+      ],
+      "components": [
+        {
+          "raw": "Sandalwood",
+          "x": 32.666666666666664,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 96.0,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 170.33333333333334,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 96.0,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cypress",
+          "x": 281.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Cypress",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Brazilian Rosewood",
+          "x": 33.0,
+          "y": 297.0,
+          "row": 1,
+          "confidence": 83.1,
+          "note": "Brazilian Rosewood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Spicy Notes",
+          "x": 170.66666666666666,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 83.1,
+          "note": "Spicy Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Myrtle",
+          "x": 282.0,
+          "y": 298.3333333333333,
+          "row": 1,
+          "confidence": 96.8,
+          "note": "Myrtle",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -350492,7 +352703,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2367-DIP",
@@ -350503,7 +352716,91 @@
         "Lime",
         "Woody Notes"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Mandarin Orange",
+        "Yuzu",
+        "Thyme",
+        "Lemon",
+        "Lime",
+        "Woody Notes"
+      ],
+      "components": [
+        {
+          "raw": "Mandarin Orange",
+          "x": 32.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 92.8,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Yuzu",
+          "x": 151.66666666666666,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 92.8,
+          "note": "Yuzu",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Thyme",
+          "x": 272.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 95.7,
+          "note": "Thyme",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lemon",
+          "x": 33.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 95.4,
+          "note": "Lemon",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lime",
+          "x": 153.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.0,
+          "note": "Lime",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Woody Notes",
+          "x": 271.6666666666667,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 95.9,
+          "note": "Woody Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -351189,7 +353486,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2368-ESC",
@@ -360505,7 +362804,91 @@
         "Marshmallow",
         "Jelly"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Vanilla",
+        "Sugar",
+        "Bubble Gum",
+        "Pear",
+        "Marshmallow",
+        "Jellybean"
+      ],
+      "components": [
+        {
+          "raw": "Vanilla",
+          "x": 31.666666666666668,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 86.6,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sugar",
+          "x": 133.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 65.6,
+          "note": "Sugar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bubble Gum",
+          "x": 281.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 95.9,
+          "note": "Bubble Gum",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pear",
+          "x": 33.0,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 96.9,
+          "note": "Pear",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Marshmallow",
+          "x": 134.0,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 67.1,
+          "note": "Marshmallow",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Jellybean",
+          "x": 281.0,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 67.1,
+          "note": "Jellybean",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -361203,7 +363586,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2402-AKR",
@@ -369355,7 +371740,91 @@
         "Fern",
         "Orange Blossom"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Sea Water",
+        "Citruses",
+        "Lemon Verbena",
+        "Musk",
+        "Fern",
+        "Orange Blossom"
+      ],
+      "components": [
+        {
+          "raw": "Sea Water",
+          "x": 32.333333333333336,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 93.2,
+          "note": "Sea Water",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Citruses",
+          "x": 152.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 74.9,
+          "note": "Citruses",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lemon Verbena",
+          "x": 271.6666666666667,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 95.5,
+          "note": "Lemon Verbena",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 33.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.6,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Fern",
+          "x": 153.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 95.3,
+          "note": "Fern",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Orange Blossom",
+          "x": 272.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.5,
+          "note": "Orange Blossom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -370073,7 +372542,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2428-MARG",
@@ -377018,7 +379489,91 @@
         "Pink Pepper",
         "Pepper"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Cherry",
+        "Cognac",
+        "Tobacco",
+        "Vanilla",
+        "Pink Pepper",
+        "Pepper"
+      ],
+      "components": [
+        {
+          "raw": "Cherry",
+          "x": 32.0,
+          "y": 163.66666666666666,
+          "row": 0,
+          "confidence": 96.4,
+          "note": "Cherry",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cognac",
+          "x": 152.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 90.2,
+          "note": "Cognac",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Tobacco",
+          "x": 272.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 63.9,
+          "note": "Tobacco",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 32.0,
+          "y": 297.0,
+          "row": 1,
+          "confidence": 96.6,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pink Pepper",
+          "x": 153.0,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Pink Pepper",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pepper",
+          "x": 273.0,
+          "y": 298.3333333333333,
+          "row": 1,
+          "confidence": 96.8,
+          "note": "Pepper",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -377692,7 +380247,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2454-KIL",
@@ -397140,7 +399697,91 @@
         "Agarwood (Oud)",
         "Saffron"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Passionfruit",
+        "Agarwood (Oud)",
+        "Leather",
+        "Fruity Notes",
+        "Akigalawood",
+        "Saffron"
+      ],
+      "components": [
+        {
+          "raw": "Passionfruit",
+          "x": 33.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 80.5,
+          "note": "Passionfruit",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Agarwood (Oud)",
+          "x": 161.66666666666666,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 92.2,
+          "note": "Agarwood (Oud)",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Leather",
+          "x": 305.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 96.9,
+          "note": "Leather",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Fruity Notes",
+          "x": 33.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.4,
+          "note": "Fruity Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Akigalawood",
+          "x": 161.66666666666666,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 91.9,
+          "note": "Akigalawood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Saffron",
+          "x": 304.3333333333333,
+          "y": 315.6666666666667,
+          "row": 1,
+          "confidence": 96.2,
+          "note": "Saffron",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -397873,7 +400514,9 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "251-JOM",
@@ -402704,7 +405347,91 @@
         "Raspberry",
         "Musk"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Sugar",
+        "Lemon",
+        "Vanilla",
+        "Raspberry",
+        "Musk",
+        "Freesia"
+      ],
+      "components": [
+        {
+          "raw": "Sugar",
+          "x": 32.0,
+          "y": 175.33333333333334,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Sugar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lemon",
+          "x": 153.0,
+          "y": 177.33333333333334,
+          "row": 0,
+          "confidence": 95.8,
+          "note": "Lemon",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 271.6666666666667,
+          "y": 177.0,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Raspberry",
+          "x": 33.0,
+          "y": 310.0,
+          "row": 1,
+          "confidence": 75.2,
+          "note": "Raspberry",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 153.0,
+          "y": 310.0,
+          "row": 1,
+          "confidence": 96.0,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Freesia",
+          "x": 273.0,
+          "y": 310.0,
+          "row": 1,
+          "confidence": 91.1,
+          "note": "Freesia",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 47.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -403378,7 +406105,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 47.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2527-GUR",
@@ -407716,7 +410445,91 @@
         "Cloves",
         "Cumin"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Sandalwood",
+        "Musk",
+        "Cardamom",
+        "Rose Oxide",
+        "Cloves",
+        "Cumin"
+      ],
+      "components": [
+        {
+          "raw": "Sandalwood",
+          "x": 33.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 94.5,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 171.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cardamom",
+          "x": 268.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.4,
+          "note": "Cardamom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose Oxide",
+          "x": 33.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.1,
+          "note": "Rose Oxide",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cloves",
+          "x": 170.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 94.4,
+          "note": "Cloves",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cumin",
+          "x": 268.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.8,
+          "note": "Cumin",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -408519,7 +411332,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2541-STE",
@@ -411745,7 +414560,91 @@
         "Wormwood",
         "Chamomile"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Water",
+        "Hay",
+        "Green Notes",
+        "Animal Notes",
+        "Wormwood",
+        "Chamomile"
+      ],
+      "components": [
+        {
+          "raw": "Water",
+          "x": 31.666666666666668,
+          "y": 147.33333333333334,
+          "row": 0,
+          "confidence": 95.5,
+          "note": "Water",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Hay",
+          "x": 137.0,
+          "y": 128.0,
+          "row": 0,
+          "confidence": 95.3,
+          "note": "Hay",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Green Notes",
+          "x": 265.0,
+          "y": 147.0,
+          "row": 0,
+          "confidence": 96.1,
+          "note": "Green Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Animal Notes",
+          "x": 31.666666666666668,
+          "y": 307.3333333333333,
+          "row": 1,
+          "confidence": 96.0,
+          "note": "Animal Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Wormwood",
+          "x": 135.66666666666666,
+          "y": 307.0,
+          "row": 1,
+          "confidence": 95.3,
+          "note": "Wormwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Chamomile",
+          "x": 265.0,
+          "y": 307.0,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Chamomile",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 17.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -412383,7 +415282,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 17.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2553-BON",
@@ -434677,7 +437578,91 @@
         "Pink Pepper",
         "Saffron"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Vanilla",
+        "Sugar",
+        "Cashmir wood",
+        "Sandalwood",
+        "Pink Pepper",
+        "Benzoin"
+      ],
+      "components": [
+        {
+          "raw": "Vanilla",
+          "x": 31.666666666666668,
+          "y": 154.33333333333334,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "sugar",
+          "x": 170.66666666666666,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 77.7,
+          "note": "Sugar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cashmir wood",
+          "x": 281.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 90.5,
+          "note": "Cashmir wood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 32.333333333333336,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.5,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pink Pepper",
+          "x": 171.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.2,
+          "note": "Pink Pepper",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Benzoin",
+          "x": 282.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 90.9,
+          "note": "Benzoin",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -435351,7 +438336,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2623-NES",
@@ -449797,7 +452784,91 @@
         "Sandalwood",
         "Lavender"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Violet",
+        "Musk",
+        "Pear",
+        "Floral Notes",
+        "Sandalwood",
+        "Lavender"
+      ],
+      "components": [
+        {
+          "raw": "Violet",
+          "x": 32.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Violet",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 144.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.8,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pear",
+          "x": 282.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Pear",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Floral Notes",
+          "x": 32.666666666666664,
+          "y": 296.3333333333333,
+          "row": 1,
+          "confidence": 96.8,
+          "note": "Floral Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 143.33333333333334,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 95.8,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lavender",
+          "x": 282.0,
+          "y": 298.3333333333333,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Lavender",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -450518,7 +453589,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2679-CAR",
@@ -469626,7 +472699,91 @@
         "Cacao Pod",
         "Sugar"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Musk",
+        "Pink Pepper",
+        "Cashmir wood",
+        "Cloves",
+        "Cedar",
+        "Sugar"
+      ],
+      "components": [
+        {
+          "raw": "Musk",
+          "x": 33.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.8,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pink Pepper",
+          "x": 153.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.0,
+          "note": "Pink Pepper",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cashmir wood",
+          "x": 272.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 91.1,
+          "note": "Cashmir wood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cloves",
+          "x": 32.0,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 96.2,
+          "note": "Cloves",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 152.0,
+          "y": 323.6666666666667,
+          "row": 1,
+          "confidence": 96.9,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sugar",
+          "x": 272.3333333333333,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Sugar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -470251,7 +473408,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2742-XER",
@@ -475164,7 +478323,91 @@
         "Almond",
         "Vanilla"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Cupcake",
+        "Butter",
+        "Sugar",
+        "Frosting [Glacé]",
+        "Almond",
+        "Vanilla"
+      ],
+      "components": [
+        {
+          "raw": "Cupcake",
+          "x": 32.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 94.9,
+          "note": "Cupcake",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Butter",
+          "x": 153.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 68.0,
+          "note": "Butter",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sugar",
+          "x": 272.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Sugar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Frosting [Glacé]",
+          "x": 32.666666666666664,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 90.1,
+          "note": "Frosting [Glacé]",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Almond",
+          "x": 151.66666666666666,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 90.6,
+          "note": "Almond",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 271.6666666666667,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 96.5,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -475814,7 +479057,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2758-YZLO",
@@ -480927,7 +484172,91 @@
         "Jasmine",
         "Carnation"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Peony",
+        "Suede",
+        "Red Apple",
+        "Rose",
+        "Jasmine",
+        "Carnation"
+      ],
+      "components": [
+        {
+          "raw": "Peony",
+          "x": 33.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Peony",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Suede",
+          "x": 153.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Suede",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Red Apple",
+          "x": 273.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 94.6,
+          "note": "Red Apple",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 33.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.6,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Jasmine",
+          "x": 152.0,
+          "y": 317.0,
+          "row": 1,
+          "confidence": 96.2,
+          "note": "Jasmine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Carnation",
+          "x": 272.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Carnation",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -481672,7 +485001,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2770-DOL",
@@ -494745,7 +498076,91 @@
         "Brown Sugar",
         "Licorice"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Fig",
+        "Fig Leaf",
+        "Ylang-Ylang",
+        "Salt",
+        "Brown Sugar",
+        "Licorice"
+      ],
+      "components": [
+        {
+          "raw": "Fig",
+          "x": 33.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 96.8,
+          "note": "Fig",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Fig Leaf",
+          "x": 153.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 77.1,
+          "note": "Fig Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ylang- Ylang",
+          "x": 272.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 90.2,
+          "note": "Ylang-Ylang",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Salt",
+          "x": 32.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.4,
+          "note": "Salt",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Brown Sugar",
+          "x": 153.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.3,
+          "note": "Brown Sugar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Licorice",
+          "x": 273.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Licorice",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -495501,7 +498916,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "2815-DOL",
@@ -512256,7 +515673,91 @@
         "Violet",
         "Ginger"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Oakmoss",
+        "Coriander",
+        "Violet Leaf",
+        "Ginger"
+      ],
+      "components": [
+        {
+          "raw": "Bergamot",
+          "x": 33.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.1,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Patchouli",
+          "x": 153.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 90.4,
+          "note": "Patchouli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Oakmoss",
+          "x": 272.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 76.6,
+          "note": "Oakmoss",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Coriander",
+          "x": 32.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.5,
+          "note": "Coriander",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Violet Leaf",
+          "x": 152.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.5,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ginger",
+          "x": 272.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Ginger",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -512975,7 +516476,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "315-MNT",
@@ -531988,7 +535491,91 @@
         "Ylang-Ylang",
         "Styrax"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Sandalwood",
+        "Plum",
+        "Peach",
+        "Carnation",
+        "Ylang-Ylang",
+        "Styrax"
+      ],
+      "components": [
+        {
+          "raw": "Sandalwood",
+          "x": 32.333333333333336,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 96.4,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Plum",
+          "x": 171.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Plum",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Peach",
+          "x": 282.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Peach",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Carnation",
+          "x": 32.0,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 96.7,
+          "note": "Carnation",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ylang- Ylang",
+          "x": 170.0,
+          "y": 298.3333333333333,
+          "row": 1,
+          "confidence": 89.9,
+          "note": "Ylang-Ylang",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "styrax",
+          "x": 281.6666666666667,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 76.7,
+          "note": "Styrax",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -532696,7 +536283,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "400-ARIA",
@@ -549452,7 +553041,91 @@
         "Carnation",
         "Honeysuckle"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Lily",
+        "Hyacinth",
+        "Lily-of-the-Valley",
+        "Jasmine",
+        "Carnation",
+        "Honeysuckle"
+      ],
+      "components": [
+        {
+          "raw": "Lily",
+          "x": 33.0,
+          "y": 165.66666666666666,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Lily",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Hyacinth",
+          "x": 138.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 90.8,
+          "note": "Hyacinth",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lily-of-the- Valley",
+          "x": 246.66666666666666,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 61.1,
+          "note": "Lily-of-the-Valley",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Jasmine",
+          "x": 32.0,
+          "y": 325.6666666666667,
+          "row": 1,
+          "confidence": 94.8,
+          "note": "Jasmine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Carnation",
+          "x": 137.0,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 94.8,
+          "note": "Carnation",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Honeysuckle",
+          "x": 248.0,
+          "y": 325.6666666666667,
+          "row": 1,
+          "confidence": 96.7,
+          "note": "Honeysuckle",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -550208,7 +553881,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "459-CAC",
@@ -556902,7 +560577,91 @@
         "Rose",
         "Pink Pepper"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Peach Blossom",
+        "Musk",
+        "Champagne Rosé",
+        "Woody Notes",
+        "Rose",
+        "Pink Pepper"
+      ],
+      "components": [
+        {
+          "raw": "Peach Blossom",
+          "x": 33.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Peach Blossom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 145.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 96.1,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Champagne Rosé",
+          "x": 256.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 61.3,
+          "note": "Champagne Rosé",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Woody Notes",
+          "x": 31.666666666666668,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.2,
+          "note": "Woody Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 145.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 61.8,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pink Pepper",
+          "x": 257.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 95.8,
+          "note": "Pink Pepper",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -557624,7 +561383,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "483-CAR",
@@ -564998,7 +568759,91 @@
         "Orange",
         "Tuberose"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Grapefruit",
+        "Orange Blossom",
+        "Jasmine",
+        "Ylang-Ylang",
+        "Mandarin Orange",
+        "Tuberose"
+      ],
+      "components": [
+        {
+          "raw": "Grapefruit",
+          "x": 32.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 95.4,
+          "note": "Grapefruit",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Orange Blossom",
+          "x": 152.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 94.8,
+          "note": "Orange Blossom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Jasmine",
+          "x": 272.0,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 96.4,
+          "note": "Jasmine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ylang- Ylang",
+          "x": 31.666666666666668,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 91.6,
+          "note": "Ylang-Ylang",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 152.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 87.2,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Tuberose",
+          "x": 272.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 88.4,
+          "note": "Tuberose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -565730,7 +569575,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "510-CHL",
@@ -582926,7 +586773,91 @@
         "French Marigold",
         "Vanilla"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Aldehydes",
+        "Carnation",
+        "Sandalwood",
+        "French Marigold",
+        "Vanilla",
+        "Coriander"
+      ],
+      "components": [
+        {
+          "raw": "Aldehydes",
+          "x": 31.666666666666668,
+          "y": 165.66666666666666,
+          "row": 0,
+          "confidence": 96.8,
+          "note": "Aldehydes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Carnation",
+          "x": 152.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Carnation",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 262.3333333333333,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 95.9,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "French Marigold",
+          "x": 32.666666666666664,
+          "y": 298.3333333333333,
+          "row": 1,
+          "confidence": 94.6,
+          "note": "French Marigold",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 152.0,
+          "y": 296.6666666666667,
+          "row": 1,
+          "confidence": 95.7,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Coriander",
+          "x": 262.3333333333333,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 96.5,
+          "note": "Coriander",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -583538,7 +587469,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "571-DAV",
@@ -601329,7 +605262,91 @@
         "Vanilla",
         "Sugar"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Strawberry",
+        "Marshmallow",
+        "Patchouli",
+        "Caramel",
+        "Vanilla",
+        "Sugar"
+      ],
+      "components": [
+        {
+          "raw": "Strawberry",
+          "x": 32.333333333333336,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 95.8,
+          "note": "Strawberry",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Marshmallow",
+          "x": 157.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 95.0,
+          "note": "Marshmallow",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Patchouli",
+          "x": 305.0,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 95.9,
+          "note": "Patchouli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Caramel",
+          "x": 32.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 89.8,
+          "note": "Caramel",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 155.66666666666666,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 69.5,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sugar",
+          "x": 304.3333333333333,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.6,
+          "note": "Sugar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -602003,7 +606020,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "631-EST",
@@ -608092,7 +612111,91 @@
         "Lemon",
         "Neroli"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Raspberry",
+        "Vanilla",
+        "Rose",
+        "Lemon",
+        "Musk",
+        "Neroli"
+      ],
+      "components": [
+        {
+          "raw": "Raspberry",
+          "x": 33.0,
+          "y": 180.0,
+          "row": 0,
+          "confidence": 95.4,
+          "note": "Raspberry",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 151.66666666666666,
+          "y": 180.0,
+          "row": 0,
+          "confidence": 95.8,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 273.0,
+          "y": 180.33333333333334,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lemon",
+          "x": 33.0,
+          "y": 313.3333333333333,
+          "row": 1,
+          "confidence": 96.6,
+          "note": "Lemon",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 153.0,
+          "y": 313.0,
+          "row": 1,
+          "confidence": 95.8,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Neroli",
+          "x": 273.0,
+          "y": 313.3333333333333,
+          "row": 1,
+          "confidence": 86.8,
+          "note": "Neroli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 50.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -608789,7 +612892,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 50.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "651-ARM",
@@ -637274,7 +641379,91 @@
         "Rose",
         "Orange"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Raspberry",
+        "Praline",
+        "Powdery Notes",
+        "Vanilla",
+        "Rose",
+        "Mandarin Orange"
+      ],
+      "components": [
+        {
+          "raw": "Raspberry",
+          "x": 33.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 94.5,
+          "note": "Raspberry",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Praline",
+          "x": 153.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 94.5,
+          "note": "Praline",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Powdery Notes",
+          "x": 273.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 96.2,
+          "note": "Powdery Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 31.666666666666668,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 93.1,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 153.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.5,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 272.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 95.8,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -637984,7 +642173,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "751-KEN",
@@ -652548,7 +656739,91 @@
         "Violet",
         "Rose"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Musk",
+        "Raspberry",
+        "Vanilla",
+        "Almond",
+        "Violet Leaf",
+        "Rose"
+      ],
+      "components": [
+        {
+          "raw": "Musk",
+          "x": 33.0,
+          "y": 183.33333333333334,
+          "row": 0,
+          "confidence": 96.4,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Raspberry",
+          "x": 153.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 96.2,
+          "note": "Raspberry",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 271.6666666666667,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 95.1,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Almond",
+          "x": 31.666666666666668,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 79.8,
+          "note": "Almond",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Violet Leaf",
+          "x": 151.66666666666666,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.5,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 272.6666666666667,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.8,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -653194,7 +657469,9 @@
           "notes": [],
           "components": []
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "796-LAN",
@@ -655879,7 +660156,91 @@
         "Musk",
         "Orange"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Bergamot",
+        "Hinoki Wood",
+        "Tea",
+        "Cedar",
+        "Musk",
+        "Mandarin Orange"
+      ],
+      "components": [
+        {
+          "raw": "Bergamot",
+          "x": 33.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 96.2,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Hinoki Wood",
+          "x": 151.66666666666666,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 90.9,
+          "note": "Hinoki Wood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Tea",
+          "x": 272.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 95.5,
+          "note": "Tea",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 32.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 153.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.6,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 272.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 95.8,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -656552,7 +660913,9 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "805-LOL",
@@ -670784,7 +675147,91 @@
         "Vanilla",
         "Ginger"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Raspberry",
+        "Caramel",
+        "Citron",
+        "Vanilla",
+        "Gardenia",
+        "Ginger"
+      ],
+      "components": [
+        {
+          "raw": "Raspberry",
+          "x": 33.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 90.0,
+          "note": "Raspberry",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Caramel",
+          "x": 152.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 91.7,
+          "note": "Caramel",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Citron",
+          "x": 272.0,
+          "y": 183.0,
+          "row": 0,
+          "confidence": 71.5,
+          "note": "Citron",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 31.666666666666668,
+          "y": 314.3333333333333,
+          "row": 1,
+          "confidence": 96.0,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Gardenia",
+          "x": 152.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 80.0,
+          "note": "Gardenia",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ginger",
+          "x": 272.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 80.0,
+          "note": "Ginger",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 53.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -671482,7 +675929,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "855-NIN",
@@ -683322,7 +687771,91 @@
         "Orange",
         "Gardenia"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Amber",
+        "Frangipani",
+        "Mango Blossom",
+        "Tiare Flower",
+        "Mandarin Orange",
+        "Gardenia"
+      ],
+      "components": [
+        {
+          "raw": "Amber",
+          "x": 31.666666666666668,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 95.7,
+          "note": "Amber",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Frangipani",
+          "x": 153.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Frangipani",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mango Blossom",
+          "x": 273.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 95.9,
+          "note": "Mango Blossom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Tiare Flower",
+          "x": 32.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.4,
+          "note": "Tiare Flower",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 152.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.4,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Gardenia",
+          "x": 272.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.9,
+          "note": "Gardenia",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -684078,7 +688611,9 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "896-RCAV",
@@ -690405,7 +694940,91 @@
         "Citruses",
         "Orange"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Jasmine",
+        "Amber",
+        "White Flowers",
+        "Cashmeran",
+        "Citruses",
+        "Mandarin Orange"
+      ],
+      "components": [
+        {
+          "raw": "Jasmine",
+          "x": 32.0,
+          "y": 156.66666666666666,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Jasmine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amber",
+          "x": 160.66666666666666,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Amber",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "White Flowers",
+          "x": 276.6666666666667,
+          "y": 156.0,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "White Flowers",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cashmeran",
+          "x": 32.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 91.6,
+          "note": "Cashmeran",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Citruses",
+          "x": 161.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 91.6,
+          "note": "Citruses",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 277.0,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 95.1,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -691138,7 +695757,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "919-TMU",
@@ -699732,7 +704353,91 @@
         "Orange",
         "Woody Notes"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Pomegranate",
+        "Freesia",
+        "Mountain Air",
+        "Rose",
+        "Mandarin Orange",
+        "Woody Notes"
+      ],
+      "components": [
+        {
+          "raw": "Pomegranate",
+          "x": 33.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 92.9,
+          "note": "Pomegranate",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Freesia",
+          "x": 181.0,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 91.4,
+          "note": "Freesia",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mountain Air",
+          "x": 287.6666666666667,
+          "y": 156.33333333333334,
+          "row": 0,
+          "confidence": 93.9,
+          "note": "Mountain Air",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 33.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 180.0,
+          "y": 316.3333333333333,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Woody Notes",
+          "x": 287.6666666666667,
+          "y": 316.0,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Woody Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 26.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -700442,7 +705147,9 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
     },
     {
       "code": "952-VICT",
