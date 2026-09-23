@@ -128,6 +128,23 @@ def candidate(raw, lexicon):
     reordered_exact = [name for name in lexicon if sorted(norm(name).split()) == word_set]
     if len(reordered_exact) == 1:
         return reordered_exact[0], 1.0, 1.0, True
+    # A note label may be complete while the OCR also captures one or two
+    # stray glyphs from its icon ("Uk Vetiver", "Sandalwood lf"). Keep this
+    # literal only when one official note is a contiguous full word sequence
+    # and every leftover token is at most two characters of non-semantic OCR
+    # noise. Common connective words deliberately never count as noise.
+    artifact_exact = []
+    for name in lexicon:
+        note_words = norm(name).split()
+        for start in range(len(target.split()) - len(note_words) + 1):
+            raw_words = target.split()
+            if raw_words[start:start + len(note_words)] != note_words:
+                continue
+            remainder = raw_words[:start] + raw_words[start + len(note_words):]
+            if remainder and all(len(word) <= 2 and word not in {"of", "or", "and", "the"} for word in remainder):
+                artifact_exact.append(name)
+    if len(set(artifact_exact)) == 1:
+        return artifact_exact[0], 1.0, 1.0, True
     # Typography only: a card can render a space as joined ("ISOE", "FigLeaf")
     # without changing a single visible letter. Never use this if it is ambiguous.
     compact_target = target.replace(" ", "")
