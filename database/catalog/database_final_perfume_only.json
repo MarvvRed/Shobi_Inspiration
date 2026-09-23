@@ -3447,48 +3447,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Phlur/Afterglow-119441.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -7342,14 +7336,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Pistachio",
+      "Pistachio Spread Cream",
       "Pistachio",
       "Vanilla",
       "Cream",
       "Cacao Pod",
       "Milk"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -7368,25 +7362,23 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
-        "icons": true,
+        "notes": true,
+        "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Note icons not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
+      "matchedNotesCount": 5,
+      "iconsCount": 5
     },
     "validationStatus": "yellow",
     "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
+      "Note icons not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -7394,16 +7386,16 @@
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
-      "icons": true,
+      "notes": true,
+      "icons": false,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
-    "validationIconsCount": 6
+    "validationMatchedNotesCount": 5,
+    "validationIconsCount": 5
   },
   {
     "id": "pid:4967",
@@ -8198,48 +8190,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Nishane/Shem-66277.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -8536,48 +8522,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Black-Guava-102807.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -10281,48 +10261,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Fragrance-Du-Bois/New-York-5th-Avenue-61946.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -10785,48 +10759,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Tom-Ford/Oud-Voyager-111206.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -11040,48 +11008,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Black-Mango-102808.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -12288,48 +12250,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Amunae-102120.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -22675,11 +22631,11 @@
       "Sandalwood",
       "Milk",
       "Cedar",
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Carrot Seeds",
       "Amyris"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -22691,48 +22647,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/By-Kilian/Sacred-Wood-23897.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -24740,14 +24690,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Lime",
+      "Lime (Linden) Blossom",
       "Ambrofix™",
       "Jasmine",
       "Spanish Broom",
       "Orange Blossom",
       "Georgywood"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -24759,48 +24709,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Marc-Antoine-Barrois/Tilia-91688.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -32412,48 +32356,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Escada/Sexy-Graffiti-1352.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -36810,48 +36748,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Versace/Santal-Boise-57700.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 3,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 3,
       "iconsCount": 3
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 3,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 3,
     "validationIconsCount": 3
   },
   {
@@ -43121,48 +43053,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Penhaligon-s/Babylon-57835.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -66045,48 +65971,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Tygar-41222.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -67636,48 +67556,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-Italian-Love-72621.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -73133,48 +73047,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/By-Kilian/A-Kiss-from-a-Rose-66726.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -75784,11 +75692,11 @@
       "Iso E Super",
       "Musk",
       "Ambergris",
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Pear",
       "Cetalox"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -75800,48 +75708,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Le-Labo/Another-13-10131.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -79791,48 +79693,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Juliette-Has-A-Gun/Sunny-Side-Up-46128.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -83106,48 +83002,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Tiziana-Terenzi/Burdel-66816.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -92094,48 +91984,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Frederic-Malle/Promise-47332.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -97728,48 +97612,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Penhaligon-s/Cairo-54665.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -120343,48 +120221,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Jo-Malone-London/Wild-Fig-Cassis-4579.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -123473,14 +123345,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Lime",
+      "Lime (Linden) Blossom",
       "Beeswax",
       "Bergamot",
       "Lily-of-the-Valley",
       "Petitgrain",
       "Tarragon"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -123492,48 +123364,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Jo-Malone-London/French-Lime-Blossom-5580.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -150974,48 +150840,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Estee-Lauder/Private-Collection-547.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -153997,48 +153857,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/81",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -163120,48 +162974,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/Beauty-8840.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 3,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 3,
       "iconsCount": 3
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 3,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 3,
     "validationIconsCount": 3
   },
   {
@@ -170578,48 +170426,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Salvatore-Ferragamo/White-Mimosa-26777.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {

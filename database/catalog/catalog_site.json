@@ -1473,26 +1473,23 @@
       "Apricot",
       "Milk"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -3152,8 +3149,7 @@
     ],
     "validationStatus": "yellow",
     "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
+      "Note icons not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -3161,16 +3157,16 @@
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
-      "icons": true,
+      "notes": true,
+      "icons": false,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
-    "validationIconsCount": 6
+    "validationMatchedNotesCount": 5,
+    "validationIconsCount": 5
   },
   {
     "code": "2761-LAT",
@@ -3512,26 +3508,23 @@
       "Elemi",
       "Vetiver"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -3659,26 +3652,23 @@
       "Patchouli",
       "Mandarin Orange"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -4414,26 +4404,23 @@
       "Violet",
       "Cypriol Oil or Nagarmotha"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -4633,26 +4620,23 @@
       "Cardamom",
       "Patchouli"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -4744,26 +4728,23 @@
       "Tolu Balsam",
       "Orange"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -5282,26 +5263,23 @@
       "Oak",
       "Olibanum (Frankincense)"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -9749,26 +9727,23 @@
       "Carrot Seeds",
       "Amyris"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -10637,26 +10612,23 @@
       "Orange Blossom",
       "Georgywood"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -13933,26 +13905,23 @@
       "Currant Leaf and Bud",
       "Musk"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -15823,26 +15792,23 @@
       "Saffron",
       "Cypriol Oil or Nagarmotha"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 3,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 3,
     "validationIconsCount": 3
   },
   {
@@ -18539,26 +18505,23 @@
       "Cypriol Oil or Nagarmotha",
       "Cedar"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -28337,26 +28300,23 @@
       "Vetiver",
       "Ambrette (Musk Mallow)"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -29023,26 +28983,23 @@
       "Apple",
       "Cedar"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -31371,26 +31328,23 @@
       "Jasmine",
       "Musk"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -32517,26 +32471,23 @@
       "Pear",
       "Cetalox"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -34231,26 +34182,23 @@
       "Ambrette (Musk Mallow)",
       "Orris Root"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -35654,26 +35602,23 @@
       "Vanilla",
       "Gurjun Balsam"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -39509,26 +39454,23 @@
       "Castoreum",
       "Labdanum"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -41926,26 +41868,23 @@
       "Sandalwood",
       "Labdanum"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -51581,26 +51520,23 @@
       "Pine Tree",
       "Hyacinth"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -52917,26 +52853,23 @@
       "Petitgrain",
       "Tarragon"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -64529,26 +64462,23 @@
       "Narcissus",
       "Lime (Linden) Blossom"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -65825,26 +65755,23 @@
       "Jasmine",
       "Tuberose"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -69751,26 +69678,23 @@
       "Ambrette (Musk Mallow)",
       "Cedar"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 3,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 3,
     "validationIconsCount": 3
   },
   {
@@ -72961,26 +72885,23 @@
       "Heliotrope",
       "White Flowers"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {

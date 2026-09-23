@@ -1,26 +1,135 @@
 {
   "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
-  "count": 1,
+  "count": 5,
   "corrections": [
     {
-      "code": "2844-LUS",
-      "fragranticaId": "10802",
-      "card": "database/fragrantica/social-cards/images/current_2844-LUS_10802.jpeg",
+      "code": "2762-LAT",
+      "fragranticaId": "113777",
+      "card": "database/fragrantica/social-cards/images/current_2762-LAT_113777.jpeg",
       "previousNotes": [
-        "Lavender",
-        "Olibanum (Frankincense)",
-        "Myrrh"
+        "Pistachio",
+        "Pistachio",
+        "Vanilla",
+        "Cream",
+        "Cacao Pod",
+        "Milk"
       ],
       "socialCardNotes": [
-        "Lavender",
-        "Chamomile",
-        "Myrrh",
-        "Olibanum (Frankincense)"
+        "Pistachio Spread Cream",
+        "Pistachio",
+        "Vanilla",
+        "Cream",
+        "Cacao Pod",
+        "Milk"
       ],
       "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "iconCounts": [
         3,
-        1
+        3
+      ]
+    },
+    {
+      "code": "2523-KIL",
+      "fragranticaId": "23897",
+      "card": "database/fragrantica/social-cards/images/current_2523-KIL_23897.jpeg",
+      "previousNotes": [
+        "Sandalwood",
+        "Milk",
+        "Cedar",
+        "Musk",
+        "Carrot Seeds",
+        "Amyris"
+      ],
+      "socialCardNotes": [
+        "Sandalwood",
+        "Milk",
+        "Cedar",
+        "Ambrette (Musk Mallow)",
+        "Carrot Seeds",
+        "Amyris"
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "2549-MARC",
+      "fragranticaId": "91688",
+      "card": "database/fragrantica/social-cards/images/current_2549-MARC_91688.jpeg",
+      "previousNotes": [
+        "Lime",
+        "Ambrofix™",
+        "Jasmine",
+        "Spanish Broom",
+        "Orange Blossom",
+        "Georgywood"
+      ],
+      "socialCardNotes": [
+        "Lime (Linden) Blossom",
+        "Ambrofix™",
+        "Jasmine",
+        "Spanish Broom",
+        "Orange Blossom",
+        "Georgywood"
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "1850-LEL",
+      "fragranticaId": "10131",
+      "card": "database/fragrantica/social-cards/images/current_1850-LEL_10131.jpeg",
+      "previousNotes": [
+        "Iso E Super",
+        "Musk",
+        "Ambergris",
+        "Musk",
+        "Pear",
+        "Cetalox"
+      ],
+      "socialCardNotes": [
+        "Iso E Super",
+        "Musk",
+        "Ambergris",
+        "Ambrette (Musk Mallow)",
+        "Pear",
+        "Cetalox"
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "253-JOM",
+      "fragranticaId": "5580",
+      "card": "database/fragrantica/social-cards/images/current_253-JOM_5580.jpeg",
+      "previousNotes": [
+        "Lime",
+        "Beeswax",
+        "Bergamot",
+        "Lily-of-the-Valley",
+        "Petitgrain",
+        "Tarragon"
+      ],
+      "socialCardNotes": [
+        "Lime (Linden) Blossom",
+        "Beeswax",
+        "Bergamot",
+        "Lily-of-the-Valley",
+        "Petitgrain",
+        "Tarragon"
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        3
       ]
     }
   ]
