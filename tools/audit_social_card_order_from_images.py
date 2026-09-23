@@ -287,6 +287,60 @@ def slotwise_direct_consensus(attempts, expected):
     return {"variantsPerPosition": [sorted(variants) for variants in support]}
 
 
+def direct_position_sequence(attempts, icon_counts):
+    """Return a complete sequence proved position-by-position from the card.
+
+    This differs from ``slotwise_direct_consensus`` in one important respect:
+    it does not start from the catalog sequence.  That lets a Social Card
+    correct a saved note that is plainly different (for example ``Bitter
+    Orange`` versus ``Orange``), while retaining a stricter standard: every
+    physical position needs two rendering variants with the same literal
+    label, and even one literal competing label rejects the position.
+    """
+    per_position = defaultdict(lambda: defaultdict(set))
+    for attempt in attempts:
+        variant = attempt.get("variant")
+        if not variant:
+            continue
+        for item in attempt["components"]:
+            if not item.get("exactText"):
+                continue
+            row = item.get("row")
+            if row not in (0, 1):
+                continue
+            column = min(2, max(0, round((item.get("x", 0) - 32) / 120)))
+            per_position[(row, column)][item["note"]].add(variant)
+
+    winners = []
+    for row in range(2):
+        row_positions = [(column, names) for (item_row, column), names in per_position.items() if item_row == row]
+        # The exact number of readable physical positions must agree with the
+        # visible icon tiles.  This prevents an omitted or spurious tile from
+        # becoming a complete sequence.
+        if len(row_positions) != icon_counts[row]:
+            return None
+        for column, names in row_positions:
+            # A literal competing note, even in only one rendering, is a
+            # contradiction rather than something to decide from the catalog.
+            if len(names) != 1:
+                return None
+            note, variants = next(iter(names.items()))
+            if len(variants) < 2:
+                return None
+            winners.append((row, column, note, sorted(variants)))
+
+    winners.sort(key=lambda item: (item[0], item[1]))
+    if not winners:
+        return None
+    return {
+        "notes": [note for _, _, note, _ in winners],
+        "evidence": [
+            {"row": row, "column": column, "note": note, "variants": variants}
+            for row, column, note, variants in winners
+        ],
+    }
+
+
 def soft_ordered_match(attempt, expected):
     """Accept a non-literal OCR token only with strong, direct card evidence."""
     components = attempt["components"]
@@ -440,6 +494,26 @@ def inspect(task):
                            "notesHeaderY": selected["notesHeaderY"], "labelCounts": label_counts,
                            "iconCounts": icon_counts, "attempts": attempts,
                            "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH"}
+            if sequence == base["catalogNotes"]:
+                return {**base_result, "result": "EXACT_ORDERED_MATCH"}
+            return {**base_result, "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"}
+        # Whole-panel OCR can miss an otherwise clear label, especially when
+        # the saved catalog is the value that differs.  Reuse the same panel
+        # OCR by physical position: two independent rendering variants must
+        # literally read every visible tile, and the tile count must equal the
+        # card's icon count.  No catalog text is used to choose a label.
+        positional = direct_position_sequence(attempts, icon_counts)
+        if positional:
+            sequence = positional["notes"]
+            base_result = {
+                **base,
+                "observedNotes": sequence,
+                "iconCounts": icon_counts,
+                "labelCounts": icon_counts,
+                "attempts": attempts,
+                "positionEvidence": positional["evidence"],
+                "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+            }
             if sequence == base["catalogNotes"]:
                 return {**base_result, "result": "EXACT_ORDERED_MATCH"}
             return {**base_result, "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"}
