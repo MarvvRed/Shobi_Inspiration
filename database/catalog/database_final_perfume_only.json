@@ -7349,7 +7349,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Eclaire-Pistache-113777.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -7359,21 +7359,17 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -7383,13 +7379,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4967",
@@ -29004,7 +29000,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/Barenia-96428.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -29014,21 +29010,17 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 5
+      "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -29038,13 +29030,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 0,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4207",
@@ -29421,7 +29413,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Essential-Parfums/Bois-Imperial-64338.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -29431,21 +29423,17 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 5
+      "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -29455,13 +29443,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 0,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4202",
@@ -61199,7 +61187,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/d-grayi/Sugar-87109.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -61209,21 +61197,17 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -61233,13 +61217,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:3461",
@@ -83353,7 +83337,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Guerlain/Aqua-Allegoria-Coconut-Fizz-53806.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -83363,21 +83347,17 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 5
+      "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -83387,13 +83367,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 0,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:2619",
@@ -86184,7 +86164,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Tom-Ford/Vert-des-Bois-40089.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -86194,21 +86174,17 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -86218,13 +86194,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:2440",
@@ -131030,7 +131006,7 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Mugler/Angel-Muse-36416.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -131040,16 +131016,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 5,
       "matchedNotesCount": 4,
-      "iconsCount": 4
+      "iconsCount": 5
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "database/fragrantica/social-cards/images/956_921-TMU_36416.jpeg",
@@ -131061,10 +131035,8 @@
     "fragranticaVerificationReason": "SOCIAL_CARD_EXACT_IDENTITY_TEXT",
     "fragranticaVerificationFragranticaId": "36416",
     "fragranticaVerificationIdentityText": "angel muse mugler os for women main accords eee",
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -131074,13 +131046,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 5,
     "validationMatchedNotesCount": 4,
-    "validationIconsCount": 4
+    "validationIconsCount": 5
   },
   {
     "id": "pid:955",

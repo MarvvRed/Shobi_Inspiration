@@ -1,32 +1,5 @@
 {
   "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
-  "count": 1,
-  "corrections": [
-    {
-      "code": "2609-TMFO",
-      "fragranticaId": "15916",
-      "card": "database/fragrantica/social-cards/images/current_2609-TMFO_15916.jpeg",
-      "previousNotes": [
-        "Hyacinth",
-        "Violet",
-        "Galbanum",
-        "Magnolia",
-        "Olibanum (Frankincense)",
-        "Musk"
-      ],
-      "socialCardNotes": [
-        "Hyacinth",
-        "Violet Leaf",
-        "Galbanum",
-        "Magnolia",
-        "Olibanum (Frankincense)",
-        "Musk"
-      ],
-      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
-      "iconCounts": [
-        3,
-        3
-      ]
-    }
-  ]
+  "count": 0,
+  "corrections": []
 }

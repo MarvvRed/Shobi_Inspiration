@@ -5749,7 +5749,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Eclaire-Pistache-113777.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -5759,16 +5759,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     }
   },
   {
@@ -22695,7 +22693,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/Barenia-96428.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -22705,16 +22703,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 5
+      "iconsCount": 6
     }
   },
   {
@@ -23020,7 +23016,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Essential-Parfums/Bois-Imperial-64338.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -23030,16 +23026,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 5
+      "iconsCount": 6
     }
   },
   {
@@ -47878,7 +47872,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/d-grayi/Sugar-87109.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -47888,16 +47882,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     }
   },
   {
@@ -65217,7 +65209,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Guerlain/Aqua-Allegoria-Coconut-Fizz-53806.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -65227,16 +65219,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 5
+      "iconsCount": 6
     }
   },
   {
@@ -67428,7 +67418,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Tom-Ford/Vert-des-Bois-40089.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -67438,16 +67428,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     }
   },
   {
@@ -102542,7 +102530,7 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Mugler/Angel-Muse-36416.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -102552,16 +102540,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 5,
       "matchedNotesCount": 4,
-      "iconsCount": 4
+      "iconsCount": 5
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "database/fragrantica/social-cards/images/956_921-TMU_36416.jpeg",
