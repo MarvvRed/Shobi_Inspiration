@@ -321,10 +321,16 @@ def ocr_panels(source_panel):
     """
     base = ImageOps.autocontrast(source_panel)
     renderings = [
+        ("contrast-160", ImageEnhance.Contrast(base).enhance(1.6)),
         ("contrast-200", ImageEnhance.Contrast(base).enhance(2.0)),
+        ("contrast-230", ImageEnhance.Contrast(base).enhance(2.3)),
         ("contrast-260", ImageEnhance.Contrast(base).enhance(2.6)),
+        ("contrast-300", ImageEnhance.Contrast(base).enhance(3.0)),
+        ("threshold-170", base.point(lambda value: 0 if value < 170 else 255)),
         ("threshold-185", base.point(lambda value: 0 if value < 185 else 255)),
+        ("threshold-200", base.point(lambda value: 0 if value < 200 else 255)),
         ("threshold-215", base.point(lambda value: 0 if value < 215 else 255)),
+        ("threshold-230", base.point(lambda value: 0 if value < 230 else 255)),
     ]
     out = []
     for variant, panel in renderings:
