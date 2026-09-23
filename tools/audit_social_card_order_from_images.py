@@ -539,7 +539,8 @@ def inspect(task):
     exact = [a for a in strict if a["notes"] == base["catalogNotes"]]
     if exact:
         selected = max(exact, key=lambda a: len(a["components"]))
-        if not all(is_subsequence(a["notes"], selected["notes"]) for a in strict):
+        catalog_proven = all(is_subsequence(a["notes"], selected["notes"]) for a in strict)
+        if not catalog_proven:
             # The original reader can truncate a multi-word label in one
             # layout pass. Admit that only when the whole exact sequence was
             # independently read in two image renderings, every visible icon
@@ -549,20 +550,21 @@ def inspect(task):
             exact_variants = {attempt["variant"] for attempt in exact}
             icon_counts = visible_icon_counts(source_panel, min(headers), 2) if headers else []
             label_counts = [sum(1 for item in selected["components"] if item["row"] == i) for i in range(2)]
-            if not (
+            catalog_proven = (
                 len(exact_variants) >= 2
                 and label_counts == icon_counts
                 and all(compatible_partial_labels(attempt, selected) for attempt in strict)
-            ):
-                return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
-            proof = "COMPLETE_EXACT_MULTIPASS; PARTIAL_READS_LITERAL_SAME_TILE; ICON_COUNTS_MATCH"
+            )
+            if catalog_proven:
+                proof = "COMPLETE_EXACT_MULTIPASS; PARTIAL_READS_LITERAL_SAME_TILE; ICON_COUNTS_MATCH"
         else:
             label_counts = [sum(1 for item in selected["components"] if item["row"] == i) for i in range(2)]
             proof = "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES"
-        return {**base, "result": "EXACT_ORDERED_MATCH", "observedNotes": selected["notes"],
-                "components": selected["components"], "notesHeaderY": selected["notesHeaderY"],
-                "labelCounts": label_counts, "proof": proof,
-                "attempts": attempts}
+        if catalog_proven:
+            return {**base, "result": "EXACT_ORDERED_MATCH", "observedNotes": selected["notes"],
+                    "components": selected["components"], "notesHeaderY": selected["notesHeaderY"],
+                    "labelCounts": label_counts, "proof": proof,
+                    "attempts": attempts}
     # When the catalog itself is wrong, a card must be allowed to correct it.
     # This requires a complete physical-card reading: the number of labels in
     # each row must equal the visible icon count, the same full sequence must
@@ -651,10 +653,14 @@ def inspect(task):
     if consensus:
         selected = max(supported, key=lambda a: (sum(item["exactText"] for item in a["components"]), min(item["confidence"] for item in a["components"])))
         label_counts = [sum(1 for item in selected["components"] if item["row"] == i) for i in range(2)]
+        headers = [attempt.get("notesHeaderY") for attempt in attempts if attempt.get("notesHeaderY") is not None]
+        icon_counts = visible_icon_counts(source_panel, min(headers), 2) if headers else []
+        if label_counts != icon_counts:
+            return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
         return {**base, "result": "EXACT_ORDERED_MATCH", "observedNotes": selected["notes"],
                 "components": selected["components"], "notesHeaderY": selected["notesHeaderY"],
-                "labelCounts": label_counts,
-                "proof": "MULTIPASS_DIRECT_CARD_CONSENSUS; ORDERED_SEQUENCE_EXACT",
+                "labelCounts": label_counts, "iconCounts": icon_counts,
+                "proof": "MULTIPASS_DIRECT_CARD_CONSENSUS; ORDERED_SEQUENCE_EXACT; ICON_COUNTS_MATCH",
                 "multipassEvidence": {"variants": sorted(variants), "readings": len(supported), "literalReadings": len(literal)},
                 "attempts": attempts}
     # A non-matching OCR list is never used to rewrite catalog data in this
