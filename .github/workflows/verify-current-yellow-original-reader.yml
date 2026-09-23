@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/verify-current-yellow-original-reader.yml'
       - 'tools/audit_social_card_order_from_images.py'
+      - 'tools/apply_direct_social_card_note_corrections.py'
       - 'tools/build_validation_audit.py'
       - 'tools/build_final_perfume_catalog.py'
 
