@@ -381,3 +381,50 @@ for row, site in zip(rows, site_rows):
     matching_notes = matched_notes_count(row, fid, notes)
     matching_icons = sum(note_key(note) in local_note_icons for note in notes)
 
+    checks = {
+        "shobiProduct": bool(row.get("prestashopProductId")) and bool(row.get("shobiUrl")) and row.get("catalogSource") == "database/source/shobi-perfumes-live-unique.csv",
+        "shobiIdentity": bool(row.get("brand")) and bool(row.get("inspiredBy")) and row.get("catalogSource") == "database/source/shobi-perfumes-live-unique.csv",
+        "identity": yes(row.get("identityStatus")) and bool(row.get("fragranticaVerificationSource")),
+        "fid": bool(fid),
+        "url": bool(furl) and bool(fid) and parsed_fid == fid,
+        "socialCard": exact_social_card(row, fid, notes),
+        "image": exact_perfume_image(row, fid),
+        "notes": bool(notes) and exact_social_card(row, fid, notes),
+        "icons": bool(notes) and matching_icons == len(notes),
+        "gender": bool(row.get("gender") or row.get("genderAffinity")) and yes(row.get("genderStatus")),
+        "season": bool(seasons) and has_verified_social_season(row, fid, seasons),
+    }
+
+    issues = []
+    if not checks["shobiProduct"]: issues.append("Shobi product page not fully verified")
+    if not checks["shobiIdentity"]: issues.append("Shobi original name/brand not fully verified")
+    if not checks["identity"]: issues.append("Fragrantica identity not fully verified")
+    if not checks["fid"]: issues.append("Missing Fragrantica ID")
+    if fid and furl and parsed_fid != fid: issues.append("Fragrantica URL/ID mismatch")
+    elif not furl: issues.append("Missing direct Fragrantica URL")
+    if not checks["socialCard"]: issues.append("Social Card not fully verified")
+    if not checks["image"]: issues.append("Missing perfume image")
+    if not notes: issues.append("Missing Main Notes")
+    elif not checks["notes"]: issues.append("Main Notes order not fully verified")
+    if not checks["icons"]: issues.append("Note icons not fully verified")
+    if not checks["gender"]: issues.append("Gender not fully verified")
+    if not checks["season"]: issues.append("Season not fully verified")
+
+    hard_error = (bool(fid and furl) and parsed_fid != fid) or str(row.get("identityStatus") or "").upper() in {"ERROR", "WRONG", "MISMATCH"}
+    status = "red" if hard_error else ("green" if all(checks.values()) else "yellow")
+    counts[status] += 1
+
+    audit = {"status": status, "checks": checks, "issues": issues, "notesCount": len(notes), "matchedNotesCount": matching_notes, "iconsCount": matching_icons}
+    row["validationAudit"] = audit
+    site["validationStatus"] = status
+    site["validationIssues"] = issues
+    site["validationChecks"] = checks
+    site["validationNotesCount"] = len(notes)
+    site["validationMatchedNotesCount"] = matching_notes
+    site["validationIconsCount"] = matching_icons
+
+DB.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+SITE.write_text(json.dumps(site_rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print("validation", counts)
+if counts["green"] and any(not all(r.get("validationAudit", {}).get("checks", {}).values()) for r in rows if r.get("validationAudit", {}).get("status") == "green"):
+    raise SystemExit("Invalid green validation state")
