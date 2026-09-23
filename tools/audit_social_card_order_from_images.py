@@ -250,6 +250,68 @@ def soft_ordered_match(attempt, expected):
     )
 
 
+def direct_tile_reading(source_panel, header_y, lexicon):
+    """Read the six physical label areas on a standard 2×3 Social Card.
+
+    This is still the original Tesseract reader operating on the same card.
+    It is used only after the whole-panel pass fails, and requires the exact
+    visible text in every tile to recur in two independent renderings.
+    """
+    slots = []
+    variants = [
+        ("tile-contrast-260", lambda image: ImageEnhance.Contrast(ImageOps.autocontrast(image)).enhance(2.6).filter(ImageFilter.SHARPEN)),
+        ("tile-threshold-185", lambda image: ImageOps.autocontrast(image).point(lambda value: 0 if value < 185 else 255)),
+        ("tile-threshold-215", lambda image: ImageOps.autocontrast(image).point(lambda value: 0 if value < 215 else 255)),
+    ]
+    for row, (top, bottom) in enumerate(((header_y + 115, header_y + 220), (header_y + 270, header_y + 380))):
+        for col in range(3):
+            left, right = col * 140, (col + 1) * 140
+            box = (max(0, int(left)), max(0, int(top)), min(source_panel.width, int(right)), min(source_panel.height, int(bottom)))
+            if box[2] <= box[0] or box[3] <= box[1]:
+                return None
+            raw_reads = []
+            for variant, transform in variants:
+                tile = transform(source_panel.crop(box)).resize(((box[2] - box[0]) * 5, (box[3] - box[1]) * 5), Image.Resampling.LANCZOS)
+                payload = io.BytesIO()
+                tile.save(payload, format="PNG")
+                run = subprocess.run(
+                    ["tesseract", "stdin", "stdout", "--psm", "7", "-l", "eng", "tsv"],
+                    input=payload.getvalue(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True,
+                    env={**os.environ, "OMP_THREAD_LIMIT": "1"}, timeout=12,
+                )
+                words = []
+                for item in csv.DictReader(io.StringIO(run.stdout.decode("utf-8", "replace")), delimiter="\t"):
+                    text = " ".join(str(item.get("text") or "").split())
+                    try:
+                        confidence = float(item.get("conf") or -1)
+                    except Exception:
+                        confidence = -1
+                    if text and sum(char.isalpha() for char in text) >= 2 and confidence >= 45:
+                        words.append((int(item.get("left") or 0), text, confidence))
+                words.sort()
+                raw = " ".join(word for _, word, _ in words)
+                if not raw:
+                    raw_reads.append({"variant": variant, "raw": raw, "note": None, "exact": False})
+                    continue
+                name, score, margin, exact = candidate(raw, lexicon)
+                raw_reads.append({"variant": variant, "raw": raw, "note": name, "score": score, "margin": margin,
+                                  "confidence": min(conf for _, _, conf in words), "exact": exact})
+            exact_by_name = defaultdict(list)
+            for read in raw_reads:
+                if read.get("exact"):
+                    exact_by_name[read["note"]].append(read)
+            winners = [(name, reads) for name, reads in exact_by_name.items() if len({r["variant"] for r in reads}) >= 2]
+            if len(winners) != 1:
+                return None
+            winner, winner_reads = winners[0]
+            # An exact competing label in the same visible tile is a conflict,
+            # not a tie to resolve from the catalog.
+            if any(read.get("exact") and read.get("note") != winner for read in raw_reads):
+                return None
+            slots.append({"row": row, "col": col, "note": winner, "reads": raw_reads})
+    return {"notes": [slot["note"] for slot in slots], "slots": slots}
+
+
 def inspect(task):
     row, card_text, lexicon = task
     card = Path(card_text)
@@ -297,6 +359,18 @@ def inspect(task):
                 "components": selected["components"], "notesHeaderY": selected["notesHeaderY"],
                 "labelCounts": label_counts, "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
                 "attempts": attempts}
+    # For the standard 2×3 panel, isolate each physical label and require two
+    # exact direct readings per tile. This avoids a neighboring icon or label
+    # contaminating the whole-panel OCR while preserving the same source and
+    # exact ordering rule.
+    headers = [attempt.get("notesHeaderY") for attempt in attempts if attempt.get("notesHeaderY") is not None]
+    if len(base["catalogNotes"]) == 6 and headers:
+        tiles = direct_tile_reading(source_panel, min(headers), lexicon)
+        if tiles and tiles["notes"] == base["catalogNotes"]:
+            return {**base, "result": "EXACT_ORDERED_MATCH", "observedNotes": tiles["notes"],
+                    "tileEvidence": tiles["slots"],
+                    "proof": "SIX_PHYSICAL_LABELS_EXACT_MULTIPASS; ORDERED_SEQUENCE_EXACT",
+                    "attempts": attempts}
     # Some labels are visibly clear but Tesseract adds/removes a single glyph
     # (for example "be Honey"). They remain direct image evidence only when
     # the complete expected sequence is independently read by three rendering
