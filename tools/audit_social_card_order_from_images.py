@@ -253,12 +253,13 @@ def is_subsequence(shorter, longer):
 
 
 def compatible_partial_labels(attempt, complete):
-    """Accept omissions and literal prefixes from the same physical tiles.
+    """Accept omissions and literal partial labels from the same physical tiles.
 
     This is deliberately narrower than fuzzy matching. It handles an OCR pass
-    that reads "Fig" from the visible label "Fig tree" while another pass has
-    already read the complete card literally. A different literal note, or a
-    label at a tile absent from the complete pass, remains a conflict.
+    that reads "Fig" from "Fig tree", or "Orange" from "Mandarin Orange",
+    after another pass has already read the complete card literally. A different
+    literal note, or a label at a tile absent from the complete pass, remains a
+    conflict.
     """
     complete_by_tile = {(item["row"], round(item["x"] / 30)): item for item in complete["components"]}
     for item in attempt["components"]:
@@ -269,9 +270,10 @@ def compatible_partial_labels(attempt, complete):
             continue
         raw = norm(item.get("raw", "")).replace(" ", "")
         label = norm(reference["note"]).replace(" ", "")
-        # A short read must be an actual prefix of the label at this exact
-        # tile. Three characters avoids accepting decorative OCR fragments.
-        if len(raw) < 3 or not label.startswith(raw):
+        # A short read must be a literal contiguous portion of the label at
+        # this exact tile. Three characters avoids accepting decorative OCR
+        # fragments.
+        if len(raw) < 3 or raw not in label:
             return False
     return True
 
@@ -547,7 +549,7 @@ def inspect(task):
                 and all(compatible_partial_labels(attempt, selected) for attempt in strict)
             ):
                 return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
-            proof = "COMPLETE_EXACT_MULTIPASS; PARTIAL_READS_LITERAL_PREFIXES_AT_SAME_TILES; ICON_COUNTS_MATCH"
+            proof = "COMPLETE_EXACT_MULTIPASS; PARTIAL_READS_LITERAL_SAME_TILE; ICON_COUNTS_MATCH"
         else:
             label_counts = [sum(1 for item in selected["components"] if item["row"] == i) for i in range(2)]
             proof = "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES"
