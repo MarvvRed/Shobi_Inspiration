@@ -2,34 +2,6 @@ name: Publish live Shobi catalog to site
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/publish-live-shobi-site.yml'
-      - 'tools/build_live_site_from_shobi_csv.py'
-      - 'tools/build_validation_audit.py'
-      - 'tools/build_final_perfume_catalog.py'
-      - 'tools/verify_catalog_invariants.py'
-      - 'tools/audit_social_card_order_from_images.py'
-      - 'tools/recover_exact_card_proofs_multipass.py'
-      - 'tools/recover_header_anchored_six_slot_proofs.py'
-      - 'tools/preserve_strict_ordered_social_card_proofs.py'
-      - 'tools/apply_exact_card_proofs_multipass.py'
-      - 'tools/verify_current_yellow_slot_ocr_v4_independent.py'
-      - 'tools/apply_current_yellow_slot_ocr_v4_independent.py'
-      - 'tools/analyze_current_yellow_neural_ocr_v6.py'
-      - 'tools/verify_current_yellow_neural_ocr_v6_independent.py'
-      - 'tools/apply_current_yellow_neural_ocr_v6_independent.py'
-      - 'database/catalog/**'
-      - 'database/source/**'
-      - 'database/fragrantica/social-cards/records/**'
-      - 'database/assets/note-icons/**'
-      - 'database/audits/display-identity-hygiene-audit.json'
-      - 'database/audits/identity-change-allowlist.json'
-      - 'database/audits/critical-identity-fixes.json'
-      - 'database/audits/critical-identity-regression-registry.json'
-      - 'database/audits/shared-fid-alias-registry.json'
-
 permissions:
   contents: write
 
