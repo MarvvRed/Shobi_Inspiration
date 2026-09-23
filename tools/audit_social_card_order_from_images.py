@@ -359,6 +359,40 @@ def inspect(task):
                 "components": selected["components"], "notesHeaderY": selected["notesHeaderY"],
                 "labelCounts": label_counts, "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
                 "attempts": attempts}
+    # When the catalog itself is wrong, a card must be allowed to correct it.
+    # This requires a complete physical-card reading: the number of labels in
+    # each row must equal the visible icon count, the same full sequence must
+    # be literal OCR in at least two rendering variants, and every other
+    # literal read must be an ordered subsequence (never a contradiction).
+    headers = [attempt.get("notesHeaderY") for attempt in attempts if attempt.get("notesHeaderY") is not None]
+    if headers:
+        icon_counts = visible_icon_counts(source_panel, min(headers), 2)
+        complete = []
+        for attempt in strict:
+            label_counts = [sum(1 for item in attempt["components"] if item["row"] == row) for row in range(2)]
+            if label_counts == icon_counts and len(attempt["notes"]) == sum(icon_counts):
+                complete.append((attempt, label_counts))
+        grouped = defaultdict(list)
+        for attempt, label_counts in complete:
+            grouped[tuple(attempt["notes"])].append((attempt, label_counts))
+        certified = []
+        for sequence, reads in grouped.items():
+            variants = {attempt["variant"] for attempt, _ in reads}
+            if len(variants) < 2:
+                continue
+            if not all(is_subsequence(other["notes"], list(sequence)) for other in strict):
+                continue
+            certified.append((list(sequence), reads, variants))
+        if len(certified) == 1:
+            sequence, reads, variants = certified[0]
+            selected, label_counts = max(reads, key=lambda item: len(item[0]["components"]))
+            base_result = {**base, "observedNotes": sequence, "components": selected["components"],
+                           "notesHeaderY": selected["notesHeaderY"], "labelCounts": label_counts,
+                           "iconCounts": icon_counts, "attempts": attempts,
+                           "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH"}
+            if sequence == base["catalogNotes"]:
+                return {**base_result, "result": "EXACT_ORDERED_MATCH"}
+            return {**base_result, "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"}
     # For the standard 2×3 panel, isolate each physical label and require two
     # exact direct readings per tile. This avoids a neighboring icon or label
     # contaminating the whole-panel OCR while preserving the same source and
