@@ -171942,7 +171942,7 @@
     "image": null,
     "genderAffinity": "masculine",
     "seasons": [
-      "spring"
+      "winter"
     ],
     "mainAccords": [],
     "notes": {
@@ -171980,7 +171980,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Amber-1045.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -171992,19 +171992,15 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
-      "issues": [
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 0,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Season not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -172016,7 +172012,7 @@
       "notes": true,
       "icons": true,
       "gender": true,
-      "season": false
+      "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 0,
@@ -176673,7 +176669,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/79",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -176685,19 +176681,15 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
-      "issues": [
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 0,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Season not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -176709,7 +176701,7 @@
       "notes": true,
       "icons": true,
       "gender": true,
-      "season": false
+      "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 0,
@@ -185616,7 +185608,7 @@
     "image": null,
     "genderAffinity": "unisex",
     "seasons": [
-      "summer"
+      "fall"
     ],
     "mainAccords": [],
     "notes": {
@@ -185649,7 +185641,7 @@
     "identityStatus": "CONFIRMED",
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -185661,19 +185653,15 @@
         "notes": true,
         "icons": true,
         "gender": true,
-        "season": false
+        "season": true
       },
-      "issues": [
-        "Season not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 0,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Season not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -185685,7 +185673,7 @@
       "notes": true,
       "icons": true,
       "gender": true,
-      "season": false
+      "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 0,
