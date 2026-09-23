@@ -53,6 +53,11 @@ def find_card(row):
     c, fid = code(row.get("code")), str(row.get("fragranticaId") or "").strip()
     if not c or not fid:
         return None
+    # Prefer the freshly recovered exact-ID card. It is still bound by both
+    # Shobi code and FID, and avoids retaining a stale historical rendering.
+    current = CARD_DIR / f"current_{c}_{fid}.jpeg"
+    if current.is_file():
+        return current
     exact = sorted(CARD_DIR.glob(f"*_{c}_{fid}.jpeg")) + sorted(CARD_DIR.glob(f"*_{c}_{fid}.jpg"))
     if exact:
         return exact[0]
