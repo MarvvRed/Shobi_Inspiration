@@ -114,6 +114,12 @@ def candidate(raw, lexicon):
     exact = [name for name in lexicon if norm(name) == target]
     if len(exact) == 1:
         return exact[0], 1.0, 1.0, True
+    # Typography only: a card can render a space as joined ("ISOE", "FigLeaf")
+    # without changing a single visible letter. Never use this if it is ambiguous.
+    compact_target = target.replace(" ", "")
+    compact_exact = [name for name in lexicon if norm(name).replace(" ", "") == compact_target]
+    if len(compact_exact) == 1:
+        return compact_exact[0], 1.0, 1.0, True
     ranked = sorted(((SequenceMatcher(None, target, norm(name)).ratio(), name) for name in lexicon), reverse=True)
     if not ranked:
         return None, 0.0, 0.0, False
