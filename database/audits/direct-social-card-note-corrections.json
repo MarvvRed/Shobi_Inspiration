@@ -1,5 +1,27 @@
 {
   "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
-  "count": 0,
-  "corrections": []
+  "count": 1,
+  "corrections": [
+    {
+      "code": "2844-LUS",
+      "fragranticaId": "10802",
+      "card": "database/fragrantica/social-cards/images/current_2844-LUS_10802.jpeg",
+      "previousNotes": [
+        "Lavender",
+        "Olibanum (Frankincense)",
+        "Myrrh"
+      ],
+      "socialCardNotes": [
+        "Lavender",
+        "Chamomile",
+        "Myrrh",
+        "Olibanum (Frankincense)"
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "iconCounts": [
+        3,
+        1
+      ]
+    }
+  ]
 }
