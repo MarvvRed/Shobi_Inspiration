@@ -33,7 +33,7 @@ OUT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-imag
 
 # Coordinates on the 1200x1200 English card.  This is the entire notes panel;
 # labels are located dynamically, not forced into fixed three-column slots.
-CROP = (45, 730, 465, 1110)
+# The second row's labels sit below the icon tiles. Stop below the label\n# baseline, not at the bottom of the tiles, otherwise the final note is clipped\n# before OCR sees it.\nCROP = (45, 730, 465, 1145)
 SCALE = 3
 
 
