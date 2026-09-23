@@ -1,12 +1,12 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 74,
+  "targetedCurrentYellows": 62,
   "results": {
-    "EXACT_ORDERED_CARD_NOTES_DIFFER": 16,
-    "EXACT_ORDERED_MATCH": 2134,
+    "EXACT_ORDERED_CARD_NOTES_DIFFER": 6,
+    "EXACT_ORDERED_MATCH": 2152,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 97,
+    "READING_NOT_STRICT_ENOUGH": 89,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -21466,10 +21466,25 @@
         "Iris",
         "Guaiac Wood",
         "Musk",
-        "Violet",
+        "Violet Leaf",
         "Patchouli"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Honey",
+        "Iris",
+        "Guaiac Wood",
+        "Musk",
+        "Violet Leaf",
+        "Patchouli"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -21481,7 +21496,7 @@
             "Iris",
             "Guaiac Wood",
             "Musk",
-            "Violet",
+            "Violet Leaf",
             "Patchouli"
           ],
           "components": [
@@ -21535,10 +21550,10 @@
               "y": 294.6666666666667,
               "row": 1,
               "confidence": 95.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Patchouli",
@@ -21563,17 +21578,6 @@
               "score": 1.0,
               "margin": 1.0,
               "exactText": true
-            },
-            {
-              "raw": "Leaf Violet",
-              "x": 152.0,
-              "y": 294.6666666666667,
-              "row": 1,
-              "confidence": 95.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
             }
           ],
           "notesHeaderY": 29.3
@@ -21581,13 +21585,13 @@
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Honey",
             "Iris",
             "Guaiac Wood",
-            "Violet",
+            "Violet Leaf",
             "Patchouli"
           ],
           "components": [
@@ -21630,10 +21634,10 @@
               "y": 294.6666666666667,
               "row": 1,
               "confidence": 92.9,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Patchouli",
@@ -21647,19 +21651,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 152.0,
-              "y": 294.6666666666667,
-              "row": 1,
-              "confidence": 92.9,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 29.3
         },
         {
@@ -21672,7 +21664,7 @@
             "Iris",
             "Guaiac Wood",
             "Musk",
-            "Violet",
+            "Violet Leaf",
             "Patchouli"
           ],
           "components": [
@@ -21726,10 +21718,10 @@
               "y": 294.6666666666667,
               "row": 1,
               "confidence": 95.0,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Patchouli",
@@ -21754,17 +21746,6 @@
               "score": 1.0,
               "margin": 1.0,
               "exactText": true
-            },
-            {
-              "raw": "Leaf Violet",
-              "x": 152.0,
-              "y": 294.6666666666667,
-              "row": 1,
-              "confidence": 95.0,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
             }
           ],
           "notesHeaderY": 29.0
@@ -21779,7 +21760,7 @@
             "Iris",
             "Guaiac Wood",
             "Musk",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -21832,10 +21813,10 @@
               "y": 294.6666666666667,
               "row": 1,
               "confidence": 91.9,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -21848,17 +21829,6 @@
               "note": "Guaiac Wood",
               "score": 0.629,
               "margin": 0.05,
-              "exactText": false
-            },
-            {
-              "raw": "Leaf Violet",
-              "x": 152.0,
-              "y": 294.6666666666667,
-              "row": 1,
-              "confidence": 91.9,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
               "exactText": false
             }
           ],
@@ -22082,14 +22052,14 @@
         {
           "variant": "threshold-215",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Honey",
             "Iris",
             "Guaiac Wood",
             "Musk",
-            "Violet",
+            "Violet Leaf",
             "Patchouli"
           ],
           "components": [
@@ -22143,10 +22113,10 @@
               "y": 294.0,
               "row": 1,
               "confidence": 95.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Patchouli",
@@ -22160,31 +22130,19 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 152.0,
-              "y": 294.0,
-              "row": 1,
-              "confidence": 95.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 29.0
         },
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Honey",
             "Iris",
             "Guaiac Wood",
-            "Violet",
+            "Violet Leaf",
             "Patchouli"
           ],
           "components": [
@@ -22227,10 +22185,10 @@
               "y": 294.0,
               "row": 1,
               "confidence": 95.8,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Patchouli",
@@ -22244,21 +22202,86 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 152.0,
-              "y": 294.0,
-              "row": 1,
-              "confidence": 95.8,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 29.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Honey",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Iris",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Guaiac Wood",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Musk",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Violet Leaf",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Patchouli",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Honey",
+        "Iris",
+        "Guaiac Wood",
+        "Musk",
+        "Violet",
+        "Patchouli"
       ]
     },
     {
@@ -38908,22 +38931,106 @@
       "catalogNotes": [
         "Violet",
         "Cedar",
-        "Violet",
+        "Violet Leaf",
         "Vetiver",
         "Fir",
         "Musk"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Violet",
+        "Cedar",
+        "Violet Leaf",
+        "Vetiver",
+        "Fir",
+        "Musk"
+      ],
+      "components": [
+        {
+          "raw": "Violet",
+          "x": 31.666666666666668,
+          "y": 167.66666666666666,
+          "row": 0,
+          "confidence": 96.8,
+          "note": "Violet",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 152.0,
+          "y": 166.33333333333334,
+          "row": 0,
+          "confidence": 96.9,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Leaf Violet",
+          "x": 271.6666666666667,
+          "y": 167.0,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vetiver",
+          "x": 31.666666666666668,
+          "y": 289.6666666666667,
+          "row": 1,
+          "confidence": 96.4,
+          "note": "Vetiver",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Fir",
+          "x": 153.0,
+          "y": 289.6666666666667,
+          "row": 1,
+          "confidence": 96.7,
+          "note": "Fir",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 273.0,
+          "y": 289.6666666666667,
+          "row": 1,
+          "confidence": 96.0,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 48.7,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Violet",
             "Cedar",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Fir",
             "Musk"
@@ -38957,10 +39064,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 96.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiver",
@@ -38996,29 +39103,17 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 96.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Cedar",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Fir",
             "Musk"
@@ -39041,10 +39136,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 95.9,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiv er",
@@ -39080,19 +39175,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 95.9,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
@@ -39198,7 +39281,7 @@
           "reason": "READING_NOT_STRICT_ENOUGH",
           "notes": [
             "Cedar",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Fir",
             "Musk"
@@ -39221,10 +39304,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 95.8,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiv “ana er",
@@ -39262,17 +39345,6 @@
           ],
           "uncertainComponents": [
             {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 95.8,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            },
-            {
               "raw": "Vetiv “ana er",
               "x": 31.666666666666668,
               "y": 270.3333333333333,
@@ -39289,12 +39361,12 @@
         {
           "variant": "threshold-185",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Violet",
             "Cedar",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Fir",
             "Musk"
@@ -39328,10 +39400,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 67.7,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiver",
@@ -39367,19 +39439,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 67.7,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 49.0
         },
         {
@@ -39390,7 +39450,7 @@
           "notes": [
             "Violet",
             "Cedar",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Fir",
             "Musk"
@@ -39424,10 +39484,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 95.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vet ve",
@@ -39465,17 +39525,6 @@
           ],
           "uncertainComponents": [
             {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 95.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            },
-            {
               "raw": "Vet ve",
               "x": 32.0,
               "y": 274.0,
@@ -39492,12 +39541,12 @@
         {
           "variant": "threshold-215",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Violet",
             "Cedar",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Fir",
             "Musk"
@@ -39531,10 +39580,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 95.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiver",
@@ -39570,30 +39619,18 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 95.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.0
         },
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Violet",
             "Cedar",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Fir",
             "Musk"
@@ -39627,10 +39664,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 71.5,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiver",
@@ -39666,21 +39703,19 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf violet",
-              "x": 272.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 71.5,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.0
         }
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Violet",
+        "Cedar",
+        "Violet",
+        "Vetiver",
+        "Fir",
+        "Musk"
       ]
     },
     {
@@ -87355,7 +87390,7 @@
           "strict": false,
           "reason": "READING_NOT_STRICT_ENOUGH",
           "notes": [
-            "Fig",
+            "Fig Leaf",
             "Cedar",
             "Green Pear",
             "Grapefruit",
@@ -87369,10 +87404,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 96.4,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cedar",
@@ -87431,17 +87466,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Leaf Fig",
-              "x": 33.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 96.4,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
-            },
             {
               "raw": "Jen er",
               "x": 283.6666666666667,
@@ -87543,10 +87567,10 @@
         {
           "variant": "contrast-260",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
-            "Fig",
+            "Fig Leaf",
             "Cedar",
             "Vetiver",
             "Grapefruit",
@@ -87560,10 +87584,10 @@
               "y": 155.33333333333334,
               "row": 0,
               "confidence": 95.6,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cedar",
@@ -87621,19 +87645,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Fig",
-              "x": 33.0,
-              "y": 155.33333333333334,
-              "row": 0,
-              "confidence": 95.6,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
@@ -87642,7 +87654,7 @@
           "strict": false,
           "reason": "READING_NOT_STRICT_ENOUGH",
           "notes": [
-            "Fig",
+            "Fig Leaf",
             "Cedar",
             "Vetiver",
             "Grapefruit",
@@ -87656,10 +87668,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 38.5,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cedar",
@@ -87735,10 +87747,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 38.5,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 49.0
@@ -87749,7 +87761,7 @@
           "strict": false,
           "reason": "READING_NOT_STRICT_ENOUGH",
           "notes": [
-            "Fig",
+            "Fig Leaf",
             "Cedar",
             "Vetiver",
             "Grapefruit",
@@ -87763,10 +87775,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 96.0,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cedar",
@@ -87826,17 +87838,6 @@
           ],
           "uncertainComponents": [
             {
-              "raw": "Leaf Fig",
-              "x": 33.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 96.0,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
-            },
-            {
               "raw": "Vet we",
               "x": 284.0,
               "y": 148.0,
@@ -87863,10 +87864,10 @@
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
-            "Fig",
+            "Fig Leaf",
             "Cedar",
             "Vetiver",
             "Grapefruit",
@@ -87880,10 +87881,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 96.4,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cedar",
@@ -87941,19 +87942,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Fig",
-              "x": 33.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 96.4,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.0
         }
       ]
@@ -168773,14 +168762,98 @@
       "fragranticaId": "53806",
       "card": "database/fragrantica/social-cards/images/current_1764-GUR_53806.jpeg",
       "catalogNotes": [
-        "Coconut Water",
-        "Fruits",
+        "Coconut",
+        "Water Fruit",
         "Freesia",
         "Bergamot",
         "Sandalwood",
         "Tonka Bean"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Coconut",
+        "Water Fruit",
+        "Freesia",
+        "Bergamot",
+        "Sandalwood",
+        "Tonka Bean"
+      ],
+      "components": [
+        {
+          "raw": "Coconut",
+          "x": 32.0,
+          "y": 151.0,
+          "row": 0,
+          "confidence": 91.3,
+          "note": "Coconut",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Fruit Water",
+          "x": 142.66666666666666,
+          "y": 151.33333333333334,
+          "row": 0,
+          "confidence": 79.3,
+          "note": "Water Fruit",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Freesia",
+          "x": 282.0,
+          "y": 151.33333333333334,
+          "row": 0,
+          "confidence": 79.3,
+          "note": "Freesia",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 33.0,
+          "y": 273.0,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 143.33333333333334,
+          "y": 273.0,
+          "row": 1,
+          "confidence": 95.4,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Tonka Bean",
+          "x": 281.3333333333333,
+          "y": 273.0,
+          "row": 1,
+          "confidence": 95.4,
+          "note": "Tonka Bean",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 32.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -168789,7 +168862,7 @@
           "reason": "READING_NOT_STRICT_ENOUGH",
           "notes": [
             "Coconut",
-            "Fruit Tea",
+            "Water Fruit",
             "Freesia",
             "Bergamot",
             "Sandalwood",
@@ -168813,10 +168886,10 @@
               "y": 151.33333333333334,
               "row": 0,
               "confidence": 88.3,
-              "note": "Fruit Tea",
-              "score": 0.8,
-              "margin": 0.038,
-              "exactText": false
+              "note": "Water Fruit",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "LENG Freesia",
@@ -168873,17 +168946,6 @@
               "note": "Freesia",
               "score": 0.737,
               "margin": 0.1,
-              "exactText": false
-            },
-            {
-              "raw": "Fruit Water",
-              "x": 142.66666666666666,
-              "y": 151.33333333333334,
-              "row": 0,
-              "confidence": 88.3,
-              "note": "Fruit Tea",
-              "score": 0.8,
-              "margin": 0.038,
               "exactText": false
             }
           ],
@@ -168988,11 +169050,11 @@
         {
           "variant": "contrast-260",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Coconut",
-            "Fruit Tea",
+            "Water Fruit",
             "Freesia",
             "Bergamot",
             "Sandalwood",
@@ -169016,10 +169078,10 @@
               "y": 151.33333333333334,
               "row": 0,
               "confidence": 79.3,
-              "note": "Fruit Tea",
-              "score": 0.8,
-              "margin": 0.038,
-              "exactText": false
+              "note": "Water Fruit",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Freesia",
@@ -169066,19 +169128,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Fruit Water",
-              "x": 142.66666666666666,
-              "y": 151.33333333333334,
-              "row": 0,
-              "confidence": 79.3,
-              "note": "Fruit Tea",
-              "score": 0.8,
-              "margin": 0.038,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
@@ -169160,7 +169210,7 @@
           "reason": "READING_NOT_STRICT_ENOUGH",
           "notes": [
             "Coconut",
-            "Fruit Tea",
+            "Water Fruit",
             "Freesia",
             "Bergamot",
             "Sandalwood",
@@ -169184,10 +169234,10 @@
               "y": 151.0,
               "row": 0,
               "confidence": 47.4,
-              "note": "Fruit Tea",
-              "score": 0.8,
-              "margin": 0.038,
-              "exactText": false
+              "note": "Water Fruit",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Freesia",
@@ -169241,10 +169291,10 @@
               "y": 151.0,
               "row": 0,
               "confidence": 47.4,
-              "note": "Fruit Tea",
-              "score": 0.8,
-              "margin": 0.038,
-              "exactText": false
+              "note": "Water Fruit",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 32.0
@@ -169346,11 +169396,11 @@
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Coconut",
-            "Fruit Tea",
+            "Water Fruit",
             "Freesia",
             "Bergamot",
             "Sandalwood",
@@ -169374,10 +169424,10 @@
               "y": 138.66666666666666,
               "row": 0,
               "confidence": 83.4,
-              "note": "Fruit Tea",
-              "score": 0.8,
-              "margin": 0.038,
-              "exactText": false
+              "note": "Water Fruit",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Freesia",
@@ -169424,21 +169474,19 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Fruit Water",
-              "x": 143.0,
-              "y": 138.66666666666666,
-              "row": 0,
-              "confidence": 83.4,
-              "note": "Fruit Tea",
-              "score": 0.8,
-              "margin": 0.038,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Coconut Water",
+        "Fruits",
+        "Freesia",
+        "Bergamot",
+        "Sandalwood",
+        "Tonka Bean"
       ]
     },
     {
@@ -262415,6 +262463,7 @@
         "Cetalox",
         "Ambroxan"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Ethyl Maltol",
         "Sandalwood",
@@ -262423,14 +262472,80 @@
         "Cetalox",
         "Ambroxan"
       ],
-      "iconCounts": [
-        3,
-        3
+      "components": [
+        {
+          "raw": "Ethyl Maltol",
+          "x": 33.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 87.9,
+          "note": "Ethyl Maltol",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 138.66666666666666,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 93.1,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Hedione",
+          "x": 277.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 91.4,
+          "note": "Hedione",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "ISOE Super",
+          "x": 32.666666666666664,
+          "y": 289.6666666666667,
+          "row": 1,
+          "confidence": 88.2,
+          "note": "Iso E Super",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cetalox",
+          "x": 138.0,
+          "y": 289.3333333333333,
+          "row": 1,
+          "confidence": 92.8,
+          "note": "Cetalox",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ambroxan",
+          "x": 275.6666666666667,
+          "y": 289.6666666666667,
+          "row": 1,
+          "confidence": 86.9,
+          "note": "Ambroxan",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
       ],
+      "notesHeaderY": 24.0,
       "labelCounts": [
         3,
         3
       ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -263123,82 +263238,6 @@
           ],
           "notesHeaderY": 24.0
         }
-      ],
-      "positionEvidence": [
-        {
-          "row": 0,
-          "column": 0,
-          "note": "Ethyl Maltol",
-          "variants": [
-            "contrast-200",
-            "threshold-185"
-          ]
-        },
-        {
-          "row": 0,
-          "column": 1,
-          "note": "Sandalwood",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 0,
-          "column": 2,
-          "note": "Hedione",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 1,
-          "column": 0,
-          "note": "Iso E Super",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 1,
-          "column": 1,
-          "note": "Cetalox",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 1,
-          "column": 2,
-          "note": "Ambroxan",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        }
-      ],
-      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_MATCH",
-      "catalogNotesBeforeCorrection": [
-        "Malt",
-        "Sandalwood",
-        "Hedione",
-        "Iso E Super",
-        "Cetalox",
-        "Ambroxan"
       ]
     },
     {
@@ -267002,22 +267041,106 @@
         "Brown Sugar",
         "Amber",
         "Vanilla",
-        "Violet"
+        "Violet Leaf"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Rose",
+        "Saffron",
+        "Brown Sugar",
+        "Amber",
+        "Vanilla",
+        "Violet Leaf"
+      ],
+      "components": [
+        {
+          "raw": "Rose",
+          "x": 33.0,
+          "y": 151.33333333333334,
+          "row": 0,
+          "confidence": 96.2,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Saffron",
+          "x": 152.66666666666666,
+          "y": 149.66666666666666,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Saffron",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Brown Sugar",
+          "x": 272.3333333333333,
+          "y": 151.33333333333334,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Brown Sugar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amber",
+          "x": 31.666666666666668,
+          "y": 296.0,
+          "row": 1,
+          "confidence": 96.7,
+          "note": "Amber",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vanilla",
+          "x": 151.66666666666666,
+          "y": 296.0,
+          "row": 1,
+          "confidence": 96.4,
+          "note": "Vanilla",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Leaf Violet",
+          "x": 271.6666666666667,
+          "y": 297.0,
+          "row": 1,
+          "confidence": 95.1,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 32.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Rose",
             "Saffron",
             "Brown Sugar",
             "Amber",
             "Vanilla",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -267081,39 +267204,27 @@
               "y": 297.0,
               "row": 1,
               "confidence": 95.1,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 95.1,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Rose",
             "Saffron",
             "Brown Sugar",
             "Amber",
             "Vanilla",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -267177,39 +267288,27 @@
               "y": 297.0,
               "row": 1,
               "confidence": 96.0,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 96.0,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "contrast-260",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Rose",
             "Saffron",
             "Brown Sugar",
             "Amber",
             "Vanilla",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -267273,39 +267372,27 @@
               "y": 297.0,
               "row": 1,
               "confidence": 96.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 96.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "contrast-260",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Rose",
             "Saffron",
             "Brown Sugar",
             "Amber",
             "Vanilla",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -267369,39 +267456,27 @@
               "y": 297.0,
               "row": 1,
               "confidence": 96.0,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 96.0,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "threshold-185",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Rose",
             "Saffron",
             "Brown Sugar",
             "Amber",
             "Vanilla",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -267465,25 +267540,13 @@
               "y": 297.0,
               "row": 1,
               "confidence": 90.8,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 90.8,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
@@ -267497,7 +267560,7 @@
             "Brown Sugar",
             "Amber",
             "Vanilla",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -267561,10 +267624,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 95.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -267577,17 +267640,6 @@
               "note": "Saffron",
               "score": 0.857,
               "margin": 0.143,
-              "exactText": false
-            },
-            {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 95.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
               "exactText": false
             }
           ],
@@ -267604,15 +267656,15 @@
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Rose",
             "Saffron",
             "Brown Sugar",
             "Amber",
             "Vanilla",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -267676,27 +267728,25 @@
               "y": 297.0,
               "row": 1,
               "confidence": 96.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 96.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Rose",
+        "Saffron",
+        "Brown Sugar",
+        "Amber",
+        "Vanilla",
+        "Violet"
       ]
     },
     {
@@ -305957,7 +306007,7 @@
             "Olibanum (Frankincense)",
             "Myrrh",
             "Vanilla",
-            "Birch"
+            "Birch Tar"
           ],
           "components": [
             {
@@ -306021,10 +306071,10 @@
               "y": 278.0,
               "row": 1,
               "confidence": 84.6,
-              "note": "Birch",
-              "score": 0.714,
-              "margin": 0.106,
-              "exactText": false
+              "note": "Birch Tar",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -306037,17 +306087,6 @@
               "note": "Olibanum (Frankincense)",
               "score": 0.93,
               "margin": 0.389,
-              "exactText": false
-            },
-            {
-              "raw": "Tar Birch",
-              "x": 231.0,
-              "y": 278.0,
-              "row": 1,
-              "confidence": 84.6,
-              "note": "Birch",
-              "score": 0.714,
-              "margin": 0.106,
               "exactText": false
             }
           ],
@@ -388544,6 +388583,7 @@
         "Timur",
         "Ambroxan"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Akigalawood",
         "Woody Notes",
@@ -388552,14 +388592,80 @@
         "Timur",
         "Ambroxan"
       ],
-      "iconCounts": [
-        3,
-        3
+      "components": [
+        {
+          "raw": "Akigalawood",
+          "x": 31.666666666666668,
+          "y": 131.66666666666666,
+          "row": 0,
+          "confidence": 73.8,
+          "note": "Akigalawood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Woody Notes",
+          "x": 173.66666666666666,
+          "y": 134.0,
+          "row": 0,
+          "confidence": 89.0,
+          "note": "Woody Notes",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Basil",
+          "x": 277.0,
+          "y": 151.33333333333334,
+          "row": 0,
+          "confidence": 95.7,
+          "note": "Basil",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vetiver",
+          "x": 31.666666666666668,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 96.0,
+          "note": "Vetiver",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Timur",
+          "x": 174.33333333333334,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 96.6,
+          "note": "Timur",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ambroxan",
+          "x": 275.6666666666667,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 91.9,
+          "note": "Ambroxan",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
       ],
+      "notesHeaderY": 32.0,
       "labelCounts": [
         3,
         3
       ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -389293,82 +389399,6 @@
           ],
           "notesHeaderY": 32.0
         }
-      ],
-      "positionEvidence": [
-        {
-          "row": 0,
-          "column": 0,
-          "note": "Akigalawood",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 0,
-          "column": 1,
-          "note": "Woody Notes",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 0,
-          "column": 2,
-          "note": "Basil",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 1,
-          "column": 0,
-          "note": "Vetiver",
-          "variants": [
-            "contrast-200",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 1,
-          "column": 1,
-          "note": "Timur",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 1,
-          "column": 2,
-          "note": "Ambroxan",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        }
-      ],
-      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_MATCH",
-      "catalogNotesBeforeCorrection": [
-        "Agarwood (Oud)",
-        "Woody Notes",
-        "Basil",
-        "Vetiver",
-        "Truffle",
-        "Ambroxan"
       ]
     },
     {
@@ -390641,6 +390671,7 @@
         "White Ginger Lily",
         "Oak"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Patchouli",
         "Miracle Berry",
@@ -390649,14 +390680,80 @@
         "White Ginger Lily",
         "Oak"
       ],
-      "iconCounts": [
-        3,
-        3
+      "components": [
+        {
+          "raw": "Patchouli",
+          "x": 33.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 70.8,
+          "note": "Patchouli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Miracle Berry",
+          "x": 143.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 73.7,
+          "note": "Miracle Berry",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Akigalawood",
+          "x": 249.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 73.7,
+          "note": "Akigalawood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 33.0,
+          "y": 289.0,
+          "row": 1,
+          "confidence": 96.8,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "White Ginger...",
+          "x": 141.0,
+          "y": 289.0,
+          "row": 1,
+          "confidence": 95.1,
+          "note": "White Ginger Lily",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Oak",
+          "x": 250.0,
+          "y": 289.0,
+          "row": 1,
+          "confidence": 95.9,
+          "note": "Oak",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
       ],
+      "notesHeaderY": 24.0,
       "labelCounts": [
         3,
         3
       ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -391364,83 +391461,6 @@
           ],
           "notesHeaderY": 24.0
         }
-      ],
-      "positionEvidence": [
-        {
-          "row": 0,
-          "column": 0,
-          "note": "Patchouli",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 0,
-          "column": 1,
-          "note": "Miracle Berry",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 0,
-          "column": 2,
-          "note": "Akigalawood",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 1,
-          "column": 0,
-          "note": "Bergamot",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 1,
-          "column": 1,
-          "note": "White Ginger Lily",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 1,
-          "column": 2,
-          "note": "Oak",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        }
-      ],
-      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_MATCH",
-      "catalogNotesBeforeCorrection": [
-        "Patchouli",
-        "Miracle Berry",
-        "Agarwood (Oud)",
-        "Bergamot",
-        "White Ginger",
-        "Oak"
       ]
     },
     {
@@ -437291,11 +437311,11 @@
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Hyacinth",
-            "Violet",
+            "Violet Leaf",
             "Magnolia",
             "Olibanum (Frankincense)",
             "Musk"
@@ -437318,10 +437338,10 @@
               "y": 150.66666666666666,
               "row": 0,
               "confidence": 95.9,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Magnolia",
@@ -437357,19 +437377,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 137.0,
-              "y": 150.66666666666666,
-              "row": 0,
-              "confidence": 95.9,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
@@ -494035,22 +494043,106 @@
         "Blonde Woods",
         "Cedar",
         "Rose",
-        "Violet"
+        "Violet Leaf"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Cherry",
+        "Amber",
+        "Blonde Woods",
+        "Cedar",
+        "Rose",
+        "Violet Leaf"
+      ],
+      "components": [
+        {
+          "raw": "Cherry",
+          "x": 32.0,
+          "y": 149.0,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Cherry",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amber",
+          "x": 151.66666666666666,
+          "y": 144.33333333333334,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Amber",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Blonde Woods",
+          "x": 271.6666666666667,
+          "y": 151.66666666666666,
+          "row": 0,
+          "confidence": 96.1,
+          "note": "Blonde Woods",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 32.0,
+          "y": 297.6666666666667,
+          "row": 1,
+          "confidence": 96.7,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 153.0,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 96.4,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Leaf Violet",
+          "x": 271.6666666666667,
+          "y": 297.3333333333333,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 32.3,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Cherry",
             "Amber",
             "Blonde Woods",
             "Cedar",
             "Rose",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -494114,25 +494206,13 @@
               "y": 297.3333333333333,
               "row": 1,
               "confidence": 96.1,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 297.3333333333333,
-              "row": 1,
-              "confidence": 96.1,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.3
         },
         {
@@ -494264,7 +494344,7 @@
             "Blonde Woods",
             "Cedar",
             "Rose",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -494328,10 +494408,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 95.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -494344,17 +494424,6 @@
               "note": "Blonde Woods",
               "score": 0.8,
               "margin": 0.2,
-              "exactText": false
-            },
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 95.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
               "exactText": false
             }
           ],
@@ -494372,7 +494441,7 @@
             "Blonde Woods",
             "Cedar",
             "Rose",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -494447,10 +494516,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 96.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -494475,17 +494544,6 @@
               "score": 0.667,
               "margin": 0.0,
               "exactText": false
-            },
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 96.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
             }
           ],
           "notesHeaderY": 32.0
@@ -494493,15 +494551,15 @@
         {
           "variant": "threshold-185",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Cherry",
             "Amber",
             "Blonde Woods",
             "Cedar",
             "Rose",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -494565,25 +494623,13 @@
               "y": 297.0,
               "row": 1,
               "confidence": 91.6,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 91.6,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
@@ -494597,7 +494643,7 @@
             "Ho Wood",
             "Cedar",
             "Rose",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -494661,10 +494707,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 95.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -494677,17 +494723,6 @@
               "note": "Ho Wood",
               "score": 0.8,
               "margin": 0.0,
-              "exactText": false
-            },
-            {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 95.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
               "exactText": false
             }
           ],
@@ -494704,7 +494739,7 @@
             "Wool",
             "Cedar",
             "Rose",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -494768,10 +494803,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 95.6,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -494785,17 +494820,6 @@
               "score": 0.667,
               "margin": 0.0,
               "exactText": false
-            },
-            {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 95.6,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
             }
           ],
           "notesHeaderY": 32.0
@@ -494803,15 +494827,15 @@
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Cherry",
             "Amber",
             "Blonde Woods",
             "Cedar",
             "Rose",
-            "Violet"
+            "Violet Leaf"
           ],
           "components": [
             {
@@ -494875,27 +494899,25 @@
               "y": 297.0,
               "row": 1,
               "confidence": 95.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 95.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Cherry",
+        "Amber",
+        "Blonde Woods",
+        "Cedar",
+        "Rose",
+        "Violet"
       ]
     },
     {
@@ -532873,7 +532895,22 @@
         "Guaiac Wood",
         "Bay Leaf"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Patchouli",
+        "Leather",
+        "Oakmoss",
+        "Cypriol Oil or Nagarmotha",
+        "Guaiac Wood",
+        "Bay Leaf"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -532886,7 +532923,7 @@
             "Oakmoss",
             "Cypriol Oil or Nagarmotha",
             "Guaiac Wood",
-            "Litsea Cubeba"
+            "Bay Leaf"
           ],
           "components": [
             {
@@ -532950,10 +532987,10 @@
               "y": 272.6666666666667,
               "row": 1,
               "confidence": 96.0,
-              "note": "Litsea Cubeba",
-              "score": 0.571,
-              "margin": 0.016,
-              "exactText": false
+              "note": "Bay Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -532966,17 +533003,6 @@
               "note": "Patchouli",
               "score": 0.889,
               "margin": 0.193,
-              "exactText": false
-            },
-            {
-              "raw": "Leaf Bay",
-              "x": 282.0,
-              "y": 272.6666666666667,
-              "row": 1,
-              "confidence": 96.0,
-              "note": "Litsea Cubeba",
-              "score": 0.571,
-              "margin": 0.016,
               "exactText": false
             }
           ],
@@ -532992,7 +533018,7 @@
             "Leather",
             "Oakmoss",
             "Guaiac Wood",
-            "Litsea Cubeba"
+            "Bay Leaf"
           ],
           "components": [
             {
@@ -533045,10 +533071,10 @@
               "y": 272.6666666666667,
               "row": 1,
               "confidence": 96.0,
-              "note": "Litsea Cubeba",
-              "score": 0.571,
-              "margin": 0.016,
-              "exactText": false
+              "note": "Bay Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -533073,17 +533099,6 @@
               "score": 0.889,
               "margin": 0.193,
               "exactText": false
-            },
-            {
-              "raw": "Leaf Bay",
-              "x": 282.0,
-              "y": 272.6666666666667,
-              "row": 1,
-              "confidence": 96.0,
-              "note": "Litsea Cubeba",
-              "score": 0.571,
-              "margin": 0.016,
-              "exactText": false
             }
           ],
           "notesHeaderY": 32.3
@@ -533091,14 +533106,14 @@
         {
           "variant": "contrast-260",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Leather",
             "Oakmoss",
             "Cypriol Oil or Nagarmotha",
             "Guaiac Wood",
-            "Litsea Cubeba"
+            "Bay Leaf"
           ],
           "components": [
             {
@@ -533151,25 +533166,13 @@
               "y": 272.6666666666667,
               "row": 1,
               "confidence": 92.0,
-              "note": "Litsea Cubeba",
-              "score": 0.571,
-              "margin": 0.016,
-              "exactText": false
+              "note": "Bay Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Bay",
-              "x": 282.0,
-              "y": 272.6666666666667,
-              "row": 1,
-              "confidence": 92.0,
-              "note": "Litsea Cubeba",
-              "score": 0.571,
-              "margin": 0.016,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
@@ -533181,7 +533184,7 @@
             "Leather",
             "Cypriol Oil or Nagarmotha",
             "Guaiac Wood",
-            "Litsea Cubeba"
+            "Bay Leaf"
           ],
           "components": [
             {
@@ -533223,10 +533226,10 @@
               "y": 272.6666666666667,
               "row": 1,
               "confidence": 92.0,
-              "note": "Litsea Cubeba",
-              "score": 0.571,
-              "margin": 0.016,
-              "exactText": false
+              "note": "Bay Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -533239,17 +533242,6 @@
               "note": "Cypriol Oil or Nagarmotha",
               "score": 0.667,
               "margin": 0.145,
-              "exactText": false
-            },
-            {
-              "raw": "Leaf Bay",
-              "x": 282.0,
-              "y": 272.6666666666667,
-              "row": 1,
-              "confidence": 92.0,
-              "note": "Litsea Cubeba",
-              "score": 0.571,
-              "margin": 0.016,
               "exactText": false
             }
           ],
@@ -533487,7 +533479,7 @@
             "Leather",
             "Black Sapote",
             "Guaiac Wood",
-            "Litsea Cubeba"
+            "Bay Leaf"
           ],
           "components": [
             {
@@ -533540,24 +533532,13 @@
               "y": 272.0,
               "row": 1,
               "confidence": 95.8,
-              "note": "Litsea Cubeba",
-              "score": 0.571,
-              "margin": 0.016,
-              "exactText": false
+              "note": "Bay Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Leaf Bay",
-              "x": 282.0,
-              "y": 272.0,
-              "row": 1,
-              "confidence": 95.8,
-              "note": "Litsea Cubeba",
-              "score": 0.571,
-              "margin": 0.016,
-              "exactText": false
-            },
             {
               "raw": "AC Pa COTES",
               "x": 95.0,
@@ -533572,7 +533553,72 @@
           ],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Patchouli",
+          "variants": [
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Leather",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Oakmoss",
+          "variants": [
+            "contrast-200",
+            "contrast-260"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Cypriol Oil or Nagarmotha",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Guaiac Wood",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Bay Leaf",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "366-TMFO",
@@ -590041,22 +590087,106 @@
         "Vine",
         "Freesia",
         "Orange Blossom",
-        "Violet",
+        "Violet Leaf",
         "Jasmine",
         "Amber"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Vine",
+        "Freesia",
+        "Orange Blossom",
+        "Violet Leaf",
+        "Jasmine",
+        "Amber"
+      ],
+      "components": [
+        {
+          "raw": "Vine",
+          "x": 32.0,
+          "y": 151.66666666666666,
+          "row": 0,
+          "confidence": 96.6,
+          "note": "Vine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Freesia",
+          "x": 153.0,
+          "y": 151.33333333333334,
+          "row": 0,
+          "confidence": 92.1,
+          "note": "Freesia",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Orange Blossom",
+          "x": 272.0,
+          "y": 151.0,
+          "row": 0,
+          "confidence": 96.1,
+          "note": "Orange Blossom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Leaf Violet",
+          "x": 31.666666666666668,
+          "y": 297.0,
+          "row": 1,
+          "confidence": 94.1,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Jasmine",
+          "x": 152.0,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 94.0,
+          "note": "Jasmine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Amber",
+          "x": 271.6666666666667,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 92.8,
+          "note": "Amber",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 32.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Vine",
             "Freesia",
             "Orange Blossom",
-            "Violet",
+            "Violet Leaf",
             "Jasmine",
             "Amber"
           ],
@@ -590100,10 +590230,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 94.1,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Jasmine",
@@ -590128,31 +590258,19 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 31.666666666666668,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 94.1,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Vine",
             "Freesia",
             "Orange Blossom",
-            "Violet",
+            "Violet Leaf",
             "Jasmine",
             "Amber"
           ],
@@ -590196,10 +590314,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 94.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Jasmine",
@@ -590224,31 +590342,19 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 31.666666666666668,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 94.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "contrast-260",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Vine",
             "Freesia",
             "Orange Blossom",
-            "Violet",
+            "Violet Leaf",
             "Jasmine",
             "Amber"
           ],
@@ -590292,10 +590398,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 95.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Jasmine",
@@ -590320,31 +590426,19 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 31.666666666666668,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 95.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "contrast-260",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Vine",
             "Freesia",
             "Orange Blossom",
-            "Violet",
+            "Violet Leaf",
             "Jasmine",
             "Amber"
           ],
@@ -590388,10 +590482,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 90.9,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Jasmine",
@@ -590416,31 +590510,19 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 31.666666666666668,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 90.9,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "threshold-185",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Vine",
             "Freesia",
             "Orange Blossom",
-            "Violet",
+            "Violet Leaf",
             "Amber"
           ],
           "components": [
@@ -590483,10 +590565,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 95.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Amber",
@@ -590500,31 +590582,19 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 32.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 95.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "threshold-185",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Vine",
             "Freesia",
             "Orange Blossom",
-            "Violet",
+            "Violet Leaf",
             "Jasmine",
             "Amber"
           ],
@@ -590568,10 +590638,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 88.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Jasmine",
@@ -590596,31 +590666,19 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 32.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 88.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "threshold-215",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Vine",
             "Freesia",
             "Orange Blossom",
-            "Violet",
+            "Violet Leaf",
             "Amber"
           ],
           "components": [
@@ -590663,10 +590721,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 95.6,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Amber",
@@ -590680,31 +590738,19 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 32.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 95.6,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Vine",
             "Freesia",
             "Orange Blossom",
-            "Violet",
+            "Violet Leaf",
             "Jasmine",
             "Amber"
           ],
@@ -590748,10 +590794,10 @@
               "y": 297.0,
               "row": 1,
               "confidence": 95.5,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Jasmine",
@@ -590776,21 +590822,19 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 32.0,
-              "y": 297.0,
-              "row": 1,
-              "confidence": 95.5,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Vine",
+        "Freesia",
+        "Orange Blossom",
+        "Violet",
+        "Jasmine",
+        "Amber"
       ]
     },
     {
@@ -595641,7 +595685,7 @@
             "Orange",
             "Mandarin Orange",
             "Currant Leaf and Bud",
-            "Holy Water",
+            "Water Lily",
             "Birch"
           ],
           "components": [
@@ -595695,10 +595739,10 @@
               "y": 278.0,
               "row": 1,
               "confidence": 74.8,
-              "note": "Holy Water",
-              "score": 0.8,
-              "margin": 0.1,
-              "exactText": false
+              "note": "Water Lily",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Birch’",
@@ -595722,17 +595766,6 @@
               "note": "Currant Leaf and Bud",
               "score": 0.889,
               "margin": 0.183,
-              "exactText": false
-            },
-            {
-              "raw": "Lily Water",
-              "x": 151.66666666666666,
-              "y": 278.0,
-              "row": 1,
-              "confidence": 74.8,
-              "note": "Holy Water",
-              "score": 0.8,
-              "margin": 0.1,
               "exactText": false
             },
             {
@@ -688228,7 +688261,89 @@
         "Rose",
         "Cedar"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Iris",
+        "Galbanum",
+        "Violet Leaf",
+        "Vetiver",
+        "Rose",
+        "Cedar"
+      ],
+      "components": [
+        {
+          "raw": "Iris",
+          "x": 33.0,
+          "y": 168.0,
+          "row": 0,
+          "confidence": 86.8,
+          "note": "Iris",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Galbanum",
+          "x": 152.0,
+          "y": 168.0,
+          "row": 0,
+          "confidence": 91.0,
+          "note": "Galbanum",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Leaf Violet",
+          "x": 272.0,
+          "y": 167.0,
+          "row": 0,
+          "confidence": 96.2,
+          "note": "Violet Leaf",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vetiver",
+          "x": 32.0,
+          "y": 290.0,
+          "row": 1,
+          "confidence": 96.0,
+          "note": "Vetiver",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 153.0,
+          "y": 290.0,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 272.0,
+          "y": 289.0,
+          "row": 1,
+          "confidence": 96.8,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 49.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -688238,7 +688353,7 @@
           "notes": [
             "Iris",
             "Galbanum",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Rose",
             "Cedar"
@@ -688272,10 +688387,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 95.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiver",
@@ -688322,17 +688437,6 @@
               "score": 0.727,
               "margin": 0.172,
               "exactText": false
-            },
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 95.4,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
             }
           ],
           "notesHeaderY": 48.7
@@ -688340,11 +688444,11 @@
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Iris",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Rose",
             "Cedar"
@@ -688367,10 +688471,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 95.6,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiver",
@@ -688406,19 +688510,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 95.6,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
@@ -688429,7 +688521,7 @@
           "notes": [
             "Iris",
             "Galbanum",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Rose",
             "Cedar"
@@ -688463,10 +688555,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 95.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiver",
@@ -688523,17 +688615,6 @@
               "note": "Iris",
               "score": 0.75,
               "margin": 0.15,
-              "exactText": false
-            },
-            {
-              "raw": "Leaf Violet",
-              "x": 271.6666666666667,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 95.3,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
               "exactText": false
             }
           ],
@@ -688626,12 +688707,12 @@
         {
           "variant": "threshold-185",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Iris",
             "Galbanum",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Rose",
             "Cedar"
@@ -688665,10 +688746,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 96.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiver",
@@ -688704,19 +688785,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 96.2,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 49.0
         },
         {
@@ -688826,12 +688895,12 @@
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Iris",
             "Galbanum",
-            "Violet",
+            "Violet Leaf",
             "Vetiver",
             "Rose",
             "Cedar"
@@ -688865,10 +688934,10 @@
               "y": 167.0,
               "row": 0,
               "confidence": 95.1,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
+              "note": "Violet Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiver",
@@ -688904,19 +688973,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Violet",
-              "x": 272.0,
-              "y": 167.0,
-              "row": 0,
-              "confidence": 95.1,
-              "note": "Violet",
-              "score": 0.706,
-              "margin": 0.134,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.0
         }
       ]
@@ -704384,14 +704441,7 @@
         }
       ],
       "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_MATCH",
-      "catalogNotesBeforeCorrection": [
-        "Patchouli",
-        "Hazelnut",
-        "Vetiver",
-        "Pink Pepper",
-        "Grapefruit"
-      ]
+      "result": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "922-TMU",
@@ -705138,13 +705188,13 @@
         {
           "variant": "contrast-200",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Fig",
             "Caviar",
             "Fig tree",
-            "Fig"
+            "Fig Leaf"
           ],
           "components": [
             {
@@ -705186,37 +705236,25 @@
               "y": 289.0,
               "row": 1,
               "confidence": 96.6,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Fig",
-              "x": 33.0,
-              "y": 289.0,
-              "row": 1,
-              "confidence": 96.6,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Fig",
             "Caviar",
             "Fig",
-            "Fig"
+            "Fig Leaf"
           ],
           "components": [
             {
@@ -705258,37 +705296,25 @@
               "y": 289.0,
               "row": 1,
               "confidence": 96.6,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Fig",
-              "x": 33.0,
-              "y": 289.0,
-              "row": 1,
-              "confidence": 96.6,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
           "variant": "contrast-260",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Fig",
             "Caviar",
             "Fig tree",
-            "Fig"
+            "Fig Leaf"
           ],
           "components": [
             {
@@ -705330,25 +705356,13 @@
               "y": 289.0,
               "row": 1,
               "confidence": 96.5,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Fig",
-              "x": 33.0,
-              "y": 289.0,
-              "row": 1,
-              "confidence": 96.5,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
@@ -705360,7 +705374,7 @@
             "Fig",
             "Caviar",
             "Fig",
-            "Fig"
+            "Fig Leaf"
           ],
           "components": [
             {
@@ -705402,10 +705416,10 @@
               "y": 275.3333333333333,
               "row": 1,
               "confidence": 94.3,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -705419,17 +705433,6 @@
               "score": 0.6,
               "margin": 0.012,
               "exactText": false
-            },
-            {
-              "raw": "Leaf Fig",
-              "x": 33.0,
-              "y": 275.3333333333333,
-              "row": 1,
-              "confidence": 94.3,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
             }
           ],
           "notesHeaderY": 48.7
@@ -705437,13 +705440,13 @@
         {
           "variant": "threshold-185",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Fig",
             "Caviar",
             "Fig tree",
-            "Fig"
+            "Fig Leaf"
           ],
           "components": [
             {
@@ -705485,37 +705488,25 @@
               "y": 289.0,
               "row": 1,
               "confidence": 96.2,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Leaf Fig",
-              "x": 33.0,
-              "y": 289.0,
-              "row": 1,
-              "confidence": 96.2,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 49.0
         },
         {
           "variant": "threshold-185",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Fig",
             "Caviar",
-            "Trees",
-            "Fig"
+            "Fig tree",
+            "Fig Leaf"
           ],
           "components": [
             {
@@ -705546,10 +705537,10 @@
               "y": 152.0,
               "row": 0,
               "confidence": 92.9,
-              "note": "Trees",
-              "score": 0.615,
-              "margin": 0.015,
-              "exactText": false
+              "note": "Fig tree",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Leaf Fig",
@@ -705557,36 +705548,13 @@
               "y": 289.0,
               "row": 1,
               "confidence": 96.2,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
+              "note": "Fig Leaf",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "tree Fig",
-              "x": 273.0,
-              "y": 152.0,
-              "row": 0,
-              "confidence": 92.9,
-              "note": "Trees",
-              "score": 0.615,
-              "margin": 0.015,
-              "exactText": false
-            },
-            {
-              "raw": "Leaf Fig",
-              "x": 33.0,
-              "y": 289.0,
-              "row": 1,
-              "confidence": 96.2,
-              "note": "Fig",
-              "score": 0.545,
-              "margin": 0.045,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 49.0
         },
         {
