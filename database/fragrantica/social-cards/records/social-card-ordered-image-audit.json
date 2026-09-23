@@ -1,12 +1,12 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 42,
+  "targetedCurrentYellows": 36,
   "results": {
-    "EXACT_ORDERED_CARD_NOTES_DIFFER": 2,
-    "EXACT_ORDERED_MATCH": 2169,
+    "EXACT_ORDERED_CARD_NOTES_DIFFER": 1,
+    "EXACT_ORDERED_MATCH": 2172,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 76,
+    "READING_NOT_STRICT_ENOUGH": 74,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -103510,11 +103510,96 @@
       "catalogNotes": [
         "Sandalwood",
         "Leather",
+        "Papyrus",
         "Cedar",
         "Cardamom",
         "Violet"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Sandalwood",
+        "Leather",
+        "Papyrus",
+        "Cedar",
+        "Cardamom",
+        "Violet"
+      ],
+      "components": [
+        {
+          "raw": "Sandalwood",
+          "x": 32.666666666666664,
+          "y": 167.66666666666666,
+          "row": 0,
+          "confidence": 96.4,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Leather",
+          "x": 171.0,
+          "y": 168.0,
+          "row": 0,
+          "confidence": 96.9,
+          "note": "Leather",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Papyrus",
+          "x": 295.0,
+          "y": 168.0,
+          "row": 0,
+          "confidence": 96.5,
+          "note": "Papyrus",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 32.0,
+          "y": 289.3333333333333,
+          "row": 1,
+          "confidence": 96.6,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cardamom",
+          "x": 170.33333333333334,
+          "y": 289.3333333333333,
+          "row": 1,
+          "confidence": 95.3,
+          "note": "Cardamom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Violet",
+          "x": 293.6666666666667,
+          "y": 289.6666666666667,
+          "row": 1,
+          "confidence": 96.7,
+          "note": "Violet",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 48.7,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-160",
@@ -105184,6 +105269,15 @@
           ],
           "notesHeaderY": 48.0
         }
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Sandalwood",
+        "Leather",
+        "Cedar",
+        "Cardamom",
+        "Violet"
       ]
     },
     {
@@ -165997,7 +166091,66 @@
         "Red Currant",
         "Vanilla"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Litchi",
+        "Rose",
+        "Red Currant",
+        "Vanilla"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-160",
+            "contrast-200",
+            "contrast-230",
+            "contrast-260",
+            "contrast-300",
+            "threshold-170",
+            "threshold-185",
+            "threshold-200",
+            "threshold-215",
+            "threshold-230"
+          ],
+          [
+            "contrast-160",
+            "contrast-200",
+            "contrast-230",
+            "contrast-260",
+            "contrast-300",
+            "threshold-170",
+            "threshold-185",
+            "threshold-200",
+            "threshold-215",
+            "threshold-230"
+          ],
+          [
+            "contrast-160",
+            "contrast-200",
+            "contrast-230",
+            "contrast-260",
+            "contrast-300",
+            "threshold-170",
+            "threshold-185",
+            "threshold-200",
+            "threshold-215",
+            "threshold-230"
+          ],
+          [
+            "contrast-160",
+            "contrast-200",
+            "contrast-230",
+            "contrast-260",
+            "contrast-300",
+            "threshold-170",
+            "threshold-185",
+            "threshold-200",
+            "threshold-215",
+            "threshold-230"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-160",
