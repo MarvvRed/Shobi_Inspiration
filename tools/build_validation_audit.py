@@ -350,7 +350,10 @@ def exact_social_card(row, fid, notes):
         and bool(notes)
         and exact_ordered_card_evidence(row, fid, notes)
     )
-    return validated_exact or manual_exact
+    # The current ordered-card audit is the direct proof: same Shobi code,
+    # same Fragrantica ID, exact archived card and position-by-position notes.
+    # A legacy sidecar record cannot veto that primary evidence.
+    return exact_ordered_card_evidence(row, fid, notes) or validated_exact or manual_exact
 
 
 def exact_perfume_image(row, fid):
