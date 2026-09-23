@@ -3,8 +3,7 @@
   "catalogRows": 2253,
   "targetedCurrentYellows": 226,
   "results": {
-    "EXACT_ORDERED_CARD_NOTES_DIFFER": 55,
-    "EXACT_ORDERED_MATCH": 1981,
+    "EXACT_ORDERED_MATCH": 2036,
     "NO_EXACT_CARD": 2,
     "READING_NOT_STRICT_ENOUGH": 211,
     "UNSUPPORTED_CARD_GEOMETRY": 4
@@ -12631,10 +12630,11 @@
         "Vetiver",
         "Honey",
         "Woody Notes",
-        "Violet",
+        "Violet Leaf",
         "Lotus",
         "Cashmir wood"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Vetiver",
         "Honey",
@@ -12716,10 +12716,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -13462,9 +13459,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1038-BLG",
@@ -15221,9 +15216,14 @@
       "fragranticaId": "14606",
       "card": "database/fragrantica/social-cards/images/143_1043-CAL_14606.jpeg",
       "catalogNotes": [
-        "Lavender",
-        "Green Notes"
+        "Oakmoss",
+        "Rose",
+        "Hyacinth",
+        "Aldehydes",
+        "Amber",
+        "Sandalwood"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Oakmoss",
         "Rose",
@@ -15305,10 +15305,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -15934,9 +15931,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1045-CAL",
@@ -27488,11 +27483,13 @@
       "card": "database/fragrantica/social-cards/images/current_1076-DRC_228.jpeg",
       "catalogNotes": [
         "Leather",
+        "Violet Leaf",
         "Nutmeg",
         "Vetiver",
         "Lavender",
         "Cedar"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Leather",
         "Violet Leaf",
@@ -27574,10 +27571,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -28274,9 +28268,7 @@
           ],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1077-DRC",
@@ -43562,9 +43554,10 @@
         "Aquozone",
         "Mineral Notes",
         "Bergamot",
-        "Orange",
+        "Mandarin Orange",
         "Rosemary"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Sea Water",
         "Aquozone",
@@ -43646,10 +43639,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -44275,9 +44265,7 @@
           ],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1127-ARM",
@@ -44550,10 +44538,11 @@
         "Tonka Bean",
         "Amberwood",
         "Bergamot",
-        "Orange",
+        "Mandarin Orange",
         "Heliotrope",
         "Orange Blossom"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Tonka Bean",
         "Amberwood",
@@ -44635,10 +44624,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -45252,9 +45238,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1129-ARM",
@@ -55126,10 +55110,11 @@
         "Apple",
         "Vanilla",
         "Cinnamon",
-        "Sand",
+        "Sandalwood",
         "Plum",
         "Bergamot"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Apple",
         "Vanilla",
@@ -55211,10 +55196,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -55852,9 +55834,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1161-HUG",
@@ -58886,12 +58866,13 @@
       "card": "database/fragrantica/social-cards/images/259_1172-ISS_79.jpeg",
       "catalogNotes": [
         "Yuzu",
+        "Water",
         "Lemon",
         "Lotus",
-        "Bergamot",
-        "Vetiver",
-        "Lemon Verbena"
+        "Mint",
+        "Green Notes"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Yuzu",
         "Water",
@@ -58973,10 +58954,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -59696,9 +59674,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1173-ISS",
@@ -70515,13 +70491,14 @@
       "fragranticaId": "23711",
       "card": "database/fragrantica/social-cards/images/291_1208-MNTB_23711.jpeg",
       "catalogNotes": [
-        "Violet",
+        "Violet Leaf",
         "Cinnamon",
         "Tonka Bean",
         "Clary Sage",
         "Grapefruit",
         "Woody Notes"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Violet Leaf",
         "Cinnamon",
@@ -70603,10 +70580,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -71316,9 +71290,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1209-MNTB",
@@ -82480,13 +82452,14 @@
       "fragranticaId": "1045",
       "card": "database/fragrantica/social-cards/images/322_1245-PRA_1045.jpeg",
       "catalogNotes": [
-        "Saffron",
-        "Myrrh",
+        "Patchouli",
+        "Benzoin",
+        "Sandalwood",
         "Musk",
-        "Neroli",
-        "Vanilla",
-        "Orange Blossom"
+        "Bergamot",
+        "Rose"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Patchouli",
         "Benzoin",
@@ -82568,10 +82541,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -83233,9 +83203,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1246-RAL",
@@ -91108,13 +91076,14 @@
       "fragranticaId": "29601",
       "card": "database/fragrantica/social-cards/images/345_1269-VAL_29601.jpeg",
       "catalogNotes": [
-        "Cola",
+        "Dark Chocolate",
         "Hazelnut",
         "Coffee",
         "Myrtle",
         "Leather",
         "Cedar"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Dark Chocolate",
         "Hazelnut",
@@ -91196,10 +91165,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -91909,9 +91875,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "127-KIL",
@@ -94627,10 +94591,12 @@
       "fragranticaId": "30240",
       "card": "database/fragrantica/social-cards/images/355_1279-YZLO_30240.jpeg",
       "catalogNotes": [
+        "Sage",
         "Apple",
         "Amber",
         "Woody Notes"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Sage",
         "Apple",
@@ -94688,10 +94654,7 @@
         3,
         1
       ],
-      "iconCounts": [
-        3,
-        1
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -95197,9 +95160,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "128-LEL",
@@ -97345,8 +97306,9 @@
         "Ylang-Ylang",
         "Patchouli",
         "Amyris",
-        "Orange"
+        "Mandarin Orange"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Jasmine",
         "Orange Blossom",
@@ -97428,10 +97390,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -98078,9 +98037,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1286-YZLO",
@@ -124248,10 +124205,14 @@
       "fragranticaId": "13064",
       "card": "database/fragrantica/social-cards/images/2316_1552-VER_13064.jpeg",
       "catalogNotes": [
+        "Lemon",
+        "Mimosa",
+        "Pear",
         "Bergamot",
         "Freesia",
         "Water Lily"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Lemon",
         "Mimosa",
@@ -124333,10 +124294,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -125045,9 +125003,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1553-MNT",
@@ -136476,8 +136432,10 @@
         "Floral Notes",
         "Vanilla",
         "Iris",
-        "Benzoin"
+        "Benzoin",
+        "Sandalwood"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Musk",
         "Floral Notes",
@@ -136559,10 +136517,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -137272,9 +137227,7 @@
           ],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1639-TER",
@@ -143922,9 +143875,11 @@
         "Vanilla",
         "Red Apple",
         "Amber",
-        "Sand",
+        "Sandalwood",
+        "Pineapple",
         "Heliotrope"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Vanilla",
         "Red Apple",
@@ -144006,10 +143961,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -144683,9 +144635,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "166-AZ",
@@ -171606,8 +171556,9 @@
         "Jasmine",
         "Musk",
         "Pear",
-        "Orange"
+        "Mandarin Orange"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Almond Blossom",
         "Amberwood",
@@ -171689,10 +171640,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -172366,9 +172314,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1775-DIP",
@@ -180696,9 +180642,10 @@
         "Mandarin Orange",
         "Musk",
         "Patchouli",
-        "Almonds",
+        "Ambergris",
         "Bergamot"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Rose",
         "Mandarin Orange",
@@ -180780,10 +180727,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -181420,9 +181364,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "1814-AJMA",
@@ -222386,10 +222328,14 @@
       "fragranticaId": "73438",
       "card": "database/fragrantica/social-cards/images/2968_1939-BYR_73438.jpeg",
       "catalogNotes": [
+        "Vanilla",
+        "Amber",
+        "Woody Notes",
         "Musk",
         "Labdanum",
         "Plum"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Vanilla",
         "Amber",
@@ -222471,10 +222417,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -223172,9 +223115,7 @@
           ],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "194-ARM",
@@ -263780,9 +263721,10 @@
         "Bergamot",
         "Rose",
         "Jasmine",
-        "Violet",
+        "Violet Leaf",
         "Orris Root"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Tuberose",
         "Bergamot",
@@ -263864,10 +263806,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -264450,9 +264389,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2090-MNT",
@@ -269336,12 +269273,13 @@
       "card": "database/fragrantica/social-cards/images/current_2106-MARC_46802.jpeg",
       "catalogNotes": [
         "Saffron",
-        "Violet",
+        "Violet Leaf",
         "Pepper",
         "Ambroxan",
         "Nutmeg",
         "Pimento"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Saffron",
         "Violet Leaf",
@@ -269423,10 +269361,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -270124,9 +270059,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2107-GUR",
@@ -284421,9 +284354,10 @@
         "Musk",
         "Black Currant",
         "Bergamot",
-        "Orange",
+        "Mandarin Orange",
         "Petitgrain"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Tea",
         "Musk",
@@ -284505,10 +284439,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -285205,9 +285136,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2150-LEL",
@@ -292926,10 +292855,12 @@
       "catalogNotes": [
         "Vanilla",
         "Coconut",
+        "Beeswax",
         "Licorice",
         "Sandalwood",
         "Tonka Bean"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Vanilla",
         "Coconut",
@@ -293011,10 +292942,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -293748,9 +293676,7 @@
           ],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2178-MON",
@@ -302324,11 +302250,12 @@
       "catalogNotes": [
         "Bitter Orange",
         "Orange",
-        "Orange",
+        "Mandarin Orange",
         "Amber",
         "Sandalwood",
         "Plum"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Bitter Orange",
         "Orange",
@@ -302410,10 +302337,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -302967,9 +302891,7 @@
           ],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2211-YZLO",
@@ -313230,9 +313152,14 @@
       "fragranticaId": "83621",
       "card": "database/fragrantica/social-cards/images/3837_2246-GUC_83621.jpeg",
       "catalogNotes": [
+        "Magnolia",
         "Dewberry",
-        "Coconut"
+        "Coconut",
+        "Musk",
+        "Jasmine",
+        "Patchouli"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Magnolia",
         "Dewberry",
@@ -313314,10 +313241,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -314062,9 +313986,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2247-LTN",
@@ -342444,10 +342366,12 @@
       "catalogNotes": [
         "Honey",
         "Saffron",
+        "Sandalwood",
         "Lily",
         "Orange",
         "Vanilla"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Honey",
         "Saffron",
@@ -342529,10 +342453,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -343287,9 +343208,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "233-ESCE",
@@ -351906,10 +351825,11 @@
         "Sandalwood",
         "Cedar",
         "Cypress",
-        "Palisander Rosewood",
+        "Brazilian Rosewood",
         "Spicy Notes",
         "Myrtle"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Sandalwood",
         "Cedar",
@@ -351991,10 +351911,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -352703,19 +352620,21 @@
           ],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2367-DIP",
       "fragranticaId": "3958",
       "card": "database/fragrantica/social-cards/images/4101_2367-DIP_3958.jpeg",
       "catalogNotes": [
+        "Mandarin Orange",
+        "Yuzu",
+        "Thyme",
         "Lemon",
         "Lime",
         "Woody Notes"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Mandarin Orange",
         "Yuzu",
@@ -352797,10 +352716,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -353486,9 +353402,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2368-ESC",
@@ -362802,8 +362716,9 @@
         "Bubble Gum",
         "Pear",
         "Marshmallow",
-        "Jelly"
+        "Jellybean"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Vanilla",
         "Sugar",
@@ -362885,10 +362800,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -363586,9 +363498,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2402-AKR",
@@ -371736,10 +371646,12 @@
       "catalogNotes": [
         "Sea Water",
         "Citruses",
+        "Lemon Verbena",
         "Musk",
         "Fern",
         "Orange Blossom"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Sea Water",
         "Citruses",
@@ -371821,10 +371733,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -372542,9 +372451,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2428-MARG",
@@ -379483,12 +379390,14 @@
       "fragranticaId": "89368",
       "card": "database/fragrantica/social-cards/images/4184_2453-INI_89368.jpeg",
       "catalogNotes": [
+        "Cherry",
         "Cognac",
         "Tobacco",
         "Vanilla",
         "Pink Pepper",
         "Pepper"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Cherry",
         "Cognac",
@@ -379570,10 +379479,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -380247,9 +380153,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2454-KIL",
@@ -399694,9 +399598,10 @@
         "Agarwood (Oud)",
         "Leather",
         "Fruity Notes",
-        "Agarwood (Oud)",
+        "Akigalawood",
         "Saffron"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Passionfruit",
         "Agarwood (Oud)",
@@ -399778,10 +399683,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -400514,9 +400416,7 @@
           ],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "251-JOM",
@@ -405345,8 +405245,10 @@
         "Lemon",
         "Vanilla",
         "Raspberry",
-        "Musk"
+        "Musk",
+        "Freesia"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Sugar",
         "Lemon",
@@ -405428,10 +405330,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -406105,9 +406004,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 47.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2527-GUR",
@@ -410441,10 +410338,11 @@
         "Sandalwood",
         "Musk",
         "Cardamom",
-        "Rose",
+        "Rose Oxide",
         "Cloves",
         "Cumin"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Sandalwood",
         "Musk",
@@ -410526,10 +410424,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -411332,9 +411227,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2541-STE",
@@ -414556,10 +414449,14 @@
       "fragranticaId": "75119",
       "card": "database/fragrantica/social-cards/images/4364_2552-SOR_75119.jpeg",
       "catalogNotes": [
+        "Water",
+        "Hay",
+        "Green Notes",
         "Animal Notes",
         "Wormwood",
         "Chamomile"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Water",
         "Hay",
@@ -414641,10 +414538,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -415282,9 +415176,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 17.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2553-BON",
@@ -437576,8 +437468,9 @@
         "Cashmir wood",
         "Sandalwood",
         "Pink Pepper",
-        "Saffron"
+        "Benzoin"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Vanilla",
         "Sugar",
@@ -437659,10 +437552,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -438336,9 +438226,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2623-NES",
@@ -452779,11 +452667,13 @@
       "card": "database/fragrantica/social-cards/images/4539_2678-PARF_96023.jpeg",
       "catalogNotes": [
         "Violet",
+        "Musk",
         "Pear",
         "Floral Notes",
         "Sandalwood",
         "Lavender"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Violet",
         "Musk",
@@ -452865,10 +452755,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -453589,9 +453476,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2679-CAR",
@@ -472696,9 +472581,10 @@
         "Pink Pepper",
         "Cashmir wood",
         "Cloves",
-        "Cacao Pod",
+        "Cedar",
         "Sugar"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Musk",
         "Pink Pepper",
@@ -472780,10 +472666,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -473408,9 +473291,7 @@
           ],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2742-XER",
@@ -478319,10 +478200,11 @@
         "Cupcake",
         "Butter",
         "Sugar",
-        "Frosting (Glacé)",
+        "Frosting [Glacé]",
         "Almond",
         "Vanilla"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Cupcake",
         "Butter",
@@ -478404,10 +478286,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -479057,9 +478936,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2758-YZLO",
@@ -484167,11 +484044,12 @@
       "catalogNotes": [
         "Peony",
         "Suede",
-        "Apple",
+        "Red Apple",
         "Rose",
         "Jasmine",
         "Carnation"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Peony",
         "Suede",
@@ -484253,10 +484131,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -485001,9 +484876,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2770-DOL",
@@ -498070,12 +497943,13 @@
       "card": "database/fragrantica/social-cards/images/5081_2814-TMFO_119402.jpeg",
       "catalogNotes": [
         "Fig",
-        "Fig",
+        "Fig Leaf",
         "Ylang-Ylang",
         "Salt",
         "Brown Sugar",
         "Licorice"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Fig",
         "Fig Leaf",
@@ -498157,10 +498031,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -498916,9 +498787,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "2815-DOL",
@@ -515670,9 +515539,10 @@
         "Patchouli",
         "Oakmoss",
         "Coriander",
-        "Violet",
+        "Violet Leaf",
         "Ginger"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Bergamot",
         "Patchouli",
@@ -515754,10 +515624,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -516476,9 +516343,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "315-MNT",
@@ -535484,13 +535349,14 @@
       "fragranticaId": "122",
       "card": "database/fragrantica/social-cards/images/510_399-ARA_122.jpeg",
       "catalogNotes": [
-        "Sand",
+        "Sandalwood",
         "Plum",
         "Peach",
         "Carnation",
         "Ylang-Ylang",
         "Styrax"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Sandalwood",
         "Plum",
@@ -535572,10 +535438,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -536283,9 +536146,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "400-ARIA",
@@ -553036,11 +552897,12 @@
       "catalogNotes": [
         "Lily",
         "Hyacinth",
-        "Lily",
+        "Lily-of-the-Valley",
         "Jasmine",
         "Carnation",
         "Honeysuckle"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Lily",
         "Hyacinth",
@@ -553122,10 +552984,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -553881,9 +553740,7 @@
           ],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "459-CAC",
@@ -560572,11 +560429,12 @@
       "catalogNotes": [
         "Peach Blossom",
         "Musk",
-        "Champagne",
+        "Champagne Rosé",
         "Woody Notes",
         "Rose",
         "Pink Pepper"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Peach Blossom",
         "Musk",
@@ -560658,10 +560516,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -561383,9 +561238,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "483-CAR",
@@ -568756,9 +568609,10 @@
         "Orange Blossom",
         "Jasmine",
         "Ylang-Ylang",
-        "Orange",
+        "Mandarin Orange",
         "Tuberose"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Grapefruit",
         "Orange Blossom",
@@ -568840,10 +568694,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -569575,9 +569426,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "510-CHL",
@@ -586770,9 +586619,12 @@
       "catalogNotes": [
         "Aldehydes",
         "Carnation",
+        "Sandalwood",
         "French Marigold",
-        "Vanilla"
+        "Vanilla",
+        "Coriander"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Aldehydes",
         "Carnation",
@@ -586854,10 +586706,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -587469,9 +587318,7 @@
           ],
           "notesHeaderY": 35.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "571-DAV",
@@ -605257,11 +605104,12 @@
       "catalogNotes": [
         "Strawberry",
         "Marshmallow",
-        "Dark Patchouli",
+        "Patchouli",
         "Caramel",
         "Vanilla",
         "Sugar"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Strawberry",
         "Marshmallow",
@@ -605343,10 +605191,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -606020,9 +605865,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "631-EST",
@@ -612109,8 +611952,10 @@
         "Vanilla",
         "Rose",
         "Lemon",
+        "Musk",
         "Neroli"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Raspberry",
         "Vanilla",
@@ -612192,10 +612037,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -612892,9 +612734,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 50.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "651-ARM",
@@ -641377,8 +641217,9 @@
         "Powdery Notes",
         "Vanilla",
         "Rose",
-        "Orange"
+        "Mandarin Orange"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Raspberry",
         "Praline",
@@ -641460,10 +641301,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -642173,9 +642011,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "751-KEN",
@@ -656736,9 +656572,10 @@
         "Raspberry",
         "Vanilla",
         "Almond",
-        "Violet",
+        "Violet Leaf",
         "Rose"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Musk",
         "Raspberry",
@@ -656820,10 +656657,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -657469,9 +657303,7 @@
           "notes": [],
           "components": []
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "796-LAN",
@@ -660154,8 +659986,9 @@
         "Tea",
         "Cedar",
         "Musk",
-        "Orange"
+        "Mandarin Orange"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Bergamot",
         "Hinoki Wood",
@@ -660237,10 +660070,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -660913,9 +660743,7 @@
           ],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "805-LOL",
@@ -675145,8 +674973,10 @@
         "Caramel",
         "Citron",
         "Vanilla",
+        "Gardenia",
         "Ginger"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Raspberry",
         "Caramel",
@@ -675228,10 +675058,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -675929,9 +675756,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "855-NIN",
@@ -687768,9 +687593,10 @@
         "Frangipani",
         "Mango Blossom",
         "Tiare Flower",
-        "Orange",
+        "Mandarin Orange",
         "Gardenia"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Amber",
         "Frangipani",
@@ -687852,10 +687678,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -688611,9 +688434,7 @@
           ],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "896-RCAV",
@@ -694938,8 +694759,9 @@
         "White Flowers",
         "Cashmeran",
         "Citruses",
-        "Orange"
+        "Mandarin Orange"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Jasmine",
         "Amber",
@@ -695021,10 +694843,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -695757,9 +695576,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "919-TMU",
@@ -704350,9 +704167,10 @@
         "Freesia",
         "Mountain Air",
         "Rose",
-        "Orange",
+        "Mandarin Orange",
         "Woody Notes"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Pomegranate",
         "Freesia",
@@ -704434,10 +704252,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -705147,9 +704962,7 @@
           ],
           "notesHeaderY": 26.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_CARD_NOTES_DIFFER"
+      ]
     },
     {
       "code": "952-VICT",
