@@ -260,7 +260,7 @@ def slotwise_direct_consensus(attempts, expected):
             if position >= len(expected):
                 continue
             direct = item["exactText"] or (
-                item["confidence"] >= 60 and item["score"] >= 0.95 and item["margin"] >= 0.15
+                item["confidence"] >= 60 and item["score"] >= 0.88 and item["margin"] >= 0.15
             )
             if not direct:
                 continue
