@@ -2774,13 +2774,13 @@
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
       "Fig",
-      "Fig",
+      "Fig Leaf",
       "Ylang-Ylang",
       "Salt",
       "Brown Sugar",
       "Licorice"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -2811,7 +2811,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -2833,7 +2833,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -7626,11 +7626,11 @@
       "Cupcake",
       "Butter",
       "Sugar",
-      "Frosting (Glacé)",
+      "Frosting [Glacé]",
       "Almond",
       "Vanilla"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -7652,22 +7652,24 @@
         "socialCard": false,
         "image": true,
         "notes": false,
-        "icons": true,
+        "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Main Notes order not fully verified",
+        "Note icons not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
+      "matchedNotesCount": 5,
+      "iconsCount": 5
     },
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Main Notes order not fully verified"
+      "Main Notes order not fully verified",
+      "Note icons not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -7678,13 +7680,13 @@
       "socialCard": false,
       "image": true,
       "notes": false,
-      "icons": true,
+      "icons": false,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
-    "validationIconsCount": 6
+    "validationMatchedNotesCount": 5,
+    "validationIconsCount": 5
   },
   {
     "id": "pid:4964",
@@ -8731,10 +8733,10 @@
       "Pink Pepper",
       "Cashmir wood",
       "Cloves",
-      "Cacao Pod",
+      "Cedar",
       "Sugar"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -9401,10 +9403,10 @@
       "Musk",
       "Black Currant",
       "Bergamot",
-      "Orange",
+      "Mandarin Orange",
       "Petitgrain"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -9435,7 +9437,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -9457,7 +9459,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -13602,12 +13604,13 @@
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
       "Violet",
+      "Musk",
       "Pear",
       "Floral Notes",
       "Sandalwood",
       "Lavender"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -13637,9 +13640,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
+      "notesCount": 6,
+      "matchedNotesCount": 1,
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -13659,9 +13662,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 1,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4528",
@@ -15767,9 +15770,9 @@
       "Cashmir wood",
       "Sandalwood",
       "Pink Pepper",
-      "Saffron"
+      "Benzoin"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -20126,6 +20129,9 @@
       "base": []
     },
     "fragranticaSocialCardNotes": [
+      "Water",
+      "Hay",
+      "Green Notes",
       "Animal Notes",
       "Wormwood",
       "Chamomile"
@@ -20150,15 +20156,15 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 3,
-      "matchedNotesCount": 3,
-      "iconsCount": 3
+      "notesCount": 6,
+      "matchedNotesCount": 0,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "database/fragrantica/social-cards/images/4364_2552-SOR_75119.jpeg",
     "genderVerificationFragranticaId": "75119",
     "fragranticaVerificationSource": "database/fragrantica/social-cards/images/4364_2552-SOR_75119.jpeg",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "fragrantica_status": "RESOLVED_NO_FORCE",
     "fragrantica_match_method": "shobi_first_no_force",
     "fragrantica_match_reason": "('Unknown SOR brand', 'Night Horse', 'Fragrantica has a Night Horse by Siordia Parfums, but Shobi brand identity is not established strongly enough to cross-brand; do not force')",
@@ -20181,9 +20187,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 3,
-    "validationMatchedNotesCount": 3,
-    "validationIconsCount": 3
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 0,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4363",
@@ -23610,9 +23616,10 @@
       "Lemon",
       "Vanilla",
       "Raspberry",
-      "Musk"
+      "Musk",
+      "Freesia"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -23642,9 +23649,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 5,
+      "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -23664,9 +23671,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
+    "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4289",
@@ -25777,11 +25784,11 @@
       "Sandalwood",
       "Musk",
       "Cardamom",
-      "Rose",
+      "Rose Oxide",
       "Cloves",
       "Cumin"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -25803,22 +25810,24 @@
         "socialCard": false,
         "image": true,
         "notes": false,
-        "icons": true,
+        "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Main Notes order not fully verified",
+        "Note icons not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
+      "matchedNotesCount": 5,
+      "iconsCount": 5
     },
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Main Notes order not fully verified"
+      "Main Notes order not fully verified",
+      "Note icons not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -25829,13 +25838,13 @@
       "socialCard": false,
       "image": true,
       "notes": false,
-      "icons": true,
+      "icons": false,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
-    "validationIconsCount": 6
+    "validationMatchedNotesCount": 5,
+    "validationIconsCount": 5
   },
   {
     "id": "pid:4252",
@@ -28865,10 +28874,10 @@
       "Agarwood (Oud)",
       "Leather",
       "Fruity Notes",
-      "Agarwood (Oud)",
+      "Akigalawood",
       "Saffron"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -30710,13 +30719,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
+      "Cherry",
       "Cognac",
       "Tobacco",
       "Vanilla",
       "Pink Pepper",
       "Pepper"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -30746,9 +30756,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
+      "notesCount": 6,
+      "matchedNotesCount": 0,
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -30768,9 +30778,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 0,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4183",
@@ -32214,6 +32224,7 @@
     "fragranticaSocialCardNotes": [
       "Sea Water",
       "Citruses",
+      "Lemon Verbena",
       "Musk",
       "Fern",
       "Orange Blossom"
@@ -32238,15 +32249,15 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
+      "notesCount": 6,
+      "matchedNotesCount": 2,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "database/fragrantica/social-cards/images/4164_2427-CLEA_3024.jpeg",
     "genderVerificationFragranticaId": "3024",
     "fragranticaVerificationSource": "database/fragrantica/social-cards/images/4164_2427-CLEA_3024.jpeg",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
@@ -32265,9 +32276,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 2,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4163",
@@ -35121,9 +35132,9 @@
       "Bubble Gum",
       "Pear",
       "Marshmallow",
-      "Jelly"
+      "Jellybean"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -35145,22 +35156,24 @@
         "socialCard": false,
         "image": true,
         "notes": false,
-        "icons": true,
+        "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Main Notes order not fully verified",
+        "Note icons not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
+      "matchedNotesCount": 5,
+      "iconsCount": 5
     },
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Main Notes order not fully verified"
+      "Main Notes order not fully verified",
+      "Note icons not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -35171,13 +35184,13 @@
       "socialCard": false,
       "image": true,
       "notes": false,
-      "icons": true,
+      "icons": false,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
-    "validationIconsCount": 6
+    "validationMatchedNotesCount": 5,
+    "validationIconsCount": 5
   },
   {
     "id": "pid:4125",
@@ -36796,11 +36809,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
+      "Mandarin Orange",
+      "Yuzu",
+      "Thyme",
       "Lemon",
       "Lime",
       "Woody Notes"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -36830,9 +36846,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 3,
-      "matchedNotesCount": 3,
-      "iconsCount": 3
+      "notesCount": 6,
+      "matchedNotesCount": 0,
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -36852,9 +36868,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 3,
-    "validationMatchedNotesCount": 3,
-    "validationIconsCount": 3
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 0,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4100",
@@ -37217,11 +37233,11 @@
       "Sandalwood",
       "Cedar",
       "Cypress",
-      "Palisander Rosewood",
+      "Brazilian Rosewood",
       "Spicy Notes",
       "Myrtle"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -40457,11 +40473,12 @@
     "fragranticaSocialCardNotes": [
       "Honey",
       "Saffron",
+      "Sandalwood",
       "Lily",
       "Orange",
       "Vanilla"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -40491,9 +40508,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
+      "notesCount": 6,
+      "matchedNotesCount": 2,
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -40513,9 +40530,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 2,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:3964",
@@ -46000,10 +46017,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
+      "Magnolia",
       "Dewberry",
-      "Coconut"
+      "Coconut",
+      "Musk",
+      "Jasmine",
+      "Patchouli"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -46033,9 +46054,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 2,
-      "matchedNotesCount": 2,
-      "iconsCount": 2
+      "notesCount": 6,
+      "matchedNotesCount": 0,
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -46055,9 +46076,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 2,
-    "validationMatchedNotesCount": 2,
-    "validationIconsCount": 2
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 0,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:3836",
@@ -49415,12 +49436,12 @@
     "fragranticaSocialCardNotes": [
       "Bitter Orange",
       "Orange",
-      "Orange",
+      "Mandarin Orange",
       "Amber",
       "Sandalwood",
       "Plum"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -49451,7 +49472,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -49473,7 +49494,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -52165,11 +52186,12 @@
     "fragranticaSocialCardNotes": [
       "Vanilla",
       "Coconut",
+      "Beeswax",
       "Licorice",
       "Sandalwood",
       "Tonka Bean"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -52199,9 +52221,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
+      "notesCount": 6,
+      "matchedNotesCount": 2,
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -52221,9 +52243,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 2,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:3669",
@@ -60005,7 +60027,7 @@
     },
     "fragranticaSocialCardNotes": [
       "Saffron",
-      "Violet",
+      "Violet Leaf",
       "Pepper",
       "Ambroxan",
       "Nutmeg",
@@ -60032,11 +60054,12 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Marc-Antoine-Barrois/B683-46802.html",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
@@ -60056,7 +60079,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -68409,11 +68432,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
+      "Vanilla",
+      "Amber",
+      "Woody Notes",
       "Musk",
       "Labdanum",
       "Plum"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -68443,9 +68469,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 3,
-      "matchedNotesCount": 3,
-      "iconsCount": 3
+      "notesCount": 6,
+      "matchedNotesCount": 0,
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -68465,9 +68491,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 3,
-    "validationMatchedNotesCount": 3,
-    "validationIconsCount": 3
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 0,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:2967",
@@ -76936,10 +76962,10 @@
       "Bergamot",
       "Rose",
       "Jasmine",
-      "Violet",
+      "Violet Leaf",
       "Orris Root"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -76970,7 +76996,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -76992,7 +77018,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -80688,10 +80714,10 @@
       "Mandarin Orange",
       "Musk",
       "Patchouli",
-      "Almonds",
+      "Ambergris",
       "Bergamot"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -83342,9 +83368,9 @@
       "Jasmine",
       "Musk",
       "Pear",
-      "Orange"
+      "Mandarin Orange"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -83375,7 +83401,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -83397,7 +83423,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -88947,7 +88973,8 @@
       "Vanilla",
       "Red Apple",
       "Amber",
-      "Sand",
+      "Sandalwood",
+      "Pineapple",
       "Heliotrope"
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Christina-Aguilera/Christina-Aguilera-by-Night-6714.html",
@@ -88970,15 +88997,15 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
+      "notesCount": 6,
+      "matchedNotesCount": 3,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "database/fragrantica/social-cards/images/2401_1659-CHRA_6714.jpeg",
     "genderVerificationFragranticaId": "6714",
     "fragranticaVerificationSource": "database/fragrantica/social-cards/images/2401_1659-CHRA_6714.jpeg",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
@@ -88997,9 +89024,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 3,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:2400",
@@ -90447,9 +90474,10 @@
       "Floral Notes",
       "Vanilla",
       "Iris",
-      "Benzoin"
+      "Benzoin",
+      "Sandalwood"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -90479,9 +90507,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 5,
+      "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -90501,9 +90529,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
+    "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:2371",
@@ -93352,11 +93380,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
+      "Lemon",
+      "Mimosa",
+      "Pear",
       "Bergamot",
       "Freesia",
       "Water Lily"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -93386,9 +93417,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 3,
-      "matchedNotesCount": 3,
-      "iconsCount": 3
+      "notesCount": 6,
+      "matchedNotesCount": 0,
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -93408,9 +93439,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 3,
-    "validationMatchedNotesCount": 3,
-    "validationIconsCount": 3
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 0,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:2315",
@@ -100437,7 +100468,7 @@
       "Aquozone",
       "Mineral Notes",
       "Bergamot",
-      "Orange",
+      "Mandarin Orange",
       "Rosemary"
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Profondo-59532.html",
@@ -100461,13 +100492,13 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "database/fragrantica/social-cards/images/2200_1126-ARM_59532.jpeg",
     "genderVerificationFragranticaId": "59532",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "fragranticaSocialCardVerificationSource": "database/fragrantica/social-cards/images/2200_1126-ARM_59532.jpeg",
     "fragranticaSocialCardVerificationFragranticaId": "59532",
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-Profondo-59532.html",
@@ -100492,7 +100523,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -108985,10 +109016,10 @@
       "Raspberry",
       "Vanilla",
       "Almond",
-      "Violet",
+      "Violet Leaf",
       "Rose"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -109019,7 +109050,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -109041,7 +109072,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -109992,11 +110023,11 @@
       "Vetiver",
       "Honey",
       "Woody Notes",
-      "Violet",
+      "Violet Leaf",
       "Lotus",
       "Cashmir wood"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -110027,7 +110058,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "fragranticaVerificationReason": "SHOBI_1037_IS_BVLGARI_MAN_AND_EXACT_FRAGRANTICA_9403",
@@ -110051,7 +110082,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -111853,9 +111884,10 @@
       "Caramel",
       "Citron",
       "Vanilla",
+      "Gardenia",
       "Ginger"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -111886,9 +111918,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
+      "notesCount": 6,
+      "matchedNotesCount": 4,
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -111908,9 +111940,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 4,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:1818",
@@ -120155,10 +120187,10 @@
       "Patchouli",
       "Oakmoss",
       "Coriander",
-      "Violet",
+      "Violet Leaf",
       "Ginger"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -120190,7 +120222,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -120212,7 +120244,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -122422,12 +122454,12 @@
     "fragranticaSocialCardNotes": [
       "Peony",
       "Suede",
-      "Apple",
+      "Red Apple",
       "Rose",
       "Jasmine",
       "Carnation"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -122458,7 +122490,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -122480,7 +122512,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -128205,9 +128237,9 @@
       "Ylang-Ylang",
       "Patchouli",
       "Amyris",
-      "Orange"
+      "Mandarin Orange"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -128238,7 +128270,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -128260,7 +128292,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -129767,10 +129799,10 @@
       "Freesia",
       "Mountain Air",
       "Rose",
-      "Orange",
+      "Mandarin Orange",
       "Woody Notes"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -129801,7 +129833,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -129823,7 +129855,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -131905,9 +131937,9 @@
       "White Flowers",
       "Cashmeran",
       "Citruses",
-      "Orange"
+      "Mandarin Orange"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -131938,7 +131970,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -131960,7 +131992,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -133659,10 +133691,10 @@
       "Frangipani",
       "Mango Blossom",
       "Tiare Flower",
-      "Orange",
+      "Mandarin Orange",
       "Gardenia"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -133694,7 +133726,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -133716,7 +133748,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -140340,9 +140372,9 @@
       "Tea",
       "Cedar",
       "Musk",
-      "Orange"
+      "Mandarin Orange"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -140373,7 +140405,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -140395,7 +140427,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -143487,9 +143519,9 @@
       "Powdery Notes",
       "Vanilla",
       "Rose",
-      "Orange"
+      "Mandarin Orange"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -143520,7 +143552,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -143542,7 +143574,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -150166,9 +150198,10 @@
       "Vanilla",
       "Rose",
       "Lemon",
+      "Musk",
       "Neroli"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -150198,9 +150231,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
+      "notesCount": 6,
+      "matchedNotesCount": 4,
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -150220,9 +150253,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 4,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:729",
@@ -151598,12 +151631,12 @@
     "fragranticaSocialCardNotes": [
       "Strawberry",
       "Marshmallow",
-      "Dark Patchouli",
+      "Patchouli",
       "Caramel",
       "Vanilla",
       "Sugar"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -151634,7 +151667,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -151656,7 +151689,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -156069,8 +156102,10 @@
     "fragranticaSocialCardNotes": [
       "Aldehydes",
       "Carnation",
+      "Sandalwood",
       "French Marigold",
-      "Vanilla"
+      "Vanilla",
+      "Coriander"
     ],
     "validationAudit": {
       "status": "yellow",
@@ -156091,14 +156126,14 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 4,
-      "matchedNotesCount": 4,
-      "iconsCount": 4
+      "notesCount": 6,
+      "matchedNotesCount": 2,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "database/fragrantica/social-cards/images/659_570-DOL_484.jpeg",
     "genderVerificationFragranticaId": "484",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
@@ -156117,9 +156152,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 4,
-    "validationMatchedNotesCount": 4,
-    "validationIconsCount": 4
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 2,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:658",
@@ -160590,10 +160625,10 @@
       "Orange Blossom",
       "Jasmine",
       "Ylang-Ylang",
-      "Orange",
+      "Mandarin Orange",
       "Tuberose"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -160624,7 +160659,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -160646,7 +160681,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -162516,12 +162551,12 @@
     "fragranticaSocialCardNotes": [
       "Peach Blossom",
       "Musk",
-      "Champagne",
+      "Champagne Rosé",
       "Woody Notes",
       "Rose",
       "Pink Pepper"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -162543,22 +162578,24 @@
         "socialCard": false,
         "image": true,
         "notes": false,
-        "icons": true,
+        "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
         "Social Card not fully verified",
-        "Main Notes order not fully verified"
+        "Main Notes order not fully verified",
+        "Note icons not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
+      "matchedNotesCount": 5,
+      "iconsCount": 5
     },
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Main Notes order not fully verified"
+      "Main Notes order not fully verified",
+      "Note icons not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -162569,13 +162606,13 @@
       "socialCard": false,
       "image": true,
       "notes": false,
-      "icons": true,
+      "icons": false,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
-    "validationIconsCount": 6
+    "validationMatchedNotesCount": 5,
+    "validationIconsCount": 5
   },
   {
     "id": "pid:578",
@@ -164197,12 +164234,12 @@
     "fragranticaSocialCardNotes": [
       "Lily",
       "Hyacinth",
-      "Lily",
+      "Lily-of-the-Valley",
       "Jasmine",
       "Carnation",
       "Honeysuckle"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -164233,7 +164270,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -164255,7 +164292,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -167978,7 +168015,7 @@
       "base": []
     },
     "fragranticaSocialCardNotes": [
-      "Sand",
+      "Sandalwood",
       "Plum",
       "Peach",
       "Carnation",
@@ -168006,14 +168043,14 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "database/fragrantica/social-cards/images/510_399-ARA_122.jpeg",
     "genderVerificationFragranticaId": "122",
     "fragranticaVerificationSource": "database/fragrantica/social-cards/images/510_399-ARA_122.jpeg",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
@@ -168033,7 +168070,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -169586,11 +169623,12 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
+      "Sage",
       "Apple",
       "Amber",
       "Woody Notes"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -169620,9 +169658,9 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 3,
-      "matchedNotesCount": 3,
-      "iconsCount": 3
+      "notesCount": 4,
+      "matchedNotesCount": 0,
+      "iconsCount": 4
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -169642,9 +169680,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 3,
-    "validationMatchedNotesCount": 3,
-    "validationIconsCount": 3
+    "validationNotesCount": 4,
+    "validationMatchedNotesCount": 0,
+    "validationIconsCount": 4
   },
   {
     "id": "pid:354",
@@ -170339,14 +170377,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Cola",
+      "Dark Chocolate",
       "Hazelnut",
       "Coffee",
       "Myrtle",
       "Leather",
       "Cedar"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -170377,7 +170415,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -170399,7 +170437,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -172219,14 +172257,14 @@
     "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
     "fragrantica_match_reason": "Shobi residual PRADA AMBER under Prada code matches Prada Amber Pour Homme / Prada Man 2006",
     "fragranticaSocialCardNotes": [
-      "Saffron",
-      "Myrrh",
+      "Patchouli",
+      "Benzoin",
+      "Sandalwood",
       "Musk",
-      "Neroli",
-      "Vanilla",
-      "Orange Blossom"
+      "Bergamot",
+      "Rose"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -174647,14 +174685,14 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
-      "Violet",
+      "Violet Leaf",
       "Cinnamon",
       "Tonka Bean",
       "Clary Sage",
       "Grapefruit",
       "Woody Notes"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -174685,7 +174723,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -174707,7 +174745,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -176923,13 +176961,13 @@
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Issey-Miyake/L-Eau-d-Issey-Pour-Homme-721.html",
     "fragranticaSocialCardNotes": [
       "Yuzu",
+      "Water",
       "Lemon",
       "Lotus",
-      "Bergamot",
-      "Vetiver",
-      "Lemon Verbena"
+      "Mint",
+      "Green Notes"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -177687,7 +177725,7 @@
       "Apple",
       "Vanilla",
       "Cinnamon",
-      "Sand",
+      "Sandalwood",
       "Plum",
       "Bergamot"
     ],
@@ -177712,14 +177750,14 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "genderVerificationSource": "database/fragrantica/social-cards/images/249_1160-HUG_383.jpeg",
     "genderVerificationFragranticaId": "383",
     "fragranticaVerificationSource": "database/fragrantica/social-cards/images/249_1160-HUG_383.jpeg",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
@@ -177739,7 +177777,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -180032,11 +180070,11 @@
       "Tonka Bean",
       "Amberwood",
       "Bergamot",
-      "Orange",
+      "Mandarin Orange",
       "Heliotrope",
       "Orange Blossom"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -180067,7 +180105,7 @@
         "Main Notes order not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 6,
+      "matchedNotesCount": 5,
       "iconsCount": 6
     },
     "validationStatus": "yellow",
@@ -180089,7 +180127,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 6,
+    "validationMatchedNotesCount": 5,
     "validationIconsCount": 6
   },
   {
@@ -183659,6 +183697,7 @@
     },
     "fragranticaSocialCardNotes": [
       "Leather",
+      "Violet Leaf",
       "Nutmeg",
       "Vetiver",
       "Lavender",
@@ -183684,13 +183723,13 @@
         "Social Card not fully verified",
         "Main Notes order not fully verified"
       ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
+      "notesCount": 6,
+      "matchedNotesCount": 1,
+      "iconsCount": 6
     },
     "genderStatus": "VALIDATED_SOCIAL_CARD",
     "fragranticaVerificationSource": "database/fragrantica/social-cards/images/172_unknown_228.jpeg",
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
@@ -183709,9 +183748,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 1,
+    "validationIconsCount": 6
   },
   {
     "id": "pid:171",
@@ -185919,10 +185958,14 @@
     "fragranticaVerificationSource": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-be-275.html",
     "fragranticaLocalUrl": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-be-275.html",
     "fragranticaSocialCardNotes": [
-      "Lavender",
-      "Green Notes"
+      "Oakmoss",
+      "Rose",
+      "Hyacinth",
+      "Aldehydes",
+      "Amber",
+      "Sandalwood"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -185953,9 +185996,9 @@
         "Main Notes order not fully verified",
         "Season not fully verified"
       ],
-      "notesCount": 2,
+      "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 2
+      "iconsCount": 6
     },
     "validationStatus": "yellow",
     "validationIssues": [
@@ -185976,9 +186019,9 @@
       "gender": true,
       "season": false
     },
-    "validationNotesCount": 2,
+    "validationNotesCount": 6,
     "validationMatchedNotesCount": 0,
-    "validationIconsCount": 2
+    "validationIconsCount": 6
   },
   {
     "id": "pid:142",
