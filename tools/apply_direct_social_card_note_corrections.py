@@ -36,6 +36,11 @@ for row in rows:
     previous = list(row.get("fragranticaSocialCardNotes") or [])
     row["fragranticaSocialCardNotes"] = observed
     row["fragranticaSocialCardStatus"] = "VALIDATED_SOCIAL_CARD"
+    # Keep the canonical audit aligned with the now-correct catalog while
+    # preserving the before/after record in the separate corrections report.
+    item["catalogNotesBeforeCorrection"] = previous
+    item["catalogNotes"] = observed
+    item["result"] = "EXACT_ORDERED_MATCH"
     corrections.append({
         "code": row.get("code"),
         "fragranticaId": fid,
@@ -47,6 +52,7 @@ for row in rows:
     })
 
 DB.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+AUDIT.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 REPORT.write_text(json.dumps({
     "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
     "count": len(corrections),
