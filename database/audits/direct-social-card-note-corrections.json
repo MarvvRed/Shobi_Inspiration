@@ -1,52 +1,26 @@
 {
   "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
-  "count": 2,
+  "count": 1,
   "corrections": [
     {
-      "code": "2255-VER",
-      "fragranticaId": "8009",
-      "card": "database/fragrantica/social-cards/images/current_2255-VER_8009.jpeg",
+      "code": "2609-TMFO",
+      "fragranticaId": "15916",
+      "card": "database/fragrantica/social-cards/images/current_2609-TMFO_15916.jpeg",
       "previousNotes": [
-        "Kumquat",
-        "Lemon",
-        "Star Apple",
-        "Musk",
-        "Orange Blossom",
+        "Hyacinth",
+        "Violet",
+        "Galbanum",
+        "Magnolia",
+        "Olibanum (Frankincense)",
         "Musk"
       ],
       "socialCardNotes": [
-        "Kumquat",
-        "Lemon",
-        "Star Apple",
-        "Musk",
-        "Orange Blossom",
-        "Ambrette (Musk Mallow)"
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "iconCounts": [
-        3,
-        3
-      ]
-    },
-    {
-      "code": "1723-TMFO",
-      "fragranticaId": "40089",
-      "card": "database/fragrantica/social-cards/images/current_1723-TMFO_40089.jpeg",
-      "previousNotes": [
-        "Poplar (Populus)",
-        "Olive Tree",
-        "Mastic or Lentisque",
-        "Patchouli",
-        "Woody Notes",
-        "Anise"
-      ],
-      "socialCardNotes": [
-        "Poplar (Populus) Buds",
-        "Olive Tree",
-        "Mastic or Lentisque",
-        "Patchouli",
-        "Woody Notes",
-        "Anise"
+        "Hyacinth",
+        "Violet Leaf",
+        "Galbanum",
+        "Magnolia",
+        "Olibanum (Frankincense)",
+        "Musk"
       ],
       "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
       "iconCounts": [
