@@ -1,31 +1,5 @@
 {
   "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
-  "count": 1,
-  "corrections": [
-    {
-      "code": "1094-DOL",
-      "fragranticaId": "56358",
-      "card": "database/fragrantica/social-cards/images/1817_1094-DOL_56358.jpeg",
-      "previousNotes": [
-        "Bagas de Zimbro",
-        "Citruses",
-        "Blood Orange",
-        "Pimento",
-        "Lavender"
-      ],
-      "socialCardNotes": [
-        "Bagas de Zimbro",
-        "Citruses",
-        "Blood Orange",
-        "Pimento",
-        "Lavender",
-        "Vetiver"
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "iconCounts": [
-        3,
-        3
-      ]
-    }
-  ]
+  "count": 0,
+  "corrections": []
 }

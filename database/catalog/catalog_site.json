@@ -4384,26 +4384,23 @@
       "Civet",
       "Black Currant"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -12730,20 +12727,17 @@
       "Anise",
       "Licorice"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -20232,26 +20226,23 @@
       "Bagas de Zimbro",
       "Olibanum (Frankincense)"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -30934,20 +30925,17 @@
       "Bagas de Zimbro",
       "Mineral Notes"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -57708,20 +57696,17 @@
       "Benzoin",
       "Powdery Notes"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -59611,20 +59596,17 @@
       "Papyrus",
       "Orris Root"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -68045,20 +68027,17 @@
       "Jasmine",
       "Orange Blossom"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true

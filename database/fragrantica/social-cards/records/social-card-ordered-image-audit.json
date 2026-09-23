@@ -1,12 +1,11 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 127,
+  "targetedCurrentYellows": 120,
   "results": {
-    "EXACT_ORDERED_CARD_NOTES_DIFFER": 1,
-    "EXACT_ORDERED_MATCH": 2086,
+    "EXACT_ORDERED_MATCH": 2094,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 160,
+    "READING_NOT_STRICT_ENOUGH": 153,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -210855,7 +210854,35 @@
         "Bagas de Zimbro",
         "Mineral Notes"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Citron",
+        "Bagas de Zimbro",
+        "Mineral Notes"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -307923,7 +307950,53 @@
         "Bagas de Zimbro",
         "Olibanum (Frankincense)"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Iris",
+        "Lavender",
+        "Jasmine",
+        "Neroli",
+        "Bagas de Zimbro",
+        "Olibanum (Frankincense)"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185"
+          ],
+          [
+            "contrast-200",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -386770,7 +386843,53 @@
         "Anise",
         "Licorice"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Basil",
+        "Mint",
+        "Violet",
+        "Yuzu",
+        "Anise",
+        "Licorice"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-260",
+            "threshold-185"
+          ],
+          [
+            "contrast-200",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -469483,7 +469602,56 @@
         "Civet",
         "Black Currant"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Taif Rose",
+        "Agarwood (Oud)",
+        "Incense",
+        "Benzoin",
+        "Civet",
+        "Black Currant"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -577039,7 +577207,49 @@
         "Jasmine",
         "Orange Blossom"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Vanilla",
+        "Tonka Bean",
+        "Blackberry",
+        "Jasmine",
+        "Orange Blossom"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -668233,7 +668443,47 @@
         "Papyrus",
         "Orris Root"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Plum",
+        "Vetiver",
+        "Saffron",
+        "Iris",
+        "Papyrus",
+        "Orris Root"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "threshold-185"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -686774,7 +687024,35 @@
         "Benzoin",
         "Powdery Notes"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Caramel",
+        "Benzoin",
+        "Powdery Notes"
+      ],
+      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "slotwiseEvidence": {
+        "variantsPerPosition": [
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ],
+          [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        ]
+      },
       "attempts": [
         {
           "variant": "contrast-200",

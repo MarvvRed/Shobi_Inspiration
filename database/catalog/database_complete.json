@@ -7976,26 +7976,23 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Roja-Dove/United-Arab-Emirates-Spirit-Of-The-Union-29977.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -23137,24 +23134,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/64092",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -36786,26 +36780,23 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Amouage/Reflection-45-Man-69488.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -56361,24 +56352,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Hermes/Terre-d-Hermes-Eau-Givree-72439.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 3,
       "matchedNotesCount": 3,
       "iconsCount": 3
@@ -105490,24 +105478,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Candy-12426.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 3,
       "matchedNotesCount": 3,
       "iconsCount": 3
@@ -109065,24 +109050,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Marc-Jacobs/Decadence-31226.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -124536,24 +124518,21 @@
     ],
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dior-Addict-215.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 5,
       "matchedNotesCount": 5,
       "iconsCount": 5
