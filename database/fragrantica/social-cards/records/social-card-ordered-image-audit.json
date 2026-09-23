@@ -1,11 +1,11 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 44,
+  "targetedCurrentYellows": 43,
   "results": {
-    "EXACT_ORDERED_MATCH": 2164,
+    "EXACT_ORDERED_MATCH": 2165,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 83,
+    "READING_NOT_STRICT_ENOUGH": 82,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -226088,7 +226088,89 @@
         "Orange Blossom",
         "Jasmine"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Tea",
+        "Mandarin Orange",
+        "Petitgrain",
+        "Vetiver",
+        "Orange Blossom",
+        "Jasmine"
+      ],
+      "components": [
+        {
+          "raw": "Tea",
+          "x": 32.333333333333336,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 96.8,
+          "note": "Tea",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Mandarin Orange",
+          "x": 152.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 69.3,
+          "note": "Mandarin Orange",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Petitgrain",
+          "x": 273.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 69.3,
+          "note": "Petitgrain",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vetiver",
+          "x": 31.666666666666668,
+          "y": 288.3333333333333,
+          "row": 1,
+          "confidence": 96.3,
+          "note": "Vetiver",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Orange Blossom",
+          "x": 152.0,
+          "y": 289.3333333333333,
+          "row": 1,
+          "confidence": 96.4,
+          "note": "Orange Blossom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Jasmine",
+          "x": 272.0,
+          "y": 289.6666666666667,
+          "row": 1,
+          "confidence": 96.2,
+          "note": "Jasmine",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 23.7,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "proof": "COMPLETE_EXACT_MULTIPASS; PARTIAL_READS_LITERAL_SAME_TILE; ICON_COUNTS_MATCH",
       "attempts": [
         {
           "variant": "contrast-200",
