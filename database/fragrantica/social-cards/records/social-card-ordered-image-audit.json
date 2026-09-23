@@ -1,10 +1,9 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 171,
+  "targetedCurrentYellows": 127,
   "results": {
-    "EXACT_ORDERED_CARD_NOTES_DIFFER": 16,
-    "EXACT_ORDERED_MATCH": 2064,
+    "EXACT_ORDERED_MATCH": 2080,
     "NO_EXACT_CARD": 2,
     "READING_NOT_STRICT_ENOUGH": 167,
     "UNSUPPORTED_CARD_GEOMETRY": 4
