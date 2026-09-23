@@ -145,6 +145,31 @@ def candidate(raw, lexicon):
                 artifact_exact.append(name)
     if len(set(artifact_exact)) == 1:
         return artifact_exact[0], 1.0, 1.0, True
+    # For a longer label, one repeated OCR glyph substitution is still direct
+    # card evidence when it identifies exactly one note (for example
+    # ``lris Pallida`` → ``Iris Pallida`` or ``Labdanu`` → ``Labdanum``).
+    # Short labels and multi-character repairs intentionally remain unresolved.
+    compact = target.replace(" ", "")
+    if len(compact) >= 6:
+        def edit_distance_one_or_less(left, right):
+            if abs(len(left) - len(right)) > 1:
+                return False
+            if len(left) == len(right):
+                return sum(a != b for a, b in zip(left, right)) <= 1
+            if len(left) > len(right):
+                left, right = right, left
+            index_left = index_right = edits = 0
+            while index_left < len(left) and index_right < len(right):
+                if left[index_left] == right[index_right]:
+                    index_left += 1; index_right += 1
+                else:
+                    edits += 1; index_right += 1
+                    if edits > 1:
+                        return False
+            return True
+        one_glyph = [name for name in lexicon if edit_distance_one_or_less(compact, norm(name).replace(" ", ""))]
+        if len(one_glyph) == 1:
+            return one_glyph[0], 1.0, 1.0, True
     # Typography only: a card can render a space as joined ("ISOE", "FigLeaf")
     # without changing a single visible letter. Never use this if it is ambiguous.
     compact_target = target.replace(" ", "")
