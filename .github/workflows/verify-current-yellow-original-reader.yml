@@ -1,0 +1,70 @@
+name: Verify current yellow Social Cards
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-current-yellow-original-reader.yml'
+      - 'tools/audit_social_card_order_from_images.py'
+      - 'tools/build_validation_audit.py'
+      - 'tools/build_final_perfume_catalog.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-current-yellow-reader-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify-current-yellows:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - name: Install original reader dependencies
+        run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow numpy
+
+      - name: Read only current yellow Social Cards
+        run: |
+          SOCIAL_CARD_AUDIT_ONLY_CURRENT_YELLOWS=1 \
+          SOCIAL_CARD_AUDIT_WORKERS=2 \
+          SOCIAL_CARD_AUDIT_BATCH=100 \
+          python tools/audit_social_card_order_from_images.py
+
+      - name: Rebuild validation from exact ordered card evidence
+        run: |
+          python tools/build_validation_audit.py
+          python tools/build_final_perfume_catalog.py
+
+      - name: Validate final catalog shape
+        run: |
+          python - <<'PY'
+          import json
+          final = json.load(open('database/catalog/catalog_final_perfume_only.json', encoding='utf-8'))
+          assert len(final) == 2253
+          assert all(row.get('validationStatus') in {'green', 'yellow', 'red'} for row in final)
+          assert all('validationChecks' in row and 'validationIssues' in row for row in final)
+          assert all(all(row['validationChecks'].values()) for row in final if row['validationStatus'] == 'green')
+          counts = {state: sum(row['validationStatus'] == state for row in final) for state in ('green', 'yellow', 'red')}
+          print(counts)
+          PY
+
+      - name: Commit direct yellow-reader results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/catalog/database_complete.json database/catalog/catalog_site.json database/catalog/catalog_final_perfume_only.json database/catalog/database_final_perfume_only.json database/catalog/final-perfume-catalog-certification.json database/audits/FINAL-PERFUME-CATALOG.md database/audits/validation-yellow-report.json database/audits/validation-yellow-report.md database/audits/current-yellow-breakdown.json database/fragrantica/social-cards/records/social-card-ordered-image-audit.json
+          if git diff --cached --quiet; then
+            echo 'No exact current-yellow card results to publish.'
+            exit 0
+          fi
+          git commit -m 'Verify current yellow Social Cards with original reader'
+          git pull --rebase origin main
+          git push
