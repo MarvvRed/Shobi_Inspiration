@@ -13720,42 +13720,36 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Tom-Ford/Bois-Pacifique-100411.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -47125,48 +47119,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/66049",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 2,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 2,
       "iconsCount": 2
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 2,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 2,
     "validationIconsCount": 2
   },
   {
@@ -54606,48 +54594,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/79414",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 2,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 2,
       "iconsCount": 2
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 2,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 2,
     "validationIconsCount": 2
   },
   {
@@ -160743,48 +160725,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/15963",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {

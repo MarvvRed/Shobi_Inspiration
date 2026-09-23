@@ -1,11 +1,11 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 270,
+  "targetedCurrentYellows": 236,
   "results": {
-    "EXACT_ORDERED_MATCH": 1971,
+    "EXACT_ORDERED_MATCH": 1975,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 276,
+    "READING_NOT_STRICT_ENOUGH": 272,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -259226,7 +259226,51 @@
         "Tea",
         "Iso E Super"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Tea",
+        "Iso E Super"
+      ],
+      "components": [
+        {
+          "raw": "Tea",
+          "x": 32.0,
+          "y": 254.33333333333334,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Tea",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "ISOE Super",
+          "x": 152.33333333333334,
+          "y": 254.0,
+          "row": 0,
+          "confidence": 91.7,
+          "note": "Iso E Super",
+          "score": 0.952,
+          "margin": 0.316,
+          "exactText": false
+        }
+      ],
+      "notesHeaderY": 124.0,
+      "labelCounts": [
+        2,
+        0
+      ],
+      "proof": "MULTIPASS_DIRECT_CARD_CONSENSUS; ORDERED_SEQUENCE_EXACT",
+      "multipassEvidence": {
+        "variants": [
+          "contrast-200",
+          "contrast-260",
+          "threshold-185",
+          "threshold-215"
+        ],
+        "readings": 6,
+        "literalReadings": 0
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -310470,7 +310514,50 @@
         "Patchouli",
         "Iso E Super"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Patchouli",
+        "Iso E Super"
+      ],
+      "components": [
+        {
+          "raw": "Patchouli",
+          "x": 33.0,
+          "y": 254.0,
+          "row": 0,
+          "confidence": 86.8,
+          "note": "Patchouli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "ISOE Super",
+          "x": 152.33333333333334,
+          "y": 254.33333333333334,
+          "row": 0,
+          "confidence": 86.8,
+          "note": "Iso E Super",
+          "score": 0.952,
+          "margin": 0.316,
+          "exactText": false
+        }
+      ],
+      "notesHeaderY": 124.0,
+      "labelCounts": [
+        2,
+        0
+      ],
+      "proof": "MULTIPASS_DIRECT_CARD_CONSENSUS; ORDERED_SEQUENCE_EXACT",
+      "multipassEvidence": {
+        "variants": [
+          "contrast-200",
+          "contrast-260",
+          "threshold-215"
+        ],
+        "readings": 3,
+        "literalReadings": 0
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -438404,7 +438491,98 @@
         "Cardamom",
         "Akigalawood"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Olibanum (Frankincense)",
+        "Oak",
+        "Cedar",
+        "Sandalwood",
+        "Cardamom",
+        "Akigalawood"
+      ],
+      "components": [
+        {
+          "raw": "Olibanum (Frankincense)",
+          "x": 32.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 90.1,
+          "note": "Olibanum (Frankincense)",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Oak",
+          "x": 194.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 96.4,
+          "note": "Oak",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cedar",
+          "x": 318.0,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 96.0,
+          "note": "Cedar",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwood",
+          "x": 32.666666666666664,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 95.5,
+          "note": "Sandalwood",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Cardamom",
+          "x": 194.0,
+          "y": 325.0,
+          "row": 1,
+          "confidence": 93.0,
+          "note": "Cardamom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Akigalawo",
+          "x": 317.6666666666667,
+          "y": 325.6666666666667,
+          "row": 1,
+          "confidence": 92.2,
+          "note": "Akigalawood",
+          "score": 0.9,
+          "margin": 0.367,
+          "exactText": false
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "proof": "MULTIPASS_DIRECT_CARD_CONSENSUS; ORDERED_SEQUENCE_EXACT",
+      "multipassEvidence": {
+        "variants": [
+          "contrast-200",
+          "threshold-185",
+          "threshold-215"
+        ],
+        "readings": 4,
+        "literalReadings": 0
+      },
       "attempts": [
         {
           "variant": "contrast-200",
@@ -571110,7 +571288,98 @@
         "Grapefruit",
         "Tonka Bean"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Patchouli",
+        "Rose",
+        "Sandalwood",
+        "Olibanum (Frankincense)",
+        "Grapefruit",
+        "Tonka Bean"
+      ],
+      "components": [
+        {
+          "raw": "Patchouli",
+          "x": 33.0,
+          "y": 163.66666666666666,
+          "row": 0,
+          "confidence": 86.7,
+          "note": "Patchouli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Rose",
+          "x": 195.0,
+          "y": 165.33333333333334,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Rose",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Sandalwoo",
+          "x": 308.3333333333333,
+          "y": 165.0,
+          "row": 0,
+          "confidence": 91.0,
+          "note": "Sandalwood",
+          "score": 0.947,
+          "margin": 0.247,
+          "exactText": false
+        },
+        {
+          "raw": "Olibanum (Frankincense)",
+          "x": 32.0,
+          "y": 296.6666666666667,
+          "row": 1,
+          "confidence": 86.1,
+          "note": "Olibanum (Frankincense)",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Grapefruit",
+          "x": 194.0,
+          "y": 298.0,
+          "row": 1,
+          "confidence": 95.9,
+          "note": "Grapefruit",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Tonka Bear",
+          "x": 308.0,
+          "y": 298.3333333333333,
+          "row": 1,
+          "confidence": 95.9,
+          "note": "Tonka Bean",
+          "score": 0.9,
+          "margin": 0.3,
+          "exactText": false
+        }
+      ],
+      "notesHeaderY": 35.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "proof": "MULTIPASS_DIRECT_CARD_CONSENSUS; ORDERED_SEQUENCE_EXACT",
+      "multipassEvidence": {
+        "variants": [
+          "contrast-200",
+          "contrast-260",
+          "threshold-185"
+        ],
+        "readings": 3,
+        "literalReadings": 0
+      },
       "attempts": [
         {
           "variant": "contrast-200",

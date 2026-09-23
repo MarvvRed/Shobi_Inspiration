@@ -5908,20 +5908,17 @@
       "Cardamom",
       "Akigalawood"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -20284,26 +20281,23 @@
       "Patchouli",
       "Iso E Super"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 2,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 2,
     "validationIconsCount": 2
   },
   {
@@ -23484,26 +23478,23 @@
       "Tea",
       "Iso E Super"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 2,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 2,
     "validationIconsCount": 2
   },
   {
@@ -68796,26 +68787,23 @@
       "Grapefruit",
       "Tonka Bean"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
