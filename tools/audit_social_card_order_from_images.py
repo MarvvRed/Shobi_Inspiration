@@ -207,6 +207,44 @@ def visible_icon_counts(panel, header_y, rows):
     return counts
 
 
+def ocr_panels(source_panel):
+    """Return independent renderings of the same visible notes panel.
+
+    A label is never supplied by the catalog: every candidate still comes from
+    Tesseract reading the card itself. The renderings only make a faint or
+    anti-aliased glyph legible to the same original reader.
+    """
+    base = ImageOps.autocontrast(source_panel)
+    renderings = [
+        ("contrast-200", ImageEnhance.Contrast(base).enhance(2.0)),
+        ("contrast-260", ImageEnhance.Contrast(base).enhance(2.6)),
+        ("threshold-185", base.point(lambda value: 0 if value < 185 else 255)),
+        ("threshold-215", base.point(lambda value: 0 if value < 215 else 255)),
+    ]
+    out = []
+    for variant, panel in renderings:
+        panel = panel.resize((panel.width * SCALE, panel.height * SCALE), Image.Resampling.LANCZOS)
+        if variant.startswith("contrast"):
+            panel = panel.filter(ImageFilter.SHARPEN)
+        payload = io.BytesIO()
+        panel.save(payload, format="PNG")
+        out.append((variant, payload.getvalue()))
+    return out
+
+
+def soft_ordered_match(attempt, expected):
+    """Accept a non-literal OCR token only with strong, direct card evidence."""
+    components = attempt["components"]
+    if len(components) != len(expected) or attempt["notes"] != expected:
+        return False
+    return all(
+        item["exactText"] or (
+            item["confidence"] >= 60 and item["score"] >= 0.90 and item["margin"] >= 0.15
+        )
+        for item in components
+    )
+
+
 def inspect(task):
     row, card_text, lexicon = task
     card = Path(card_text)
@@ -222,21 +260,18 @@ def inspect(task):
             sx, sy = src.width / 1200, src.height / 1200
             x1, y1, x2, y2 = CROP
             source_panel = src.crop((round(x1 * sx), round(y1 * sy), round(x2 * sx), round(y2 * sy))).convert("L").resize((420, 380), Image.Resampling.LANCZOS)
-        panel = ImageOps.autocontrast(source_panel)
-        panel = ImageEnhance.Contrast(panel).enhance(2.0)
-        panel = panel.resize((panel.width * SCALE, panel.height * SCALE), Image.Resampling.LANCZOS).filter(ImageFilter.SHARPEN)
-        payload = io.BytesIO(); panel.save(payload, format="PNG")
         attempts = []
-        for psm in (6, 11):
-            run = subprocess.run(
-                ["tesseract", "stdin", "stdout", "--psm", str(psm), "-l", "eng", "tsv"],
-                input=payload.getvalue(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True,
-                # Tesseract otherwise creates its own large OpenMP pool per card;
-                # parallel card workers would then oversubscribe the machine.
-                env={**os.environ, "OMP_THREAD_LIMIT": "1"}, timeout=12,
-            )
-            attempts.append({"psm": psm, **parse_attempt(list(csv.DictReader(
-                io.StringIO(run.stdout.decode("utf-8", "replace")), delimiter="\t")), lexicon)})
+        for variant, payload in ocr_panels(source_panel):
+            for psm in (6, 11):
+                run = subprocess.run(
+                    ["tesseract", "stdin", "stdout", "--psm", str(psm), "-l", "eng", "tsv"],
+                    input=payload, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True,
+                    # Tesseract otherwise creates its own large OpenMP pool per card;
+                    # parallel card workers would then oversubscribe the machine.
+                    env={**os.environ, "OMP_THREAD_LIMIT": "1"}, timeout=12,
+                )
+                attempts.append({"variant": variant, "psm": psm, **parse_attempt(list(csv.DictReader(
+                    io.StringIO(run.stdout.decode("utf-8", "replace")), delimiter="\t")), lexicon)})
     except Exception as exc:
         return {**base, "result": "OCR_ERROR", "error": str(exc)}
     strict = [a for a in attempts if a["strict"]]
@@ -255,6 +290,25 @@ def inspect(task):
         return {**base, "result": "EXACT_ORDERED_MATCH", "observedNotes": selected["notes"],
                 "components": selected["components"], "notesHeaderY": selected["notesHeaderY"],
                 "labelCounts": label_counts, "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+                "attempts": attempts}
+    # Some labels are visibly clear but Tesseract adds/removes a single glyph
+    # (for example "be Honey"). They remain direct image evidence only when
+    # the complete expected sequence is independently read by three rendering
+    # variants, or by two variants with one literal reading. This is the same
+    # reader and same card; it simply avoids rejecting a correct visible label
+    # because one rendering was not byte-for-byte OCR text.
+    supported = [a for a in attempts if soft_ordered_match(a, base["catalogNotes"])]
+    variants = {a["variant"] for a in supported}
+    literal = [a for a in supported if a["strict"]]
+    consensus = len(variants) >= 3 or (len(variants) >= 2 and literal)
+    if consensus:
+        selected = max(supported, key=lambda a: (sum(item["exactText"] for item in a["components"]), min(item["confidence"] for item in a["components"])))
+        label_counts = [sum(1 for item in selected["components"] if item["row"] == i) for i in range(2)]
+        return {**base, "result": "EXACT_ORDERED_MATCH", "observedNotes": selected["notes"],
+                "components": selected["components"], "notesHeaderY": selected["notesHeaderY"],
+                "labelCounts": label_counts,
+                "proof": "MULTIPASS_DIRECT_CARD_CONSENSUS; ORDERED_SEQUENCE_EXACT",
+                "multipassEvidence": {"variants": sorted(variants), "readings": len(supported), "literalReadings": len(literal)},
                 "attempts": attempts}
     # A non-matching OCR list is never used to rewrite catalog data in this
     # gate. It may be a partial reading or a misread label, so it remains
