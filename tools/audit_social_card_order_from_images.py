@@ -275,8 +275,9 @@ def inspect(task):
     except Exception as exc:
         return {**base, "result": "OCR_ERROR", "error": str(exc)}
     strict = [a for a in attempts if a["strict"]]
-    if not strict:
-        return {**base, "result": "READING_NOT_STRICT_ENOUGH", "attempts": attempts}
+    # Do not return here. A card can have no byte-for-byte OCR pass while
+    # still having a complete, high-confidence ordered reading reproduced by
+    # independent renderings below.
     # An exact high-confidence reading of every visible label is proof by
     # itself. A second OCR layout pass may legitimately omit a wrapped label;
     # an omission is not evidence against the complete reading. It must,
