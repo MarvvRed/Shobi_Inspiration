@@ -7636,7 +7636,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Vanilla-Freak-114400.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -7646,21 +7646,17 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -7670,13 +7666,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4964",
@@ -25754,7 +25750,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Comme-des-Garcons/Concrete-45911.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -25764,21 +25760,17 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -25788,13 +25780,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4252",
@@ -35078,7 +35070,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Vanilla-Candy-Rock-Sugar-42-92258.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -35088,21 +35080,17 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -35112,13 +35100,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:4125",
@@ -162316,7 +162304,7 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Rose-22857.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -162326,21 +162314,17 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 5,
-      "iconsCount": 5
+      "iconsCount": 6
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -162350,13 +162334,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "id": "pid:578",

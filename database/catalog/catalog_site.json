@@ -3273,10 +3273,8 @@
       "Almond",
       "Vanilla"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -3286,13 +3284,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "code": "2755-ZEG",
@@ -11076,10 +11074,8 @@
       "Cloves",
       "Cumin"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -11089,13 +11085,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "code": "2541-STE",
@@ -15091,10 +15087,8 @@
       "Marshmallow",
       "Jelly"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -15104,13 +15098,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "code": "2393-KAY",
@@ -69438,10 +69432,8 @@
       "Rose",
       "Pink Pepper"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Note icons not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
@@ -69451,13 +69443,13 @@
       "socialCard": true,
       "image": true,
       "notes": true,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 6,
     "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationIconsCount": 6
   },
   {
     "code": "481-CAR",
