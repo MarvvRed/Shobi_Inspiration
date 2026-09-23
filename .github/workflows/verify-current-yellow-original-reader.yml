@@ -11,6 +11,7 @@ on:
       - 'tools/build_validation_audit.py'
       - 'tools/build_final_perfume_catalog.py'
       - 'tools/fix_all_season_only_from_exact_card_geometry.py'
+      - 'tools/fetch_current_fid_cards_for_yellows.py'
       - 'database/assets/note-icons/map.js'
 
 permissions:
@@ -38,6 +39,9 @@ jobs:
         run: |
           command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
           python -m pip install --disable-pip-version-check pillow numpy
+
+      - name: Fetch exact missing current Social Cards
+        run: python tools/fetch_current_fid_cards_for_yellows.py
 
       - name: Read only current yellow Social Cards
         run: |
@@ -74,7 +78,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add database/catalog/database_complete.json database/catalog/catalog_site.json database/catalog/catalog_final_perfume_only.json database/catalog/database_final_perfume_only.json database/catalog/final-perfume-catalog-certification.json database/audits/FINAL-PERFUME-CATALOG.md database/audits/validation-yellow-report.json database/audits/validation-yellow-report.md database/audits/current-yellow-breakdown.json database/audits/direct-social-card-note-corrections.json database/audits/all-season-only-card-geometry-fixes.json database/fragrantica/social-cards/gender-season.csv database/fragrantica/social-cards/records/social-card-ordered-image-audit.json
+          git add database/catalog/database_complete.json database/catalog/catalog_site.json database/catalog/catalog_final_perfume_only.json database/catalog/database_final_perfume_only.json database/catalog/final-perfume-catalog-certification.json database/audits/FINAL-PERFUME-CATALOG.md database/audits/validation-yellow-report.json database/audits/validation-yellow-report.md database/audits/current-yellow-breakdown.json database/audits/direct-social-card-note-corrections.json database/audits/all-season-only-card-geometry-fixes.json database/audits/current-fid-card-fetch-report.json database/fragrantica/social-cards/gender-season.csv database/fragrantica/social-cards/images database/fragrantica/social-cards/records/social-card-ordered-image-audit.json
           if git diff --cached --quiet; then
             echo 'No exact current-yellow card results to publish.'
             exit 0
