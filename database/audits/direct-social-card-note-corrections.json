@@ -1,130 +1,26 @@
 {
   "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
-  "count": 6,
+  "count": 2,
   "corrections": [
     {
-      "code": "2788-MIN",
-      "fragranticaId": "88867",
-      "card": "database/fragrantica/social-cards/images/current_2788-MIN_88867.jpeg",
+      "code": "2255-VER",
+      "fragranticaId": "8009",
+      "card": "database/fragrantica/social-cards/images/current_2255-VER_8009.jpeg",
       "previousNotes": [
-        "Cherry",
-        "Amber",
-        "Blonde Woods",
-        "Cedar",
-        "Rose",
-        "Violet"
-      ],
-      "socialCardNotes": [
-        "Cherry",
-        "Amber",
-        "Blonde Woods",
-        "Cedar",
-        "Rose",
-        "Violet Leaf"
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "iconCounts": [
-        3,
-        3
-      ]
-    },
-    {
-      "code": "2090-MNT",
-      "fragranticaId": "67108",
-      "card": "database/fragrantica/social-cards/images/current_2090-MNT_67108.jpeg",
-      "previousNotes": [
-        "Rose",
-        "Saffron",
-        "Brown Sugar",
-        "Amber",
-        "Vanilla",
-        "Violet"
-      ],
-      "socialCardNotes": [
-        "Rose",
-        "Saffron",
-        "Brown Sugar",
-        "Amber",
-        "Vanilla",
-        "Violet Leaf"
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "iconCounts": [
-        3,
-        3
-      ]
-    },
-    {
-      "code": "1764-GUR",
-      "fragranticaId": "53806",
-      "card": "database/fragrantica/social-cards/images/current_1764-GUR_53806.jpeg",
-      "previousNotes": [
-        "Coconut Water",
-        "Fruits",
-        "Freesia",
-        "Bergamot",
-        "Sandalwood",
-        "Tonka Bean"
-      ],
-      "socialCardNotes": [
-        "Coconut",
-        "Water Fruit",
-        "Freesia",
-        "Bergamot",
-        "Sandalwood",
-        "Tonka Bean"
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "iconCounts": [
-        3,
-        3
-      ]
-    },
-    {
-      "code": "560-DOL",
-      "fragranticaId": "29959",
-      "card": "database/fragrantica/social-cards/images/current_560-DOL_29959.jpeg",
-      "previousNotes": [
-        "Vine",
-        "Freesia",
+        "Kumquat",
+        "Lemon",
+        "Star Apple",
+        "Musk",
         "Orange Blossom",
-        "Violet",
-        "Jasmine",
-        "Amber"
-      ],
-      "socialCardNotes": [
-        "Vine",
-        "Freesia",
-        "Orange Blossom",
-        "Violet Leaf",
-        "Jasmine",
-        "Amber"
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "iconCounts": [
-        3,
-        3
-      ]
-    },
-    {
-      "code": "1111-DSQ",
-      "fragranticaId": "1936",
-      "card": "database/fragrantica/social-cards/images/current_1111-DSQ_1936.jpeg",
-      "previousNotes": [
-        "Violet",
-        "Cedar",
-        "Violet",
-        "Vetiver",
-        "Fir",
         "Musk"
       ],
       "socialCardNotes": [
-        "Violet",
-        "Cedar",
-        "Violet Leaf",
-        "Vetiver",
-        "Fir",
-        "Musk"
+        "Kumquat",
+        "Lemon",
+        "Star Apple",
+        "Musk",
+        "Orange Blossom",
+        "Ambrette (Musk Mallow)"
       ],
       "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "iconCounts": [
@@ -133,24 +29,24 @@
       ]
     },
     {
-      "code": "1060-CRT",
-      "fragranticaId": "39885",
-      "card": "database/fragrantica/social-cards/images/current_1060-CRT_39885.jpeg",
+      "code": "1723-TMFO",
+      "fragranticaId": "40089",
+      "card": "database/fragrantica/social-cards/images/current_1723-TMFO_40089.jpeg",
       "previousNotes": [
-        "Honey",
-        "Iris",
-        "Guaiac Wood",
-        "Musk",
-        "Violet",
-        "Patchouli"
+        "Poplar (Populus)",
+        "Olive Tree",
+        "Mastic or Lentisque",
+        "Patchouli",
+        "Woody Notes",
+        "Anise"
       ],
       "socialCardNotes": [
-        "Honey",
-        "Iris",
-        "Guaiac Wood",
-        "Musk",
-        "Violet Leaf",
-        "Patchouli"
+        "Poplar (Populus) Buds",
+        "Olive Tree",
+        "Mastic or Lentisque",
+        "Patchouli",
+        "Woody Notes",
+        "Anise"
       ],
       "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
       "iconCounts": [

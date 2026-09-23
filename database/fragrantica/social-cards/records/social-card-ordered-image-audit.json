@@ -1,12 +1,12 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 62,
+  "targetedCurrentYellows": 55,
   "results": {
-    "EXACT_ORDERED_CARD_NOTES_DIFFER": 6,
-    "EXACT_ORDERED_MATCH": 2152,
+    "EXACT_ORDERED_CARD_NOTES_DIFFER": 2,
+    "EXACT_ORDERED_MATCH": 2158,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 89,
+    "READING_NOT_STRICT_ENOUGH": 87,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -87691,9 +87691,9 @@
               "row": 0,
               "confidence": 51.6,
               "note": "Vetiver",
-              "score": 0.824,
-              "margin": 0.302,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Grapefruit",
@@ -87730,17 +87730,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Uk Vetiver",
-              "x": 284.0,
-              "y": 138.0,
-              "row": 0,
-              "confidence": 51.6,
-              "note": "Vetiver",
-              "score": 0.824,
-              "margin": 0.302,
-              "exactText": false
-            },
             {
               "raw": "Leaf Fig",
               "x": 33.0,
@@ -101840,8 +101829,8 @@
         {
           "variant": "contrast-260",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Sandalwood",
             "Leather",
@@ -101857,9 +101846,9 @@
               "row": 0,
               "confidence": 62.9,
               "note": "Sandalwood",
-              "score": 0.87,
-              "margin": 0.07,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Leather",
@@ -101906,19 +101895,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Sandalwood lf",
-              "x": 32.666666666666664,
-              "y": 167.66666666666666,
-              "row": 0,
-              "confidence": 62.9,
-              "note": "Sandalwood",
-              "score": 0.87,
-              "margin": 0.07,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 48.7
         },
         {
@@ -111076,9 +111053,9 @@
               "row": 0,
               "confidence": 48.0,
               "note": "Fig tree",
-              "score": 0.842,
-              "margin": 0.242,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Grapefruit",
@@ -111133,9 +111110,9 @@
               "row": 0,
               "confidence": 48.0,
               "note": "Fig tree",
-              "score": 0.842,
-              "margin": 0.242,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 43.0
@@ -158715,14 +158692,29 @@
       "fragranticaId": "40089",
       "card": "database/fragrantica/social-cards/images/current_1723-TMFO_40089.jpeg",
       "catalogNotes": [
-        "Poplar (Populus)",
+        "Poplar (Populus) Buds",
         "Olive Tree",
         "Mastic or Lentisque",
         "Patchouli",
         "Woody Notes",
         "Anise"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Poplar (Populus) Buds",
+        "Olive Tree",
+        "Mastic or Lentisque",
+        "Patchouli",
+        "Woody Notes",
+        "Anise"
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -158873,9 +158865,9 @@
               "row": 0,
               "confidence": 42.4,
               "note": "Mastic or Lentisque",
-              "score": 0.809,
-              "margin": 0.329,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Woody Notes",
@@ -158908,9 +158900,9 @@
               "row": 0,
               "confidence": 42.4,
               "note": "Mastic or Lentisque",
-              "score": 0.809,
-              "margin": 0.329,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Poplar (Populus",
@@ -158980,9 +158972,9 @@
               "row": 0,
               "confidence": 40.6,
               "note": "Mastic or Lentisque",
-              "score": 0.927,
-              "margin": 0.371,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Patchouli",
@@ -159026,9 +159018,9 @@
               "row": 0,
               "confidence": 40.6,
               "note": "Mastic or Lentisque",
-              "score": 0.927,
-              "margin": 0.371,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 23.7
@@ -159520,6 +159512,81 @@
           "uncertainComponents": [],
           "notesHeaderY": 24.0
         }
+      ],
+      "positionEvidence": [
+        {
+          "row": 0,
+          "column": 0,
+          "note": "Poplar (Populus) Buds",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "note": "Olive Tree",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "note": "Mastic or Lentisque",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "note": "Patchouli",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "note": "Woody Notes",
+          "variants": [
+            "contrast-200",
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "note": "Anise",
+          "variants": [
+            "contrast-260",
+            "threshold-185",
+            "threshold-215"
+          ]
+        }
+      ],
+      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Poplar (Populus)",
+        "Olive Tree",
+        "Mastic or Lentisque",
+        "Patchouli",
+        "Woody Notes",
+        "Anise"
       ]
     },
     {
@@ -166938,9 +167005,9 @@
               "row": 1,
               "confidence": 44.2,
               "note": "Pink Pepper",
-              "score": 0.88,
-              "margin": 0.139,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -166962,9 +167029,9 @@
               "row": 1,
               "confidence": 44.2,
               "note": "Pink Pepper",
-              "score": 0.88,
-              "margin": 0.139,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 24.0
@@ -168769,6 +168836,7 @@
         "Sandalwood",
         "Tonka Bean"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Coconut",
         "Water Fruit",
@@ -168850,10 +168918,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -169477,16 +169542,6 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_MATCH",
-      "catalogNotesBeforeCorrection": [
-        "Coconut Water",
-        "Fruits",
-        "Freesia",
-        "Bergamot",
-        "Sandalwood",
-        "Tonka Bean"
       ]
     },
     {
@@ -180079,9 +180134,9 @@
               "row": 1,
               "confidence": 63.4,
               "note": "Blood Orange",
-              "score": 0.889,
-              "margin": 0.274,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Lily-of- the-",
@@ -180096,17 +180151,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "SS Blood Orange",
-              "x": 170.33333333333334,
-              "y": 254.66666666666666,
-              "row": 1,
-              "confidence": 63.4,
-              "note": "Blood Orange",
-              "score": 0.889,
-              "margin": 0.274,
-              "exactText": false
-            },
             {
               "raw": "Lily-of- the-",
               "x": 280.0,
@@ -180282,9 +180326,9 @@
               "row": 1,
               "confidence": 38.1,
               "note": "Blood Orange",
-              "score": 0.889,
-              "margin": 0.197,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Lily-of- the-...",
@@ -180306,9 +180350,9 @@
               "row": 1,
               "confidence": 38.1,
               "note": "Blood Orange",
-              "score": 0.889,
-              "margin": 0.197,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Lily-of- the-...",
@@ -226239,8 +226283,8 @@
         {
           "variant": "contrast-260",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Tea",
             "Mandarin Orange",
@@ -226290,9 +226334,9 @@
               "row": 1,
               "confidence": 71.0,
               "note": "Vetiver",
-              "score": 0.824,
-              "margin": 0.215,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Orange Blossom",
@@ -226317,19 +226361,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "it Vetiver",
-              "x": 31.666666666666668,
-              "y": 250.33333333333334,
-              "row": 1,
-              "confidence": 71.0,
-              "note": "Vetiver",
-              "score": 0.824,
-              "margin": 0.215,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 23.7
         },
         {
@@ -276110,9 +276142,9 @@
               "row": 1,
               "confidence": 35.2,
               "note": "Pear",
-              "score": 0.727,
-              "margin": 0.021,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Patchouli",
@@ -276145,9 +276177,9 @@
               "row": 1,
               "confidence": 35.2,
               "note": "Pear",
-              "score": 0.727,
-              "margin": 0.021,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 32.0
@@ -277008,9 +277040,9 @@
               "row": 1,
               "confidence": 51.2,
               "note": "Bitter Orange",
-              "score": 0.897,
-              "margin": 0.254,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -277023,17 +277055,6 @@
               "note": "Iris Pallida",
               "score": 0.917,
               "margin": 0.317,
-              "exactText": false
-            },
-            {
-              "raw": "we Bitter Orange",
-              "x": 272.0,
-              "y": 223.0,
-              "row": 1,
-              "confidence": 51.2,
-              "note": "Bitter Orange",
-              "score": 0.897,
-              "margin": 0.254,
               "exactText": false
             }
           ],
@@ -287347,8 +287368,8 @@
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Fig",
             "Cedar",
@@ -287396,24 +287417,12 @@
               "row": 1,
               "confidence": 57.4,
               "note": "Bitter Orange",
-              "score": 0.897,
-              "margin": 0.254,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "we Bitter Orange",
-              "x": 32.0,
-              "y": 226.66666666666666,
-              "row": 1,
-              "confidence": 57.4,
-              "note": "Bitter Orange",
-              "score": 0.897,
-              "margin": 0.254,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 23.7
         },
         {
@@ -287636,9 +287645,9 @@
               "row": 1,
               "confidence": 41.7,
               "note": "Bitter Orange",
-              "score": 0.897,
-              "margin": 0.254,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vetiver",
@@ -287660,9 +287669,9 @@
               "row": 1,
               "confidence": 41.7,
               "note": "Bitter Orange",
-              "score": 0.897,
-              "margin": 0.254,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 24.0
@@ -319779,9 +319788,93 @@
         "Star Apple",
         "Musk",
         "Orange Blossom",
-        "Musk"
+        "Ambrette (Musk Mallow)"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "observedNotes": [
+        "Kumquat",
+        "Lemon",
+        "Star Apple",
+        "Musk",
+        "Orange Blossom",
+        "Ambrette (Musk Mallow)"
+      ],
+      "components": [
+        {
+          "raw": "Kumquat",
+          "x": 33.0,
+          "y": 151.66666666666666,
+          "row": 0,
+          "confidence": 90.2,
+          "note": "Kumquat",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lemon",
+          "x": 153.0,
+          "y": 151.66666666666666,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Lemon",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Star Apple",
+          "x": 272.3333333333333,
+          "y": 151.0,
+          "row": 0,
+          "confidence": 95.6,
+          "note": "Star Apple",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Musk",
+          "x": 33.0,
+          "y": 273.0,
+          "row": 1,
+          "confidence": 96.1,
+          "note": "Musk",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Orange Blossom",
+          "x": 152.0,
+          "y": 273.0,
+          "row": 1,
+          "confidence": 91.9,
+          "note": "Orange Blossom",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Ambrette (Musk...",
+          "x": 271.6666666666667,
+          "y": 273.0,
+          "row": 1,
+          "confidence": 78.4,
+          "note": "Ambrette (Musk Mallow)",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 32.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
       "attempts": [
         {
           "variant": "contrast-200",
@@ -320336,11 +320429,11 @@
         {
           "variant": "threshold-215",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Kumquat",
-            "Lemon Zest",
+            "Lemon",
             "Star Apple",
             "Musk",
             "Orange Blossom",
@@ -320364,10 +320457,10 @@
               "y": 152.0,
               "row": 0,
               "confidence": 66.7,
-              "note": "Lemon Zest",
-              "score": 0.778,
-              "margin": 0.0,
-              "exactText": false
+              "note": "Lemon",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Star Apple",
@@ -320414,19 +320507,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Lemon ty",
-              "x": 153.0,
-              "y": 152.0,
-              "row": 0,
-              "confidence": 66.7,
-              "note": "Lemon Zest",
-              "score": 0.778,
-              "margin": 0.0,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         },
         {
@@ -320500,6 +320581,16 @@
           ],
           "notesHeaderY": 32.0
         }
+      ],
+      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "result": "EXACT_ORDERED_MATCH",
+      "catalogNotesBeforeCorrection": [
+        "Kumquat",
+        "Lemon",
+        "Star Apple",
+        "Musk",
+        "Orange Blossom",
+        "Musk"
       ]
     },
     {
@@ -384299,9 +384390,9 @@
               "row": 1,
               "confidence": 41.3,
               "note": "Paradisone",
-              "score": 0.87,
-              "margin": 0.142,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -384323,9 +384414,9 @@
               "row": 1,
               "confidence": 41.3,
               "note": "Paradisone",
-              "score": 0.87,
-              "margin": 0.142,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vanilla",
@@ -384618,9 +384709,9 @@
               "row": 1,
               "confidence": 36.6,
               "note": "Paradisone",
-              "score": 0.87,
-              "margin": 0.142,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -384631,9 +384722,9 @@
               "row": 1,
               "confidence": 36.6,
               "note": "Paradisone",
-              "score": 0.87,
-              "margin": 0.142,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 24.0
@@ -388721,9 +388812,9 @@
               "row": 1,
               "confidence": 48.9,
               "note": "Vetiver",
-              "score": 0.7,
-              "margin": 0.174,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Timur",
@@ -388756,9 +388847,9 @@
               "row": 1,
               "confidence": 48.9,
               "note": "Vetiver",
-              "score": 0.7,
-              "margin": 0.174,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 32.0
@@ -389045,9 +389136,9 @@
               "row": 1,
               "confidence": 41.2,
               "note": "Vetiver",
-              "score": 0.824,
-              "margin": 0.192,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Timur",
@@ -389080,9 +389171,9 @@
               "row": 1,
               "confidence": 41.2,
               "note": "Vetiver",
-              "score": 0.824,
-              "margin": 0.192,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 32.0
@@ -428875,9 +428966,9 @@
               "row": 1,
               "confidence": 36.2,
               "note": "Grapefruit",
-              "score": 0.87,
-              "margin": 0.155,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Jasmine",
@@ -428921,9 +429012,9 @@
               "row": 1,
               "confidence": 36.2,
               "note": "Grapefruit",
-              "score": 0.87,
-              "margin": 0.155,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 32.0
@@ -437222,9 +437313,9 @@
               "row": 0,
               "confidence": 46.5,
               "note": "Hyacinth",
-              "score": 0.842,
-              "margin": 0.122,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Leaf Violet ies",
@@ -437290,9 +437381,9 @@
               "row": 0,
               "confidence": 46.5,
               "note": "Hyacinth",
-              "score": 0.842,
-              "margin": 0.122,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Leaf Violet ies",
@@ -437624,9 +437715,9 @@
               "row": 0,
               "confidence": 43.5,
               "note": "Hyacinth",
-              "score": 0.842,
-              "margin": 0.042,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Leat Violet",
@@ -437681,9 +437772,9 @@
               "row": 0,
               "confidence": 43.5,
               "note": "Hyacinth",
-              "score": 0.842,
-              "margin": 0.042,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Leat Violet",
@@ -437720,9 +437811,9 @@
               "row": 0,
               "confidence": 42.7,
               "note": "Hyacinth",
-              "score": 0.842,
-              "margin": 0.202,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Violet Leaf",
@@ -437788,9 +437879,9 @@
               "row": 0,
               "confidence": 42.7,
               "note": "Hyacinth",
-              "score": 0.842,
-              "margin": 0.202,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Galoanum",
@@ -479414,9 +479505,9 @@
               "row": 0,
               "confidence": 36.3,
               "note": "Orris Root",
-              "score": 0.87,
-              "margin": 0.298,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Violet",
@@ -479482,9 +479573,9 @@
               "row": 0,
               "confidence": 36.3,
               "note": "Orris Root",
-              "score": 0.87,
-              "margin": 0.298,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Moxalone ern",
@@ -479711,9 +479802,9 @@
               "row": 0,
               "confidence": 38.6,
               "note": "Moxalone",
-              "score": 0.842,
-              "margin": 0.242,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Akigalawood",
@@ -479757,9 +479848,9 @@
               "row": 0,
               "confidence": 38.6,
               "note": "Moxalone",
-              "score": 0.842,
-              "margin": 0.242,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Sesarr me",
@@ -486133,7 +486224,7 @@
             "Pistachio Spread Cream",
             "Pistachio",
             "Vanilla",
-            "Sour Cream",
+            "Cream",
             "Cacao Pod",
             "Milk"
           ],
@@ -486177,10 +486268,10 @@
               "y": 249.33333333333334,
               "row": 1,
               "confidence": 89.8,
-              "note": "Sour Cream",
-              "score": 0.778,
-              "margin": 0.009,
-              "exactText": false
+              "note": "Cream",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Cacao Pod",
@@ -486216,17 +486307,6 @@
               "score": 0.706,
               "margin": 0.039,
               "exactText": false
-            },
-            {
-              "raw": "SS Cream",
-              "x": 32.0,
-              "y": 249.33333333333334,
-              "row": 1,
-              "confidence": 89.8,
-              "note": "Sour Cream",
-              "score": 0.778,
-              "margin": 0.009,
-              "exactText": false
             }
           ],
           "notesHeaderY": 23.7
@@ -486240,7 +486320,7 @@
             "Pistachio Spread Cream",
             "Pistachio",
             "Vanilla",
-            "Ice cream",
+            "Cream",
             "Cacao Pod",
             "Milk"
           ],
@@ -486284,10 +486364,10 @@
               "y": 258.0,
               "row": 1,
               "confidence": 39.6,
-              "note": "Ice cream",
-              "score": 0.824,
-              "margin": 0.054,
-              "exactText": false
+              "note": "Cream",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "ve Cacao Pod",
@@ -486296,9 +486376,9 @@
               "row": 1,
               "confidence": 53.2,
               "note": "Cacao Pod",
-              "score": 0.857,
-              "margin": 0.297,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Milk",
@@ -486319,21 +486399,10 @@
               "y": 258.0,
               "row": 1,
               "confidence": 39.6,
-              "note": "Ice cream",
-              "score": 0.824,
-              "margin": 0.054,
-              "exactText": false
-            },
-            {
-              "raw": "ve Cacao Pod",
-              "x": 152.0,
-              "y": 263.0,
-              "row": 1,
-              "confidence": 53.2,
-              "note": "Cacao Pod",
-              "score": 0.857,
-              "margin": 0.297,
-              "exactText": false
+              "note": "Cream",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 24.0
@@ -486349,7 +486418,7 @@
             "Vanilla",
             "Cream",
             "Cacao Pod",
-            "Oatmilk"
+            "Milk"
           ],
           "components": [
             {
@@ -486413,10 +486482,10 @@
               "y": 269.0,
               "row": 1,
               "confidence": 35.3,
-              "note": "Oatmilk",
-              "score": 0.857,
-              "margin": 0.079,
-              "exactText": false
+              "note": "Milk",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -486426,10 +486495,10 @@
               "y": 269.0,
               "row": 1,
               "confidence": 35.3,
-              "note": "Oatmilk",
-              "score": 0.857,
-              "margin": 0.079,
-              "exactText": false
+              "note": "Milk",
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 24.0
@@ -496149,8 +496218,8 @@
         {
           "variant": "contrast-200",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Lily-of-the-Valley",
             "Tolu Balsam",
@@ -496187,9 +496256,9 @@
               "row": 0,
               "confidence": 58.6,
               "note": "Powdery Notes",
-              "score": 0.897,
-              "margin": 0.23,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vanilla",
@@ -496203,19 +496272,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Ne Powdery Notes",
-              "x": 273.0,
-              "y": 134.0,
-              "row": 0,
-              "confidence": 58.6,
-              "note": "Powdery Notes",
-              "score": 0.897,
-              "margin": 0.23,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.3
         },
         {
@@ -496582,9 +496639,9 @@
               "row": 0,
               "confidence": 42.9,
               "note": "Powdery Notes",
-              "score": 0.897,
-              "margin": 0.254,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Vanilla",
@@ -496606,9 +496663,9 @@
               "row": 0,
               "confidence": 42.9,
               "note": "Powdery Notes",
-              "score": 0.897,
-              "margin": 0.254,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 32.0
@@ -539443,9 +539500,9 @@
               "row": 0,
               "confidence": 37.9,
               "note": "Resins",
-              "score": 0.8,
-              "margin": 0.255,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Honey",
@@ -539511,9 +539568,9 @@
               "row": 0,
               "confidence": 37.9,
               "note": "Resins",
-              "score": 0.8,
-              "margin": 0.255,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Night Bloomin...",
@@ -546091,8 +546148,8 @@
         {
           "variant": "threshold-215",
           "psm": 11,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Musk",
             "Pear",
@@ -546108,9 +546165,9 @@
               "row": 0,
               "confidence": 53.6,
               "note": "Musk",
-              "score": 0.727,
-              "margin": 0.102,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Pear",
@@ -546157,19 +546214,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "wt Musk",
-              "x": 33.0,
-              "y": 117.0,
-              "row": 0,
-              "confidence": 53.6,
-              "note": "Musk",
-              "score": 0.727,
-              "margin": 0.102,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
       ]
@@ -553568,9 +553613,9 @@
               "row": 1,
               "confidence": 40.7,
               "note": "Peony",
-              "score": 0.769,
-              "margin": 0.154,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Patchouli",
@@ -553603,9 +553648,9 @@
               "row": 1,
               "confidence": 40.7,
               "note": "Peony",
-              "score": 0.769,
-              "margin": 0.154,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 32.0
@@ -553939,9 +553984,9 @@
               "row": 1,
               "confidence": 35.5,
               "note": "Peony",
-              "score": 0.769,
-              "margin": 0.181,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Tuberose",
@@ -553985,9 +554030,9 @@
               "row": 1,
               "confidence": 35.5,
               "note": "Peony",
-              "score": 0.769,
-              "margin": 0.181,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Patchouli",
@@ -595589,9 +595634,9 @@
               "row": 0,
               "confidence": 50.5,
               "note": "Mandarin Orange",
-              "score": 0.909,
-              "margin": 0.08,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Currant and... Leaf lS",
@@ -595639,17 +595684,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Mandarin Orange oy",
-              "x": 272.0,
-              "y": 143.0,
-              "row": 0,
-              "confidence": 50.5,
-              "note": "Mandarin Orange",
-              "score": 0.909,
-              "margin": 0.08,
-              "exactText": false
-            },
             {
               "raw": "Currant and... Leaf lS",
               "x": 21.0,
@@ -595943,9 +595977,9 @@
               "row": 1,
               "confidence": 64.8,
               "note": "Water Lily",
-              "score": 0.87,
-              "margin": 0.155,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Birch",
@@ -595960,17 +595994,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "SZ Water Lily",
-              "x": 151.66666666666666,
-              "y": 230.66666666666666,
-              "row": 1,
-              "confidence": 64.8,
-              "note": "Water Lily",
-              "score": 0.87,
-              "margin": 0.155,
-              "exactText": false
-            },
             {
               "raw": "Currant and... Leaf",
               "x": 32.0,
@@ -674514,9 +674537,9 @@
               "row": 1,
               "confidence": 42.1,
               "note": "White Flowers",
-              "score": 0.897,
-              "margin": 0.138,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Musk",
@@ -674549,9 +674572,9 @@
               "row": 1,
               "confidence": 42.1,
               "note": "White Flowers",
-              "score": 0.897,
-              "margin": 0.138,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 24.0
@@ -687120,9 +687143,9 @@
               "row": 0,
               "confidence": 60.8,
               "note": "Oakmoss",
-              "score": 0.824,
-              "margin": 0.297,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Civet",
@@ -687170,17 +687193,6 @@
             }
           ],
           "uncertainComponents": [
-            {
-              "raw": "Oakmoss ad",
-              "x": 32.0,
-              "y": 150.33333333333334,
-              "row": 0,
-              "confidence": 60.8,
-              "note": "Oakmoss",
-              "score": 0.824,
-              "margin": 0.297,
-              "exactText": false
-            },
             {
               "raw": "astoreum",
               "x": 48.0,
@@ -703721,6 +703733,7 @@
         "Pink Pepper",
         "Grapefruit"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Patchouli",
         "Hazelnut Cocoa Spread",
@@ -703728,14 +703741,69 @@
         "Pink Pepper",
         "Grapefruit"
       ],
-      "iconCounts": [
-        3,
-        2
+      "components": [
+        {
+          "raw": "Patchouli",
+          "x": 33.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 94.2,
+          "note": "Patchouli",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Hazelnut Cocoa...",
+          "x": 152.0,
+          "y": 143.0,
+          "row": 0,
+          "confidence": 76.7,
+          "note": "Hazelnut Cocoa Spread",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Vetiver",
+          "x": 272.0,
+          "y": 135.0,
+          "row": 0,
+          "confidence": 84.4,
+          "note": "Vetiver",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Pink Pepper ih",
+          "x": 21.0,
+          "y": 289.0,
+          "row": 1,
+          "confidence": 68.6,
+          "note": "Pink Pepper",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Grapefruit",
+          "x": 152.0,
+          "y": 289.0,
+          "row": 1,
+          "confidence": 94.1,
+          "note": "Grapefruit",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
       ],
+      "notesHeaderY": 24.0,
       "labelCounts": [
         3,
         2
       ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -703934,9 +704002,9 @@
               "row": 1,
               "confidence": 40.3,
               "note": "Pink Pepper",
-              "score": 0.88,
-              "margin": 0.139,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Grapefruit",
@@ -703958,9 +704026,9 @@
               "row": 1,
               "confidence": 40.3,
               "note": "Pink Pepper",
-              "score": 0.88,
-              "margin": 0.139,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 23.7
@@ -704017,9 +704085,9 @@
               "row": 1,
               "confidence": 38.6,
               "note": "Grapefruit",
-              "score": 0.87,
-              "margin": 0.155,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "uncertainComponents": [
@@ -704041,9 +704109,9 @@
               "row": 1,
               "confidence": 38.6,
               "note": "Grapefruit",
-              "score": 0.87,
-              "margin": 0.155,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             }
           ],
           "notesHeaderY": 23.7
@@ -704218,8 +704286,8 @@
         {
           "variant": "threshold-215",
           "psm": 6,
-          "strict": false,
-          "reason": "READING_NOT_STRICT_ENOUGH",
+          "strict": true,
+          "reason": "",
           "notes": [
             "Patchouli",
             "Hazelnut Cocoa Spread",
@@ -704268,9 +704336,9 @@
               "row": 1,
               "confidence": 68.6,
               "note": "Pink Pepper",
-              "score": 0.88,
-              "margin": 0.139,
-              "exactText": false
+              "score": 1.0,
+              "margin": 1.0,
+              "exactText": true
             },
             {
               "raw": "Grapefruit",
@@ -704284,19 +704352,7 @@
               "exactText": true
             }
           ],
-          "uncertainComponents": [
-            {
-              "raw": "Pink Pepper ih",
-              "x": 21.0,
-              "y": 289.0,
-              "row": 1,
-              "confidence": 68.6,
-              "note": "Pink Pepper",
-              "score": 0.88,
-              "margin": 0.139,
-              "exactText": false
-            }
-          ],
+          "uncertainComponents": [],
           "notesHeaderY": 24.0
         },
         {
@@ -704383,65 +704439,7 @@
           ],
           "notesHeaderY": 24.0
         }
-      ],
-      "positionEvidence": [
-        {
-          "row": 0,
-          "column": 0,
-          "note": "Patchouli",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 0,
-          "column": 1,
-          "note": "Hazelnut Cocoa Spread",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 0,
-          "column": 2,
-          "note": "Vetiver",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 1,
-          "column": 0,
-          "note": "Pink Pepper",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        },
-        {
-          "row": 1,
-          "column": 1,
-          "note": "Grapefruit",
-          "variants": [
-            "contrast-200",
-            "contrast-260",
-            "threshold-185",
-            "threshold-215"
-          ]
-        }
-      ],
-      "proof": "POSITIONWISE_LITERAL_CARD_CONSENSUS; TWO_RENDERINGS_PER_TILE; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_MATCH"
+      ]
     },
     {
       "code": "922-TMU",
