@@ -152,6 +152,11 @@ def parse_attempt(data, lexicon):
     for item in components:
         name, score, margin, exact = candidate(item["raw"], lexicon)
         record = {**item, "note": name, "score": score, "margin": margin, "exactText": exact}
+        # Decorative icon strokes can be OCR'd as 1–3 characters. They are not
+        # labels unless they are an exact note name; keeping them would invent
+        # a seventh/eighth tile and reject an otherwise complete card reading.
+        if not exact and len(norm(item["raw"]).replace(" ", "")) < 4:
+            continue
         parsed.append(record)
         if not exact or item["confidence"] < 50:
             uncertain.append(record)
