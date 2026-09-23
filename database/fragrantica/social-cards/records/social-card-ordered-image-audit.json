@@ -1,11 +1,11 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 51,
+  "targetedCurrentYellows": 44,
   "results": {
-    "EXACT_ORDERED_MATCH": 2163,
+    "EXACT_ORDERED_MATCH": 2164,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 84,
+    "READING_NOT_STRICT_ENOUGH": 83,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -111018,7 +111018,89 @@
         "Citron",
         "Lemon"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Fig",
+        "Fig tree",
+        "Grapefruit",
+        "Bergamot",
+        "Citron",
+        "Lemon"
+      ],
+      "components": [
+        {
+          "raw": "Fig",
+          "x": 33.0,
+          "y": 162.0,
+          "row": 0,
+          "confidence": 96.7,
+          "note": "Fig",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Fig tree",
+          "x": 153.0,
+          "y": 162.0,
+          "row": 0,
+          "confidence": 94.5,
+          "note": "Fig tree",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Grapefruit",
+          "x": 272.0,
+          "y": 162.0,
+          "row": 0,
+          "confidence": 96.3,
+          "note": "Grapefruit",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Bergamot",
+          "x": 33.0,
+          "y": 284.0,
+          "row": 1,
+          "confidence": 91.2,
+          "note": "Bergamot",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Citron",
+          "x": 152.0,
+          "y": 284.0,
+          "row": 1,
+          "confidence": 91.2,
+          "note": "Citron",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        },
+        {
+          "raw": "Lemon",
+          "x": 273.0,
+          "y": 284.0,
+          "row": 1,
+          "confidence": 95.4,
+          "note": "Lemon",
+          "score": 1.0,
+          "margin": 1.0,
+          "exactText": true
+        }
+      ],
+      "notesHeaderY": 43.0,
+      "labelCounts": [
+        3,
+        3
+      ],
+      "proof": "COMPLETE_EXACT_MULTIPASS; PARTIAL_READS_LITERAL_PREFIXES_AT_SAME_TILES; ICON_COUNTS_MATCH",
       "attempts": [
         {
           "variant": "contrast-200",
