@@ -29,6 +29,11 @@ jobs:
         with:
           fetch-depth: 20
 
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: Install original reader dependencies
         run: |
           command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
