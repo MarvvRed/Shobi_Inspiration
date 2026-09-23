@@ -1,13 +1,13 @@
 # Validation yellow report
 
 - Catalog rows: **2253**
-- Yellow rows: **270**
+- Yellow rows: **236**
 - One check from green: **0**
 
 ## Failed checks
 
-- `socialCard`: **270**
-- `notes`: **270**
+- `socialCard`: **236**
+- `notes`: **236**
 - `season`: **10**
 - `icons`: **6**
 - `gender`: **6**
@@ -18,7 +18,7 @@
 
 ## Failure signatures
 
-- `socialCard,notes`: **260** — 2844-LUS, 2833-AMG, 2814-TMFO, 2812-ARM, 2806-PHL, 2792-AJMA, 2788-MIN, 2778-JOM, 2744-NISH, 2765-GUC, 2759-ARM, 2763-KAY, 2762-LAT, 2757-LAT, 2753-YZLO, 2750-NISH, 2743-BORN, 2741-ROJ, 215-CRD, 2728-PEN
+- `socialCard,notes`: **226** — 2844-LUS, 2833-AMG, 2814-TMFO, 2812-ARM, 2806-PHL, 2792-AJMA, 2788-MIN, 2744-NISH, 2765-GUC, 2759-ARM, 2763-KAY, 2762-LAT, 2757-LAT, 2753-YZLO, 2750-NISH, 2743-BORN, 2741-ROJ, 215-CRD, 2728-PEN, 2722-CRIVEL
 - `socialCard,notes,season`: **4** — 884-RAL, 1245-PRA, 1172-ISS, 1043-CAL
 - `socialCard,notes,icons,gender,season`: **3** — 118-HAM, 325-PECK, 235-HOLL
 - `identity,fid,url,socialCard,image,notes,icons,gender,season`: **2** — 2816-MOOD, 2085-CLIV
@@ -31,8 +31,8 @@
 
 ## Issues
 
-- Social Card not fully verified: **270**
-- Main Notes order not fully verified: **264**
+- Social Card not fully verified: **236**
+- Main Notes order not fully verified: **230**
 - Season not fully verified: **10**
 - Missing Main Notes: **6**
 - Note icons not fully verified: **6**
@@ -54,7 +54,6 @@
 | 2806-PHL | Phlur | Afterglow | socialCard, notes |
 | 2792-AJMA | Ajmal | Musk Silk | socialCard, notes |
 | 2788-MIN | Mind Games | French Defense | socialCard, notes |
-| 2778-JOM | Jo Malone London | Fig Lotus Flower | socialCard, notes |
 | 2744-NISH | Nishane | Meant To Be Seen | socialCard, notes |
 | 2765-GUC | Gucci | Muschio di Luce | socialCard, notes |
 | 2759-ARM | Giorgio Armani | Power Of You | socialCard, notes |
@@ -70,7 +69,6 @@
 | 2722-CRIVEL | Maison Crivelli | Hibiscus Mahajad | socialCard, notes |
 | 2720-ROJ | Roja Dove | United Arab Emirates Spirit Of The Union | socialCard, notes |
 | 2719-FRAG | Fragrance Du Bois | New York 5th Avenue | socialCard, notes |
-| 2717-EXN | Ex Nihilo | Brompton Immortals | socialCard, notes |
 | 2712-TMFO | Tom Ford | Oud Voyager | socialCard, notes |
 | 2708-BORN | BORNTOSTANDOUT | Black Mango | socialCard, notes |
 | 2663-ARM | Giorgio Armani | Emporio Armani Stronger With You Parfum | socialCard, notes |
@@ -86,17 +84,13 @@
 | 2584-GIV | Givenchy | Eau de | socialCard, notes |
 | 2553-BON | Bond No 9 | Andy Warhol | socialCard, notes |
 | 2552-SOR | Siordia Parfums | Night Horse | socialCard, notes |
-| 2597-TMFO | Tom Ford | Amber Intrigue | socialCard, notes |
 | 2593-HUG | Hugo Boss | Boss Bottled Elixir | socialCard, notes |
 | 2523-KIL | By Kilian | Sacred Wood | socialCard, notes |
-| 2508-DRC | Dior | Gris Dior | socialCard, notes |
 | 2526-KAY | Kayali Fragrances | Capri in a Bottle Lemon Sugar 14 Eau de Parfum | socialCard, notes |
 | 2549-MARC | Marc-Antoine Barrois | Tilia | socialCard, notes |
 | 2485-ETLR | Etat Libre d Orange | The Ghost In The Shell | socialCard, notes |
 | 2540-COM | Comme des Garçons | Concrete | socialCard, notes |
 | 2492-ETLR | Etat Libre d Orange | You Or Someone Like You | socialCard, notes |
-| 2490-MARG | Maison Martin Margiela | On A Date | socialCard, notes |
-| 2500-BRB | Burberry | Baby Touch | socialCard, notes |
 | 2495-ETLR | Etat Libre d Orange | I am Trash Les Fleurs du Dechet | socialCard, notes |
 | 2509-CRIVEL | Maison Crivelli | Oud Maracuja | socialCard, notes |
 | 2473-HER | Hermès | Barenia | socialCard, notes |
@@ -107,11 +101,9 @@
 | 2452-JOM | Jo Malone London | Cypress Grapevine Cologne Intense | socialCard, notes |
 | 2427-CLEA | Clean | Clean Warm Cotton | socialCard, notes |
 | 2415-ESC | Escada | SEXY GRAFFITY - ESCADA | socialCard, notes |
-| 2411-JAME | James Heeley | Coccobello | socialCard, notes |
 | 2401-KAY | Kayali Fragrances | Vanilla Candy Rock Sugar 42 | socialCard, notes |
 | 2393-KAY | Kayali Fragrances | Eden Sparkling Lychee 39 Eau de Parfum | socialCard, notes |
 | 2378-GOLD | Goldfield & Banks Australia | Bohemian Lime | socialCard, notes |
-| 2374-MICA | M. Micallef | GNTONIC | socialCard, notes |
 | 2367-DIP | Diptyque | Oyedo Eau de Toilette | socialCard, notes |
 | 2363-VER | Versace | Santal Boise | socialCard, notes |
 | 2366-DIP | Diptyque | Tam Dao Eau de Toilette | socialCard, notes |
@@ -119,11 +111,8 @@
 | 2321-PARF | Parfums de Marly | Nisean | socialCard, notes |
 | 2348-AMG | Amouage | Guidance | socialCard, notes |
 | 2327-SWISA | Swiss Arabian | Noora | socialCard, notes |
-| 2303-EXN | Ex Nihilo | French Affair | socialCard, notes |
 | 2313-DRC | Dior | Sauvage Parfum | socialCard, notes |
 | 2296-KAY | Kayali Fragrances | Oudgasm Café Oud 19 Eau de Parfum Intense | socialCard, notes |
-| 2285-BOT | Bottega Veneta | Illusione for Her | socialCard, notes |
-| 2294-ACQ | Acqua di Parma | Yuzu Eau de Parfum | socialCard, notes |
 | 1925-PEN | Penhaligon's | Babylon | socialCard, notes |
 | 2270-ORMO | Ormonde Jayne | Montabaco | socialCard, notes |
 | 2280-XER | Xerjoff | JTC 400 | socialCard, notes |
@@ -138,9 +127,7 @@
 | 2213-AMG | Amouage | Opus XIV Royal Tobacco | socialCard, notes |
 | 2210-JOM | Jo Malone London | Orange Bitters Cologne 2023 | socialCard, notes |
 | 2177-SERG | Serge Lutens | Un Bois Vanille | socialCard, notes |
-| 2171-XER | Xerjoff | Nio | socialCard, notes |
 | 412-BOD | The Body Shop | White Musk L'Eau | socialCard, notes |
-| 2151-GIV | Givenchy | Gentleman Society | socialCard, notes |
 | 2150-LEL | Le Labo | The Matcha 26 | socialCard, notes |
 | 2057-ESCE | Escentric Molecules | Molecule 01 + Black Tea | socialCard, notes |
 | 2144-ARM | Giorgio Armani | Stronger With You Limited Edition | socialCard, notes |
@@ -151,15 +138,12 @@
 | 2121-CAR | Carolina Herrera | Mad World | socialCard, notes |
 | 2090-MNT | Montale | Crazy In Love | socialCard, notes |
 | 2106-MARC | Marc-Antoine Barrois | B683 Eau de Parfum | socialCard, notes |
-| 2049-NISH | Nishane | Papilefiko | socialCard, notes |
-| 2047-KIL | By Kilian | L Heure Verte | socialCard, notes |
 | 2043-VER | Versace | Versace Pour Femme Dylan Purple | socialCard, notes |
 | 2065-FRA | Franck Boclet | Sugar | socialCard, notes |
 | 2085-CLIV | Clive Christian | X NEROLI LIMITED EDITION - CLIVE CHRISTIAN | identity, fid, url, socialCard, image, notes, icons, gender, season |
 | 1978-ARM | Giorgio Armani | Emporio Armani Stronger With You Intensely | socialCard, notes |
 | 1929-BLG | Bvlgari | Tygar | socialCard, notes |
 | 1995-YZLO | Yves Saint Laurent | Caban | socialCard, notes |
-| 1969-DOL | Dolce & Gabbana | Light Blue pour Homme Italian Love | socialCard, notes |
 | 1968-DOL | Dolce & Gabbana | LIGHT BLUE ITALIAN LOVE W | socialCard, notes |
 | 1939-BYR | Byredo | Vanille Antique | socialCard, notes |
 | 1932-YZLO | Yves Saint Laurent | Black Opium Illicit Green | socialCard, notes |
@@ -167,7 +151,6 @@
 | 1895-HER | Hermès | Terre d Hermes Eau Givree | socialCard, notes |
 | 1878-KIL | By Kilian | A Kiss from a Rose | socialCard, notes |
 | 1859-XER | Xerjoff | Uden Overdose | socialCard, notes |
-| 1865-YZLO | Yves Saint Laurent | Magnificent Gold | socialCard, notes |
 | 1864-GUC | Gucci | Gucci Rush 2 | socialCard, notes |
 | 1851-ARM | Giorgio Armani | Jasmin Kusamono | socialCard, notes |
 | 1856-PARF | Parfums de Marly | Meliora | socialCard, notes |
@@ -175,8 +158,6 @@
 | 209-CRD | Creed | Fleurissimo | socialCard, notes |
 | 194-ARM | Giorgio Armani | The Yulong | socialCard, notes |
 | 201-CLIV | Clive Christian | No. 1 for Men | socialCard, notes |
-| 1834-TMFO | Tom Ford | Violet Blonde | socialCard, notes |
-| 1832-TMFO | Tom Ford | Musk Pure | socialCard, notes |
 | 1829-BOB | Bobbi Brown | Bath | socialCard, notes |
 | 1817-JUL | Juliette Has a Gun | Sunny Side Up | socialCard, notes |
 | 1812-ALJA | Al Jazeera Perfumes | Palace | socialCard, notes |
@@ -189,27 +170,22 @@
 | 1729-CAR | Carolina Herrera | Very Good Girl | socialCard, notes |
 | 1718-TER | Tiziana Terenzi | Cassiopea | socialCard, notes |
 | 1723-TMFO | Tom Ford | Vert des Bois | socialCard, notes |
-| 1693-BYR | Byredo | Mixed Emotions | socialCard, notes |
 | 1656-LOC | L'Occitane | Terre de Lumiere | socialCard, notes |
 | 1659-CHRA | Christina Aguilera | Christina Aguilera by Night | socialCard, notes |
 | 1655-JOM | Jo Malone London | Oat Cornflower | socialCard, notes |
-| 1650-LAN | Lancôme | La Vie Est Belle Soleil Cristal | socialCard, notes |
 | 1639-TER | Tiziana Terenzi | Casanova | socialCard, notes |
 | 1638-XER | Xerjoff | Star Musk | socialCard, notes |
 | 1622-FRA | Franck Boclet | Cocaine | socialCard, notes |
 | 1615-FRE | Frédéric Malle | Promise | socialCard, notes |
 | 1552-VER | Versace | Yellow Diamond | socialCard, notes |
-| 1510-KIL | By Kilian | Bamboo Harmony | socialCard, notes |
 | 1484-VAL | Valentino | Valentino Uomo Born in Roma | socialCard, notes |
 | 161-PEN | Penhaligon's | Cairo | socialCard, notes |
-| 1261-TMU | Mugler | B Men | socialCard, notes |
 | 896-RCAV | Roberto Cavalli | Splendid-vanilla | socialCard, notes |
 | 1126-ARM | Giorgio Armani | Acqua di Gio Profondo | socialCard, notes |
 | 165-PEN | Penhaligon's | The Tragedy of Lord George | socialCard, notes |
 | 178-VIL | Vilhelm Parfumerie | Mango Skin | socialCard, notes |
 | 112-BON | Bond No 9 | Bleecker Street | socialCard, notes |
 | 884-RAL | Ralph Lauren | Big Pony 2 | socialCard, notes, season |
-| 1201-LBI | Laura Biagiotti | Venezia Uomo | socialCard, notes |
 | 795-LAN | Lancôme | La Nuit Tresor Musc Diamant | socialCard, notes |
 | 1037-BLG | Bvlgari | Bvlgari Man | socialCard, notes |
 | 1006-ACQ | Acqua di Parma | COLONIA INTENSA OUD | socialCard, notes |
@@ -229,13 +205,11 @@
 | 277-JOM | Jo Malone London | Peony Blush Suede | socialCard, notes |
 | 253-JOM | Jo Malone London | French Lime Blossom | socialCard, notes |
 | 245-JOM | Jo Malone London | Blue Agava Cacao | socialCard, notes |
-| 244-JOM | Jo Malone London | Black Vetyver Cafe | socialCard, notes |
 | 242-JOM | Jo Malone London | Blackberry Bay | socialCard, notes |
 | 235-HOLL | Hollister | Socal | socialCard, notes, icons, gender, season |
 | 232-ESCE | Escentric Molecules | Escentric 01 | socialCard, notes |
 | 229-DIP | Diptyque | Philosykos Eau de Parfum | socialCard, notes |
 | 225-DIP | Diptyque | EL EAU DES SENS | socialCard, notes |
-| 989-YZLO | Yves Saint Laurent | Rive Gauche | socialCard, notes |
 | 985-YZLO | Yves Saint Laurent | Mon Paris | socialCard, notes |
 | 1285-YZLO | Yves Saint Laurent | Magnificent Blossom | socialCard, notes |
 | 949-VIC | Viktor&Rolf | Flowerbomb Bloom | socialCard, notes |
@@ -254,13 +228,10 @@
 | 804-LOE | Loewe | A Mi Aire | socialCard, notes |
 | 798-LAN | Lancôme | Tresor Midnight Rose | socialCard, notes |
 | 787-LAN | Lancôme | Magie Noire | socialCard, notes |
-| 784-LAN | Lancôme | La Vie est Belle L Eclat | socialCard, notes |
 | 783-LAN | Lancôme | La Vie Est Belle L Eau de Toilette Florale | socialCard, notes |
-| 782-LAN | Lancôme | La Vie Est Belle | socialCard, notes |
 | 750-KEN | Kenzo | Flower by Kenzo L Elixir | socialCard, notes |
 | 749-KEN | Kenzo | Flower | socialCard, notes |
 | 716-ISS | Issey Miyake | A Scent by Issey Miyake | socialCard, notes |
-| 696-GLA | Guy Laroche | fidji | socialCard, notes |
 | 657-ARM | Giorgio Armani | Si Intense | socialCard, notes |
 | 655-ARM | Giorgio Armani | Si | socialCard, notes |
 | 650-ARM | Giorgio Armani | Emporio Armani Because It s You | socialCard, notes |
@@ -283,12 +254,10 @@
 | 455-BYR | Byredo | Velvet Haze | socialCard, notes |
 | 440-BLG | Bvlgari | Goldea The Roman Night | socialCard, notes |
 | 431-BRB | Burberry | BURBERRY TOUCH | socialCard, notes |
-| 404-BAL | Balenciaga | BALE PARIS | socialCard, notes |
 | 403-BAL | Balenciaga | Cristobal | socialCard, notes |
 | 399-ARA | Aramis | Tuscany Per Donna | socialCard, notes |
 | 394-AGE | Agent Provocateur | Aphrodisiaque | socialCard, notes |
 | 1493-ACQ | Acqua di Parma | Blu Mediterraneo - Fico di Amalfi | socialCard, notes |
-| 1289-YZLO | Yves Saint Laurent | Y | socialCard, notes |
 | 1282-YZLO | Yves Saint Laurent | L Homme Libre | socialCard, notes |
 | 1279-YZLO | Yves Saint Laurent | Yves Saint Laurent Kouros Silver | socialCard, notes |
 | 1269-VAL | Valentino | Valentino Uomo Edition Noire | socialCard, notes |
@@ -297,10 +266,8 @@
 | 1251-ROM | Romane | Royal Blue | identity, socialCard, notes, icons, gender, season |
 | 1245-PRA | Prada | PRADA AMBER | socialCard, notes, season |
 | 1238-PRA | Prada | Infusion d Homme | socialCard, notes |
-| 1219-MOS | Moschino | Moschino Pour Homme | socialCard, notes |
 | 1208-MNTB | Montblanc | Emblem | socialCard, notes |
 | 769-LART | LArtisan Parfumeur | Premier Figuier | socialCard, notes |
-| 1193-KEN | Kenzo | Totem Orange | socialCard, notes |
 | 1191-KEN | Kenzo | L'Eau par Kenzo Electric Wave pour Homme | socialCard, notes |
 | 1172-ISS | Issey Miyake | L'Eau d'Issey Pour Homme | socialCard, notes, season |
 | 1160-HUG | Hugo Boss | Boss Bottled | socialCard, notes |
@@ -309,7 +276,6 @@
 | 1114-DUN | Dunhill | Icon Elite | socialCard, notes |
 | 1111-DSQ | Dsquared2 | He Wood | socialCard, notes |
 | 1076-DRC | Dior | Fahrenheit | socialCard, notes |
-| 1070-CHA | Chanel | Egoiste Platinum | socialCard, notes |
 | 1060-CRT | Cartier | L Envol de Cartier | socialCard, notes |
 | 1043-CAL | Calvin Klein | Calvin Klein | socialCard, notes, season |
 | 1036-BLG | Bvlgari | BLV Pour Homme | socialCard, notes |

@@ -1,11 +1,11 @@
 {
   "catalogRows": 2253,
-  "yellowRows": 270,
+  "yellowRows": 236,
   "singleFailureRows": [],
   "byFailureSignature": [
     {
       "signature": "socialCard,notes",
-      "count": 260,
+      "count": 226,
       "codes": [
         "2844-LUS",
         "2833-AMG",
@@ -14,7 +14,6 @@
         "2806-PHL",
         "2792-AJMA",
         "2788-MIN",
-        "2778-JOM",
         "2744-NISH",
         "2765-GUC",
         "2759-ARM",
@@ -30,7 +29,6 @@
         "2722-CRIVEL",
         "2720-ROJ",
         "2719-FRAG",
-        "2717-EXN",
         "2712-TMFO",
         "2708-BORN",
         "2663-ARM",
@@ -46,17 +44,13 @@
         "2584-GIV",
         "2553-BON",
         "2552-SOR",
-        "2597-TMFO",
         "2593-HUG",
         "2523-KIL",
-        "2508-DRC",
         "2526-KAY",
         "2549-MARC",
         "2485-ETLR",
         "2540-COM",
         "2492-ETLR",
-        "2490-MARG",
-        "2500-BRB",
         "2495-ETLR",
         "2509-CRIVEL",
         "2473-HER",
@@ -67,11 +61,9 @@
         "2452-JOM",
         "2427-CLEA",
         "2415-ESC",
-        "2411-JAME",
         "2401-KAY",
         "2393-KAY",
         "2378-GOLD",
-        "2374-MICA",
         "2367-DIP",
         "2363-VER",
         "2366-DIP",
@@ -79,11 +71,8 @@
         "2321-PARF",
         "2348-AMG",
         "2327-SWISA",
-        "2303-EXN",
         "2313-DRC",
         "2296-KAY",
-        "2285-BOT",
-        "2294-ACQ",
         "1925-PEN",
         "2270-ORMO",
         "2280-XER",
@@ -98,9 +87,7 @@
         "2213-AMG",
         "2210-JOM",
         "2177-SERG",
-        "2171-XER",
         "412-BOD",
-        "2151-GIV",
         "2150-LEL",
         "2057-ESCE",
         "2144-ARM",
@@ -111,14 +98,11 @@
         "2121-CAR",
         "2090-MNT",
         "2106-MARC",
-        "2049-NISH",
-        "2047-KIL",
         "2043-VER",
         "2065-FRA",
         "1978-ARM",
         "1929-BLG",
         "1995-YZLO",
-        "1969-DOL",
         "1968-DOL",
         "1939-BYR",
         "1932-YZLO",
@@ -126,7 +110,6 @@
         "1895-HER",
         "1878-KIL",
         "1859-XER",
-        "1865-YZLO",
         "1864-GUC",
         "1851-ARM",
         "1856-PARF",
@@ -134,8 +117,6 @@
         "209-CRD",
         "194-ARM",
         "201-CLIV",
-        "1834-TMFO",
-        "1832-TMFO",
         "1829-BOB",
         "1817-JUL",
         "1812-ALJA",
@@ -148,26 +129,21 @@
         "1729-CAR",
         "1718-TER",
         "1723-TMFO",
-        "1693-BYR",
         "1656-LOC",
         "1659-CHRA",
         "1655-JOM",
-        "1650-LAN",
         "1639-TER",
         "1638-XER",
         "1622-FRA",
         "1615-FRE",
         "1552-VER",
-        "1510-KIL",
         "1484-VAL",
         "161-PEN",
-        "1261-TMU",
         "896-RCAV",
         "1126-ARM",
         "165-PEN",
         "178-VIL",
         "112-BON",
-        "1201-LBI",
         "795-LAN",
         "1037-BLG",
         "1006-ACQ",
@@ -185,12 +161,10 @@
         "277-JOM",
         "253-JOM",
         "245-JOM",
-        "244-JOM",
         "242-JOM",
         "232-ESCE",
         "229-DIP",
         "225-DIP",
-        "989-YZLO",
         "985-YZLO",
         "1285-YZLO",
         "949-VIC",
@@ -209,13 +183,10 @@
         "804-LOE",
         "798-LAN",
         "787-LAN",
-        "784-LAN",
         "783-LAN",
-        "782-LAN",
         "750-KEN",
         "749-KEN",
         "716-ISS",
-        "696-GLA",
         "657-ARM",
         "655-ARM",
         "650-ARM",
@@ -238,22 +209,18 @@
         "455-BYR",
         "440-BLG",
         "431-BRB",
-        "404-BAL",
         "403-BAL",
         "399-ARA",
         "394-AGE",
         "1493-ACQ",
-        "1289-YZLO",
         "1282-YZLO",
         "1279-YZLO",
         "1269-VAL",
         "1258-SFER",
         "1257-SFER",
         "1238-PRA",
-        "1219-MOS",
         "1208-MNTB",
         "769-LART",
-        "1193-KEN",
         "1191-KEN",
         "1160-HUG",
         "1152-HER",
@@ -261,7 +228,6 @@
         "1114-DUN",
         "1111-DSQ",
         "1076-DRC",
-        "1070-CHA",
         "1060-CRT",
         "1036-BLG",
         "1024-BOU",
@@ -307,7 +273,7 @@
   "byIssue": [
     {
       "issue": "Social Card not fully verified",
-      "count": 270,
+      "count": 236,
       "codes": [
         "2844-LUS",
         "2833-AMG",
@@ -317,7 +283,6 @@
         "2806-PHL",
         "2792-AJMA",
         "2788-MIN",
-        "2778-JOM",
         "2744-NISH",
         "2765-GUC",
         "2759-ARM",
@@ -333,7 +298,6 @@
         "2722-CRIVEL",
         "2720-ROJ",
         "2719-FRAG",
-        "2717-EXN",
         "2712-TMFO",
         "2708-BORN",
         "2663-ARM",
@@ -349,17 +313,13 @@
         "2584-GIV",
         "2553-BON",
         "2552-SOR",
-        "2597-TMFO",
         "2593-HUG",
         "2523-KIL",
-        "2508-DRC",
         "2526-KAY",
         "2549-MARC",
         "2485-ETLR",
         "2540-COM",
         "2492-ETLR",
-        "2490-MARG",
-        "2500-BRB",
         "2495-ETLR",
         "2509-CRIVEL",
         "2473-HER",
@@ -370,11 +330,9 @@
         "2452-JOM",
         "2427-CLEA",
         "2415-ESC",
-        "2411-JAME",
         "2401-KAY",
         "2393-KAY",
         "2378-GOLD",
-        "2374-MICA",
         "2367-DIP",
         "2363-VER",
         "2366-DIP",
@@ -382,11 +340,8 @@
         "2321-PARF",
         "2348-AMG",
         "2327-SWISA",
-        "2303-EXN",
         "2313-DRC",
         "2296-KAY",
-        "2285-BOT",
-        "2294-ACQ",
         "1925-PEN",
         "2270-ORMO",
         "2280-XER",
@@ -401,9 +356,7 @@
         "2213-AMG",
         "2210-JOM",
         "2177-SERG",
-        "2171-XER",
         "412-BOD",
-        "2151-GIV",
         "2150-LEL",
         "2057-ESCE",
         "2144-ARM",
@@ -414,15 +367,12 @@
         "2121-CAR",
         "2090-MNT",
         "2106-MARC",
-        "2049-NISH",
-        "2047-KIL",
         "2043-VER",
         "2065-FRA",
         "2085-CLIV",
         "1978-ARM",
         "1929-BLG",
         "1995-YZLO",
-        "1969-DOL",
         "1968-DOL",
         "1939-BYR",
         "1932-YZLO",
@@ -430,7 +380,6 @@
         "1895-HER",
         "1878-KIL",
         "1859-XER",
-        "1865-YZLO",
         "1864-GUC",
         "1851-ARM",
         "1856-PARF",
@@ -438,8 +387,6 @@
         "209-CRD",
         "194-ARM",
         "201-CLIV",
-        "1834-TMFO",
-        "1832-TMFO",
         "1829-BOB",
         "1817-JUL",
         "1812-ALJA",
@@ -452,27 +399,22 @@
         "1729-CAR",
         "1718-TER",
         "1723-TMFO",
-        "1693-BYR",
         "1656-LOC",
         "1659-CHRA",
         "1655-JOM",
-        "1650-LAN",
         "1639-TER",
         "1638-XER",
         "1622-FRA",
         "1615-FRE",
         "1552-VER",
-        "1510-KIL",
         "1484-VAL",
         "161-PEN",
-        "1261-TMU",
         "896-RCAV",
         "1126-ARM",
         "165-PEN",
         "178-VIL",
         "112-BON",
         "884-RAL",
-        "1201-LBI",
         "795-LAN",
         "1037-BLG",
         "1006-ACQ",
@@ -492,13 +434,11 @@
         "277-JOM",
         "253-JOM",
         "245-JOM",
-        "244-JOM",
         "242-JOM",
         "235-HOLL",
         "232-ESCE",
         "229-DIP",
         "225-DIP",
-        "989-YZLO",
         "985-YZLO",
         "1285-YZLO",
         "949-VIC",
@@ -517,13 +457,10 @@
         "804-LOE",
         "798-LAN",
         "787-LAN",
-        "784-LAN",
         "783-LAN",
-        "782-LAN",
         "750-KEN",
         "749-KEN",
         "716-ISS",
-        "696-GLA",
         "657-ARM",
         "655-ARM",
         "650-ARM",
@@ -546,12 +483,10 @@
         "455-BYR",
         "440-BLG",
         "431-BRB",
-        "404-BAL",
         "403-BAL",
         "399-ARA",
         "394-AGE",
         "1493-ACQ",
-        "1289-YZLO",
         "1282-YZLO",
         "1279-YZLO",
         "1269-VAL",
@@ -560,10 +495,8 @@
         "1251-ROM",
         "1245-PRA",
         "1238-PRA",
-        "1219-MOS",
         "1208-MNTB",
         "769-LART",
-        "1193-KEN",
         "1191-KEN",
         "1172-ISS",
         "1160-HUG",
@@ -572,7 +505,6 @@
         "1114-DUN",
         "1111-DSQ",
         "1076-DRC",
-        "1070-CHA",
         "1060-CRT",
         "1043-CAL",
         "1036-BLG",
@@ -583,7 +515,7 @@
     },
     {
       "issue": "Main Notes order not fully verified",
-      "count": 264,
+      "count": 230,
       "codes": [
         "2844-LUS",
         "2833-AMG",
@@ -592,7 +524,6 @@
         "2806-PHL",
         "2792-AJMA",
         "2788-MIN",
-        "2778-JOM",
         "2744-NISH",
         "2765-GUC",
         "2759-ARM",
@@ -608,7 +539,6 @@
         "2722-CRIVEL",
         "2720-ROJ",
         "2719-FRAG",
-        "2717-EXN",
         "2712-TMFO",
         "2708-BORN",
         "2663-ARM",
@@ -624,17 +554,13 @@
         "2584-GIV",
         "2553-BON",
         "2552-SOR",
-        "2597-TMFO",
         "2593-HUG",
         "2523-KIL",
-        "2508-DRC",
         "2526-KAY",
         "2549-MARC",
         "2485-ETLR",
         "2540-COM",
         "2492-ETLR",
-        "2490-MARG",
-        "2500-BRB",
         "2495-ETLR",
         "2509-CRIVEL",
         "2473-HER",
@@ -645,11 +571,9 @@
         "2452-JOM",
         "2427-CLEA",
         "2415-ESC",
-        "2411-JAME",
         "2401-KAY",
         "2393-KAY",
         "2378-GOLD",
-        "2374-MICA",
         "2367-DIP",
         "2363-VER",
         "2366-DIP",
@@ -657,11 +581,8 @@
         "2321-PARF",
         "2348-AMG",
         "2327-SWISA",
-        "2303-EXN",
         "2313-DRC",
         "2296-KAY",
-        "2285-BOT",
-        "2294-ACQ",
         "1925-PEN",
         "2270-ORMO",
         "2280-XER",
@@ -676,9 +597,7 @@
         "2213-AMG",
         "2210-JOM",
         "2177-SERG",
-        "2171-XER",
         "412-BOD",
-        "2151-GIV",
         "2150-LEL",
         "2057-ESCE",
         "2144-ARM",
@@ -689,14 +608,11 @@
         "2121-CAR",
         "2090-MNT",
         "2106-MARC",
-        "2049-NISH",
-        "2047-KIL",
         "2043-VER",
         "2065-FRA",
         "1978-ARM",
         "1929-BLG",
         "1995-YZLO",
-        "1969-DOL",
         "1968-DOL",
         "1939-BYR",
         "1932-YZLO",
@@ -704,7 +620,6 @@
         "1895-HER",
         "1878-KIL",
         "1859-XER",
-        "1865-YZLO",
         "1864-GUC",
         "1851-ARM",
         "1856-PARF",
@@ -712,8 +627,6 @@
         "209-CRD",
         "194-ARM",
         "201-CLIV",
-        "1834-TMFO",
-        "1832-TMFO",
         "1829-BOB",
         "1817-JUL",
         "1812-ALJA",
@@ -726,27 +639,22 @@
         "1729-CAR",
         "1718-TER",
         "1723-TMFO",
-        "1693-BYR",
         "1656-LOC",
         "1659-CHRA",
         "1655-JOM",
-        "1650-LAN",
         "1639-TER",
         "1638-XER",
         "1622-FRA",
         "1615-FRE",
         "1552-VER",
-        "1510-KIL",
         "1484-VAL",
         "161-PEN",
-        "1261-TMU",
         "896-RCAV",
         "1126-ARM",
         "165-PEN",
         "178-VIL",
         "112-BON",
         "884-RAL",
-        "1201-LBI",
         "795-LAN",
         "1037-BLG",
         "1006-ACQ",
@@ -764,12 +672,10 @@
         "277-JOM",
         "253-JOM",
         "245-JOM",
-        "244-JOM",
         "242-JOM",
         "232-ESCE",
         "229-DIP",
         "225-DIP",
-        "989-YZLO",
         "985-YZLO",
         "1285-YZLO",
         "949-VIC",
@@ -788,13 +694,10 @@
         "804-LOE",
         "798-LAN",
         "787-LAN",
-        "784-LAN",
         "783-LAN",
-        "782-LAN",
         "750-KEN",
         "749-KEN",
         "716-ISS",
-        "696-GLA",
         "657-ARM",
         "655-ARM",
         "650-ARM",
@@ -817,12 +720,10 @@
         "455-BYR",
         "440-BLG",
         "431-BRB",
-        "404-BAL",
         "403-BAL",
         "399-ARA",
         "394-AGE",
         "1493-ACQ",
-        "1289-YZLO",
         "1282-YZLO",
         "1279-YZLO",
         "1269-VAL",
@@ -830,10 +731,8 @@
         "1257-SFER",
         "1245-PRA",
         "1238-PRA",
-        "1219-MOS",
         "1208-MNTB",
         "769-LART",
-        "1193-KEN",
         "1191-KEN",
         "1172-ISS",
         "1160-HUG",
@@ -842,7 +741,6 @@
         "1114-DUN",
         "1111-DSQ",
         "1076-DRC",
-        "1070-CHA",
         "1060-CRT",
         "1043-CAL",
         "1036-BLG",
@@ -940,7 +838,7 @@
   "byFailedCheck": [
     {
       "check": "socialCard",
-      "count": 270,
+      "count": 236,
       "codes": [
         "2844-LUS",
         "2833-AMG",
@@ -950,7 +848,6 @@
         "2806-PHL",
         "2792-AJMA",
         "2788-MIN",
-        "2778-JOM",
         "2744-NISH",
         "2765-GUC",
         "2759-ARM",
@@ -966,7 +863,6 @@
         "2722-CRIVEL",
         "2720-ROJ",
         "2719-FRAG",
-        "2717-EXN",
         "2712-TMFO",
         "2708-BORN",
         "2663-ARM",
@@ -982,17 +878,13 @@
         "2584-GIV",
         "2553-BON",
         "2552-SOR",
-        "2597-TMFO",
         "2593-HUG",
         "2523-KIL",
-        "2508-DRC",
         "2526-KAY",
         "2549-MARC",
         "2485-ETLR",
         "2540-COM",
         "2492-ETLR",
-        "2490-MARG",
-        "2500-BRB",
         "2495-ETLR",
         "2509-CRIVEL",
         "2473-HER",
@@ -1003,11 +895,9 @@
         "2452-JOM",
         "2427-CLEA",
         "2415-ESC",
-        "2411-JAME",
         "2401-KAY",
         "2393-KAY",
         "2378-GOLD",
-        "2374-MICA",
         "2367-DIP",
         "2363-VER",
         "2366-DIP",
@@ -1015,11 +905,8 @@
         "2321-PARF",
         "2348-AMG",
         "2327-SWISA",
-        "2303-EXN",
         "2313-DRC",
         "2296-KAY",
-        "2285-BOT",
-        "2294-ACQ",
         "1925-PEN",
         "2270-ORMO",
         "2280-XER",
@@ -1034,9 +921,7 @@
         "2213-AMG",
         "2210-JOM",
         "2177-SERG",
-        "2171-XER",
         "412-BOD",
-        "2151-GIV",
         "2150-LEL",
         "2057-ESCE",
         "2144-ARM",
@@ -1047,15 +932,12 @@
         "2121-CAR",
         "2090-MNT",
         "2106-MARC",
-        "2049-NISH",
-        "2047-KIL",
         "2043-VER",
         "2065-FRA",
         "2085-CLIV",
         "1978-ARM",
         "1929-BLG",
         "1995-YZLO",
-        "1969-DOL",
         "1968-DOL",
         "1939-BYR",
         "1932-YZLO",
@@ -1063,7 +945,6 @@
         "1895-HER",
         "1878-KIL",
         "1859-XER",
-        "1865-YZLO",
         "1864-GUC",
         "1851-ARM",
         "1856-PARF",
@@ -1071,8 +952,6 @@
         "209-CRD",
         "194-ARM",
         "201-CLIV",
-        "1834-TMFO",
-        "1832-TMFO",
         "1829-BOB",
         "1817-JUL",
         "1812-ALJA",
@@ -1085,27 +964,22 @@
         "1729-CAR",
         "1718-TER",
         "1723-TMFO",
-        "1693-BYR",
         "1656-LOC",
         "1659-CHRA",
         "1655-JOM",
-        "1650-LAN",
         "1639-TER",
         "1638-XER",
         "1622-FRA",
         "1615-FRE",
         "1552-VER",
-        "1510-KIL",
         "1484-VAL",
         "161-PEN",
-        "1261-TMU",
         "896-RCAV",
         "1126-ARM",
         "165-PEN",
         "178-VIL",
         "112-BON",
         "884-RAL",
-        "1201-LBI",
         "795-LAN",
         "1037-BLG",
         "1006-ACQ",
@@ -1125,13 +999,11 @@
         "277-JOM",
         "253-JOM",
         "245-JOM",
-        "244-JOM",
         "242-JOM",
         "235-HOLL",
         "232-ESCE",
         "229-DIP",
         "225-DIP",
-        "989-YZLO",
         "985-YZLO",
         "1285-YZLO",
         "949-VIC",
@@ -1150,13 +1022,10 @@
         "804-LOE",
         "798-LAN",
         "787-LAN",
-        "784-LAN",
         "783-LAN",
-        "782-LAN",
         "750-KEN",
         "749-KEN",
         "716-ISS",
-        "696-GLA",
         "657-ARM",
         "655-ARM",
         "650-ARM",
@@ -1179,12 +1048,10 @@
         "455-BYR",
         "440-BLG",
         "431-BRB",
-        "404-BAL",
         "403-BAL",
         "399-ARA",
         "394-AGE",
         "1493-ACQ",
-        "1289-YZLO",
         "1282-YZLO",
         "1279-YZLO",
         "1269-VAL",
@@ -1193,10 +1060,8 @@
         "1251-ROM",
         "1245-PRA",
         "1238-PRA",
-        "1219-MOS",
         "1208-MNTB",
         "769-LART",
-        "1193-KEN",
         "1191-KEN",
         "1172-ISS",
         "1160-HUG",
@@ -1205,7 +1070,6 @@
         "1114-DUN",
         "1111-DSQ",
         "1076-DRC",
-        "1070-CHA",
         "1060-CRT",
         "1043-CAL",
         "1036-BLG",
@@ -1216,7 +1080,7 @@
     },
     {
       "check": "notes",
-      "count": 270,
+      "count": 236,
       "codes": [
         "2844-LUS",
         "2833-AMG",
@@ -1226,7 +1090,6 @@
         "2806-PHL",
         "2792-AJMA",
         "2788-MIN",
-        "2778-JOM",
         "2744-NISH",
         "2765-GUC",
         "2759-ARM",
@@ -1242,7 +1105,6 @@
         "2722-CRIVEL",
         "2720-ROJ",
         "2719-FRAG",
-        "2717-EXN",
         "2712-TMFO",
         "2708-BORN",
         "2663-ARM",
@@ -1258,17 +1120,13 @@
         "2584-GIV",
         "2553-BON",
         "2552-SOR",
-        "2597-TMFO",
         "2593-HUG",
         "2523-KIL",
-        "2508-DRC",
         "2526-KAY",
         "2549-MARC",
         "2485-ETLR",
         "2540-COM",
         "2492-ETLR",
-        "2490-MARG",
-        "2500-BRB",
         "2495-ETLR",
         "2509-CRIVEL",
         "2473-HER",
@@ -1279,11 +1137,9 @@
         "2452-JOM",
         "2427-CLEA",
         "2415-ESC",
-        "2411-JAME",
         "2401-KAY",
         "2393-KAY",
         "2378-GOLD",
-        "2374-MICA",
         "2367-DIP",
         "2363-VER",
         "2366-DIP",
@@ -1291,11 +1147,8 @@
         "2321-PARF",
         "2348-AMG",
         "2327-SWISA",
-        "2303-EXN",
         "2313-DRC",
         "2296-KAY",
-        "2285-BOT",
-        "2294-ACQ",
         "1925-PEN",
         "2270-ORMO",
         "2280-XER",
@@ -1310,9 +1163,7 @@
         "2213-AMG",
         "2210-JOM",
         "2177-SERG",
-        "2171-XER",
         "412-BOD",
-        "2151-GIV",
         "2150-LEL",
         "2057-ESCE",
         "2144-ARM",
@@ -1323,15 +1174,12 @@
         "2121-CAR",
         "2090-MNT",
         "2106-MARC",
-        "2049-NISH",
-        "2047-KIL",
         "2043-VER",
         "2065-FRA",
         "2085-CLIV",
         "1978-ARM",
         "1929-BLG",
         "1995-YZLO",
-        "1969-DOL",
         "1968-DOL",
         "1939-BYR",
         "1932-YZLO",
@@ -1339,7 +1187,6 @@
         "1895-HER",
         "1878-KIL",
         "1859-XER",
-        "1865-YZLO",
         "1864-GUC",
         "1851-ARM",
         "1856-PARF",
@@ -1347,8 +1194,6 @@
         "209-CRD",
         "194-ARM",
         "201-CLIV",
-        "1834-TMFO",
-        "1832-TMFO",
         "1829-BOB",
         "1817-JUL",
         "1812-ALJA",
@@ -1361,27 +1206,22 @@
         "1729-CAR",
         "1718-TER",
         "1723-TMFO",
-        "1693-BYR",
         "1656-LOC",
         "1659-CHRA",
         "1655-JOM",
-        "1650-LAN",
         "1639-TER",
         "1638-XER",
         "1622-FRA",
         "1615-FRE",
         "1552-VER",
-        "1510-KIL",
         "1484-VAL",
         "161-PEN",
-        "1261-TMU",
         "896-RCAV",
         "1126-ARM",
         "165-PEN",
         "178-VIL",
         "112-BON",
         "884-RAL",
-        "1201-LBI",
         "795-LAN",
         "1037-BLG",
         "1006-ACQ",
@@ -1401,13 +1241,11 @@
         "277-JOM",
         "253-JOM",
         "245-JOM",
-        "244-JOM",
         "242-JOM",
         "235-HOLL",
         "232-ESCE",
         "229-DIP",
         "225-DIP",
-        "989-YZLO",
         "985-YZLO",
         "1285-YZLO",
         "949-VIC",
@@ -1426,13 +1264,10 @@
         "804-LOE",
         "798-LAN",
         "787-LAN",
-        "784-LAN",
         "783-LAN",
-        "782-LAN",
         "750-KEN",
         "749-KEN",
         "716-ISS",
-        "696-GLA",
         "657-ARM",
         "655-ARM",
         "650-ARM",
@@ -1455,12 +1290,10 @@
         "455-BYR",
         "440-BLG",
         "431-BRB",
-        "404-BAL",
         "403-BAL",
         "399-ARA",
         "394-AGE",
         "1493-ACQ",
-        "1289-YZLO",
         "1282-YZLO",
         "1279-YZLO",
         "1269-VAL",
@@ -1469,10 +1302,8 @@
         "1251-ROM",
         "1245-PRA",
         "1238-PRA",
-        "1219-MOS",
         "1208-MNTB",
         "769-LART",
-        "1193-KEN",
         "1191-KEN",
         "1172-ISS",
         "1160-HUG",
@@ -1481,7 +1312,6 @@
         "1114-DUN",
         "1111-DSQ",
         "1076-DRC",
-        "1070-CHA",
         "1060-CRT",
         "1043-CAL",
         "1036-BLG",
@@ -1714,23 +1544,6 @@
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
-    },
-    {
-      "code": "2778-JOM",
-      "brand": "Jo Malone London",
-      "inspiredBy": "Fig Lotus Flower",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Jo-Malone-London/Fig-Lotus-Flower-61929.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 3,
-      "matchedNotesCount": 0,
-      "iconsCount": 3
     },
     {
       "code": "2744-NISH",
@@ -1985,23 +1798,6 @@
       ],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "2717-EXN",
-      "brand": "Ex Nihilo",
-      "inspiredBy": "Brompton Immortals",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ex-Nihilo/Brompton-Immortals-52591.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     {
@@ -2260,23 +2056,6 @@
       "iconsCount": 3
     },
     {
-      "code": "2597-TMFO",
-      "brand": "Tom Ford",
-      "inspiredBy": "Amber Intrigue",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tom-Ford/Amber-Intrigue-97380.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "2593-HUG",
       "brand": "Hugo Boss",
       "inspiredBy": "Boss Bottled Elixir",
@@ -2298,23 +2077,6 @@
       "brand": "By Kilian",
       "inspiredBy": "Sacred Wood",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/By-Kilian/Sacred-Wood-23897.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "2508-DRC",
-      "brand": "Dior",
-      "inspiredBy": "Gris Dior",
-      "fragranticaUrl": "https://www.fragrantica.com/p/48387",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"
@@ -2400,40 +2162,6 @@
       "brand": "Etat Libre d Orange",
       "inspiredBy": "You Or Someone Like You",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Etat-Libre-d-Orange/You-Or-Someone-Like-You-43531.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "2490-MARG",
-      "brand": "Maison Martin Margiela",
-      "inspiredBy": "On A Date",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Maison-Martin-Margiela/On-A-Date-78292.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "2500-BRB",
-      "brand": "Burberry",
-      "inspiredBy": "Baby Touch",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Burberry/Baby-Touch-2550.html",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"
@@ -2617,23 +2345,6 @@
       "iconsCount": 6
     },
     {
-      "code": "2411-JAME",
-      "brand": "James Heeley",
-      "inspiredBy": "Coccobello",
-      "fragranticaUrl": "https://www.fragrantica.com/p/18470",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "2401-KAY",
       "brand": "Kayali Fragrances",
       "inspiredBy": "Vanilla Candy Rock Sugar 42",
@@ -2683,23 +2394,6 @@
       "notesCount": 5,
       "matchedNotesCount": 5,
       "iconsCount": 5
-    },
-    {
-      "code": "2374-MICA",
-      "brand": "M. Micallef",
-      "inspiredBy": "GNTONIC",
-      "fragranticaUrl": "https://www.fragrantica.com/p/80353",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "2367-DIP",
@@ -2821,23 +2515,6 @@
       "iconsCount": 5
     },
     {
-      "code": "2303-EXN",
-      "brand": "Ex Nihilo",
-      "inspiredBy": "French Affair",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ex-Nihilo/French-Affair-47569.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "2313-DRC",
       "brand": "Dior",
       "inspiredBy": "Sauvage Parfum",
@@ -2869,40 +2546,6 @@
       ],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "2285-BOT",
-      "brand": "Bottega Veneta",
-      "inspiredBy": "Illusione for Her",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bottega-Veneta/Illusione-for-Her-55300.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "2294-ACQ",
-      "brand": "Acqua di Parma",
-      "inspiredBy": "Yuzu Eau de Parfum",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Acqua-di-Parma/Yuzu-Eau-de-Parfum-56004.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     {
@@ -3144,23 +2787,6 @@
       "iconsCount": 5
     },
     {
-      "code": "2171-XER",
-      "brand": "Xerjoff",
-      "inspiredBy": "Nio",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Xerjoff/Nio-10244.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "412-BOD",
       "brand": "The Body Shop",
       "inspiredBy": "White Musk L'Eau",
@@ -3176,23 +2802,6 @@
       "notesCount": 4,
       "matchedNotesCount": 4,
       "iconsCount": 4
-    },
-    {
-      "code": "2151-GIV",
-      "brand": "Givenchy",
-      "inspiredBy": "Gentleman Society",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Gentleman-Society-78639.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
     },
     {
       "code": "2150-LEL",
@@ -3365,40 +2974,6 @@
       "iconsCount": 6
     },
     {
-      "code": "2049-NISH",
-      "brand": "Nishane",
-      "inspiredBy": "Papilefiko",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Nishane/Papilefiko-74667.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "2047-KIL",
-      "brand": "By Kilian",
-      "inspiredBy": "L Heure Verte",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/By-Kilian/L-Heure-Verte-68324.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "2043-VER",
       "brand": "Versace",
       "inspiredBy": "Versace Pour Femme Dylan Purple",
@@ -3502,23 +3077,6 @@
       "brand": "Yves Saint Laurent",
       "inspiredBy": "Caban",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Caban-32267.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "1969-DOL",
-      "brand": "Dolce & Gabbana",
-      "inspiredBy": "Light Blue pour Homme Italian Love",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-pour-Homme-Italian-Love-72622.html",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"
@@ -3651,23 +3209,6 @@
       "iconsCount": 6
     },
     {
-      "code": "1865-YZLO",
-      "brand": "Yves Saint Laurent",
-      "inspiredBy": "Magnificent Gold",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Magnificent-Gold-46243.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "1864-GUC",
       "brand": "Gucci",
       "inspiredBy": "Gucci Rush 2",
@@ -3785,40 +3326,6 @@
       "notesCount": 5,
       "matchedNotesCount": 5,
       "iconsCount": 5
-    },
-    {
-      "code": "1834-TMFO",
-      "brand": "Tom Ford",
-      "inspiredBy": "Violet Blonde",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tom-Ford/Violet-Blonde-12767.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "1832-TMFO",
-      "brand": "Tom Ford",
-      "inspiredBy": "Musk Pure",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tom-Ford/Musk-Pure-6385.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "1829-BOB",
@@ -4025,23 +3532,6 @@
       "iconsCount": 6
     },
     {
-      "code": "1693-BYR",
-      "brand": "Byredo",
-      "inspiredBy": "Mixed Emotions",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Byredo/Mixed-Emotions-65525.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "1656-LOC",
       "brand": "L'Occitane",
       "inspiredBy": "Terre de Lumiere",
@@ -4091,23 +3581,6 @@
       "notesCount": 3,
       "matchedNotesCount": 3,
       "iconsCount": 3
-    },
-    {
-      "code": "1650-LAN",
-      "brand": "Lancôme",
-      "inspiredBy": "La Vie Est Belle Soleil Cristal",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lancome/La-Vie-Est-Belle-Soleil-Cristal-65156.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "1639-TER",
@@ -4195,23 +3668,6 @@
       "iconsCount": 3
     },
     {
-      "code": "1510-KIL",
-      "brand": "By Kilian",
-      "inspiredBy": "Bamboo Harmony",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/By-Kilian/Bamboo-Harmony-14330.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "1484-VAL",
       "brand": "Valentino",
       "inspiredBy": "Valentino Uomo Born in Roma",
@@ -4243,23 +3699,6 @@
       ],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "1261-TMU",
-      "brand": "Mugler",
-      "inspiredBy": "B Men",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Mugler/B-Men-706.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     {
@@ -4365,23 +3804,6 @@
       "notesCount": 2,
       "matchedNotesCount": 0,
       "iconsCount": 2
-    },
-    {
-      "code": "1201-LBI",
-      "brand": "Laura Biagiotti",
-      "inspiredBy": "Venezia Uomo",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Laura-Biagiotti/Venezia-Uomo-3002.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "795-LAN",
@@ -4719,23 +4141,6 @@
       "iconsCount": 6
     },
     {
-      "code": "244-JOM",
-      "brand": "Jo Malone London",
-      "inspiredBy": "Black Vetyver Cafe",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Jo-Malone-London/Black-Vetyver-Cafe-8278.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "242-JOM",
       "brand": "Jo Malone London",
       "inspiredBy": "Blackberry Bay",
@@ -4825,23 +4230,6 @@
       "notesCount": 5,
       "matchedNotesCount": 0,
       "iconsCount": 5
-    },
-    {
-      "code": "989-YZLO",
-      "brand": "Yves Saint Laurent",
-      "inspiredBy": "Rive Gauche",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Rive-Gauche-96.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "985-YZLO",
@@ -5150,23 +4538,6 @@
       "iconsCount": 6
     },
     {
-      "code": "784-LAN",
-      "brand": "Lancôme",
-      "inspiredBy": "La Vie est Belle L Eclat",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lancome/La-Vie-est-Belle-L-Eclat-45892.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "783-LAN",
       "brand": "Lancôme",
       "inspiredBy": "La Vie Est Belle L Eau de Toilette Florale",
@@ -5181,23 +4552,6 @@
       ],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "782-LAN",
-      "brand": "Lancôme",
-      "inspiredBy": "La Vie Est Belle",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lancome/La-Vie-Est-Belle-14982.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     {
@@ -5249,23 +4603,6 @@
       ],
       "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "696-GLA",
-      "brand": "Guy Laroche",
-      "inspiredBy": "fidji",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/guy-laroche/fidji-2068.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     {
@@ -5643,23 +4980,6 @@
       "iconsCount": 6
     },
     {
-      "code": "404-BAL",
-      "brand": "Balenciaga",
-      "inspiredBy": "BALE PARIS",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Balenciaga/Balenciaga-Paris-7247.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
-    },
-    {
       "code": "403-BAL",
       "brand": "Balenciaga",
       "inspiredBy": "Cristobal",
@@ -5725,23 +5045,6 @@
       ],
       "notesCount": 6,
       "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "1289-YZLO",
-      "brand": "Yves Saint Laurent",
-      "inspiredBy": "Y",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Y-100.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
       "iconsCount": 6
     },
     {
@@ -5891,23 +5194,6 @@
       "iconsCount": 6
     },
     {
-      "code": "1219-MOS",
-      "brand": "Moschino",
-      "inspiredBy": "Moschino Pour Homme",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Moschino/Moschino-Pour-Homme-5951.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "1208-MNTB",
       "brand": "Montblanc",
       "inspiredBy": "Emblem",
@@ -5929,23 +5215,6 @@
       "brand": "LArtisan Parfumeur",
       "inspiredBy": "Premier Figuier",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/L-Artisan-Parfumeur/Premier-Figuier-1261.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "1193-KEN",
-      "brand": "Kenzo",
-      "inspiredBy": "Totem Orange",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kenzo/Totem-Orange-31206.html",
       "issues": [
         "Social Card not fully verified",
         "Main Notes order not fully verified"
@@ -6095,23 +5364,6 @@
       "notesCount": 5,
       "matchedNotesCount": 5,
       "iconsCount": 5
-    },
-    {
-      "code": "1070-CHA",
-      "brand": "Chanel",
-      "inspiredBy": "Egoiste Platinum",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Chanel/Egoiste-Platinum-614.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "1060-CRT",
