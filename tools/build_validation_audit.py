@@ -102,6 +102,9 @@ with GENDER_SEASON.open(encoding="utf-8-sig", newline="") as handle:
 
 def has_verified_social_season(row, fid, seasons):
     """The dominant season must come from the card of the exact Fragrantica ID."""
+    if (str(row.get("seasonStatus") or "").strip().upper() == "VALIDATED_MANUAL"
+            and str(row.get("seasonCardFid") or "").strip() == fid):
+        return True
     source = social_seasons.get(row_code(row))
     if not source or str(source.get("fragrantica_id") or "").strip() != fid:
         return False

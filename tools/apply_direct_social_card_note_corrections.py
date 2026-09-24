@@ -92,6 +92,30 @@ MANUAL_VISUAL_NOTES = {
         "notes": ["Fig", "Cedar", "Matcha Tea", "Bitter Orange", "Vetiver"],
         "labelCounts": [3, 2],
     },
+    # Current yellow cards transcribed from their exact FID-bound Notes panels.
+    # Fragrantica itself ellipsizes long labels in these images; the displayed
+    # prefix, same-position icon and exact card ID identify the full label.
+    "2598-GLO": {"fid": "46885", "card": "database/fragrantica/social-cards/images/current_2598-GLO_46885.jpeg", "notes": ["Iris", "Pink Pepper", "Ambroxan", "Ambrette (Musk Mallow)"], "labelCounts": [3, 1]},
+    "2584-GIV": {"fid": "1966", "card": "database/fragrantica/social-cards/images/current_2584-GIV_1966.jpeg", "notes": ["Lily-of-the-Valley", "Honeysuckle", "Narcissus", "Oakmoss", "Grapefruit", "Jasmine"], "labelCounts": [3, 3]},
+    "2119-ARM": {"fid": "78561", "card": "database/fragrantica/social-cards/images/current_2119-ARM_78561.jpeg", "notes": ["Iris Pallida", "Tuberose", "Orange Blossom", "Musk", "Ambrette (Musk Mallow)", "Bitter Orange"], "labelCounts": [3, 3]},
+    "2118-GUC": {"fid": "79602", "card": "database/fragrantica/social-cards/images/current_2118-GUC_79602.jpeg", "notes": ["Tuberose", "Night Blooming Jasmine", "Jasmine", "Oakmoss", "Pear", "Patchouli"], "labelCounts": [3, 3]},
+    "2121-CAR": {"fid": "77688", "card": "database/fragrantica/social-cards/images/current_2121-CAR_77688.jpeg", "notes": ["Bergamot", "Lemon", "Lapsang Souchong Tea", "Akigalawood", "Osmanthus", "Ambrette (Musk Mallow)"], "labelCounts": [3, 3]},
+    "1851-ARM": {"fid": "58909", "card": "database/fragrantica/social-cards/images/current_1851-ARM_58909.jpeg", "notes": ["Lily-of-the-Valley", "Jasmine", "Nashi Pear", "Orange Blossom", "Sandalwood", "Cedar"], "labelCounts": [3, 3]},
+    "201-CLIV": {"fid": "4648", "card": "database/fragrantica/social-cards/images/current_201-CLIV_4648.jpeg", "notes": ["Iris", "Ylang-Ylang", "Jasmine", "Sandalwood", "Lily-of-the-Valley", "Heliotrope"], "labelCounts": [3, 3]},
+    "1803-DRC": {"fid": "62638", "card": "database/fragrantica/social-cards/images/current_1803-DRC_62638.jpeg", "notes": ["Tuberose", "Jasmine", "Ylang-Ylang", "Sandalwood", "Blood Orange", "Lily-of-the-Valley"], "labelCounts": [3, 3]},
+    "1656-LOC": {"fid": "41970", "card": "database/fragrantica/social-cards/images/current_1656-LOC_41970.jpeg", "notes": ["Honey", "Lavender", "Tonka Bean", "Almond", "Ambrette (Musk Mallow)", "Acacia"], "labelCounts": [3, 3]},
+    "1655-JOM": {"fid": "48318", "card": "database/fragrantica/social-cards/images/current_1655-JOM_48318.jpeg", "notes": ["Oat", "Hazelnut", "Cornflower Sultan Seeds", "Vetiver"], "labelCounts": [3, 1]},
+    "106-ARB": {"fid": "21560", "card": "database/fragrantica/social-cards/images/current_106-ARB_21560.jpeg", "notes": ["Olibanum (Frankincense)", "Orange Blossom", "Rose", "Sandalwood", "Lily-of-the-Valley"], "labelCounts": [3, 2]},
+    "378-TMFO": {"fid": "6386", "card": "database/fragrantica/social-cards/images/current_378-TMFO_6386.jpeg", "notes": ["Suede", "Musk", "Lily-of-the-Valley", "Sandalwood", "Saffron", "Thyme"], "labelCounts": [3, 3]},
+    "874-PRA": {"fid": "44534", "card": "database/fragrantica/social-cards/images/current_874-PRA_44534.jpeg", "notes": ["Sour Cherry", "Vanilla", "Almond", "Peach", "Benzoin", "Currant Leaf and Bud"], "labelCounts": [3, 3]},
+    "828-MIY": {"fid": "42720", "card": "database/fragrantica/social-cards/images/current_828-MIY_42720.jpeg", "notes": ["Lily-of-the-Valley", "Green Notes", "Dew Drop", "White Flowers", "Akigalawood", "Musk"], "labelCounts": [3, 3]},
+    "440-BLG": {"fid": "45241", "card": "database/fragrantica/social-cards/images/current_440-BLG_45241.jpeg", "notes": ["Mulberry", "Night Blooming Jasmine", "Musk", "Peony", "Tuberose", "Patchouli"], "labelCounts": [3, 3]},
+    "394-AGE": {"fid": "45363", "card": "database/fragrantica/social-cards/images/current_394-AGE_45363.jpeg", "notes": ["Resins", "Honey", "Pepper", "Musk", "Orchid", "Night Blooming Jasmine"], "labelCounts": [3, 3]},
+}
+
+MANUAL_VISUAL_PROFILE = {
+    "828-MIY": {"gender": "Female", "genderAffinity": "feminine"},
+    "884-RAL": {"gender": "Male", "genderAffinity": "masculine", "seasons": ["fall"], "seasonCardFid": "9006"},
 }
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
@@ -165,6 +189,15 @@ for row in rows:
         "proof": item["proof"],
         "iconCounts": list(proof["labelCounts"]),
     })
+
+for row in rows:
+    profile = MANUAL_VISUAL_PROFILE.get(str(row.get("code") or "").strip().upper())
+    if not profile:
+        continue
+    row.update(profile)
+    row["genderStatus"] = "VALIDATED_MANUAL"
+    if "seasons" in profile:
+        row["seasonStatus"] = "VALIDATED_MANUAL"
 
 DB.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 AUDIT.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
