@@ -1,11 +1,11 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 30,
+  "targetedCurrentYellows": 29,
   "results": {
-    "EXACT_ORDERED_MATCH": 2177,
+    "EXACT_ORDERED_MATCH": 2178,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 70,
+    "READING_NOT_STRICT_ENOUGH": 69,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -144331,11 +144331,11 @@
       "card": "database/fragrantica/social-cards/images/current_165-PEN_40716.jpeg",
       "catalogNotes": [
         "Woody Notes",
-        "Bran",
+        "Brandy",
         "Tonka Bean",
         "Amber"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -145501,7 +145501,28 @@
           ],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Woody Notes",
+        "Bran",
+        "Tonka Bean",
+        "Amber"
+      ],
+      "observedNotes": [
+        "Woody Notes",
+        "Brandy",
+        "Tonka Bean",
+        "Amber"
+      ],
+      "labelCounts": [
+        3,
+        1
+      ],
+      "iconCounts": [
+        3,
+        1
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "1650-LAN",
@@ -502348,12 +502369,12 @@
       "catalogNotes": [
         "Orris Root",
         "Violet",
-        "Macarons",
+        "Moxalone",
         "Akigalawood",
         "Civettone",
         "Sesame"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -504018,7 +504039,32 @@
           ],
           "notesHeaderY": 48.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Orris Root",
+        "Violet",
+        "Macarons",
+        "Akigalawood",
+        "Civettone",
+        "Sesame"
+      ],
+      "observedNotes": [
+        "Orris Root",
+        "Violet",
+        "Moxalone",
+        "Akigalawood",
+        "Civettone",
+        "Sesame"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2746-DRC",
@@ -572744,12 +572790,13 @@
       "fragranticaId": "44100",
       "card": "database/fragrantica/social-cards/images/current_412-BOD_44100.jpeg",
       "catalogNotes": [
+        "Musk",
         "Pear",
         "Lily-of-the-Valley",
         "Jasmine",
         "Rose"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -574285,7 +574332,29 @@
           ],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Pear",
+        "Lily-of-the-Valley",
+        "Jasmine",
+        "Rose"
+      ],
+      "observedNotes": [
+        "Musk",
+        "Pear",
+        "Lily-of-the-Valley",
+        "Jasmine",
+        "Rose"
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "413-BOT",

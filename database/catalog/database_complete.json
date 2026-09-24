@@ -4948,7 +4948,7 @@
     "fragranticaSocialCardNotes": [
       "Orris Root",
       "Violet",
-      "Macarons",
+      "Moxalone",
       "Akigalawood",
       "Civettone",
       "Sesame"
@@ -4965,26 +4965,23 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Nishane/Meant-To-Be-Seen-116224.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     }
   },
@@ -41216,12 +41213,13 @@
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
+      "Musk",
       "Pear",
       "Lily-of-the-Valley",
       "Jasmine",
       "Rose"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Unisex",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -41233,27 +41231,24 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/44100",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "notesCount": 4,
-      "matchedNotesCount": 4,
-      "iconsCount": 4
+      "issues": [],
+      "notesCount": 5,
+      "matchedNotesCount": 5,
+      "iconsCount": 5
     }
   },
   {
@@ -79139,11 +79134,11 @@
     "fragranticaVerificationSource": "database/audits/fragrantica-v2-identity-audit.csv",
     "fragranticaSocialCardNotes": [
       "Woody Notes",
-      "Bran",
+      "Brandy",
       "Tonka Bean",
       "Amber"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -79155,24 +79150,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Penhaligon-s/The-Tragedy-of-Lord-George-40716.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 4,
       "matchedNotesCount": 4,
       "iconsCount": 4

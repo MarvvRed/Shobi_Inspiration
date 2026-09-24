@@ -1,25 +1,76 @@
 {
   "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
-  "count": 1,
+  "count": 3,
   "corrections": [
     {
-      "code": "2452-JOM",
-      "fragranticaId": "61928",
-      "card": "database/fragrantica/social-cards/images/current_2452-JOM_61928.jpeg",
+      "code": "2744-NISH",
+      "fragranticaId": "116224",
+      "card": "database/fragrantica/social-cards/images/current_2744-NISH_116224.jpeg",
       "previousNotes": [
-        "Cypress",
-        "Woody Notes",
-        "Ylang-Ylang"
+        "Orris Root",
+        "Violet",
+        "Macarons",
+        "Akigalawood",
+        "Civettone",
+        "Sesame"
       ],
       "socialCardNotes": [
-        "Cypress",
-        "Woody Notes",
-        "Vine"
+        "Orris Root",
+        "Violet",
+        "Moxalone",
+        "Akigalawood",
+        "Civettone",
+        "Sesame"
       ],
       "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
       "iconCounts": [
         3,
-        0
+        3
+      ]
+    },
+    {
+      "code": "412-BOD",
+      "fragranticaId": "44100",
+      "card": "database/fragrantica/social-cards/images/current_412-BOD_44100.jpeg",
+      "previousNotes": [
+        "Pear",
+        "Lily-of-the-Valley",
+        "Jasmine",
+        "Rose"
+      ],
+      "socialCardNotes": [
+        "Musk",
+        "Pear",
+        "Lily-of-the-Valley",
+        "Jasmine",
+        "Rose"
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "iconCounts": [
+        3,
+        2
+      ]
+    },
+    {
+      "code": "165-PEN",
+      "fragranticaId": "40716",
+      "card": "database/fragrantica/social-cards/images/current_165-PEN_40716.jpeg",
+      "previousNotes": [
+        "Woody Notes",
+        "Bran",
+        "Tonka Bean",
+        "Amber"
+      ],
+      "socialCardNotes": [
+        "Woody Notes",
+        "Brandy",
+        "Tonka Bean",
+        "Amber"
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "iconCounts": [
+        3,
+        1
       ]
     }
   ]
