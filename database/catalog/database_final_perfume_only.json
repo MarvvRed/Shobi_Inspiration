@@ -30629,7 +30629,7 @@
     "fragranticaSocialCardNotes": [
       "Cypress",
       "Woody Notes",
-      "Ylang-Ylang"
+      "Vine"
     ],
     "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Unisex",
@@ -30643,48 +30643,42 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Jo-Malone-London/Cypress-Grapevine-Cologne-Intense-61928.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 3,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 3,
       "iconsCount": 3
     },
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 3,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 3,
     "validationIconsCount": 3
   },
   {
