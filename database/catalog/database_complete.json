@@ -84428,10 +84428,11 @@
     "fragrantica_match_method": "shobi_first_exact_identity_local_corpus",
     "fragrantica_match_reason": "Shobi residual is Big Pony 2 in women catalog; exact 2012 women entry, not 2010 men version",
     "fragranticaSocialCardNotes": [
-      "Cranberry",
-      "Tonka Bean"
+      "Dark Chocolate",
+      "Musk",
+      "Spicy Notes"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_SOCIAL_CARD",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -84450,21 +84451,19 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": false
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified",
         "Season not fully verified"
       ],
-      "notesCount": 2,
-      "matchedNotesCount": 0,
-      "iconsCount": 2
+      "notesCount": 3,
+      "matchedNotesCount": 3,
+      "iconsCount": 3
     },
     "fragranticaSocialCardSource": "database/fragrantica/social-cards/images/current_884-RAL_14446.jpeg"
   },
@@ -102341,9 +102340,9 @@
       "Fig",
       "Caviar",
       "Fig tree",
-      "Fig"
+      "Fig Leaf"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Female",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -102355,24 +102354,21 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/perfume/Mugler/Womanity-8766.html",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 4,
       "matchedNotesCount": 4,
       "iconsCount": 4
@@ -133375,11 +133371,12 @@
     "fragranticaSocialCardNotes": [
       "Fig Leaf",
       "Cedar",
+      "Vetiver",
       "Grapefruit",
       "Sandalwood",
       "Carnation"
     ],
-    "fragranticaSocialCardStatus": "VALIDATED_OCR",
+    "fragranticaSocialCardStatus": "VALIDATED_MANUAL",
     "gender": "Male",
     "genderSource": "Fragrantica social card",
     "genderStatus": "VALIDATED_SOCIAL_CARD",
@@ -133391,27 +133388,24 @@
     "catalogSource": "database/source/shobi-perfumes-live-unique.csv",
     "fragranticaUrl": "https://www.fragrantica.com/p/659",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
+      "issues": [],
+      "notesCount": 6,
+      "matchedNotesCount": 6,
+      "iconsCount": 6
     }
   },
   {

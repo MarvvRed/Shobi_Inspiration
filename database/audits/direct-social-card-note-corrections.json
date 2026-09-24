@@ -1,27 +1,71 @@
 {
   "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
-  "count": 1,
+  "count": 3,
   "corrections": [
     {
-      "code": "2792-AJMA",
-      "fragranticaId": "58837",
-      "card": "database/fragrantica/social-cards/images/current_2792-AJMA_58837.jpeg",
+      "code": "884-RAL",
+      "fragranticaId": "9006",
+      "card": "database/fragrantica/social-cards/images/current_884-RAL_9006.jpeg",
       "previousNotes": [
-        "Lily",
-        "Tolu Balsam",
-        "Powdery Notes",
-        "Vanilla"
+        "Cranberry",
+        "Tonka Bean"
       ],
       "socialCardNotes": [
-        "Lily-of-the-Valley",
-        "Tolu Balsam",
-        "Powdery Notes",
-        "Vanilla"
+        "Dark Chocolate",
+        "Musk",
+        "Spicy Notes"
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "iconCounts": [
+        3,
+        0
+      ]
+    },
+    {
+      "code": "925-TMU",
+      "fragranticaId": "8766",
+      "card": "database/fragrantica/social-cards/images/current_925-TMU_8766.jpeg",
+      "previousNotes": [
+        "Fig",
+        "Caviar",
+        "Fig tree",
+        "Fig"
+      ],
+      "socialCardNotes": [
+        "Fig",
+        "Caviar",
+        "Fig tree",
+        "Fig Leaf"
       ],
       "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
       "iconCounts": [
         3,
         1
+      ]
+    },
+    {
+      "code": "1257-SFER",
+      "fragranticaId": "659",
+      "card": "database/fragrantica/social-cards/images/current_1257-SFER_659.jpeg",
+      "previousNotes": [
+        "Fig Leaf",
+        "Cedar",
+        "Grapefruit",
+        "Sandalwood",
+        "Carnation"
+      ],
+      "socialCardNotes": [
+        "Fig Leaf",
+        "Cedar",
+        "Vetiver",
+        "Grapefruit",
+        "Sandalwood",
+        "Carnation"
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "iconCounts": [
+        3,
+        3
       ]
     }
   ]

@@ -46244,8 +46244,6 @@
     ],
     "validationStatus": "yellow",
     "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified",
       "Season not fully verified"
     ],
     "validationChecks": {
@@ -46254,16 +46252,16 @@
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": false
     },
-    "validationNotesCount": 2,
-    "validationMatchedNotesCount": 0,
-    "validationIconsCount": 2
+    "validationNotesCount": 3,
+    "validationMatchedNotesCount": 3,
+    "validationIconsCount": 3
   },
   {
     "code": "1230-PAC",
@@ -55971,20 +55969,17 @@
       "Fig tree",
       "Fig"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -72783,27 +72778,24 @@
       "Sandalwood",
       "Carnation"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 6,
+    "validationIconsCount": 6
   },
   {
     "code": "1256-ROC",
