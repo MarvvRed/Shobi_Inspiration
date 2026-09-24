@@ -16,6 +16,30 @@ DB = ROOT / "database/catalog/database_complete.json"
 AUDIT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
 REPORT = ROOT / "database/audits/direct-social-card-note-corrections.json"
 
+# Direct visual transcriptions of the `notes` box on the exact current Social
+# Card. These are deliberately small, code+FID-bound records: no pyramid,
+# accord, OCR guess, or catalog value is used to select a note.
+MANUAL_VISUAL_NOTES = {
+    "2553-BON": {
+        "fid": "13630",
+        "card": "database/fragrantica/social-cards/images/current_2553-BON_13630.jpeg",
+        "notes": ["Plum", "Vanilla", "Agarwood (Oud)", "Sandalwood", "Olibanum (Frankincense)", "Labdanum"],
+        "labelCounts": [3, 3],
+    },
+    "2454-KIL": {
+        "fid": "78735",
+        "card": "database/fragrantica/social-cards/images/current_2454-KIL_78735.jpeg",
+        "notes": ["Orange Blossom", "Honey", "Oakmoss", "Vanilla", "Olibanum (Frankincense)", "Paradisone"],
+        "labelCounts": [3, 3],
+    },
+    "2150-LEL": {
+        "fid": "69731",
+        "card": "database/fragrantica/social-cards/images/current_2150-LEL_69731.jpeg",
+        "notes": ["Fig", "Cedar", "Matcha Tea", "Bitter Orange", "Vetiver"],
+        "labelCounts": [3, 2],
+    },
+}
+
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
 audit = json.loads(AUDIT.read_text(encoding="utf-8-sig"))
 by_code = {str(item.get("code") or "").strip().upper(): item for item in audit.get("rows", [])}
@@ -49,6 +73,43 @@ for row in rows:
         "socialCardNotes": observed,
         "proof": item.get("proof"),
         "iconCounts": item.get("iconCounts"),
+    })
+
+# A manual transcription is primary card evidence when the exact FID and the
+# archived current-card path both agree. Store it in the same ordered audit
+# record consumed by the validator, so the published proof remains inspectable.
+for row in rows:
+    code = str(row.get("code") or "").strip().upper()
+    proof = MANUAL_VISUAL_NOTES.get(code)
+    if not proof or str((row.get("validationAudit") or {}).get("status") or "").lower() != "yellow":
+        continue
+    item = by_code.get(code)
+    fid = str(row.get("fragranticaId") or "").strip()
+    notes = list(proof["notes"])
+    card = ROOT / proof["card"]
+    if (not item or fid != proof["fid"] or str(item.get("fragranticaId") or "") != fid or
+            not card.is_file() or item.get("card") != proof["card"]):
+        continue
+    previous = list(row.get("fragranticaSocialCardNotes") or [])
+    row["fragranticaSocialCardNotes"] = notes
+    row["fragranticaSocialCardStatus"] = "VALIDATED_MANUAL"
+    item.update({
+        "result": "EXACT_ORDERED_MATCH",
+        "catalogNotesBeforeCorrection": previous,
+        "catalogNotes": notes,
+        "observedNotes": notes,
+        "labelCounts": list(proof["labelCounts"]),
+        "iconCounts": list(proof["labelCounts"]),
+        "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+    })
+    corrections.append({
+        "code": code,
+        "fragranticaId": fid,
+        "card": proof["card"],
+        "previousNotes": previous,
+        "socialCardNotes": notes,
+        "proof": item["proof"],
+        "iconCounts": list(proof["labelCounts"]),
     })
 
 DB.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
