@@ -1,10 +1,9 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 36,
+  "targetedCurrentYellows": 34,
   "results": {
-    "EXACT_ORDERED_CARD_NOTES_DIFFER": 1,
-    "EXACT_ORDERED_MATCH": 2172,
+    "EXACT_ORDERED_MATCH": 2173,
     "NO_EXACT_CARD": 2,
     "READING_NOT_STRICT_ENOUGH": 74,
     "UNSUPPORTED_CARD_GEOMETRY": 4
@@ -302470,10 +302469,10 @@
         "Fig",
         "Cedar",
         "Matcha Tea",
-        "Orange",
+        "Bitter Orange",
         "Vetiver"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -303982,7 +303981,30 @@
           ],
           "notesHeaderY": 23.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Fig",
+        "Cedar",
+        "Matcha Tea",
+        "Orange",
+        "Vetiver"
+      ],
+      "observedNotes": [
+        "Fig",
+        "Cedar",
+        "Matcha Tea",
+        "Bitter Orange",
+        "Vetiver"
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2151-GIV",
@@ -402896,10 +402918,10 @@
         "Honey",
         "Oakmoss",
         "Vanilla",
-        "Incense",
+        "Olibanum (Frankincense)",
         "Paradisone"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -404571,7 +404593,32 @@
           ],
           "notesHeaderY": 23.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Orange Blossom",
+        "Honey",
+        "Oakmoss",
+        "Vanilla",
+        "Incense",
+        "Paradisone"
+      ],
+      "observedNotes": [
+        "Orange Blossom",
+        "Honey",
+        "Oakmoss",
+        "Vanilla",
+        "Olibanum (Frankincense)",
+        "Paradisone"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2455-YZLO",
@@ -439675,7 +439722,7 @@
         "Olibanum (Frankincense)",
         "Labdanum"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -441565,7 +441612,32 @@
           ],
           "notesHeaderY": 23.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Plum",
+        "Vanilla",
+        "Agarwood (Oud)",
+        "Sandalwood",
+        "Olibanum (Frankincense)",
+        "Labdanum"
+      ],
+      "observedNotes": [
+        "Plum",
+        "Vanilla",
+        "Agarwood (Oud)",
+        "Sandalwood",
+        "Olibanum (Frankincense)",
+        "Labdanum"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2554-JOM",

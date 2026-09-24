@@ -1,30 +1,81 @@
 {
   "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
-  "count": 1,
+  "count": 3,
   "corrections": [
     {
-      "code": "131-LEL",
-      "fragranticaId": "12201",
-      "card": "database/fragrantica/social-cards/images/current_131-LEL_12201.jpeg",
+      "code": "2553-BON",
+      "fragranticaId": "13630",
+      "card": "database/fragrantica/social-cards/images/current_2553-BON_13630.jpeg",
       "previousNotes": [
+        "Plum",
+        "Vanilla",
+        "Agarwood (Oud)",
         "Sandalwood",
-        "Leather",
-        "Cedar",
-        "Cardamom",
-        "Violet"
+        "Olibanum (Frankincense)",
+        "Labdanum"
       ],
       "socialCardNotes": [
+        "Plum",
+        "Vanilla",
+        "Agarwood (Oud)",
         "Sandalwood",
-        "Leather",
-        "Papyrus",
-        "Cedar",
-        "Cardamom",
-        "Violet"
+        "Olibanum (Frankincense)",
+        "Labdanum"
       ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
       "iconCounts": [
         3,
         3
+      ]
+    },
+    {
+      "code": "2454-KIL",
+      "fragranticaId": "78735",
+      "card": "database/fragrantica/social-cards/images/current_2454-KIL_78735.jpeg",
+      "previousNotes": [
+        "Orange Blossom",
+        "Honey",
+        "Oakmoss",
+        "Vanilla",
+        "Incense",
+        "Paradisone"
+      ],
+      "socialCardNotes": [
+        "Orange Blossom",
+        "Honey",
+        "Oakmoss",
+        "Vanilla",
+        "Olibanum (Frankincense)",
+        "Paradisone"
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "iconCounts": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "2150-LEL",
+      "fragranticaId": "69731",
+      "card": "database/fragrantica/social-cards/images/current_2150-LEL_69731.jpeg",
+      "previousNotes": [
+        "Fig",
+        "Cedar",
+        "Matcha Tea",
+        "Orange",
+        "Vetiver"
+      ],
+      "socialCardNotes": [
+        "Fig",
+        "Cedar",
+        "Matcha Tea",
+        "Bitter Orange",
+        "Vetiver"
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "iconCounts": [
+        3,
+        2
       ]
     }
   ]
