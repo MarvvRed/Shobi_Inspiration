@@ -1,11 +1,11 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 34,
+  "targetedCurrentYellows": 31,
   "results": {
-    "EXACT_ORDERED_MATCH": 2173,
+    "EXACT_ORDERED_MATCH": 2176,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 74,
+    "READING_NOT_STRICT_ENOUGH": 71,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -251025,10 +251025,10 @@
         "Sandalwood",
         "Elemi",
         "Olibanum (Frankincense)",
-        "Ink",
-        "Pepper"
+        "Pink Pepper",
+        "Osmanthus"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -252988,7 +252988,32 @@
           ],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Tonka Bean",
+        "Sandalwood",
+        "Elemi",
+        "Olibanum (Frankincense)",
+        "Ink",
+        "Pepper"
+      ],
+      "observedNotes": [
+        "Tonka Bean",
+        "Sandalwood",
+        "Elemi",
+        "Olibanum (Frankincense)",
+        "Pink Pepper",
+        "Osmanthus"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "1996-LTN",
