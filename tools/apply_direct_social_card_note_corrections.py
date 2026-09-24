@@ -20,6 +20,24 @@ REPORT = ROOT / "database/audits/direct-social-card-note-corrections.json"
 # Card. These are deliberately small, code+FID-bound records: no pyramid,
 # accord, OCR guess, or catalog value is used to select a note.
 MANUAL_VISUAL_NOTES = {
+    "884-RAL": {
+        "fid": "9006",
+        "card": "database/fragrantica/social-cards/images/current_884-RAL_9006.jpeg",
+        "notes": ["Dark Chocolate", "Musk", "Spicy Notes"],
+        "labelCounts": [3, 0],
+    },
+    "925-TMU": {
+        "fid": "8766",
+        "card": "database/fragrantica/social-cards/images/current_925-TMU_8766.jpeg",
+        "notes": ["Fig", "Caviar", "Fig tree", "Fig Leaf"],
+        "labelCounts": [3, 1],
+    },
+    "1257-SFER": {
+        "fid": "659",
+        "card": "database/fragrantica/social-cards/images/current_1257-SFER_659.jpeg",
+        "notes": ["Fig Leaf", "Cedar", "Vetiver", "Grapefruit", "Sandalwood", "Carnation"],
+        "labelCounts": [3, 3],
+    },
     "2792-AJMA": {
         "fid": "58837",
         "card": "database/fragrantica/social-cards/images/current_2792-AJMA_58837.jpeg",
