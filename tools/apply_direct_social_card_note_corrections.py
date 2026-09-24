@@ -20,6 +20,12 @@ REPORT = ROOT / "database/audits/direct-social-card-note-corrections.json"
 # Card. These are deliberately small, code+FID-bound records: no pyramid,
 # accord, OCR guess, or catalog value is used to select a note.
 MANUAL_VISUAL_NOTES = {
+    "2792-AJMA": {
+        "fid": "58837",
+        "card": "database/fragrantica/social-cards/images/current_2792-AJMA_58837.jpeg",
+        "notes": ["Lily-of-the-Valley", "Tolu Balsam", "Powdery Notes", "Vanilla"],
+        "labelCounts": [3, 1],
+    },
     "2744-NISH": {
         "fid": "116224",
         "card": "database/fragrantica/social-cards/images/current_2744-NISH_116224.jpeg",
