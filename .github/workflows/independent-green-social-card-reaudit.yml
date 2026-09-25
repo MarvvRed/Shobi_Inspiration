@@ -23,7 +23,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y tesseract-ocr
-          python -m pip install --upgrade pip pillow
+          python -m pip install --upgrade pip pillow numpy
       - name: Verify current green proof graph
         run: python tools/verify_catalog_invariants.py
       - name: Re-read every green card independently
