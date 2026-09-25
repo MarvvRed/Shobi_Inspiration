@@ -1,11 +1,11 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 23,
+  "targetedCurrentYellows": 6,
   "results": {
-    "EXACT_ORDERED_MATCH": 2185,
+    "EXACT_ORDERED_MATCH": 2201,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 62,
+    "READING_NOT_STRICT_ENOUGH": 46,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -11655,7 +11655,7 @@
       "fragranticaId": "815",
       "card": "database/fragrantica/social-cards/images/134_1033-BRB_815.jpeg",
       "catalogNotes": [
-        "Violet",
+        "Violet Leaf",
         "Musk",
         "Pepper",
         "Tonka Bean",
@@ -11890,14 +11890,14 @@
         }
       ],
       "observedNotes": [
-        "Violet",
+        "Violet Leaf",
         "Musk",
         "Pepper",
         "Tonka Bean",
         "Cedar",
         "Nutmeg"
       ],
-      "proof": "SOCIAL_CARD_ONLY_VARIABLE_PHYSICAL_SLOT_MICRO_OCR_CONSENSUS; OCCUPANCY_AND_NOTE_COUNT_DERIVED_ONLY_FROM_CARD; ALL_OCCUPIED_SLOTS_STRICTLY_RESOLVED; CATALOG_USED_ONLY_FOR_FINAL_EXACT_ORDER_CHECK",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "components": [],
       "preservedStrictProof": {
         "source": "pre-rebuild social-card-ordered-image-audit.json",
@@ -11919,7 +11919,16 @@
           "same_observed_sequence",
           "exact_card_file_exists"
         ]
-      }
+      },
+      "catalogNotesBeforeCorrection": [
+        "Violet",
+        "Musk",
+        "Pepper",
+        "Tonka Bean",
+        "Cedar",
+        "Nutmeg"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "1034-BLG",
@@ -12447,7 +12456,7 @@
         "Tobacco Blossom",
         "Sandalwood",
         "Juniper",
-        "Green Notes"
+        "Galanga"
       ],
       "observedNotes": [
         "Ginger",
@@ -12455,7 +12464,7 @@
         "Tobacco Blossom",
         "Sandalwood",
         "Juniper",
-        "Green Notes"
+        "Galanga"
       ],
       "components": [
         {
@@ -13255,7 +13264,7 @@
           "notesHeaderY": 24.0
         }
       ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "result": "EXACT_ORDERED_MATCH",
       "catalogNotesBeforeCorrection": [
         "Ginger",
@@ -13263,8 +13272,9 @@
         "Tobacco Blossom",
         "Sandalwood",
         "Juniper",
-        "Galanga"
-      ]
+        "Green Notes"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "1037-BLG",
@@ -20570,8 +20580,11 @@
       "fragranticaId": "307",
       "card": "database/fragrantica/social-cards/images/156_1059-CRT_307.jpeg",
       "catalogNotes": [
+        "Cardamom",
+        "Bitter Orange",
+        "Caraway",
         "Birch",
-        "Water",
+        "Vetiver",
         "Pepper"
       ],
       "result": "EXACT_ORDERED_MATCH",
@@ -20768,11 +20781,14 @@
         }
       ],
       "observedNotes": [
+        "Cardamom",
+        "Bitter Orange",
+        "Caraway",
         "Birch",
-        "Water",
+        "Vetiver",
         "Pepper"
       ],
-      "proof": "HISTORICAL_VALIDATED_SOCIAL_CARD_SLOTS_EXACT_ORDER",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "components": [],
       "preservedStrictProof": {
         "source": "pre-rebuild social-card-ordered-image-audit.json",
@@ -20791,7 +20807,13 @@
           "same_observed_sequence",
           "exact_card_file_exists"
         ]
-      }
+      },
+      "catalogNotesBeforeCorrection": [
+        "Birch",
+        "Water",
+        "Pepper"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "106-ARB",
@@ -22423,7 +22445,9 @@
         3,
         2
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1060-CRT",
@@ -28672,7 +28696,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1074-DRC",
@@ -33470,7 +33496,9 @@
           ],
           "notesHeaderY": 53.3
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1091-COS",
@@ -37118,7 +37146,9 @@
           "same_observed_sequence",
           "exact_card_file_exists"
         ]
-      }
+      },
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1102-DAV",
@@ -55755,7 +55785,9 @@
           "same_observed_sequence",
           "exact_card_file_exists"
         ]
-      }
+      },
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1155-HER",
@@ -57449,7 +57481,7 @@
         "Cinnamon",
         "Sandalwood",
         "Plum",
-        "Bergamot"
+        "Cedar"
       ],
       "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
@@ -57458,7 +57490,7 @@
         "Cinnamon",
         "Sandalwood",
         "Plum",
-        "Bergamot"
+        "Cedar"
       ],
       "components": [
         {
@@ -57533,7 +57565,7 @@
         3,
         3
       ],
-      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -58171,7 +58203,16 @@
           "uncertainComponents": [],
           "notesHeaderY": 53.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Apple",
+        "Vanilla",
+        "Cinnamon",
+        "Sandalwood",
+        "Plum",
+        "Bergamot"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "1161-HUG",
@@ -60383,7 +60424,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1169-HUG",
@@ -116168,7 +116211,9 @@
           "same_observed_sequence",
           "exact_card_file_exists"
         ]
-      }
+      },
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "150-PARF",
@@ -133925,9 +133970,10 @@
         "Agarwood (Oud)",
         "Labdanum",
         "Pink Pepper",
-        "Rose"
+        "Rose",
+        "Vetiver"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -134131,7 +134177,24 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Olibanum (Frankincense)",
+        "Agarwood (Oud)",
+        "Labdanum",
+        "Pink Pepper",
+        "Rose"
+      ],
+      "observedNotes": [
+        "Olibanum (Frankincense)",
+        "Agarwood (Oud)",
+        "Labdanum",
+        "Pink Pepper",
+        "Rose",
+        "Vetiver"
+      ],
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "1615-FRE",
@@ -168092,6 +168155,7 @@
       "card": "database/fragrantica/social-cards/images/2516_1731-VICT_68550.jpeg",
       "catalogNotes": [
         "Meringues",
+        "Vanilla",
         "Musk",
         "Sandalwood Flower",
         "Amber"
@@ -168099,6 +168163,7 @@
       "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Meringues",
+        "Vanilla",
         "Musk",
         "Sandalwood Flower",
         "Amber"
@@ -168154,7 +168219,7 @@
         2,
         2
       ],
-      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -168298,7 +168363,14 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Meringues",
+        "Musk",
+        "Sandalwood Flower",
+        "Amber"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "1732-MIC",
@@ -177906,12 +177978,12 @@
       "catalogNotes": [
         "Vanilla",
         "Cacao Pod",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Magnolia",
         "Orange Blossom",
         "Pear"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -178137,7 +178209,25 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Vanilla",
+        "Cacao Pod",
+        "Musk",
+        "Magnolia",
+        "Orange Blossom",
+        "Pear"
+      ],
+      "observedNotes": [
+        "Vanilla",
+        "Cacao Pod",
+        "Ambrette (Musk Mallow)",
+        "Magnolia",
+        "Orange Blossom",
+        "Pear"
+      ],
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "1769-LTN",
@@ -178696,6 +178786,7 @@
       "catalogNotes": [
         "Caramel",
         "Coffee",
+        "Patchouli",
         "Floral Notes",
         "Gardenia",
         "Sandalwood"
@@ -178704,6 +178795,7 @@
       "observedNotes": [
         "Caramel",
         "Coffee",
+        "Patchouli",
         "Floral Notes",
         "Gardenia",
         "Sandalwood"
@@ -178770,7 +178862,7 @@
         2,
         3
       ],
-      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -179491,7 +179583,15 @@
           ],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Caramel",
+        "Coffee",
+        "Floral Notes",
+        "Gardenia",
+        "Sandalwood"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "1771-EMAN",
@@ -189331,7 +189431,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1804-DRC",
@@ -198079,7 +198181,9 @@
           "same_observed_sequence",
           "exact_card_file_exists"
         ]
-      }
+      },
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1832-TMFO",
@@ -203175,14 +203279,14 @@
       "fragranticaId": "6334",
       "card": "database/fragrantica/social-cards/images/2768_1848-LEL_6334.jpeg",
       "catalogNotes": [
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Fruity Notes",
         "Musk",
         "Aldehydes",
         "Lemon",
         "Amber"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -203385,7 +203489,25 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Musk",
+        "Fruity Notes",
+        "Musk",
+        "Aldehydes",
+        "Lemon",
+        "Amber"
+      ],
+      "observedNotes": [
+        "Ambrette (Musk Mallow)",
+        "Fruity Notes",
+        "Musk",
+        "Aldehydes",
+        "Lemon",
+        "Amber"
+      ],
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "1849-PRFRO",
@@ -206417,7 +206539,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1852-PRFRO",
@@ -214846,7 +214970,9 @@
           "same_observed_sequence",
           "exact_card_file_exists"
         ]
-      }
+      },
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1875-ESCE",
@@ -220436,6 +220562,7 @@
         "Plum",
         "Vanilla",
         "Rose",
+        "Tuberose",
         "Pink Pepper"
       ],
       "result": "EXACT_ORDERED_MATCH",
@@ -220444,6 +220571,7 @@
         "Plum",
         "Vanilla",
         "Rose",
+        "Tuberose",
         "Pink Pepper"
       ],
       "components": [
@@ -220508,7 +220636,7 @@
         3,
         2
       ],
-      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -220676,7 +220804,15 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Musk",
+        "Plum",
+        "Vanilla",
+        "Rose",
+        "Pink Pepper"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "1893-CHA",
@@ -221903,7 +222039,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 124.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1897-VICT",
@@ -224742,7 +224880,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1908-XER",
@@ -253178,7 +253318,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "1996-LTN",
@@ -258642,7 +258784,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2010-LART",
@@ -278322,7 +278466,9 @@
       "multipassEvidence": {
         "variant": "threshold-175",
         "psm": 6
-      }
+      },
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2088-YZLO",
@@ -281973,8 +282119,8 @@
       "card": "database/fragrantica/social-cards/images/3491_2099-MARG_67789.jpeg",
       "catalogNotes": [
         "Cedar",
-        "Nutmeg",
         "Cardamom",
+        "Nutmeg",
         "Oakmoss",
         "Carrot Seeds",
         "Pink Pepper"
@@ -282229,8 +282375,8 @@
       ],
       "observedNotes": [
         "Cedar",
-        "Nutmeg",
         "Cardamom",
+        "Nutmeg",
         "Oakmoss",
         "Carrot Seeds",
         "Pink Pepper"
@@ -282303,11 +282449,20 @@
           "exactText": true
         }
       ],
-      "proof": "EXACT_HIGH_CONFIDENCE_LABELS; ALL_OTHER_STRICT_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "multipassEvidence": {
         "variant": "threshold-205",
         "psm": 6
-      }
+      },
+      "catalogNotesBeforeCorrection": [
+        "Cedar",
+        "Nutmeg",
+        "Cardamom",
+        "Oakmoss",
+        "Carrot Seeds",
+        "Pink Pepper"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "210-CRD",
@@ -289831,7 +289986,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2119-ARM",
@@ -297574,6 +297731,7 @@
         "Mandarin Orange",
         "Sage",
         "Basil",
+        "Vetiver",
         "Leather",
         "Violet"
       ],
@@ -297582,6 +297740,7 @@
         "Mandarin Orange",
         "Sage",
         "Basil",
+        "Vetiver",
         "Leather",
         "Violet"
       ],
@@ -297647,7 +297806,7 @@
         3,
         2
       ],
-      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -297872,7 +298031,15 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Mandarin Orange",
+        "Sage",
+        "Basil",
+        "Leather",
+        "Violet"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "2135-KUR",
@@ -298693,7 +298860,9 @@
           "same_observed_sequence",
           "exact_card_file_exists"
         ]
-      }
+      },
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2138-TMFO",
@@ -304294,7 +304463,9 @@
         3,
         2
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2151-GIV",
@@ -304305,7 +304476,8 @@
         "Cardamom",
         "Palo Santo",
         "Narcissus",
-        "Sage"
+        "Sage",
+        "Vetiver"
       ],
       "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
@@ -304313,7 +304485,8 @@
         "Cardamom",
         "Palo Santo",
         "Narcissus",
-        "Sage"
+        "Sage",
+        "Vetiver"
       ],
       "components": [
         {
@@ -304377,7 +304550,7 @@
         3,
         2
       ],
-      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -305121,7 +305294,15 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Vanilla",
+        "Cardamom",
+        "Palo Santo",
+        "Narcissus",
+        "Sage"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "2152-XER",
@@ -307963,7 +308144,9 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2163-SNI",
@@ -309275,8 +309458,8 @@
       "card": "database/fragrantica/social-cards/images/3808_2169-ROJ_34996.jpeg",
       "catalogNotes": [
         "Cacao Pod",
-        "Vanilla",
         "Orris Root",
+        "Vanilla",
         "Ylang-Ylang",
         "Heliotrope",
         "Sandalwood"
@@ -309475,8 +309658,8 @@
       ],
       "observedNotes": [
         "Cacao Pod",
-        "Vanilla",
         "Orris Root",
+        "Vanilla",
         "Ylang-Ylang",
         "Heliotrope",
         "Sandalwood"
@@ -309549,11 +309732,20 @@
           "exactText": true
         }
       ],
-      "proof": "EXACT_HIGH_CONFIDENCE_LABELS; ALL_OTHER_STRICT_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "multipassEvidence": {
         "variant": "threshold-205",
         "psm": 11
-      }
+      },
+      "catalogNotesBeforeCorrection": [
+        "Cacao Pod",
+        "Vanilla",
+        "Orris Root",
+        "Ylang-Ylang",
+        "Heliotrope",
+        "Sandalwood"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "217-CRD",
@@ -324596,7 +324788,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2217-NRO",
@@ -343629,7 +343823,7 @@
         "Bagas de Zimbro",
         "Lime",
         "Black Currant",
-        "Vetiver"
+        "Bergamot"
       ],
       "result": "EXACT_ORDERED_MATCH",
       "attempts": [
@@ -343876,7 +344070,7 @@
         "Bagas de Zimbro",
         "Lime",
         "Black Currant",
-        "Vetiver"
+        "Bergamot"
       ],
       "components": [
         {
@@ -343946,11 +344140,20 @@
           "exactText": true
         }
       ],
-      "proof": "EXACT_HIGH_CONFIDENCE_LABELS; ALL_OTHER_STRICT_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "multipassEvidence": {
         "variant": "threshold-205",
         "psm": 11
-      }
+      },
+      "catalogNotesBeforeCorrection": [
+        "Grapefruit",
+        "Rhubarb",
+        "Bagas de Zimbro",
+        "Lime",
+        "Black Currant",
+        "Vetiver"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "2272-TAU",
@@ -353243,7 +353446,7 @@
       "fragranticaId": "131717",
       "card": "database/fragrantica/social-cards/images/3943_2301-DIP_131717.jpeg",
       "catalogNotes": [
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Carrot",
         "Musk",
         "Iris",
@@ -353455,14 +353658,14 @@
         }
       ],
       "observedNotes": [
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Carrot",
         "Musk",
         "Iris",
         "Aldehydes",
         "Cedar"
       ],
-      "proof": "SOCIAL_CARD_ONLY_VARIABLE_PHYSICAL_SLOT_MICRO_OCR_CONSENSUS; OCCUPANCY_AND_NOTE_COUNT_DERIVED_ONLY_FROM_CARD; ALL_OCCUPIED_SLOTS_STRICTLY_RESOLVED; CATALOG_USED_ONLY_FOR_FINAL_EXACT_ORDER_CHECK",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "components": [],
       "preservedStrictProof": {
         "source": "pre-rebuild social-card-ordered-image-audit.json",
@@ -353484,7 +353687,16 @@
           "same_observed_sequence",
           "exact_card_file_exists"
         ]
-      }
+      },
+      "catalogNotesBeforeCorrection": [
+        "Musk",
+        "Carrot",
+        "Musk",
+        "Iris",
+        "Aldehydes",
+        "Cedar"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "2302-CARO",
@@ -394579,9 +394791,9 @@
         "Rose",
         "Leather",
         "Woody Notes",
-        "Musk"
+        "Ambrette (Musk Mallow)"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -394830,7 +395042,25 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Agarwood (Oud)",
+        "Musk",
+        "Rose",
+        "Leather",
+        "Woody Notes",
+        "Musk"
+      ],
+      "observedNotes": [
+        "Agarwood (Oud)",
+        "Musk",
+        "Rose",
+        "Leather",
+        "Woody Notes",
+        "Ambrette (Musk Mallow)"
+      ],
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "2432-ROJ",
@@ -404927,7 +405157,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2455-YZLO",
@@ -408027,7 +408259,7 @@
       "catalogNotes": [
         "Basil",
         "Mint",
-        "Violet",
+        "Violet Leaf",
         "Yuzu",
         "Anise",
         "Licorice"
@@ -408036,12 +408268,12 @@
       "observedNotes": [
         "Basil",
         "Mint",
-        "Violet",
+        "Violet Leaf",
         "Yuzu",
         "Anise",
         "Licorice"
       ],
-      "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "slotwiseEvidence": {
         "variantsPerPosition": [
           [
@@ -408858,7 +409090,16 @@
           ],
           "notesHeaderY": 48.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Basil",
+        "Mint",
+        "Violet",
+        "Yuzu",
+        "Anise",
+        "Licorice"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "2468-ESPAR",
@@ -416649,7 +416890,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "249-JOM",
@@ -422292,7 +422535,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2503-JUL",
@@ -432728,13 +432973,13 @@
       "card": "database/fragrantica/social-cards/images/4258_2532-PRA_32197.jpeg",
       "catalogNotes": [
         "Coumarin",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Iso E Super",
         "Cedar",
         "Hedione",
         "Orris Root"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -432981,7 +433226,25 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Coumarin",
+        "Musk",
+        "Iso E Super",
+        "Cedar",
+        "Hedione",
+        "Orris Root"
+      ],
+      "observedNotes": [
+        "Coumarin",
+        "Ambrette (Musk Mallow)",
+        "Iso E Super",
+        "Cedar",
+        "Hedione",
+        "Orris Root"
+      ],
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "2533-RAL",
@@ -433805,9 +434068,9 @@
         "Neroli",
         "Bergamot",
         "Musk",
-        "Musk"
+        "Ambrette (Musk Mallow)"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -434008,7 +434271,23 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Jasmine",
+        "Neroli",
+        "Bergamot",
+        "Musk",
+        "Musk"
+      ],
+      "observedNotes": [
+        "Jasmine",
+        "Neroli",
+        "Bergamot",
+        "Musk",
+        "Ambrette (Musk Mallow)"
+      ],
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "2537-DRC",
@@ -438804,7 +439083,7 @@
         "Tobacco",
         "Vanilla",
         "Chestnut",
-        "Cinnamon",
+        "Cinnamon Leaf",
         "Pimento",
         "Amber"
       ],
@@ -438981,11 +439260,11 @@
         "Tobacco",
         "Vanilla",
         "Chestnut",
-        "Cinnamon",
+        "Cinnamon Leaf",
         "Pimento",
         "Amber"
       ],
-      "proof": "HISTORICAL_VALIDATED_SOCIAL_CARD_SLOTS_EXACT_ORDER",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "components": [],
       "preservedStrictProof": {
         "source": "pre-rebuild social-card-ordered-image-audit.json",
@@ -439007,7 +439286,16 @@
           "same_observed_sequence",
           "exact_card_file_exists"
         ]
-      }
+      },
+      "catalogNotesBeforeCorrection": [
+        "Tobacco",
+        "Vanilla",
+        "Chestnut",
+        "Cinnamon",
+        "Pimento",
+        "Amber"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "2551-PAR",
@@ -441946,7 +442234,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2554-JOM",
@@ -442706,7 +442996,7 @@
       "card": "database/fragrantica/social-cards/images/4284_2557-ARIA_68664.jpeg",
       "catalogNotes": [
         "Pear",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Vanilla",
         "Orris Root",
         "Sandalwood",
@@ -442907,7 +443197,7 @@
       ],
       "observedNotes": [
         "Pear",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Vanilla",
         "Orris Root",
         "Sandalwood",
@@ -443004,11 +443294,20 @@
           "strongestPsm": 6
         }
       ],
-      "proof": "SIX_SLOT_EXACT_LEXICON_CONSENSUS_FROM_AT_LEAST_TWO_PREPROCESSING_FAMILIES_PER_SLOT; ALL_STRICT_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "multipassEvidence": {
         "variant": "six-slot-consensus",
         "psm": null
-      }
+      },
+      "catalogNotesBeforeCorrection": [
+        "Pear",
+        "Musk",
+        "Vanilla",
+        "Orris Root",
+        "Sandalwood",
+        "Rose"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "2558-LAT",
@@ -446688,7 +446987,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 124.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2571-GOLD",
@@ -451922,7 +452223,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2587-MAR",
@@ -457544,7 +457847,9 @@
         3,
         1
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2599-ACQ",
@@ -507387,7 +507692,9 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2754-CHL",
@@ -516917,7 +517224,9 @@
           ],
           "notesHeaderY": 142.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "278-JOM",
@@ -519749,7 +520058,9 @@
       "multipassEvidence": {
         "variant": "threshold-205",
         "psm": 6
-      }
+      },
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "279-JOM",
@@ -522971,7 +523282,9 @@
       "multipassEvidence": {
         "variant": "threshold-175",
         "psm": 11
-      }
+      },
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "2798-NICO",
@@ -544562,7 +544875,9 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "304-KIE",
@@ -548672,12 +548987,12 @@
       "catalogNotes": [
         "Whiskey",
         "Woody Notes",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Rose",
         "Ambroxan",
         "Musk"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -548880,7 +549195,25 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Whiskey",
+        "Woody Notes",
+        "Musk",
+        "Rose",
+        "Ambroxan",
+        "Musk"
+      ],
+      "observedNotes": [
+        "Whiskey",
+        "Woody Notes",
+        "Ambrette (Musk Mallow)",
+        "Rose",
+        "Ambroxan",
+        "Musk"
+      ],
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "321-NAS",
@@ -555301,11 +555634,11 @@
         "Vanilla",
         "Aldehydes",
         "Heliotrope",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Peru Balsam",
         "Sandalwood"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -555496,7 +555829,25 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Vanilla",
+        "Aldehydes",
+        "Heliotrope",
+        "Musk",
+        "Peru Balsam",
+        "Sandalwood"
+      ],
+      "observedNotes": [
+        "Vanilla",
+        "Aldehydes",
+        "Heliotrope",
+        "Ambrette (Musk Mallow)",
+        "Peru Balsam",
+        "Sandalwood"
+      ],
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "354-TMFO",
@@ -564062,7 +564413,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "384-YAR",
@@ -567606,7 +567959,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "395-AGE",
@@ -572096,7 +572451,7 @@
       "fragranticaId": "21987",
       "card": "database/fragrantica/social-cards/images/515_406-BAL_21987.jpeg",
       "catalogNotes": [
-        "Fig",
+        "Fig Leaf",
         "Rose",
         "Petitgrain",
         "Grapefruit",
@@ -572297,14 +572652,14 @@
         }
       ],
       "observedNotes": [
-        "Fig",
+        "Fig Leaf",
         "Rose",
         "Petitgrain",
         "Grapefruit",
         "Pink Pepper",
         "Cedar"
       ],
-      "proof": "HISTORICAL_VALIDATED_SOCIAL_CARD_SLOTS_EXACT_ORDER",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "components": [],
       "preservedStrictProof": {
         "source": "pre-rebuild social-card-ordered-image-audit.json",
@@ -572326,7 +572681,16 @@
           "same_observed_sequence",
           "exact_card_file_exists"
         ]
-      }
+      },
+      "catalogNotesBeforeCorrection": [
+        "Fig",
+        "Rose",
+        "Petitgrain",
+        "Grapefruit",
+        "Pink Pepper",
+        "Cedar"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "409-BOB",
@@ -583741,7 +584105,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "441-BLG",
@@ -591581,7 +591947,9 @@
           ],
           "notesHeaderY": 113.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "466-CAL",
@@ -612619,8 +612987,8 @@
         "Rose",
         "Amber",
         "Bergamot",
-        "Mandarin Orange",
-        "Vanilla"
+        "Vanilla",
+        "Mandarin Orange"
       ],
       "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
@@ -612628,8 +612996,8 @@
         "Rose",
         "Amber",
         "Bergamot",
-        "Mandarin Orange",
-        "Vanilla"
+        "Vanilla",
+        "Mandarin Orange"
       ],
       "components": [
         {
@@ -612704,7 +613072,7 @@
         3,
         3
       ],
-      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -612884,7 +613252,16 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Patchouli",
+        "Rose",
+        "Amber",
+        "Bergamot",
+        "Mandarin Orange",
+        "Vanilla"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "534-DRC",
@@ -637328,7 +637705,7 @@
       "catalogNotes": [
         "Mango",
         "Nectarine",
-        "Orange",
+        "Blood Orange",
         "Raspberry",
         "Coconut",
         "Star Apple"
@@ -637337,7 +637714,7 @@
       "observedNotes": [
         "Mango",
         "Nectarine",
-        "Orange",
+        "Blood Orange",
         "Raspberry",
         "Coconut",
         "Star Apple"
@@ -637415,7 +637792,7 @@
         3,
         3
       ],
-      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -637618,7 +637995,16 @@
           "uncertainComponents": [],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Mango",
+        "Nectarine",
+        "Orange",
+        "Raspberry",
+        "Coconut",
+        "Star Apple"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "612-ESC",
@@ -666127,7 +666513,9 @@
           ],
           "notesHeaderY": 124.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "700-HER",
@@ -706234,10 +706622,10 @@
         "Pear",
         "Freesia",
         "Vanilla",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Peony"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "psm": 6,
@@ -706461,7 +706849,25 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Lotus",
+        "Pear",
+        "Freesia",
+        "Vanilla",
+        "Musk",
+        "Peony"
+      ],
+      "observedNotes": [
+        "Lotus",
+        "Pear",
+        "Freesia",
+        "Vanilla",
+        "Ambrette (Musk Mallow)",
+        "Peony"
+      ],
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "822-MIC",
@@ -709825,7 +710231,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "829-MNTB",
@@ -726401,7 +726809,9 @@
         3,
         3
       ],
-      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "875-PRA",
@@ -732367,6 +732777,7 @@
       "card": "database/fragrantica/social-cards/images/2213_896-RCAV_58538.jpeg",
       "catalogNotes": [
         "Vanilla",
+        "Cypriol Oil or Nagarmotha",
         "Magnolia",
         "Cedar",
         "Patchouli",
@@ -732375,6 +732786,7 @@
       "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Vanilla",
+        "Cypriol Oil or Nagarmotha",
         "Magnolia",
         "Cedar",
         "Patchouli",
@@ -732442,7 +732854,7 @@
         2,
         3
       ],
-      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+      "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
       "attempts": [
         {
           "variant": "contrast-200",
@@ -733231,7 +733643,15 @@
           ],
           "notesHeaderY": 35.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Vanilla",
+        "Magnolia",
+        "Cedar",
+        "Patchouli",
+        "Rose"
+      ],
+      "independentGreenReauditResult": "EXACT_ORDERED_MATCH"
     },
     {
       "code": "897-RCAV",
@@ -736751,7 +737171,9 @@
           ],
           "notesHeaderY": 26.0
         }
-      ]
+      ],
+      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
+      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
     },
     {
       "code": "910-SARJ",
