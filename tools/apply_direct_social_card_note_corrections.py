@@ -159,7 +159,11 @@ INDEPENDENT_GREEN_REAUDIT_CORRECTIONS = {
 # reproduce a complete exact reading. They must lose green status until a new
 # exact reading exists; no note is changed.
 INDEPENDENT_GREEN_REAUDIT_UNRESOLVED = {
-    "106-ARB", "1073-DRC", "1090-COS", "1101-DOL", "1154-HER", "1168-HUG", "1499-BYR", "1803-DRC", "1831-TMFO", "1851-ARM", "1874-LTN", "1896-ESC", "1907-PEN", "1995-YZLO", "201-CLIV", "2086-VICT", "2118-GUC", "2137-ROJ", "2150-LEL", "2162-BRB", "2216-DOL", "2454-KIL", "2489-KKWI", "2502-MATIE", "2553-BON", "2570-JOM", "2584-GIV", "2598-GLO", "2753-YZLO", "2778-JOM", "2789-PEN", "2797-MATIE", "303-JOM", "378-TMFO", "394-AGE", "440-BLG", "465-CAL", "699-HER", "828-MIY", "874-PRA", "909-SFER",
+    # The sixteen rows below were subsequently re-read directly from their
+    # exact FID-bound Notes panels. Their explicit manual visual proof above
+    # supersedes this withdrawal, so only cases still lacking a complete
+    # current-card transcription remain here.
+    "1073-DRC", "1090-COS", "1101-DOL", "1154-HER", "1168-HUG", "1499-BYR", "1831-TMFO", "1874-LTN", "1896-ESC", "1907-PEN", "2086-VICT", "2137-ROJ", "2162-BRB", "2216-DOL", "2489-KKWI", "2502-MATIE", "2570-JOM", "2753-YZLO", "2778-JOM", "2789-PEN", "2797-MATIE", "303-JOM", "465-CAL", "699-HER", "909-SFER",
 }
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
@@ -269,6 +273,10 @@ for row in rows:
     previous = list(row.get("fragranticaSocialCardNotes") or [])
     row["fragranticaSocialCardNotes"] = notes
     row["fragranticaSocialCardStatus"] = "VALIDATED_MANUAL"
+    # The compact site data is the renderer input. Keep it aligned with the
+    # exact direct-card transcription, otherwise proof and UI would diverge.
+    if code in site_by_code:
+        site_by_code[code]["fragranticaSocialCardNotes"] = list(notes)
     item.update({
         "result": "EXACT_ORDERED_MATCH",
         "catalogNotesBeforeCorrection": previous,
@@ -278,6 +286,14 @@ for row in rows:
         "iconCounts": list(proof["labelCounts"]),
         "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
     })
+    # Keep the OCR re-audit history, but record that a separately checked
+    # exact-FID visual reading of the same physical Notes panel superseded it.
+    if item.get("independentGreenReauditResult") == "READING_NOT_STRICT_ENOUGH":
+        item["independentGreenReauditResult"] = "SUPERSEDED_BY_DIRECT_MANUAL_CARD_TRANSCRIPTION"
+        item["independentGreenReauditRule"] = (
+            "Original OCR did not reproduce the text; exact-card visual transcription "
+            "with matching physical icon count was subsequently checked."
+        )
     corrections.append({
         "code": code,
         "fragranticaId": fid,
