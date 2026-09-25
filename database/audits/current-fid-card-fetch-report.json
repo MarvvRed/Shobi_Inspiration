@@ -1,13 +1,328 @@
 {
-  "targets": 4,
-  "recovered": 4,
+  "targets": 45,
+  "recovered": 45,
   "missing": 0,
   "rows": [
+    {
+      "code": "2789-PEN",
+      "fid": "103514",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_2789-PEN_103514.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_103514.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_103514.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "2797-MATIE",
+      "fid": "112581",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_2797-MATIE_112581.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_112581.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_112581.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "2778-JOM",
+      "fid": "61929",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_2778-JOM_61929.jpeg",
+      "source": ""
+    },
+    {
+      "code": "2753-YZLO",
+      "fid": "113623",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_2753-YZLO_113623.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_113623.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_113623.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "2598-GLO",
+      "fid": "46885",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_2598-GLO_46885.jpeg",
+      "source": ""
+    },
+    {
+      "code": "2584-GIV",
+      "fid": "1966",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_2584-GIV_1966.jpeg",
+      "source": ""
+    },
+    {
+      "code": "2553-BON",
+      "fid": "13630",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_2553-BON_13630.jpeg",
+      "source": ""
+    },
+    {
+      "code": "2502-MATIE",
+      "fid": "59063",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_2502-MATIE_59063.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_59063.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_59063.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "2570-JOM",
+      "fid": "84035",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_2570-JOM_84035.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_84035.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_84035.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "2489-KKWI",
+      "fid": "56352",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_2489-KKWI_56352.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_56352.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_56352.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "2454-KIL",
+      "fid": "78735",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_2454-KIL_78735.jpeg",
+      "source": ""
+    },
+    {
+      "code": "2216-DOL",
+      "fid": "84951",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_2216-DOL_84951.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_84951.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_84951.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "2162-BRB",
+      "fid": "83483",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_2162-BRB_83483.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_83483.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_83483.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "2150-LEL",
+      "fid": "69731",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_2150-LEL_69731.jpeg",
+      "source": ""
+    },
+    {
+      "code": "2137-ROJ",
+      "fid": "32537",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_2137-ROJ_32537.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_32537.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_32537.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "2118-GUC",
+      "fid": "79602",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_2118-GUC_79602.jpeg",
+      "source": ""
+    },
+    {
+      "code": "2086-VICT",
+      "fid": "75277",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_2086-VICT_75277.jpeg",
+      "source": ""
+    },
+    {
+      "code": "1995-YZLO",
+      "fid": "32267",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_1995-YZLO_32267.jpeg",
+      "source": ""
+    },
+    {
+      "code": "1907-PEN",
+      "fid": "71646",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_1907-PEN_71646.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_71646.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_71646.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "1896-ESC",
+      "fid": "70279",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_1896-ESC_70279.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_70279.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_70279.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "1874-LTN",
+      "fid": "60388",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_1874-LTN_60388.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_60388.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_60388.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "1851-ARM",
+      "fid": "58909",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_1851-ARM_58909.jpeg",
+      "source": ""
+    },
+    {
+      "code": "201-CLIV",
+      "fid": "4648",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_201-CLIV_4648.jpeg",
+      "source": ""
+    },
+    {
+      "code": "1831-TMFO",
+      "fid": "6384",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_1831-TMFO_6384.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_6384.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_6384.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "1803-DRC",
+      "fid": "62638",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_1803-DRC_62638.jpeg",
+      "source": ""
+    },
+    {
+      "code": "1499-BYR",
+      "fid": "27040",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_1499-BYR_27040.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_27040.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_27040.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "1090-COS",
+      "fid": "7047",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_1090-COS_7047.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_7047.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_7047.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "699-HER",
+      "fid": "42747",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_699-HER_42747.jpeg",
+      "source": ""
+    },
     {
       "code": "118-HAM",
       "fid": "27808",
       "status": "EXISTS",
       "card": "database/fragrantica/social-cards/images/current_118-HAM_27808.jpeg",
+      "source": ""
+    },
+    {
+      "code": "106-ARB",
+      "fid": "21560",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_106-ARB_21560.jpeg",
+      "source": ""
+    },
+    {
+      "code": "378-TMFO",
+      "fid": "6386",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_378-TMFO_6386.jpeg",
       "source": ""
     },
     {
@@ -18,10 +333,66 @@
       "source": ""
     },
     {
+      "code": "303-JOM",
+      "fid": "25529",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_303-JOM_25529.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_25529.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_25529.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
       "code": "235-HOLL",
       "fid": "4307",
       "status": "EXISTS",
       "card": "database/fragrantica/social-cards/images/current_235-HOLL_4307.jpeg",
+      "source": ""
+    },
+    {
+      "code": "909-SFER",
+      "fid": "26777",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_909-SFER_26777.jpeg",
+      "source": ""
+    },
+    {
+      "code": "874-PRA",
+      "fid": "44534",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_874-PRA_44534.jpeg",
+      "source": ""
+    },
+    {
+      "code": "828-MIY",
+      "fid": "42720",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_828-MIY_42720.jpeg",
+      "source": ""
+    },
+    {
+      "code": "465-CAL",
+      "fid": "8840",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_465-CAL_8840.jpeg",
+      "source": ""
+    },
+    {
+      "code": "440-BLG",
+      "fid": "45241",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_440-BLG_45241.jpeg",
+      "source": ""
+    },
+    {
+      "code": "394-AGE",
+      "fid": "45363",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_394-AGE_45363.jpeg",
       "source": ""
     },
     {
@@ -30,6 +401,55 @@
       "status": "EXISTS",
       "card": "database/fragrantica/social-cards/images/current_1251-ROM_21103.jpeg",
       "source": ""
+    },
+    {
+      "code": "1168-HUG",
+      "fid": "42484",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_1168-HUG_42484.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_42484.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_42484.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "1154-HER",
+      "fid": "19",
+      "status": "EXISTS",
+      "card": "database/fragrantica/social-cards/images/current_1154-HER_19.jpeg",
+      "source": ""
+    },
+    {
+      "code": "1101-DOL",
+      "fid": "25154",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_1101-DOL_25154.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_25154.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_25154.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "code": "1073-DRC",
+      "fid": "27417",
+      "status": "RECOVERED",
+      "card": "database/fragrantica/social-cards/images/current_1073-DRC_27417.jpeg",
+      "source": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_27417.jpeg",
+      "attempts": [
+        {
+          "url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_27417.jpeg",
+          "status": "OK",
+          "detail": "image/jpeg"
+        }
+      ]
     }
   ]
 }
