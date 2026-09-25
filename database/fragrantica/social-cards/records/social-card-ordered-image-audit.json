@@ -1,11 +1,11 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 31,
+  "targetedCurrentYellows": 29,
   "results": {
-    "EXACT_ORDERED_MATCH": 2193,
+    "EXACT_ORDERED_MATCH": 2194,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 54,
+    "READING_NOT_STRICT_ENOUGH": 53,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -30429,9 +30429,7 @@
           ],
           "notesHeaderY": 32.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "1074-DRC",
@@ -36719,9 +36717,7 @@
           ],
           "notesHeaderY": 48.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "1091-COS",
@@ -67884,9 +67880,7 @@
           ],
           "notesHeaderY": 32.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "1169-HUG",
@@ -437285,9 +437279,7 @@
           ],
           "notesHeaderY": 23.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "249-JOM",
@@ -444367,9 +444359,7 @@
           ],
           "notesHeaderY": 32.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "2503-JUL",
@@ -572875,9 +572865,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "304-KIE",
@@ -768190,9 +768178,7 @@
           ],
           "notesHeaderY": 23.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "910-SARJ",
