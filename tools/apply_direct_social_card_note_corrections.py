@@ -132,6 +132,13 @@ MANUAL_VISUAL_NOTES = {
     "465-CAL": {"fid": "8840", "card": "database/fragrantica/social-cards/images/current_465-CAL_8840.jpeg", "notes": ["Jasmine", "Ambrette (Musk Mallow)", "Cedar"], "labelCounts": [3, 0]},
     "1154-HER": {"fid": "19", "card": "database/fragrantica/social-cards/images/244_1154-HER_19.jpeg", "notes": ["Fig Leaf", "Cypress", "Juniper", "Bergamot", "Lemon", "Orange Blossom"], "labelCounts": [3, 3]},
     "1101-DOL": {"fid": "25154", "card": "database/fragrantica/social-cards/images/192_1101-DOL_25154.jpeg", "notes": ["Bergamot", "Orange Blossom", "Petitgrain", "Vetiver", "Ambrette (Musk Mallow)", "Clary Sage"], "labelCounts": [3, 3]},
+    "1073-DRC": {"fid": "27417", "card": "database/fragrantica/social-cards/images/169_1073-DRC_27417.jpeg", "notes": ["Iris", "Leather", "Sandalwood", "Ambrette (Musk Mallow)", "Rose", "Agarwood (Oud)"], "labelCounts": [3, 3]},
+    "1090-COS": {"fid": "7047", "card": "database/fragrantica/social-cards/images/1882_1090-COS_7047.jpeg", "notes": ["Cloves", "Cinnamon", "Sandalwood", "Cardamom", "Labdanum", "Grapefruit"], "labelCounts": [3, 3]},
+    "1168-HUG": {"fid": "42484", "card": "database/fragrantica/social-cards/images/255_1168-HUG_42484.jpeg", "notes": ["Mint", "Bitter Orange", "Tea", "Vetiver", "Juniper"], "labelCounts": [3, 2]},
+    "2489-KKWI": {"fid": "56352", "card": "database/fragrantica/social-cards/images/4238_2489-KKWI_56352.jpeg", "notes": ["Gardenia", "Vanilla", "Ambrette (Musk Mallow)", "Ylang-Ylang", "Juniper", "Musk"], "labelCounts": [3, 3]},
+    "2502-MATIE": {"fid": "59063", "card": "database/fragrantica/social-cards/images/4323_2502-MATIE_59063.jpeg", "notes": ["Ambrette (Musk Mallow)", "Musk", "Cedar", "Ambrettolide", "Ambroxan"], "labelCounts": [3, 2]},
+    "303-JOM": {"fid": "25529", "card": "database/fragrantica/social-cards/images/1202_303-JOM_25529.jpeg", "notes": ["Salt", "Sage", "Grapefruit", "Ambrette (Musk Mallow)", "Seaweed"], "labelCounts": [3, 2]},
+    "909-SFER": {"fid": "26777", "card": "database/fragrantica/social-cards/images/945_909-SFER_26777.jpeg", "notes": ["Mimosa", "Ambrette (Musk Mallow)", "Iris", "Vanilla", "Heliotrope", "White Flowers"], "labelCounts": [3, 3]},
 }
 
 MANUAL_VISUAL_PROFILE = {
@@ -178,13 +185,7 @@ INDEPENDENT_GREEN_REAUDIT_CORRECTIONS = {
 # These cards have no contradiction, but the fresh all-green audit could not
 # reproduce a complete exact reading. They must lose green status until a new
 # exact reading exists; no note is changed.
-INDEPENDENT_GREEN_REAUDIT_UNRESOLVED = {
-    # The sixteen rows below were subsequently re-read directly from their
-    # exact FID-bound Notes panels. Their explicit manual visual proof above
-    # supersedes this withdrawal, so only cases still lacking a complete
-    # current-card transcription remain here.
-    "1073-DRC", "1090-COS", "1168-HUG", "2489-KKWI", "2502-MATIE", "303-JOM", "909-SFER",
-}
+INDEPENDENT_GREEN_REAUDIT_UNRESOLVED = set()
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
 site_rows = json.loads(SITE.read_text(encoding="utf-8-sig"))
