@@ -1,11 +1,11 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 22,
+  "targetedCurrentYellows": 6,
   "results": {
-    "EXACT_ORDERED_MATCH": 2194,
+    "EXACT_ORDERED_MATCH": 2217,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 53,
+    "READING_NOT_STRICT_ENOUGH": 30,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -30434,7 +30434,7 @@
         "Iris",
         "Leather",
         "Sandalwood",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Rose",
         "Agarwood (Oud)"
       ],
@@ -36747,6 +36747,7 @@
       "catalogNotesBeforeCorrection": [
         "Cloves",
         "Cinnamon",
+        "Sandalwood",
         "Cardamom",
         "Labdanum",
         "Grapefruit"
@@ -41884,7 +41885,7 @@
         "Orange Blossom",
         "Petitgrain",
         "Vetiver",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Clary Sage"
       ],
       "observedNotes": [
@@ -61976,7 +61977,7 @@
         }
       ],
       "catalogNotesBeforeCorrection": [
-        "Fig",
+        "Fig Leaf",
         "Cypress",
         "Juniper",
         "Bergamot",
@@ -67986,6 +67987,7 @@
         "Mint",
         "Bitter Orange",
         "Tea",
+        "Vetiver",
         "Juniper"
       ],
       "observedNotes": [
@@ -125325,7 +125327,7 @@
         "Sapodilla",
         "Magnolia",
         "Violet",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Sandalwood",
         "Ambergris"
       ],
@@ -208783,7 +208785,7 @@
         "Jasmine",
         "Ambrette (Musk Mallow)",
         "Benzoin",
-        "Incense"
+        "Plum"
       ],
       "iconCounts": [
         3,
@@ -226926,7 +226928,7 @@
         "Mandarin Orange",
         "Musk",
         "Pear",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Benzoin"
       ],
       "observedNotes": [
@@ -239158,7 +239160,7 @@
         "Vanilla",
         "Incense",
         "Tonka Bean",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Clary Sage",
         "Grapefruit"
       ],
@@ -315440,7 +315442,7 @@
         "Orris Root",
         "Labdanum",
         "Castoreum",
-        "Musk"
+        "Ambrette (Musk Mallow)"
       ],
       "observedNotes": [
         "Leather",
@@ -437603,7 +437605,7 @@
       "catalogNotesBeforeCorrection": [
         "Gardenia",
         "Vanilla",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Ylang-Ylang",
         "Juniper",
         "Musk"
@@ -444706,7 +444708,7 @@
         }
       ],
       "catalogNotesBeforeCorrection": [
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Musk",
         "Cedar",
         "Ambrettolide",
@@ -545866,7 +545868,8 @@
         "Cardamom",
         "Matcha Tea",
         "Salt",
-        "Violet Leaf"
+        "Violet Leaf",
+        "Patchouli"
       ],
       "observedNotes": [
         "Pistachio",
@@ -573347,7 +573350,7 @@
         "Salt",
         "Sage",
         "Grapefruit",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Seaweed"
       ],
       "observedNotes": [
@@ -768701,7 +768704,7 @@
       ],
       "catalogNotesBeforeCorrection": [
         "Mimosa",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Iris",
         "Vanilla",
         "Heliotrope",
