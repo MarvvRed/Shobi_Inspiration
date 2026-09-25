@@ -1,12 +1,11 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 47,
+  "targetedCurrentYellows": 31,
   "results": {
-    "EXACT_ORDERED_CARD_NOTES_DIFFER": 1,
-    "EXACT_ORDERED_MATCH": 2176,
+    "EXACT_ORDERED_MATCH": 2193,
     "NO_EXACT_CARD": 2,
-    "READING_NOT_STRICT_ENOUGH": 70,
+    "READING_NOT_STRICT_ENOUGH": 54,
     "UNSUPPORTED_CARD_GEOMETRY": 4
   },
   "rows": [
@@ -41833,9 +41832,7 @@
           ],
           "notesHeaderY": 23.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "1102-DAV",
@@ -61906,9 +61903,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "1155-HER",
@@ -125207,9 +125202,7 @@
           ],
           "notesHeaderY": 32.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "150-PARF",
@@ -206941,6 +206934,7 @@
         "Benzoin",
         "Incense"
       ],
+      "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
         "Musk",
         "Honey",
@@ -207022,10 +207016,7 @@
         3,
         3
       ],
-      "iconCounts": [
-        3,
-        3
-      ],
+      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -208640,18 +208631,6 @@
           ],
           "notesHeaderY": 32.0
         }
-      ],
-      "proof": "COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
-      "result": "EXACT_ORDERED_MATCH",
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence",
-      "catalogNotesBeforeCorrection": [
-        "Musk",
-        "Honey",
-        "Jasmine",
-        "Musk",
-        "Benzoin",
-        "Plum"
       ]
     },
     {
@@ -226785,9 +226764,7 @@
           ],
           "notesHeaderY": 23.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "1875-ESCE",
@@ -234722,9 +234699,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 113.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "1897-VICT",
@@ -238979,9 +238954,7 @@
           ],
           "notesHeaderY": 23.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "1908-XER",
@@ -293319,9 +293292,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 113.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "2088-YZLO",
@@ -315219,9 +315190,7 @@
           ],
           "notesHeaderY": 32.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "2138-TMFO",
@@ -325763,9 +325732,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 23.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "2163-SNI",
@@ -343670,9 +343637,7 @@
           ],
           "notesHeaderY": 23.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "2217-NRO",
@@ -469720,9 +469685,7 @@
           ],
           "notesHeaderY": 113.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "2571-GOLD",
@@ -531177,9 +531140,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "2754-CHL",
@@ -541180,9 +541141,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 130.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "278-JOM",
@@ -545481,9 +545440,7 @@
           ],
           "notesHeaderY": 32.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "279-JOM",
@@ -550041,9 +549998,7 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "2798-NICO",
@@ -619578,7 +619533,7 @@
         "Ambrette (Musk Mallow)",
         "Cedar"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -620481,8 +620436,25 @@
           "notesHeaderY": 113.0
         }
       ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      "catalogNotesBeforeCorrection": [
+        "Jasmine",
+        "Ambrette (Musk Mallow)",
+        "Cedar"
+      ],
+      "observedNotes": [
+        "Jasmine",
+        "Ambrette (Musk Mallow)",
+        "Cedar"
+      ],
+      "labelCounts": [
+        3,
+        0
+      ],
+      "iconCounts": [
+        3,
+        0
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "466-CAL",
@@ -695902,9 +695874,7 @@
           ],
           "notesHeaderY": 113.0
         }
-      ],
-      "independentGreenReauditResult": "READING_NOT_STRICT_ENOUGH",
-      "independentGreenReauditRule": "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+      ]
     },
     {
       "code": "700-HER",
