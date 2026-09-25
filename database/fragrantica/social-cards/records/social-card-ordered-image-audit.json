@@ -1,7 +1,7 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
   "catalogRows": 2253,
-  "targetedCurrentYellows": 29,
+  "targetedCurrentYellows": 22,
   "results": {
     "EXACT_ORDERED_MATCH": 2194,
     "NO_EXACT_CARD": 2,
@@ -28487,11 +28487,11 @@
         "Iris",
         "Leather",
         "Sandalwood",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Rose",
         "Agarwood (Oud)"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -30429,7 +30429,32 @@
           ],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Iris",
+        "Leather",
+        "Sandalwood",
+        "Musk",
+        "Rose",
+        "Agarwood (Oud)"
+      ],
+      "observedNotes": [
+        "Iris",
+        "Leather",
+        "Sandalwood",
+        "Ambrette (Musk Mallow)",
+        "Rose",
+        "Agarwood (Oud)"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "1074-DRC",
@@ -35032,11 +35057,12 @@
       "catalogNotes": [
         "Cloves",
         "Cinnamon",
+        "Sandalwood",
         "Cardamom",
         "Labdanum",
         "Grapefruit"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -36717,7 +36743,31 @@
           ],
           "notesHeaderY": 48.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Cloves",
+        "Cinnamon",
+        "Cardamom",
+        "Labdanum",
+        "Grapefruit"
+      ],
+      "observedNotes": [
+        "Cloves",
+        "Cinnamon",
+        "Sandalwood",
+        "Cardamom",
+        "Labdanum",
+        "Grapefruit"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "1091-COS",
@@ -40095,10 +40145,10 @@
         "Orange Blossom",
         "Petitgrain",
         "Vetiver",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Clary Sage"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -41828,7 +41878,32 @@
           ],
           "notesHeaderY": 23.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Bergamot",
+        "Orange Blossom",
+        "Petitgrain",
+        "Vetiver",
+        "Musk",
+        "Clary Sage"
+      ],
+      "observedNotes": [
+        "Bergamot",
+        "Orange Blossom",
+        "Petitgrain",
+        "Vetiver",
+        "Ambrette (Musk Mallow)",
+        "Clary Sage"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "1102-DAV",
@@ -60247,14 +60322,14 @@
       "fragranticaId": "19",
       "card": "database/fragrantica/social-cards/images/current_1154-HER_19.jpeg",
       "catalogNotes": [
-        "Fig",
+        "Fig Leaf",
         "Cypress",
         "Juniper",
         "Bergamot",
         "Lemon",
         "Orange Blossom"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -61899,7 +61974,32 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Fig",
+        "Cypress",
+        "Juniper",
+        "Bergamot",
+        "Lemon",
+        "Orange Blossom"
+      ],
+      "observedNotes": [
+        "Fig Leaf",
+        "Cypress",
+        "Juniper",
+        "Bergamot",
+        "Lemon",
+        "Orange Blossom"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "1155-HER",
@@ -66366,9 +66466,10 @@
         "Mint",
         "Bitter Orange",
         "Tea",
+        "Vetiver",
         "Juniper"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -67880,7 +67981,29 @@
           ],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Mint",
+        "Bitter Orange",
+        "Tea",
+        "Juniper"
+      ],
+      "observedNotes": [
+        "Mint",
+        "Bitter Orange",
+        "Tea",
+        "Vetiver",
+        "Juniper"
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "1169-HUG",
@@ -97412,6 +97535,7 @@
       "catalogNotesBeforeCorrection": [
         "Fig Leaf",
         "Cedar",
+        "Vetiver",
         "Grapefruit",
         "Sandalwood",
         "Carnation"
@@ -123440,11 +123564,11 @@
         "Sapodilla",
         "Magnolia",
         "Violet",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Sandalwood",
         "Ambergris"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -125196,7 +125320,32 @@
           ],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Sapodilla",
+        "Magnolia",
+        "Violet",
+        "Musk",
+        "Sandalwood",
+        "Ambergris"
+      ],
+      "observedNotes": [
+        "Sapodilla",
+        "Magnolia",
+        "Violet",
+        "Ambrette (Musk Mallow)",
+        "Sandalwood",
+        "Ambergris"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "150-PARF",
@@ -154598,7 +154747,7 @@
       ],
       "catalogNotesBeforeCorrection": [
         "Woody Notes",
-        "Bran",
+        "Brandy",
         "Tonka Bean",
         "Amber"
       ],
@@ -158174,7 +158323,8 @@
       "catalogNotesBeforeCorrection": [
         "Oat",
         "Hazelnut",
-        "Corn"
+        "Cornflower Sultan Seeds",
+        "Vetiver"
       ],
       "observedNotes": [
         "Oat",
@@ -159844,7 +159994,8 @@
         "Lavender",
         "Tonka Bean",
         "Almond",
-        "Musk"
+        "Ambrette (Musk Mallow)",
+        "Acacia"
       ],
       "observedNotes": [
         "Honey",
@@ -206926,7 +207077,7 @@
         "Jasmine",
         "Ambrette (Musk Mallow)",
         "Benzoin",
-        "Incense"
+        "Plum"
       ],
       "result": "EXACT_ORDERED_MATCH",
       "observedNotes": [
@@ -206935,7 +207086,7 @@
         "Jasmine",
         "Ambrette (Musk Mallow)",
         "Benzoin",
-        "Incense"
+        "Plum"
       ],
       "components": [
         {
@@ -207010,7 +207161,7 @@
         3,
         3
       ],
-      "proof": "ALL_LABELS_EXACT_HIGH_CONFIDENCE; OTHER_READS_ORDERED_SUBSEQUENCES",
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -208625,6 +208776,18 @@
           ],
           "notesHeaderY": 32.0
         }
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Musk",
+        "Honey",
+        "Jasmine",
+        "Ambrette (Musk Mallow)",
+        "Benzoin",
+        "Incense"
+      ],
+      "iconCounts": [
+        3,
+        3
       ]
     },
     {
@@ -225222,10 +225385,10 @@
         "Mandarin Orange",
         "Musk",
         "Pear",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Benzoin"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -226758,7 +226921,30 @@
           ],
           "notesHeaderY": 23.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Mandarin Orange",
+        "Musk",
+        "Pear",
+        "Musk",
+        "Benzoin"
+      ],
+      "observedNotes": [
+        "Mandarin Orange",
+        "Musk",
+        "Pear",
+        "Ambrette (Musk Mallow)",
+        "Benzoin"
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "1875-ESCE",
@@ -233683,7 +233869,7 @@
         "Tonka Bean",
         "Jasmine"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -234693,7 +234879,26 @@
           "uncertainComponents": [],
           "notesHeaderY": 113.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Cherry Blossom",
+        "Tonka Bean",
+        "Jasmine"
+      ],
+      "observedNotes": [
+        "Cherry Blossom",
+        "Tonka Bean",
+        "Jasmine"
+      ],
+      "labelCounts": [
+        3,
+        0
+      ],
+      "iconCounts": [
+        3,
+        0
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "1897-VICT",
@@ -237266,11 +237471,11 @@
         "Vanilla",
         "Incense",
         "Tonka Bean",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Clary Sage",
         "Grapefruit"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -238948,7 +239153,32 @@
           ],
           "notesHeaderY": 23.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Vanilla",
+        "Incense",
+        "Tonka Bean",
+        "Musk",
+        "Clary Sage",
+        "Grapefruit"
+      ],
+      "observedNotes": [
+        "Vanilla",
+        "Incense",
+        "Tonka Bean",
+        "Ambrette (Musk Mallow)",
+        "Clary Sage",
+        "Grapefruit"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "1908-XER",
@@ -292364,7 +292594,7 @@
         "Violet",
         "Mandarin Orange"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -293286,7 +293516,26 @@
           "uncertainComponents": [],
           "notesHeaderY": 113.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Sandalwood",
+        "Violet",
+        "Mandarin Orange"
+      ],
+      "observedNotes": [
+        "Sandalwood",
+        "Violet",
+        "Mandarin Orange"
+      ],
+      "labelCounts": [
+        3,
+        0
+      ],
+      "iconCounts": [
+        3,
+        0
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2088-YZLO",
@@ -306379,8 +306628,8 @@
         "Tuberose",
         "Orange Blossom",
         "Musk",
-        "Musk",
-        "Orange"
+        "Ambrette (Musk Mallow)",
+        "Bitter Orange"
       ],
       "observedNotes": [
         "Iris Pallida",
@@ -308673,7 +308922,7 @@
         "Lapsang Souchong Tea",
         "Akigalawood",
         "Osmanthus",
-        "Musk"
+        "Ambrette (Musk Mallow)"
       ],
       "observedNotes": [
         "Bergamot",
@@ -313430,9 +313679,9 @@
         "Orris Root",
         "Labdanum",
         "Castoreum",
-        "Musk"
+        "Ambrette (Musk Mallow)"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -315184,7 +315433,32 @@
           ],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Leather",
+        "Violet",
+        "Orris Root",
+        "Labdanum",
+        "Castoreum",
+        "Musk"
+      ],
+      "observedNotes": [
+        "Leather",
+        "Violet",
+        "Orris Root",
+        "Labdanum",
+        "Castoreum",
+        "Ambrette (Musk Mallow)"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2138-TMFO",
@@ -324238,7 +324512,7 @@
         "Cacao Pod",
         "Ginger"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -325726,7 +326000,30 @@
           "uncertainComponents": [],
           "notesHeaderY": 23.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Vanilla",
+        "Lavender",
+        "Vanilla Caviar",
+        "Cacao Pod",
+        "Ginger"
+      ],
+      "observedNotes": [
+        "Vanilla",
+        "Lavender",
+        "Vanilla Caviar",
+        "Cacao Pod",
+        "Ginger"
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2163-SNI",
@@ -342154,7 +342451,7 @@
         "Orange Blossom",
         "Rum"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -343631,7 +343928,30 @@
           ],
           "notesHeaderY": 23.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Candied Lemon",
+        "Vanilla",
+        "Panna Cotta",
+        "Orange Blossom",
+        "Rum"
+      ],
+      "observedNotes": [
+        "Candied Lemon",
+        "Vanilla",
+        "Panna Cotta",
+        "Orange Blossom",
+        "Rum"
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2217-NRO",
@@ -421502,7 +421822,7 @@
       "catalogNotesBeforeCorrection": [
         "Cypress",
         "Woody Notes",
-        "Ylang-Ylang"
+        "Vine"
       ],
       "observedNotes": [
         "Cypress",
@@ -435568,12 +435888,12 @@
       "catalogNotes": [
         "Gardenia",
         "Vanilla",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Ylang-Ylang",
         "Juniper",
         "Musk"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -437279,7 +437599,32 @@
           ],
           "notesHeaderY": 23.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Gardenia",
+        "Vanilla",
+        "Musk",
+        "Ylang-Ylang",
+        "Juniper",
+        "Musk"
+      ],
+      "observedNotes": [
+        "Gardenia",
+        "Vanilla",
+        "Ambrette (Musk Mallow)",
+        "Ylang-Ylang",
+        "Juniper",
+        "Musk"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "249-JOM",
@@ -442737,13 +443082,13 @@
       "fragranticaId": "59063",
       "card": "database/fragrantica/social-cards/images/current_2502-MATIE_59063.jpeg",
       "catalogNotes": [
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Musk",
         "Cedar",
         "Ambrettolide",
         "Ambroxan"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -444359,7 +444704,30 @@
           ],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Musk",
+        "Musk",
+        "Cedar",
+        "Ambrettolide",
+        "Ambroxan"
+      ],
+      "observedNotes": [
+        "Ambrette (Musk Mallow)",
+        "Musk",
+        "Cedar",
+        "Ambrettolide",
+        "Ambroxan"
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2503-JUL",
@@ -468677,7 +469045,7 @@
         "Williams Pear",
         "Musk"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -469675,7 +470043,26 @@
           ],
           "notesHeaderY": 113.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Sweet Pea",
+        "Williams Pear",
+        "Musk"
+      ],
+      "observedNotes": [
+        "Sweet Pea",
+        "Williams Pear",
+        "Musk"
+      ],
+      "labelCounts": [
+        3,
+        0
+      ],
+      "iconCounts": [
+        3,
+        0
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2571-GOLD",
@@ -527320,7 +527707,7 @@
       "catalogNotesBeforeCorrection": [
         "Orris Root",
         "Violet",
-        "Macarons",
+        "Moxalone",
         "Akigalawood",
         "Civettone",
         "Sesame"
@@ -529726,7 +530113,7 @@
         "Lavender",
         "Rum"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -531130,7 +531517,30 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Vanilla",
+        "Orange Blossom",
+        "Vanilla Caviar",
+        "Lavender",
+        "Rum"
+      ],
+      "observedNotes": [
+        "Vanilla",
+        "Orange Blossom",
+        "Vanilla Caviar",
+        "Lavender",
+        "Rum"
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2754-CHL",
@@ -540145,7 +540555,7 @@
         "Fig Leaf",
         "Vetiver"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -541131,7 +541541,26 @@
           "uncertainComponents": [],
           "notesHeaderY": 130.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Lotus",
+        "Fig Leaf",
+        "Vetiver"
+      ],
+      "observedNotes": [
+        "Lotus",
+        "Fig Leaf",
+        "Vetiver"
+      ],
+      "labelCounts": [
+        3,
+        0
+      ],
+      "iconCounts": [
+        3,
+        0
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "278-JOM",
@@ -543700,9 +544129,10 @@
         "Cardamom",
         "Matcha Tea",
         "Salt",
-        "Violet Leaf"
+        "Violet Leaf",
+        "Patchouli"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -545430,7 +545860,31 @@
           ],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Pistachio",
+        "Cardamom",
+        "Matcha Tea",
+        "Salt",
+        "Violet Leaf"
+      ],
+      "observedNotes": [
+        "Pistachio",
+        "Cardamom",
+        "Matcha Tea",
+        "Salt",
+        "Violet Leaf",
+        "Patchouli"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "279-JOM",
@@ -547569,7 +548023,7 @@
         }
       ],
       "catalogNotesBeforeCorrection": [
-        "Lily",
+        "Lily-of-the-Valley",
         "Tolu Balsam",
         "Powdery Notes",
         "Vanilla"
@@ -548427,7 +548881,7 @@
         "Musk",
         "Palo Santo"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -549988,7 +550442,30 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Vanilla",
+        "Coconut Powder",
+        "Tonka Bean",
+        "Musk",
+        "Palo Santo"
+      ],
+      "observedNotes": [
+        "Vanilla",
+        "Coconut Powder",
+        "Tonka Bean",
+        "Musk",
+        "Palo Santo"
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "2798-NICO",
@@ -571408,10 +571885,10 @@
         "Salt",
         "Sage",
         "Grapefruit",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Seaweed"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -572865,7 +573342,30 @@
           "uncertainComponents": [],
           "notesHeaderY": 32.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Salt",
+        "Sage",
+        "Grapefruit",
+        "Musk",
+        "Seaweed"
+      ],
+      "observedNotes": [
+        "Salt",
+        "Sage",
+        "Grapefruit",
+        "Ambrette (Musk Mallow)",
+        "Seaweed"
+      ],
+      "labelCounts": [
+        3,
+        2
+      ],
+      "iconCounts": [
+        3,
+        2
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "304-KIE",
@@ -603043,6 +603543,7 @@
         }
       ],
       "catalogNotesBeforeCorrection": [
+        "Musk",
         "Pear",
         "Lily-of-the-Valley",
         "Jasmine",
@@ -694852,7 +695353,7 @@
         "Woody Notes",
         "Patchouli"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -695862,7 +696363,26 @@
           ],
           "notesHeaderY": 113.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Sea Water",
+        "Woody Notes",
+        "Patchouli"
+      ],
+      "observedNotes": [
+        "Sea Water",
+        "Woody Notes",
+        "Patchouli"
+      ],
+      "labelCounts": [
+        3,
+        0
+      ],
+      "iconCounts": [
+        3,
+        0
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "700-HER",
@@ -766282,13 +766802,13 @@
       "card": "database/fragrantica/social-cards/images/current_909-SFER_26777.jpeg",
       "catalogNotes": [
         "Mimosa",
-        "Musk",
+        "Ambrette (Musk Mallow)",
         "Iris",
         "Vanilla",
         "Heliotrope",
         "White Flowers"
       ],
-      "result": "READING_NOT_STRICT_ENOUGH",
+      "result": "EXACT_ORDERED_MATCH",
       "attempts": [
         {
           "variant": "contrast-160",
@@ -768178,7 +768698,32 @@
           ],
           "notesHeaderY": 23.0
         }
-      ]
+      ],
+      "catalogNotesBeforeCorrection": [
+        "Mimosa",
+        "Musk",
+        "Iris",
+        "Vanilla",
+        "Heliotrope",
+        "White Flowers"
+      ],
+      "observedNotes": [
+        "Mimosa",
+        "Ambrette (Musk Mallow)",
+        "Iris",
+        "Vanilla",
+        "Heliotrope",
+        "White Flowers"
+      ],
+      "labelCounts": [
+        3,
+        3
+      ],
+      "iconCounts": [
+        3,
+        3
+      ],
+      "proof": "DIRECT_VISUAL_SOCIAL_CARD_NOTES_PANEL; EXACT_FID; ORDERED_MANUAL_TRANSCRIPTION"
     },
     {
       "code": "910-SARJ",
@@ -774315,7 +774860,7 @@
         "Fig",
         "Caviar",
         "Fig tree",
-        "Fig"
+        "Fig Leaf"
       ],
       "observedNotes": [
         "Fig",

@@ -1897,7 +1897,7 @@
       "spring"
     ],
     "fragranticaSocialCardNotes": [
-      "Lily",
+      "Lily-of-the-Valley",
       "Tolu Balsam",
       "Powdery Notes",
       "Vanilla"
@@ -2006,29 +2006,27 @@
       "Cardamom",
       "Matcha Tea",
       "Salt",
-      "Violet Leaf"
+      "Violet Leaf",
+      "Patchouli"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 6,
+    "validationIconsCount": 6
   },
   {
     "code": "2606-ARM",
@@ -2323,20 +2321,17 @@
       "Musk",
       "Palo Santo"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -2431,26 +2426,23 @@
       "Fig Leaf",
       "Vetiver"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 3,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 3,
     "validationIconsCount": 3
   },
   {
@@ -2714,7 +2706,7 @@
     "fragranticaSocialCardNotes": [
       "Orris Root",
       "Violet",
-      "Macarons",
+      "Moxalone",
       "Akigalawood",
       "Civettone",
       "Sesame"
@@ -3362,20 +3354,17 @@
       "Lavender",
       "Rum"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -9883,7 +9872,7 @@
       "spring"
     ],
     "fragranticaSocialCardNotes": [
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Musk",
       "Cedar",
       "Ambrettolide",
@@ -10526,26 +10515,23 @@
       "Williams Pear",
       "Musk"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 3,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 3,
     "validationIconsCount": 3
   },
   {
@@ -11455,7 +11441,7 @@
     "fragranticaSocialCardNotes": [
       "Gardenia",
       "Vanilla",
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Ylang-Ylang",
       "Juniper",
       "Musk"
@@ -13165,7 +13151,7 @@
     "fragranticaSocialCardNotes": [
       "Cypress",
       "Woody Notes",
-      "Ylang-Ylang"
+      "Vine"
     ],
     "validationStatus": "green",
     "validationIssues": [],
@@ -20431,20 +20417,17 @@
       "Orange Blossom",
       "Rum"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -21783,20 +21766,17 @@
       "Cacao Pod",
       "Ginger"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -22627,6 +22607,7 @@
       "summer"
     ],
     "fragranticaSocialCardNotes": [
+      "Musk",
       "Pear",
       "Lily-of-the-Valley",
       "Jasmine",
@@ -23543,22 +23524,19 @@
       "Orris Root",
       "Labdanum",
       "Castoreum",
-      "Musk"
+      "Ambrette (Musk Mallow)"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -24291,8 +24269,8 @@
       "Tuberose",
       "Orange Blossom",
       "Musk",
-      "Musk",
-      "Orange"
+      "Ambrette (Musk Mallow)",
+      "Bitter Orange"
     ],
     "validationStatus": "green",
     "validationIssues": [],
@@ -24508,7 +24486,7 @@
       "Lapsang Souchong Tea",
       "Akigalawood",
       "Osmanthus",
-      "Musk"
+      "Ambrette (Musk Mallow)"
     ],
     "validationStatus": "green",
     "validationIssues": [],
@@ -25719,26 +25697,23 @@
       "Violet",
       "Mandarin Orange"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 3,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 3,
     "validationIconsCount": 3
   },
   {
@@ -30172,24 +30147,21 @@
       "Vanilla",
       "Incense",
       "Tonka Bean",
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Clary Sage",
       "Grapefruit"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -30853,26 +30825,23 @@
       "Tonka Bean",
       "Jasmine"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 3,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 3,
     "validationIconsCount": 3
   },
   {
@@ -31494,23 +31463,20 @@
       "Mandarin Orange",
       "Musk",
       "Pear",
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Benzoin"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -33637,7 +33603,7 @@
       "Musk",
       "Honey",
       "Jasmine",
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Benzoin",
       "Plum"
     ],
@@ -33657,7 +33623,7 @@
       "season": true
     },
     "validationNotesCount": 6,
-    "validationMatchedNotesCount": 4,
+    "validationMatchedNotesCount": 6,
     "validationIconsCount": 6
   },
   {
@@ -37826,7 +37792,8 @@
       "Lavender",
       "Tonka Bean",
       "Almond",
-      "Musk"
+      "Ambrette (Musk Mallow)",
+      "Acacia"
     ],
     "validationStatus": "green",
     "validationIssues": [],
@@ -37930,7 +37897,8 @@
     "fragranticaSocialCardNotes": [
       "Oat",
       "Hazelnut",
-      "Corn"
+      "Cornflower Sultan Seeds",
+      "Vetiver"
     ],
     "validationStatus": "green",
     "validationIssues": [],
@@ -40264,24 +40232,21 @@
       "Sapodilla",
       "Magnolia",
       "Violet",
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Sandalwood",
       "Ambergris"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -43372,7 +43337,7 @@
     ],
     "fragranticaSocialCardNotes": [
       "Woody Notes",
-      "Bran",
+      "Brandy",
       "Tonka Bean",
       "Amber"
     ],
@@ -46257,8 +46222,9 @@
       "fall"
     ],
     "fragranticaSocialCardNotes": [
-      "Cranberry",
-      "Tonka Bean"
+      "Dark Chocolate",
+      "Musk",
+      "Spicy Notes"
     ],
     "validationStatus": "green",
     "validationIssues": [],
@@ -47224,6 +47190,7 @@
     "fragranticaSocialCardNotes": [
       "Cloves",
       "Cinnamon",
+      "Sandalwood",
       "Cardamom",
       "Labdanum",
       "Grapefruit"
@@ -47243,9 +47210,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 5,
-    "validationMatchedNotesCount": 5,
-    "validationIconsCount": 5
+    "validationNotesCount": 6,
+    "validationMatchedNotesCount": 6,
+    "validationIconsCount": 6
   },
   {
     "code": "1091-COS",
@@ -48684,26 +48651,23 @@
       "Woody Notes",
       "Patchouli"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
     },
     "validationNotesCount": 3,
-    "validationMatchedNotesCount": 0,
+    "validationMatchedNotesCount": 3,
     "validationIconsCount": 3
   },
   {
@@ -51360,7 +51324,7 @@
       "Salt",
       "Sage",
       "Grapefruit",
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Seaweed"
     ],
     "validationStatus": "green",
@@ -55980,7 +55944,7 @@
       "Fig",
       "Caviar",
       "Fig tree",
-      "Fig"
+      "Fig Leaf"
     ],
     "validationStatus": "green",
     "validationIssues": [],
@@ -56438,7 +56402,7 @@
     ],
     "fragranticaSocialCardNotes": [
       "Mimosa",
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Iris",
       "Vanilla",
       "Heliotrope",
@@ -72775,6 +72739,7 @@
     "fragranticaSocialCardNotes": [
       "Fig Leaf",
       "Cedar",
+      "Vetiver",
       "Grapefruit",
       "Sandalwood",
       "Carnation"
@@ -75280,6 +75245,7 @@
       "Mint",
       "Bitter Orange",
       "Tea",
+      "Vetiver",
       "Juniper"
     ],
     "validationStatus": "green",
@@ -75297,9 +75263,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 4,
-    "validationMatchedNotesCount": 4,
-    "validationIconsCount": 4
+    "validationNotesCount": 5,
+    "validationMatchedNotesCount": 5,
+    "validationIconsCount": 5
   },
   {
     "code": "1166-HUG",
@@ -75671,27 +75637,24 @@
       "summer"
     ],
     "fragranticaSocialCardNotes": [
-      "Fig",
+      "Fig Leaf",
       "Cypress",
       "Juniper",
       "Bergamot",
       "Lemon",
       "Orange Blossom"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -77437,23 +77400,20 @@
       "Orange Blossom",
       "Petitgrain",
       "Vetiver",
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Clary Sage"
     ],
-    "validationStatus": "yellow",
-    "validationIssues": [
-      "Social Card not fully verified",
-      "Main Notes order not fully verified"
-    ],
+    "validationStatus": "green",
+    "validationIssues": [],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": false,
+      "socialCard": true,
       "image": true,
-      "notes": false,
+      "notes": true,
       "icons": true,
       "gender": true,
       "season": true
@@ -78155,7 +78115,7 @@
       "Iris",
       "Leather",
       "Sandalwood",
-      "Musk",
+      "Ambrette (Musk Mallow)",
       "Rose",
       "Agarwood (Oud)"
     ],
