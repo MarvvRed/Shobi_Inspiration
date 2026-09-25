@@ -370,7 +370,11 @@ def exact_perfume_image(row, fid):
 
 
 def matched_notes_count(row, fid, notes):
-    if str(row.get("fragranticaSocialCardStatus") or "").upper() == "VALIDATED_MANUAL" and exact_social_card(row, fid, notes): return len(notes)
+    # The ordered-card audit is the authoritative proof.  Legacy validated
+    # metadata can be incomplete or predate a correction, so it must not make
+    # the public counter disagree with a proven exact sequence.
+    if exact_social_card(row, fid, notes):
+        return len(notes)
     source = validated_notes.get(row_code(row))
     if not source or str(source.get("fragranticaId") or "") != fid: return 0
     return sum(actual == expected for actual, expected in zip(notes, source.get("mainNotes") or []))
