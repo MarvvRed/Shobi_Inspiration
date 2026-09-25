@@ -146,6 +146,9 @@ def main() -> None:
             continue
         site = {
             **site,
+            # Notes shown to visitors must be the exact sequence used by the
+            # validation audit, never a stale compact-site export.
+            "fragranticaSocialCardNotes": db.get("fragranticaSocialCardNotes") or [],
             "validationStatus": status,
             "validationIssues": issues,
             "validationChecks": checks,
