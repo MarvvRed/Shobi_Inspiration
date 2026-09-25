@@ -1,0 +1,83 @@
+name: Independent Green Social Card Re-audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/independent-green-social-card-reaudit.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  reaudit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install exact-card reader dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+          python -m pip install --upgrade pip pillow
+      - name: Verify current green proof graph
+        run: python tools/verify_catalog_invariants.py
+      - name: Re-read every green card independently
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          final = json.loads(Path('database/catalog/catalog_final_perfume_only.json').read_text(encoding='utf-8-sig'))
+          green_codes = {str(row['code']).upper() for row in final if row.get('validationStatus') == 'green'}
+          db = json.loads(Path('database/catalog/database_complete.json').read_text(encoding='utf-8-sig'))
+          rows = [row for row in db if str(row.get('code') or '').upper() in green_codes]
+          assert len(green_codes) == 2247 == len(rows)
+          Path('/tmp/green-input.json').write_text(json.dumps(rows, ensure_ascii=False), encoding='utf-8')
+          PY
+          SOCIAL_CARD_AUDIT_WORKERS=6 SOCIAL_CARD_AUDIT_BATCH=150 python - <<'PY'
+          from pathlib import Path
+          import tools.audit_social_card_order_from_images as audit
+
+          audit.DB = Path('/tmp/green-input.json')
+          audit.OUT = Path('/tmp/green-card-reaudit-full.json')
+          audit.main()
+          PY
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+
+          report = json.loads(Path('/tmp/green-card-reaudit-full.json').read_text(encoding='utf-8'))
+          failed = [
+              {
+                  key: row.get(key)
+                  for key in ('code', 'fragranticaId', 'result', 'card', 'catalogNotes', 'observedNotes', 'proof')
+              }
+              for row in report['rows']
+              if row.get('result') != 'EXACT_ORDERED_MATCH'
+          ]
+          summary = {
+              'rule': 'Fresh full-catalog Social Card read; no pre-existing ordered-audit result is reused.',
+              'catalogRows': report['catalogRows'],
+              'results': Counter(row.get('result') for row in report['rows']),
+              'nonExactRows': failed,
+          }
+          Path('/tmp/green-card-reaudit-summary.json').write_text(
+              json.dumps(summary, ensure_ascii=False, indent=2, default=lambda value: dict(value)),
+              encoding='utf-8',
+          )
+          print(Path('/tmp/green-card-reaudit-summary.json').read_text(encoding='utf-8'))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: independent-green-social-card-reaudit
+          path: |
+            /tmp/green-card-reaudit-summary.json
+            /tmp/green-card-reaudit-full.json
+          retention-days: 14
+          compression-level: 9
