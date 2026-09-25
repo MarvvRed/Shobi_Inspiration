@@ -112,6 +112,26 @@ MANUAL_VISUAL_NOTES = {
     "828-MIY": {"fid": "42720", "card": "database/fragrantica/social-cards/images/current_828-MIY_42720.jpeg", "notes": ["Lily-of-the-Valley", "Green Notes", "Dew Drop", "White Flowers", "Akigalawood", "Musk"], "labelCounts": [3, 3]},
     "440-BLG": {"fid": "45241", "card": "database/fragrantica/social-cards/images/current_440-BLG_45241.jpeg", "notes": ["Mulberry", "Night Blooming Jasmine", "Musk", "Peony", "Tuberose", "Patchouli"], "labelCounts": [3, 3]},
     "394-AGE": {"fid": "45363", "card": "database/fragrantica/social-cards/images/current_394-AGE_45363.jpeg", "notes": ["Resins", "Honey", "Pepper", "Musk", "Orchid", "Night Blooming Jasmine"], "labelCounts": [3, 3]},
+    # Direct recheck of the exact FID-bound Notes panels after the full audit
+    # withdrew legacy OCR proof. The lists below are not catalog-derived.
+    "2789-PEN": {"fid": "103514", "card": "database/fragrantica/social-cards/images/5058_2789-PEN_103514.jpeg", "notes": ["Pistachio", "Cardamom", "Matcha Tea", "Salt", "Violet Leaf", "Patchouli"], "labelCounts": [3, 3]},
+    "2797-MATIE": {"fid": "112581", "card": "database/fragrantica/social-cards/images/5049_2797-MATIE_112581.jpeg", "notes": ["Vanilla", "Coconut Powder", "Tonka Bean", "Musk", "Palo Santo"], "labelCounts": [3, 2]},
+    "2778-JOM": {"fid": "61929", "card": "database/fragrantica/social-cards/images/5019_2778-JOM_61929.jpeg", "notes": ["Lotus", "Fig Leaf", "Vetiver"], "labelCounts": [3, 0]},
+    "2753-YZLO": {"fid": "113623", "card": "database/fragrantica/social-cards/images/4962_2753-YZLO_113623.jpeg", "notes": ["Vanilla", "Orange Blossom", "Vanilla Caviar", "Lavender", "Rum"], "labelCounts": [3, 2]},
+    "2570-JOM": {"fid": "84035", "card": "database/fragrantica/social-cards/images/4272_2570-JOM_84035.jpeg", "notes": ["Sweet Pea", "Williams Pear", "Musk"], "labelCounts": [3, 0]},
+    "2216-DOL": {"fid": "84951", "card": "database/fragrantica/social-cards/images/3814_2216-DOL_84951.jpeg", "notes": ["Candied Lemon", "Vanilla", "Panna Cotta", "Orange Blossom", "Rum"], "labelCounts": [3, 2]},
+    "2162-BRB": {"fid": "83483", "card": "database/fragrantica/social-cards/images/3687_2162-BRB_83483.jpeg", "notes": ["Vanilla", "Lavender", "Vanilla Caviar", "Cacao Pod", "Ginger"], "labelCounts": [3, 2]},
+    "2137-ROJ": {"fid": "32537", "card": "database/fragrantica/social-cards/images/3570_2137-ROJ_32537.jpeg", "notes": ["Leather", "Violet", "Orris Root", "Labdanum", "Castoreum", "Ambrette (Musk Mallow)"], "labelCounts": [3, 3]},
+    "2086-VICT": {"fid": "75277", "card": "database/fragrantica/social-cards/images/3481_2086-VICT_75277.jpeg", "notes": ["Sandalwood", "Violet", "Mandarin Orange"], "labelCounts": [3, 0]},
+    "1907-PEN": {"fid": "71646", "card": "database/fragrantica/social-cards/images/2875_1907-PEN_71646.jpeg", "notes": ["Vanilla", "Incense", "Tonka Bean", "Ambrette (Musk Mallow)", "Clary Sage", "Grapefruit"], "labelCounts": [3, 3]},
+    "1896-ESC": {"fid": "70279", "card": "database/fragrantica/social-cards/images/2801_1896-ESC_70279.jpeg", "notes": ["Cherry Blossom", "Tonka Bean", "Jasmine"], "labelCounts": [3, 0]},
+    "1874-LTN": {"fid": "60388", "card": "database/fragrantica/social-cards/images/2783_1874-LTN_60388.jpeg", "notes": ["Mandarin Orange", "Musk", "Pear", "Ambrette (Musk Mallow)", "Benzoin"], "labelCounts": [3, 2]},
+    "1831-TMFO": {"fid": "6384", "card": "database/fragrantica/social-cards/images/2710_1831-TMFO_6384.jpeg", "notes": ["Musk", "Honey", "Jasmine", "Ambrette (Musk Mallow)", "Benzoin", "Plum"], "labelCounts": [3, 3]},
+    "1499-BYR": {"fid": "27040", "card": "database/fragrantica/social-cards/images/2299_1499-BYR_27040.jpeg", "notes": ["Sapodilla", "Magnolia", "Violet", "Ambrette (Musk Mallow)", "Sandalwood", "Ambergris"], "labelCounts": [3, 3]},
+    "699-HER": {"fid": "42747", "card": "database/fragrantica/social-cards/images/1780_699-HER_42747.jpeg", "notes": ["Sea Water", "Woody Notes", "Patchouli"], "labelCounts": [3, 0]},
+    "465-CAL": {"fid": "8840", "card": "database/fragrantica/social-cards/images/current_465-CAL_8840.jpeg", "notes": ["Jasmine", "Ambrette (Musk Mallow)", "Cedar"], "labelCounts": [3, 0]},
+    "1154-HER": {"fid": "19", "card": "database/fragrantica/social-cards/images/244_1154-HER_19.jpeg", "notes": ["Fig Leaf", "Cypress", "Juniper", "Bergamot", "Lemon", "Orange Blossom"], "labelCounts": [3, 3]},
+    "1101-DOL": {"fid": "25154", "card": "database/fragrantica/social-cards/images/192_1101-DOL_25154.jpeg", "notes": ["Bergamot", "Orange Blossom", "Petitgrain", "Vetiver", "Ambrette (Musk Mallow)", "Clary Sage"], "labelCounts": [3, 3]},
 }
 
 MANUAL_VISUAL_PROFILE = {
@@ -163,7 +183,7 @@ INDEPENDENT_GREEN_REAUDIT_UNRESOLVED = {
     # exact FID-bound Notes panels. Their explicit manual visual proof above
     # supersedes this withdrawal, so only cases still lacking a complete
     # current-card transcription remain here.
-    "1073-DRC", "1090-COS", "1101-DOL", "1154-HER", "1168-HUG", "1499-BYR", "1831-TMFO", "1874-LTN", "1896-ESC", "1907-PEN", "2086-VICT", "2137-ROJ", "2162-BRB", "2216-DOL", "2489-KKWI", "2502-MATIE", "2570-JOM", "2753-YZLO", "2778-JOM", "2789-PEN", "2797-MATIE", "303-JOM", "465-CAL", "699-HER", "909-SFER",
+    "1073-DRC", "1090-COS", "1168-HUG", "2489-KKWI", "2502-MATIE", "303-JOM", "909-SFER",
 }
 
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
