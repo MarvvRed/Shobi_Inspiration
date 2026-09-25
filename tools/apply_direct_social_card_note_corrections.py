@@ -215,6 +215,7 @@ for row in rows:
     row["fragranticaSocialCardStatus"] = "VALIDATED_SOCIAL_CARD"
     item.update({
         "result": "EXACT_ORDERED_MATCH",
+        "card": proof["card"],
         "catalogNotesBeforeCorrection": previous,
         "catalogNotes": list(proof["notes"]),
         "observedNotes": list(proof["notes"]),
@@ -282,14 +283,18 @@ for row in rows:
 for row in rows:
     code = str(row.get("code") or "").strip().upper()
     proof = MANUAL_VISUAL_NOTES.get(code)
-    if not proof or str((row.get("validationAudit") or {}).get("status") or "").lower() != "yellow":
+    if not proof:
         continue
     item = by_code.get(code)
     fid = str(row.get("fragranticaId") or "").strip()
     notes = list(proof["notes"])
     card = ROOT / proof["card"]
+    audit_card = ROOT / str((item or {}).get("card") or "")
+    # The reader may replace a historical file with a fresh current rendering
+    # of the same code+FID. Both files must exist and remain bound to that ID.
+    audit_card_matches = f"_{code}_{fid}." in audit_card.name
     if (not item or fid != proof["fid"] or str(item.get("fragranticaId") or "") != fid or
-            not card.is_file() or item.get("card") != proof["card"]):
+            not card.is_file() or not audit_card.is_file() or not audit_card_matches):
         continue
     previous = list(row.get("fragranticaSocialCardNotes") or [])
     row["fragranticaSocialCardNotes"] = notes
