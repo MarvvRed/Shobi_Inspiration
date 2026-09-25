@@ -307,6 +307,11 @@ def exact_ordered_card_evidence(row, fid, notes):
     certify a green status.
     """
     item = ordered_card_audit.get(row_code(row))
+    # A fresh independent all-green re-audit can withdraw a historical proof
+    # without inventing replacement notes. Such a row is intentionally yellow
+    # until the exact sequence is reproducibly read again.
+    if item and item.get("independentGreenReauditResult") == "READING_NOT_STRICT_ENOUGH":
+        return False
     card = str(item.get("card") or "") if item else ""
     strict_whole_card = bool(
         item

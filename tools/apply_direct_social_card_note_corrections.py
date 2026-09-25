@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "database/catalog/database_complete.json"
+SITE = ROOT / "database/catalog/catalog_site.json"
 AUDIT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
 REPORT = ROOT / "database/audits/direct-social-card-note-corrections.json"
 
@@ -118,11 +119,108 @@ MANUAL_VISUAL_PROFILE = {
     "884-RAL": {"gender": "Male", "genderAffinity": "masculine", "seasons": ["fall"], "seasonCardFid": "9006"},
 }
 
+# Results from the full independent re-audit of every previously green record.
+# Each item is bound to the exact code, FID and archived Social Card that
+# produced a complete multipass physical-card reading.  They are corrections,
+# not guesses or page-derived substitutions.
+INDEPENDENT_GREEN_REAUDIT_CORRECTIONS = {
+    "1033-BRB": {"fid": "815", "card": "database/fragrantica/social-cards/images/134_1033-BRB_815.jpeg", "notes": ["Violet Leaf", "Musk", "Pepper", "Tonka Bean", "Cedar", "Nutmeg"]},
+    "1036-BLG": {"fid": "148", "card": "database/fragrantica/social-cards/images/current_1036-BLG_148.jpeg", "notes": ["Ginger", "Cardamom", "Tobacco Blossom", "Sandalwood", "Juniper", "Galanga"]},
+    "1059-CRT": {"fid": "307", "card": "database/fragrantica/social-cards/images/current_1059-CRT_307.jpeg", "notes": ["Cardamom", "Bitter Orange", "Caraway", "Birch", "Vetiver", "Pepper"]},
+    "1160-HUG": {"fid": "383", "card": "database/fragrantica/social-cards/images/current_1160-HUG_383.jpeg", "notes": ["Apple", "Vanilla", "Cinnamon", "Sandalwood", "Plum", "Cedar"]},
+    "1614-FRE": {"fid": "52195", "card": "database/fragrantica/social-cards/images/2328_1614-FRE_52195.jpeg", "notes": ["Olibanum (Frankincense)", "Agarwood (Oud)", "Labdanum", "Pink Pepper", "Rose", "Vetiver"]},
+    "1731-VICT": {"fid": "68550", "card": "database/fragrantica/social-cards/images/2516_1731-VICT_68550.jpeg", "notes": ["Meringues", "Vanilla", "Musk", "Sandalwood Flower", "Amber"]},
+    "1768-LTN": {"fid": "40501", "card": "database/fragrantica/social-cards/images/2623_1768-LTN_40501.jpeg", "notes": ["Vanilla", "Cacao Pod", "Ambrette (Musk Mallow)", "Magnolia", "Orange Blossom", "Pear"]},
+    "1770-BON": {"fid": "46057", "card": "database/fragrantica/social-cards/images/2625_1770-BON_46057.jpeg", "notes": ["Caramel", "Coffee", "Patchouli", "Floral Notes", "Gardenia", "Sandalwood"]},
+    "1848-LEL": {"fid": "6334", "card": "database/fragrantica/social-cards/images/2768_1848-LEL_6334.jpeg", "notes": ["Ambrette (Musk Mallow)", "Fruity Notes", "Musk", "Aldehydes", "Lemon", "Amber"]},
+    "1892-NRO": {"fid": "71596", "card": "database/fragrantica/social-cards/images/2800_1892-NRO_71596.jpeg", "notes": ["Musk", "Plum", "Vanilla", "Rose", "Tuberose", "Pink Pepper"]},
+    "2099-MARG": {"fid": "67789", "card": "database/fragrantica/social-cards/images/current_2099-MARG_67789.jpeg", "notes": ["Cedar", "Cardamom", "Nutmeg", "Oakmoss", "Carrot Seeds", "Pink Pepper"]},
+    "2134-MEM": {"fid": "60587", "card": "database/fragrantica/social-cards/images/3568_2134-MEM_60587.jpeg", "notes": ["Mandarin Orange", "Sage", "Basil", "Vetiver", "Leather", "Violet"]},
+    "2151-GIV": {"fid": "78639", "card": "database/fragrantica/social-cards/images/3602_2151-GIV_78639.jpeg", "notes": ["Vanilla", "Cardamom", "Palo Santo", "Narcissus", "Sage", "Vetiver"]},
+    "2169-ROJ": {"fid": "34996", "card": "database/fragrantica/social-cards/images/current_2169-ROJ_34996.jpeg", "notes": ["Cacao Pod", "Orris Root", "Vanilla", "Ylang-Ylang", "Heliotrope", "Sandalwood"]},
+    "2271-ROJ": {"fid": "81839", "card": "database/fragrantica/social-cards/images/current_2271-ROJ_81839.jpeg", "notes": ["Grapefruit", "Rhubarb", "Bagas de Zimbro", "Lime", "Black Currant", "Bergamot"]},
+    "2301-DIP": {"fid": "131717", "card": "database/fragrantica/social-cards/images/3943_2301-DIP_131717.jpeg", "notes": ["Ambrette (Musk Mallow)", "Carrot", "Musk", "Iris", "Aldehydes", "Cedar"]},
+    "2431-ROJ": {"fid": "23008", "card": "database/fragrantica/social-cards/images/4170_2431-ROJ_23008.jpeg", "notes": ["Agarwood (Oud)", "Musk", "Rose", "Leather", "Woody Notes", "Ambrette (Musk Mallow)"]},
+    "2467-NISH": {"fid": "64092", "card": "database/fragrantica/social-cards/images/4202_2467-NISH_64092.jpeg", "notes": ["Basil", "Mint", "Violet Leaf", "Yuzu", "Anise", "Licorice"]},
+    "2532-PRA": {"fid": "32197", "card": "database/fragrantica/social-cards/images/4258_2532-PRA_32197.jpeg", "notes": ["Coumarin", "Ambrette (Musk Mallow)", "Iso E Super", "Cedar", "Hedione", "Orris Root"]},
+    "2536-PRA": {"fid": "95006", "card": "database/fragrantica/social-cards/images/current_2536-PRA_95006.jpeg", "notes": ["Jasmine", "Neroli", "Bergamot", "Musk", "Ambrette (Musk Mallow)"]},
+    "2550-ARM": {"fid": "90333", "card": "database/fragrantica/social-cards/images/current_2550-ARM_90333.jpeg", "notes": ["Tobacco", "Vanilla", "Chestnut", "Cinnamon Leaf", "Pimento", "Amber"]},
+    "2557-ARIA": {"fid": "68664", "card": "database/fragrantica/social-cards/images/4284_2557-ARIA_68664.jpeg", "notes": ["Pear", "Ambrette (Musk Mallow)", "Vanilla", "Orris Root", "Sandalwood", "Rose"]},
+    "320-NAS": {"fid": "40200", "card": "database/fragrantica/social-cards/images/2684_320-NAS_40200.jpeg", "notes": ["Whiskey", "Woody Notes", "Ambrette (Musk Mallow)", "Rose", "Ambroxan", "Musk"]},
+    "353-TMFO": {"fid": "55766", "card": "database/fragrantica/social-cards/images/1891_353-TMFO_55766.jpeg", "notes": ["Vanilla", "Aldehydes", "Heliotrope", "Ambrette (Musk Mallow)", "Peru Balsam", "Sandalwood"]},
+    "406-BAL": {"fid": "21987", "card": "database/fragrantica/social-cards/images/current_406-BAL_21987.jpeg", "notes": ["Fig Leaf", "Rose", "Petitgrain", "Grapefruit", "Pink Pepper", "Cedar"]},
+    "533-DRC": {"fid": "1282", "card": "database/fragrantica/social-cards/images/current_533-DRC_1282.jpeg", "notes": ["Patchouli", "Rose", "Amber", "Bergamot", "Vanilla", "Mandarin Orange"]},
+    "611-ESC": {"fid": "10611", "card": "database/fragrantica/social-cards/images/695_611-ESC_10611.jpeg", "notes": ["Mango", "Nectarine", "Blood Orange", "Raspberry", "Coconut", "Star Apple"]},
+    "821-MIC": {"fid": "34276", "card": "database/fragrantica/social-cards/images/866_821-MIC_34276.jpeg", "notes": ["Lotus", "Pear", "Freesia", "Vanilla", "Ambrette (Musk Mallow)", "Peony"]},
+    "896-RCAV": {"fid": "58538", "card": "database/fragrantica/social-cards/images/current_896-RCAV_58538.jpeg", "notes": ["Vanilla", "Cypriol Oil or Nagarmotha", "Magnolia", "Cedar", "Patchouli", "Rose"]},
+}
+
+# These cards have no contradiction, but the fresh all-green audit could not
+# reproduce a complete exact reading. They must lose green status until a new
+# exact reading exists; no note is changed.
+INDEPENDENT_GREEN_REAUDIT_UNRESOLVED = {
+    "106-ARB", "1073-DRC", "1090-COS", "1101-DOL", "1154-HER", "1168-HUG", "1499-BYR", "1803-DRC", "1831-TMFO", "1851-ARM", "1874-LTN", "1896-ESC", "1907-PEN", "1995-YZLO", "201-CLIV", "2086-VICT", "2118-GUC", "2137-ROJ", "2150-LEL", "2162-BRB", "2216-DOL", "2454-KIL", "2489-KKWI", "2502-MATIE", "2553-BON", "2570-JOM", "2584-GIV", "2598-GLO", "2753-YZLO", "2778-JOM", "2789-PEN", "2797-MATIE", "303-JOM", "378-TMFO", "394-AGE", "440-BLG", "465-CAL", "699-HER", "828-MIY", "874-PRA", "909-SFER",
+}
+
 rows = json.loads(DB.read_text(encoding="utf-8-sig"))
+site_rows = json.loads(SITE.read_text(encoding="utf-8-sig"))
 audit = json.loads(AUDIT.read_text(encoding="utf-8-sig"))
 by_code = {str(item.get("code") or "").strip().upper(): item for item in audit.get("rows", [])}
+site_by_code = {str(item.get("code") or "").strip().upper(): item for item in site_rows}
 
 corrections = []
+
+# Apply the complete, independently reproduced contradictions first.  The
+# full re-audit already established that each sequence comes from this exact
+# physical card, so a stale prior audit result is never used to choose notes.
+for row in rows:
+    code = str(row.get("code") or "").strip().upper()
+    proof = INDEPENDENT_GREEN_REAUDIT_CORRECTIONS.get(code)
+    if not proof:
+        continue
+    item = by_code.get(code)
+    fid = str(row.get("fragranticaId") or "").strip()
+    card = ROOT / proof["card"]
+    previous = list(row.get("fragranticaSocialCardNotes") or [])
+    if (not item or fid != proof["fid"] or not card.is_file() or
+            str(item.get("fragranticaId") or "") != fid or
+            previous == list(proof["notes"])):
+        continue
+    row["fragranticaSocialCardNotes"] = list(proof["notes"])
+    row["fragranticaSocialCardStatus"] = "VALIDATED_SOCIAL_CARD"
+    item.update({
+        "result": "EXACT_ORDERED_MATCH",
+        "catalogNotesBeforeCorrection": previous,
+        "catalogNotes": list(proof["notes"]),
+        "observedNotes": list(proof["notes"]),
+        "proof": "INDEPENDENT_FULL_GREEN_REAUDIT; COMPLETE_PHYSICAL_CARD_EXACT_MULTIPASS; ICON_COUNTS_MATCH",
+        "independentGreenReauditResult": "EXACT_ORDERED_MATCH",
+    })
+    corrections.append({
+        "code": code,
+        "fragranticaId": fid,
+        "card": proof["card"],
+        "previousNotes": previous,
+        "socialCardNotes": list(proof["notes"]),
+        "proof": item["proof"],
+    })
+
+# The 41 fresh-read failures are not corrections and have no replacement
+# notes. Record the unresolved result in the same exact-card audit so the
+# validation builder cannot retain a historical green proof for them.
+for code in INDEPENDENT_GREEN_REAUDIT_UNRESOLVED:
+    item = by_code.get(code)
+    if item:
+        item["independentGreenReauditResult"] = "READING_NOT_STRICT_ENOUGH"
+        item["independentGreenReauditRule"] = "Fresh full green-card re-audit did not reproduce a complete exact sequence"
+
+# catalog_site.json is the compact renderer input. Keep its displayed note
+# sequence in lockstep with only the 29 exact, FID-bound corrections above.
+for row in rows:
+    code = str(row.get("code") or "").strip().upper()
+    if code in INDEPENDENT_GREEN_REAUDIT_CORRECTIONS and code in site_by_code:
+        site_by_code[code]["fragranticaSocialCardNotes"] = list(row.get("fragranticaSocialCardNotes") or [])
+
 for row in rows:
     if str((row.get("validationAudit") or {}).get("status") or "").lower() != "yellow":
         continue
@@ -200,6 +298,7 @@ for row in rows:
         row["seasonStatus"] = "VALIDATED_MANUAL"
 
 DB.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+SITE.write_text(json.dumps(site_rows, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
 AUDIT.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 REPORT.write_text(json.dumps({
     "rule": "Only complete exact multi-rendering Social Card readings with matching physical icon counts may replace saved Main Notes.",
