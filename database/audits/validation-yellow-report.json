@@ -1,46 +1,8 @@
 {
   "catalogRows": 2253,
-  "yellowRows": 23,
-  "singleFailureRows": [
-    {
-      "code": "884-RAL",
-      "brand": "Ralph Lauren",
-      "inspiredBy": "Big Pony 2",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-9006.html",
-      "issues": [
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "season"
-      ],
-      "notesCount": 3,
-      "matchedNotesCount": 3,
-      "iconsCount": 3
-    }
-  ],
+  "yellowRows": 6,
+  "singleFailureRows": [],
   "byFailureSignature": [
-    {
-      "signature": "socialCard,notes",
-      "count": 16,
-      "codes": [
-        "2598-GLO",
-        "2584-GIV",
-        "2119-ARM",
-        "2118-GUC",
-        "2121-CAR",
-        "1851-ARM",
-        "201-CLIV",
-        "1803-DRC",
-        "1656-LOC",
-        "1655-JOM",
-        "106-ARB",
-        "378-TMFO",
-        "874-PRA",
-        "828-MIY",
-        "440-BLG",
-        "394-AGE"
-      ]
-    },
     {
       "signature": "socialCard,notes,icons,gender,season",
       "count": 3,
@@ -59,13 +21,6 @@
       ]
     },
     {
-      "signature": "season",
-      "count": 1,
-      "codes": [
-        "884-RAL"
-      ]
-    },
-    {
       "signature": "identity,socialCard,notes,icons,gender,season",
       "count": 1,
       "codes": [
@@ -76,61 +31,10 @@
   "byIssue": [
     {
       "issue": "Social Card not fully verified",
-      "count": 22,
-      "codes": [
-        "2816-MOOD",
-        "2598-GLO",
-        "2584-GIV",
-        "2119-ARM",
-        "2118-GUC",
-        "2121-CAR",
-        "2085-CLIV",
-        "1851-ARM",
-        "201-CLIV",
-        "1803-DRC",
-        "1656-LOC",
-        "1655-JOM",
-        "118-HAM",
-        "106-ARB",
-        "378-TMFO",
-        "325-PECK",
-        "235-HOLL",
-        "874-PRA",
-        "828-MIY",
-        "440-BLG",
-        "394-AGE",
-        "1251-ROM"
-      ]
-    },
-    {
-      "issue": "Main Notes order not fully verified",
-      "count": 16,
-      "codes": [
-        "2598-GLO",
-        "2584-GIV",
-        "2119-ARM",
-        "2118-GUC",
-        "2121-CAR",
-        "1851-ARM",
-        "201-CLIV",
-        "1803-DRC",
-        "1656-LOC",
-        "1655-JOM",
-        "106-ARB",
-        "378-TMFO",
-        "874-PRA",
-        "828-MIY",
-        "440-BLG",
-        "394-AGE"
-      ]
-    },
-    {
-      "issue": "Season not fully verified",
-      "count": 7,
+      "count": 6,
       "codes": [
         "2816-MOOD",
         "2085-CLIV",
-        "884-RAL",
         "118-HAM",
         "325-PECK",
         "235-HOLL",
@@ -163,6 +67,18 @@
     },
     {
       "issue": "Gender not fully verified",
+      "count": 6,
+      "codes": [
+        "2816-MOOD",
+        "2085-CLIV",
+        "118-HAM",
+        "325-PECK",
+        "235-HOLL",
+        "1251-ROM"
+      ]
+    },
+    {
+      "issue": "Season not fully verified",
       "count": 6,
       "codes": [
         "2816-MOOD",
@@ -210,67 +126,22 @@
   "byFailedCheck": [
     {
       "check": "socialCard",
-      "count": 22,
+      "count": 6,
       "codes": [
         "2816-MOOD",
-        "2598-GLO",
-        "2584-GIV",
-        "2119-ARM",
-        "2118-GUC",
-        "2121-CAR",
         "2085-CLIV",
-        "1851-ARM",
-        "201-CLIV",
-        "1803-DRC",
-        "1656-LOC",
-        "1655-JOM",
         "118-HAM",
-        "106-ARB",
-        "378-TMFO",
         "325-PECK",
         "235-HOLL",
-        "874-PRA",
-        "828-MIY",
-        "440-BLG",
-        "394-AGE",
         "1251-ROM"
       ]
     },
     {
       "check": "notes",
-      "count": 22,
-      "codes": [
-        "2816-MOOD",
-        "2598-GLO",
-        "2584-GIV",
-        "2119-ARM",
-        "2118-GUC",
-        "2121-CAR",
-        "2085-CLIV",
-        "1851-ARM",
-        "201-CLIV",
-        "1803-DRC",
-        "1656-LOC",
-        "1655-JOM",
-        "118-HAM",
-        "106-ARB",
-        "378-TMFO",
-        "325-PECK",
-        "235-HOLL",
-        "874-PRA",
-        "828-MIY",
-        "440-BLG",
-        "394-AGE",
-        "1251-ROM"
-      ]
-    },
-    {
-      "check": "season",
-      "count": 7,
+      "count": 6,
       "codes": [
         "2816-MOOD",
         "2085-CLIV",
-        "884-RAL",
         "118-HAM",
         "325-PECK",
         "235-HOLL",
@@ -291,6 +162,18 @@
     },
     {
       "check": "gender",
+      "count": 6,
+      "codes": [
+        "2816-MOOD",
+        "2085-CLIV",
+        "118-HAM",
+        "325-PECK",
+        "235-HOLL",
+        "1251-ROM"
+      ]
+    },
+    {
+      "check": "season",
       "count": 6,
       "codes": [
         "2816-MOOD",
@@ -368,91 +251,6 @@
       "iconsCount": 0
     },
     {
-      "code": "2598-GLO",
-      "brand": "Glossier",
-      "inspiredBy": "You",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Glossier/You-46885.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 4,
-      "matchedNotesCount": 0,
-      "iconsCount": 4
-    },
-    {
-      "code": "2584-GIV",
-      "brand": "Givenchy",
-      "inspiredBy": "Eau de",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Givenchy/Eau-de-Givenchy-1966.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "2119-ARM",
-      "brand": "Giorgio Armani",
-      "inspiredBy": "My Way Parfum",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/My-Way-Parfum-78561.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "2118-GUC",
-      "brand": "Gucci",
-      "inspiredBy": "Gucci Bloom Intense",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Gucci/Gucci-Bloom-Intense-79602.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 0,
-      "iconsCount": 5
-    },
-    {
-      "code": "2121-CAR",
-      "brand": "Carolina Herrera",
-      "inspiredBy": "Mad World",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Carolina-Herrera/Mad-World-77688.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
       "code": "2085-CLIV",
       "brand": "Clive Christian",
       "inspiredBy": "X NEROLI LIMITED EDITION - CLIVE CHRISTIAN",
@@ -484,106 +282,6 @@
       "iconsCount": 0
     },
     {
-      "code": "1851-ARM",
-      "brand": "Giorgio Armani",
-      "inspiredBy": "Jasmin Kusamono",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giorgio-Armani/Jasmin-Kusamono-58909.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "201-CLIV",
-      "brand": "Clive Christian",
-      "inspiredBy": "No. 1 for Men",
-      "fragranticaUrl": "https://www.fragrantica.com/p/4648",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
-    },
-    {
-      "code": "1803-DRC",
-      "brand": "Dior",
-      "inspiredBy": "J Adore Infinissime",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/J-Adore-Infinissime-62638.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "1656-LOC",
-      "brand": "L'Occitane",
-      "inspiredBy": "Terre de Lumiere",
-      "fragranticaUrl": "https://www.fragrantica.com/p/41970",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
-    },
-    {
-      "code": "1655-JOM",
-      "brand": "Jo Malone London",
-      "inspiredBy": "Oat Cornflower",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Jo-Malone-London/Oat-Cornflower-48318.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 3,
-      "matchedNotesCount": 3,
-      "iconsCount": 3
-    },
-    {
-      "code": "884-RAL",
-      "brand": "Ralph Lauren",
-      "inspiredBy": "Big Pony 2",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Ralph-Lauren/Big-Pony-2-9006.html",
-      "issues": [
-        "Season not fully verified"
-      ],
-      "failedChecks": [
-        "season"
-      ],
-      "notesCount": 3,
-      "matchedNotesCount": 3,
-      "iconsCount": 3
-    },
-    {
       "code": "118-HAM",
       "brand": "Hamidi Oud Perfumes",
       "inspiredBy": "REHAN - HAMIDI OUD",
@@ -605,40 +303,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "106-ARB",
-      "brand": "Arabian Oud",
-      "inspiredBy": "SULTAN - ARABIAN OUD",
-      "fragranticaUrl": "https://www.fragrantica.com/parfem/Arabian-Oud/Sultan-Blend-21560.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 5,
-      "matchedNotesCount": 5,
-      "iconsCount": 5
-    },
-    {
-      "code": "378-TMFO",
-      "brand": "Tom Ford",
-      "inspiredBy": "White Suede",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tom-Ford/White-Suede-6386.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
     },
     {
       "code": "325-PECK",
@@ -685,74 +349,6 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
-    },
-    {
-      "code": "874-PRA",
-      "brand": "Prada",
-      "inspiredBy": "Prada Candy Gloss",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Prada/Prada-Candy-Gloss-44534.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "828-MIY",
-      "brand": "Miu Miu",
-      "inspiredBy": "Miu Miu L Eau Bleue",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Miu-Miu/Miu-Miu-L-Eau-Bleue-42720.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 6,
-      "iconsCount": 6
-    },
-    {
-      "code": "440-BLG",
-      "brand": "Bvlgari",
-      "inspiredBy": "Goldea The Roman Night",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Bvlgari/Goldea-The-Roman-Night-45241.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
-    },
-    {
-      "code": "394-AGE",
-      "brand": "Agent Provocateur",
-      "inspiredBy": "Aphrodisiaque",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Agent-Provocateur/Aphrodisiaque-45363.html",
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
-      "failedChecks": [
-        "socialCard",
-        "notes"
-      ],
-      "notesCount": 6,
-      "matchedNotesCount": 0,
-      "iconsCount": 6
     },
     {
       "code": "1251-ROM",
