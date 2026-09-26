@@ -513,6 +513,14 @@ function resetAllFilters() {
     applyFiltersAndRender();
 }
 
+function formatFilterLabel(value, filterType) {
+    const label = String(value || '').trim();
+    if (filterType !== 'note' || label !== label.toUpperCase()) {
+        return label.charAt(0).toUpperCase() + label.slice(1);
+    }
+    return label.toLowerCase().replace(/(^|[\s/-])([a-z])/g, (_, prefix, letter) => prefix + letter.toUpperCase());
+}
+
 function populateFilters() {
     const genderContainer = document.getElementById('gender-filters');
     const brandContainer = document.getElementById('brand-filters');
@@ -530,7 +538,7 @@ function populateFilters() {
         } else {
             container.innerHTML = sortedOptions.map(option => {
                 if (!option) return '';
-                const capitalized = option.charAt(0).toUpperCase() + option.slice(1);
+                const capitalized = formatFilterLabel(option, name);
                 const iconSpan = (name === 'accord') ?
                     `<span class="inline-block w-5 mr-1">${SCENT_ICON_MAP[option] ? SCENT_ICON_MAP[option].icon : ''}</span>`
                     : '';
