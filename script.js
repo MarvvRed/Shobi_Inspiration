@@ -596,19 +596,20 @@ function handleCheckboxChange(e) {
 }
 
 function setTheme(theme) {
+    const selectedTheme = theme === 'dark' ? 'dark' : 'light';
     const htmlTag = document.getElementById('html-tag');
-    if (theme === 'light') {
-        htmlTag.removeAttribute('data-theme');
-        localStorage.removeItem('shobi-theme');
+    htmlTag.toggleAttribute('data-theme', selectedTheme === 'dark');
+    if (selectedTheme === 'dark') {
+        htmlTag.setAttribute('data-theme', 'dark');
+        localStorage.setItem('shobi-theme', 'dark');
     } else {
-        htmlTag.setAttribute('data-theme', theme);
-        localStorage.setItem('shobi-theme', theme);
+        localStorage.removeItem('shobi-theme');
     }
 }
 
 function initTheme() {
     const savedTheme = localStorage.getItem('shobi-theme');
-    if (savedTheme) setTheme(savedTheme);
+    setTheme(savedTheme);
     const themeMenuBtn = document.getElementById('theme-menu-btn');
     const themeMenuDropdown = document.getElementById('theme-menu-dropdown');
 
