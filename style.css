@@ -52,57 +52,6 @@
     --color-icon-base: #6b7280; /* gray-500 */
 }
 
-[data-theme="sepia"] {
-    --color-bg-base: #fbf0e4;
-    --color-bg-surface: #fff8f0;
-    --color-bg-subtle: #fdf5ec;
-    --color-bg-accent-subtle: #fdeee0;
-    --color-bg-primary: #b45309; /* amber-700 */
-    --color-bg-primary-hover: #92400e; /* amber-800 */
-    --color-bg-danger: #dc2626;
-    --color-bg-danger-hover: #b91c1c;
-
-    --color-text-primary: #433422;
-    --color-text-secondary: #5f4c3a;
-    --color-text-tertiary: #7c6d5e;
-    --color-text-placeholder: #9e8a77;
-    --color-text-primary-accent: #b45309;
-    --color-text-primary-accent-hover: #92400e;
-    --color-text-danger: #dc2626;
-    --color-text-on-primary: #ffffff;
-
-    --color-border-base: #d4c2af;
-    --color-border-light: #e4d5c5;
-    --color-border-accent: #f59e0b; /* amber-500 */
-    --color-focus-ring: #f59e0b;
-    --color-icon-base: #c7b29e;
-}
-
-[data-theme="blue"] {
-    --color-bg-base: #eff6ff; /* blue-50 */
-    --color-bg-surface: #ffffff;
-    --color-bg-subtle: #f5f9ff;
-    --color-bg-accent-subtle: #eff6ff;
-    --color-bg-primary: #2563EB; /* blue-700 */
-    --color-bg-primary-hover: #1D4ED8; /* blue-800 */
-    --color-bg-danger: #DC2626;
-    --color-bg-danger-hover: #B91C1C;
-
-    --color-text-primary: #1E3A8A; /* blue-900 */
-    --color-text-secondary: #1E4ED8; /* blue-800 */
-    --color-text-tertiary: #3B82F6; /* blue-600 */
-    --color-text-placeholder: #93C5FD; /* blue-300 */
-    --color-text-primary-accent: #1D4ED8; /* blue-800 */
-    --color-text-primary-accent-hover: #1E3A8A; /* blue-900 */
-    --color-text-danger: #DC2626;
-    --color-text-on-primary: #ffffff;
-
-    --color-border-base: #BFDBFE; /* blue-200 */
-    --color-border-light: #DBEAFE; /* blue-100 */
-    --color-border-accent: #2563EB; /* blue-700 */
-    --color-focus-ring: #2563EB;
-    --color-icon-base: #BFDBFE; /* blue-200 */
-}
 
 /* --- TEMA-KLASSER --- */
 .bg-base { background-color: var(--color-bg-base); }
