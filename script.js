@@ -518,7 +518,12 @@ function formatFilterLabel(value, filterType) {
     if (filterType !== 'note' || label !== label.toUpperCase()) {
         return label.charAt(0).toUpperCase() + label.slice(1);
     }
-    return label.toLowerCase().replace(/(^|[\s/\-®™])([a-z])/g, (_, prefix, letter) => prefix + letter.toUpperCase());
+    const lowercaseWords = new Set(['a', 'an', 'and', 'de', 'del', 'della', 'delle', 'dei', 'di', 'for', 'in', 'of', 'on', 'the', 'with']);
+    let wordIndex = 0;
+    return label.toLowerCase().replace(/(^|[\s/\-®™])([a-z]+)/g, (_, prefix, word) => {
+        const isFirstWord = wordIndex++ === 0;
+        return prefix + (isFirstWord || !lowercaseWords.has(word) ? word.charAt(0).toUpperCase() + word.slice(1) : word);
+    });
 }
 
 function populateFilters() {
