@@ -347,3 +347,54 @@
     -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='6' width='16' height='15' rx='2'/%3E%3Cpath d='M3 3h18v4H3z'/%3E%3Cpath d='M9 11h6'/%3E%3C/svg%3E") center/contain no-repeat;
     mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='6' width='16' height='15' rx='2'/%3E%3Cpath d='M3 3h18v4H3z'/%3E%3Cpath d='M9 11h6'/%3E%3C/svg%3E") center/contain no-repeat;
 }
+
+/* V2 card inherits the real Dark appearance instead of fixed Light colors. */
+[data-theme="dark"] .v2-test-card {
+    background: var(--color-bg-surface);
+    border-color: var(--color-border-base);
+    box-shadow: 0 8px 22px rgba(0,0,0,.28);
+}
+[data-theme="dark"] .v2-test-card [data-field="inspiredBy"],
+[data-theme="dark"] .v2-test-card > div > div.mb-4 > p {
+    color: var(--color-text-primary);
+}
+[data-theme="dark"] .v2-test-card .brand-badge,
+[data-theme="dark"] .v2-test-card .favorite-btn,
+[data-theme="dark"] .v2-test-card .collection-btn {
+    color: var(--color-text-primary);
+    background: var(--color-bg-subtle);
+    border-color: var(--color-border-base);
+}
+[data-theme="dark"] .v2-test-card .brand-badge:hover,
+[data-theme="dark"] .v2-test-card .favorite-btn:hover,
+[data-theme="dark"] .v2-test-card .collection-btn:hover {
+    color: var(--color-text-primary);
+    background: #4b5563;
+    border-color: #6b7280;
+}
+[data-theme="dark"] .v2-test-card .gender-badge {
+    color: #dbeafe;
+    background: #1e3a8a;
+    border-color: #60a5fa;
+}
+[data-theme="dark"] .v2-test-card .gender-badge:hover {
+    color: #eff6ff;
+    background: #1e40af;
+    border-color: #93c5fd;
+}
+[data-theme="dark"] .v2-test-card [data-field="main-notes"] .main-note-badge {
+    color: var(--color-text-primary);
+    background: var(--color-bg-subtle);
+    border-color: var(--color-border-base);
+}
+[data-theme="dark"] .v2-test-card [data-field="main-notes"] .main-note-badge:hover {
+    color: var(--color-text-primary);
+    background: #4b5563;
+    border-color: #6b7280;
+}
+[data-theme="dark"] .v2-test-card .favorite-btn i,
+[data-theme="dark"] .v2-test-card .collection-btn i,
+[data-theme="dark"] .v2-test-card .collection-btn::before {
+    color: var(--color-text-primary);
+    background: var(--color-text-primary);
+}
