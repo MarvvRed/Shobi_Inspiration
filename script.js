@@ -518,7 +518,7 @@ function formatFilterLabel(value, filterType) {
     if (filterType !== 'note' || label !== label.toUpperCase()) {
         return label.charAt(0).toUpperCase() + label.slice(1);
     }
-    return label.toLowerCase().replace(/(^|[\s/-])([a-z])/g, (_, prefix, letter) => prefix + letter.toUpperCase());
+    return label.toLowerCase().replace(/(^|[\s/\-®™])([a-z])/g, (_, prefix, letter) => prefix + letter.toUpperCase());
 }
 
 function populateFilters() {
