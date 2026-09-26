@@ -584,6 +584,19 @@ function populateFilters() {
     const allMainNotes = new Set(allPerfumes.flatMap(p => getPerfumeNotes(getMainNotes(p))));
     buildCheckboxes(noteContainer, 'note', allMainNotes, 'note-loader');
 
+    const noteSearchInput = document.getElementById('note-filter-search');
+    const noteSearchEmpty = document.getElementById('note-search-empty');
+    noteSearchInput?.addEventListener('input', () => {
+        const query = noteSearchInput.value.trim().toLocaleLowerCase();
+        let visibleCount = 0;
+        noteContainer?.querySelectorAll('label').forEach(label => {
+            const visible = !query || label.textContent.toLocaleLowerCase().includes(query);
+            label.classList.toggle('hidden', !visible);
+            if (visible) visibleCount++;
+        });
+        noteSearchEmpty?.classList.toggle('hidden', visibleCount !== 0);
+    });
+
     document.querySelectorAll('#filter-sidebar input[type="checkbox"]').forEach(checkbox => {
         checkbox.addEventListener('change', handleCheckboxChange);
     });
