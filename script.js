@@ -214,6 +214,7 @@ function updateAvailableFilterOptions() {
             case 'season': filterType = 'season'; break;
             case 'occasion': filterType = 'occasion'; break;
             case 'accord': filterType = 'accords'; break;
+            case 'note': filterType = 'notes'; break;
             default: return;
         }
         const value = checkbox.value;
@@ -517,6 +518,7 @@ function populateFilters() {
     const seasonContainer = document.getElementById('season-filters');
     const occasionContainer = document.getElementById('occasion-filters');
     const accordContainer = document.getElementById('accord-filters');
+    const noteContainer = document.getElementById('note-filters');
 
     const buildCheckboxes = (container, name, options, loaderId) => {
         if (!container) return;
@@ -565,6 +567,9 @@ function populateFilters() {
     const allAccords = new Set(allPerfumes.flatMap(p => p.mainAccords));
     buildCheckboxes(accordContainer, 'accord', allAccords, 'accord-loader');
 
+    const allMainNotes = new Set(allPerfumes.flatMap(p => getPerfumeNotes(getMainNotes(p))));
+    buildCheckboxes(noteContainer, 'note', allMainNotes, 'note-loader');
+
     document.querySelectorAll('#filter-sidebar input[type="checkbox"]').forEach(checkbox => {
         checkbox.addEventListener('change', handleCheckboxChange);
     });
@@ -578,6 +583,7 @@ function handleCheckboxChange(e) {
         case 'season': filterType = 'season'; break;
         case 'occasion': filterType = 'occasion'; break;
         case 'accord': filterType = 'accords'; break;
+        case 'note': filterType = 'notes'; break;
         default: return;
     }
 
