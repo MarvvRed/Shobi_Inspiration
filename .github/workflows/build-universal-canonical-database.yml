@@ -1,0 +1,36 @@
+name: Build universal canonical Shobi database
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'database/canonical/.build-universal-database'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-universal-canonical-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-universal-database:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build canonical database
+        run: python tools/build_universal_canonical_database.py
+      - name: Commit canonical database
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/canonical/shobi-universal-v1.json database/canonical/README.md
+          if git diff --cached --quiet; then
+            echo 'Canonical database already current.'
+            exit 0
+          fi
+          git commit -m 'Publish universal canonical Shobi database'
+          git pull --rebase origin main
+          git push
