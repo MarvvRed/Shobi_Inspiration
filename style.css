@@ -393,8 +393,9 @@
     border-color: #6b7280;
 }
 [data-theme="dark"] .v2-test-card .favorite-btn i,
-[data-theme="dark"] .v2-test-card .collection-btn i,
-[data-theme="dark"] .v2-test-card .collection-btn::before {
+[data-theme="dark"] .v2-test-card .collection-btn i {
     color: var(--color-text-primary);
+}
+[data-theme="dark"] .v2-test-card .collection-btn::before {
     background: var(--color-text-primary);
 }
