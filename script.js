@@ -296,6 +296,7 @@ function handleRemoveToken(e) {
     switch(filterType) {
         case 'brands': checkboxName = 'brand'; break;
         case 'accords': checkboxName = 'accord'; break;
+        case 'notes': checkboxName = 'note'; break;
         default: checkboxName = filterType;
     }
     const checkbox = document.querySelector(`#filter-sidebar input[name="${checkboxName}"][value="${value}"]`);
