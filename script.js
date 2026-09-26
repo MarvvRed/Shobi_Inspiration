@@ -8,6 +8,8 @@ const state = {
     sortBy: 'brand',
     favorites: [],
     showingFavorites: false,
+    collection: [],
+    showingCollection: false,
     selectedBrand: null,
     activeFilters: {
         gender: [],
@@ -54,6 +56,7 @@ function renderNextPerfumeBatch() {
         const card = template.content.cloneNode(true);
         const cardElement = card.firstElementChild;
         const isFavorite = state.favorites.includes(p.code);
+        const isCollected = state.collection.includes(p.code);
 
         card.querySelector('[data-field="code"]').textContent = p.code;
         card.querySelector('[data-field="inspiredBy"]').textContent = p.inspiredBy;
@@ -67,6 +70,13 @@ function renderNextPerfumeBatch() {
         favButton.innerHTML = isFavorite ? '<i class="fa-solid fa-heart"></i>' : '<i class="fa-regular fa-heart"></i>';
         if (isFavorite) favButton.classList.add('is-favorite');
         favButton.addEventListener('click', toggleFavorite);
+
+        const collectionButton = card.querySelector('.collection-btn');
+        collectionButton.dataset.code = p.code;
+        collectionButton.innerHTML = isCollected ? '<i class="fas fa-box-open mr-2"></i><span class="collection-label">Collected</span>' : '<i class="fas fa-box-open mr-2"></i><span class="collection-label">Collection</span>';
+        collectionButton.title = isCollected ? 'Remove from collection' : 'Add to collection';
+        collectionButton.classList.toggle('is-collected', isCollected);
+        collectionButton.addEventListener('click', toggleCollection);
 
         const audienceIconsContainer = card.querySelector('[data-field="audience-icons"]');
         audienceIconsContainer.innerHTML = getAudienceIcons(p.genderAffinity) + getSeasonBadges(p.seasons);
@@ -121,6 +131,8 @@ function displayPerfumes(perfumes) {
         countText += ` result(s) for "${state.selectedBrand}"`;
     } else if (state.showingFavorites) {
         countText += ' favorite(s)';
+    } else if (state.showingCollection) {
+        countText += ' collection item(s)';
     } else {
         countText += ` of ${allPerfumes.length} results`;
     }
@@ -152,6 +164,8 @@ function getFilteredPerfumes(overrideFilters = null) {
         filtered = filtered.filter(p => currentFilters.brands.includes(p.brand));
     } else if (state.showingFavorites && !overrideFilters) {
         filtered = filtered.filter(p => state.favorites.includes(p.code));
+    } else if (state.showingCollection && !overrideFilters) {
+        filtered = filtered.filter(p => state.collection.includes(p.code));
     }
 
     if (currentFilters.gender.length > 0) {
@@ -333,6 +347,7 @@ function handleBrandFilterClick(brandName) {
     state.activeFilters.brands = [];
     document.querySelectorAll('#brand-filters input[type="checkbox"]').forEach(cb => cb.checked = false);
     document.getElementById('favorites-btn')?.classList.remove('bg-red-800');
+    document.getElementById('collection-nav-btn')?.classList.remove('bg-emerald-800');
     applyFiltersAndRender();
 }
 
@@ -484,6 +499,34 @@ function loadFavorites() {
     document.getElementById('favorites-count').textContent = state.favorites.length;
 }
 
+function toggleCollection(event) {
+    event.stopPropagation();
+    const button = event.currentTarget;
+    const code = button.dataset.code;
+    const index = state.collection.indexOf(code);
+    const isCollected = index === -1;
+
+    if (isCollected) {
+        state.collection.push(code);
+    } else {
+        state.collection.splice(index, 1);
+    }
+
+    button.innerHTML = isCollected ? '<i class="fas fa-box-open mr-2"></i><span class="collection-label">Collected</span>' : '<i class="fas fa-box-open mr-2"></i><span class="collection-label">Collection</span>';
+    button.title = isCollected ? 'Remove from collection' : 'Add to collection';
+    button.classList.toggle('is-collected', isCollected);
+    localStorage.setItem('shobi-collection', JSON.stringify(state.collection));
+    document.getElementById('collection-count').textContent = state.collection.length;
+
+    if (state.showingCollection) applyFiltersAndRender();
+}
+
+function loadCollection() {
+    const savedCollection = localStorage.getItem('shobi-collection');
+    if (savedCollection) state.collection = JSON.parse(savedCollection);
+    document.getElementById('collection-count').textContent = state.collection.length;
+}
+
 function toggleMobileFilters() {
     const filtersContent = document.getElementById('filters-content');
     const filtersIcon = document.getElementById('filters-toggle-icon');
@@ -494,6 +537,7 @@ function toggleMobileFilters() {
 function resetAllFilters() {
     state.searchQuery = '';
     state.showingFavorites = false;
+    state.showingCollection = false;
     state.selectedBrand = null;
     state.activeFilters = {
         gender: [],
@@ -722,6 +766,7 @@ async function init() {
     }
 
     loadFavorites();
+    loadCollection();
     populateFilters();
     applyFiltersAndRender();
 }
@@ -746,13 +791,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('favorites-btn').addEventListener('click', () => {
         state.showingFavorites = !state.showingFavorites;
+        state.showingCollection = false;
         state.selectedBrand = null;
+        document.getElementById('collection-nav-btn')?.classList.remove('bg-emerald-800');
 
         const btn = document.getElementById('favorites-btn');
         if (state.showingFavorites) {
             btn.classList.add('bg-red-800');
         } else {
             btn.classList.remove('bg-red-800');
+        }
+        applyFiltersAndRender();
+    });
+
+    document.getElementById('collection-nav-btn').addEventListener('click', () => {
+        state.showingCollection = !state.showingCollection;
+        state.showingFavorites = false;
+        state.selectedBrand = null;
+        document.getElementById('favorites-btn')?.classList.remove('bg-red-800');
+
+        const btn = document.getElementById('collection-nav-btn');
+        if (state.showingCollection) {
+            btn.classList.add('bg-emerald-800');
+        } else {
+            btn.classList.remove('bg-emerald-800');
         }
         applyFiltersAndRender();
     });
