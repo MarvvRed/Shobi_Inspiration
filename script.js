@@ -3,6 +3,7 @@ console.log("DEBUG: script.js (Tailwind v12 - CORRECT Dynamic Filter Logic) load
 
 let allPerfumes = [];
 let allBrands = new Map();
+let officialBestSellerRanks = new Map();
 const state = {
     searchQuery: '',
     sortBy: 'brand',
@@ -207,9 +208,9 @@ function getFilteredPerfumes(overrideFilters = null) {
             filtered.sort(byName);
         } else if (state.sortBy === 'best-seller') {
             filtered.sort((a, b) => {
-                const scoreA = Number(a.userRatings?.scent) || 0;
-                const scoreB = Number(b.userRatings?.scent) || 0;
-                return scoreB - scoreA || byBrand(a, b);
+                const rankA = Number(a.officialBestSellerRank) || Number.MAX_SAFE_INTEGER;
+                const rankB = Number(b.officialBestSellerRank) || Number.MAX_SAFE_INTEGER;
+                return rankA - rankB || byBrand(a, b);
             });
         } else {
             filtered.sort(byBrand);
@@ -711,8 +712,23 @@ function initTheme() {
 async function init() {
     console.log("DEBUG: init() started.");
     try {
-        const response = await fetch('database/catalog/catalog_final_perfume_only.json', { cache: 'no-store' });
+        const [response, bestSellerResponse] = await Promise.all([
+            fetch('database/catalog/catalog_final_perfume_only.json', { cache: 'no-store' }),
+            fetch('database/catalog/shobi-bestsellers.json', { cache: 'no-store' }).catch(() => null)
+        ]);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+        officialBestSellerRanks.clear();
+        if (bestSellerResponse?.ok) {
+            const bestSellerData = await bestSellerResponse.json();
+            for (const entry of bestSellerData.ranking || []) {
+                const code = String(entry?.code || '').trim();
+                const rank = Number(entry?.perfumeSalesRank);
+                if (code && Number.isFinite(rank) && rank > 0) officialBestSellerRanks.set(code, rank);
+            }
+        } else {
+            console.warn('Official best-seller ranking is not available yet.');
+        }
 
         // This file contains only the certified wearable-perfume scope; the
         // canonical audit catalog remains separate for traceability.
@@ -755,7 +771,8 @@ async function init() {
             mainAccords: (p.mainAccords || []).map(a => a.toLowerCase()),
             seasons: (p.seasons || []).map(s => String(s).toLowerCase()).filter(s => s),
             occasions: (p.occasions || []).map(o => String(o).toLowerCase()).filter(o => o),
-            notes: p.notes || { top: [], heart: [], base: [] }
+            notes: p.notes || { top: [], heart: [], base: [] },
+            officialBestSellerRank: officialBestSellerRanks.get(String(p.code || '').trim()) || null
         }));
 
         console.log(`DEBUG: Total valid perfumes loaded: ${allPerfumes.length}`);

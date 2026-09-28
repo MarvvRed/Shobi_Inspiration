@@ -1,0 +1,61 @@
+name: Build official Shobi best sellers
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'database/catalog/.build-official-bestsellers'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-best-sellers-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-ranking:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install scraper dependencies
+        run: python -m pip install --disable-pip-version-check requests beautifulsoup4
+
+      - name: Build official perfume-only ranking
+        run: python tools/build_official_shobi_bestsellers.py
+
+      - name: Verify ranking scope
+        run: |
+          python - <<'PY'
+          import json
+
+          ranking = json.load(open('database/catalog/shobi-bestsellers.json', encoding='utf-8'))
+          certified = json.load(open('database/catalog/database_final_perfume_only.json', encoding='utf-8'))
+          rows = ranking['ranking']
+          certified_by_id = {str(row['prestashopProductId']): row for row in certified}
+          assert rows
+          assert all(str(row['prestashopProductId']) in certified_by_id for row in rows)
+          assert all(row['code'] == certified_by_id[str(row['prestashopProductId'])]['code'] for row in rows)
+          assert [row['perfumeSalesRank'] for row in rows] == list(range(1, len(rows) + 1))
+          print(f"Verified {len(rows)} official best sellers within the certified perfume-only catalog.")
+          PY
+
+      - name: Commit ranking when changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/catalog/shobi-bestsellers.json
+          if git diff --cached --quiet; then
+            echo 'Official ranking is unchanged.'
+            exit 0
+          fi
+          git commit -m 'Update official Shobi perfume best sellers'
+          git pull --rebase origin main
+          git push
