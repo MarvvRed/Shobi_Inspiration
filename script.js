@@ -81,16 +81,6 @@ function renderNextPerfumeBatch() {
 
         const audienceIconsContainer = card.querySelector('[data-field="audience-icons"]');
         audienceIconsContainer.innerHTML = getAudienceIcons(p.genderAffinity) + getSeasonBadges(p.seasons);
-        const officialRank = Number(p.officialBestSellerRank);
-        if (Number.isFinite(officialRank) && officialRank > 0) {
-            const rankBadge = document.createElement('span');
-            rankBadge.className = 'official-best-seller-rank';
-            rankBadge.textContent = '#' + officialRank;
-            rankBadge.title = 'Official Shobi best seller #' + officialRank;
-            rankBadge.setAttribute('aria-label', rankBadge.title);
-            rankBadge.style.cssText = 'display:inline-flex;align-items:center;padding:4px 8px;border-radius:999px;background:#ecfdf5;border:1px solid #34d399;color:#065f46;font-size:12px;font-weight:700;line-height:1;';
-            audienceIconsContainer.prepend(rankBadge);
-        }
         const mainNotesContainer = card.querySelector('[data-field="main-notes"]');
         mainNotesContainer.innerHTML = getMainNotesBadges(getMainNotes(p));
 
