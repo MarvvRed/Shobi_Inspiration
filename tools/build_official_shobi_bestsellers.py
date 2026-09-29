@@ -92,7 +92,7 @@ def certified_products(path: Path) -> dict[str, dict]:
     return indexed
 
 
-def build(database: Path, output: Path, delay: float) -> None:
+def build(database: Path, output: Path, ranks_output: Path, delay: float) -> None:
     eligible = certified_products(database)
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "en"})
@@ -154,17 +154,39 @@ def build(database: Path, output: Path, delay: float) -> None:
     }
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Lightweight browser projection: the site needs only exact Shobi-code -> rank.
+    # The detailed audit-friendly ranking above remains the canonical publication artifact.
+    ranks: dict[str, int] = {}
+    for row in ranking:
+        code = str(row["code"]).strip()
+        if not code or code in ranks:
+            raise RuntimeError(f"Ranking contains a duplicate or empty Shobi code: {code!r}")
+        ranks[code] = int(row["perfumeSalesRank"])
+    ranks_payload = {
+        "schema": "shobi-official-bestseller-ranks/v1",
+        "generatedAt": payload["generatedAt"],
+        "rankCount": len(ranks),
+        "ranks": ranks,
+    }
+    ranks_output.parent.mkdir(parents=True, exist_ok=True)
+    ranks_output.write_text(
+        json.dumps(ranks_payload, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
     print(f"Wrote {len(ranking)} certified wearable perfumes to {output}")
+    print(f"Wrote {len(ranks)} lightweight ranks to {ranks_output}")
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--database", type=Path, default=Path("database/catalog/database_final_perfume_only.json"))
     parser.add_argument("--output", type=Path, default=Path("database/catalog/shobi-bestsellers.json"))
+    parser.add_argument("--ranks-output", type=Path, default=Path("database/catalog/shobi-bestseller-ranks.json"))
     parser.add_argument("--delay", type=float, default=0.2, help="Seconds between official page requests")
     args = parser.parse_args()
     try:
-        build(args.database, args.output, args.delay)
+        build(args.database, args.output, args.ranks_output, args.delay)
     except (OSError, ValueError, requests.RequestException, RuntimeError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
