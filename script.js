@@ -725,17 +725,17 @@ async function init() {
     console.log("DEBUG: init() started.");
     try {
         const [response, bestSellerResponse] = await Promise.all([
-            fetch('database/catalog/catalog_final_perfume_only.json', { cache: 'no-store' }),
-            fetch('database/catalog/shobi-bestsellers.json', { cache: 'no-store' }).catch(() => null)
+            fetch('database/catalog/catalog_final_perfume_only.json'),
+            fetch('database/catalog/shobi-bestseller-ranks.json').catch(() => null)
         ]);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
         officialBestSellerRanks.clear();
         if (bestSellerResponse?.ok) {
             const bestSellerData = await bestSellerResponse.json();
-            for (const entry of bestSellerData.ranking || []) {
-                const code = String(entry?.code || '').trim();
-                const rank = Number(entry?.perfumeSalesRank);
+            for (const [rawCode, rawRank] of Object.entries(bestSellerData.ranks || {})) {
+                const code = String(rawCode || '').trim();
+                const rank = Number(rawRank);
                 if (code && Number.isFinite(rank) && rank > 0) officialBestSellerRanks.set(code, rank);
             }
         } else {
