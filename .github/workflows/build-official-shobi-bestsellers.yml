@@ -44,14 +44,19 @@ jobs:
           assert all(str(row['prestashopProductId']) in certified_by_id for row in rows)
           assert all(row['code'] == certified_by_id[str(row['prestashopProductId'])]['code'] for row in rows)
           assert [row['perfumeSalesRank'] for row in rows] == list(range(1, len(rows) + 1))
-          print(f"Verified {len(rows)} official best sellers within the certified perfume-only catalog.")
+
+          ranks = json.load(open('database/catalog/shobi-bestseller-ranks.json', encoding='utf-8'))
+          expected_ranks = {str(row['code']).strip(): row['perfumeSalesRank'] for row in rows}
+          assert ranks['rankCount'] == len(rows)
+          assert ranks['ranks'] == expected_ranks
+          print(f"Verified {len(rows)} official best sellers and the lightweight browser rank map.")
           PY
 
       - name: Commit ranking when changed
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add database/catalog/shobi-bestsellers.json
+          git add database/catalog/shobi-bestsellers.json database/catalog/shobi-bestseller-ranks.json
           if git diff --cached --quiet; then
             echo 'Official ranking is unchanged.'
             exit 0
