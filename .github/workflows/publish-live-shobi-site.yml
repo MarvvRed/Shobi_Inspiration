@@ -11,10 +11,11 @@ permissions:
 
 concurrency:
   group: shobi-catalog-write-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   publish-catalog:
+    if: ${{ !contains(github.event.head_commit.message, 'Cancel active full catalog publication') }}
     runs-on: ubuntu-latest
     # A complete fresh card audit plus conservative recovery can exceed one
     # hour on the hosted two-worker runner.  The lower limit canceled valid
