@@ -1,0 +1,36 @@
+name: Restore catalog data after direct upload
+
+on:
+  push:
+    paths:
+      - 'recovery/catalog-repair-2026-09-30/**'
+      - '.github/workflows/restore-catalog-data.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore complete UTF-8 catalog artifacts
+        run: |
+          gzip -dc recovery/catalog-repair-2026-09-30/catalog_final_perfume_only.json.gz > database/catalog/catalog_final_perfume_only.json
+          gzip -dc recovery/catalog-repair-2026-09-30/catalog_site.json.gz > database/catalog/catalog_site.json
+          gzip -dc recovery/catalog-repair-2026-09-30/database_complete.json.gz > database/catalog/database_complete.json
+          gzip -dc recovery/catalog-repair-2026-09-30/database_final_perfume_only.json.gz > database/catalog/database_final_perfume_only.json
+          gzip -dc recovery/catalog-repair-2026-09-30/social-card-main-notes-validated.json.gz > database/fragrantica/social-cards/records/social-card-main-notes-validated.json
+          gzip -dc recovery/catalog-repair-2026-09-30/shobi-fragrantica-mapping.csv.gz > database/source/shobi-fragrantica-mapping.csv
+          gzip -dc recovery/catalog-repair-2026-09-30/shobi-master-v1.csv.gz > database/source/shobi-master-v1.csv
+          gzip -dc recovery/catalog-repair-2026-09-30/shobi-perfumes-live-unique.csv.gz > database/source/shobi-perfumes-live-unique.csv
+          python -m json.tool database/catalog/database_complete.json >/dev/null
+          python -m json.tool database/catalog/catalog_final_perfume_only.json >/dev/null
+          python -m json.tool database/fragrantica/social-cards/records/social-card-main-notes-validated.json >/dev/null
+      - name: Commit repaired files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/catalog/catalog_final_perfume_only.json database/catalog/catalog_site.json database/catalog/database_complete.json database/catalog/database_final_perfume_only.json database/fragrantica/social-cards/records/social-card-main-notes-validated.json database/source/shobi-fragrantica-mapping.csv database/source/shobi-master-v1.csv database/source/shobi-perfumes-live-unique.csv
+          git commit -m 'Repair complete catalog UTF-8 artifacts'
+          git push
