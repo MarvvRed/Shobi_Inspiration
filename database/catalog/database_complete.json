@@ -147207,21 +147207,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "83820",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -147274,21 +147277,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "83054",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -147341,21 +147347,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "104247",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -147415,14 +147424,16 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified",
         "Note icons not fully verified"
       ],
       "notesCount": 6,
@@ -147612,14 +147623,16 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified",
         "Note icons not fully verified"
       ],
       "notesCount": 6,
@@ -147673,21 +147686,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "51706",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 5,
       "matchedNotesCount": 5,
       "iconsCount": 5
@@ -147740,21 +147756,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "128151",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -147807,21 +147826,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "91981",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -147874,21 +147896,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "127864",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -147941,21 +147966,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "129499",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -148072,21 +148100,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "129373",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -148146,14 +148177,16 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified",
         "Note icons not fully verified"
       ],
       "notesCount": 6,
@@ -148272,21 +148305,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "125742",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -148346,14 +148382,16 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified",
         "Note icons not fully verified"
       ],
       "notesCount": 6,
@@ -148415,14 +148453,16 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified",
         "Note icons not fully verified"
       ],
       "notesCount": 6,
@@ -148477,21 +148517,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "127456",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6
@@ -148544,21 +148587,24 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "84302",
     "validationAudit": {
-      "status": "green",
+      "status": "yellow",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": true,
+        "socialCard": false,
         "image": true,
-        "notes": true,
+        "notes": false,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [],
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
       "notesCount": 6,
       "matchedNotesCount": 6,
       "iconsCount": 6

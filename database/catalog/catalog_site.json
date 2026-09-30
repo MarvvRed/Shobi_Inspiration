@@ -80365,17 +80365,20 @@
       "Saffron",
       "Georgywood"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -80401,17 +80404,20 @@
       "Bergamot",
       "White Flowers"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -80437,17 +80443,20 @@
       "Tonka Bean",
       "Amber"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -80475,6 +80484,8 @@
     ],
     "validationStatus": "yellow",
     "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified",
       "Note icons not fully verified"
     ],
     "validationChecks": {
@@ -80483,9 +80494,9 @@
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": false,
       "gender": true,
       "season": true
@@ -80579,6 +80590,8 @@
     ],
     "validationStatus": "yellow",
     "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified",
       "Note icons not fully verified"
     ],
     "validationChecks": {
@@ -80587,9 +80600,9 @@
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": false,
       "gender": true,
       "season": true
@@ -80614,17 +80627,20 @@
       "Vanilla",
       "Cinnamon"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -80650,17 +80666,20 @@
       "Coconut",
       "Musk"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -80686,17 +80705,20 @@
       "Amber",
       "Bergamot"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -80722,17 +80744,20 @@
       "Amber",
       "Orange"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -80758,17 +80783,20 @@
       "Coconut",
       "Cashmeran"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -80827,17 +80855,20 @@
       "Bergamot",
       "Vanilla"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -80865,6 +80896,8 @@
     ],
     "validationStatus": "yellow",
     "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified",
       "Note icons not fully verified"
     ],
     "validationChecks": {
@@ -80873,9 +80906,9 @@
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": false,
       "gender": true,
       "season": true
@@ -80934,17 +80967,20 @@
       "Lime",
       "Musk"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -80972,6 +81008,8 @@
     ],
     "validationStatus": "yellow",
     "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified",
       "Note icons not fully verified"
     ],
     "validationChecks": {
@@ -80980,9 +81018,9 @@
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": false,
       "gender": true,
       "season": true
@@ -81010,6 +81048,8 @@
     ],
     "validationStatus": "yellow",
     "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified",
       "Note icons not fully verified"
     ],
     "validationChecks": {
@@ -81018,9 +81058,9 @@
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": false,
       "gender": true,
       "season": true
@@ -81046,17 +81086,20 @@
       "Musk",
       "Freesia"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
@@ -81082,17 +81125,20 @@
       "Sandalwood",
       "Curcuma (Turmeric)"
     ],
-    "validationStatus": "green",
-    "validationIssues": [],
+    "validationStatus": "yellow",
+    "validationIssues": [
+      "Social Card not fully verified",
+      "Main Notes order not fully verified"
+    ],
     "validationChecks": {
       "shobiProduct": true,
       "shobiIdentity": true,
       "identity": true,
       "fid": true,
       "url": true,
-      "socialCard": true,
+      "socialCard": false,
       "image": true,
-      "notes": true,
+      "notes": false,
       "icons": true,
       "gender": true,
       "season": true
