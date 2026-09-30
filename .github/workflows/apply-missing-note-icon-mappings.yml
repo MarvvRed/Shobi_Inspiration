@@ -1,4 +1,4 @@
-name: Apply missing note icon mappings
+name: Audit current yellow Social Cards
 
 on:
   push:
@@ -11,28 +11,35 @@ permissions:
   contents: read
 
 concurrency:
-  group: note-icon-validation-${{ github.ref }}
+  group: targeted-yellow-social-audit-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  rebuild:
+  audit:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Rebuild validation from existing local evidence
+      - name: Install targeted OCR requirements
         run: |
+          command -v tesseract || (sudo apt-get update && sudo apt-get install -y tesseract-ocr)
+          python -m pip install --disable-pip-version-check pillow numpy
+      - name: Audit only unresolved Social Cards
+        run: |
+          SOCIAL_CARD_AUDIT_ONLY_CURRENT_YELLOWS=1 SOCIAL_CARD_AUDIT_WORKERS=2 SOCIAL_CARD_AUDIT_BATCH=27 python tools/audit_social_card_order_from_images.py
           python tools/build_validation_audit.py
           python tools/build_final_perfume_catalog.py
           python tools/analyze_current_yellows.py
-      - name: Upload targeted validation refresh
+      - name: Upload targeted yellow audit
         uses: actions/upload-artifact@v4
         with:
-          name: targeted-validation-refresh
+          name: targeted-yellow-social-audit
           if-no-files-found: error
           path: |
+            database/fragrantica/social-cards/records/social-card-ordered-image-audit.json
             database/catalog/database_complete.json
             database/catalog/catalog_site.json
             database/catalog/catalog_final_perfume_only.json
