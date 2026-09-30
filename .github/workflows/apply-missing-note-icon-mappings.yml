@@ -45,4 +45,6 @@ jobs:
             exit 0
           fi
           git commit -m 'Promote exact current-yellow Social Card proofs'
+          git fetch origin main
+          git rebase origin/main
           git push origin HEAD:main
