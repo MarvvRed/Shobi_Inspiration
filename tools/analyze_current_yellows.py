@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import json
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,6 +35,7 @@ def main():
 
     for s in yellows:
         c = code(s)
+        db_row = db_by_code.get(c) or {}
         issues = tuple(sorted(str(x) for x in (s.get("validationIssues") or [])))
         combo_counts[issues] += 1
         issue_counts.update(issues)
@@ -46,9 +47,15 @@ def main():
         proof = v2.get(c) or {}
         rows.append({
             "code": c,
-            "fid": str((db_by_code.get(c) or {}).get("fragranticaId") or ""),
+            "brand": db_row.get("brand"),
+            "inspiredBy": db_row.get("inspiredBy"),
+            "fid": str(db_row.get("fragranticaId") or ""),
+            "fragranticaUrl": db_row.get("fragranticaUrl"),
+            "catalogNotes": list(db_row.get("fragranticaSocialCardNotes") or []),
             "issues": list(issues),
             "orderedAudit": audit_result,
+            "observedNotes": list(ev.get("observedNotes") or []),
+            "card": ev.get("card"),
             "v2Status": proof.get("status"),
         })
 
