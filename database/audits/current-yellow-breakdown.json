@@ -1,11 +1,10 @@
 {
   "totalCatalog": 2274,
-  "yellow": 27,
+  "yellow": 10,
   "issueCounts": {
-    "Social Card not fully verified": 27,
-    "Main Notes order not fully verified": 17,
-    "Note icons not fully verified": 15,
     "Missing Main Notes": 10,
+    "Note icons not fully verified": 10,
+    "Social Card not fully verified": 10,
     "Gender not fully verified": 6,
     "Season not fully verified": 6,
     "Fragrantica identity not fully verified": 3,
@@ -15,26 +14,11 @@
   },
   "singleIssueCounts": {},
   "orderedAuditResults": {
-    "NO_AUDIT_ROW": 21,
     "UNSUPPORTED_CARD_GEOMETRY": 4,
+    "READING_NOT_STRICT_ENOUGH": 4,
     "NO_EXACT_CARD": 2
   },
   "issueCombinations": [
-    {
-      "count": 12,
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ]
-    },
-    {
-      "count": 5,
-      "issues": [
-        "Main Notes order not fully verified",
-        "Note icons not fully verified",
-        "Social Card not fully verified"
-      ]
-    },
     {
       "count": 4,
       "issues": [
@@ -204,99 +188,6 @@
       "v2Status": null
     },
     {
-      "code": "2850-ETLR",
-      "brand": "Etat Libre d'Orange",
-      "inspiredBy": "Nostos",
-      "fid": "83820",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Etat-Libre-d-Orange/Nostos-83820.html",
-      "catalogNotes": [
-        "Agarwood (Oud)",
-        "Suede",
-        "Rose",
-        "Incense",
-        "Saffron",
-        "Georgywood"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2851-LOUM",
-      "brand": "Loumari",
-      "inspiredBy": "Porthole",
-      "fid": "83054",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Loumari/Porthole-83054.html",
-      "catalogNotes": [
-        "Passionfruit",
-        "Pineapple",
-        "Salt",
-        "Musk",
-        "Bergamot",
-        "White Flowers"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2852-MAN",
-      "brand": "Mancera",
-      "inspiredBy": "Xplicit Vanilla",
-      "fid": "104247",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Mancera/Xplicit-Vanilla-104247.html",
-      "catalogNotes": [
-        "Vanilla",
-        "Cambodian Oud",
-        "Dark Chocolate",
-        "Brown Sugar",
-        "Tonka Bean",
-        "Amber"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2855-AMG",
-      "brand": "Amouage",
-      "inspiredBy": "Love Hibiscus",
-      "fid": "126673",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Amouage/Love-Hibiscus-126673.html",
-      "catalogNotes": [
-        "Hibiscus",
-        "Passionfruit",
-        "Salted Caramel",
-        "Vanilla",
-        "Orris Root",
-        "Sandalwood"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Note icons not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
       "code": "2853-MEM",
       "brand": "Memo Paris",
       "inspiredBy": "Ithaque",
@@ -308,9 +199,9 @@
         "Note icons not fully verified",
         "Social Card not fully verified"
       ],
-      "orderedAudit": "NO_AUDIT_ROW",
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
       "observedNotes": [],
-      "card": null,
+      "card": "database/fragrantica/social-cards/images/current_2853-MEM_79533.jpeg",
       "v2Status": null
     },
     {
@@ -325,147 +216,9 @@
         "Note icons not fully verified",
         "Social Card not fully verified"
       ],
-      "orderedAudit": "NO_AUDIT_ROW",
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
       "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2860-OBVI",
-      "brand": "Obvious",
-      "inspiredBy": "Plum Cream",
-      "fid": "108057",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Obvious/Plum-Cream-108057.html",
-      "catalogNotes": [
-        "Plum",
-        "Saffiano Leather",
-        "Rum",
-        "Oak",
-        "Labdanum",
-        "Davana"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Note icons not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2861-AKR",
-      "brand": "Akro",
-      "inspiredBy": "Dark",
-      "fid": "51706",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Akro/Dark-51706.html",
-      "catalogNotes": [
-        "Dark Chocolate",
-        "Cacao Pod",
-        "Hazelnut",
-        "Vanilla",
-        "Cinnamon"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2862-GIA",
-      "brand": "Giardini Di Toscana",
-      "inspiredBy": "Oro e Miele",
-      "fid": "128151",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Giardini-Di-Toscana/Oro-e-Miele-128151.html",
-      "catalogNotes": [
-        "Honey",
-        "Almond Blossom",
-        "Vanilla",
-        "Tonka Bean",
-        "Coconut",
-        "Musk"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2863-FRAG",
-      "brand": "Fragrance Du Bois",
-      "inspiredBy": "Tropiques",
-      "fid": "91981",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Fragrance-Du-Bois/Tropiques-91981.html",
-      "catalogNotes": [
-        "Tropical Fruits",
-        "Mandarin Orange",
-        "Lavender",
-        "Musk",
-        "Amber",
-        "Bergamot"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2864-GISS",
-      "brand": "Gissah",
-      "inspiredBy": "Kuwaiti Imperial",
-      "fid": "127864",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Gissah/Kuwaiti-Imperial-127864.html",
-      "catalogNotes": [
-        "Vanilla",
-        "Geranium",
-        "Tonka Bean",
-        "Sandalwood",
-        "Amber",
-        "Orange"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2865-IN",
-      "brand": "Initio Parfums Prives",
-      "inspiredBy": "Sugar Blast",
-      "fid": "129499",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Sugar-Blast-129499.html",
-      "catalogNotes": [
-        "Vanilla",
-        "Praline",
-        "Ambroxan",
-        "Rum",
-        "Coconut",
-        "Cashmeran"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
+      "card": "database/fragrantica/social-cards/images/current_2858-CRIVEL_131410.jpeg",
       "v2Status": null
     },
     {
@@ -480,56 +233,9 @@
         "Note icons not fully verified",
         "Social Card not fully verified"
       ],
-      "orderedAudit": "NO_AUDIT_ROW",
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
       "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2869-MARG",
-      "brand": "Maison Martin Margiela",
-      "inspiredBy": "Blaze of Stillness",
-      "fid": "129373",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Maison-Martin-Margiela/Blaze-of-Stillness-129373.html",
-      "catalogNotes": [
-        "Orange Blossom",
-        "Fig",
-        "Suede",
-        "Neroli",
-        "Bergamot",
-        "Vanilla"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2870-MAN",
-      "brand": "Mancera",
-      "inspiredBy": "Mochi Musk",
-      "fid": "128865",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Mancera/Mochi-Musk-128865.html",
-      "catalogNotes": [
-        "Musk",
-        "Rice Powder",
-        "Pistachio",
-        "Ice cream",
-        "Iris",
-        "Tonka Bean"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Note icons not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
+      "card": "database/fragrantica/social-cards/images/current_2868-LEL_95922.jpeg",
       "v2Status": null
     },
     {
@@ -544,126 +250,9 @@
         "Note icons not fully verified",
         "Social Card not fully verified"
       ],
-      "orderedAudit": "NO_AUDIT_ROW",
+      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
       "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2856-TMFO",
-      "brand": "Tom Ford",
-      "inspiredBy": "Taormina Orange",
-      "fid": "125742",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Tom-Ford/Taormina-Orange-125742.html",
-      "catalogNotes": [
-        "Bitter Orange",
-        "Blood Orange",
-        "Mandarin Orange",
-        "Orange Blossom",
-        "Lime",
-        "Musk"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2857-KAY",
-      "brand": "Kayali Fragrances",
-      "inspiredBy": "Freedom Musk Latte | 41 Eau de Parfum",
-      "fid": "118624",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Freedom-Musk-Latte-41-Eau-de-Parfum-118624.html",
-      "catalogNotes": [
-        "Caffè Latte",
-        "Musk",
-        "Sandalwood",
-        "Dark Chocolate",
-        "Lavender",
-        "Cedar"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Note icons not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2859-DRC",
-      "brand": "Dior",
-      "inspiredBy": "Dior Paradise",
-      "fid": "132884",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Dior/Dior-Paradise-132884.html",
-      "catalogNotes": [
-        "Orange",
-        "Mandarin Orange",
-        "Almond",
-        "Lime",
-        "Tonka Bean",
-        "Syrup"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Note icons not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2866-KAY",
-      "brand": "Kayali Fragrances",
-      "inspiredBy": "Eden Sweet Peach | 35 Eau de Parfum",
-      "fid": "127456",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Eden-Sweet-Peach-35-Eau-de-Parfum-127456.html",
-      "catalogNotes": [
-        "Peach",
-        "Nectarine",
-        "Vanilla",
-        "Red Apple",
-        "Musk",
-        "Freesia"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
-      "v2Status": null
-    },
-    {
-      "code": "2867-LAT",
-      "brand": "Lattafa Perfumes",
-      "inspiredBy": "Bade'e Al Oud Honor & Glory",
-      "fid": "84302",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Bade-e-Al-Oud-Honor-Glory-84302.html",
-      "catalogNotes": [
-        "Pineapple",
-        "Crème Brûlée",
-        "Vanilla",
-        "Cinnamon",
-        "Sandalwood",
-        "Curcuma (Turmeric)"
-      ],
-      "issues": [
-        "Main Notes order not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "NO_AUDIT_ROW",
-      "observedNotes": [],
-      "card": null,
+      "card": "database/fragrantica/social-cards/images/current_2871-NARO_103933.jpeg",
       "v2Status": null
     }
   ]
