@@ -1,10 +1,10 @@
 {
   "totalCatalog": 2274,
-  "yellow": 7,
+  "yellow": 6,
   "issueCounts": {
-    "Note icons not fully verified": 7,
     "Gender not fully verified": 6,
     "Missing Main Notes": 6,
+    "Note icons not fully verified": 6,
     "Season not fully verified": 6,
     "Social Card not fully verified": 6,
     "Fragrantica identity not fully verified": 3,
@@ -12,13 +12,10 @@
     "Missing direct Fragrantica URL": 2,
     "Missing perfume image": 2
   },
-  "singleIssueCounts": {
-    "Note icons not fully verified": 1
-  },
+  "singleIssueCounts": {},
   "orderedAuditResults": {
     "UNSUPPORTED_CARD_GEOMETRY": 4,
-    "NO_EXACT_CARD": 2,
-    "EXACT_ORDERED_MATCH": 1
+    "NO_EXACT_CARD": 2
   },
   "issueCombinations": [
     {
@@ -54,12 +51,6 @@
         "Note icons not fully verified",
         "Season not fully verified",
         "Social Card not fully verified"
-      ]
-    },
-    {
-      "count": 1,
-      "issues": [
-        "Note icons not fully verified"
       ]
     }
   ],
@@ -185,35 +176,6 @@
       "orderedAudit": "UNSUPPORTED_CARD_GEOMETRY",
       "observedNotes": [],
       "card": "database/fragrantica/social-cards/images/current_1251-ROM_21103.jpeg",
-      "v2Status": null
-    },
-    {
-      "code": "2868-LEL",
-      "brand": "Le Labo",
-      "inspiredBy": "Coriandre 39",
-      "fid": "95922",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Le-Labo/Coriandre-39-95922.html",
-      "catalogNotes": [
-        "Cilantro",
-        "Green Notes",
-        "Aldehydes",
-        "Lime",
-        "Water",
-        "Floral Notes"
-      ],
-      "issues": [
-        "Note icons not fully verified"
-      ],
-      "orderedAudit": "EXACT_ORDERED_MATCH",
-      "observedNotes": [
-        "Cilantro",
-        "Green Notes",
-        "Aldehydes",
-        "Lime",
-        "Water",
-        "Floral Notes"
-      ],
-      "card": "database/fragrantica/social-cards/images/current_2868-LEL_95922.jpeg",
       "v2Status": null
     }
   ]

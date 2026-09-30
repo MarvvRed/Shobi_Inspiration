@@ -148008,7 +148008,7 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "95922",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
@@ -148018,16 +148018,14 @@
         "socialCard": true,
         "image": true,
         "notes": true,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Note icons not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
       "matchedNotesCount": 6,
-      "iconsCount": 5
+      "iconsCount": 6
     },
     "genderSource": "https://www.fragrantica.com/perfume/Le-Labo/Coriandre-39-95922.html"
   },
