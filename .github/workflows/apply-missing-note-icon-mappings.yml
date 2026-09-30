@@ -29,16 +29,30 @@ jobs:
           python -m pip install --disable-pip-version-check pillow numpy
       - name: Audit only unresolved Social Cards
         run: |
-          SOCIAL_CARD_AUDIT_ONLY_CURRENT_YELLOWS=1 SOCIAL_CARD_AUDIT_WORKERS=2 SOCIAL_CARD_AUDIT_BATCH=27 python tools/audit_social_card_order_from_images.py
-          python tools/build_validation_audit.py
-          python tools/build_final_perfume_catalog.py
-          python tools/analyze_current_yellows.py
+          set +e
+          SOCIAL_CARD_AUDIT_ONLY_CURRENT_YELLOWS=1 SOCIAL_CARD_AUDIT_WORKERS=2 SOCIAL_CARD_AUDIT_BATCH=27 python tools/audit_social_card_order_from_images.py > targeted-yellow-audit.log 2>&1
+          audit_status=$?
+          if [ "$audit_status" -eq 0 ]; then
+            python tools/build_validation_audit.py >> targeted-yellow-audit.log 2>&1
+            audit_status=$?
+          fi
+          if [ "$audit_status" -eq 0 ]; then
+            python tools/build_final_perfume_catalog.py >> targeted-yellow-audit.log 2>&1
+            audit_status=$?
+          fi
+          if [ "$audit_status" -eq 0 ]; then
+            python tools/analyze_current_yellows.py >> targeted-yellow-audit.log 2>&1
+            audit_status=$?
+          fi
+          echo "$audit_status" > targeted-yellow-audit.exit
       - name: Upload targeted yellow audit
         uses: actions/upload-artifact@v4
         with:
           name: targeted-yellow-social-audit
           if-no-files-found: error
           path: |
+            targeted-yellow-audit.log
+            targeted-yellow-audit.exit
             database/fragrantica/social-cards/records/social-card-ordered-image-audit.json
             database/catalog/database_complete.json
             database/catalog/catalog_site.json
