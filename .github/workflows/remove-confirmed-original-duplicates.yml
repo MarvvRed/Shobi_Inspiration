@@ -1,0 +1,98 @@
+name: Remove confirmed same-original perfume duplicates
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/catalog-confirmed-original-dedupe-trigger'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shobi-confirmed-original-dedupe-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild duplicate-free public and canonical catalogs
+        run: |
+          python tools/build_final_perfume_catalog.py
+          python tools/build_universal_canonical_database.py
+
+      - name: Rebuild Best Seller projections from official ranking snapshot
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          final = json.loads(Path("database/catalog/database_final_perfume_only.json").read_text(encoding="utf-8"))
+          final_codes = {str(row["code"]).strip() for row in final}
+          if len(final) != 2228 or len(final_codes) != 2228:
+              raise SystemExit(f"Expected 2228 unique final records, got rows={len(final)} codes={len(final_codes)}")
+
+          duplicate_fids = {
+              "221", "248", "257", "423", "485", "498", "502", "698", "704",
+              "720", "813", "897", "1261", "3403", "4323", "5979", "10573",
+              "12424", "14606", "26777", "31045", "35780", "44034", "46186",
+              "95641",
+          }
+          for fid in duplicate_fids:
+              rows = [row for row in final if str(row.get("fragranticaId") or "").strip() == fid]
+              if len(rows) != 1:
+                  raise SystemExit(f"FID {fid} must have exactly one retained catalog record, got {len(rows)}")
+
+          ranking_path = Path("database/catalog/shobi-bestsellers.json")
+          payload = json.loads(ranking_path.read_text(encoding="utf-8"))
+          filtered = [row for row in payload.get("ranking", []) if str(row.get("code") or "").strip() in final_codes]
+          if len({str(row.get("code") or "").strip() for row in filtered}) != len(filtered):
+              raise SystemExit("Best Seller snapshot contains duplicate retained codes")
+          for rank, row in enumerate(filtered, 1):
+              row["perfumeSalesRank"] = rank
+          payload["ranking"] = filtered
+          payload.setdefault("summary", {})["eligibleCertifiedWearablePerfumes"] = len(final)
+          payload["summary"]["rankedCertifiedWearablePerfumes"] = len(filtered)
+          ranking_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          ranks = {str(row["code"]).strip(): int(row["perfumeSalesRank"]) for row in filtered}
+          rank_payload = {
+              "schema": "shobi-official-bestseller-ranks/v1",
+              "generatedAt": payload.get("generatedAt"),
+              "rankCount": len(ranks),
+              "ranks": ranks,
+          }
+          Path("database/catalog/shobi-bestseller-ranks.json").write_text(
+              json.dumps(rank_payload, ensure_ascii=False, separators=(",", ":")) + "\n",
+              encoding="utf-8",
+          )
+          print(f"finalRows={len(final)} rankedRows={len(filtered)}")
+          PY
+
+      - name: Commit duplicate-free catalog snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            database/catalog/catalog_final_perfume_only.json \
+            database/catalog/database_final_perfume_only.json \
+            database/catalog/final-perfume-catalog-certification.json \
+            database/catalog/shobi-bestsellers.json \
+            database/catalog/shobi-bestseller-ranks.json \
+            database/canonical/shobi-universal-v1.json \
+            database/canonical/README.md \
+            database/audits/FINAL-PERFUME-CATALOG.md
+          if git diff --cached --quiet; then
+            echo "Duplicate-free snapshot already current."
+            exit 0
+          fi
+          git commit -m "Remove confirmed duplicate perfume listings"
+          git pull --rebase origin main
+          git push origin HEAD:main
