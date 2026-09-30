@@ -10,8 +10,8 @@
 - Tiny (<100 byte) images: **0**
 - Byte-identical duplicate groups: **0**
 
-- Unique notes currently used by catalog: **521**
-- Total note occurrences in catalog: **12849**
+- Unique notes currently used by catalog: **522**
+- Total note occurrences in catalog: **12871**
 - Used catalog notes not matched by new Fragrantica index: **3**
 
 - Existing `note-icons/map.js` keys: **549**
