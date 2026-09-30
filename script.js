@@ -40,7 +40,8 @@ const PERFUME_BATCH_SIZE = 60;
 let renderedPerfumes = [];
 let renderedPerfumeCount = 0;
 let searchRenderTimer = null;
-const SEARCH_DEBOUNCE_MS = 140;
+const SEARCH_DEBOUNCE_MS = 220;
+const SEARCH_PERFUME_BATCH_SIZE = 18;
 let batchObserver = null;
 
 function renderNextPerfumeBatch() {
@@ -51,7 +52,8 @@ function renderNextPerfumeBatch() {
     document.getElementById('results-load-sentinel')?.remove();
 
     const template = document.getElementById('perfume-card-template');
-    const batch = renderedPerfumes.slice(renderedPerfumeCount, renderedPerfumeCount + PERFUME_BATCH_SIZE);
+    const batchSize = state.searchQuery.trim() ? SEARCH_PERFUME_BATCH_SIZE : PERFUME_BATCH_SIZE;
+    const batch = renderedPerfumes.slice(renderedPerfumeCount, renderedPerfumeCount + batchSize);
     const fragment = document.createDocumentFragment();
 
     batch.forEach(perfume => {
@@ -212,8 +214,10 @@ function getFilteredPerfumes(overrideFilters = null) {
     }
 
     if (!overrideFilters) {
-        const byName = (a, b) => String(a.inspiredBy || '').localeCompare(String(b.inspiredBy || ''), 'en', { sensitivity: 'base' });
-        const byBrand = (a, b) => String(a.brand || '').localeCompare(String(b.brand || ''), 'en', { sensitivity: 'base' }) || byName(a, b);
+        // allPerfumes is pre-sorted by brand once at startup, so the default
+        // search path only filters; it does not re-sort thousands of entries.
+        const byName = (a, b) => a.nameSortKey < b.nameSortKey ? -1 : a.nameSortKey > b.nameSortKey ? 1 : 0;
+        const byBrand = (a, b) => a.brandSortKey < b.brandSortKey ? -1 : a.brandSortKey > b.brandSortKey ? 1 : 0;
         if (state.sortBy === 'name') {
             filtered.sort(byName);
         } else if (state.sortBy === 'best-seller') {
@@ -222,8 +226,6 @@ function getFilteredPerfumes(overrideFilters = null) {
                 const rankB = Number(b.officialBestSellerRank) || Number.MAX_SAFE_INTEGER;
                 return rankA - rankB || byBrand(a, b);
             });
-        } else {
-            filtered.sort(byBrand);
         }
     }
 
@@ -783,8 +785,11 @@ async function init() {
             occasions: (p.occasions || []).map(o => String(o).toLowerCase()).filter(o => o),
             notes: p.notes || { top: [], heart: [], base: [] },
             searchText: [p.inspiredBy, p.brand, p.code].filter(Boolean).join(' ').toLocaleLowerCase(),
+            nameSortKey: String(p.inspiredBy || '').toLocaleLowerCase(),
+            brandSortKey: `${String(p.brand || '').toLocaleLowerCase()}\u0000${String(p.inspiredBy || '').toLocaleLowerCase()}`,
             officialBestSellerRank: officialBestSellerRanks.get(String(p.code || '').trim()) || null
         }));
+        allPerfumes.sort((a, b) => a.brandSortKey < b.brandSortKey ? -1 : a.brandSortKey > b.brandSortKey ? 1 : 0);
 
         console.log(`DEBUG: Total valid perfumes loaded: ${allPerfumes.length}`);
     } catch (error) {
