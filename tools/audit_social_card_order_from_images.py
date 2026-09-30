@@ -679,13 +679,18 @@ def main():
         # original reader only on the current unresolved set.
         existing = json.loads(OUT.read_text(encoding="utf-8-sig"))
         existing_by_code = {code(item.get("code")): item for item in existing.get("rows", [])}
-        missing = [code(row.get("code")) for row in rows if code(row.get("code")) not in existing_by_code]
-        if missing:
-            raise SystemExit(f"Canonical audit is incomplete; refusing targeted overwrite: {missing[:10]}")
         target_rows = [
             row for row in rows
             if str((row.get("validationAudit") or {}).get("status") or "").lower() == "yellow"
         ]
+        target_codes = {code(row.get("code")) for row in target_rows}
+        missing = [code(row.get("code")) for row in rows if code(row.get("code")) not in existing_by_code]
+        missing_non_targets = [item for item in missing if item not in target_codes]
+        if missing_non_targets:
+            raise SystemExit(
+                "Canonical audit is incomplete outside the targeted yellow set; "
+                f"refusing overwrite: {missing_non_targets[:10]}"
+            )
     else:
         target_rows = rows
     lexicon = [line.strip() for line in LEXICON.read_text(encoding="utf-8").splitlines() if line.strip()]
