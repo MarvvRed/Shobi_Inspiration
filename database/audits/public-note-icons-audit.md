@@ -14,9 +14,9 @@
 - Total note occurrences in catalog: **12871**
 - Used catalog notes not matched by new Fragrantica index: **3**
 
-- Existing `note-icons/map.js` keys: **549**
+- Existing `note-icons/map.js` keys: **550**
 - Existing mapped paths missing on disk: **0**
-- Existing map keys matched by new Fragrantica index: **535/549**
+- Existing map keys matched by new Fragrantica index: **536/550**
 
 ## Failed download
 - ID 1743: **Melbaton** — ok-manual
