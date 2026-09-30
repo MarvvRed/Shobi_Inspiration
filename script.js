@@ -39,6 +39,8 @@ function getMainNotes(p) {
 const PERFUME_BATCH_SIZE = 60;
 let renderedPerfumes = [];
 let renderedPerfumeCount = 0;
+let searchRenderTimer = null;
+const SEARCH_DEBOUNCE_MS = 140;
 let batchObserver = null;
 
 function renderNextPerfumeBatch() {
@@ -159,11 +161,11 @@ function displayPerfumes(perfumes) {
     renderNextPerfumeBatch();
 }
 
-function applyFiltersAndRender() {
+function applyFiltersAndRender({ refreshFilterOptions = true } = {}) {
     const filteredPerfumes = getFilteredPerfumes();
     displayBrandInfo();
     displayPerfumes(filteredPerfumes);
-    updateAvailableFilterOptions();
+    if (refreshFilterOptions) updateAvailableFilterOptions();
     displayActiveFilterTokens();
 }
 
@@ -205,12 +207,8 @@ function getFilteredPerfumes(overrideFilters = null) {
     }
 
     if (state.searchQuery && !overrideFilters) {
-        const query = state.searchQuery.toLowerCase();
-        filtered = filtered.filter(p =>
-            String(p.inspiredBy || '').toLowerCase().includes(query) ||
-            String(p.brand || '').toLowerCase().includes(query) ||
-            String(p.code || '').toLowerCase().includes(query)
-        );
+        const query = state.searchQuery.trim().toLocaleLowerCase();
+        if (query) filtered = filtered.filter(p => p.searchText.includes(query));
     }
 
     if (!overrideFilters) {
@@ -784,6 +782,7 @@ async function init() {
             seasons: (p.seasons || []).map(s => String(s).toLowerCase()).filter(s => s),
             occasions: (p.occasions || []).map(o => String(o).toLowerCase()).filter(o => o),
             notes: p.notes || { top: [], heart: [], base: [] },
+            searchText: [p.inspiredBy, p.brand, p.code].filter(Boolean).join(' ').toLocaleLowerCase(),
             officialBestSellerRank: officialBestSellerRanks.get(String(p.code || '').trim()) || null
         }));
 
@@ -810,7 +809,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('search-input').addEventListener('input', e => {
         state.searchQuery = e.target.value;
-        applyFiltersAndRender();
+        if (searchRenderTimer) window.clearTimeout(searchRenderTimer);
+        searchRenderTimer = window.setTimeout(() => {
+            searchRenderTimer = null;
+            // While typing, avoid the expensive per-checkbox availability simulation.
+            applyFiltersAndRender({ refreshFilterOptions: false });
+        }, SEARCH_DEBOUNCE_MS);
     });
 
     document.getElementById('sort-select').addEventListener('change', e => {
