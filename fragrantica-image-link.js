@@ -14,7 +14,6 @@
       const imageWrap = card.querySelector('.v2-test-image-wrap');
       if (!imageWrap || imageWrap.dataset.fragranticaEnhanced === '1') return;
 
-      const shobiLink = card.querySelector('[data-field="shobiLink"]');
       const title = card.querySelector('[data-field="inspiredBy"]')?.textContent?.trim() || 'perfume';
       const code = card.querySelector('.favorite-btn')?.dataset.code || card.querySelector('[data-field="code"]')?.textContent?.trim();
 
@@ -78,6 +77,11 @@
     if (checkbox) checkbox.checked = recentOnly;
   };
 
+  const clearRecentFilter = () => {
+    recentOnly = false;
+    syncRecentFilterUi();
+  };
+
   const installRecentFilter = () => {
     if (!recentCodes.size || document.getElementById('recent-additions-filter')) return;
     const filtersContent = document.getElementById('filters-content');
@@ -102,6 +106,9 @@
       recentOnly = Boolean(event.currentTarget.checked);
       if (typeof applyFiltersAndRender === 'function') applyFiltersAndRender();
     });
+
+    document.getElementById('reset-all-filters-btn-desktop')?.addEventListener('click', clearRecentFilter, true);
+    document.getElementById('reset-all-filters-btn-mobile')?.addEventListener('click', clearRecentFilter, true);
   };
 
   const installRecentFiltering = () => {
@@ -114,17 +121,6 @@
     };
     wrapped.__recentWrapped = true;
     getFilteredPerfumes = wrapped;
-
-    if (typeof resetAllFilters === 'function' && !resetAllFilters.__recentWrapped) {
-      const originalResetAllFilters = resetAllFilters;
-      const resetWrapped = function(...args) {
-        recentOnly = false;
-        syncRecentFilterUi();
-        return originalResetAllFilters.apply(this, args);
-      };
-      resetWrapped.__recentWrapped = true;
-      resetAllFilters = resetWrapped;
-    }
   };
 
   const style = document.createElement('style');
