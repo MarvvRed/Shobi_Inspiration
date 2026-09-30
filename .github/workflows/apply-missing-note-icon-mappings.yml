@@ -6,6 +6,7 @@ on:
     paths:
       - 'database/assets/note-icons/map.js'
       - 'tools/audit_social_card_order_from_images.py'
+      - 'tools/build_validation_audit.py'
       - '.github/workflows/apply-missing-note-icon-mappings.yml'
 
 permissions:
