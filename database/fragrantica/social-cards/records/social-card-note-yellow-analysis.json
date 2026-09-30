@@ -1,7 +1,7 @@
 {
-  "count": 6,
+  "count": 10,
   "kinds": {
-    "no_social_card_record": 6
+    "no_social_card_record": 10
   },
   "rows": [
     {
@@ -112,6 +112,89 @@
       ],
       "kind": "no_social_card_record",
       "notes": [],
+      "validated": null,
+      "raw": null
+    },
+    {
+      "code": "2853-MEM",
+      "brand": "Memo Paris",
+      "inspiredBy": "Ithaque",
+      "fid": "79533",
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "kind": "no_social_card_record",
+      "notes": [
+        "Currant Leaf and Bud",
+        "Bergamot",
+        "Red Currant",
+        "Bagas de Zimbro",
+        "Cedar",
+        "Bitter Orange"
+      ],
+      "validated": null,
+      "raw": null
+    },
+    {
+      "code": "2858-CRIVEL",
+      "brand": "Maison Crivelli",
+      "inspiredBy": "Tobacco Carnaval",
+      "fid": "131410",
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "kind": "no_social_card_record",
+      "notes": [
+        "Tobacco",
+        "Gourmand Accord",
+        "Smoke",
+        "Spicy Notes"
+      ],
+      "validated": null,
+      "raw": null
+    },
+    {
+      "code": "2868-LEL",
+      "brand": "Le Labo",
+      "inspiredBy": "Coriandre 39",
+      "fid": "95922",
+      "failedChecks": [
+        "socialCard",
+        "notes",
+        "icons"
+      ],
+      "kind": "no_social_card_record",
+      "notes": [
+        "Cilantro",
+        "Green Notes",
+        "Aldehydes",
+        "Lime",
+        "Water",
+        "Floral Notes"
+      ],
+      "validated": null,
+      "raw": null
+    },
+    {
+      "code": "2871-NARO",
+      "brand": "Narcotica",
+      "inspiredBy": "Limonata",
+      "fid": "103933",
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "kind": "no_social_card_record",
+      "notes": [
+        "Red Currant",
+        "Grapefruit",
+        "Sea Water",
+        "Mango",
+        "Ginger",
+        "Amber"
+      ],
       "validated": null,
       "raw": null
     }

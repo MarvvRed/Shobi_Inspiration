@@ -147454,7 +147454,14 @@
     "masterVersion": "shobi-live-official-2026-09-30",
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/new-official-shobi-perfumes-2026-09-30.json",
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Currant Leaf and Bud",
+      "Bergamot",
+      "Red Currant",
+      "Bagas de Zimbro",
+      "Cedar",
+      "Bitter Orange"
+    ],
     "fragranticaSocialCardStatus": "READING_NOT_STRICT_ENOUGH",
     "gender": "Unisex",
     "genderStatus": "VALIDATED_MANUAL",
@@ -147478,18 +147485,17 @@
         "socialCard": false,
         "image": true,
         "notes": false,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
       "issues": [
         "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
+        "Main Notes order not fully verified"
       ],
-      "notesCount": 0,
+      "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 0
+      "iconsCount": 6
     },
     "genderSource": "https://www.fragrantica.com/perfume/Memo-Paris/Ithaque-79533.html"
   },
@@ -147518,7 +147524,12 @@
     "masterVersion": "shobi-live-official-2026-09-30",
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/new-official-shobi-perfumes-2026-09-30.json",
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Tobacco",
+      "Gourmand Accord",
+      "Smoke",
+      "Spicy Notes"
+    ],
     "fragranticaSocialCardStatus": "READING_NOT_STRICT_ENOUGH",
     "gender": "Unisex",
     "genderStatus": "VALIDATED_MANUAL",
@@ -147542,18 +147553,17 @@
         "socialCard": false,
         "image": true,
         "notes": false,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
       "issues": [
         "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
+        "Main Notes order not fully verified"
       ],
-      "notesCount": 0,
+      "notesCount": 4,
       "matchedNotesCount": 0,
-      "iconsCount": 0
+      "iconsCount": 4
     },
     "genderSource": "https://www.fragrantica.com/perfume/Maison-Crivelli/Tobacco-Carnaval-131410.html"
   },
@@ -147983,7 +147993,14 @@
     "masterVersion": "shobi-live-official-2026-09-30",
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/new-official-shobi-perfumes-2026-09-30.json",
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Cilantro",
+      "Green Notes",
+      "Aldehydes",
+      "Lime",
+      "Water",
+      "Floral Notes"
+    ],
     "fragranticaSocialCardStatus": "READING_NOT_STRICT_ENOUGH",
     "gender": "Unisex",
     "genderStatus": "VALIDATED_MANUAL",
@@ -148013,12 +148030,12 @@
       },
       "issues": [
         "Social Card not fully verified",
-        "Missing Main Notes",
+        "Main Notes order not fully verified",
         "Note icons not fully verified"
       ],
-      "notesCount": 0,
+      "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 0
+      "iconsCount": 5
     },
     "genderSource": "https://www.fragrantica.com/perfume/Le-Labo/Coriandre-39-95922.html"
   },
@@ -148181,7 +148198,14 @@
     "masterVersion": "shobi-live-official-2026-09-30",
     "occasions": [],
     "fragranticaVerificationSource": "database/audits/new-official-shobi-perfumes-2026-09-30.json",
-    "fragranticaSocialCardNotes": [],
+    "fragranticaSocialCardNotes": [
+      "Red Currant",
+      "Grapefruit",
+      "Sea Water",
+      "Mango",
+      "Ginger",
+      "Amber"
+    ],
     "fragranticaSocialCardStatus": "READING_NOT_STRICT_ENOUGH",
     "gender": "Unisex",
     "genderStatus": "VALIDATED_MANUAL",
@@ -148205,18 +148229,17 @@
         "socialCard": false,
         "image": true,
         "notes": false,
-        "icons": false,
+        "icons": true,
         "gender": true,
         "season": true
       },
       "issues": [
         "Social Card not fully verified",
-        "Missing Main Notes",
-        "Note icons not fully verified"
+        "Main Notes order not fully verified"
       ],
-      "notesCount": 0,
+      "notesCount": 6,
       "matchedNotesCount": 0,
-      "iconsCount": 0
+      "iconsCount": 6
     },
     "genderSource": "https://www.fragrantica.com/perfume/Narcotica/Limonata-103933.html"
   },

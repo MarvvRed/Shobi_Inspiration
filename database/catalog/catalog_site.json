@@ -80505,8 +80505,7 @@
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Missing Main Notes",
-      "Note icons not fully verified"
+      "Main Notes order not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -80517,13 +80516,13 @@
       "socialCard": false,
       "image": true,
       "notes": false,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 0,
+    "validationNotesCount": 6,
     "validationMatchedNotesCount": 0,
-    "validationIconsCount": 0
+    "validationIconsCount": 6
   },
   {
     "code": "2858-CRIVEL",
@@ -80538,8 +80537,7 @@
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Missing Main Notes",
-      "Note icons not fully verified"
+      "Main Notes order not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -80550,13 +80548,13 @@
       "socialCard": false,
       "image": true,
       "notes": false,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 0,
+    "validationNotesCount": 4,
     "validationMatchedNotesCount": 0,
-    "validationIconsCount": 0
+    "validationIconsCount": 4
   },
   {
     "code": "2860-OBVI",
@@ -80786,7 +80784,7 @@
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Missing Main Notes",
+      "Main Notes order not fully verified",
       "Note icons not fully verified"
     ],
     "validationChecks": {
@@ -80802,9 +80800,9 @@
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 0,
+    "validationNotesCount": 6,
     "validationMatchedNotesCount": 0,
-    "validationIconsCount": 0
+    "validationIconsCount": 5
   },
   {
     "code": "2869-MARG",
@@ -80891,8 +80889,7 @@
     "validationStatus": "yellow",
     "validationIssues": [
       "Social Card not fully verified",
-      "Missing Main Notes",
-      "Note icons not fully verified"
+      "Main Notes order not fully verified"
     ],
     "validationChecks": {
       "shobiProduct": true,
@@ -80903,13 +80900,13 @@
       "socialCard": false,
       "image": true,
       "notes": false,
-      "icons": false,
+      "icons": true,
       "gender": true,
       "season": true
     },
-    "validationNotesCount": 0,
+    "validationNotesCount": 6,
     "validationMatchedNotesCount": 0,
-    "validationIconsCount": 0
+    "validationIconsCount": 6
   },
   {
     "code": "2856-TMFO",

@@ -1,6 +1,6 @@
 {
-  "catalogRows": 2253,
-  "yellowRows": 6,
+  "catalogRows": 2274,
+  "yellowRows": 10,
   "singleFailureRows": [],
   "byFailureSignature": [
     {
@@ -10,6 +10,15 @@
         "118-HAM",
         "325-PECK",
         "235-HOLL"
+      ]
+    },
+    {
+      "signature": "socialCard,notes",
+      "count": 3,
+      "codes": [
+        "2853-MEM",
+        "2858-CRIVEL",
+        "2871-NARO"
       ]
     },
     {
@@ -26,35 +35,47 @@
       "codes": [
         "1251-ROM"
       ]
+    },
+    {
+      "signature": "socialCard,notes,icons",
+      "count": 1,
+      "codes": [
+        "2868-LEL"
+      ]
     }
   ],
   "byIssue": [
     {
       "issue": "Social Card not fully verified",
-      "count": 6,
+      "count": 10,
       "codes": [
         "2816-MOOD",
         "2085-CLIV",
         "118-HAM",
         "325-PECK",
         "235-HOLL",
-        "1251-ROM"
-      ]
-    },
-    {
-      "issue": "Missing Main Notes",
-      "count": 6,
-      "codes": [
-        "2816-MOOD",
-        "2085-CLIV",
-        "118-HAM",
-        "325-PECK",
-        "235-HOLL",
-        "1251-ROM"
+        "1251-ROM",
+        "2853-MEM",
+        "2858-CRIVEL",
+        "2868-LEL",
+        "2871-NARO"
       ]
     },
     {
       "issue": "Note icons not fully verified",
+      "count": 7,
+      "codes": [
+        "2816-MOOD",
+        "2085-CLIV",
+        "118-HAM",
+        "325-PECK",
+        "235-HOLL",
+        "1251-ROM",
+        "2868-LEL"
+      ]
+    },
+    {
+      "issue": "Missing Main Notes",
       "count": 6,
       "codes": [
         "2816-MOOD",
@@ -87,6 +108,16 @@
         "325-PECK",
         "235-HOLL",
         "1251-ROM"
+      ]
+    },
+    {
+      "issue": "Main Notes order not fully verified",
+      "count": 4,
+      "codes": [
+        "2853-MEM",
+        "2858-CRIVEL",
+        "2868-LEL",
+        "2871-NARO"
       ]
     },
     {
@@ -126,38 +157,47 @@
   "byFailedCheck": [
     {
       "check": "socialCard",
-      "count": 6,
+      "count": 10,
       "codes": [
         "2816-MOOD",
         "2085-CLIV",
         "118-HAM",
         "325-PECK",
         "235-HOLL",
-        "1251-ROM"
+        "1251-ROM",
+        "2853-MEM",
+        "2858-CRIVEL",
+        "2868-LEL",
+        "2871-NARO"
       ]
     },
     {
       "check": "notes",
-      "count": 6,
+      "count": 10,
       "codes": [
         "2816-MOOD",
         "2085-CLIV",
         "118-HAM",
         "325-PECK",
         "235-HOLL",
-        "1251-ROM"
+        "1251-ROM",
+        "2853-MEM",
+        "2858-CRIVEL",
+        "2868-LEL",
+        "2871-NARO"
       ]
     },
     {
       "check": "icons",
-      "count": 6,
+      "count": 7,
       "codes": [
         "2816-MOOD",
         "2085-CLIV",
         "118-HAM",
         "325-PECK",
         "235-HOLL",
-        "1251-ROM"
+        "1251-ROM",
+        "2868-LEL"
       ]
     },
     {
@@ -374,6 +414,76 @@
       "notesCount": 0,
       "matchedNotesCount": 0,
       "iconsCount": 0
+    },
+    {
+      "code": "2853-MEM",
+      "brand": "Memo Paris",
+      "inspiredBy": "Ithaque",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Memo-Paris/Ithaque-79533.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 0,
+      "iconsCount": 6
+    },
+    {
+      "code": "2858-CRIVEL",
+      "brand": "Maison Crivelli",
+      "inspiredBy": "Tobacco Carnaval",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Maison-Crivelli/Tobacco-Carnaval-131410.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "notesCount": 4,
+      "matchedNotesCount": 0,
+      "iconsCount": 4
+    },
+    {
+      "code": "2868-LEL",
+      "brand": "Le Labo",
+      "inspiredBy": "Coriandre 39",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Le-Labo/Coriandre-39-95922.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified",
+        "Note icons not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes",
+        "icons"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 0,
+      "iconsCount": 5
+    },
+    {
+      "code": "2871-NARO",
+      "brand": "Narcotica",
+      "inspiredBy": "Limonata",
+      "fragranticaUrl": "https://www.fragrantica.com/perfume/Narcotica/Limonata-103933.html",
+      "issues": [
+        "Social Card not fully verified",
+        "Main Notes order not fully verified"
+      ],
+      "failedChecks": [
+        "socialCard",
+        "notes"
+      ],
+      "notesCount": 6,
+      "matchedNotesCount": 0,
+      "iconsCount": 6
     }
   ]
 }
