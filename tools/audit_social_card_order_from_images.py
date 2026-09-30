@@ -713,7 +713,11 @@ def main():
                     print(f"audited {i}/{len(tasks)}", flush=True)
     if only_current_yellows:
         result_by_code = {code(item.get("code")): item for item in results}
-        results = [result_by_code.get(code(row.get("code")), existing_by_code[code(row.get("code"))]) for row in rows]
+        results = [
+            result_by_code[c] if c in result_by_code else existing_by_code[c]
+            for row in rows
+            for c in [code(row.get("code"))]
+        ]
     results.sort(key=lambda r: code(r["code"]))
     counts = Counter(r["result"] for r in results)
     report = {
