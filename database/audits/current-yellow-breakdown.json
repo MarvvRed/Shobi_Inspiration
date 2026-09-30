@@ -1,32 +1,26 @@
 {
   "totalCatalog": 2274,
-  "yellow": 10,
+  "yellow": 7,
   "issueCounts": {
-    "Missing Main Notes": 10,
-    "Note icons not fully verified": 10,
-    "Social Card not fully verified": 10,
+    "Note icons not fully verified": 7,
     "Gender not fully verified": 6,
+    "Missing Main Notes": 6,
     "Season not fully verified": 6,
+    "Social Card not fully verified": 6,
     "Fragrantica identity not fully verified": 3,
     "Missing Fragrantica ID": 2,
     "Missing direct Fragrantica URL": 2,
     "Missing perfume image": 2
   },
-  "singleIssueCounts": {},
+  "singleIssueCounts": {
+    "Note icons not fully verified": 1
+  },
   "orderedAuditResults": {
     "UNSUPPORTED_CARD_GEOMETRY": 4,
-    "EXACT_ORDERED_MATCH": 4,
-    "NO_EXACT_CARD": 2
+    "NO_EXACT_CARD": 2,
+    "EXACT_ORDERED_MATCH": 1
   },
   "issueCombinations": [
-    {
-      "count": 4,
-      "issues": [
-        "Missing Main Notes",
-        "Note icons not fully verified",
-        "Social Card not fully verified"
-      ]
-    },
     {
       "count": 3,
       "issues": [
@@ -60,6 +54,12 @@
         "Note icons not fully verified",
         "Season not fully verified",
         "Social Card not fully verified"
+      ]
+    },
+    {
+      "count": 1,
+      "issues": [
+        "Note icons not fully verified"
       ]
     }
   ],
@@ -188,62 +188,21 @@
       "v2Status": null
     },
     {
-      "code": "2853-MEM",
-      "brand": "Memo Paris",
-      "inspiredBy": "Ithaque",
-      "fid": "79533",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Memo-Paris/Ithaque-79533.html",
-      "catalogNotes": [],
-      "issues": [
-        "Missing Main Notes",
-        "Note icons not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "EXACT_ORDERED_MATCH",
-      "observedNotes": [
-        "Currant Leaf and Bud",
-        "Bergamot",
-        "Red Currant",
-        "Bagas de Zimbro",
-        "Cedar",
-        "Bitter Orange"
-      ],
-      "card": "database/fragrantica/social-cards/images/current_2853-MEM_79533.jpeg",
-      "v2Status": null
-    },
-    {
-      "code": "2858-CRIVEL",
-      "brand": "Maison Crivelli",
-      "inspiredBy": "Tobacco Carnaval",
-      "fid": "131410",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Maison-Crivelli/Tobacco-Carnaval-131410.html",
-      "catalogNotes": [],
-      "issues": [
-        "Missing Main Notes",
-        "Note icons not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "EXACT_ORDERED_MATCH",
-      "observedNotes": [
-        "Tobacco",
-        "Gourmand Accord",
-        "Smoke",
-        "Spicy Notes"
-      ],
-      "card": "database/fragrantica/social-cards/images/current_2858-CRIVEL_131410.jpeg",
-      "v2Status": null
-    },
-    {
       "code": "2868-LEL",
       "brand": "Le Labo",
       "inspiredBy": "Coriandre 39",
       "fid": "95922",
       "fragranticaUrl": "https://www.fragrantica.com/perfume/Le-Labo/Coriandre-39-95922.html",
-      "catalogNotes": [],
+      "catalogNotes": [
+        "Cilantro",
+        "Green Notes",
+        "Aldehydes",
+        "Lime",
+        "Water",
+        "Floral Notes"
+      ],
       "issues": [
-        "Missing Main Notes",
-        "Note icons not fully verified",
-        "Social Card not fully verified"
+        "Note icons not fully verified"
       ],
       "orderedAudit": "EXACT_ORDERED_MATCH",
       "observedNotes": [
@@ -255,30 +214,6 @@
         "Floral Notes"
       ],
       "card": "database/fragrantica/social-cards/images/current_2868-LEL_95922.jpeg",
-      "v2Status": null
-    },
-    {
-      "code": "2871-NARO",
-      "brand": "Narcotica",
-      "inspiredBy": "Limonata",
-      "fid": "103933",
-      "fragranticaUrl": "https://www.fragrantica.com/perfume/Narcotica/Limonata-103933.html",
-      "catalogNotes": [],
-      "issues": [
-        "Missing Main Notes",
-        "Note icons not fully verified",
-        "Social Card not fully verified"
-      ],
-      "orderedAudit": "EXACT_ORDERED_MATCH",
-      "observedNotes": [
-        "Red Currant",
-        "Grapefruit",
-        "Sea Water",
-        "Mango",
-        "Ginger",
-        "Amber"
-      ],
-      "card": "database/fragrantica/social-cards/images/current_2871-NARO_103933.jpeg",
       "v2Status": null
     }
   ]

@@ -147475,26 +147475,23 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "79533",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     "genderSource": "https://www.fragrantica.com/perfume/Memo-Paris/Ithaque-79533.html"
@@ -147543,26 +147540,23 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "131410",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 4,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 4,
       "iconsCount": 4
     },
     "genderSource": "https://www.fragrantica.com/perfume/Maison-Crivelli/Tobacco-Carnaval-131410.html"
@@ -148021,20 +148015,18 @@
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": false,
         "gender": true,
         "season": true
       },
       "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified",
         "Note icons not fully verified"
       ],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 5
     },
     "genderSource": "https://www.fragrantica.com/perfume/Le-Labo/Coriandre-39-95922.html"
@@ -148219,26 +148211,23 @@
     "seasonStatus": "VALIDATED_MANUAL",
     "seasonCardFid": "103933",
     "validationAudit": {
-      "status": "yellow",
+      "status": "green",
       "checks": {
         "shobiProduct": true,
         "shobiIdentity": true,
         "identity": true,
         "fid": true,
         "url": true,
-        "socialCard": false,
+        "socialCard": true,
         "image": true,
-        "notes": false,
+        "notes": true,
         "icons": true,
         "gender": true,
         "season": true
       },
-      "issues": [
-        "Social Card not fully verified",
-        "Main Notes order not fully verified"
-      ],
+      "issues": [],
       "notesCount": 6,
-      "matchedNotesCount": 0,
+      "matchedNotesCount": 6,
       "iconsCount": 6
     },
     "genderSource": "https://www.fragrantica.com/perfume/Narcotica/Limonata-103933.html"
