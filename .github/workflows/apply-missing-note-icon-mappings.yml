@@ -9,7 +9,7 @@ on:
       - '.github/workflows/apply-missing-note-icon-mappings.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: targeted-yellow-social-audit-${{ github.ref }}
@@ -30,35 +30,18 @@ jobs:
           python -m pip install --disable-pip-version-check pillow numpy
       - name: Audit only unresolved Social Cards
         run: |
-          set +e
-          SOCIAL_CARD_AUDIT_ONLY_CURRENT_YELLOWS=1 SOCIAL_CARD_AUDIT_WORKERS=2 SOCIAL_CARD_AUDIT_BATCH=27 python tools/audit_social_card_order_from_images.py > targeted-yellow-audit.log 2>&1
-          audit_status=$?
-          if [ "$audit_status" -eq 0 ]; then
-            python tools/build_validation_audit.py >> targeted-yellow-audit.log 2>&1
-            audit_status=$?
+          SOCIAL_CARD_AUDIT_ONLY_CURRENT_YELLOWS=1 SOCIAL_CARD_AUDIT_WORKERS=2 SOCIAL_CARD_AUDIT_BATCH=27 python tools/audit_social_card_order_from_images.py
+          python tools/build_validation_audit.py
+          python tools/build_final_perfume_catalog.py
+          python tools/analyze_current_yellows.py
+      - name: Commit exact targeted promotions
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'No proven yellow-card changes.'
+            exit 0
           fi
-          if [ "$audit_status" -eq 0 ]; then
-            python tools/build_final_perfume_catalog.py >> targeted-yellow-audit.log 2>&1
-            audit_status=$?
-          fi
-          if [ "$audit_status" -eq 0 ]; then
-            python tools/analyze_current_yellows.py >> targeted-yellow-audit.log 2>&1
-            audit_status=$?
-          fi
-          echo "$audit_status" > targeted-yellow-audit.exit
-      - name: Upload targeted yellow audit
-        uses: actions/upload-artifact@v4
-        with:
-          name: targeted-yellow-social-audit
-          if-no-files-found: error
-          path: |
-            targeted-yellow-audit.log
-            targeted-yellow-audit.exit
-            database/fragrantica/social-cards/records/social-card-ordered-image-audit.json
-            database/catalog/database_complete.json
-            database/catalog/catalog_site.json
-            database/catalog/catalog_final_perfume_only.json
-            database/catalog/database_final_perfume_only.json
-            database/catalog/final-perfume-catalog-certification.json
-            database/audits/FINAL-PERFUME-CATALOG.md
-            database/audits/current-yellow-breakdown.json
+          git commit -m 'Promote exact current-yellow Social Card proofs'
+          git push origin HEAD:main
