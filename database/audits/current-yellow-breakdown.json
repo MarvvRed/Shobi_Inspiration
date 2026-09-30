@@ -15,7 +15,7 @@
   "singleIssueCounts": {},
   "orderedAuditResults": {
     "UNSUPPORTED_CARD_GEOMETRY": 4,
-    "READING_NOT_STRICT_ENOUGH": 4,
+    "EXACT_ORDERED_MATCH": 4,
     "NO_EXACT_CARD": 2
   },
   "issueCombinations": [
@@ -199,8 +199,15 @@
         "Note icons not fully verified",
         "Social Card not fully verified"
       ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "observedNotes": [],
+      "orderedAudit": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Currant Leaf and Bud",
+        "Bergamot",
+        "Red Currant",
+        "Bagas de Zimbro",
+        "Cedar",
+        "Bitter Orange"
+      ],
       "card": "database/fragrantica/social-cards/images/current_2853-MEM_79533.jpeg",
       "v2Status": null
     },
@@ -216,8 +223,13 @@
         "Note icons not fully verified",
         "Social Card not fully verified"
       ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "observedNotes": [],
+      "orderedAudit": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Tobacco",
+        "Gourmand Accord",
+        "Smoke",
+        "Spicy Notes"
+      ],
       "card": "database/fragrantica/social-cards/images/current_2858-CRIVEL_131410.jpeg",
       "v2Status": null
     },
@@ -233,8 +245,15 @@
         "Note icons not fully verified",
         "Social Card not fully verified"
       ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "observedNotes": [],
+      "orderedAudit": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Cilantro",
+        "Green Notes",
+        "Aldehydes",
+        "Lime",
+        "Water",
+        "Floral Notes"
+      ],
       "card": "database/fragrantica/social-cards/images/current_2868-LEL_95922.jpeg",
       "v2Status": null
     },
@@ -250,8 +269,15 @@
         "Note icons not fully verified",
         "Social Card not fully verified"
       ],
-      "orderedAudit": "READING_NOT_STRICT_ENOUGH",
-      "observedNotes": [],
+      "orderedAudit": "EXACT_ORDERED_MATCH",
+      "observedNotes": [
+        "Red Currant",
+        "Grapefruit",
+        "Sea Water",
+        "Mango",
+        "Ginger",
+        "Amber"
+      ],
       "card": "database/fragrantica/social-cards/images/current_2871-NARO_103933.jpeg",
       "v2Status": null
     }
