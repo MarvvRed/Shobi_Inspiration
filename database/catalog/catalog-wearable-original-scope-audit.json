@@ -45,7 +45,7 @@
     }
   ],
   "projectedPublicRowsAfterConfirmedExclusions": 2257,
-  "projectedUniquePublicRowsAfterDuplicateCollapse": 2228,
+  "projectedUniquePublicRowsAfterDuplicateCollapse": 2253,
   "confirmedOutOfScopeGroups": {
     "previouslyClassifiedHomeBody": [
       "2701-DIP",
@@ -376,5 +376,6 @@
         "2513-PAC"
       ]
     }
-  ]
+  ],
+  "projectedUniquePublicRowsAfterSameOriginalDedupe": 2228
 }
