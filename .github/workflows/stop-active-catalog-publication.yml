@@ -1,0 +1,20 @@
+name: Stop active catalog publication
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/stop-active-catalog-publication.yml'
+
+concurrency:
+  group: shobi-catalog-write-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  stop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Active catalog publication cancelled on request."
