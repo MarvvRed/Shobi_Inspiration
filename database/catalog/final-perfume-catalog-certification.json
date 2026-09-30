@@ -2,7 +2,7 @@
   "rule": "Publish only one-to-one Shobi records whose original is an audited genuine wearable perfume. Candles, home/room/car fragrance, body or hair mists, laundry scents, accessories, and Shobi-invented/non-demonstrable originals are excluded.",
   "sourceCatalogRows": 2253,
   "confirmedExcludedRows": 67,
-  "eligibleVerifiedShobiListings": 2253,
+  "eligibleVerifiedShobiListings": 2228,
   "sourceCrossListedShobiListingsCollapsed": [
     {
       "code": "1270-VAN",
@@ -33,11 +33,288 @@
       ]
     }
   ],
+  "confirmedSameOriginalListingsCollapsed": [
+    {
+      "fragranticaId": "221",
+      "keptCode": "1074-DRC",
+      "keptPrestashopProductId": "170",
+      "removedCodes": [
+        "525-DRC"
+      ],
+      "removedPrestashopProductIds": [
+        "618"
+      ]
+    },
+    {
+      "fragranticaId": "248",
+      "keptCode": "1048-CAL",
+      "keptPrestashopProductId": "147",
+      "removedCodes": [
+        "475-CAL"
+      ],
+      "removedPrestashopProductIds": [
+        "573"
+      ]
+    },
+    {
+      "fragranticaId": "257",
+      "keptCode": "1045-CAL",
+      "keptPrestashopProductId": "145",
+      "removedCodes": [
+        "470-CAL"
+      ],
+      "removedPrestashopProductIds": [
+        "569"
+      ]
+    },
+    {
+      "fragranticaId": "423",
+      "keptCode": "1131-ARM",
+      "keptPrestashopProductId": "223",
+      "removedCodes": [
+        "653-ARM"
+      ],
+      "removedPrestashopProductIds": [
+        "732"
+      ]
+    },
+    {
+      "fragranticaId": "485",
+      "keptCode": "1095-DOL",
+      "keptPrestashopProductId": "187",
+      "removedCodes": [
+        "557-DOL"
+      ],
+      "removedPrestashopProductIds": [
+        "647"
+      ]
+    },
+    {
+      "fragranticaId": "498",
+      "keptCode": "574-DON",
+      "keptPrestashopProductId": "663",
+      "removedCodes": [
+        "1504-DON"
+      ],
+      "removedPrestashopProductIds": [
+        "2382"
+      ]
+    },
+    {
+      "fragranticaId": "502",
+      "keptCode": "1064-CHA",
+      "keptPrestashopProductId": "161",
+      "removedCodes": [
+        "494-CHA"
+      ],
+      "removedPrestashopProductIds": [
+        "590"
+      ]
+    },
+    {
+      "fragranticaId": "698",
+      "keptCode": "1099-DOL",
+      "keptPrestashopProductId": "191",
+      "removedCodes": [
+        "566-DOL"
+      ],
+      "removedPrestashopProductIds": [
+        "655"
+      ]
+    },
+    {
+      "fragranticaId": "704",
+      "keptCode": "1262-TMU",
+      "keptPrestashopProductId": "338",
+      "removedCodes": [
+        "920-TMU"
+      ],
+      "removedPrestashopProductIds": [
+        "955"
+      ]
+    },
+    {
+      "fragranticaId": "720",
+      "keptCode": "717-ISS",
+      "keptPrestashopProductId": "784",
+      "removedCodes": [
+        "718-ISS"
+      ],
+      "removedPrestashopProductIds": [
+        "785"
+      ]
+    },
+    {
+      "fragranticaId": "813",
+      "keptCode": "1027-BRB",
+      "keptPrestashopProductId": "128",
+      "removedCodes": [
+        "426-BRB"
+      ],
+      "removedPrestashopProductIds": [
+        "532"
+      ]
+    },
+    {
+      "fragranticaId": "897",
+      "keptCode": "1250-RAL",
+      "keptPrestashopProductId": "327",
+      "removedCodes": [
+        "2533-RAL"
+      ],
+      "removedPrestashopProductIds": [
+        "4360"
+      ]
+    },
+    {
+      "fragranticaId": "1261",
+      "keptCode": "769-LART",
+      "keptPrestashopProductId": "280",
+      "removedCodes": [
+        "1195-LART"
+      ],
+      "removedPrestashopProductIds": [
+        "824"
+      ]
+    },
+    {
+      "fragranticaId": "3403",
+      "keptCode": "1190-KEN",
+      "keptPrestashopProductId": "275",
+      "removedCodes": [
+        "753-KEN"
+      ],
+      "removedPrestashopProductIds": [
+        "815"
+      ]
+    },
+    {
+      "fragranticaId": "4323",
+      "keptCode": "127-KIL",
+      "keptPrestashopProductId": "1808",
+      "removedCodes": [
+        "153-PARF"
+      ],
+      "removedPrestashopProductIds": [
+        "1814"
+      ]
+    },
+    {
+      "fragranticaId": "5979",
+      "keptCode": "1163-HUG",
+      "keptPrestashopProductId": "251",
+      "removedCodes": [
+        "711-HUG"
+      ],
+      "removedPrestashopProductIds": [
+        "778"
+      ]
+    },
+    {
+      "fragranticaId": "10573",
+      "keptCode": "734-JIM",
+      "keptPrestashopProductId": "797",
+      "removedCodes": [
+        "735-JIM"
+      ],
+      "removedPrestashopProductIds": [
+        "798"
+      ]
+    },
+    {
+      "fragranticaId": "12424",
+      "keptCode": "500-CHA",
+      "keptPrestashopProductId": "595",
+      "removedCodes": [
+        "501-CHA"
+      ],
+      "removedPrestashopProductIds": [
+        "596"
+      ]
+    },
+    {
+      "fragranticaId": "14606",
+      "keptCode": "1043-CAL",
+      "keptPrestashopProductId": "143",
+      "removedCodes": [
+        "468-CAL"
+      ],
+      "removedPrestashopProductIds": [
+        "567"
+      ]
+    },
+    {
+      "fragranticaId": "26777",
+      "keptCode": "1258-SFER",
+      "keptPrestashopProductId": "335",
+      "removedCodes": [
+        "909-SFER"
+      ],
+      "removedPrestashopProductIds": [
+        "945"
+      ]
+    },
+    {
+      "fragranticaId": "31045",
+      "keptCode": "880-PRA",
+      "keptPrestashopProductId": "316",
+      "removedCodes": [
+        "1239-PRA"
+      ],
+      "removedPrestashopProductIds": [
+        "918"
+      ]
+    },
+    {
+      "fragranticaId": "35780",
+      "keptCode": "1057-CAR",
+      "keptPrestashopProductId": "155",
+      "removedCodes": [
+        "483-CAR"
+      ],
+      "removedPrestashopProductIds": [
+        "580"
+      ]
+    },
+    {
+      "fragranticaId": "44034",
+      "keptCode": "1096-DOL",
+      "keptPrestashopProductId": "188",
+      "removedCodes": [
+        "1872-DOL"
+      ],
+      "removedPrestashopProductIds": [
+        "2804"
+      ]
+    },
+    {
+      "fragranticaId": "46186",
+      "keptCode": "1542-JOM",
+      "keptPrestashopProductId": "2740",
+      "removedCodes": [
+        "2626-JOM"
+      ],
+      "removedPrestashopProductIds": [
+        "4433"
+      ]
+    },
+    {
+      "fragranticaId": "95641",
+      "keptCode": "2456-PAC",
+      "keptPrestashopProductId": "4187",
+      "removedCodes": [
+        "2513-PAC"
+      ],
+      "removedPrestashopProductIds": [
+        "4214"
+      ]
+    }
+  ],
   "unexpectedOperationalDuplicatesCollapsed": [],
-  "finalRows": 2253,
+  "finalRows": 2228,
   "allFinalRowsFromLiveShobiSource": true,
   "allFinalRowsHaveShobiProductIdAndUrl": true,
-  "directFragranticaIdentityProofRows": 2250,
+  "directFragranticaIdentityProofRows": 2225,
   "exceptionRowsWithSpecificEvidence": [
     {
       "code": "2816-MOOD",
