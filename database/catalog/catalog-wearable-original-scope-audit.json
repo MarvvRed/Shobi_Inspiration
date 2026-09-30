@@ -8,19 +8,44 @@
     "Reviewed high-risk brands/product families where Fragrantica can contain non-perfume entries.",
     "Used exact product-type evidence rather than treating the presence of a Fragrantica ID as proof that the original is a true perfume.",
     "Excluded entries when the original is confirmed non-wearable or when a genuine exact wearable original cannot be demonstrated after targeted research.",
-    "Collapsed four duplicate live Shobi category listings that have distinct Shobi page IDs but the same code and verified original perfume."
+    "Collapsed four duplicate live Shobi category listings that have distinct Shobi page IDs but the same code and verified original perfume.",
+    "Collapsed 25 additional independently audited same-original Shobi listings; the raw source remains intact for traceability while the public/canonical catalog retains one listing per original perfume."
   ],
   "confirmedOutOfScopeCount": 67,
   "uniqueLiveShobiRowsBeforeScopeExclusions": 2320,
   "operationalCleanShobiRows": 2253,
   "crossListedShobiListingsCollapsed": [
-    {"code": "1270-VAN", "keptPrestashopProductId": "346", "removedPrestashopProductIds": ["971"]},
-    {"code": "777-LAL", "keptPrestashopProductId": "284", "removedPrestashopProductIds": ["831"]},
-    {"code": "1068-CHA", "keptPrestashopProductId": "165", "removedPrestashopProductIds": ["591"]},
-    {"code": "390-ACQ", "keptPrestashopProductId": "106", "removedPrestashopProductIds": ["502"]}
+    {
+      "code": "1270-VAN",
+      "keptPrestashopProductId": "346",
+      "removedPrestashopProductIds": [
+        "971"
+      ]
+    },
+    {
+      "code": "777-LAL",
+      "keptPrestashopProductId": "284",
+      "removedPrestashopProductIds": [
+        "831"
+      ]
+    },
+    {
+      "code": "1068-CHA",
+      "keptPrestashopProductId": "165",
+      "removedPrestashopProductIds": [
+        "591"
+      ]
+    },
+    {
+      "code": "390-ACQ",
+      "keptPrestashopProductId": "106",
+      "removedPrestashopProductIds": [
+        "502"
+      ]
+    }
   ],
   "projectedPublicRowsAfterConfirmedExclusions": 2257,
-  "projectedUniquePublicRowsAfterDuplicateCollapse": 2253,
+  "projectedUniquePublicRowsAfterDuplicateCollapse": 2228,
   "confirmedOutOfScopeGroups": {
     "previouslyClassifiedHomeBody": [
       "2701-DIP",
@@ -173,6 +198,183 @@
       "code": "911-SEPH",
       "reason": "Fleur de Coton is also currently sold as a body mist.",
       "resolution": "Historical original confirmed as wearable Eau de Toilette; retained and validated."
+    }
+  ],
+  "confirmedSameOriginalListingsCollapsed": [
+    {
+      "fragranticaId": "221",
+      "codes": [
+        "525-DRC",
+        "1074-DRC"
+      ]
+    },
+    {
+      "fragranticaId": "248",
+      "codes": [
+        "475-CAL",
+        "1048-CAL"
+      ]
+    },
+    {
+      "fragranticaId": "257",
+      "codes": [
+        "470-CAL",
+        "1045-CAL"
+      ]
+    },
+    {
+      "fragranticaId": "423",
+      "codes": [
+        "653-ARM",
+        "1131-ARM"
+      ]
+    },
+    {
+      "fragranticaId": "485",
+      "codes": [
+        "557-DOL",
+        "1095-DOL"
+      ]
+    },
+    {
+      "fragranticaId": "498",
+      "codes": [
+        "1504-DON",
+        "574-DON"
+      ]
+    },
+    {
+      "fragranticaId": "502",
+      "codes": [
+        "494-CHA",
+        "1064-CHA"
+      ]
+    },
+    {
+      "fragranticaId": "698",
+      "codes": [
+        "566-DOL",
+        "1099-DOL"
+      ]
+    },
+    {
+      "fragranticaId": "704",
+      "codes": [
+        "920-TMU",
+        "1262-TMU"
+      ]
+    },
+    {
+      "fragranticaId": "720",
+      "codes": [
+        "717-ISS",
+        "718-ISS"
+      ]
+    },
+    {
+      "fragranticaId": "813",
+      "codes": [
+        "426-BRB",
+        "1027-BRB"
+      ]
+    },
+    {
+      "fragranticaId": "897",
+      "codes": [
+        "1250-RAL",
+        "2533-RAL"
+      ]
+    },
+    {
+      "fragranticaId": "1261",
+      "codes": [
+        "769-LART",
+        "1195-LART"
+      ]
+    },
+    {
+      "fragranticaId": "3403",
+      "codes": [
+        "753-KEN",
+        "1190-KEN"
+      ]
+    },
+    {
+      "fragranticaId": "4323",
+      "codes": [
+        "127-KIL",
+        "153-PARF"
+      ]
+    },
+    {
+      "fragranticaId": "5979",
+      "codes": [
+        "711-HUG",
+        "1163-HUG"
+      ]
+    },
+    {
+      "fragranticaId": "10573",
+      "codes": [
+        "734-JIM",
+        "735-JIM"
+      ]
+    },
+    {
+      "fragranticaId": "12424",
+      "codes": [
+        "500-CHA",
+        "501-CHA"
+      ]
+    },
+    {
+      "fragranticaId": "14606",
+      "codes": [
+        "468-CAL",
+        "1043-CAL"
+      ]
+    },
+    {
+      "fragranticaId": "26777",
+      "codes": [
+        "909-SFER",
+        "1258-SFER"
+      ]
+    },
+    {
+      "fragranticaId": "31045",
+      "codes": [
+        "880-PRA",
+        "1239-PRA"
+      ]
+    },
+    {
+      "fragranticaId": "35780",
+      "codes": [
+        "483-CAR",
+        "1057-CAR"
+      ]
+    },
+    {
+      "fragranticaId": "44034",
+      "codes": [
+        "1096-DOL",
+        "1872-DOL"
+      ]
+    },
+    {
+      "fragranticaId": "46186",
+      "codes": [
+        "1542-JOM",
+        "2626-JOM"
+      ]
+    },
+    {
+      "fragranticaId": "95641",
+      "codes": [
+        "2456-PAC",
+        "2513-PAC"
+      ]
     }
   ]
 }
