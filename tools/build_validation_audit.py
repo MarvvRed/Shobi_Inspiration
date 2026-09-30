@@ -69,6 +69,21 @@ validated_notes = {row_code(item): item for item in json.loads(VALIDATED_NOTES.r
 raw_notes = {row_code(item): item for item in json.loads(RAW_NOTES.read_text(encoding="utf-8"))}
 ordered_card_audit = {row_code(item): item for item in json.loads(ORDERED_CARD_AUDIT.read_text(encoding="utf-8")).get("rows", [])}
 
+# The ordered Social Card audit is the canonical source for a newly added row
+# whose note list is still empty. Hydrate it only after an exact code/FID/card
+# proof; no OCR hint or partial reading is ever copied into the catalog.
+for row in rows:
+    item = ordered_card_audit.get(row_code(row))
+    observed = list(item.get("observedNotes") or []) if item else []
+    if (
+        not row.get("fragranticaSocialCardNotes")
+        and item
+        and item.get("result") == "EXACT_ORDERED_MATCH"
+        and observed
+        and str(item.get("fragranticaId") or "") == str(row.get("fragranticaId") or "")
+    ):
+        row["fragranticaSocialCardNotes"] = observed
+
 # V2 is an additional conservative proof path.  The report status is never
 # trusted by itself: every relevant condition is recomputed against the live
 # catalog below so stale pilot output cannot turn a product green.
