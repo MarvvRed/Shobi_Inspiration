@@ -423,6 +423,45 @@ def direct_position_sequence(attempts, icon_counts):
         ],
     }
 
+def complete_literal_card_sequence(attempts):
+    """Return one full sequence directly repeated on the Social Card.
+
+    This handles valid cards whose icon-panel geometry is not detected
+    reliably. A degraded OCR variant cannot veto a complete literal sequence
+    reproduced by independent renderings of that same card.
+    """
+    grouped = defaultdict(list)
+    for attempt in attempts:
+        if not attempt.get("strict") or not attempt.get("components"):
+            continue
+        components = attempt["components"]
+        # A CSS ellipsis is direct text only when it already identifies one
+        # unique official note; every other label must be literal.
+        direct = all(
+            norm(item.get("raw", "")) == norm(item.get("note", ""))
+            or ("..." in str(item.get("raw", "")) and item.get("exactText"))
+            for item in components
+        )
+        if direct:
+            grouped[tuple(attempt["notes"])].append(attempt)
+
+    candidates = []
+    for sequence, reads in grouped.items():
+        variants = {read["variant"] for read in reads}
+        if len(variants) >= 2:
+            candidates.append((list(sequence), reads, variants))
+    if not candidates:
+        return None
+
+    longest = max(len(sequence) for sequence, _, _ in candidates)
+    candidates = [item for item in candidates if len(item[0]) == longest]
+    if len(candidates) != 1:
+        return None
+    sequence, reads, variants = candidates[0]
+    selected = max(reads, key=lambda item: min(component["confidence"] for component in item["components"]))
+    return {"notes": sequence, "selected": selected, "variants": sorted(variants)}
+
+
 
 def soft_ordered_match(attempt, expected):
     """Accept a non-literal OCR token only with strong, direct card evidence."""
@@ -639,6 +678,24 @@ def inspect(task):
         return {**base, "result": "EXACT_ORDERED_MATCH", "observedNotes": base["catalogNotes"],
                 "proof": "SLOTWISE_DIRECT_CARD_CONSENSUS; TWO_RENDERINGS_PER_POSITION",
                 "slotwiseEvidence": slotwise, "attempts": attempts}
+
+    # Newly added rows have no saved notes to compare yet. When the Social
+    # Card itself repeatedly yields one complete literal sequence, that is the
+    # canonical source even if the generic icon detector misreads its layout.
+    if not base["catalogNotes"]:
+        literal_card = complete_literal_card_sequence(attempts)
+        if literal_card:
+            selected = literal_card["selected"]
+            return {
+                **base,
+                "result": "EXACT_ORDERED_MATCH",
+                "observedNotes": literal_card["notes"],
+                "components": selected["components"],
+                "notesHeaderY": selected["notesHeaderY"],
+                "proof": "COMPLETE_LITERAL_SOCIAL_CARD_MULTIPASS; UNIQUE_LONGEST_SEQUENCE",
+                "literalEvidence": {"variants": literal_card["variants"]},
+                "attempts": attempts,
+            }
 
     # Some labels are visibly clear but Tesseract adds/removes a single glyph
     # (for example "be Honey"). They remain direct image evidence only when
