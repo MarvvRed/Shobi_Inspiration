@@ -34,6 +34,36 @@ EXCEPTIONS = {
         "source": "database/fragrantica/social-cards/images/current_1251-ROM_21103.jpeg",
     },
 }
+# These pairs are independently audited as two Shobi listings of the exact same
+# original perfume.  The code sets make this a closed safety gate: a new shared
+# Fragrantica ID is never collapsed automatically.
+CONFIRMED_DUPLICATE_ORIGINALS = {
+    "221": {"525-DRC", "1074-DRC"},
+    "248": {"475-CAL", "1048-CAL"},
+    "257": {"470-CAL", "1045-CAL"},
+    "423": {"653-ARM", "1131-ARM"},
+    "485": {"557-DOL", "1095-DOL"},
+    "498": {"1504-DON", "574-DON"},
+    "502": {"494-CHA", "1064-CHA"},
+    "698": {"566-DOL", "1099-DOL"},
+    "704": {"920-TMU", "1262-TMU"},
+    "720": {"717-ISS", "718-ISS"},
+    "813": {"426-BRB", "1027-BRB"},
+    "897": {"1250-RAL", "2533-RAL"},
+    "1261": {"769-LART", "1195-LART"},
+    "3403": {"753-KEN", "1190-KEN"},
+    "4323": {"127-KIL", "153-PARF"},
+    "5979": {"711-HUG", "1163-HUG"},
+    "10573": {"734-JIM", "735-JIM"},
+    "12424": {"500-CHA", "501-CHA"},
+    "14606": {"468-CAL", "1043-CAL"},
+    "26777": {"909-SFER", "1258-SFER"},
+    "31045": {"880-PRA", "1239-PRA"},
+    "35780": {"483-CAR", "1057-CAR"},
+    "44034": {"1096-DOL", "1872-DOL"},
+    "46186": {"1542-JOM", "2626-JOM"},
+    "95641": {"2456-PAC", "2513-PAC"},
+}
 
 
 def code(value: object) -> str:
@@ -63,6 +93,43 @@ def stable_listing_key(db: dict) -> tuple[int, str]:
     """Keep the oldest live Shobi listing when it is cross-listed by category."""
     product_id = str(db.get("prestashopProductId") or "").strip()
     return (int(product_id) if product_id.isdigit() else 10**12, str(db.get("shobiUrl") or ""))
+
+
+def collapse_confirmed_duplicate_originals(candidates):
+    """Keep one live Shobi listing for each explicitly audited same-original pair."""
+    by_fid = {}
+    for candidate in candidates:
+        fid = str(candidate[0].get("fragranticaId") or "").strip()
+        if fid in CONFIRMED_DUPLICATE_ORIGINALS:
+            by_fid.setdefault(fid, []).append(candidate)
+
+    dropped, collapsed = set(), []
+    for fid, expected_codes in CONFIRMED_DUPLICATE_ORIGINALS.items():
+        matches = by_fid.get(fid, [])
+        observed_codes = {code(item[0].get("code")) for item in matches}
+        if observed_codes != expected_codes:
+            raise SystemExit(
+                f"Duplicate-original safety gate failed for FID {fid}: "
+                f"expected {sorted(expected_codes)}, found {sorted(observed_codes)}"
+            )
+        keep = min(matches, key=lambda item: stable_listing_key(item[0]))
+        keep_code = code(keep[0].get("code"))
+        removed = []
+        for item in matches:
+            if item is keep:
+                continue
+            dropped.add(id(item))
+            removed.append(code(item[0].get("code")))
+        collapsed.append({
+            "fragranticaId": fid,
+            "keptCode": keep_code,
+            "keptPrestashopProductId": keep[0].get("prestashopProductId"),
+            "removedCodes": sorted(removed),
+            "removedPrestashopProductIds": sorted(
+                str(item[0].get("prestashopProductId")) for item in matches if item is not keep
+            ),
+        })
+    return [item for item in candidates if id(item) not in dropped], collapsed
 
 
 def main() -> None:
@@ -101,9 +168,14 @@ def main() -> None:
             continue
         eligible.append((db, site, exception))
 
-    expected = scope.get("projectedUniquePublicRowsAfterDuplicateCollapse")
-    if failures or len(eligible) != expected:
-        raise SystemExit(json.dumps({"failures": failures, "eligibleRows": len(eligible), "expected": expected}, ensure_ascii=False))
+    expected_before_same_original_dedupe = scope.get("projectedUniquePublicRowsAfterDuplicateCollapse")
+    if failures or len(eligible) != expected_before_same_original_dedupe:
+        raise SystemExit(json.dumps({"failures": failures, "eligibleRows": len(eligible), "expected": expected_before_same_original_dedupe}, ensure_ascii=False))
+
+    eligible, same_original_collapsed = collapse_confirmed_duplicate_originals(eligible)
+    expected = expected_before_same_original_dedupe - sum(
+        len(item["removedCodes"]) for item in same_original_collapsed
+    )
 
     by_code: dict[str, list[tuple[dict, dict, dict | None]]] = {}
     for candidate in eligible:
@@ -179,6 +251,7 @@ def main() -> None:
         "confirmedExcludedRows": len(excluded),
         "eligibleVerifiedShobiListings": len(eligible),
         "sourceCrossListedShobiListingsCollapsed": scope.get("crossListedShobiListingsCollapsed", []),
+        "confirmedSameOriginalListingsCollapsed": same_original_collapsed,
         "unexpectedOperationalDuplicatesCollapsed": collapsed,
         "finalRows": len(final_rows),
         "allFinalRowsFromLiveShobiSource": True,
@@ -197,6 +270,7 @@ def main() -> None:
         f"- Final unique perfumes: **{len(final_rows)}**",
         f"- Excluded as non-wearable/non-demonstrable originals: **{len(excluded)}**",
         f"- Cross-listed Shobi pages collapsed: **{len(collapsed)}**",
+        f"- Confirmed same-original Shobi listings collapsed: **{sum(len(item["removedCodes"]) for item in same_original_collapsed)}**",
         f"- Direct Fragrantica identity proofs: **{direct}**",
         f"- Specific-evidence exceptions: **{len(exceptions)}**",
         "- Every published row has a live Shobi product ID and URL.",
