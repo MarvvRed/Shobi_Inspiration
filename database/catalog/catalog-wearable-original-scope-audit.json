@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "auditedAt": "2026-09-14",
-  "sourceCatalogRows": 2324,
+  "auditedAt": "2026-09-30",
+  "sourceCatalogRows": 2345,
   "scopeRule": "Keep a Shobi entry in the public perfume-dupe catalog only when the original inspiration is a genuine wearable perfume product. Exclude candles, home fragrances, room sprays, body/hair/perfume mists, body-care/amenity products, laundry scents and other non-perfume originals even when Shobi sells its own version as Eau de Parfum.",
   "method": [
     "Rechecked the current 2324-row Shobi live catalog and previous perfume-only audit.",
@@ -12,8 +12,8 @@
     "Collapsed 25 additional independently audited same-original Shobi listings; the raw source remains intact for traceability while the public/canonical catalog retains one listing per original perfume."
   ],
   "confirmedOutOfScopeCount": 67,
-  "uniqueLiveShobiRowsBeforeScopeExclusions": 2320,
-  "operationalCleanShobiRows": 2253,
+  "uniqueLiveShobiRowsBeforeScopeExclusions": 2341,
+  "operationalCleanShobiRows": 2274,
   "crossListedShobiListingsCollapsed": [
     {
       "code": "1270-VAN",
@@ -44,8 +44,8 @@
       ]
     }
   ],
-  "projectedPublicRowsAfterConfirmedExclusions": 2257,
-  "projectedUniquePublicRowsAfterDuplicateCollapse": 2253,
+  "projectedPublicRowsAfterConfirmedExclusions": 2278,
+  "projectedUniquePublicRowsAfterDuplicateCollapse": 2274,
   "confirmedOutOfScopeGroups": {
     "previouslyClassifiedHomeBody": [
       "2701-DIP",
@@ -181,7 +181,8 @@
     "Entries with no demonstrable exact wearable original are excluded from the public catalog but retained in the canonical source for traceability.",
     "Canonical database rows are not deleted by this audit file. Use a separate public-scope exclusion manifest/filter so evidence and history remain recoverable.",
     "1642-VICT Rose Caramel was rechecked and retained as a wearable perfume. 911-SEPH remains manual review because the current Sephora listing is a hair/body mist.",
-    "330-PG was confirmed as Daz laundry fragrance and excluded. 911-SEPH was rechecked as Fleur de Coton Eau de Toilette and restored to green."
+    "330-PG was confirmed as Daz laundry fragrance and excluded. 911-SEPH was rechecked as Fleur de Coton Eau de Toilette and restored to green.",
+    "2026-09-30: added 21 newly observed official Shobi wearable inspired perfumes. All have direct Fragrantica identity evidence; 17 have exact ordered Social Card notes and 4 remain note-unresolved."
   ],
   "resolvedManualReview": [
     {
@@ -377,5 +378,5 @@
       ]
     }
   ],
-  "projectedUniquePublicRowsAfterSameOriginalDedupe": 2228
+  "projectedUniquePublicRowsAfterSameOriginalDedupe": 2249
 }

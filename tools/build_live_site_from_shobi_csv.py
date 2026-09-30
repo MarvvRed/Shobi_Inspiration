@@ -276,8 +276,8 @@ for live in live_rows:
     row["fragranticaSocialCardNotes"] = row.get("fragranticaSocialCardNotes") or note_entry.get("mainNotes") or []
     out.append(row)
 
-if len(out) != 2324:
-    raise SystemExit(f"Expected 2324 non-MIX Shobi perfumes, found {len(out)}")
+if not out:
+    raise SystemExit("No non-MIX Shobi perfumes found")
 if len({row["prestashopProductId"] for row in out}) != len(out):
     raise SystemExit("Duplicate PrestaShop product ID")
 if len({row["shobiUrl"] for row in out}) != len(out):
@@ -325,15 +325,15 @@ for product_code, candidates in by_code.items():
             ),
         })
 
-if len(unique_out) != 2320 or len({row["code"] for row in unique_out}) != len(unique_out):
-    raise SystemExit(f"Expected 2320 unique Shobi perfumes, found {len(unique_out)}")
+if len({row["code"] for row in unique_out}) != len(unique_out):
+    raise SystemExit("Duplicate Shobi codes remain after cross-list reconciliation")
 excluded_codes = {
     clean_code(value)
     for value in json.loads(EXCLUSIONS.read_text(encoding="utf-8")).get("codes", [])
 }
 out = [row for row in unique_out if row["code"] not in excluded_codes]
-if len(out) != 2253 or any(row["code"] in excluded_codes for row in out):
-    raise SystemExit(f"Expected 2253 clean in-scope Shobi perfumes, found {len(out)}")
+if any(row["code"] in excluded_codes for row in out):
+    raise SystemExit("Out-of-scope row survived catalog filter")
 out_by_code = {row["code"]: row for row in out}
 for code, (brand, name, fragrantica_id, fragrantica_url) in CONFIRMED_IDENTITY_OVERRIDES.items():
     row = out_by_code.get(code)

@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "database/catalog/database_complete.json"
 SITE = ROOT / "database/catalog/catalog_site.json"
 FINAL = ROOT / "database/catalog/catalog_final_perfume_only.json"
+FINAL_CERTIFICATE = ROOT / "database/catalog/final-perfume-catalog-certification.json"
 ORDERED_AUDIT = ROOT / "database/fragrantica/social-cards/records/social-card-ordered-image-audit.json"
 V2_LABEL_PILOT = ROOT / "database/audits/label-ocr-pilot.json"
 V2_EXACT_VALIDATION = ROOT / "database/audits/v2-exact-validation.json"
@@ -296,7 +297,20 @@ def main():
     if len(site_by_code) != len(site): failures.append("duplicate Shobi codes in catalog_site.json")
     if set(by_code) != set(site_by_code): failures.append("database_complete/catalog_site code sets differ")
     if len(final_by_code) != len(final): failures.append("duplicate Shobi codes in catalog_final_perfume_only.json")
-    if set(final_by_code) != set(site_by_code): failures.append("catalog_final_perfume_only/catalog_site code sets differ")
+    # The final public catalog intentionally removes only the explicitly
+    # certified same-original duplicate listings.  Treat that closed list as
+    # a safety contract instead of incorrectly requiring a raw/source mirror.
+    certificate = load(FINAL_CERTIFICATE)
+    expected_final_absent = {
+        str(item or "").strip().upper()
+        for group in certificate.get("confirmedSameOriginalListingsCollapsed", [])
+        for item in group.get("removedCodes", [])
+    }
+    actual_final_absent = set(site_by_code) - set(final_by_code)
+    if not set(final_by_code).issubset(set(site_by_code)):
+        failures.append("catalog_final_perfume_only contains a code absent from catalog_site")
+    if actual_final_absent != expected_final_absent:
+        failures.append("catalog_final_perfume_only differs from catalog_site beyond certified same-original duplicate removals")
     for code, final_row in final_by_code.items():
         site_row = site_by_code.get(code)
         if site_row and final_row.get("validationStatus") != site_row.get("validationStatus"):

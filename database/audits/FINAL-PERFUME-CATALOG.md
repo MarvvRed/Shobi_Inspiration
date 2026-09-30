@@ -1,10 +1,10 @@
 # Final perfume-only Shobi catalog
 
-- Final unique perfumes: **2228**
+- Final unique perfumes: **2249**
 - Excluded as non-wearable/non-demonstrable originals: **67**
 - Cross-listed Shobi pages collapsed: **0**
 - Confirmed same-original Shobi listings collapsed: **25**
-- Direct Fragrantica identity proofs: **2225**
+- Direct Fragrantica identity proofs: **2246**
 - Specific-evidence exceptions: **3**
 - Every published row has a live Shobi product ID and URL.
 
