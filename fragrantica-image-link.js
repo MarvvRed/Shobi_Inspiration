@@ -1,8 +1,18 @@
 (() => {
-  const recentCodes = new Set();
+  const RECENT_WINDOW_DAYS = 21;
+  const recentCodes = new Map();
   let recentOnly = false;
 
   const normalizeCode = value => String(value || '').trim().toUpperCase();
+  const isRecentDate = (value, now = new Date()) => {
+    const [year, month, day] = String(value || '').split('-').map(Number);
+    if (![year, month, day].every(Number.isFinite)) return false;
+    const addedAt = new Date(year, month - 1, day);
+    const expiresAt = new Date(year, month - 1, day + RECENT_WINDOW_DAYS);
+    return now >= addedAt && now < expiresAt;
+  };
+  const isRecentCode = code => isRecentDate(recentCodes.get(normalizeCode(code)));
+  const activeRecentCodes = () => [...recentCodes.keys()].filter(isRecentCode);
   const getCardCode = card => normalizeCode(
     card.querySelector('.favorite-btn')?.dataset.code ||
     card.dataset.validationCode ||
@@ -57,7 +67,7 @@
     document.querySelectorAll('#resultsContainer .v2-test-card').forEach(card => {
       if (card.dataset.recentEnhanced === '1') return;
       const code = getCardCode(card);
-      if (!recentCodes.has(code)) return;
+      if (!isRecentCode(code)) return;
 
       const body = card.firstElementChild;
       if (!body) return;
@@ -83,7 +93,8 @@
   };
 
   const installRecentFilter = () => {
-    if (!recentCodes.size || document.getElementById('recent-additions-filter')) return;
+    const activeCodes = activeRecentCodes();
+    if (!activeCodes.length || document.getElementById('recent-additions-filter')) return;
     const filtersContent = document.getElementById('filters-content');
     if (!filtersContent) return;
 
@@ -97,7 +108,7 @@
       <label class="recent-filter-label">
         <input id="recent-additions-filter" type="checkbox" name="recent-additions" value="recent">
         <span>Aggiunti di recente</span>
-        <span class="recent-filter-count">${recentCodes.size}</span>
+        <span class="recent-filter-count">${activeCodes.length}</span>
       </label>
     `;
     filtersContent.insertBefore(group, firstGroup);
@@ -117,7 +128,7 @@
     const wrapped = function(overrideFilters = null) {
       const result = originalGetFilteredPerfumes.call(this, overrideFilters);
       if (overrideFilters || !recentOnly) return result;
-      return result.filter(perfume => recentCodes.has(normalizeCode(perfume?.code)));
+      return result.filter(perfume => isRecentCode(perfume?.code));
     };
     wrapped.__recentWrapped = true;
     getFilteredPerfumes = wrapped;
@@ -151,7 +162,16 @@
       const response = await fetch('database/catalog/recent-additions.json', { cache: 'no-store' });
       if (response.ok) {
         const data = await response.json();
-        (Array.isArray(data.codes) ? data.codes : []).forEach(code => recentCodes.add(normalizeCode(code)));
+        const defaultDate = String(data.addedDate || '').trim();
+        (Array.isArray(data.entries) ? data.entries : []).forEach(entry => {
+          const code = normalizeCode(entry?.code);
+          const addedDate = String(entry?.addedDate || defaultDate).trim();
+          if (code && addedDate) recentCodes.set(code, addedDate);
+        });
+        (Array.isArray(data.codes) ? data.codes : []).forEach(code => {
+          const normalized = normalizeCode(code);
+          if (normalized && defaultDate) recentCodes.set(normalized, defaultDate);
+        });
       }
     } catch (error) {
       console.warn('Recent additions metadata is not available.', error);
