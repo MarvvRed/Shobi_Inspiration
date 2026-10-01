@@ -31,26 +31,6 @@ const TOKEN_COLORS = {
     notes: 'token-accord'
 };
 
-const NEW_RELEASE_DAYS = 21;
-const NEW_RELEASE_DATES = Object.freeze({
-    '2850-ETLR': '2026-09-30', '2851-LOUM': '2026-09-30', '2852-MAN': '2026-09-30',
-    '2853-MEM': '2026-09-30', '2855-AMG': '2026-09-30', '2856-TMFO': '2026-09-30',
-    '2857-KAY': '2026-09-30', '2858-CRIVEL': '2026-09-30', '2859-DRC': '2026-09-30',
-    '2860-OBVI': '2026-09-30', '2861-AKR': '2026-09-30', '2862-GIA': '2026-09-30',
-    '2863-FRAG': '2026-09-30', '2864-GISS': '2026-09-30', '2865-IN': '2026-09-30',
-    '2866-KAY': '2026-09-30', '2867-LAT': '2026-09-30', '2868-LEL': '2026-09-30',
-    '2869-MARG': '2026-09-30', '2870-MAN': '2026-09-30', '2871-NARO': '2026-09-30'
-});
-
-function isNewRelease(perfume, now = new Date()) {
-    const published = NEW_RELEASE_DATES[String(perfume?.code || '').trim().toUpperCase()];
-    if (!published) return false;
-    const [year, month, day] = published.split('-').map(Number);
-    const releaseDate = new Date(year, month - 1, day);
-    const expiresAt = new Date(year, month - 1, day + NEW_RELEASE_DAYS);
-    return now >= releaseDate && now < expiresAt;
-}
-
 function getMainNotes(p) {
     const v = p?.fragranticaSocialCardNotes;
     return Array.isArray(v) ? v : [];
@@ -82,7 +62,6 @@ function renderNextPerfumeBatch() {
         const cardElement = card.firstElementChild;
         const isFavorite = state.favorites.includes(p.code);
         const isCollected = state.collection.includes(p.code);
-        const cardBody = cardElement.firstElementChild;
         const officialRank = Number(p.officialBestSellerRank);
 
         if (Number.isFinite(officialRank) && officialRank > 0) {
@@ -92,17 +71,8 @@ function renderNextPerfumeBatch() {
             rankBadge.title = 'Official Shobi best seller #' + officialRank;
             rankBadge.setAttribute('aria-label', rankBadge.title);
             rankBadge.style.cssText = 'align-self:flex-start;display:inline-flex;align-items:center;margin:0 0 12px;padding:4px 8px;border-radius:999px;background:#ecfdf5;border:1px solid #34d399;color:#065f46;font-size:12px;font-weight:700;line-height:1;';
+            const cardBody = cardElement.firstElementChild;
             cardBody.insertBefore(rankBadge, cardBody.firstChild);
-        }
-
-        if (isNewRelease(p)) {
-            const newBadge = document.createElement('span');
-            newBadge.className = 'new-release-badge';
-            newBadge.textContent = 'NEW';
-            newBadge.title = 'Added to the official Shobi catalog on 30 September 2026';
-            newBadge.setAttribute('aria-label', newBadge.title);
-            newBadge.style.cssText = 'align-self:flex-start;display:inline-flex;align-items:center;margin:0 0 12px;padding:4px 8px;border-radius:999px;background:#eff6ff;border:1px solid #60a5fa;color:#1d4ed8;font-size:12px;font-weight:800;letter-spacing:.06em;line-height:1;';
-            cardBody.insertBefore(newBadge, cardBody.firstChild);
         }
 
         card.querySelector('[data-field="code"]').textContent = p.code;
