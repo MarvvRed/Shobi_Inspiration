@@ -10,16 +10,16 @@ function tracker(data){const host=document.getElementById('header-controls');if(
 function popup(p,anchor){document.querySelectorAll('.validation-pop').forEach(x=>x.remove());const d=document.createElement('div');d.className='validation-pop';const checks={...(p.validationChecks||{})};if(!Object.prototype.hasOwnProperty.call(checks,'originalProductType'))checks.originalProductType=true;const notes=p.validationNotesCount||0;const names={shobiProduct:'Shobi product page',shobiIdentity:'Shobi name + brand',identity:'Fragrantica identity',fid:'Fragrantica ID',url:'Direct URL / ID',socialCard:'Social Card of same ID',image:'Fragrantica image of same ID',notes:`Notes ${p.validationMatchedNotesCount||0}/${notes} in order`,icons:`Icons ${p.validationIconsCount||0}/${notes}`,gender:'Gender from Social Card',season:'Main Season from longest bar',originalProductType:'Wearable perfume original'};const st=statusOf(p);d.innerHTML=`<h4>${esc(p.code)} · ${LABEL[st]}</h4>`+Object.keys(names).map(k=>`<div class="vcheck"><span>${esc(names[k])}</span><b>${checks[k]?'✓':'✕'}</b></div>`).join('')+((p.validationIssues||[]).length?`<div class="vissue">${p.validationIssues.map(esc).join('<br>')}</div>`:'');document.body.appendChild(d);const r=anchor.getBoundingClientRect();d.style.left=Math.max(8,Math.min(innerWidth-d.offsetWidth-8,r.left))+'px';d.style.top=Math.min(innerHeight-d.offsetHeight-8,r.bottom+6)+'px';setTimeout(()=>document.addEventListener('click',e=>{if(!d.contains(e.target)&&e.target!==anchor)d.remove()},{once:true}),0);}
 function findAudit(card){if(!card)return null;const code=card.dataset.validationCode||card.querySelector('[data-field="code"]')?.textContent.trim().toLowerCase();const matches=code?audits.filter(p=>String(p.code||'').trim().toLowerCase()===String(code).toLowerCase()):[];if(matches.length===1)return matches[0];const text=card.textContent.toLowerCase();return audits.find(p=>text.includes(String(p.brand||'').toLowerCase())&&text.includes(String(p.inspiredBy||'').toLowerCase()))||matches[0]||null;}
 function decorate(){document.querySelectorAll('#resultsContainer > div').forEach(card=>{const p=findAudit(card);if(!p||card.querySelector('.validation-badge'))return;const st=statusOf(p);const b=document.createElement('button');b.className='validation-badge';b.style.background=COLORS[st];b.textContent=st==='green'?'✓':st==='red'?'✕':'!';b.title=`${LABEL[st]} · click for audit`;b.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();popup(p,b)});const rel=card.querySelector('.v2-test-info')||card.querySelector('.p-5.relative')||card;rel.appendChild(b);});}
-fetch(`database/catalog/catalog_final_perfume_only.json?qa=${Date.now()}`,{cache:'no-store'})
-  .then(response=>{
-    if(!response.ok)throw new Error(`public catalog HTTP ${response.status}`);
-    return response.json();
-  })
-  .then(data=>{
-    if(!Array.isArray(data))throw new Error('Public catalog is not an array');
-    // Keep QA counters, status filters, and card audits aligned with the exact
-    // public catalog shown by script.js, not the larger operational audit file.
-    ensureStyles();audits=data;installStatusFilter();tracker(data);decorate();
-    new MutationObserver(decorate).observe(document.getElementById('resultsContainer')||document.body,{childList:true,subtree:true});
-  }).catch(console.error);
+Promise.all([
+  fetch(`database/catalog/catalog_site.json?qa=${Date.now()}`,{cache:'no-store'}),
+  fetch(`database/catalog/catalog-scope-exclusions.json?qa=${Date.now()}`,{cache:'no-store'})
+]).then(async ([catalogResponse, scopeResponse])=>{
+  if(!catalogResponse.ok)throw new Error(`catalog HTTP ${catalogResponse.status}`);
+  const [catalog, scopeData]=await Promise.all([
+    catalogResponse.json(),
+    scopeResponse.ok ? scopeResponse.json() : Promise.resolve({codes:[]})
+  ]);
+  const excludedCodes=new Set(Array.isArray(scopeData?.codes)?scopeData.codes.map(code=>String(code||'').trim().toUpperCase()):[]);
+  return catalog.filter(p=>!excludedCodes.has(String(p?.code||'').trim().toUpperCase()));
+}).then(data=>{ensureStyles();audits=data;installStatusFilter();tracker(data);decorate();new MutationObserver(decorate).observe(document.getElementById('resultsContainer')||document.body,{childList:true,subtree:true});}).catch(console.error);
 })();
