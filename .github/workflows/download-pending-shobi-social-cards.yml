@@ -1,0 +1,42 @@
+name: Download pending Shobi social cards
+on:
+  push:
+    paths:
+      - '.github/workflows/download-pending-shobi-social-cards.yml'
+      - 'data/pending-shobi-fragrantica-mapping-2026-10-19.csv'
+      - 'database/fragrantica/social-cards/fetch_social_cards.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  download-cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run downloader with temporary mapping
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p data
+          cp data/pending-shobi-fragrantica-mapping-2026-10-19.csv data/shobi-fragrantica-mapping.csv
+          python database/fragrantica/social-cards/fetch_social_cards.py
+          cp database/fragrantica/social-cards/manifest.csv database/audits/pending-shobi-social-card-manifest-2026-10-19.csv
+      - name: Upload candidate social cards and manifest
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pending-shobi-social-cards
+          path: |
+            database/fragrantica/social-cards/images/5224_2854-RIH_10554.jpeg
+            database/fragrantica/social-cards/images/5225_2877-VIC_66514.jpeg
+            database/fragrantica/social-cards/images/5226_2878-MAN_98362.jpeg
+            database/fragrantica/social-cards/images/5227_2879-KAY_118623.jpeg
+            database/audits/pending-shobi-social-card-manifest-2026-10-19.csv
+          if-no-files-found: warn
+          retention-days: 30
