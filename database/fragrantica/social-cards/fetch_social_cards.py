@@ -11,7 +11,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 MAPPING = ROOT / "data" / "shobi-fragrantica-mapping.csv"
 OUT_DIR = ROOT / "database/fragrantica" / "social-cards" / "images"
 MANIFEST = ROOT / "database/fragrantica" / "social-cards" / "manifest.csv"
