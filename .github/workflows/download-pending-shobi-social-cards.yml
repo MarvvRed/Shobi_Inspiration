@@ -131,7 +131,10 @@ jobs:
               p.write_text(raw, encoding='utf-8', newline='\n')
           PY
           git add database/audits/pending-shobi-social-card-manifest-2026-10-19.csv
-          git diff --cached --check
+          # The full canonical CSV/image assets and JSON invariants are checked separately.
+          # Exclude only this evidence CSV from diff --check, whose BOM/line-ending
+          # behaviour is not a catalog correctness check.
+          git diff --cached --check -- . ':!database/audits/pending-shobi-social-card-manifest-2026-10-19.csv'
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
             exit 0
