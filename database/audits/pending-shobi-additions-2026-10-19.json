@@ -2,7 +2,7 @@
   "audit_date": "2026-10-19",
   "source": "https://leparfum.com.gr/en/",
   "purpose": "Official Shobi wearable Eau de Parfum candidates found on the live site but absent from database/source/shobi-perfumes-live-unique.csv.",
-  "status": "IDENTITY_AND_NOTE_SEQUENCE_MATCHED_PENDING_PRODUCT_IDS_AND_SOCIAL_CARDS",
+  "status": "PENDING_PRESTASHOP_IDS_AND_PROJECT_SOCIAL_CARD_CHECK",
   "publication_policy": "Do not add to the operational source CSV or public certified catalog until the actual PrestaShop product ID is recovered and the project social-card/image proof is independently verified. Original fragrance identities and ordered top/heart/base notes have been cross-checked against the listed Fragrantica IDs.",
   "candidates": [
     {
@@ -41,7 +41,8 @@
       "original_name": "Freedom Musk Matcha | 45 Eau de Parfum",
       "fragrantica_id": "118623",
       "fragrantica_url": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Freedom-Musk-Matcha-45-Eau-de-Parfum-118623.html",
-      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE"
+      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE",
+      "image_status": "VERIFIED_OFFICIAL_PRODUCT_IMAGE"
     },
     {
       "code": "2878-MAN",
@@ -78,7 +79,8 @@
       "original_name": "Fig Me Up",
       "fragrantica_id": "98362",
       "fragrantica_url": "https://www.fragrantica.com/perfume/Mancera/Fig-Me-Up-98362.html",
-      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE"
+      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE",
+      "image_status": "VERIFIED_OFFICIAL_PRODUCT_IMAGE"
     },
     {
       "code": "2877-VIC MP",
@@ -110,7 +112,8 @@
       "original_name": "Spicebomb Infrared",
       "fragrantica_id": "66514",
       "fragrantica_url": "https://www.fragrantica.com/perfume/Viktor-Rolf/Spicebomb-Infrared-66514.html",
-      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE"
+      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE",
+      "image_status": "VERIFIED_OFFICIAL_PRODUCT_IMAGE"
     },
     {
       "code": "2854-RIH W",
@@ -146,7 +149,14 @@
       "original_name": "Reb'l Fleur",
       "fragrantica_id": "10554",
       "fragrantica_url": "https://www.fragrantica.com/perfume/Rihanna/Reb-l-Fleur-10554.html",
-      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE"
+      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE",
+      "image_status": "VERIFIED_OFFICIAL_PRODUCT_IMAGE"
     }
+  ],
+  "audit_notes": [
+    "Official Shobi product pages and product image links have been opened and verified on 2026-10-19.",
+    "Exact Fragrantica identities and ordered top/heart/base note pyramids were cross-checked for all four candidates.",
+    "Do not confuse the numeric image path IDs (78224-78227) with PrestaShop product IDs. The public page text does not expose the latter.",
+    "The source CSV and certified catalog remain unchanged until the actual PrestaShop IDs are recovered and project-specific social-card validation is completed."
   ]
 }
