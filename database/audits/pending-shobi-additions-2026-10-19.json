@@ -1,0 +1,152 @@
+{
+  "audit_date": "2026-10-19",
+  "source": "https://leparfum.com.gr/en/",
+  "purpose": "Official Shobi wearable Eau de Parfum candidates found on the live site but absent from database/source/shobi-perfumes-live-unique.csv.",
+  "status": "IDENTITY_AND_NOTE_SEQUENCE_MATCHED_PENDING_PRODUCT_IDS_AND_SOCIAL_CARDS",
+  "publication_policy": "Do not add to the operational source CSV or public certified catalog until the actual PrestaShop product ID is recovered and the project social-card/image proof is independently verified. Original fragrance identities and ordered top/heart/base notes have been cross-checked against the listed Fragrantica IDs.",
+  "candidates": [
+    {
+      "code": "2879-KAY",
+      "reference": "2879-KAY",
+      "inspired_by": "Freedom Musk Matcha 45",
+      "category": "Elegants Fragrances",
+      "price_eur": 10,
+      "gender": "unisex",
+      "url": "https://leparfum.com.gr/en/elegants-fragrances/2879-kay-inspired-freedom-musk-matcha-45",
+      "official_notes": {
+        "top": [
+          "matcha",
+          "maté",
+          "green apple",
+          "bergamot"
+        ],
+        "heart": [
+          "oat milk",
+          "vanilla",
+          "praline",
+          "coffee"
+        ],
+        "base": [
+          "musk",
+          "sandalwood",
+          "amber",
+          "vetiver",
+          "patchouli"
+        ]
+      },
+      "prestashop_product_id": null,
+      "image_url": "https://leparfum.com.gr/78227-large_default/2879-kay-inspired-freedom-musk-matcha-45.jpg",
+      "certification": "PENDING_PRESTASHOP_PRODUCT_ID_AND_SOCIAL_CARD_VERIFICATION",
+      "original_brand": "Kayali Fragrances",
+      "original_name": "Freedom Musk Matcha | 45 Eau de Parfum",
+      "fragrantica_id": "118623",
+      "fragrantica_url": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Freedom-Musk-Matcha-45-Eau-de-Parfum-118623.html",
+      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE"
+    },
+    {
+      "code": "2878-MAN",
+      "reference": "2878-MAN",
+      "inspired_by": "Fig Me Up",
+      "category": "Elegants Fragrances",
+      "price_eur": 10,
+      "gender": "unisex",
+      "url": "https://leparfum.com.gr/en/elegants-fragrances/2878-man-inspired-fig-me-up",
+      "official_notes": {
+        "top": [
+          "rhubarb",
+          "fig leaf",
+          "violet"
+        ],
+        "heart": [
+          "fig nectar",
+          "plum",
+          "oud",
+          "sandalwood",
+          "geranium"
+        ],
+        "base": [
+          "tobacco",
+          "white musk",
+          "toffee",
+          "tonka bean"
+        ]
+      },
+      "prestashop_product_id": null,
+      "image_url": "https://leparfum.com.gr/78226-large_default/2878-man-inspired-fig-me-up.jpg",
+      "certification": "PENDING_PRESTASHOP_PRODUCT_ID_AND_SOCIAL_CARD_VERIFICATION",
+      "original_brand": "Mancera",
+      "original_name": "Fig Me Up",
+      "fragrantica_id": "98362",
+      "fragrantica_url": "https://www.fragrantica.com/perfume/Mancera/Fig-Me-Up-98362.html",
+      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE"
+    },
+    {
+      "code": "2877-VIC MP",
+      "reference": "2877-VIC",
+      "inspired_by": "Spicebomb Infrared",
+      "category": "Fragrances For Men",
+      "price_eur": 9,
+      "gender": "men",
+      "url": "https://leparfum.com.gr/en/fragrances-for-men/2877-vic-inspired-spicebomb-infrared",
+      "official_notes": {
+        "top": [
+          "red fruits",
+          "pink pepper",
+          "saffron"
+        ],
+        "heart": [
+          "cinnamon",
+          "red pepper"
+        ],
+        "base": [
+          "tobacco",
+          "benzoin"
+        ]
+      },
+      "prestashop_product_id": null,
+      "image_url": "https://leparfum.com.gr/78225-large_default/2877-vic-inspired-spicebomb-infrared.jpg",
+      "certification": "PENDING_PRESTASHOP_PRODUCT_ID_AND_SOCIAL_CARD_VERIFICATION",
+      "original_brand": "Viktor&Rolf",
+      "original_name": "Spicebomb Infrared",
+      "fragrantica_id": "66514",
+      "fragrantica_url": "https://www.fragrantica.com/perfume/Viktor-Rolf/Spicebomb-Infrared-66514.html",
+      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE"
+    },
+    {
+      "code": "2854-RIH W",
+      "reference": "2854-RIH",
+      "inspired_by": "Reb'l Fleur",
+      "category": "Fragrances For Women",
+      "price_eur": 9,
+      "gender": "women",
+      "url": "https://leparfum.com.gr/en/fragrances-for-women/2854-rih-inspired-reb-l-fleur",
+      "official_notes": {
+        "top": [
+          "peach",
+          "plum",
+          "red berries"
+        ],
+        "heart": [
+          "coconut",
+          "tuberose",
+          "hibiscus",
+          "violet"
+        ],
+        "base": [
+          "vanilla",
+          "patchouli",
+          "musk",
+          "amber"
+        ]
+      },
+      "prestashop_product_id": null,
+      "image_url": "https://leparfum.com.gr/78224-large_default/2854-rih-inspired-reb-l-fleur.jpg",
+      "certification": "PENDING_PRESTASHOP_PRODUCT_ID_AND_SOCIAL_CARD_VERIFICATION",
+      "original_brand": "Rihanna",
+      "original_name": "Reb'l Fleur",
+      "fragrantica_id": "10554",
+      "fragrantica_url": "https://www.fragrantica.com/perfume/Rihanna/Reb-l-Fleur-10554.html",
+      "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE"
+    }
+  ]
+}
