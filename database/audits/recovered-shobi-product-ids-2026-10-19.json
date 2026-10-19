@@ -1,0 +1,60 @@
+{
+  "audit_date": "2026-10-19",
+  "source": "https://leparfum.com.gr/en/perfumes",
+  "source_run": "https://github.com/MarvvRed/Shobi_Inspiration/actions/runs/39275273267",
+  "method": "Recovered directly from official PrestaShop article.product-miniature[data-id-product] by GitHub Actions. These are product IDs, not image IDs.",
+  "found_count": 4,
+  "expected_count": 4,
+  "candidates": [
+    {
+      "code": "2854-RIH W",
+      "reference": "2854-RIH",
+      "prestashop_product_id": "5224",
+      "original_brand": "Rihanna",
+      "original_name": "Reb'l Fleur",
+      "fragrantica_id": "10554",
+      "fragrantica_url": "https://www.fragrantica.com/perfume/Rihanna/Reb-l-Fleur-10554.html",
+      "official_url": "https://leparfum.com.gr/en/fragrances-for-women/2854-rih-inspired-reb-l-fleur",
+      "social_card_manifest_status": "NOT_PRESENT",
+      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK"
+    },
+    {
+      "code": "2877-VIC MP",
+      "reference": "2877-VIC",
+      "prestashop_product_id": "5225",
+      "original_brand": "Viktor&Rolf",
+      "original_name": "Spicebomb Infrared (2021 EDT)",
+      "fragrantica_id": "66514",
+      "fragrantica_url": "https://www.fragrantica.com/perfume/Viktor-Rolf/Spicebomb-Infrared-66514.html",
+      "official_url": "https://leparfum.com.gr/en/fragrances-for-men/2877-vic-inspired-spicebomb-infrared",
+      "social_card_manifest_status": "NOT_PRESENT",
+      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK"
+    },
+    {
+      "code": "2878-MAN",
+      "reference": "2878-MAN",
+      "prestashop_product_id": "5226",
+      "original_brand": "Mancera",
+      "original_name": "Fig Me Up",
+      "fragrantica_id": "98362",
+      "fragrantica_url": "https://www.fragrantica.com/perfume/Mancera/Fig-Me-Up-98362.html",
+      "official_url": "https://leparfum.com.gr/en/elegants-fragrances/2878-man-inspired-fig-me-up",
+      "social_card_manifest_status": "NOT_PRESENT",
+      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK"
+    },
+    {
+      "code": "2879-KAY",
+      "reference": "2879-KAY",
+      "prestashop_product_id": "5227",
+      "original_brand": "Kayali Fragrances",
+      "original_name": "Freedom Musk Matcha | 45 Eau de Parfum",
+      "fragrantica_id": "118623",
+      "fragrantica_url": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Freedom-Musk-Matcha-45-118623.html",
+      "official_url": "https://leparfum.com.gr/en/elegants-fragrances/2879-kay-inspired-freedom-musk-matcha-45",
+      "social_card_manifest_status": "NOT_PRESENT",
+      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK"
+    }
+  ],
+  "next_step": "Add these candidates to a temporary mapping and download the four Fragrantica social cards. Compare card text and note sequence to the stored audit; only then prepare a separate catalog PR.",
+  "catalog_changed": false
+}
