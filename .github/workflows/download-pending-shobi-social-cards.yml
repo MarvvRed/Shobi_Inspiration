@@ -121,15 +121,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          # Strip the UTF-8 BOM from the generated CSV copy; git diff --check otherwise
-          # treats the BOM before the first header as trailing whitespace.
+          # GitHub's generated CSV includes CRLF/BOM, which git diff --check
+          # flags. Normalize the audit copy to plain UTF-8 LF and stage it again.
           python - <<'PY'
           from pathlib import Path
           p = Path('database/audits/pending-shobi-social-card-manifest-2026-10-19.csv')
           if p.exists():
-              raw = p.read_bytes()
-              if raw.startswith(b'\\xef\\xbb\\xbf'):
-                  p.write_bytes(raw[3:])
+              raw = p.read_bytes().lstrip(b'\\xef\\xbb\\xbf')
+              raw = raw.replace(b'\\r\\n', b'\\n').replace(b'\\r', b'\\n')
+              p.write_bytes(raw)
           PY
           git add database/audits/pending-shobi-social-card-manifest-2026-10-19.csv
           git diff --cached --check
