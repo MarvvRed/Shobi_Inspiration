@@ -2,8 +2,8 @@
   "audit_date": "2026-10-19",
   "source": "https://leparfum.com.gr/en/",
   "purpose": "Official Shobi wearable Eau de Parfum candidates found on the live site but absent from database/source/shobi-perfumes-live-unique.csv.",
-  "status": "PENDING_LOCAL_SOCIAL_CARD_ASSETS_AND_NOTE_ICON_MAPPING",
-  "publication_policy": "Recovered PrestaShop IDs and visually checked the four direct Fragrantica social-card images. Keep these products out of the certified/public catalog until card bytes are downloaded and hashed in-repo, note-icon assets are verified, and Main Notes are exactly the six visible social-card labels in card order.",
+  "status": "CERTIFIED_GREEN_FULL_CHAIN_VERIFIED",
+  "publication_policy": "All four records are integrated after exact official product IDs, FIDs, ordered Social Cards, local icons, gender and season proof.",
   "candidates": [
     {
       "code": "2879-KAY",
@@ -36,11 +36,11 @@
       },
       "prestashop_product_id": "5227",
       "image_url": "https://leparfum.com.gr/78227-large_default/2879-kay-inspired-freedom-musk-matcha-45.jpg",
-      "certification": "PENDING_SOCIAL_CARD_AND_LOCAL_IMAGE_VERIFICATION",
+      "certification": "CERTIFIED_GREEN_FULL_CHAIN_VERIFIED",
       "original_brand": "Kayali Fragrances",
       "original_name": "Freedom Musk Matcha | 45 Eau de Parfum",
       "fragrantica_id": "118623",
-      "fragrantica_url": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Freedom-Musk-Matcha-45-Eau-de-Parfum-118623.html",
+      "fragrantica_url": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Freedom-Musk-Matcha-45-118623.html",
       "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE",
       "image_status": "VERIFIED_OFFICIAL_PRODUCT_IMAGE",
       "official_listing_url": "https://leparfum.com.gr/en/elegants-fragrances/2879-kay-inspired-freedom-musk-matcha-45#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
@@ -61,7 +61,31 @@
         "reading_order": "left-to-right, top-to-bottom in visible note-icon grid",
         "seasons_panel": "VISIBLE; exact bar lengths not transcribed",
         "limitations": "Visual confirmation of image header/gender/note labels only; local card bytes/hash and local note-icon asset mapping still pending."
-      }
+      },
+      "product_image_url": "https://leparfum.com.gr/78227-home_default/2879-kay-inspired-freedom-musk-matcha-45.jpg",
+      "local_social_card": "database/fragrantica/social-cards/images/current_2879-KAY_118623.jpeg",
+      "local_product_image": "database/assets/perfumes/118623.jpg",
+      "verified_main_notes_order": [
+        "Matcha Tea",
+        "Oat",
+        "Milk",
+        "Musk",
+        "Mate",
+        "Vanilla"
+      ],
+      "verified_gender": "Unisex",
+      "verified_gender_label": "for women and men",
+      "verified_season": "Spring",
+      "local_note_icons": {
+        "Matcha Tea": "database/assets/note-icons/matcha-tea-1001.webp",
+        "Oat": "database/assets/note-icons/oat-848.webp",
+        "Milk": "database/assets/note-icons/milk-199.webp",
+        "Musk": "database/assets/note-icons/musk-4.webp",
+        "Mate": "database/assets/note-icons/mate-48.webp",
+        "Vanilla": "database/assets/note-icons/vanilla-74.webp"
+      },
+      "card_sha256": "38031ea5ee2022b65545c005591016e3e9dc32fa60600f01147fe3893c3f17de",
+      "product_image_sha256": "ea668678d5ab4e0d768d3d3ea0639f5131d509b2ef845bbf44bce7d43af46b61"
     },
     {
       "code": "2878-MAN",
@@ -93,7 +117,7 @@
       },
       "prestashop_product_id": "5226",
       "image_url": "https://leparfum.com.gr/78226-large_default/2878-man-inspired-fig-me-up.jpg",
-      "certification": "PENDING_SOCIAL_CARD_AND_LOCAL_IMAGE_VERIFICATION",
+      "certification": "CERTIFIED_GREEN_FULL_CHAIN_VERIFIED",
       "original_brand": "Mancera",
       "original_name": "Fig Me Up",
       "fragrantica_id": "98362",
@@ -118,7 +142,31 @@
         "reading_order": "left-to-right, top-to-bottom in visible note-icon grid",
         "seasons_panel": "VISIBLE; exact bar lengths not transcribed",
         "limitations": "Visual confirmation of image header/gender/note labels only; local card bytes/hash and local note-icon asset mapping still pending."
-      }
+      },
+      "product_image_url": "https://leparfum.com.gr/78226-home_default/2878-man-inspired-fig-me-up.jpg",
+      "local_social_card": "database/fragrantica/social-cards/images/current_2878-MAN_98362.jpeg",
+      "local_product_image": "database/assets/perfumes/98362.jpg",
+      "verified_main_notes_order": [
+        "Fig",
+        "Plum",
+        "Rhubarb",
+        "Tobacco",
+        "Fig Leaf",
+        "Agarwood (Oud)"
+      ],
+      "verified_gender": "Unisex",
+      "verified_gender_label": "for women and men",
+      "verified_season": "Spring",
+      "local_note_icons": {
+        "Fig": "database/assets/note-icons/fig-247.webp",
+        "Plum": "database/assets/note-icons/plum-171.webp",
+        "Rhubarb": "database/assets/note-icons/rhubarb-188.webp",
+        "Tobacco": "database/assets/note-icons/tobacco-96.webp",
+        "Fig Leaf": "database/assets/note-icons/fig-leaf-150.webp",
+        "Agarwood (Oud)": "database/assets/note-icons/agarwood-oud-114.webp"
+      },
+      "card_sha256": "cdd29e6023194dab1c23baf9fcb0e5ce385608a96c8cb7763bdeeb19ba444e5a",
+      "product_image_sha256": "2672aa10aa6b9d2edbe6069b951c771daef3771f4ee1929995ba308cb507af4d"
     },
     {
       "code": "2877-VIC MP",
@@ -145,7 +193,7 @@
       },
       "prestashop_product_id": "5225",
       "image_url": "https://leparfum.com.gr/78225-large_default/2877-vic-inspired-spicebomb-infrared.jpg",
-      "certification": "PENDING_SOCIAL_CARD_AND_LOCAL_IMAGE_VERIFICATION",
+      "certification": "CERTIFIED_GREEN_FULL_CHAIN_VERIFIED",
       "original_brand": "Viktor&Rolf",
       "original_name": "Spicebomb Infrared",
       "fragrantica_id": "66514",
@@ -170,7 +218,31 @@
         "reading_order": "left-to-right, top-to-bottom in visible note-icon grid",
         "seasons_panel": "VISIBLE; exact bar lengths not transcribed",
         "limitations": "Visual confirmation of image header/gender/note labels only; local card bytes/hash and local note-icon asset mapping still pending."
-      }
+      },
+      "product_image_url": "https://leparfum.com.gr/78225-home_default/2877-vic-inspired-spicebomb-infrared.jpg",
+      "local_social_card": "database/fragrantica/social-cards/images/current_2877-VIC_66514.jpeg",
+      "local_product_image": "database/assets/perfumes/66514.jpg",
+      "verified_main_notes_order": [
+        "Cinnamon",
+        "Red Fruits",
+        "Pink Pepper",
+        "Tobacco",
+        "Pimento",
+        "Benzoin"
+      ],
+      "verified_gender": "Male",
+      "verified_gender_label": "for men",
+      "verified_season": "Winter",
+      "local_note_icons": {
+        "Cinnamon": "database/assets/note-icons/cinnamon-65.webp",
+        "Red Fruits": "database/assets/note-icons/red-fruits-726.webp",
+        "Pink Pepper": "database/assets/note-icons/pink-pepper-91.webp",
+        "Tobacco": "database/assets/note-icons/tobacco-96.webp",
+        "Pimento": "database/assets/note-icons/pimento-159.webp",
+        "Benzoin": "database/assets/note-icons/benzoin-69.webp"
+      },
+      "card_sha256": "837534ad4ff3fd6d96818c0844b4bcf782f4e5748399bc2be68a34605f0900ec",
+      "product_image_sha256": "7fc658962bbdd64d5ca88bc50c4eae14007a57e2a975aa8314e215fc252c099e"
     },
     {
       "code": "2854-RIH W",
@@ -201,7 +273,7 @@
       },
       "prestashop_product_id": "5224",
       "image_url": "https://leparfum.com.gr/78224-large_default/2854-rih-inspired-reb-l-fleur.jpg",
-      "certification": "PENDING_SOCIAL_CARD_AND_LOCAL_IMAGE_VERIFICATION",
+      "certification": "CERTIFIED_GREEN_FULL_CHAIN_VERIFIED",
       "original_brand": "Rihanna",
       "original_name": "Reb'l Fleur",
       "fragrantica_id": "10554",
@@ -226,7 +298,31 @@
         "reading_order": "left-to-right, top-to-bottom in visible note-icon grid",
         "seasons_panel": "VISIBLE; exact bar lengths not transcribed",
         "limitations": "Visual confirmation of image header/gender/note labels only; local card bytes/hash and local note-icon asset mapping still pending."
-      }
+      },
+      "product_image_url": "https://leparfum.com.gr/78224-home_default/2854-rih-inspired-reb-l-fleur.jpg",
+      "local_social_card": "database/fragrantica/social-cards/images/current_2854-RIH_10554.jpeg",
+      "local_product_image": "database/assets/perfumes/10554.jpg",
+      "verified_main_notes_order": [
+        "Coconut",
+        "Vanilla",
+        "Peach",
+        "Patchouli",
+        "Plum",
+        "Red Berries"
+      ],
+      "verified_gender": "Female",
+      "verified_gender_label": "for women",
+      "verified_season": "Autumn",
+      "local_note_icons": {
+        "Coconut": "database/assets/note-icons/coconut-138.webp",
+        "Vanilla": "database/assets/note-icons/vanilla-74.webp",
+        "Peach": "database/assets/note-icons/peach-117.webp",
+        "Patchouli": "database/assets/note-icons/patchouli-34.webp",
+        "Plum": "database/assets/note-icons/plum-171.webp",
+        "Red Berries": "database/assets/note-icons/red-berries-184.webp"
+      },
+      "card_sha256": "f4b332e943e2c061f39d75be98f1108eba6980b642f231204b439d91f160dfd8",
+      "product_image_sha256": "df73f0c80b8e682647a3b4fb02b3ba680192df6a44f02133f9a14c3bca15da75"
     }
   ],
   "audit_notes": [
@@ -268,5 +364,6 @@
     "manifest_status": "NO_ROWS_FOR_PRODUCT_IDS_5224_5225_5226_5227_OR_THE_FOUR_SHOBI_REFERENCES",
     "certification_status": "NOT_CERTIFIED",
     "explanation": "The cards expose six note icons each. These six labels/order are recorded as shown on the card; they are not interchangeable with the full official top/heart/base pyramid listed on Shobi pages. Do not create a green certification until the downloadable images are committed/hashed, note icons are linked correctly, and the site's Main Notes use the exact six visible labels in this exact order."
-  }
+  },
+  "catalog_changed": true
 }

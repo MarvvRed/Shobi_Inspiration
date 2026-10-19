@@ -16,7 +16,9 @@
       "fragrantica_url": "https://www.fragrantica.com/perfume/Rihanna/Reb-l-Fleur-10554.html",
       "official_url": "https://leparfum.com.gr/en/fragrances-for-women/2854-rih-inspired-reb-l-fleur",
       "social_card_manifest_status": "NOT_PRESENT",
-      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK"
+      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK",
+      "status": "CARD_VISUALLY_VERIFIED_AND_CATALOGED",
+      "local_social_card": "database/fragrantica/social-cards/images/current_2854-RIH_10554.jpeg"
     },
     {
       "code": "2877-VIC MP",
@@ -28,7 +30,9 @@
       "fragrantica_url": "https://www.fragrantica.com/perfume/Viktor-Rolf/Spicebomb-Infrared-66514.html",
       "official_url": "https://leparfum.com.gr/en/fragrances-for-men/2877-vic-inspired-spicebomb-infrared",
       "social_card_manifest_status": "NOT_PRESENT",
-      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK"
+      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK",
+      "status": "CARD_VISUALLY_VERIFIED_AND_CATALOGED",
+      "local_social_card": "database/fragrantica/social-cards/images/current_2877-VIC_66514.jpeg"
     },
     {
       "code": "2878-MAN",
@@ -40,7 +44,9 @@
       "fragrantica_url": "https://www.fragrantica.com/perfume/Mancera/Fig-Me-Up-98362.html",
       "official_url": "https://leparfum.com.gr/en/elegants-fragrances/2878-man-inspired-fig-me-up",
       "social_card_manifest_status": "NOT_PRESENT",
-      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK"
+      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK",
+      "status": "CARD_VISUALLY_VERIFIED_AND_CATALOGED",
+      "local_social_card": "database/fragrantica/social-cards/images/current_2878-MAN_98362.jpeg"
     },
     {
       "code": "2879-KAY",
@@ -52,9 +58,12 @@
       "fragrantica_url": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Freedom-Musk-Matcha-45-118623.html",
       "official_url": "https://leparfum.com.gr/en/elegants-fragrances/2879-kay-inspired-freedom-musk-matcha-45",
       "social_card_manifest_status": "NOT_PRESENT",
-      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK"
+      "certification": "PENDING_CARD_DOWNLOAD_AND_VISUAL_NOTE_ORDER_CHECK",
+      "status": "CARD_VISUALLY_VERIFIED_AND_CATALOGED",
+      "local_social_card": "database/fragrantica/social-cards/images/current_2879-KAY_118623.jpeg"
     }
   ],
   "next_step": "Add these candidates to a temporary mapping and download the four Fragrantica social cards. Compare card text and note sequence to the stored audit; only then prepare a separate catalog PR.",
-  "catalog_changed": false
+  "catalog_changed": true,
+  "status": "ALL_FOUR_IDS_AND_SOCIAL_CARDS_VERIFIED"
 }

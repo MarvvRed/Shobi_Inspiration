@@ -2,7 +2,7 @@
 
 **Repository:** `MarvvRed/Shobi_Inspiration`  
 **Live site:** https://marvvred.github.io/Shobi_Inspiration/  
-**Last verified:** 2026-10-02 (Europe/Rome)
+**Last verified:** 2026-10-19 (Europe/Rome)
 
 This file is the mandatory starting point for any AI working on this repository. Read it fully before inspecting, editing, running workflows, or proposing a publication.
 
@@ -39,8 +39,8 @@ For implementation details, inspect the specific relevant script in `tools/`; do
 
 | Scope | Total | Green | Yellow | Red |
 | --- | ---: | ---: | ---: | ---: |
-| Operational source catalog | 2,274 | 2,268 | 6 | 0 |
-| Public perfume-only catalog | 2,249 | 2,243 | 6 | 0 |
+| Operational source catalog | 2,278 | 2,272 | 6 | 0 |
+| Public perfume-only catalog | 2,253 | 2,247 | 6 | 0 |
 
 The public catalog has 25 fewer rows because only independently certified same-original duplicate listings were collapsed. It is not a data loss.
 
@@ -98,14 +98,25 @@ Their identity evidence is in:
 - `database/audits/new-official-shobi-perfumes-2026-09-30.json`
 - `database/audits/new-official-shobi-gender-evidence-2026-09-30.json`
 
+## Newly verified Shobi additions — 2026-10-19
+
+The following four official wearable Eau de Parfum listings were integrated as green after exact product-ID recovery and full Social Card proof:
+
+- 2854-RIH — product ID 5224, Rihanna — Reb'l Fleur, FID 10554.
+- 2877-VIC — product ID 5225, Viktor&Rolf — Spicebomb Infrared (2021 EDT), FID 66514 (not the later EDP/FID 81409).
+- 2878-MAN — product ID 5226, Mancera — Fig Me Up, FID 98362.
+- 2879-KAY — product ID 5227, Kayali Fragrances — Freedom Musk Matcha | 45 Eau de Parfum, FID 118623.
+
+Ordered notes, icon paths, card/gender/season evidence: database/audits/verified-shobi-additions-2026-10-19.json.
+
 ## Recent additions UI
 
 The “Aggiunti di recente” filter and the `NUOVO` card badge read from `database/catalog/recent-additions.json`.
 
 - Window: **21 calendar days** from `addedDate`.
-- Current batch date: 2026-09-30.
-- It is visible through 2026-10-20.
-- From 2026-10-21, those products automatically leave the filter and the filter is hidden.
+- Historical batch date: 2026-09-30 (21 products; visible through 2026-10-20).
+- Current batch date: 2026-10-19 (4 products; visible through 2026-11-08).
+- Each batch expires independently based on its own addedDate; do not extend the September batch when adding October entries.
 - Keep filter and badge tied to the same expiry rule. Do not add separate static code lists.
 
 Relevant UI files:

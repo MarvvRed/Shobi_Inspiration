@@ -1,6 +1,6 @@
 {
   "rule": "The exact archived Social Card image is read independently. The visible sequence must match catalog Main Notes position-by-position; count-only equality never passes.",
-  "catalogRows": 2274,
+  "catalogRows": 2278,
   "targetedCurrentYellows": 7,
   "results": {
     "EXACT_ORDERED_MATCH": 2268,
@@ -2740018,6 +2740018,30 @@
       ]
     },
     {
+      "code": "2854-RIH",
+      "fragranticaId": 10554,
+      "card": "database/fragrantica/social-cards/images/current_2854-RIH_10554.jpeg",
+      "catalogNotes": [
+        "Coconut",
+        "Vanilla",
+        "Peach",
+        "Patchouli",
+        "Plum",
+        "Red Berries"
+      ],
+      "observedNotes": [
+        "Coconut",
+        "Vanilla",
+        "Peach",
+        "Patchouli",
+        "Plum",
+        "Red Berries"
+      ],
+      "result": "EXACT_ORDERED_MATCH",
+      "proof": "Independent visual read of full exact-FID Social Card and complete note-panel crop; no competing sequence.",
+      "attempts": []
+    },
+    {
       "code": "2855-AMG",
       "fragranticaId": "126673",
       "card": "database/fragrantica/social-cards/images/current_2855-AMG_126673.jpeg",
@@ -2772906,6 +2772930,78 @@
           "components": []
         }
       ]
+    },
+    {
+      "code": "2877-VIC",
+      "fragranticaId": 66514,
+      "card": "database/fragrantica/social-cards/images/current_2877-VIC_66514.jpeg",
+      "catalogNotes": [
+        "Cinnamon",
+        "Red Fruits",
+        "Pink Pepper",
+        "Tobacco",
+        "Pimento",
+        "Benzoin"
+      ],
+      "observedNotes": [
+        "Cinnamon",
+        "Red Fruits",
+        "Pink Pepper",
+        "Tobacco",
+        "Pimento",
+        "Benzoin"
+      ],
+      "result": "EXACT_ORDERED_MATCH",
+      "proof": "Independent visual read of full exact-FID Social Card and complete note-panel crop; no competing sequence.",
+      "attempts": []
+    },
+    {
+      "code": "2878-MAN",
+      "fragranticaId": 98362,
+      "card": "database/fragrantica/social-cards/images/current_2878-MAN_98362.jpeg",
+      "catalogNotes": [
+        "Fig",
+        "Plum",
+        "Rhubarb",
+        "Tobacco",
+        "Fig Leaf",
+        "Agarwood (Oud)"
+      ],
+      "observedNotes": [
+        "Fig",
+        "Plum",
+        "Rhubarb",
+        "Tobacco",
+        "Fig Leaf",
+        "Agarwood (Oud)"
+      ],
+      "result": "EXACT_ORDERED_MATCH",
+      "proof": "Independent visual read of full exact-FID Social Card and complete note-panel crop; no competing sequence.",
+      "attempts": []
+    },
+    {
+      "code": "2879-KAY",
+      "fragranticaId": 118623,
+      "card": "database/fragrantica/social-cards/images/current_2879-KAY_118623.jpeg",
+      "catalogNotes": [
+        "Matcha Tea",
+        "Oat",
+        "Milk",
+        "Musk",
+        "Mate",
+        "Vanilla"
+      ],
+      "observedNotes": [
+        "Matcha Tea",
+        "Oat",
+        "Milk",
+        "Musk",
+        "Mate",
+        "Vanilla"
+      ],
+      "result": "EXACT_ORDERED_MATCH",
+      "proof": "Independent visual read of full exact-FID Social Card and complete note-panel crop; no competing sequence.",
+      "attempts": []
     },
     {
       "code": "288-JOM",
