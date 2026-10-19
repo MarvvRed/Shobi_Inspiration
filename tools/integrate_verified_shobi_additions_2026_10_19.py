@@ -306,7 +306,7 @@ def main():
         if key in merged or any(norm_code(old.get("shobi_code")) == key[1] for old in base_rows):
             raise SystemExit(f"Refusing existing card manifest entry {key}")
         merged[key] = row
-    with MANIFEST_PATH.open("w", encoding="utf-8-sig", newline="") as f:
+    with MANIFEST_PATH.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=base_fields, lineterminator="\n", extrasaction="ignore")
         w.writeheader()
         w.writerows(merged.values())
