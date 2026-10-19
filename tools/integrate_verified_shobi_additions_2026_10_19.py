@@ -212,7 +212,8 @@ def main():
 
         # This bottle-only image is cropped from the exact same Fragrantica ID card.
         product_img = PRODUCT_IMG_DIR / f"{c['fid']}.jpg"
-        Image.open(card_path).convert("RGB").crop((40, 125, 460, 650)).save(product_img, "JPEG", quality=94, optimize=True)
+        crop_bottom = 680 if c["fid"] == "118623" else 650
+        Image.open(card_path).convert("RGB").crop((40, 125, 460, crop_bottom)).save(product_img, "JPEG", quality=94, optimize=True)
         if product_img.stat().st_size < 5000:
             raise SystemExit(f"{c['code']}: bottle crop unexpectedly small")
         perfume_map[c["code"]] = f"database/assets/perfumes/{c['fid']}.jpg"
