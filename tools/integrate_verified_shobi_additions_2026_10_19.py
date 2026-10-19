@@ -439,6 +439,7 @@ Ordered notes, icon paths, card/gender/season evidence: database/audits/verified
 """
     if "## Newly verified Shobi additions — 2026-10-19" not in handoff:
         handoff = handoff.replace(marker, batch + marker)
+    handoff = handoff.replace("- Current batch date: 2026-09-30.\n- It is visible through 2026-10-20.\n- From 2026-10-21, those products automatically leave the filter and the filter is hidden.", "- Historical batch date: 2026-09-30 (21 products; visible through 2026-10-20).\n- Current batch date: 2026-10-19 (4 products; visible through 2026-11-08).\n- Each batch expires independently based on its own addedDate; do not extend the September batch when adding October entries.")
     HANDOFF_PATH.write_text(handoff, encoding="utf-8")
 
     print(json.dumps({
