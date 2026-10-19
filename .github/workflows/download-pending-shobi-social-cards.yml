@@ -23,8 +23,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p data
-          cp data/pending-shobi-fragrantica-mapping-2026-10-19.csv data/shobi-fragrantica-mapping.csv
+          mkdir -p database/data
+          cp data/pending-shobi-fragrantica-mapping-2026-10-19.csv database/data/shobi-fragrantica-mapping.csv
           python database/fragrantica/social-cards/fetch_social_cards.py
           cp database/fragrantica/social-cards/manifest.csv database/audits/pending-shobi-social-card-manifest-2026-10-19.csv
       - name: Upload candidate social cards and manifest
