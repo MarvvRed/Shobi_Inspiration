@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - '.github/workflows/download-pending-shobi-social-cards.yml'
+      - 'database/audits/pending-shobi-additions-2026-10-19.json'
+      - 'database/audits/recovered-shobi-product-ids-2026-10-19.json'
       - 'data/pending-shobi-fragrantica-mapping-2026-10-19.csv'
       - 'database/fragrantica/social-cards/fetch_social_cards.py'
       - 'tools/integrate_verified_shobi_additions_2026_10_19.py'
