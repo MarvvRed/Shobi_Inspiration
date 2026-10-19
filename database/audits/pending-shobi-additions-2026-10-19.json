@@ -2,8 +2,8 @@
   "audit_date": "2026-10-19",
   "source": "https://leparfum.com.gr/en/",
   "purpose": "Official Shobi wearable Eau de Parfum candidates found on the live site but absent from database/source/shobi-perfumes-live-unique.csv.",
-  "status": "PENDING_SOCIAL_CARD_AND_LOCAL_IMAGE_VERIFICATION",
-  "publication_policy": "Actual PrestaShop IDs recovered from official product-miniature[data-id-product] HTML on 2026-10-19. None of the four IDs/codes exists in database/fragrantica/social-cards/manifest.csv, so do not publish or mark green until each card is fetched and image/notes proof is validated.",
+  "status": "PENDING_LOCAL_SOCIAL_CARD_ASSETS_AND_NOTE_ICON_MAPPING",
+  "publication_policy": "Recovered PrestaShop IDs and visually checked the four direct Fragrantica social-card images. Keep these products out of the certified/public catalog until card bytes are downloaded and hashed in-repo, note-icon assets are verified, and Main Notes are exactly the six visible social-card labels in card order.",
   "candidates": [
     {
       "code": "2879-KAY",
@@ -43,7 +43,25 @@
       "fragrantica_url": "https://www.fragrantica.com/perfume/Kayali-Fragrances/Freedom-Musk-Matcha-45-Eau-de-Parfum-118623.html",
       "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE",
       "image_status": "VERIFIED_OFFICIAL_PRODUCT_IMAGE",
-      "official_listing_url": "https://leparfum.com.gr/en/elegants-fragrances/2879-kay-inspired-freedom-musk-matcha-45#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml"
+      "official_listing_url": "https://leparfum.com.gr/en/elegants-fragrances/2879-kay-inspired-freedom-musk-matcha-45#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
+      "social_card_visual_check": {
+        "status": "VISUALLY_CHECKED_DIRECT_CARD_IMAGE",
+        "social_card_url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_118623.jpeg",
+        "visible_title": "Freedom Musk Matcha | 45 Eau de Parfum",
+        "visible_brand": "Kayali Fragrances",
+        "visible_gender": "for women and men",
+        "visible_note_icon_labels_in_order": [
+          "Matcha Tea",
+          "Oat",
+          "Milk",
+          "Musk",
+          "Mate",
+          "Vanilla"
+        ],
+        "reading_order": "left-to-right, top-to-bottom in visible note-icon grid",
+        "seasons_panel": "VISIBLE; exact bar lengths not transcribed",
+        "limitations": "Visual confirmation of image header/gender/note labels only; local card bytes/hash and local note-icon asset mapping still pending."
+      }
     },
     {
       "code": "2878-MAN",
@@ -82,7 +100,25 @@
       "fragrantica_url": "https://www.fragrantica.com/perfume/Mancera/Fig-Me-Up-98362.html",
       "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE",
       "image_status": "VERIFIED_OFFICIAL_PRODUCT_IMAGE",
-      "official_listing_url": "https://leparfum.com.gr/en/elegants-fragrances/2878-man-inspired-fig-me-up#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml"
+      "official_listing_url": "https://leparfum.com.gr/en/elegants-fragrances/2878-man-inspired-fig-me-up#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
+      "social_card_visual_check": {
+        "status": "VISUALLY_CHECKED_DIRECT_CARD_IMAGE",
+        "social_card_url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_98362.jpeg",
+        "visible_title": "Fig Me Up",
+        "visible_brand": "Mancera",
+        "visible_gender": "for women and men",
+        "visible_note_icon_labels_in_order": [
+          "Fig",
+          "Plum",
+          "Rhubarb",
+          "Tobacco",
+          "Fig Leaf",
+          "Agarwood (Oud)"
+        ],
+        "reading_order": "left-to-right, top-to-bottom in visible note-icon grid",
+        "seasons_panel": "VISIBLE; exact bar lengths not transcribed",
+        "limitations": "Visual confirmation of image header/gender/note labels only; local card bytes/hash and local note-icon asset mapping still pending."
+      }
     },
     {
       "code": "2877-VIC MP",
@@ -116,7 +152,25 @@
       "fragrantica_url": "https://www.fragrantica.com/perfume/Viktor-Rolf/Spicebomb-Infrared-66514.html",
       "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE",
       "image_status": "VERIFIED_OFFICIAL_PRODUCT_IMAGE",
-      "official_listing_url": "https://leparfum.com.gr/en/fragrances-for-men/2877-vic-inspired-spicebomb-infrared#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml"
+      "official_listing_url": "https://leparfum.com.gr/en/fragrances-for-men/2877-vic-inspired-spicebomb-infrared#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
+      "social_card_visual_check": {
+        "status": "VISUALLY_CHECKED_DIRECT_CARD_IMAGE",
+        "social_card_url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_66514.jpeg",
+        "visible_title": "Spicebomb Infrared",
+        "visible_brand": "Viktor&Rolf",
+        "visible_gender": "for men",
+        "visible_note_icon_labels_in_order": [
+          "Cinnamon",
+          "Red Fruits",
+          "Pink Pepper",
+          "Tobacco",
+          "Pimento",
+          "Benzoin"
+        ],
+        "reading_order": "left-to-right, top-to-bottom in visible note-icon grid",
+        "seasons_panel": "VISIBLE; exact bar lengths not transcribed",
+        "limitations": "Visual confirmation of image header/gender/note labels only; local card bytes/hash and local note-icon asset mapping still pending."
+      }
     },
     {
       "code": "2854-RIH W",
@@ -154,7 +208,25 @@
       "fragrantica_url": "https://www.fragrantica.com/perfume/Rihanna/Reb-l-Fleur-10554.html",
       "note_sequence_check": "MATCHES_FRAGRANTICA_TOP_HEART_BASE",
       "image_status": "VERIFIED_OFFICIAL_PRODUCT_IMAGE",
-      "official_listing_url": "https://leparfum.com.gr/en/fragrances-for-women/2854-rih-inspired-reb-l-fleur#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml"
+      "official_listing_url": "https://leparfum.com.gr/en/fragrances-for-women/2854-rih-inspired-reb-l-fleur#/1-choose-eau_de_parfum/2-bottle-30ml/3-extra_essence-0ml",
+      "social_card_visual_check": {
+        "status": "VISUALLY_CHECKED_DIRECT_CARD_IMAGE",
+        "social_card_url": "https://fimgs.net/mdimg/perfume-social-cards/en-p_c_10554.jpeg",
+        "visible_title": "Reb'l Fleur",
+        "visible_brand": "Rihanna",
+        "visible_gender": "for women",
+        "visible_note_icon_labels_in_order": [
+          "Coconut",
+          "Vanilla",
+          "Peach",
+          "Patchouli",
+          "Plum",
+          "Red Berries"
+        ],
+        "reading_order": "left-to-right, top-to-bottom in visible note-icon grid",
+        "seasons_panel": "VISIBLE; exact bar lengths not transcribed",
+        "limitations": "Visual confirmation of image header/gender/note labels only; local card bytes/hash and local note-icon asset mapping still pending."
+      }
     }
   ],
   "audit_notes": [
@@ -187,5 +259,14 @@
     },
     "manifest_check": "NO_MATCHES_FOR_IDS_5224_5225_5226_5227_OR_CODES",
     "catalog_changed": false
+  },
+  "social_card_visual_review": {
+    "reviewed_on": "2026-10-19",
+    "method": "Opened each direct Fragrantica social-card JPEG and visually read its header, gender line, note-icon grid, and presence of seasons panel.",
+    "outcome": "4_OF_4_DIRECT_IMAGES_MATCH_EXPECTED_FRAGRANCE_IDENTITY; VISIBLE_NOTE_LABELS_TRANSCRIBED",
+    "local_asset_status": "PENDING_DOWNLOAD_AND_SHA256_VALIDATION",
+    "manifest_status": "NO_ROWS_FOR_PRODUCT_IDS_5224_5225_5226_5227_OR_THE_FOUR_SHOBI_REFERENCES",
+    "certification_status": "NOT_CERTIFIED",
+    "explanation": "The cards expose six note icons each. These six labels/order are recorded as shown on the card; they are not interchangeable with the full official top/heart/base pyramid listed on Shobi pages. Do not create a green certification until the downloadable images are committed/hashed, note icons are linked correctly, and the site's Main Notes use the exact six visible labels in this exact order."
   }
 }
