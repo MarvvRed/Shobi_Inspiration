@@ -88,9 +88,9 @@ CANDIDATES = [
         "description": "2879-KAY — Inspired by Freedom Musk Matcha | 45. Matcha and green apple meet creamy oat milk, vanilla and praline, over soft musk and sandalwood.",
         "notes": ["Matcha Tea", "Oat", "Milk", "Musk", "Mate", "Vanilla"],
         "accords": ["powdery", "lactonic", "green", "musky", "savory"],
-        "gender": "Unisex", "affinity": "unisex", "season": "fall", "season_label": "Autumn",
+        "gender": "Unisex", "affinity": "unisex", "season": "spring", "season_label": "Spring",
         "gender_label": "for women and men",
-        "season_observation": "Autumn bar is visibly slightly longer than the Spring bar.",
+        "season_observation": "Spring bar is visibly the longest of the four seasonal bars.",
         "image_id": 78227
     }
 ]
