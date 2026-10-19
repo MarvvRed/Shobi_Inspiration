@@ -1,15 +1,16 @@
-name: Audit pending Shobi product IDs
+name: Audit pending Shobi product IDs and social cards
 on:
   push:
     paths:
       - '.github/workflows/audit-shobi-candidate-ids.yml'
       - 'tools/audit_shobi_candidate_product_ids.py'
+      - 'tools/audit_pending_shobi_social_cards.py'
       - 'database/audits/pending-shobi-additions-2026-10-19.json'
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  recover-product-ids:
+  audit-pending-shobi:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -23,11 +24,16 @@ jobs:
         run: python -m pip install requests beautifulsoup4
       - name: Recover official product IDs
         run: python tools/audit_shobi_candidate_product_ids.py
-      - name: Upload audit report
+      - name: Download and validate candidate social-card JPEGs
+        run: python tools/audit_pending_shobi_social_cards.py
+      - name: Upload audit report and card images
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: shobi-product-id-audit
-          path: database/audits/recovered-shobi-product-ids-2026-10-19.json
+          name: shobi-social-card-audit
+          path: |
+            database/audits/recovered-shobi-product-ids-2026-10-19.json
+            database/audits/shobi-pending-social-card-download-2026-10-19.json
+            artifacts/shobi-pending-social-cards/*.jpeg
           if-no-files-found: warn
           retention-days: 30
