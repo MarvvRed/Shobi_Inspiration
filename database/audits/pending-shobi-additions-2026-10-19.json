@@ -1,0 +1,77 @@
+{
+  "audit_date": "2026-10-19",
+  "source": "https://leparfum.com.gr/en/",
+  "purpose": "Official Shobi wearable Eau de Parfum candidates found on the live site but absent from database/source/shobi-perfumes-live-unique.csv.",
+  "status": "PENDING_SOURCE_INGESTION_AND_IDENTITY_AUDIT",
+  "publication_policy": "Do not add these records to the public certified catalog until the live PrestaShop product IDs and image URLs are captured from the official listing, the original perfume identity is verified, and the project certification checks pass.",
+  "candidates": [
+    {
+      "code": "2879-KAY",
+      "reference": "2879-KAY",
+      "inspired_by": "Freedom Musk Matcha 45",
+      "category": "Elegants Fragrances",
+      "price_eur": 10,
+      "gender": "unisex",
+      "url": "https://leparfum.com.gr/en/elegants-fragrances/2879-kay-inspired-freedom-musk-matcha-45",
+      "official_notes": {
+        "top": ["matcha", "maté", "green apple", "bergamot"],
+        "heart": ["oat milk", "vanilla", "praline", "coffee"],
+        "base": ["musk", "sandalwood", "amber", "vetiver", "patchouli"]
+      },
+      "prestashop_product_id": null,
+      "image_url": null,
+      "certification": "PENDING"
+    },
+    {
+      "code": "2878-MAN",
+      "reference": "2878-MAN",
+      "inspired_by": "Fig Me Up",
+      "category": "Elegants Fragrances",
+      "price_eur": 10,
+      "gender": "unisex",
+      "url": "https://leparfum.com.gr/en/elegants-fragrances/2878-man-inspired-fig-me-up",
+      "official_notes": {
+        "top": ["rhubarb", "fig leaf", "violet"],
+        "heart": ["fig nectar", "plum", "oud", "sandalwood", "geranium"],
+        "base": ["tobacco", "white musk", "toffee", "tonka bean"]
+      },
+      "prestashop_product_id": null,
+      "image_url": null,
+      "certification": "PENDING"
+    },
+    {
+      "code": "2877-VIC MP",
+      "reference": "2877-VIC",
+      "inspired_by": "Spicebomb Infrared",
+      "category": "Fragrances For Men",
+      "price_eur": 9,
+      "gender": "men",
+      "url": "https://leparfum.com.gr/en/fragrances-for-men/2877-vic-inspired-spicebomb-infrared",
+      "official_notes": {
+        "top": ["red fruits", "pink pepper", "saffron"],
+        "heart": ["cinnamon", "red pepper"],
+        "base": ["tobacco", "benzoin"]
+      },
+      "prestashop_product_id": null,
+      "image_url": null,
+      "certification": "PENDING"
+    },
+    {
+      "code": "2854-RIH W",
+      "reference": "2854-RIH",
+      "inspired_by": "Reb'l Fleur",
+      "category": "Fragrances For Women",
+      "price_eur": 9,
+      "gender": "women",
+      "url": "https://leparfum.com.gr/en/fragrances-for-women/2854-rih-inspired-reb-l-fleur",
+      "official_notes": {
+        "top": ["peach", "plum", "red berries"],
+        "heart": ["coconut", "tuberose", "hibiscus", "violet"],
+        "base": ["vanilla", "patchouli", "musk", "amber"]
+      },
+      "prestashop_product_id": null,
+      "image_url": null,
+      "certification": "PENDING"
+    }
+  ]
+}
