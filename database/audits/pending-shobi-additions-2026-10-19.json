@@ -2,8 +2,8 @@
   "audit_date": "2026-10-19",
   "source": "https://leparfum.com.gr/en/",
   "purpose": "Official Shobi wearable Eau de Parfum candidates found on the live site but absent from database/source/shobi-perfumes-live-unique.csv.",
-  "status": "PENDING_SOURCE_INGESTION_AND_IDENTITY_AUDIT",
-  "publication_policy": "Do not add these records to the public certified catalog until the live PrestaShop product IDs and image URLs are captured from the official listing, the original perfume identity is verified, and the project certification checks pass.",
+  "status": "PENDING_PRODUCT_IDS_AND_IDENTITY_AUDIT",
+  "publication_policy": "Keep out of the public certified catalog until each original identity and note sequence passes the project certification checks. Official product page and image URLs are captured; PrestaShop product IDs still need to be recovered from the site's source/API before the operational CSV can be updated safely.",
   "candidates": [
     {
       "code": "2879-KAY",
@@ -14,12 +14,28 @@
       "gender": "unisex",
       "url": "https://leparfum.com.gr/en/elegants-fragrances/2879-kay-inspired-freedom-musk-matcha-45",
       "official_notes": {
-        "top": ["matcha", "maté", "green apple", "bergamot"],
-        "heart": ["oat milk", "vanilla", "praline", "coffee"],
-        "base": ["musk", "sandalwood", "amber", "vetiver", "patchouli"]
+        "top": [
+          "matcha",
+          "maté",
+          "green apple",
+          "bergamot"
+        ],
+        "heart": [
+          "oat milk",
+          "vanilla",
+          "praline",
+          "coffee"
+        ],
+        "base": [
+          "musk",
+          "sandalwood",
+          "amber",
+          "vetiver",
+          "patchouli"
+        ]
       },
       "prestashop_product_id": null,
-      "image_url": null,
+      "image_url": "https://leparfum.com.gr/78227-large_default/2879-kay-inspired-freedom-musk-matcha-45.jpg",
       "certification": "PENDING"
     },
     {
@@ -31,12 +47,27 @@
       "gender": "unisex",
       "url": "https://leparfum.com.gr/en/elegants-fragrances/2878-man-inspired-fig-me-up",
       "official_notes": {
-        "top": ["rhubarb", "fig leaf", "violet"],
-        "heart": ["fig nectar", "plum", "oud", "sandalwood", "geranium"],
-        "base": ["tobacco", "white musk", "toffee", "tonka bean"]
+        "top": [
+          "rhubarb",
+          "fig leaf",
+          "violet"
+        ],
+        "heart": [
+          "fig nectar",
+          "plum",
+          "oud",
+          "sandalwood",
+          "geranium"
+        ],
+        "base": [
+          "tobacco",
+          "white musk",
+          "toffee",
+          "tonka bean"
+        ]
       },
       "prestashop_product_id": null,
-      "image_url": null,
+      "image_url": "https://leparfum.com.gr/78226-large_default/2878-man-inspired-fig-me-up.jpg",
       "certification": "PENDING"
     },
     {
@@ -48,12 +79,22 @@
       "gender": "men",
       "url": "https://leparfum.com.gr/en/fragrances-for-men/2877-vic-inspired-spicebomb-infrared",
       "official_notes": {
-        "top": ["red fruits", "pink pepper", "saffron"],
-        "heart": ["cinnamon", "red pepper"],
-        "base": ["tobacco", "benzoin"]
+        "top": [
+          "red fruits",
+          "pink pepper",
+          "saffron"
+        ],
+        "heart": [
+          "cinnamon",
+          "red pepper"
+        ],
+        "base": [
+          "tobacco",
+          "benzoin"
+        ]
       },
       "prestashop_product_id": null,
-      "image_url": null,
+      "image_url": "https://leparfum.com.gr/78225-large_default/2877-vic-inspired-spicebomb-infrared.jpg",
       "certification": "PENDING"
     },
     {
@@ -65,12 +106,26 @@
       "gender": "women",
       "url": "https://leparfum.com.gr/en/fragrances-for-women/2854-rih-inspired-reb-l-fleur",
       "official_notes": {
-        "top": ["peach", "plum", "red berries"],
-        "heart": ["coconut", "tuberose", "hibiscus", "violet"],
-        "base": ["vanilla", "patchouli", "musk", "amber"]
+        "top": [
+          "peach",
+          "plum",
+          "red berries"
+        ],
+        "heart": [
+          "coconut",
+          "tuberose",
+          "hibiscus",
+          "violet"
+        ],
+        "base": [
+          "vanilla",
+          "patchouli",
+          "musk",
+          "amber"
+        ]
       },
       "prestashop_product_id": null,
-      "image_url": null,
+      "image_url": "https://leparfum.com.gr/78224-large_default/2854-rih-inspired-reb-l-fleur.jpg",
       "certification": "PENDING"
     }
   ]
