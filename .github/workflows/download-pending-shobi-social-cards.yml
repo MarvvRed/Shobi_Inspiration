@@ -1,17 +1,20 @@
-name: Download pending Shobi social cards
+name: Download, verify and integrate pending Shobi additions
 on:
   push:
     paths:
       - '.github/workflows/download-pending-shobi-social-cards.yml'
       - 'data/pending-shobi-fragrantica-mapping-2026-10-19.csv'
       - 'database/fragrantica/social-cards/fetch_social_cards.py'
+      - 'tools/integrate_verified_shobi_additions_2026_10_19.py'
+      - 'tools/build_final_perfume_catalog.py'
+      - 'tools/verify_catalog_invariants.py'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
-  download-cards:
+  download-verify-integrate:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 30
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -19,24 +22,88 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run downloader with temporary mapping
+      - name: Install image dependency
+        run: python -m pip install --disable-pip-version-check pillow
+      - name: Back up existing manifest, then download the four exact-FID cards
         shell: bash
         run: |
           set -euo pipefail
+          cp database/fragrantica/social-cards/manifest.csv /tmp/shobi-social-card-manifest-before.csv
           mkdir -p data
           cp data/pending-shobi-fragrantica-mapping-2026-10-19.csv data/shobi-fragrantica-mapping.csv
           python database/fragrantica/social-cards/fetch_social_cards.py
           cp database/fragrantica/social-cards/manifest.csv database/audits/pending-shobi-social-card-manifest-2026-10-19.csv
-      - name: Upload candidate social cards and manifest
+      - name: Integrate source rows, card evidence, images and metadata
+        run: python tools/integrate_verified_shobi_additions_2026_10_19.py --base-manifest /tmp/shobi-social-card-manifest-before.csv
+      - name: Rebuild certified perfume-only catalog
+        run: python tools/build_final_perfume_catalog.py
+      - name: Run independent catalog invariant gate
+        run: python tools/verify_catalog_invariants.py --baseline-ref HEAD --write-report
+      - name: Validate final counts and required note-icon files
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('.')
+          db = json.loads((root/'database/catalog/database_complete.json').read_text(encoding='utf-8'))
+          site = json.loads((root/'database/catalog/catalog_site.json').read_text(encoding='utf-8'))
+          final = json.loads((root/'database/catalog/catalog_final_perfume_only.json').read_text(encoding='utf-8'))
+          cert = json.loads((root/'database/catalog/final-perfume-catalog-certification.json').read_text(encoding='utf-8'))
+          expected = {'2854-RIH','2877-VIC','2878-MAN','2879-KAY'}
+          assert expected <= {r['code'] for r in db}
+          assert expected <= {r['code'] for r in site}
+          assert expected <= {r['code'] for r in final}
+          assert len(db) == len(site) == 2278, (len(db), len(site))
+          assert len(final) == 2253, len(final)
+          assert cert['finalRows'] == 2253, cert['finalRows']
+          assert sum(1 for r in site if r.get('validationStatus') == 'yellow') == 6
+          assert sum(1 for r in site if r.get('validationStatus') == 'red') == 0
+          for c in expected:
+              row = next(r for r in db if r['code'] == c)
+              assert row['validationAudit']['status'] == 'green'
+              assert len(row['fragranticaSocialCardNotes']) == 6
+              assert all(Path(p).is_file() for p in [
+                  'database/fragrantica/social-cards/images/current_'+c+'_'+str(row['fragranticaId'])+'.jpeg',
+                  'database/assets/perfumes/'+str(row['fragranticaId'])+'.jpg'
+              ])
+          print(json.dumps({'operational':len(db),'public':len(final),'newGreen':sorted(expected),
+                            'yellow':sum(1 for r in site if r.get('validationStatus')=='yellow'),
+                            'red':sum(1 for r in site if r.get('validationStatus')=='red')}, indent=2))
+          PY
+      - name: Remove temporary mapping file
+        if: always()
+        run: rm -f data/shobi-fragrantica-mapping.csv
+      - name: Upload proof bundle
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pending-shobi-social-cards
+          name: verified-shobi-additions-2026-10-19
           path: |
-            database/fragrantica/social-cards/images/5224_2854-RIH_10554.jpeg
-            database/fragrantica/social-cards/images/5225_2877-VIC_66514.jpeg
-            database/fragrantica/social-cards/images/5226_2878-MAN_98362.jpeg
-            database/fragrantica/social-cards/images/5227_2879-KAY_118623.jpeg
+            database/audits/verified-shobi-additions-2026-10-19.json
             database/audits/pending-shobi-social-card-manifest-2026-10-19.csv
+            database/fragrantica/social-cards/images/current_2854-RIH_10554.jpeg
+            database/fragrantica/social-cards/images/current_2877-VIC_66514.jpeg
+            database/fragrantica/social-cards/images/current_2878-MAN_98362.jpeg
+            database/fragrantica/social-cards/images/current_2879-KAY_118623.jpeg
+            database/assets/perfumes/10554.jpg
+            database/assets/perfumes/66514.jpg
+            database/assets/perfumes/98362.jpg
+            database/assets/perfumes/118623.jpg
           if-no-files-found: warn
           retention-days: 30
+      - name: Commit only after all independent checks pass
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git commit -m "Add four verified Shobi perfumes with exact social-card proof"
+          git push origin HEAD:main
