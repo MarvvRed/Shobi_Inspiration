@@ -781,7 +781,7 @@ async function init() {
             ...p,
             genderAffinity: String(p.genderAffinity || '').toLowerCase(),
             mainAccords: (p.mainAccords || []).map(a => a.toLowerCase()),
-            seasons: (p.seasons || []).map(s => String(s).toLowerCase()).filter(s => s),
+            seasons: Array.from(new Set((p.seasons || []).map(s => { const season = String(s || '').trim().toLowerCase(); return season === 'fall' ? 'autumn' : season; }).filter(Boolean))),
             occasions: (p.occasions || []).map(o => String(o).toLowerCase()).filter(o => o),
             notes: p.notes || { top: [], heart: [], base: [] },
             searchText: [p.inspiredBy, p.brand, p.code].filter(Boolean).join(' ').toLocaleLowerCase(),
