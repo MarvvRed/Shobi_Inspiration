@@ -399,3 +399,98 @@
 [data-theme="dark"] .v2-test-card .collection-btn::before {
     background: var(--color-text-primary);
 }
+
+/* Responsive layout hardening: prevent card/header collisions on compact screens. */
+#resultsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
+    min-width: 0;
+}
+#main-content,
+#filter-sidebar,
+#resultsContainer > * {
+    min-width: 0;
+}
+.v2-test-card .v2-test-top {
+    grid-template-columns: minmax(76px, 96px) minmax(0, 1fr);
+}
+.v2-test-card .v2-test-info,
+.v2-test-card [data-field="inspiredBy"],
+.v2-test-card .brand-badge {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+.v2-test-card [data-field="audience-icons"] {
+    flex-wrap: wrap;
+}
+.v2-test-card [data-field="main-notes"] > div {
+    flex-wrap: wrap;
+}
+@media (max-width: 1279px) {
+    .v2-test-card .v2-test-top {
+        grid-template-columns: 82px minmax(0, 1fr);
+        gap: 10px;
+    }
+    .v2-test-card .v2-test-image-wrap {
+        width: 82px;
+        height: 112px;
+    }
+}
+@media (max-width: 1023px) {
+    nav .flex.justify-between.h-16 {
+        height: auto;
+        min-height: 4rem;
+        flex-wrap: wrap;
+        gap: .5rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    nav #header-controls {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: .4rem;
+        max-width: 100%;
+    }
+    nav #header-controls .top-control {
+        padding-left: .6rem;
+        padding-right: .6rem;
+    }
+    .page-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #main-content {
+        width: 100%;
+    }
+}
+@media (max-width: 640px) {
+    .page-grid {
+        padding: .75rem;
+        gap: .75rem;
+    }
+    #resultsContainer {
+        grid-template-columns: minmax(0, 1fr);
+        gap: .85rem;
+    }
+    .v2-test-card > div:first-child {
+        padding: 1rem;
+    }
+    .v2-test-card .v2-test-top {
+        grid-template-columns: 88px minmax(0, 1fr);
+        gap: .75rem;
+    }
+    .v2-test-card .v2-test-image-wrap {
+        width: 88px;
+        height: 116px;
+    }
+    .v2-test-card [data-field="inspiredBy"] {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    nav .font-bold.text-lg {
+        font-size: .95rem;
+    }
+    nav #header-controls {
+        width: 100%;
+    }
+}
+
