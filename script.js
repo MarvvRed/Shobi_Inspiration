@@ -70,10 +70,10 @@ function stripBrandFromPerfumeName(name, brand) {
 
 function getMainNotes(p) {');
         if (!escaped) continue;
-        const pattern = new RegExp('(^|[\\\\s._\\-–—/|,:;·&+\\'’])' + escaped.replace(/\\s+/g, '[\\\\s._\\-–—/|,:;·&+\\'’]*') + '(?=$|[\\\\s._\\-–—/|,:;·&+\\'’])', 'gi');
+        const pattern = new RegExp('(^|[\\\\s._\\-–—/|,:;·&+\\'’])' + escaped.replace(/\s+/g, '[\\\\s._\\-–—/|,:;·&+\\'’]*') + '(?=$|[\\\\s._\\-–—/|,:;·&+\\'’])', 'gi');
         result = result.replace(pattern, '$1 ');
     }
-    return result.replace(/\\s+/g, ' ').replace(/^[-–—|/:,;]+|[-–—|/:,;]+$/g, '').trim() || String(name || '').trim();
+    return result.replace(/\s+/g, ' ').replace(/^[-–—|/:,;]+|[-–—|/:,;]+$/g, '').trim() || String(name || '').trim();
 }
 
 function getMainNotes(p) {
@@ -336,7 +336,7 @@ function displayActiveFilterTokens() {
             token.className = `filter-token ${TOKEN_COLORS[filterType] || 'token-default'}`;
             let icon = '';
             if (filterType === 'notes') {
-                const key = String(value).trim().toLowerCase().replace(/\\s+/g, ' ');
+                const key = String(value).trim().toLowerCase().replace(/\s+/g, ' ');
                 const src = window.FRAGRANTICA_NOTE_ICON_MAP?.[key];
                 icon = src ? `<img class="filter-token-icon" src="${src}" alt="" aria-hidden="true">` : '<span class="filter-token-icon-text" aria-hidden="true">✦</span>';
             } else if (filterType === 'season') {
@@ -650,7 +650,7 @@ function populateFilters() {
 
     const getFilterIcon = (name, value) => {
         if (name === 'note') {
-            const key = String(value || '').trim().toLowerCase().replace(/\\s+/g, ' ');
+            const key = String(value || '').trim().toLowerCase().replace(/\s+/g, ' ');
             const src = window.FRAGRANTICA_NOTE_ICON_MAP?.[key];
             return src ? `<img class="filter-option-icon filter-option-note-icon" src="${src}" alt="" aria-hidden="true" loading="lazy" onerror="this.remove()">` : '<span class="filter-option-icon filter-option-icon-fallback" aria-hidden="true">✦</span>';
         }
