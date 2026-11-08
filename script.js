@@ -43,8 +43,8 @@ const BRAND_NAME_ALIASES = {
 };
 
 function normalizeBrandKey(value) {
-    return String(value || '').normalize('NFKD').replace(/[\\u0300-\\u036f]/g, '')
-        .toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim().replace(/\\s+/g, ' ');
+    return String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim().replace(/\s+/g, ' ');
 }
 
 function canonicalBrandName(value) {
@@ -58,7 +58,17 @@ function stripBrandFromPerfumeName(name, brand) {
     const aliases = [...(BRAND_NAME_ALIASES[key] || []), brand].filter(Boolean)
         .sort((a, b) => String(b).length - String(a).length);
     for (const alias of aliases) {
-        const escaped = String(alias).trim().replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\function getMainNotes(p) {');
+        const escaped = String(alias).trim().replace(/[.*+?^\${}()|[\]\\]/g, '\\$&');
+        if (!escaped) continue;
+        const phrase = escaped.replace(/\s+/g, '[\\s._\\-–—/|,:;·&+\\'’]*');
+        const boundary = '(^|[\\s._\\-–—/|,:;·&+\\'’])';
+        const pattern = new RegExp(boundary + phrase + '(?=$|[\\s._\\-–—/|,:;·&+\\'’])', 'gi');
+        result = result.replace(pattern, '$1 ');
+    }
+    return result.replace(/\s+/g, ' ').replace(/^[-–—|/:,;]+|[-–—|/:,;]+$/g, '').trim() || String(name || '').trim();
+}
+
+function getMainNotes(p) {');
         if (!escaped) continue;
         const pattern = new RegExp('(^|[\\\\s._\\-–—/|,:;·&+\\'’])' + escaped.replace(/\\s+/g, '[\\\\s._\\-–—/|,:;·&+\\'’]*') + '(?=$|[\\\\s._\\-–—/|,:;·&+\\'’])', 'gi');
         result = result.replace(pattern, '$1 ');
