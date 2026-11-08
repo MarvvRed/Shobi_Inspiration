@@ -6,7 +6,7 @@
     <title>Shobi Perfume Finder</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=20261108-olive-dark-theme">
+    <link rel="stylesheet" href="style.css?v=20261108-olive-header-controls">
     <style>
         [data-field="inspiredBy"] { text-transform: uppercase; }
         .brand-badge { display:inline-flex; align-items:center; width:fit-content; padding:.35rem .8rem; border-radius:9999px; font-size:.75rem; font-weight:600; line-height:1rem; border:1px solid #d1d5db; color:#374151; background:#f9fafb; }
@@ -70,7 +70,18 @@
         [data-theme="dark"] .collection-btn.is-collected:hover { color:#191e19; background:#bdcca9; border-color:#d4e2c5; }
         [data-theme="dark"] #back-to-top { color:#191e19; background:#bdcca9; border-color:#bdcca9; }
         [data-theme="dark"] #back-to-top:hover { background:#d4e2c5; border-color:#d4e2c5; }
-</style>
+
+        /* Match the dark-theme header controls to the Shobi sage CTA. */
+        [data-theme="dark"] #theme-menu-btn {
+            color:#191e19;
+            background:#bdcca9;
+            border-color:#bdcca9;
+        }
+        [data-theme="dark"] #theme-menu-btn:hover {
+            background:#d4e2c5;
+            border-color:#d4e2c5;
+        }
+    </style>
 </head>
 <body class="bg-base font-sans">
 <nav class="bg-surface shadow-md sticky top-0 z-10"><div class="mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between h-16"><div class="flex-shrink-0 flex items-center gap-3"><i class="fas fa-spray-can-sparkles text-blue-600 text-xl"></i><span class="font-bold text-lg text-primary">Shobi Perfume Inspiration</span><a href="./" class="top-control text-sm font-semibold text-secondary focus:outline-none focus:ring-2 focus:ring-blue-300" title="Home" aria-label="Home"><i class="fas fa-house"></i><span class="hidden sm:inline">Home</span></a></div><div id="header-controls" class="flex items-center gap-3"><div id="results-count" class="results-pill hidden md:block">Loading perfumes...</div><div class="relative" id="theme-switcher"><button id="theme-menu-btn" class="top-control text-sm font-medium text-secondary" title="Choose appearance"><i class="fas fa-circle-half-stroke"></i><span class="hidden sm:inline">Theme</span><i class="fas fa-chevron-down"></i></button><div id="theme-menu-dropdown" class="hidden absolute right-0 mt-2 bg-surface rounded-xl shadow-xl z-20 overflow-hidden"><button data-theme="light" class="theme-btn block w-full text-left px-4 py-2.5 text-sm text-secondary hover:bg-base"><i class="fas fa-sun w-5 mr-2"></i>Light</button><button data-theme="dark" class="theme-btn block w-full text-left px-4 py-2.5 text-sm text-secondary hover:bg-base"><i class="fas fa-moon w-5 mr-2"></i>Dark</button></div></div><button id="favorites-btn" class="top-control text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-rose-300"><i class="fa-regular fa-heart"></i><span class="hidden sm:inline">Favorites</span><span id="favorites-count" class="min-w-5 h-5 inline-flex items-center justify-center rounded-full bg-rose-100 text-rose-700 text-xs font-bold px-1.5">0</span></button><button id="collection-nav-btn" class="top-control text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-300" title="Show collection"><i class="fas fa-box-open"></i><span class="hidden sm:inline">Collection</span><span id="collection-count" class="min-w-5 h-5 inline-flex items-center justify-center rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold px-1.5">0</span></button></div></div></div></nav>
