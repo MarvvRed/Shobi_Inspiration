@@ -27,29 +27,27 @@
 }
 
 [data-theme="dark"] {
-    --color-bg-base: #1f2937; /* gray-800 */
-    --color-bg-surface: #374151; /* gray-700 */
-    --color-bg-subtle: #4b5563; /* gray-600 */
-    --color-bg-accent-subtle: #374151; /* gray-700 */
-    --color-bg-primary: #60A5FA; /* blue-400 */
-    --color-bg-primary-hover: #93C5FD; /* blue-300 */
-    --color-bg-danger: #F87171; /* red-400 */
-    --color-bg-danger-hover: #FB923C; /* red-300 */
-
-    --color-text-primary: #f9fafb; /* gray-50 */
-    --color-text-secondary: #d1d5db; /* gray-300 */
-    --color-text-tertiary: #9ca3af; /* gray-400 */
-    --color-text-placeholder: #9ca3af; /* gray-400 */
-    --color-text-primary-accent: #60A5FA; /* blue-400 */
-    --color-text-primary-accent-hover: #93C5FD; /* blue-300 */
-    --color-text-danger: #F87171; /* red-400 */
-    --color-text-on-primary: #111827; /* gray-900 */
-
-    --color-border-base: #4b5563; /* gray-600 */
-    --color-border-light: #4b5563; /* gray-600 */
-    --color-border-accent: #60A5FA; /* blue-400 */
-    --color-focus-ring: #60A5FA; /* blue-400 */
-    --color-icon-base: #6b7280; /* gray-500 */
+    --color-bg-base: #191e19;
+    --color-bg-surface: #202620;
+    --color-bg-subtle: #262e25;
+    --color-bg-accent-subtle: #2d3b29;
+    --color-bg-primary: #bdcca9;
+    --color-bg-primary-hover: #d4e2c5;
+    --color-bg-danger: #e69a91;
+    --color-bg-danger-hover: #f0b2a8;
+    --color-text-primary: #eeeee5;
+    --color-text-secondary: #b4bbae;
+    --color-text-tertiary: #b4bbae;
+    --color-text-placeholder: #899184;
+    --color-text-primary-accent: #bdcca9;
+    --color-text-primary-accent-hover: #d4e2c5;
+    --color-text-danger: #e69a91;
+    --color-text-on-primary: #191e19;
+    --color-border-base: #3d473a;
+    --color-border-light: #3d473a;
+    --color-border-accent: #bdcca9;
+    --color-focus-ring: #bdcca9;
+    --color-icon-base: #b4bbae;
 }
 
 
@@ -486,3 +484,28 @@
     nav .font-bold.text-lg { font-size: .95rem; }
     nav #header-controls { width: 100%; }
 }
+
+/* Olive and ivory dark theme accents for V2 cards and controls. */
+[data-theme="dark"] .v2-test-card { background:#202620; border-color:#3d473a; color:#eeeee5; }
+[data-theme="dark"] .v2-test-card [data-field="inspiredBy"],
+[data-theme="dark"] .v2-test-card > div > div.mb-4 > p { color:#eeeee5; }
+[data-theme="dark"] .v2-test-card .brand-badge,
+[data-theme="dark"] .v2-test-card .favorite-btn,
+[data-theme="dark"] .v2-test-card .collection-btn,
+[data-theme="dark"] .v2-test-card [data-field="main-notes"] .main-note-badge {
+    color:#eeeee5; background:#262e25; border-color:#3d473a;
+}
+[data-theme="dark"] .v2-test-card .brand-badge:hover,
+[data-theme="dark"] .v2-test-card .favorite-btn:hover,
+[data-theme="dark"] .v2-test-card .collection-btn:hover,
+[data-theme="dark"] .v2-test-card [data-field="main-notes"] .main-note-badge:hover {
+    color:#eeeee5; background:#2d3b29; border-color:#bdcca9;
+}
+[data-theme="dark"] .v2-test-card .gender-badge { color:#d4e2c5; background:#2d3b29; border-color:#53634a; }
+[data-theme="dark"] .v2-test-card .gender-badge:hover { color:#191e19; background:#bdcca9; border-color:#d4e2c5; }
+[data-theme="dark"] .v2-test-card .collection-btn::before { background:#eeeee5; }
+[data-theme="dark"] .v2-test-card [data-field="shobiLink"] { color:#191e19; background:#bdcca9; border-color:#bdcca9; }
+[data-theme="dark"] .v2-test-card [data-field="shobiLink"]:hover { background:#d4e2c5; border-color:#d4e2c5; }
+[data-theme="dark"] .v2-test-card .v2-test-image-wrap { background:#262e25; border-color:#3d473a; }
+[data-theme="dark"] .main-note-badge { color:#eeeee5; background:#2d3b29; border-color:#53634a; }
+[data-theme="dark"] .main-note-badge:hover { color:#191e19; background:#bdcca9; border-color:#d4e2c5; }
