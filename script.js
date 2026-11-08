@@ -31,6 +31,41 @@ const TOKEN_COLORS = {
     notes: 'token-accord'
 };
 
+const BRAND_CANONICAL_NAMES = {
+    'gissah': 'Gissah',
+    'obvious': 'Obvious',
+    "etat libre d orange": "Etat Libre d'Orange",
+    'giardini di toscana': 'Giardini di Toscana'
+};
+
+const BRAND_NAME_ALIASES = {
+    'giorgio armani': ['Emporio Armani', 'Armani']
+};
+
+function normalizeBrandKey(value) {
+    return String(value || '').normalize('NFKD').replace(/[\\u0300-\\u036f]/g, '')
+        .toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim().replace(/\\s+/g, ' ');
+}
+
+function canonicalBrandName(value) {
+    const original = String(value || 'Unknown Brand').trim();
+    return BRAND_CANONICAL_NAMES[normalizeBrandKey(original)] || original;
+}
+
+function stripBrandFromPerfumeName(name, brand) {
+    let result = String(name || '').trim();
+    const key = normalizeBrandKey(brand);
+    const aliases = [...(BRAND_NAME_ALIASES[key] || []), brand].filter(Boolean)
+        .sort((a, b) => String(b).length - String(a).length);
+    for (const alias of aliases) {
+        const escaped = String(alias).trim().replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\function getMainNotes(p) {');
+        if (!escaped) continue;
+        const pattern = new RegExp('(^|[\\\\s._\\-–—/|,:;·&+\\'’])' + escaped.replace(/\\s+/g, '[\\\\s._\\-–—/|,:;·&+\\'’]*') + '(?=$|[\\\\s._\\-–—/|,:;·&+\\'’])', 'gi');
+        result = result.replace(pattern, '$1 ');
+    }
+    return result.replace(/\\s+/g, ' ').replace(/^[-–—|/:,;]+|[-–—|/:,;]+$/g, '').trim() || String(name || '').trim();
+}
+
 function getMainNotes(p) {
     const v = p?.fragranticaSocialCardNotes;
     return Array.isArray(v) ? v : [];
@@ -287,11 +322,23 @@ function displayActiveFilterTokens() {
         state.activeFilters[filterType].forEach(value => {
             hasTokens = true;
             const token = document.createElement('span');
-            const displayValue = value.charAt(0).toUpperCase() + value.slice(1);
+            const displayValue = formatFilterLabel(value, filterType === 'notes' ? 'note' : filterType === 'brands' ? 'brand' : filterType === 'accords' ? 'accord' : filterType);
             token.className = `filter-token ${TOKEN_COLORS[filterType] || 'token-default'}`;
+            let icon = '';
+            if (filterType === 'notes') {
+                const key = String(value).trim().toLowerCase().replace(/\\s+/g, ' ');
+                const src = window.FRAGRANTICA_NOTE_ICON_MAP?.[key];
+                icon = src ? `<img class="filter-token-icon" src="${src}" alt="" aria-hidden="true">` : '<span class="filter-token-icon-text" aria-hidden="true">✦</span>';
+            } else if (filterType === 'season') {
+                const icons = { spring: '🌸', summer: '☀️', autumn: '🍁', fall: '🍁', winter: '❄️' };
+                icon = `<span class="filter-token-icon-text" aria-hidden="true">${icons[value] || '•'}</span>`;
+            } else if (filterType === 'gender') {
+                const icons = { masculine: 'fa-mars', feminine: 'fa-venus', unisex: 'fa-venus-mars' };
+                icon = `<i class="filter-token-icon-gender fas ${icons[value] || ''}" aria-hidden="true"></i>`;
+            }
             token.innerHTML = `
-                ${displayValue}
-                <button data-filter-type="${filterType}" data-filter-value="${value}" title="Remove filter">&times;</button>
+                ${icon}<span>${escapeHtml(displayValue)}</span>
+                <button data-filter-type="${filterType}" data-filter-value="${escapeHtml(value)}" title="Remove filter" aria-label="Remove ${escapeHtml(displayValue)} filter">&times;</button>
             `;
             container.appendChild(token);
         });
@@ -591,9 +638,32 @@ function populateFilters() {
     const accordContainer = document.getElementById('accord-filters');
     const noteContainer = document.getElementById('note-filters');
 
+    const getFilterIcon = (name, value) => {
+        if (name === 'note') {
+            const key = String(value || '').trim().toLowerCase().replace(/\\s+/g, ' ');
+            const src = window.FRAGRANTICA_NOTE_ICON_MAP?.[key];
+            return src ? `<img class="filter-option-icon filter-option-note-icon" src="${src}" alt="" aria-hidden="true" loading="lazy" onerror="this.remove()">` : '<span class="filter-option-icon filter-option-icon-fallback" aria-hidden="true">✦</span>';
+        }
+        if (name === 'season') {
+            const season = String(value || '').toLowerCase();
+            const icons = { spring: '🌸', summer: '☀️', autumn: '🍁', fall: '🍁', winter: '❄️' };
+            return `<span class="filter-option-icon filter-option-emoji" aria-hidden="true">${icons[season] || '•'}</span>`;
+        }
+        if (name === 'gender') {
+            const icons = {
+                masculine: '<i class="fas fa-mars gender-icon-male" aria-hidden="true"></i>',
+                feminine: '<i class="fas fa-venus gender-icon-female" aria-hidden="true"></i>',
+                unisex: '<i class="fas fa-venus-mars gender-icon-unisex" aria-hidden="true"></i>'
+            };
+            return `<span class="filter-option-icon filter-option-gender">${icons[value] || ''}</span>`;
+        }
+        if (name === 'accord') return `<span class="filter-option-icon">${SCENT_ICON_MAP[value] ? SCENT_ICON_MAP[value].icon : ''}</span>`;
+        return '';
+    };
+
     const buildCheckboxes = (container, name, options, loaderId) => {
         if (!container) return;
-        const sortedOptions = Array.from(options).sort();
+        const sortedOptions = Array.from(options).sort((a, b) => String(a).localeCompare(String(b), undefined, { sensitivity: 'base' }));
 
         if (sortedOptions.length === 0) {
             container.innerHTML = `<p class="text-sm text-tertiary">No data found.</p>`;
@@ -601,13 +671,10 @@ function populateFilters() {
             container.innerHTML = sortedOptions.map(option => {
                 if (!option) return '';
                 const capitalized = formatFilterLabel(option, name);
-                const iconSpan = (name === 'accord') ?
-                    `<span class="inline-block w-5 mr-1">${SCENT_ICON_MAP[option] ? SCENT_ICON_MAP[option].icon : ''}</span>`
-                    : '';
                 return `
-                    <label>
-                        <input type="checkbox" name="${name}" value="${option}">
-                        ${iconSpan} ${capitalized}
+                    <label class="filter-option-label">
+                        <input type="checkbox" name="${name}" value="${escapeHtml(option)}">
+                        ${getFilterIcon(name, option)}<span>${escapeHtml(capitalized)}</span>
                     </label>
                 `;
             }).join('');
@@ -616,14 +683,14 @@ function populateFilters() {
     };
 
     const genders = [
-        { label: 'Masculine', value: 'masculine' },
-        { label: 'Feminine', value: 'feminine' },
+        { label: 'Male', value: 'masculine' },
+        { label: 'Female', value: 'feminine' },
         { label: 'Unisex', value: 'unisex' }
     ];
     genderContainer.innerHTML = genders.map(g => `
-        <label>
+        <label class="filter-option-label">
             <input type="checkbox" name="gender" value="${g.value}">
-            ${g.label}
+            ${getFilterIcon('gender', g.value)}<span>${g.label}</span>
         </label>
     `).join('');
 
@@ -773,6 +840,8 @@ async function init() {
 
         allPerfumes = allPerfumes.filter(p => p && p.code && p.inspiredBy).map(p => ({
             ...p,
+            brand: canonicalBrandName(p.brand),
+            inspiredBy: stripBrandFromPerfumeName(p.inspiredBy, p.brand),
             genderAffinity: String(p.genderAffinity || '').toLowerCase(),
             mainAccords: (p.mainAccords || []).map(a => a.toLowerCase()),
             seasons: Array.from(new Set((p.seasons || []).map(s => { const season = String(s || '').trim().toLowerCase(); return season === 'fall' ? 'autumn' : season; }).filter(Boolean))),
@@ -783,6 +852,11 @@ async function init() {
             brandSortKey: `${String(p.brand || '').toLocaleLowerCase()}\u0000${String(p.inspiredBy || '').toLocaleLowerCase()}`,
             officialBestSellerRank: officialBestSellerRanks.get(String(p.code || '').trim()) || null
         }));
+        // Rebuild the brand index after canonicalizing case and punctuation variants.
+        allBrands.clear();
+        allPerfumes.forEach(p => {
+            if (!allBrands.has(p.brand)) allBrands.set(p.brand, { name: p.brand });
+        });
         allPerfumes.sort((a, b) => a.brandSortKey < b.brandSortKey ? -1 : a.brandSortKey > b.brandSortKey ? 1 : 0);
 
         console.log(`DEBUG: Total valid perfumes loaded: ${allPerfumes.length}`);
