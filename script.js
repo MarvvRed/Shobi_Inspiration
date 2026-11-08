@@ -688,6 +688,7 @@ function handleCheckboxChange(e) {
 function setTheme(theme) {
     const selectedTheme = theme === 'dark' ? 'dark' : 'light';
     const htmlTag = document.getElementById('html-tag');
+    const themeMenuBtn = document.getElementById('theme-menu-btn');
     htmlTag.toggleAttribute('data-theme', selectedTheme === 'dark');
     if (selectedTheme === 'dark') {
         htmlTag.setAttribute('data-theme', 'dark');
@@ -695,29 +696,22 @@ function setTheme(theme) {
     } else {
         localStorage.removeItem('shobi-theme');
     }
+    if (themeMenuBtn) {
+        const nextTheme = selectedTheme === 'dark' ? 'light' : 'dark';
+        const nextLabel = nextTheme === 'dark' ? 'Switch to dark theme' : 'Switch to light theme';
+        themeMenuBtn.innerHTML = `<i class="fas ${nextTheme === 'dark' ? 'fa-moon' : 'fa-sun'}" aria-hidden="true"></i><span class="hidden sm:inline">Theme</span>`;
+        themeMenuBtn.title = nextLabel;
+        themeMenuBtn.setAttribute('aria-label', nextLabel);
+    }
 }
 
 function initTheme() {
     const savedTheme = localStorage.getItem('shobi-theme');
     setTheme(savedTheme);
     const themeMenuBtn = document.getElementById('theme-menu-btn');
-    const themeMenuDropdown = document.getElementById('theme-menu-dropdown');
-
-    themeMenuBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        themeMenuDropdown.classList.toggle('hidden');
-    });
-    document.querySelectorAll('.theme-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const theme = e.currentTarget.dataset.theme;
-            setTheme(theme);
-            themeMenuDropdown.classList.add('hidden');
-        });
-    });
-    window.addEventListener('click', () => {
-        if (!themeMenuDropdown.classList.contains('hidden')) {
-            themeMenuDropdown.classList.add('hidden');
-        }
+    themeMenuBtn.addEventListener('click', () => {
+        const currentTheme = document.getElementById('html-tag').getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
     });
 }
 
