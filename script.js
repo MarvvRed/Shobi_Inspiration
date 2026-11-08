@@ -35,7 +35,9 @@ const BRAND_CANONICAL_NAMES = {
     'gissah': 'Gissah',
     'obvious': 'Obvious',
     "etat libre d orange": "Etat Libre d'Orange",
-    'giardini di toscana': 'Giardini di Toscana'
+    'giardini di toscana': 'Giardini di Toscana',
+    'lattafa perfumes': 'Lattafa',
+    'moncler': 'Moncler'
 };
 
 const BRAND_NAME_ALIASES = {
