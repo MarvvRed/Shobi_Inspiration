@@ -400,9 +400,9 @@
     background: var(--color-text-primary);
 }
 
-/* Responsive layout hardening: prevent card/header collisions on compact screens. */
+/* Responsive layout: maximum five perfume cards per row. */
 #resultsContainer {
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     min-width: 0;
 }
 #main-content,
@@ -420,13 +420,12 @@
     max-width: 100%;
     overflow-wrap: anywhere;
 }
-.v2-test-card [data-field="audience-icons"] {
-    flex-wrap: wrap;
-}
+.v2-test-card [data-field="audience-icons"],
 .v2-test-card [data-field="main-notes"] > div {
     flex-wrap: wrap;
 }
 @media (max-width: 1279px) {
+    #resultsContainer { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     .v2-test-card .v2-test-top {
         grid-template-columns: 82px minmax(0, 1fr);
         gap: 10px;
@@ -437,6 +436,7 @@
     }
 }
 @media (max-width: 1023px) {
+    #resultsContainer { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     nav .flex.justify-between.h-16 {
         height: auto;
         min-height: 4rem;
@@ -455,12 +455,11 @@
         padding-left: .6rem;
         padding-right: .6rem;
     }
-    .page-grid {
-        grid-template-columns: minmax(0, 1fr);
-    }
-    #main-content {
-        width: 100%;
-    }
+    .page-grid { grid-template-columns: minmax(0, 1fr); }
+    #main-content { width: 100%; }
+}
+@media (max-width: 767px) {
+    #resultsContainer { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
     .page-grid {
@@ -471,9 +470,7 @@
         grid-template-columns: minmax(0, 1fr);
         gap: .85rem;
     }
-    .v2-test-card > div:first-child {
-        padding: 1rem;
-    }
+    .v2-test-card > div:first-child { padding: 1rem; }
     .v2-test-card .v2-test-top {
         grid-template-columns: 88px minmax(0, 1fr);
         gap: .75rem;
@@ -486,11 +483,6 @@
         font-size: 1rem;
         line-height: 1.25rem;
     }
-    nav .font-bold.text-lg {
-        font-size: .95rem;
-    }
-    nav #header-controls {
-        width: 100%;
-    }
+    nav .font-bold.text-lg { font-size: .95rem; }
+    nav #header-controls { width: 100%; }
 }
-
