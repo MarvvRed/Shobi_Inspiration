@@ -60,14 +60,14 @@ function stripBrandFromPerfumeName(name, brand) {
     const aliases = [...(BRAND_NAME_ALIASES[key] || []), brand].filter(Boolean)
         .sort((a, b) => String(b).length - String(a).length);
     for (const alias of aliases) {
-        const escaped = String(alias).trim().replace(/[.*+?^\${}()|[\]\\]/g, '\\$&');
+        const escaped = String(alias).trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         if (!escaped) continue;
-        const phrase = escaped.replace(/\s+/g, '[\\s._\\-–—/|,:;·&+\\'’]*');
-        const boundary = '(^|[\\s._\\-–—/|,:;·&+\\'’])';
-        const pattern = new RegExp(boundary + phrase + '(?=$|[\\s._\\-–—/|,:;·&+\\'’])', 'gi');
+        const phrase = escaped.replace(/\\s+/g, "[\\s._\\-–—/|,:;·&+]*");
+        const boundary = "(^|[\\s._\\-–—/|,:;·&+])";
+        const pattern = new RegExp(boundary + phrase + "(?=$|[\\s._\\-–—/|,:;·&+])", "gi");
         result = result.replace(pattern, '$1 ');
     }
-    return result.replace(/\s+/g, ' ').replace(/^[-–—|/:,;]+|[-–—|/:,;]+$/g, '').trim() || String(name || '').trim();
+    return result.replace(/\\s+/g, ' ').replace(/^[-–—|/:,;]+|[-–—|/:,;]+$/g, '').trim() || String(name || '').trim();
 }
 
 function getMainNotes(p) {');
