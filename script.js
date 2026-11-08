@@ -764,7 +764,7 @@ function setTheme(theme) {
     if (siteBrandLogo) {
         siteBrandLogo.src = selectedTheme === 'dark'
             ? 'assets/shobi-perfume-finder-logo-dark.webp?v=20261108-dark-3'
-            : 'assets/shobi-perfume-finder-logo.webp?v=20261108-light-webp-2';
+            : 'assets/shobi-perfume-finder-logo.webp?v=20261108-light-webp-3';
     }
     htmlTag.toggleAttribute('data-theme', selectedTheme === 'dark');
     if (selectedTheme === 'dark') {
