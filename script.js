@@ -760,6 +760,12 @@ function setTheme(theme) {
     const selectedTheme = theme === 'dark' ? 'dark' : 'light';
     const htmlTag = document.getElementById('html-tag');
     const themeMenuBtn = document.getElementById('theme-menu-btn');
+    const siteBrandLogo = document.getElementById('site-brand-logo');
+    if (siteBrandLogo) {
+        siteBrandLogo.src = selectedTheme === 'dark'
+            ? 'assets/shobi-perfume-finder-logo-dark.webp?v=20261108-dark-3'
+            : 'assets/shobi-perfume-finder-logo.webp?v=20261108-light-4';
+    }
     htmlTag.toggleAttribute('data-theme', selectedTheme === 'dark');
     if (selectedTheme === 'dark') {
         htmlTag.setAttribute('data-theme', 'dark');
