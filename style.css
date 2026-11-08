@@ -515,3 +515,17 @@
 [data-theme="dark"] .v2-test-card [data-field="shobiLink"]::before {
     background:#191e19;
 }
+
+
+/* Consistent icons in the sidebar filters and active filter chips. */
+.filter-option-label { display:flex; align-items:center; gap:.55rem; }
+.filter-option-icon { width:22px; min-width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; }
+.filter-option-note-icon { width:22px; height:22px; border-radius:50%; object-fit:cover; }
+.filter-option-emoji { font-size:1.05rem; line-height:1; }
+.filter-option-gender { font-size:1rem; }
+.gender-icon-male { color:#3b82f6; }
+.gender-icon-female { color:#e879a8; }
+.gender-icon-unisex { color:#16a34a; }
+.filter-token-icon { width:19px; height:19px; border-radius:50%; object-fit:cover; vertical-align:middle; }
+.filter-token-icon-text { font-size:1rem; line-height:1; }
+.filter-token-icon-gender { font-size:.9rem; }
