@@ -70,14 +70,6 @@ function stripBrandFromPerfumeName(name, brand) {
     return result.replace(/\s+/g, ' ').replace(/^[-–—|/:,;]+|[-–—|/:,;]+$/g, '').trim() || String(name || '').trim();
 }
 
-function getMainNotes(p) {');
-        if (!escaped) continue;
-        const pattern = new RegExp('(^|[\\\\s._\\-–—/|,:;·&+\\'’])' + escaped.replace(/\s+/g, '[\\\\s._\\-–—/|,:;·&+\\'’]*') + '(?=$|[\\\\s._\\-–—/|,:;·&+\\'’])', 'gi');
-        result = result.replace(pattern, '$1 ');
-    }
-    return result.replace(/\s+/g, ' ').replace(/^[-–—|/:,;]+|[-–—|/:,;]+$/g, '').trim() || String(name || '').trim();
-}
-
 function getMainNotes(p) {
     const v = p?.fragranticaSocialCardNotes;
     return Array.isArray(v) ? v : [];
