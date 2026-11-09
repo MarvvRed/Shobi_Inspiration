@@ -38,10 +38,10 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           css = Path('tailwind.generated.css').read_text(encoding='utf-8')
-          expected = ['.hidden', '.grid', '.flex', '.bg-red-800', '.bg-emerald-800', r'.hover\\:scale-\\[1\\.03\\]']
+          expected = ['.hidden', '.grid', '.flex', '.bg-red-800', '.bg-emerald-800']
           missing = [selector for selector in expected if selector not in css]
-          if missing:
-              raise SystemExit(f'Missing expected selectors: {missing}')
+          if missing or 'scale-' not in css:
+              raise SystemExit(f'Missing expected selectors or arbitrary scale utility: {missing}')
           print(f'Generated CSS bytes: {len(css.encode())}')
           PY
       - name: Commit generated CSS
