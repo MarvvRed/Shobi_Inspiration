@@ -15,10 +15,17 @@ failed. Re-running is incremental and skips images already downloaded.
 
 ## First run
 
-Open **Actions → Build Fragrantica Brand Logo Archive → Run workflow**.
-For a pilot, use \`max_pages=1\` and \`limit=30\`. Inspect the resulting images
-and manifest before the full run. Set \`retry_failed=true\` to retry failed rows.
+GitHub-hosted runners may receive HTTP 429 from Fragrantica. Prefer the local
+Windows runner at tools/run_brand_logo_pilot_windows.bat: run it from a
+local clone of this repository on main. It creates an isolated Python
+environment, installs dependencies, runs a conservative pilot (defaults:
+1 directory page, 30 brands, 4-second delay), then commits and pushes only the
+brand manifest and logo assets. You can change the page and brand limits when
+prompted.
 
+The GitHub Actions workflow remains available as a secondary option, but a
+429 from Fragrantica is an upstream rate limit, not a GitHub configuration
+error. Do not repeatedly rerun it while the site is rejecting the runner.
 Images are resized to at most 640×640 and stored as WebP (quality 88).
 The archive records source provenance; it does not imply that reuse is licensed
 or endorsed by Fragrantica or the represented brands. Check the source site's
