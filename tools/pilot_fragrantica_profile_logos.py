@@ -51,8 +51,11 @@ def main():
                 path = urlparse(href).path
                 if not re.search(r"/dizajneri/o\.\d+\.jpg$", path, re.I):
                     continue
-                label = " ".join([a.get_text(" ", strip=True), a.get("title", ""), a.get("aria-label", "")]).strip()
-                if "logo" in label.lower():
+                labels = [a.get_text(" ", strip=True), a.get("title", ""), a.get("aria-label", "")]
+                labels.extend(img.get("alt", "") for img in a.find_all("img"))
+                labels.extend(img.get("title", "") for img in a.find_all("img"))
+                label = " ".join(x for x in labels if x).strip()
+                if "logo" in label.lower() and all(existing[0] != href for existing in candidates):
                     candidates.append((href, label))
             if len(candidates) != 1:
                 row["status"] = "ambiguous" if candidates else "no_profile_logo_link"
