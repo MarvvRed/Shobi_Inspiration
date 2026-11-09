@@ -8,10 +8,15 @@ Separate from the certified Shobi perfume catalog.
 - Collector: \`tools/build_fragrantica_brand_logos.py\`
 - Workflow: GitHub Actions → **Build Fragrantica Brand Logo Archive**
 
-The collector discovers directory pagination instead of assuming a fixed page
-count. It stores brand name, source page and image URLs, local WebP path,
-dimensions, SHA-256 and download status. Failed downloads remain explicitly
-failed. Re-running is incremental and skips images already downloaded.
+The collector reads the 11 alphabetical directory pages (/designers-1/ through
+/designers-11/), covering the full A–Z brand index rather than the popular
+brands landing page. It stores brand name, source page and image URLs, local
+WebP path, dimensions, SHA-256 and download status. Re-running is incremental
+and skips images already downloaded; the Windows runner retries prior failures.
+
+Some genuine Fragrantica brand marks are very wide and short (for example
+80×9 px). The image validator accepts these wordmarks while still rejecting
+tiny placeholder images.
 
 ## First run
 
