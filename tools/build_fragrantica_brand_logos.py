@@ -77,26 +77,13 @@ def get(session, url, timeout=45):
     raise RuntimeError(str(last))
 
 def discover_pages(session, max_pages=0):
-    """Read the index once and use its directly linked directory pages.
+    """Return Fragrantica's alphabetical designer pages.
 
-    Do not recursively crawl every letter page just to discover pagination:
-    max_pages must cap actual directory requests, including discovery.
+    The /designers/ landing page is only a popular-brands showcase; the
+    complete directory is split across /designers-1/ through /designers-11/.
     """
-    soup = BeautifulSoup(get(session, ROOT).text, "html.parser")
-    pages = [ROOT]
-    linked = []
-    for a in soup.find_all("a", href=True):
-        href = absolute(ROOT, a["href"])
-        if href and PAGE_RE.search(urlparse(href).path):
-            href = href.split("#")[0]
-            if href not in linked and href not in pages:
-                linked.append(href)
-    linked.sort(key=lambda u: (int(PAGE_RE.search(urlparse(u).path).group(1))
-                               if PAGE_RE.search(urlparse(u).path) else 9999))
-    pages.extend(linked)
-    if max_pages:
-        pages = pages[:max_pages]
-    return pages
+    pages = [f"https://www.fragrantica.com/designers-{n}/" for n in range(1, 12)]
+    return pages[:max_pages] if max_pages else pages
 
 def get_img_url(img, base):
     for key in ("data-src", "data-original", "data-lazy-src", "src"):
@@ -181,13 +168,20 @@ def main():
             print(f"[WARN] Page failed: {exc}", file=sys.stderr)
             continue
         count = 0
-        for img in soup.find_all("img"):
-            a = img.find_parent("a", href=True)
-            name, src = get_brand_name(img, a), get_img_url(img, page_url)
-            if not name or not src:
+        image_count = len(soup.find_all("img"))
+        designer_links = 0
+        for a in soup.find_all("a", href=True):
+            page_href = absolute(page_url, a.get("href"))
+            path = urlparse(page_href or "").path
+            if not re.search(r"/designers/[^/]+\\.html$", path, re.I):
                 continue
-            page_href = absolute(page_url, a.get("href")) if a else None
-            if not page_href or "designer" not in urlparse(page_href).path.lower():
+            designer_links += 1
+            img = a.find("img")
+            if img is None:
+                continue
+            name = get_brand_name(img, a)
+            src = get_img_url(img, page_url)
+            if not name or not src:
                 continue
             key = norm(name)
             if not key:
@@ -198,7 +192,10 @@ def main():
             if key in found and found[key]["source_page_url"] != page_href:
                 found[key].setdefault("alternate_source_pages", []).append(page_href)
                 continue
-            found[key] = record; count += 1
+            found[key] = record
+            count += 1
+        title = soup.title.get_text(" ", strip=True) if soup.title else "(no title)"
+        print(f"[DIAGNOSTIC] title={title!r} images={image_count} designer_links={designer_links}", flush=True)
         print(f"[INFO] Candidate entries: {count}", flush=True)
         time.sleep(3.0)
     merged = dict(old)
