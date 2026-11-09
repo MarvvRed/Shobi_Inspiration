@@ -76,28 +76,27 @@ def get(session, url, timeout=45):
             time.sleep(min(60, 5 * (2 ** attempt)))
     raise RuntimeError(str(last))
 
-def discover_pages(session):
+def discover_pages(session, max_pages=0):
+    """Read the index once and use its directly linked directory pages.
+
+    Do not recursively crawl every letter page just to discover pagination:
+    max_pages must cap actual directory requests, including discovery.
+    """
     soup = BeautifulSoup(get(session, ROOT).text, "html.parser")
-    queue = [ROOT]
+    pages = [ROOT]
+    linked = []
     for a in soup.find_all("a", href=True):
         href = absolute(ROOT, a["href"])
         if href and PAGE_RE.search(urlparse(href).path):
-            queue.append(href.split("#")[0])
-    visited = set()
-    while queue and len(visited) < 60:
-        url = queue.pop(0)
-        if url in visited:
-            continue
-        visited.add(url)
-        page = BeautifulSoup(get(session, url).text, "html.parser")
-        for a in page.find_all("a", href=True):
-            href = absolute(url, a["href"])
-            if href and PAGE_RE.search(urlparse(href).path):
-                href = href.split("#")[0]
-                if href not in visited and href not in queue:
-                    queue.append(href)
-        time.sleep(3.0)
-    return sorted(visited, key=lambda u: (u.rstrip("/") != ROOT.rstrip("/"), u))
+            href = href.split("#")[0]
+            if href not in linked and href not in pages:
+                linked.append(href)
+    linked.sort(key=lambda u: (int(PAGE_RE.search(urlparse(u).path).group(1))
+                               if PAGE_RE.search(urlparse(u).path) else 9999))
+    pages.extend(linked)
+    if max_pages:
+        pages = pages[:max_pages]
+    return pages
 
 def get_img_url(img, base):
     for key in ("data-src", "data-original", "data-lazy-src", "src"):
@@ -164,13 +163,11 @@ def main():
     session.headers.update({"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,image/avif,image/webp,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"})
     old = read_old()
     try:
-        pages = discover_pages(session)
+        pages = discover_pages(session, args.max_pages)
     except RateLimited as exc:
         print(f"[BLOCKED] {exc}", file=sys.stderr)
         print("[INFO] No requests will be made until Fragrantica permits access again.", file=sys.stderr)
         return 3
-    if args.max_pages:
-        pages = pages[:args.max_pages]
     print(f"[INFO] Discovered {len(pages)} directory pages", flush=True)
     found = {}
     for i, page_url in enumerate(pages, 1):
