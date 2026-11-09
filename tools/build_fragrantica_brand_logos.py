@@ -126,7 +126,7 @@ def save_image(session, url, target):
         with Image.open(BytesIO(response.content)) as im:
             im.seek(0); im.load()
             width, height = im.size
-            if width < 32 or height < 16:
+            if width < 32 or height < 8 or width * height < 512:
                 return False, "IMAGE_TOO_SMALL", {"width": width, "height": height}
             im.thumbnail((640, 640), Image.Resampling.LANCZOS)
             if im.mode not in ("RGB", "RGBA"):
