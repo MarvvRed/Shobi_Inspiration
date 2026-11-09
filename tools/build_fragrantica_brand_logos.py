@@ -117,7 +117,7 @@ def find_profile_logo(session, profile_url):
     for a in soup.find_all("a", href=True):
         href = absolute(profile_url, a.get("href"))
         path = urlparse(href or "").path
-        if not re.search(r"/mdimg/dizajneri/o\\.\\d+\\.(?:jpg|jpeg|png|webp)$", path, re.I):
+        if not re.search(r"/mdimg/dizajneri/o\.\d+\.(?:jpg|jpeg|png|webp)$", path, re.I):
             continue
         labels = [a.get_text(" ", strip=True), a.get("title", ""), a.get("aria-label", "")]
         labels.extend(x.get("alt", "") for x in a.find_all("img"))
