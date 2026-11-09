@@ -173,7 +173,7 @@ def main():
         for a in soup.find_all("a", href=True):
             page_href = absolute(page_url, a.get("href"))
             path = urlparse(page_href or "").path
-            if not re.search(r"/designers/[^/]+\\.html$", path, re.I):
+            if not re.search(r"/designers/[^/]+\.html$", path, re.I):
                 continue
             designer_links += 1
             img = a.find("img")
