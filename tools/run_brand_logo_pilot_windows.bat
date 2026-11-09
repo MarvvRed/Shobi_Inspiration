@@ -46,7 +46,7 @@ if "%BRAND_LIMIT%"=="" set BRAND_LIMIT=30
 
 echo.
 echo Avvio raccolta locale: pagine=%MAX_PAGES%, marchi=%BRAND_LIMIT%
-".venv-brand-logos\Scripts\python.exe" tools\build_fragrantica_brand_logos.py --max-pages %MAX_PAGES% --limit %BRAND_LIMIT% --delay 4
+".venv-brand-logos\Scripts\python.exe" tools\build_fragrantica_brand_logos.py --max-pages %MAX_PAGES% --limit %BRAND_LIMIT% --delay 4 --retry-failed
 if errorlevel 1 goto :error
 
 git add database/brands/brands_logos.json database/assets/brand-logos
