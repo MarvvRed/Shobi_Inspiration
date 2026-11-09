@@ -19,67 +19,83 @@
     card.querySelector('[data-field="code"]')?.textContent
   );
 
-  const enhancePerfumeImages = () => {
-    document.querySelectorAll('#resultsContainer .v2-test-card').forEach(card => {
-      const imageWrap = card.querySelector('.v2-test-image-wrap');
-      if (!imageWrap || imageWrap.dataset.fragranticaEnhanced === '1') return;
-
-      const title = card.querySelector('[data-field="inspiredBy"]')?.textContent?.trim() || 'perfume';
-      const code = card.querySelector('.favorite-btn')?.dataset.code || card.querySelector('[data-field="code"]')?.textContent?.trim();
-
-      let perfume = null;
-      if (typeof allPerfumes !== 'undefined' && Array.isArray(allPerfumes)) {
-        perfume = allPerfumes.find(p => code && String(p.code || '').trim() === code) ||
-                  allPerfumes.find(p => String(p.inspiredBy || '').trim().toUpperCase() === title.toUpperCase());
-      }
-
-      const fragranticaId = String(perfume?.fragranticaId || perfume?.fragrantica_id || '').trim();
-      const fragranticaUrl = perfume?.fragranticaUrl || perfume?.fragranticaLocalUrl || perfume?.fragranticaURL || perfume?.fragrantica_url ||
-        (/^\d+$/.test(fragranticaId) ? `https://www.fragrantica.com/p/${fragranticaId}` : '');
-      if (!fragranticaUrl) return;
-
-      imageWrap.dataset.fragranticaEnhanced = '1';
-      imageWrap.classList.add('fragrantica-image-link');
-      imageWrap.setAttribute('role', 'link');
-      imageWrap.setAttribute('tabindex', '0');
-      imageWrap.setAttribute('aria-label', `View ${title} on Fragrantica`);
-      imageWrap.setAttribute('title', 'View on Fragrantica');
-
-      const badge = document.createElement('span');
-      badge.className = 'fragrantica-image-badge';
-      badge.innerHTML = '<i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Fragrantica';
-      imageWrap.appendChild(badge);
-
-      const openFragrantica = event => {
-        event.preventDefault();
-        event.stopPropagation();
-        window.open(fragranticaUrl, '_blank', 'noopener,noreferrer');
-      };
-      imageWrap.addEventListener('click', openFragrantica);
-      imageWrap.addEventListener('keydown', event => {
-        if (event.key === 'Enter' || event.key === ' ') openFragrantica(event);
-      });
+  const perfumesByCode = new Map();
+  const buildPerfumeIndex = () => {
+    if (typeof allPerfumes === 'undefined' || !Array.isArray(allPerfumes)) return;
+    allPerfumes.forEach(perfume => {
+      const code = normalizeCode(perfume?.code);
+      if (code && !perfumesByCode.has(code)) perfumesByCode.set(code, perfume);
     });
   };
 
-  const enhanceRecentBadges = () => {
-    if (!recentCodes.size) return;
-    document.querySelectorAll('#resultsContainer .v2-test-card').forEach(card => {
-      if (card.dataset.recentEnhanced === '1') return;
-      const code = getCardCode(card);
-      if (!isRecentCode(code)) return;
+  const enhancePerfumeCard = card => {
+    if (!card?.matches?.('.v2-test-card')) return;
+    const imageWrap = card.querySelector('.v2-test-image-wrap');
+    if (!imageWrap || imageWrap.dataset.fragranticaChecked === '1') return;
+    imageWrap.dataset.fragranticaChecked = '1';
 
-      const body = card.firstElementChild;
-      if (!body) return;
+    const title = card.querySelector('[data-field="inspiredBy"]')?.textContent?.trim() || 'perfume';
+    const code = getCardCode(card);
+    const perfume = perfumesByCode.get(code);
+    const fragranticaId = String(perfume?.fragranticaId || perfume?.fragrantica_id || '').trim();
+    const fragranticaUrl = perfume?.fragranticaUrl || perfume?.fragranticaLocalUrl || perfume?.fragranticaURL || perfume?.fragrantica_url ||
+      (/^\\d+$/.test(fragranticaId) ? `https://www.fragrantica.com/p/${fragranticaId}` : '');
+    if (!fragranticaUrl) return;
 
-      const badge = document.createElement('span');
-      badge.className = 'recent-addition-badge';
-      badge.textContent = 'Nuovo';
-      badge.title = 'Aggiunto di recente al catalogo Shobi';
-      badge.setAttribute('aria-label', badge.title);
-      body.insertBefore(badge, body.firstChild);
-      card.dataset.recentEnhanced = '1';
+    imageWrap.dataset.fragranticaEnhanced = '1';
+    imageWrap.classList.add('fragrantica-image-link');
+    imageWrap.setAttribute('role', 'link');
+    imageWrap.setAttribute('tabindex', '0');
+    imageWrap.setAttribute('aria-label', `View ${title} on Fragrantica`);
+    imageWrap.setAttribute('title', 'View on Fragrantica');
+
+    const badge = document.createElement('span');
+    badge.className = 'fragrantica-image-badge';
+    badge.innerHTML = '<i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Fragrantica';
+    imageWrap.appendChild(badge);
+
+    const openFragrantica = event => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.open(fragranticaUrl, '_blank', 'noopener,noreferrer');
+    };
+    imageWrap.addEventListener('click', openFragrantica);
+    imageWrap.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') openFragrantica(event);
     });
+  };
+
+  const enhanceRecentCard = card => {
+    if (!card?.matches?.('.v2-test-card') || card.dataset.recentChecked === '1') return;
+    card.dataset.recentChecked = '1';
+    const code = getCardCode(card);
+    if (!isRecentCode(code)) return;
+
+    const body = card.firstElementChild;
+    if (!body) return;
+
+    const badge = document.createElement('span');
+    badge.className = 'recent-addition-badge';
+    badge.textContent = 'Nuovo';
+    badge.title = 'Aggiunto di recente al catalogo Shobi';
+    badge.setAttribute('aria-label', badge.title);
+    body.insertBefore(badge, body.firstChild);
+    card.dataset.recentEnhanced = '1';
+  };
+
+  const enhanceCard = card => {
+    enhancePerfumeCard(card);
+    enhanceRecentCard(card);
+  };
+
+  const enhanceCardsIn = node => {
+    if (!(node instanceof Element)) return;
+    if (node.matches('.v2-test-card')) enhanceCard(node);
+    node.querySelectorAll?.('.v2-test-card').forEach(enhanceCard);
+  };
+
+  const enhanceAll = () => {
+    document.querySelectorAll('#resultsContainer > .v2-test-card').forEach(enhanceCard);
   };
 
   const syncRecentFilterUi = () => {
@@ -153,7 +169,9 @@
     enhanceRecentBadges();
   };
 
-  const observer = new MutationObserver(enhanceAll);
+  const observer = new MutationObserver(records => {
+    records.forEach(record => record.addedNodes.forEach(enhanceCardsIn));
+  });
   const start = async () => {
     const container = document.getElementById('resultsContainer');
     if (!container) return;
@@ -177,6 +195,7 @@
       console.warn('Recent additions metadata is not available.', error);
     }
 
+    buildPerfumeIndex();
     installRecentFiltering();
     installRecentFilter();
     observer.observe(container, { childList:true, subtree:true });
