@@ -94,10 +94,12 @@ def get_img_url(img, base):
     return absolute(base, srcset.split(",")[-1].strip().split()[0]) if srcset else None
 
 def get_brand_name(img, anchor):
-    values = []
+    # Fragrantica's directory alt text is usually "Image: Brand Name".
+    # Prefer it over the anchor's visible text, which may repeat the name
+    # and append the number of perfumes.
+    values = [img.get("alt"), img.get("title")]
     if anchor:
         values += [anchor.get("title"), anchor.get("aria-label"), anchor.get_text(" ", strip=True)]
-    values += [img.get("alt"), img.get("title")]
     for raw in values:
         if not raw:
             continue
@@ -173,7 +175,9 @@ def main():
         for a in soup.find_all("a", href=True):
             page_href = absolute(page_url, a.get("href"))
             path = urlparse(page_href or "").path
-            if not re.search(r"/designers/[^/]+\.html$", path, re.I):
+            # Accept the site's designer profile links even if it adds
+            # a trailing slash, query string, or a nested slug format.
+            if "/designers/" not in path.lower() or ".html" not in path.lower():
                 continue
             designer_links += 1
             img = a.find("img")
@@ -196,6 +200,18 @@ def main():
             count += 1
         title = soup.title.get_text(" ", strip=True) if soup.title else "(no title)"
         print(f"[DIAGNOSTIC] title={title!r} images={image_count} designer_links={designer_links}", flush=True)
+        if count == 0:
+            samples = []
+            for a in soup.find_all("a", href=True):
+                href = absolute(page_url, a.get("href")) or ""
+                if "designers" in href.lower():
+                    img = a.find("img")
+                    samples.append({"href": href, "text": a.get_text(" ", strip=True)[:100],
+                                    "alt": img.get("alt") if img else None,
+                                    "src": get_img_url(img, page_url) if img else None})
+                    if len(samples) == 5:
+                        break
+            print(f"[DIAGNOSTIC] sample_links={json.dumps(samples, ensure_ascii=False)}", flush=True)
         print(f"[INFO] Candidate entries: {count}", flush=True)
         time.sleep(3.0)
     merged = dict(old)
