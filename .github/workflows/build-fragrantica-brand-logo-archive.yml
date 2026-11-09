@@ -38,11 +38,15 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --upgrade requests beautifulsoup4 pillow
       - name: Collect directory images
+        env:
+          MAX_PAGES: ${{ inputs.max_pages }}
+          BRAND_LIMIT: ${{ inputs.limit }}
+          RETRY_FAILED: ${{ inputs.retry_failed }}
         run: |
           ARGS=""
-          if [ "\${{ inputs.max_pages }}" != "0" ]; then ARGS="$ARGS --max-pages \${{ inputs.max_pages }}"; fi
-          if [ "\${{ inputs.limit }}" != "0" ]; then ARGS="$ARGS --limit \${{ inputs.limit }}"; fi
-          if [ "\${{ inputs.retry_failed }}" = "true" ]; then ARGS="$ARGS --retry-failed"; fi
+          if [ "$MAX_PAGES" != "0" ]; then ARGS="$ARGS --max-pages $MAX_PAGES"; fi
+          if [ "$BRAND_LIMIT" != "0" ]; then ARGS="$ARGS --limit $BRAND_LIMIT"; fi
+          if [ "$RETRY_FAILED" = "true" ]; then ARGS="$ARGS --retry-failed"; fi
           python tools/build_fragrantica_brand_logos.py $ARGS
       - name: Commit archive
         run: |
