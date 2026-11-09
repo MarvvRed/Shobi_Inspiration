@@ -18,10 +18,7 @@ tiny placeholder images.
 
 ## First run
 
-GitHub-hosted runners may receive HTTP 429 from Fragrantica. Prefer the local
-Windows runner at tools/run_brand_logo_pilot_windows.bat: run it from a
-local clone of this repository on main. It creates an isolated Python
-environment, installs dependencies, runs the full directory collection with a 4-second minimum image delay, then commits and pushes only the brand manifest and logo assets. The GitHub workflow also runs an automatic 30-brand pilot when the collector or workflow changes.
+GitHub-hosted runners may receive HTTP 429 from Fragrantica. Use the manual GitHub Actions workflow for controlled tests and collection. Do not launch a full crawl until the profile-logo pilot has been checked. The GitHub Actions workflow is manual-only to avoid unnecessary runs. It defaults to a safe pilot of one directory page and 30 brands; increase the limits only after confirming that original profile logos are being found.
 
 The GitHub Actions workflow remains available as a secondary option, but a
 429 from Fragrantica is an upstream rate limit, not a GitHub configuration
