@@ -260,7 +260,7 @@ def main():
     for i, item in enumerate(candidates, 1):
         digest = hashlib.sha1(item["source_page_url"].encode()).hexdigest()[:8]
         target = OUT_IMAGES / f"{slugify(item.get('brand_name', 'brand'))}-{digest}.webp"
-        if item.get("image_status") == "downloaded" and target.exists():
+        if item.get("image_status") == "downloaded" and target.exists() and item.get("profile_logo_checked"):
             skipped += 1; continue
         if item.get("image_status") == "failed" and not args.retry_failed:
             skipped += 1; continue
