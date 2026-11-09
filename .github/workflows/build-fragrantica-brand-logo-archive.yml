@@ -48,14 +48,15 @@ jobs:
           BRAND_LIMIT: ${{ inputs.limit }}
           RETRY_FAILED: ${{ inputs.retry_failed }}
         run: |
-          ARGS=""
-          if [ "$MAX_PAGES" != "0" ]; then ARGS="$ARGS --max-pages $MAX_PAGES"; fi
-          if [ "$BRAND_LIMIT" != "0" ]; then ARGS="$ARGS --limit $BRAND_LIMIT"; fi
-          if [ "$RETRY_FAILED" = "true" ]; then ARGS="$ARGS --retry-failed"; fi
           if [ "$GITHUB_EVENT_NAME" = "push" ]; then
-            ARGS="$ARGS --max-pages 1 --limit 30 --delay 4 --retry-failed"
+            python tools/build_fragrantica_brand_logos.py --max-pages 1 --limit 30 --delay 4 --retry-failed
+          else
+            ARGS=""
+            if [ -n "$MAX_PAGES" ] && [ "$MAX_PAGES" != "0" ]; then ARGS="$ARGS --max-pages $MAX_PAGES"; fi
+            if [ -n "$BRAND_LIMIT" ] && [ "$BRAND_LIMIT" != "0" ]; then ARGS="$ARGS --limit $BRAND_LIMIT"; fi
+            if [ "$RETRY_FAILED" = "true" ]; then ARGS="$ARGS --retry-failed"; fi
+            python tools/build_fragrantica_brand_logos.py $ARGS
           fi
-          python tools/build_fragrantica_brand_logos.py $ARGS
       - name: Commit archive
         run: |
           git config user.name "github-actions[bot]"
