@@ -40,9 +40,9 @@ set MAX_PAGES=11
 set BRAND_LIMIT=0
 echo.
 set /p MAX_PAGES=Numero pagine directory (invio = 11, tutte): 
-if "%MAX_PAGES%"=="" set MAX_PAGES=1
+if "%MAX_PAGES%"=="" set MAX_PAGES=11
 set /p BRAND_LIMIT=Numero marchi (invio = 0, tutti): 
-if "%BRAND_LIMIT%"=="" set BRAND_LIMIT=30
+if "%BRAND_LIMIT%"=="" set BRAND_LIMIT=0
 
 echo.
 echo Avvio raccolta locale: pagine=%MAX_PAGES%, marchi=%BRAND_LIMIT%
