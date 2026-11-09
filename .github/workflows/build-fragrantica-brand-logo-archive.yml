@@ -1,21 +1,16 @@
 name: Build Fragrantica Brand Logo Archive
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "tools/build_fragrantica_brand_logos.py"
-      - ".github/workflows/build-fragrantica-brand-logo-archive.yml"
   workflow_dispatch:
     inputs:
       max_pages:
         description: "Maximum directory pages (0 = all discovered pages)"
         required: false
-        default: "0"
+        default: "1"
       limit:
         description: "Maximum brands (0 = all discovered brands)"
         required: false
-        default: "0"
+        default: "30"
       retry_failed:
         description: "Retry failed image downloads"
         required: false
@@ -48,15 +43,11 @@ jobs:
           BRAND_LIMIT: ${{ inputs.limit }}
           RETRY_FAILED: ${{ inputs.retry_failed }}
         run: |
-          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
-            python tools/build_fragrantica_brand_logos.py --max-pages 1 --limit 30 --delay 4 --retry-failed
-          else
-            ARGS=""
-            if [ -n "$MAX_PAGES" ] && [ "$MAX_PAGES" != "0" ]; then ARGS="$ARGS --max-pages $MAX_PAGES"; fi
-            if [ -n "$BRAND_LIMIT" ] && [ "$BRAND_LIMIT" != "0" ]; then ARGS="$ARGS --limit $BRAND_LIMIT"; fi
-            if [ "$RETRY_FAILED" = "true" ]; then ARGS="$ARGS --retry-failed"; fi
-            python tools/build_fragrantica_brand_logos.py $ARGS
-          fi
+          ARGS="--delay 4"
+          if [ -n "$MAX_PAGES" ] && [ "$MAX_PAGES" != "0" ]; then ARGS="$ARGS --max-pages $MAX_PAGES"; fi
+          if [ -n "$BRAND_LIMIT" ] && [ "$BRAND_LIMIT" != "0" ]; then ARGS="$ARGS --limit $BRAND_LIMIT"; fi
+          if [ "$RETRY_FAILED" = "true" ]; then ARGS="$ARGS --retry-failed"; fi
+          python tools/build_fragrantica_brand_logos.py $ARGS
       - name: Commit archive
         run: |
           git config user.name "github-actions[bot]"
