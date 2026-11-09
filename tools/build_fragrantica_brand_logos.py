@@ -180,7 +180,11 @@ def main():
             if "/designers/" not in path.lower() or ".html" not in path.lower():
                 continue
             designer_links += 1
+            # The designer card stores the image as a sibling of the
+            # profile link inside the same card container, not inside <a>.
             img = a.find("img")
+            if img is None and a.parent is not None:
+                img = a.parent.find("img")
             if img is None:
                 continue
             name = get_brand_name(img, a)
