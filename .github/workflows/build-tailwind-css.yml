@@ -35,11 +35,15 @@ jobs:
         run: npx --yes tailwindcss@3.4.17 -c tailwind.config.cjs -i tailwind.input.css -o tailwind.generated.css --minify
       - name: Verify generated CSS
         run: |
-          test -s tailwind.generated.css
-          for selector in '.hidden' '.grid' '.flex' '.bg-red-800' '.bg-emerald-800' '.hover\\:scale-\\[1\\.03\\]'; do
-            grep -Fq "$selector" tailwind.generated.css || { echo "Missing expected selector: $selector"; exit 1; }
-          done
-          echo "Generated CSS bytes: $(wc -c < tailwind.generated.css)"
+          python - <<'PY'
+          from pathlib import Path
+          css = Path('tailwind.generated.css').read_text(encoding='utf-8')
+          expected = ['.hidden', '.grid', '.flex', '.bg-red-800', '.bg-emerald-800', r'.hover\\:scale-\\[1\\.03\\]']
+          missing = [selector for selector in expected if selector not in css]
+          if missing:
+              raise SystemExit(f'Missing expected selectors: {missing}')
+          print(f'Generated CSS bytes: {len(css.encode())}')
+          PY
       - name: Commit generated CSS
         run: |
           git config user.name 'github-actions[bot]'
