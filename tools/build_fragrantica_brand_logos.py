@@ -117,18 +117,25 @@ def find_profile_logo(session, profile_url):
     for a in soup.find_all("a", href=True):
         href = absolute(profile_url, a.get("href"))
         path = urlparse(href or "").path
-        if not re.search(r"/mdimg/dizajneri/o\.\d+\.(?:jpg|jpeg|png|webp)$", path, re.I):
+        if not re.search(r"/mdimg/dizajneri/o\\.\\d+\\.(?:jpg|jpeg|png|webp)$", path, re.I):
             continue
         labels = [a.get_text(" ", strip=True), a.get("title", ""), a.get("aria-label", "")]
         labels.extend(x.get("alt", "") for x in a.find_all("img"))
         labels.extend(x.get("title", "") for x in a.find_all("img"))
-        label = " ".join(str(x) for x in labels if x).strip()
-        if "logo" in label.lower():
-            matches[href] = label
-    if len(matches) == 1:
+        matches[href] = " ".join(str(x) for x in labels if x).strip()
+    # Some Fragrantica pages expose the original o.* logo as a bare image
+    # link with no accessible text. Prefer an explicit logo label, but accept
+    # the only original-image link when it is unambiguous.
+    labelled = {url: label for url, label in matches.items() if "logo" in label.lower()}
+    if len(labelled) == 1:
+        url, label = next(iter(labelled.items()))
+        return url, label, None
+    if not labelled and len(matches) == 1:
         url, label = next(iter(matches.items()))
         return url, label, None
-    return None, None, "PROFILE_LOGO_NOT_FOUND" if not matches else "PROFILE_LOGO_AMBIGUOUS"
+    if len(labelled) > 1 or len(matches) > 1:
+        return None, None, "PROFILE_LOGO_AMBIGUOUS"
+    return None, None, "PROFILE_LOGO_NOT_FOUND"
 
 def read_old():
     try:
