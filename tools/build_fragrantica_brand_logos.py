@@ -191,7 +191,10 @@ def main():
         digest = hashlib.sha1(item["source_page_url"].encode()).hexdigest()[:8]
         target = OUT_IMAGES / f"{slugify(item.get('brand_name', 'brand'))}-{digest}.webp"
         ok_existing = item.get("image_status") == "downloaded" and target.exists()
-        if ok_existing and not args.retry_failed:
+        if ok_existing:
+            skipped += 1
+            continue
+        if item.get("image_status") == "failed" and not args.retry_failed:
             skipped += 1
             continue
         ok, error, meta = save_image(session, item["source_image_url"], target)
