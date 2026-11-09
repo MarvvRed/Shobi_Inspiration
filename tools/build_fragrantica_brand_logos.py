@@ -109,6 +109,27 @@ def get_brand_name(img, anchor):
             return name
     return None
 
+
+def find_profile_logo(session, profile_url):
+    """Return the original logo linked from a designer profile, if identifiable."""
+    soup = BeautifulSoup(get(session, profile_url).text, "html.parser")
+    matches = {}
+    for a in soup.find_all("a", href=True):
+        href = absolute(profile_url, a.get("href"))
+        path = urlparse(href or "").path
+        if not re.search(r"/mdimg/dizajneri/o\\.\\d+\\.(?:jpg|jpeg|png|webp)$", path, re.I):
+            continue
+        labels = [a.get_text(" ", strip=True), a.get("title", ""), a.get("aria-label", "")]
+        labels.extend(x.get("alt", "") for x in a.find_all("img"))
+        labels.extend(x.get("title", "") for x in a.find_all("img"))
+        label = " ".join(str(x) for x in labels if x).strip()
+        if "logo" in label.lower():
+            matches[href] = label
+    if len(matches) == 1:
+        url, label = next(iter(matches.items()))
+        return url, label, None
+    return None, None, "PROFILE_LOGO_NOT_FOUND" if not matches else "PROFILE_LOGO_AMBIGUOUS"
+
 def read_old():
     try:
         data = json.loads(OUT_JSON.read_text(encoding="utf-8"))
@@ -147,6 +168,7 @@ def main():
     p.add_argument("--limit", type=int, default=0)
     p.add_argument("--delay", type=float, default=3.0)
     p.add_argument("--retry-failed", action="store_true")
+    p.add_argument("--profile-logo-delay", type=float, default=4.5, help="Minimum delay between profile-page logo lookups")
     args = p.parse_args()
     session = requests.Session()
     session.headers.update({"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,image/avif,image/webp,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"})
@@ -242,13 +264,40 @@ def main():
             skipped += 1; continue
         if item.get("image_status") == "failed" and not args.retry_failed:
             skipped += 1; continue
-        try:
-            ok, error, meta = save_image(session, item["source_image_url"], target)
-        except RateLimited as exc:
-            item["image_status"] = "failed"; item["image_error"] = "RATE_LIMITED: " + str(exc)[:180]
-            failed += 1
-            print(f"[BLOCKED] {exc}; stopping further downloads", file=sys.stderr)
-            break
+        # Prefer the full-size logo linked on the brand profile page.
+        # Keep the directory thumbnail URL as a fallback and provenance.
+        if not item.get("profile_logo_checked"):
+            try:
+                profile_url, profile_label, profile_error = find_profile_logo(session, item["source_page_url"])
+                item["profile_logo_checked"] = True
+                item["profile_logo_url"] = profile_url
+                item["profile_logo_label"] = profile_label
+                item["profile_logo_error"] = profile_error
+                time.sleep(max(3.0, args.profile_logo_delay))
+            except RateLimited as exc:
+                item["image_status"] = "failed"
+                item["image_error"] = "RATE_LIMITED_PROFILE: " + str(exc)[:180]
+                failed += 1
+                print(f"[BLOCKED] {exc}; stopping profile lookups", file=sys.stderr)
+                break
+            except Exception as exc:
+                item["profile_logo_checked"] = True
+                item["profile_logo_error"] = "PROFILE_LOOKUP_FAILED: " + str(exc)[:180]
+        preferred_url = item.get("profile_logo_url")
+        selected_url = preferred_url or item["source_image_url"]
+        ok, error, meta = save_image(session, selected_url, target)
+        selected_type = "fragrantica_profile_logo" if preferred_url else "fragrantica_designer_directory_image"
+        if not ok and preferred_url:
+            # Fall back to the directory thumbnail if the profile asset is unusable.
+            ok, fallback_error, fallback_meta = save_image(session, item["source_image_url"], target)
+            if ok:
+                error, meta = None, fallback_meta
+                selected_type = "fragrantica_designer_directory_image"
+            else:
+                error = "PROFILE_LOGO_FAILED: " + str(error)[:120] + "; THUMBNAIL_FALLBACK_FAILED: " + str(fallback_error)[:120]
+                meta = fallback_meta
+        item["selected_image_url"] = selected_url if selected_type == "fragrantica_profile_logo" else item["source_image_url"]
+        item["selected_asset_type"] = selected_type
         item["image_status"] = "downloaded" if ok else "failed"
         item["image_error"] = error; item["image_metadata"] = meta
         item["local_path"] = target.as_posix() if ok else None
