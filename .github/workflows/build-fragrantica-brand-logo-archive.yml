@@ -1,6 +1,11 @@
 name: Build Fragrantica Brand Logo Archive
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/build_fragrantica_brand_logos.py"
+      - ".github/workflows/build-fragrantica-brand-logo-archive.yml"
   workflow_dispatch:
     inputs:
       max_pages:
@@ -47,6 +52,9 @@ jobs:
           if [ "$MAX_PAGES" != "0" ]; then ARGS="$ARGS --max-pages $MAX_PAGES"; fi
           if [ "$BRAND_LIMIT" != "0" ]; then ARGS="$ARGS --limit $BRAND_LIMIT"; fi
           if [ "$RETRY_FAILED" = "true" ]; then ARGS="$ARGS --retry-failed"; fi
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            ARGS="$ARGS --max-pages 1 --limit 30 --delay 4 --retry-failed"
+          fi
           python tools/build_fragrantica_brand_logos.py $ARGS
       - name: Commit archive
         run: |
