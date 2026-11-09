@@ -36,12 +36,12 @@ if not exist ".venv-brand-logos\Scripts\python.exe" (
 ".venv-brand-logos\Scripts\python.exe" -m pip install --upgrade requests beautifulsoup4 pillow
 if errorlevel 1 goto :error
 
-set MAX_PAGES=1
-set BRAND_LIMIT=30
+set MAX_PAGES=11
+set BRAND_LIMIT=0
 echo.
-set /p MAX_PAGES=Numero pagine directory (invio = 1): 
+set /p MAX_PAGES=Numero pagine directory (invio = 11, tutte): 
 if "%MAX_PAGES%"=="" set MAX_PAGES=1
-set /p BRAND_LIMIT=Numero marchi (invio = 30): 
+set /p BRAND_LIMIT=Numero marchi (invio = 0, tutti): 
 if "%BRAND_LIMIT%"=="" set BRAND_LIMIT=30
 
 echo.
