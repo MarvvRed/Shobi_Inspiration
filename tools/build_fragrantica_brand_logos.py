@@ -204,14 +204,23 @@ def main():
             samples = []
             for a in soup.find_all("a", href=True):
                 href = absolute(page_url, a.get("href")) or ""
-                if "designers" in href.lower():
-                    img = a.find("img")
-                    samples.append({"href": href, "text": a.get_text(" ", strip=True)[:100],
-                                    "alt": img.get("alt") if img else None,
-                                    "src": get_img_url(img, page_url) if img else None})
-                    if len(samples) == 5:
-                        break
-            print(f"[DIAGNOSTIC] sample_links={json.dumps(samples, ensure_ascii=False)}", flush=True)
+                path = urlparse(href).path
+                if "/designers/" not in path.lower() or ".html" not in path.lower():
+                    continue
+                img = a.find("img")
+                parent = a.parent
+                nearby_images = parent.find_all("img")[:3] if parent else []
+                samples.append({
+                    "href": href,
+                    "anchor_html": str(a)[:1200],
+                    "parent_html": str(parent)[:1800] if parent else None,
+                    "anchor_text": a.get_text(" ", strip=True)[:160],
+                    "img_count_inside_anchor": len(a.find_all("img")),
+                    "nearby_images": [{"alt": x.get("alt"), "src": get_img_url(x, page_url)} for x in nearby_images]
+                })
+                if len(samples) == 5:
+                    break
+            print(f"[DIAGNOSTIC] matching_link_samples={json.dumps(samples, ensure_ascii=False)}", flush=True)
         print(f"[INFO] Candidate entries: {count}", flush=True)
         time.sleep(3.0)
     merged = dict(old)
