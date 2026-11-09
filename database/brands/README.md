@@ -10,9 +10,7 @@ Separate from the certified Shobi perfume catalog.
 
 The collector reads the 11 alphabetical directory pages (/designers-1/ through
 /designers-11/), covering the full A–Z brand index rather than the popular
-brands landing page. It stores brand name, source page and image URLs, local
-WebP path, dimensions, SHA-256 and download status. Re-running is incremental
-and skips images already downloaded; the Windows runner retries prior failures.
+brands landing page. It stores brand name, profile and directory URLs, both image-source URLs when available, the selected source, local WebP path, dimensions, SHA-256 and download status. The collector prefers the original logo linked by the brand profile page (`o.*`) and falls back to the directory thumbnail (`t.*`) if the profile logo is missing or unusable. Re-running is incremental; existing thumbnail-only entries are revisited once for profile-logo discovery.
 
 Some genuine Fragrantica brand marks are very wide and short (for example
 80×9 px). The image validator accepts these wordmarks while still rejecting
@@ -23,10 +21,7 @@ tiny placeholder images.
 GitHub-hosted runners may receive HTTP 429 from Fragrantica. Prefer the local
 Windows runner at tools/run_brand_logo_pilot_windows.bat: run it from a
 local clone of this repository on main. It creates an isolated Python
-environment, installs dependencies, runs a conservative pilot (defaults:
-1 directory page, 30 brands, 4-second delay), then commits and pushes only the
-brand manifest and logo assets. You can change the page and brand limits when
-prompted.
+environment, installs dependencies, runs the full directory collection with a 4-second minimum image delay, then commits and pushes only the brand manifest and logo assets. The GitHub workflow also runs an automatic 30-brand pilot when the collector or workflow changes.
 
 The GitHub Actions workflow remains available as a secondary option, but a
 429 from Fragrantica is an upstream rate limit, not a GitHub configuration
